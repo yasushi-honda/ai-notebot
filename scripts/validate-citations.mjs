@@ -1,0 +1,74 @@
+#!/usr/bin/env node
+/**
+ * AC-2 の証明コマンド（ハルシネーション遮断の要）。
+ * site/src/content/posts/<date>.md 内の全脚注 [^s-<id>] が、
+ * data/raw/<date>.json の当日アーカイブに実在する id に解決するかを検証する。
+ * 未解決が1件でもあれば exit 1（LLM が収集していない情報を書いた場合、公開をここで止める）。
+ *
+ * 使い方: node scripts/validate-citations.mjs [YYYY-MM-DD]（省略時は今日）
+ */
+
+import { readFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+
+const dateArg = process.argv[2] ?? new Date().toISOString().slice(0, 10);
+const rawPath = join(ROOT, 'data', 'raw', `${dateArg}.json`);
+const postPath = join(ROOT, 'site', 'src', 'content', 'posts', `${dateArg}.md`);
+
+let archive;
+try {
+  archive = JSON.parse(await readFile(rawPath, 'utf8'));
+} catch (err) {
+  console.error(`アーカイブが読めません: ${rawPath}\n  ${err.message}`);
+  process.exit(1);
+}
+
+let markdown;
+try {
+  markdown = await readFile(postPath, 'utf8');
+} catch (err) {
+  console.error(`記事ファイルが読めません: ${postPath}\n  ${err.message}`);
+  process.exit(1);
+}
+
+const validIds = new Set((archive.items ?? []).map((i) => i.id));
+
+// frontmatter を除いた本文部分から脚注を抽出（frontmatter の sourceIds は自己申告のため対象外）
+const bodyStart = markdown.indexOf('\n---\n', 4);
+const body = bodyStart >= 0 ? markdown.slice(bodyStart + 5) : markdown;
+
+const footnotePattern = /\[\^(s-[0-9a-f]+)\]/g;
+const cited = new Set();
+for (const m of body.matchAll(footnotePattern)) cited.add(m[1]);
+
+const unresolved = [...cited].filter((id) => !validIds.has(id));
+
+// 裏取り率: 段落（空行区切り、見出し・出典セクション除く）のうち脚注を含む割合
+// (.test() は /g フラグ付きだと lastIndex が状態を持つため、判定専用に非グローバル正規表現を使う)
+const hasFootnote = /\[\^s-[0-9a-f]+\]/;
+const paragraphs = body
+  .split(/\n{2,}/)
+  .map((p) => p.trim())
+  .filter((p) => p && !p.startsWith('#') && !p.startsWith('[^'));
+const citedParagraphs = paragraphs.filter((p) => hasFootnote.test(p));
+const backingRate = paragraphs.length > 0 ? Math.round((citedParagraphs.length / paragraphs.length) * 100) : 0;
+
+console.log(`total: ${cited.size} / unresolved: ${unresolved.length}`);
+console.log(`裏取り率: ${backingRate}% (${citedParagraphs.length}/${paragraphs.length} 段落に脚注あり)`);
+
+if (unresolved.length > 0) {
+  console.error(`unresolved citations: ${unresolved.join(', ')}`);
+  console.error('記事は当日アーカイブに存在しない出典を引用しています。公開を中止します。');
+  process.exit(1);
+}
+
+if (cited.size === 0) {
+  console.error('脚注が1件もありません。出典なしの記事は公開しません。');
+  process.exit(1);
+}
+
+console.log(`unresolved: 0 / total: ${cited.size}`);
+process.exit(0);
