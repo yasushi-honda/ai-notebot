@@ -1,0 +1,64 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { url } from '../../../lib/url';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({
+    params: { date: post.data.date },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <nav class="text-sm text-slate-400 mb-4">
+    <a href={url('')} class="hover:text-indigo-600">ホーム</a> /
+    <a href={url('archive/')} class="hover:text-indigo-600">アーカイブ</a> /
+    {post.data.date}
+  </nav>
+
+  <h1 class="text-2xl font-bold text-slate-900 mb-2">{post.data.title}</h1>
+  <p class="text-slate-500 mb-6">{post.data.description}</p>
+
+  <img
+    src={url(`images/${post.data.date}/hero.jpg`)}
+    alt={post.data.title}
+    class="w-full aspect-video object-cover rounded-xl mb-8"
+    onerror="this.onerror=null;this.src=this.src.replace('.jpg','.svg')"
+  />
+
+  <div class="flex flex-wrap gap-2 mb-8">
+    {post.data.tags.map((tag) => (
+      <a
+        href={url(`tags/${encodeURIComponent(tag)}/`)}
+        class="text-xs px-2 py-1 rounded-full bg-indigo-50 text-indigo-700 no-underline hover:bg-indigo-100"
+      >
+        #{tag}
+      </a>
+    ))}
+  </div>
+
+  <article class="prose-post">
+    <Content />
+  </article>
+
+  <section class="mt-10 grid grid-cols-2 gap-4">
+    {[1, 2].map((n) => (
+      <img
+        src={url(`images/${post.data.date}/section-${n}.jpg`)}
+        alt={`${post.data.title} 関連画像${n}`}
+        class="w-full aspect-4/3 object-cover rounded-lg"
+        onerror="this.onerror=null;this.src=this.src.replace('.jpg','.svg')"
+      />
+    ))}
+  </section>
+
+  <p class="mt-10 text-xs text-slate-400">
+    この記事の出典 {post.data.sourceIds.length} 件はすべて、収集日のアーカイブに実在するエントリに解決することを機械検証済みです。
+  </p>
+</BaseLayout>

@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { url } from '../../lib/url';
+
+const posts = (await getCollection('posts')).sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+// 月別グルーピング（YYYY-MM単位）
+const groups = new Map<string, typeof posts>();
+for (const post of posts) {
+  const ym = post.data.date.slice(0, 7);
+  if (!groups.has(ym)) groups.set(ym, []);
+  groups.get(ym)!.push(post);
+}
+---
+
+<BaseLayout title="アーカイブ" description="日次AIトレンド記事のアーカイブ一覧">
+  <h1 class="text-2xl font-bold text-slate-900 mb-6">アーカイブ（全{posts.length}件）</h1>
+
+  {[...groups.entries()].map(([ym, monthPosts]) => (
+    <section class="mb-8">
+      <h2 class="text-sm font-semibold text-slate-500 mb-3">{ym}</h2>
+      <ul class="space-y-2">
+        {monthPosts.map((post) => (
+          <li>
+            <a
+              href={url(`posts/${post.data.date}/`)}
+              class="flex items-baseline gap-3 rounded-lg px-3 py-2 hover:bg-white no-underline"
+            >
+              <span class="text-xs text-slate-400 font-mono">{post.data.date}</span>
+              <span class="text-slate-800 font-medium">{post.data.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  {posts.length === 0 && <p class="text-slate-500">まだ記事がありません。</p>}
+</BaseLayout>

@@ -194,7 +194,9 @@ async function main() {
     '',
   ].join('\n');
 
-  const markdown = frontmatter + bodyParts.join('\n\n') + '\n\n## この記事の出典\n\n' + footnotes + '\n';
+  // 出典見出しは Astro 側の remark-rehype footnoteLabel 設定で自動描画されるため、
+  // ここでは脚注定義のみを本文末尾に追記する（見出しの重複を避ける）
+  const markdown = frontmatter + bodyParts.join('\n\n') + '\n\n' + footnotes + '\n';
 
   await mkdir(POSTS_DIR, { recursive: true });
   const outPath = join(POSTS_DIR, `${dateArg}.md`);

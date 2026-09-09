@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+import { url } from '../lib/url';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = '毎日のAIトレンドを出典付きでアーカイブするブログ' } = Astro.props;
+const siteTitle = 'ai-notebot';
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} | {siteTitle}</title>
+    <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+  </head>
+  <body>
+    <header class="border-b border-slate-200 bg-white">
+      <div class="mx-auto max-w-3xl px-4 py-4 flex items-center justify-between">
+        <a href={url('')} class="text-lg font-bold text-slate-900 no-underline">
+          🤖 ai-notebot
+        </a>
+        <nav class="flex gap-4 text-sm text-slate-600">
+          <a href={url('archive/')} class="hover:text-indigo-600">アーカイブ</a>
+          <a href={url('about/')} class="hover:text-indigo-600">About</a>
+        </nav>
+      </div>
+    </header>
+    <main class="mx-auto max-w-3xl px-4 py-8">
+      <slot />
+    </main>
+    <footer class="mx-auto max-w-3xl px-4 py-8 text-xs text-slate-400 border-t border-slate-200 mt-12">
+      毎日 AI 関連のニュース・ハック・話題を収集し、出典を脚注で紐付けて自動生成しています。
+      <a href="https://github.com/yasushi-honda/ai-notebot" class="underline">GitHub</a>
+    </footer>
+  </body>
+</html>

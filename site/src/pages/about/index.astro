@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About" description="ai-notebot について">
+  <h1 class="text-2xl font-bold text-slate-900 mb-6">About</h1>
+  <div class="prose-post space-y-4 text-slate-700">
+    <p>
+      ai-notebot は、毎日 AI 関連のニュース・ハック・話題を自動収集し、出典を脚注で紐付けた
+      日本語ブログとして自動生成・公開するプロジェクトです。
+    </p>
+    <h2>仕組み</h2>
+    <p>
+      Hacker News・Reddit・arXiv・GitHub Trending・各社公式ブログ・技術メディア・日本語メディアなど
+      20以上のソースから毎朝収集し、その日集めたエントリだけを根拠として記事を生成します。
+      本文中の全ての主張には出典（脚注）が付き、記事末尾の「この記事の出典」からたどれます。
+    </p>
+    <p>
+      記事本文の全脚注が、その日実際に収集したエントリに解決することを公開前に機械検証しており、
+      収集していない情報を含む記事は公開されない設計になっています。
+    </p>
+    <h2>使用モデル</h2>
+    <p>
+      テキスト生成・画像生成ともに Google Cloud の Vertex AI（Gemini）を利用しています。
+    </p>
+    <h2>ソースコード</h2>
+    <p>
+      <a href="https://github.com/yasushi-honda/ai-notebot">github.com/yasushi-honda/ai-notebot</a>
+    </p>
+  </div>
+</BaseLayout>

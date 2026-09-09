@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans:
+    'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800;
+}
+
+.prose-post :where(p) {
+  @apply leading-relaxed mb-4;
+}
+
+.prose-post :where(h2) {
+  @apply text-xl font-bold mt-8 mb-3 text-slate-900;
+}
+
+/* remark-gfm footnotes セクション */
+.prose-post :where(section[data-footnotes]) {
+  @apply mt-10 pt-6 border-t border-slate-200 text-sm text-slate-600;
+}
+.prose-post :where(section[data-footnotes] ol) {
+  @apply list-decimal list-inside space-y-1;
+}
+.prose-post :where(a) {
+  @apply text-indigo-600 underline decoration-indigo-300 hover:decoration-indigo-600;
+}
