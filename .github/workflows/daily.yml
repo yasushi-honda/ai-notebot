@@ -1,0 +1,107 @@
+name: Daily AI trends digest
+
+# 毎朝 06:30 JST (21:30 UTC) に収集→記事生成→出典検証→画像生成→ビルド→公開まで通しで実行する。
+# 出典検証（validate-citations.mjs）に失敗した場合は commit も deploy も行わない
+# （収集していない情報を含む記事を公開しない設計。詳細: docs/adr/）。
+on:
+  schedule:
+    - cron: '30 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # Workload Identity Federation（Vertex AI 呼び出し、API キー不使用）
+  pages: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # data/raw・記事・画像のコミットに必要
+      id-token: write
+    outputs:
+      built: ${{ steps.build.outcome == 'success' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: site/package-lock.json
+
+      - name: Authenticate to Google Cloud (WIF)
+        id: auth
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/297750025000/locations/global/workloadIdentityPools/github/providers/github-actions
+          service_account: ai-notebot-ci@ai-notebot-yh.iam.gserviceaccount.com
+          token_format: access_token
+
+      - name: Collect sources
+        run: node scripts/collect.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify archive (AC-1)
+        run: node scripts/verify-archive.mjs
+
+      - name: Curate article
+        run: node scripts/curate.mjs
+        env:
+          GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          GCP_PROJECT: ai-notebot-yh
+
+      - name: Validate citations (AC-2, ハルシネーション遮断)
+        run: node scripts/validate-citations.mjs
+
+      - name: Generate images
+        run: node scripts/images.mjs
+        env:
+          GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          GCP_PROJECT: ai-notebot-yh
+
+      - name: Install site dependencies
+        run: npm ci
+        working-directory: site
+
+      - name: Build site
+        id: build
+        run: npm run build
+        working-directory: site
+
+      - name: Commit archive, article and images
+        run: |
+          git config user.name "ai-notebot-bot"
+          git config user.email "actions@github.com"
+          git add data/raw site/src/content/posts site/public/images
+          if git diff --cached --quiet; then
+            echo "変更なし。コミットをスキップします。"
+          else
+            git commit -m "chore: daily digest $(date -u +%F)"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

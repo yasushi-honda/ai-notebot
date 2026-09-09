@@ -1,0 +1,37 @@
+name: CI
+
+# PR時の軽量チェック。LLM呼び出しは行わない（コスト・再現性のため）。
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: site/package-lock.json
+
+      - name: Run scripts unit tests
+        run: node --test scripts/test/*.test.mjs
+
+      - name: Install site dependencies
+        run: npm ci
+        working-directory: site
+
+      - name: Type check
+        run: npm run check
+        working-directory: site
+
+      - name: Build site
+        run: npm run build
+        working-directory: site
