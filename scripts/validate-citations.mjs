@@ -44,6 +44,15 @@ const footnotePattern = /\[\^(s-[0-9a-f]+)\]/g;
 const cited = new Set();
 for (const m of body.matchAll(footnotePattern)) cited.add(m[1]);
 
+// 不正な脚注表記を検出する（例: [^s-aaa, s-bbb] のようにカンマ区切りで複数idを
+// 1つの角括弧に詰め込んだもの。LLMがまれにこの形式で出力し、GFM footnote構文として
+// 認識されず角括弧がそのまま画面に表示されてしまうため、正しい形式のみ許容する）。
+// "[^" で始まり "]" で終わる角括弧のうち、footnotePattern に完全一致しないものを拾う。
+const bracketPattern = /\[\^[^\]]*\]/g;
+const malformed = [...body.matchAll(bracketPattern)]
+  .map((m) => m[0])
+  .filter((s) => !/^\[\^s-[0-9a-f]+\]$/.test(s));
+
 const unresolved = [...cited].filter((id) => !validIds.has(id));
 
 // 裏取り率: 段落（空行区切り、見出し・出典セクション除く）のうち脚注を含む割合
@@ -58,6 +67,12 @@ const backingRate = paragraphs.length > 0 ? Math.round((citedParagraphs.length /
 
 console.log(`total: ${cited.size} / unresolved: ${unresolved.length}`);
 console.log(`裏取り率: ${backingRate}% (${citedParagraphs.length}/${paragraphs.length} 段落に脚注あり)`);
+
+if (malformed.length > 0) {
+  console.error(`malformed footnotes: ${malformed.join(', ')}`);
+  console.error('記事に不正な脚注表記（例: カンマ区切りで複数idを1つの角括弧に詰め込んだもの）があります。公開を中止します。');
+  process.exit(1);
+}
 
 if (unresolved.length > 0) {
   console.error(`unresolved citations: ${unresolved.join(', ')}`);

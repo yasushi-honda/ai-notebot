@@ -64,6 +64,24 @@ test('validate-citations: 存在しないid（LLMのハルシネーション想�
   }
 });
 
+test('validate-citations: カンマ区切りで複数idを1つの角括弧に詰め込んだ不正表記は exit 1', async () => {
+  await setup();
+  try {
+    const md = `---\ntitle: test\n---\n\n## 見出し\n\n本文です[^s-aaaaaaaaaa, s-bbbbbbbbbb]。\n\n## この記事の出典\n\n[^s-aaaaaaaaaa]: A\n[^s-bbbbbbbbbb]: B\n`;
+    await writeFile(postPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE]),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /malformed footnotes/);
+        return true;
+      },
+    );
+  } finally {
+    await teardown();
+  }
+});
+
 test('validate-citations: 脚注が1件もない記事は exit 1', async () => {
   await setup();
   try {
