@@ -1,70 +1,43 @@
 {
   "date": "2026-09-09",
-  "collectedAt": "2026-09-09T22:56:38.329Z",
+  "collectedAt": "2026-09-09T23:01:29.479Z",
   "sourceSuccessCount": 18,
   "items": [
-    {
-      "id": "s-b8fa1d425b",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "mixpeek/amux: Open-source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board, atomic tasks, schedules, loops, origin-stamped messaging, model switching, and self-healing recovery. One dashboard, or your phone. MIT, single Rust binary.",
-      "url": "https://github.com/mixpeek/amux",
-      "publishedAt": "2026-09-09T22:56:23.000Z",
-      "summary": "★431 Open-source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board, atomic tasks, schedules, loops, origin-stamped messaging, model switching, and self-healing recovery. One dashboard, or your phone. MIT, single Rust binary."
-    },
-    {
-      "id": "s-0a409b4e55",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "vivekchand/clawmetry: See your agent think. Zero-config observability & governance for 30 AI agent runtimes: Claude Code, OpenAI Codex, Hermes, OpenClaw & 26 more. Live token costs, sessions, tool calls, crons.",
-      "url": "https://github.com/vivekchand/clawmetry",
-      "publishedAt": "2026-09-09T22:56:15.000Z",
-      "summary": "★410 See your agent think. Zero-config observability & governance for 30 AI agent runtimes: Claude Code, OpenAI Codex, Hermes, OpenClaw & 26 more. Live token costs, sessions, tool calls, crons."
-    },
-    {
-      "id": "s-d62d3bc659",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "09omerdgn-droid/api-model-playground-cookbook: Ultimate LLM API Integration Cookbook 2026 for Cursor & AI Agents",
-      "url": "https://github.com/09omerdgn-droid/api-model-playground-cookbook",
-      "publishedAt": "2026-09-09T22:56:12.000Z",
-      "summary": "★115 Ultimate LLM API Integration Cookbook 2026 for Cursor & AI Agents"
-    },
     {
       "id": "s-cf91d9e0c1",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
       "title": "MIgHTy-alIeN/ai-trader-bot: An arbitrage bot is a smart contract connected to an external automation script that controls its operation.",
       "url": "https://github.com/MIgHTy-alIeN/ai-trader-bot",
-      "publishedAt": "2026-09-09T22:56:03.000Z",
+      "publishedAt": "2026-09-09T23:01:09.000Z",
       "summary": "★2698 An arbitrage bot is a smart contract connected to an external automation script that controls its operation."
     },
     {
-      "id": "s-54439e7488",
+      "id": "s-4609711d63",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "microsoft/agent-framework: A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
-      "url": "https://github.com/microsoft/agent-framework",
-      "publishedAt": "2026-09-09T22:55:59.000Z",
-      "summary": "★13437 A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET."
+      "title": "BuilderIO/agent-native: A framework for building agentic apps",
+      "url": "https://github.com/BuilderIO/agent-native",
+      "publishedAt": "2026-09-09T23:00:50.000Z",
+      "summary": "★4698 A framework for building agentic apps"
     },
     {
-      "id": "s-388c6d940f",
-      "source": "GitHub Trending (ai)",
+      "id": "s-6ad776ac4e",
+      "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "rush86999/atom: Atom Agent, Open-Source Governed AI Agent Platform for Self-Hosted Automation",
-      "url": "https://github.com/rush86999/atom",
-      "publishedAt": "2026-09-09T22:55:47.000Z",
-      "summary": "★884 Atom Agent, Open-Source Governed AI Agent Platform for Self-Hosted Automation"
+      "title": "kaderkck/hewn-forge: HEWN 2.0 2026: AI Output Router for Precision Summaries & Polished Code",
+      "url": "https://github.com/kaderkck/hewn-forge",
+      "publishedAt": "2026-09-09T23:00:44.000Z",
+      "summary": "★118 HEWN 2.0 2026: AI Output Router for Precision Summaries & Polished Code"
     },
     {
-      "id": "s-5a585a847e",
+      "id": "s-b5fdbba239",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "ClickHouse/ClickHouse: ClickHouse® is a real-time analytics database management system",
-      "url": "https://github.com/ClickHouse/ClickHouse",
-      "publishedAt": "2026-09-09T22:55:43.000Z",
-      "summary": "★49780 ClickHouse® is a real-time analytics database management system"
+      "title": "google/adk-js: An open-source, code-first Typescript toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
+      "url": "https://github.com/google/adk-js",
+      "publishedAt": "2026-09-09T23:00:36.000Z",
+      "summary": "★1388 An open-source, code-first Typescript toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control."
     },
     {
       "id": "s-c6fd25b449",
@@ -72,53 +45,8 @@
       "sourceType": "github",
       "title": "openclaw/openclaw: The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
       "url": "https://github.com/openclaw/openclaw",
-      "publishedAt": "2026-09-09T22:55:40.000Z",
+      "publishedAt": "2026-09-09T23:00:32.000Z",
       "summary": "★389310 The AI that really does things. Any OS. Any Platform. The lobster way. 🦞"
-    },
-    {
-      "id": "s-6d8d9bad07",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "smithersai/smithers: Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
-      "url": "https://github.com/smithersai/smithers",
-      "publishedAt": "2026-09-09T22:55:33.000Z",
-      "summary": "★409 Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably"
-    },
-    {
-      "id": "s-c4ad6b7b4e",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "shadowlzt/ironclaw-ai-vision: Ultimate AI Fitness Coach PWA 2026: Iron Mike Workout & Smart Recipe Agent",
-      "url": "https://github.com/shadowlzt/ironclaw-ai-vision",
-      "publishedAt": "2026-09-09T22:55:20.000Z",
-      "summary": "★117 Ultimate AI Fitness Coach PWA 2026: Iron Mike Workout & Smart Recipe Agent"
-    },
-    {
-      "id": "s-2c650dc340",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "omnigent-ai/omnigent: Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
-      "url": "https://github.com/omnigent-ai/omnigent",
-      "publishedAt": "2026-09-09T22:55:18.000Z",
-      "summary": "★9809 Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device."
-    },
-    {
-      "id": "s-f7afbcbbd8",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "aayushgames19-hash/claude-gateway-manager: Best Tenbin AI Proxy for Anthropic Opus 4.8 & Sonnet 4.6 API Access 2026",
-      "url": "https://github.com/aayushgames19-hash/claude-gateway-manager",
-      "publishedAt": "2026-09-09T22:55:16.000Z",
-      "summary": "★119 Best Tenbin AI Proxy for Anthropic Opus 4.8 & Sonnet 4.6 API Access 2026"
-    },
-    {
-      "id": "s-3d3c576d7a",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "martian56/redcell: AI red-team platform. Autonomous LLM agents run a penetration test end to end inside a Kali container and write the report. LangGraph plan/act engine, provider-agnostic models via LiteLLM, PDF/JSON/SARIF output. FastAPI + React.",
-      "url": "https://github.com/martian56/redcell",
-      "publishedAt": "2026-09-09T22:55:16.000Z",
-      "summary": "★282 AI red-team platform. Autonomous LLM agents run a penetration test end to end inside a Kali container and write the report. LangGraph plan/act engine, provider-agnostic models via LiteLLM, PDF/JSON/SARIF output. FastAPI + React."
     },
     {
       "id": "s-fe05b7b44d",
@@ -126,26 +54,98 @@
       "sourceType": "github",
       "title": "sgl-project/sglang: SGLang is a high-performance serving framework for large language models and multimodal models.",
       "url": "https://github.com/sgl-project/sglang",
-      "publishedAt": "2026-09-09T22:55:14.000Z",
+      "publishedAt": "2026-09-09T23:00:20.000Z",
       "summary": "★35712 SGLang is a high-performance serving framework for large language models and multimodal models."
     },
     {
-      "id": "s-9cf29be874",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "gunawan1996/world-forge-ai: AI World Generator 2026: Create Self-Evolving Maps & Stories",
-      "url": "https://github.com/gunawan1996/world-forge-ai",
-      "publishedAt": "2026-09-09T22:54:23.000Z",
-      "summary": "★120 AI World Generator 2026: Create Self-Evolving Maps & Stories"
-    },
-    {
-      "id": "s-2a06dd8690",
+      "id": "s-b8fa1d425b",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "ChristoAnsek/audited-change-gate: Automated Proof-of-Carrying Change Management for AIOps 2026",
-      "url": "https://github.com/ChristoAnsek/audited-change-gate",
-      "publishedAt": "2026-09-09T22:54:16.000Z",
-      "summary": "★116 Automated Proof-of-Carrying Change Management for AIOps 2026"
+      "title": "mixpeek/amux: Open-source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board, atomic tasks, schedules, loops, origin-stamped messaging, model switching, and self-healing recovery. One dashboard, or your phone. MIT, single Rust binary.",
+      "url": "https://github.com/mixpeek/amux",
+      "publishedAt": "2026-09-09T22:59:56.000Z",
+      "summary": "★431 Open-source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board, atomic tasks, schedules, loops, origin-stamped messaging, model switching, and self-healing recovery. One dashboard, or your phone. MIT, single Rust binary."
+    },
+    {
+      "id": "s-6d8d9bad07",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "smithersai/smithers: Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
+      "url": "https://github.com/smithersai/smithers",
+      "publishedAt": "2026-09-09T22:59:33.000Z",
+      "summary": "★409 Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably"
+    },
+    {
+      "id": "s-5a585a847e",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "ClickHouse/ClickHouse: ClickHouse® is a real-time analytics database management system",
+      "url": "https://github.com/ClickHouse/ClickHouse",
+      "publishedAt": "2026-09-09T22:59:29.000Z",
+      "summary": "★49780 ClickHouse® is a real-time analytics database management system"
+    },
+    {
+      "id": "s-0ca3095f00",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Apil-Shrestha/token-efficiency-lex: Token Cost Parity: Multilingual LLM Efficiency Analysis 2026",
+      "url": "https://github.com/Apil-Shrestha/token-efficiency-lex",
+      "publishedAt": "2026-09-09T22:58:57.000Z",
+      "summary": "★116 Token Cost Parity: Multilingual LLM Efficiency Analysis 2026"
+    },
+    {
+      "id": "s-42ee3d2ac3",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Larens94/codedna: A lightweight annotation standard that helps AI agents navigate codebases faster, with fewer file reads and tool calls",
+      "url": "https://github.com/Larens94/codedna",
+      "publishedAt": "2026-09-09T22:58:28.000Z",
+      "summary": "★149 A lightweight annotation standard that helps AI agents navigate codebases faster, with fewer file reads and tool calls"
+    },
+    {
+      "id": "s-2138a89605",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "apoorvdarshan/fud-ai: Fud AI is a Free & Open Sourced AI Calorie Tracker for iOS & Android",
+      "url": "https://github.com/apoorvdarshan/fud-ai",
+      "publishedAt": "2026-09-09T22:57:40.000Z",
+      "summary": "★400 Fud AI is a Free & Open Sourced AI Calorie Tracker for iOS & Android"
+    },
+    {
+      "id": "s-c7dd151cbb",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Cotal-AI/Cotal: The open standard for agent coordination",
+      "url": "https://github.com/Cotal-AI/Cotal",
+      "publishedAt": "2026-09-09T22:57:09.000Z",
+      "summary": "★270 The open standard for agent coordination"
+    },
+    {
+      "id": "s-65e32dabe8",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "vllm-project/vllm: A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "url": "https://github.com/vllm-project/vllm",
+      "publishedAt": "2026-09-09T22:57:01.000Z",
+      "summary": "★91366 A high-throughput and memory-efficient inference and serving engine for LLMs"
+    },
+    {
+      "id": "s-e2820020cd",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "BerriAI/litellm: The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
+      "url": "https://github.com/BerriAI/litellm",
+      "publishedAt": "2026-09-09T22:57:01.000Z",
+      "summary": "★58391 The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]"
+    },
+    {
+      "id": "s-09e80fbdb6",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "rafaelmateo123/Arena-of-Autonomous-Threads: Top AI Agent Simulator: Build a Local Reddit Forum for LLM Testing 2026",
+      "url": "https://github.com/rafaelmateo123/Arena-of-Autonomous-Threads",
+      "publishedAt": "2026-09-09T22:56:59.000Z",
+      "summary": "★118 Top AI Agent Simulator: Build a Local Reddit Forum for LLM Testing 2026"
     },
     {
       "id": "s-8cd3abff32",
@@ -166,22 +166,13 @@
       "summary": "Paul Christiano, an influential AI researcher focused on alignment, is joining the OpenAI Foundation as a member of its board."
     },
     {
-      "id": "s-64973bce75",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "2026-08-25 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-25-tech-daily",
-      "publishedAt": "2026-09-09T22:17:36.000Z",
-      "summary": "! 2026年8月25日現在の技術トレンドでは、大規模言語モデル（LLM）単体の利用から「AIエージェント」や「具身知能（Embodied AI）」の現場実装へとフェーズがシフトしています。富士通や博報堂テクノロジーズによるエージェント構築の発表が相次ぐ一方、ガートナーの警鐘に見られるように導入成果を出すための実務戦略が議論されています。また、OpenAIが独自AI ASIC「Jalapeño」の成果を公表し、Pythonツール開発元のAstralを買収するなど、ハードウェアから開発環境までの垂直統合を加速させています。さらに、SaaS・AI連携で普及するModel Context Pr..."
-    },
-    {
-      "id": "s-d539bb5431",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "医療機器管理×機械学習——「ドメイン知識×コーディング」が効く理由",
-      "url": "https://zenn.dev/taichiendoh/articles/ml-medical-device-management-domain-knowledge",
-      "publishedAt": "2026-09-09T22:16:32.000Z",
-      "summary": "初出: note（機械学習と医療機器管理）。Zenn向けに技術的な背景と現在の視点を補って再構成しました。 臨床工学技士として医療機器管理の現場に立っていた頃、「このデータ、機械学習にかけたらどうなるだろう」と考えたことが何度もあります。今日はその原点——医療機器管理データに機械学習を適用する、というテーマを、当時の技術背景と、いま振り返って見える論点の両方から整理します。 1. なぜ医療機器管理データは機械学習と相性がいいのか 医療分野で機械学習の話をすると、真っ先に個人情報保護の壁にぶつかります。しかし医療機器管理業務で扱うデータの多くは、患者の診療情報ではなく機器そのものの..."
+      "id": "s-982b7d8427",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Apple A20 Pro debuts with 7-core GPU, 32-core Neural Engine and 50% more memory bandwidth (~115 GB/s)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wc0ekw/apple_a20_pro_debuts_with_7core_gpu_32core_neural/",
+      "publishedAt": "2026-09-09T22:23:31.000Z",
+      "summary": "It seems to use a 96-bit LPDDR5X memory bus, instead of the previous 64-bit wide busses. Considering it&#39;s on 2nm, that&#39;s expensive silicon. That should result in around 115 GB/s memory bandwidth. A20 Pro also doubles the size of Apple&#39;s dedicated Neural Engine (from 16 to 32 cores total). &#32; submitted by &#32; /u/Balance- [link] &#32; [comments]"
     },
     {
       "id": "s-7cbbc9cac1",
@@ -200,15 +191,6 @@
       "url": "https://anond.hatelabo.jp/20260910070047",
       "publishedAt": "2026-09-09T22:08:36.000Z",
       "summary": "気が早いけど折りたたみiPhoneを一回り小さくしたiPhone Duo miniがほしい 折り畳めば画面端まで指が届く横幅で12mini/13miniユーザーも成仏 開けば大型iPhoneより広い画面 ついでに価格もminiにして… でないと円安の日本人には買えないよ"
-    },
-    {
-      "id": "s-8a2f13bc8c",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Claude APIで商談準備とフォローを一気通貫にする",
-      "url": "https://zenn.dev/liatris/articles/20260910-sales-prep-followup-ai",
-      "publishedAt": "2026-09-09T22:00:05.000Z",
-      "summary": "! この記事は、Claude Codeを執筆支援に使った \"毎朝1本書く\" 取り組みの一環で書いています。 目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます 体制: 題材選定・実装・下書きをClaude Codeで補助、Liatrisが動作確認と編集を経て公開判断 方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停止します 仕組みの全貌はこちらの設計記事にまとめています。 商談前の準備に毎回30分〜1時間かけている、という話をよく聞く。準備の型はだいたい決まっているのに、毎回ゼロから同じ情報収集と整理をやり直し..."
     },
     {
       "id": "s-83c9398edc",
@@ -238,15 +220,6 @@
       "summary": "points=5 comments=2 (Hacker News)"
     },
     {
-      "id": "s-6e57eb64f3",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "AIで作ったシフト管理アプリが、一度も使われずゴミ箱行きになった話",
-      "url": "https://zenn.dev/i_shu/articles/076e1debfeeebb",
-      "publishedAt": "2026-09-09T21:55:41.000Z",
-      "summary": "IT中級者・上級者の方は、ここから先は絶対に見ないでください 釈迦に説法、河童に水練です。見ても得るものはありません。 ……そう言われると逆に気になりませんか？ それでも読んでしまったあなたは、たぶん僕と同じタイプです。 僕はIT企業（N◯T系）に新卒として入り、まだ半年です。開発など本格的な業務にはまだ触れていません。 そんな中、フラストレーションがたまっていた僕は、ITを使って何か自分で成し遂げたいと思いました。仕事で何もできていない分、自分の価値がほしかったのかもしれません。 そこで、就職前にバイトリーダーとして働いていた元バイト先に、シフト管理アプリをAIフル活用で作って渡し..."
-    },
-    {
       "id": "s-d35058d0e6",
       "source": "ITmedia AI+",
       "sourceType": "japanese",
@@ -265,33 +238,6 @@
       "summary": "Massachusetts has become the third state in as many months to slap new restrictions on data center development."
     },
     {
-      "id": "s-6e51b04520",
-      "source": "The Verge AI",
-      "sourceType": "media",
-      "title": "Suno releases its first AI music model made with record industry help",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
-      "publishedAt": "2026-09-09T21:42:19.000Z",
-      "summary": "Suno's new v6 AI music model is its first made with support from the record industry. Suno's Jack Brody told The Verge that v6 was \"trained from the ground up, with a new set of data that does not include the same data that our previous models were trained on.\" The data includes content licensed […]"
-    },
-    {
-      "id": "s-ca3035a499",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "AIエンジニアのためのコンパイラ理論入門",
-      "url": "https://zenn.dev/tanuki_chan/books/2936b2eb58db4a",
-      "publishedAt": "2026-09-09T21:35:33.000Z",
-      "summary": "ChatGPTやClaudeでアプリを作っていて、「正規表現のパースが崩れる」「プロンプトが長すぎて制御不能」「エージェントが無限ループで暴走する」と頭を抱えたことはありませんか？ その原因は、プロンプトの言葉選びではなく、複雑な情報を「ただの文字列」として扱っていることにあります。 本書は、LLM・コンテキスト・エージェントを古典コンパイラ理論（字句解析・AST・中間表現・型システム・制御フロー）の視点から捉え直す、まったく新しい技術入門書です。SeaCafeの看板娘・天知たぬきと一緒に、職人芸の呪文使いから「構造と実行系を設計するアーキテクト」へステップアップしましょう！"
-    },
-    {
-      "id": "s-2fab70a53d",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Claude CodeとCodexを同じ成果物で相互レビューさせる",
-      "url": "https://zenn.dev/chooser/articles/meta-002-ai-dev-process",
-      "publishedAt": "2026-09-09T21:31:04.000Z",
-      "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。 Claude CodeとCodexを同じ成果物で相互レビューさせる 結論 同じ課題を Claude Code と Codex に別々に作らせ、互いにレビューさせました。 目次案・一次資料の整理・サンプル記事という同じ成果物を、2つのAIに独立で作らせます。そのうえで、事実誤り・追加証拠・機密・文章・媒体適合の5分類で相互にレビューさせました。最後に公開してよいかは人間が決め..."
-    },
-    {
       "id": "s-a7d3a35ddd",
       "source": "ITmedia AI+",
       "sourceType": "japanese",
@@ -308,15 +254,6 @@
       "url": "https://qiita.com/chooser/items/e9eaaba955502cc69d76",
       "publishedAt": "2026-09-09T21:17:34.000Z",
       "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。 Claude CodeとCodexを同じ成果物で相互レビューさせる ..."
-    },
-    {
-      "id": "s-2437055705",
-      "source": "The Verge AI",
-      "sourceType": "media",
-      "title": "OpenAI’s sly mathematical breakthrough sends a chill through academia",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
-      "publishedAt": "2026-09-09T21:16:34.000Z",
-      "summary": "OpenAI's announcement Tuesday that it has solved one of mathematics' legendary Millennium Prize problems should have been a moment of triumph. The result is both an undeniable achievement and a striking demonstration of just how rapidly AI is transforming mathematics. But before it was even formally announced, the breakthrough had been complicated by the unusual […]"
     },
     {
       "id": "s-f034c3b003",
@@ -362,15 +299,6 @@
       "url": "https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents",
       "publishedAt": "2026-09-09T20:54:41.000Z",
       "summary": "Comments"
-    },
-    {
-      "id": "s-d6f0852fba",
-      "source": "The Verge AI",
-      "sourceType": "media",
-      "title": "Read the Apple document explaining how new listening features still protect your privacy",
-      "url": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
-      "publishedAt": "2026-09-09T20:44:43.000Z",
-      "summary": "At Wednesday's iPhone Duo launch event, Apple announced a handful of new Siri AI Audio Intelligence features, including Siri Recap, Live Rewind, Sound Recognition, and Music Recognition. Alongside its announcement, Apple released a document laying out how it plans to balance AI \"ambient listening\" and users' privacy. It says the raw audio from the new […]"
     },
     {
       "id": "s-616e256747",
@@ -454,15 +382,6 @@
       "summary": ""
     },
     {
-      "id": "s-ec3094f741",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "個人開発の告知画像を、1つのコンセプトから3方向に展開する",
-      "url": "https://zenn.dev/viewmax_studio/articles/fdb30235c704c3",
-      "publishedAt": "2026-09-09T19:43:22.000Z",
-      "summary": "個人開発の告知では、機能を説明する文章に加えて、どんな雰囲気のプロダクトなのか伝わる画像があると見せ方を考えやすくなります。今回はViewMax Canvasで架空の香水「AMBER」を制作し、基準画像を使いながら3つのビジュアルに展開しました。 ViewMaxチームによる実例です。文章作成にはAIを活用しています。画像はGPT Image 2.5で実際に生成したもので、AMBERはデモ用の架空の商品です。この記事では実装ではなく、画像をつくる際の指示と選び方を共有します。 先に固定するものを決める 最初の画像では、四角いガラス瓶、黒いキャップ、琥珀色の液体、クリーム色のラベルを指定..."
-    },
-    {
       "id": "s-9a707e270e",
       "source": "Hacker News",
       "sourceType": "hn",
@@ -470,15 +389,6 @@
       "url": "https://www.aljazeera.com/news/2026/9/9/china-slams-us-claims-of-industrial-scale-ai-theft",
       "publishedAt": "2026-09-09T19:32:07.000Z",
       "summary": "points=5 comments=0 (Hacker News)"
-    },
-    {
-      "id": "s-9289099b73",
-      "source": "The Verge AI",
-      "sourceType": "media",
-      "title": "Apple’s new iPhone camera mode promises to prove your photo isn’t AI",
-      "url": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
-      "publishedAt": "2026-09-09T19:30:12.000Z",
-      "summary": "Apple is launching a new way to prove that the picture you took isn't manipulated by AI. A new feature, called \"Reference Image,\" will arrive with the iPhone 18 Pro lineup later this month and is supposed to use the device's new camera sensor to \"sign every pixel it sees.\" The iPhone 18 Pro and […]"
     },
     {
       "id": "s-f8a3492de0",
@@ -652,15 +562,6 @@
       "summary": ""
     },
     {
-      "id": "s-63ea6811b4",
-      "source": "The Verge AI",
-      "sourceType": "media",
-      "title": "Microsoft has new AI privacy rules for schools",
-      "url": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
-      "publishedAt": "2026-09-09T17:07:48.000Z",
-      "summary": "Microsoft agreed to a set of safety and privacy principles for AI in schools a week after two major school systems announced a ban on student-facing AI. In a new agreement with the American Federation of Teachers (AFT), the second-largest teachers union in the US, and its New York City affiliate the United Federation of […]"
-    },
-    {
       "id": "s-534907e0d3",
       "source": "OpenAI",
       "sourceType": "vendor",
@@ -751,6 +652,15 @@
       "summary": "Big one today — Tailwind is joining Shopify. When I started working on Tailwind over nine years ago, my only goal was to create something that would make it easier to build beautiful interfaces for my own projects. Fast-forward to today and the framework is installed over 110 million times per we..."
     },
     {
+      "id": "s-39d98d169d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Tech Watch 2026-09-09: Agent基盤",
+      "url": "https://zenn.dev/laiken/articles/20260909-tech-watch",
+      "publishedAt": "2026-09-09T15:38:41.000Z",
+      "summary": "AIが書きました🤖 この記事は、AIが書いたものを人間が確認してから投稿しています。 L: 今日は、モデルの性能そのものより、その周りに作る infrastructure が主役に見える。agent に何を見せるか、何を実行させるか、どこで止めるか。『インターステラー』で船体そのものより航法と生命維持が生死を分ける感じに近い。今日の項目はこうです。 How we contain Claude across products / Anthropic Engineering How GPT-5.6 Sol helps run quantum computing experi..."
+    },
+    {
       "id": "s-e8608e40b7",
       "source": "Hugging Face Blog",
       "sourceType": "vendor",
@@ -758,6 +668,15 @@
       "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
       "publishedAt": "2026-09-09T15:36:24.000Z",
       "summary": ""
+    },
+    {
+      "id": "s-ecd54691a8",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Code に調査だけさせる：プロンプト例と --disallowed-tools と変更検知",
+      "url": "https://zenn.dev/chiisanasoft/articles/75b6bd6a1cf911",
+      "publishedAt": "2026-09-09T15:28:48.000Z",
+      "summary": "現状を知りたいだけで調査を頼んだのに、気づくとファイルが直っている。しかも直った先から前提がずれるので、元がどうだったのかが分からなくなります。 プロンプトに「変えないでください」と書き足しても、それだけでは止まりませんでした。この記事では、実際に投げているプロンプト例と、プロンプトの外側で止める方法、変更されていないことを機械的に確認する手順を書きます。 動作確認は Claude Code 2.1.266 です。フラグ名はバージョンによって変わるので、claude --help で確認してください。 プロンプトだけで止めようとしない 止め方は3つの層に分かれます。止まる範囲が違うの..."
     },
     {
       "id": "s-bbb036ad4e",
@@ -769,13 +688,49 @@
       "summary": "&#32; submitted by &#32; /u/Arcuru [link] &#32; [comments]"
     },
     {
-      "id": "s-8ede83bc75",
-      "source": "Reddit r/LocalLLaMA",
-      "sourceType": "reddit",
-      "title": "SOTA ImageGen Locally NVIDIA Cosmos3(64B) INT4 quants CUDA/MLX",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wbmz1y/sota_imagegen_locally_nvidia_cosmos364b_int4/",
-      "publishedAt": "2026-09-09T14:21:16.000Z",
-      "summary": "Cosmos3 INT4 T2I + I2V on Apple Silicon — code, weights and a Grok comparison GitHub - https://github.com/gtrg55/cosmos3-quant-mlx-cuda HF weights - https://huggingface.co/JuliaML/Cosmos3-Super-Text2Image-4Step-INT4-G64-BF16 Single clip took approximately 5m on M4 MAX 128 GB Mac Cosmos3 - a 64B params model &#32; submitted by &#32; /u/Formal-Swordfish-228 [link] &#32; [comments]"
+      "id": "s-849d79145f",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Gemini Enterpriseを社内展開する前に、この3つの権限を設定しろ",
+      "url": "https://zenn.dev/shim_03248/articles/78a08a4eb460aa",
+      "publishedAt": "2026-09-09T13:42:42.000Z",
+      "summary": "タイトルは昔懐かしい「〇〇しろ」系記事タイトルへのオマージュですが、中身は普通のGemini Enterpriseの導入に躓いたのでナレッジとして残します。 Gemini Enterpriseの日本語導入ナレッジは少ないため、ちゃんと丁寧に説明します。 結論 Gemini Enterprise は、次の3レイヤーの権限を下から順に設定する必要があります。 1つでも抜けると「画面は出るのにエージェントが見えない」のような中途半端な状態でハマるため注意が必要です。 GCP IAMロールを付与する サブスクリプション（ライセンス）を割り当てる エージェント（アプリ）の共有設定にユーザを..."
+    },
+    {
+      "id": "s-cd9e17f68f",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AgentCore Memory の IngestData API で既存の AI チャットアプリに長期記憶を後付けしてみた",
+      "url": "https://zenn.dev/aws_japan/articles/agentcore-memory-ingestdata",
+      "publishedAt": "2026-09-09T13:38:14.000Z",
+      "summary": "はじめに 自社で運用している AI チャットアプリに「前に話したことを覚えていてほしい」という要望が来たとき、Amazon Bedrock AgentCore Memory の長期記憶は候補の一つになります。ユーザーの好みや事実をマネージドで抽出し、セマンティック検索で取り出せるサービスです。 ただ、既に動いているチャットアプリには会話履歴のストアがあります。RDS なり DynamoDB なりに、ユーザーごとの会話とメッセージが溜まっています。ここに AgentCore Memory を足そうとすると、これまでは会話を CreateEvent で短期記憶イベントとして AgentC..."
+    },
+    {
+      "id": "s-0954b926d0",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIの登場で様々なアルゴリズムを実装できる理由",
+      "url": "https://zenn.dev/hiro_f35/articles/9d410eed4e5f81",
+      "publishedAt": "2026-09-09T13:30:24.000Z",
+      "summary": "AI（特にLLM＝大規模言語モデルやコード生成AI）の登場によって、従来のプログラミング手法や開発アプローチが大きく変化し、多角的なアルゴリズムを容易に実装・運用できるようになりました。その主な理由は以下の通りです。 自然言語（プログラミング非言語）による実装指示 従来のアルゴリズム実装には、特定のプログラミング言語の文法、データ構造、ライブラリの深い知識が必要でした。AIの登場により、「自然言語でアルゴリズムの挙動や目的を指示するだけ」で、正確なコードを自動生成できるようになりました。これにより、言語の壁や構文エラーに時間を取られることが激減しました。 多様なプログラミング言語..."
+    },
+    {
+      "id": "s-b295f5fe2a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Code で「さっきの続きやって」が一番高いのか確かめた",
+      "url": "https://zenn.dev/sui_water/articles/cfe2a86c01b22a",
+      "publishedAt": "2026-09-09T13:11:38.000Z",
+      "summary": "Claude Code の利用状況を OpenTelemetry で Cloudflare D1 にためています。ためはじめて 3 か月半が経ち、まとまった量のデータが集まってきました。 このデータで確かめたいことがありました。odacchi 氏の Claude Codeのプロンプトキャッシュ TTLは、プロンプトキャッシュには有効期間があり、それを過ぎて同じセッションに戻ると会話履歴の全体を送り直すことになる、という内容です。仕様と単価から導いた話なので、自分の手元でも同じことが起きているかどうかは、ためたデータで確かめられるはずです。 確かめたところ、同じことが起きていました。この記..."
+    },
+    {
+      "id": "s-b507fac72b",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "「AI時代のTDDは誰も知らない」——Kent Beck 回のどれが伸びるか（#30 投稿前予測）",
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr30-kentbeck-prediction",
+      "publishedAt": "2026-09-09T13:00:09.000Z",
+      "summary": "この記事は何か 海外の Tech Talk を日本語の縦型ショートに切り出して TikTok に投稿しています。1本の元動画から9〜11本のクリップを作り、投稿する前に「どれが伸びるか」を予測して保存し、あとで実測と突き合わせています。 今回の #30 は Kent Beck の回です。エクストリームプログラミング（XP）を作り、テスト駆動開発（TDD）を広め、JUnit を共同で作り、アジャイルソフトウェア開発宣言に署名した人。要するに、あなたが今日書いたテストの作法を定義した本人です。 ! この記事は投稿開始前に書いています。ただし Zenn は新規記事の公開が直近24時間で1本..."
     },
     {
       "id": "s-6857fbe8e0",
@@ -850,6 +805,15 @@
       "summary": "Security gnomes are pumping out patches ahead of an expected onslaught of AI-assisted attacks."
     },
     {
+      "id": "s-0ac264fddc",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Drama swirls around OpenAI’s legendary mathematical milestone",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+      "publishedAt": "2026-09-08T20:53:52.000Z",
+      "summary": "OpenAI says it found a solution to a major math problem that has remained unsolved for around 90 years, as reported earlier by The New York Times and Wired. In a blog post on Tuesday, OpenAI announced that it discovered a solution to the Navier-Stokes problem - which relates to the flow of liquid and […]"
+    },
+    {
       "id": "s-e40558a093",
       "source": "Claude Code (Anthropic)",
       "sourceType": "vendor",
@@ -857,6 +821,24 @@
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.265",
       "publishedAt": "2026-09-08T20:37:31.000Z",
       "summary": "What's changed Added user.email and user.groups to the telemetry Claude Desktop and Cowork send through a Claude apps gateway, matching terminal sessions Added support for pointing --plugin-dir at a folder of plugins: each child folder with a manifest loads, and children added or removed while running are picked up Added a 1 GB cap on tool results saved to disk; the in-conversation preview says wh"
+    },
+    {
+      "id": "s-e20ac68d83",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "publishedAt": "2026-09-08T20:16:09.000Z",
+      "summary": "OpenAI announced ChatGPT Images 2.5 on Tuesday and is adding a new way to tell ChatGPT what you want it to make an image of: by drawing a doodle. With a new feature called Sketch, you can just draw something right inside ChatGPT and then tell ChatGPT how you want it to make an image […]"
+    },
+    {
+      "id": "s-726d56896e",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Meta bets on AI agent Muse to catch up in AI race",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+      "publishedAt": "2026-09-08T19:00:00.000Z",
+      "summary": "Meta is making another push to bring artificial intelligence to the masses with Muse, a personal assistant it says can put AI in the hands of virtually anyone. The product is the latest step in a multi-billion-dollar strategy overhaul designed to revitalize the company's ailing position in the AI race and help it catch up […]"
     },
     {
       "id": "s-7953feb2ca",
@@ -1039,6 +1021,15 @@
       "summary": "In reinforcement learning with verifiable rewards (RLVR) trained with group relative policy optimization (GRPO), the KL-free reward-advantage term studied here depends on within-group reward variation. If all rollouts in a group are correct or all are wrong, their group-relative advantages are identically zero; these zero-advantage silent groups provide no reward-advantage gradient, yet uniform sa"
     },
     {
+      "id": "s-c1967aee05",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "AI power users claim Anthropic duped them with subscriptions, and they’re taking it to court",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+      "publishedAt": "2026-09-08T17:27:31.000Z",
+      "summary": "Anthropic says power users are key to its business - it's prioritized them even when it means cutting off other popular applications, like OpenClaw. But some of these same customers say Anthropic misled them into believing they'd get more out of a top-tier pricing subscription than they did. In an expanded class action lawsuit filed […]"
+    },
+    {
       "id": "s-167bce5d47",
       "source": "OpenAI",
       "sourceType": "vendor",
@@ -1082,6 +1073,15 @@
       "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
       "publishedAt": "2026-09-08T14:23:07.000Z",
       "summary": ""
+    },
+    {
+      "id": "s-235e7b1262",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Google’s Atlas of the human genome could pave the way for new treatments",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+      "publishedAt": "2026-09-08T14:00:00.000Z",
+      "summary": "Google DeepMind has unveiled an AI tool that its scientists claim could help unravel the mysteries of the human genome and transform our understanding of biology, accelerating scientific research and ultimately paving the way for new treatments for diseases. The platform, called AlphaGenome Atlas, contains a \"predictive map of every possible DNA letter change in […]"
     },
     {
       "id": "s-aaada63e99",
