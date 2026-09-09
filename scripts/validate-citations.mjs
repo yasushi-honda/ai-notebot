@@ -40,16 +40,23 @@ const validIds = new Set((archive.items ?? []).map((i) => i.id));
 const bodyStart = markdown.indexOf('\n---\n', 4);
 const body = bodyStart >= 0 ? markdown.slice(bodyStart + 5) : markdown;
 
+// 脚注定義行（[^s-xxx]: 出典タイトル ...）を除いた「地の文」だけを引用抽出の対象にする。
+// 定義行の先頭も [^s-xxx] という形をしているため、除外しないと「本文中で一度も
+// 引用されていないが定義だけ存在するid」を誤って「引用済み」と扱ってしまい、
+// どの主張も裏付けていない出典が紛れ込む（codex reviewで指摘・修正）。
+const definitionLinePattern = /^\[\^s-[0-9a-f]+\]:.*$/gm;
+const prose = body.replace(definitionLinePattern, '');
+
 const footnotePattern = /\[\^(s-[0-9a-f]+)\]/g;
 const cited = new Set();
-for (const m of body.matchAll(footnotePattern)) cited.add(m[1]);
+for (const m of prose.matchAll(footnotePattern)) cited.add(m[1]);
 
 // 不正な脚注表記を検出する（例: [^s-aaa, s-bbb] のようにカンマ区切りで複数idを
 // 1つの角括弧に詰め込んだもの。LLMがまれにこの形式で出力し、GFM footnote構文として
 // 認識されず角括弧がそのまま画面に表示されてしまうため、正しい形式のみ許容する）。
 // "[^" で始まり "]" で終わる角括弧のうち、footnotePattern に完全一致しないものを拾う。
 const bracketPattern = /\[\^[^\]]*\]/g;
-const malformed = [...body.matchAll(bracketPattern)]
+const malformed = [...prose.matchAll(bracketPattern)]
   .map((m) => m[0])
   .filter((s) => !/^\[\^s-[0-9a-f]+\]$/.test(s));
 
@@ -58,7 +65,7 @@ const unresolved = [...cited].filter((id) => !validIds.has(id));
 // 裏取り率: 段落（空行区切り、見出し・出典セクション除く）のうち脚注を含む割合
 // (.test() は /g フラグ付きだと lastIndex が状態を持つため、判定専用に非グローバル正規表現を使う)
 const hasFootnote = /\[\^s-[0-9a-f]+\]/;
-const paragraphs = body
+const paragraphs = prose
   .split(/\n{2,}/)
   .map((p) => p.trim())
   .filter((p) => p && !p.startsWith('#') && !p.startsWith('[^'));

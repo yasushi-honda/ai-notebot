@@ -100,6 +100,27 @@ test('validate-citations: 一部の段落にのみ脚注がある記事（裏取
   }
 });
 
+test('validate-citations: 本文中で一度も引用されず脚注定義だけが存在する記事は exit 1', async () => {
+  await setup();
+  try {
+    // 本文（地の文）は一切なく、脚注定義行だけが存在するケース。
+    // 定義行の先頭も [^s-xxx] の形をしているため、定義行を除外しないと
+    // 「引用済み」と誤認識されてしまう（実際はどの主張も裏付けていない）。
+    const md = `---\ntitle: test\n---\n\n## 見出し\n\n[^s-aaaaaaaaaa]: A\n`;
+    await writeFile(postPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE]),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /脚注が1件もありません/);
+        return true;
+      },
+    );
+  } finally {
+    await teardown();
+  }
+});
+
 test('validate-citations: 脚注が1件もない記事は exit 1', async () => {
   await setup();
   try {
