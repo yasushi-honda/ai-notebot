@@ -33,13 +33,16 @@ function placeholderSvg(label) {
 
 async function generateOne(prompt, aspectRatio, outPathNoExt, label) {
   try {
-    const { bytes, mimeType } = await generateImage({ prompt, aspectRatio });
+    const { bytes } = await generateImage({ prompt, aspectRatio });
     if (bytes.length > MAX_BYTES) {
       console.warn(`⚠ ${label}: ${bytes.length}バイトでサイズ上限(${MAX_BYTES})を超過。プレースホルダに切替`);
       throw new Error('oversize');
     }
-    const ext = mimeType.includes('png') ? 'png' : 'jpg';
-    const outPath = `${outPathNoExt}.${ext}`;
+    // site側のテンプレートは <name>.jpg → (404時) <name>.svg のみを参照するため、
+    // 実際に返ってきたmimeTypeに関わらず常に .jpg で保存する（.png保存だと site が
+    // 参照しないURLになり永久に壊れた画像になる。codex reviewで指摘・修正。
+    // 実測ではVertex AIは一貫してimage/jpegを返している）
+    const outPath = `${outPathNoExt}.jpg`;
     await writeFile(outPath, bytes);
     console.log(`✓ ${label}: ${outPath} (${bytes.length.toLocaleString()} bytes)`);
     return outPath;

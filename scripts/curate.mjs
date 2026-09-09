@@ -180,13 +180,17 @@ async function main() {
   const footnotes = buildFootnoteDefs(usedIds, itemsById);
   const totalChars = bodyParts.join('').replace(/[#\s]/g, '').length;
 
+  // frontmatter の値は LLM 出力（テーマ見出し等）を含むため、二重引用符等が混じっても
+  // 壊れないよう必ず JSON.stringify でエスケープする（手動でのクォート組み立てはしない。
+  // codex reviewで指摘・修正: LLMがタイトルに " を含めると手動組み立てのYAML風frontmatterが壊れ、
+  // Astroビルドが失敗しうる）。
   const frontmatter = [
     '---',
-    `title: "${dateArg} のAIトレンド"`,
-    `date: "${dateArg}"`,
-    `description: "${themes.map((t) => t.title).join(' / ')}"`,
-    `tags: [${slugifyTags(themes).map((t) => `"${t}"`).join(', ')}]`,
-    `sourceIds: [${[...usedIds].map((id) => `"${id}"`).join(', ')}]`,
+    `title: ${JSON.stringify(`${dateArg} のAIトレンド`)}`,
+    `date: ${JSON.stringify(dateArg)}`,
+    `description: ${JSON.stringify(themes.map((t) => t.title).join(' / '))}`,
+    `tags: [${slugifyTags(themes).map((t) => JSON.stringify(t)).join(', ')}]`,
+    `sourceIds: [${[...usedIds].map((id) => JSON.stringify(id)).join(', ')}]`,
     `heroImagePrompt: ${JSON.stringify(
       `Flat-design tech blog hero illustration summarizing today's AI trends: ${themes.map((t) => t.angle).join('; ')}. Clean, modern, blue and white palette, 16:9.`,
     )}`,

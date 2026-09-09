@@ -82,6 +82,24 @@ test('validate-citations: カンマ区切りで複数idを1つの角括弧に詰
   }
 });
 
+test('validate-citations: 一部の段落にのみ脚注がある記事（裏取り率100%未満）は exit 1', async () => {
+  await setup();
+  try {
+    const md = `---\ntitle: test\n---\n\n## 見出し\n\n脚注のある段落です[^s-aaaaaaaaaa]。\n\n脚注のない段落です。出典のない主張がここに入っています。\n\n[^s-aaaaaaaaaa]: A\n`;
+    await writeFile(postPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE]),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /裏取り率が100%未満です/);
+        return true;
+      },
+    );
+  } finally {
+    await teardown();
+  }
+});
+
 test('validate-citations: 脚注が1件もない記事は exit 1', async () => {
   await setup();
   try {

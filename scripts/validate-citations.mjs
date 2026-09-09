@@ -85,5 +85,15 @@ if (cited.size === 0) {
   process.exit(1);
 }
 
+// 裏取り率100%を必須とする: 出典のある段落と無い段落が混在すると、
+// unresolved=0 かつ cited.size>0 の条件だけでは検出できず、出典のない主張が
+// そのまま公開されてしまう（codex reviewで指摘・修正）。
+if (citedParagraphs.length < paragraphs.length) {
+  const uncited = paragraphs.filter((p) => !hasFootnote.test(p));
+  console.error(`裏取り率が100%未満です（${backingRate}%）。脚注のない段落が${uncited.length}件あります。`);
+  console.error(`未引用の段落（先頭80字）: ${uncited.map((p) => p.slice(0, 80)).join(' | ')}`);
+  process.exit(1);
+}
+
 console.log(`unresolved: 0 / total: ${cited.size}`);
 process.exit(0);
