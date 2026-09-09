@@ -4,7 +4,7 @@
  * RSS/Atom（ベンダー公式・技術メディア・日本語）＋ HN/Reddit/arXiv/GitHub の API ソースを束ね、
  * 正規化・重複排除・鮮度フィルタをかけて data/raw/YYYY-MM-DD.json に書き出す。
  *
- * 使い方: node scripts/collect.mjs [YYYY-MM-DD]（省略時は今日の日付・UTC基準）
+ * 使い方: node scripts/collect.mjs [YYYY-MM-DD]（省略時は今日の日付・JST基準）
  *
  * フィードが1つ落ちていても他は生かす（Promise.allSettled）。
  * 成功ソース数が MIN_SUCCESS_SOURCES を下回ったら exit 1（古い/薄いアーカイブを書かない）。
@@ -18,6 +18,7 @@ import { createHash } from 'node:crypto';
 import { RSS_FEEDS } from './lib/feeds.mjs';
 import { fetchFeed } from './lib/rss.mjs';
 import { fetchHackerNews, fetchReddit, fetchArxiv, fetchGitHubTrending } from './lib/collectors.mjs';
+import { todayJst } from './lib/date.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_DIR = join(ROOT, 'data', 'raw');
@@ -98,7 +99,7 @@ async function collectAll() {
 
 async function main() {
   const dateArg = process.argv[2];
-  const targetDate = dateArg ? new Date(`${dateArg}T00:00:00Z`) : new Date(new Date().toISOString().slice(0, 10) + 'T00:00:00Z');
+  const targetDate = new Date(`${dateArg || todayJst()}T00:00:00Z`);
   const dateStr = targetDate.toISOString().slice(0, 10);
 
   console.log(`収集対象日: ${dateStr}`);

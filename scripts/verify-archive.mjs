@@ -7,12 +7,13 @@
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { todayJst } from './lib/date.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const MIN_SOURCES = 15;
 const MIN_ITEMS = 50;
 
-const dateArg = process.argv[2] ?? new Date().toISOString().slice(0, 10);
+const dateArg = process.argv[2] ?? todayJst();
 const path = join(ROOT, 'data', 'raw', `${dateArg}.json`);
 
 let data;

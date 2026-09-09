@@ -17,6 +17,7 @@ import { dirname, join } from 'node:path';
 
 import { parseFrontmatter } from './lib/frontmatter.mjs';
 import { generateImage } from './lib/vertex.mjs';
+import { todayJst } from './lib/date.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const POSTS_DIR = join(ROOT, 'site', 'src', 'content', 'posts');
@@ -55,7 +56,7 @@ async function generateOne(prompt, aspectRatio, outPathNoExt, label) {
 }
 
 async function main() {
-  const dateArg = process.argv[2] ?? new Date().toISOString().slice(0, 10);
+  const dateArg = process.argv[2] ?? todayJst();
   const postPath = join(POSTS_DIR, `${dateArg}.md`);
 
   let markdown;

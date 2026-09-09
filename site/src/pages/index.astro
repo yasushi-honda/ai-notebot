@@ -22,7 +22,12 @@ function heroSrc(date: string) {
       href={url(`posts/${latest.data.date}/`)}
       class="block mb-10 rounded-xl overflow-hidden border border-slate-200 bg-white hover:shadow-lg transition-shadow no-underline"
     >
-      <img src={heroSrc(latest.data.date)} alt={latest.data.title} class="w-full aspect-video object-cover" />
+      <img
+        src={heroSrc(latest.data.date)}
+        alt={latest.data.title}
+        class="w-full aspect-video object-cover"
+        onerror="this.onerror=null;this.src=this.src.replace('.jpg','.svg')"
+      />
       <div class="p-5">
         <div class="text-xs text-indigo-600 font-semibold mb-1">最新記事 · {latest.data.date}</div>
         <h2 class="text-xl font-bold text-slate-900 mb-2">{latest.data.title}</h2>

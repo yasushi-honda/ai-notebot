@@ -18,6 +18,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 import { generateText } from './lib/vertex.mjs';
+import { todayJst } from './lib/date.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_DIR = join(ROOT, 'data', 'raw');
@@ -143,7 +144,7 @@ function buildFootnoteDefs(usedIds, itemsById) {
 }
 
 async function main() {
-  const dateArg = process.argv[2] ?? new Date().toISOString().slice(0, 10);
+  const dateArg = process.argv[2] ?? todayJst();
   const rawPath = join(RAW_DIR, `${dateArg}.json`);
 
   let archive;
