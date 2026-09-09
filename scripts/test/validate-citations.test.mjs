@@ -100,6 +100,28 @@ test('validate-citations: 一部の段落にのみ脚注がある記事（裏取
   }
 });
 
+test('validate-citations: 同一段落内に脚注のある文と無い文が混在する記事は exit 1（文単位の検証）', async () => {
+  await setup();
+  try {
+    // 段落全体としては脚注を含むが、1文目には脚注がない（実際にcuratee.mjsが
+    // 生成した記事で発生したパターン: 段落の書き出しの一般論が無出典のまま残る）。
+    // 段落単位の判定では見逃すため、文（句点区切り）単位での検証が必要。
+    const md = `---\ntitle: test\n---\n\n## 見出し\n\n出典のない導入文です。続く具体的な事実です[^s-aaaaaaaaaa]。\n\n[^s-aaaaaaaaaa]: A\n`;
+    await writeFile(postPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE]),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /裏取り率が100%未満です/);
+        assert.match(err.stderr, /出典のない導入文です/);
+        return true;
+      },
+    );
+  } finally {
+    await teardown();
+  }
+});
+
 test('validate-citations: 本文中で一度も引用されず脚注定義だけが存在する記事は exit 1', async () => {
   await setup();
   try {

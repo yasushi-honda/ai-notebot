@@ -62,18 +62,26 @@ const malformed = [...prose.matchAll(bracketPattern)]
 
 const unresolved = [...cited].filter((id) => !validIds.has(id));
 
-// 裏取り率: 段落（空行区切り、見出し・出典セクション除く）のうち脚注を含む割合
+// 裏取り率: 文（句点「。」区切り）のうち脚注を含む割合。
+// 段落単位だと「1つでも脚注があれば段落全体OK」となり、同じ段落内に無出典の文が
+// 混在してもすり抜けてしまう（codex review 3周目で指摘・修正。AGENTS.md の
+// 「全ての主張が出典に紐付く」という主張粒度の要求に合わせ、文単位で検証する）。
 // (.test() は /g フラグ付きだと lastIndex が状態を持つため、判定専用に非グローバル正規表現を使う)
 const hasFootnote = /\[\^s-[0-9a-f]+\]/;
 const paragraphs = prose
   .split(/\n{2,}/)
   .map((p) => p.trim())
   .filter((p) => p && !p.startsWith('#') && !p.startsWith('[^'));
-const citedParagraphs = paragraphs.filter((p) => hasFootnote.test(p));
-const backingRate = paragraphs.length > 0 ? Math.round((citedParagraphs.length / paragraphs.length) * 100) : 0;
+// 句点「。」の直後で分割し、区切り文字自体は直前の文に残す
+const sentences = paragraphs
+  .flatMap((p) => p.split(/(?<=。)/))
+  .map((s) => s.trim())
+  .filter(Boolean);
+const citedSentences = sentences.filter((s) => hasFootnote.test(s));
+const backingRate = sentences.length > 0 ? Math.round((citedSentences.length / sentences.length) * 100) : 0;
 
 console.log(`total: ${cited.size} / unresolved: ${unresolved.length}`);
-console.log(`裏取り率: ${backingRate}% (${citedParagraphs.length}/${paragraphs.length} 段落に脚注あり)`);
+console.log(`裏取り率: ${backingRate}% (${citedSentences.length}/${sentences.length} 文に脚注あり)`);
 
 if (malformed.length > 0) {
   console.error(`malformed footnotes: ${malformed.join(', ')}`);
@@ -92,13 +100,14 @@ if (cited.size === 0) {
   process.exit(1);
 }
 
-// 裏取り率100%を必須とする: 出典のある段落と無い段落が混在すると、
-// unresolved=0 かつ cited.size>0 の条件だけでは検出できず、出典のない主張が
-// そのまま公開されてしまう（codex reviewで指摘・修正）。
-if (citedParagraphs.length < paragraphs.length) {
-  const uncited = paragraphs.filter((p) => !hasFootnote.test(p));
-  console.error(`裏取り率が100%未満です（${backingRate}%）。脚注のない段落が${uncited.length}件あります。`);
-  console.error(`未引用の段落（先頭80字）: ${uncited.map((p) => p.slice(0, 80)).join(' | ')}`);
+// 裏取り率100%を必須とする（文単位）: 段落単位の判定だと同じ段落内に無出典の文が
+// 混在してもすり抜けるため、句点区切りの文ごとに脚注の有無を検証する
+// （codex reviewで指摘・修正。AGENTS.mdの「全ての主張が出典に紐付く」という
+// 主張粒度の要求に合わせる）。
+if (citedSentences.length < sentences.length) {
+  const uncited = sentences.filter((s) => !hasFootnote.test(s));
+  console.error(`裏取り率が100%未満です（${backingRate}%）。脚注のない文が${uncited.length}件あります。`);
+  console.error(`未引用の文（先頭80字）: ${uncited.map((s) => s.slice(0, 80)).join(' | ')}`);
   process.exit(1);
 }
 
