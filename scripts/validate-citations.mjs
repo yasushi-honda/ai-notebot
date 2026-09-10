@@ -73,9 +73,13 @@ const paragraphs = prose
   .split(/\n{2,}/)
   .map((p) => p.trim())
   .filter((p) => p && !p.startsWith('#') && !p.startsWith('[^'));
-// 句点「。」の直後で分割し、区切り文字自体は直前の文に残す
+// 文末記号（。！？と、空白/文末が後続する半角 . ! ?）の直後で分割し、
+// 区切り文字自体は直前の文に残す。句点「。」のみだと「！」「？」で終わる文や
+// 英数字混じりの文が次の文と結合してしまい、結合先に脚注があれば無出典文を
+// 見逃してしまう（codex review 5周目で指摘・修正）。
+// 半角 . は小数点・略語との衝突を避けるため、直後が空白または文末の場合のみ区切る。
 const sentences = paragraphs
-  .flatMap((p) => p.split(/(?<=。)/))
+  .flatMap((p) => p.split(/(?<=[。！？])|(?<=[.!?])(?=\s|$)/))
   .map((s) => s.trim())
   .filter(Boolean);
 const citedSentences = sentences.filter((s) => hasFootnote.test(s));

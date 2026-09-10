@@ -122,6 +122,39 @@ test('validate-citations: 同一段落内に脚注のある文と無い文が混
   }
 });
 
+test('validate-citations: 「！」で終わる無出典文が「。」で終わる有出典文と結合されず検出される', async () => {
+  await setup();
+  try {
+    // 「！」で終わる文の直後に脚注付きの文が続くケース。句点「。」のみで分割すると
+    // 両者が1つの「文」として結合され、後半の脚注に引きずられて見逃してしまう。
+    const md = `---\ntitle: test\n---\n\n## 見出し\n\n驚きの発表です！詳細はこちらです[^s-aaaaaaaaaa]。\n\n[^s-aaaaaaaaaa]: A\n`;
+    await writeFile(postPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE]),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /裏取り率が100%未満です/);
+        assert.match(err.stderr, /驚きの発表です！/);
+        return true;
+      },
+    );
+  } finally {
+    await teardown();
+  }
+});
+
+test('validate-citations: 小数点を含む文は誤分割されない（0.5等が独立文扱いにならない）', async () => {
+  await setup();
+  try {
+    const md = `---\ntitle: test\n---\n\n## 見出し\n\n削減率は0.5倍になりました[^s-aaaaaaaaaa]。\n\n[^s-aaaaaaaaaa]: A\n`;
+    await writeFile(postPath, md, 'utf8');
+    const { stdout } = await execFileAsync('node', [SCRIPT, FIXTURE_DATE]);
+    assert.match(stdout, /unresolved: 0 \/ total: 1/);
+  } finally {
+    await teardown();
+  }
+});
+
 test('validate-citations: 本文中で一度も引用されず脚注定義だけが存在する記事は exit 1', async () => {
   await setup();
   try {
