@@ -13,6 +13,17 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+// チャット共有用テキスト（LLM不使用・機械組み立て）。テーマ見出しの箇条書き＋詳細ページへの
+// 絶対URLのみで構成し、新たなAI生成テキストは追加しない（既存の検証済みデータの再利用）。
+const canonicalUrl = new URL(url(`posts/${post.data.date}/`), Astro.site).href;
+const shareText = [
+  `🤖 ${post.data.title}`,
+  '',
+  ...post.data.themeTitles.map((t) => `・${t}`),
+  '',
+  `続きを読む → ${canonicalUrl}`,
+].join('\n');
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
@@ -43,6 +54,21 @@ const { Content } = await render(post);
     ))}
   </div>
 
+  <button
+    id="copy-share-btn"
+    type="button"
+    class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 mb-8 rounded-full
+      bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition-colors cursor-pointer
+      border-0"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+      <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+    </svg>
+    <span>シェア用にコピー</span>
+  </button>
+
   <img
     src={url(`images/${post.data.date}/overview.svg`)}
     alt="今日のトピック一覧"
@@ -69,3 +95,25 @@ const { Content } = await render(post);
     この記事の出典 {post.data.sourceIds.length} 件はすべて、収集日のアーカイブに実在するエントリに解決することを機械検証済みです。
   </p>
 </BaseLayout>
+
+<script define:vars={{ shareText }}>
+  const btn = document.getElementById('copy-share-btn');
+  const label = btn?.querySelector('span');
+  if (btn && label) {
+    const defaultLabel = label.textContent;
+    let resetTimer;
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(shareText);
+        label.textContent = 'コピーしました ✓';
+      } catch {
+        // navigator.clipboard が使えない環境（非HTTPS等）向けの簡易フォールバック
+        window.prompt('コピーできませんでした。以下を選択してコピーしてください:', shareText);
+      }
+      clearTimeout(resetTimer);
+      resetTimer = setTimeout(() => {
+        label.textContent = defaultLabel;
+      }, 2000);
+    });
+  }
+</script>

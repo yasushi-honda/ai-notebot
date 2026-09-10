@@ -13,6 +13,9 @@ const posts = defineCollection({
     date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     description: z.string().min(1),
     tags: z.array(z.string()).default([]),
+    /** 加工前のテーマ見出し（tagsは文字数制限等で欠けることがあるため、
+     *  シェアテキスト等で元の見出しが必要な用途向けに別途保持） */
+    themeTitles: z.array(z.string()).default([]),
     /** 本文の脚注が引用する出典 id（data/raw/<date>.json の id と対応） */
     sourceIds: z.array(z.string()).default([]),
     heroImagePrompt: z.string().optional(),

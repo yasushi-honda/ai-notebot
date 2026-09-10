@@ -15,7 +15,7 @@
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
 
 import { generateText } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
@@ -58,7 +58,8 @@ const STAGE_B_SCHEMA = {
       type: 'string',
       description:
         'このテーマの本文（Markdown、600〜900字）。読みやすさのため2〜4個の短い段落に分け、' +
-        '段落間は空行(\\n\\n)で区切ること。事実を述べる文には必ず文末に [^s-<id>] 形式の脚注を付け、' +
+        '段落と段落の間には実際の空行を1行はさむこと（文字列としてバックスラッシュエヌを書くのではなく、' +
+        '本物の改行を2つ連続で入れる）。事実を述べる文には必ず文末に [^s-<id>] 形式の脚注を付け、' +
         '与えられたid以外は絶対に使わないこと。見出し(#)は含めず本文のみ。',
     },
     imagePromptEn: {
@@ -68,6 +69,16 @@ const STAGE_B_SCHEMA = {
   },
   required: ['bodyMarkdown', 'imagePromptEn'],
 };
+
+/**
+ * 防御的処理: LLMがまれに実際の改行ではなく文字列としての "\n"（バックスラッシュ+n）を
+ * そのまま出力することがあり、本番記事にリテラル文字として表示されるバグが実際に発生した
+ * （2026-09-10、Apple関連セクションで発生・修正）。プロンプト遵守に頼らず、
+ * 残っていれば実際の改行に正規化する。
+ */
+export function normalizeLiteralNewlines(text) {
+  return text.replace(/\\n/g, '\n');
+}
 
 function formatCandidateList(items) {
   return items
@@ -130,7 +141,9 @@ async function runStageB(theme, itemsById) {
   ].join('\n');
 
   const text = await generateText({ prompt, responseSchema: STAGE_B_SCHEMA, temperature: 0.4 });
-  return JSON.parse(text);
+  const result = JSON.parse(text);
+  result.bodyMarkdown = normalizeLiteralNewlines(result.bodyMarkdown);
+  return result;
 }
 
 function slugifyTags(themes) {
@@ -223,6 +236,10 @@ async function main() {
     `date: ${JSON.stringify(dateArg)}`,
     `description: ${JSON.stringify(themes.map((t) => t.title).join(' / '))}`,
     `tags: [${slugifyTags(themes).map((t) => JSON.stringify(t)).join(', ')}]`,
+    // tags は文字数制限・記号除去で見出しが欠けることがあるため、シェア用テキスト等
+    // 元の見出しをそのまま必要とする用途向けに、加工しないテーマ見出しの配列を別途保持する
+    `themeTitles:`,
+    ...themes.map((t) => `  - ${JSON.stringify(t.title)}`),
     `sourceIds: [${[...usedIds].map((id) => JSON.stringify(id)).join(', ')}]`,
     `heroImagePrompt: ${JSON.stringify(
       `Flat-design tech blog hero illustration summarizing today's AI trends: ${themes.map((t) => t.angle).join('; ')}. Clean, modern, blue and white palette, 16:9.`,
@@ -244,7 +261,15 @@ async function main() {
   console.log(`site/src/content/posts/${dateArg}.md を書き出しました（本文約${totalChars}字 / 脚注${usedIds.size}件）`);
 }
 
-main().catch((err) => {
-  console.error('記事生成が失敗しました:', err);
-  process.exit(1);
-});
+// `node scripts/curate.mjs` として直接実行された場合のみ main() を走らせる。
+// 単体テストが normalizeLiteralNewlines 等を import する際に、意図せず
+// main()（Vertex AI呼び出しやファイル書き込みを伴う）が実行されないようにするため。
+// import.meta.url は日本語パス（個人 等）を%エンコードするが process.argv[1] は
+// 生のUTF-8かつ相対パスのこともあるため、単純な文字列比較ではなく
+// fileURLToPath + resolve で正規化してから比較する。
+if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
+  main().catch((err) => {
+    console.error('記事生成が失敗しました:', err);
+    process.exit(1);
+  });
+}
