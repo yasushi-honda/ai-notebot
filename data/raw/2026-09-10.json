@@ -1,115 +1,151 @@
 {
   "date": "2026-09-10",
-  "collectedAt": "2026-09-10T04:10:23.834Z",
+  "collectedAt": "2026-09-10T04:49:24.877Z",
   "sourceSuccessCount": 18,
   "items": [
     {
-      "id": "s-b01295803d",
+      "id": "s-930dd1342c",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "NousResearch/hermes-agent: The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "publishedAt": "2026-09-10T04:49:10.000Z",
+      "summary": "★243918 The agent that grows with you"
+    },
+    {
+      "id": "s-1c9d47a979",
       "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "debpalash/VoiceStudio: VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "publishedAt": "2026-09-10T04:48:58.000Z",
+      "summary": "★21922 VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages."
+    },
+    {
+      "id": "s-b17fe165b2",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "cocoindex-io/cocoindex: Incremental engine for long horizon agents 🌟 Star if you like it!",
+      "url": "https://github.com/cocoindex-io/cocoindex",
+      "publishedAt": "2026-09-10T04:48:34.000Z",
+      "summary": "★11517 Incremental engine for long horizon agents 🌟 Star if you like it!"
+    },
+    {
+      "id": "s-ae2780cb7e",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "stacksjs/stacks: Modern, performant, optimized for DX/AX. Develop powerful apps, clouds & framework-agnostic libraries—faster.",
+      "url": "https://github.com/stacksjs/stacks",
+      "publishedAt": "2026-09-10T04:48:26.000Z",
+      "summary": "★626 Modern, performant, optimized for DX/AX. Develop powerful apps, clouds & framework-agnostic libraries—faster."
+    },
+    {
+      "id": "s-b01295803d",
+      "source": "GitHub Trending (llm)",
       "sourceType": "github",
       "title": "unslothai/unsloth: Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
       "url": "https://github.com/unslothai/unsloth",
-      "publishedAt": "2026-09-10T04:10:16.000Z",
-      "summary": "★75961 Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more."
+      "publishedAt": "2026-09-10T04:48:15.000Z",
+      "summary": "★75962 Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more."
     },
     {
-      "id": "s-da26989850",
+      "id": "s-b01231565a",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "kirodotdev/KiroCrew: A persistent workspace for development work that self-improves and continues beyond one session.",
-      "url": "https://github.com/kirodotdev/KiroCrew",
-      "publishedAt": "2026-09-10T04:09:50.000Z",
-      "summary": "★3805 A persistent workspace for development work that self-improves and continues beyond one session."
+      "title": "777genius/agent-teams-ai: You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode/Cursor/Grok/GitHub Copilot/Kiro/Z.AI/MiniMax/Kimi(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams",
+      "url": "https://github.com/777genius/agent-teams-ai",
+      "publishedAt": "2026-09-10T04:47:56.000Z",
+      "summary": "★2094 You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode/Cursor/Grok/GitHub Copilot/Kiro/Z.AI/MiniMax/Kimi(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams"
     },
     {
-      "id": "s-705b802409",
+      "id": "s-8430fbe27c",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "spinabot/brigade: Brigade — Your personal intelligence, built enterprise-grade",
-      "url": "https://github.com/spinabot/brigade",
-      "publishedAt": "2026-09-10T04:09:20.000Z",
-      "summary": "★3520 Brigade — Your personal intelligence, built enterprise-grade"
+      "title": "reyamira/models: TUI and CLI for browsing models.dev, benchmarks, coding agents, and statuses for AI providers.",
+      "url": "https://github.com/reyamira/models",
+      "publishedAt": "2026-09-10T04:47:55.000Z",
+      "summary": "★505 TUI and CLI for browsing models.dev, benchmarks, coding agents, and statuses for AI providers."
     },
     {
-      "id": "s-c44301835c",
+      "id": "s-7c213e5a75",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "deeplethe/utopia: World's first open-source enterprise world model.",
-      "url": "https://github.com/deeplethe/utopia",
-      "publishedAt": "2026-09-10T04:09:12.000Z",
-      "summary": "★6392 World's first open-source enterprise world model."
+      "title": "makecindy/cindy: Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "url": "https://github.com/makecindy/cindy",
+      "publishedAt": "2026-09-10T04:47:46.000Z",
+      "summary": "★2492 Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。"
     },
     {
-      "id": "s-fdb5c4e723",
+      "id": "s-d41117b8d3",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "zhayujie/CowAgent: Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)",
-      "url": "https://github.com/zhayujie/CowAgent",
-      "publishedAt": "2026-09-10T04:09:10.000Z",
-      "summary": "★46864 Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)"
+      "title": "t8y2/dbx: 20 MB lightweight cross-platform database client for 90+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 90+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP Server。",
+      "url": "https://github.com/t8y2/dbx",
+      "publishedAt": "2026-09-10T04:46:56.000Z",
+      "summary": "★18741 20 MB lightweight cross-platform database client for 90+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 90+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP Server。"
     },
     {
-      "id": "s-705694bbd6",
+      "id": "s-5e1cd449f5",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "yc-software/qm: Multiplayer agent harness for work.",
-      "url": "https://github.com/yc-software/qm",
-      "publishedAt": "2026-09-10T04:08:47.000Z",
-      "summary": "★14783 Multiplayer agent harness for work."
+      "title": "looplj/axonhub: ⚡️ Open-source AI Gateway — Use any SDK to call 100+ LLMs. Built-in failover, load balancing, cost control & end-to-end tracing.",
+      "url": "https://github.com/looplj/axonhub",
+      "publishedAt": "2026-09-10T04:46:43.000Z",
+      "summary": "★5193 ⚡️ Open-source AI Gateway — Use any SDK to call 100+ LLMs. Built-in failover, load balancing, cost control & end-to-end tracing."
     },
     {
-      "id": "s-6e5ec8cd9b",
+      "id": "s-91280ddebc",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "letta-ai/letta-code: Stateful agents that are like people, with memory, identity, and the ability to learn and adapt",
+      "url": "https://github.com/letta-ai/letta-code",
+      "publishedAt": "2026-09-10T04:46:33.000Z",
+      "summary": "★3250 Stateful agents that are like people, with memory, identity, and the ability to learn and adapt"
+    },
+    {
+      "id": "s-a30369a1d2",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "lidge-jun/opencodex: Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
-      "url": "https://github.com/lidge-jun/opencodex",
-      "publishedAt": "2026-09-10T04:08:39.000Z",
-      "summary": "★14111 Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code"
+      "title": "jundot/omlx: LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
+      "url": "https://github.com/jundot/omlx",
+      "publishedAt": "2026-09-10T04:46:10.000Z",
+      "summary": "★21568 LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar"
     },
     {
-      "id": "s-ef635d8120",
+      "id": "s-cc6ea79dc2",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "apache/doris: Apache Doris is a real-time analytics and hybrid search database for AI agents.",
-      "url": "https://github.com/apache/doris",
-      "publishedAt": "2026-09-10T04:08:14.000Z",
-      "summary": "★15877 Apache Doris is a real-time analytics and hybrid search database for AI agents."
+      "title": "electerm/electerm: 📻Free and open-sourced terminal/ssh/sftp/ftp/telnet/serialport/RDP/VNC/Spice client(Linux, Mac, Windows, Android, HarmonyOS, iOS)",
+      "url": "https://github.com/electerm/electerm",
+      "publishedAt": "2026-09-10T04:45:57.000Z",
+      "summary": "★15076 📻Free and open-sourced terminal/ssh/sftp/ftp/telnet/serialport/RDP/VNC/Spice client(Linux, Mac, Windows, Android, HarmonyOS, iOS)"
     },
     {
-      "id": "s-a748c2bf63",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "tenstorrent/tt-metal: :metal: TT-NN operator library, and TT-Metalium low level kernel programming model.",
-      "url": "https://github.com/tenstorrent/tt-metal",
-      "publishedAt": "2026-09-10T04:07:24.000Z",
-      "summary": "★1665 :metal: TT-NN operator library, and TT-Metalium low level kernel programming model."
-    },
-    {
-      "id": "s-9a75aafc0f",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "headroomlabs-ai/headroom: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-      "url": "https://github.com/headroomlabs-ai/headroom",
-      "publishedAt": "2026-09-10T04:07:14.000Z",
-      "summary": "★71133 Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server."
-    },
-    {
-      "id": "s-94425a13e4",
+      "id": "s-9a1c7ae8d3",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "autonomous-ai/autonomous-os: The open-source operating system for robots — install it and your robot comes alive",
-      "url": "https://github.com/autonomous-ai/autonomous-os",
-      "publishedAt": "2026-09-10T04:06:27.000Z",
-      "summary": "★319 The open-source operating system for robots — install it and your robot comes alive"
+      "title": "Sma1lboy/rove: Rove — the agent multiplexer for your terminal. Run coding agents on parallel tasks with isolated worktrees and persistent sessions.",
+      "url": "https://github.com/Sma1lboy/rove",
+      "publishedAt": "2026-09-10T04:45:38.000Z",
+      "summary": "★122 Rove — the agent multiplexer for your terminal. Run coding agents on parallel tasks with isolated worktrees and persistent sessions."
     },
     {
-      "id": "s-7af96ec5b0",
-      "source": "GitHub Trending (ai)",
+      "id": "s-eec4c21061",
+      "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "cognizant-ai-lab/neuro-san-studio: A playground for neuro-san",
-      "url": "https://github.com/cognizant-ai-lab/neuro-san-studio",
-      "publishedAt": "2026-09-10T04:06:05.000Z",
-      "summary": "★1070 A playground for neuro-san"
+      "title": "panxunying/ai-coding-welfare: AI Coding 福利站导航：免费白嫖 Claude Code / Codex 的中转站与公益站合集，含额度、模型、价格自动更新与一键配置脚本",
+      "url": "https://github.com/panxunying/ai-coding-welfare",
+      "publishedAt": "2026-09-10T04:45:21.000Z",
+      "summary": "★626 AI Coding 福利站导航：免费白嫖 Claude Code / Codex 的中转站与公益站合集，含额度、模型、价格自动更新与一键配置脚本"
+    },
+    {
+      "id": "s-4b71223677",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "jundizhou/easy-stock: A 股行情分析与AI智能投研智能体——easy stock",
+      "url": "https://github.com/jundizhou/easy-stock",
+      "publishedAt": "2026-09-10T04:45:16.000Z",
+      "summary": "★695 A 股行情分析与AI智能投研智能体——easy stock"
     },
     {
       "id": "s-e54ea565c6",
@@ -238,6 +274,15 @@
       "summary": "AI関連企業の従業員が、安全上の懸念を理由に相次いで退職している/Jonathan Raa/NurPhoto/Getty Images （CNN） 「AI（人工知能）を開発している人々は、AIがこの10年の終わりまでに我々全員を殺すかもしれないと本気で信じている」 米AI開発企業アンソロピックに勤務していた研究者のジェイコブ・コクソン氏（27）は8..."
     },
     {
+      "id": "s-4584d09ab7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "新しい事業アイデア、思いつきで探すのをやめた話",
+      "url": "https://zenn.dev/limit_lab_works/articles/demand-first-idea-search",
+      "publishedAt": "2026-09-10T02:23:35.000Z",
+      "summary": "結論から言う。新しい事業アイデアを探すとき、「何を作ったら面白いか」から考え始めるのをやめた。代わりに、すでにお金が動いている場所から逆算して探すようにしている。順番を変えるだけで、アイデアの精度がまったく違ってくる。 「思いつき」から入ると、検証がすべて後回しになる 新しいアイデアを考えるとき、多くの人（自分たちも以前はそうだった）は「こんなものがあったら便利そう」というひらめきから入る。ひらめき自体は悪くない。問題は、そのひらめきに需要があるかどうかを、作り始めた後で確認することになる点だ。 自社でも、ある商品ラインが2ヶ月ほど運用を続けても手応えのない状態が続いている。原因を振..."
+    },
+    {
       "id": "s-1e5c2e53a9",
       "source": "Reddit r/LocalLLaMA",
       "sourceType": "reddit",
@@ -262,7 +307,7 @@
       "title": "A Stupid Idea for AI Alignment We Came with by Looking at Specification Gaming",
       "url": "https://slimemoldtimemold.com/2026/08/05/a-stupid-idea-for-ai-alignment-we-came-up-with-by-looking-at-the-list-of-specification-gaming-behaviours/",
       "publishedAt": "2026-09-10T01:59:51.000Z",
-      "summary": "points=12 comments=8 (Hacker News)"
+      "summary": "points=20 comments=13 (Hacker News)"
     },
     {
       "id": "s-49db83e253",
@@ -283,6 +328,15 @@
       "summary": "IPUSIRON（イプシロン） 1979年福島県相馬市生まれ。相馬市在住。タイトルにある「ミジンコ」は、サインに添えて素早く描けるシンプルなイラストとして採用したものであり、同時に「常に初心を忘れない」という自戒も込めている。2001年に『ハッカーの教科書』（データハウス）を上梓。情報・物理的・人的の観点から総合..."
     },
     {
+      "id": "s-049b479acc",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "どうやらAstraがすごいらしいので、Claude派だったけどハーネスに組み込んでみた",
+      "url": "https://zenn.dev/nekod/articles/fc18d19442b582",
+      "publishedAt": "2026-09-10T01:18:40.000Z",
+      "summary": "はじめに Claude Code を Max プランで使っていて、規範やエージェント定義を積み上げた自分用の環境がだいぶ気に入っていました。 そこに GPT-6 Astra が出て、周りでも Codex の話が増えてきたので、ChatGPT も Pro で契約してみることにしました。 両方使えるようになると、次に困るのが「どっちをメインにするか」です。しばらく両方を触って、いまは Claude を司令塔にして、実装とデザインは Codex に振る形で落ち着きつつあります。 Claude 側の CLAUDE.md や Codex 側の AGENTS.md の中身そのものは書きません。..."
+    },
+    {
       "id": "s-c5da01fb6d",
       "source": "Hacker News",
       "sourceType": "hn",
@@ -298,7 +352,7 @@
       "title": "I'm sorry, you're not going to die from an AI-engineered supervirus",
       "url": "https://blog.genesmindsmachines.com/p/im-sorry-youre-not-going-to-die-from",
       "publishedAt": "2026-09-10T01:02:44.000Z",
-      "summary": "points=66 comments=90 (Hacker News)"
+      "summary": "points=66 comments=92 (Hacker News)"
     },
     {
       "id": "s-dc419f14c2",
@@ -319,6 +373,24 @@
       "summary": "Webページに使用されているHTMLとCSSをスキャンして、古いHTMLとCSSが使用されている箇所を指摘し、それに置き換わるモダンHTMLとCSSを提案してくれるオンラインツールを紹介します。 現在では必要のないプレフィックス付きのプロパティだったり、物理プロパティを論理プロパティにしたり、アスペクト比で実装するための..."
     },
     {
+      "id": "s-0a7eeade60",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "「2026年末までに40%」という予測を調べた日、自分のパイプラインは書けるネタを1本も残していなかった",
+      "url": "https://zenn.dev/hideki_tamae/articles/agent-adoption-forecast-empty-backlog",
+      "publishedAt": "2026-09-10T00:46:19.000Z",
+      "summary": "はじめに 40%。 これが今回の数字です。何の40%かというと、タスク特化型のAIエージェントを組み込んだエンタープライズアプリケーションの割合が、2025年の5%未満から2026年末までに到達するとされている水準です（業界ニュースをまとめたサイトの集計記事による予測で、一次ソースは未確認です。後で自己批判として触れます）。 このシリーズは普段、自分が運用しているZenn/Qiita自動投稿パイプライン自身の障害や設計ミスを、実際に起きたことだけを使って記録してきました。ただ今回、この記事を書く前にいつも通りネタの棚卸しをしたところ、初めて「書ける運用インシデントが1件もない」という..."
+    },
+    {
+      "id": "s-8652a1c94d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "アジャイル開発でも、データ移行を軽視するなかれ",
+      "url": "https://zenn.dev/trust/articles/data-migration-must-not-be-overlooked",
+      "publishedAt": "2026-09-10T00:38:55.000Z",
+      "summary": "1. はじめに ! 本記事は、複数の業務システム開発を通じて得られた一般的な知見を整理したものです。記事内で紹介するケースは、複数の経験や一般的に起こり得る事象をもとに構成した説明用の例であり、実在する特定の顧客、案件、システムを示すものではありません。名称、データ構造、時系列、関係者の役割なども、説明のために抽象化・再構成しています。 こんにちは。株式会社トラスト エンジニアの岩波です。 弊社は地方DX推進を手掛けていますが、特にプロトタイピングやアジャイル開発を通じて、顧客へできるだけ早く価値を届けることを重視しています。早い段階で実際に動かせる環境を提供し、利用者の反応をもと..."
+    },
+    {
       "id": "s-f52b895225",
       "source": "はてなブックマーク (IT)",
       "sourceType": "japanese",
@@ -326,6 +398,15 @@
       "url": "https://note.com/masakazu_urabe/n/n59bcda4ddef2",
       "publishedAt": "2026-09-10T00:37:29.000Z",
       "summary": "Cloudflareの技術は、先進的で独自の哲学を持つにもかかわらず、外部からは十分に理解されていないのが現状です。その理由は、従来の技術カテゴリに当てはまらないことに加え、技術開発のストーリーが十分に語られていないためかもしれません。今回は、創業者の一人、リー・ホロウェイの革新的な設計思想と、それを引き..."
+    },
+    {
+      "id": "s-29c2520b16",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "メモリ64GBのWindowsより、16GBのMacBookが3倍速かった（ローカル音楽生成の実測）",
+      "url": "https://zenn.dev/st0202/articles/acestep-local-hardware",
+      "publishedAt": "2026-09-10T00:30:08.000Z",
+      "summary": "音楽生成モデル ACE-Step 1.5 を、2台のマシンでローカル実行しています。 事前の予想は「メモリが多いほうが速い」でした。外れました。 この記事は、GPUなしでローカル生成を回すときの実測値と、2台運用で踏んだ落とし穴の記録です。 実測: メモリ4倍の負けだった メモリ 1曲あたり 役割 Windowsデスクトップ 64GB ⚠️ 17分（GPU無し） 数を引く・重いモデルの検証 MacBook Pro M4 16GB ★ 5分弱 指示文を詰める本線 同じモデル・同じ設定で3倍以上違いました。 理由ははっきりしています。Apple Silico..."
     },
     {
       "id": "s-65c17ac8fa",
@@ -346,6 +427,24 @@
       "summary": "points=11 comments=6 (Hacker News)"
     },
     {
+      "id": "s-098bb078b7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Fable 5と5.1の違いは、破壊的変更3件とキャッシュ読み1/4に集約される",
+      "url": "https://zenn.dev/ino_h/articles/2026-09-09-claude-fable-5-1-breaking-changes",
+      "publishedAt": "2026-09-10T00:09:39.000Z",
+      "summary": "はじめに 2026年9月1日、AnthropicがClaude Fable 5.1とClaude Mythos 5.1を発表しました。Fable 5が2026年6月9日でしたから、約3か月でのマイナーバージョンアップです。 「5 → 5.1」という刻み方から想像されるのは、ベンチマークが数ポイント伸びた程度の穏当な更新です。実際、コンテキストウィンドウも最大出力もトークナイザも料金の単価も、Fable 5とまったく同じです。移行手順として公式が最初に挙げているのも、モデルIDを claude-fable-5 から claude-fable-5-1 に書き換えることだけです。 ところが..."
+    },
+    {
+      "id": "s-cb66db15e1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "情シス1人で200台のPCキッティングを2週間で終わらせた方法",
+      "url": "https://zenn.dev/solo_joshis/articles/2026-09-10-1200pc2-solo-it-19",
+      "publishedAt": "2026-09-10T00:06:50.000Z",
+      "summary": "「来月から200人増えます」と言われた金曜の夕方 コールセンターの一人情シスをやっていると、事業計画は決まった後に降ってきます。 金曜の18時、営業部門の責任者から立ち話で言われました。「来月アタマから新拠点でオペレーター200人動きます。PCの手配、お願いできますよね」。カレンダーを見ると、初日まで残り23営業日。うち土日を除いた実作業日は、他の運用業務を挟みながらで実質14日ほどでした。 それまでの私のキッティング（PCを業務で使える状態に設定する作業のことです）は、完全に手作業でした。1台あたりの実測は、こんな内訳です。 Windowsの初期セットアップ（言語・キーボード・ア..."
+    },
+    {
       "id": "s-9fe8362235",
       "source": "TechCrunch AI",
       "sourceType": "media",
@@ -362,6 +461,15 @@
       "url": "https://www.engadget.com/2254419/muse-the-band-lost-its-social-media-handles-to-muse-meta-s-new-ai-agent/",
       "publishedAt": "2026-09-09T23:57:29.000Z",
       "summary": "points=174 comments=6 (Hacker News)"
+    },
+    {
+      "id": "s-cf67fb3dc0",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "強いAIとは？人間と同等の知能を持つAI概念",
+      "url": "https://zenn.dev/h888s/articles/genai-strong-ai",
+      "publishedAt": "2026-09-09T23:50:37.000Z",
+      "summary": "「強いAI」という言葉は、生成AIパスポート試験で問われるAIの基礎概念の一つです。AIをめぐる議論の歴史や、現在の技術がどこまで到達しているかを理解するうえで欠かせない用語です。本記事では、定義・意義・関連用語との違いを整理して解説します。 強いAIとは 強いAI（Strong AI）とは、人間と同等もしくはそれ以上の幅広い知的活動を行えるAIの概念です。特定のタスクだけをこなすのではなく、自己意識・推論・問題解決を領域横断的に行える存在として議論されます。 ただし、強いAIは現時点では実現していない概念上の存在です。あくまで「もし実現すれば、人間のように考え判断できるAI」という..."
     },
     {
       "id": "s-63cb8dff04",
@@ -391,42 +499,6 @@
       "summary": "points=11 comments=0 (Hacker News)"
     },
     {
-      "id": "s-64973bce75",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "2026-08-25 今日の技術トレンド",
-      "url": "https://zenn.dev/bambampurin/articles/2026-08-25-tech-daily",
-      "publishedAt": "2026-09-09T22:17:36.000Z",
-      "summary": "! 2026年8月25日現在の技術トレンドでは、大規模言語モデル（LLM）単体の利用から「AIエージェント」や「具身知能（Embodied AI）」の現場実装へとフェーズがシフトしています。富士通や博報堂テクノロジーズによるエージェント構築の発表が相次ぐ一方、ガートナーの警鐘に見られるように導入成果を出すための実務戦略が議論されています。また、OpenAIが独自AI ASIC「Jalapeño」の成果を公表し、Pythonツール開発元のAstralを買収するなど、ハードウェアから開発環境までの垂直統合を加速させています。さらに、SaaS・AI連携で普及するModel Context Pr..."
-    },
-    {
-      "id": "s-d539bb5431",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "医療機器管理×機械学習——「ドメイン知識×コーディング」が効く理由",
-      "url": "https://zenn.dev/taichiendoh/articles/ml-medical-device-management-domain-knowledge",
-      "publishedAt": "2026-09-09T22:16:32.000Z",
-      "summary": "初出: note（機械学習と医療機器管理）。Zenn向けに技術的な背景と現在の視点を補って再構成しました。 臨床工学技士として医療機器管理の現場に立っていた頃、「このデータ、機械学習にかけたらどうなるだろう」と考えたことが何度もあります。今日はその原点——医療機器管理データに機械学習を適用する、というテーマを、当時の技術背景と、いま振り返って見える論点の両方から整理します。 1. なぜ医療機器管理データは機械学習と相性がいいのか 医療分野で機械学習の話をすると、真っ先に個人情報保護の壁にぶつかります。しかし医療機器管理業務で扱うデータの多くは、患者の診療情報ではなく機器そのものの..."
-    },
-    {
-      "id": "s-8a2f13bc8c",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Claude APIで商談準備とフォローを一気通貫にする",
-      "url": "https://zenn.dev/liatris/articles/20260910-sales-prep-followup-ai",
-      "publishedAt": "2026-09-09T22:00:05.000Z",
-      "summary": "! この記事は、Claude Codeを執筆支援に使った \"毎朝1本書く\" 取り組みの一環で書いています。 目的: 自分のAI活用キャッチアップ。仕組み自体も毎月アップデートしていきます 体制: 題材選定・実装・下書きをClaude Codeで補助、Liatrisが動作確認と編集を経て公開判断 方針: Zennのガイドラインに真摯に向き合い、運営から指摘や警告があれば即座に取り組みを停止します 仕組みの全貌はこちらの設計記事にまとめています。 商談前の準備に毎回30分〜1時間かけている、という話をよく聞く。準備の型はだいたい決まっているのに、毎回ゼロから同じ情報収集と整理をやり直し..."
-    },
-    {
-      "id": "s-6e57eb64f3",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "AIで作ったシフト管理アプリが、一度も使われずゴミ箱行きになった話",
-      "url": "https://zenn.dev/i_shu/articles/076e1debfeeebb",
-      "publishedAt": "2026-09-09T21:55:41.000Z",
-      "summary": "IT中級者・上級者の方は、ここから先は絶対に見ないでください 釈迦に説法、河童に水練です。見ても得るものはありません。 ……そう言われると逆に気になりませんか？ それでも読んでしまったあなたは、たぶん僕と同じタイプです。 僕はIT企業（N◯T系）に新卒として入り、まだ半年です。開発など本格的な業務にはまだ触れていません。 そんな中、フラストレーションがたまっていた僕は、ITを使って何か自分で成し遂げたいと思いました。仕事で何もできていない分、自分の価値がほしかったのかもしれません。 そこで、就職前にバイトリーダーとして働いていた元バイト先に、シフト管理アプリをAIフル活用で作って渡し..."
-    },
-    {
       "id": "s-6e51b04520",
       "source": "The Verge AI",
       "sourceType": "media",
@@ -434,24 +506,6 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
       "publishedAt": "2026-09-09T21:42:19.000Z",
       "summary": "Suno's new v6 AI music model is its first made with support from the record industry. Suno's Jack Brody told The Verge that v6 was \"trained from the ground up, with a new set of data that does not include the same data that our previous models were trained on.\" The data includes content licensed […]"
-    },
-    {
-      "id": "s-ca3035a499",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "AIエンジニアのためのコンパイラ理論入門",
-      "url": "https://zenn.dev/tanuki_chan/books/2936b2eb58db4a",
-      "publishedAt": "2026-09-09T21:35:33.000Z",
-      "summary": "ChatGPTやClaudeでアプリを作っていて、「正規表現のパースが崩れる」「プロンプトが長すぎて制御不能」「エージェントが無限ループで暴走する」と頭を抱えたことはありませんか？ その原因は、プロンプトの言葉選びではなく、複雑な情報を「ただの文字列」として扱っていることにあります。 本書は、LLM・コンテキスト・エージェントを古典コンパイラ理論（字句解析・AST・中間表現・型システム・制御フロー）の視点から捉え直す、まったく新しい技術入門書です。SeaCafeの看板娘・天知たぬきと一緒に、職人芸の呪文使いから「構造と実行系を設計するアーキテクト」へステップアップしましょう！"
-    },
-    {
-      "id": "s-2fab70a53d",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Claude CodeとCodexを同じ成果物で相互レビューさせる",
-      "url": "https://zenn.dev/chooser/articles/meta-002-ai-dev-process",
-      "publishedAt": "2026-09-09T21:31:04.000Z",
-      "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。 Claude CodeとCodexを同じ成果物で相互レビューさせる 結論 同じ課題を Claude Code と Codex に別々に作らせ、互いにレビューさせました。 目次案・一次資料の整理・サンプル記事という同じ成果物を、2つのAIに独立で作らせます。そのうえで、事実誤り・追加証拠・機密・文章・媒体適合の5分類で相互にレビューさせました。最後に公開してよいかは人間が決め..."
     },
     {
       "id": "s-2437055705",
@@ -470,15 +524,6 @@
       "url": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
       "publishedAt": "2026-09-09T20:44:43.000Z",
       "summary": "At Wednesday's iPhone Duo launch event, Apple announced a handful of new Siri AI Audio Intelligence features, including Siri Recap, Live Rewind, Sound Recognition, and Music Recognition. Alongside its announcement, Apple released a document laying out how it plans to balance AI \"ambient listening\" and users' privacy. It says the raw audio from the new […]"
-    },
-    {
-      "id": "s-ec3094f741",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "個人開発の告知画像を、1つのコンセプトから3方向に展開する",
-      "url": "https://zenn.dev/viewmax_studio/articles/fdb30235c704c3",
-      "publishedAt": "2026-09-09T19:43:22.000Z",
-      "summary": "個人開発の告知では、機能を説明する文章に加えて、どんな雰囲気のプロダクトなのか伝わる画像があると見せ方を考えやすくなります。今回はViewMax Canvasで架空の香水「AMBER」を制作し、基準画像を使いながら3つのビジュアルに展開しました。 ViewMaxチームによる実例です。文章作成にはAIを活用しています。画像はGPT Image 2.5で実際に生成したもので、AMBERはデモ用の架空の商品です。この記事では実装ではなく、画像をつくる際の指示と選び方を共有します。 先に固定するものを決める 最初の画像では、四角いガラス瓶、黒いキャップ、琥珀色の液体、クリーム色のラベルを指定..."
     },
     {
       "id": "s-9289099b73",
@@ -812,15 +857,6 @@
       "url": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
       "publishedAt": "2026-09-09T13:00:00.000Z",
       "summary": "Cymphony gives security teams a single view of employees, AI agents, and other nonhuman identities, including the systems and sensitive data they can access."
-    },
-    {
-      "id": "s-27f4366a44",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Grok Botを使ってみた話と、1時間で開発組織ができた話",
-      "url": "https://zenn.dev/imaichiyyy/articles/c641c9ac4f4d97",
-      "publishedAt": "2026-09-09T12:57:30.000Z",
-      "summary": "※9/9追記：本記事はあくまで「触ってみた」なので、ちゃんとした技術記事を見るならGrok Bot Specialistさんの記事をみた方が良いです。 ※本記事のサービス仕様は2026年9月7日時点のものです。Grok BotおよびOriginはベータ版のため、今後変更される可能性があります。 ちまたで話題のGrok Botを使ってみました。 Grok Botは、役割を持った複数のBotに仕事を任せられるサービスです。それぞれのBotとチャットで会話できるだけでなく、Bot同士でやり取りしながら仕事を進めてもらうこともできます。 今回、使い始めてからAIだけのプロダクトチームが動..."
     },
     {
       "id": "s-c4157584c3",
