@@ -16,11 +16,15 @@ const { Content } = await render(post);
 
 // チャット共有用テキスト（LLM不使用・機械組み立て）。テーマ見出しの箇条書き＋詳細ページへの
 // 絶対URLのみで構成し、新たなAI生成テキストは追加しない（既存の検証済みデータの再利用）。
+// themeTitles は本機能で新規追加したfrontmatterのため、それ以前に生成済みの記事には
+// 存在しない（スキーマのdefault []になる）。その場合は tags にフォールバックし、
+// 箇条書きが空にならないようにする（codex reviewで指摘・修正）。
 const canonicalUrl = new URL(url(`posts/${post.data.date}/`), Astro.site).href;
+const topics = post.data.themeTitles.length > 0 ? post.data.themeTitles : post.data.tags;
 const shareText = [
   `🤖 ${post.data.title}`,
   '',
-  ...post.data.themeTitles.map((t) => `・${t}`),
+  ...topics.map((t) => `・${t}`),
   '',
   `続きを読む → ${canonicalUrl}`,
 ].join('\n');
