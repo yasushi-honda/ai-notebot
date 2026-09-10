@@ -18,6 +18,7 @@ import { dirname, join } from 'node:path';
 import { parseFrontmatter } from './lib/frontmatter.mjs';
 import { generateImage } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
+import { buildOverviewSvg } from './lib/svg-diagram.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const POSTS_DIR = join(ROOT, 'site', 'src', 'content', 'posts');
@@ -67,7 +68,7 @@ async function main() {
     process.exit(1);
   }
 
-  const { frontmatter } = parseFrontmatter(markdown);
+  const { frontmatter, body } = parseFrontmatter(markdown);
   const heroPrompt = frontmatter.heroImagePrompt;
   const sectionPrompts = (frontmatter.sectionImagePrompts ?? []).slice(0, 2);
 
@@ -83,6 +84,22 @@ async function main() {
   results.push(await generateOne(heroPrompt, '16:9', join(outDir, 'hero'), 'hero'));
   for (let i = 0; i < sectionPrompts.length; i++) {
     results.push(await generateOne(sectionPrompts[i], '4:3', join(outDir, `section-${i + 1}`), `section-${i + 1}`));
+  }
+
+  // 「今日のトピック一覧」SVG図解。本文の ## 見出し（curate.mjs のテーブル見出し
+  // 「今日のトピック」を除く）から決定的に生成する。Vertex AI を呼ばないため
+  // 失敗しようがなく、追加コストもハルシネーションリスクもゼロ。
+  const themeTitles = [...body.matchAll(/^## (.+)$/gm)]
+    .map((m) => m[1].trim())
+    .filter((title) => title !== '今日のトピック');
+  if (themeTitles.length > 0) {
+    const svg = buildOverviewSvg(themeTitles.map((title) => ({ title })));
+    const overviewPath = join(outDir, 'overview.svg');
+    await writeFile(overviewPath, svg, 'utf8');
+    console.log(`✓ overview: ${overviewPath}（${themeTitles.length}テーマ）`);
+    results.push(overviewPath);
+  } else {
+    console.warn('✗ overview: 本文から ## 見出しが見つかりませんでした。図解生成をスキップします。');
   }
 
   console.log(`画像生成完了: ${results.length}件 → ${outDir}`);

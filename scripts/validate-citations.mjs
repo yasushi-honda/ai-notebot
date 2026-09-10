@@ -69,10 +69,39 @@ const unresolved = [...cited].filter((id) => !validIds.has(id));
 // 「全ての主張が出典に紐付く」という主張粒度の要求に合わせ、文単位で検証する）。
 // (.test() は /g フラグ付きだと lastIndex が状態を持つため、判定専用に非グローバル正規表現を使う)
 const hasFootnote = /\[\^s-[0-9a-f]+\]/;
+
+// テーブル行（|始まり）の脚注免除は「今日のトピック」セクション（curate.mjsが
+// 機械生成する唯一のテーブル）だけに限定する。全ての|始まり行を無条件に除外すると、
+// Stage Bは自由形式のMarkdownを返すため、LLMが独自に無出典のテーブルを書いても
+// 検出できない抜け道になってしまう（codex reviewで指摘・修正）。
+const OVERVIEW_HEADING = '今日のトピック';
+const overviewHeadingMatch = prose.match(new RegExp(`^## ${OVERVIEW_HEADING}$`, 'm'));
+let overviewRange = null;
+if (overviewHeadingMatch) {
+  const start = overviewHeadingMatch.index;
+  const nextHeadingMatch = prose.slice(start + overviewHeadingMatch[0].length).match(/^## .+$/m);
+  const end = nextHeadingMatch ? start + overviewHeadingMatch[0].length + nextHeadingMatch.index : prose.length;
+  overviewRange = { start, end };
+}
+
+// paragraphs を prose 中の実位置（インデックス）付きで求める。同一文言の段落が
+// 複数箇所にあっても取り違えないよう、検索開始位置を左から右へ単調に進める。
+let searchFrom = 0;
 const paragraphs = prose
   .split(/\n{2,}/)
-  .map((p) => p.trim())
-  .filter((p) => p && !p.startsWith('#') && !p.startsWith('[^'));
+  .map((raw) => {
+    const text = raw.trim();
+    const index = text ? prose.indexOf(text, searchFrom) : -1;
+    if (index >= 0) searchFrom = index + text.length;
+    return { text, index };
+  })
+  // 見出し(#)・脚注定義(未使用な保険)は「新たな主張」ではなく構造要素のため対象外にする
+  // （docs/adr/adr-2026-09-10-citation-gate-blocks-publish.md 参照）。
+  .filter((p) => p.text && !p.text.startsWith('#') && !p.text.startsWith('[^'))
+  // テーブル行(|)は「今日のトピック」セクション内に限り対象外。それ以外の場所で
+  // LLMが独自にテーブルを書いた場合は通常の段落として脚注を要求する（上記の理由）。
+  .filter((p) => !(p.text.startsWith('|') && overviewRange && p.index >= overviewRange.start && p.index < overviewRange.end))
+  .map((p) => p.text);
 // 文末記号（。！？と、空白/文末が後続する半角 . ! ?）の直後で分割し、
 // 区切り文字自体は直前の文に残す。句点「。」のみだと「！」「？」で終わる文や
 // 英数字混じりの文が次の文と結合してしまい、結合先に脚注があれば無出典文を

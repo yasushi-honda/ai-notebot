@@ -155,6 +155,104 @@ test('validate-citations: 小数点を含む文は誤分割されない（0.5等
   }
 });
 
+test('validate-citations: テーブル行（|始まり）は脚注が無くてもOK（機械生成の構造要素として除外）', async () => {
+  await setup();
+  try {
+    const md = [
+      '---\ntitle: test\n---',
+      '',
+      '## 今日のトピック',
+      '',
+      '| # | テーマ | 出典数 |',
+      '|---|---|---|',
+      '| 1 | サンプル | 2件 |',
+      '',
+      '## 見出し',
+      '',
+      '本文です[^s-aaaaaaaaaa]。',
+      '',
+      '[^s-aaaaaaaaaa]: A',
+      '',
+    ].join('\n');
+    await writeFile(postPath, md, 'utf8');
+    const { stdout } = await execFileAsync('node', [SCRIPT, FIXTURE_DATE]);
+    assert.match(stdout, /unresolved: 0 \/ total: 1/);
+  } finally {
+    await teardown();
+  }
+});
+
+test('validate-citations: 「今日のトピック」セクション外でLLMが独自にテーブルを書いた場合は免除されない', async () => {
+  await setup();
+  try {
+    // LLMのStage Bは自由形式のMarkdownを返すため、万一「今日のトピック」以外の
+    // 場所で無出典のテーブルを書いても、脚注検証をすり抜けてはいけない
+    // （codex review 7周目で指摘・修正: 全ての|始まり行を無条件除外していたのが原因）。
+    const md = [
+      '---\ntitle: test\n---',
+      '',
+      '## 今日のトピック',
+      '',
+      '| # | テーマ | 出典数 |',
+      '|---|---|---|',
+      '| 1 | サンプル | 1件 |',
+      '',
+      '## 見出し',
+      '',
+      '本文です[^s-aaaaaaaaaa]。',
+      '',
+      '| 無出典 | テーブル |',
+      '|---|---|',
+      '| A | B |',
+      '',
+      '[^s-aaaaaaaaaa]: A',
+      '',
+    ].join('\n');
+    await writeFile(postPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE]),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /裏取り率が100%未満です/);
+        return true;
+      },
+    );
+  } finally {
+    await teardown();
+  }
+});
+
+test('validate-citations: 箇条書きの各行が句点＋脚注で終われば正しく1文ずつ検証される', async () => {
+  await setup();
+  try {
+    const md = `---\ntitle: test\n---\n\n## 見出し\n\n以下の点が挙げられます[^s-aaaaaaaaaa]。\n\n- 項目1です[^s-aaaaaaaaaa]。\n- 項目2です[^s-bbbbbbbbbb]。\n\n[^s-aaaaaaaaaa]: A\n[^s-bbbbbbbbbb]: B\n`;
+    await writeFile(postPath, md, 'utf8');
+    const { stdout } = await execFileAsync('node', [SCRIPT, FIXTURE_DATE]);
+    assert.match(stdout, /裏取り率: 100%/);
+  } finally {
+    await teardown();
+  }
+});
+
+test('validate-citations: 箇条書きの1行だけ脚注が無ければ検出される', async () => {
+  await setup();
+  try {
+    const md = `---\ntitle: test\n---\n\n## 見出し\n\n以下の点が挙げられます[^s-aaaaaaaaaa]。\n\n- 項目1です[^s-aaaaaaaaaa]。\n- 出典のない項目です。\n\n[^s-aaaaaaaaaa]: A\n`;
+    await writeFile(postPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE]),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /裏取り率が100%未満です/);
+        assert.match(err.stderr, /出典のない項目です/);
+        return true;
+      },
+    );
+  } finally {
+    await teardown();
+  }
+});
+
 test('validate-citations: 本文中で一度も引用されず脚注定義だけが存在する記事は exit 1', async () => {
   await setup();
   try {

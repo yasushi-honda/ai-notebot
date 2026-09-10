@@ -17,6 +17,40 @@ body {
   @apply text-xl font-bold mt-8 mb-3 text-slate-900;
 }
 
+.prose-post :where(strong) {
+  @apply font-bold text-slate-900;
+}
+
+/* 箇条書き（curate.mjsが3件以上の並列事実を列挙する際に使用） */
+.prose-post :where(ul) {
+  @apply list-disc pl-6 mb-4 space-y-1.5 leading-relaxed;
+}
+.prose-post :where(ol) {
+  @apply list-decimal pl-6 mb-4 space-y-1.5 leading-relaxed;
+}
+
+/* テーマ別ソース内訳テーブル（curate.mjsが機械生成、LLMは書かない） */
+.prose-post :where(table) {
+  @apply w-full my-6 text-sm border-collapse overflow-hidden rounded-lg border border-slate-200;
+}
+.prose-post :where(th) {
+  @apply bg-indigo-50 text-slate-900 font-semibold text-left px-3 py-2 border-b border-slate-200;
+}
+.prose-post :where(td) {
+  @apply px-3 py-2 border-b border-slate-100 text-slate-700 align-top;
+}
+.prose-post :where(tr:last-child td) {
+  @apply border-b-0;
+}
+.prose-post :where(tbody tr:nth-child(even)) {
+  @apply bg-slate-50;
+}
+
+/* 「今日のトピック一覧」SVG図解 */
+.overview-diagram {
+  @apply w-full rounded-xl border border-slate-200 bg-white mb-8;
+}
+
 /* remark-gfm footnotes セクション */
 .prose-post :where(section[data-footnotes]) {
   @apply mt-10 pt-6 border-t border-slate-200 text-sm text-slate-600;

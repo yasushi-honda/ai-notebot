@@ -43,6 +43,13 @@ const { Content } = await render(post);
     ))}
   </div>
 
+  <img
+    src={url(`images/${post.data.date}/overview.svg`)}
+    alt="今日のトピック一覧"
+    class="overview-diagram"
+    onerror="this.style.display='none'"
+  />
+
   <article class="prose-post">
     <Content />
   </article>

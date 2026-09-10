@@ -118,6 +118,9 @@ async function runStageB(theme, itemsById) {
     '  [^s-aaa, s-bbb] のように1つの角括弧内にカンマ区切りで複数idを入れることは絶対にしない',
     '- 出典のない推測や一般論の断定は避ける。あくまで下の情報に基づいて書く',
     '- ノンエンジニアにも伝わる平易な日本語。専門用語は短く補足する',
+    '- 製品名・数値・固有名詞など重要な語句は **太字** で強調する（例: **Claude Code** は...）',
+    '- 3件以上の並列的な事実を列挙する場合は箇条書きを使ってよい。',
+    '  箇条書きの各行も必ず句点＋脚注で終える（例: `- 項目の説明です[^s-aaa]。`）',
     '',
     '## 参照可能な一次情報',
     formatCandidateList(themeItems),
@@ -141,6 +144,26 @@ function buildFootnoteDefs(usedIds, itemsById) {
     })
     .filter(Boolean)
     .join('\n');
+}
+
+/** Markdownテーブルのセルを壊さないよう `|` と改行をエスケープする */
+function escapeTableCell(s) {
+  return String(s).replace(/\|/g, '\\|').replace(/\r?\n/g, ' ');
+}
+
+/**
+ * テーマ別ソース内訳テーブルを sections（Stage A/Bの検証済み出力）から機械的に組み立てる。
+ * LLMには書かせない（＝新たな主張を含まない構造要素）ため、
+ * validate-citations.mjs はテーブル行を脚注検証の対象外として扱う設計になっている。
+ */
+function buildOverviewTable(sections, itemsById) {
+  const header = '| # | テーマ | 出典数 | 主な情報源 |\n|---|---|---|---|';
+  const rows = sections.map((s, i) => {
+    const sourceNames = [...new Set(s.sourceIds.map((id) => itemsById.get(id)?.source).filter(Boolean))];
+    const mainSources = sourceNames.slice(0, 3).join(', ') + (sourceNames.length > 3 ? ' 他' : '');
+    return `| ${i + 1} | ${escapeTableCell(s.title)} | ${s.sourceIds.length}件 | ${escapeTableCell(mainSources)} |`;
+  });
+  return ['## 今日のトピック', '', header, ...rows].join('\n');
 }
 
 async function main() {
@@ -179,9 +202,13 @@ async function main() {
     for (const m of s.bodyMarkdown.matchAll(footnotePattern)) usedIds.add(m[1]);
   }
 
-  const bodyParts = sections.map((s) => `## ${s.title}\n\n${s.bodyMarkdown}`);
+  // テーマ別ソース内訳テーブル（LLMには書かせず機械的に組み立てる。新たな主張を含まないため
+  // validate-citations.mjs はテーブル行を脚注検証の対象外として扱う）
+  const overviewTable = buildOverviewTable(sections, itemsById);
+
+  const bodyParts = [overviewTable, ...sections.map((s) => `## ${s.title}\n\n${s.bodyMarkdown}`)];
   const footnotes = buildFootnoteDefs(usedIds, itemsById);
-  const totalChars = bodyParts.join('').replace(/[#\s]/g, '').length;
+  const totalChars = bodyParts.join('').replace(/[#|\-\s]/g, '').length;
 
   // frontmatter の値は LLM 出力（テーマ見出し等）を含むため、二重引用符等が混じっても
   // 壊れないよう必ず JSON.stringify でエスケープする（手動でのクォート組み立てはしない。
