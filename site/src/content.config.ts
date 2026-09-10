@@ -19,7 +19,6 @@ const posts = defineCollection({
     /** 本文の脚注が引用する出典 id（data/raw/<date>.json の id と対応） */
     sourceIds: z.array(z.string()).default([]),
     heroImagePrompt: z.string().optional(),
-    sectionImagePrompts: z.array(z.string()).default([]),
   }),
 });
 

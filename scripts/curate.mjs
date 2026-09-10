@@ -62,12 +62,8 @@ const STAGE_B_SCHEMA = {
         '本物の改行を2つ連続で入れる）。事実を述べる文には必ず文末に [^s-<id>] 形式の脚注を付け、' +
         '与えられたid以外は絶対に使わないこと。見出し(#)は含めず本文のみ。',
     },
-    imagePromptEn: {
-      type: 'string',
-      description: 'このテーマの内容を象徴する画像の生成プロンプト（英語、1〜2文、具体的な構図・スタイル指定を含む）',
-    },
   },
-  required: ['bodyMarkdown', 'imagePromptEn'],
+  required: ['bodyMarkdown'],
 };
 
 /**
@@ -244,8 +240,6 @@ async function main() {
     `heroImagePrompt: ${JSON.stringify(
       `Flat-design tech blog hero illustration summarizing today's AI trends: ${themes.map((t) => t.angle).join('; ')}. Clean, modern, blue and white palette, 16:9.`,
     )}`,
-    `sectionImagePrompts:`,
-    ...sections.slice(0, 2).map((s) => `  - ${JSON.stringify(s.imagePromptEn)}`),
     '---',
     '',
   ].join('\n');

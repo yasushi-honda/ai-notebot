@@ -84,17 +84,6 @@ const shareText = [
     <Content />
   </article>
 
-  <section class="mt-10 grid grid-cols-2 gap-4">
-    {[1, 2].map((n) => (
-      <img
-        src={url(`images/${post.data.date}/section-${n}.jpg`)}
-        alt={`${post.data.title} 関連画像${n}`}
-        class="w-full aspect-4/3 object-cover rounded-lg"
-        onerror="this.onerror=null;this.src=this.src.replace('.jpg','.svg')"
-      />
-    ))}
-  </section>
-
   <p class="mt-10 text-xs text-slate-400">
     この記事の出典 {post.data.sourceIds.length} 件はすべて、収集日のアーカイブに実在するエントリに解決することを機械検証済みです。
   </p>

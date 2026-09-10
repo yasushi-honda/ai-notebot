@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /**
  * ③ 画像生成スクリプト。
- * site/src/content/posts/<date>.md の frontmatter（heroImagePrompt / sectionImagePrompts）を
+ * site/src/content/posts/<date>.md の frontmatter（heroImagePrompt）を
  * gemini-3.1-flash-lite-image（Nano Banana 2 Lite）に投げ、
- * hero(16:9) 1枚 + section(4:3) 最大2枚を site/public/images/<date>/ に生成する。
+ * hero(16:9) 1枚を site/public/images/<date>/ に生成する。
+ * あわせて「今日のトピック一覧」SVG図解（Vertex AI不使用・決定的生成）も生成する。
  *
  * 画像生成の失敗は記事本文の公開を止めない設計: 失敗した画像は SVG プレースホルダに
  * フォールバックする（詳細: docs/adr/）。
@@ -70,7 +71,6 @@ async function main() {
 
   const { frontmatter, body } = parseFrontmatter(markdown);
   const heroPrompt = frontmatter.heroImagePrompt;
-  const sectionPrompts = (frontmatter.sectionImagePrompts ?? []).slice(0, 2);
 
   if (!heroPrompt) {
     console.error('frontmatter に heroImagePrompt がありません。');
@@ -82,9 +82,6 @@ async function main() {
 
   const results = [];
   results.push(await generateOne(heroPrompt, '16:9', join(outDir, 'hero'), 'hero'));
-  for (let i = 0; i < sectionPrompts.length; i++) {
-    results.push(await generateOne(sectionPrompts[i], '4:3', join(outDir, `section-${i + 1}`), `section-${i + 1}`));
-  }
 
   // 「今日のトピック一覧」SVG図解。本文の ## 見出し（curate.mjs のテーブル見出し
   // 「今日のトピック」を除く）から決定的に生成する。Vertex AI を呼ばないため

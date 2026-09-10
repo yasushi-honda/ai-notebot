@@ -11,7 +11,7 @@ curate.mjs (Vertex AI gemini-3.5-flash-lite) → site/src/content/posts/YYYY-MM-
     ↓
 validate-citations.mjs (脚注が data/raw に解決するか機械検証。1件でも未解決なら exit 1)
     ↓
-images.mjs (Vertex AI gemini-3.1-flash-lite-image) → site/public/images/YYYY-MM-DD/*.jpg
+images.mjs (Vertex AI gemini-3.1-flash-lite-image で hero.jpg 1枚 + 決定的生成のoverview.svg) → site/public/images/YYYY-MM-DD/
     ↓
 Astro build → dist/ → GitHub Pages
 ```
