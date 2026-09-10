@@ -9,12 +9,21 @@ body {
   @apply bg-slate-50 text-slate-800;
 }
 
+/*
+ * 段落タイポグラフィ（ベストプラクティス調査に基づく調整・2026-09-10）:
+ * - 行間: 日本語Web文章は170〜200%が推奨（欧文の130〜150%より広め）
+ * - 文字サイズ: 本文幅768px前後で1行28〜40字（日本語の推奨値）に収まるよう
+ *   やや大きめ(17px)にして読みやすさを優先
+ * - 段落間: 短い段落を積み重ねる構成（curate.mjsのStage Bで1テーマ内を
+ *   2〜4段落に分割するよう変更）を前提に、段落間の余白を広めに取り「壁」に
+ *   見えないようにする
+ */
 .prose-post :where(p) {
-  @apply leading-relaxed mb-4;
+  @apply text-[17px] leading-[1.9] mb-6 text-slate-700;
 }
 
 .prose-post :where(h2) {
-  @apply text-xl font-bold mt-8 mb-3 text-slate-900;
+  @apply text-xl font-bold mt-12 mb-4 text-slate-900 pl-4 border-l-4 border-indigo-500;
 }
 
 .prose-post :where(strong) {
@@ -56,8 +65,27 @@ body {
   @apply mt-10 pt-6 border-t border-slate-200 text-sm text-slate-600;
 }
 .prose-post :where(section[data-footnotes] ol) {
-  @apply list-decimal list-inside space-y-1;
+  @apply list-decimal list-inside space-y-2;
+}
+.prose-post :where(section[data-footnotes] li) {
+  @apply leading-relaxed;
 }
 .prose-post :where(a) {
   @apply text-indigo-600 underline decoration-indigo-300 hover:decoration-indigo-600;
+}
+
+/*
+ * 本文中の脚注参照（<sup><a data-footnote-ref>1</a></sup>）。
+ * 通常のリンクと同じ太字・下線スタイルだと本文中で目立ちすぎて読みのリズムを
+ * 崩すため、控えめな上付きバッジ調にする（Wikipedia等の引用UIパターンを参考。
+ * 文末に置く設計のため句読点との衝突を避けるmargin調整も加える）。
+ * :where()を使わない実セレクタにして、上のa全般ルールより優先させる。
+ */
+.prose-post sup a[data-footnote-ref] {
+  @apply inline-flex items-center justify-center min-w-[1.35em] h-[1.35em] px-1 ml-0.5
+    rounded bg-indigo-50 text-[0.7em] font-semibold text-indigo-500 no-underline
+    align-super leading-none transition-colors;
+}
+.prose-post sup a[data-footnote-ref]:hover {
+  @apply bg-indigo-100 text-indigo-700;
 }
