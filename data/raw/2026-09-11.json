@@ -1,43 +1,115 @@
 {
   "date": "2026-09-11",
-  "collectedAt": "2026-09-11T14:21:01.496Z",
+  "collectedAt": "2026-09-11T14:50:35.102Z",
   "sourceSuccessCount": 18,
   "items": [
     {
-      "id": "s-355f618a5d",
+      "id": "s-66e1850b08",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "mastra-ai/mastra: Mastra is the modern TypeScript framework for AI-powered applications and agents.",
-      "url": "https://github.com/mastra-ai/mastra",
-      "publishedAt": "2026-09-11T14:20:20.000Z",
-      "summary": "★27937 Mastra is the modern TypeScript framework for AI-powered applications and agents."
+      "title": "mckinsey/agents-at-scale-ark: Provider-agnostic operations for agentic resources. ARK codifies patterns and practices developed across dozens of agentic application projects.",
+      "url": "https://github.com/mckinsey/agents-at-scale-ark",
+      "publishedAt": "2026-09-11T14:50:25.000Z",
+      "summary": "★422 Provider-agnostic operations for agentic resources. ARK codifies patterns and practices developed across dozens of agentic application projects."
     },
     {
-      "id": "s-8e6eb4596c",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "nuxt-modules/mcp-toolkit: Create MCP servers directly in your Nuxt application. Define tools, resources, and prompts with a simple and intuitive API.",
-      "url": "https://github.com/nuxt-modules/mcp-toolkit",
-      "publishedAt": "2026-09-11T14:20:19.000Z",
-      "summary": "★172 Create MCP servers directly in your Nuxt application. Define tools, resources, and prompts with a simple and intuitive API."
-    },
-    {
-      "id": "s-f598a6586a",
+      "id": "s-062192a7aa",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "VasiHemanth/tokentelemetry: Token telemetry dashboard for AI autonomous and coding agents — tracks tokens, sessions, tool calls & reasoning across Hermes agent, Claude Code, Antigravity CLI, Codex & more. 100% local.",
-      "url": "https://github.com/VasiHemanth/tokentelemetry",
-      "publishedAt": "2026-09-11T14:20:08.000Z",
-      "summary": "★347 Token telemetry dashboard for AI autonomous and coding agents — tracks tokens, sessions, tool calls & reasoning across Hermes agent, Claude Code, Antigravity CLI, Codex & more. 100% local."
+      "title": "helixml/helix: ♾️ Private Agent Fleet with Spec Coding. Each agent gets their own GPU-accelerated desktop. Run Claude, Codex, Gemini and open models on a full private AI Stack ♾️",
+      "url": "https://github.com/helixml/helix",
+      "publishedAt": "2026-09-11T14:50:18.000Z",
+      "summary": "★805 ♾️ Private Agent Fleet with Spec Coding. Each agent gets their own GPU-accelerated desktop. Run Claude, Codex, Gemini and open models on a full private AI Stack ♾️"
     },
     {
-      "id": "s-a0d758f560",
+      "id": "s-5c74b1c785",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "agentgateway/agentgateway: Next Generation Agentic Proxy for AI Agents and MCP servers",
-      "url": "https://github.com/agentgateway/agentgateway",
-      "publishedAt": "2026-09-11T14:20:01.000Z",
-      "summary": "★4805 Next Generation Agentic Proxy for AI Agents and MCP servers"
+      "title": "editor-code-assistant/eca: Editor Code Assistant (ECA) - AI pair programming capabilities agnostic of editor",
+      "url": "https://github.com/editor-code-assistant/eca",
+      "publishedAt": "2026-09-11T14:50:10.000Z",
+      "summary": "★990 Editor Code Assistant (ECA) - AI pair programming capabilities agnostic of editor"
+    },
+    {
+      "id": "s-e8989b9c37",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "maximhq/bifrost: Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS.",
+      "url": "https://github.com/maximhq/bifrost",
+      "publishedAt": "2026-09-11T14:50:08.000Z",
+      "summary": "★7974 Fastest enterprise AI gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS."
+    },
+    {
+      "id": "s-df43f2fe1a",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "macro-inc/macro: Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "url": "https://github.com/macro-inc/macro",
+      "publishedAt": "2026-09-11T14:49:58.000Z",
+      "summary": "★4288 Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory."
+    },
+    {
+      "id": "s-62b074de6c",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "yonatangross/orchestkit: The Complete AI Development Toolkit for Claude Code. 106 skills, 36 agents, 171 hooks. Install `ork` for stable (v9.x), or `ork-alpha` for the v10 line, which ships daily.",
+      "url": "https://github.com/yonatangross/orchestkit",
+      "publishedAt": "2026-09-11T14:49:35.000Z",
+      "summary": "★230 The Complete AI Development Toolkit for Claude Code. 106 skills, 36 agents, 171 hooks. Install `ork` for stable (v9.x), or `ork-alpha` for the v10 line, which ships daily."
+    },
+    {
+      "id": "s-59cb8bb6fb",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "jgravelle/jcodemunch-mcp: Cut AI token costs 95%+ on code exploration. The leading MCP server for precise, symbol-level GitHub code retrieval via tree-sitter AST. Works with Claude Code, Cursor & any MCP client. 313B+ tokens saved.",
+      "url": "https://github.com/jgravelle/jcodemunch-mcp",
+      "publishedAt": "2026-09-11T14:49:30.000Z",
+      "summary": "★2681 Cut AI token costs 95%+ on code exploration. The leading MCP server for precise, symbol-level GitHub code retrieval via tree-sitter AST. Works with Claude Code, Cursor & any MCP client. 313B+ tokens saved."
+    },
+    {
+      "id": "s-dd2f39f50c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "metadist/synaplan: Our AI control plane for fast deployment. Talk to various models, MCP with agents, get a chat widget for support and many tools more. Use the smart DAG routing to save some tokens! We take plugins in Go, Rust, Python, NodeJS, etc.",
+      "url": "https://github.com/metadist/synaplan",
+      "publishedAt": "2026-09-11T14:49:29.000Z",
+      "summary": "★137 Our AI control plane for fast deployment. Talk to various models, MCP with agents, get a chat widget for support and many tools more. Use the smart DAG routing to save some tokens! We take plugins in Go, Rust, Python, NodeJS, etc."
+    },
+    {
+      "id": "s-5577f583a7",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "crabbuild/compass: Native, local-first knowledge graph engine for code and project artifacts—inspired by Graphify, built in Rust, and evolving beyond it.",
+      "url": "https://github.com/crabbuild/compass",
+      "publishedAt": "2026-09-11T14:49:28.000Z",
+      "summary": "★155 Native, local-first knowledge graph engine for code and project artifacts—inspired by Graphify, built in Rust, and evolving beyond it."
+    },
+    {
+      "id": "s-faab3a2372",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "SonarSource/sonarqube-cli: Command-line interface for SonarQube with AI agent integration. Scan for secrets and get fast feedback on code quality and security from your terminal.",
+      "url": "https://github.com/SonarSource/sonarqube-cli",
+      "publishedAt": "2026-09-11T14:49:27.000Z",
+      "summary": "★275 Command-line interface for SonarQube with AI agent integration. Scan for secrets and get fast feedback on code quality and security from your terminal."
+    },
+    {
+      "id": "s-9dbbd0ec07",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "berylliumsec/nebula: AI-powered penetration testing assistant for automating recon, note-taking, and vulnerability analysis.",
+      "url": "https://github.com/berylliumsec/nebula",
+      "publishedAt": "2026-09-11T14:49:18.000Z",
+      "summary": "★1103 AI-powered penetration testing assistant for automating recon, note-taking, and vulnerability analysis."
+    },
+    {
+      "id": "s-6d8e21af0f",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "mudler/vllm.cpp: a community oriented 1:1, vLLM-alike (Continuous batching, paged KV) engine in C++ with additional features (GGUF, RadixAttention, Cache-aware scheduling, ...)",
+      "url": "https://github.com/mudler/vllm.cpp",
+      "publishedAt": "2026-09-11T14:48:59.000Z",
+      "summary": "★396 a community oriented 1:1, vLLM-alike (Continuous batching, paged KV) engine in C++ with additional features (GGUF, RadixAttention, Cache-aware scheduling, ...)"
     },
     {
       "id": "s-1f2fc9ace1",
@@ -45,71 +117,35 @@
       "sourceType": "github",
       "title": "zofe/rapyd-admin: Rapyd Admin is an open-source admin panel for Laravel — a light alternative to Nova, Filament and Backpack",
       "url": "https://github.com/zofe/rapyd-admin",
-      "publishedAt": "2026-09-11T14:19:51.000Z",
+      "publishedAt": "2026-09-11T14:48:57.000Z",
       "summary": "★861 Rapyd Admin is an open-source admin panel for Laravel — a light alternative to Nova, Filament and Backpack"
     },
     {
-      "id": "s-b01231565a",
+      "id": "s-7bc31c01eb",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "777genius/agent-teams-ai: You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode/Cursor/Grok/GitHub Copilot/Kiro/Z.AI/MiniMax/Kimi(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams",
-      "url": "https://github.com/777genius/agent-teams-ai",
-      "publishedAt": "2026-09-11T14:19:45.000Z",
-      "summary": "★2102 You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode/Cursor/Grok/GitHub Copilot/Kiro/Z.AI/MiniMax/Kimi(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams"
+      "title": "timtoole02/Camelid: Camelid: a Rust-native local inference backend with evidence-gated model compatibility.",
+      "url": "https://github.com/timtoole02/Camelid",
+      "publishedAt": "2026-09-11T14:48:28.000Z",
+      "summary": "★210 Camelid: a Rust-native local inference backend with evidence-gated model compatibility."
     },
     {
-      "id": "s-1bdaab607f",
+      "id": "s-2ad733da71",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "inference-gateway/inference-gateway: An open-source, cloud-native, high-performance gateway unifying multiple LLM providers, from local solutions like Ollama to major cloud providers such as OpenAI, Groq, Cohere, Anthropic, Cloudflare and DeepSeek.",
-      "url": "https://github.com/inference-gateway/inference-gateway",
-      "publishedAt": "2026-09-11T14:19:25.000Z",
-      "summary": "★212 An open-source, cloud-native, high-performance gateway unifying multiple LLM providers, from local solutions like Ollama to major cloud providers such as OpenAI, Groq, Cohere, Anthropic, Cloudflare and DeepSeek."
+      "title": "momori777/Artemis: 破限本地AI女友后宫，openclaw/claude code+画图语音向量数据库+live2D+桌宠+酒馆角色卡导入+前端，QQ+Telegram双通道，8G显存可跑🩵uncensored Fully offline AI girlfriends harem Openclaw/Claude code+Local LLM+GPT-SoVITS+ComfyUI image+Live2D+desktop pet+SilllyTavern Character card import+frontend | Dual channels for QQ & Telegram | Dynamic 8G VRAM scheduling+mem0 qdrant, can run offline ",
+      "url": "https://github.com/momori777/Artemis",
+      "publishedAt": "2026-09-11T14:48:23.000Z",
+      "summary": "★325 破限本地AI女友后宫，openclaw/claude code+画图语音向量数据库+live2D+桌宠+酒馆角色卡导入+前端，QQ+Telegram双通道，8G显存可跑🩵uncensored Fully offline AI girlfriends harem Openclaw/Claude code+Local LLM+GPT-SoVITS+ComfyUI image+Live2D+desktop pet+SilllyTavern Character card import+frontend | Dual channels for QQ & Telegram | Dynamic 8G VRAM scheduling+mem0 qdrant, can run offline"
     },
     {
-      "id": "s-8a288f2726",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "usepr/eva: 单文件智能体",
-      "url": "https://github.com/usepr/eva",
-      "publishedAt": "2026-09-11T14:19:16.000Z",
-      "summary": "★406 单文件智能体"
-    },
-    {
-      "id": "s-aed5d744c2",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "openaccountants/openaccountants: Open-source Tax Guides for AI agents, reviewed by named CPAs/CAs/EAs. 1,000+ Guides across 190+ jurisdictions. MCP server included. Works with Claude, ChatGPT, Cursor.",
-      "url": "https://github.com/openaccountants/openaccountants",
-      "publishedAt": "2026-09-11T14:18:52.000Z",
-      "summary": "★371 Open-source Tax Guides for AI agents, reviewed by named CPAs/CAs/EAs. 1,000+ Guides across 190+ jurisdictions. MCP server included. Works with Claude, ChatGPT, Cursor."
-    },
-    {
-      "id": "s-2376e8b3d6",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "mozilla-ai/otari: Open-source, OpenAI-compatible LLM gateway you run yourself. One endpoint for 40+ providers, with virtual keys, budgets, and usage tracking.",
-      "url": "https://github.com/mozilla-ai/otari",
-      "publishedAt": "2026-09-11T14:18:18.000Z",
-      "summary": "★452 Open-source, OpenAI-compatible LLM gateway you run yourself. One endpoint for 40+ providers, with virtual keys, budgets, and usage tracking."
-    },
-    {
-      "id": "s-f344e75407",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "genomoncology/biomcp: BioMCP: Biomedical Model Context Protocol",
-      "url": "https://github.com/genomoncology/biomcp",
-      "publishedAt": "2026-09-11T14:18:01.000Z",
-      "summary": "★630 BioMCP: Biomedical Model Context Protocol"
-    },
-    {
-      "id": "s-4ff2ea8906",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "future-agi/future-agi: Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0.",
-      "url": "https://github.com/future-agi/future-agi",
-      "publishedAt": "2026-09-11T14:17:40.000Z",
-      "summary": "★1976 Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0."
+      "id": "s-62d35db41d",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Meta says it’s changing AI suggestions after posing invasive personal questions",
+      "url": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+      "publishedAt": "2026-09-11T14:25:21.000Z",
+      "summary": "Meta says it's making changes to the prompts suggested by its AI chatbot after a viral video showed it digging for personal information about a woman's young daughters, as reported earlier by Futurism. In a statement to The Verge, Meta spokesperson Dina El-Kassaby says the company \"missed the mark,\" adding that \"the feature never should […]"
     },
     {
       "id": "s-2841e48a3c",
@@ -118,7 +154,16 @@
       "title": "Anthropic Says Iran Used Its American AI Model to Target U.S. Navy Warships",
       "url": "https://www.wsj.com/politics/national-security/anthropic-says-iran-used-its-american-ai-model-to-target-u-s-navy-warships-67583e05",
       "publishedAt": "2026-09-11T14:07:51.000Z",
-      "summary": "points=5 comments=1 (Hacker News)"
+      "summary": "points=12 comments=3 (Hacker News)"
+    },
+    {
+      "id": "s-8fe0fb8422",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "A.I.'s warning shot... we might not get another one",
+      "url": "https://www.nytimes.com/2026/09/11/opinion/ai-safety-threat-technology.html",
+      "publishedAt": "2026-09-11T13:56:01.000Z",
+      "summary": "points=7 comments=1 (Hacker News)"
     },
     {
       "id": "s-f5b26b408d",
@@ -145,7 +190,7 @@
       "title": "Ask HN: Can we please limit the AI news flood?",
       "url": "https://news.ycombinator.com/item?id=49657850",
       "publishedAt": "2026-09-11T13:11:04.000Z",
-      "summary": "points=271 comments=156 (Hacker News)"
+      "summary": "points=347 comments=189 (Hacker News)"
     },
     {
       "id": "s-866ac0ef3e",
@@ -166,15 +211,6 @@
       "summary": "TL;DR Claude Code の ANTHROPIC_API_KEY を OpenRouter 経由に差し替えると :free モデルが使える claude --model フラグと CLAUDE_MODEL 環境変数で無料モデルを固定できる レート制限を踏まえ..."
     },
     {
-      "id": "s-b0c92c69e7",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "ブラウザ画像ぼかしUIを状態モデルとして分解する",
-      "url": "https://zenn.dev/choco1/articles/69c6434a0e02ca",
-      "publishedAt": "2026-09-11T11:38:46.000Z",
-      "summary": "この記事は BlurImage の公開UIをブラックボックス観察した設計メモです。ソースコード、内部アーキテクチャ、ベンチマークを示すものではありません。 入力経路を一つのモデルにまとめる 公開画面にはアップロード、クリップボード貼り付け、画像URL、Webサイトという入口があります。UIでは入口が違っても、編集側が必要とするのは画像・形式・サイズです。したがって、入力直後に正規化する境界を置くとテストしやすくなります。 type ImageSource = { kind: \"upload\" | \"paste\" | \"url\" | \"website\"; mime: \"i..."
-    },
-    {
       "id": "s-802349ba55",
       "source": "Qiita (AI タグ)",
       "sourceType": "japanese",
@@ -191,15 +227,6 @@
       "url": "https://nyosegawa.com/posts/qiita-writing-before-after-ai/",
       "publishedAt": "2026-09-11T11:32:56.000Z",
       "summary": "こんにちは！逆瀬川ちゃん (@gyakuse) です！ 今日は生成AI以前と以後でエンジニアが書く文章がどう変わったのかを、Qiitaの記事を数えて確かめた結果をまとめていきたいと思います。 最近の技術記事を読んでいると、見覚えのある言い回しに出会うことが増えました。「地味に効きます」「静かに壊れる」「〜とは別物です..."
-    },
-    {
-      "id": "s-6206c5eea1",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "OpenClawをWindows無料枠で動かす詰まりどころ全部――429・TPM超過から設定ファイル集まで",
-      "url": "https://zenn.dev/builders_loop/books/openclaw-windows-guide",
-      "publishedAt": "2026-09-11T11:31:13.000Z",
-      "summary": "OpenClaw（自律エージェント基盤）を、無料枠のGoogle Gemini/Gemmaで、そしてその後ローカルGPU(Ollama)で Windows上に動かそうとして実際にぶつかった壁と、そのとき使った設定ファイル一式の記録です。 対象読者はOpenClawを個人開発・スモールビジネスで動かそうとしている方。 「429エラーが続くのにRPD/RPMは余裕がある」「gateway installが謎エラーになる」 「No callable tools remain」「No API key found for provider ollama」など、 検索してもすぐには答えが出てこない症状を、実際に使った設定ファイルとあわせてまとめています。 検証環境（OS/Node/OpenClaw/使用モデル）を明記し、再現性を優先しました。"
     },
     {
       "id": "s-a2c1a72c83",
@@ -229,33 +256,6 @@
       "summary": ""
     },
     {
-      "id": "s-b4e2b6bf04",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Excel Data Visualizer 終了後に Excel から Visio を作る3つの方法",
-      "url": "https://zenn.dev/daviechen/articles/76f23c19eb2f73",
-      "publishedAt": "2026-09-11T11:17:38.000Z",
-      "summary": "Excel 内で使う Visio Data Visualizer アドインの手順を今もそのまま案内している記事は、すでに古くなっています。Microsoft は 2025 年 12 月にアドインを AppSource から削除し、2026 年 3 月 2 日に提供を終了しました。Excel の表データは残りますが、埋め込まれた図が読み込めなくなる可能性があります。 一方、Excel や CSV に保存された工程、担当部署、次工程 ID を Visio 図面にしたい需要は変わりません。ここでは、現在使える3つの方法を比較します。 必要なのは表のスクリーンショットではなく、図形とコネクター..."
-    },
-    {
-      "id": "s-588ffdcb9f",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Anthropic社「Fable 5」「Mythos 5」を巡る技術的・地政学的分析：攻撃能力とAI統制の深層",
-      "url": "https://zenn.dev/emilia_lab/articles/anthropic-fable5-mythos5-geopolitics",
-      "publishedAt": "2026-09-11T11:16:32.000Z",
-      "summary": "導入：兵器化するフロンティアAIと地政学的な歴史的転換点 2026年6月上旬、世界の人工知能およびサイバーセキュリティの歴史において、最も劇的かつ物議を醸す出来事が発生した。米国サンフランシスコに拠点を置くAI開発企業Anthropicは、同社史上最も強力なAIモデルである「Claude Fable 5」と、その無制限版に位置づけられる「Claude Mythos 5」を同時に発表した。これらの「Mythosクラス」と呼ばれる次世代モデル群は、自律的なエージェント機能、長大なコンテキスト処理、そして既存のソフトウェア工学の常識を根底から覆す能力を備えていた。 しかし、一般向けモデルで..."
-    },
-    {
-      "id": "s-573fb8761b",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "GPT-6 Astra登場、でも本当に大事なのは「裏を取る力」",
-      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20260911",
-      "publishedAt": "2026-09-11T10:49:57.000Z",
-      "summary": "2026年9月11日（金）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。 今日は新しいAIが一気に出てきた日なんですよ。OpenAIのGPT-6 Astra、中国DeepSeekの新モデル、コーディング用のSWE-2。でもね、僕が今日いちばん伝えたいのは「数字と主張の裏を取る力」です。すごそうな発表ほど、どこまで確かなのか。経営者の皆さんにも、AIを学んでる皆さんにも効く話です。5つのニュースで一緒に見ていきましょう。 1. GPT-6 Astra発表、判断もできるAIへ 図解（完全解説版） 先に結論を言います。OpenAIが「GPT-6 Astr..."
-    },
-    {
       "id": "s-2a073bbbbb",
       "source": "Reddit r/LocalLLaMA",
       "sourceType": "reddit",
@@ -281,33 +281,6 @@
       "url": "https://www.itmedia.co.jp/business/articles/2609/11/news043.html",
       "publishedAt": "2026-09-11T10:18:00.000Z",
       "summary": "NECは8月1日、部門長から現場社員まで全ての役割をAIが担い、自律的に業務を遂行するAI自律型組織「コーポレートAI・Workforce部門」を新設した。同部門では業務遂行だけでなく、AI社員同士が1on1を実施する他、AI社員がエンゲージメントサーベイやストレスチェックを受け、その結果から職場環境を改善している。"
-    },
-    {
-      "id": "s-48d436010e",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Astraに「玉ねぎを3ミリに切れ」と指示する愚行",
-      "url": "https://zenn.dev/karamage/articles/e49ccf76ad111c",
-      "publishedAt": "2026-09-11T10:17:56.000Z",
-      "summary": "Astraを使うとき、指示文やスキルやルールがズラーーッと長くなってませんか？ それ駄目っぽいです。 シェフの腕をロープで縛り上げておきながら、「なぜ早く料理ができないんだ」と怒鳴っている状態です。 Astraに対する指示の出し方は、これまでとは違って、短く雑に出すことが求められています。 ! この記事は、Astraについて書いていますが、ClaudeのFableでも同じだと思っています。 「GPT-6 Astra」とは GPT-6 Astraとは、OpenAIが公開した最新世代のフラグシップモデルです。 コード生成だけでなく、ブラウザ操作やPC上の作業など、複数ステップの自律遂..."
-    },
-    {
-      "id": "s-6e49dca640",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Gemini CLIをGA4データアナリストとして使う具体的な設定と活用例",
-      "url": "https://zenn.dev/web_benriya/articles/gemini-cli-ga4-analyst-setup-guide",
-      "publishedAt": "2026-09-11T10:12:59.000Z",
-      "summary": "はじめに GA4のデータをBigQueryに連携したものの、「SQLを書くのが難しい」「毎週のレポートを作るのが手間」と感じていませんか。あるいは、レポートを眺めながら「この数字が下がっている原因は何だろう」と考えても、次の一手が浮かびにくいという経験はないでしょうか。 Googleが提供するコマンドラインツール「Gemini CLI」を活用すると、ターミナル上でGeminiに問いかけるだけで、BigQueryへのクエリ作成・実行・結果の解釈までを一気通貫で進められます。エンジニアでなくても、コマンドを少し覚えるだけで分析の幅が広がります。 本記事では、Gemini CLIをGA4デ..."
-    },
-    {
-      "id": "s-c6596be89e",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "YOLO26nアーキテクチャ徹底解析 step3 | C3k2, SPPF, C2PSA ブロックとサブブロック",
-      "url": "https://zenn.dev/diiw/articles/yolo26n-architecture-step3",
-      "publishedAt": "2026-09-11T10:04:03.000Z",
-      "summary": "はじめに 本記事は、筆者がソースコードおよびモデル構造を独自に解析した情報に基づき解説を行う記事です。本記事の内容は更新される場合があります。内容に大きな変更・追加があった場合は都度Xアカウントにて発信いたします。 本記事は「YOLO26nアーキテクチャ徹底解析」シリーズのstep3となります。YOLO26nの全体像を示したstep1の記事はこちらです。Convブロック・PWConvブロック・DWConvブロックについて示したstep2の記事はこちらです。Convブロック・PWConvブロックは、今回取り上げるブロック内部でも数多く利用されています。 免責・非公式表示 ! 本..."
     },
     {
       "id": "s-dd02579c12",
@@ -391,6 +364,15 @@
       "summary": "生成AIに仕事を任せるとして、どこまで許せるのか。チェンジホールディングスの調査から、人間がAIに「任せたい業務」の実態が浮かび上がった。世代別では、20代は最終承認までAIに任せたいと考えているという。"
     },
     {
+      "id": "s-05e1820411",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Codeの設定を消す前に、僕が決めた基準",
+      "url": "https://zenn.dev/gemcook/articles/2336f653026c9e",
+      "publishedAt": "2026-09-11T07:29:45.000Z",
+      "summary": "はじめに モデルを変えた途端に、前のモデルのために書いた注意書きが効かなくなる。この半年で何度も踏んだ場面で、9 月に入って X でこの投稿を見たとき、正直ちょっと身に覚えがありました。 https://x.com/kawasin73/status/2096030851217887431 僕は AI ツールに毎月上限まで課金して使い倒し、Claude Code・Codex CLI・Grok Build の乗り換えと併用を繰り返してきた側の人です。古いモデルの弱点を補うために書いた指示が「もう死んでいる」という点には、僕も同意です。乗り換えるたびに、以前の注意書きが不要になる場面を見て..."
+    },
+    {
       "id": "s-3d53770357",
       "source": "Reddit r/LocalLLaMA",
       "sourceType": "reddit",
@@ -398,6 +380,69 @@
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wd96dk/what_can_you_run_on_8gb_vram/",
       "publishedAt": "2026-09-11T07:23:05.000Z",
       "summary": "Can you still do something with a 2050 or something like it? I mean for office work, loading embedding, reranking and chat models not at the same time but is anyone still using smaller models and have any good ones come out? I feel like small models are abandoned, I don’t care much for world knowledge, I want tool use and preferably multilingual. Vision would be nice but beggars can’t be choosers."
+    },
+    {
+      "id": "s-109daaa513",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "CursorとCodexに毎日小さなWebを作らせて、デプロイナウで公開する",
+      "url": "https://zenn.dev/boraemon2000/articles/ab50fb1e43f663",
+      "publishedAt": "2026-09-11T07:08:27.000Z",
+      "summary": "毎日ひとつ、ブラウザだけで動く小さなゲームや便利ツールを公開するサイトを作りました。 名前は「１日１デプロイ」です。公開先はこちらです。 https://mini-lab.lolipop-now.app/ 最初の作品は経路パズル「ホタルみち」です。 https://mini-lab.lolipop-now.app/apps/2026-09-08-hotaru-michi/ この記事は、同じ構成をまねするための手順メモです。Cursor でも Codex でも、同じ依頼文を渡せば「作る → 確認する → GitHub の main へ push する」まで進むようにしてあります。 何を..."
+    },
+    {
+      "id": "s-710dda7d35",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Grok botが僕らのチームを侵食してる",
+      "url": "https://zenn.dev/fastdoctor/articles/grok-bot-team-development",
+      "publishedAt": "2026-09-11T06:58:53.000Z",
+      "summary": "この記事は、noteに掲載した同名の記事をZenn向けに整えたものです。 ほんの1週間ほど前くらいの出来事でした。 なんだか様子がおかしいと思ったのは。 ＠Cursor? Cursor使ってるの？？ 普段うちはChatGPTとClaude Codeで回しています。 なのにCTOがSlackの返信をCursorでしている。 3、4ヶ月前にCursorを卒業したって。 VS Codeだけでいいです。って言ってたやん。 なんでまたCursorを使い始めたんだろう。 正体はGrok Botでした。 概要が気になる方は記事がいくつか出てるので調べてみてください。 https://note.co..."
+    },
+    {
+      "id": "s-50e8881a3a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIエージェントの失敗を228件記録したら、根本原因は3つしかなかった",
+      "url": "https://zenn.dev/tokium_dev/articles/ai-agent-failure-patterns-228",
+      "publishedAt": "2026-09-11T06:34:12.000Z",
+      "summary": "! この記事は何の話か（3 行まとめ） AI（Claude Code）が失敗するたびに教訓を1ファイル1パターンで記録する運用を数ヶ月続けたら228件たまったので、全件を分類集計しました 教訓の大半は「Yする前にXせよ」「XはYではない」の2つの構文に収束しており、規律系の失敗の根本原因は3つ（代理シグナルの過信・否定の早撃ち・浦島太郎現象）しかありませんでした db:prepare が exit 0 なのに作成テーブル0件、復元不能バックアップ、敵対検証エージェントの指摘が全部偽陽性、といった実例と、再発防止策（行動ルール→Hookによる機械強制→本番経路の定期実走）をどう積んでい..."
+    },
+    {
+      "id": "s-99aad98fd1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "「Critical」という格付けをGPT-6 Astraが受け取った週、このタスクが触れていいリポジトリは2つしかなかった",
+      "url": "https://zenn.dev/hideki_tamae/articles/gated-capability-access-design",
+      "publishedAt": "2026-09-11T06:28:56.000Z",
+      "summary": "はじめに 100%。 これが今回の数字です。何の100%かというと、OpenAIが2026年9月3日に発表した新モデル「GPT-6 Astra」が、本番用の安全対策を外した状態で、自社のエクスプロイト開発ベンチマーク「ExploitBench」に記録したスコアです。同じ評価の中で、未知の脆弱性（ゼロデイ）を2件発見し、ハードニングされたシステムに対してブラウザのサンドボックスエスケープと権限昇格チェーンをフルで組み上げたとも報告されています。OpenAIはAstraを、自社のPreparedness Frameworkで定める「Critical」レベルのサイバー能力に到達した初めての..."
+    },
+    {
+      "id": "s-0b7cd3bb31",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI時代のエンジニアの在り方・変化",
+      "url": "https://zenn.dev/yatsumi823/articles/engineers-in-the-age-of-ai",
+      "publishedAt": "2026-09-11T05:35:13.000Z",
+      "summary": "はじめに 生成AIの登場によって、エンジニアの仕事は大きく変わり始めています。 コードの補完、テストの生成、エラーの調査、設計案の比較、ドキュメントの作成。これまで人が時間をかけていた作業の多くを、AIが短時間で支援できるようになりました。 こうした変化を前にすると、「エンジニアの仕事はなくなるのか」「今から何を学べばよいのか」と不安になる人もいるでしょう。 しかし、起きているのはエンジニアという職業の消滅ではなく、エンジニアに求められる価値の移動だと考えています。 この記事では、AI時代にエンジニアの仕事がどう変わるのか、変わらず重要なものは何か、そして私たちはどのように向き合え..."
+    },
+    {
+      "id": "s-cf20e2d812",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "文字数・バイト数からのトークン数推定は実際どれくらいズレるのか",
+      "url": "https://zenn.dev/aiforall/articles/63501821b1e50e",
+      "publishedAt": "2026-09-11T05:33:13.000Z",
+      "summary": "背景 実務で、LLM への入力テキストがトークン数の上限を超えてエラーになる事象が発生し、対策を検討する場面がありました。対策案として、LLM に投げる前に文字数やバイト数、あるいは tiktoken のようなトークナイザーでトークン数を事前に見積もり、上限を超えそうであれば送信前にエラーを表示する「事前バリデーション」方式が候補に挙がりました。 しかし議論の中で、「その見積もりが、実際に LLM に送ったときのトークン数とどこまで一致するかは怪しい」というエンジニアの感覚的な指摘がありました。最終的にはこの場では事前バリデーションを入れず、まず実際に LLM へリクエストを送り、上..."
+    },
+    {
+      "id": "s-6b6b3265be",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "生成AIパスポート試験対策",
+      "url": "https://zenn.dev/irukaboat/articles/df275295291679",
+      "publishedAt": "2026-09-11T04:56:27.000Z",
+      "summary": "第1章：AIの概要と歴史・機械学習の基礎 1.1 AI（人工知能）とロボットの違い 試験ではAIとロボットの定義の違いがよく問われます。 比較項目 AI（人工知能） ロボット 存在形態 ソフトウェア / アプリケーション 物理的な機械（身体をもつ） 主な役割 人間の知能を再現し、知的タスクを自動化 物理的な作業を自動化 ※AIを「頭脳」、ロボットを「身体」として連携させて自動化を図るシステムも存在します。 1.2 AIの歴史と3つのAIブーム AI研究の歴史の起点となるキーワードは 「第二次世界大戦」の軍事・技術的ニーズです。1956年のダートマス会議..."
     },
     {
       "id": "s-c923b1f7ed",
