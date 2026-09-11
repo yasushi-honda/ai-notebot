@@ -72,7 +72,9 @@ const CARE_SCHEMA = {
         '1文に複数の出典がある場合は [^s-aaa][^s-bbb] のように連続で並べる（カンマ区切りで1つの角括弧に' +
         '詰め込むことは絶対にしない）。段落間には実際の改行を2つ連続で入れる（文字列としてのバックスラッシュエヌは書かない）。' +
         '絵文字・「いかがでしたか」「まとめると」「革命的」等の煽り文句・誇張表現は一切使わない。' +
-        '実務マニュアルのような、簡潔で断定的な文体で書く。',
+        '実務マニュアルのような、簡潔で断定的な文体で書く。' +
+        'Google Workspace・Gemini・ChatGPT・Claude等、一般に広く使われている汎用AIツールの' +
+        '具体的な使い方を中心に書き、特定の介護専用商用SaaS製品の宣伝にはしない。',
     },
   },
   required: ['title', 'summary', 'targetServices', 'workArea', 'difficulty', 'bodyMarkdown'],
@@ -159,6 +161,9 @@ function buildPrompt(items, extraInstructions) {
     'AIで効率化する具体的な方法を1つ、実務ハンドブックのような文体で紹介してください。',
     '',
     '## 執筆ルール',
+    '- 手順で紹介する方法は、Google Workspace（スプレッドシート・ドキュメント・フォーム等）・',
+    '  Gemini・ChatGPT・Claude（Claude Codeを含む）など、一般に広く使われている汎用AIツールを',
+    '  使った具体的な操作を中心に構成すること。特定ベンダーの独自商用SaaS製品を勧める記事にはしない',
     '- 出典に書かれていない事実・数値・効果を書かない（出典の範囲を超える推測や誇張は禁止）',
     '- 絵文字を一切使わない',
     '- 「いかがでしたか」「まとめると」「革命的」「劇的に」等のAI生成文章に典型的な煽り・締め',
@@ -236,6 +241,36 @@ export function containsRawHtml(bodyMarkdown) {
   return HTML_TAG_PATTERN.test(stripCodeSpans(bodyMarkdown));
 }
 
+// Google Workspace・Gemini・ChatGPT・Claude等、一般に広く使われている汎用AIツールの
+// 名称一覧。ユーザーからのフィードバック（特定の介護専用商用SaaS製品を紹介する内容は
+// 「無責任」「誰も見ない」との指摘）を受け、本文がこれらのいずれにも言及していない場合は
+// 品質不合格として再生成させる（プロンプト遵守だけに頼らない機械的ゲート）。
+const GENERIC_TOOL_KEYWORDS = [
+  'Google Workspace',
+  'Googleスプレッドシート',
+  'Google スプレッドシート',
+  'スプレッドシート',
+  'Googleドキュメント',
+  'Google ドキュメント',
+  'Googleフォーム',
+  'Google フォーム',
+  'Google Meet',
+  'Gmail',
+  'Googleカレンダー',
+  'Google カレンダー',
+  'Gemini',
+  'ChatGPT',
+  'Claude',
+];
+
+/**
+ * bodyMarkdown が一般に広く使われている汎用AIツール（上記一覧）に1回以上言及しているかを
+ * 検査する。特定の介護専用商用SaaS製品だけを紹介する記事になっていないかの機械的ゲート。
+ */
+export function mentionsGenericTool(bodyMarkdown) {
+  return GENERIC_TOOL_KEYWORDS.some((kw) => bodyMarkdown.includes(kw));
+}
+
 /**
  * 生成結果の品質を検査する。schemaのminLength/minItemsは第一防御線に過ぎず
  * （Vertex AIが必ず厳密に強制する保証はないため）、書き込み前に改めて検証する。
@@ -266,6 +301,16 @@ export function validateGenerated(result, itemsById) {
 
   const styleIssues = findBannedExpressions(`${result.title}\n${result.summary}\n${result.bodyMarkdown}`);
   if (styleIssues.length > 0) problems.push(`NG表現を検出: ${styleIssues.join(', ')}`);
+
+  // 特定の介護専用商用SaaS製品だけを紹介する記事になっていないかの機械的ゲート
+  // （ユーザーから「一般に広く使われているツールでの具体的なやり方を中心にすべき」との
+  // フィードバックを受けて追加）。プロンプトの指示だけに頼らず、Google Workspace・Gemini・
+  // ChatGPT・Claude等への言及が最低1回あるかを検査する。
+  if (!mentionsGenericTool(result.bodyMarkdown)) {
+    problems.push(
+      'Google Workspace・Gemini・ChatGPT・Claude等、一般的な汎用AIツールへの言及がありません',
+    );
+  }
 
   // bodyMarkdownはLLMの自由記述であり、プロンプトインジェクション（source-excerptに紛れ込んだ
   // 悪意ある指示文）等をきっかけに生のHTMLタグを書いてしまう可能性を構造的に排除できない。

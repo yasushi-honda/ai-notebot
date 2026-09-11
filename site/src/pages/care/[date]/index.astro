@@ -23,24 +23,18 @@ const { Content } = await render(post);
   </nav>
 
   <div class="care-page">
-    <div class="text-xs text-[#8a7f6a] font-sans mb-2">{post.data.date} · 介護現場のAI活用</div>
-    <h1 class="font-serif text-2xl font-bold text-[#2b2620] mb-2">{post.data.title}</h1>
-    <p class="text-[#5a4f3f] mb-6">{post.data.summary}</p>
+    <div class="text-xs text-teal-600 font-semibold mb-2">{post.data.date} · 介護現場のAI活用</div>
+    <h1 class="text-2xl font-bold text-slate-900 mb-2">{post.data.title}</h1>
+    <p class="text-slate-500 mb-6">{post.data.summary}</p>
 
-    <dl class="care-meta">
-      <div>
-        <dt>対象サービス</dt>
-        <dd>{post.data.targetServices.join(' / ')}</dd>
-      </div>
-      <div>
-        <dt>業務領域</dt>
-        <dd>{post.data.workArea}</dd>
-      </div>
-      <div>
-        <dt>導入の手間</dt>
-        <dd>{post.data.difficulty}</dd>
-      </div>
-    </dl>
+    <!-- dl/dt/dd（定義リスト）はラベルと値のペア構造を要求するため、"ラベル: 値" を
+         1つのテキストにまとめて表示するpillとは意味構造が合わない（codex reviewで指摘・修正）。
+         意味的に正しいのは単なるリストなので div に変更する。 -->
+    <div class="care-meta">
+      <span class="care-meta-pill">対象: {post.data.targetServices.join(' / ')}</span>
+      <span class="care-meta-pill">業務領域: {post.data.workArea}</span>
+      <span class="care-meta-pill">導入の手間: {post.data.difficulty}</span>
+    </div>
 
     <img
       src={url(`images/care/${post.data.date}/steps.svg`)}
@@ -53,7 +47,29 @@ const { Content } = await render(post);
       <Content />
     </article>
 
-    <p class="mt-6 text-xs text-[#8a7f6a] font-sans">
+    <!--
+      個人情報の取り扱いに関する注意（固定文言・毎回必ず表示。ユーザーからのフィードバック
+      （要配慮個人情報を扱う前提のハックを注意喚起なしに無責任に紹介している）を受けて追加）。
+
+      【AGENTS.mdの「本文の全主張は脚注に紐付く」invariantに対する意図的な例外であることの
+      明記（codex reviewで指摘）】: この文言は data/raw-care の出典から脚注で裏付ける対象には
+      しない。理由は、(1) LLMが生成する自由記述ではなく人間が直接書いた固定文言であるため
+      ハルシネーションのリスクがそもそも存在しない、(2) 日によって出典に個人情報保護関連の
+      情報が含まれるとは限らないため、脚注必須にすると「その日はこの注意書きが出ない」という
+      事態が起こりうるが、それはユーザーが求める「毎回必ず出す安全装置」という要件に反する、
+      (3) 特定の法令名・条文を断定的に引用しない一般的な注意喚起であり、事実主張ではなく
+      推奨行動の提示であるため。この例外は「見出し・テーブル等の機械生成構造要素は脚注検証の
+      対象外」という既存の設計方針（citation-gate.mjs）と同じカテゴリの拡張であり、
+      docs/adr/adr-2026-09-11-care-hack-grounded-research.md に追記済み。
+    -->
+    <div class="care-privacy-note">
+      <strong>個人情報を扱う際の注意:</strong>
+      利用者様のお名前や心身の状況など、要配慮個人情報を含む情報をAIツールに入力する場合は、
+      氏名等を匿名化・仮名化する、所属先が契約している法人向けプラン（学習利用オフ設定等）を
+      利用する等、所属先の情報管理ルールに従ってください。
+    </div>
+
+    <p class="mt-6 text-xs text-slate-400">
       この記事の出典 {post.data.sourceIds.length} 件はすべて、到達性を機械検証済みの実在するウェブページに解決することを検証済みです。
     </p>
 

@@ -1,47 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 516" width="480" height="516">
   <defs>
     <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#2c4a63" />
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0d9488" />
     </marker>
   </defs>
-  <rect width="480" height="640" fill="#faf8f5" stroke="#d8cdbb" />
+  <rect width="480" height="516" fill="#ffffff" stroke="#e2e8f0" />
     <g>
-      <rect x="24" y="56" width="32" height="32" fill="#2c4a63" />
+      <circle cx="40" cy="72" r="16" fill="#0d9488" />
       <text x="40" y="72" text-anchor="middle" dominant-baseline="central"
-        font-family="serif" font-size="16" font-weight="700" fill="#faf8f5">1</text>
-      <text font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-size="16" font-weight="600"
-        fill="#2b2620"><tspan x="72" y="48">厚生労働省の生産性向上ガイドライ</tspan><tspan x="72" y="72">ンを参考に、タブレット端末などの</tspan><tspan x="72" y="96">ICT機器を準備します</tspan></text>
+        font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="700" fill="#ffffff">1</text>
+      <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="600" fill="#1e293b"><tspan x="72" y="48">利用者の個人情報を匿名化した上で</tspan><tspan x="72" y="72">、AIに入力するためのテキスト情</tspan><tspan x="72" y="96">報を整理します</tspan></text>
     </g><path d="M 40 124 L 40 142"
-              stroke="#2c4a63" stroke-width="2" marker-end="url(#arrowhead)" />
+              stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <rect x="24" y="180" width="32" height="32" fill="#2c4a63" />
+      <circle cx="40" cy="196" r="16" fill="#0d9488" />
       <text x="40" y="196" text-anchor="middle" dominant-baseline="central"
-        font-family="serif" font-size="16" font-weight="700" fill="#faf8f5">2</text>
-      <text font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-size="16" font-weight="600"
-        fill="#2b2620"><tspan x="72" y="172">ケアを行ったその場で、利用者名と</tspan><tspan x="72" y="196">介助内容を音声入力AIに向かって</tspan><tspan x="72" y="220">発話します</tspan></text>
+        font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="700" fill="#ffffff">2</text>
+      <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="600" fill="#1e293b"><tspan x="72" y="172">ChatGPTやGeminiなど</tspan><tspan x="72" y="196">の汎用生成AIを開き、ケアプラン</tspan><tspan x="72" y="220">の原案作成用プロンプトを入力し…</tspan></text>
     </g><path d="M 40 248 L 40 266"
-              stroke="#2c4a63" stroke-width="2" marker-end="url(#arrowhead)" />
+              stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <rect x="24" y="304" width="32" height="32" fill="#2c4a63" />
+      <circle cx="40" cy="320" r="16" fill="#0d9488" />
       <text x="40" y="320" text-anchor="middle" dominant-baseline="central"
-        font-family="serif" font-size="16" font-weight="700" fill="#faf8f5">3</text>
-      <text font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-size="16" font-weight="600"
-        fill="#2b2620"><tspan x="72" y="296">AIに発話内容を読み取らせて記録</tspan><tspan x="72" y="320">カード化し、メモや手入力を省略し</tspan><tspan x="72" y="344">ます</tspan></text>
+        font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="700" fill="#ffffff">3</text>
+      <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="600" fill="#1e293b"><tspan x="72" y="296">AIが生成した出力結果を確認し、</tspan><tspan x="72" y="320">厚生労働省のガイドラインや事業所</tspan><tspan x="72" y="344">の基準に合致しているか点検します</tspan></text>
     </g><path d="M 40 372 L 40 390"
-              stroke="#2c4a63" stroke-width="2" marker-end="url(#arrowhead)" />
+              stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <rect x="24" y="428" width="32" height="32" fill="#2c4a63" />
+      <circle cx="40" cy="444" r="16" fill="#0d9488" />
       <text x="40" y="444" text-anchor="middle" dominant-baseline="central"
-        font-family="serif" font-size="16" font-weight="700" fill="#faf8f5">4</text>
-      <text font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-size="16" font-weight="600"
-        fill="#2b2620"><tspan x="72" y="420">生成AIを活用して議事録や報告書</tspan><tspan x="72" y="444">の原案を作成し、作成にかかる時間</tspan><tspan x="72" y="468">を短縮します</tspan></text>
-    </g><path d="M 40 496 L 40 514"
-              stroke="#2c4a63" stroke-width="2" marker-end="url(#arrowhead)" />
-    <g>
-      <rect x="24" y="552" width="32" height="32" fill="#2c4a63" />
-      <text x="40" y="568" text-anchor="middle" dominant-baseline="central"
-        font-family="serif" font-size="16" font-weight="700" fill="#faf8f5">5</text>
-      <text font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-size="16" font-weight="600"
-        fill="#2b2620"><tspan x="72" y="544">作成したデータを既存のシステムと</tspan><tspan x="72" y="568">連携させて、法定の記録や保管を行</tspan><tspan x="72" y="592">います</tspan></text>
+        font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="700" fill="#ffffff">4</text>
+      <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="600" fill="#1e293b"><tspan x="72" y="420">ケアマネジャーが専門的な見地から</tspan><tspan x="72" y="444">内容を修正し、最終的なケアプラン</tspan><tspan x="72" y="468">を完成させます</tspan></text>
     </g>
 </svg>

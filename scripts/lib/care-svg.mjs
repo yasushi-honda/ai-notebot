@@ -3,8 +3,10 @@
  * Vertex AI を一切呼ばない純粋関数のため、追加コストもハルシネーションリスクもゼロ
  * （scripts/lib/svg-diagram.mjs と同じ設計方針）。
  *
- * デザインは記事本体の「紙の実務ハンドブック」トーンに合わせ、彩度の高いカラーパレットではなく
- * 墨・藍・生成り紙色の3色でまとめる（AIトレンド版の svg-diagram.mjs とは意図的に別トーン）。
+ * デザインは当初「紙の実務ハンドブック」トーン（墨・藍・生成り紙色・明朝体）だったが、
+ * 実際にレンダリングしたページをユーザーが見て「単調で誰も見ない見た目」と判断した
+ * （2026-09-11）。AIトレンド版（scripts/lib/svg-diagram.mjs）と同じ白背景・スレート罫線の
+ * モダンな見た目に統一し、差し色だけ teal にしてコンテンツ種別が見分けられるようにする。
  *
  * レイアウトは縦積み（上から下へ番号順）にする。当初は横並びだったが、記事本文の幅
  * （実測で768px前後の記事コンテナからpaddingを引いた600〜650px程度）に対して手順数が
@@ -23,10 +25,10 @@ const MAX_LINES = 3;
 const ROW_GAP = 28; // ステップ間の余白（矢印を描くスペースを含む）
 const ROW_VERTICAL_PADDING = 12;
 
-const INK = '#2b2620';
-const NAVY = '#2c4a63';
-const PAPER = '#faf8f5';
-const RULE = '#d8cdbb';
+const INK = '#1e293b'; // slate-800
+const TEAL = '#0d9488'; // teal-600
+const PAPER = '#ffffff';
+const RULE = '#e2e8f0'; // slate-200
 
 export function escapeXml(s) {
   return String(s)
@@ -84,17 +86,18 @@ export function buildStepsSvg(steps) {
       const arrow =
         i < n - 1
           ? `<path d="M ${PADDING + BADGE_SIZE / 2} ${cursorY + 4} L ${PADDING + BADGE_SIZE / 2} ${cursorY + ROW_GAP - 6}"
-              stroke="${NAVY}" stroke-width="2" marker-end="url(#arrowhead)" />`
+              stroke="${TEAL}" stroke-width="2" marker-end="url(#arrowhead)" />`
           : '';
       cursorY += ROW_GAP;
 
       return `
     <g>
-      <rect x="${PADDING}" y="${badgeY}" width="${BADGE_SIZE}" height="${BADGE_SIZE}" fill="${NAVY}" />
+      <circle cx="${PADDING + BADGE_SIZE / 2}" cy="${badgeY + BADGE_SIZE / 2}" r="${BADGE_SIZE / 2}" fill="${TEAL}" />
       <text x="${PADDING + BADGE_SIZE / 2}" y="${rowCenterY}" text-anchor="middle" dominant-baseline="central"
-        font-family="serif" font-size="16" font-weight="700" fill="${PAPER}">${i + 1}</text>
-      <text font-family="'Hiragino Mincho ProN','Yu Mincho','Noto Serif JP',serif" font-size="16" font-weight="600"
-        fill="${INK}">${tspans}</text>
+        font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="700" fill="${PAPER}">${i + 1}</text>
+      <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
+        font-weight="600" fill="${INK}">${tspans}</text>
     </g>${arrow}`;
     })
     .join('');
@@ -102,7 +105,7 @@ export function buildStepsSvg(steps) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${WIDTH} ${height}" width="${WIDTH}" height="${height}">
   <defs>
     <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="${NAVY}" />
+      <path d="M0,0 L8,4 L0,8 Z" fill="${TEAL}" />
     </marker>
   </defs>
   <rect width="${WIDTH}" height="${height}" fill="${PAPER}" stroke="${RULE}" />${nodes}

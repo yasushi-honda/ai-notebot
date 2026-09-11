@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { ensureBlankLineAfterHeadings, extractSteps, extractUsedIds, validateGenerated, buildFootnoteDefs, stripFootnotesFromHeadings, escapeSourceField, formatCandidateList, containsRawHtml } from '../curate-care.mjs';
+import { ensureBlankLineAfterHeadings, extractSteps, extractUsedIds, validateGenerated, buildFootnoteDefs, stripFootnotesFromHeadings, escapeSourceField, formatCandidateList, containsRawHtml, mentionsGenericTool } from '../curate-care.mjs';
 
 test('ensureBlankLineAfterHeadings: 見出し直後に空行が無ければ挿入する', () => {
   const input = '## 見出し\n本文です。\n';
@@ -86,6 +86,29 @@ test('containsRawHtml: 数値の不等号比較（5 < 10等）はタグと誤認
   assert.equal(containsRawHtml('入力件数が 5 < 10 件の場合は対象外です。'), false);
 });
 
+// mentionsGenericTool: 特定の介護専用商用SaaS製品だけを紹介する記事になっていないかの
+// 機械的ゲート（ユーザーから「一般に広く使われているツールでの具体的なやり方を中心に
+// すべき」とのフィードバックを受けて追加）
+test('mentionsGenericTool: Google Workspaceへの言及があればtrue', () => {
+  assert.equal(mentionsGenericTool('Google Workspaceのスプレッドシートを使います。'), true);
+});
+
+test('mentionsGenericTool: Geminiへの言及があればtrue', () => {
+  assert.equal(mentionsGenericTool('Geminiに読み上げさせます。'), true);
+});
+
+test('mentionsGenericTool: ChatGPTへの言及があればtrue', () => {
+  assert.equal(mentionsGenericTool('ChatGPTに下書きを作らせます。'), true);
+});
+
+test('mentionsGenericTool: Claudeへの言及があればtrue', () => {
+  assert.equal(mentionsGenericTool('Claude Codeで自動化します。'), true);
+});
+
+test('mentionsGenericTool: 汎用ツールへの言及が一切なければfalse', () => {
+  assert.equal(mentionsGenericTool('専用の介護記録アプリを導入します。'), false);
+});
+
 const OFFICIAL_ITEM = { id: 's-abcdef0123', tier: 'official' };
 const WEB_ITEM = { id: 's-1234567890', tier: 'web' };
 const itemsByIdWithOfficial = new Map([[OFFICIAL_ITEM.id, OFFICIAL_ITEM], [WEB_ITEM.id, WEB_ITEM]]);
@@ -100,7 +123,7 @@ function validResult(overrides = {}) {
     difficulty: 'すぐできる',
     bodyMarkdown:
       '## なぜ手間がかかるのか\n\n背景です[^s-abcdef0123]。\n\n## 手順\n\n' +
-      '1. ステップ1です[^s-1234567890]。\n2. ステップ2です[^s-1234567890]。\n3. ステップ3です[^s-1234567890]。\n',
+      '1. Geminiにステップ1を実行させます[^s-1234567890]。\n2. ステップ2です[^s-1234567890]。\n3. ステップ3です[^s-1234567890]。\n',
     ...overrides,
   };
 }
@@ -241,6 +264,14 @@ test('validateGenerated: 「## なぜ手間がかかるのか」見出しが欠�
   const body = '## 手順\n\n1. ステップ1です[^s-1234567890]。\n2. ステップ2です[^s-1234567890]。\n3. ステップ3です[^s-1234567890]。\n';
   const problems = validateGenerated(validResult({ bodyMarkdown: body }), itemsByIdWithOfficial);
   assert.ok(problems.some((p) => p.includes('なぜ手間がかかるのか')));
+});
+
+test('validateGenerated: 汎用AIツールへの言及が無ければ検出する', () => {
+  const body =
+    '## なぜ手間がかかるのか\n\n背景です[^s-abcdef0123]。\n\n## 手順\n\n' +
+    '1. 専用アプリを導入します[^s-1234567890]。\n2. ステップ2です[^s-1234567890]。\n3. ステップ3です[^s-1234567890]。\n';
+  const problems = validateGenerated(validResult({ bodyMarkdown: body }), itemsByIdWithOfficial);
+  assert.ok(problems.some((p) => p.includes('汎用AIツール')));
 });
 
 test('validateGenerated: workArea/difficultyが正しいenum値なら問題なし', () => {

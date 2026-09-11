@@ -3,8 +3,6 @@
 @theme {
   --font-sans:
     'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif;
-  --font-serif:
-    'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif;
 }
 
 body {
@@ -93,62 +91,57 @@ body {
 }
 
 /*
- * 介護版「今日のAI活用ハック」記事: 意図的に AIトレンド版（indigo基調のモダンUI）とは
- * 切り離した「紙の実務ハンドブック」トーン。装飾はグラデーション・絵文字・丸みを避け、
- * 明朝体・生成りの紙色・罫線・角ばった番号バッジのみで構成する（2026-09-11）。
+ * 介護版「今日のAI活用ハック」記事: 当初は「紙の実務ハンドブック」トーン（明朝体・生成りの
+ * 紙色）で作ったが、実際にレンダリングしたページをユーザーが見て「単調で誰も見ない見た目」と
+ * 判断した（2026-09-11）。AIトレンド版（.prose-post）と同じ白背景・角丸カード・モダンな
+ * コンポーネント体系に統一し、差し色だけ teal 系にしてコンテンツ種別が見分けられるようにする。
  */
 .care-page {
-  @apply bg-[#faf8f5] border border-[#d8cdbb] rounded-sm px-6 py-8 sm:px-10 sm:py-10;
+  @apply bg-white border border-slate-200 rounded-xl px-6 py-8 sm:px-10 sm:py-10;
 }
 
 .care-meta {
-  @apply grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-4 mb-8 pb-6 border-b border-[#d8cdbb] text-sm;
+  @apply flex flex-wrap gap-2 mb-8;
 }
-.care-meta dt {
-  @apply text-[#8a7f6a] text-xs tracking-wide mb-1;
-}
-.care-meta dd {
-  @apply text-[#2b2620] font-semibold;
+.care-meta .care-meta-pill {
+  @apply text-xs px-2 py-1 rounded-full bg-teal-50 text-teal-700;
 }
 
-.prose-care {
-  font-family: var(--font-serif);
-}
 .prose-care :where(p) {
-  @apply text-[17px] leading-[1.9] mb-6 text-[#2b2620] max-w-[34em];
+  @apply text-[17px] leading-[1.9] mb-6 text-slate-700;
 }
 .prose-care :where(h2) {
-  @apply text-lg font-bold mt-10 mb-4 text-[#2b2620] py-2 border-t border-b border-[#d8cdbb];
+  @apply text-xl font-bold mt-12 mb-4 text-slate-900 pl-4 border-l-4 border-teal-500;
 }
 .prose-care :where(strong) {
-  @apply font-bold text-[#2c4a63];
+  @apply font-bold text-slate-900;
 }
 
-/* 「## 手順」の番号付きリスト: 角ばった番号バッジ＋項目間の罫線区切り（丸みや彩色は使わない） */
+/* 「## 手順」の番号付きリスト: teal の丸番号バッジ（.prose-postの装飾密度に合わせる） */
 .prose-care :where(ol) {
   @apply list-none pl-0 mb-4 space-y-0;
   counter-reset: care-step;
 }
 .prose-care :where(ol li) {
-  @apply relative pl-10 py-3 border-b border-[#e5ddce] leading-relaxed last:border-b-0;
+  @apply relative pl-10 py-3 border-b border-slate-100 leading-relaxed last:border-b-0;
   counter-increment: care-step;
 }
 .prose-care :where(ol li)::before {
   content: counter(care-step);
-  @apply absolute left-0 top-3 inline-flex items-center justify-center w-6 h-6
-    bg-[#2c4a63] text-[#faf8f5] text-xs font-bold font-sans;
+  @apply absolute left-0 top-3 inline-flex items-center justify-center w-6 h-6 rounded-full
+    bg-teal-600 text-white text-xs font-bold;
 }
 .prose-care :where(ul) {
   @apply list-disc pl-6 mb-4 space-y-1.5 leading-relaxed;
 }
 
 .steps-diagram {
-  @apply max-w-full rounded-sm border border-[#d8cdbb] bg-[#faf8f5] mb-8;
+  @apply w-full rounded-xl border border-slate-200 bg-white mb-8;
 }
 
 /* remark-gfm footnotes セクション */
 .prose-care :where(section[data-footnotes]) {
-  @apply mt-10 pt-6 border-t border-[#d8cdbb] text-sm text-[#5a4f3f] font-sans;
+  @apply mt-10 pt-6 border-t border-slate-200 text-sm text-slate-600;
 }
 .prose-care :where(section[data-footnotes] ol) {
   @apply list-decimal list-inside space-y-2 pl-0;
@@ -165,14 +158,19 @@ body {
   @apply leading-relaxed;
 }
 .prose-care :where(a) {
-  @apply text-[#2c4a63] underline decoration-[#a9b9c4] hover:decoration-[#2c4a63];
+  @apply text-teal-600 underline decoration-teal-300 hover:decoration-teal-600;
 }
 
 .prose-care sup a[data-footnote-ref] {
   @apply inline-flex items-center justify-center min-w-[1.35em] h-[1.35em] px-1 ml-0.5
-    bg-[#eef1f4] text-[0.7em] font-semibold text-[#2c4a63] no-underline font-sans
+    rounded bg-teal-50 text-[0.7em] font-semibold text-teal-600 no-underline
     align-super leading-none transition-colors;
 }
 .prose-care sup a[data-footnote-ref]:hover {
-  @apply bg-[#dde5ec];
+  @apply bg-teal-100 text-teal-800;
+}
+
+/* 個人情報の取り扱いに関する注意（LLM生成ではなく固定文言。care/[date]/index.astro参照） */
+.care-privacy-note {
+  @apply mb-8 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900 leading-relaxed;
 }
