@@ -1,52 +1,142 @@
 {
   "date": "2026-09-11",
-  "collectedAt": "2026-09-11T11:37:27.364Z",
+  "collectedAt": "2026-09-11T12:10:47.640Z",
   "sourceSuccessCount": 18,
   "items": [
     {
-      "id": "s-9ff119dc67",
+      "id": "s-f791d596ac",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "publishedAt": "2026-09-11T12:10:28.000Z",
+      "summary": "★203996 Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+    },
+    {
+      "id": "s-c0eef68b78",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "codeaholicguy/ai-devkit: The control plane for AI coding agents.",
+      "url": "https://github.com/codeaholicguy/ai-devkit",
+      "publishedAt": "2026-09-11T12:10:23.000Z",
+      "summary": "★1623 The control plane for AI coding agents."
+    },
+    {
+      "id": "s-4b47d942dc",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "mnfst/llm-gateway: Connect Your Agents And Harnesses With Any Provider 🦚",
+      "url": "https://github.com/mnfst/llm-gateway",
+      "publishedAt": "2026-09-11T12:10:21.000Z",
+      "summary": "★7517 Connect Your Agents And Harnesses With Any Provider 🦚"
+    },
+    {
+      "id": "s-100723b520",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "langfuse/langfuse: 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
-      "url": "https://github.com/langfuse/langfuse",
-      "publishedAt": "2026-09-11T11:36:35.000Z",
-      "summary": "★34472 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform."
+      "title": "MakazhanAlpamys/Soup: Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "publishedAt": "2026-09-11T12:10:19.000Z",
+      "summary": "★6092 Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU."
     },
     {
-      "id": "s-cc6ea79dc2",
+      "id": "s-faab3a2372",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "electerm/electerm: 📻Free and open-sourced terminal/ssh/sftp/ftp/telnet/serialport/RDP/VNC/Spice client(Linux, Mac, Windows, Android, HarmonyOS, iOS)",
-      "url": "https://github.com/electerm/electerm",
-      "publishedAt": "2026-09-11T11:36:30.000Z",
-      "summary": "★15086 📻Free and open-sourced terminal/ssh/sftp/ftp/telnet/serialport/RDP/VNC/Spice client(Linux, Mac, Windows, Android, HarmonyOS, iOS)"
+      "title": "SonarSource/sonarqube-cli: Command-line interface for SonarQube with AI agent integration. Scan for secrets and get fast feedback on code quality and security from your terminal.",
+      "url": "https://github.com/SonarSource/sonarqube-cli",
+      "publishedAt": "2026-09-11T12:10:04.000Z",
+      "summary": "★275 Command-line interface for SonarQube with AI agent integration. Scan for secrets and get fast feedback on code quality and security from your terminal."
     },
     {
-      "id": "s-4736e251d8",
+      "id": "s-aa02723ed7",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "illegalstudio/lazyagent: Monitor all your coding agents from one terminal - Claude Code, Cursor, OpenCode, pi and more",
-      "url": "https://github.com/illegalstudio/lazyagent",
-      "publishedAt": "2026-09-11T11:36:30.000Z",
-      "summary": "★186 Monitor all your coding agents from one terminal - Claude Code, Cursor, OpenCode, pi and more"
+      "title": "juspay/xyne-spaces: The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai",
+      "url": "https://github.com/juspay/xyne-spaces",
+      "publishedAt": "2026-09-11T12:09:58.000Z",
+      "summary": "★144 The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai"
     },
     {
-      "id": "s-e9333d9b04",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "semantica-agi/semantica: Graph-Native Infrastructure for Context and Accountable AI Systems",
-      "url": "https://github.com/semantica-agi/semantica",
-      "publishedAt": "2026-09-11T11:36:19.000Z",
-      "summary": "★12655 Graph-Native Infrastructure for Context and Accountable AI Systems"
-    },
-    {
-      "id": "s-556026dbcd",
+      "id": "s-62b074de6c",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "antonbabenko/deliberation: Ask Codex, Gemini, Grok, and 400+ OpenRouter models (Qwen, Kimi, DeepSeek) for second opinions or arbiter-mediated consensus. One MCP server for Claude Code, Codex, Cursor, Kiro, OpenCode. Measures which models earn their seat.",
-      "url": "https://github.com/antonbabenko/deliberation",
-      "publishedAt": "2026-09-11T11:36:15.000Z",
-      "summary": "★145 Ask Codex, Gemini, Grok, and 400+ OpenRouter models (Qwen, Kimi, DeepSeek) for second opinions or arbiter-mediated consensus. One MCP server for Claude Code, Codex, Cursor, Kiro, OpenCode. Measures which models earn their seat."
+      "title": "yonatangross/orchestkit: The Complete AI Development Toolkit for Claude Code. 106 skills, 36 agents, 171 hooks. Install `ork` for stable (v9.x), or `ork-alpha` for the v10 line, which ships daily.",
+      "url": "https://github.com/yonatangross/orchestkit",
+      "publishedAt": "2026-09-11T12:09:49.000Z",
+      "summary": "★229 The Complete AI Development Toolkit for Claude Code. 106 skills, 36 agents, 171 hooks. Install `ork` for stable (v9.x), or `ork-alpha` for the v10 line, which ships daily."
+    },
+    {
+      "id": "s-cd0169620e",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ChaitanyaEswarRajeshJakki/gemini-youtube-automation: A fully autonomous AI Agent/Python pipeline that utilizes Large Language Models (LLMs) like Gemini to generate content, produce videos, and automatically upload educational videos to YouTube.",
+      "url": "https://github.com/ChaitanyaEswarRajeshJakki/gemini-youtube-automation",
+      "publishedAt": "2026-09-11T12:09:38.000Z",
+      "summary": "★342 A fully autonomous AI Agent/Python pipeline that utilizes Large Language Models (LLMs) like Gemini to generate content, produce videos, and automatically upload educational videos to YouTube."
+    },
+    {
+      "id": "s-98801628f9",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "fkonovalov/rdrr: Convert any URL to clean markdown for AI agents.",
+      "url": "https://github.com/fkonovalov/rdrr",
+      "publishedAt": "2026-09-11T12:09:19.000Z",
+      "summary": "★177 Convert any URL to clean markdown for AI agents."
+    },
+    {
+      "id": "s-930dd1342c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "NousResearch/hermes-agent: The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "publishedAt": "2026-09-11T12:09:04.000Z",
+      "summary": "★244416 The agent that grows with you"
+    },
+    {
+      "id": "s-7ac4188ee4",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "damianvtran/local-operator: An open-source AI agent hub for your own machine: build organizations of collaborating agents that message each other, run in the background around the clock, and share your existing AI subscriptions.",
+      "url": "https://github.com/damianvtran/local-operator",
+      "publishedAt": "2026-09-11T12:08:48.000Z",
+      "summary": "★211 An open-source AI agent hub for your own machine: build organizations of collaborating agents that message each other, run in the background around the clock, and share your existing AI subscriptions."
+    },
+    {
+      "id": "s-ed0b86f80b",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "ENTERPILOT/GoModel: AI gateway / AI control plane / AI proxy written in Go. Unified OpenAI-compatible and Anthropic-compatible API for OpenAI, Anthropic, Gemini, Groq, xAI, Ollama, vLLM and more. A LiteLLM alternative with observability, guardrails, streaming, cost tracking, intelligent routing, sticky sessions, failover, real-time logs and usage tracking. Prod ready.",
+      "url": "https://github.com/ENTERPILOT/GoModel",
+      "publishedAt": "2026-09-11T12:08:37.000Z",
+      "summary": "★1145 AI gateway / AI control plane / AI proxy written in Go. Unified OpenAI-compatible and Anthropic-compatible API for OpenAI, Anthropic, Gemini, Groq, xAI, Ollama, vLLM and more. A LiteLLM alternative with observability, guardrails, streaming, cost tracking, intelligent routing, sticky sessions, failover, real-time logs and usage tracking. Prod ready."
+    },
+    {
+      "id": "s-201fe558a4",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "esengine/DeepSeek-Reasonix: DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "publishedAt": "2026-09-11T12:08:36.000Z",
+      "summary": "★35502 DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running."
+    },
+    {
+      "id": "s-f73d62b8bd",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "CopilotKit/aimock: Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies.",
+      "url": "https://github.com/CopilotKit/aimock",
+      "publishedAt": "2026-09-11T12:08:08.000Z",
+      "summary": "★918 Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies."
+    },
+    {
+      "id": "s-a655f7044b",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Claude Code × OpenRouter :free モデルで月額ほぼ0円のAI開発環境を構築する5つの設定",
+      "url": "https://qiita.com/locallab/items/9d66b79a3098b824d118",
+      "publishedAt": "2026-09-11T12:01:08.000Z",
+      "summary": "TL;DR Claude Code の ANTHROPIC_API_KEY を OpenRouter 経由に差し替えると :free モデルが使える claude --model フラグと CLAUDE_MODEL 環境変数で無料モデルを固定できる レート制限を踏まえ..."
     },
     {
       "id": "s-802349ba55",
@@ -58,76 +148,13 @@
       "summary": "Copilotに「このドキュメントを Perl愛、正規表現愛の溢れるウィットに富んだ英文にして」と頼んだ。 するすると英文が出来上がった。 かくいう私は英語が読めない。 そこでブラウザ翻訳を片手に読み始めた。 あっ。俺の書いた文章だ。 そう思った。 でも、こっちの方がワクワ..."
     },
     {
-      "id": "s-b3b625efc3",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "invergent-ai/surogate: Train and serve LLMs at extreme speed and massive throughput.",
-      "url": "https://github.com/invergent-ai/surogate",
-      "publishedAt": "2026-09-11T11:35:49.000Z",
-      "summary": "★813 Train and serve LLMs at extreme speed and massive throughput."
-    },
-    {
-      "id": "s-53292bf109",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "infiniflow/ragflow: RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
-      "url": "https://github.com/infiniflow/ragflow",
-      "publishedAt": "2026-09-11T11:35:19.000Z",
-      "summary": "★90519 RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs"
-    },
-    {
-      "id": "s-aa02723ed7",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "juspay/xyne-spaces: The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai",
-      "url": "https://github.com/juspay/xyne-spaces",
-      "publishedAt": "2026-09-11T11:35:09.000Z",
-      "summary": "★144 The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai"
-    },
-    {
-      "id": "s-8743640274",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "Hack23/cia: Citizen Intelligence Agency. Open-source intelligence platform analyzing Swedish political activities using AI and data visualization. Tracks politicians, government institutions, and parliamentary data, offering detailed insights, performance metrics, and advanced analytics.",
-      "url": "https://github.com/Hack23/cia",
-      "publishedAt": "2026-09-11T11:35:07.000Z",
-      "summary": "★236 Citizen Intelligence Agency. Open-source intelligence platform analyzing Swedish political activities using AI and data visualization. Tracks politicians, government institutions, and parliamentary data, offering detailed insights, performance metrics, and advanced analytics."
-    },
-    {
-      "id": "s-2c650dc340",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "omnigent-ai/omnigent: Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
-      "url": "https://github.com/omnigent-ai/omnigent",
-      "publishedAt": "2026-09-11T11:34:59.000Z",
-      "summary": "★9848 Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device."
-    },
-    {
-      "id": "s-811bc90fc9",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "cjinhuo/blazwitcher: A Chrome Extension to blaze through your tabs, bookmarks, and history — with powerful fuzzy Pinyin search and grouping tags by AI. 一款可以全局搜索标签、书签和历史记录的 Chrome 浏览器扩展，支持拼音模糊搜索和 AI 标签分组",
-      "url": "https://github.com/cjinhuo/blazwitcher",
-      "publishedAt": "2026-09-11T11:34:54.000Z",
-      "summary": "★102 A Chrome Extension to blaze through your tabs, bookmarks, and history — with powerful fuzzy Pinyin search and grouping tags by AI. 一款可以全局搜索标签、书签和历史记录的 Chrome 浏览器扩展，支持拼音模糊搜索和 AI 标签分组"
-    },
-    {
-      "id": "s-c8da03ac6d",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "epam/ai-dial-chat: A default UI for AI DIAL",
-      "url": "https://github.com/epam/ai-dial-chat",
-      "publishedAt": "2026-09-11T11:33:59.000Z",
-      "summary": "★504 A default UI for AI DIAL"
-    },
-    {
-      "id": "s-e8b1e4fc68",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "code-yeongyu/senpi: pi had nothing (nothing), so I made something (something) — sorry mariozechner-senpai, I went ahead and lovingly soiled your pure pi for you. opinionated fork of badlogic/pi-mono with extension-first additions. ganbare ganbare senpi 頑張れ頑張れ先輩",
-      "url": "https://github.com/code-yeongyu/senpi",
-      "publishedAt": "2026-09-11T11:32:39.000Z",
-      "summary": "★423 pi had nothing (nothing), so I made something (something) — sorry mariozechner-senpai, I went ahead and lovingly soiled your pure pi for you. opinionated fork of badlogic/pi-mono with extension-first additions. ganbare ganbare senpi 頑張れ頑張れ先輩"
+      "id": "s-0724f9b919",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ブルーレイってどうやって観ればいい? 「超かぐや姫!」特装限定版の楽しみ方",
+      "url": "https://av.watch.impress.co.jp/docs/topic/2140311.html",
+      "publishedAt": "2026-09-11T11:24:21.000Z",
+      "summary": ""
     },
     {
       "id": "s-3b9f4e29d7",
@@ -136,7 +163,7 @@
       "title": "The Waymo effect: how AI is quietly making research less collaborative",
       "url": "https://www.researchagenda.news/articles/the-waymo-effect.html",
       "publishedAt": "2026-09-11T11:17:50.000Z",
-      "summary": "points=19 comments=2 (Hacker News)"
+      "summary": "points=60 comments=29 (Hacker News)"
     },
     {
       "id": "s-b19b71063a",
@@ -145,7 +172,7 @@
       "title": "RTK reports token savings, but our cost benchmarks disagree",
       "url": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/",
       "publishedAt": "2026-09-11T11:15:13.000Z",
-      "summary": "points=11 comments=3 (Hacker News)"
+      "summary": "points=26 comments=7 (Hacker News)"
     },
     {
       "id": "s-715f02a406",
@@ -166,22 +193,13 @@
       "summary": "Excel 内で使う Visio Data Visualizer アドインの手順を今もそのまま案内している記事は、すでに古くなっています。Microsoft は 2025 年 12 月にアドインを AppSource から削除し、2026 年 3 月 2 日に提供を終了しま..."
     },
     {
-      "id": "s-b4ecd0a691",
-      "source": "Qiita (AI タグ)",
-      "sourceType": "japanese",
-      "title": "C# と AI Agent で入札適合性チェックを実装する：PDF と Word の条項照合",
-      "url": "https://qiita.com/iceblue/items/d6db1f5059ca946d6503",
-      "publishedAt": "2026-09-11T10:45:06.000Z",
-      "summary": "入札では、価格だけでなく、入札説明書に記載された必須要件を一つでも満たしていないことが失格につながる場合があります。しかし、必須要件は「参加資格」「契約条件」「技術要件」など複数の章に分散しており、数十ページから百ページを超える文書を人手で確認すると、見落としが発生しやすく..."
-    },
-    {
       "id": "s-72f0aa59f1",
       "source": "Hacker News",
       "sourceType": "hn",
       "title": "Resist \"AI\"",
       "url": "https://ronjeffries.com/articles/-v026/x/t/",
       "publishedAt": "2026-09-11T10:19:59.000Z",
-      "summary": "points=35 comments=30 (Hacker News)"
+      "summary": "points=49 comments=84 (Hacker News)"
     },
     {
       "id": "s-b84bd18913",
@@ -256,6 +274,15 @@
       "summary": "連載「遠回りしない技術英語 ― 自動車×AIエンジニアの実務英語講座」第2回です。第1回（遠回りしないための地図）では、エンジニアの英語学習には無駄が多い、という話をした。今回はその最たる例、単語を掘り下げる。 「AI翻訳がある時代に、単語なんて覚える意味あるの？」 先に、当然出てくる疑問に答えておきたい。DeepLもChatGPTもある今、単語をわざわざ覚える意味はあるのか——。 僕の答えは「ある」だ。ただし、覚えるべき単語が、多くの人の想像とは違う。 AI翻訳は便利だが、その訳が正しいかを判断するのは結局あなただ。専門用語をAIが一般語に訳し違えたとき、それに気づけるのは自..."
     },
     {
+      "id": "s-09c732dcd8",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "動画編集AI「FLUX Video Edit」が登場、指定箇所のみ編集可能",
+      "url": "https://gigazine.net/news/20260911-flux-video-edit/",
+      "publishedAt": "2026-09-11T09:58:56.000Z",
+      "summary": "ドイツとアメリカに拠点を置くAI企業のBlack Forest Labsが動画編集AIサービス「FLUX Video Edit」を発表しました。動画の指定した部分だけを編集可能で、競合サービスと比べて価格を低く抑えています。 FLUX Video Edit - Black Forest Labs https://docs.bfl.ai/flux_tools/flux_video_edit FLUX 3 Video now has fast..."
+    },
+    {
       "id": "s-b5d7d97046",
       "source": "Zenn (AI トピック)",
       "sourceType": "japanese",
@@ -326,6 +353,15 @@
       "url": "https://zenn.dev/aiimgprompt/articles/b15f60638b5950",
       "publishedAt": "2026-09-11T08:38:08.000Z",
       "summary": "画像生成AIを毎日触っていると、プロンプトがメモ帳・チャット履歴・スクリーンショットに散らばっていきます。後から「あの質感、どう出したっけ」と探し直す時間が、地味にいちばんもったいない部分です。 散らかる原因は「保存のタイミング」 生成が成功した瞬間は満足してしまい、記録は後回しになります。結果として手元に残るのは「なんとなく良かった」という感触だけで、具体的な語順や数値は消えています。 やることは3つだけ 生成したその場でプロンプトをコピーして残す 用途（人物・背景・小物）でタグを付ける 出力した画像へのリンクを隣に置く これだけで、次に似た絵が欲しいときの出発点になります..."
+    },
+    {
+      "id": "s-d34fcea175",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "標準パッケージに uuid が追加された 背景から見る Go らしい意思決定 / go_127_uuid_decision",
+      "url": "https://speakerdeck.com/convto/go-127-uuid-decision",
+      "publishedAt": "2026-09-11T08:37:33.000Z",
+      "summary": "Go Conference 2026 で話した内容です https://gocon.jp/2026/timetable/1264524/"
     },
     {
       "id": "s-d81c5b6d34",
@@ -400,15 +436,6 @@
       "summary": "2008年10月14日、Appleは新しいMacBookのボディーを「ユニボディ」と呼んだ。押し出したアルミニウムの塊を、航空宇宙産業から借りてきたCNC（コンピュータ制御の切削機）に載せ、13段階の切削工程で一枚の骨格に削り出す。 ジョナサン・アイブは「従来のノートブックは多くの部品でできていた。新しいMacBookでは、その..."
     },
     {
-      "id": "s-3820728362",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "日本で自然と自動運転が解禁されることはない",
-      "url": "https://anond.hatelabo.jp/20260911162212",
-      "publishedAt": "2026-09-11T07:23:58.000Z",
-      "summary": "日本の将来を語るとき、「その頃にはもう自動運転が当たり前になっているだろう」というブコメを見る。 そうはならないと思う。 そうはならない可能性のほうがずっと高い。 まず現状のライドシェアの話をしたい。一般ドライバーが自分の車で客を有償で送迎する仕組みを、G7の中で全面的に解禁していないのは日本だけだ。..."
-    },
-    {
       "id": "s-3d53770357",
       "source": "Reddit r/LocalLLaMA",
       "sourceType": "reddit",
@@ -416,24 +443,6 @@
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wd96dk/what_can_you_run_on_8gb_vram/",
       "publishedAt": "2026-09-11T07:23:05.000Z",
       "summary": "Can you still do something with a 2050 or something like it? I mean for office work, loading embedding, reranking and chat models not at the same time but is anyone still using smaller models and have any good ones come out? I feel like small models are abandoned, I don’t care much for world knowledge, I want tool use and preferably multilingual. Vision would be nice but beggars can’t be choosers."
-    },
-    {
-      "id": "s-4422704da4",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "本物そっくり“AI生成レシート“が経費精算の脅威に　マネフォ「自力で見破るのは難しい」　企業はどう備える？",
-      "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001409/",
-      "publishedAt": "2026-09-11T07:19:15.000Z",
-      "summary": "「AIで偽造された領収書画像を見せられた場合、企業側が自力で見破ることは難しい」――生成AIで作ったコンビニのレシート画像が、本物と見分けにくいほど精巧だとしてXで話題になっている。画像は米OpenAIが9月8日（現地時間）に発表した画像生成機能「ChatGPT Images 2.5」で生成したもので、経費精算などへの悪用を懸念..."
-    },
-    {
-      "id": "s-15f37765d3",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "電通グループ4社、AI時代の購買行動モデル「AIJES」を提唱　人とAIによる新意思決定プロセス提示",
-      "url": "https://markezine.jp/news/detail/77595",
-      "publishedAt": "2026-09-11T07:12:01.000Z",
-      "summary": "電通、電通デジタル、電通総研、電通マクロミルインサイトの国内電通グループ4社は9月10日、AI時代における新しい購買行動モデル「AIJES」を提唱すると発表した。 同モデルは生活者とAIが協働して、情報の蓄積から意思決定、評価までを行う一連の購買プロセスを定義したもの。従来は検索エンジンやSNSなどによる情報取得..."
     },
     {
       "id": "s-c923b1f7ed",
