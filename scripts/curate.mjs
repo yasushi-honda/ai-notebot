@@ -222,10 +222,6 @@ async function main() {
   const footnotes = buildFootnoteDefs(usedIds, itemsById);
   const totalChars = bodyParts.join('').replace(/[#|\-\s]/g, '').length;
 
-  // その日の出典数が最多のテーマをヒーロー画像の主題にする（画像生成プロンプト詳細は
-  // 直下のheroImagePromptコメント参照）。
-  const leadTheme = [...themes].sort((a, b) => b.sourceIds.length - a.sourceIds.length)[0];
-
   // frontmatter の値は LLM 出力（テーマ見出し等）を含むため、二重引用符等が混じっても
   // 壊れないよう必ず JSON.stringify でエスケープする（手動でのクォート組み立てはしない。
   // codex reviewで指摘・修正: LLMがタイトルに " を含めると手動組み立てのYAML風frontmatterが壊れ、
@@ -247,20 +243,21 @@ async function main() {
     `sourceIds: [${[...usedIds].map((id) => JSON.stringify(id)).join(', ')}]`,
     // 画像生成モデル（gemini-3.1-flash-lite-image）は「文字なし」を明示しても、
     // プロンプト文中に列挙可能な具体的要素が複数含まれていると、それぞれを見出し付きの
-    // 区画として描き分ける「インフォグラフィック」的レイアウトを自発的に選び、区画
-    // ラベルとして文字（時に文字化けした状態）を描き込むことが実機検証で判明した。
-    // これはテーマ数を1つに絞っても、その1テーマの詳細説明文（angle、複数の具体的
-    // リスク・事象を含む1文）を使うと再発することも確認済み（2026-09-11）。一方、
-    // 15字前後の短い見出し（title）だけを主題にした場合は、異なる2テーマで連続して
-    // 文字要素なしの生成に成功した。「列挙可能な具体性の量」が真のトリガーと判断し、
-    // 最も出典数の多い1テーマの title のみを使う方式に確定した（テーマを全て削って
-    // 完全に汎用化する案はユーザーから「日替わりの内容が無くなるのは判断として駄目」と
-    // 明確に却下されたため不採用）。
+    // 区画として描き分ける「インフォグラフィック」的レイアウトを自発的に選ぶことが
+    // 実機検証で判明していた（2026-09-11）。そのため一時的に「単一テーマ・文字なし」の
+    // 抽象イラストに切り替えたが、(1) 実際に3日分を比較したところ、複数テーマ列挙型の
+    // プロンプトは2/2で文字化けなく完全に正しい日本語のインフォグラフィックを生成できていた
+    // 一方、(2) 「文字なし」を明示した単一テーマ版でもモデルが指示を無視してラベルを
+    // 追加することがあり、その際は（プロンプト自体が英語のため）日本語ではなく英語の
+    // ラベルになってしまい、日本語サイトとして体裁が崩れる方が実害が大きいと判断した
+    // （ユーザーとの相談の上、2026-09-11 再変更）。複数テーマ列挙型に戻しつつ、
+    // 「文字を入れるなら必ず日本語、英語は使うな」を明記することで、テキストが入ること
+    // 自体は許容しつつ言語の一貫性だけは担保する設計にした。
     // このモデルの generateContent API には Imagen 系のような negativePrompt 専用
     // パラメータは存在しない（公式ドキュメント確認済み。Imagen自体も2026-08-17に
     // 廃止されGemini 3.1 Flash Imageへの移行が推奨されており、乗り換え候補にもならない）。
     `heroImagePrompt: ${JSON.stringify(
-      `Abstract flat-design illustration, no text. A single, unified visual metaphor for the theme: ${leadTheme.title}. One cohesive scene, not divided into panels or sections, no enumerated items. Clean, modern, blue and white color palette, minimalist geometric shapes and icons only, 16:9. Absolutely no letters, words, numbers, captions, labels, or any written characters anywhere in the image.`,
+      `Flat-design tech blog hero illustration summarizing today's AI trends: ${themes.map((t) => t.angle).join('; ')}. Clean, modern, blue and white palette, 16:9. If the image includes any text, labels, or captions, they must be written in natural, grammatically correct Japanese only — never English, and never garbled or illegible characters.`,
     )}`,
     '---',
     '',
