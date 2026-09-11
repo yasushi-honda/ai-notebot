@@ -528,6 +528,17 @@ test('validateGenerated: 本文に脚注が1件もなければ検出する', () 
   assert.ok(problems.some((p) => p.includes('脚注が1件もありません')));
 });
 
+// codex reviewで指摘・修正の回帰テスト（curate.test.mjsの同種テスト参照）: 本文断片に
+// Markdownの水平線（---）が含まれても、checkCitationsがfrontmatter区切りと誤認識して
+// それより前の無出典文を見逃さないことを確認する。
+test('validateGenerated: 本文中にMarkdown水平線（---）があっても前半の無出典文を見逃さない', () => {
+  const body =
+    '## なぜ手間がかかるのか\n\n最初の無出典文です。\n\n---\n\n後半です[^s-abcdef0123]。\n\n## 手順\n\n' +
+    '1. ステップ1です[^s-1234567890]。\n2. ステップ2です[^s-1234567890]。\n3. ステップ3です[^s-1234567890]。\n';
+  const problems = validateGenerated(validResult({ bodyMarkdown: body }), itemsByIdWithOfficial);
+  assert.ok(problems.some((p) => p.includes('脚注のない文')));
+});
+
 // stripFootnotesFromHeadings: LLMがプロンプトの指示に反して見出し行に脚注を付けた場合、
 // 機械的に除去して本文（地の文）でのみ引用させる（実データで実際に発生し発覚）
 test('stripFootnotesFromHeadings: 見出し行の脚注マーカーを除去する', () => {

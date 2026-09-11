@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { stripCodeSpans } from '../lib/citation-gate.mjs';
+import { stripCodeSpans, checkCitations } from '../lib/citation-gate.mjs';
 
 // remark-gfmはコードスパン内で脚注参照構文を解釈せずリテラル表示するため、
 // 見た目だけの「引用」を本物の引用として誤カウントしないための前処理（codex reviewで指摘・修正）
@@ -59,4 +59,28 @@ test('stripCodeSpans: 4連続バッククォートの中の短い連続はコー
   const input = 'a````[^s-aaaaaaaaaa]````b';
   const result = stripCodeSpans(input);
   assert.ok(!result.includes('[^s-aaaaaaaaaa]'));
+});
+
+// checkCitations の bodyOnly オプション: curate.mjs/curate-care.mjsが生成直後のLLM出力
+// （frontmatterを含まない本文断片）を検証する際に、bodyOnly無指定だと本文中のMarkdown
+// 水平線（`---`）を誤ってfrontmatter区切りと認識し、それより前の無出典文を検証対象から
+// 取りこぼす（codex reviewで指摘・修正。実際にcurate.mjs/curate-care.mjsの生成直後
+// チェックで発生しうる経路だった）。
+test('checkCitations: bodyOnly未指定だと本文中の水平線をfrontmatter区切りと誤認識し前半の無出典文を見逃す（既知の挙動）', () => {
+  const bodyFragment = '最初の無出典文です。\n\n---\n\n後半の一文です[^s-aaaaaaaaaa]。';
+  const result = checkCitations({ markdown: bodyFragment, validIds: new Set(['s-aaaaaaaaaa']) });
+  assert.equal(result.ok, true, '既知の挙動: 水平線より前が検証対象から外れ、見かけ上100%になってしまう');
+});
+
+test('checkCitations: bodyOnly指定時は本文中の水平線をfrontmatter区切りと誤認識せず、前半の無出典文も検出する', () => {
+  const bodyFragment = '最初の無出典文です。\n\n---\n\n後半の一文です[^s-aaaaaaaaaa]。';
+  const result = checkCitations({ markdown: bodyFragment, validIds: new Set(['s-aaaaaaaaaa']), bodyOnly: true });
+  assert.equal(result.ok, false);
+  assert.ok(result.uncited.includes('最初の無出典文です。'));
+});
+
+test('checkCitations: bodyOnly指定時も通常のfrontmatter付き記事全体は従来どおり検証できる（既存呼び出し元との互換性）', () => {
+  const fullMarkdown = '---\ntitle: "test"\n---\n\n一文です[^s-aaaaaaaaaa]。';
+  const withBodyOnlyFalse = checkCitations({ markdown: fullMarkdown, validIds: new Set(['s-aaaaaaaaaa']) });
+  assert.equal(withBodyOnlyFalse.ok, true);
 });

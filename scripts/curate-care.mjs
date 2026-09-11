@@ -755,6 +755,7 @@ export function validateGenerated(result, itemsById) {
     markdown: result.bodyMarkdown,
     validIds: new Set(itemsById.keys()),
     exemptTableHeading: null,
+    bodyOnly: true,
   });
   if (citationCheck.malformed.length > 0) {
     problems.push(

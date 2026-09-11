@@ -156,7 +156,7 @@ function buildStageBPrompt(theme, themeItems, extraInstructions) {
  * 独立した関数として切り出す。
  */
 export function evaluateStageBCitations(bodyMarkdown, validIds) {
-  const check = checkCitations({ markdown: bodyMarkdown, validIds, exemptTableHeading: null });
+  const check = checkCitations({ markdown: bodyMarkdown, validIds, exemptTableHeading: null, bodyOnly: true });
   const problems = [];
   if (check.malformed.length > 0) {
     problems.push(

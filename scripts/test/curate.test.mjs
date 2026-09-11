@@ -50,3 +50,13 @@ test('evaluateStageBCitations: 脚注が1件もなければ検出する', () => 
   const problems = evaluateStageBCitations(body, new Set(['s-aaa']));
   assert.ok(problems.some((p) => p.includes('脚注が1件もありません')));
 });
+
+// codex reviewで指摘・修正の回帰テスト: 本文断片にMarkdownの水平線（---）が含まれると、
+// checkCitationsがbodyOnly未指定だとfrontmatter区切りと誤認識し、それより前の無出典文を
+// 見逃してしまう（citation-gate.test.mjs参照）。evaluateStageBCitationsは内部でbodyOnly:trueを
+// 渡すことで、この見逃しを防いでいることを確認する。
+test('evaluateStageBCitations: 本文中にMarkdown水平線（---）があっても前半の無出典文を見逃さない', () => {
+  const body = '最初の無出典文です。\n\n---\n\n後半の一文です[^s-aaa]。';
+  const problems = evaluateStageBCitations(body, new Set(['s-aaa']));
+  assert.ok(problems.some((p) => p.includes('脚注のない文')));
+});
