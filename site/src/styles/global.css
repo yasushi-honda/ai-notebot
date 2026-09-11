@@ -71,7 +71,13 @@ body {
 /*
  * 一覧系ページ（アーカイブ／タグ／介護一覧）共通のリストパターン。個々の記事を角丸カード
  * （border+shadow）で囲む反復をやめ、項目間の罫線だけで区切るプレーンなタイポグラフィ・
- * リストにする。ホバーはタイトル文字色が変わるだけの控えめな挙動にする。
+ * リストにする。
+ *
+ * クリック可能性のUI/UX改善（2026-09-11追記）: 当初はホバー時の文字色変化だけで
+ * リンクを示していたが、「どこがクリックできるか分からない」との指摘を受けた。
+ * ホバーして初めて分かる合図はそもそも発見可能性が無いため、タイトル文字には常時
+ * 控えめな下線（罫線と同系色の薄いトーン）を敷き、ホバーで文字色と一緒に濃くなる
+ * ようにした（decoration-currentで下線色を文字色に追従させる）。
  */
 .list-link {
   @apply block py-4 border-b border-rule no-underline;
@@ -88,7 +94,8 @@ li:last-child > .list-link {
   @apply border-b-0;
 }
 .list-link .list-link-title {
-  @apply font-semibold text-ink transition-colors;
+  @apply font-semibold text-ink transition-colors underline decoration-rule-strong
+    decoration-1 underline-offset-[3px] hover:decoration-current;
 }
 .list-link:hover .list-link-title {
   @apply text-verify;
@@ -126,12 +133,16 @@ li:last-child > .list-link {
 .entry-date {
   @apply font-mono text-[13px] text-ink-soft tabular-nums pt-0.5;
 }
+.entry-thumb {
+  @apply w-full aspect-square object-cover rounded-md border border-rule mt-2;
+}
 .entry-body h3 {
   font-family: var(--font-display);
   @apply text-lg font-medium mb-1.5 leading-relaxed;
 }
 .entry-body h3 a {
-  @apply text-ink no-underline;
+  @apply text-ink underline decoration-rule-strong decoration-1 underline-offset-[3px]
+    transition-colors hover:decoration-current;
 }
 .entry-body h3 a:hover {
   @apply text-verify;
@@ -150,10 +161,11 @@ li:last-child > .list-link {
 }
 .care-callout h3 {
   font-family: var(--font-display);
-  @apply text-[17px] font-medium mb-1.5;
+  @apply text-[17px] font-medium mb-1.5 text-ink underline decoration-rule-strong
+    decoration-1 underline-offset-[3px] transition-colors;
 }
-.care-callout h3 a {
-  @apply text-ink no-underline;
+.care-callout:hover h3 {
+  @apply text-care decoration-current;
 }
 .care-callout p {
   @apply text-[13px] text-ink-soft m-0;
