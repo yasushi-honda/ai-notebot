@@ -237,8 +237,18 @@ async function main() {
     `themeTitles:`,
     ...themes.map((t) => `  - ${JSON.stringify(t.title)}`),
     `sourceIds: [${[...usedIds].map((id) => JSON.stringify(id)).join(', ')}]`,
+    // 画像生成モデル（gemini-3.1-flash-lite-image）は明示的に文字を要求していなくても、
+    // 「ブログのヒーロー画像」というスタイルを解釈する際に自発的にタイトルやラベルのような
+    // 文字要素を描き込むことがあり、特に自作の短いロゴ風タイトル文字列は高確率で文字化けする
+    // （実データで確認済み。画像生成AI全般の既知の弱点）。
+    // 文末に「No text...」を追加するだけの予防は逆効果（実機検証済み:
+    // むしろ見出し風の文字要素が増え、文字化けが悪化した）。有効だったのは
+    // ①プロンプト冒頭で最初に「文字なし」を宣言する ②「要約する（summarize）」という
+    // インフォグラフィック的な語を避け「wordless visual metaphor」と再定義する
+    // ③禁止の列挙をプロンプト末尾でも重ねて念押しする、の3点を組み合わせた構成
+    // （ユーザー報告により2026-09-11に対応、実画像で無効化を確認済み）。
     `heroImagePrompt: ${JSON.stringify(
-      `Flat-design tech blog hero illustration summarizing today's AI trends: ${themes.map((t) => t.angle).join('; ')}. Clean, modern, blue and white palette, 16:9.`,
+      `Abstract flat-design illustration, no text or diagrams. A wordless visual metaphor for today's AI trends: ${themes.map((t) => t.angle).join('; ')}. Clean, modern, blue and white color palette, minimalist geometric shapes and icons only, 16:9. Absolutely no letters, words, numbers, captions, labels, or any written characters anywhere in the image.`,
     )}`,
     '---',
     '',
