@@ -1,43 +1,61 @@
 {
   "date": "2026-09-11",
-  "collectedAt": "2026-09-11T12:10:47.640Z",
+  "collectedAt": "2026-09-11T13:08:37.309Z",
   "sourceSuccessCount": 18,
   "items": [
     {
-      "id": "s-f791d596ac",
+      "id": "s-aa02723ed7",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-      "url": "https://github.com/n8n-io/n8n",
-      "publishedAt": "2026-09-11T12:10:28.000Z",
-      "summary": "★203996 Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+      "title": "juspay/xyne-spaces: The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai",
+      "url": "https://github.com/juspay/xyne-spaces",
+      "publishedAt": "2026-09-11T13:08:29.000Z",
+      "summary": "★144 The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai"
     },
     {
-      "id": "s-c0eef68b78",
+      "id": "s-e69a90cedb",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "codeaholicguy/ai-devkit: The control plane for AI coding agents.",
-      "url": "https://github.com/codeaholicguy/ai-devkit",
-      "publishedAt": "2026-09-11T12:10:23.000Z",
-      "summary": "★1623 The control plane for AI coding agents."
+      "title": "Zhou-Shilin/Aether: A stunning, localized, general-purpose AI Agent for Android, iOS & Mac. | Aether 扶摇",
+      "url": "https://github.com/Zhou-Shilin/Aether",
+      "publishedAt": "2026-09-11T13:08:22.000Z",
+      "summary": "★598 A stunning, localized, general-purpose AI Agent for Android, iOS & Mac. | Aether 扶摇"
     },
     {
-      "id": "s-4b47d942dc",
+      "id": "s-cd53bce784",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "mnfst/llm-gateway: Connect Your Agents And Harnesses With Any Provider 🦚",
-      "url": "https://github.com/mnfst/llm-gateway",
-      "publishedAt": "2026-09-11T12:10:21.000Z",
-      "summary": "★7517 Connect Your Agents And Harnesses With Any Provider 🦚"
+      "title": "MadAppGang/claudish: Claude Code. Any Model. The most powerful AI coding agent now speaks every language.",
+      "url": "https://github.com/MadAppGang/claudish",
+      "publishedAt": "2026-09-11T13:08:22.000Z",
+      "summary": "★986 Claude Code. Any Model. The most powerful AI coding agent now speaks every language."
     },
     {
-      "id": "s-100723b520",
+      "id": "s-8e6eb4596c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "nuxt-modules/mcp-toolkit: Create MCP servers directly in your Nuxt application. Define tools, resources, and prompts with a simple and intuitive API.",
+      "url": "https://github.com/nuxt-modules/mcp-toolkit",
+      "publishedAt": "2026-09-11T13:08:18.000Z",
+      "summary": "★172 Create MCP servers directly in your Nuxt application. Define tools, resources, and prompts with a simple and intuitive API."
+    },
+    {
+      "id": "s-b946186ef4",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "MakazhanAlpamys/Soup: Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
-      "url": "https://github.com/MakazhanAlpamys/Soup",
-      "publishedAt": "2026-09-11T12:10:19.000Z",
-      "summary": "★6092 Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU."
+      "title": "elevenlabs/packages: The ElevenLabs Agents SDK for TypeScript.",
+      "url": "https://github.com/elevenlabs/packages",
+      "publishedAt": "2026-09-11T13:08:18.000Z",
+      "summary": "★113 The ElevenLabs Agents SDK for TypeScript."
+    },
+    {
+      "id": "s-08035bd98d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "herdrdev/herdr: the runtime your coding agents live on",
+      "url": "https://github.com/herdrdev/herdr",
+      "publishedAt": "2026-09-11T13:07:33.000Z",
+      "summary": "★37655 the runtime your coding agents live on"
     },
     {
       "id": "s-faab3a2372",
@@ -45,71 +63,80 @@
       "sourceType": "github",
       "title": "SonarSource/sonarqube-cli: Command-line interface for SonarQube with AI agent integration. Scan for secrets and get fast feedback on code quality and security from your terminal.",
       "url": "https://github.com/SonarSource/sonarqube-cli",
-      "publishedAt": "2026-09-11T12:10:04.000Z",
+      "publishedAt": "2026-09-11T13:07:27.000Z",
       "summary": "★275 Command-line interface for SonarQube with AI agent integration. Scan for secrets and get fast feedback on code quality and security from your terminal."
     },
     {
-      "id": "s-aa02723ed7",
+      "id": "s-84d108c591",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "juspay/xyne-spaces: The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai",
-      "url": "https://github.com/juspay/xyne-spaces",
-      "publishedAt": "2026-09-11T12:09:58.000Z",
-      "summary": "★144 The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai"
+      "title": "dxos/dxos: TypeScript implementation of the DXOS protocols, SDK, toolchain and Composer.",
+      "url": "https://github.com/dxos/dxos",
+      "publishedAt": "2026-09-11T13:07:27.000Z",
+      "summary": "★520 TypeScript implementation of the DXOS protocols, SDK, toolchain and Composer."
     },
     {
-      "id": "s-62b074de6c",
+      "id": "s-9ff119dc67",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "yonatangross/orchestkit: The Complete AI Development Toolkit for Claude Code. 106 skills, 36 agents, 171 hooks. Install `ork` for stable (v9.x), or `ork-alpha` for the v10 line, which ships daily.",
-      "url": "https://github.com/yonatangross/orchestkit",
-      "publishedAt": "2026-09-11T12:09:49.000Z",
-      "summary": "★229 The Complete AI Development Toolkit for Claude Code. 106 skills, 36 agents, 171 hooks. Install `ork` for stable (v9.x), or `ork-alpha` for the v10 line, which ships daily."
+      "title": "langfuse/langfuse: 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
+      "url": "https://github.com/langfuse/langfuse",
+      "publishedAt": "2026-09-11T13:07:10.000Z",
+      "summary": "★34475 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform."
     },
     {
-      "id": "s-cd0169620e",
+      "id": "s-a44c1881ed",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "quarkiverse/quarkus-flow: Workflow Runtime Engine based on the Open Workflow Specification (CNCF Sandbox project) for Agentic Workflows",
+      "url": "https://github.com/quarkiverse/quarkus-flow",
+      "publishedAt": "2026-09-11T13:07:07.000Z",
+      "summary": "★116 Workflow Runtime Engine based on the Open Workflow Specification (CNCF Sandbox project) for Agentic Workflows"
+    },
+    {
+      "id": "s-9458487880",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "ChaitanyaEswarRajeshJakki/gemini-youtube-automation: A fully autonomous AI Agent/Python pipeline that utilizes Large Language Models (LLMs) like Gemini to generate content, produce videos, and automatically upload educational videos to YouTube.",
-      "url": "https://github.com/ChaitanyaEswarRajeshJakki/gemini-youtube-automation",
-      "publishedAt": "2026-09-11T12:09:38.000Z",
-      "summary": "★342 A fully autonomous AI Agent/Python pipeline that utilizes Large Language Models (LLMs) like Gemini to generate content, produce videos, and automatically upload educational videos to YouTube."
+      "title": "mirkobozzetto/flowflow: Agentic Voice Notes for iPhone and macOS - Rust, Dioxus, LanceDB + RIG + SQLite",
+      "url": "https://github.com/mirkobozzetto/flowflow",
+      "publishedAt": "2026-09-11T13:06:11.000Z",
+      "summary": "★168 Agentic Voice Notes for iPhone and macOS - Rust, Dioxus, LanceDB + RIG + SQLite"
     },
     {
-      "id": "s-98801628f9",
+      "id": "s-473fd2c171",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "fkonovalov/rdrr: Convert any URL to clean markdown for AI agents.",
-      "url": "https://github.com/fkonovalov/rdrr",
-      "publishedAt": "2026-09-11T12:09:19.000Z",
-      "summary": "★177 Convert any URL to clean markdown for AI agents."
+      "title": "xorbitsai/xagent: Build personal agents and enterprise AI workforces that plan, delegate, use tools, and deliver real work — without brittle workflows.",
+      "url": "https://github.com/xorbitsai/xagent",
+      "publishedAt": "2026-09-11T13:05:44.000Z",
+      "summary": "★296 Build personal agents and enterprise AI workforces that plan, delegate, use tools, and deliver real work — without brittle workflows."
     },
     {
-      "id": "s-930dd1342c",
-      "source": "GitHub Trending (ai)",
+      "id": "s-a30369a1d2",
+      "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "NousResearch/hermes-agent: The agent that grows with you",
-      "url": "https://github.com/NousResearch/hermes-agent",
-      "publishedAt": "2026-09-11T12:09:04.000Z",
-      "summary": "★244416 The agent that grows with you"
+      "title": "jundot/omlx: LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
+      "url": "https://github.com/jundot/omlx",
+      "publishedAt": "2026-09-11T13:05:36.000Z",
+      "summary": "★21621 LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar"
     },
     {
-      "id": "s-7ac4188ee4",
-      "source": "GitHub Trending (ai)",
+      "id": "s-6dd983dd06",
+      "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "damianvtran/local-operator: An open-source AI agent hub for your own machine: build organizations of collaborating agents that message each other, run in the background around the clock, and share your existing AI subscriptions.",
-      "url": "https://github.com/damianvtran/local-operator",
-      "publishedAt": "2026-09-11T12:08:48.000Z",
-      "summary": "★211 An open-source AI agent hub for your own machine: build organizations of collaborating agents that message each other, run in the background around the clock, and share your existing AI subscriptions."
+      "title": "nobodywho-ooo/nobodywho: NobodyWho is an inference engine that lets you run LLMs locally and efficiently on any device.  ",
+      "url": "https://github.com/nobodywho-ooo/nobodywho",
+      "publishedAt": "2026-09-11T13:05:08.000Z",
+      "summary": "★1105 NobodyWho is an inference engine that lets you run LLMs locally and efficiently on any device."
     },
     {
-      "id": "s-ed0b86f80b",
-      "source": "GitHub Trending (ai)",
+      "id": "s-4d49979d8c",
+      "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "ENTERPILOT/GoModel: AI gateway / AI control plane / AI proxy written in Go. Unified OpenAI-compatible and Anthropic-compatible API for OpenAI, Anthropic, Gemini, Groq, xAI, Ollama, vLLM and more. A LiteLLM alternative with observability, guardrails, streaming, cost tracking, intelligent routing, sticky sessions, failover, real-time logs and usage tracking. Prod ready.",
-      "url": "https://github.com/ENTERPILOT/GoModel",
-      "publishedAt": "2026-09-11T12:08:37.000Z",
-      "summary": "★1145 AI gateway / AI control plane / AI proxy written in Go. Unified OpenAI-compatible and Anthropic-compatible API for OpenAI, Anthropic, Gemini, Groq, xAI, Ollama, vLLM and more. A LiteLLM alternative with observability, guardrails, streaming, cost tracking, intelligent routing, sticky sessions, failover, real-time logs and usage tracking. Prod ready."
+      "title": "deepset-ai/haystack: Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
+      "url": "https://github.com/deepset-ai/haystack",
+      "publishedAt": "2026-09-11T13:04:27.000Z",
+      "summary": "★26476 Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems."
     },
     {
       "id": "s-201fe558a4",
@@ -117,17 +144,26 @@
       "sourceType": "github",
       "title": "esengine/DeepSeek-Reasonix: DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
       "url": "https://github.com/esengine/DeepSeek-Reasonix",
-      "publishedAt": "2026-09-11T12:08:36.000Z",
-      "summary": "★35502 DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running."
+      "publishedAt": "2026-09-11T13:04:23.000Z",
+      "summary": "★35503 DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running."
     },
     {
-      "id": "s-f73d62b8bd",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "CopilotKit/aimock: Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies.",
-      "url": "https://github.com/CopilotKit/aimock",
-      "publishedAt": "2026-09-11T12:08:08.000Z",
-      "summary": "★918 Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies."
+      "id": "s-866ac0ef3e",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "レビュー統合をスコア化する：相反する指摘をどう収束させるか",
+      "url": "https://qiita.com/tomokusaba/items/71c4d055fab23fa8c765",
+      "publishedAt": "2026-09-11T13:00:51.000Z",
+      "summary": "はじめに 今回の話は、前回の設計をさらに一段先に進めたものです。 前回の記事では、複数のレビューエージェントを使うときに、 書き込み権限をレビュー役から切り離す 読み取り専用で指摘だけを返す 統合役が最終的な編集をまとめて行う という設計を整理しました。 この設..."
+    },
+    {
+      "id": "s-2d9c7158e6",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "Feeling sad about AI",
+      "url": "https://artificialworlds.net/blog/2026/09/11/feeling-sad-about-ai/",
+      "publishedAt": "2026-09-11T12:33:20.000Z",
+      "summary": "Comments"
     },
     {
       "id": "s-a655f7044b",
@@ -139,6 +175,15 @@
       "summary": "TL;DR Claude Code の ANTHROPIC_API_KEY を OpenRouter 経由に差し替えると :free モデルが使える claude --model フラグと CLAUDE_MODEL 環境変数で無料モデルを固定できる レート制限を踏まえ..."
     },
     {
+      "id": "s-b0c92c69e7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ブラウザ画像ぼかしUIを状態モデルとして分解する",
+      "url": "https://zenn.dev/choco1/articles/69c6434a0e02ca",
+      "publishedAt": "2026-09-11T11:38:46.000Z",
+      "summary": "この記事は BlurImage の公開UIをブラックボックス観察した設計メモです。ソースコード、内部アーキテクチャ、ベンチマークを示すものではありません。 入力経路を一つのモデルにまとめる 公開画面にはアップロード、クリップボード貼り付け、画像URL、Webサイトという入口があります。UIでは入口が違っても、編集側が必要とするのは画像・形式・サイズです。したがって、入力直後に正規化する境界を置くとテストしやすくなります。 type ImageSource = { kind: \"upload\" | \"paste\" | \"url\" | \"website\"; mime: \"i..."
+    },
+    {
       "id": "s-802349ba55",
       "source": "Qiita (AI タグ)",
       "sourceType": "japanese",
@@ -146,6 +191,24 @@
       "url": "https://qiita.com/johnSmith7701/items/d3f566b10f54f3a71ce4",
       "publishedAt": "2026-09-11T11:36:06.000Z",
       "summary": "Copilotに「このドキュメントを Perl愛、正規表現愛の溢れるウィットに富んだ英文にして」と頼んだ。 するすると英文が出来上がった。 かくいう私は英語が読めない。 そこでブラウザ翻訳を片手に読み始めた。 あっ。俺の書いた文章だ。 そう思った。 でも、こっちの方がワクワ..."
+    },
+    {
+      "id": "s-b496b8e7d8",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "生成AI以前と以後でエンジニアの文章はどう変わったのか: Qiitaの7万記事を数えてみた話",
+      "url": "https://nyosegawa.com/posts/qiita-writing-before-after-ai/",
+      "publishedAt": "2026-09-11T11:32:56.000Z",
+      "summary": "こんにちは！逆瀬川ちゃん (@gyakuse) です！ 今日は生成AI以前と以後でエンジニアが書く文章がどう変わったのかを、Qiitaの記事を数えて確かめた結果をまとめていきたいと思います。 最近の技術記事を読んでいると、見覚えのある言い回しに出会うことが増えました。「地味に効きます」「静かに壊れる」「〜とは別物です..."
+    },
+    {
+      "id": "s-6206c5eea1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "OpenClawをWindows無料枠で動かす詰まりどころ全部――429・TPM超過から設定ファイル集まで",
+      "url": "https://zenn.dev/builders_loop/books/openclaw-windows-guide",
+      "publishedAt": "2026-09-11T11:31:13.000Z",
+      "summary": "OpenClaw（自律エージェント基盤）を、無料枠のGoogle Gemini/Gemmaで、そしてその後ローカルGPU(Ollama)で Windows上に動かそうとして実際にぶつかった壁と、そのとき使った設定ファイル一式の記録です。 対象読者はOpenClawを個人開発・スモールビジネスで動かそうとしている方。 「429エラーが続くのにRPD/RPMは余裕がある」「gateway installが謎エラーになる」 「No callable tools remain」「No API key found for provider ollama」など、 検索してもすぐには答えが出てこない症状を、実際に使った設定ファイルとあわせてまとめています。 検証環境（OS/Node/OpenClaw/使用モデル）を明記し、再現性を優先しました。"
     },
     {
       "id": "s-0724f9b919",
@@ -163,7 +226,25 @@
       "title": "The Waymo effect: how AI is quietly making research less collaborative",
       "url": "https://www.researchagenda.news/articles/the-waymo-effect.html",
       "publishedAt": "2026-09-11T11:17:50.000Z",
-      "summary": "points=60 comments=29 (Hacker News)"
+      "summary": "points=131 comments=79 (Hacker News)"
+    },
+    {
+      "id": "s-b4e2b6bf04",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Excel Data Visualizer 終了後に Excel から Visio を作る3つの方法",
+      "url": "https://zenn.dev/daviechen/articles/76f23c19eb2f73",
+      "publishedAt": "2026-09-11T11:17:38.000Z",
+      "summary": "Excel 内で使う Visio Data Visualizer アドインの手順を今もそのまま案内している記事は、すでに古くなっています。Microsoft は 2025 年 12 月にアドインを AppSource から削除し、2026 年 3 月 2 日に提供を終了しました。Excel の表データは残りますが、埋め込まれた図が読み込めなくなる可能性があります。 一方、Excel や CSV に保存された工程、担当部署、次工程 ID を Visio 図面にしたい需要は変わりません。ここでは、現在使える3つの方法を比較します。 必要なのは表のスクリーンショットではなく、図形とコネクター..."
+    },
+    {
+      "id": "s-588ffdcb9f",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Anthropic社「Fable 5」「Mythos 5」を巡る技術的・地政学的分析：攻撃能力とAI統制の深層",
+      "url": "https://zenn.dev/emilia_lab/articles/anthropic-fable5-mythos5-geopolitics",
+      "publishedAt": "2026-09-11T11:16:32.000Z",
+      "summary": "導入：兵器化するフロンティアAIと地政学的な歴史的転換点 2026年6月上旬、世界の人工知能およびサイバーセキュリティの歴史において、最も劇的かつ物議を醸す出来事が発生した。米国サンフランシスコに拠点を置くAI開発企業Anthropicは、同社史上最も強力なAIモデルである「Claude Fable 5」と、その無制限版に位置づけられる「Claude Mythos 5」を同時に発表した。これらの「Mythosクラス」と呼ばれる次世代モデル群は、自律的なエージェント機能、長大なコンテキスト処理、そして既存のソフトウェア工学の常識を根底から覆す能力を備えていた。 しかし、一般向けモデルで..."
     },
     {
       "id": "s-b19b71063a",
@@ -172,7 +253,7 @@
       "title": "RTK reports token savings, but our cost benchmarks disagree",
       "url": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/",
       "publishedAt": "2026-09-11T11:15:13.000Z",
-      "summary": "points=26 comments=7 (Hacker News)"
+      "summary": "points=50 comments=24 (Hacker News)"
     },
     {
       "id": "s-715f02a406",
@@ -184,13 +265,13 @@
       "summary": "はじめに 60歳になってから、個人でスマホアプリを作り始めました。 そして2026年8月4日、自分で作ったアプリをApp Storeに公開しました。 アプリの名前は、 MoveMaster - AI Dance Analyzer ダンスの練習動画を使って、 お手本と自分..."
     },
     {
-      "id": "s-9ed369cb1d",
-      "source": "Qiita (AI タグ)",
+      "id": "s-573fb8761b",
+      "source": "Zenn (AI トピック)",
       "sourceType": "japanese",
-      "title": "Excel Data Visualizer 終了後に Excel から Visio を作る3つの方法",
-      "url": "https://qiita.com/daviechen/items/27ce41e54b8fd9839236",
-      "publishedAt": "2026-09-11T10:50:24.000Z",
-      "summary": "Excel 内で使う Visio Data Visualizer アドインの手順を今もそのまま案内している記事は、すでに古くなっています。Microsoft は 2025 年 12 月にアドインを AppSource から削除し、2026 年 3 月 2 日に提供を終了しま..."
+      "title": "GPT-6 Astra登場、でも本当に大事なのは「裏を取る力」",
+      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20260911",
+      "publishedAt": "2026-09-11T10:49:57.000Z",
+      "summary": "2026年9月11日（金）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。 今日は新しいAIが一気に出てきた日なんですよ。OpenAIのGPT-6 Astra、中国DeepSeekの新モデル、コーディング用のSWE-2。でもね、僕が今日いちばん伝えたいのは「数字と主張の裏を取る力」です。すごそうな発表ほど、どこまで確かなのか。経営者の皆さんにも、AIを学んでる皆さんにも効く話です。5つのニュースで一緒に見ていきましょう。 1. GPT-6 Astra発表、判断もできるAIへ 図解（完全解説版） 先に結論を言います。OpenAIが「GPT-6 Astr..."
     },
     {
       "id": "s-72f0aa59f1",
@@ -199,7 +280,7 @@
       "title": "Resist \"AI\"",
       "url": "https://ronjeffries.com/articles/-v026/x/t/",
       "publishedAt": "2026-09-11T10:19:59.000Z",
-      "summary": "points=49 comments=84 (Hacker News)"
+      "summary": "points=53 comments=113 (Hacker News)"
     },
     {
       "id": "s-b84bd18913",
@@ -253,7 +334,7 @@
       "title": "Meta is asking some of its employees to become managers again in a new reorg",
       "url": "https://www.businessinsider.com/meta-asks-some-ai-employees-to-become-managers-again-2026-9",
       "publishedAt": "2026-09-11T10:02:19.000Z",
-      "summary": "points=6 comments=0 (Hacker News)"
+      "summary": "points=7 comments=0 (Hacker News)"
     },
     {
       "id": "s-dd02579c12",
@@ -265,15 +346,6 @@
       "summary": "https://huggingface.co/security.txt &#32; submitted by &#32; /u/Nunki08 [link] &#32; [comments]"
     },
     {
-      "id": "s-43b405153f",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "【第2回】遠回りしない技術英語 ― \"TOEIC単語”と\"現場英語\"はなぜ噛み合わないのか",
-      "url": "https://zenn.dev/hiropiro/articles/17b2ded90e8e22",
-      "publishedAt": "2026-09-11T10:00:00.000Z",
-      "summary": "連載「遠回りしない技術英語 ― 自動車×AIエンジニアの実務英語講座」第2回です。第1回（遠回りしないための地図）では、エンジニアの英語学習には無駄が多い、という話をした。今回はその最たる例、単語を掘り下げる。 「AI翻訳がある時代に、単語なんて覚える意味あるの？」 先に、当然出てくる疑問に答えておきたい。DeepLもChatGPTもある今、単語をわざわざ覚える意味はあるのか——。 僕の答えは「ある」だ。ただし、覚えるべき単語が、多くの人の想像とは違う。 AI翻訳は便利だが、その訳が正しいかを判断するのは結局あなただ。専門用語をAIが一般語に訳し違えたとき、それに気づけるのは自..."
-    },
-    {
       "id": "s-09c732dcd8",
       "source": "はてなブックマーク (IT)",
       "sourceType": "japanese",
@@ -283,15 +355,6 @@
       "summary": "ドイツとアメリカに拠点を置くAI企業のBlack Forest Labsが動画編集AIサービス「FLUX Video Edit」を発表しました。動画の指定した部分だけを編集可能で、競合サービスと比べて価格を低く抑えています。 FLUX Video Edit - Black Forest Labs https://docs.bfl.ai/flux_tools/flux_video_edit FLUX 3 Video now has fast..."
     },
     {
-      "id": "s-b5d7d97046",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Claude CodeがBashでファイルを書き換えるようになった気がする",
-      "url": "https://zenn.dev/neriame_code/articles/2ecc89e1a29000",
-      "publishedAt": "2026-09-11T09:38:05.000Z",
-      "summary": "完全に体感の話になりますが、ある時期からClaude Codeが Edit や Write をほとんど使わなくなり、sed -i とヒアドキュメントでファイルを書き換えるようになりました。 ある時期というのはOpus5のリリースあたりだった気がします。 今回いろいろ調査したところ、原因は権限モードが auto のときにシステムプロンプトへ「Bash を優先しろ」という指示文が挿入されていたことでした。 どうやら未文書の実験フラグで配布されており(？)、環境変数で文面を弱められるみたいです。 せっかくなので実際に測定もしたところ、この指示は(自分の環境において)速度でも失敗率でもよくない方..."
-    },
-    {
       "id": "s-be6e8eb691",
       "source": "Reddit r/LocalLLaMA",
       "sourceType": "reddit",
@@ -299,15 +362,6 @@
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdbd0b/nex_n25_pro_407gb_released/",
       "publishedAt": "2026-09-11T09:31:48.000Z",
       "summary": "&#32; submitted by &#32; /u/jinnyjuice [link] &#32; [comments]"
-    },
-    {
-      "id": "s-71afee4c02",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Strands Agentsのプロンプトキャッシュで 社内RAG Agentの入力コストを半減させてみた",
-      "url": "https://zenn.dev/fusic/articles/50a7b980a8e9bc",
-      "publishedAt": "2026-09-11T09:28:10.000Z",
-      "summary": "背景 こんにちは、Fusicの大宮です。 私は、社内向けSlack Botである「Fusicマン+」の運営をしています。 Fusicマン+は、Confluenceの社内ハンドブックを検索して質問に答えるRAG AI エージェントです。 運用開始してから時間も経過していたので、改めてコストを見直したい思い運用コストを調べていたところ、ECSやSecretManagerなどの固定費は月＄13~15であるのに対し、変動費はBedrockのトークン課金だけで月＄20~＄30かかっていることがわかりました。 今回は、そんなFusicマン+の現状を測定 & コストを抑える方法を調査,実装..."
     },
     {
       "id": "s-627bcfc16b",
@@ -337,24 +391,6 @@
       "summary": "各章の冒頭に、内容のもとになったセッションへのリンクを示しました。 各セッションのページには Apple による公式コードサンプルが掲載されており、これも一次情報として参照しています。API の綴りや引数の形は、原則としてこのサンプルで確認しました。 あわせて、Human Interface Guidelines の Designing for iPho..."
     },
     {
-      "id": "s-49db83e253",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "DSCI goes pre beta testing – need early feedback",
-      "url": "https://news.ycombinator.com/item?id=49655318",
-      "publishedAt": "2026-09-11T08:46:34.000Z",
-      "summary": "points=5 comments=2 (Hacker News)"
-    },
-    {
-      "id": "s-388e4ed6a2",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "画像生成AIのプロンプトを「資産」にする整理のコツ",
-      "url": "https://zenn.dev/aiimgprompt/articles/b15f60638b5950",
-      "publishedAt": "2026-09-11T08:38:08.000Z",
-      "summary": "画像生成AIを毎日触っていると、プロンプトがメモ帳・チャット履歴・スクリーンショットに散らばっていきます。後から「あの質感、どう出したっけ」と探し直す時間が、地味にいちばんもったいない部分です。 散らかる原因は「保存のタイミング」 生成が成功した瞬間は満足してしまい、記録は後回しになります。結果として手元に残るのは「なんとなく良かった」という感触だけで、具体的な語順や数値は消えています。 やることは3つだけ 生成したその場でプロンプトをコピーして残す 用途（人物・背景・小物）でタグを付ける 出力した画像へのリンクを隣に置く これだけで、次に似た絵が欲しいときの出発点になります..."
-    },
-    {
       "id": "s-d34fcea175",
       "source": "はてなブックマーク (IT)",
       "sourceType": "japanese",
@@ -364,24 +400,6 @@
       "summary": "Go Conference 2026 で話した内容です https://gocon.jp/2026/timetable/1264524/"
     },
     {
-      "id": "s-d81c5b6d34",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "2026年9月11日のITニュースまとめ：AIエージェント、クラウド、半導体、セキュリティ",
-      "url": "https://zenn.dev/sponge841841/articles/2026-09-11-it-news-roundup",
-      "publishedAt": "2026-09-11T08:35:31.000Z",
-      "summary": "2026年9月11日（日本時間）時点で確認できた主要ITニュースをまとめます。 今回は、企業の一次情報・公的機関の発表を優先し、必要に応じてReutersの報道でも内容を突き合わせています。発表日時が米国時間の9月10日でも、日本では9月11日にあたるものを含みます。 1. OpenAIが「Agents API」を発表。クラウド上でCodex系エージェントを実行可能に OpenAIは9月10日、クラウド上でAIエージェントを構築・実行するための「Agents API」を発表しました。 Agents APIでは、Codexのエージェント実行基盤をマネージドサービスとして利用でき、Ope..."
-    },
-    {
-      "id": "s-4d4431ea00",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "Anthropic to Track Anti-AI Activists Before Crime Using Predictive Surveillance",
-      "url": "https://www.techtimes.co.uk/anthropic-security-strategy-threats-activism-1808634",
-      "publishedAt": "2026-09-11T08:20:49.000Z",
-      "summary": "points=5 comments=0 (Hacker News)"
-    },
-    {
       "id": "s-40d04e3e1c",
       "source": "はてなブックマーク (IT)",
       "sourceType": "japanese",
@@ -389,15 +407,6 @@
       "url": "https://ascii.jp/elem/000/004/434/4434123/",
       "publishedAt": "2026-09-11T08:17:29.000Z",
       "summary": "メルカリは9月11日現在、一部ユーザーに「商品の限定公開機能」を提供中。これを受け、SNS（X）では悪用を懸念する声が挙がっている。 商品の限定公開は、商品ページのURLを知っているユーザーのみが閲覧・購入できる出品方法。通常の出品と違い、検索結果や「おすすめ」、出品者プロフィールなどに当該商品が表示される..."
-    },
-    {
-      "id": "s-96d498b05e",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "Pentagon in Talks to Get into AI Infrastructure Funding with a $5B Loan",
-      "url": "https://www.wsj.com/tech/ai/pentagon-in-talks-to-get-into-ai-infrastructure-funding-with-a-5-billion-loan-0367eeb0",
-      "publishedAt": "2026-09-11T08:11:42.000Z",
-      "summary": "points=6 comments=1 (Hacker News)"
     },
     {
       "id": "s-2dde054ec2",
@@ -425,15 +434,6 @@
       "url": "https://iphone-mania.jp/iphone18-605682/",
       "publishedAt": "2026-09-11T07:51:48.000Z",
       "summary": "iPhone Duo、iPhone18 Pro、iPhone18 Pro Maxについて、世界39の国・地域のApple Storeでの販売価格を比較すると、国によって大きな価格差があることが分かります。最も安いのはいずれも米国で、日本は比較的安いグループに入っています。一方、トルコでは価格が大幅に高く、iPhone Duoの2TBモデルは100万円を超えていま..."
-    },
-    {
-      "id": "s-2f008cb7f8",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "まるで“狂気の沙汰”──ジョブズ時代のAppleを感じさせる「iPhone Duo」のヒンジと製造工程",
-      "url": "https://www.itmedia.co.jp/pcuser/articles/2609/11/news070.html",
-      "publishedAt": "2026-09-11T07:33:35.000Z",
-      "summary": "2008年10月14日、Appleは新しいMacBookのボディーを「ユニボディ」と呼んだ。押し出したアルミニウムの塊を、航空宇宙産業から借りてきたCNC（コンピュータ制御の切削機）に載せ、13段階の切削工程で一枚の骨格に削り出す。 ジョナサン・アイブは「従来のノートブックは多くの部品でできていた。新しいMacBookでは、その..."
     },
     {
       "id": "s-3d53770357",
@@ -517,13 +517,13 @@
       "summary": "OpenAIのティボー・ソティオ氏（通称Tibo）は新モデル「GPT-6 Astra」の需要拡大に対応するため、最上位プランの新規受付を停止すると発表した。"
     },
     {
-      "id": "s-b0bbe45767",
+      "id": "s-3afb7e7b0a",
       "source": "Reddit r/LocalLLaMA",
       "sourceType": "reddit",
-      "title": "Are inference providers able to make any margins?",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcyuhf/are_inference_providers_able_to_make_any_margins/",
-      "publishedAt": "2026-09-10T23:04:47.000Z",
-      "summary": "Spoke with many providers who lurk in this sub, plus met folks who work in inference. For a 10k monthly revenue, a provider was able to retain only 200 dollars in profit due to GPU costs. Their customers were negotiating the prices down to what other players cost for same, and it feels like major players are running a distribution game at low or negative margins. Even though this seems like a bill"
+      "title": "Granular diff versioning for agent editing",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wd0nja/granular_diff_versioning_for_agent_editing/",
+      "publishedAt": "2026-09-11T00:20:55.000Z",
+      "summary": "Had some ideas about version control: Attribute, down to individual words: word created manually or with ai. if ai, which sources cited (scoped to paragraphs). also: full agent trace that led to the edit (all tool calls + metadata). also: any multi-agent transactions at the file/paragraph lock. all data stored for every version. Why do this? Basically, getting as much into a unified version contro"
     },
     {
       "id": "s-4de39e00bc",
