@@ -29,6 +29,6 @@ test('buildStepsSvg: 空配列はエラーを投げる', () => {
 });
 
 test('buildStepsSvg: 長いステップ文言は3行に折り返され末尾が省略される', () => {
-  const svg = buildStepsSvg(['あ'.repeat(50)]);
+  const svg = buildStepsSvg(['あ'.repeat(100)]);
   assert.match(svg, /…/);
 });

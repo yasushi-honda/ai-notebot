@@ -22,7 +22,14 @@ const PADDING = 24;
 const BADGE_SIZE = 32;
 const TEXT_X_OFFSET = BADGE_SIZE + 16;
 const LINE_HEIGHT = 24;
-const CHARS_PER_LINE = 16;
+// テキスト開始位置（PADDING+TEXT_X_OFFSET=72）から右パディング境界（WIDTH-PADDING=456）までの
+// 利用可能幅は384。CHARS_PER_LINEが16のままだと（全角文字はほぼ1文字=1em=16pxのため）
+// 16*16=256しか使わず、384-256=128（利用可能幅の1/3）が常にキャンバス内で余白になる。
+// CSSで記事幅（実測600〜650px）まで拡大表示されるため、この内在的な余白が右側の
+// 大きな空白として目立っていた（実機のスクリーンショットでユーザーから指摘、2026-09-11）。
+// 384/16≈24文字が理論上の上限のため、余裕を持たせつつ大部分の行が利用可能幅の大半を
+// 使うよう22に引き上げる。
+const CHARS_PER_LINE = 22;
 const MAX_LINES = 3;
 const ROW_GAP = 28; // ステップ間の余白（矢印を描くスペースを含む）
 const ROW_VERTICAL_PADDING = 12;
