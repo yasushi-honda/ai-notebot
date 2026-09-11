@@ -1,106 +1,34 @@
 {
   "date": "2026-09-11",
-  "collectedAt": "2026-09-11T09:33:51.541Z",
+  "collectedAt": "2026-09-11T09:46:29.634Z",
   "sourceSuccessCount": 18,
   "items": [
     {
-      "id": "s-09366b8574",
+      "id": "s-248f98dc82",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "photoprism/photoprism: AI-Powered Photos App 🌈💎✨",
-      "url": "https://github.com/photoprism/photoprism",
-      "publishedAt": "2026-09-11T09:33:38.000Z",
-      "summary": "★40178 AI-Powered Photos App 🌈💎✨"
+      "title": "rlaope/oh-my-hermes: All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages",
+      "url": "https://github.com/rlaope/oh-my-hermes",
+      "publishedAt": "2026-09-11T09:46:20.000Z",
+      "summary": "★1661 All in one plugin for Hermes Agent ⚚ the coding intelligence, a long-term memory system and model optimized workflow packages"
     },
     {
-      "id": "s-fe4d749b79",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "no-human-ai/no_human: From ticket to reviewed pull request. Free and open-source, on your machine.",
-      "url": "https://github.com/no-human-ai/no_human",
-      "publishedAt": "2026-09-11T09:33:33.000Z",
-      "summary": "★298 From ticket to reviewed pull request. Free and open-source, on your machine."
-    },
-    {
-      "id": "s-6bcf26840b",
+      "id": "s-a748c2bf63",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "dragon1086/prism-insight: AI-based stock analysis and trading system",
-      "url": "https://github.com/dragon1086/prism-insight",
-      "publishedAt": "2026-09-11T09:33:28.000Z",
-      "summary": "★741 AI-based stock analysis and trading system"
+      "title": "tenstorrent/tt-metal: :metal: TT-NN operator library, and TT-Metalium low level kernel programming model.",
+      "url": "https://github.com/tenstorrent/tt-metal",
+      "publishedAt": "2026-09-11T09:46:12.000Z",
+      "summary": "★1666 :metal: TT-NN operator library, and TT-Metalium low level kernel programming model."
     },
     {
-      "id": "s-75df82dcbf",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "redhat-et/ripwire: The ripgrep of AI context: a zero-dependency C++23 CLI + MCP server for coding agents. Find what you want without reading the repo, then check you built what you meant — blast radius, tests-to-run, quality deltas. Signatures at 74.7% fewer bytes than bodies; every guess labelled, every loss published. Paddle out with a map.",
-      "url": "https://github.com/redhat-et/ripwire",
-      "publishedAt": "2026-09-11T09:33:28.000Z",
-      "summary": "★1887 The ripgrep of AI context: a zero-dependency C++23 CLI + MCP server for coding agents. Find what you want without reading the repo, then check you built what you meant — blast radius, tests-to-run, quality deltas. Signatures at 74.7% fewer bytes than bodies; every guess labelled, every loss published. Paddle out with a map."
-    },
-    {
-      "id": "s-da26989850",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "kirodotdev/KiroCrew: A persistent workspace for development work that self-improves and continues beyond one session.",
-      "url": "https://github.com/kirodotdev/KiroCrew",
-      "publishedAt": "2026-09-11T09:33:20.000Z",
-      "summary": "★3839 A persistent workspace for development work that self-improves and continues beyond one session."
-    },
-    {
-      "id": "s-501bcd4112",
+      "id": "s-7bb7eab581",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "margelo/react-native-fast-tflite: 🧬 High-performance TensorFlow Lite library for React Native with GPU acceleration",
-      "url": "https://github.com/margelo/react-native-fast-tflite",
-      "publishedAt": "2026-09-11T09:33:15.000Z",
-      "summary": "★1234 🧬 High-performance TensorFlow Lite library for React Native with GPU acceleration"
-    },
-    {
-      "id": "s-8713a2fa12",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "comet-ml/opik: Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
-      "url": "https://github.com/comet-ml/opik",
-      "publishedAt": "2026-09-11T09:33:01.000Z",
-      "summary": "★21930 Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards."
-    },
-    {
-      "id": "s-c252c5fc2b",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "repowise-dev/repowise: Codebase intelligence for AI and humans: code health scores, auto-generated docs, git analytics, dead code detection, and architectural decisions via MCP.",
-      "url": "https://github.com/repowise-dev/repowise",
-      "publishedAt": "2026-09-11T09:32:58.000Z",
-      "summary": "★6403 Codebase intelligence for AI and humans: code health scores, auto-generated docs, git analytics, dead code detection, and architectural decisions via MCP."
-    },
-    {
-      "id": "s-b647ecd0d2",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "binance/binance-skills-hub: Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto",
-      "url": "https://github.com/binance/binance-skills-hub",
-      "publishedAt": "2026-09-11T09:32:52.000Z",
-      "summary": "★1026 Binance Skills Hub is an open skills marketplace that gives AI agents native access to crypto"
-    },
-    {
-      "id": "s-6c4c62438d",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "carloslfu/slotstream: Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts from SSD. MLX + Swift, Ollama-compatible API.",
-      "url": "https://github.com/carloslfu/slotstream",
-      "publishedAt": "2026-09-11T09:32:45.000Z",
-      "summary": "★344 Run Qwen3.8-Flash-Next (125B MoE, 104 GB at 4-bit) on Macs with a fraction of that RAM by streaming experts from SSD. MLX + Swift, Ollama-compatible API."
-    },
-    {
-      "id": "s-b5a832cbdc",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "ahpxex/read-aware: An ebook reader with a self-evolving agent: it remembers your reading across books, and plugins extend the reader and the agent alike.",
-      "url": "https://github.com/ahpxex/read-aware",
-      "publishedAt": "2026-09-11T09:32:40.000Z",
-      "summary": "★334 An ebook reader with a self-evolving agent: it remembers your reading across books, and plugins extend the reader and the agent alike."
+      "title": "EpicStaff/EpicStaff: Source-available, self-hosted platform for building AI agent flows - visual editor over a Django backend.",
+      "url": "https://github.com/EpicStaff/EpicStaff",
+      "publishedAt": "2026-09-11T09:46:01.000Z",
+      "summary": "★352 Source-available, self-hosted platform for building AI agent flows - visual editor over a Django backend."
     },
     {
       "id": "s-b8da10635e",
@@ -108,35 +36,107 @@
       "sourceType": "github",
       "title": "thedotmack/claude-mem: Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
       "url": "https://github.com/thedotmack/claude-mem",
-      "publishedAt": "2026-09-11T09:32:36.000Z",
+      "publishedAt": "2026-09-11T09:45:52.000Z",
       "summary": "★93658 Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More"
     },
     {
-      "id": "s-513910348e",
+      "id": "s-1f7eb4e198",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "aurelio-labs/semantic-router: Superfast AI decision making and intelligent processing of multi-modal data.",
-      "url": "https://github.com/aurelio-labs/semantic-router",
-      "publishedAt": "2026-09-11T09:32:25.000Z",
-      "summary": "★3890 Superfast AI decision making and intelligent processing of multi-modal data."
+      "title": "e2b-dev/desktop: E2B Desktop Sandbox for LLMs. E2B Sandbox with desktop graphical environment that you can connect to any LLM for secure computer use.",
+      "url": "https://github.com/e2b-dev/desktop",
+      "publishedAt": "2026-09-11T09:45:09.000Z",
+      "summary": "★1478 E2B Desktop Sandbox for LLMs. E2B Sandbox with desktop graphical environment that you can connect to any LLM for secure computer use."
     },
     {
-      "id": "s-bc040bdb87",
+      "id": "s-94425a13e4",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "Sayhi-bzb/CharDesk: A Unicode canvas for humans and AI. Draw diagrams, interfaces, and slides as editable text.",
-      "url": "https://github.com/Sayhi-bzb/CharDesk",
-      "publishedAt": "2026-09-11T09:32:14.000Z",
-      "summary": "★338 A Unicode canvas for humans and AI. Draw diagrams, interfaces, and slides as editable text."
+      "title": "autonomous-ai/autonomous-os: The open-source operating system for robots — install it and your robot comes alive",
+      "url": "https://github.com/autonomous-ai/autonomous-os",
+      "publishedAt": "2026-09-11T09:45:05.000Z",
+      "summary": "★325 The open-source operating system for robots — install it and your robot comes alive"
     },
     {
-      "id": "s-98801628f9",
+      "id": "s-ee9e12930a",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "bubbuild/bub: Bub it. Build it. A hook-first runtime for agents that live alongside people.",
+      "url": "https://github.com/bubbuild/bub",
+      "publishedAt": "2026-09-11T09:44:59.000Z",
+      "summary": "★1601 Bub it. Build it. A hook-first runtime for agents that live alongside people."
+    },
+    {
+      "id": "s-0c225b4f56",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "fkonovalov/rdrr: Convert any URL to clean markdown for AI agents.",
-      "url": "https://github.com/fkonovalov/rdrr",
-      "publishedAt": "2026-09-11T09:32:14.000Z",
-      "summary": "★176 Convert any URL to clean markdown for AI agents."
+      "title": "agentscope-ai/agentscope: Build and run agents you can see, understand and trust.",
+      "url": "https://github.com/agentscope-ai/agentscope",
+      "publishedAt": "2026-09-11T09:44:42.000Z",
+      "summary": "★31366 Build and run agents you can see, understand and trust."
+    },
+    {
+      "id": "s-c252c5fc2b",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "repowise-dev/repowise: Codebase intelligence for AI and humans: code health scores, auto-generated docs, git analytics, dead code detection, and architectural decisions via MCP.",
+      "url": "https://github.com/repowise-dev/repowise",
+      "publishedAt": "2026-09-11T09:44:37.000Z",
+      "summary": "★6403 Codebase intelligence for AI and humans: code health scores, auto-generated docs, git analytics, dead code detection, and architectural decisions via MCP."
+    },
+    {
+      "id": "s-c13d595564",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "melgarafael/DeskcommCRM: Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
+      "url": "https://github.com/melgarafael/DeskcommCRM",
+      "publishedAt": "2026-09-11T09:44:33.000Z",
+      "summary": "★1034 Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD."
+    },
+    {
+      "id": "s-e8b1e4fc68",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "code-yeongyu/senpi: pi had nothing (nothing), so I made something (something) — sorry mariozechner-senpai, I went ahead and lovingly soiled your pure pi for you. opinionated fork of badlogic/pi-mono with extension-first additions. ganbare ganbare senpi 頑張れ頑張れ先輩",
+      "url": "https://github.com/code-yeongyu/senpi",
+      "publishedAt": "2026-09-11T09:44:30.000Z",
+      "summary": "★423 pi had nothing (nothing), so I made something (something) — sorry mariozechner-senpai, I went ahead and lovingly soiled your pure pi for you. opinionated fork of badlogic/pi-mono with extension-first additions. ganbare ganbare senpi 頑張れ頑張れ先輩"
+    },
+    {
+      "id": "s-4ea74a2bda",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "kydlikebtc/awesome-grokbot: 730 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a JSON schema, CI, and a searchable site.",
+      "url": "https://github.com/kydlikebtc/awesome-grokbot",
+      "publishedAt": "2026-09-11T09:44:27.000Z",
+      "summary": "★295 730 live x.ai/bot shares for Grok Bot — every link status-checked, every row attributed. Bilingual EN/中文 catalog with a JSON schema, CI, and a searchable site."
+    },
+    {
+      "id": "s-16d3ddede1",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "vortico/flama: The production framework for Predictive and Generative AI. Serve any model as an API in one line, with OpenAI/Anthropic/Ollama-compatible endpoints, a built-in chat UI, and native MCP.",
+      "url": "https://github.com/vortico/flama",
+      "publishedAt": "2026-09-11T09:44:10.000Z",
+      "summary": "★297 The production framework for Predictive and Generative AI. Serve any model as an API in one line, with OpenAI/Anthropic/Ollama-compatible endpoints, a built-in chat UI, and native MCP."
+    },
+    {
+      "id": "s-6ec9b989ad",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Human-Agent-Society/reef: Continual learning infra for self-improving agents",
+      "url": "https://github.com/Human-Agent-Society/reef",
+      "publishedAt": "2026-09-11T09:43:56.000Z",
+      "summary": "★950 Continual learning infra for self-improving agents"
+    },
+    {
+      "id": "s-f5824ea252",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "OtterMind/Chat2DB: Chat2DB is a free, cross-platform, local-first database client and SQL workspace for developers, DBAs, analysts, and data teams. Connect to 40+ databases, manage data, edit and run SQL, and use your own AI model to generate, explain, and optimize queries. Available on desktop, web, Docker, and CLI, with MCP support.",
+      "url": "https://github.com/OtterMind/Chat2DB",
+      "publishedAt": "2026-09-11T09:43:53.000Z",
+      "summary": "★28111 Chat2DB is a free, cross-platform, local-first database client and SQL workspace for developers, DBAs, analysts, and data teams. Connect to 40+ databases, manage data, edit and run SQL, and use your own AI model to generate, explain, and optimize queries. Available on desktop, web, Docker, and CLI, with MCP support."
     },
     {
       "id": "s-281bf10d8a",
@@ -238,6 +238,15 @@
       "summary": "2008年10月14日、Appleは新しいMacBookのボディーを「ユニボディ」と呼んだ。押し出したアルミニウムの塊を、航空宇宙産業から借りてきたCNC（コンピュータ制御の切削機）に載せ、13段階の切削工程で一枚の骨格に削り出す。 ジョナサン・アイブは「従来のノートブックは多くの部品でできていた。新しいMacBookでは、その..."
     },
     {
+      "id": "s-05e1820411",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Codeの設定を消す前に、僕が決めた基準",
+      "url": "https://zenn.dev/gemcook/articles/2336f653026c9e",
+      "publishedAt": "2026-09-11T07:29:45.000Z",
+      "summary": "はじめに モデルを変えた途端に、前のモデルのために書いた注意書きが効かなくなる。この半年で何度も踏んだ場面で、9 月に入って X でこの投稿を見たとき、正直ちょっと身に覚えがありました。 https://x.com/kawasin73/status/2096030851217887431 僕は AI ツールに毎月上限まで課金して使い倒し、Claude Code・Codex CLI・Grok Build の乗り換えと併用を繰り返してきた側の人です。古いモデルの弱点を補うために書いた指示が「もう死んでいる」という点には、僕も同意です。乗り換えるたびに、以前の注意書きが不要になる場面を見て..."
+    },
+    {
       "id": "s-4422704da4",
       "source": "はてなブックマーク (IT)",
       "sourceType": "japanese",
@@ -247,6 +256,24 @@
       "summary": "「AIで偽造された領収書画像を見せられた場合、企業側が自力で見破ることは難しい」――生成AIで作ったコンビニのレシート画像が、本物と見分けにくいほど精巧だとしてXで話題になっている。画像は米OpenAIが9月8日（現地時間）に発表した画像生成機能「ChatGPT Images 2.5」で生成したもので、経費精算などへの悪用を懸念..."
     },
     {
+      "id": "s-109daaa513",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "CursorとCodexに毎日小さなWebを作らせて、デプロイナウで公開する",
+      "url": "https://zenn.dev/boraemon2000/articles/ab50fb1e43f663",
+      "publishedAt": "2026-09-11T07:08:27.000Z",
+      "summary": "毎日ひとつ、ブラウザだけで動く小さなゲームや便利ツールを公開するサイトを作りました。 名前は「１日１デプロイ」です。公開先はこちらです。 https://mini-lab.lolipop-now.app/ 最初の作品は経路パズル「ホタルみち」です。 https://mini-lab.lolipop-now.app/apps/2026-09-08-hotaru-michi/ この記事は、同じ構成をまねするための手順メモです。Cursor でも Codex でも、同じ依頼文を渡せば「作る → 確認する → GitHub の main へ push する」まで進むようにしてあります。 何を..."
+    },
+    {
+      "id": "s-710dda7d35",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Grok botが僕らのチームを侵食してる",
+      "url": "https://zenn.dev/fastdoctor/articles/grok-bot-team-development",
+      "publishedAt": "2026-09-11T06:58:53.000Z",
+      "summary": "この記事は、noteに掲載した同名の記事をZenn向けに整えたものです。 ほんの1週間ほど前くらいの出来事でした。 なんだか様子がおかしいと思ったのは。 ＠Cursor? Cursor使ってるの？？ 普段うちはChatGPTとClaude Codeで回しています。 なのにCTOがSlackの返信をCursorでしている。 3、4ヶ月前にCursorを卒業したって。 VS Codeだけでいいです。って言ってたやん。 なんでまたCursorを使い始めたんだろう。 正体はGrok Botでした。 概要が気になる方は記事がいくつか出てるので調べてみてください。 https://note.co..."
+    },
+    {
       "id": "s-0809d2a4e7",
       "source": "Hacker News",
       "sourceType": "hn",
@@ -254,6 +281,24 @@
       "url": "https://www.wsj.com/politics/policy/congress-is-suddenly-waking-up-to-the-ai-doomsday-threat-b40ab25a",
       "publishedAt": "2026-09-11T06:48:06.000Z",
       "summary": "points=5 comments=3 (Hacker News)"
+    },
+    {
+      "id": "s-50e8881a3a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIエージェントの失敗を228件記録したら、根本原因は3つしかなかった",
+      "url": "https://zenn.dev/tokium_dev/articles/ai-agent-failure-patterns-228",
+      "publishedAt": "2026-09-11T06:34:12.000Z",
+      "summary": "! この記事は何の話か（3 行まとめ） AI（Claude Code）が失敗するたびに教訓を1ファイル1パターンで記録する運用を数ヶ月続けたら228件たまったので、全件を分類集計しました 教訓の大半は「Yする前にXせよ」「XはYではない」の2つの構文に収束しており、規律系の失敗の根本原因は3つ（代理シグナルの過信・否定の早撃ち・浦島太郎現象）しかありませんでした db:prepare が exit 0 なのに作成テーブル0件、復元不能バックアップ、敵対検証エージェントの指摘が全部偽陽性、といった実例と、再発防止策（行動ルール→Hookによる機械強制→本番経路の定期実走）をどう積んでい..."
+    },
+    {
+      "id": "s-99aad98fd1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "「Critical」という格付けをGPT-6 Astraが受け取った週、このタスクが触れていいリポジトリは2つしかなかった",
+      "url": "https://zenn.dev/hideki_tamae/articles/gated-capability-access-design",
+      "publishedAt": "2026-09-11T06:28:56.000Z",
+      "summary": "はじめに 100%。 これが今回の数字です。何の100%かというと、OpenAIが2026年9月3日に発表した新モデル「GPT-6 Astra」が、本番用の安全対策を外した状態で、自社のエクスプロイト開発ベンチマーク「ExploitBench」に記録したスコアです。同じ評価の中で、未知の脆弱性（ゼロデイ）を2件発見し、ハードニングされたシステムに対してブラウザのサンドボックスエスケープと権限昇格チェーンをフルで組み上げたとも報告されています。OpenAIはAstraを、自社のPreparedness Frameworkで定める「Critical」レベルのサイバー能力に到達した初めての..."
     },
     {
       "id": "s-10772c5978",
@@ -283,13 +328,40 @@
       "summary": "DeepSeekについては、外部のコーディングツールなどを経由したリクエストの一部を選び、Claude Opusに転送していたと報告した。転送内容には企業の内部文書や、稼働中のデータベースにアクセスするための認証情報も含まれていたという。 同レポートは、Xiaomiの「MiMo」の利用者との会話もClaudeに送られていたと指摘し..."
     },
     {
+      "id": "s-0b7cd3bb31",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI時代のエンジニアの在り方・変化",
+      "url": "https://zenn.dev/yatsumi823/articles/engineers-in-the-age-of-ai",
+      "publishedAt": "2026-09-11T05:35:13.000Z",
+      "summary": "はじめに 生成AIの登場によって、エンジニアの仕事は大きく変わり始めています。 コードの補完、テストの生成、エラーの調査、設計案の比較、ドキュメントの作成。これまで人が時間をかけていた作業の多くを、AIが短時間で支援できるようになりました。 こうした変化を前にすると、「エンジニアの仕事はなくなるのか」「今から何を学べばよいのか」と不安になる人もいるでしょう。 しかし、起きているのはエンジニアという職業の消滅ではなく、エンジニアに求められる価値の移動だと考えています。 この記事では、AI時代にエンジニアの仕事がどう変わるのか、変わらず重要なものは何か、そして私たちはどのように向き合え..."
+    },
+    {
+      "id": "s-cf20e2d812",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "文字数・バイト数からのトークン数推定は実際どれくらいズレるのか",
+      "url": "https://zenn.dev/aiforall/articles/63501821b1e50e",
+      "publishedAt": "2026-09-11T05:33:13.000Z",
+      "summary": "背景 実務で、LLM への入力テキストがトークン数の上限を超えてエラーになる事象が発生し、対策を検討する場面がありました。対策案として、LLM に投げる前に文字数やバイト数、あるいは tiktoken のようなトークナイザーでトークン数を事前に見積もり、上限を超えそうであれば送信前にエラーを表示する「事前バリデーション」方式が候補に挙がりました。 しかし議論の中で、「その見積もりが、実際に LLM に送ったときのトークン数とどこまで一致するかは怪しい」というエンジニアの感覚的な指摘がありました。最終的にはこの場では事前バリデーションを入れず、まず実際に LLM へリクエストを送り、上..."
+    },
+    {
       "id": "s-719e321c27",
       "source": "Hacker News",
       "sourceType": "hn",
       "title": "We Replaced MMAP with Io_uring in Our Rust Query Engine. It Got Slower",
       "url": "https://www.conviva.ai/resource/we-replaced-mmap-with-io_uring-in-our-rust-query-engine-it-got-slower/",
       "publishedAt": "2026-09-11T05:26:58.000Z",
-      "summary": "points=37 comments=19 (Hacker News)"
+      "summary": "points=37 comments=20 (Hacker News)"
+    },
+    {
+      "id": "s-97cb042b31",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "iPhone DuoでMagSafeマウントアクセサリを利用する場合、縦長に注意が必要 | iPhone | Mac OTAKARA",
+      "url": "https://www.macotakara.jp/iphone/entry-51786.html",
+      "publishedAt": "2026-09-11T05:11:16.000Z",
+      "summary": "iPhone DuoでMagSafeアクセサリ Appleが発表した「iPhone Duo」に関して、本体の高さが117.8mmしかなく、最初にMagSafe対応したiPhone 12シリーズのうち、iPhone 12 miniの高さ131.5mmよりも縦長が短くなっています。 AppleのMagSafe対応iPhoneファインウーブンウォレットをiPhone DuoにMagSafeマウントしたところ、iPho..."
     },
     {
       "id": "s-d2d88d9b15",
@@ -301,22 +373,22 @@
       "summary": "points=5 comments=0 (Hacker News)"
     },
     {
+      "id": "s-6b6b3265be",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "生成AIパスポート試験対策",
+      "url": "https://zenn.dev/irukaboat/articles/df275295291679",
+      "publishedAt": "2026-09-11T04:56:27.000Z",
+      "summary": "第1章：AIの概要と歴史・機械学習の基礎 1.1 AI（人工知能）とロボットの違い 試験ではAIとロボットの定義の違いがよく問われます。 比較項目 AI（人工知能） ロボット 存在形態 ソフトウェア / アプリケーション 物理的な機械（身体をもつ） 主な役割 人間の知能を再現し、知的タスクを自動化 物理的な作業を自動化 ※AIを「頭脳」、ロボットを「身体」として連携させて自動化を図るシステムも存在します。 1.2 AIの歴史と3つのAIブーム AI研究の歴史の起点となるキーワードは 「第二次世界大戦」の軍事・技術的ニーズです。1956年のダートマス会議..."
+    },
+    {
       "id": "s-e3ce0c5d8f",
       "source": "Hacker News",
       "sourceType": "hn",
       "title": "The Gemini app is now available for Windows",
       "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
       "publishedAt": "2026-09-11T04:52:20.000Z",
-      "summary": "points=48 comments=33 (Hacker News)"
-    },
-    {
-      "id": "s-c0adf797be",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "警察官を名乗る電話1本をきっかけに経理部長が11億円を送金してしまった事例から詐欺手口への教訓を学ぶ【読めば身に付くネットリテラシー】",
-      "url": "https://internet.watch.impress.co.jp/docs/column/netliteracy/2139916.html",
-      "publishedAt": "2026-09-11T04:25:59.000Z",
-      "summary": ""
+      "summary": "points=48 comments=35 (Hacker News)"
     },
     {
       "id": "s-c923b1f7ed",
@@ -400,51 +472,6 @@
       "summary": "OpenAIは、金融機関向けAI「ChatGPT for Financial Services」を発表した。最新モデル「GPT-6 Astra」を基盤に、主要な金融データセットを標準で内蔵。財務分析や顧客向け資料作成を支援し、既存の契約データとの連携やMicrosoft Officeテンプレートの社内配布にも対応する。"
     },
     {
-      "id": "s-ec471b0401",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "安いモデルで回して、判定が取れなかった分だけ機械的に上位モデルへ回す",
-      "url": "https://zenn.dev/kodomo_news/articles/85-advisor-escalation",
-      "publishedAt": "2026-09-10T23:27:00.000Z",
-      "summary": "こんにちは。小学生向けのニュースサイト、こどもニュースをつくっています。 このサイトは毎日 AI を何十回も呼びます。ニュースの選別、重複の判定、一次情報の探索、記事の執筆です。安いモデルで足りる工程と、そうでない工程が混ざっています。 工程ごとにモデルを固定するのが基本ですが、それだけだと「同じ工程の中の難しい 1 件」を拾えません。安いモデルに合わせると精度が落ち、高いモデルに合わせると全件が高くなります。 そこで、判定が取れなかったものだけを上位モデルに回す仕組みを足しました。 人が呼ぶ相談機能ではない 先に、よく取り違えられるところを書いておきます。 これは、実行中に人が「上..."
-    },
-    {
-      "id": "s-4b788df7a8",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "LLM判定が失敗しても、全件通さない",
-      "url": "https://zenn.dev/miyakona/articles/llm-invariant-tests-fail-closed",
-      "publishedAt": "2026-09-10T23:20:43.000Z",
-      "summary": "収集した候補を大規模言語モデル（LLM）で分類し、関連するものだけを後段へ送るバッチのテストを見直していました。LLMの出力は毎回同じとは限らないので、「入力Aなら必ず関連あり」と固定するテストは不安定になります。 かといって判定部分をテストから外すと、分類器を変更したときに、候補が途中で消えても気づけません。 もう一つ気になったのが、LLMを呼べないときの挙動でした。APIキーがない、空の値が返る、呼び出しが失敗する。そのときフィルタを無効にして全件を通せば、バッチ自体は完走します。しかし、成功したように見える出力の意味は、通常時とまったく違います。 現在は、LLMの答えそのものではな..."
-    },
-    {
-      "id": "s-35fac3d667",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "コーディングエージェントの時代におけるレビューのあり方とは。大量のコードレビューをどう扱うか",
-      "url": "https://zenn.dev/ytka/articles/a5347bdd6bf505",
-      "publishedAt": "2026-09-10T23:00:05.000Z",
-      "summary": "コーディングエージェントの時代におけるレビューのあり方とは。大量のコードレビューをどう扱うか コーディングエージェントが一晩で数千行のプルリクエストを作るが、人間がレビューしきれずPRが積み上がっていく。そんな光景が珍しくなくなりました。 この記事では、DX社とThoughtworks社の2つのレビューについての記事を手がかりに、コーディングエージェント時代におけるレビューのあり方について考えます。 希少な人間の注意を、最も価値ある場所のレビューのために確保する コードレビューは、そもそも何のためにあるのか？は、開発者体験ツールのDX社による記事です。 この記事ではMeta社のR..."
-    },
-    {
-      "id": "s-ce30f7bef2",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "旧webサイト移行をAIにまかせた",
-      "url": "https://zenn.dev/chooser/articles/elnw-017-product-story",
-      "publishedAt": "2026-09-10T22:49:40.000Z",
-      "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。 旧webサイト移行をAIにまかせた 会社には、古いサイトがいくつか残っていました。WordPress で作ったもの、素の HTML で書いたもの、そして、ログインの情報が分からなくなっているものです。 この記事は、それらを AI に移してもらうところから始めて、機能を足して運用し、最後に自社の管理画面（CMS）へ一本化するまでの記録です。先に言っておくと、最初から「CMS を作ろう..."
-    },
-    {
-      "id": "s-56e557b8de",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "「負のデザイン」の正体は、消すことではなく引き受けることだった",
-      "url": "https://zenn.dev/kiyoka/articles/negative-design-coding-agent-era",
-      "publishedAt": "2026-09-10T22:40:02.000Z",
-      "summary": "はじめに 2006〜2007年ごろの自分は、「機能を削ること」自体を良いデザインだという考え方を持っていました。当時「負のデザイン」と呼んでいたものです。 ただ、実際に自分の作品(Sekka、Sumibi)を振り返ると、うまくいった「引き算」と、うまくいかなかった「引き算」がはっきり分かれていました。そして違いは、削った量ではありませんでした。 操作を削っても、その操作が担っていた仕事は消えない。問題は「削ったかどうか」ではなく、残った仕事を誰が引き受けたかです。そして引き受けるには、消すよりずっと多くの実装が要ります。 正解の方向は昔から分かっていました。足りなかったのは馬力です。..."
-    },
-    {
       "id": "s-6f53ad6620",
       "source": "Reddit r/LocalLLaMA",
       "sourceType": "reddit",
@@ -454,15 +481,6 @@
       "summary": "Like many of you, I have seen many posts and tweets in the last weeks complaining about Artificial Analysis being &quot;broken&quot;, &quot;meaningless&quot;, and &quot;bought out.&quot; People who say this have done no research and know very little about how benchmarks work and what they measure. Most people only care about Artificial Analysis Intelligence Index. This is a weighted aggregate benc"
     },
     {
-      "id": "s-984a46985f",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "もう Prompt Engineering だけではない —— Trajectory Design という次の設計対象",
-      "url": "https://zenn.dev/albatrosary/articles/8d224a571d4e83",
-      "publishedAt": "2026-09-10T21:56:16.000Z",
-      "summary": "Plan / Rewind / Worktree / Orchestration から考える、生成AIの「軌道」の設計 ! もはや、Prompt Engineering だけをやっていればよい時代ではない。 しかし、これは、突然新しい概念を持ち出しているわけではない。Softmax Crowding や Semantic Drift を考えれば、むしろ当然の帰結である。 生成を重ねれば意味は揺らぐ。長い文脈では重要な制約も埋もれる。ならば次に考えるべきなのは、Prompt をどう磨くかだけではない。 どこで生成し、どこで止め、何を固定し、どこへ戻し、どこで分岐させるか。 つまり問題は..."
-    },
-    {
       "id": "s-4de39e00bc",
       "source": "TechCrunch AI",
       "sourceType": "media",
@@ -470,15 +488,6 @@
       "url": "https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/",
       "publishedAt": "2026-09-10T21:51:59.000Z",
       "summary": "Nvidia has its finger in every pie, and sees another year of plenty in its future, Jensen Huang says. But, he insists, its deals are not circular."
-    },
-    {
-      "id": "s-6b76a034c8",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "TDDも極小PRも、AI開発の足枷になっていない？",
-      "url": "https://zenn.dev/chro96/articles/958d8c35bebe96",
-      "publishedAt": "2026-09-10T21:50:05.000Z",
-      "summary": "コード品質分析ツール「CodeScene」の創業者であり、『Your Code as a Crime Scene』などの著者として知られるアダム・トーンヒル（Adam Tornhill）氏のブログ記事 “Practices I Abandoned With Agents”（AIエージェント時代に私が捨てたプラクティス）を読んだ。 長年TDD（テスト駆動開発）や細粒度のリファクタリングを徹底してきた彼が、自律型コーディングエージェントを日常的に使い倒す中で、**「長年信じてきた人間中心のプラクティスを手放した」**と告白している。 このテキストを読み解き、AI時代の開発体制について思考を深..."
     },
     {
       "id": "s-17d7af3126",
@@ -506,15 +515,6 @@
       "url": "https://www.theverge.com/tech/989853/slackforce-surfaces-launch",
       "publishedAt": "2026-09-10T21:25:21.000Z",
       "summary": "A new feature coming to Slack will allow you to build interactive reports, polls, dashboards, presentations, microsites, and other tools directly inside a chat. With Slackforce Surfaces, you can describe to Slackbot what you need, and it will use AI to gather information from relevant conversations and connected apps, like Google Drive or Salesforce, to […]"
-    },
-    {
-      "id": "s-3eccf24fe1",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Claude Code を2セッション並行させると、エラー無しで認識がズレる",
-      "url": "https://zenn.dev/yusu31/articles/3f7dc6c8cc76fa",
-      "publishedAt": "2026-09-10T21:24:04.000Z",
-      "summary": "Claude Code のタブを2つ開いて、同じリポジトリで別々の作業をさせたことはありますか。衝突すれば Git か エディタが止めてくれると思いますよね。私もそう思っていました。 **エラーは1つも出ませんでした。**代わりに起きたのは、git status から自分の変更が消え、自分が実行していないコミットとプッシュが増えているという状態です。 この記事は、それをどう切り分けたかと、本当に危なかったのは何かの記録です。 ! 発生日は 2026-09-03。Windows 11 / Claude Code（VS Code 拡張）/ React + Vite のリポジトリ。 「2セッシ..."
     },
     {
       "id": "s-1ee911f187",
