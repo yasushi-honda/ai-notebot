@@ -16,14 +16,16 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout title={post.data.title} description={post.data.summary}>
-  <nav class="font-mono text-xs text-ink-soft mb-4">
+  <nav class="text-xs text-ink-soft mb-4">
     <a href={url('')} class="hover:text-verify">ホーム</a> /
     <a href={url('care/')} class="hover:text-care">介護AIハック</a> /
-    <span class="tabular-nums">{post.data.date}</span>
+    <span class="tabular-nums font-mono">{post.data.date}</span>
   </nav>
 
   <div class="care-page">
-    <div class="font-mono text-xs text-care font-semibold mb-2 tabular-nums">{post.data.date} · 介護現場のAI活用</div>
+    <div class="text-xs text-care font-semibold mb-2">
+      <span class="font-mono tabular-nums">{post.data.date}</span> · 介護現場のAI活用
+    </div>
     <h1 class="font-display text-2xl font-bold text-ink mb-2">{post.data.title}</h1>
     <p class="text-ink-soft mb-6">{post.data.summary}</p>
 

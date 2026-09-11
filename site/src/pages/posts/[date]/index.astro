@@ -31,10 +31,10 @@ const shareText = [
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
-  <nav class="font-mono text-xs text-ink-soft mb-4">
+  <nav class="text-xs text-ink-soft mb-4">
     <a href={url('')} class="hover:text-verify">ホーム</a> /
     <a href={url('archive/')} class="hover:text-verify">アーカイブ</a> /
-    <span class="tabular-nums">{post.data.date}</span>
+    <span class="tabular-nums font-mono">{post.data.date}</span>
   </nav>
 
   <h1 class="font-display text-2xl font-bold text-ink mb-2">{post.data.title}</h1>
@@ -43,7 +43,7 @@ const shareText = [
   <img
     src={url(`images/${post.data.date}/hero.jpg`)}
     alt={post.data.title}
-    class="w-full aspect-video object-cover border border-rule mb-8"
+    class="w-full aspect-video object-cover rounded-lg border border-rule mb-8"
     onerror="this.onerror=null;this.src=this.src.replace('.jpg','.svg')"
   />
 
@@ -51,7 +51,7 @@ const shareText = [
     {post.data.tags.map((tag) => (
       <a
         href={url(`tags/${encodeURIComponent(tag)}/`)}
-        class="font-mono text-xs px-2 py-1 rounded-sm bg-verify-soft text-verify no-underline hover:bg-verify hover:text-white transition-colors"
+        class="text-xs font-medium px-2.5 py-1 rounded-full bg-verify-soft text-verify no-underline hover:bg-verify hover:text-white transition-colors"
       >
         #{tag}
       </a>
@@ -61,7 +61,7 @@ const shareText = [
   <button
     id="copy-share-btn"
     type="button"
-    class="inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1.5 mb-8 rounded-sm
+    class="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 mb-8 rounded-full
       border border-rule text-ink-soft hover:border-verify hover:text-verify transition-colors cursor-pointer
       bg-transparent"
   >

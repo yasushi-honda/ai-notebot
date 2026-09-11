@@ -16,7 +16,7 @@ const { tag, posts } = Astro.props;
 ---
 
 <BaseLayout title={`#${tag}`} description={`タグ「${tag}」の記事一覧`}>
-  <nav class="font-mono text-xs text-ink-soft mb-4">
+  <nav class="text-xs text-ink-soft mb-4">
     <a href={url('')} class="hover:text-verify">ホーム</a> / タグ
   </nav>
   <h1 class="font-display text-2xl font-bold text-ink mb-8">#{tag}</h1>

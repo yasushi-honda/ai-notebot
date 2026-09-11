@@ -18,7 +18,9 @@ const posts = (await getCollection('care')).sort((a, b) => b.data.date.localeCom
     {posts.map((post) => (
       <li>
         <a href={url(`care/${post.data.date}/`)} class="list-link list-link-care">
-          <div class="font-mono text-xs text-ink-soft mb-1 tabular-nums">{post.data.date} · {post.data.workArea}</div>
+          <div class="text-xs text-ink-soft mb-1">
+            <span class="font-mono tabular-nums">{post.data.date}</span> · {post.data.workArea}
+          </div>
           <div class="list-link-title">{post.data.title}</div>
           <div class="text-sm text-ink-soft mt-1">{post.data.summary}</div>
         </a>
