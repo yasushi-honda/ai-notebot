@@ -19,6 +19,7 @@ import { dirname, join, resolve } from 'node:path';
 
 import { generateText } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
+import { checkCitations } from './lib/citation-gate.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_DIR = join(ROOT, 'data', 'raw');
@@ -27,6 +28,12 @@ const POSTS_DIR = join(ROOT, 'site', 'src', 'content', 'posts');
 const MIN_THEMES = 3;
 const MAX_THEMES = 5;
 const MAX_CANDIDATES_FOR_STAGE_A = 60; // トークン節約のため上限を設ける
+// Stage Bは「全文に脚注」という指示に対しLLMが従わないことがあり、そのまま
+// validate-citations.mjsまで到達すると出典検証ゲートで記事全体の公開が止まる
+// （2026-09-10 scheduled run実績: 裏取り率97%で失敗）。checkCitationsによる
+// その場での検証と再生成（介護版curate-care.mjsの既存パターンを踏襲）で、
+// ゲート自体は緩めずに生成側の成功率を上げる。
+const MAX_REGENERATE_ATTEMPTS = 3; // 初回 + 出典チェック抵触時の再生成2回
 
 const STAGE_A_SCHEMA = {
   type: 'object',
@@ -111,9 +118,13 @@ async function runStageA(items) {
   return themes;
 }
 
-async function runStageB(theme, itemsById) {
-  const themeItems = theme.sourceIds.map((id) => itemsById.get(id)).filter(Boolean);
-  const prompt = [
+function buildStageBPrompt(theme, themeItems, extraInstructions) {
+  const extraNote =
+    extraInstructions.length > 0
+      ? `\n\n## 重要な修正指示（前回の生成の問題点。必ず修正すること）\n${extraInstructions.map((n) => `- ${n}`).join('\n')}`
+      : '';
+
+  return [
     'あなたはAI業界の動向を横断的に見る日本語テックブログの筆者です。',
     `見出し「${theme.title}」（${theme.angle}）について、以下の一次情報だけを根拠に本文を書いてください。`,
     '',
@@ -131,15 +142,82 @@ async function runStageB(theme, itemsById) {
     '- 製品名・数値・固有名詞など重要な語句は **太字** で強調する（例: **Claude Code** は...）',
     '- 3件以上の並列的な事実を列挙する場合は箇条書きを使ってよい。',
     '  箇条書きの各行も必ず句点＋脚注で終える（例: `- 項目の説明です[^s-aaa]。`）',
+    extraNote,
     '',
     '## 参照可能な一次情報',
     formatCandidateList(themeItems),
   ].join('\n');
+}
 
-  const text = await generateText({ prompt, responseSchema: STAGE_B_SCHEMA, temperature: 0.4 });
-  const result = JSON.parse(text);
-  result.bodyMarkdown = normalizeLiteralNewlines(result.bodyMarkdown);
-  return result;
+/**
+ * Stage Bの生成結果1件分について、validate-citations.mjsと同じ観点（不正表記・未許可id・
+ * 脚注ゼロ・裏取り率100%未満）を検査し、再生成が必要な問題点を文字列配列で返す純関数。
+ * runStageBの再生成ループから使うほか、Vertex AI呼び出しを伴わず単体テストできるように
+ * 独立した関数として切り出す。
+ */
+export function evaluateStageBCitations(bodyMarkdown, validIds) {
+  const check = checkCitations({ markdown: bodyMarkdown, validIds, exemptTableHeading: null, bodyOnly: true });
+  const problems = [];
+  if (check.malformed.length > 0) {
+    problems.push(
+      `不正な脚注表記があります（カンマ区切りで複数idを1つの角括弧に詰め込む等）: ${check.malformed.join(', ')}`,
+    );
+  }
+  if (check.unresolved.length > 0) {
+    problems.push(`このテーマに与えられていないidを引用しています: ${check.unresolved.join(', ')}`);
+  }
+  if (check.cited.size === 0) {
+    problems.push('本文に脚注が1件もありません');
+  }
+  if (check.citedSentences.length < check.sentences.length) {
+    problems.push(
+      `脚注のない文があります。導入・要約文も含め全ての文の文末に[^s-<id>]を付けてください: ${check.uncited
+        .map((s) => s.slice(0, 80))
+        .join(' | ')}`,
+    );
+  }
+  return problems;
+}
+
+/**
+ * runStageBの再生成ループの意思決定部分（accept/retry/exhausted）を純関数として切り出す。
+ * generateText（Vertex AI実API呼び出し）を含むループ本体はネットワーク依存で単体テストできないが、
+ * この決定ロジック（境界値: 最大試行回数への到達判定、extraInstructionsの重複排除累積）だけを
+ * 切り出すことで、Vertex AI呼び出し無しでテストできるようにする（pr-review-toolkitのテスト
+ * カバレッジレビューで指摘: このPRの主目的である再生成ループ配線そのものが無テストだった）。
+ */
+export function decideStageBRetry({ attempt, maxAttempts, problems, extraInstructions }) {
+  if (problems.length === 0) {
+    return { action: 'accept' };
+  }
+  if (attempt >= maxAttempts) {
+    return { action: 'exhausted' };
+  }
+  return { action: 'retry', extraInstructions: [...new Set([...extraInstructions, ...problems])] };
+}
+
+async function runStageB(theme, itemsById) {
+  const themeItems = theme.sourceIds.map((id) => itemsById.get(id)).filter(Boolean);
+  const validIds = new Set(theme.sourceIds);
+
+  let extraInstructions = [];
+  for (let attempt = 1; attempt <= MAX_REGENERATE_ATTEMPTS; attempt++) {
+    const prompt = buildStageBPrompt(theme, themeItems, extraInstructions);
+    const text = await generateText({ prompt, responseSchema: STAGE_B_SCHEMA, temperature: 0.4 });
+    const result = JSON.parse(text);
+    result.bodyMarkdown = normalizeLiteralNewlines(result.bodyMarkdown);
+
+    const problems = evaluateStageBCitations(result.bodyMarkdown, validIds);
+    const decision = decideStageBRetry({ attempt, maxAttempts: MAX_REGENERATE_ATTEMPTS, problems, extraInstructions });
+
+    if (decision.action === 'accept') return result;
+
+    console.warn(`  ✗ 出典チェックNG（試行${attempt}/${MAX_REGENERATE_ATTEMPTS}）: ${problems.join(' / ')}`);
+    if (decision.action === 'exhausted') {
+      throw new Error(`Stage B: 「${theme.title}」で出典チェックを満たす本文を生成できませんでした。`);
+    }
+    extraInstructions = decision.extraInstructions;
+  }
 }
 
 function slugifyTags(themes) {

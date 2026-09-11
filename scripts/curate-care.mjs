@@ -25,7 +25,7 @@ import { generateText } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
 import { normalizeLiteralNewlines } from './curate.mjs';
 import { findBannedExpressions } from './lib/style-guard.mjs';
-import { stripCodeSpans } from './lib/citation-gate.mjs';
+import { stripCodeSpans, checkCitations } from './lib/citation-gate.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_CARE_DIR = join(ROOT, 'data', 'raw-care');
@@ -744,6 +744,36 @@ export function validateGenerated(result, itemsById) {
   const hasOfficialSource = [...itemsById.values()].some((i) => i.tier === 'official');
   if (hasOfficialSource && !officialCited) {
     problems.push('公式(official)ソースを本文中で1件も引用していません');
+  }
+
+  // scripts/validate-citations.mjs --type=care と同じ裏取り率チェックをここでも行う
+  // （2026-09-12 実データで発覚: このチェックが無かったため、脚注のない文が混入した
+  // 生成結果がそのまま最終ゲートまで到達し、介護版の公開がスキップされていた）。
+  // 生成時点で検出し、既存の再生成ループ（extraInstructions）に乗せることで、
+  // ゲート自体は緩めずに生成側の成功率を上げる。
+  const citationCheck = checkCitations({
+    markdown: result.bodyMarkdown,
+    validIds: new Set(itemsById.keys()),
+    exemptTableHeading: null,
+    bodyOnly: true,
+  });
+  if (citationCheck.malformed.length > 0) {
+    problems.push(
+      `不正な脚注表記があります（カンマ区切りで複数idを1つの角括弧に詰め込む等）: ${citationCheck.malformed.join(', ')}`,
+    );
+  }
+  if (citationCheck.unresolved.length > 0) {
+    problems.push(`当日アーカイブに存在しない出典を引用しています: ${citationCheck.unresolved.join(', ')}`);
+  }
+  if (citationCheck.cited.size === 0) {
+    problems.push('本文に脚注が1件もありません');
+  }
+  if (citationCheck.citedSentences.length < citationCheck.sentences.length) {
+    problems.push(
+      `脚注のない文があります。導入・要約文も含め全ての文の文末に[^s-<id>]を付けてください: ${citationCheck.uncited
+        .map((s) => s.slice(0, 80))
+        .join(' | ')}`,
+    );
   }
 
   return problems;

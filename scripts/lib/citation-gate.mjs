@@ -70,17 +70,23 @@ export function stripCodeSpans(text) {
 
 /**
  * @param {object} opts
- * @param {string} opts.markdown 記事ファイル全体（frontmatter込み）
+ * @param {string} opts.markdown 記事ファイル全体（frontmatter込み。opts.bodyOnly指定時は本文断片）
  * @param {Set<string>} opts.validIds 当日アーカイブに実在する出典id集合
  * @param {string|null} [opts.exemptTableHeading] このヘッダのセクション内に限り `|` 始まりの行を脚注検証対象外にする（AIトレンド版のみ）
+ * @param {boolean} [opts.bodyOnly] trueの場合、frontmatter区切り(`\n---\n`)の自動検出を行わず
+ *   markdown全体をそのまま本文として扱う。LLM生成直後の本文断片（frontmatterを含まない）を
+ *   検証する用途向け。指定しない場合、本文中にMarkdownの水平線（`---`）が現れると誤ってそこを
+ *   frontmatter区切りと認識し、それより前の文を検証対象から取りこぼす
+ *   （codex reviewで指摘・修正: curate.mjs/curate-care.mjsの生成直後チェックで実際に発生しうる
+ *   経路だった）。
  * @returns {{
  *   ok: boolean, cited: Set<string>, unresolved: string[], malformed: string[],
  *   sentences: string[], citedSentences: string[], uncited: string[], backingRate: number
  * }}
  */
-export function checkCitations({ markdown, validIds, exemptTableHeading = null }) {
+export function checkCitations({ markdown, validIds, exemptTableHeading = null, bodyOnly = false }) {
   // frontmatter を除いた本文部分から脚注を抽出（frontmatter の sourceIds は自己申告のため対象外）
-  const bodyStart = markdown.indexOf('\n---\n', 4);
+  const bodyStart = bodyOnly ? -1 : markdown.indexOf('\n---\n', 4);
   const body = bodyStart >= 0 ? markdown.slice(bodyStart + 5) : markdown;
 
   // 脚注定義行（[^s-xxx]: 出典タイトル ...）を除いた「地の文」だけを引用抽出の対象にする。
