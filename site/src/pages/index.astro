@@ -7,6 +7,9 @@ const allPosts = (await getCollection('posts')).sort((a, b) => b.data.date.local
 const latest = allPosts[0];
 const rest = allPosts.slice(1, 8);
 
+const carePosts = (await getCollection('care')).sort((a, b) => b.data.date.localeCompare(a.data.date));
+const latestCare = carePosts[0];
+
 function heroSrc(date: string) {
   return url(`images/${date}/hero.jpg`);
 }
@@ -33,6 +36,17 @@ function heroSrc(date: string) {
         <h2 class="text-xl font-bold text-slate-900 mb-2">{latest.data.title}</h2>
         <p class="text-sm text-slate-600">{latest.data.description}</p>
       </div>
+    </a>
+  )}
+
+  {latestCare && (
+    <a
+      href={url(`care/${latestCare.data.date}/`)}
+      class="care-page block mb-10 hover:shadow-md transition-shadow no-underline"
+    >
+      <div class="text-xs text-[#8a7f6a] font-sans mb-1">介護AIハック · {latestCare.data.date}</div>
+      <h2 class="font-serif text-xl font-bold text-[#2b2620] mb-2">{latestCare.data.title}</h2>
+      <p class="text-sm text-[#5a4f3f]">{latestCare.data.summary}</p>
     </a>
   )}
 

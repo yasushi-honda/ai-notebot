@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { url } from '../../lib/url';
+
+const posts = (await getCollection('care')).sort((a, b) => b.data.date.localeCompare(a.data.date));
+---
+
+<BaseLayout title="介護AIハック" description="介護現場の業務をAIで効率化する方法を、公式情報の裏付け付きで毎日1つ紹介します">
+  <div class="care-page">
+    <h1 class="font-serif text-2xl font-bold text-[#2b2620] mb-2">介護AIハック（全{posts.length}件）</h1>
+    <p class="text-[#5a4f3f] mb-8">
+      介護現場の日々の業務をAIで効率化する具体的な方法を、公式情報の裏付け付きで毎日1つ紹介します。
+    </p>
+
+    <ul class="space-y-0">
+      {posts.map((post) => (
+        <li class="border-b border-[#e5ddce] py-4 last:border-b-0">
+          <a href={url(`care/${post.data.date}/`)} class="block no-underline group">
+            <div class="text-xs text-[#8a7f6a] font-sans mb-1">
+              {post.data.date} · {post.data.workArea}
+            </div>
+            <div class="font-serif font-bold text-[#2b2620] group-hover:text-[#2c4a63]">{post.data.title}</div>
+            <div class="text-sm text-[#5a4f3f] mt-1">{post.data.summary}</div>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    {posts.length === 0 && <p class="text-[#8a7f6a]">まだ記事がありません。</p>}
+  </div>
+</BaseLayout>

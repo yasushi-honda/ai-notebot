@@ -92,6 +92,49 @@ export async function generateText({ prompt, responseSchema, temperature = 0.3, 
 }
 
 /**
+ * Google 検索によるグラウンディング付きテキスト生成（介護版記事の出典収集専用）。
+ * responseSchema による構造化出力とは併用できない（Vertex AI公式ドキュメントで確認済み:
+ * "Search Grounding can't be used with JSON/YAML/XML mode"）ため、responseSchema は受け付けない。
+ * 構造化が必要な記事本文の生成は、この関数で収集した検証済み出典だけを材料に
+ * generateText（グラウンディングなし）で別途行う（2段階設計。docs/adr/ 参照）。
+ *
+ * @param {object} opts
+ * @param {string} opts.prompt
+ * @param {string} [opts.model]
+ * @param {number} [opts.temperature] 公式推奨値は1.0（グラウンディング利用時の最適値）
+ * @returns {Promise<{
+ *   text: string,
+ *   groundingChunks: Array<{web?: {uri: string, title: string}}>,
+ *   webSearchQueries: string[],
+ *   searchEntryPointHtml: string | null,
+ * }>}
+ */
+export async function generateGroundedText({ prompt, model, temperature = 1.0 }) {
+  const token = requireToken();
+  const project = requireProject();
+  const usedModel = model || process.env.GEMINI_MODEL || DEFAULT_TEXT_MODEL;
+  const url = endpoint(project, DEFAULT_LOCATION, usedModel);
+
+  const data = await callGenerateContent(url, token, {
+    contents: [{ role: 'user', parts: [{ text: prompt }] }],
+    tools: [{ googleSearch: {} }],
+    generationConfig: { temperature },
+  });
+
+  const candidate = data.candidates?.[0];
+  const text = candidate?.content?.parts?.map((p) => p.text).filter(Boolean).join('');
+  if (!text) throw new Error(`Vertex AI の応答形式が想定外です: ${JSON.stringify(data).slice(0, 300)}`);
+
+  const metadata = candidate.groundingMetadata ?? {};
+  return {
+    text,
+    groundingChunks: metadata.groundingChunks ?? [],
+    webSearchQueries: metadata.webSearchQueries ?? [],
+    searchEntryPointHtml: metadata.searchEntryPoint?.renderedContent ?? null,
+  };
+}
+
+/**
  * 画像生成。gemini-3.1-flash-lite-image は locations/global のみ対応。
  * @param {object} opts
  * @param {string} opts.prompt

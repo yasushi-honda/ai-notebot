@@ -20,6 +20,23 @@ Astro build → dist/ → GitHub Pages
 エントリに紐付く。未解決の脚注が1件でもあればビルドを失敗させ、ハルシネーションを含む記事を
 公開しない設計（詳細: `docs/adr/`）。
 
+### 介護版「今日のAI活用ハック」（別枠パイプライン）
+
+```
+build-care.mjs（オーケストレータ。失敗しても本体の生成・公開は止めず、常に exit 0）
+  ├─ collect-care.mjs (Vertex AI Google検索グラウンディング → 介護DXテーマを調査・出典を
+  │    到達性検証) → data/raw-care/YYYY-MM-DD.json
+  ├─ curate-care.mjs (グラウンディングなし・responseSchemaのみ。data/raw-care だけを材料に
+  │    構造化生成 + style-guardでAIっぽい表現を検査 + 手順フローSVGを決定的生成)
+  │    → site/src/content/care/YYYY-MM-DD.md, site/public/images/care/YYYY-MM-DD/steps.svg
+  └─ validate-citations.mjs --type=care（AIトレンド版と共有のゲート。テーブル免除なし）
+    ↓
+Astro build → dist/ → GitHub Pages（/care/YYYY-MM-DD/）
+```
+
+Google検索グラウンディングと `responseSchema` 構造化出力は同一リクエストで併用できない
+（Vertex AI公式仕様）ため2段階に分離している。詳細: `docs/adr/adr-2026-09-11-care-hack-grounded-research.md`。
+
 ## GCP / GitHub
 
 - GCP プロジェクト: `ai-notebot-yh`（アカウント `hy.unimail.11@gmail.com`）
@@ -36,6 +53,8 @@ node scripts/verify-archive.mjs <date>       # 収集結果の検証
 node scripts/curate.mjs <date>               # 記事生成
 node scripts/validate-citations.mjs <date>   # 出典検証（未解決0件を強制）
 node scripts/images.mjs <date>               # 画像生成
+node scripts/build-care.mjs <date>           # 介護版オーケストレータ（collect-care→curate-care→gate）
+node scripts/validate-citations.mjs <date> --type=care  # 介護版の出典検証を単独実行
 cd site && npm run build                     # 静的サイトビルド
 node --test scripts/**/*.test.mjs            # 単体テスト
 ```

@@ -274,6 +274,27 @@ test('validate-citations: 本文中で一度も引用されず脚注定義だけ
   }
 });
 
+// remark-gfmはコードスパン（`...`）内では脚注参照構文を解釈せずリテラル表示するため、
+// `[^s-xxx]` のようにバッククォートで囲まれたものは実際にはどの出典にもリンクしない
+// 「見た目だけの引用」になる。生Markdownへの正規表現マッチだけでは区別できず誤って
+// 「引用済み」と判定してしまうバイパスの回帰テスト（codex reviewで指摘・修正）
+test('validate-citations: コードスパンで囲まれた脚注マーカーは本物の引用として扱わない', async () => {
+  await setup();
+  try {
+    const md = `---\ntitle: test\n---\n\n## 見出し\n\n本文です\`[^s-aaaaaaaaaa]\`。\n\n## この記事の出典\n\n[^s-aaaaaaaaaa]: A\n`;
+    await writeFile(postPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE]),
+      (err) => {
+        assert.equal(err.code, 1);
+        return true;
+      },
+    );
+  } finally {
+    await teardown();
+  }
+});
+
 test('validate-citations: 脚注が1件もない記事は exit 1', async () => {
   await setup();
   try {
@@ -288,5 +309,121 @@ test('validate-citations: 脚注が1件もない記事は exit 1', async () => {
     );
   } finally {
     await teardown();
+  }
+});
+
+// --- 介護版（--type=care）: data/raw-care + site/src/content/care を参照し、
+//     AIトレンド版と違ってテーブル行の免除が一切ない（全文100%の裏取りを要求する）
+
+const careRawPath = join(ROOT, 'data', 'raw-care', `${FIXTURE_DATE}.json`);
+const carePostPath = join(ROOT, 'site', 'src', 'content', 'care', `${FIXTURE_DATE}.md`);
+
+async function setupCare() {
+  await mkdir(dirname(careRawPath), { recursive: true });
+  await mkdir(dirname(carePostPath), { recursive: true });
+  await writeFile(careRawPath, JSON.stringify(archive, null, 2), 'utf8');
+}
+
+async function teardownCare() {
+  await rm(careRawPath, { force: true });
+  await rm(carePostPath, { force: true });
+}
+
+test('validate-citations --type=care: 存在するidのみ引用した記事は exit 0', async () => {
+  await setupCare();
+  try {
+    const md = `---\ntitle: test\n---\n\n## なぜ手間がかかるのか\n\n背景です[^s-aaaaaaaaaa]。\n\n## 手順\n\n1. 手順1です[^s-bbbbbbbbbb]。\n`;
+    await writeFile(carePostPath, md, 'utf8');
+    const { stdout } = await execFileAsync('node', [SCRIPT, FIXTURE_DATE, '--type=care']);
+    assert.match(stdout, /unresolved: 0 \/ total: 2/);
+  } finally {
+    await teardownCare();
+  }
+});
+
+test('validate-citations --type=care: テーブル行があっても免除されない（AIトレンド版と違い「今日のトピック」免除が無い）', async () => {
+  await setupCare();
+  try {
+    const md = `---\ntitle: test\n---\n\n## 今日のトピック\n\n| 項目 | 値 |\n|---|---|\n| 出典なしの行 | X |\n\n## 手順\n\n1. 手順1です[^s-aaaaaaaaaa]。\n`;
+    await writeFile(carePostPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE, '--type=care']),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /裏取り率が100%未満/);
+        return true;
+      },
+    );
+  } finally {
+    await teardownCare();
+  }
+});
+
+test('validate-citations --type=care: 見出しと本文の間に空行が無く連結されていても本文の未引用文は検出される（実データで発覚したゲートバイパスの回帰テスト）', async () => {
+  await setupCare();
+  try {
+    // 見出し行の直後に空行を挟まず本文が続くケース（LLMが空行を入れ忘れた場合に実際に発生した）。
+    // 段落全体が「#始まり」として丸ごと免除されると、本文の無出典文がすり抜けてしまう。
+    const md = `---\ntitle: test\n---\n\n## なぜ手間がかかるのか\n背景です[^s-aaaaaaaaaa]。無出典の文です。\n\n## 手順\n\n1. 手順1です[^s-bbbbbbbbbb]。\n`;
+    await writeFile(carePostPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE, '--type=care']),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /裏取り率が100%未満/);
+        assert.match(err.stderr, /無出典の文です/);
+        return true;
+      },
+    );
+  } finally {
+    await teardownCare();
+  }
+});
+
+test('validate-citations --type=care: 見出し単独の段落（本文が続かない）は従来どおり検証対象外', async () => {
+  await setupCare();
+  try {
+    const md = `---\ntitle: test\n---\n\n## なぜ手間がかかるのか\n\n背景です[^s-aaaaaaaaaa]。\n\n## 手順\n\n1. 手順1です[^s-bbbbbbbbbb]。\n`;
+    await writeFile(carePostPath, md, 'utf8');
+    const { stdout } = await execFileAsync('node', [SCRIPT, FIXTURE_DATE, '--type=care']);
+    assert.match(stdout, /unresolved: 0 \/ total: 2/);
+  } finally {
+    await teardownCare();
+  }
+});
+
+test('validate-citations --type=care: コードスパンで囲まれた脚注マーカーは本物の引用として扱わない', async () => {
+  await setupCare();
+  try {
+    const md = `---\ntitle: test\n---\n\n## なぜ手間がかかるのか\n\n背景です\`[^s-aaaaaaaaaa]\`。\n\n## 手順\n\n1. 手順1です[^s-bbbbbbbbbb]。\n`;
+    await writeFile(carePostPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE, '--type=care']),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /裏取り率が100%未満/);
+        return true;
+      },
+    );
+  } finally {
+    await teardownCare();
+  }
+});
+
+test('validate-citations --type=care: 手順の1ステップに脚注が無ければ検出される', async () => {
+  await setupCare();
+  try {
+    const md = `---\ntitle: test\n---\n\n## なぜ手間がかかるのか\n\n背景です[^s-aaaaaaaaaa]。\n\n## 手順\n\n1. 脚注のない手順です。\n2. こちらは脚注ありです[^s-bbbbbbbbbb]。\n`;
+    await writeFile(carePostPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, FIXTURE_DATE, '--type=care']),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /裏取り率が100%未満/);
+        return true;
+      },
+    );
+  } finally {
+    await teardownCare();
   }
 });

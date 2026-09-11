@@ -1,23 +1,40 @@
 #!/usr/bin/env node
 /**
  * AC-2 の証明コマンド（ハルシネーション遮断の要）。
- * site/src/content/posts/<date>.md 内の全脚注 [^s-<id>] が、
- * data/raw/<date>.json の当日アーカイブに実在する id に解決するかを検証する。
+ * site/src/content/posts/<date>.md（または --type=care 指定時は site/src/content/care/<date>.md）
+ * 内の全脚注 [^s-<id>] が、当日アーカイブに実在する id に解決するかを検証する。
  * 未解決が1件でもあれば exit 1（LLM が収集していない情報を書いた場合、公開をここで止める）。
  *
- * 使い方: node scripts/validate-citations.mjs [YYYY-MM-DD]（省略時は今日）
+ * 検証ロジック本体は scripts/lib/citation-gate.mjs の純関数（介護版と共有）。
+ * 本ファイルはそれを呼び出し、既存の出力文言・終了コードを維持する薄いCLIラッパー。
+ *
+ * 使い方:
+ *   node scripts/validate-citations.mjs [YYYY-MM-DD]                 # AIトレンド版（省略時は今日）
+ *   node scripts/validate-citations.mjs [YYYY-MM-DD] --type=care     # 介護版
  */
 
 import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { todayJst } from './lib/date.mjs';
+import { checkCitations } from './lib/citation-gate.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-const dateArg = process.argv[2] ?? todayJst();
-const rawPath = join(ROOT, 'data', 'raw', `${dateArg}.json`);
-const postPath = join(ROOT, 'site', 'src', 'content', 'posts', `${dateArg}.md`);
+const args = process.argv.slice(2);
+const typeArg = args.find((a) => a.startsWith('--type='))?.split('=')[1] ?? 'posts';
+const dateArg = args.find((a) => !a.startsWith('--')) ?? todayJst();
+
+const isCare = typeArg === 'care';
+const rawPath = isCare
+  ? join(ROOT, 'data', 'raw-care', `${dateArg}.json`)
+  : join(ROOT, 'data', 'raw', `${dateArg}.json`);
+const postPath = isCare
+  ? join(ROOT, 'site', 'src', 'content', 'care', `${dateArg}.md`)
+  : join(ROOT, 'site', 'src', 'content', 'posts', `${dateArg}.md`);
+// テーブル行の脚注免除は「今日のトピック」テーブル（AIトレンド版のみ curate.mjs が機械生成）だけに
+// 限定する。介護版は免除なしで全文100%の裏取りを要求する（docs/adr/ 参照）。
+const exemptTableHeading = isCare ? null : '今日のトピック';
 
 let archive;
 try {
@@ -37,113 +54,33 @@ try {
 
 const validIds = new Set((archive.items ?? []).map((i) => i.id));
 
-// frontmatter を除いた本文部分から脚注を抽出（frontmatter の sourceIds は自己申告のため対象外）
-const bodyStart = markdown.indexOf('\n---\n', 4);
-const body = bodyStart >= 0 ? markdown.slice(bodyStart + 5) : markdown;
+const result = checkCitations({ markdown, validIds, exemptTableHeading });
 
-// 脚注定義行（[^s-xxx]: 出典タイトル ...）を除いた「地の文」だけを引用抽出の対象にする。
-// 定義行の先頭も [^s-xxx] という形をしているため、除外しないと「本文中で一度も
-// 引用されていないが定義だけ存在するid」を誤って「引用済み」と扱ってしまい、
-// どの主張も裏付けていない出典が紛れ込む（codex reviewで指摘・修正）。
-const definitionLinePattern = /^\[\^s-[0-9a-f]+\]:.*$/gm;
-const prose = body.replace(definitionLinePattern, '');
+console.log(`total: ${result.cited.size} / unresolved: ${result.unresolved.length}`);
+console.log(`裏取り率: ${result.backingRate}% (${result.citedSentences.length}/${result.sentences.length} 文に脚注あり)`);
 
-const footnotePattern = /\[\^(s-[0-9a-f]+)\]/g;
-const cited = new Set();
-for (const m of prose.matchAll(footnotePattern)) cited.add(m[1]);
-
-// 不正な脚注表記を検出する（例: [^s-aaa, s-bbb] のようにカンマ区切りで複数idを
-// 1つの角括弧に詰め込んだもの。LLMがまれにこの形式で出力し、GFM footnote構文として
-// 認識されず角括弧がそのまま画面に表示されてしまうため、正しい形式のみ許容する）。
-// "[^" で始まり "]" で終わる角括弧のうち、footnotePattern に完全一致しないものを拾う。
-const bracketPattern = /\[\^[^\]]*\]/g;
-const malformed = [...prose.matchAll(bracketPattern)]
-  .map((m) => m[0])
-  .filter((s) => !/^\[\^s-[0-9a-f]+\]$/.test(s));
-
-const unresolved = [...cited].filter((id) => !validIds.has(id));
-
-// 裏取り率: 文（句点「。」区切り）のうち脚注を含む割合。
-// 段落単位だと「1つでも脚注があれば段落全体OK」となり、同じ段落内に無出典の文が
-// 混在してもすり抜けてしまう（codex review 3周目で指摘・修正。AGENTS.md の
-// 「全ての主張が出典に紐付く」という主張粒度の要求に合わせ、文単位で検証する）。
-// (.test() は /g フラグ付きだと lastIndex が状態を持つため、判定専用に非グローバル正規表現を使う)
-const hasFootnote = /\[\^s-[0-9a-f]+\]/;
-
-// テーブル行（|始まり）の脚注免除は「今日のトピック」セクション（curate.mjsが
-// 機械生成する唯一のテーブル）だけに限定する。全ての|始まり行を無条件に除外すると、
-// Stage Bは自由形式のMarkdownを返すため、LLMが独自に無出典のテーブルを書いても
-// 検出できない抜け道になってしまう（codex reviewで指摘・修正）。
-const OVERVIEW_HEADING = '今日のトピック';
-const overviewHeadingMatch = prose.match(new RegExp(`^## ${OVERVIEW_HEADING}$`, 'm'));
-let overviewRange = null;
-if (overviewHeadingMatch) {
-  const start = overviewHeadingMatch.index;
-  const nextHeadingMatch = prose.slice(start + overviewHeadingMatch[0].length).match(/^## .+$/m);
-  const end = nextHeadingMatch ? start + overviewHeadingMatch[0].length + nextHeadingMatch.index : prose.length;
-  overviewRange = { start, end };
-}
-
-// paragraphs を prose 中の実位置（インデックス）付きで求める。同一文言の段落が
-// 複数箇所にあっても取り違えないよう、検索開始位置を左から右へ単調に進める。
-let searchFrom = 0;
-const paragraphs = prose
-  .split(/\n{2,}/)
-  .map((raw) => {
-    const text = raw.trim();
-    const index = text ? prose.indexOf(text, searchFrom) : -1;
-    if (index >= 0) searchFrom = index + text.length;
-    return { text, index };
-  })
-  // 見出し(#)・脚注定義(未使用な保険)は「新たな主張」ではなく構造要素のため対象外にする
-  // （docs/adr/adr-2026-09-10-citation-gate-blocks-publish.md 参照）。
-  .filter((p) => p.text && !p.text.startsWith('#') && !p.text.startsWith('[^'))
-  // テーブル行(|)は「今日のトピック」セクション内に限り対象外。それ以外の場所で
-  // LLMが独自にテーブルを書いた場合は通常の段落として脚注を要求する（上記の理由）。
-  .filter((p) => !(p.text.startsWith('|') && overviewRange && p.index >= overviewRange.start && p.index < overviewRange.end))
-  .map((p) => p.text);
-// 文末記号（。！？と、空白/文末が後続する半角 . ! ?）の直後で分割し、
-// 区切り文字自体は直前の文に残す。句点「。」のみだと「！」「？」で終わる文や
-// 英数字混じりの文が次の文と結合してしまい、結合先に脚注があれば無出典文を
-// 見逃してしまう（codex review 5周目で指摘・修正）。
-// 半角 . は小数点・略語との衝突を避けるため、直後が空白または文末の場合のみ区切る。
-const sentences = paragraphs
-  .flatMap((p) => p.split(/(?<=[。！？])|(?<=[.!?])(?=\s|$)/))
-  .map((s) => s.trim())
-  .filter(Boolean);
-const citedSentences = sentences.filter((s) => hasFootnote.test(s));
-const backingRate = sentences.length > 0 ? Math.round((citedSentences.length / sentences.length) * 100) : 0;
-
-console.log(`total: ${cited.size} / unresolved: ${unresolved.length}`);
-console.log(`裏取り率: ${backingRate}% (${citedSentences.length}/${sentences.length} 文に脚注あり)`);
-
-if (malformed.length > 0) {
-  console.error(`malformed footnotes: ${malformed.join(', ')}`);
+if (result.malformed.length > 0) {
+  console.error(`malformed footnotes: ${result.malformed.join(', ')}`);
   console.error('記事に不正な脚注表記（例: カンマ区切りで複数idを1つの角括弧に詰め込んだもの）があります。公開を中止します。');
   process.exit(1);
 }
 
-if (unresolved.length > 0) {
-  console.error(`unresolved citations: ${unresolved.join(', ')}`);
+if (result.unresolved.length > 0) {
+  console.error(`unresolved citations: ${result.unresolved.join(', ')}`);
   console.error('記事は当日アーカイブに存在しない出典を引用しています。公開を中止します。');
   process.exit(1);
 }
 
-if (cited.size === 0) {
+if (result.cited.size === 0) {
   console.error('脚注が1件もありません。出典なしの記事は公開しません。');
   process.exit(1);
 }
 
-// 裏取り率100%を必須とする（文単位）: 段落単位の判定だと同じ段落内に無出典の文が
-// 混在してもすり抜けるため、句点区切りの文ごとに脚注の有無を検証する
-// （codex reviewで指摘・修正。AGENTS.mdの「全ての主張が出典に紐付く」という
-// 主張粒度の要求に合わせる）。
-if (citedSentences.length < sentences.length) {
-  const uncited = sentences.filter((s) => !hasFootnote.test(s));
-  console.error(`裏取り率が100%未満です（${backingRate}%）。脚注のない文が${uncited.length}件あります。`);
-  console.error(`未引用の文（先頭80字）: ${uncited.map((s) => s.slice(0, 80)).join(' | ')}`);
+if (result.citedSentences.length < result.sentences.length) {
+  console.error(`裏取り率が100%未満です（${result.backingRate}%）。脚注のない文が${result.uncited.length}件あります。`);
+  console.error(`未引用の文（先頭80字）: ${result.uncited.map((s) => s.slice(0, 80)).join(' | ')}`);
   process.exit(1);
 }
 
-console.log(`unresolved: 0 / total: ${cited.size}`);
+console.log(`unresolved: 0 / total: ${result.cited.size}`);
 process.exit(0);

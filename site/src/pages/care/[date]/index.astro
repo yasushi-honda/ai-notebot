@@ -1,0 +1,66 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { url } from '../../../lib/url';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('care');
+  return posts.map((post) => ({
+    params: { date: post.data.date },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout title={post.data.title} description={post.data.summary}>
+  <nav class="text-sm text-slate-400 mb-4">
+    <a href={url('')} class="hover:text-indigo-600">ホーム</a> /
+    <a href={url('care/')} class="hover:text-indigo-600">介護AIハック</a> /
+    {post.data.date}
+  </nav>
+
+  <div class="care-page">
+    <div class="text-xs text-[#8a7f6a] font-sans mb-2">{post.data.date} · 介護現場のAI活用</div>
+    <h1 class="font-serif text-2xl font-bold text-[#2b2620] mb-2">{post.data.title}</h1>
+    <p class="text-[#5a4f3f] mb-6">{post.data.summary}</p>
+
+    <dl class="care-meta">
+      <div>
+        <dt>対象サービス</dt>
+        <dd>{post.data.targetServices.join(' / ')}</dd>
+      </div>
+      <div>
+        <dt>業務領域</dt>
+        <dd>{post.data.workArea}</dd>
+      </div>
+      <div>
+        <dt>導入の手間</dt>
+        <dd>{post.data.difficulty}</dd>
+      </div>
+    </dl>
+
+    <img
+      src={url(`images/care/${post.data.date}/steps.svg`)}
+      alt="手順フロー"
+      class="steps-diagram"
+      onerror="this.style.display='none'"
+    />
+
+    <article class="prose-care">
+      <Content />
+    </article>
+
+    <p class="mt-6 text-xs text-[#8a7f6a] font-sans">
+      この記事の出典 {post.data.sourceIds.length} 件はすべて、到達性を機械検証済みの実在するウェブページに解決することを検証済みです。
+    </p>
+
+    {post.data.searchEntryPointHtml && (
+      <div class="mt-4">
+        <Fragment set:html={post.data.searchEntryPointHtml} />
+      </div>
+    )}
+  </div>
+</BaseLayout>

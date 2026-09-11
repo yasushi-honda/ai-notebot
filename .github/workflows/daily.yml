@@ -66,6 +66,12 @@ jobs:
           GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           GCP_PROJECT: ai-notebot-yh
 
+      - name: Build care hack article（失敗しても本体の生成・公開は止めない）
+        run: node scripts/build-care.mjs
+        env:
+          GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          GCP_PROJECT: ai-notebot-yh
+
       - name: Install site dependencies
         run: npm ci
         working-directory: site
@@ -79,7 +85,7 @@ jobs:
         run: |
           git config user.name "ai-notebot-bot"
           git config user.email "actions@github.com"
-          git add data/raw site/src/content/posts site/public/images
+          git add data/raw data/raw-care site/src/content/posts site/src/content/care site/public/images
           if git diff --cached --quiet; then
             echo "変更なし。コミットをスキップします。"
           else

@@ -13,12 +13,12 @@
 import { writeFile, readFile, mkdir, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { createHash } from 'node:crypto';
 
 import { RSS_FEEDS } from './lib/feeds.mjs';
 import { fetchFeed } from './lib/rss.mjs';
 import { fetchHackerNews, fetchReddit, fetchArxiv, fetchGitHubTrending } from './lib/collectors.mjs';
 import { todayJst } from './lib/date.mjs';
+import { normalizeUrl, makeId } from './lib/source-id.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_DIR = join(ROOT, 'data', 'raw');
@@ -28,14 +28,6 @@ const DEDUP_LOOKBACK_DAYS = 7; // 直近7日に既出のURLは新着から除外
 const MAX_PER_SOURCE = 8; // 1ソースが候補を占拠しないための上限
 const MIN_SUCCESS_SOURCES = 8; // これを下回ったら公開しない（AC-1 の前提）
 const MIN_TOTAL_ITEMS = 50;
-
-function normalizeUrl(url) {
-  return url.replace(/[?#].*$/, '').replace(/\/$/, '');
-}
-
-function makeId(url) {
-  return 's-' + createHash('sha1').update(normalizeUrl(url)).digest('hex').slice(0, 10);
-}
 
 async function loadRecentUrls(targetDate) {
   const seen = new Set();

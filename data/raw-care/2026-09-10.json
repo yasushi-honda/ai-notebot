@@ -1,0 +1,136 @@
+{
+  "date": "2026-09-10",
+  "collectedAt": "2026-09-10T22:06:29.128Z",
+  "researchSummary": "**【下調べメモ：介護現場におけるAIを活用した具体的一歩】**\n\n* **テーマ：** 音声入力AI・生成AIを活用した「介護記録の自動化・省力化」\n* **対象現場：** 訪問介護、通所介護、施設入所（特養・老健等）、小規模多機能、ショートステイなど全般\n* **背景・公式の裏付け：**\n  * 厚生労働省の「介護サービス事業における生産性向上に資するガイドライン」や、2025年4月に公表された「2040年に向けたサービス提供体制等のあり方に関する中間とりまとめ」等において、記録・報告業務や会議の議事録、計画書原案の作成におけるAIやICTの活用が業務効率化の有効な手段として公式に推進・言及されている。\n  * 現場職員の労働時間の大きな割合（3〜4割）を占める「間接業務・記録業務」の負担軽減を目的として導入が進められている。\n* **具体的な実践方法（今日から検討できる内容）：**\n  1. **現場での音声入力：** 介護職員が利用者の居室やフロアでのケア直後に、スマートフォンやタブレットの音声入力機能を用いて、メモや申し送り事項を口頭で吹き込む（「〇〇様、水分をコップ1杯摂取、入浴時は笑顔が多く見られた」など）。\n  2. **生成AI・専用ソフトによる整形：** 音声認識されたテキストデータを、AI（または介護記録ソフトに搭載されたAI機能）が自動で適切な介護記録のフォーマットや文面に整形・要約する。\n  3. **情報の共有と転記削減：** スマホやタブレット経由で即座にクラウド上に反映・共有されるため、ステーションに戻ってからのパソコンへの手動入力や、申し送りノートへの書き写しにかかる時間を大幅に削減する。\n* **期待される効果：**\n  * 職員1人あたりの記録・事務時間が大幅に削減され（実証事例では数十分〜最大で従来の数分の1に短縮）、浮いた時間を直接的なケアや利用者とのコミュニケーションに充てることができる。\n  * 残業時間の削減や、文字入力の心理的・身体的負担軽減による離職防止・定着率向上が期待できる。",
+  "webSearchQueries": [
+    "介護 AI 記録 効率化 厚生労働省 ガイドライン",
+    "ケアプラン AI案作成 厚生労働省 実証事業",
+    " 介護 生産性向上 ガイドライン 記録",
+    " 介護 記録 音声入力 生成AI",
+    " 2040年に向けたサービス提供体制等のあり方に関する中間とりまとめ",
+    " \"2040年に向けたサービス提供体制等のあり方\""
+  ],
+  "searchEntryPointHtml": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbgeZsJ5uL69asXA5rgseF6BNRnPbdWS3HlajmmZkZ8ljq4Lro0FmHn2rACY6QIo_kqF4JjVgPBuU5aSb4WeZIEPo-GXn2EpnBoUsYUNrpamrXpfjJY0aKeCh5ogQ3nLT0SLdkdcZA3dG-RThSL_5UxO0NS3airOd6hGQKYNEilxmWZtR-L5ZI9JXXJ9JkkvAyGbbnH_ceLuc5kIIrLRSKFCOylu71xlTYlW6HdVu5uFfQ_7vZIZavF5LqgNuQBAKA8eIwpkwId2TCT1tOTUC0qg6DBfHGt04fKGecpAkENunNJYMZ8RzL4Q1Re8JNXuW2IxuXV8hzq1O_GbdZQdw1eri5oSCug3dfv17E79h1eHLW-DHPK53tgu8Cu50MhpOFbQ==\">ケアプラン AI案作成 厚生労働省 実証事業</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH54oltb1Suzw_rdJ0dgszhR86bGYaOKIBkVrnhgjNjVI4lQO46gUprUANsNTQAR9-N7k6ziB6tGVsihlL_Lx-JEfPTiakqmv5xSrmVFQTR4bs2fGKiVQYcBOnH7fKsFS1h-bU2pbRNJC4o2zBkg4-K50pTfDTyngBZB9M87QEtM-cn7KR5hDWlk_teDuilBD5ctXLPbZV0Vw20NhUaD_4ajNpAecvuSCpQfO6kxhg8-lAmp5xeba2qJkTLYpz8hvCg4v1Th8-p7YURloFlRCPe0NbeuBXIuFJn3lyNKAGVdeXyF5rfZp5UjayPCYjTvqAUuoJe61H70O2pBNYg0dFFfYpDoN_DjxUvmmhCykwyuYyEaW4IDgQOZ8ag1GmPRVxzYo8cvbk6p3abNsnj\">介護 AI 記録 効率化 厚生労働省 ガイドライン</a>\n  </div>\n</div>\n\n<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwVQjZJqMehG6W8KuQsG84DraK-HfxFqM_vCxez2skO8VpQmhr3stwZq1bHEdCl1veFce_UfSOc9iS4bSyR4NO9KKXJR7EVxWZJXyGFjnmZmqjp6ItZT6k4HmeUJ3gxzwvTpyPirxuSLLgEPIP6fBHmVoEVKscOXo581TXvFtU_Xykqhw46snxisxQY11w7AbsdoX_Q3VMdNzCjzPtwvg_O5Dp9XQG3cLSeupxTFcUuNJI_A9m5xhsLZUawSbrHSlenyu7Icxzpekpep5vb3mSF84jAkGpXKWu83k_ighFc2vsvpbIYmH_OY3Pg9jDddB62yxad7nxMFCDf9qkoi5I5WRyjPKZZ3cNbLZAzBm3BScRx-Af4FKfYbZreRUGzdK_Q8DUEuBaqZsMO1XxzXYMYw==\"> &quot;2040年に向けたサービス提供体制等のあり方&quot;</a>\n  </div>\n</div>\n",
+  "items": [
+    {
+      "id": "s-d94c33d1e6",
+      "source": "www.fukuhiroba.com",
+      "sourceType": "web",
+      "title": "【2026年6月最新】ケアプランAIと介護DX事例3選｜生成AI活用・大手事例・補助金整備を介護事業所の経営者・管理者向けに解説 | 福ひろば～郡山市の介護福祉情報ポータルサイト",
+      "url": "https://www.fukuhiroba.com/blog/88748/",
+      "publishedAt": "2026-09-10T22:06:16.872Z",
+      "summary": "あなたの事業所では、ケアプランの作成にかかる時間を「当たり前のコスト」として受け入れていませんか？実は今、国の政策レベルで「生成AIによるケアプラン作成支援」が明確に推進される時代になりました。大手から中小まで、介護現場でのAI活用事例が積み重なってきた2026年6月時点の最新動向を3つのテーマで整理します。 厚生労働省は2025年4月に公表した「2040年に向けたサービス提供体制等のあり方に関する中間とりまとめ」の中で、居宅サービス計画書（ケアプラン）やサービス担当者会議の議事録の原案作成に生成AIを活用することで業務効率化につながると明記しました。国レベルで生成AIの介護活用に方向性が示されたことで、現場での導入を後押しする大きな後ろ盾となっています。2026年4月には介護情報基盤の運用も本格化し、利用者データの連携基盤が整いつつある中、AIが分析・提案を行うための素地は着実に整ってき",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:16.875Z"
+    },
+    {
+      "id": "s-92d50ecf9d",
+      "source": "asukaze.co.jp",
+      "sourceType": "web",
+      "title": "記録業務に年間いくら払っていますか｜介護事業所のAI活用を経営数字から考える - 株式会社アスカゼ",
+      "url": "https://asukaze.co.jp/ai-powered-care-planning/",
+      "publishedAt": "2026-09-10T22:06:17.500Z",
+      "summary": "2026年9月10日 具体的には以下の流れ手段 厚生労働省の「介護サービス事業における生産性向上に資するガイドライン」では、タブレット端末の活用や記録・報告方法の見直しにより、職員1人当たりの記録作業時間が月170.4分削減され、帳票も3種類削減された事例が紹介されています。 &nbsp; 月およそ3時間弱。1人分だとピンときませんが、30人の事業所なら月85時間です。 &nbsp; 現場では「記録が終わらない」という言葉で語られるこの問題は、経営の側から見ると残業代、つまり 人件費として支払っているわけ です。 &nbsp; この記事では、記録業務を時間ではなく金額で捉え直したうえで、生成AIと音声入力をどう組み込むかを、経営の判断材料としてお伝えていきます。 記録コストを算出すると言われても、ピンとこないかもしれませんが、計算式は単純です。 &nbsp; 計算式 1人1日の記録時間 ×",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:17.500Z"
+    },
+    {
+      "id": "s-a90f91f2f9",
+      "source": "aetheris-jp.com",
+      "sourceType": "web",
+      "title": "介護施設のAI導入で記録業務を85%削減する方法【2026年最新】人材不足25万人時代の業務効率化ガイド | Aetheris",
+      "url": "https://aetheris-jp.com/blog/203",
+      "publishedAt": "2026-09-10T22:06:18.144Z",
+      "summary": "複数の介護施設の業務データを分析すると、一つの明確な事実が浮かび上がります。介護職員の労働時間のうち、 直接介護以外の業務（記録・報告書作成・シフト調整など）が3〜4割を占めている という現実です。 厚生労働省の調査によると、介護施設全体のICT機器導入率はすでに 66.2% に達しています。しかし生成AI・AIツールの実際の活用率はまだ 約20%弱 （2025年度）。つまり「機器はあっても使えていない」施設が多数存在するのが現状です。 ※ 厚生労働省・業界調査に基づく参考値。施設規模・種別により異なります。 2040年度には不足数が 57万人 に拡大すると推計されており（厚生労働省）、AI・ロボット活用による「少ない人手での質の高い介護」は国策レベルで急務になっています。 介護記録は現場職員が最も「時間を奪われている」と感じる業務の一つです。音声入力AIと生成AIを組み合わせることで、口",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:18.144Z"
+    },
+    {
+      "id": "s-80ea6e68ec",
+      "source": "www.ripla.co.jp",
+      "sourceType": "web",
+      "title": "医療・介護のAI活用 完全ガイド｜進め方・事例・効率化まで体系的に解説 - ブログ｜株式会社ripla",
+      "url": "https://www.ripla.co.jp/blog/ai/ai-healthcare-complete-guide/",
+      "publishedAt": "2026-09-10T22:06:18.330Z",
+      "summary": "医療・介護の現場では、慢性的な人手不足と膨大な記録・事務作業が長年の課題となっています。2040年には約69万人の介護職員が不足するという予測が示されており、少子高齢化が進む日本において、AI・生成AIの活用は業界全体を支える重要な手段として注目されています。 この記事では、医療・介護の業務別AI活用の全体像を体系的に解説します。診断支援や電子カルテ記録の効率化から、ケアプラン作成・夜間見守り・送迎計画の最適化まで、現場で実際に導入が進んでいる技術と成果を幅広くご紹介します。AI導入のステップや費用対効果の考え方、開発会社の選び方、補助金の活用方法まで、実務に役立つ情報をまとめています。 ▼この記事で扱うテーマ別の詳しい解説 ・医療・介護のAI活用の進め方｜導入ステップと成功のポイント ・医療・介護のAI活用に強い開発会社・ベンダー6選｜選び方も解説 ・医療・介護のAI活用事例｜診断支援・",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:18.330Z"
+    },
+    {
+      "id": "s-5bf71830b0",
+      "source": "www.mhlw.go.jp",
+      "sourceType": "web",
+      "title": "介護分野における生産性向上_お知らせ｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/kaigo-seisansei-information.html",
+      "publishedAt": "2026-09-10T22:06:26.142Z",
+      "summary": "このページではJavaScriptを使用しています。JavaScriptを有効にしてください。 介護サービス事業所が生産性向上の取組を進めるにあたっての参考資料として、サービス類型ごとに、「生産性向上ガイドライン」を作成し、PDFファイル、電子書籍ファイル（e-Pub形式）で公開しています。 なお、電子書籍のデータを読むためには、iPadやiPhone、Android端末、タブレット端末やPCなどに ePubの閲覧ソフトウェア（リーダーアプリケーション）を導入する必要があります。 --令和６年度改訂版について-- これまでは、介護事業所のサービス種別を構成単位としてガイドラインを作成しておりましたが、 共通する生産性向上の考え方や取り組み方の解説部分と、ツール活用の解説部分を抽出し、テクノロジーの活用を含む最近の取組事例等の追加を行い、共通冊子といたしました。 サービス別冊子においては、共",
+      "tier": "official",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:26.142Z"
+    },
+    {
+      "id": "s-4f1f42bcba",
+      "source": "www.carecom.jp",
+      "sourceType": "web",
+      "title": "介護の生産性向上とは？厚生労働省ガイドラインの7つの取り組みと事例を解説 | ナースコールのケアコム",
+      "url": "https://www.carecom.jp/contents/kaigo-seisanseikoujou/",
+      "publishedAt": "2026-09-10T22:06:27.057Z",
+      "summary": "お役立ち 2026.08.31 人手不足のなかで「サービスの質を落とさずにスタッフの負担を減らしたい」と考える施設は多いのではないでしょうか。 &nbsp; 国も介護分野の生産性向上を後押ししており、2026年6月の介護報酬の改定では、処遇改善加算の上乗せ要件にも生産性向上の取り組みが組み込まれています。 &nbsp; この記事では、生産性向上の意味と誤解されやすい点、厚生労働省ガイドラインが示す7つの取組、具体的な進め方などを整理します。施設で何から着手すべきかを判断する材料としてお役立てください。 介護の生産性向上とは、業務の進め方を見直して、限られた人員でも質の高いケアを継続できる状態をつくる取り組みです。ここでは、その目的と求められている背景を押さえておきましょう。 介護の生産性向上とは、業務に潜む「ムリ・ムダ・ムラ（3M）」を見直し、スタッフが限られた人員でも安定して質の高いケア",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:27.057Z"
+    },
+    {
+      "id": "s-58c6e5a5c3",
+      "source": "carebase.willgroup.co.jp",
+      "sourceType": "web",
+      "title": "【2026年版】介護の生産性向上とは？7つの取組と進め方を解説 | ケアベース（carebase）｜介護記録・教育を効率化するシステム",
+      "url": "https://carebase.willgroup.co.jp/column/3471/",
+      "publishedAt": "2026-09-10T22:06:27.575Z",
+      "summary": "2026.7.31 介護の生産性向上とは、業務のムリ・ムダ・ムラ（3M）をなくし、ケアの質の向上と職員の負担軽減を両立させる取り組みです（ 厚生労働省 、2026年7月時点）。単なるコスト削減ではなく、間接業務を減らして直接的なケアに充てる時間を確保する点が核心にあります。この記事では、定義と背景から厚生労働省ガイドラインの7つの取組、加算・委員会の制度、進め方の6ステップまでを公式資料をもとに整理します。 介護現場の生産性向上を体系的に進めたい方は CareBase（ケアベース）のサービス資料をダウンロード 生産性向上の定義を「質向上×負担軽減の両立」と3つの考え方で整理（出典: 厚生労働省「介護分野における生産性向上について」を基に作成） 介護の生産性向上とは、業務のムリ・ムダ・ムラをなくし、ケアの質向上と職員の負担軽減を両立させる取り組みです。厚生労働省はこれを「介護の価値を高めるこ",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:27.575Z"
+    },
+    {
+      "id": "s-f280415369",
+      "source": "wells.sekisui-hometechno.com",
+      "sourceType": "web",
+      "title": "2040年に向けたサービス提供体制のあり方に関するとりまとめ | 介護浴室wells",
+      "url": "https://wells.sekisui-hometechno.com/member/wells-column/system/20250903-01/",
+      "publishedAt": "2026-09-10T22:06:28.118Z",
+      "summary": "介護制度改正・ 介護報酬改定コラム 更新日： 2025年09月03日 厚生労働省は令和7年1月9日から、「2040年に向けたサービス提供体制等のあり方」に関する議論を行い、同年7月25日に内容をとりまとめました。日本は急速な高齢化と人口減少が進行し、地域ごとのニーズが大きく変化しています。この報告では、こうした課題に対応するためのサービス提供体制の整備が提案されています。 基本的な考え方として以下の4点を掲げております。 ②の地域軸・時間軸を踏まえたサービス提供体制確保とは、全国を「中山間・人口減少地域」、「大都市部」、「一般市等」と主に3つの地域に分類して、テクノロジー等も活用し、その地域の状況に応じたサービス提供体制や支援体制を構築していくことです。 これによって、次期改定（第10期）は3つの地域に分けて事業所・施設の運営基準や報酬などを決めていく形となります。 大まかな対応の方向性は",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:28.118Z"
+    },
+    {
+      "id": "s-1b3a8bd9da",
+      "source": "kaigokeiei.com",
+      "sourceType": "web",
+      "title": "介護需要に応じて全国のサービスモデルを3つに分類―「2040年に向けたサービス提供体制等のあり方」中間とりまとめ | 介護・福祉業界のニュース・最新情報なら介護経営ドットコム ニュース | 介護・福祉業界のニュース・最新情報なら介護経営ドットコム",
+      "url": "https://kaigokeiei.com/news/nF4HXuZmmRsb/",
+      "publishedAt": "2026-09-10T22:06:28.801Z",
+      "summary": "ホーム ニュース 介護 介護需要に応じて全国のサービスモデルを3つに分類―「2040年に向けたサービス提供体制等のあり方」中間とりまとめ #サービス共通 #業務効率化 #要件緩和 65歳以上人口がピークを迎える2040年を見据えて介護サービスの在り方を議論してきた検討会について厚生労働省が4月10日、中間とりまとめを公表しました。 これは、今後の介護・高齢者施策の中長期的な方向性を示し、介護保険制度や報酬等を巡る議論にも大きな影響を与えるものです。 介護需要に応じて全国を3つの地域に分類し、現状・課題とそれぞれの状況に応じたサービス提供体制や支援体制の今後の方向性についてまとめています。 例えば、すでに介護サービスの需要が減少している「中山間・人口減少地域」では、地域の中核的なサービス提供主体に一定の条件を設けた上で、人員配置基準の弾力化を認めることなどがこれからの検討事項となりそうです。",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:28.801Z"
+    },
+    {
+      "id": "s-fe36054c99",
+      "source": "hanasuto.carekarte.jp",
+      "sourceType": "web",
+      "title": "ハナスト「話す」だけで、介護の仕事をシンプルに。 - ハナスト",
+      "url": "https://hanasuto.carekarte.jp/",
+      "publishedAt": "2026-09-10T22:06:29.128Z",
+      "summary": "やることは”話す”だけ 「話す」だけで、介護の仕事をシンプルに。 介護記録、連絡、申し送りなど、介護スタッフの間接業務をAI×音声入力でサポートする、 現場の声から生まれたAIアプリです。 介護サービス（入所・通所）、障害サービスに対応しています。 スマホはポケットに入れたまま、取り出してタップしなくても、ケアしたその瞬間、その場で、利用者のお名前と介助の内容を声に出して発話するだけでAIが介護記録に関連する言葉だけを読み取り「記録カード化」。メモしてから、打ち込むなどの二度手間を無くすだけでなく、記録の抜け漏れを防げます。 声で記録をしたあとは、簡単にCAREKARTEと連携することが可能です。現場のスタッフの負担は「ハナスト」で軽減しつつ、法定の介護記録・保管などは既存システムと連携することで、施設全体の効率化を実現します。 1つのアプリで、記録だけではなく、現場スタッフ間の連絡・情報",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-09-10T22:06:29.128Z"
+    }
+  ]
+}
