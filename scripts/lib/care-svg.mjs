@@ -15,6 +15,8 @@
  * codex reviewで指摘・修正）。縦積みなら幅は手順数に依存せず常に一定に保てる。
  */
 
+import { wrapJapaneseText } from './text-wrap.mjs';
+
 const WIDTH = 480;
 const PADDING = 24;
 const BADGE_SIZE = 32;
@@ -40,15 +42,7 @@ export function escapeXml(s) {
 }
 
 function wrapText(text, charsPerLine = CHARS_PER_LINE, maxLines = MAX_LINES) {
-  const lines = [];
-  for (let i = 0; i < text.length && lines.length < maxLines; i += charsPerLine) {
-    lines.push(text.slice(i, i + charsPerLine));
-  }
-  const consumed = lines.join('').length;
-  if (consumed < text.length && lines.length > 0) {
-    lines[lines.length - 1] = lines[lines.length - 1].slice(0, -1) + '…';
-  }
-  return lines;
+  return wrapJapaneseText(text, charsPerLine, maxLines);
 }
 
 /**

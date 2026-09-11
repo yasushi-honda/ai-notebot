@@ -4,6 +4,8 @@
  * （Stage A で確定済みのテーマタイトルをそのまま図解にするだけ）
  */
 
+import { wrapJapaneseText } from './text-wrap.mjs';
+
 const WIDTH = 1200;
 const HEIGHT = 260;
 const PADDING = 24;
@@ -30,17 +32,9 @@ export function escapeXml(s) {
     .replace(/'/g, '&apos;');
 }
 
-/** 文字列を固定文字数で折り返し、最大 MAX_LINES 行に切り詰める（超過分は末尾を … にする） */
+/** 文字列を折り返し、最大 MAX_LINES 行に切り詰める（超過分は末尾を … にする） */
 function wrapText(text, charsPerLine = CHARS_PER_LINE, maxLines = MAX_LINES) {
-  const lines = [];
-  for (let i = 0; i < text.length && lines.length < maxLines; i += charsPerLine) {
-    lines.push(text.slice(i, i + charsPerLine));
-  }
-  const consumed = lines.join('').length;
-  if (consumed < text.length && lines.length > 0) {
-    lines[lines.length - 1] = lines[lines.length - 1].slice(0, -1) + '…';
-  }
-  return lines;
+  return wrapJapaneseText(text, charsPerLine, maxLines);
 }
 
 /**
