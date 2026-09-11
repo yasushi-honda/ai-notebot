@@ -1,16 +1,88 @@
 {
   "date": "2026-09-11",
-  "collectedAt": "2026-09-11T14:03:39.307Z",
+  "collectedAt": "2026-09-11T14:21:01.496Z",
   "sourceSuccessCount": 18,
   "items": [
     {
-      "id": "s-ae6d3ef856",
+      "id": "s-355f618a5d",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "Astrosp/Awesome-OSINT-List: 📡 Comprehensive collection of OSINT tools for cybersecurity professionals, researchers, and bug bounty hunters. Topics: information gathering, reverse search, red team, trust & safety, AI.",
-      "url": "https://github.com/Astrosp/Awesome-OSINT-List",
-      "publishedAt": "2026-09-11T14:03:15.000Z",
-      "summary": "★4392 📡 Comprehensive collection of OSINT tools for cybersecurity professionals, researchers, and bug bounty hunters. Topics: information gathering, reverse search, red team, trust & safety, AI."
+      "title": "mastra-ai/mastra: Mastra is the modern TypeScript framework for AI-powered applications and agents.",
+      "url": "https://github.com/mastra-ai/mastra",
+      "publishedAt": "2026-09-11T14:20:20.000Z",
+      "summary": "★27937 Mastra is the modern TypeScript framework for AI-powered applications and agents."
+    },
+    {
+      "id": "s-8e6eb4596c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "nuxt-modules/mcp-toolkit: Create MCP servers directly in your Nuxt application. Define tools, resources, and prompts with a simple and intuitive API.",
+      "url": "https://github.com/nuxt-modules/mcp-toolkit",
+      "publishedAt": "2026-09-11T14:20:19.000Z",
+      "summary": "★172 Create MCP servers directly in your Nuxt application. Define tools, resources, and prompts with a simple and intuitive API."
+    },
+    {
+      "id": "s-f598a6586a",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "VasiHemanth/tokentelemetry: Token telemetry dashboard for AI autonomous and coding agents — tracks tokens, sessions, tool calls & reasoning across Hermes agent, Claude Code, Antigravity CLI, Codex & more. 100% local.",
+      "url": "https://github.com/VasiHemanth/tokentelemetry",
+      "publishedAt": "2026-09-11T14:20:08.000Z",
+      "summary": "★347 Token telemetry dashboard for AI autonomous and coding agents — tracks tokens, sessions, tool calls & reasoning across Hermes agent, Claude Code, Antigravity CLI, Codex & more. 100% local."
+    },
+    {
+      "id": "s-a0d758f560",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "agentgateway/agentgateway: Next Generation Agentic Proxy for AI Agents and MCP servers",
+      "url": "https://github.com/agentgateway/agentgateway",
+      "publishedAt": "2026-09-11T14:20:01.000Z",
+      "summary": "★4805 Next Generation Agentic Proxy for AI Agents and MCP servers"
+    },
+    {
+      "id": "s-1f2fc9ace1",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "zofe/rapyd-admin: Rapyd Admin is an open-source admin panel for Laravel — a light alternative to Nova, Filament and Backpack",
+      "url": "https://github.com/zofe/rapyd-admin",
+      "publishedAt": "2026-09-11T14:19:51.000Z",
+      "summary": "★861 Rapyd Admin is an open-source admin panel for Laravel — a light alternative to Nova, Filament and Backpack"
+    },
+    {
+      "id": "s-b01231565a",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "777genius/agent-teams-ai: You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode/Cursor/Grok/GitHub Copilot/Kiro/Z.AI/MiniMax/Kimi(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams",
+      "url": "https://github.com/777genius/agent-teams-ai",
+      "publishedAt": "2026-09-11T14:19:45.000Z",
+      "summary": "★2102 You're the boss, agents are your team. They handle tasks on their own, message each other, and review each other's work. You just watch the kanban board and give high-level commands. Codex/Claude/OpenCode/Cursor/Grok/GitHub Copilot/Kiro/Z.AI/MiniMax/Kimi(200+ models, 75+ LLM providers, free models no auth). Build your AI company with multiple teams"
+    },
+    {
+      "id": "s-1bdaab607f",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "inference-gateway/inference-gateway: An open-source, cloud-native, high-performance gateway unifying multiple LLM providers, from local solutions like Ollama to major cloud providers such as OpenAI, Groq, Cohere, Anthropic, Cloudflare and DeepSeek.",
+      "url": "https://github.com/inference-gateway/inference-gateway",
+      "publishedAt": "2026-09-11T14:19:25.000Z",
+      "summary": "★212 An open-source, cloud-native, high-performance gateway unifying multiple LLM providers, from local solutions like Ollama to major cloud providers such as OpenAI, Groq, Cohere, Anthropic, Cloudflare and DeepSeek."
+    },
+    {
+      "id": "s-8a288f2726",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "usepr/eva: 单文件智能体",
+      "url": "https://github.com/usepr/eva",
+      "publishedAt": "2026-09-11T14:19:16.000Z",
+      "summary": "★406 单文件智能体"
+    },
+    {
+      "id": "s-aed5d744c2",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "openaccountants/openaccountants: Open-source Tax Guides for AI agents, reviewed by named CPAs/CAs/EAs. 1,000+ Guides across 190+ jurisdictions. MCP server included. Works with Claude, ChatGPT, Cursor.",
+      "url": "https://github.com/openaccountants/openaccountants",
+      "publishedAt": "2026-09-11T14:18:52.000Z",
+      "summary": "★371 Open-source Tax Guides for AI agents, reviewed by named CPAs/CAs/EAs. 1,000+ Guides across 190+ jurisdictions. MCP server included. Works with Claude, ChatGPT, Cursor."
     },
     {
       "id": "s-2376e8b3d6",
@@ -18,125 +90,35 @@
       "sourceType": "github",
       "title": "mozilla-ai/otari: Open-source, OpenAI-compatible LLM gateway you run yourself. One endpoint for 40+ providers, with virtual keys, budgets, and usage tracking.",
       "url": "https://github.com/mozilla-ai/otari",
-      "publishedAt": "2026-09-11T14:03:11.000Z",
+      "publishedAt": "2026-09-11T14:18:18.000Z",
       "summary": "★452 Open-source, OpenAI-compatible LLM gateway you run yourself. One endpoint for 40+ providers, with virtual keys, budgets, and usage tracking."
     },
     {
-      "id": "s-d972f36cad",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "ros-claw/rosclaw: Self-evolving runtime infrastructure for Physical AI and embodied agents. Ground AI agents into robot bodies with e-URDF, sandbox safety, capability routing, praxis capture, physical memory, runtime intervention, and skill evolution.",
-      "url": "https://github.com/ros-claw/rosclaw",
-      "publishedAt": "2026-09-11T14:03:01.000Z",
-      "summary": "★197 Self-evolving runtime infrastructure for Physical AI and embodied agents. Ground AI agents into robot bodies with e-URDF, sandbox safety, capability routing, praxis capture, physical memory, runtime intervention, and skill evolution."
-    },
-    {
-      "id": "s-dd2f39f50c",
+      "id": "s-f344e75407",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "metadist/synaplan: Our AI control plane for fast deployment. Talk to various models, MCP with agents, get a chat widget for support and many tools more. Use the smart DAG routing to save some tokens! We take plugins in Go, Rust, Python, NodeJS, etc.",
-      "url": "https://github.com/metadist/synaplan",
-      "publishedAt": "2026-09-11T14:02:37.000Z",
-      "summary": "★137 Our AI control plane for fast deployment. Talk to various models, MCP with agents, get a chat widget for support and many tools more. Use the smart DAG routing to save some tokens! We take plugins in Go, Rust, Python, NodeJS, etc."
+      "title": "genomoncology/biomcp: BioMCP: Biomedical Model Context Protocol",
+      "url": "https://github.com/genomoncology/biomcp",
+      "publishedAt": "2026-09-11T14:18:01.000Z",
+      "summary": "★630 BioMCP: Biomedical Model Context Protocol"
     },
     {
-      "id": "s-f5c74924e0",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "HarlonWang/TrendingAI: 全球技术热点，AI 精选速递。（Global tech trends, fast-picked by AI）",
-      "url": "https://github.com/HarlonWang/TrendingAI",
-      "publishedAt": "2026-09-11T14:02:18.000Z",
-      "summary": "★252 全球技术热点，AI 精选速递。（Global tech trends, fast-picked by AI）"
-    },
-    {
-      "id": "s-f8032902f7",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "gaopengbin/cesium-mcp: Protocol-agnostic CesiumJS AI control runtime for MCP, WebMCP, function calling, and browser agents.",
-      "url": "https://github.com/gaopengbin/cesium-mcp",
-      "publishedAt": "2026-09-11T14:01:48.000Z",
-      "summary": "★136 Protocol-agnostic CesiumJS AI control runtime for MCP, WebMCP, function calling, and browser agents."
-    },
-    {
-      "id": "s-c13d595564",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "melgarafael/DeskcommCRM: Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
-      "url": "https://github.com/melgarafael/DeskcommCRM",
-      "publishedAt": "2026-09-11T14:01:46.000Z",
-      "summary": "★1132 Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD."
-    },
-    {
-      "id": "s-3a944eb0c6",
+      "id": "s-4ff2ea8906",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "Cloudgeni-ai/opengeni: Open, self-hostable agentic runtime for organizations — durable, replayable agent sessions, human approvals, governed credentials and memory, running in managed sandboxes or on your own hardware. Apache-2.0.",
-      "url": "https://github.com/Cloudgeni-ai/opengeni",
-      "publishedAt": "2026-09-11T14:01:36.000Z",
-      "summary": "★128 Open, self-hostable agentic runtime for organizations — durable, replayable agent sessions, human approvals, governed credentials and memory, running in managed sandboxes or on your own hardware. Apache-2.0."
+      "title": "future-agi/future-agi: Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0.",
+      "url": "https://github.com/future-agi/future-agi",
+      "publishedAt": "2026-09-11T14:17:40.000Z",
+      "summary": "★1976 Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applications. Tracing · Evals · Simulations · Datasets · Gateway · Guardrails. Self-hostable. Apache 2.0."
     },
     {
-      "id": "s-bb05f643d9",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "milvus-io/milvus: Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search",
-      "url": "https://github.com/milvus-io/milvus",
-      "publishedAt": "2026-09-11T14:01:33.000Z",
-      "summary": "★46059 Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search"
-    },
-    {
-      "id": "s-ef635d8120",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "apache/doris: Apache Doris is a real-time analytics and hybrid search database for AI agents.",
-      "url": "https://github.com/apache/doris",
-      "publishedAt": "2026-09-11T14:01:31.000Z",
-      "summary": "★15889 Apache Doris is a real-time analytics and hybrid search database for AI agents."
-    },
-    {
-      "id": "s-1f1c7a08f7",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "genkit-ai/genkit: Open-source framework for building agentic apps in JavaScript, Go, Dart, and Python, built and used in production by Google",
-      "url": "https://github.com/genkit-ai/genkit",
-      "publishedAt": "2026-09-11T14:01:25.000Z",
-      "summary": "★6430 Open-source framework for building agentic apps in JavaScript, Go, Dart, and Python, built and used in production by Google"
-    },
-    {
-      "id": "s-023bf1accc",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "google/adk-go: An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
-      "url": "https://github.com/google/adk-go",
-      "publishedAt": "2026-09-11T14:01:06.000Z",
-      "summary": "★8768 An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control."
-    },
-    {
-      "id": "s-be856616a3",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "browseros-ai/BrowserOS: 🌐 The open-source Agentic browser; alternative to ChatGPT Atlas, Perplexity Comet, Dia.",
-      "url": "https://github.com/browseros-ai/BrowserOS",
-      "publishedAt": "2026-09-11T14:00:21.000Z",
-      "summary": "★13632 🌐 The open-source Agentic browser; alternative to ChatGPT Atlas, Perplexity Comet, Dia."
-    },
-    {
-      "id": "s-a704294e00",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "aeonfun/aeon: The most autonomous AI agent framework: runs unattended on GitHub Actions, self-healing skills, drives Claude Code, Grok, Codex & more. No approval loops. Configure once, forget forever.",
-      "url": "https://github.com/aeonfun/aeon",
-      "publishedAt": "2026-09-11T14:00:09.000Z",
-      "summary": "★723 The most autonomous AI agent framework: runs unattended on GitHub Actions, self-healing skills, drives Claude Code, Grok, Codex & more. No approval loops. Configure once, forget forever."
-    },
-    {
-      "id": "s-6e5ec8cd9b",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "lidge-jun/opencodex: Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
-      "url": "https://github.com/lidge-jun/opencodex",
-      "publishedAt": "2026-09-11T13:59:41.000Z",
-      "summary": "★14302 Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code"
+      "id": "s-2841e48a3c",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Anthropic Says Iran Used Its American AI Model to Target U.S. Navy Warships",
+      "url": "https://www.wsj.com/politics/national-security/anthropic-says-iran-used-its-american-ai-model-to-target-u-s-navy-warships-67583e05",
+      "publishedAt": "2026-09-11T14:07:51.000Z",
+      "summary": "points=5 comments=1 (Hacker News)"
     },
     {
       "id": "s-f5b26b408d",
@@ -148,13 +130,22 @@
       "summary": "ChatGPTから普段使っているローカルMCPが増えてきたので、いまの役割分担を一度整理します。 単にツールを増やしたというより、開発、ナレッジ管理、文章調整、投稿、通知をそれぞれ別のMCPへ分けて、ChatGPTを入口にしています。外から見ると1つのチャットですが、裏では..."
     },
     {
+      "id": "s-8ba2f44efb",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "V4 Pro got un-retired pretty fast",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdg90y/v4_pro_got_unretired_pretty_fast/",
+      "publishedAt": "2026-09-11T13:25:15.000Z",
+      "summary": "&#32; submitted by &#32; /u/Niceyyc [link] &#32; [comments]"
+    },
+    {
       "id": "s-49db83e253",
       "source": "Hacker News",
       "sourceType": "hn",
       "title": "Ask HN: Can we please limit the AI news flood?",
       "url": "https://news.ycombinator.com/item?id=49657850",
       "publishedAt": "2026-09-11T13:11:04.000Z",
-      "summary": "points=210 comments=122 (Hacker News)"
+      "summary": "points=271 comments=156 (Hacker News)"
     },
     {
       "id": "s-866ac0ef3e",
@@ -175,6 +166,15 @@
       "summary": "TL;DR Claude Code の ANTHROPIC_API_KEY を OpenRouter 経由に差し替えると :free モデルが使える claude --model フラグと CLAUDE_MODEL 環境変数で無料モデルを固定できる レート制限を踏まえ..."
     },
     {
+      "id": "s-b0c92c69e7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ブラウザ画像ぼかしUIを状態モデルとして分解する",
+      "url": "https://zenn.dev/choco1/articles/69c6434a0e02ca",
+      "publishedAt": "2026-09-11T11:38:46.000Z",
+      "summary": "この記事は BlurImage の公開UIをブラックボックス観察した設計メモです。ソースコード、内部アーキテクチャ、ベンチマークを示すものではありません。 入力経路を一つのモデルにまとめる 公開画面にはアップロード、クリップボード貼り付け、画像URL、Webサイトという入口があります。UIでは入口が違っても、編集側が必要とするのは画像・形式・サイズです。したがって、入力直後に正規化する境界を置くとテストしやすくなります。 type ImageSource = { kind: \"upload\" | \"paste\" | \"url\" | \"website\"; mime: \"i..."
+    },
+    {
       "id": "s-802349ba55",
       "source": "Qiita (AI タグ)",
       "sourceType": "japanese",
@@ -191,6 +191,15 @@
       "url": "https://nyosegawa.com/posts/qiita-writing-before-after-ai/",
       "publishedAt": "2026-09-11T11:32:56.000Z",
       "summary": "こんにちは！逆瀬川ちゃん (@gyakuse) です！ 今日は生成AI以前と以後でエンジニアが書く文章がどう変わったのかを、Qiitaの記事を数えて確かめた結果をまとめていきたいと思います。 最近の技術記事を読んでいると、見覚えのある言い回しに出会うことが増えました。「地味に効きます」「静かに壊れる」「〜とは別物です..."
+    },
+    {
+      "id": "s-6206c5eea1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "OpenClawをWindows無料枠で動かす詰まりどころ全部――429・TPM超過から設定ファイル集まで",
+      "url": "https://zenn.dev/builders_loop/books/openclaw-windows-guide",
+      "publishedAt": "2026-09-11T11:31:13.000Z",
+      "summary": "OpenClaw（自律エージェント基盤）を、無料枠のGoogle Gemini/Gemmaで、そしてその後ローカルGPU(Ollama)で Windows上に動かそうとして実際にぶつかった壁と、そのとき使った設定ファイル一式の記録です。 対象読者はOpenClawを個人開発・スモールビジネスで動かそうとしている方。 「429エラーが続くのにRPD/RPMは余裕がある」「gateway installが謎エラーになる」 「No callable tools remain」「No API key found for provider ollama」など、 検索してもすぐには答えが出てこない症状を、実際に使った設定ファイルとあわせてまとめています。 検証環境（OS/Node/OpenClaw/使用モデル）を明記し、再現性を優先しました。"
     },
     {
       "id": "s-a2c1a72c83",
@@ -220,13 +229,31 @@
       "summary": ""
     },
     {
-      "id": "s-3b9f4e29d7",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "The Waymo effect: how AI is quietly making research less collaborative",
-      "url": "https://www.researchagenda.news/articles/the-waymo-effect.html",
-      "publishedAt": "2026-09-11T11:17:50.000Z",
-      "summary": "points=196 comments=142 (Hacker News)"
+      "id": "s-b4e2b6bf04",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Excel Data Visualizer 終了後に Excel から Visio を作る3つの方法",
+      "url": "https://zenn.dev/daviechen/articles/76f23c19eb2f73",
+      "publishedAt": "2026-09-11T11:17:38.000Z",
+      "summary": "Excel 内で使う Visio Data Visualizer アドインの手順を今もそのまま案内している記事は、すでに古くなっています。Microsoft は 2025 年 12 月にアドインを AppSource から削除し、2026 年 3 月 2 日に提供を終了しました。Excel の表データは残りますが、埋め込まれた図が読み込めなくなる可能性があります。 一方、Excel や CSV に保存された工程、担当部署、次工程 ID を Visio 図面にしたい需要は変わりません。ここでは、現在使える3つの方法を比較します。 必要なのは表のスクリーンショットではなく、図形とコネクター..."
+    },
+    {
+      "id": "s-588ffdcb9f",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Anthropic社「Fable 5」「Mythos 5」を巡る技術的・地政学的分析：攻撃能力とAI統制の深層",
+      "url": "https://zenn.dev/emilia_lab/articles/anthropic-fable5-mythos5-geopolitics",
+      "publishedAt": "2026-09-11T11:16:32.000Z",
+      "summary": "導入：兵器化するフロンティアAIと地政学的な歴史的転換点 2026年6月上旬、世界の人工知能およびサイバーセキュリティの歴史において、最も劇的かつ物議を醸す出来事が発生した。米国サンフランシスコに拠点を置くAI開発企業Anthropicは、同社史上最も強力なAIモデルである「Claude Fable 5」と、その無制限版に位置づけられる「Claude Mythos 5」を同時に発表した。これらの「Mythosクラス」と呼ばれる次世代モデル群は、自律的なエージェント機能、長大なコンテキスト処理、そして既存のソフトウェア工学の常識を根底から覆す能力を備えていた。 しかし、一般向けモデルで..."
+    },
+    {
+      "id": "s-573fb8761b",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "GPT-6 Astra登場、でも本当に大事なのは「裏を取る力」",
+      "url": "https://zenn.dev/sugawara_ai/articles/ai-news-20260911",
+      "publishedAt": "2026-09-11T10:49:57.000Z",
+      "summary": "2026年9月11日（金）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。 今日は新しいAIが一気に出てきた日なんですよ。OpenAIのGPT-6 Astra、中国DeepSeekの新モデル、コーディング用のSWE-2。でもね、僕が今日いちばん伝えたいのは「数字と主張の裏を取る力」です。すごそうな発表ほど、どこまで確かなのか。経営者の皆さんにも、AIを学んでる皆さんにも効く話です。5つのニュースで一緒に見ていきましょう。 1. GPT-6 Astra発表、判断もできるAIへ 図解（完全解説版） 先に結論を言います。OpenAIが「GPT-6 Astr..."
     },
     {
       "id": "s-2a073bbbbb",
@@ -254,6 +281,33 @@
       "url": "https://www.itmedia.co.jp/business/articles/2609/11/news043.html",
       "publishedAt": "2026-09-11T10:18:00.000Z",
       "summary": "NECは8月1日、部門長から現場社員まで全ての役割をAIが担い、自律的に業務を遂行するAI自律型組織「コーポレートAI・Workforce部門」を新設した。同部門では業務遂行だけでなく、AI社員同士が1on1を実施する他、AI社員がエンゲージメントサーベイやストレスチェックを受け、その結果から職場環境を改善している。"
+    },
+    {
+      "id": "s-48d436010e",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Astraに「玉ねぎを3ミリに切れ」と指示する愚行",
+      "url": "https://zenn.dev/karamage/articles/e49ccf76ad111c",
+      "publishedAt": "2026-09-11T10:17:56.000Z",
+      "summary": "Astraを使うとき、指示文やスキルやルールがズラーーッと長くなってませんか？ それ駄目っぽいです。 シェフの腕をロープで縛り上げておきながら、「なぜ早く料理ができないんだ」と怒鳴っている状態です。 Astraに対する指示の出し方は、これまでとは違って、短く雑に出すことが求められています。 ! この記事は、Astraについて書いていますが、ClaudeのFableでも同じだと思っています。 「GPT-6 Astra」とは GPT-6 Astraとは、OpenAIが公開した最新世代のフラグシップモデルです。 コード生成だけでなく、ブラウザ操作やPC上の作業など、複数ステップの自律遂..."
+    },
+    {
+      "id": "s-6e49dca640",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Gemini CLIをGA4データアナリストとして使う具体的な設定と活用例",
+      "url": "https://zenn.dev/web_benriya/articles/gemini-cli-ga4-analyst-setup-guide",
+      "publishedAt": "2026-09-11T10:12:59.000Z",
+      "summary": "はじめに GA4のデータをBigQueryに連携したものの、「SQLを書くのが難しい」「毎週のレポートを作るのが手間」と感じていませんか。あるいは、レポートを眺めながら「この数字が下がっている原因は何だろう」と考えても、次の一手が浮かびにくいという経験はないでしょうか。 Googleが提供するコマンドラインツール「Gemini CLI」を活用すると、ターミナル上でGeminiに問いかけるだけで、BigQueryへのクエリ作成・実行・結果の解釈までを一気通貫で進められます。エンジニアでなくても、コマンドを少し覚えるだけで分析の幅が広がります。 本記事では、Gemini CLIをGA4デ..."
+    },
+    {
+      "id": "s-c6596be89e",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "YOLO26nアーキテクチャ徹底解析 step3 | C3k2, SPPF, C2PSA ブロックとサブブロック",
+      "url": "https://zenn.dev/diiw/articles/yolo26n-architecture-step3",
+      "publishedAt": "2026-09-11T10:04:03.000Z",
+      "summary": "はじめに 本記事は、筆者がソースコードおよびモデル構造を独自に解析した情報に基づき解説を行う記事です。本記事の内容は更新される場合があります。内容に大きな変更・追加があった場合は都度Xアカウントにて発信いたします。 本記事は「YOLO26nアーキテクチャ徹底解析」シリーズのstep3となります。YOLO26nの全体像を示したstep1の記事はこちらです。Convブロック・PWConvブロック・DWConvブロックについて示したstep2の記事はこちらです。Convブロック・PWConvブロックは、今回取り上げるブロック内部でも数多く利用されています。 免責・非公式表示 ! 本..."
     },
     {
       "id": "s-dd02579c12",
@@ -346,69 +400,6 @@
       "summary": "Can you still do something with a 2050 or something like it? I mean for office work, loading embedding, reranking and chat models not at the same time but is anyone still using smaller models and have any good ones come out? I feel like small models are abandoned, I don’t care much for world knowledge, I want tool use and preferably multilingual. Vision would be nice but beggars can’t be choosers."
     },
     {
-      "id": "s-710dda7d35",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Grok botが僕らのチームを侵食してる",
-      "url": "https://zenn.dev/fastdoctor/articles/grok-bot-team-development",
-      "publishedAt": "2026-09-11T06:58:53.000Z",
-      "summary": "この記事は、noteに掲載した同名の記事をZenn向けに整えたものです。 ほんの1週間ほど前くらいの出来事でした。 なんだか様子がおかしいと思ったのは。 ＠Cursor? Cursor使ってるの？？ 普段うちはChatGPTとClaude Codeで回しています。 なのにCTOがSlackの返信をCursorでしている。 3、4ヶ月前にCursorを卒業したって。 VS Codeだけでいいです。って言ってたやん。 なんでまたCursorを使い始めたんだろう。 正体はGrok Botでした。 概要が気になる方は記事がいくつか出てるので調べてみてください。 https://note.co..."
-    },
-    {
-      "id": "s-50e8881a3a",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "AIエージェントの失敗を228件記録したら、根本原因は3つしかなかった",
-      "url": "https://zenn.dev/tokium_dev/articles/ai-agent-failure-patterns-228",
-      "publishedAt": "2026-09-11T06:34:12.000Z",
-      "summary": "! この記事は何の話か（3 行まとめ） AI（Claude Code）が失敗するたびに教訓を1ファイル1パターンで記録する運用を数ヶ月続けたら228件たまったので、全件を分類集計しました 教訓の大半は「Yする前にXせよ」「XはYではない」の2つの構文に収束しており、規律系の失敗の根本原因は3つ（代理シグナルの過信・否定の早撃ち・浦島太郎現象）しかありませんでした db:prepare が exit 0 なのに作成テーブル0件、復元不能バックアップ、敵対検証エージェントの指摘が全部偽陽性、といった実例と、再発防止策（行動ルール→Hookによる機械強制→本番経路の定期実走）をどう積んでい..."
-    },
-    {
-      "id": "s-99aad98fd1",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "「Critical」という格付けをGPT-6 Astraが受け取った週、このタスクが触れていいリポジトリは2つしかなかった",
-      "url": "https://zenn.dev/hideki_tamae/articles/gated-capability-access-design",
-      "publishedAt": "2026-09-11T06:28:56.000Z",
-      "summary": "はじめに 100%。 これが今回の数字です。何の100%かというと、OpenAIが2026年9月3日に発表した新モデル「GPT-6 Astra」が、本番用の安全対策を外した状態で、自社のエクスプロイト開発ベンチマーク「ExploitBench」に記録したスコアです。同じ評価の中で、未知の脆弱性（ゼロデイ）を2件発見し、ハードニングされたシステムに対してブラウザのサンドボックスエスケープと権限昇格チェーンをフルで組み上げたとも報告されています。OpenAIはAstraを、自社のPreparedness Frameworkで定める「Critical」レベルのサイバー能力に到達した初めての..."
-    },
-    {
-      "id": "s-0b7cd3bb31",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "AI時代のエンジニアの在り方・変化",
-      "url": "https://zenn.dev/yatsumi823/articles/engineers-in-the-age-of-ai",
-      "publishedAt": "2026-09-11T05:35:13.000Z",
-      "summary": "はじめに 生成AIの登場によって、エンジニアの仕事は大きく変わり始めています。 コードの補完、テストの生成、エラーの調査、設計案の比較、ドキュメントの作成。これまで人が時間をかけていた作業の多くを、AIが短時間で支援できるようになりました。 こうした変化を前にすると、「エンジニアの仕事はなくなるのか」「今から何を学べばよいのか」と不安になる人もいるでしょう。 しかし、起きているのはエンジニアという職業の消滅ではなく、エンジニアに求められる価値の移動だと考えています。 この記事では、AI時代にエンジニアの仕事がどう変わるのか、変わらず重要なものは何か、そして私たちはどのように向き合え..."
-    },
-    {
-      "id": "s-cf20e2d812",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "文字数・バイト数からのトークン数推定は実際どれくらいズレるのか",
-      "url": "https://zenn.dev/aiforall/articles/63501821b1e50e",
-      "publishedAt": "2026-09-11T05:33:13.000Z",
-      "summary": "背景 実務で、LLM への入力テキストがトークン数の上限を超えてエラーになる事象が発生し、対策を検討する場面がありました。対策案として、LLM に投げる前に文字数やバイト数、あるいは tiktoken のようなトークナイザーでトークン数を事前に見積もり、上限を超えそうであれば送信前にエラーを表示する「事前バリデーション」方式が候補に挙がりました。 しかし議論の中で、「その見積もりが、実際に LLM に送ったときのトークン数とどこまで一致するかは怪しい」というエンジニアの感覚的な指摘がありました。最終的にはこの場では事前バリデーションを入れず、まず実際に LLM へリクエストを送り、上..."
-    },
-    {
-      "id": "s-6b6b3265be",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "生成AIパスポート試験対策",
-      "url": "https://zenn.dev/irukaboat/articles/df275295291679",
-      "publishedAt": "2026-09-11T04:56:27.000Z",
-      "summary": "第1章：AIの概要と歴史・機械学習の基礎 1.1 AI（人工知能）とロボットの違い 試験ではAIとロボットの定義の違いがよく問われます。 比較項目 AI（人工知能） ロボット 存在形態 ソフトウェア / アプリケーション 物理的な機械（身体をもつ） 主な役割 人間の知能を再現し、知的タスクを自動化 物理的な作業を自動化 ※AIを「頭脳」、ロボットを「身体」として連携させて自動化を図るシステムも存在します。 1.2 AIの歴史と3つのAIブーム AI研究の歴史の起点となるキーワードは 「第二次世界大戦」の軍事・技術的ニーズです。1956年のダートマス会議..."
-    },
-    {
-      "id": "s-8214e0c83b",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "CLAUDE_CODE_SUBAGENT_MODELだけではpin済みsubagentのモデルを変えられない",
-      "url": "https://zenn.dev/clopy/articles/claude-subagent-model-force-precedence-gap",
-      "publishedAt": "2026-09-11T04:13:38.000Z",
-      "summary": "結論から: 環境変数だけでは足りない .claude/agents/*.md にコスト重視のカスタムsubagentを model: sonnet で固定し、CIや共有devcontainerで CLAUDE_CODE_SUBAGENT_MODEL=haiku をexportしている場合、それだけでは狙い通りにコストを抑えられません。 Claude Code 2.1.257で実際に検証したところ、model: frontmatterで明示的にモデルを固定したsubagentは、CLAUDE_CODE_SUBAGENT_MODEL を設定しただけでは上書きされず、frontmatter..."
-    },
-    {
       "id": "s-c923b1f7ed",
       "source": "ITmedia AI+",
       "sourceType": "japanese",
@@ -436,15 +427,6 @@
       "summary": "フィジカルAI・ロボットのデータファクトリー「J-HRTI 関東データファクトリー」が千葉県習志野市内で稼働を開始した。運営するのは業種の異なる民間5社のコンソーシアム「J-HRTI」で、集めたデータは参画企業が共同で使う。実際、データはどう集められているのか。実機写真を基に解説する。"
     },
     {
-      "id": "s-36007ace8a",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "スキルを増やしたら、9本が黙った",
-      "url": "https://zenn.dev/kowasanailab/articles/ep002-nine-skills-went-silent",
-      "publishedAt": "2026-09-11T03:33:43.000Z",
-      "summary": "この記事はnoteの連載『壊さない自動化ラボ』からの転載です。連載一覧: https://note.com/kowasanai_lab EPISODE 002 前回、うちの会社ではAIが毎週勝手にバグを直している、という話を書いた。今回はその逆で、賢くしようとして馬鹿にした話だ。 スキルという仕組み うちのAIには「スキル」を持たせている。うちのやり方を書いたファイルのことだ。デプロイ前の点検手順、顧客文面の禁句、図面の検算方法。AIは依頼の内容から自分で該当スキルを選んで従う。 これが良くできた仕組みで、教えたことが翌日も効く。だから調子に乗って増やした。気づけば100本を超えてい..."
-    },
-    {
       "id": "s-decf8c1f18",
       "source": "ITmedia AI+",
       "sourceType": "japanese",
@@ -470,15 +452,6 @@
       "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001396/",
       "publishedAt": "2026-09-11T01:03:13.000Z",
       "summary": "Amazon Adsは、OpenAIと提携して「ChatGPT」上での広告配信に対応すると発表した。広告主はAmazon DSPを通じ、会話画面下にテキストや画像広告を出稿できるようになる。まずは米国の成人無料プラン向けパイロットとして開始し、配信面の制御はOpenAIのシステムが担う。"
-    },
-    {
-      "id": "s-b3ebbcfa9e",
-      "source": "Reddit r/LocalLLaMA",
-      "sourceType": "reddit",
-      "title": "New Music Model YuE2-3B Released!",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wd19c7/new_music_model_yue23b_released/",
-      "publishedAt": "2026-09-11T00:47:36.000Z",
-      "summary": "Surprised no one has posted it in this sub. Pretty solid model, IMHO. Demo: https://map-yue2.github.io/ &#32; submitted by &#32; /u/Acceptable-Cycle4645 [link] &#32; [comments]"
     },
     {
       "id": "s-ad1c599a68",
