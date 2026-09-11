@@ -16,14 +16,14 @@ function heroSrc(date: string) {
 ---
 
 <BaseLayout title="毎日のAIトレンドまとめ">
-  <p class="text-slate-600 mb-8">
+  <p class="text-stone-600 mb-10 text-[15px] leading-relaxed max-w-lg">
     毎日 AI 関連のニュース・ハック・話題を収集し、出典を脚注で紐付けた日本語ブログとして自動生成しています。
   </p>
 
   {latest && (
     <a
       href={url(`posts/${latest.data.date}/`)}
-      class="block mb-10 rounded-xl overflow-hidden border border-slate-200 bg-white hover:shadow-lg transition-shadow no-underline"
+      class="block mb-10 rounded-xl overflow-hidden border border-stone-200 bg-white no-underline"
     >
       <img
         src={heroSrc(latest.data.date)}
@@ -31,10 +31,10 @@ function heroSrc(date: string) {
         class="w-full aspect-video object-cover"
         onerror="this.onerror=null;this.src=this.src.replace('.jpg','.svg')"
       />
-      <div class="p-5">
-        <div class="text-xs text-indigo-600 font-semibold mb-1">最新記事 · {latest.data.date}</div>
-        <h2 class="text-xl font-bold text-slate-900 mb-2">{latest.data.title}</h2>
-        <p class="text-sm text-slate-600">{latest.data.description}</p>
+      <div class="p-6">
+        <div class="text-xs text-indigo-600 font-semibold mb-2 tabular-nums">最新記事 · {latest.data.date}</div>
+        <h2 class="text-2xl font-bold text-stone-900 mb-2" style="font-family: var(--font-display);">{latest.data.title}</h2>
+        <p class="text-sm text-stone-600">{latest.data.description}</p>
       </div>
     </a>
   )}
@@ -42,27 +42,24 @@ function heroSrc(date: string) {
   {latestCare && (
     <a
       href={url(`care/${latestCare.data.date}/`)}
-      class="block mb-10 rounded-xl overflow-hidden border border-slate-200 bg-white hover:shadow-lg transition-shadow no-underline p-5"
+      class="block mb-12 rounded-xl border border-stone-200 bg-white no-underline p-6"
     >
-      <div class="text-xs text-teal-600 font-semibold mb-1">介護AIハック · {latestCare.data.date}</div>
-      <h2 class="text-xl font-bold text-slate-900 mb-2">{latestCare.data.title}</h2>
-      <p class="text-sm text-slate-600">{latestCare.data.summary}</p>
+      <div class="text-xs text-teal-600 font-semibold mb-2 tabular-nums">介護AIハック · {latestCare.data.date}</div>
+      <h2 class="text-2xl font-bold text-stone-900 mb-2" style="font-family: var(--font-display);">{latestCare.data.title}</h2>
+      <p class="text-sm text-stone-600">{latestCare.data.summary}</p>
     </a>
   )}
 
   {rest.length > 0 && (
     <section>
-      <h3 class="text-sm font-semibold text-slate-500 mb-3">最近の記事</h3>
-      <ul class="space-y-3">
+      <h3 class="text-sm font-semibold text-stone-500 mb-1">最近の記事</h3>
+      <ul>
         {rest.map((post) => (
           <li>
-            <a
-              href={url(`posts/${post.data.date}/`)}
-              class="block rounded-lg border border-slate-200 bg-white p-4 hover:border-indigo-300 no-underline"
-            >
-              <div class="text-xs text-slate-400 mb-1">{post.data.date}</div>
-              <div class="font-semibold text-slate-900">{post.data.title}</div>
-              <div class="text-sm text-slate-500 mt-1">{post.data.description}</div>
+            <a href={url(`posts/${post.data.date}/`)} class="list-link">
+              <div class="text-xs text-stone-400 mb-1 tabular-nums">{post.data.date}</div>
+              <div class="list-link-title">{post.data.title}</div>
+              <div class="text-sm text-stone-500 mt-1">{post.data.description}</div>
             </a>
           </li>
         ))}

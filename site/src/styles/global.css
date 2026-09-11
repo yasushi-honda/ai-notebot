@@ -1,12 +1,83 @@
+/*
+ * デザイン刷新（2026-09-11）: サイト全体が「いかにもAIが作ったデザイン」との指摘を受け、
+ * Web調査（Stripe Blog・joshwcomeau.com・「AI Slop Web Design」系記事）を踏まえて作り直した。
+ * 典型的な「AI生成っぽさ」の要因と対応:
+ * - デフォルトのTailwind slate（寒色グレー）→ stone（暖色グレー）に変更し、量産SaaS感を減らす
+ * - 見出しにシステムフォントしか使っていなかった→ Zen Kaku Gothic New を display フォントとして導入
+ * - 全ページで同じ角丸カード（border+shadow）を反復→ 一覧系ページはカードを廃し、
+ *   タイポグラフィと罫線だけのプレーンなリストに統一（joshwcomeau.com を参考）
+ */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&family=JetBrains+Mono:wght@700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans:
     'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif;
+  --font-display:
+    'Zen Kaku Gothic New', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP',
+    system-ui, sans-serif;
+  /*
+   * サイトロゴ「ai-notebot」専用。当初は本文と同じシステムフォントのまま小さく表示していた
+   * だけで「手を抜きすぎ」との指摘を受けた（2026-09-11）。小文字・ハイフン区切りの技術的な
+   * プロジェクト名をそのまま見せるなら、システムフォントで誤魔化さずモノスペースフォントで
+   * 意図的にデザインされたロゴとして扱う方が誠実、という判断（BaseLayout.astro参照）。
+   */
+  --font-logo: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
 }
 
 body {
-  @apply bg-slate-50 text-slate-800;
+  @apply bg-stone-50 text-stone-800;
+}
+
+h1 {
+  font-family: var(--font-display);
+}
+
+/* 日付表記（2026-09-11等）は等幅数字にして桁が揃うようにする（細部の品質感） */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/*
+ * 一覧系ページ（archive/tags/care一覧/ホームの「最近の記事」）共通のリストパターン。
+ * 個々の記事を角丸カード（border+shadow）で囲む反復をやめ、項目間の罫線だけで区切る
+ * プレーンなタイポグラフィ・リストにする（joshwcomeau.com参照）。ホバーはタイトル文字色が
+ * 変わるだけの控えめな挙動にし、「hover:shadow-lg」の量産感を避ける。
+ */
+.list-link {
+  @apply block py-4 border-b border-stone-200 no-underline;
+}
+/*
+ * .list-link（<a>）は常に自分の<li>の唯一の子要素のため、`.list-link:first-child` /
+ * `:last-child` は常に真になってしまい、リストの実際の先頭・末尾に関わらず全項目が
+ * マッチしてしまう（codex reviewで指摘・修正）。判定は親<li>の位置で行う。
+ */
+li:first-child > .list-link {
+  @apply pt-0;
+}
+li:last-child > .list-link {
+  @apply border-b-0;
+}
+.list-link .list-link-title {
+  @apply font-semibold text-stone-900 transition-colors;
+}
+.list-link:hover .list-link-title {
+  @apply text-indigo-600;
+}
+.list-link.list-link-care:hover .list-link-title {
+  @apply text-teal-600;
+}
+/* アーカイブ等、日付+タイトルだけの1行密度が高いリスト用のコンパクト版 */
+.list-link.list-link-compact {
+  @apply py-2;
+}
+/*
+ * 日付+タイトルを横並びにする版。.list-link の `@apply block` と同じ詳細度(0,1,0)の
+ * ままだと、CSSソース順で後発の .list-link が勝ち flex が block に打ち消されてしまうため
+ * （実機確認で発覚）、詳細度を上げた複合セレクタで明示的に上書きする。
+ */
+.list-link.list-link-inline {
+  @apply flex items-baseline gap-3;
 }
 
 /*
@@ -19,15 +90,16 @@ body {
  *   見えないようにする
  */
 .prose-post :where(p) {
-  @apply text-[17px] leading-[1.9] mb-6 text-slate-700;
+  @apply text-[17px] leading-[1.9] mb-6 text-stone-700;
 }
 
 .prose-post :where(h2) {
-  @apply text-xl font-bold mt-12 mb-4 text-slate-900 pl-4 border-l-4 border-indigo-500;
+  font-family: var(--font-display);
+  @apply text-xl font-bold mt-12 mb-4 text-stone-900 pl-4 border-l-4 border-indigo-500;
 }
 
 .prose-post :where(strong) {
-  @apply font-bold text-slate-900;
+  @apply font-bold text-stone-900;
 }
 
 /* 箇条書き（curate.mjsが3件以上の並列事実を列挙する際に使用） */
@@ -40,29 +112,29 @@ body {
 
 /* テーマ別ソース内訳テーブル（curate.mjsが機械生成、LLMは書かない） */
 .prose-post :where(table) {
-  @apply w-full my-6 text-sm border-collapse overflow-hidden rounded-lg border border-slate-200;
+  @apply w-full my-6 text-sm border-collapse overflow-hidden rounded-lg border border-stone-200;
 }
 .prose-post :where(th) {
-  @apply bg-indigo-50 text-slate-900 font-semibold text-left px-3 py-2 border-b border-slate-200;
+  @apply bg-indigo-50 text-stone-900 font-semibold text-left px-3 py-2 border-b border-stone-200;
 }
 .prose-post :where(td) {
-  @apply px-3 py-2 border-b border-slate-100 text-slate-700 align-top;
+  @apply px-3 py-2 border-b border-stone-100 text-stone-700 align-top;
 }
 .prose-post :where(tr:last-child td) {
   @apply border-b-0;
 }
 .prose-post :where(tbody tr:nth-child(even)) {
-  @apply bg-slate-50;
+  @apply bg-stone-50;
 }
 
 /* 「今日のトピック一覧」SVG図解 */
 .overview-diagram {
-  @apply w-full rounded-xl border border-slate-200 bg-white mb-8;
+  @apply w-full rounded-xl border border-stone-200 bg-white mb-8;
 }
 
 /* remark-gfm footnotes セクション */
 .prose-post :where(section[data-footnotes]) {
-  @apply mt-10 pt-6 border-t border-slate-200 text-sm text-slate-600;
+  @apply mt-10 pt-6 border-t border-stone-200 text-sm text-stone-600;
 }
 .prose-post :where(section[data-footnotes] ol) {
   @apply list-decimal list-inside space-y-2;
@@ -91,13 +163,12 @@ body {
 }
 
 /*
- * 介護版「今日のAI活用ハック」記事: 当初は「紙の実務ハンドブック」トーン（明朝体・生成りの
- * 紙色）で作ったが、実際にレンダリングしたページをユーザーが見て「単調で誰も見ない見た目」と
- * 判断した（2026-09-11）。AIトレンド版（.prose-post）と同じ白背景・角丸カード・モダンな
- * コンポーネント体系に統一し、差し色だけ teal 系にしてコンテンツ種別が見分けられるようにする。
+ * 介護版「今日のAI活用ハック」記事。AIトレンド版（.prose-post）と同じ土台（stoneベース・
+ * カードを使わない一覧・display フォント）を共有しつつ、差し色だけ teal にして
+ * コンテンツ種別が見分けられるようにする。
  */
 .care-page {
-  @apply bg-white border border-slate-200 rounded-xl px-6 py-8 sm:px-10 sm:py-10;
+  @apply bg-white border border-stone-200 rounded-xl px-6 py-8 sm:px-10 sm:py-10;
 }
 
 .care-meta {
@@ -108,13 +179,14 @@ body {
 }
 
 .prose-care :where(p) {
-  @apply text-[17px] leading-[1.9] mb-6 text-slate-700;
+  @apply text-[17px] leading-[1.9] mb-6 text-stone-700;
 }
 .prose-care :where(h2) {
-  @apply text-xl font-bold mt-12 mb-4 text-slate-900 pl-4 border-l-4 border-teal-500;
+  font-family: var(--font-display);
+  @apply text-xl font-bold mt-12 mb-4 text-stone-900 pl-4 border-l-4 border-teal-500;
 }
 .prose-care :where(strong) {
-  @apply font-bold text-slate-900;
+  @apply font-bold text-stone-900;
 }
 
 /* 「## 手順」の番号付きリスト: teal の丸番号バッジ（.prose-postの装飾密度に合わせる） */
@@ -123,7 +195,7 @@ body {
   counter-reset: care-step;
 }
 .prose-care :where(ol li) {
-  @apply relative pl-10 py-3 border-b border-slate-100 leading-relaxed last:border-b-0;
+  @apply relative pl-10 py-3 border-b border-stone-100 leading-relaxed last:border-b-0;
   counter-increment: care-step;
 }
 .prose-care :where(ol li)::before {
@@ -136,12 +208,12 @@ body {
 }
 
 .steps-diagram {
-  @apply w-full rounded-xl border border-slate-200 bg-white mb-8;
+  @apply w-full rounded-xl border border-stone-200 bg-white mb-8;
 }
 
 /* remark-gfm footnotes セクション */
 .prose-care :where(section[data-footnotes]) {
-  @apply mt-10 pt-6 border-t border-slate-200 text-sm text-slate-600;
+  @apply mt-10 pt-6 border-t border-stone-200 text-sm text-stone-600;
 }
 .prose-care :where(section[data-footnotes] ol) {
   @apply list-decimal list-inside space-y-2 pl-0;

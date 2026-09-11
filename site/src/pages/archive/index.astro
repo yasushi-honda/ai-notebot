@@ -15,20 +15,19 @@ for (const post of posts) {
 ---
 
 <BaseLayout title="アーカイブ" description="日次AIトレンド記事のアーカイブ一覧">
-  <h1 class="text-2xl font-bold text-slate-900 mb-6">アーカイブ（全{posts.length}件）</h1>
+  <h1 class="text-2xl font-bold text-stone-900 mb-8" style="font-family: var(--font-display);">
+    アーカイブ（全{posts.length}件）
+  </h1>
 
   {[...groups.entries()].map(([ym, monthPosts]) => (
-    <section class="mb-8">
-      <h2 class="text-sm font-semibold text-slate-500 mb-3">{ym}</h2>
-      <ul class="space-y-2">
+    <section class="mb-10">
+      <h2 class="text-sm font-semibold text-stone-500 mb-1 tabular-nums">{ym}</h2>
+      <ul>
         {monthPosts.map((post) => (
           <li>
-            <a
-              href={url(`posts/${post.data.date}/`)}
-              class="flex items-baseline gap-3 rounded-lg px-3 py-2 hover:bg-white no-underline"
-            >
-              <span class="text-xs text-slate-400 font-mono">{post.data.date}</span>
-              <span class="text-slate-800 font-medium">{post.data.title}</span>
+            <a href={url(`posts/${post.data.date}/`)} class="list-link list-link-compact list-link-inline">
+              <span class="text-xs text-stone-400 tabular-nums">{post.data.date}</span>
+              <span class="list-link-title">{post.data.title}</span>
             </a>
           </li>
         ))}
@@ -36,5 +35,5 @@ for (const post of posts) {
     </section>
   ))}
 
-  {posts.length === 0 && <p class="text-slate-500">まだ記事がありません。</p>}
+  {posts.length === 0 && <p class="text-stone-500">まだ記事がありません。</p>}
 </BaseLayout>

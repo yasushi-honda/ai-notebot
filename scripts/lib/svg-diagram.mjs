@@ -85,7 +85,7 @@ export function buildOverviewSvg(themes) {
     .join('');
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${WIDTH} ${HEIGHT}" width="${WIDTH}" height="${HEIGHT}">
-  <rect width="${WIDTH}" height="${HEIGHT}" fill="#f8fafc" />${cards}
+  <rect width="${WIDTH}" height="${HEIGHT}" fill="#fafaf9" />${cards}
 </svg>
 `;
 }
