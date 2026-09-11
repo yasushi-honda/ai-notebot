@@ -237,18 +237,19 @@ async function main() {
     `themeTitles:`,
     ...themes.map((t) => `  - ${JSON.stringify(t.title)}`),
     `sourceIds: [${[...usedIds].map((id) => JSON.stringify(id)).join(', ')}]`,
-    // 画像生成モデル（gemini-3.1-flash-lite-image）は明示的に文字を要求していなくても、
-    // 「ブログのヒーロー画像」というスタイルを解釈する際に自発的にタイトルやラベルのような
-    // 文字要素を描き込むことがあり、特に自作の短いロゴ風タイトル文字列は高確率で文字化けする
-    // （実データで確認済み。画像生成AI全般の既知の弱点）。
-    // 文末に「No text...」を追加するだけの予防は逆効果（実機検証済み:
-    // むしろ見出し風の文字要素が増え、文字化けが悪化した）。有効だったのは
-    // ①プロンプト冒頭で最初に「文字なし」を宣言する ②「要約する（summarize）」という
-    // インフォグラフィック的な語を避け「wordless visual metaphor」と再定義する
-    // ③禁止の列挙をプロンプト末尾でも重ねて念押しする、の3点を組み合わせた構成
-    // （ユーザー報告により2026-09-11に対応、実画像で無効化を確認済み）。
+    // 画像生成モデル（gemini-3.1-flash-lite-image）は「文字なし」を明示しても、
+    // プロンプトが複数テーマを列挙する構成だと、それぞれを見出し付きの区画として
+    // 描き分ける「インフォグラフィック」的レイアウトを自発的に選び、区画ラベルとして
+    // 文字（時に文字化けした状態）を描き込むことが実機検証で判明した
+    // （「wordless」等の指示より「複数概念を列挙されている」という構造的手がかりを
+    // 優先する挙動。当日実データでの本番生成でも再現・確認済み、2026-09-11）。
+    // このモデルの generateContent API には Imagen 系のような negativePrompt 専用
+    // パラメータが存在せず（公式ドキュメント確認済み）、プロンプト文言のみが制御手段のため、
+    // 列挙構成そのものをやめ、テーマ個々を名指ししない単一の抽象構成に統一する方針にした。
+    // 日替わりのテーマ内容は反映されなくなるが、文字化けを確実に避けられることを実機で
+    // 複数回確認済み。
     `heroImagePrompt: ${JSON.stringify(
-      `Abstract flat-design illustration, no text or diagrams. A wordless visual metaphor for today's AI trends: ${themes.map((t) => t.angle).join('; ')}. Clean, modern, blue and white color palette, minimalist geometric shapes and icons only, 16:9. Absolutely no letters, words, numbers, captions, labels, or any written characters anywhere in the image.`,
+      'Abstract flat-design illustration, no text. A single continuous, unified abstract composition — flowing interconnected shapes, nodes, and lines blended into one seamless scene, evoking AI systems, data networks, and technology. Do NOT divide the image into separate panels, quadrants, grids, or labeled sections — one cohesive visual only. Clean, modern, blue and white color palette, minimalist geometric shapes only, 16:9. Absolutely no letters, words, numbers, captions, labels, panels, or any written characters anywhere in the image.',
     )}`,
     '---',
     '',
