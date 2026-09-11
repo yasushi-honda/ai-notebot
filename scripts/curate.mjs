@@ -222,6 +222,10 @@ async function main() {
   const footnotes = buildFootnoteDefs(usedIds, itemsById);
   const totalChars = bodyParts.join('').replace(/[#|\-\s]/g, '').length;
 
+  // その日の出典数が最多のテーマをヒーロー画像の主題にする（画像生成プロンプト詳細は
+  // 直下のheroImagePromptコメント参照）。
+  const leadTheme = [...themes].sort((a, b) => b.sourceIds.length - a.sourceIds.length)[0];
+
   // frontmatter の値は LLM 出力（テーマ見出し等）を含むため、二重引用符等が混じっても
   // 壊れないよう必ず JSON.stringify でエスケープする（手動でのクォート組み立てはしない。
   // codex reviewで指摘・修正: LLMがタイトルに " を含めると手動組み立てのYAML風frontmatterが壊れ、
@@ -238,18 +242,21 @@ async function main() {
     ...themes.map((t) => `  - ${JSON.stringify(t.title)}`),
     `sourceIds: [${[...usedIds].map((id) => JSON.stringify(id)).join(', ')}]`,
     // 画像生成モデル（gemini-3.1-flash-lite-image）は「文字なし」を明示しても、
-    // プロンプトが複数テーマを列挙する構成だと、それぞれを見出し付きの区画として
-    // 描き分ける「インフォグラフィック」的レイアウトを自発的に選び、区画ラベルとして
-    // 文字（時に文字化けした状態）を描き込むことが実機検証で判明した
-    // （「wordless」等の指示より「複数概念を列挙されている」という構造的手がかりを
-    // 優先する挙動。当日実データでの本番生成でも再現・確認済み、2026-09-11）。
+    // プロンプト文中に列挙可能な具体的要素が複数含まれていると、それぞれを見出し付きの
+    // 区画として描き分ける「インフォグラフィック」的レイアウトを自発的に選び、区画
+    // ラベルとして文字（時に文字化けした状態）を描き込むことが実機検証で判明した。
+    // これはテーマ数を1つに絞っても、その1テーマの詳細説明文（angle、複数の具体的
+    // リスク・事象を含む1文）を使うと再発することも確認済み（2026-09-11）。一方、
+    // 15字前後の短い見出し（title）だけを主題にした場合は、異なる2テーマで連続して
+    // 文字要素なしの生成に成功した。「列挙可能な具体性の量」が真のトリガーと判断し、
+    // 最も出典数の多い1テーマの title のみを使う方式に確定した（テーマを全て削って
+    // 完全に汎用化する案はユーザーから「日替わりの内容が無くなるのは判断として駄目」と
+    // 明確に却下されたため不採用）。
     // このモデルの generateContent API には Imagen 系のような negativePrompt 専用
-    // パラメータが存在せず（公式ドキュメント確認済み）、プロンプト文言のみが制御手段のため、
-    // 列挙構成そのものをやめ、テーマ個々を名指ししない単一の抽象構成に統一する方針にした。
-    // 日替わりのテーマ内容は反映されなくなるが、文字化けを確実に避けられることを実機で
-    // 複数回確認済み。
+    // パラメータは存在しない（公式ドキュメント確認済み。Imagen自体も2026-08-17に
+    // 廃止されGemini 3.1 Flash Imageへの移行が推奨されており、乗り換え候補にもならない）。
     `heroImagePrompt: ${JSON.stringify(
-      'Abstract flat-design illustration, no text. A single continuous, unified abstract composition — flowing interconnected shapes, nodes, and lines blended into one seamless scene, evoking AI systems, data networks, and technology. Do NOT divide the image into separate panels, quadrants, grids, or labeled sections — one cohesive visual only. Clean, modern, blue and white color palette, minimalist geometric shapes only, 16:9. Absolutely no letters, words, numbers, captions, labels, panels, or any written characters anywhere in the image.',
+      `Abstract flat-design illustration, no text. A single, unified visual metaphor for the theme: ${leadTheme.title}. One cohesive scene, not divided into panels or sections, no enumerated items. Clean, modern, blue and white color palette, minimalist geometric shapes and icons only, 16:9. Absolutely no letters, words, numbers, captions, labels, or any written characters anywhere in the image.`,
     )}`,
     '---',
     '',
