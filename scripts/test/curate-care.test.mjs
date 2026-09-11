@@ -492,6 +492,42 @@ test('validateGenerated: officialの脚注が見出し行にしか無い場合�
   assert.ok(problems.some((p) => p.includes('official')));
 });
 
+// 2026-09-12実データで発覚: validateGeneratedはvalidate-citations.mjsと同じ裏取り率チェックを
+// 一切行っておらず、脚注のない文が混入した生成結果でも再生成トリガーがかからず、
+// そのまま最終ゲート（validate-citations.mjs --type=care）まで到達して介護版の公開が
+// スキップされていた。既存の再生成ループに乗せるための回帰テスト。
+test('validateGenerated: 脚注のない文（導入文の書き忘れ等）があれば検出する', () => {
+  const body =
+    '## なぜ手間がかかるのか\n\n具体的には以下の通りです。背景です[^s-abcdef0123]。\n\n## 手順\n\n' +
+    '1. ステップ1です[^s-1234567890]。\n2. ステップ2です[^s-1234567890]。\n3. ステップ3です[^s-1234567890]。\n';
+  const problems = validateGenerated(validResult({ bodyMarkdown: body }), itemsByIdWithOfficial);
+  assert.ok(problems.some((p) => p.includes('脚注のない文')));
+});
+
+test('validateGenerated: 当日アーカイブに存在しないidを引用していれば検出する（ハルシネーション想定）', () => {
+  const body =
+    '## なぜ手間がかかるのか\n\n背景です[^s-ffffffffff]。\n\n## 手順\n\n' +
+    '1. ステップ1です[^s-1234567890]。\n2. ステップ2です[^s-1234567890]。\n3. ステップ3です[^s-1234567890]。\n';
+  const problems = validateGenerated(validResult({ bodyMarkdown: body }), itemsByIdWithOfficial);
+  assert.ok(problems.some((p) => p.includes('存在しない出典')));
+});
+
+test('validateGenerated: 不正な脚注表記（カンマ区切りの複数id詰め込み）があれば検出する', () => {
+  const body =
+    '## なぜ手間がかかるのか\n\n背景です[^s-abcdef0123, s-1234567890]。\n\n## 手順\n\n' +
+    '1. ステップ1です[^s-1234567890]。\n2. ステップ2です[^s-1234567890]。\n3. ステップ3です[^s-1234567890]。\n';
+  const problems = validateGenerated(validResult({ bodyMarkdown: body }), itemsByIdWithOfficial);
+  assert.ok(problems.some((p) => p.includes('不正な脚注表記')));
+});
+
+test('validateGenerated: 本文に脚注が1件もなければ検出する', () => {
+  const body =
+    '## なぜ手間がかかるのか\n\n背景です。\n\n## 手順\n\n' +
+    '1. ステップ1です。\n2. ステップ2です。\n3. ステップ3です。\n';
+  const problems = validateGenerated(validResult({ bodyMarkdown: body }), itemsByIdWithOfficial);
+  assert.ok(problems.some((p) => p.includes('脚注が1件もありません')));
+});
+
 // stripFootnotesFromHeadings: LLMがプロンプトの指示に反して見出し行に脚注を付けた場合、
 // 機械的に除去して本文（地の文）でのみ引用させる（実データで実際に発生し発覚）
 test('stripFootnotesFromHeadings: 見出し行の脚注マーカーを除去する', () => {
