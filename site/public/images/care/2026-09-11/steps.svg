@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 616" width="480" height="616">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 468" width="480" height="468">
   <defs>
     <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#0d9488" />
     </marker>
   </defs>
-  <rect width="480" height="616" fill="#ffffff" stroke="#e2e8f0" />
+  <rect width="480" height="468" fill="#ffffff" stroke="#e2e8f0" />
     <g>
       <circle cx="40" cy="72" r="16" fill="#0d9488" />
       <text x="40" y="72" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">1</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="48">施設内で職員がChatGPTやC</tspan><tspan x="72" y="72">laudeなどの汎用AIをどのよ</tspan><tspan x="72" y="96">うに使用しているか現状を把握する</tspan></text>
+        font-weight="600" fill="#1e293b"><tspan x="72" y="48">利用者情報を入力しない安全な業務</tspan><tspan x="72" y="72">用アカウントのGeminiなどの</tspan><tspan x="72" y="96">生成AIを用意する</tspan></text>
     </g><path d="M 40 124 L 40 142"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
@@ -20,33 +20,24 @@
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">2</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="172">要配慮個人情報を無料のAIに入力</tspan><tspan x="72" y="196">しないための基本的な禁止事項を明</tspan><tspan x="72" y="220">確にする</tspan></text>
+        font-weight="600" fill="#1e293b"><tspan x="72" y="172">アセスメント結果や会議のメモなど</tspan><tspan x="72" y="196">の事実情報を整理してAIに入力す</tspan><tspan x="72" y="220">る</tspan></text>
     </g><path d="M 40 248 L 40 266"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <circle cx="40" cy="320" r="16" fill="#0d9488" />
-      <text x="40" y="320" text-anchor="middle" dominant-baseline="central"
+      <circle cx="40" cy="308" r="16" fill="#0d9488" />
+      <text x="40" y="308" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">3</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="296">厚生労働分野における個人情報の適</tspan><tspan x="72" y="320">切な取扱いのためのガイドライン等</tspan><tspan x="72" y="344">を参照し安全性の基準を確認する</tspan></text>
-    </g><path d="M 40 372 L 40 390"
+        font-weight="600" fill="#1e293b"><tspan x="72" y="296">ケアプランや議事録の原案を作成す</tspan><tspan x="72" y="320">るようAIに指示する</tspan></text>
+    </g><path d="M 40 348 L 40 366"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <circle cx="40" cy="432" r="16" fill="#0d9488" />
-      <text x="40" y="432" text-anchor="middle" dominant-baseline="central"
+      <circle cx="40" cy="408" r="16" fill="#0d9488" />
+      <text x="40" y="408" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">4</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="420">専門家でなくても運用できる1枚の</tspan><tspan x="72" y="444">AI利用ルールの雛形を作成する</tspan></text>
-    </g><path d="M 40 472 L 40 490"
-              stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
-    <g>
-      <circle cx="40" cy="544" r="16" fill="#0d9488" />
-      <text x="40" y="544" text-anchor="middle" dominant-baseline="central"
-        font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="700" fill="#ffffff">5</text>
-      <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="520">作成したルールを職員全体に周知し</tspan><tspan x="72" y="544">実際の運用状況に合わせて段階的に</tspan><tspan x="72" y="568">内容を改善する</tspan></text>
+        font-weight="600" fill="#1e293b"><tspan x="72" y="396">AIが生成した出力内容に誤りがな</tspan><tspan x="72" y="420">いか職員が必ず確認し修正する</tspan></text>
     </g>
 </svg>
