@@ -1,79 +1,34 @@
 {
   "date": "2026-09-11",
-  "collectedAt": "2026-09-11T13:08:37.309Z",
+  "collectedAt": "2026-09-11T13:44:30.223Z",
   "sourceSuccessCount": 18,
   "items": [
     {
-      "id": "s-aa02723ed7",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "juspay/xyne-spaces: The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai",
-      "url": "https://github.com/juspay/xyne-spaces",
-      "publishedAt": "2026-09-11T13:08:29.000Z",
-      "summary": "★144 The AI Org-OS — a collaborative platform for humans and agents. Explore: https://spaces.xyne.ai"
-    },
-    {
-      "id": "s-e69a90cedb",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "Zhou-Shilin/Aether: A stunning, localized, general-purpose AI Agent for Android, iOS & Mac. | Aether 扶摇",
-      "url": "https://github.com/Zhou-Shilin/Aether",
-      "publishedAt": "2026-09-11T13:08:22.000Z",
-      "summary": "★598 A stunning, localized, general-purpose AI Agent for Android, iOS & Mac. | Aether 扶摇"
-    },
-    {
-      "id": "s-cd53bce784",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "MadAppGang/claudish: Claude Code. Any Model. The most powerful AI coding agent now speaks every language.",
-      "url": "https://github.com/MadAppGang/claudish",
-      "publishedAt": "2026-09-11T13:08:22.000Z",
-      "summary": "★986 Claude Code. Any Model. The most powerful AI coding agent now speaks every language."
-    },
-    {
-      "id": "s-8e6eb4596c",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "nuxt-modules/mcp-toolkit: Create MCP servers directly in your Nuxt application. Define tools, resources, and prompts with a simple and intuitive API.",
-      "url": "https://github.com/nuxt-modules/mcp-toolkit",
-      "publishedAt": "2026-09-11T13:08:18.000Z",
-      "summary": "★172 Create MCP servers directly in your Nuxt application. Define tools, resources, and prompts with a simple and intuitive API."
-    },
-    {
-      "id": "s-b946186ef4",
+      "id": "s-509c7d8d81",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "elevenlabs/packages: The ElevenLabs Agents SDK for TypeScript.",
-      "url": "https://github.com/elevenlabs/packages",
-      "publishedAt": "2026-09-11T13:08:18.000Z",
-      "summary": "★113 The ElevenLabs Agents SDK for TypeScript."
+      "title": "deepset-ai/haystack-core-integrations: Additional packages (components, document stores and the likes) to extend the capabilities of Haystack",
+      "url": "https://github.com/deepset-ai/haystack-core-integrations",
+      "publishedAt": "2026-09-11T13:44:16.000Z",
+      "summary": "★202 Additional packages (components, document stores and the likes) to extend the capabilities of Haystack"
     },
     {
-      "id": "s-08035bd98d",
+      "id": "s-f2ad320339",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "herdrdev/herdr: the runtime your coding agents live on",
-      "url": "https://github.com/herdrdev/herdr",
-      "publishedAt": "2026-09-11T13:07:33.000Z",
-      "summary": "★37655 the runtime your coding agents live on"
+      "title": "Syngnat/GoNavi: High-performance multi-data-source database client — ~30MB, AI & MCP ready, zero Electron bloat. | 高性能多数据源数据库客户端：约 30MB，AI 与 MCP 就绪，告别 Electron 膨胀。",
+      "url": "https://github.com/Syngnat/GoNavi",
+      "publishedAt": "2026-09-11T13:44:13.000Z",
+      "summary": "★1892 High-performance multi-data-source database client — ~30MB, AI & MCP ready, zero Electron bloat. | 高性能多数据源数据库客户端：约 30MB，AI 与 MCP 就绪，告别 Electron 膨胀。"
     },
     {
-      "id": "s-faab3a2372",
+      "id": "s-07aa91386d",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "SonarSource/sonarqube-cli: Command-line interface for SonarQube with AI agent integration. Scan for secrets and get fast feedback on code quality and security from your terminal.",
-      "url": "https://github.com/SonarSource/sonarqube-cli",
-      "publishedAt": "2026-09-11T13:07:27.000Z",
-      "summary": "★275 Command-line interface for SonarQube with AI agent integration. Scan for secrets and get fast feedback on code quality and security from your terminal."
-    },
-    {
-      "id": "s-84d108c591",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "dxos/dxos: TypeScript implementation of the DXOS protocols, SDK, toolchain and Composer.",
-      "url": "https://github.com/dxos/dxos",
-      "publishedAt": "2026-09-11T13:07:27.000Z",
-      "summary": "★520 TypeScript implementation of the DXOS protocols, SDK, toolchain and Composer."
+      "title": "Hufe921/canvas-editor: A Canvas/SVG-based rich text editor",
+      "url": "https://github.com/Hufe921/canvas-editor",
+      "publishedAt": "2026-09-11T13:44:13.000Z",
+      "summary": "★5187 A Canvas/SVG-based rich text editor"
     },
     {
       "id": "s-9ff119dc67",
@@ -81,71 +36,125 @@
       "sourceType": "github",
       "title": "langfuse/langfuse: 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
       "url": "https://github.com/langfuse/langfuse",
-      "publishedAt": "2026-09-11T13:07:10.000Z",
-      "summary": "★34475 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform."
+      "publishedAt": "2026-09-11T13:44:09.000Z",
+      "summary": "★34474 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform."
     },
     {
-      "id": "s-a44c1881ed",
+      "id": "s-117d2cb5f3",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "quarkiverse/quarkus-flow: Workflow Runtime Engine based on the Open Workflow Specification (CNCF Sandbox project) for Agentic Workflows",
-      "url": "https://github.com/quarkiverse/quarkus-flow",
-      "publishedAt": "2026-09-11T13:07:07.000Z",
-      "summary": "★116 Workflow Runtime Engine based on the Open Workflow Specification (CNCF Sandbox project) for Agentic Workflows"
+      "title": "AgriciDaniel/claude-seo: Universal SEO skill for Claude Code. 25 sub-skills + 18 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, backlinks, local SEO, maps intelligence, semantic clustering, e-commerce SEO, international SEO, Google APIs, and PDF/Excel reporting. Optional DataForSEO, Firecrawl, and Banana extensions.",
+      "url": "https://github.com/AgriciDaniel/claude-seo",
+      "publishedAt": "2026-09-11T13:44:06.000Z",
+      "summary": "★16734 Universal SEO skill for Claude Code. 25 sub-skills + 18 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, backlinks, local SEO, maps intelligence, semantic clustering, e-commerce SEO, international SEO, Google APIs, and PDF/Excel reporting. Optional DataForSEO, Firecrawl, and Banana extensions."
     },
     {
-      "id": "s-9458487880",
-      "source": "GitHub Trending (llm)",
+      "id": "s-ff733a165a",
+      "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "mirkobozzetto/flowflow: Agentic Voice Notes for iPhone and macOS - Rust, Dioxus, LanceDB + RIG + SQLite",
-      "url": "https://github.com/mirkobozzetto/flowflow",
-      "publishedAt": "2026-09-11T13:06:11.000Z",
-      "summary": "★168 Agentic Voice Notes for iPhone and macOS - Rust, Dioxus, LanceDB + RIG + SQLite"
+      "title": "elie222/inbox-zero: The world's best AI personal assistant for email. Open source app to help you reach inbox zero fast.",
+      "url": "https://github.com/elie222/inbox-zero",
+      "publishedAt": "2026-09-11T13:44:00.000Z",
+      "summary": "★12185 The world's best AI personal assistant for email. Open source app to help you reach inbox zero fast."
     },
     {
-      "id": "s-473fd2c171",
-      "source": "GitHub Trending (llm)",
+      "id": "s-c3210bebe3",
+      "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "xorbitsai/xagent: Build personal agents and enterprise AI workforces that plan, delegate, use tools, and deliver real work — without brittle workflows.",
-      "url": "https://github.com/xorbitsai/xagent",
-      "publishedAt": "2026-09-11T13:05:44.000Z",
-      "summary": "★296 Build personal agents and enterprise AI workforces that plan, delegate, use tools, and deliver real work — without brittle workflows."
+      "title": "AgriciDaniel/banana-claude: AI image generation skill for Claude Code - Creative Director powered by Gemini",
+      "url": "https://github.com/AgriciDaniel/banana-claude",
+      "publishedAt": "2026-09-11T13:43:58.000Z",
+      "summary": "★1034 AI image generation skill for Claude Code - Creative Director powered by Gemini"
     },
     {
-      "id": "s-a30369a1d2",
+      "id": "s-ef375695ca",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "jundot/omlx: LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
-      "url": "https://github.com/jundot/omlx",
-      "publishedAt": "2026-09-11T13:05:36.000Z",
-      "summary": "★21621 LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar"
+      "title": "lambda-symbolics/autolith: Autolith is a self-modifiable general purpose Lisp AI agent",
+      "url": "https://github.com/lambda-symbolics/autolith",
+      "publishedAt": "2026-09-11T13:43:47.000Z",
+      "summary": "★326 Autolith is a self-modifiable general purpose Lisp AI agent"
     },
     {
-      "id": "s-6dd983dd06",
+      "id": "s-f23da9f705",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "nobodywho-ooo/nobodywho: NobodyWho is an inference engine that lets you run LLMs locally and efficiently on any device.  ",
-      "url": "https://github.com/nobodywho-ooo/nobodywho",
-      "publishedAt": "2026-09-11T13:05:08.000Z",
-      "summary": "★1105 NobodyWho is an inference engine that lets you run LLMs locally and efficiently on any device."
+      "title": "langchain-ai/open-swe: An Open-Source Asynchronous Coding Agent",
+      "url": "https://github.com/langchain-ai/open-swe",
+      "publishedAt": "2026-09-11T13:43:46.000Z",
+      "summary": "★10696 An Open-Source Asynchronous Coding Agent"
     },
     {
-      "id": "s-4d49979d8c",
-      "source": "GitHub Trending (llm)",
+      "id": "s-695765f826",
+      "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "deepset-ai/haystack: Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
-      "url": "https://github.com/deepset-ai/haystack",
-      "publishedAt": "2026-09-11T13:04:27.000Z",
-      "summary": "★26476 Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems."
+      "title": "AgriciDaniel/claude-blog: Claude Code blog skill suite: 30 sub-skills, 5 agents, 5-gate v1.9.0 Blog Delivery Contract, dual-optimized for Google rankings and AI citations. Active development at AI-Marketing-Hub/claude-blog (AI Marketing Hub Pro community); public releases ship here.",
+      "url": "https://github.com/AgriciDaniel/claude-blog",
+      "publishedAt": "2026-09-11T13:43:41.000Z",
+      "summary": "★2121 Claude Code blog skill suite: 30 sub-skills, 5 agents, 5-gate v1.9.0 Blog Delivery Contract, dual-optimized for Google rankings and AI citations. Active development at AI-Marketing-Hub/claude-blog (AI Marketing Hub Pro community); public releases ship here."
     },
     {
-      "id": "s-201fe558a4",
+      "id": "s-727e8b0666",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "esengine/DeepSeek-Reasonix: DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
-      "url": "https://github.com/esengine/DeepSeek-Reasonix",
-      "publishedAt": "2026-09-11T13:04:23.000Z",
-      "summary": "★35503 DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running."
+      "title": "vercel/ai: The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents ",
+      "url": "https://github.com/vercel/ai",
+      "publishedAt": "2026-09-11T13:43:39.000Z",
+      "summary": "★26689 The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents"
+    },
+    {
+      "id": "s-e08061a469",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "pensarai/apex: AI-powered offensive security testing using autonomous agents, directly in your terminal.",
+      "url": "https://github.com/pensarai/apex",
+      "publishedAt": "2026-09-11T13:43:33.000Z",
+      "summary": "★308 AI-powered offensive security testing using autonomous agents, directly in your terminal."
+    },
+    {
+      "id": "s-e25fe99861",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "icereed/paperless-gpt: Use LLMs and LLM Vision (OCR) to handle paperless-ngx - Document Digitalization powered by AI",
+      "url": "https://github.com/icereed/paperless-gpt",
+      "publishedAt": "2026-09-11T13:43:27.000Z",
+      "summary": "★2681 Use LLMs and LLM Vision (OCR) to handle paperless-ngx - Document Digitalization powered by AI"
+    },
+    {
+      "id": "s-468e1eb7f6",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "EuroEval/EuroEval: The robust European language model benchmark.",
+      "url": "https://github.com/EuroEval/EuroEval",
+      "publishedAt": "2026-09-11T13:43:20.000Z",
+      "summary": "★194 The robust European language model benchmark."
+    },
+    {
+      "id": "s-b3b625efc3",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "invergent-ai/surogate: Train and serve LLMs at extreme speed and massive throughput.",
+      "url": "https://github.com/invergent-ai/surogate",
+      "publishedAt": "2026-09-11T13:42:49.000Z",
+      "summary": "★813 Train and serve LLMs at extreme speed and massive throughput."
+    },
+    {
+      "id": "s-69db386ded",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "NVIDIA-NeMo/Automodel: 🚀 Pytorch Distributed native training library for LLMs/VLMs with OOTB Hugging Face support",
+      "url": "https://github.com/NVIDIA-NeMo/Automodel",
+      "publishedAt": "2026-09-11T13:42:12.000Z",
+      "summary": "★924 🚀 Pytorch Distributed native training library for LLMs/VLMs with OOTB Hugging Face support"
+    },
+    {
+      "id": "s-49db83e253",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Ask HN: Can we please limit the AI news flood?",
+      "url": "https://news.ycombinator.com/item?id=49657850",
+      "publishedAt": "2026-09-11T13:11:04.000Z",
+      "summary": "points=152 comments=77 (Hacker News)"
     },
     {
       "id": "s-866ac0ef3e",
@@ -211,6 +220,15 @@
       "summary": "OpenClaw（自律エージェント基盤）を、無料枠のGoogle Gemini/Gemmaで、そしてその後ローカルGPU(Ollama)で Windows上に動かそうとして実際にぶつかった壁と、そのとき使った設定ファイル一式の記録です。 対象読者はOpenClawを個人開発・スモールビジネスで動かそうとしている方。 「429エラーが続くのにRPD/RPMは余裕がある」「gateway installが謎エラーになる」 「No callable tools remain」「No API key found for provider ollama」など、 検索してもすぐには答えが出てこない症状を、実際に使った設定ファイルとあわせてまとめています。 検証環境（OS/Node/OpenClaw/使用モデル）を明記し、再現性を優先しました。"
     },
     {
+      "id": "s-a2c1a72c83",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "ClickFix attacks infecting PCs and Macs are going viral",
+      "url": "https://arstechnica.com/security/2026/09/clickfix-attacks-infecting-pcs-and-macs-are-going-viral/",
+      "publishedAt": "2026-09-11T11:30:58.000Z",
+      "summary": "Simplicity—combined with the difficulty of getting stuff done—makes ClickFix ideal."
+    },
+    {
       "id": "s-0724f9b919",
       "source": "はてなブックマーク (IT)",
       "sourceType": "japanese",
@@ -220,13 +238,22 @@
       "summary": ""
     },
     {
+      "id": "s-e1bea241b1",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「Microsoft PowerToys」に追加されたローカルAI機能を試してみた",
+      "url": "https://forest.watch.impress.co.jp/docs/serial/usecopilotpc/2140265.html",
+      "publishedAt": "2026-09-11T11:20:05.000Z",
+      "summary": ""
+    },
+    {
       "id": "s-3b9f4e29d7",
       "source": "Hacker News",
       "sourceType": "hn",
       "title": "The Waymo effect: how AI is quietly making research less collaborative",
       "url": "https://www.researchagenda.news/articles/the-waymo-effect.html",
       "publishedAt": "2026-09-11T11:17:50.000Z",
-      "summary": "points=131 comments=79 (Hacker News)"
+      "summary": "points=166 comments=119 (Hacker News)"
     },
     {
       "id": "s-b4e2b6bf04",
@@ -253,7 +280,7 @@
       "title": "RTK reports token savings, but our cost benchmarks disagree",
       "url": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/",
       "publishedAt": "2026-09-11T11:15:13.000Z",
-      "summary": "points=50 comments=24 (Hacker News)"
+      "summary": "points=61 comments=32 (Hacker News)"
     },
     {
       "id": "s-715f02a406",
@@ -274,13 +301,31 @@
       "summary": "2026年9月11日（金）のAIニュース完全解説版。図解を見れば本文を読まなくても分かる形にしています。 今日は新しいAIが一気に出てきた日なんですよ。OpenAIのGPT-6 Astra、中国DeepSeekの新モデル、コーディング用のSWE-2。でもね、僕が今日いちばん伝えたいのは「数字と主張の裏を取る力」です。すごそうな発表ほど、どこまで確かなのか。経営者の皆さんにも、AIを学んでる皆さんにも効く話です。5つのニュースで一緒に見ていきましょう。 1. GPT-6 Astra発表、判断もできるAIへ 図解（完全解説版） 先に結論を言います。OpenAIが「GPT-6 Astr..."
     },
     {
+      "id": "s-2a073bbbbb",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "7900 XTX + 32/64GB RAM for Qwen 3.8 Flash Next?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdclxn/7900_xtx_3264gb_ram_for_qwen_38_flash_next/",
+      "publishedAt": "2026-09-11T10:40:25.000Z",
+      "summary": "Planning to build a PC mainly for local LLMs/coding agents. I keep seeing 3090 + Qwen 3.8 Flash Next benchmarks, but could not find enough info for the 7900 XTX 24GB . 3090s are hard to find where I live, while newer Nvidia GPUs are too expensive, so I am considering a 7900 XTX as the GPU choice. Anyone running Qwen 3.8 Flash Next on a 7900 XTX? What tok/s are you getting in decode and prefill, an"
+    },
+    {
+      "id": "s-4f305efe08",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "new URL() か URL.canParse() か URL.parse() どれを使う？ - プププなテクブ",
+      "url": "https://blog.inorinrinrin.com/entry/B88CAC8E-F50D-43B7-984A-2E5D44A84281",
+      "publishedAt": "2026-09-11T10:22:13.000Z",
+      "summary": "Valibotでの以下のPRをレビューするためにWeb標準のURLについて調べてたんですが、なかなか面白かったのでそれを共有するエントリです。 github.com Valibot における URL まずは今回のエントリのコンテキストとして、ValibotにおけるURLから話します。ValibotにおけるURLは、Action であり、そもそも文字列であるなにか..."
+    },
+    {
       "id": "s-72f0aa59f1",
       "source": "Hacker News",
       "sourceType": "hn",
       "title": "Resist \"AI\"",
       "url": "https://ronjeffries.com/articles/-v026/x/t/",
       "publishedAt": "2026-09-11T10:19:59.000Z",
-      "summary": "points=53 comments=113 (Hacker News)"
+      "summary": "points=55 comments=131 (Hacker News)"
     },
     {
       "id": "s-b84bd18913",
@@ -328,15 +373,6 @@
       "summary": "はじめに 本記事は、筆者がソースコードおよびモデル構造を独自に解析した情報に基づき解説を行う記事です。本記事の内容は更新される場合があります。内容に大きな変更・追加があった場合は都度Xアカウントにて発信いたします。 本記事は「YOLO26nアーキテクチャ徹底解析」シリーズのstep3となります。YOLO26nの全体像を示したstep1の記事はこちらです。Convブロック・PWConvブロック・DWConvブロックについて示したstep2の記事はこちらです。Convブロック・PWConvブロックは、今回取り上げるブロック内部でも数多く利用されています。 免責・非公式表示 ! 本..."
     },
     {
-      "id": "s-3e0fc49bc6",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "Meta is asking some of its employees to become managers again in a new reorg",
-      "url": "https://www.businessinsider.com/meta-asks-some-ai-employees-to-become-managers-again-2026-9",
-      "publishedAt": "2026-09-11T10:02:19.000Z",
-      "summary": "points=7 comments=0 (Hacker News)"
-    },
-    {
       "id": "s-dd02579c12",
       "source": "Reddit r/LocalLLaMA",
       "sourceType": "reddit",
@@ -373,15 +409,6 @@
       "summary": "Nice pp improvements for RDNA4(R9700) &amp; 3.5(RX 9060 XT, 8060S). More good numbers on large context. PR has detailed benchmarks. u/ilintar 👍 &#32; submitted by &#32; /u/pmttyji [link] &#32; [comments]"
     },
     {
-      "id": "s-e53650c67c",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "How big is the open-model threat to AI hyperscalers?",
-      "url": "https://www.ft.com/content/48588acb-8026-4c8e-aac7-8b5588294dbf",
-      "publishedAt": "2026-09-11T08:51:13.000Z",
-      "summary": "points=6 comments=0 (Hacker News)"
-    },
-    {
       "id": "s-82852e1b73",
       "source": "はてなブックマーク (IT)",
       "sourceType": "japanese",
@@ -409,15 +436,6 @@
       "summary": "メルカリは9月11日現在、一部ユーザーに「商品の限定公開機能」を提供中。これを受け、SNS（X）では悪用を懸念する声が挙がっている。 商品の限定公開は、商品ページのURLを知っているユーザーのみが閲覧・購入できる出品方法。通常の出品と違い、検索結果や「おすすめ」、出品者プロフィールなどに当該商品が表示される..."
     },
     {
-      "id": "s-2dde054ec2",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "松本デジタル相、24.6万件漏えい可能性について説明　「既知の脆弱性を対応前に悪用」",
-      "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001419/",
-      "publishedAt": "2026-09-11T08:09:57.000Z",
-      "summary": "デジタル庁が運用する政府共通の業務基盤「ガバメントソリューションサービス」（GSS）が不正アクセスを受け、約24万6000件の個人情報が漏えいした可能性がある問題で、松本尚デジタル相は9月11日の記者会見で、悪用されたVPN機器の脆弱性を事前に把握していたと明らかにした。緊急度の高い他の脆弱性から順に対応を進め..."
-    },
-    {
       "id": "s-aaf7012301",
       "source": "ITmedia AI+",
       "sourceType": "japanese",
@@ -425,15 +443,6 @@
       "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/11/news038.html",
       "publishedAt": "2026-09-11T08:00:00.000Z",
       "summary": "生成AIに仕事を任せるとして、どこまで許せるのか。チェンジホールディングスの調査から、人間がAIに「任せたい業務」の実態が浮かび上がった。世代別では、20代は最終承認までAIに任せたいと考えているという。"
-    },
-    {
-      "id": "s-deac8dd709",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "iPhone Duo、世界最安は米国！日本は何位？トルコでは2TBが100万円超 - iPhone Mania",
-      "url": "https://iphone-mania.jp/iphone18-605682/",
-      "publishedAt": "2026-09-11T07:51:48.000Z",
-      "summary": "iPhone Duo、iPhone18 Pro、iPhone18 Pro Maxについて、世界39の国・地域のApple Storeでの販売価格を比較すると、国によって大きな価格差があることが分かります。最も安いのはいずれも米国で、日本は比較的安いグループに入っています。一方、トルコでは価格が大幅に高く、iPhone Duoの2TBモデルは100万円を超えていま..."
     },
     {
       "id": "s-3d53770357",
@@ -515,15 +524,6 @@
       "url": "https://www.itmedia.co.jp/aiplus/article/2609/11/2000001394/",
       "publishedAt": "2026-09-11T00:31:23.000Z",
       "summary": "OpenAIのティボー・ソティオ氏（通称Tibo）は新モデル「GPT-6 Astra」の需要拡大に対応するため、最上位プランの新規受付を停止すると発表した。"
-    },
-    {
-      "id": "s-3afb7e7b0a",
-      "source": "Reddit r/LocalLLaMA",
-      "sourceType": "reddit",
-      "title": "Granular diff versioning for agent editing",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wd0nja/granular_diff_versioning_for_agent_editing/",
-      "publishedAt": "2026-09-11T00:20:55.000Z",
-      "summary": "Had some ideas about version control: Attribute, down to individual words: word created manually or with ai. if ai, which sources cited (scoped to paragraphs). also: full agent trace that led to the edit (all tool calls + metadata). also: any multi-agent transactions at the file/paragraph lock. all data stored for every version. Why do this? Basically, getting as much into a unified version contro"
     },
     {
       "id": "s-4de39e00bc",
