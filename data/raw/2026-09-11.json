@@ -1,169 +1,250 @@
 {
   "date": "2026-09-11",
-  "collectedAt": "2026-09-11T03:09:55.305Z",
+  "collectedAt": "2026-09-11T04:27:19.504Z",
   "sourceSuccessCount": 18,
   "items": [
     {
-      "id": "s-1d51958e2f",
+      "id": "s-19795251d4",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "RunanywhereAI/runanywhere-sdks: Production ready toolkit to run AI locally",
-      "url": "https://github.com/RunanywhereAI/runanywhere-sdks",
-      "publishedAt": "2026-09-11T03:09:15.000Z",
-      "summary": "★10283 Production ready toolkit to run AI locally"
+      "title": "matrixarkai/TemporalStore: Open-source Rust TemporalStore for LLM context management, temporal features, and risk control",
+      "url": "https://github.com/matrixarkai/TemporalStore",
+      "publishedAt": "2026-09-11T04:27:00.000Z",
+      "summary": "★212 Open-source Rust TemporalStore for LLM context management, temporal features, and risk control"
     },
     {
-      "id": "s-5093503cfc",
+      "id": "s-7c213e5a75",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "makecindy/cindy: Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "url": "https://github.com/makecindy/cindy",
+      "publishedAt": "2026-09-11T04:26:56.000Z",
+      "summary": "★2568 Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。"
+    },
+    {
+      "id": "s-f6767d707c",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "legeling/awesome-codex-pet: A curated gallery of community-made Codex pets, with generated action previews and one-command installation. codex宠物，codex 小宠物，像素宠物，桌宠，桌面宠物",
-      "url": "https://github.com/legeling/awesome-codex-pet",
-      "publishedAt": "2026-09-11T03:08:54.000Z",
-      "summary": "★910 A curated gallery of community-made Codex pets, with generated action previews and one-command installation. codex宠物，codex 小宠物，像素宠物，桌宠，桌面宠物"
+      "title": "LC044/TrailSnap: TrailSnap (行影集) | AI-Powered open-source photo album for travel & life memories.（AI赋能的开源相册工具，珍藏旅行与生活点滴）",
+      "url": "https://github.com/LC044/TrailSnap",
+      "publishedAt": "2026-09-11T04:26:50.000Z",
+      "summary": "★721 TrailSnap (行影集) | AI-Powered open-source photo album for travel & life memories.（AI赋能的开源相册工具，珍藏旅行与生活点滴）"
     },
     {
-      "id": "s-a6235d225c",
+      "id": "s-5d0788e2e2",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "yaojingang/GEOFlow: Open-source GEO content engineering and multi-site distribution platform with AI quality inspection, illustrated admin help, hosted sites, browser-assisted publishing, and signed updates.",
-      "url": "https://github.com/yaojingang/GEOFlow",
-      "publishedAt": "2026-09-11T03:08:40.000Z",
-      "summary": "★3609 Open-source GEO content engineering and multi-site distribution platform with AI quality inspection, illustrated admin help, hosted sites, browser-assisted publishing, and signed updates."
+      "title": "ivankadric02-alt/wyrd-ecs-core: ECS World Model Architecture: Real-Time Data AI Framework 2026",
+      "url": "https://github.com/ivankadric02-alt/wyrd-ecs-core",
+      "publishedAt": "2026-09-11T04:26:49.000Z",
+      "summary": "★117 ECS World Model Architecture: Real-Time Data AI Framework 2026"
     },
     {
-      "id": "s-d62d3bc659",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "09omerdgn-droid/api-model-playground-cookbook: Ultimate LLM API Integration Cookbook 2026 for Cursor & AI Agents",
-      "url": "https://github.com/09omerdgn-droid/api-model-playground-cookbook",
-      "publishedAt": "2026-09-11T03:08:26.000Z",
-      "summary": "★115 Ultimate LLM API Integration Cookbook 2026 for Cursor & AI Agents"
-    },
-    {
-      "id": "s-fce41299a5",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "Team-Commonly/commonly: Open-source room for humans + cross-vendor AI agents. Every agent gets its own name, memory, skills, and workstation. Any runtime, your infra — no per-agent fees.",
-      "url": "https://github.com/Team-Commonly/commonly",
-      "publishedAt": "2026-09-11T03:08:14.000Z",
-      "summary": "★1330 Open-source room for humans + cross-vendor AI agents. Every agent gets its own name, memory, skills, and workstation. Any runtime, your infra — no per-agent fees."
-    },
-    {
-      "id": "s-78619289f9",
+      "id": "s-0a88cdac1d",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "lobehub/lobehub: 🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
-      "url": "https://github.com/lobehub/lobehub",
-      "publishedAt": "2026-09-11T03:08:12.000Z",
-      "summary": "★82383 🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team."
+      "title": "BasedHardware/omi: AI that sees your screen, listens to your conversations and tells you what to do",
+      "url": "https://github.com/BasedHardware/omi",
+      "publishedAt": "2026-09-11T04:26:33.000Z",
+      "summary": "★13454 AI that sees your screen, listens to your conversations and tells you what to do"
     },
     {
-      "id": "s-7cd5021f5e",
+      "id": "s-ff65c243ea",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "echoVic/blade-code: AI-powered CLI coding agent with 20+ built-in tools, MCP support, and multi-model providers",
+      "url": "https://github.com/echoVic/blade-code",
+      "publishedAt": "2026-09-11T04:26:24.000Z",
+      "summary": "★179 AI-powered CLI coding agent with 20+ built-in tools, MCP support, and multi-model providers"
+    },
+    {
+      "id": "s-cebcfc7dda",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "microsoft/intelligent-terminal: A fork of Windows Terminal with native agent integration, right in your command line.",
+      "url": "https://github.com/microsoft/intelligent-terminal",
+      "publishedAt": "2026-09-11T04:26:16.000Z",
+      "summary": "★1944 A fork of Windows Terminal with native agent integration, right in your command line."
+    },
+    {
+      "id": "s-fad8d5d7c8",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "fj1981/dqex: AI-Native, Offline-First Database Workbench — Import/Export/Migrate/Compare/Snapshot with AI-Assisted SQL (Eino)",
+      "url": "https://github.com/fj1981/dqex",
+      "publishedAt": "2026-09-11T04:25:47.000Z",
+      "summary": "★106 AI-Native, Offline-First Database Workbench — Import/Export/Migrate/Compare/Snapshot with AI-Assisted SQL (Eino)"
+    },
+    {
+      "id": "s-874a646e5b",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "AMAP-ML/LoopArena: Benchmarking models as runtime Controllers for Loop Engineering",
-      "url": "https://github.com/AMAP-ML/LoopArena",
-      "publishedAt": "2026-09-11T03:08:05.000Z",
-      "summary": "★130 Benchmarking models as runtime Controllers for Loop Engineering"
+      "title": "whiteguo233/OpenBiliClaw: 本地私有、开源的自进化跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。（支持 deepseek harness 插件） | Local-first open-source cross-platform AI content discovery agent: understands you, then proactively finds content across Bilibili, Xiaohongshu, Douyin, YouTube, X, Zhihu, Reddit, Weibo and the open web.（support deepseek harness plugin）",
+      "url": "https://github.com/whiteguo233/OpenBiliClaw",
+      "publishedAt": "2026-09-11T04:24:18.000Z",
+      "summary": "★3281 本地私有、开源的自进化跨平台 AI 内容发现 Agent：先理解你，再主动从 B站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台与开放 Web 寻找内容。（支持 deepseek harness 插件） | Local-first open-source cross-platform AI content discovery agent: understands you, then proactively finds content across Bilibili, Xiaohongshu, Douyin, YouTube, X, Zhihu, Reddit, Weibo and the open web.（support deepseek harness plugin）"
     },
     {
-      "id": "s-28bd15249b",
+      "id": "s-dd219ead61",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "shanraisshan/claude-code-best-practice: from vibe coding to agentic engineering - practice makes claude perfect",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "publishedAt": "2026-09-11T04:23:59.000Z",
+      "summary": "★65835 from vibe coding to agentic engineering - practice makes claude perfect"
+    },
+    {
+      "id": "s-100723b520",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "Mobile-Artificial-Intelligence/llama_sdk: lcpp is a dart implementation of llama.cpp used by the mobile artificial intelligence distribution (maid)",
-      "url": "https://github.com/Mobile-Artificial-Intelligence/llama_sdk",
-      "publishedAt": "2026-09-11T03:07:37.000Z",
-      "summary": "★119 lcpp is a dart implementation of llama.cpp used by the mobile artificial intelligence distribution (maid)"
+      "title": "MakazhanAlpamys/Soup: Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "publishedAt": "2026-09-11T04:23:29.000Z",
+      "summary": "★6050 Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU."
     },
     {
-      "id": "s-c02f04fa75",
+      "id": "s-9d98381403",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "grandgaming9321-prog/reality-engine: Top Dynamic AI World Simulation & Storytelling Tools 2026",
+      "url": "https://github.com/grandgaming9321-prog/reality-engine",
+      "publishedAt": "2026-09-11T04:23:19.000Z",
+      "summary": "★126 Top Dynamic AI World Simulation & Storytelling Tools 2026"
+    },
+    {
+      "id": "s-b6976599f8",
       "source": "Qiita (AI タグ)",
       "sourceType": "japanese",
-      "title": "商談の文字起こしを9項目の議事録に組み替える — Pythonで数字と条件をペアで抽出する",
-      "url": "https://qiita.com/takumahayami/items/010154a81e1781f5e435",
-      "publishedAt": "2026-09-11T03:07:31.000Z",
-      "summary": "なぜ商談メモは当日中に処理しないといけないのか 30分の商談で交わされる会話は、日本語の話速（1分あたり300〜400字）で単純計算すると9,000〜12,000字になります。A4で5〜7枚ぶんの情報量です。これを話を聞きながら手で拾うのは不可能で、現場では「重要そうなと..."
+      "title": "０円で Fortran => Java21 マイグレーション試行中 ~ Continue.dev + Qwen3.8-Flash-Next with EVO-X2 ~",
+      "url": "https://qiita.com/yoshihiro-yoshimura/items/39c240327371f3c32999",
+      "publishedAt": "2026-09-11T04:23:01.000Z",
+      "summary": "1. はじめに Qwen3.8-Flash-Next を Ryzen AI MAX+ 395 を搭載したAIパソコン上で動かして、VS Code 用のAIエージェント Continue.dev を使って「FortranからJava21」へのマイグレーションを試行しているの..."
     },
     {
-      "id": "s-341b0d6fbc",
+      "id": "s-dc31ea26fd",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "vllm-project/vllm-ascend: Community maintained hardware plugin for vLLM on Ascend",
-      "url": "https://github.com/vllm-project/vllm-ascend",
-      "publishedAt": "2026-09-11T03:07:19.000Z",
-      "summary": "★2794 Community maintained hardware plugin for vLLM on Ascend"
+      "title": "tinyhumansai/opencompany: Open source runtime where AI agents run every function of a one-person company.",
+      "url": "https://github.com/tinyhumansai/opencompany",
+      "publishedAt": "2026-09-11T04:21:44.000Z",
+      "summary": "★114 Open source runtime where AI agents run every function of a one-person company."
     },
     {
-      "id": "s-d57f5c9bdb",
-      "source": "GitHub Trending (ai)",
+      "id": "s-c50e39f174",
+      "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "tangosdev/sm64ds-decomp: From-scratch, byte-matching decompilation of Super Mario 64 DS (sm64ds decomp) into C, with a live progress atlas and matching tools.",
-      "url": "https://github.com/tangosdev/sm64ds-decomp",
-      "publishedAt": "2026-09-11T03:05:58.000Z",
-      "summary": "★155 From-scratch, byte-matching decompilation of Super Mario 64 DS (sm64ds decomp) into C, with a live progress atlas and matching tools."
+      "title": "ray-project/ray: Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.",
+      "url": "https://github.com/ray-project/ray",
+      "publishedAt": "2026-09-11T04:21:31.000Z",
+      "summary": "★43770 Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
     },
     {
-      "id": "s-4547bb56b2",
-      "source": "GitHub Trending (ai)",
+      "id": "s-8d5f8d5c0c",
+      "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "magefree/mage: XMage - Magic Another Game Engine",
-      "url": "https://github.com/magefree/mage",
-      "publishedAt": "2026-09-11T03:05:38.000Z",
-      "summary": "★2354 XMage - Magic Another Game Engine"
+      "title": "aiworkskills/wechat-article-skills: 微信公众号 AI 运营助手 | 选题、写稿、审稿、排版、配图、发布全流程 Skill，支持 OpenClaw / Claude Code / Cursor / Codex",
+      "url": "https://github.com/aiworkskills/wechat-article-skills",
+      "publishedAt": "2026-09-11T04:21:03.000Z",
+      "summary": "★589 微信公众号 AI 运营助手 | 选题、写稿、审稿、排版、配图、发布全流程 Skill，支持 OpenClaw / Claude Code / Cursor / Codex"
     },
     {
-      "id": "s-9c0eb9f00d",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "linnix-os/linnix: eBPF-powered Linux observability with AI incident detection. AGPL-3.0 licensed.",
-      "url": "https://github.com/linnix-os/linnix",
-      "publishedAt": "2026-09-11T03:05:02.000Z",
-      "summary": "★252 eBPF-powered Linux observability with AI incident detection. AGPL-3.0 licensed."
-    },
-    {
-      "id": "s-8898dc1fb3",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "heygen-com/hyperframes: Write HTML. Render video. Built for agents.",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "publishedAt": "2026-09-11T03:03:48.000Z",
-      "summary": "★48797 Write HTML. Render video. Built for agents."
-    },
-    {
-      "id": "s-7f8ddcd990",
-      "source": "GitHub Trending (ai)",
-      "sourceType": "github",
-      "title": "theonedev/onedev: The Unified and Autonomous Development Platform",
-      "url": "https://github.com/theonedev/onedev",
-      "publishedAt": "2026-09-11T03:03:27.000Z",
-      "summary": "★15236 The Unified and Autonomous Development Platform"
-    },
-    {
-      "id": "s-312be8b4ef",
+      "id": "s-53925ea9d4",
       "source": "Qiita (AI タグ)",
       "sourceType": "japanese",
-      "title": "AIエンジニアは脳科学のどこを学べばいいのか――「脳科学の全体地図」と和書・翻訳書ガイド",
-      "url": "https://qiita.com/aokikenichi/items/d1dd6b4547c38db2415d",
-      "publishedAt": "2026-09-11T03:02:00.000Z",
-      "summary": "AIを理解するために脳科学が必要と言われますが、「どの脳科学？」と不思議でしたので自分なりにまとめてみました こういうマップがなかったので！ 私はAI系のITエンジニアであり、脳科学やAIの研究者ではありません 見当違いのところがあればご遠慮なくコメント..."
+      "title": "AIコーディングエージェントを使うと逆に遅くなるケース",
+      "url": "https://qiita.com/Ohmiya-Mizuki/items/c8471bad8182ed592acd",
+      "publishedAt": "2026-09-11T04:20:58.000Z",
+      "summary": "この記事はすきま経営からの転載です。 結論から書く。AIコーディングエージェントは「速くなる」が前提で語られがちだが、実際には特定の条件が揃うと明確に遅くなる。私が本業のFDE（企業のAI導入支援）と複業側の開発の両方でClaude Codeを日常的に使っていて体感して..."
     },
     {
-      "id": "s-84badf95cc",
+      "id": "s-57886c71a9",
       "source": "Qiita (AI タグ)",
       "sourceType": "japanese",
-      "title": "Isolating Edit Scope When Iterating on Generated Images: A Constraint-Driven Workflow",
-      "url": "https://qiita.com/wendyxyz733/items/322f96bde748de28519a",
-      "publishedAt": "2026-09-11T02:56:58.000Z",
-      "summary": "Isolating Edit Scope When Iterating on Generated Images: A Constraint-Driven Workflow The Drift Problem in Iterative Image Editing Whe..."
+      "title": "Claude Codeで複数事業のコードベースを横断運用する方法",
+      "url": "https://qiita.com/Ohmiya-Mizuki/items/5151bba01b9e0748084a",
+      "publishedAt": "2026-09-11T04:15:55.000Z",
+      "summary": "この記事はすきま経営からの転載です。 私は現在、本業のFDE（AI導入支援）に加えて、storeforge・aerial-earth-studio・afflow・民泊・すきま経営ブログと、性質の異なる複数のコードベースをClaude Codeで並行運用している。結論から..."
     },
     {
-      "id": "s-83bf3e7093",
+      "id": "s-d11da3cf71",
       "source": "Qiita (AI タグ)",
       "sourceType": "japanese",
-      "title": "Foundry における Harness モジュール：Evaluation",
-      "url": "https://qiita.com/axzxs2001/items/2277c7d3103f508d22c4",
-      "publishedAt": "2026-09-11T02:52:58.000Z",
-      "summary": "AI Agent を作るとき、書けるだけでは足りません。さらに、それが「ちゃんと書けているか」も知る必要があります。この記事では、大ざっぱに言うと、Microsoft Foundry にすでに用意されている評価器群を、自分の Harness フレームワークでどう使うかを説明..."
+      "title": "AI動画生成・編集UIの要件定義とQA設計",
+      "url": "https://qiita.com/sophiebella/items/49cb397b65893d07ff3c",
+      "publishedAt": "2026-09-11T03:58:00.000Z",
+      "summary": "AI動画生成・編集UIの要件定義とQA設計 ブラウザ上の制作ワークフローを確認する入口として、PhotoGenerator.ai も参照できます。 この記事は、公開されているAI動画UIを題材にした要件・テスト設計メモです。内部ソースコード、API仕様、モデル性能、処理時..."
+    },
+    {
+      "id": "s-2954e55231",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "Models Don't Go Rogue",
+      "url": "https://mail.cyberneticforests.com/models-dont-go-rogue/",
+      "publishedAt": "2026-09-11T03:37:10.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-556f4a00c8",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Someone apparently managed to kind of replicate what V4.1 flash does on KV for fast prefill on Qwen",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wd4xxv/someone_apparently_managed_to_kind_of_replicate/",
+      "publishedAt": "2026-09-11T03:36:45.000Z",
+      "summary": "I wonder someone will figure out a way to do this with 27B? Throw Qwen3 on this page for demo https://kishida.github.io/webdemos/llkvapprox/ &#32; submitted by &#32; /u/T_rex2700 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-558725c9b5",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "フィジカルAI向け「データ収集工場」に\"潜入\"　実機写真で学習データ生成の流れを解説",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2609/11/2000001402/",
+      "publishedAt": "2026-09-11T03:34:06.000Z",
+      "summary": "フィジカルAI・ロボットのデータファクトリー「J-HRTI 関東データファクトリー」が千葉県習志野市内で稼働を開始した。運営するのは業種の異なる民間5社のコンソーシアム「J-HRTI」で、集めたデータは参画企業が共同で使う。実際、データはどう集められているのか。実機写真を基に解説する。"
+    },
+    {
+      "id": "s-57eec2a0e9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「めっちゃ実装大変そう」デザイナーの方が話題の折りたたみiPhoneを見て「デザインパターンが増えそう」とコメント、パターンは最大6つに？",
+      "url": "https://togetter.com/li/2744165",
+      "publishedAt": "2026-09-11T03:29:55.000Z",
+      "summary": "Miyamoto @motomiya333 ？？？「iPhone DuoでのUIモックを作ってくれる？」 デザイナー「いいすよ。」 ？？？「まずは、閉じた状態での縦横版と…」 デザイナー「…！？」 ？？？「開いた時の全画面の縦横と、L字に折ったときの左右・上下の計6パターンでよろしく。」 デザイナー「!?!?!?!?!?!?!?!?!?!?!?!?」 pic.x.com/e..."
+    },
+    {
+      "id": "s-ee488713f7",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "政府システムに不正アクセス、職員などの個人情報24.6万件が漏えいの可能性--デジタル庁",
+      "url": "https://japan.cnet.com/article/35252539/",
+      "publishedAt": "2026-09-11T03:09:57.000Z",
+      "summary": "デジタル庁は9月11日、同庁が運用する「ガバメントソリューションサービス」（GSS）が不正アクセスを受け、約24.6万件の個人情報が外部に漏えいした可能性があると発表した。第三者がVPN機器の脆弱性を利用して侵入したという。 対象は、GSSを利用する府省庁などの職員や、その業務に携わった事業者・個人らの情報だ。同..."
+    },
+    {
+      "id": "s-876d2fa4d3",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "terraform plan -minimal-refreshでplanを爆速にする - Qiita",
+      "url": "https://qiita.com/minamijoyo/items/92c094b554d090b54a17",
+      "publishedAt": "2026-09-11T03:00:32.000Z",
+      "summary": "はじめに terraformで管理しているリソースが増えてきて、tfstateが肥大化してくると、terraform planがどんどん遅くなり、待ってる間にインターネッツを眺めがちです。 根本解決は、適度な粒度にtfstate分割ですが、もっとお手軽な小手先のテクニックとして、 terraform plan --parallelism の紹介記事を以前書きました..."
+    },
+    {
+      "id": "s-6335ac164b",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "[石川温の「スマホ業界 Watch」] アップルの“後出しジャンケン”、初の折りたたみ「iPhone Duo」にGalaxyはどう挑むか",
+      "url": "https://k-tai.watch.impress.co.jp/docs/column/ishikawa/2140124.html",
+      "publishedAt": "2026-09-11T02:53:42.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-de32cde118",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "府省庁職員ら24万件超の個人情報漏えい 松本デジタル相会見 | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260911de49659",
+      "publishedAt": "2026-09-11T02:45:21.000Z",
+      "summary": "松本デジタル大臣は、第三者による不正アクセスにより政府内のネットワークからおよそ24万6000件の個人情報が漏えいした可能性があると明らかにしました。漏えいしたとみられるのは府省庁の職員らの氏名や住所…"
     },
     {
       "id": "s-decf8c1f18",
@@ -175,13 +256,40 @@
       "summary": "AIが全社員の役割を担うNECの新組織「コーポレートAI・Workforce部門」。実態や狙いを同社の小玉浩氏が語った。"
     },
     {
+      "id": "s-bc95959064",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ガバメントソリューションサービスへの不正アクセスによる職員等の個人情報の漏えいの可能性について｜デジタル庁",
+      "url": "https://www.digital.go.jp/news/2026-0911-01",
+      "publishedAt": "2026-09-11T02:12:11.000Z",
+      "summary": "ホーム新着・更新ガバメントソリューションサービスへの不正アクセスによる職員等の個人情報の漏えいの可能性について ガバメントソリューションサービスへの不正アクセスによる職員等の個人情報の漏えいの可能性について 今般、デジタル庁が運用するガバメントソリューションサービス（以下、「GSS」といいます。）にお..."
+    },
+    {
+      "id": "s-0f88b91a38",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Anthropic Staffers Again Sound the Alarm on AI Catastrophe",
+      "url": "https://www.motherjones.com/politics/2026/09/anthropic-ai-risks-coxon-amodei-openai-cybersecurity-danger/",
+      "publishedAt": "2026-09-11T02:10:37.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
       "id": "s-b0e221748a",
-      "source": "ITmedia AI+",
+      "source": "はてなブックマーク (IT)",
       "sourceType": "japanese",
       "title": "Windows用「Gemini」アプリ提供開始　画面上に重ねて作業を中断せず利用可能に",
       "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001399/",
-      "publishedAt": "2026-09-11T02:06:11.000Z",
-      "summary": "Googleは、Windows向けデスクトップアプリ「Gemini app for Windows」を公開した。Windows 10および11に対応し、UIは日本語をサポートする。［Alt］＋［Space］で作業画面上に重ねて呼び出せるほか、自律型AIエージェント「Gemini Spark」や画像・動画生成もPC上で利用できる（一部は有料プランが必要）。Mac版は4月にリリース済み。"
+      "publishedAt": "2026-09-11T02:09:49.000Z",
+      "summary": "特徴は、作業中の画面の上にGeminiを重ねて呼び出せる点だ。［Alt］＋［Space］でいつでも起動でき、開いている資料のファクトチェックや、プレゼン資料のタイトル案出しなどの作業を、作業の流れを中断せずに済ませられるとしている。 ログインすれば、アプリ内でこれまでGeminiで使ってきた機能を一通り利用できる。24..."
+    },
+    {
+      "id": "s-c30bcc7e2c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "既存の教材では学びづらい「実務力」を育てたい。ニジボックスがdbtの研修内製に込めた思い - はてなニュース",
+      "url": "https://hatenanews.com/articles/2026/09/11/103000",
+      "publishedAt": "2026-09-11T02:00:12.000Z",
+      "summary": "実務に必要なスキルや知識を、どう体系的に学ぶか。 ツールの活用法や機能は既存の教材で一通り学んでいたとしても、プロジェクト固有の構成やルール、エラーへの対処法などは、現場に入ってみるまで分からない、ということも少なくありません。 そうした包括的な「実務力」は、これまで現場のOJTや、経験者からの口伝え..."
     },
     {
       "id": "s-1762330c0a",
@@ -190,7 +298,7 @@
       "title": "How My Students Think About AI",
       "url": "https://www.lesswrong.com/posts/ySXuvJcqRindQwAk7/how-my-students-think-about-ai",
       "publishedAt": "2026-09-11T01:33:36.000Z",
-      "summary": "points=12 comments=1 (Hacker News)"
+      "summary": "points=22 comments=3 (Hacker News)"
     },
     {
       "id": "s-653c39f0d9",
@@ -199,7 +307,7 @@
       "title": "Developer created an app to detect nearby Meta glasses",
       "url": "https://www.businessinsider.com/zuckoff-app-detects-meta-ai-smart-glasses-recording-privacy-2026-9",
       "publishedAt": "2026-09-11T01:16:21.000Z",
-      "summary": "points=6 comments=2 (Hacker News)"
+      "summary": "points=7 comments=2 (Hacker News)"
     },
     {
       "id": "s-fc21383fe0",
@@ -238,15 +346,6 @@
       "summary": "OpenAIは、金融機関向けAI「ChatGPT for Financial Services」を発表した。最新モデル「GPT-6 Astra」を基盤に、主要な金融データセットを標準で内蔵。財務分析や顧客向け資料作成を支援し、既存の契約データとの連携やMicrosoft Officeテンプレートの社内配布にも対応する。"
     },
     {
-      "id": "s-819f60de0d",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "regexのUnicode対応とSRELL",
-      "url": "https://www.akenotsuki.com/misc/srell/uniregex.html",
-      "publishedAt": "2026-09-11T00:05:25.000Z",
-      "summary": "目次 regexのUnicode対応に向けて (2019/08/24) ※2019/09/10, 2020/06/20更新 WG21 ベルファスト会議 (2019/11/20) ※2020/06/20更新 WG21 プラハ会議 (2020/02/13) ※2020/02/22追記, 2020/06/20更新, 2021/01/11追記, 2022/08/09追記 SRELLの今後 (2020/02/13) regexのUnicode対応に向けて 現在のSRELLは「C++のregexがU..."
-    },
-    {
       "id": "s-0388337ca1",
       "source": "Hacker News",
       "sourceType": "hn",
@@ -254,15 +353,6 @@
       "url": "https://boldagents.co",
       "publishedAt": "2026-09-11T00:03:56.000Z",
       "summary": "points=5 comments=0 (Hacker News)"
-    },
-    {
-      "id": "s-f0f613eba3",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "AIで楽をするつもりが、374プロンプト。会社サイトを作ってわかった5つのこと｜片山良平＠Eldipa代表、paiza創業者",
-      "url": "https://note.com/rk611/n/n619b68f82580",
-      "publishedAt": "2026-09-10T23:58:08.000Z",
-      "summary": "今回AIネイティブ体制で作ってみようということで、Claude Codeを使い、私とエンジニア1名の2人体制で約3週間で制作しました。デザイン案は11案、ヒーロー動画の比較は55本、デザイン制作を通じて投げたプロンプトは374本のデザイン制作でした。※エンジニア側の実装プロンプトは含みません。 「1プロンプトですごいサイ..."
     },
     {
       "id": "s-1cfd023ef8",
@@ -298,25 +388,7 @@
       "title": "AI Is Not Going to Kill My Love of Math",
       "url": "https://chillphysicsenjoyer.substack.com/p/ai-is-not-going-to-kill-my-love-of",
       "publishedAt": "2026-09-10T23:20:06.000Z",
-      "summary": "points=6 comments=3 (Hacker News)"
-    },
-    {
-      "id": "s-46d4769ef3",
-      "source": "ITmedia AI+",
-      "sourceType": "japanese",
-      "title": "Anthropic、AI悪用レポートを公開　中国AI企業の「蒸留」、各国政府の監視・世論操作、生物兵器につながり得る研究を列挙",
-      "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001390/",
-      "publishedAt": "2026-09-10T23:13:19.000Z",
-      "summary": "Anthropicは、自社AI「Claude」の悪用事例をまとめた脅威レポートを公開した。生物兵器の設計や国家機関による世論操作や反体制派監視、通常兵器開発への利用を検知、遮断したと発表。中国AI企業による組織的なモデル抽出（蒸留）の実態も報告し、危険な転用への警戒を強めている。"
-    },
-    {
-      "id": "s-3503354cfc",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "うっかり世界最強のWasmコンパイラを作ってしまった件 - Qiita",
-      "url": "https://qiita.com/kanryu/items/95147e22ed5ac542ba58",
-      "publishedAt": "2026-09-10T23:12:56.000Z",
-      "summary": "TCPの初期ウィンドウサイズ（MTU 1500バイト基準）なら、最初の1〜2パケットでブラウザへ完全に届きます。ネットワーク遅延は事実上ゼロ、V8などのエンジンによるJITコンパイルも一瞬で終わります。 動作デモはこんな感じです。ブラウザのDOMを操作するJavaScript側のコードも、WASM側のプログラムに一緒にかけてしまい..."
+      "summary": "points=7 comments=3 (Hacker News)"
     },
     {
       "id": "s-47255caa33",
@@ -328,24 +400,6 @@
       "summary": "points=6 comments=3 (Hacker News)"
     },
     {
-      "id": "s-9da9989ecc",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "Thelio Mira AI Linux Workstation: 192 GB GPU Memory",
-      "url": "https://system76.com/workstations/thelio-mira-ai",
-      "publishedAt": "2026-09-10T23:10:06.000Z",
-      "summary": "points=49 comments=27 (Hacker News)"
-    },
-    {
-      "id": "s-43200b8112",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "アンソロピックで抗議の退社、OpenAI社員も同調 　AI開発加速を懸念 - 日本経済新聞",
-      "url": "https://www.nikkei.com/article/DGXZQOGN10BT70Q6A910C2000000/",
-      "publishedAt": "2026-09-10T23:04:10.000Z",
-      "summary": "【シリコンバレー=山田遼太郎】米アンソロピックの研究者が高度な人工知能（AI）開発に突き進む自社の危険性に抗議して退社した。10日までに同社やオープンAIの社員に同調する声が広がり、ネット上で高度AI開発の是非について論争を巻き起こしている。アンソロピックのAI研究者、ジェイコブ・コクソン氏は8日に辞職した..."
-    },
-    {
       "id": "s-e7934176ec",
       "source": "ITmedia AI+",
       "sourceType": "japanese",
@@ -355,6 +409,15 @@
       "summary": "業務の約30％をAIエージェントに任せているNTTドコモソリューションズのIT運用部門。同部門が、AI活用に取り組む中で、日報や週報での「パワポ文書」を禁止したのはなぜか。一見、デジタル化に逆行するようにも見える施策の狙いを聞いた。"
     },
     {
+      "id": "s-4460739983",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「危険コマンド停止率、AIは89％、人間だと14％」　Claude Codeが「自動モード」をデフォルトにした理由",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/11/news018.html",
+      "publishedAt": "2026-09-10T23:00:00.000Z",
+      "summary": "Anthropicは「Claude Code」のデフォルトモードを、都度承認から「自動」に切り替える。1053人を対象にした対照実験では、危険なコマンドを検知した割合が人のレビューを大きく上回ったという。"
+    },
+    {
       "id": "s-6f53ad6620",
       "source": "Reddit r/LocalLLaMA",
       "sourceType": "reddit",
@@ -362,15 +425,6 @@
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcxxm8/artificial_analysis_is_not_broken_and_they_prove/",
       "publishedAt": "2026-09-10T22:26:51.000Z",
       "summary": "Like many of you, I have seen many posts and tweets in the last weeks complaining about Artificial Analysis being &quot;broken&quot;, &quot;meaningless&quot;, and &quot;bought out.&quot; People who say this have done no research and know very little about how benchmarks work and what they measure. Most people only care about Artificial Analysis Intelligence Index. This is a weighted aggregate benc"
-    },
-    {
-      "id": "s-5f24481fe2",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "ハエの「脳を含む全神経」を丸ごと配線図化--マリオやDOOM、クルマを動かす実験も",
-      "url": "https://japan.cnet.com/article/35252506/",
-      "publishedAt": "2026-09-10T22:19:55.000Z",
-      "summary": "ハエの神経回路をコンピューター上で動かし、ゲームやクルマを操作させる実験が相次いでいる。背景にあるのが、ショウジョウバエの神経細胞と、そのつながりをほぼ丸ごと記録した「コネクトーム」だ。 米Howard Hughes Medical Institute（HHMI）のJanelia Research Campusを中心に、Google Research、英University of C..."
     },
     {
       "id": "s-984a46985f",
@@ -407,15 +461,6 @@
       "url": "https://techcrunch.com/2026/09/10/mark-wahlberg-is-coming-to-techcrunch-disrupt-2026/",
       "publishedAt": "2026-09-10T21:35:00.000Z",
       "summary": "Mark Wahlberg joins Bruce K. Lee at Disrupt to discuss investing, entrepreneurship, healthcare, wellness and building businesses."
-    },
-    {
-      "id": "s-ec8c7c8ce3",
-      "source": "Reddit r/LocalLLaMA",
-      "sourceType": "reddit",
-      "title": "Faster than Light in Air: 8-22 tg/s Qwen3.8-Flash-Next (Q4/Q4ish) on a 32GB M4 MacBook Air",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcwith/faster_than_light_in_air_822_tgs_qwen38flashnext/",
-      "publishedAt": "2026-09-10T21:31:20.000Z",
-      "summary": "I believe I may currently hold the record for memory constrained inference for Qwen3.8–Flash-Next on Apple Silicon — needing only about 21GB of allocations. Introducing Cherenkov , an inference engine for Apple Silicon combining predictive expert streaming with optional mixed-precision execution. It works by keeping a bounded working set of experts in unified memory, rather than loading the entire"
     },
     {
       "id": "s-1a89e65b75",
@@ -553,33 +598,6 @@
       "summary": "It's the hot new thing in tech, and it's where all the jobs are. Students who don't learn to use it fall behind. And to help them catch up in time, its creators are graciously providing the resources and curriculum for learning it, often pro bono. That's the narrative AI companies are pitching schools on […]"
     },
     {
-      "id": "s-348626d9ce",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "Countering misuse of AI: September 2026 / Anthropic",
-      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "publishedAt": "2026-09-10T19:40:09.000Z",
-      "summary": "Over the past eight months, our Threat Intelligence team identified and disrupted operations in which threat actors tried to use Claude for malicious activity. In this report, we share case studies from those operations and describe how malicious use of Claude has evolved since our previous threa..."
-    },
-    {
-      "id": "s-09880f9b54",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "iPhone固定客頼み　全機種で値上げ、供給網支配に陰り - 日本経済新聞",
-      "url": "https://www.nikkei.com/article/DGKKZO98708530R10C26A9MM8000/",
-      "publishedAt": "2026-09-10T19:32:05.000Z",
-      "summary": "【シリコンバレー=伴正春】米アップルは9日、日本向けでは36万円台の折りたたみ型のiPhoneを発表し、全機種で前モデルより値上げした。半導体メモリーなどのコストが膨らむ中での高価格シフトは、固定客頼みの部分が大きい。供給網（サプライチェーン）支配には陰りが見える。（関連記事ビジネス1面に）「考え抜かれたデ..."
-    },
-    {
-      "id": "s-e0bea100c9",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "Native is now the future of mobile at Shopify (2026) - Shopify",
-      "url": "https://shopify.engineering/back-to-native",
-      "publishedAt": "2026-09-10T19:08:31.000Z",
-      "summary": "Native is now the future of mobile at ShopifyCoding agents changed what it costs to build mobile apps twice. Here’s why Shopify is moving from React Native back to Swift and Kotlin. We decided to go all-in on React Native back in 2020, and that bet has been extremely successful. We saved a ton of..."
-    },
-    {
       "id": "s-ac9df35690",
       "source": "Zenn (AI トピック)",
       "sourceType": "japanese",
@@ -598,8 +616,17 @@
       "summary": "「まだ確認できていません」と「確認したら動きませんでした」。どちらも完了ではありませんが、次に頼む仕事は違います。 前者に必要なのは確認です。後者には、失敗した箇所の修正を頼みます。この二つを同じ「確認待ち」に入れると、直す必要があるものに、もう一度確認だけを頼んでしまいます。 AIに開発を任せるときも、ここを分けておくと依頼が短くなるはずです。大きな管理システムの話ではありません。完了報告に、結果を一行足すところから始められます。 作業が終わったことと、要求を満たしたこと たとえば、CSVを読み込んで集計する小さなツールを頼んだとします。以下は説明用の架空の例です。 担当から「実装..."
     },
     {
+      "id": "s-6c6d3bf879",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "GPU-CFR: 80x Faster Counterfactual Regret Minimization by Compiling the Game to Static Dataflow and CUDA Graph Replay",
+      "url": "https://arxiv.org/abs/2609.11923v1",
+      "publishedAt": "2026-09-10T17:58:14.000Z",
+      "summary": "Counterfactual regret minimization (CFR) is one of the few large numerical workloads that still runs faster on CPUs than on GPUs. Each iteration sweeps a game tree with up to billions of states in millions of small, interdependent gather and scatter steps issued through a generic tree interface. On a GPU every kernel finishes in microseconds, so kernel launches and framework dispatch dominate the "
+    },
+    {
       "id": "s-27dad2126f",
-      "source": "arXiv cs.LG",
+      "source": "arXiv cs.AI",
       "sourceType": "arxiv",
       "title": "General Quantification of Covariate and Concept Shifts",
       "url": "https://arxiv.org/abs/2609.11918v1",
@@ -616,8 +643,17 @@
       "summary": "As the supply of human-written text is exhausted, it has become standard practice to repeat language model training data. Prior work has studied data repetition for densely activated Transformers, but the effects of data repetition remains largely unexplored for recently dominant sparse architectures such as Mixture-of-Experts (MoE), despite their increased compute efficiency. We vary data repetit"
     },
     {
+      "id": "s-8f23ab748d",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Can Edge-Deployable Vision-Language Models Identify Species?",
+      "url": "https://arxiv.org/abs/2609.11916v1",
+      "publishedAt": "2026-09-10T17:57:32.000Z",
+      "summary": "Camera traps often run in the field on edge hardware with limited or no connectivity, making small, locally-deployable vision-language models (VLMs) -- not frontier-scale ones -- the practically relevant class to evaluate for species identification. We test whether models in this deployment-relevant 2--8B range carry genuine taxonomic knowledge, evaluating four such VLMs (Qwen3-VL 2B/4B/8B, Gemma3"
+    },
+    {
       "id": "s-cc073c4c99",
-      "source": "arXiv cs.LG",
+      "source": "arXiv cs.AI",
       "sourceType": "arxiv",
       "title": "Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact",
       "url": "https://arxiv.org/abs/2609.11915v1",
@@ -632,6 +668,15 @@
       "url": "https://arxiv.org/abs/2609.11913v1",
       "publishedAt": "2026-09-10T17:57:19.000Z",
       "summary": "Out-of-distribution length generalization, namely to extrapolate a task from short to longer context, has been studied intensively for transformers. Here we focus on distance generalization, which probes performance when inter-token distances are changed between training and inference, while keeping a fixed context length. We construct two synthetic delay copy tasks, both involving finite distance"
+    },
+    {
+      "id": "s-cef0dd903c",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Artificial Id: Drive and Persistent Alignment in Agentic AI",
+      "url": "https://arxiv.org/abs/2609.11911v1",
+      "publishedAt": "2026-09-10T17:56:41.000Z",
+      "summary": "Agentic AI is moving from bounded task execution toward systems that retain consequential state, continue operating and adapt across task boundaries. That shift creates a control problem that current harnesses largely solve by hand: objectives, retries, verification, stopping rules and other behavioral transitions are specified externally. We propose an artificial id, an adaptive internal drive fo"
     },
     {
       "id": "s-4bb546fcdf",
@@ -662,7 +707,7 @@
     },
     {
       "id": "s-8f7b31a9d9",
-      "source": "arXiv cs.CL",
+      "source": "arXiv cs.AI",
       "sourceType": "arxiv",
       "title": "MindTopo: Can Foundation Models Reason in Topological Space?",
       "url": "https://arxiv.org/abs/2609.11900v1",
@@ -707,7 +752,7 @@
     },
     {
       "id": "s-506eca95ae",
-      "source": "arXiv cs.CL",
+      "source": "arXiv cs.AI",
       "sourceType": "arxiv",
       "title": "Domain-Specific Hallucination Detection in Large Language Models",
       "url": "https://arxiv.org/abs/2609.11878v1",
@@ -716,7 +761,7 @@
     },
     {
       "id": "s-155962bf6e",
-      "source": "arXiv cs.CL",
+      "source": "arXiv cs.AI",
       "sourceType": "arxiv",
       "title": "Biology-in-the-loop: Amortized Adaptive Hit Discovery in CRISPR Screens",
       "url": "https://arxiv.org/abs/2609.11877v1",
@@ -733,15 +778,6 @@
       "summary": "Pocket FM uses AI to produce 99% of its new content, helping make content production about 80 times cheaper."
     },
     {
-      "id": "s-59e23087cf",
-      "source": "arXiv cs.CL",
-      "sourceType": "arxiv",
-      "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
-      "url": "https://arxiv.org/abs/2609.11873v1",
-      "publishedAt": "2026-09-10T17:44:23.000Z",
-      "summary": "Recursive self-improvement (RSI) enables AI systems to turn experience and feedback into persistent changes that improve both their capabilities and the process of future improvement. We first use the Headroom-Closed Index (HCI) to reveal the problems of existing LLMs, then introduce the RSI concept and its development roadmap: from improvement-execution autonomy, improvement-strategy autonomy, ex"
-    },
-    {
       "id": "s-94c94f8bab",
       "source": "arXiv cs.CL",
       "sourceType": "arxiv",
@@ -749,6 +785,24 @@
       "url": "https://arxiv.org/abs/2609.11870v1",
       "publishedAt": "2026-09-10T17:43:09.000Z",
       "summary": "A language model normally begins training with random word embeddings: whatever 'banana' means must be learned from training corpora. I implement St. Augustine's picture of word learning, meaning by ostension, for a small masked language model (DeBERTa) trained on 10M words: before training, visually grounded tokens receive embeddings derived from the image regions they label; other tokens start r"
+    },
+    {
+      "id": "s-40cf8fb0e7",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Epistemic orientation predicts legislative effectiveness among members of the US Congress",
+      "url": "https://arxiv.org/abs/2609.11865v1",
+      "publishedAt": "2026-09-10T17:41:54.000Z",
+      "summary": "Truth and evidence-based communication provide important foundations for democratic governance, accountability, and collective decision-making. Prior work shows that evidence-oriented language in US congressional floor speeches has declined since the mid-1970s, alongside broader changes in legislative productivity and polarization. This study shifts the analysis from congressional sessions to indi"
+    },
+    {
+      "id": "s-db9e6b13e8",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "RetroThinker: Enabling Retrospective Thinking in Speech LLMs",
+      "url": "https://arxiv.org/abs/2609.11864v1",
+      "publishedAt": "2026-09-10T17:41:53.000Z",
+      "summary": "Speech large language models (SpeechLLMs) offer reduced latency and retain paralinguistic nuances that are typically lost in cascaded automatic speech recognition (ASR) and text-based LM architectures. However, they continue to lag behind text-only LLMs on complex reasoning tasks, while real-time spoken interaction imposes strict latency constraints. Although prior works employ Chain-of-Thought (C"
     },
     {
       "id": "s-5974cf7ffd",
@@ -830,78 +884,6 @@
       "url": "https://techcrunch.com/2026/09/10/ai-agents-are-flooding-public-services-with-new-requests/",
       "publishedAt": "2026-09-10T14:53:50.000Z",
       "summary": "“The vast majority of cases we find are people who are entitled to claim for something, claiming for that thing,” the researcher told TechCrunch."
-    },
-    {
-      "id": "s-81b3081a8e",
-      "source": "arXiv cs.AI",
-      "sourceType": "arxiv",
-      "title": "ZipCodec: Ultra-Low-Frame-Rate Streaming Speech Coding",
-      "url": "https://arxiv.org/abs/2609.11642v1",
-      "publishedAt": "2026-09-10T14:49:54.000Z",
-      "summary": "Neural audio codecs are a fundamental component of modern speech generation systems. While recent codecs achieve increasingly low bitrates, reducing frame rate remains challenging, as each token must preserve more information while maintaining reconstruction quality. We present ZipCodec, a streaming neural speech codec operating at 6.25 Hz and 0.80 kbps with a theoretical latency of 160 ms. Our ap"
-    },
-    {
-      "id": "s-4bf1d725a2",
-      "source": "arXiv cs.AI",
-      "sourceType": "arxiv",
-      "title": "LoaDiff: Conditional Generation of Electricity Consumption Time Series for Energy Analytics",
-      "url": "https://arxiv.org/abs/2609.11639v1",
-      "publishedAt": "2026-09-10T14:46:30.000Z",
-      "summary": "The energy transition is reshaping residential electricity consumption through the increasing adoption of distributed generation, electrified appliances, and demand-response programs. Understanding these evolving behaviors requires access to granular smart-meter data for applications such as load forecasting, appliance detection, and demand-side flexibility analysis. However, such data are subject"
-    },
-    {
-      "id": "s-df55b0268f",
-      "source": "arXiv cs.AI",
-      "sourceType": "arxiv",
-      "title": "MAPLE: Memory-Augmented Planning with Language and Evolution",
-      "url": "https://arxiv.org/abs/2609.11636v1",
-      "publishedAt": "2026-09-10T14:44:50.000Z",
-      "summary": "Domain practitioners understand their business constraints but may lack operations-research expertise or dedicated support. LLM-based optimization agents translate natural-language requirements into models or solver programs that established optimization tools can execute. This progress makes optimization more accessible, but real-world operations are dynamic: changing demand, resources, and prior"
-    },
-    {
-      "id": "s-307807d815",
-      "source": "arXiv cs.AI",
-      "sourceType": "arxiv",
-      "title": "Physics-Informed Neural Networks to Infer the Perpendicular Energy Conductivity in the Scrape-Off Layer of Stellarator Devices",
-      "url": "https://arxiv.org/abs/2609.11628v1",
-      "publishedAt": "2026-09-10T14:40:32.000Z",
-      "summary": "In this work, we develop an inverse Physics-Informed Neural Network (PINN) framework to infer the dependence of the scrape-off layer (SOL) perpendicular heat conductivity on plasma density and temperature, $κ_\\perp(n,T)$. The method combines radial profile measurements of electron density and temperature with the residual of a reduced one-dimensional SOL transport equation, so that the inferred co"
-    },
-    {
-      "id": "s-83547cadf3",
-      "source": "arXiv cs.AI",
-      "sourceType": "arxiv",
-      "title": "Distributed Optimization of Modular Production Systems using Model-based Reinforcement Learning with Inverse Models",
-      "url": "https://arxiv.org/abs/2609.11615v1",
-      "publishedAt": "2026-09-10T14:30:52.000Z",
-      "summary": "This paper presents a novel approach for data-driven self-learning control of highly flexible, modular manufacturing systems. Specifically, we employ a novel framework for model-based reinforcement learning which introduces approximate inverse process models within the training of reinforcement policies. This approach disentangles the learning of actuation dynamics and the dynamics in state space,"
-    },
-    {
-      "id": "s-e2b9a8da8b",
-      "source": "arXiv cs.AI",
-      "sourceType": "arxiv",
-      "title": "Making Alternative Data Work: Context-Augmented LLMs for Financial Forecasting",
-      "url": "https://arxiv.org/abs/2609.11607v1",
-      "publishedAt": "2026-09-10T14:27:25.000Z",
-      "summary": "When forecasting a firm's future financial performance, alternative data - data collected from non-traditional sources such as consumer transactions, web traffic, and prediction markets - can provide timely signals about firms' operating activities and broader market conditions. These signals may reveal information that is not captured by traditional public sources and can therefore provide comple"
-    },
-    {
-      "id": "s-6486a96c7d",
-      "source": "arXiv cs.AI",
-      "sourceType": "arxiv",
-      "title": "Learn the Solid, Not the File: Canonical Inputs for Neural Networks on CAD Boundary Representations",
-      "url": "https://arxiv.org/abs/2609.11573v1",
-      "publishedAt": "2026-09-10T14:08:03.000Z",
-      "summary": "Boundary representation (B-rep) is the standard format used by modern CAD systems for parametric 3D models. It turns out, the exact same solid can be represented by different B-reps: for example, two engineers using different operations, a geometry kernel rebuilding the file, and an export setting repartitioning faces will lead to different B-reps even though the underlying solid remains the same."
-    },
-    {
-      "id": "s-e8b08cbb8d",
-      "source": "arXiv cs.AI",
-      "sourceType": "arxiv",
-      "title": "Enabling Knowledge Graph Understanding at Scale with the EXplore Your Graphs ENgine (EXYGEN)",
-      "url": "https://arxiv.org/abs/2609.11569v1",
-      "publishedAt": "2026-09-10T14:03:32.000Z",
-      "summary": "We present EXYGEN (EXplore Your Graphs ENgine), a framework for knowledge graph (KG) understanding that enables conversational access to KGs at scale. We address two questions in sequence. First, how effectively can LLMs perform text-to-SPARQL generation given only automatically derived structured metadata and small graph samples, rather than task-specific fine-tuning? We integrate VoID descriptio"
     },
     {
       "id": "s-81e9f49889",

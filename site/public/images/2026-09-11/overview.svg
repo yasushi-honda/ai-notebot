@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260">
-  <rect width="1200" height="260" fill="#f8fafc" />
+  <rect width="1200" height="260" fill="#fafaf9" />
     <g>
       <rect x="24" y="24" width="273" height="212" rx="16"
         fill="#eef2ff" stroke="#c7d2fe" stroke-width="2" />
@@ -8,7 +8,7 @@
         font-family="sans-serif" font-size="18" font-weight="700" fill="#ffffff">1</text>
       <text x="160.5" y="114" text-anchor="middle"
         font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="20" font-weight="700"
-        fill="#0f172a"><tspan x="160.5" dy="0">AIエージェントの</tspan><tspan x="160.5" dy="1.5em">軌道設計とプラクテ</tspan><tspan x="160.5" dy="1.5em">ィスの変革</tspan></text>
+        fill="#0f172a"><tspan x="160.5" dy="0">AIコーディングエ</tspan><tspan x="160.5" dy="1.5em">ージェントの実践と</tspan><tspan x="160.5" dy="1.5em">変革</tspan></text>
       <rect x="44" y="222" width="233" height="4" rx="2"
         fill="#4f46e5" />
     </g>
@@ -20,7 +20,7 @@
         font-family="sans-serif" font-size="18" font-weight="700" fill="#ffffff">2</text>
       <text x="453.5" y="114" text-anchor="middle"
         font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="20" font-weight="700"
-        fill="#0f172a"><tspan x="453.5" dy="0">OpenAIの新展</tspan><tspan x="453.5" dy="1.5em">開と高度モデルの需</tspan><tspan x="453.5" dy="1.5em">要集中</tspan></text>
+        fill="#0f172a"><tspan x="453.5" dy="0">OpenAIの新展</tspan><tspan x="453.5" dy="1.5em">開と新モデルを巡る</tspan><tspan x="453.5" dy="1.5em">動向</tspan></text>
       <rect x="337" y="222" width="233" height="4" rx="2"
         fill="#0284c7" />
     </g>
@@ -32,7 +32,7 @@
         font-family="sans-serif" font-size="18" font-weight="700" fill="#ffffff">3</text>
       <text x="746.5" y="114" text-anchor="middle"
         font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="20" font-weight="700"
-        fill="#0f172a"><tspan x="746.5" dy="0">Anthropic</tspan><tspan x="746.5" dy="1.5em">の脅威レポートとオ</tspan><tspan x="746.5" dy="1.5em">ープンモデルの壁</tspan></text>
+        fill="#0f172a"><tspan x="746.5" dy="0">政府システムのセキ</tspan><tspan x="746.5" dy="1.5em">ュリティと個人情報</tspan><tspan x="746.5" dy="1.5em">漏えい</tspan></text>
       <rect x="630" y="222" width="233" height="4" rx="2"
         fill="#059669" />
     </g>
@@ -44,7 +44,7 @@
         font-family="sans-serif" font-size="18" font-weight="700" fill="#ffffff">4</text>
       <text x="1039.5" y="114" text-anchor="middle"
         font-family="'Hiragino Sans','Noto Sans JP',sans-serif" font-size="20" font-weight="700"
-        fill="#0f172a"><tspan x="1039.5" dy="0">ローカルLLMとエ</tspan><tspan x="1039.5" dy="1.5em">ッジAIの進化</tspan></text>
+        fill="#0f172a"><tspan x="1039.5" dy="0">ローカルAI・自律</tspan><tspan x="1039.5" dy="1.5em">型エージェントのオ</tspan><tspan x="1039.5" dy="1.5em">ープンソース展開</tspan></text>
       <rect x="923" y="222" width="233" height="4" rx="2"
         fill="#d97706" />
     </g>

@@ -1,17 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 740" width="480" height="740">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 616" width="480" height="616">
   <defs>
     <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#0d9488" />
     </marker>
   </defs>
-  <rect width="480" height="740" fill="#ffffff" stroke="#e2e8f0" />
+  <rect width="480" height="616" fill="#ffffff" stroke="#e2e8f0" />
     <g>
       <circle cx="40" cy="72" r="16" fill="#0d9488" />
       <text x="40" y="72" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">1</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="48">GoogleスプレッドシートやG</tspan><tspan x="72" y="72">oogleドキュメントを開き、日</tspan><tspan x="72" y="96">々の申し送りやケア内容のメモを…</tspan></text>
+        font-weight="600" fill="#1e293b"><tspan x="72" y="48">施設内で職員がChatGPTやC</tspan><tspan x="72" y="72">laudeなどの汎用AIをどのよ</tspan><tspan x="72" y="96">うに使用しているか現状を把握する</tspan></text>
     </g><path d="M 40 124 L 40 142"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
@@ -20,7 +20,7 @@
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">2</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="172">入力したメモの中から個人情報を完</tspan><tspan x="72" y="196">全に削除し、匿名化した状態のテキ</tspan><tspan x="72" y="220">ストを作成する</tspan></text>
+        font-weight="600" fill="#1e293b"><tspan x="72" y="172">要配慮個人情報を無料のAIに入力</tspan><tspan x="72" y="196">しないための基本的な禁止事項を明</tspan><tspan x="72" y="220">確にする</tspan></text>
     </g><path d="M 40 248 L 40 266"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
@@ -29,33 +29,24 @@
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">3</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="296">ChatGPTやClaudeなど</tspan><tspan x="72" y="320">の生成AIツールに匿名化したテキ</tspan><tspan x="72" y="344">ストを貼り付ける</tspan></text>
+        font-weight="600" fill="#1e293b"><tspan x="72" y="296">厚生労働分野における個人情報の適</tspan><tspan x="72" y="320">切な取扱いのためのガイドライン等</tspan><tspan x="72" y="344">を参照し安全性の基準を確認する</tspan></text>
     </g><path d="M 40 372 L 40 390"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <circle cx="40" cy="444" r="16" fill="#0d9488" />
-      <text x="40" y="444" text-anchor="middle" dominant-baseline="central"
+      <circle cx="40" cy="432" r="16" fill="#0d9488" />
+      <text x="40" y="432" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">4</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="420">生成AIに対して「以下のメモを介</tspan><tspan x="72" y="444">護記録のフォーマットに沿って簡潔</tspan><tspan x="72" y="468">な文章にまとめてください」と指…</tspan></text>
-    </g><path d="M 40 496 L 40 514"
+        font-weight="600" fill="#1e293b"><tspan x="72" y="420">専門家でなくても運用できる1枚の</tspan><tspan x="72" y="444">AI利用ルールの雛形を作成する</tspan></text>
+    </g><path d="M 40 472 L 40 490"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <circle cx="40" cy="568" r="16" fill="#0d9488" />
-      <text x="40" y="568" text-anchor="middle" dominant-baseline="central"
+      <circle cx="40" cy="544" r="16" fill="#0d9488" />
+      <text x="40" y="544" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">5</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="544">生成された文章を確認し、内容に誤</tspan><tspan x="72" y="568">りや不足がないかを人間が必ず最終</tspan><tspan x="72" y="592">確認する</tspan></text>
-    </g><path d="M 40 620 L 40 638"
-              stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
-    <g>
-      <circle cx="40" cy="680" r="16" fill="#0d9488" />
-      <text x="40" y="680" text-anchor="middle" dominant-baseline="central"
-        font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="700" fill="#ffffff">6</text>
-      <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="668">修正した文章を正式な介護記録シス</tspan><tspan x="72" y="692">テムや帳票に転記する</tspan></text>
+        font-weight="600" fill="#1e293b"><tspan x="72" y="520">作成したルールを職員全体に周知し</tspan><tspan x="72" y="544">実際の運用状況に合わせて段階的に</tspan><tspan x="72" y="568">内容を改善する</tspan></text>
     </g>
 </svg>
