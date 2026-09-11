@@ -60,21 +60,45 @@ const CARE_SCHEMA = {
     bodyMarkdown: {
       type: 'string',
       description:
-        '本文（Markdown）。必ず次の2つの `##` 見出しセクションだけで構成すること。' +
+        '本文（Markdown）。必ず次の3つの `##` 見出しセクションだけで構成すること。' +
         '見出し行自体には脚注 [^s-<id>] を絶対に付けない（見出しはラベルであり主張ではないため。' +
         '例: `## 手順` は正しいが `## 手順[^s-xxx]` は誤り）。\n' +
         '1. `## なぜ手間がかかるのか`（見出しの文言はこの通り、脚注なし）に続けて、背景説明を2〜4文\n' +
         '2. `## 手順`（見出しの文言はこの通り、脚注なし）という見出しに続けて、番号付きリスト' +
         '(1. 2. 3.)で具体的な手順を3〜6ステップ。' +
         '各ステップは1文（句点で終える）のみとし、複数文を1ステップに詰め込まない\n' +
-        '導入・手順のすべての文（見出し行を除く）に、文末で [^s-<id>] 形式の脚注を付けること。' +
-        '与えられたid以外は絶対に使わない。' +
+        '3. `## 使えるプロンプト例`（見出しの文言はこの通り、脚注なし）という見出しに続けて、' +
+        '直前の「## 手順」で紹介した方法で実際に使える、具体的でそのままコピペできるプロンプト文を' +
+        '1つ、フェンス付きコードブロック（```で始まり```で終わる）で提示する。' +
+        'プロンプト文中には、実在する個人を特定できる情報を記入させる欄を絶対に作らない。' +
+        '「利用者名」「氏名」「お名前」「患者名」「施設名」「事業所名」「住所」「電話番号」' +
+        '「携帯電話」「メールアドレス」「生年月日」「誕生日」「保険証番号」「被保険者番号」' +
+        '「マイナンバー」「個人番号」「緊急連絡先」等のラベルは、たとえ「（匿名化済み）」と' +
+        '注記しても使ってはならない（読み手が実際の個人情報を書き込んでしまう）。' +
+        '個人を特定する情報が必要な箇所は「ケースA」「利用者1」のような完全に匿名の識別子か、' +
+        '「〇〇」のような一般的な内容プレースホルダーのみを使う。' +
+        'サンプルのメモ本文は、具体的な時刻（「午前10時」等）・具体的な場所や活動名' +
+        '（「デイルームで輪投げ」等）・利用者固有の言動や要求（「〜したいと訴えた」等）・' +
+        '症状やバイタルの経過を、一切書かない。これらは施設名・日付・担当職員等の他の' +
+        '情報と組み合わさると個人が再識別されうる「準識別子」になるため、書いても良いのは' +
+        '「体調に大きな変化なし」「日中は落ち着いて過ごされた」のような、時刻・場所・' +
+        '固有名詞を一切含まない、1文程度のごく一般的な要約表現のみとする。' +
+        'さらに、プロンプト文の冒頭または末尾に、読み手への注意書きとして' +
+        '「実際のメモを入力する際は、所属先の生成AI利用ルールに従い、個人が特定されない' +
+        '範囲の情報にとどめてください」という趣旨の1文を必ず含める。' +
+        'このコードブロックの中身は出典に基づく主張ではないため脚注は不要\n' +
+        '導入・手順・コードブロック外の説明文のすべての文（見出し行を除く）に、文末で [^s-<id>] ' +
+        '形式の脚注を付けること。与えられたid以外は絶対に使わない。' +
         '1文に複数の出典がある場合は [^s-aaa][^s-bbb] のように連続で並べる（カンマ区切りで1つの角括弧に' +
         '詰め込むことは絶対にしない）。段落間には実際の改行を2つ連続で入れる（文字列としてのバックスラッシュエヌは書かない）。' +
         '絵文字・「いかがでしたか」「まとめると」「革命的」等の煽り文句・誇張表現は一切使わない。' +
         '実務マニュアルのような、簡潔で断定的な文体で書く。' +
         'Google Workspace・Gemini・ChatGPT・Claude等、一般に広く使われている汎用AIツールの' +
-        '具体的な使い方を中心に書き、特定の介護専用商用SaaS製品の宣伝にはしない。',
+        '具体的な使い方を中心に書き、特定の介護専用商用SaaS製品の宣伝にはしない。' +
+        '「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・ChatGPT・Claude・Google ' +
+        'Workspaceのうち少なくとも2系統に触れること（特定の1ツールだけに偏らない）。' +
+        '「## 手順」の中に、要配慮個人情報（利用者の氏名・心身の状況等）を扱う際の具体的な' +
+        '注意点（匿名化・仮名化の具体的なやり方、確認すべき社内ルール等）を最低1ステップに含める。',
     },
   },
   required: ['title', 'summary', 'targetServices', 'workArea', 'difficulty', 'bodyMarkdown'],
@@ -164,6 +188,23 @@ function buildPrompt(items, extraInstructions) {
     '- 手順で紹介する方法は、Google Workspace（スプレッドシート・ドキュメント・フォーム等）・',
     '  Gemini・ChatGPT・Claude（Claude Codeを含む）など、一般に広く使われている汎用AIツールを',
     '  使った具体的な操作を中心に構成すること。特定ベンダーの独自商用SaaS製品を勧める記事にはしない',
+    '- 「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・ChatGPT・Claude・Google',
+    '  Workspaceのうち少なくとも2系統に触れること。特定の1ツールだけに偏った記事にしない',
+    '- 「## 使えるプロンプト例」には、実際にコピペして使える具体的なプロンプト文を1つ、',
+    '  フェンス付きコードブロック（```）で提示すること。「利用者名」「氏名」「お名前」',
+    '  「患者名」「施設名」「事業所名」「住所」「電話番号」「携帯電話」「メールアドレス」',
+    '  「生年月日」「誕生日」「保険証番号」「被保険者番号」「マイナンバー」「個人番号」',
+    '  「緊急連絡先」等、実在の個人情報を記入させるラベルは「（匿名化済み）」と注記しても',
+    '  絶対に使わない。個人特定情報が必要な箇所は「ケースA」等の匿名の識別子か',
+    '  「〇〇」のような一般的な内容プレースホルダーのみを使う',
+    '- 「## 使えるプロンプト例」のサンプルメモ本文には、具体的な時刻・具体的な場所や',
+    '  活動名・利用者固有の言動や要求・症状やバイタルの経過を一切書かない。書いても',
+    '  良いのは「体調に大きな変化なし」「日中は落ち着いて過ごされた」のような、時刻・',
+    '  場所・固有名詞を含まないごく一般的な1文の要約表現のみ。またプロンプト文中に',
+    '  「実際のメモを入力する際は、所属先の生成AI利用ルールに従い、個人が特定されない',
+    '  範囲の情報にとどめてください」という趣旨の注意書きを必ず含める',
+    '- 「## 手順」の中に、要配慮個人情報（利用者の氏名・心身の状況等）を扱う際の具体的な',
+    '  注意点（匿名化・仮名化の具体的なやり方、確認すべき社内ルール等）を最低1ステップに含める',
     '- 出典に書かれていない事実・数値・効果を書かない（出典の範囲を超える推測や誇張は禁止）',
     '- 絵文字を一切使わない',
     '- 「いかがでしたか」「まとめると」「革命的」「劇的に」等のAI生成文章に典型的な煽り・締め',
@@ -271,6 +312,335 @@ export function mentionsGenericTool(bodyMarkdown) {
   return GENERIC_TOOL_KEYWORDS.some((kw) => bodyMarkdown.includes(kw));
 }
 
+// GENERIC_TOOL_KEYWORDSをツール系統ごとにグルーピングしたもの。Google Workspaceの
+// 個別プロダクト名（スプレッドシート・ドキュメント等）はどれも同じ「Google Workspace系」の
+// 言及として扱う。ユーザーから「Claudeも有ると良い」との指摘（その日たまたま出典が
+// ChatGPTしか触れていないと本文もChatGPT寄りになりがち）を受け、mentionsGenericTool
+// （1つでも言及があればOK）だけでは不十分と判断し、複数系統への言及を要求する。
+const GENERIC_TOOL_FAMILIES = {
+  'Google Workspace系': [
+    'Google Workspace',
+    'Googleスプレッドシート',
+    'Google スプレッドシート',
+    'スプレッドシート',
+    'Googleドキュメント',
+    'Google ドキュメント',
+    'Googleフォーム',
+    'Google フォーム',
+    'Google Meet',
+    'Gmail',
+    'Googleカレンダー',
+    'Google カレンダー',
+  ],
+  Gemini: ['Gemini'],
+  ChatGPT: ['ChatGPT'],
+  Claude: ['Claude'],
+};
+
+/**
+ * bodyMarkdown の「## 手順」と「## 使えるプロンプト例」を通じて GENERIC_TOOL_FAMILIES の
+ * うち2系統以上に言及しているかを検査する。特定の1ツールだけに偏った記事になっていないかの
+ * 機械的ゲート。bodyMarkdown全体ではなくこの2セクションに限定する: 要件は「## 手順」と
+ * 「## 使えるプロンプト例」を通じた言及であり、それ以外のセクション（背景説明や想定外の
+ * 補足見出し）での言及だけで満たしてしまうと要件を満たさない記事が通ってしまう
+ * （codex reviewで指摘・修正）。
+ */
+export function mentionsMultipleGenericToolFamilies(bodyMarkdown) {
+  const targetText = [extractSectionText(bodyMarkdown, '手順'), extractSectionText(bodyMarkdown, '使えるプロンプト例')]
+    .filter((s) => s !== null)
+    .join('\n');
+  const mentionedFamilies = Object.entries(GENERIC_TOOL_FAMILIES).filter(([, keywords]) =>
+    keywords.some((kw) => targetText.includes(kw)),
+  );
+  return mentionedFamilies.length >= 2;
+}
+
+// 要配慮個人情報の取り扱いに関する具体的な注意点を示すキーワード。ユーザーから
+// 「個人情報や要配慮個人情報などに対応する場合のベストプラクティスも部分的に有ると親切」
+// との指摘を受け、「## 手順」に抽象的な「匿名化する」の1語で済まされていないかの
+// 最低限の機械的ゲートとする（具体性そのものは目視確認・プロンプト指示側で担保する）。
+const PERSONAL_INFO_KEYWORDS = ['匿名化', '仮名化', 'マスキング', '個人情報', '要配慮個人情報'];
+
+/**
+ * bodyMarkdown中の指定した見出し（例: "使えるプロンプト例"）以降で、フェンス付き
+ * コードブロックの外側にある最初の `## ` 見出し行の開始位置を返す（無ければ null）。
+ * 「## 出力形式」のようなプロンプト文中の見出し風の行を本物の次セクション境界と
+ * 誤認しないよう、行単位でフェンスの開閉状態を追跡しながら判定する
+ * （codex reviewで指摘・修正: 当初は単純な `/^## .+$/m` 検索で、コードブロック内の
+ * 見出し風の行を境界と誤検出し、正当な生成結果が検証NGとなり再生成を使い果たす
+ * 可用性上の実害があった）。
+ */
+function findNextHeadingOutsideFence(text) {
+  const lines = text.split('\n');
+  let offset = 0;
+  let fenceChar = null;
+  let fenceLen = 0;
+  for (const line of lines) {
+    if (fenceChar === null) {
+      const openMatch = line.match(/^ {0,3}(`{3,}|~{3,})/);
+      if (openMatch) {
+        fenceChar = openMatch[1][0];
+        fenceLen = openMatch[1].length;
+      } else if (/^## .+$/.test(line)) {
+        return offset;
+      }
+    } else {
+      const closePattern = new RegExp(`^ {0,3}[${fenceChar}]{${fenceLen},}[ \t]*$`);
+      if (closePattern.test(line)) {
+        fenceChar = null;
+        fenceLen = 0;
+      }
+    }
+    offset += line.length + 1; // +1 は split で失われた改行文字の分
+  }
+  return null;
+}
+
+/**
+ * bodyMarkdown中の指定した見出し（例: "手順"）のセクション本文（見出し行自体は含まない）を
+ * 切り出す。次セクションの境界は findNextHeadingOutsideFence で判定する。
+ * 見出しが存在しない場合は null を返す。見出し行は完全一致のみを対象にする（前方一致だと
+ * 「## 使えるプロンプト例（補足）」のような紛らわしい別見出しにマッチしてしまい、モデルが
+ * 規定の見出しを空にしたままこの偽装見出しに安全な内容を書いた場合、そちらを検証して
+ * 「合格」としてしまう。生成ルールが要求する見出し文言そのものと厳密に一致させることで、
+ * 規定の見出し自体が実在することを保証する。codex reviewで指摘・修正）。
+ */
+export function extractSectionText(bodyMarkdown, headingText) {
+  const headingMatch = bodyMarkdown.match(new RegExp(`^## ${headingText}\\s*$`, 'm'));
+  if (!headingMatch) return null;
+  const rest = bodyMarkdown.slice(headingMatch.index + headingMatch[0].length);
+  const nextHeadingIndex = findNextHeadingOutsideFence(rest);
+  return nextHeadingIndex === null ? rest : rest.slice(0, nextHeadingIndex);
+}
+
+/**
+ * bodyMarkdown の「## 手順」の番号付きステップの少なくとも1つに、要配慮個人情報の
+ * 取り扱いに触れているかを検査する。「## 手順」セクションの地の文全体を対象にすると、
+ * 番号付きリストの前後に紛れ込んだ説明文や、モデルが追加した想定外のコードブロック内の
+ * 「個人情報」という語だけで満たせてしまう（生成ルールで要求しているのは「番号付き
+ * ステップの中に」含めることであり、それ以外の場所での言及では要件を満たさない）ため、
+ * extractSteps()で抽出した実際のステップ単位で判定する（codex reviewで指摘・修正）。
+ */
+export function mentionsPersonalInfoHandling(bodyMarkdown) {
+  const steps = extractSteps(bodyMarkdown);
+  return steps.some((step) => PERSONAL_INFO_KEYWORDS.some((kw) => step.includes(kw)));
+}
+
+/**
+ * 文字列中にフェンス付きコードブロック（``` ... ``` / ~~~ ... ~~~）の「開始と終了の対」が
+ * 実際に存在するかを検査する。scripts/lib/citation-gate.mjs の stripFencedCodeBlocks と
+ * 同じ行単位の状態機械で判定する（開始フェンスのみを許容すると、モデルが閉じフェンスを
+ * 書き忘れた場合に以降の行（脚注定義を含む）がMarkdown上すべてコードブロックの一部として
+ * 扱われてしまい、脚注リンクが壊れる実害が生じるが、stripCodeSpans()が該当区間を丸ごと
+ * 除去するため脚注ゲート自体は素通りしてしまう。codex reviewで指摘・修正）。
+ * 1つ目のフェンスが正しく閉じていても、その後に2つ目の閉じられていないフェンスが
+ * 続く場合は同じ実害が起きるため、「区間内で少なくとも1組は開始・終了が揃い、かつ
+ * 区間の終端でフェンスが開いたままになっていない」ことの両方を要求する
+ * （codex reviewで指摘・修正: 最初の1組が見つかった時点で早期returnしていたため、
+ * 後続の閉じ忘れフェンスを見逃していた）。
+ */
+function containsClosedFencedCodeBlock(text) {
+  const lines = text.split('\n');
+  let fenceChar = null;
+  let fenceLen = 0;
+  let hasClosedPair = false;
+  for (const line of lines) {
+    if (fenceChar === null) {
+      const openMatch = line.match(/^ {0,3}(`{3,}|~{3,})/);
+      if (openMatch) {
+        fenceChar = openMatch[1][0];
+        fenceLen = openMatch[1].length;
+      }
+      continue;
+    }
+    const closePattern = new RegExp(`^ {0,3}[${fenceChar}]{${fenceLen},}[ \t]*$`);
+    if (closePattern.test(line)) {
+      hasClosedPair = true;
+      fenceChar = null;
+      fenceLen = 0;
+    }
+  }
+  return hasClosedPair && fenceChar === null;
+}
+
+/**
+ * bodyMarkdown中の指定した見出し（例: "使えるプロンプト例"）のセクション内に、
+ * 開始・終了が揃ったフェンス付きコードブロックが実際に1つ以上存在するかを検査する。
+ */
+export function sectionContainsFencedCodeBlock(bodyMarkdown, headingText) {
+  const section = extractSectionText(bodyMarkdown, headingText);
+  if (section === null) return false;
+  return containsClosedFencedCodeBlock(section);
+}
+
+/**
+ * bodyMarkdown「全体」の末尾で、開始したフェンス付きコードブロックが閉じられないまま
+ * 終わっていないかを検査する（閉じられていなければtrueを返す＝問題あり）。
+ * `sectionContainsFencedCodeBlock`は「## 使えるプロンプト例」セクションに限定した
+ * チェックのため、そのセクションの後にモデルが想定外の見出しをもう1つ追加し、
+ * そこで閉じ忘れフェンスを書いた場合はすり抜けてしまう（`extractSectionText`は
+ * 最初の次見出しで区間を打ち切るため）。フェンス閉じ忘れの実害（以降の行、特に
+ * 末尾に追記される脚注定義がMarkdown上コードブロックの一部として扱われ脚注が壊れる）は
+ * 見出し構造に関係なく文書全体のどこで起きても発生するため、セクション区分に依存せず
+ * bodyMarkdown全体を対象に検査する（codex reviewで指摘・修正）。
+ */
+export function bodyEndsInsideOpenFence(bodyMarkdown) {
+  const lines = bodyMarkdown.split('\n');
+  let fenceChar = null;
+  let fenceLen = 0;
+  for (const line of lines) {
+    if (fenceChar === null) {
+      const openMatch = line.match(/^ {0,3}(`{3,}|~{3,})/);
+      if (openMatch) {
+        fenceChar = openMatch[1][0];
+        fenceLen = openMatch[1].length;
+      }
+      continue;
+    }
+    const closePattern = new RegExp(`^ {0,3}[${fenceChar}]{${fenceLen},}[ \t]*$`);
+    if (closePattern.test(line)) {
+      fenceChar = null;
+      fenceLen = 0;
+    }
+  }
+  return fenceChar !== null;
+}
+
+// プロンプト例のコードブロック内で「実際の個人を特定できる情報の記入」を求める識別子
+// フィールドのラベル。ユーザーは要配慮個人情報の入力を避けるための記事を求めているのに、
+// 生成されたプロンプト例が「（匿名化済み）」と謳いながら実際には利用者の氏名を記入させる
+// 指示になっていた実害が発覚した（codex reviewで指摘）。当初は氏名・施設名系の6語のみの
+// 一覧だったが、住所・電話番号・生年月日等の他の直接識別子も見逃すとの指摘を受け
+// （codex review 3回目）、単なる氏名以外の直接識別子も広く含めるよう拡充した。
+// 完全な網羅は不可能なため（ブロックリスト方式の原理的な限界）、目視確認と組み合わせる。
+const IDENTIFYING_FIELD_LABELS = [
+  '利用者名',
+  '患者名',
+  'お名前',
+  '氏名',
+  '施設名',
+  '事業所名',
+  '住所',
+  '電話番号',
+  '携帯電話',
+  'メールアドレス',
+  '生年月日',
+  '誕生日',
+  '保険証番号',
+  '被保険者番号',
+  'マイナンバー',
+  '個人番号',
+  '緊急連絡先',
+];
+
+// 「利用者」「対象者」「患者」「本人」のような裸の主体ラベルは、それ自体は「対象者: ケースA」
+// のように安全な匿名識別子と組み合わせて使う分には問題ない（むしろ望ましい書き方）。しかし
+// 「利用者: 山田」のように実名らしき値が続く場合は実害になる（codex review 6回目で指摘:
+// IDENTIFYING_FIELD_LABELSへの追加は「対象者: ケースA」まで誤検出してしまうため不採用にし、
+// 代わりにラベルではなく「ラベルの直後に続く値」が既知の匿名パターンに一致するかで判定する）。
+// 値の捕捉は行末までとする（`\S+`だと最初の空白で打ち切られ、「ケースA 山田花子」のように
+// 安全なトークンの直後に空白区切りで実名を続けられると見逃してしまう。codex reviewで
+// 指摘・修正）。
+const SUBJECT_LABEL_PATTERN = /(利用者|対象者|患者|本人)\s*[:：]\s*(.+)/g;
+// 値の全体が既知の匿名パターンと一致することを要求する（先頭側だけのアンカーだと
+// 「ケースA（山田花子）」のように安全に見えるプレフィックスの後ろに実名を続けられて
+// しまう。末尾には文末の句読点・コロン程度の付随記号のみ許容する。codex reviewで指摘・修正）。
+// 角括弧（「［...］」「[...]」）を包括的に安全扱いする案は「対象者: [山田花子]」のように
+// 実名をそのままブラケットで包むだけで素通りできてしまうため不採用にした（codex review
+// 12回目で指摘）。安全とみなすのは「ケースA」「利用者1」等、値そのものが明確に匿名の
+// 記号・連番であると機械的に判定できる形式のみに限定する。
+const SAFE_SUBJECT_VALUE_PATTERN =
+  /^(ケース[A-Za-z0-9]+|利用者[0-9]+|患者[0-9]+|対象者[0-9]+|[〇○]+[0-9]*)[。、:：]?$/;
+
+/**
+ * text中の「主体ラベル: 値」の並びのうち、値（行末まで）が既知の匿名パターン
+ * （ケースA・利用者1・〇〇・角括弧のプレースホルダー等）に一致しないものが1つでも
+ * あるかを検査する。
+ */
+function hasUnsafeSubjectLabelValue(text) {
+  for (const m of text.matchAll(SUBJECT_LABEL_PATTERN)) {
+    if (!SAFE_SUBJECT_VALUE_PATTERN.test(m[2].trim())) return true;
+  }
+  return false;
+}
+
+/**
+ * text中の開始・終了が揃ったフェンス付きコードブロックの中身（開始・終了行を除く）を
+ * すべて配列で返す。閉じられなかったブロックは中身の判定自体が信頼できないため含めない。
+ */
+function extractClosedFencedCodeBlockContents(text) {
+  const lines = text.split('\n');
+  const blocks = [];
+  let current = null;
+  let fenceChar = null;
+  let fenceLen = 0;
+  for (const line of lines) {
+    if (fenceChar === null) {
+      const openMatch = line.match(/^ {0,3}(`{3,}|~{3,})/);
+      if (openMatch) {
+        fenceChar = openMatch[1][0];
+        fenceLen = openMatch[1].length;
+        current = [];
+      }
+      continue;
+    }
+    const closePattern = new RegExp(`^ {0,3}[${fenceChar}]{${fenceLen},}[ \t]*$`);
+    if (closePattern.test(line)) {
+      blocks.push(current.join('\n'));
+      current = null;
+      fenceChar = null;
+      fenceLen = 0;
+      continue;
+    }
+    current.push(line);
+  }
+  return blocks;
+}
+
+/**
+ * bodyMarkdown中の「開始・終了が揃ったフェンス付きコードブロック」のいずれかが、実在する
+ * 個人を特定できる情報を記入させる識別子フィールドのラベルを含んでいないかを検査する
+ * （含んでいればtrueを返す＝問題あり。他の関数と極性が逆なので呼び出し側は否定せずそのまま
+ * problems に積む）。「## 使えるプロンプト例」セクションに限定せずbodyMarkdown全体の
+ * コードブロックを対象にする: セクション限定にすると、モデルが規定の3見出し以外に
+ * 想定外の見出しをもう1つ追加し、そちらに危険なプロンプト例を書いた場合にすり抜けて
+ * しまう（`extractSectionText`は最初の次見出しで区間を打ち切るため）。バリデーションは
+ * ちょうど3見出しであることまでは強制していないため、位置に依存しない全文検査にする
+ * （codex reviewで指摘・修正）。
+ */
+export function promptExampleAsksForIdentifyingField(bodyMarkdown) {
+  const blocks = extractClosedFencedCodeBlockContents(bodyMarkdown);
+  return blocks.some(
+    (block) =>
+      IDENTIFYING_FIELD_LABELS.some((label) => block.includes(label)) || hasUnsafeSubjectLabelValue(block),
+  );
+}
+
+// 「## 使えるプロンプト例」のサンプルメモ自体は「ケースA」等で氏名を伏せていても、
+// 具体的な時刻・症状経過等の詳細さは施設名・日付・担当職員等の他の情報と組み合わさると
+// 個人の再識別につながりうる（codex reviewで指摘）。この「詳細さが十分に一般化されているか」
+// 自体は意味理解が必要でキーワードだけでは機械検証できないため、代わりに「所属先の利用
+// ルールに従って個人が特定されない範囲にとどめる」という注意書きが実際に含まれているかを
+// 検査する（不完全な代理シグナルであることを認識した上での防御。具体性の妥当性そのものは
+// 目視確認で担保する。docs/adr/ 参照）。
+const USAGE_CAUTION_KEYWORDS = ['所属先', '利用ルール', 'ガイドライン', '特定されない'];
+
+/**
+ * bodyMarkdown の「## 使えるプロンプト例」セクション内の、開始・終了が揃った
+ * フェンス付きコードブロックそのものに、利用ルール遵守・個人特定回避を促す注意書きが
+ * 含まれているかを検査する。セクション内の地の文（コードブロックの前後の説明文）に
+ * 注意書きがあるだけでは満たさない: 読み手がコピペするのはコードブロックの中身だけで、
+ * 前後の地の文は一緒にコピーされるとは限らないため（codex reviewで指摘・修正:
+ * 当初はセクション全体の地の文を対象にしており、コードブロックの外に注意書きを
+ * 置いただけの生成結果を誤って合格させていた）。
+ */
+export function promptExampleIncludesUsageCaution(bodyMarkdown) {
+  const section = extractSectionText(bodyMarkdown, '使えるプロンプト例');
+  if (section === null) return false;
+  const blocks = extractClosedFencedCodeBlockContents(section);
+  return blocks.some((block) => USAGE_CAUTION_KEYWORDS.filter((kw) => block.includes(kw)).length >= 2);
+}
+
 /**
  * 生成結果の品質を検査する。schemaのminLength/minItemsは第一防御線に過ぎず
  * （Vertex AIが必ず厳密に強制する保証はないため）、書き込み前に改めて検証する。
@@ -312,6 +682,18 @@ export function validateGenerated(result, itemsById) {
     );
   }
 
+  // 特定の1ツールだけに偏った記事（例: その日の出典が偶然ChatGPTしか触れていない）を
+  // 避けるための機械的ゲート（ユーザーから「Claudeも有ると良い」との指摘を受けて追加）。
+  if (!mentionsMultipleGenericToolFamilies(result.bodyMarkdown)) {
+    problems.push('汎用AIツールへの言及が1系統のみです（Gemini・ChatGPT・Claude・Google Workspaceのうち2系統以上が必要）');
+  }
+
+  // 要配慮個人情報の取り扱いに関する具体的な注意点が本文に含まれているかの機械的ゲート
+  // （ユーザーから「個人情報対応のベストプラクティスも部分的に有ると親切」との指摘を受けて追加）。
+  if (!mentionsPersonalInfoHandling(result.bodyMarkdown)) {
+    problems.push('要配慮個人情報の取り扱いに関する具体的な注意点（匿名化・仮名化等）が本文にありません');
+  }
+
   // bodyMarkdownはLLMの自由記述であり、プロンプトインジェクション（source-excerptに紛れ込んだ
   // 悪意ある指示文）等をきっかけに生のHTMLタグを書いてしまう可能性を構造的に排除できない。
   // AstroのMarkdown処理（allowDangerousHtml: true）は生HTMLをそのまま描画するため、
@@ -334,6 +716,29 @@ export function validateGenerated(result, itemsById) {
   const steps = extractSteps(result.bodyMarkdown);
   if (steps.length < MIN_STEPS) {
     problems.push(`「## 手順」の番号付きステップが${MIN_STEPS}件未満です（${steps.length}件）`);
+  }
+
+  // bodyMarkdown全体で、閉じ忘れたフェンスが無いかを最初に検証する（見出し構造に依存しない
+  // 全文検査。閉じ忘れは末尾に追記される脚注定義を巻き込みMarkdown上壊してしまう実害がある。
+  // codex reviewで指摘・修正）。
+  if (bodyEndsInsideOpenFence(result.bodyMarkdown)) {
+    problems.push('本文中に閉じられていないフェンス付きコードブロック（```）があります');
+  }
+
+  // 「## 使えるプロンプト例」の見出し・中身（フェンス付きコードブロック）の存在を検証する
+  // （ユーザーから「オススメのプロンプトなども有ると良い」との指摘を受けて追加した新セクション）。
+  if (!/^## 使えるプロンプト例\s*$/m.test(result.bodyMarkdown)) {
+    problems.push('「## 使えるプロンプト例」の見出しがありません');
+  } else if (!sectionContainsFencedCodeBlock(result.bodyMarkdown, '使えるプロンプト例')) {
+    problems.push('「## 使えるプロンプト例」に開始・終了が揃ったフェンス付きコードブロック（```）がありません');
+  } else if (promptExampleAsksForIdentifyingField(result.bodyMarkdown)) {
+    // 「（匿名化済み）」等と謳いながら実際には利用者の氏名等を記入させる指示になっていた
+    // 実害の回帰防止（codex reviewで指摘）。
+    problems.push('「## 使えるプロンプト例」が利用者名・施設名等の実在する識別子の記入を求めています（匿名の識別子に置き換える必要があります）');
+  } else if (!promptExampleIncludesUsageCaution(result.bodyMarkdown)) {
+    // サンプルメモの詳細さが他の情報と組み合わさって個人の再識別につながりうるとの指摘を
+    // 受け、読み手への利用ルール遵守・個人特定回避の注意書きを必須化した（codex reviewで指摘）。
+    problems.push('「## 使えるプロンプト例」に所属先の利用ルール遵守・個人特定回避を促す注意書きがありません');
   }
 
   const proseUsedIds = extractProseUsedIds(result.bodyMarkdown);
@@ -361,7 +766,14 @@ export function extractSteps(bodyMarkdown) {
   if (!headingMatch) return [];
   const rest = bodyMarkdown.slice(headingMatch.index + headingMatch[0].length);
   const nextHeadingMatch = rest.match(/^## .+$/m);
-  const section = nextHeadingMatch ? rest.slice(0, nextHeadingMatch.index) : rest;
+  const rawSection = nextHeadingMatch ? rest.slice(0, nextHeadingMatch.index) : rest;
+  // 「## 手順」はプロンプト上コードブロックを含む想定が無いが、万一モデルがコード例を
+  // 混入させた場合、その中の "1. ..." のような行を実際の手順項目として誤って拾って
+  // しまうと、最低ステップ数チェックや個人情報対応チェック（extractStepsを利用する
+  // mentionsPersonalInfoHandling）を、実際には手順として機能しないテキストで満たして
+  // しまう（codex reviewで指摘・修正）。stripCodeSpansでコードブロック・コードスパンを
+  // 除去してから番号付きリストを抽出する。
+  const section = stripCodeSpans(rawSection);
 
   const listItemPattern = /^\d+\.\s+(.+)$/gm;
   const steps = [];

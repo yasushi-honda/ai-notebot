@@ -207,6 +207,21 @@ li:last-child > .list-link {
   @apply list-disc pl-6 mb-4 space-y-1.5 leading-relaxed;
 }
 
+/*
+ * 「## 使えるプロンプト例」セクションのフェンス付きコードブロック（curate-care.mjsが
+ * LLMに要求する新セクション、2026-09-11追加）。装飾のないブラウザデフォルト描画のままでは
+ * 見た目が整わないため、他のプロダクトのプロンプト提示UIを参考に、実際にコピペしたくなる
+ * 見た目（モノスペース・薄いteal背景・スクロール可能）にする。
+ */
+.prose-care :where(pre) {
+  @apply mb-4 overflow-x-auto rounded-lg border border-teal-100 bg-teal-50/60 px-4 py-3 text-[13px]
+    leading-relaxed text-stone-800;
+}
+.prose-care :where(pre code) {
+  font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  @apply bg-transparent p-0;
+}
+
 .steps-diagram {
   @apply w-full rounded-xl border border-stone-200 bg-white mb-8;
 }
