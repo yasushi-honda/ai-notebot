@@ -1,52 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 568" width="480" height="568">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 640" width="480" height="640">
   <defs>
     <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#0d9488" />
     </marker>
   </defs>
-  <rect width="480" height="568" fill="#ffffff" stroke="#e2e8f0" />
+  <rect width="480" height="640" fill="#ffffff" stroke="#e2e8f0" />
     <g>
       <circle cx="40" cy="72" r="16" fill="#0d9488" />
       <text x="40" y="72" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">1</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="48">利用者の個人情報を匿名化し、氏名</tspan><tspan x="72" y="72">や特定可能な情報を除外した文章を</tspan><tspan x="72" y="96">用意する</tspan></text>
+        font-weight="600" fill="#1e293b"><tspan x="72" y="48">スマートフォンや汎用の音声認識ツ</tspan><tspan x="72" y="72">ールを利用して、会議の要点やメモ</tspan><tspan x="72" y="96">を音声入力でテキスト化する</tspan></text>
     </g><path d="M 40 124 L 40 142"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <circle cx="40" cy="184" r="16" fill="#0d9488" />
-      <text x="40" y="184" text-anchor="middle" dominant-baseline="central"
+      <circle cx="40" cy="196" r="16" fill="#0d9488" />
+      <text x="40" y="196" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">2</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="172">ChatGPTやClaudeなど</tspan><tspan x="72" y="196">の汎用AIツールを開く</tspan></text>
-    </g><path d="M 40 224 L 40 242"
+        font-weight="600" fill="#1e293b"><tspan x="72" y="172">個人情報や事業所名などの固有名詞</tspan><tspan x="72" y="196">が含まれないように、テキスト化さ</tspan><tspan x="72" y="220">れたデータを事前に匿名化する</tspan></text>
+    </g><path d="M 40 248 L 40 266"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <circle cx="40" cy="284" r="16" fill="#0d9488" />
-      <text x="40" y="284" text-anchor="middle" dominant-baseline="central"
+      <circle cx="40" cy="320" r="16" fill="#0d9488" />
+      <text x="40" y="320" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">3</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="272">箇条書きでしたメモや事実関係の要</tspan><tspan x="72" y="296">点をAIに入力する</tspan></text>
-    </g><path d="M 40 324 L 40 342"
+        font-weight="600" fill="#1e293b"><tspan x="72" y="296">匿名化したテキストデータをCha</tspan><tspan x="72" y="320">tGPTやGeminiなどの汎用</tspan><tspan x="72" y="344">AIツールに貼り付ける</tspan></text>
+    </g><path d="M 40 372 L 40 390"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <circle cx="40" cy="384" r="16" fill="#0d9488" />
-      <text x="40" y="384" text-anchor="middle" dominant-baseline="central"
+      <circle cx="40" cy="444" r="16" fill="#0d9488" />
+      <text x="40" y="444" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">4</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="372">文章の整形や言い換えを指示するプ</tspan><tspan x="72" y="396">ロンプトを入力して実行する</tspan></text>
-    </g><path d="M 40 424 L 40 442"
+        font-weight="600" fill="#1e293b"><tspan x="72" y="420">AIツールに対して、ケアプランの</tspan><tspan x="72" y="444">原案や会議録の要約を作成するよう</tspan><tspan x="72" y="468">に指示するプロンプトを入力する</tspan></text>
+    </g><path d="M 40 496 L 40 514"
               stroke="#0d9488" stroke-width="2" marker-end="url(#arrowhead)" />
     <g>
-      <circle cx="40" cy="496" r="16" fill="#0d9488" />
-      <text x="40" y="496" text-anchor="middle" dominant-baseline="central"
+      <circle cx="40" cy="568" r="16" fill="#0d9488" />
+      <text x="40" y="568" text-anchor="middle" dominant-baseline="central"
         font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
         font-weight="700" fill="#ffffff">5</text>
       <text font-family="'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif" font-size="16"
-        font-weight="600" fill="#1e293b"><tspan x="72" y="472">生成された下書きを確認し、事実と</tspan><tspan x="72" y="496">の整合性や表現を職員自身が最終確</tspan><tspan x="72" y="520">定する</tspan></text>
+        font-weight="600" fill="#1e293b"><tspan x="72" y="544">AIが生成した文章の出力結果を確</tspan><tspan x="72" y="568">認し、内容に誤りがないか職員が必</tspan><tspan x="72" y="592">ず修正・加筆を行う</tspan></text>
     </g>
 </svg>
