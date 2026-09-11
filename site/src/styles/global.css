@@ -13,8 +13,16 @@
  * 本文と同じ柔らかいゴシック（--font-sans）に戻した（従来は全メタ情報をモノスペース化して
  * おり、これが「硬い」印象の主因の一つだった）。バッジ・ピル類の角丸も rounded-sm(2px)から
  * rounded-full（丸ピル/丸バッジ）に広げ、丸ゴシックの丸みと視覚的に呼応させている。
+ *
+ * 第4弾（2026-09-11 再続報）: Zen Maru Gothicの太いウェイト（700/900）が丸っこく・
+ * カジュアルすぎて、落ち着いた検証レッド／セージグリーンの配色と噛み合わないとの指摘。
+ * フォント自体は複数案（丸みを帯びた明朝体Shippori Mincho B1・現代明朝Zen Old Mincho・
+ * Zen Maru Gothicの軽量版等）を背景色バリエーションと組み合わせたマトリクスで比較検証し、
+ * 「Zen Maru Gothicを維持しつつウェイトを500に落とす」案が採用された。見出し全般
+ * （--font-displayを使う全箇所）をウェイト500に統一し、太字(700/900)の読み込みも
+ * 不要になったため削除した。
  */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=JetBrains+Mono:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&family=JetBrains+Mono:wght@500;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -45,6 +53,7 @@ body {
 
 .font-display {
   font-family: var(--font-display);
+  font-weight: 500;
 }
 
 .tabular-nums {
@@ -119,7 +128,7 @@ li:last-child > .list-link {
 }
 .entry-body h3 {
   font-family: var(--font-display);
-  @apply text-lg font-bold mb-1.5 leading-relaxed;
+  @apply text-lg font-medium mb-1.5 leading-relaxed;
 }
 .entry-body h3 a {
   @apply text-ink no-underline;
@@ -141,7 +150,7 @@ li:last-child > .list-link {
 }
 .care-callout h3 {
   font-family: var(--font-display);
-  @apply text-[17px] font-bold mb-1.5;
+  @apply text-[17px] font-medium mb-1.5;
 }
 .care-callout h3 a {
   @apply text-ink no-underline;
@@ -182,7 +191,7 @@ li:last-child > .list-link {
 .prose-post :where(h2),
 .prose-care :where(h2) {
   font-family: var(--font-display);
-  @apply text-xl font-bold mt-12 mb-4 pb-2.5 border-b border-rule text-ink;
+  @apply text-xl font-medium mt-12 mb-4 pb-2.5 border-b border-rule text-ink;
 }
 
 .prose-post :where(strong),
