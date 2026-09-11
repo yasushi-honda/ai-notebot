@@ -1,0 +1,628 @@
+{
+  "date": "2026-09-12",
+  "collectedAt": "2026-09-11T23:04:21.990Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-90d89d2f42",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "cloudflare/agents: Build and deploy AI Agents on Cloudflare ",
+      "url": "https://github.com/cloudflare/agents",
+      "publishedAt": "2026-09-11T23:04:15.000Z",
+      "summary": "★5546 Build and deploy AI Agents on Cloudflare"
+    },
+    {
+      "id": "s-a3a1fb3436",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "cube-js/cube: 📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics",
+      "url": "https://github.com/cube-js/cube",
+      "publishedAt": "2026-09-11T23:03:46.000Z",
+      "summary": "★20808 📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics"
+    },
+    {
+      "id": "s-d972f36cad",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ros-claw/rosclaw: Self-evolving runtime infrastructure for Physical AI and embodied agents. Ground AI agents into robot bodies with e-URDF, sandbox safety, capability routing, praxis capture, physical memory, runtime intervention, and skill evolution.",
+      "url": "https://github.com/ros-claw/rosclaw",
+      "publishedAt": "2026-09-11T23:03:38.000Z",
+      "summary": "★197 Self-evolving runtime infrastructure for Physical AI and embodied agents. Ground AI agents into robot bodies with e-URDF, sandbox safety, capability routing, praxis capture, physical memory, runtime intervention, and skill evolution."
+    },
+    {
+      "id": "s-c0e198ef7b",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "maziyarpanahi/openmed: Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "publishedAt": "2026-09-11T23:03:31.000Z",
+      "summary": "★5302 Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0"
+    },
+    {
+      "id": "s-da26989850",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "kirodotdev/KiroCrew: A persistent workspace for development work that self-improves and continues beyond one session.",
+      "url": "https://github.com/kirodotdev/KiroCrew",
+      "publishedAt": "2026-09-11T23:02:36.000Z",
+      "summary": "★3859 A persistent workspace for development work that self-improves and continues beyond one session."
+    },
+    {
+      "id": "s-ec7ef63e73",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "openclaw/clawsweeper: ClawSweeper scans all issues and PRs and suggest what we can close, and why. It runs every PR / Issue once a week.",
+      "url": "https://github.com/openclaw/clawsweeper",
+      "publishedAt": "2026-09-11T23:02:31.000Z",
+      "summary": "★1979 ClawSweeper scans all issues and PRs and suggest what we can close, and why. It runs every PR / Issue once a week."
+    },
+    {
+      "id": "s-0120bd29c2",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "matthiasn/lotti: A private logbook with a staff of personal AI assistants. Agents read what you record and propose what to do next — you approve the changes. End-to-end encrypted sync between your own devices — servers only ever see ciphertext. Local AI optional.",
+      "url": "https://github.com/matthiasn/lotti",
+      "publishedAt": "2026-09-11T23:02:28.000Z",
+      "summary": "★1173 A private logbook with a staff of personal AI assistants. Agents read what you record and propose what to do next — you approve the changes. End-to-end encrypted sync between your own devices — servers only ever see ciphertext. Local AI optional."
+    },
+    {
+      "id": "s-dad15a553b",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "nottelabs/notte: Cloud browser infrastructure and web automation platform for your AI and coding agents",
+      "url": "https://github.com/nottelabs/notte",
+      "publishedAt": "2026-09-11T23:02:15.000Z",
+      "summary": "★2001 Cloud browser infrastructure and web automation platform for your AI and coding agents"
+    },
+    {
+      "id": "s-20a418ebc1",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "verseles/codewalk: A native (really fast!!) cross-platform client for OpenCode",
+      "url": "https://github.com/verseles/codewalk",
+      "publishedAt": "2026-09-11T23:01:40.000Z",
+      "summary": "★187 A native (really fast!!) cross-platform client for OpenCode"
+    },
+    {
+      "id": "s-89b2acf8b6",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "AI-Hypercomputer/maxtext: A simple, performant, and scalable Jax LLM!",
+      "url": "https://github.com/AI-Hypercomputer/maxtext",
+      "publishedAt": "2026-09-11T23:01:40.000Z",
+      "summary": "★2419 A simple, performant, and scalable Jax LLM!"
+    },
+    {
+      "id": "s-3e166f225a",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "mudler/LocalAI: LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+      "url": "https://github.com/mudler/LocalAI",
+      "publishedAt": "2026-09-11T22:58:57.000Z",
+      "summary": "★49057 LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required."
+    },
+    {
+      "id": "s-d62d3bc659",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "09omerdgn-droid/api-model-playground-cookbook: Ultimate LLM API Integration Cookbook 2026 for Cursor & AI Agents",
+      "url": "https://github.com/09omerdgn-droid/api-model-playground-cookbook",
+      "publishedAt": "2026-09-11T22:58:44.000Z",
+      "summary": "★115 Ultimate LLM API Integration Cookbook 2026 for Cursor & AI Agents"
+    },
+    {
+      "id": "s-4c67a72ea8",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training data",
+      "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
+      "publishedAt": "2026-09-11T22:58:17.000Z",
+      "summary": "The round for the two-year-old startup is coming together months after Mecka announced its Series A."
+    },
+    {
+      "id": "s-e17ad22285",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "24GB VRAM環境におけるOllama安定稼働のベストプラクティス",
+      "url": "https://qiita.com/TOAI/items/ba9a7bdabbbac40bad6f",
+      "publishedAt": "2026-09-11T22:52:23.000Z",
+      "summary": "TOAI System テクニカルエバンジェリスト（IDE Gemini CTO）です。 「命の地球」エコシステムの概念モデルを、クラウドの無尽蔵なリソースに依存せず、エッジ（ローカル）環境で自律稼働させる。このビジョンを実現するためには、物理ハードウェアの制約という冷酷..."
+    },
+    {
+      "id": "s-3918b7945e",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI Daily Digest 2026-09-12：OpenAIが金融機関向けChatGPTを投入、300ステップ超の端末エージェント、IMO金メダルの全レシピ公開",
+      "url": "https://qiita.com/lhjjjk4/items/8411ec61425f2b7521c5",
+      "publishedAt": "2026-09-11T22:05:06.000Z",
+      "summary": "AI Daily Digest 2026-09-12：OpenAIが金融機関向けChatGPTを投入、300ステップ超の端末エージェント、IMO金メダルの全レシピ公開 OpenAI、モルガン・スタンレーとEvercoreと組んだ銀行向けChatGPTを投入 OpenA..."
+    },
+    {
+      "id": "s-2455e7d04f",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "GPT-6 built this earth exploration site in 5 prompts",
+      "url": "https://earth.ethanplus.ai/",
+      "publishedAt": "2026-09-11T21:39:52.000Z",
+      "summary": "points=24 comments=36 (Hacker News)"
+    },
+    {
+      "id": "s-f110a1d72e",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "OpenClawの429で[Malformed diagnostic JSON redacted]が出る――エラー本文が消える理由",
+      "url": "https://zenn.dev/builders_loop/articles/openclaw-429-malformed-diagnostic-json-redacted",
+      "publishedAt": "2026-09-11T21:19:50.000Z",
+      "summary": "OpenClaw を Google AI Studio の無料枠で動かしていて 429 RESOURCE_EXHAUSTED が続いたので、記録を掘り返して原因を調べようとしました。ところが記録に残っていたエラー本文が、1件残らず次の文字列に置き換わっていました。 \"errorBody\":\"[Malformed diagnostic JSON redacted]\" 最初は「プロバイダが中身のないレスポンスを返したのだろう」と思いました。そうではありませんでした。この文字列は、OpenClaw に同梱されている関数が、保存する前に本文を置き換えた結果です。 配布物からその関数を直接呼び出し..."
+    },
+    {
+      "id": "s-53a4d62e68",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Yasumaro v6.6 → v6.8 で何が変わったか — 4つの大きな前進",
+      "url": "https://zenn.dev/ar1/articles/yasumaro-68-overview",
+      "publishedAt": "2026-09-11T21:15:12.000Z",
+      "summary": "Yasumaro（旧 Obsidian Weave）は、ブラウザで読んだページを AI 要約付きで記録する Chrome 拡張機能です。無料・オープンソース（MIT）で、Edge Add-ons か GitHub Releases からインストールできます。 ふだんのブラウジングはそのままで構いません。Yasumaro が開いたページを検出し、AI の要約つきで記録します。記録は拡張機能内の SQLite に蓄積されて全文検索でき、Obsidian を使っているなら Markdown として vault に書き出せます。「あとで読み返したい」「あの記事の要点はなんだったか」を手元のデータ..."
+    },
+    {
+      "id": "s-5cf22fc9bc",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "One HealthのAIはなぜ分断されるか——Model Context Protocol（MCP）という「つなぎ役」の可能性",
+      "url": "https://zenn.dev/taichiendoh/articles/one-health-ai-mcp-orchestration",
+      "publishedAt": "2026-09-11T21:09:07.000Z",
+      "summary": "2026年、人・動物・環境の健康をひとつながりで捉える「One Health（ワンヘルス）」領域で、AIによる統合監視システムを提案する論文が公開されました。 出典：Sorrentino et al.「From Reactive to Predictive One Health: AI-Enabled Frameworks for Integrated Zoonotic Surveillance and Governance」International Journal of Environmental Research and Public Health 23(7), 2026, Art..."
+    },
+    {
+      "id": "s-9a2cdcc774",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "DeepMindがヒトゲノムの1塩基置換 約90億通りを予測した事前計算DB「AlphaGenome Atlas」を無料公開",
+      "url": "https://qiita.com/quotidia/items/4ba849b777c37dfd6b3f",
+      "publishedAt": "2026-09-11T21:01:13.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 Google DeepMindが2026年9月8日(火)、ヒトのゲノム(生き物の設計図にあたる全DNA情報)で起こりうる約90億通りの1塩基置換(バリアント。 要点 Google Deep..."
+    },
+    {
+      "id": "s-543492d805",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Y Combinator’s Garry Tan wants US open-weight AI labs to ‘distill’ frontier models, too",
+      "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too/",
+      "publishedAt": "2026-09-11T20:59:47.000Z",
+      "summary": "Tan wants smaller, American open-weight AI labs to use the same kind of training techniques on American frontier AI labs, giving the U.S. a more robust set of open-weight options that aren’t Chinese."
+    },
+    {
+      "id": "s-3c9a79c82f",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI’s feud with mathematicians is only escalating",
+      "url": "https://techcrunch.com/2026/09/11/openais-feud-with-mathematicians-is-only-escalating/",
+      "publishedAt": "2026-09-11T20:57:36.000Z",
+      "summary": "Twenty-five leading mathematicians signed an open letter arguing that AI labs are threatening their intellectual work."
+    },
+    {
+      "id": "s-eb3fa8e523",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Lawyer fined $5K over AI-hallucinated witnesses in a murder case",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994207/chatgpt-new-mexico-lawyer-fined-murder-appeal",
+      "publishedAt": "2026-09-11T20:44:02.000Z",
+      "summary": "New Mexico's Supreme Court is punishing a lawyer for including AI-fabricated witnesses and fake police testimony in an appeal for his client's murder conviction, according to a report from Reuters. In a filing on Wednesday, the court fined Stephen Aarons $5,000 and held him in contempt for failing to \"verify the factual claims and legal […]"
+    },
+    {
+      "id": "s-970271eaf9",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "One week left to book your exhibit table at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/09/11/one-week-left-to-book-your-exhibit-table-at-techcrunch-disrupt-2026/",
+      "publishedAt": "2026-09-11T20:33:18.000Z",
+      "summary": "Only one week left to secure your exhibit table. Tables are limited and can sell out before the September 18 deadline."
+    },
+    {
+      "id": "s-4ea719667c",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "nvidia rtx 5090 with 96gb of vram.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdrvru/nvidia_rtx_5090_with_96gb_of_vram/",
+      "publishedAt": "2026-09-11T20:32:04.000Z",
+      "summary": "China-modified Nvidia RTX 5090 with massive 96GB of memory appears on Alibaba for less than $4,000 — 3x more VRAM at 65% the cost of the original Anyone here running one of these? Or brave enough to purchase ? &#32; submitted by &#32; /u/running101 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-6af94b2d46",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Is anyone using K2-Horizon-MoVA-36B-A4B? If yes, what is the usecase?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdrvd4/is_anyone_using_k2horizonmova36ba4b_if_yes_what/",
+      "publishedAt": "2026-09-11T20:31:38.000Z",
+      "summary": "A new model joined the MoE club a few days ago. Is anyone using it or found a reason to do so? Details of the model comparison here =&gt; https://llm-bench.io/compare/models?models=ornith-1-5-35b-a3b-oq4e-mtp%2Ctiel-coder-35b-a3b-mlx-oq4e-mtp%2Ck2-horizon-mova-36b-a4b-mlx-4bit &#32; submitted by &#32; /u/DerTomsn [link] &#32; [comments]"
+    },
+    {
+      "id": "s-32d3247258",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Androidスマホで「本人の声だけ」を聞くローカル音声AIを作る",
+      "url": "https://zenn.dev/ytmyou/articles/7daf2b1815bec6",
+      "publishedAt": "2026-09-11T20:31:19.000Z",
+      "summary": "CAM++ + FireRedVAD + SenseVoice の実験メモ 前回は、AndroidスマホのNPUを使って、ローカル音声認識がどれくらい速くなるかを試しました。 今回は速度ではなく、もう少し実用寄りの話です。 スマホ上で音声AIアシスタントを動かすとき、速さと同じくらい大事なのが、 「誰の声を聞くか」 という問題です。 部屋の中には、自分以外の声もあります。 家族の声、テレビの音、YouTubeの音、隣で話している人の声。 普通にASRだけを動かすと、こうした音声も文字起こしの対象になってしまいます。 でも、AIアシスタントの場合、本当に必要なのは基本的に「使用者本人..."
+    },
+    {
+      "id": "s-5ae88bf4e3",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Final, final, final call for TechCrunch Disrupt 2026 Side Events",
+      "url": "https://techcrunch.com/2026/09/11/final-final-final-call-for-techcrunch-disrupt-2026-side-events/",
+      "publishedAt": "2026-09-11T20:30:17.000Z",
+      "summary": "The absolute last chance to apply to host an official Side Event during TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT."
+    },
+    {
+      "id": "s-87dcfee99d",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIが正解を出す時代に、「正解がない仕事」の価値が上がる気がした",
+      "url": "https://qiita.com/ys05181406/items/ea9cc98e2fe9a8642331",
+      "publishedAt": "2026-09-11T20:12:51.000Z",
+      "summary": "最近、個人開発中のアプリのLP用に、Blenderで3D動画を作っている。 といっても、自分はBlenderをほとんど使えない。 モデルを置いて、ライトを設定して、カメラを動かして、キーフレームを打って……みたいな操作を自分でやっているわけではない。 AIに指示して、Ble..."
+    },
+    {
+      "id": "s-20712504e2",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "Roundtables: AI’s apocalypse crisis",
+      "url": "https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all/",
+      "publishedAt": "2026-09-11T20:05:06.000Z",
+      "summary": "Employees at the world’s leading AI labs are saying there’s a real possibility that advanced AI could destroy humanity. Are they right? Or is this more scaremongering and hype? Join MIT Technology Review executive editor Niall Firth for a conversation with senior AI editor Will Douglas Heaven and AI reporter Grace Huckins unpacking AI extinction…"
+    },
+    {
+      "id": "s-67092b9ed0",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Is a ZIMA Board 2 + RTX 2000 ADA the cheapest path to a decent Qwen-3.8 27b self-contained endpoint?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdqnpq/is_a_zima_board_2_rtx_2000_ada_the_cheapest_path/",
+      "publishedAt": "2026-09-11T19:46:27.000Z",
+      "summary": "I just watched a YouTube from Luke’s Dev Lab where he literally just plugged a RTX 2000 ADA Into the side of the Zima Board 2’s PCIE socket and it just friggin worked and had great token speed despite running on shitty Ollama. Ran off the Zima’s power supply and everything. https://youtu.be/Lb3sRFTA-hk?si=8S8vv4GD1zVPeTrc The Zima Board 2 is only like $411. It has like 16GB RAM and 64 GB eemc stor"
+    },
+    {
+      "id": "s-ef5d05155d",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Rethinking skills and prompts for GPT-6 Astra | OpenAI Developers",
+      "url": "https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra",
+      "publishedAt": "2026-09-11T19:46:00.000Z",
+      "summary": "For the complete documentation index, see llms.txt. Markdown versions of documentation pages are available by appending .md to the page URL."
+    },
+    {
+      "id": "s-5c265523a8",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Running Qwen3.8-27B-Q4 at max context on a 32 GB GPU while avoiding kvcache quantization",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdqit1/running_qwen3827bq4_at_max_context_on_a_32_gb_gpu/",
+      "publishedAt": "2026-09-11T19:41:29.000Z",
+      "summary": "I can&#39;t stand kv cache quantization. Even at q8_0, I can feel the difference. But realistically, when running Qwen3.8-27B-UD-Q4_K_XL on my 32 GB GPU, I only have room for ~170k tokens (with mtp and mmproj enabled). It&#39;s a lot of context, but Qwen3.8 eats through it on xhigh effort. I&#39;ve been wanting a setup that could serve me a full-precision kvcache when I have space available, and d"
+    },
+    {
+      "id": "s-4b64db6de7",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Judges mock lawyer who filed appeal full of AI-generated 'witnesses'",
+      "url": "https://www.rnz.co.nz/news/world/1349763/judges-mock-lawyer-who-filed-appeal-full-of-ai-generated-witnesses",
+      "publishedAt": "2026-09-11T19:36:57.000Z",
+      "summary": "points=6 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-3d8e4a73da",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Kimi-maker Moonshot AI targets $2B in annual revenue",
+      "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "publishedAt": "2026-09-11T19:35:54.000Z",
+      "summary": "While K3's usage figures have declined slightly in recent months, OpenRouter data currently shows as many as 300 billion tokens being generated each day by K3 models on the system."
+    },
+    {
+      "id": "s-eb6f778f86",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Claude AI used for missile, influence projects in UAE, Iran, Yemen: Anthropic",
+      "url": "https://www.al-monitor.com/originals/2026/09/claude-ai-used-missile-influence-projects-uae-iran-yemen-anthropic",
+      "publishedAt": "2026-09-11T19:35:43.000Z",
+      "summary": "points=8 comments=3 (Hacker News)"
+    },
+    {
+      "id": "s-1a2a404d7c",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.269",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.269",
+      "publishedAt": "2026-09-11T19:17:55.000Z",
+      "summary": "What's changed Added claude plugin eval : run a plugin's eval suite against Claude Code and get scored, reproducible results (JSON + HTML report); see claude plugin eval --help Added /output-style [name] to list and switch output styles, including over Remote Control and in cloud and other headless sessions Added a diff of the files a Bash command changed to the Bash tool result when the Bash tool"
+    },
+    {
+      "id": "s-2eb822a59b",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "CodeFinetuner: Fine-tune a local code autocomplete model on your own codebase",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdp9qc/codefinetuner_finetune_a_local_code_autocomplete/",
+      "publishedAt": "2026-09-11T18:56:39.000Z",
+      "summary": "Hi everyone, I was interested in learning LoRA fine-tuning, and ended up building CodeFinetuner over the past few months, a full pipeline that fine-tunes a small code autocomplete model (e.g. Qwen2.5-Coder-3B) specific to a codebase. You can then use the resulting GGUF model via llama.vim/llama.vscode and run it fully locally. Supports fine-tuning on Mac (MPS) and NVIDIA GPUs (CUDA), with optional"
+    },
+    {
+      "id": "s-6f7859a465",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "They Stole Our Code, Now They Want Our Brains (March 2026)",
+      "url": "https://www.jernesto.com/articles/on_ai_tools",
+      "publishedAt": "2026-09-11T18:50:25.000Z",
+      "summary": "points=7 comments=3 (Hacker News)"
+    },
+    {
+      "id": "s-d8bb09927a",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
+      "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
+      "publishedAt": "2026-09-11T18:41:49.000Z",
+      "summary": "An Anthropic researcher resigned this week, warning in a post on X that the company is “racing straight to self-improving superintelligence and gambling with our lives”. The company’s own alignment lead even co-signed the message rather than walking it back. It’s the kind of doomer warning the AI industry has flirted with before, but the timing, with Anthropic reportedly preparing for an IPO, make"
+    },
+    {
+      "id": "s-dfa0710189",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "What GPUs will give me GOOD speeds and on DSV4 Flash and similar models, and not have to run a mega quantized version? Budget around $15k-ish.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdooag/what_gpus_will_give_me_good_speeds_and_on_dsv4/",
+      "publishedAt": "2026-09-11T18:36:26.000Z",
+      "summary": "I wish I could spend $15k on my own homelab hardware, but no this is for work lol. Like the title says, we&#39;re looking to run DSV4 Flash (and similar tier models) locally at good speeds, both for token gen and prompt processing. By &quot;good&quot; I&#39;m thinking in the range of 40-50+ t/s gen and at least 1000 t/s prefill at moderate context. We also don&#39;t want to run a version that&#39;"
+    },
+    {
+      "id": "s-be80105bf6",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Human-Time Unit: AIのAPIコストを牽制しつつも活用促進する",
+      "url": "https://zenn.dev/yukimi_inu/articles/ea511b5006b05a",
+      "publishedAt": "2026-09-11T18:35:18.000Z",
+      "summary": "社内でAPI経由でのAIチャットやプラットフォームなどを解放すると、どうしてもトークン料金がコストとしてかかります。その金額は使用人数が多く、また高機能なモデルを使えば使うほど高くなります。数万円であれば検証コストとして見過ごされていたものでも、数十万、数百万となってくるといよいよ責任説明が生じてきます。 チームリーダ・マネージャーはそのコストに対して成果が本当に良い投資であったか、説明をも求められるでしょう。 本心を言えば、人件費に比べてトークンのコストははるかに安い...のですが、油断して開放しているとあっという間にとんでもないコストになるため、一定の牽制は必要です。しかし、使用者に..."
+    },
+    {
+      "id": "s-b2e24dfd6d",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "Retrospectively Reverse-Engineering Apple's Neural Engine",
+      "url": "https://eiln.github.io/posts/ane.html",
+      "publishedAt": "2026-09-11T17:23:45.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-acee62855b",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI APIプロダクトの成長を「4つのループ」として設計した話",
+      "url": "https://zenn.dev/beatapi/articles/2a444e97c46792",
+      "publishedAt": "2026-09-11T17:22:48.000Z",
+      "summary": "BeatAPIは公開から10日間で400人以上の登録と、約150ドルの売上を得ました。 3人のチームにとって励みになる数字です。しかし、それ以上に見えてきたのは、AIによって開発は速くなっても、プロダクトを見つけてもらい、信頼してもらうことは依然として難しい、という事実でした。 私は開発者ですが、現在は成長施策の大部分も担当しています。私たちが作っているBeatAPIは、汎用Agent向けのプロフェッショナルな機能レイヤーです。簡単に言えば「OpenRouter for Agents」であり、AIモデル、Social Data、MCPツールを1つの入口から利用できます。 当初はSEO、X..."
+    },
+    {
+      "id": "s-3e343d7d31",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
+      "url": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
+      "publishedAt": "2026-09-11T16:46:25.000Z",
+      "summary": "The No. 2 exec at OpenAI also led Instacart through its IPO in 2023."
+    },
+    {
+      "id": "s-b5a1b5a49e",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Any 12gb VRAM users out there?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdl7vp/any_12gb_vram_users_out_there/",
+      "publishedAt": "2026-09-11T16:32:24.000Z",
+      "summary": "Hi! I&#39;ve been following this community for quite a while and have difficulty figuring out what to put on my 3080 12gb - I know Qwen 3.6 35B 3A was the go-to choice when it first came out, but I&#39;m curious if there are any other models / specifically optimized models that meaningfully benefit from the extra 4gb of VRAM over 8gb while still being usable under 16gb. My workflow is agent heavy,"
+    },
+    {
+      "id": "s-d40deea150",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Qwen3.8-27B-Humanlike-Chat: A model I tuned to imitate realistic human-to-human conversation",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdl2qa/qwen3827bhumanlikechat_a_model_i_tuned_to_imitate/",
+      "publishedAt": "2026-09-11T16:27:16.000Z",
+      "summary": "I made this because I was getting genuinely annoyed at trying to have a normal conversation with LLMs. Even with prompting and various tricks, most models I&#39;ve tried still have this &quot;AI assistant&quot; vibe to them that is so familiar: too helpful, polished, verbose, using words we never use in conversation, etc. I wanted a model that could just talk to me like a person, so I did the slig"
+    },
+    {
+      "id": "s-c182342702",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Anthropic spent this week in hot water over cybersecurity",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity",
+      "publishedAt": "2026-09-11T16:09:14.000Z",
+      "summary": "After admitting earlier this year that its AI models had hacked other companies' systems on a handful of occasions, Anthropic released a new report on Wednesday detailing the attacks. It reveals a string of incidents displaying what Anthropic deems its models' single-minded \"recklessness\" - and will likely fuel already raging concerns about cybersecurity and AI. […]"
+    },
+    {
+      "id": "s-52f131ac9c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI時代は仕事を奪われるどころか、仕事が増える説",
+      "url": "https://zenn.dev/kuwanokazuya/articles/d1667a5ab5f2bf",
+      "publishedAt": "2026-09-11T16:07:27.000Z",
+      "summary": "生成AIが仕事に入り込んでくると、 「AIに仕事を奪われる」 という話をよく見かけます。 一方で、実際に仕事でAIを使っていると、少し違う感覚があります。 AIを使うほど、仕事が増えている。 「今週、何の仕事をしたんだ？」 私はWeb制作やWebマーケティング、SNS、動画、PR、サーバー周りなど、かなり雑食的に仕事をしています。 そのため、1日の終わりに、 「今日は何をやったっけ？」 となることがあります。 本当は定期的に振り返ったほうがいい。 でも、面倒です。 そこで今回は、クライアントとのメールやチャットの履歴をもとに、AIに作業内容を整理させてみました。 やったことを一つひ..."
+    },
+    {
+      "id": "s-c1299135f2",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIの採点役を分けても、点は甘いままだった",
+      "url": "https://zenn.dev/sugawara_ai/articles/ai-judge-design-seal-first",
+      "publishedAt": "2026-09-11T15:47:10.000Z",
+      "summary": "前に、AIに自分で作ったものを自分で採点させると、点が甘くなるって話を書きました。今日はその続きです。 じゃあ、作る係とは別に、採点だけする係を立てれば解決するのか。僕も最初はそう思ってたんですよ。ところが、それだけだと、点は甘いままになるんです。 今回は、なぜ甘くなるのか、じゃあどう測ればいいのかを、僕の会社で実際に起きたことと一緒に話していきます。 先に結論を言いますね。AIの採点を信じられるものにする鍵は、AIの賢さじゃありません。順番です。AIに先に予想を書かせて、あとから触れない状態で封をしてから、人が答える。そして外れたところから、出来上がりではなく、作らせる指示の方を直す..."
+    },
+    {
+      "id": "s-7db3108d74",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Games | OpenAI Developers",
+      "url": "https://developers.openai.com/showcase/games",
+      "publishedAt": "2026-09-11T15:45:07.000Z",
+      "summary": "For the complete documentation index, see llms.txt. Markdown versions of documentation pages are available by appending .md to the page URL."
+    },
+    {
+      "id": "s-2efb26e869",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "専門エンジニアを廃止した　─ Voicy開発統括が半年で実行した3つの構造改革 - Voicy Tech Blog",
+      "url": "https://tech-blog.voicy.jp/entry/2026/09/10/183722",
+      "publishedAt": "2026-09-11T14:28:31.000Z",
+      "summary": "Voicy開発統括のやまげん（@yamagenii）です。 以前書いた「AI時代のキャリア戦略」でも触れたように、AI時代における開発体制のあり方を模索してきましたが、この半年で私はVoicyのエンジニア組織を本格的に作り替えました。音声のtoCプラットフォーム開発の現場で起きたリアルな構造改革の記録です。 結論から3行で書..."
+    },
+    {
+      "id": "s-96dc674363",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "デジタル庁のガバメントソリューションサービス(GSS)への不正アクセスについてまとめてみた - piyolog",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/09/11/220855",
+      "publishedAt": "2026-09-11T13:54:08.000Z",
+      "summary": "2026年9月11日、デジタル庁は、政府共通の業務実施環境「ガバメントソリューションサービス(GSS)」が外部からの不正アクセスを受け、取り扱っていた個人情報を含むファイルの一部が外部に漏えいした可能性があると公表しました。ここでは関連する情報をまとめます。 VPN機器の脆弱性を悪用され侵入 GSSは、ゼロトラスト..."
+    },
+    {
+      "id": "s-e4e85ab4c8",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Appleの新CEOジョン・ターナスとグレッグ・ジョスウィアックがiPhone Duoの開発秘話や魅力に欠けるAndroid折りたたみスマホについて語る",
+      "url": "https://gigazine.net/news/20260911-apple-ceo-john-ternus-iphone-duo/",
+      "publishedAt": "2026-09-11T13:10:15.000Z",
+      "summary": "Apple初の折りたたみスマートフォンである「iPhone Duo」の開発秘話を、2026年9月1日に新CEOに就任したばかりのジョン・ターナス氏とグレッグ・ジョスウィアック氏が語りました。 Exclusive: Apple CEO John Ternus and Joz on making iPhone Duo, fixing the crease and 'uninspiring' Android foldables | Tom's Guide..."
+    },
+    {
+      "id": "s-793c5d0b6d",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "WordPressサイトのセキュリティ対策 – 最低限設定しておきたい5つ | corto",
+      "url": "https://corto.jp/note/wordpress-security/",
+      "publishedAt": "2026-09-11T12:54:48.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-5aaf1a8add",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "2026年度末の「Suicaエリア統合」　気になることをJR東日本に聞いてみた",
+      "url": "https://www.itmedia.co.jp/mobile/articles/2609/11/news089.html",
+      "publishedAt": "2026-09-11T12:20:54.000Z",
+      "summary": "東日本旅客鉄道（JR東日本）は2026年度末に、現在6つに分かれている「Suicaエリア」を1つにまとめます。2023年度から進めてきた改札システムの更新に一定のめどが付いたことに伴う措置で、Suicaエリアの線区／駅相互間であれば改札機での乗降が可能となります。 →“エリアをまたいだ乗車”実現なるか？ 「Suica」の改札シ..."
+    },
+    {
+      "id": "s-68b1a5dcc4",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "音楽生成AI「YuE2」が無料公開される、有料のSuno 5に近い性能で楽譜から楽曲生成可能＆日本語ボーカルも対応",
+      "url": "https://gigazine.net/news/20260911-yue2-music-generation-ai/",
+      "publishedAt": "2026-09-11T12:19:19.000Z",
+      "summary": "AI研究コミュニティのMultimodal Art Projectionが音楽生成AI「YuE2」を2026年9月10日に公開しました。開発チームは「Suno 5に匹敵するオープンな音楽生成モデル」とアピールしています。 YuE2 · Frontier Music with Symbolic Planning https://map-yue2.github.io/ GitHub - multimodal-art-projection/YuE: YuE2: fro..."
+    },
+    {
+      "id": "s-c7d3c8aeae",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+      "publishedAt": "2026-09-11T10:00:00.000Z",
+      "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second."
+    },
+    {
+      "id": "s-a64f70fdcb",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "3 Highlights from Thomas Kurian’s Keynote at the Goldman Sachs Communicopia & Technology Conference",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/highlights-from-the-goldman-sachs-communicopia-and-technology-conference/",
+      "publishedAt": "2026-09-11T09:00:00.000Z",
+      "summary": "On Tuesday, September 8, Thomas Kurian participated in the Goldman Sachs Tech Conference, providing an update on Google Cloud’s business and strategy. Here are the highlights: Full Stack Approach: Google Cloud is the only provider to offer solutions across the entire AI stack, which expands our total addressable market, differentiates our products from the point of view of performance, cost and qu"
+    },
+    {
+      "id": "s-edfe610abf",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "OpenAI、金融機関向け「ChatGPT for Financial Services」　金融データ搭載し「GPT-6 Astra」で分析",
+      "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001392/",
+      "publishedAt": "2026-09-11T00:10:41.000Z",
+      "summary": "OpenAIは、金融機関向けAI「ChatGPT for Financial Services」を発表した。最新モデル「GPT-6 Astra」を基盤に、主要な金融データセットを標準で内蔵。財務分析や顧客向け資料作成を支援し、既存の契約データとの連携やMicrosoft Officeテンプレートの社内配布にも対応する。"
+    },
+    {
+      "id": "s-1cfd023ef8",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "ChatGPT Work、質問するだけで社内データ分析・グラフやダッシュボードも作る「Data agent」",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2609/11/2000001391/",
+      "publishedAt": "2026-09-10T23:39:05.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-46d4769ef3",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Anthropic、AI悪用レポートを公開　中国AI企業の「蒸留」、各国政府の監視・世論操作、生物兵器につながり得る研究を列挙",
+      "url": "https://www.itmedia.co.jp/news/article/2609/11/2000001390/",
+      "publishedAt": "2026-09-10T23:13:19.000Z",
+      "summary": "Anthropicは、自社AI「Claude」の悪用事例をまとめた脅威レポートを公開した。生物兵器の設計や国家機関による世論操作や反体制派監視、通常兵器開発への利用を検知、遮断したと発表。中国AI企業による組織的なモデル抽出（蒸留）の実態も報告し、危険な転用への警戒を強めている。"
+    },
+    {
+      "id": "s-e7934176ec",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "業務の30％をAIエージェントがこなすIT運用部門、なぜ「パワポ文書」を禁止したのか？",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2608/20/news009.html",
+      "publishedAt": "2026-09-10T23:00:00.000Z",
+      "summary": "業務の約30％をAIエージェントに任せているNTTドコモソリューションズのIT運用部門。同部門が、AI活用に取り組む中で、日報や週報での「パワポ文書」を禁止したのはなぜか。一見、デジタル化に逆行するようにも見える施策の狙いを聞いた。"
+    },
+    {
+      "id": "s-4460739983",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「危険コマンド停止率、AIは89％、人間だと14％」　Claude Codeが「自動モード」をデフォルトにした理由",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/11/news018.html",
+      "publishedAt": "2026-09-10T23:00:00.000Z",
+      "summary": "Anthropicは「Claude Code」のデフォルトモードを、都度承認から「自動」に切り替える。1053人を対象にした対照実験では、危険なコマンドを検知した割合が人のレビューを大きく上回ったという。"
+    },
+    {
+      "id": "s-bc33baa9e2",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "たった1年で10倍に急拡大　“一見地味”なAIガバナンス・リスク管理市場がなぜ？",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2609/11/news026.html",
+      "publishedAt": "2026-09-10T23:00:00.000Z",
+      "summary": "ITRの調査によると、国内のAIガバナンス・リスク管理市場は2025年度に前年度の10倍に拡大した。AIブームの中でも、比較的注目度が高くなかったこの領域が急成長している理由とは。"
+    },
+    {
+      "id": "s-63ac9668cc",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "日立、熟練者の知見をAIで形式知化　3D CADの設計ルール違反も自動検出",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/11/news027.html",
+      "publishedAt": "2026-09-10T22:30:00.000Z",
+      "summary": "日立製作所は、熟練者の経験やノウハウなどをAIで形式知化し、設計ナレッジとして蓄積／活用する「設計ナレッジシステム」の提供を開始した。3D CADデータの設計ルール違反を自動チェックする機能も備え、設計業務の効率化や品質向上、技術継承を支援する。"
+    },
+    {
+      "id": "s-ecb6882585",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "好業績なのに“上場廃止”　なぜネットワンはSCSKとの「攻めの統合」に賭けたのか",
+      "url": "https://www.itmedia.co.jp/business/articles/2609/11/news020.html",
+      "publishedAt": "2026-09-10T22:00:00.000Z",
+      "summary": "業績絶好調の独立系インフラベンダー・ネットワンシステムズが、自ら上場を廃止しSCSK傘下に入る「攻めの統合」を決断した。身売りではなく、自らの手で次世代IT企業へと進化するための戦略的ディールだ。インフラ（NI）とアプリ（SI）の壁を壊しワンストップ化を目指す両社。文化の異なる大企業同士がいかに融合し事業領域を拡大するのか。最先端拠点「netone valley」で田中拓也COOに直撃した。"
+    },
+    {
+      "id": "s-2b5252e01a",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "On the Regularization Landscape for the Linear Recommendation Models",
+      "url": "https://arxiv.org/abs/2609.11876v1",
+      "publishedAt": "2026-09-10T17:45:06.000Z",
+      "summary": "Recently, a wide range of recommendation algorithms inspired by deep learning techniques have emerged as the performance leaders on several standard recommendation benchmarks. While these algorithms were built on different DL techniques (e.g., dropouts, autoencoder), they have similar performance and even similar cost functions. This paper studies whether the models' comparable performance are she"
+    },
+    {
+      "id": "s-59e23087cf",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement",
+      "url": "https://arxiv.org/abs/2609.11873v1",
+      "publishedAt": "2026-09-10T17:44:23.000Z",
+      "summary": "Recursive self-improvement (RSI) enables AI systems to turn experience and feedback into persistent changes that improve both their capabilities and the process of future improvement. We first use the Headroom-Closed Index (HCI) to reveal the problems of existing LLMs, then introduce the RSI concept and its development roadmap: from improvement-execution autonomy, improvement-strategy autonomy, ex"
+    }
+  ]
+}
