@@ -79,7 +79,7 @@ test('checkCitations: bodyOnly指定時は本文中の水平線をfrontmatter区
   assert.ok(result.uncited.includes('最初の無出典文です。'));
 });
 
-test('checkCitations: bodyOnly指定時も通常のfrontmatter付き記事全体は従来どおり検証できる（既存呼び出し元との互換性）', () => {
+test('checkCitations: bodyOnly未指定（デフォルト）ならfrontmatter付き記事全体を従来どおり検証できる（既存呼び出し元との互換性）', () => {
   const fullMarkdown = '---\ntitle: "test"\n---\n\n一文です[^s-aaaaaaaaaa]。';
   const withBodyOnlyFalse = checkCitations({ markdown: fullMarkdown, validIds: new Set(['s-aaaaaaaaaa']) });
   assert.equal(withBodyOnlyFalse.ok, true);

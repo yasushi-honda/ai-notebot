@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeLiteralNewlines, evaluateStageBCitations } from '../curate.mjs';
+import { normalizeLiteralNewlines, evaluateStageBCitations, decideStageBRetry } from '../curate.mjs';
 
 test('normalizeLiteralNewlines: リテラルな \\n を実際の改行に変換する', () => {
   const input = '1段落目です。\\n\\n2段落目です。';
@@ -59,4 +59,44 @@ test('evaluateStageBCitations: 本文中にMarkdown水平線（---）があっ�
   const body = '最初の無出典文です。\n\n---\n\n後半の一文です[^s-aaa]。';
   const problems = evaluateStageBCitations(body, new Set(['s-aaa']));
   assert.ok(problems.some((p) => p.includes('脚注のない文')));
+});
+
+// decideStageBRetry: runStageBの再生成ループ本体はgenerateText（Vertex AI実API呼び出し）を
+// 含みネットワーク依存で単体テストできないため、意思決定部分（accept/retry/exhausted）だけを
+// 切り出してテストする（pr-review-toolkitのテストカバレッジレビューで指摘: 最大試行回数への
+// 到達判定・extraInstructionsの累積というこのPRの核心部分が無テストだった）。
+test('decideStageBRetry: 問題が無ければacceptする', () => {
+  const decision = decideStageBRetry({ attempt: 1, maxAttempts: 3, problems: [], extraInstructions: [] });
+  assert.deepEqual(decision, { action: 'accept' });
+});
+
+test('decideStageBRetry: 問題があり最大試行回数未満ならretryし、extraInstructionsを累積する', () => {
+  const decision = decideStageBRetry({
+    attempt: 1,
+    maxAttempts: 3,
+    problems: ['問題A'],
+    extraInstructions: ['既存の指示'],
+  });
+  assert.equal(decision.action, 'retry');
+  assert.deepEqual(decision.extraInstructions, ['既存の指示', '問題A']);
+});
+
+test('decideStageBRetry: extraInstructionsの累積は重複を排除する', () => {
+  const decision = decideStageBRetry({
+    attempt: 1,
+    maxAttempts: 3,
+    problems: ['同じ問題', '新しい問題'],
+    extraInstructions: ['同じ問題'],
+  });
+  assert.deepEqual(decision.extraInstructions, ['同じ問題', '新しい問題']);
+});
+
+test('decideStageBRetry: 問題があり最大試行回数に達していればexhaustedになる（境界値: ちょうど到達）', () => {
+  const decision = decideStageBRetry({ attempt: 3, maxAttempts: 3, problems: ['問題A'], extraInstructions: [] });
+  assert.deepEqual(decision, { action: 'exhausted' });
+});
+
+test('decideStageBRetry: 問題が無ければ最大試行回数に達していてもacceptが優先される', () => {
+  const decision = decideStageBRetry({ attempt: 3, maxAttempts: 3, problems: [], extraInstructions: [] });
+  assert.deepEqual(decision, { action: 'accept' });
 });

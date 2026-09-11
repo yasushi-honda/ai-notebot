@@ -179,6 +179,23 @@ export function evaluateStageBCitations(bodyMarkdown, validIds) {
   return problems;
 }
 
+/**
+ * runStageBの再生成ループの意思決定部分（accept/retry/exhausted）を純関数として切り出す。
+ * generateText（Vertex AI実API呼び出し）を含むループ本体はネットワーク依存で単体テストできないが、
+ * この決定ロジック（境界値: 最大試行回数への到達判定、extraInstructionsの重複排除累積）だけを
+ * 切り出すことで、Vertex AI呼び出し無しでテストできるようにする（pr-review-toolkitのテスト
+ * カバレッジレビューで指摘: このPRの主目的である再生成ループ配線そのものが無テストだった）。
+ */
+export function decideStageBRetry({ attempt, maxAttempts, problems, extraInstructions }) {
+  if (problems.length === 0) {
+    return { action: 'accept' };
+  }
+  if (attempt >= maxAttempts) {
+    return { action: 'exhausted' };
+  }
+  return { action: 'retry', extraInstructions: [...new Set([...extraInstructions, ...problems])] };
+}
+
 async function runStageB(theme, itemsById) {
   const themeItems = theme.sourceIds.map((id) => itemsById.get(id)).filter(Boolean);
   const validIds = new Set(theme.sourceIds);
@@ -191,14 +208,15 @@ async function runStageB(theme, itemsById) {
     result.bodyMarkdown = normalizeLiteralNewlines(result.bodyMarkdown);
 
     const problems = evaluateStageBCitations(result.bodyMarkdown, validIds);
+    const decision = decideStageBRetry({ attempt, maxAttempts: MAX_REGENERATE_ATTEMPTS, problems, extraInstructions });
 
-    if (problems.length === 0) return result;
+    if (decision.action === 'accept') return result;
 
     console.warn(`  ✗ 出典チェックNG（試行${attempt}/${MAX_REGENERATE_ATTEMPTS}）: ${problems.join(' / ')}`);
-    if (attempt === MAX_REGENERATE_ATTEMPTS) {
+    if (decision.action === 'exhausted') {
       throw new Error(`Stage B: 「${theme.title}」で出典チェックを満たす本文を生成できませんでした。`);
     }
-    extraInstructions = [...new Set([...extraInstructions, ...problems])];
+    extraInstructions = decision.extraInstructions;
   }
 }
 
