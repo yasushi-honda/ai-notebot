@@ -15,18 +15,18 @@ for (const post of posts) {
 ---
 
 <BaseLayout title="アーカイブ" description="日次AIトレンド記事のアーカイブ一覧">
-  <h1 class="text-2xl font-bold text-stone-900 mb-8" style="font-family: var(--font-display);">
+  <h1 class="font-display text-2xl font-bold text-ink mb-8">
     アーカイブ（全{posts.length}件）
   </h1>
 
   {[...groups.entries()].map(([ym, monthPosts]) => (
     <section class="mb-10">
-      <h2 class="text-sm font-semibold text-stone-500 mb-1 tabular-nums">{ym}</h2>
+      <h2 class="font-mono text-xs text-ink-soft mb-1 tabular-nums">{ym}</h2>
       <ul>
         {monthPosts.map((post) => (
           <li>
             <a href={url(`posts/${post.data.date}/`)} class="list-link list-link-compact list-link-inline">
-              <span class="text-xs text-stone-400 tabular-nums">{post.data.date}</span>
+              <span class="font-mono text-xs text-ink-soft tabular-nums">{post.data.date}</span>
               <span class="list-link-title">{post.data.title}</span>
             </a>
           </li>
@@ -35,5 +35,5 @@ for (const post of posts) {
     </section>
   ))}
 
-  {posts.length === 0 && <p class="text-stone-500">まだ記事がありません。</p>}
+  {posts.length === 0 && <p class="text-ink-soft">まだ記事がありません。</p>}
 </BaseLayout>

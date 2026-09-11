@@ -4,10 +4,14 @@
  * site/src/content/posts/<date>.md の frontmatter（heroImagePrompt）を
  * gemini-3.1-flash-lite-image（Nano Banana 2 Lite）に投げ、
  * hero(16:9) 1枚を site/public/images/<date>/ に生成する。
- * あわせて「今日のトピック一覧」SVG図解（Vertex AI不使用・決定的生成）も生成する。
  *
  * 画像生成の失敗は記事本文の公開を止めない設計: 失敗した画像は SVG プレースホルダに
  * フォールバックする（詳細: docs/adr/）。
+ *
+ * 「今日のトピック一覧」の図解はかつて決定的生成SVG（overview.svg）として別途生成していたが、
+ * 固定キャンバス幅がコンテナ幅を使い切らないバグが再発したため廃止し、本文の出典内訳
+ * テーブルをネイティブHTML/CSSで表示する方式に一本化した
+ * （docs/adr/adr-2026-09-11-deterministic-svg-to-native-html.md）。
  *
  * 使い方: GEMINI_ACCESS_TOKEN=... node scripts/images.mjs [YYYY-MM-DD]
  */
@@ -19,7 +23,6 @@ import { dirname, join } from 'node:path';
 import { parseFrontmatter } from './lib/frontmatter.mjs';
 import { generateImage } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
-import { buildOverviewSvg } from './lib/svg-diagram.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const POSTS_DIR = join(ROOT, 'site', 'src', 'content', 'posts');
@@ -69,7 +72,7 @@ async function main() {
     process.exit(1);
   }
 
-  const { frontmatter, body } = parseFrontmatter(markdown);
+  const { frontmatter } = parseFrontmatter(markdown);
   const heroPrompt = frontmatter.heroImagePrompt;
 
   if (!heroPrompt) {
@@ -82,22 +85,6 @@ async function main() {
 
   const results = [];
   results.push(await generateOne(heroPrompt, '16:9', join(outDir, 'hero'), 'hero'));
-
-  // 「今日のトピック一覧」SVG図解。本文の ## 見出し（curate.mjs のテーブル見出し
-  // 「今日のトピック」を除く）から決定的に生成する。Vertex AI を呼ばないため
-  // 失敗しようがなく、追加コストもハルシネーションリスクもゼロ。
-  const themeTitles = [...body.matchAll(/^## (.+)$/gm)]
-    .map((m) => m[1].trim())
-    .filter((title) => title !== '今日のトピック');
-  if (themeTitles.length > 0) {
-    const svg = buildOverviewSvg(themeTitles.map((title) => ({ title })));
-    const overviewPath = join(outDir, 'overview.svg');
-    await writeFile(overviewPath, svg, 'utf8');
-    console.log(`✓ overview: ${overviewPath}（${themeTitles.length}テーマ）`);
-    results.push(overviewPath);
-  } else {
-    console.warn('✗ overview: 本文から ## 見出しが見つかりませんでした。図解生成をスキップします。');
-  }
 
   console.log(`画像生成完了: ${results.length}件 → ${outDir}`);
 }

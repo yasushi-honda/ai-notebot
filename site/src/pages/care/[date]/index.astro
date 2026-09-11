@@ -16,16 +16,16 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout title={post.data.title} description={post.data.summary}>
-  <nav class="text-sm text-stone-400 mb-4">
-    <a href={url('')} class="hover:text-indigo-600">ホーム</a> /
-    <a href={url('care/')} class="hover:text-teal-600">介護AIハック</a> /
+  <nav class="font-mono text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-verify">ホーム</a> /
+    <a href={url('care/')} class="hover:text-care">介護AIハック</a> /
     <span class="tabular-nums">{post.data.date}</span>
   </nav>
 
   <div class="care-page">
-    <div class="text-xs text-teal-600 font-semibold mb-2 tabular-nums">{post.data.date} · 介護現場のAI活用</div>
-    <h1 class="text-2xl font-bold text-stone-900 mb-2" style="font-family: var(--font-display);">{post.data.title}</h1>
-    <p class="text-stone-500 mb-6">{post.data.summary}</p>
+    <div class="font-mono text-xs text-care font-semibold mb-2 tabular-nums">{post.data.date} · 介護現場のAI活用</div>
+    <h1 class="font-display text-2xl font-bold text-ink mb-2">{post.data.title}</h1>
+    <p class="text-ink-soft mb-6">{post.data.summary}</p>
 
     <!-- dl/dt/dd（定義リスト）はラベルと値のペア構造を要求するため、"ラベル: 値" を
          1つのテキストにまとめて表示するpillとは意味構造が合わない（codex reviewで指摘・修正）。
@@ -36,12 +36,14 @@ const { Content } = await render(post);
       <span class="care-meta-pill">導入の手間: {post.data.difficulty}</span>
     </div>
 
-    <img
-      src={url(`images/care/${post.data.date}/steps.svg`)}
-      alt="手順フロー"
-      class="steps-diagram"
-      onerror="this.style.display='none'"
-    />
+    <!--
+      手順フロー図はかつて決定的生成SVG画像（steps.svg）として本文と別に表示していたが、
+      固定キャンバス幅がコンテナ幅を使い切らず右側に余白ができるバグが過去記事も含め再発し、
+      修正のたびにバックフィルが必要になっていた。本文「## 手順」の番号付きリストは
+      global.css の .prose-care ol で既にネイティブ描画されており内容が完全に重複していたため、
+      画像を廃止しリストを唯一の表示手段にした（幅は常にコンテナ幅に追従するため、この
+      バグクラス自体が構造的に発生しなくなる。docs/adr/adr-2026-09-11-deterministic-svg-to-native-html.md）。
+    -->
 
     <article class="prose-care">
       <Content />
@@ -69,7 +71,8 @@ const { Content } = await render(post);
       利用する等、所属先の情報管理ルールに従ってください。
     </div>
 
-    <p class="mt-6 text-xs text-stone-400">
+    <p class="verify-label mt-6">
+      <span class="verify-dot"></span>
       この記事の出典 {post.data.sourceIds.length} 件はすべて、到達性を機械検証済みの実在するウェブページに解決することを検証済みです。
     </p>
 

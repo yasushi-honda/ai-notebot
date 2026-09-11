@@ -5,71 +5,76 @@ import { url } from '../lib/url';
 
 const allPosts = (await getCollection('posts')).sort((a, b) => b.data.date.localeCompare(a.data.date));
 const latest = allPosts[0];
-const rest = allPosts.slice(1, 8);
+const rest = allPosts.slice(1, 6);
 
 const carePosts = (await getCollection('care')).sort((a, b) => b.data.date.localeCompare(a.data.date));
 const latestCare = carePosts[0];
 
-function heroSrc(date: string) {
-  return url(`images/${date}/hero.jpg`);
-}
+// themes（{title, sourceCount}）はこのフィールド追加より前の記事には存在しない
+// （スキーマのdefault []になる）。その場合は themeTitles（件数なし）にフォールバックする
+// （posts/[date]/index.astro の shareText 同様のフォールバックパターン）。
+const todayThemes = latest
+  ? latest.data.themes.length > 0
+    ? latest.data.themes
+    : latest.data.themeTitles.map((title) => ({ title, sourceCount: null as number | null }))
+  : [];
 ---
 
 <BaseLayout title="毎日のAIトレンドまとめ">
-  <p class="text-stone-600 mb-10 text-[15px] leading-relaxed max-w-lg">
-    毎日 AI 関連のニュース・ハック・話題を収集し、出典を脚注で紐付けた日本語ブログとして自動生成しています。
-  </p>
-
   {latest && (
-    <a
-      href={url(`posts/${latest.data.date}/`)}
-      class="block mb-10 rounded-xl overflow-hidden border border-stone-200 bg-white no-underline"
-    >
-      <img
-        src={heroSrc(latest.data.date)}
-        alt={latest.data.title}
-        class="w-full aspect-video object-cover"
-        onerror="this.onerror=null;this.src=this.src.replace('.jpg','.svg')"
-      />
-      <div class="p-6">
-        <div class="text-xs text-indigo-600 font-semibold mb-2 tabular-nums">最新記事 · {latest.data.date}</div>
-        <h2 class="text-2xl font-bold text-stone-900 mb-2" style="font-family: var(--font-display);">{latest.data.title}</h2>
-        <p class="text-sm text-stone-600">{latest.data.description}</p>
-      </div>
-    </a>
+    <section class="pb-10 border-b-[3px] border-double border-rule-strong">
+      <p class="verify-label mb-4.5">
+        <span class="verify-dot"></span>
+        本日の記録・出典{latest.data.sourceIds.length}件を機械検証済み
+      </p>
+      <div class="font-mono text-[13px] text-ink-soft tabular-nums">{latest.data.date}</div>
+      <h1 class="font-display text-[34px] font-bold leading-[1.45] mt-1.5 mb-4.5">
+        <a href={url(`posts/${latest.data.date}/`)} class="text-ink no-underline hover:text-verify">
+          {latest.data.title}
+        </a>
+      </h1>
+
+      {todayThemes.length > 0 && (
+        <div class="today-toc">
+          {todayThemes.map((theme) => (
+            <div class="today-toc-item">
+              {theme.sourceCount !== null && <span class="toc-count">{theme.sourceCount}件</span>}
+              <span class="toc-title">{theme.title}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
   )}
 
+  <div class="h-8"></div>
+
   {latestCare && (
-    <a
-      href={url(`care/${latestCare.data.date}/`)}
-      class="block mb-12 rounded-xl border border-stone-200 bg-white no-underline p-6"
-    >
-      <div class="text-xs text-teal-600 font-semibold mb-2 tabular-nums">介護AIハック · {latestCare.data.date}</div>
-      <h2 class="text-2xl font-bold text-stone-900 mb-2" style="font-family: var(--font-display);">{latestCare.data.title}</h2>
-      <p class="text-sm text-stone-600">{latestCare.data.summary}</p>
+    <a href={url(`care/${latestCare.data.date}/`)} class="care-callout block no-underline mb-9">
+      <div class="kicker">介護AIハック・{latestCare.data.date}</div>
+      <h3>{latestCare.data.title}</h3>
+      <p>{latestCare.data.summary}</p>
     </a>
   )}
 
   {rest.length > 0 && (
     <section>
-      <h3 class="text-sm font-semibold text-stone-500 mb-1">最近の記事</h3>
-      <ul>
-        {rest.map((post) => (
-          <li>
-            <a href={url(`posts/${post.data.date}/`)} class="list-link">
-              <div class="text-xs text-stone-400 mb-1 tabular-nums">{post.data.date}</div>
-              <div class="list-link-title">{post.data.title}</div>
-              <div class="text-sm text-stone-500 mt-1">{post.data.description}</div>
-            </a>
-          </li>
-        ))}
-      </ul>
+      <div class="ledger-heading">過去の記録</div>
+      {rest.map((post) => (
+        <div class="entry">
+          <div class="entry-date tabular-nums">{post.data.date}</div>
+          <div class="entry-body">
+            <h3><a href={url(`posts/${post.data.date}/`)}>{post.data.title}</a></h3>
+            <p>{post.data.description}</p>
+          </div>
+        </div>
+      ))}
     </section>
   )}
 
   <div class="mt-8">
-    <a href={url('archive/')} class="text-sm text-indigo-600 hover:underline">
-      すべてのアーカイブを見る →
+    <a href={url('archive/')} class="font-mono text-sm text-verify hover:underline">
+      すべてのアーカイブを見る
     </a>
   </div>
 </BaseLayout>

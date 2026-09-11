@@ -16,6 +16,9 @@ const posts = defineCollection({
     /** 加工前のテーマ見出し（tagsは文字数制限等で欠けることがあるため、
      *  シェアテキスト等で元の見出しが必要な用途向けに別途保持） */
     themeTitles: z.array(z.string()).default([]),
+    /** ホームの「本日の記録」一覧に表示するテーマ別出典件数。本フィールド追加前の記事には
+     *  存在しないため default([]) になり、その場合は themeTitles（件数なし）にフォールバックする */
+    themes: z.array(z.object({ title: z.string(), sourceCount: z.number() })).default([]),
     /** 本文の脚注が引用する出典 id（data/raw/<date>.json の id と対応） */
     sourceIds: z.array(z.string()).default([]),
     heroImagePrompt: z.string().optional(),

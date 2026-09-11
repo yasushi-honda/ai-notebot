@@ -25,13 +25,11 @@ import { generateText } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
 import { normalizeLiteralNewlines } from './curate.mjs';
 import { findBannedExpressions } from './lib/style-guard.mjs';
-import { buildStepsSvg } from './lib/care-svg.mjs';
 import { stripCodeSpans } from './lib/citation-gate.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_CARE_DIR = join(ROOT, 'data', 'raw-care');
 const CARE_POSTS_DIR = join(ROOT, 'site', 'src', 'content', 'care');
-const IMAGES_DIR = join(ROOT, 'site', 'public', 'images', 'care');
 
 const MAX_REGENERATE_ATTEMPTS = 3; // 初回 + 品質チェック抵触時の再生成2回
 const MIN_STEPS = 3; // 「## 手順」に必須の最低ステップ数（責任範囲: buildPrompt/CARE_SCHEMAの指示と一致させる）
@@ -841,12 +839,6 @@ async function main() {
   }
 
   const usedIds = extractUsedIds(result.bodyMarkdown);
-  const steps = extractSteps(result.bodyMarkdown);
-  await mkdir(join(IMAGES_DIR, dateArg), { recursive: true });
-  const svg = buildStepsSvg(steps);
-  await writeFile(join(IMAGES_DIR, dateArg, 'steps.svg'), svg, 'utf8');
-  console.log(`✓ steps.svg: ${steps.length}ステップ`);
-
   const footnotes = buildFootnoteDefs(usedIds, itemsById);
 
   const frontmatter = [

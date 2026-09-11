@@ -16,15 +16,15 @@ const { tag, posts } = Astro.props;
 ---
 
 <BaseLayout title={`#${tag}`} description={`タグ「${tag}」の記事一覧`}>
-  <nav class="text-sm text-stone-400 mb-4">
-    <a href={url('')} class="hover:text-indigo-600">ホーム</a> / タグ
+  <nav class="font-mono text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-verify">ホーム</a> / タグ
   </nav>
-  <h1 class="text-2xl font-bold text-stone-900 mb-8" style="font-family: var(--font-display);">#{tag}</h1>
+  <h1 class="font-display text-2xl font-bold text-ink mb-8">#{tag}</h1>
   <ul>
     {posts.map((post) => (
       <li>
         <a href={url(`posts/${post.data.date}/`)} class="list-link list-link-compact list-link-inline">
-          <span class="text-xs text-stone-400 tabular-nums">{post.data.date}</span>
+          <span class="font-mono text-xs text-ink-soft tabular-nums">{post.data.date}</span>
           <span class="list-link-title">{post.data.title}</span>
         </a>
       </li>

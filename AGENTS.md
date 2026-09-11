@@ -11,7 +11,7 @@ curate.mjs (Vertex AI gemini-3.5-flash-lite) → site/src/content/posts/YYYY-MM-
     ↓
 validate-citations.mjs (脚注が data/raw に解決するか機械検証。1件でも未解決なら exit 1)
     ↓
-images.mjs (Vertex AI gemini-3.1-flash-lite-image で hero.jpg 1枚 + 決定的生成のoverview.svg) → site/public/images/YYYY-MM-DD/
+images.mjs (Vertex AI gemini-3.1-flash-lite-image で hero.jpg 1枚) → site/public/images/YYYY-MM-DD/
     ↓
 Astro build → dist/ → GitHub Pages
 ```
@@ -27,8 +27,8 @@ build-care.mjs（オーケストレータ。失敗しても本体の生成・公
   ├─ collect-care.mjs (Vertex AI Google検索グラウンディング → 介護DXテーマを調査・出典を
   │    到達性検証) → data/raw-care/YYYY-MM-DD.json
   ├─ curate-care.mjs (グラウンディングなし・responseSchemaのみ。data/raw-care だけを材料に
-  │    構造化生成 + style-guardでAIっぽい表現を検査 + 手順フローSVGを決定的生成)
-  │    → site/src/content/care/YYYY-MM-DD.md, site/public/images/care/YYYY-MM-DD/steps.svg
+  │    構造化生成 + style-guardでAIっぽい表現を検査)
+  │    → site/src/content/care/YYYY-MM-DD.md
   └─ validate-citations.mjs --type=care（AIトレンド版と共有のゲート。テーブル免除なし）
     ↓
 Astro build → dist/ → GitHub Pages（/care/YYYY-MM-DD/）

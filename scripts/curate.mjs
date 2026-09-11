@@ -240,6 +240,10 @@ async function main() {
     // 元の見出しをそのまま必要とする用途向けに、加工しないテーマ見出しの配列を別途保持する
     `themeTitles:`,
     ...themes.map((t) => `  - ${JSON.stringify(t.title)}`),
+    // ホームの「本日の記録」一覧がテーマ名だけでなく出典件数（実データ）も表示するために
+    // 追加した（themeTitlesと違い{title, sourceCount}のオブジェクト配列。2026-09-11）。
+    `themes:`,
+    ...themes.map((t) => `  - title: ${JSON.stringify(t.title)}\n    sourceCount: ${t.sourceIds.length}`),
     `sourceIds: [${[...usedIds].map((id) => JSON.stringify(id)).join(', ')}]`,
     // 画像生成モデル（gemini-3.1-flash-lite-image）は「文字なし」を明示しても、
     // プロンプト文中に列挙可能な具体的要素が複数含まれていると、それぞれを見出し付きの

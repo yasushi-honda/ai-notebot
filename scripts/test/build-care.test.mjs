@@ -46,21 +46,24 @@ test('build-care: 既に有効な記事が存在する状態で失敗すると�
   const env = { ...process.env };
   delete env.GEMINI_ACCESS_TOKEN;
 
+  // images/care/<date>/ 配下は現在は何も自動生成しないが、snapshot/restore はディレクトリの
+  // 中身をブラックボックスとして丸ごとバックアップ・復元するため、任意のファイルが
+  // 既存であるケースの回帰確認として使う（ファイル名自体に意味はない）。
   const existingMarkdown = '---\ntitle: "既存の有効な記事"\n---\n\n本文です。\n';
-  const existingSvg = '<svg xmlns="http://www.w3.org/2000/svg"><text>既存の図解</text></svg>';
-  const svgPath = join(careImagesDir, 'steps.svg');
+  const existingFileContent = '既存のファイル';
+  const existingFilePath = join(careImagesDir, 'placeholder.txt');
 
   await mkdir(dirname(carePostPath), { recursive: true });
   await mkdir(careImagesDir, { recursive: true });
   await writeFile(carePostPath, existingMarkdown, 'utf8');
-  await writeFile(svgPath, existingSvg, 'utf8');
+  await writeFile(existingFilePath, existingFileContent, 'utf8');
 
   try {
     await execFileAsync('node', [SCRIPT, FIXTURE_DATE], { env });
     assert.equal(await exists(carePostPath), true);
     assert.equal(await readFile(carePostPath, 'utf8'), existingMarkdown);
-    assert.equal(await exists(svgPath), true);
-    assert.equal(await readFile(svgPath, 'utf8'), existingSvg);
+    assert.equal(await exists(existingFilePath), true);
+    assert.equal(await readFile(existingFilePath, 'utf8'), existingFileContent);
   } finally {
     await rm(carePostPath, { force: true });
     await rm(careImagesDir, { recursive: true, force: true });

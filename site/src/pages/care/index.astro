@@ -7,10 +7,10 @@ const posts = (await getCollection('care')).sort((a, b) => b.data.date.localeCom
 ---
 
 <BaseLayout title="介護AIハック" description="介護現場の業務をAIで効率化する方法を、公式情報の裏付け付きで毎日1つ紹介します">
-  <h1 class="text-2xl font-bold text-stone-900 mb-2" style="font-family: var(--font-display);">
+  <h1 class="font-display text-2xl font-bold text-ink mb-2">
     介護AIハック（全{posts.length}件）
   </h1>
-  <p class="text-stone-500 mb-8">
+  <p class="text-ink-soft mb-8">
     介護現場の日々の業務をAIで効率化する具体的な方法を、公式情報の裏付け付きで毎日1つ紹介します。
   </p>
 
@@ -18,13 +18,13 @@ const posts = (await getCollection('care')).sort((a, b) => b.data.date.localeCom
     {posts.map((post) => (
       <li>
         <a href={url(`care/${post.data.date}/`)} class="list-link list-link-care">
-          <div class="text-xs text-stone-400 mb-1 tabular-nums">{post.data.date} · {post.data.workArea}</div>
+          <div class="font-mono text-xs text-ink-soft mb-1 tabular-nums">{post.data.date} · {post.data.workArea}</div>
           <div class="list-link-title">{post.data.title}</div>
-          <div class="text-sm text-stone-500 mt-1">{post.data.summary}</div>
+          <div class="text-sm text-ink-soft mt-1">{post.data.summary}</div>
         </a>
       </li>
     ))}
   </ul>
 
-  {posts.length === 0 && <p class="text-stone-500">まだ記事がありません。</p>}
+  {posts.length === 0 && <p class="text-ink-soft">まだ記事がありません。</p>}
 </BaseLayout>

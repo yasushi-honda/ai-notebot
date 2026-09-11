@@ -1,56 +1,67 @@
 /*
- * デザイン刷新（2026-09-11）: サイト全体が「いかにもAIが作ったデザイン」との指摘を受け、
- * Web調査（Stripe Blog・joshwcomeau.com・「AI Slop Web Design」系記事）を踏まえて作り直した。
- * 典型的な「AI生成っぽさ」の要因と対応:
- * - デフォルトのTailwind slate（寒色グレー）→ stone（暖色グレー）に変更し、量産SaaS感を減らす
- * - 見出しにシステムフォントしか使っていなかった→ Zen Kaku Gothic New を display フォントとして導入
- * - 全ページで同じ角丸カード（border+shadow）を反復→ 一覧系ページはカードを廃し、
- *   タイポグラフィと罫線だけのプレーンなリストに統一（joshwcomeau.com を参考）
+ * デザイン刷新 第2弾（2026-09-11）: 「いかにもAIが作ったデザイン」との指摘（クリーム地+
+ * テラコッタ・均一な角丸カードの反復・意味のない連番など）を受けて、コンセプトを
+ * 「ブログ」ではなく「毎日検証されて積み上がる記録台帳」に据えて全面刷新した。
+ * この案件固有の特徴（脚注による出典の機械検証）を視覚の中心装置にする。
+ * 詳細判断は docs/adr/adr-2026-09-11-deterministic-svg-to-native-html.md を参照。
  */
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@700;900&family=JetBrains+Mono:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans:
     'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif;
-  --font-display:
-    'Zen Kaku Gothic New', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP',
-    system-ui, sans-serif;
-  /*
-   * サイトロゴ「ai-notebot」専用。当初は本文と同じシステムフォントのまま小さく表示していた
-   * だけで「手を抜きすぎ」との指摘を受けた（2026-09-11）。小文字・ハイフン区切りの技術的な
-   * プロジェクト名をそのまま見せるなら、システムフォントで誤魔化さずモノスペースフォントで
-   * 意図的にデザインされたロゴとして扱う方が誠実、という判断（BaseLayout.astro参照）。
-   */
-  --font-logo: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  /* 見出し・masthead用の明朝体。本文と明確に書体を分けて「記録台帳」らしさを出す */
+  --font-display: 'Shippori Mincho', 'Hiragino Mincho ProN', serif;
+  /* Tailwind標準のfont-mono相当を上書きし、日付・メタ情報・ロゴに使う専用モノスペースにする */
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+
+  --color-paper: #f6f7f5;
+  --color-paper-deep: #eceee9;
+  --color-ink: #1a1f26;
+  --color-ink-soft: #4a5259;
+  --color-rule: #d8dcd6;
+  --color-rule-strong: #b7bcb5;
+  /* AIトレンド版アクセント: 「出典を機械検証している」という事実そのものを表す検証レッド */
+  --color-verify: #b8402e;
+  --color-verify-soft: #f3e3e0;
+  /* 介護版アクセント: 深緑。AIトレンド版と系統を見分けるための差し色 */
+  --color-care: #3f6b52;
+  --color-care-soft: #e4ece6;
 }
 
 body {
-  @apply bg-stone-50 text-stone-800;
+  @apply bg-paper text-ink;
 }
 
-h1 {
+.font-display {
   font-family: var(--font-display);
 }
 
-/* 日付表記（2026-09-11等）は等幅数字にして桁が揃うようにする（細部の品質感） */
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
 
+/* 検証済みラベル（赤い点＋モノスペース文言）。ホームのmasthead・記事詳細の出典見出しで共有 */
+.verify-label {
+  @apply flex items-center gap-2 font-mono text-xs text-verify;
+}
+.verify-label .verify-dot {
+  @apply w-1.5 h-1.5 rounded-full bg-verify;
+}
+
 /*
- * 一覧系ページ（archive/tags/care一覧/ホームの「最近の記事」）共通のリストパターン。
- * 個々の記事を角丸カード（border+shadow）で囲む反復をやめ、項目間の罫線だけで区切る
- * プレーンなタイポグラフィ・リストにする（joshwcomeau.com参照）。ホバーはタイトル文字色が
- * 変わるだけの控えめな挙動にし、「hover:shadow-lg」の量産感を避ける。
+ * 一覧系ページ（アーカイブ／タグ／介護一覧）共通のリストパターン。個々の記事を角丸カード
+ * （border+shadow）で囲む反復をやめ、項目間の罫線だけで区切るプレーンなタイポグラフィ・
+ * リストにする。ホバーはタイトル文字色が変わるだけの控えめな挙動にする。
  */
 .list-link {
-  @apply block py-4 border-b border-stone-200 no-underline;
+  @apply block py-4 border-b border-rule no-underline;
 }
 /*
  * .list-link（<a>）は常に自分の<li>の唯一の子要素のため、`.list-link:first-child` /
  * `:last-child` は常に真になってしまい、リストの実際の先頭・末尾に関わらず全項目が
- * マッチしてしまう（codex reviewで指摘・修正）。判定は親<li>の位置で行う。
+ * マッチしてしまう。判定は親<li>の位置で行う。
  */
 li:first-child > .list-link {
   @apply pt-0;
@@ -59,51 +70,119 @@ li:last-child > .list-link {
   @apply border-b-0;
 }
 .list-link .list-link-title {
-  @apply font-semibold text-stone-900 transition-colors;
+  @apply font-semibold text-ink transition-colors;
 }
 .list-link:hover .list-link-title {
-  @apply text-indigo-600;
+  @apply text-verify;
 }
 .list-link.list-link-care:hover .list-link-title {
-  @apply text-teal-600;
+  @apply text-care;
 }
 /* アーカイブ等、日付+タイトルだけの1行密度が高いリスト用のコンパクト版 */
 .list-link.list-link-compact {
   @apply py-2;
 }
 /*
- * 日付+タイトルを横並びにする版。.list-link の `@apply block` と同じ詳細度(0,1,0)の
- * ままだと、CSSソース順で後発の .list-link が勝ち flex が block に打ち消されてしまうため
- * （実機確認で発覚）、詳細度を上げた複合セレクタで明示的に上書きする。
+ * 日付+タイトルを横並びにする版。.list-link の `@apply block` と同じ詳細度のままだと
+ * CSSソース順で後発の .list-link が勝ち flex が block に打ち消されるため、詳細度を
+ * 上げた複合セレクタで明示的に上書きする。
  */
 .list-link.list-link-inline {
   @apply flex items-baseline gap-3;
 }
 
 /*
- * 段落タイポグラフィ（ベストプラクティス調査に基づく調整・2026-09-10）:
- * - 行間: 日本語Web文章は170〜200%が推奨（欧文の130〜150%より広め）
- * - 文字サイズ: 本文幅768px前後で1行28〜40字（日本語の推奨値）に収まるよう
- *   やや大きめ(17px)にして読みやすさを優先
- * - 段落間: 短い段落を積み重ねる構成（curate.mjsのStage Bで1テーマ内を
- *   2〜4段落に分割するよう変更）を前提に、段落間の余白を広めに取り「壁」に
- *   見えないようにする
+ * ホーム専用「過去の記録」台帳。アーカイブ等の密なリストと違い、数件のみを日付＋タイトル＋
+ * 説明の2カラムで並べる（プロトタイプで検証済みの構成）。
  */
-.prose-post :where(p) {
-  @apply text-[17px] leading-[1.9] mb-6 text-stone-700;
+.ledger-heading {
+  @apply font-mono text-xs tracking-wide text-ink-soft uppercase mb-1;
 }
-
-.prose-post :where(h2) {
+.entry {
+  @apply grid gap-5 py-5 border-b border-rule;
+  grid-template-columns: 86px 1fr;
+}
+.entry:first-child {
+  @apply border-t border-rule;
+}
+.entry-date {
+  @apply font-mono text-[13px] text-ink-soft tabular-nums pt-0.5;
+}
+.entry-body h3 {
   font-family: var(--font-display);
-  @apply text-xl font-bold mt-12 mb-4 text-stone-900 pl-4 border-l-4 border-indigo-500;
+  @apply text-lg font-bold mb-1.5 leading-relaxed;
+}
+.entry-body h3 a {
+  @apply text-ink no-underline;
+}
+.entry-body h3 a:hover {
+  @apply text-verify;
+}
+.entry-body p {
+  @apply text-[13.5px] text-ink-soft leading-relaxed m-0;
 }
 
-.prose-post :where(strong) {
-  @apply font-bold text-stone-900;
+/* ホームの「介護AIハック」当日記事コールアウト */
+.care-callout {
+  @apply border border-rule border-l-[3px] px-5 py-4.5 bg-paper-deep;
+  border-left-color: var(--color-care);
+}
+.care-callout .kicker {
+  @apply font-mono text-[11px] text-care mb-1.5;
+}
+.care-callout h3 {
+  font-family: var(--font-display);
+  @apply text-[17px] font-bold mb-1.5;
+}
+.care-callout h3 a {
+  @apply text-ink no-underline;
+}
+.care-callout p {
+  @apply text-[13px] text-ink-soft m-0;
 }
 
-/* 箇条書き（curate.mjsが3件以上の並列事実を列挙する際に使用） */
-.prose-post :where(ul) {
+/* ホーム masthead の「本日の記録」テーマ一覧。連番ではなく実データ（出典件数）を先頭に置く */
+.today-toc {
+  @apply mt-6 border-t border-rule pt-1;
+}
+.today-toc-item {
+  @apply flex items-baseline gap-4 py-3.5 border-b border-rule text-[15.5px];
+}
+.today-toc-item:last-child {
+  @apply border-b-0;
+}
+.toc-count {
+  @apply font-mono font-bold text-verify bg-verify-soft text-center rounded-sm text-[13px] py-1;
+  width: 3.4rem;
+  flex-shrink: 0;
+}
+.toc-title {
+  @apply text-ink flex-1;
+}
+
+/*
+ * 段落タイポグラフィ: 行間は日本語Web文章の推奨(170〜200%)、文字サイズは本文幅768px前後で
+ * 1行28〜40字に収まるようやや大きめ、1行の長さ自体も max-width で明示的に制限する。
+ */
+.prose-post :where(p),
+.prose-care :where(p) {
+  @apply text-[16.5px] leading-[1.95] mb-6 text-ink;
+  max-width: 38em;
+}
+
+.prose-post :where(h2),
+.prose-care :where(h2) {
+  font-family: var(--font-display);
+  @apply text-xl font-bold mt-12 mb-4 pb-2.5 border-b border-rule text-ink;
+}
+
+.prose-post :where(strong),
+.prose-care :where(strong) {
+  @apply font-bold text-ink;
+}
+
+.prose-post :where(ul),
+.prose-care :where(ul) {
   @apply list-disc pl-6 mb-4 space-y-1.5 leading-relaxed;
 }
 .prose-post :where(ol) {
@@ -112,152 +191,156 @@ li:last-child > .list-link {
 
 /* テーマ別ソース内訳テーブル（curate.mjsが機械生成、LLMは書かない） */
 .prose-post :where(table) {
-  @apply w-full my-6 text-sm border-collapse overflow-hidden rounded-lg border border-stone-200;
+  @apply w-full my-6 text-sm border-collapse border border-rule;
 }
 .prose-post :where(th) {
-  @apply bg-indigo-50 text-stone-900 font-semibold text-left px-3 py-2 border-b border-stone-200;
+  @apply bg-paper-deep text-ink font-semibold text-left px-3 py-2 border-b border-rule font-mono text-xs;
 }
 .prose-post :where(td) {
-  @apply px-3 py-2 border-b border-stone-100 text-stone-700 align-top;
+  @apply px-3 py-2 border-b border-rule text-ink-soft align-top;
 }
 .prose-post :where(tr:last-child td) {
   @apply border-b-0;
 }
-.prose-post :where(tbody tr:nth-child(even)) {
-  @apply bg-stone-50;
-}
 
-/* 「今日のトピック一覧」SVG図解 */
-.overview-diagram {
-  @apply w-full rounded-xl border border-stone-200 bg-white mb-8;
+/* remark-gfm footnotes セクション（記事末尾の出典台帳） */
+.prose-post :where(section[data-footnotes]),
+.prose-care :where(section[data-footnotes]) {
+  @apply mt-12 pt-6 border-t-2 border-double border-rule-strong text-sm text-ink-soft;
 }
-
-/* remark-gfm footnotes セクション */
-.prose-post :where(section[data-footnotes]) {
-  @apply mt-10 pt-6 border-t border-stone-200 text-sm text-stone-600;
+.prose-post :where(section[data-footnotes] > h2),
+.prose-care :where(section[data-footnotes] > h2) {
+  font-family: var(--font-mono);
+  @apply text-xs text-verify border-none mt-0 mb-3.5 pb-0 font-bold normal-case;
 }
-.prose-post :where(section[data-footnotes] ol) {
-  @apply list-decimal list-inside space-y-2;
+.prose-care :where(section[data-footnotes] > h2) {
+  @apply text-care;
 }
-.prose-post :where(section[data-footnotes] li) {
-  @apply leading-relaxed;
+.prose-post :where(section[data-footnotes] ol),
+.prose-care :where(section[data-footnotes] ol) {
+  @apply list-none pl-0 space-y-0;
 }
-.prose-post :where(a) {
-  @apply text-indigo-600 underline decoration-indigo-300 hover:decoration-indigo-600;
+.prose-post :where(section[data-footnotes] li),
+.prose-care :where(section[data-footnotes] li) {
+  @apply leading-relaxed py-2.5 border-b border-rule;
+}
+.prose-post :where(section[data-footnotes] li:last-child),
+.prose-care :where(section[data-footnotes] li:last-child) {
+  @apply border-b-0;
+}
+.prose-post :where(a),
+.prose-care :where(a) {
+  @apply text-verify underline decoration-verify-soft hover:decoration-verify;
+}
+.prose-care :where(a) {
+  @apply text-care decoration-care-soft hover:decoration-care;
 }
 
 /*
- * 本文中の脚注参照（<sup><a data-footnote-ref>1</a></sup>）。
- * 通常のリンクと同じ太字・下線スタイルだと本文中で目立ちすぎて読みのリズムを
- * 崩すため、控えめな上付きバッジ調にする（Wikipedia等の引用UIパターンを参考。
- * 文末に置く設計のため句読点との衝突を避けるmargin調整も加える）。
- * :where()を使わない実セレクタにして、上のa全般ルールより優先させる。
+ * 本文中の脚注参照（<sup><a data-footnote-ref>1</a></sup>）。出典件数バッジ（.toc-count）と
+ * 同じ「実データの角丸ラベル」語彙で統一し、通常のリンクより控えめな引用バッジにする。
  */
 .prose-post sup a[data-footnote-ref] {
-  @apply inline-flex items-center justify-center min-w-[1.35em] h-[1.35em] px-1 ml-0.5
-    rounded bg-indigo-50 text-[0.7em] font-semibold text-indigo-500 no-underline
+  @apply inline-flex items-center justify-center min-w-[1.4em] h-[1.4em] px-1 ml-0.5
+    rounded-sm bg-verify-soft text-[0.7em] font-mono font-bold text-verify no-underline
     align-super leading-none transition-colors;
 }
 .prose-post sup a[data-footnote-ref]:hover {
-  @apply bg-indigo-100 text-indigo-700;
+  @apply bg-verify text-white;
+}
+.prose-care sup a[data-footnote-ref] {
+  @apply inline-flex items-center justify-center min-w-[1.4em] h-[1.4em] px-1 ml-0.5
+    rounded-sm bg-care-soft text-[0.7em] font-mono font-bold text-care no-underline
+    align-super leading-none transition-colors;
+}
+.prose-care sup a[data-footnote-ref]:hover {
+  @apply bg-care text-white;
 }
 
 /*
- * 介護版「今日のAI活用ハック」記事。AIトレンド版（.prose-post）と同じ土台（stoneベース・
- * カードを使わない一覧・display フォント）を共有しつつ、差し色だけ teal にして
- * コンテンツ種別が見分けられるようにする。
+ * 介護版「今日のAI活用ハック」記事コンテナ。
  */
 .care-page {
-  @apply bg-white border border-stone-200 rounded-xl px-6 py-8 sm:px-10 sm:py-10;
+  @apply bg-white border border-rule px-6 py-8 sm:px-10 sm:py-10;
 }
 
 .care-meta {
   @apply flex flex-wrap gap-2 mb-8;
 }
 .care-meta .care-meta-pill {
-  @apply text-xs px-2 py-1 rounded-full bg-teal-50 text-teal-700;
+  @apply text-xs px-2.5 py-1 rounded-sm bg-care-soft text-care font-mono;
 }
 
-.prose-care :where(p) {
-  @apply text-[17px] leading-[1.9] mb-6 text-stone-700;
-}
-.prose-care :where(h2) {
-  font-family: var(--font-display);
-  @apply text-xl font-bold mt-12 mb-4 text-stone-900 pl-4 border-l-4 border-teal-500;
-}
-.prose-care :where(strong) {
-  @apply font-bold text-stone-900;
-}
-
-/* 「## 手順」の番号付きリスト: teal の丸番号バッジ（.prose-postの装飾密度に合わせる） */
+/*
+ * 「## 手順」の番号付きリスト。かつては別途SVG画像（steps.svg）でも同じ内容を描画していたが、
+ * 固定キャンバス幅がコンテナ幅を使い切らず右側に余白ができるバグが再発したため画像を廃止し、
+ * この番号リスト（ネイティブHTML/CSS、幅は常にコンテナ幅に追従）を唯一の表示手段にした
+ * （2026-09-11、docs/adr/adr-2026-09-11-deterministic-svg-to-native-html.md）。
+ */
 .prose-care :where(ol) {
   @apply list-none pl-0 mb-4 space-y-0;
   counter-reset: care-step;
 }
 .prose-care :where(ol li) {
-  @apply relative pl-10 py-3 border-b border-stone-100 leading-relaxed last:border-b-0;
+  @apply relative pl-14 pb-7 leading-relaxed last:pb-0;
   counter-increment: care-step;
+  min-height: 2.5rem;
 }
 .prose-care :where(ol li)::before {
   content: counter(care-step);
-  @apply absolute left-0 top-3 inline-flex items-center justify-center w-6 h-6 rounded-full
-    bg-teal-600 text-white text-xs font-bold;
+  @apply absolute left-0 top-0 inline-flex items-center justify-center w-10 h-10 rounded-full
+    bg-care text-white font-mono text-[15px] font-bold z-10;
 }
-.prose-care :where(ul) {
-  @apply list-disc pl-6 mb-4 space-y-1.5 leading-relaxed;
+.prose-care :where(ol li:not(:last-child))::after {
+  content: '';
+  @apply absolute bg-rule-strong;
+  left: 19px;
+  top: 40px;
+  bottom: -4px;
+  width: 2px;
 }
-
 /*
- * 「## 使えるプロンプト例」セクションのフェンス付きコードブロック（curate-care.mjsが
- * LLMに要求する新セクション、2026-09-11追加）。装飾のないブラウザデフォルト描画のままでは
- * 見た目が整わないため、他のプロダクトのプロンプト提示UIを参考に、実際にコピペしたくなる
- * 見た目（モノスペース・薄いteal背景・スクロール可能）にする。
+ * remark-gfmが生成する出典リスト（`section[data-footnotes] ol`）も `.prose-care` 配下の
+ * <ol> のため、上の「手順」用ルールと同じ `:where()`（詳細度0）で衝突する。Tailwindの
+ * :where() は詳細度を持たずCSSソース順で後勝ちになるため、後で定義した上のルールが
+ * 出典リストにも丸番号バッジ・接続線を誤って適用してしまう（codex reviewで指摘・修正）。
+ * 出典リストは手順ではないため、ここで明示的に打ち消す。
  */
-.prose-care :where(pre) {
-  @apply mb-4 overflow-x-auto rounded-lg border border-teal-100 bg-teal-50/60 px-4 py-3 text-[13px]
-    leading-relaxed text-stone-800;
-}
-.prose-care :where(pre code) {
-  font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
-  @apply bg-transparent p-0;
-}
-
-.steps-diagram {
-  @apply w-full rounded-xl border border-stone-200 bg-white mb-8;
-}
-
-/* remark-gfm footnotes セクション */
-.prose-care :where(section[data-footnotes]) {
-  @apply mt-10 pt-6 border-t border-stone-200 text-sm text-stone-600;
-}
 .prose-care :where(section[data-footnotes] ol) {
-  @apply list-decimal list-inside space-y-2 pl-0;
   counter-reset: none;
 }
 .prose-care :where(section[data-footnotes] ol li) {
-  @apply relative pl-0 py-0 border-b-0;
+  @apply relative pl-0 pb-0;
   counter-increment: none;
+  min-height: 0;
 }
 .prose-care :where(section[data-footnotes] ol li)::before {
   content: none;
 }
-.prose-care :where(section[data-footnotes] li) {
-  @apply leading-relaxed;
-}
-.prose-care :where(a) {
-  @apply text-teal-600 underline decoration-teal-300 hover:decoration-teal-600;
+.prose-care :where(section[data-footnotes] ol li)::after {
+  content: none;
 }
 
-.prose-care sup a[data-footnote-ref] {
-  @apply inline-flex items-center justify-center min-w-[1.35em] h-[1.35em] px-1 ml-0.5
-    rounded bg-teal-50 text-[0.7em] font-semibold text-teal-600 no-underline
-    align-super leading-none transition-colors;
+/*
+ * 「## 使えるプロンプト例」のフェンス付きコードブロック。大胆さは全体で1箇所だけに集中させる
+ * という設計方針（frontend-designスキル）に基づき、この要素だけダークグリーンの
+ * ターミナル調にして「実際にコピペして使う」実用性を視覚的に強調する。
+ */
+.prose-care :where(pre) {
+  @apply mb-4 rounded overflow-hidden border border-care-soft;
 }
-.prose-care sup a[data-footnote-ref]:hover {
-  @apply bg-teal-100 text-teal-800;
+.prose-care :where(pre)::before {
+  content: 'コピペして使えるプロンプト';
+  @apply block font-mono text-[11px] text-care bg-care-soft px-3.5 py-1.5;
+}
+.prose-care :where(pre code) {
+  @apply block overflow-x-auto px-4 py-4.5 text-[13px] leading-[1.85];
+  font-family: var(--font-mono);
+  background: #0f2d29;
+  color: #d7ede9;
 }
 
 /* 個人情報の取り扱いに関する注意（LLM生成ではなく固定文言。care/[date]/index.astro参照） */
 .care-privacy-note {
-  @apply mb-8 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900 leading-relaxed;
+  @apply mb-8 rounded border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900 leading-relaxed;
 }

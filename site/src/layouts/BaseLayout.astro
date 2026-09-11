@@ -21,25 +21,27 @@ const siteTitle = 'ai-notebot';
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
   </head>
   <body>
-    <header class="border-b border-stone-200 bg-white">
-      <div class="mx-auto max-w-3xl px-4 py-5 flex items-center justify-between">
-        <a href={url('')} class="no-underline">
-          <span class="text-2xl font-bold text-stone-900 tracking-tight" style="font-family: var(--font-logo);">
-            ai<span class="text-indigo-500">-</span>notebot
+    <header class="border-b border-rule bg-paper">
+      <div class="mx-auto max-w-3xl px-6 py-6 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
+        <a href={url('')} class="no-underline shrink-0">
+          <span class="font-mono font-extrabold text-[22px] tracking-tight text-ink whitespace-nowrap">
+            ai<span class="text-verify">-</span>notebot
           </span>
         </a>
-        <nav class="flex gap-4 text-sm text-stone-600">
-          <a href={url('archive/')} class="hover:text-indigo-600">アーカイブ</a>
-          <a href={url('care/')} class="hover:text-teal-600">介護AIハック</a>
-          <a href={url('about/')} class="hover:text-indigo-600">About</a>
+        <nav class="flex gap-5 font-mono text-[13px] text-ink-soft whitespace-nowrap">
+          <a href={url('archive/')} class="hover:text-verify">アーカイブ</a>
+          <a href={url('care/')} class="hover:text-care">介護AIハック</a>
+          <a href={url('about/')} class="hover:text-verify">About</a>
         </nav>
       </div>
     </header>
-    <main class="mx-auto max-w-3xl px-4 py-8">
+    <main class="mx-auto max-w-3xl px-6 py-10">
       <slot />
     </main>
-    <footer class="mx-auto max-w-3xl px-4 py-8 border-t border-stone-200 mt-12 text-xs text-stone-400">
-      毎日 AI 関連のニュース・ハック・話題を収集し、出典を脚注で紐付けて自動生成しています。
+    <footer class="border-t border-rule mt-16">
+      <div class="mx-auto max-w-3xl px-6 py-6 text-xs text-ink-soft">
+        毎日 AI 関連のニュース・ハック・話題を収集し、出典を脚注で紐付けて自動生成しています。
+      </div>
     </footer>
   </body>
 </html>

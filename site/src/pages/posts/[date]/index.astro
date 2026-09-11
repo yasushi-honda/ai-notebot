@@ -31,19 +31,19 @@ const shareText = [
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description}>
-  <nav class="text-sm text-stone-400 mb-4">
-    <a href={url('')} class="hover:text-indigo-600">ホーム</a> /
-    <a href={url('archive/')} class="hover:text-indigo-600">アーカイブ</a> /
+  <nav class="font-mono text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-verify">ホーム</a> /
+    <a href={url('archive/')} class="hover:text-verify">アーカイブ</a> /
     <span class="tabular-nums">{post.data.date}</span>
   </nav>
 
-  <h1 class="text-2xl font-bold text-stone-900 mb-2" style="font-family: var(--font-display);">{post.data.title}</h1>
-  <p class="text-stone-500 mb-6">{post.data.description}</p>
+  <h1 class="font-display text-2xl font-bold text-ink mb-2">{post.data.title}</h1>
+  <p class="text-ink-soft mb-6">{post.data.description}</p>
 
   <img
     src={url(`images/${post.data.date}/hero.jpg`)}
     alt={post.data.title}
-    class="w-full aspect-video object-cover rounded-xl mb-8"
+    class="w-full aspect-video object-cover border border-rule mb-8"
     onerror="this.onerror=null;this.src=this.src.replace('.jpg','.svg')"
   />
 
@@ -51,7 +51,7 @@ const shareText = [
     {post.data.tags.map((tag) => (
       <a
         href={url(`tags/${encodeURIComponent(tag)}/`)}
-        class="text-xs px-2 py-1 rounded-full bg-indigo-50 text-indigo-700 no-underline hover:bg-indigo-100"
+        class="font-mono text-xs px-2 py-1 rounded-sm bg-verify-soft text-verify no-underline hover:bg-verify hover:text-white transition-colors"
       >
         #{tag}
       </a>
@@ -61,9 +61,9 @@ const shareText = [
   <button
     id="copy-share-btn"
     type="button"
-    class="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 mb-8 rounded-full
-      bg-indigo-50 text-indigo-700 hover:bg-indigo-100 transition-colors cursor-pointer
-      border-0"
+    class="inline-flex items-center gap-1.5 font-mono text-xs px-3 py-1.5 mb-8 rounded-sm
+      border border-rule text-ink-soft hover:border-verify hover:text-verify transition-colors cursor-pointer
+      bg-transparent"
   >
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
       stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
@@ -73,18 +73,20 @@ const shareText = [
     <span>シェア用にコピー</span>
   </button>
 
-  <img
-    src={url(`images/${post.data.date}/overview.svg`)}
-    alt="今日のトピック一覧"
-    class="overview-diagram"
-    onerror="this.style.display='none'"
-  />
+  <!--
+    「今日のトピック一覧」の図解はかつて決定的生成SVG画像（overview.svg）として本文と別に
+    表示していたが、固定キャンバス幅がコンテナ幅を使い切らず余白ができるバグが過去記事も
+    含め再発していた。本文冒頭のテーマ別ソース内訳テーブル（curate.mjsが機械生成、
+    global.cssの .prose-post table で表示）と内容が完全に重複していたため、画像を廃止し
+    テーブルを唯一の表示手段にした（docs/adr/adr-2026-09-11-deterministic-svg-to-native-html.md）。
+  -->
 
   <article class="prose-post">
     <Content />
   </article>
 
-  <p class="mt-10 text-xs text-stone-400">
+  <p class="verify-label mt-10">
+    <span class="verify-dot"></span>
     この記事の出典 {post.data.sourceIds.length} 件はすべて、収集日のアーカイブに実在するエントリに解決することを機械検証済みです。
   </p>
 </BaseLayout>
