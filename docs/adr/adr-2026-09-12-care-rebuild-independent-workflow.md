@@ -47,6 +47,11 @@
   あるため、`env:` 経由で受け渡し、日付解決を専用ステップ（`Resolve target date`）に分離した
   （`??` は空文字列を nullish と見なさないため、`build-care.mjs` に空文字列がそのまま渡ると
   `todayJst()` へのフォールバックが効かないバグを避ける意図もある）。
+- `concurrency.group` は `daily.yml` と同じ `daily-digest` を使う（初版では独立した
+  `care-rebuild` グループにしていたが、`codex review` で「手動 rebuild と daily.yml の
+  定期実行が重なると、両方が同じブランチへ push・Pages デプロイを試み、非 fast-forward
+  失敗や新しいデプロイが古い artifact に上書きされるレースコンディションが起きる」と
+  指摘され修正した）。
 
 ## Consequences
 

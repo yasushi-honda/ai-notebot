@@ -23,7 +23,7 @@ permissions:
   pages: write
 
 concurrency:
-  group: care-rebuild
+  group: daily-digest
   cancel-in-progress: false
 
 jobs:
