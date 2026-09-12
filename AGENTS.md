@@ -57,6 +57,10 @@ node scripts/build-care.mjs <date>           # 介護版オーケストレータ
 node scripts/validate-citations.mjs <date> --type=care  # 介護版の出典検証を単独実行
 cd site && npm run build                     # 静的サイトビルド
 node --test scripts/**/*.test.mjs            # 単体テスト
+
+# 介護版だけを独立して手動再生成・デプロイ（daily.ymlはAIトレンド版と一括実行するため使えない場合。詳細: docs/adr/adr-2026-09-12-care-rebuild-independent-workflow.md）
+gh workflow run care-rebuild.yml -f date=YYYY-MM-DD -f regenerate=true   # 再収集からやり直す
+gh workflow run care-rebuild.yml -f regenerate=false                     # 既存コミット済み内容のままサイト全体を再ビルド・デプロイのみ
 ```
 
 ## 開発時の注意
