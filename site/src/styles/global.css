@@ -231,6 +231,23 @@ li:last-child > .list-link {
   @apply bg-care;
 }
 
+/*
+ * 「今日のトピック」など、直後にテーブルが続く見出しはサマリーの前置きラベルであり、
+ * 本文の実質的なセクションではない。同じ色ドット・下線を使うと目次と本文セクションが
+ * 同列に見えてしまうため、h2:has(+ table)で構造的に判定し、ホームの.ledger-heading
+ * と同系統の軽量ラベル（小さい・グレー・下線なし）に落とす。curate.mjs側の生成テンプレート
+ * を変更せずCSSだけで区別できる。
+ */
+.prose-post :where(h2:has(+ table)),
+.prose-care :where(h2:has(+ table)) {
+  font-family: var(--font-sans);
+  @apply text-xs font-semibold tracking-wide text-ink-soft border-none pb-0 mb-3 mt-8 normal-case block;
+}
+.prose-post :where(h2:has(+ table))::before,
+.prose-care :where(h2:has(+ table))::before {
+  content: none;
+}
+
 .prose-post :where(strong),
 .prose-care :where(strong) {
   @apply font-bold text-ink;
