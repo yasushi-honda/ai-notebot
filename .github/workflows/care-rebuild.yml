@@ -1,0 +1,116 @@
+name: Rebuild care hack article
+
+# 介護版（build-care.mjs）だけを独立して手動再生成・デプロイするための workflow。
+# daily.yml は AI トレンド版と介護版を一括で実行するため、介護版だけを狙って動かせない
+# （collect-care.mjs が公式ドメインの到達性検証で失敗しやすく、その日だけ手動対応が
+# 必要になることがある。詳細: docs/adr/）。
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '対象日 (YYYY-MM-DD)。省略時は当日（JST）'
+        required: false
+        type: string
+      regenerate:
+        description: 'true: build-care.mjs で再収集・再生成する / false: 既にコミット済みの内容でビルド・デプロイのみ行う'
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  id-token: write # Workload Identity Federation（Vertex AI 呼び出し、API キー不使用）
+  pages: write
+
+concurrency:
+  group: care-rebuild
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # data/raw-care・介護版記事のコミットに必要
+      id-token: write
+    outputs:
+      built: ${{ steps.build.outcome == 'success' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: site/package-lock.json
+
+      - name: Resolve target date
+        id: resolve_date
+        run: |
+          if [ -n "$TARGET_DATE" ]; then
+            echo "date=$TARGET_DATE" >> "$GITHUB_OUTPUT"
+          else
+            echo "date=$(TZ=Asia/Tokyo date +%F)" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          TARGET_DATE: ${{ inputs.date }}
+
+      - name: Authenticate to Google Cloud (WIF)
+        id: auth
+        if: ${{ inputs.regenerate }}
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/297750025000/locations/global/workloadIdentityPools/github/providers/github-actions
+          service_account: ai-notebot-ci@ai-notebot-yh.iam.gserviceaccount.com
+          token_format: access_token
+
+      - name: Build care hack article
+        if: ${{ inputs.regenerate }}
+        run: node scripts/build-care.mjs "$TARGET_DATE"
+        env:
+          TARGET_DATE: ${{ steps.resolve_date.outputs.date }}
+          GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          GCP_PROJECT: ai-notebot-yh
+
+      - name: Install site dependencies
+        run: npm ci
+        working-directory: site
+
+      - name: Build site
+        id: build
+        run: npm run build
+        working-directory: site
+
+      - name: Commit archive and article
+        if: ${{ inputs.regenerate }}
+        run: |
+          git config user.name "ai-notebot-bot"
+          git config user.email "actions@github.com"
+          git add data/raw-care site/src/content/care
+          if git diff --cached --quiet; then
+            echo "変更なし。コミットをスキップします。"
+          else
+            git commit -m "chore: 介護版daily digest $TARGET_DATE"
+            git push
+          fi
+        env:
+          TARGET_DATE: ${{ steps.resolve_date.outputs.date }}
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
