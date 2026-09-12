@@ -10,6 +10,7 @@ import {
   escapeSourceField,
   formatCandidateList,
   containsRawHtml,
+  containsMalformedFootnote,
   mentionsGenericTool,
   mentionsMultipleGenericToolFamilies,
   mentionsPersonalInfoHandling,
@@ -111,6 +112,30 @@ test('containsRawHtml: HTMLタグを含まない通常の本文は false', () =>
 
 test('containsRawHtml: コードスパン内のタグ表記は安全なため検出しない', () => {
   assert.equal(containsRawHtml('本文です`<div>`という記法もあります。'), false);
+});
+
+// containsMalformedFootnote: LLMが正しい脚注参照 [^s-<id>] の "^" をまれに別の記号（"*" 等）に
+// 置き換えて出力することがある（実データで [*s-dd50543a2c] を発見。2026-09-12、codex reviewで
+// 指摘・修正）。extractUsedIds は [^s-<id>] の形しか拾わないため、この壊れたマーカーは脚注
+// リンクにならない生の文字列として公開サイトの本文に残ってしまう。
+test('containsMalformedFootnote: [^s-<id>] は正しい形式のため検出しない', () => {
+  assert.equal(containsMalformedFootnote('本文です[^s-aaaaaaaaaa]。'), false);
+});
+
+test('containsMalformedFootnote: ^ の代わりに * を使った壊れた脚注記法を検出する', () => {
+  assert.equal(containsMalformedFootnote('本文です[*s-aaaaaaaaaa]。'), true);
+});
+
+test('containsMalformedFootnote: 連続する正しい脚注参照は誤検出しない', () => {
+  assert.equal(containsMalformedFootnote('本文です[^s-aaaaaaaaaa][^s-bbbbbbbbbb]。'), false);
+});
+
+test('containsMalformedFootnote: s-<id>を含まない通常の角括弧は誤検出しない', () => {
+  assert.equal(containsMalformedFootnote('本文です[備考]あり。'), false);
+});
+
+test('containsMalformedFootnote: コードスパン内の壊れた記法例は安全なため検出しない', () => {
+  assert.equal(containsMalformedFootnote('説明: `[*s-aaaaaaaaaa]`のような誤記法。'), false);
 });
 
 test('containsRawHtml: 数値の不等号比較（5 < 10等）はタグと誤認しない', () => {
