@@ -104,12 +104,23 @@ async function main() {
   }
 
   const recentUrls = await loadRecentUrls(targetDate);
-  const cutoff = targetDate.getTime() + 24 * 60 * 60 * 1000 - MAX_AGE_DAYS * 24 * 60 * 60 * 1000;
+  // targetDate（収集対象日）の終わり（24時）を超える未来日付は、収集日時点でまだ公開されて
+  // いないはずのソースであり、その日のダイジェストの根拠にはできない（実データでRSS/APIの
+  // publishedAtが収集日の2日後を指しているケースが発覚。日付表記自体が矛盾した記事が公開
+  // されてしまう実害があった）。
+  const futureCutoff = targetDate.getTime() + 24 * 60 * 60 * 1000;
+  const cutoff = futureCutoff - MAX_AGE_DAYS * 24 * 60 * 60 * 1000;
 
   const seenToday = new Set();
   const perSource = new Map();
   const candidates = all
-    .filter((i) => i.date instanceof Date && !Number.isNaN(i.date.getTime()) && i.date.getTime() >= cutoff)
+    .filter(
+      (i) =>
+        i.date instanceof Date &&
+        !Number.isNaN(i.date.getTime()) &&
+        i.date.getTime() >= cutoff &&
+        i.date.getTime() < futureCutoff,
+    )
     .sort((a, b) => b.date.getTime() - a.date.getTime())
     .filter((i) => {
       const key = normalizeUrl(i.url);
