@@ -37,6 +37,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Sync to latest main
+        # actions/checkout はデフォルトで workflow_dispatch 発生時点の SHA を取得する。
+        # daily-digest concurrency グループで daily.yml の完了待ちになっている間に
+        # daily.yml がコミット・push すると、待機解除後にこのジョブが古い SHA のまま
+        # ビルド・コミットしてしまい、後続の git push が non-fast-forward で失敗する
+        # （codex reviewで指摘・修正）。ジョブ開始時点の最新 main を明示的に取り直す。
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
