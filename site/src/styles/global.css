@@ -241,7 +241,7 @@ li:last-child > .list-link {
 .prose-post :where(h2:has(+ table)),
 .prose-care :where(h2:has(+ table)) {
   font-family: var(--font-sans);
-  @apply text-xs font-semibold tracking-wide text-ink-soft border-none pb-0 mb-3 mt-8 normal-case block;
+  @apply text-base font-semibold tracking-wide text-ink-soft border-none pb-0 mb-3 mt-8 normal-case block;
 }
 .prose-post :where(h2:has(+ table))::before,
 .prose-care :where(h2:has(+ table))::before {
