@@ -104,11 +104,15 @@ async function main() {
   }
 
   const recentUrls = await loadRecentUrls(targetDate);
-  // targetDate（収集対象日）の終わり（24時）を超える未来日付は、収集日時点でまだ公開されて
-  // いないはずのソースであり、その日のダイジェストの根拠にはできない（実データでRSS/APIの
-  // publishedAtが収集日の2日後を指しているケースが発覚。日付表記自体が矛盾した記事が公開
-  // されてしまう実害があった）。
-  const futureCutoff = targetDate.getTime() + 24 * 60 * 60 * 1000;
+  // targetDateはJST基準の日付文字列を`${dateStr}T00:00:00Z`としてUTC解釈しているため、
+  // targetDateの実時刻はJSTでは既に「その日の09:00」になっている（todayJst()参照）。
+  // JST日付としての「その日の終わり（24:00 JST）」に相当するUTC時刻は、targetDateから
+  // 単純に24時間後ではなく、9時間のズレを補正した15時間後になる（例:
+  // targetDate=2026-09-12T00:00Z(=2026-09-12 09:00 JST)+15h=2026-09-12T15:00Z
+  // (=2026-09-13 00:00 JST)。+24時間のままだと翌日09:00 JSTまでのソースを誤って許容
+  // してしまう（codex reviewで指摘・修正）。
+  const JST_OFFSET_HOURS = 9;
+  const futureCutoff = targetDate.getTime() + (24 - JST_OFFSET_HOURS) * 60 * 60 * 1000;
   const cutoff = futureCutoff - MAX_AGE_DAYS * 24 * 60 * 60 * 1000;
 
   const seenToday = new Set();
