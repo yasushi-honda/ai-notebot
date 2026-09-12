@@ -66,7 +66,7 @@ jobs:
 
       - name: Build care hack article
         if: ${{ inputs.regenerate }}
-        run: node scripts/build-care.mjs "$TARGET_DATE"
+        run: node scripts/build-care.mjs "$TARGET_DATE" --strict
         env:
           TARGET_DATE: ${{ steps.resolve_date.outputs.date }}
           GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}

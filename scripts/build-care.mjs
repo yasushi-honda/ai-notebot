@@ -13,7 +13,13 @@
  * 2回目が失敗するケースがあり得るため、単純に削除すると既に公開済みの正しい記事まで
  * 失ってしまう（codex reviewで指摘・修正）。
  *
- * 使い方: GEMINI_ACCESS_TOKEN=... node scripts/build-care.mjs [YYYY-MM-DD]
+ * `--strict` を指定すると、失敗時に exit 0 ではなく exit 1 を返す。daily.yml（AIトレンド版と
+ * 一括実行、介護版の失敗が本体の生成・公開を止めてはならない）は従来通り strict 無しで呼び出し、
+ * care-rebuild.yml（介護版単体を再生成する workflow）は strict 付きで呼び出す。strict 無しのまま
+ * だと、介護版単体の workflow で生成に失敗してもワークフロー自体は「成功」のままビルド・デプロイが
+ * 続行され、記事が更新されていないのに成功したように見えてしまう（codex reviewで指摘・修正）。
+ *
+ * 使い方: GEMINI_ACCESS_TOKEN=... node scripts/build-care.mjs [YYYY-MM-DD] [--strict]
  */
 
 import { spawnSync } from 'node:child_process';
@@ -97,7 +103,10 @@ export async function snapshot(dateArg) {
 }
 
 async function main() {
-  const dateArg = process.argv[2] ?? todayJst();
+  const args = process.argv.slice(2);
+  const strict = args.includes('--strict');
+  const dateArg = args.find((a) => !a.startsWith('--')) ?? todayJst();
+  const failExitCode = strict ? 1 : 0;
 
   console.log(`介護版記事の生成を開始します（対象日: ${dateArg}）`);
 
@@ -106,19 +115,19 @@ async function main() {
   if (!run('collect-care.mjs', [dateArg])) {
     warn(`収集に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。`);
     await backup.restore();
-    process.exit(0);
+    process.exit(failExitCode);
   }
 
   if (!run('curate-care.mjs', [dateArg])) {
     warn(`記事生成に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。`);
     await backup.restore();
-    process.exit(0);
+    process.exit(failExitCode);
   }
 
   if (!run('validate-citations.mjs', [dateArg, '--type=care'])) {
     warn(`出典検証に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。`);
     await backup.restore();
-    process.exit(0);
+    process.exit(failExitCode);
   }
 
   await backup.discard();
@@ -132,6 +141,6 @@ async function main() {
 if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
   main().catch(async (err) => {
     warn(`予期しないエラーが発生しました: ${err.message}`);
-    process.exit(0);
+    process.exit(process.argv.includes('--strict') ? 1 : 0);
   });
 }
