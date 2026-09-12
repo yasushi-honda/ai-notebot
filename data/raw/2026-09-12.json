@@ -1,115 +1,205 @@
 {
   "date": "2026-09-12",
-  "collectedAt": "2026-09-11T23:04:21.990Z",
+  "collectedAt": "2026-09-12T02:14:59.580Z",
   "sourceSuccessCount": 18,
   "items": [
     {
-      "id": "s-90d89d2f42",
+      "id": "s-12e9dd6851",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "publishedAt": "2026-09-14T00:00:00.000Z",
+      "summary": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models."
+    },
+    {
+      "id": "s-cd80ba38bf",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "cloudflare/agents: Build and deploy AI Agents on Cloudflare ",
-      "url": "https://github.com/cloudflare/agents",
-      "publishedAt": "2026-09-11T23:04:15.000Z",
-      "summary": "★5546 Build and deploy AI Agents on Cloudflare"
+      "title": "Tencent/WeKnora: Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "url": "https://github.com/Tencent/WeKnora",
+      "publishedAt": "2026-09-12T02:14:43.000Z",
+      "summary": "★22366 Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki."
     },
     {
-      "id": "s-a3a1fb3436",
+      "id": "s-20812ae5ae",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "cube-js/cube: 📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics",
-      "url": "https://github.com/cube-js/cube",
-      "publishedAt": "2026-09-11T23:03:46.000Z",
-      "summary": "★20808 📊 Cube Core is open-source semantic layer for AI, BI and embedded analytics"
+      "title": "agents-flex/agents-flex: Agents-flex is A lightweight Java AI agent development framework (positioned as a counterpart to Spring AI). It supports features such as RAG, MCP, Skills, Text2SQL , LLM Wiki, Sub-agents, Web Search, TTS (synchronous and streaming), and STT.",
+      "url": "https://github.com/agents-flex/agents-flex",
+      "publishedAt": "2026-09-12T02:14:29.000Z",
+      "summary": "★1056 Agents-flex is A lightweight Java AI agent development framework (positioned as a counterpart to Spring AI). It supports features such as RAG, MCP, Skills, Text2SQL , LLM Wiki, Sub-agents, Web Search, TTS (synchronous and streaming), and STT."
     },
     {
-      "id": "s-d972f36cad",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "ros-claw/rosclaw: Self-evolving runtime infrastructure for Physical AI and embodied agents. Ground AI agents into robot bodies with e-URDF, sandbox safety, capability routing, praxis capture, physical memory, runtime intervention, and skill evolution.",
-      "url": "https://github.com/ros-claw/rosclaw",
-      "publishedAt": "2026-09-11T23:03:38.000Z",
-      "summary": "★197 Self-evolving runtime infrastructure for Physical AI and embodied agents. Ground AI agents into robot bodies with e-URDF, sandbox safety, capability routing, praxis capture, physical memory, runtime intervention, and skill evolution."
-    },
-    {
-      "id": "s-c0e198ef7b",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "maziyarpanahi/openmed: Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0",
-      "url": "https://github.com/maziyarpanahi/openmed",
-      "publishedAt": "2026-09-11T23:03:31.000Z",
-      "summary": "★5302 Local-first healthcare AI: clinical NER & HIPAA PII de-identification that runs 100% on-device. 2,200+ medical models, 21 languages, Apple MLX + Python, no cloud, no patient data leaving your network. Apache-2.0"
-    },
-    {
-      "id": "s-da26989850",
-      "source": "GitHub Trending (llm)",
-      "sourceType": "github",
-      "title": "kirodotdev/KiroCrew: A persistent workspace for development work that self-improves and continues beyond one session.",
-      "url": "https://github.com/kirodotdev/KiroCrew",
-      "publishedAt": "2026-09-11T23:02:36.000Z",
-      "summary": "★3859 A persistent workspace for development work that self-improves and continues beyond one session."
-    },
-    {
-      "id": "s-ec7ef63e73",
+      "id": "s-930dd1342c",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "openclaw/clawsweeper: ClawSweeper scans all issues and PRs and suggest what we can close, and why. It runs every PR / Issue once a week.",
-      "url": "https://github.com/openclaw/clawsweeper",
-      "publishedAt": "2026-09-11T23:02:31.000Z",
-      "summary": "★1979 ClawSweeper scans all issues and PRs and suggest what we can close, and why. It runs every PR / Issue once a week."
+      "title": "NousResearch/hermes-agent: The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "publishedAt": "2026-09-12T02:14:28.000Z",
+      "summary": "★244621 The agent that grows with you"
     },
     {
-      "id": "s-0120bd29c2",
+      "id": "s-e0d92b1d36",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "matthiasn/lotti: A private logbook with a staff of personal AI assistants. Agents read what you record and propose what to do next — you approve the changes. End-to-end encrypted sync between your own devices — servers only ever see ciphertext. Local AI optional.",
-      "url": "https://github.com/matthiasn/lotti",
-      "publishedAt": "2026-09-11T23:02:28.000Z",
-      "summary": "★1173 A private logbook with a staff of personal AI assistants. Agents read what you record and propose what to do next — you approve the changes. End-to-end encrypted sync between your own devices — servers only ever see ciphertext. Local AI optional."
+      "title": "GalTransl/GalTransl: 支持GPT-4/Claude/Deepseek/Sakura等大语言模型的Galgame自动化翻译解决方案  Automated translation solution for visual novels supporting GPT-4/Claude/Deepseek/Sakura",
+      "url": "https://github.com/GalTransl/GalTransl",
+      "publishedAt": "2026-09-12T02:14:16.000Z",
+      "summary": "★2263 支持GPT-4/Claude/Deepseek/Sakura等大语言模型的Galgame自动化翻译解决方案 Automated translation solution for visual novels supporting GPT-4/Claude/Deepseek/Sakura"
     },
     {
-      "id": "s-dad15a553b",
+      "id": "s-6e5ec8cd9b",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "lidge-jun/opencodex: Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "publishedAt": "2026-09-12T02:14:16.000Z",
+      "summary": "★14346 Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code"
+    },
+    {
+      "id": "s-94a0993d5a",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "lbedner/aegis-stack: A production-ready FastAPI platform with modular components and a built-in control plane.",
+      "url": "https://github.com/lbedner/aegis-stack",
+      "publishedAt": "2026-09-12T02:14:15.000Z",
+      "summary": "★139 A production-ready FastAPI platform with modular components and a built-in control plane."
+    },
+    {
+      "id": "s-dd81d4dad3",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "nottelabs/notte: Cloud browser infrastructure and web automation platform for your AI and coding agents",
-      "url": "https://github.com/nottelabs/notte",
-      "publishedAt": "2026-09-11T23:02:15.000Z",
-      "summary": "★2001 Cloud browser infrastructure and web automation platform for your AI and coding agents"
+      "title": "amd/gaia: Build AI agents for your PC",
+      "url": "https://github.com/amd/gaia",
+      "publishedAt": "2026-09-12T02:14:14.000Z",
+      "summary": "★1546 Build AI agents for your PC"
     },
     {
-      "id": "s-20a418ebc1",
+      "id": "s-05adf874bb",
       "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "verseles/codewalk: A native (really fast!!) cross-platform client for OpenCode",
-      "url": "https://github.com/verseles/codewalk",
-      "publishedAt": "2026-09-11T23:01:40.000Z",
-      "summary": "★187 A native (really fast!!) cross-platform client for OpenCode"
+      "title": "db-lyon/ue-mcp: Complete Unreal Engine development toolkit exposed as MCP tools.",
+      "url": "https://github.com/db-lyon/ue-mcp",
+      "publishedAt": "2026-09-12T02:14:04.000Z",
+      "summary": "★328 Complete Unreal Engine development toolkit exposed as MCP tools."
     },
     {
-      "id": "s-89b2acf8b6",
-      "source": "GitHub Trending (llm)",
+      "id": "s-6dbc1369ef",
+      "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "AI-Hypercomputer/maxtext: A simple, performant, and scalable Jax LLM!",
-      "url": "https://github.com/AI-Hypercomputer/maxtext",
-      "publishedAt": "2026-09-11T23:01:40.000Z",
-      "summary": "★2419 A simple, performant, and scalable Jax LLM!"
+      "title": "withcatai/node-llama-cpp: Run AI models locally on your machine with node.js bindings for llama.cpp. Enforce a JSON schema on the model output on the generation level",
+      "url": "https://github.com/withcatai/node-llama-cpp",
+      "publishedAt": "2026-09-12T02:12:50.000Z",
+      "summary": "★2178 Run AI models locally on your machine with node.js bindings for llama.cpp. Enforce a JSON schema on the model output on the generation level"
     },
     {
-      "id": "s-3e166f225a",
-      "source": "GitHub Trending (llm)",
+      "id": "s-4a5cda4dac",
+      "source": "GitHub Trending (ai)",
       "sourceType": "github",
-      "title": "mudler/LocalAI: LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
-      "url": "https://github.com/mudler/LocalAI",
-      "publishedAt": "2026-09-11T22:58:57.000Z",
-      "summary": "★49057 LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required."
+      "title": "Nano-Collective/nanocoder: An open coding agent for your terminal, built by a community collective rather than a company. Bring your own model, keep your code on your machine, and owe nothing to anyone.",
+      "url": "https://github.com/Nano-Collective/nanocoder",
+      "publishedAt": "2026-09-12T02:12:32.000Z",
+      "summary": "★2466 An open coding agent for your terminal, built by a community collective rather than a company. Bring your own model, keep your code on your machine, and owe nothing to anyone."
     },
     {
-      "id": "s-d62d3bc659",
+      "id": "s-fbfff5ce65",
       "source": "GitHub Trending (llm)",
       "sourceType": "github",
-      "title": "09omerdgn-droid/api-model-playground-cookbook: Ultimate LLM API Integration Cookbook 2026 for Cursor & AI Agents",
-      "url": "https://github.com/09omerdgn-droid/api-model-playground-cookbook",
-      "publishedAt": "2026-09-11T22:58:44.000Z",
-      "summary": "★115 Ultimate LLM API Integration Cookbook 2026 for Cursor & AI Agents"
+      "title": "Ahmet-Dedeler/ai-llm-comparison: A website where you can compare every AI Model ✨",
+      "url": "https://github.com/Ahmet-Dedeler/ai-llm-comparison",
+      "publishedAt": "2026-09-12T02:11:50.000Z",
+      "summary": "★424 A website where you can compare every AI Model ✨"
+    },
+    {
+      "id": "s-7f8d7e314c",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "szczyglis-dev/py-gpt: Desktop AI Assistant powered by GPT-6, GPT-5, o1, o3, Gemini, Claude, Ollama, DeepSeek, Perplexity, Grok, Bielik, chat, vision, voice, RAG, image and video generation, agents, tools, MCP, plugins, speech synthesis and recognition, web search, memory, presets, assistants,and more. Linux, Windows, Mac",
+      "url": "https://github.com/szczyglis-dev/py-gpt",
+      "publishedAt": "2026-09-12T02:11:44.000Z",
+      "summary": "★1908 Desktop AI Assistant powered by GPT-6, GPT-5, o1, o3, Gemini, Claude, Ollama, DeepSeek, Perplexity, Grok, Bielik, chat, vision, voice, RAG, image and video generation, agents, tools, MCP, plugins, speech synthesis and recognition, web search, memory, presets, assistants,and more. Linux, Windows, Mac"
+    },
+    {
+      "id": "s-9b56b74d55",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "EC・物流で住所を揃える価値 — 誤配送・再配達・CSコストをどう削るか",
+      "url": "https://qiita.com/staddress/items/8ad26256ae3f9e54ea5a",
+      "publishedAt": "2026-09-12T02:10:33.000Z",
+      "summary": "EC・物流で住所を揃える価値 — 誤配送・再配達・CSコストをどう削るか 住所正規化・ジオコーディングAPI 「Staddress（スタドレス）」 開発チームです。 前回（住所データがKPIを壊すとき）は、住所正規化が事業インフラである理由を横断的に整理しました。今回は ..."
+    },
+    {
+      "id": "s-eb11954386",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "複数のAI画像・動画モデルで「表示価格」と「実際の消費」をずらさない設計",
+      "url": "https://qiita.com/Natalia724/items/d4e3b5ec9656be9b19e9",
+      "publishedAt": "2026-09-12T01:53:54.000Z",
+      "summary": "AI画像生成の料金が「1回10クレジット」のように固定されている間、実装は比較的単純です。 注: この記事のコード、型名、数値、フローは、説明用にゼロから作成した一般的な例です。SceneFlareの実装コード、内部API、価格式、プロバイダー設定は掲載していません。 ..."
+    },
+    {
+      "id": "s-a0956b96e0",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "📄医療業界に通なGemmaモデルがオープンソースモデルとしてあるらしい。",
+      "url": "https://qiita.com/Necoze/items/9d65c3fd53ae27dfc632",
+      "publishedAt": "2026-09-12T01:37:40.000Z",
+      "summary": "1. 概要 MedGemmaはGemma 3をベースに、医療テキストと医療画像の理解に特化して学習されたモデル群であり、医療AIアプリケーション開発を加速させることを目的としている。MedGemma 1.5 4Bは、MedGemma 1 4Bの更新版で、現時点では4Bのマ..."
+    },
+    {
+      "id": "s-9c133fb38d",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIの発展により、情報収集速度が加速する理由",
+      "url": "https://qiita.com/good59548/items/a393f6b0c461c34de889",
+      "publishedAt": "2026-09-12T01:36:11.000Z",
+      "summary": "AIの発展によって情報収集速度が加速するのは、膨大なデータの自動処理、検索・要約プロセスの効率化、およびマルチモーダルな情報解析が可能になったためです。主な理由は以下の通りです。 ①膨大な情報の瞬時な要約と抽出 数万文字に及ぶ長文の論文、ニュース記事、社内資料などをAIが数..."
+    },
+    {
+      "id": "s-e2a49620ae",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Countering misuse of AI: September 2026 / Anthropic",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdxspd/countering_misuse_of_ai_september_2026_anthropic/",
+      "publishedAt": "2026-09-12T00:36:16.000Z",
+      "summary": "Kimi routed some PLA requests to Claude for distillation purposes without warning the PLA users. There is rumor that 16 Moonshot employees were arrested for this leak. &#32; submitted by &#32; /u/Ok_Warning2146 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-c9efb3dfa1",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Bernie's AI bill proposes to sentence AI developers to 20 years in prison",
+      "url": "https://twitter.com/venturetwins/status/2098456905526211026",
+      "publishedAt": "2026-09-12T00:24:36.000Z",
+      "summary": "points=13 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-95b39fb680",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Qwen-Next seems worse to me then 3.8 27b for coding, but I feel like I must be missing something?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdx463/qwennext_seems_worse_to_me_then_38_27b_for_coding/",
+      "publishedAt": "2026-09-12T00:05:36.000Z",
+      "summary": "Hi! I run both models on MTPLX on my m5 max, and since I have 128GB of ram I run the q8 27b. I think MTPLX only lets me run &quot;optimized for speed&quot; which it says is a dynamic q4 with 8 bit attention. Both of them honestly are very speedy! For coding (in pi agent in nodejs) I&#39;ve just noticed that 27B feels stronger with harder tasks. But I&#39;ve read so many people on here say qwen-nex"
+    },
+    {
+      "id": "s-68c4490102",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "How to Build an AI Software Factory: Agents That Open, Review, and Merge PRs",
+      "url": "https://www.firecrawl.dev/blog/ai-software-factory",
+      "publishedAt": "2026-09-11T23:43:53.000Z",
+      "summary": "points=26 comments=8 (Hacker News)"
+    },
+    {
+      "id": "s-59326c0369",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
+      "url": "https://www.rubyhack.ai/",
+      "publishedAt": "2026-09-11T23:41:50.000Z",
+      "summary": "Comments"
     },
     {
       "id": "s-4c67a72ea8",
@@ -121,22 +211,49 @@
       "summary": "The round for the two-year-old startup is coming together months after Mecka announced its Series A."
     },
     {
-      "id": "s-e17ad22285",
-      "source": "Qiita (AI タグ)",
-      "sourceType": "japanese",
-      "title": "24GB VRAM環境におけるOllama安定稼働のベストプラクティス",
-      "url": "https://qiita.com/TOAI/items/ba9a7bdabbbac40bad6f",
-      "publishedAt": "2026-09-11T22:52:23.000Z",
-      "summary": "TOAI System テクニカルエバンジェリスト（IDE Gemini CTO）です。 「命の地球」エコシステムの概念モデルを、クラウドの無尽蔵なリソースに依存せず、エッジ（ローカル）環境で自律稼働させる。このビジョンを実現するためには、物理ハードウェアの制約という冷酷..."
+      "id": "s-ea8f83baf1",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Houthis used Anthropic to develop guided weapons",
+      "url": "https://www.washingtonpost.com/technology/2026/09/11/rebels-used-anthropics-ai-bot-develop-guided-weapons-report-says/",
+      "publishedAt": "2026-09-11T22:44:03.000Z",
+      "summary": "points=23 comments=7 (Hacker News)"
     },
     {
-      "id": "s-3918b7945e",
-      "source": "Qiita (AI タグ)",
-      "sourceType": "japanese",
-      "title": "AI Daily Digest 2026-09-12：OpenAIが金融機関向けChatGPTを投入、300ステップ超の端末エージェント、IMO金メダルの全レシピ公開",
-      "url": "https://qiita.com/lhjjjk4/items/8411ec61425f2b7521c5",
-      "publishedAt": "2026-09-11T22:05:06.000Z",
-      "summary": "AI Daily Digest 2026-09-12：OpenAIが金融機関向けChatGPTを投入、300ステップ超の端末エージェント、IMO金メダルの全レシピ公開 OpenAI、モルガン・スタンレーとEvercoreと組んだ銀行向けChatGPTを投入 OpenA..."
+      "id": "s-e000f25318",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Houthis used Anthropic AI to build ballistic missiles",
+      "url": "https://www.ft.com/content/8310cf56-ce60-4e6e-8254-5bb470e9a880",
+      "publishedAt": "2026-09-11T22:42:08.000Z",
+      "summary": "points=7 comments=5 (Hacker News)"
+    },
+    {
+      "id": "s-5c6805d0e2",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Bernie Sanders AI Bill Threatens Developers with 20-Year Jail Terms",
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/bernie-sanders-introduces-a-bill-in-senate-that-may-land-sam-altman-dario-amodei-and-other-top-tech-executives-in-jail-for-as-much-as-20-years/articleshow/133749410.cms",
+      "publishedAt": "2026-09-11T22:40:02.000Z",
+      "summary": "points=6 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-40afd106f0",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "They do think AI might kill everyone",
+      "url": "https://www.seangoedecke.com/they-really-do-think-ai-might-kill-everyone/",
+      "publishedAt": "2026-09-11T22:30:09.000Z",
+      "summary": "points=19 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-a865bf5763",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "This is why we need open-source harnesses + local models",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdushp/this_is_why_we_need_opensource_harnesses_local/",
+      "publishedAt": "2026-09-11T22:25:34.000Z",
+      "summary": "i&#39;ve been thinking about this more after trying different agent setups. the model isn&#39;t the only thing that determines how well an agent performs. The harness around the model matters a lot too. With a managed agent setup, you&#39;re often giving up control over things like the agent loop, context management, tool execution, retries, and state. That&#39;s fine when you just want something "
     },
     {
       "id": "s-2455e7d04f",
@@ -145,43 +262,16 @@
       "title": "GPT-6 built this earth exploration site in 5 prompts",
       "url": "https://earth.ethanplus.ai/",
       "publishedAt": "2026-09-11T21:39:52.000Z",
-      "summary": "points=24 comments=36 (Hacker News)"
+      "summary": "points=26 comments=38 (Hacker News)"
     },
     {
-      "id": "s-f110a1d72e",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "OpenClawの429で[Malformed diagnostic JSON redacted]が出る――エラー本文が消える理由",
-      "url": "https://zenn.dev/builders_loop/articles/openclaw-429-malformed-diagnostic-json-redacted",
-      "publishedAt": "2026-09-11T21:19:50.000Z",
-      "summary": "OpenClaw を Google AI Studio の無料枠で動かしていて 429 RESOURCE_EXHAUSTED が続いたので、記録を掘り返して原因を調べようとしました。ところが記録に残っていたエラー本文が、1件残らず次の文字列に置き換わっていました。 \"errorBody\":\"[Malformed diagnostic JSON redacted]\" 最初は「プロバイダが中身のないレスポンスを返したのだろう」と思いました。そうではありませんでした。この文字列は、OpenClaw に同梱されている関数が、保存する前に本文を置き換えた結果です。 配布物からその関数を直接呼び出し..."
-    },
-    {
-      "id": "s-53a4d62e68",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "Yasumaro v6.6 → v6.8 で何が変わったか — 4つの大きな前進",
-      "url": "https://zenn.dev/ar1/articles/yasumaro-68-overview",
-      "publishedAt": "2026-09-11T21:15:12.000Z",
-      "summary": "Yasumaro（旧 Obsidian Weave）は、ブラウザで読んだページを AI 要約付きで記録する Chrome 拡張機能です。無料・オープンソース（MIT）で、Edge Add-ons か GitHub Releases からインストールできます。 ふだんのブラウジングはそのままで構いません。Yasumaro が開いたページを検出し、AI の要約つきで記録します。記録は拡張機能内の SQLite に蓄積されて全文検索でき、Obsidian を使っているなら Markdown として vault に書き出せます。「あとで読み返したい」「あの記事の要点はなんだったか」を手元のデータ..."
-    },
-    {
-      "id": "s-5cf22fc9bc",
-      "source": "Zenn (AI トピック)",
-      "sourceType": "japanese",
-      "title": "One HealthのAIはなぜ分断されるか——Model Context Protocol（MCP）という「つなぎ役」の可能性",
-      "url": "https://zenn.dev/taichiendoh/articles/one-health-ai-mcp-orchestration",
-      "publishedAt": "2026-09-11T21:09:07.000Z",
-      "summary": "2026年、人・動物・環境の健康をひとつながりで捉える「One Health（ワンヘルス）」領域で、AIによる統合監視システムを提案する論文が公開されました。 出典：Sorrentino et al.「From Reactive to Predictive One Health: AI-Enabled Frameworks for Integrated Zoonotic Surveillance and Governance」International Journal of Environmental Research and Public Health 23(7), 2026, Art..."
-    },
-    {
-      "id": "s-9a2cdcc774",
-      "source": "Qiita (AI タグ)",
-      "sourceType": "japanese",
-      "title": "DeepMindがヒトゲノムの1塩基置換 約90億通りを予測した事前計算DB「AlphaGenome Atlas」を無料公開",
-      "url": "https://qiita.com/quotidia/items/4ba849b777c37dfd6b3f",
-      "publishedAt": "2026-09-11T21:01:13.000Z",
-      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 Google DeepMindが2026年9月8日(火)、ヒトのゲノム(生き物の設計図にあたる全DNA情報)で起こりうる約90億通りの1塩基置換(バリアント。 要点 Google Deep..."
+      "id": "s-8f24b4306d",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "AI researchers debate how close we are to recursive self-improvement",
+      "url": "https://www.dwarkesh.com/p/john-beren-charlie",
+      "publishedAt": "2026-09-11T21:35:29.000Z",
+      "summary": "points=36 comments=20 (Hacker News)"
     },
     {
       "id": "s-543492d805",
@@ -256,15 +346,6 @@
       "summary": "The absolute last chance to apply to host an official Side Event during TechCrunch Disrupt 2026 is tonight, September 11, at 11:59 p.m. PT."
     },
     {
-      "id": "s-87dcfee99d",
-      "source": "Qiita (AI タグ)",
-      "sourceType": "japanese",
-      "title": "AIが正解を出す時代に、「正解がない仕事」の価値が上がる気がした",
-      "url": "https://qiita.com/ys05181406/items/ea9cc98e2fe9a8642331",
-      "publishedAt": "2026-09-11T20:12:51.000Z",
-      "summary": "最近、個人開発中のアプリのLP用に、Blenderで3D動画を作っている。 といっても、自分はBlenderをほとんど使えない。 モデルを置いて、ライトを設定して、カメラを動かして、キーフレームを打って……みたいな操作を自分でやっているわけではない。 AIに指示して、Ble..."
-    },
-    {
       "id": "s-20712504e2",
       "source": "MIT Technology Review AI",
       "sourceType": "media",
@@ -301,15 +382,6 @@
       "summary": "I can&#39;t stand kv cache quantization. Even at q8_0, I can feel the difference. But realistically, when running Qwen3.8-27B-UD-Q4_K_XL on my 32 GB GPU, I only have room for ~170k tokens (with mtp and mmproj enabled). It&#39;s a lot of context, but Qwen3.8 eats through it on xhigh effort. I&#39;ve been wanting a setup that could serve me a full-precision kvcache when I have space available, and d"
     },
     {
-      "id": "s-4b64db6de7",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "Judges mock lawyer who filed appeal full of AI-generated 'witnesses'",
-      "url": "https://www.rnz.co.nz/news/world/1349763/judges-mock-lawyer-who-filed-appeal-full-of-ai-generated-witnesses",
-      "publishedAt": "2026-09-11T19:36:57.000Z",
-      "summary": "points=6 comments=1 (Hacker News)"
-    },
-    {
       "id": "s-3d8e4a73da",
       "source": "TechCrunch AI",
       "sourceType": "media",
@@ -317,15 +389,6 @@
       "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
       "publishedAt": "2026-09-11T19:35:54.000Z",
       "summary": "While K3's usage figures have declined slightly in recent months, OpenRouter data currently shows as many as 300 billion tokens being generated each day by K3 models on the system."
-    },
-    {
-      "id": "s-eb6f778f86",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "Claude AI used for missile, influence projects in UAE, Iran, Yemen: Anthropic",
-      "url": "https://www.al-monitor.com/originals/2026/09/claude-ai-used-missile-influence-projects-uae-iran-yemen-anthropic",
-      "publishedAt": "2026-09-11T19:35:43.000Z",
-      "summary": "points=8 comments=3 (Hacker News)"
     },
     {
       "id": "s-1a2a404d7c",
@@ -346,15 +409,6 @@
       "summary": "Hi everyone, I was interested in learning LoRA fine-tuning, and ended up building CodeFinetuner over the past few months, a full pipeline that fine-tunes a small code autocomplete model (e.g. Qwen2.5-Coder-3B) specific to a codebase. You can then use the resulting GGUF model via llama.vim/llama.vscode and run it fully locally. Supports fine-tuning on Mac (MPS) and NVIDIA GPUs (CUDA), with optional"
     },
     {
-      "id": "s-6f7859a465",
-      "source": "Hacker News",
-      "sourceType": "hn",
-      "title": "They Stole Our Code, Now They Want Our Brains (March 2026)",
-      "url": "https://www.jernesto.com/articles/on_ai_tools",
-      "publishedAt": "2026-09-11T18:50:25.000Z",
-      "summary": "points=7 comments=3 (Hacker News)"
-    },
-    {
       "id": "s-d8bb09927a",
       "source": "TechCrunch AI",
       "sourceType": "media",
@@ -362,15 +416,6 @@
       "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/",
       "publishedAt": "2026-09-11T18:41:49.000Z",
       "summary": "An Anthropic researcher resigned this week, warning in a post on X that the company is “racing straight to self-improving superintelligence and gambling with our lives”. The company’s own alignment lead even co-signed the message rather than walking it back. It’s the kind of doomer warning the AI industry has flirted with before, but the timing, with Anthropic reportedly preparing for an IPO, make"
-    },
-    {
-      "id": "s-dfa0710189",
-      "source": "Reddit r/LocalLLaMA",
-      "sourceType": "reddit",
-      "title": "What GPUs will give me GOOD speeds and on DSV4 Flash and similar models, and not have to run a mega quantized version? Budget around $15k-ish.",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdooag/what_gpus_will_give_me_good_speeds_and_on_dsv4/",
-      "publishedAt": "2026-09-11T18:36:26.000Z",
-      "summary": "I wish I could spend $15k on my own homelab hardware, but no this is for work lol. Like the title says, we&#39;re looking to run DSV4 Flash (and similar tier models) locally at good speeds, both for token gen and prompt processing. By &quot;good&quot; I&#39;m thinking in the range of 40-50+ t/s gen and at least 1000 t/s prefill at moderate context. We also don&#39;t want to run a version that&#39;"
     },
     {
       "id": "s-be80105bf6",
@@ -409,24 +454,6 @@
       "summary": "The No. 2 exec at OpenAI also led Instacart through its IPO in 2023."
     },
     {
-      "id": "s-b5a1b5a49e",
-      "source": "Reddit r/LocalLLaMA",
-      "sourceType": "reddit",
-      "title": "Any 12gb VRAM users out there?",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdl7vp/any_12gb_vram_users_out_there/",
-      "publishedAt": "2026-09-11T16:32:24.000Z",
-      "summary": "Hi! I&#39;ve been following this community for quite a while and have difficulty figuring out what to put on my 3080 12gb - I know Qwen 3.6 35B 3A was the go-to choice when it first came out, but I&#39;m curious if there are any other models / specifically optimized models that meaningfully benefit from the extra 4gb of VRAM over 8gb while still being usable under 16gb. My workflow is agent heavy,"
-    },
-    {
-      "id": "s-d40deea150",
-      "source": "Reddit r/LocalLLaMA",
-      "sourceType": "reddit",
-      "title": "Qwen3.8-27B-Humanlike-Chat: A model I tuned to imitate realistic human-to-human conversation",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wdl2qa/qwen3827bhumanlikechat_a_model_i_tuned_to_imitate/",
-      "publishedAt": "2026-09-11T16:27:16.000Z",
-      "summary": "I made this because I was getting genuinely annoyed at trying to have a normal conversation with LLMs. Even with prompting and various tricks, most models I&#39;ve tried still have this &quot;AI assistant&quot; vibe to them that is so familiar: too helpful, polished, verbose, using words we never use in conversation, etc. I wanted a model that could just talk to me like a person, so I did the slig"
-    },
-    {
       "id": "s-c182342702",
       "source": "The Verge AI",
       "sourceType": "media",
@@ -443,6 +470,15 @@
       "url": "https://zenn.dev/kuwanokazuya/articles/d1667a5ab5f2bf",
       "publishedAt": "2026-09-11T16:07:27.000Z",
       "summary": "生成AIが仕事に入り込んでくると、 「AIに仕事を奪われる」 という話をよく見かけます。 一方で、実際に仕事でAIを使っていると、少し違う感覚があります。 AIを使うほど、仕事が増えている。 「今週、何の仕事をしたんだ？」 私はWeb制作やWebマーケティング、SNS、動画、PR、サーバー周りなど、かなり雑食的に仕事をしています。 そのため、1日の終わりに、 「今日は何をやったっけ？」 となることがあります。 本当は定期的に振り返ったほうがいい。 でも、面倒です。 そこで今回は、クライアントとのメールやチャットの履歴をもとに、AIに作業内容を整理させてみました。 やったことを一つひ..."
+    },
+    {
+      "id": "s-c3aa338264",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+      "url": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "publishedAt": "2026-09-11T16:00:00.000Z",
+      "summary": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more."
     },
     {
       "id": "s-c1299135f2",
@@ -463,6 +499,33 @@
       "summary": "For the complete documentation index, see llms.txt. Markdown versions of documentation pages are available by appending .md to the page URL."
     },
     {
+      "id": "s-be8fcd9abc",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "OpenAIが「Codexの頭脳」を全開発者に開放 ― 新API「Agents API」で長時間稼働エージェントが誰でも作れる時代へ",
+      "url": "https://zenn.dev/tashikani/articles/openai-agents-api-2026",
+      "publishedAt": "2026-09-11T14:54:06.000Z",
+      "summary": "リード 2026年9月10日、OpenAIは開発者向けに新しいAPI「Agents API」のパブリックベータを公開しました。これは、コーディングエージェント「Codex」を裏側で支えてきた「ハーネス(制御基盤)」――長時間タスクの管理、ツールの効率的な呼び出し、複数エージェントの連携――を、単一のAPI呼び出しで誰でも使えるようにするものです。前日9日には基盤モデル「GPT-6 Astra」も発表されたばかりで、両者を組み合わせることで「実務を丸ごと任せられるAIエージェント」を自社サービスに組み込むハードルが一段下がったことになります。ただしこれはOpenAI自身の発表であり、実..."
+    },
+    {
+      "id": "s-b582131043",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIエージェントに「投げる／自分でやる」の線引きを、数字で決める",
+      "url": "https://zenn.dev/ritsuhayase/articles/7f09351b0d9b04",
+      "publishedAt": "2026-09-11T14:41:44.000Z",
+      "summary": "コーディングエージェントを2つ併用していると、毎回これで迷います。 この作業、投げるべきか、自分でやるべきか。 迷っている時間そのものが損なので、判断を数字に落としました。この記事では、その閾値と、なぜその数字なのかを出します。 まず、対等に並べない 最初に決めるのは順番です。片方を司令塔、もう片方を実行役に固定します。 対等に並べると、同じファイルを両方が書き換えて競合します。どちらの出力を採るかを毎回考えることになり、その判断コスト自体が重くなります。 司令塔: 要件の整理、指示の作成、返ってきたものの吟味、最終判断 実行役: 実装、定型の大量生成、セカンドオピニオン 役..."
+    },
+    {
+      "id": "s-7ed22d7032",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIに書かせたコードを公開する前の15分。コードを読まずに6つ試すだけ",
+      "url": "https://zenn.dev/ritsuhayase/articles/ab8e0c9f2dd66e",
+      "publishedAt": "2026-09-11T14:41:16.000Z",
+      "summary": "AIに書かせたコードは、たいてい一度は動きます。 問題は、その一度が「たまたま」だったときに気づけないことです。読んで探そうとすると時間がかかるうえ、短くて素直なコードほど問題が見えません。 この記事では、コードを読まずに、動かすだけで済む6項目を出します。実際に集計ツールを1本作らせて当ててみたところ、6項目のうち4項目で問題が出ました。その出力もそのまま載せます。 所要は15分です。 6項目 # 確かめること やり方 1 普通に動くか 想定どおりの入力で動かし、出てきた数字を目で見る 2 2回目 同じコマンドをもう一度動かす 3 空 0件・空のファイルを渡..."
+    },
+    {
       "id": "s-2efb26e869",
       "source": "はてなブックマーク (IT)",
       "sourceType": "japanese",
@@ -470,6 +533,15 @@
       "url": "https://tech-blog.voicy.jp/entry/2026/09/10/183722",
       "publishedAt": "2026-09-11T14:28:31.000Z",
       "summary": "Voicy開発統括のやまげん（@yamagenii）です。 以前書いた「AI時代のキャリア戦略」でも触れたように、AI時代における開発体制のあり方を模索してきましたが、この半年で私はVoicyのエンジニア組織を本格的に作り替えました。音声のtoCプラットフォーム開発の現場で起きたリアルな構造改革の記録です。 結論から3行で書..."
+    },
+    {
+      "id": "s-2d990f34ee",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "まるで“狂気の沙汰”──ジョブズ時代のAppleを感じさせる「iPhone Duo」のヒンジと製造工程",
+      "url": "https://www.itmedia.co.jp/pcuser/articles/2609/11/news070_5.html",
+      "publishedAt": "2026-09-11T14:14:55.000Z",
+      "summary": "ソフトウェアと組み合わさることで「他のどこにも作れない製品」に ここまでがハードウェアの話だとすれば、その上に載るソフトウェアでも、iPhone Duoは他社の折りたたみと別の製品になる。 半分だけ開いて置けば、上半分にApple TVの映像、下半分にメッセージのグループチャットという分割になり、折り曲げ部分はタッ..."
     },
     {
       "id": "s-96dc674363",
@@ -506,15 +578,6 @@
       "url": "https://www.itmedia.co.jp/mobile/articles/2609/11/news089.html",
       "publishedAt": "2026-09-11T12:20:54.000Z",
       "summary": "東日本旅客鉄道（JR東日本）は2026年度末に、現在6つに分かれている「Suicaエリア」を1つにまとめます。2023年度から進めてきた改札システムの更新に一定のめどが付いたことに伴う措置で、Suicaエリアの線区／駅相互間であれば改札機での乗降が可能となります。 →“エリアをまたいだ乗車”実現なるか？ 「Suica」の改札シ..."
-    },
-    {
-      "id": "s-68b1a5dcc4",
-      "source": "はてなブックマーク (IT)",
-      "sourceType": "japanese",
-      "title": "音楽生成AI「YuE2」が無料公開される、有料のSuno 5に近い性能で楽譜から楽曲生成可能＆日本語ボーカルも対応",
-      "url": "https://gigazine.net/news/20260911-yue2-music-generation-ai/",
-      "publishedAt": "2026-09-11T12:19:19.000Z",
-      "summary": "AI研究コミュニティのMultimodal Art Projectionが音楽生成AI「YuE2」を2026年9月10日に公開しました。開発チームは「Suno 5に匹敵するオープンな音楽生成モデル」とアピールしています。 YuE2 · Frontier Music with Symbolic Planning https://map-yue2.github.io/ GitHub - multimodal-art-projection/YuE: YuE2: fro..."
     },
     {
       "id": "s-c7d3c8aeae",
