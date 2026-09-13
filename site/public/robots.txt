@@ -1,0 +1,10 @@
+# このリポジトリはGitHub Pagesのプロジェクトページ（ユーザーページではない）のため、
+# クローラーが標準で参照するドメインルート（https://yasushi-honda.github.io/robots.txt）
+# には配置できない（そこにはこのサイト自体が存在しない）。このファイルは
+# https://yasushi-honda.github.io/ai-notebot/robots.txt として配信され、標準的な
+# ドメインルート探索には乗らないが、無いよりはクローラーの手がかりになる。
+# Googleへの確実な発見にはGoogle Search Consoleでのsitemap直接送信（人間側の作業）が必要。
+User-agent: *
+Allow: /
+
+Sitemap: https://yasushi-honda.github.io/ai-notebot/sitemap-index.xml
