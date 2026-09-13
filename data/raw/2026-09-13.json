@@ -1,0 +1,565 @@
+{
+  "date": "2026-09-13",
+  "collectedAt": "2026-09-13T02:37:53.865Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-76851f87b9",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "guillaumemeyer/watermarks-remover: A privacy-first app that strips AI watermarks from content you own.",
+      "url": "https://github.com/guillaumemeyer/watermarks-remover",
+      "publishedAt": "2026-09-13T02:37:47.000Z",
+      "summary": "★21828 A privacy-first app that strips AI watermarks from content you own."
+    },
+    {
+      "id": "s-19795251d4",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "matrixarkai/TemporalStore: Open-source Rust TemporalStore for LLM context management, temporal features, and risk control",
+      "url": "https://github.com/matrixarkai/TemporalStore",
+      "publishedAt": "2026-09-13T02:37:22.000Z",
+      "summary": "★215 Open-source Rust TemporalStore for LLM context management, temporal features, and risk control"
+    },
+    {
+      "id": "s-706b4aee24",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "caidaoli/ccLoad: AI API gateway that ends manual channel switching with smart routing, auto failover, exponential cooldown, multi-URL scheduling, live request monitoring and soft-error detection.",
+      "url": "https://github.com/caidaoli/ccLoad",
+      "publishedAt": "2026-09-13T02:36:34.000Z",
+      "summary": "★410 AI API gateway that ends manual channel switching with smart routing, auto failover, exponential cooldown, multi-URL scheduling, live request monitoring and soft-error detection."
+    },
+    {
+      "id": "s-bc0f4b1055",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "peonist-ai/halogen-flash-server: The fastest way to run Qwen3.8-Flash-Next on Strix Halo (gfx1151)",
+      "url": "https://github.com/peonist-ai/halogen-flash-server",
+      "publishedAt": "2026-09-13T02:35:04.000Z",
+      "summary": "★311 The fastest way to run Qwen3.8-Flash-Next on Strix Halo (gfx1151)"
+    },
+    {
+      "id": "s-a559fe40fb",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "cobusgreyling/loop-engineering: Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "publishedAt": "2026-09-13T02:34:55.000Z",
+      "summary": "★11178 Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost."
+    },
+    {
+      "id": "s-fa6538e9d1",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "steipete/CodexBar: Show usage stats for OpenAI Codex and Claude Code, without having to login.",
+      "url": "https://github.com/steipete/CodexBar",
+      "publishedAt": "2026-09-13T02:34:41.000Z",
+      "summary": "★21307 Show usage stats for OpenAI Codex and Claude Code, without having to login."
+    },
+    {
+      "id": "s-2a8a94e08a",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "targed/Awesome-Plugins: Awesome-Plugins is a GitHub repository that serves as a comprehensive list of plugins, add-ons, and extensions for ChatGPT, as well as other language models that are compatible with the GPT architecture.",
+      "url": "https://github.com/targed/Awesome-Plugins",
+      "publishedAt": "2026-09-13T02:34:13.000Z",
+      "summary": "★152 Awesome-Plugins is a GitHub repository that serves as a comprehensive list of plugins, add-ons, and extensions for ChatGPT, as well as other language models that are compatible with the GPT architecture."
+    },
+    {
+      "id": "s-9f15fa4175",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "superiorlu/AITreasureBox: 🤖 Automatically collected AI repos, tools, websites, papers & tutorials. 实用AI百宝箱 💎",
+      "url": "https://github.com/superiorlu/AITreasureBox",
+      "publishedAt": "2026-09-13T02:33:53.000Z",
+      "summary": "★864 🤖 Automatically collected AI repos, tools, websites, papers & tutorials. 实用AI百宝箱 💎"
+    },
+    {
+      "id": "s-b8d87e3dae",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "FerroxLabs/wayland: Wayland - The AI Agent That Perceives. Reasons. Acts. Evolves.",
+      "url": "https://github.com/FerroxLabs/wayland",
+      "publishedAt": "2026-09-13T02:33:29.000Z",
+      "summary": "★604 Wayland - The AI Agent That Perceives. Reasons. Acts. Evolves."
+    },
+    {
+      "id": "s-45c80aa91f",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "elizaOS/eliza: Open source agentic operating system",
+      "url": "https://github.com/elizaOS/eliza",
+      "publishedAt": "2026-09-13T02:33:09.000Z",
+      "summary": "★19326 Open source agentic operating system"
+    },
+    {
+      "id": "s-0e157a0d5e",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "agentlas-ai/Agentlas-OS: Agent OS: keep specialist agents in a hub, spin up a temporary orchestrator per task. Local-first, works with any model.",
+      "url": "https://github.com/agentlas-ai/Agentlas-OS",
+      "publishedAt": "2026-09-13T02:32:27.000Z",
+      "summary": "★1108 Agent OS: keep specialist agents in a hub, spin up a temporary orchestrator per task. Local-first, works with any model."
+    },
+    {
+      "id": "s-eeb1037fd7",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "openclaw/Peekaboo: Peekaboo is a macOS CLI & optional MCP server that enables AI agents to capture screenshots of applications, or the entire system, with optional visual question answering through local or remote AI models.",
+      "url": "https://github.com/openclaw/Peekaboo",
+      "publishedAt": "2026-09-13T02:32:05.000Z",
+      "summary": "★5153 Peekaboo is a macOS CLI & optional MCP server that enables AI agents to capture screenshots of applications, or the entire system, with optional visual question answering through local or remote AI models."
+    },
+    {
+      "id": "s-085a8d8489",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "sopaco/deepwiki-rs: Turn code into clarity. Generate accurate technical docs and AI-ready context in minutes—perfectly structured for human teams and intelligent agents.",
+      "url": "https://github.com/sopaco/deepwiki-rs",
+      "publishedAt": "2026-09-13T02:31:48.000Z",
+      "summary": "★2563 Turn code into clarity. Generate accurate technical docs and AI-ready context in minutes—perfectly structured for human teams and intelligent agents."
+    },
+    {
+      "id": "s-14bc46a679",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIを拡張脳として扱う技術の価値は",
+      "url": "https://qiita.com/good59548/items/8a7c9ef94fe616b9a7ea",
+      "publishedAt": "2026-09-13T02:10:02.000Z",
+      "summary": "AI（人工知能）を単なる「作業の代行ツール」ではなく**「拡張脳（Cognitive Augmentation）」として扱う技術は、個人の思考力・情報処理能力・意思決定の質を飛躍的に高めるフレームワークとして、極めて高い価値を持っています。 ​この技術がもたらす価値は、主に..."
+    },
+    {
+      "id": "s-55b6aa380c",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "The Hugging Bay",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1weujw6/the_hugging_bay/",
+      "publishedAt": "2026-09-13T01:46:47.000Z",
+      "summary": "New website to download models in case HF starts censoring or limiting access. &#32; submitted by &#32; /u/Thrumpwart [link] &#32; [comments]"
+    },
+    {
+      "id": "s-3315e76ed0",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "事務職からAIエンジニアを目指して:スポーツボウリング場構想・第三弾⑯",
+      "url": "https://qiita.com/Junko-Takahashi-Cloud/items/754c328e12fc04c5a684",
+      "publishedAt": "2026-09-13T01:36:12.000Z",
+      "summary": "第三弾を作って分かったこと 第三弾では、予約だけでなく、スタッフ、レーン、来店、チェックイン／チェックアウト、教室、決済という、実際の業務の流れを意識して考えることになりました。単純なCRUDではなく、「業務の流れをどうシステムにするか」を考える経験でした。 また、既存..."
+    },
+    {
+      "id": "s-ae1c0b1432",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Why are AI agents lying, cheating and coordinating?",
+      "url": "https://yoshuabengio.org/en/publication/why-are-ai-agents-lying-cheating-and-coordinating",
+      "publishedAt": "2026-09-13T01:22:31.000Z",
+      "summary": "points=14 comments=12 (Hacker News)"
+    },
+    {
+      "id": "s-e011681255",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "A.I. Slopware Is Everywhere Now. Nobody Is Using It",
+      "url": "https://www.nytimes.com/2026/09/12/opinion/ai-software-coding-apps.html",
+      "publishedAt": "2026-09-13T01:20:41.000Z",
+      "summary": "points=10 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-9bfcac2001",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Agentforceの従量課金と席課金を選ぶ：実行ユーザーと業務完了単価から見積もる",
+      "url": "https://qiita.com/emi_ndk/items/cd21c0a1f8f30b93fa4a",
+      "publishedAt": "2026-09-13T01:10:20.000Z",
+      "summary": "AIエージェントの予算を決めるとき、月額ライセンスとアクション単価だけを並べても、実運用の原価は決まらない。 Agentforceでは、同じ処理でも実行ユーザーや権限によって従量課金の対象が変わる。 さらに、課金された処理が何回成功したかと、顧客の依頼が何件完了したかは、そ..."
+    },
+    {
+      "id": "s-b66eb7602e",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Apple wants to train AI on your private personal data",
+      "url": "https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models",
+      "publishedAt": "2026-09-13T01:06:29.000Z",
+      "summary": "points=24 comments=16 (Hacker News)"
+    },
+    {
+      "id": "s-d29424ea7b",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Excel・CSV から Visio のスイムレーン図を作る方法",
+      "url": "https://qiita.com/daviechen/items/e9200095e811e356ee5a",
+      "publishedAt": "2026-09-13T01:03:15.000Z",
+      "summary": "業務プロセスは、1行に1作業、列に担当者・次工程・承認結果を入れた Excel や CSV で管理されていることがあります。この表にはスイムレーン図に必要な情報が含まれていますが、行を箱に置き換えるだけでは分岐、合流、引き継ぎを正しく表現できません。 ここでは、表データを手..."
+    },
+    {
+      "id": "s-29a046c34d",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "Everyone should slow down AI development except for me",
+      "url": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/",
+      "publishedAt": "2026-09-13T00:53:30.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-8d42db6b5a",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Align AI and Mathematics–To Something Else",
+      "url": "https://liorpachter.wordpress.com/2026/09/12/align-ai-and-mathematics-to-something-else/",
+      "publishedAt": "2026-09-13T00:47:48.000Z",
+      "summary": "points=16 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-4016d40201",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "米アンソロピックCEO“AI開発ペース減速させる必要” | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20260913de49934",
+      "publishedAt": "2026-09-13T00:25:21.000Z",
+      "summary": "アメリカのAI新興企業アンソロピックのCEOは、AIが急速に進歩し、人間が制御する能力を上回る可能性があるとして、開発を減速させる必要があるとの考えを示しました。 アンソロピックのダリオ・アモデイ…"
+    },
+    {
+      "id": "s-5daa358d2f",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "It’s official - Anthropic & OpenAI have just hired independent safety auditors!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wesoz4/its_official_anthropic_openai_have_just_hired/",
+      "publishedAt": "2026-09-13T00:18:21.000Z",
+      "summary": "&#32; submitted by &#32; /u/One-Replacement-37 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-7d377c9979",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "OpenAI IPO will not happen in 2026 amid AI safety fears, Altman says",
+      "url": "https://www.reuters.com/legal/litigation/openai-ipo-will-not-happen-2026-amid-ai-safety-fears-altman-says-2026-09-12/",
+      "publishedAt": "2026-09-13T00:07:29.000Z",
+      "summary": "points=5 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-06d5b87b51",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Nobody wrote the Matrix and AI code-writing will be dead by 2036",
+      "url": "https://lufzle.dev/write/nobody-wrote-the-matrix/",
+      "publishedAt": "2026-09-12T23:59:22.000Z",
+      "summary": "points=12 comments=3 (Hacker News)"
+    },
+    {
+      "id": "s-ef95231448",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "AgentsDock: An IDE designed for agentic AI research",
+      "url": "https://agentsdock.net/",
+      "publishedAt": "2026-09-12T23:45:58.000Z",
+      "summary": "points=14 comments=4 (Hacker News)"
+    },
+    {
+      "id": "s-6db30cf4df",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "What's the Story with Agnes-3.0-Flash?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wers2v/whats_the_story_with_agnes30flash/",
+      "publishedAt": "2026-09-12T23:36:40.000Z",
+      "summary": "While browsing a benchmark list site, I spotted a recently published 33B parameter model which claimed to beat Qwen3.8 27b on the ArtificialAnalysis (AA) intelligence index. I was obviously excited. But then, while looking into it, confusion starts to settle in. Their HF model is now listed as &quot;Preview&quot; and explicitly calls out that it is not the same model as the one AA evaluated. The A"
+    },
+    {
+      "id": "s-240f74c6fe",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AnthropicのアモデイCEO、AI開発の「ペース調整」訴えるエッセイ公開　アルトマン氏とマスク氏も賛同",
+      "url": "https://www.itmedia.co.jp/news/article/2609/13/2000001432/",
+      "publishedAt": "2026-09-12T23:06:11.000Z",
+      "summary": "AnthropicのアモデイCEOは、AIの急速な自己改善や安全上の脅威を踏まえ、モデルの能力向上ペースを抑える3段階の計画を提言した。第三者の常駐評価者の導入や民主主義国間での協調を訴えている。これに対し、OpenAIのアルトマンCEOやマスク氏も同調し、同様の評価体制を導入する意向を示した。"
+    },
+    {
+      "id": "s-3a193e1f34",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「AIコーディングより人を雇う方が安い」時代が来る？　生成AIの予算超過を防ぐトークン浪費対策の全て",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/13/news005.html",
+      "publishedAt": "2026-09-12T23:00:00.000Z",
+      "summary": "生成AIやAIエージェントの活用が広がる一方、トークン課金による想定外のコスト増が企業を悩ませています。なぜ浪費が起こるのか、その原因と、現場で取り組める対策を5本の記事から探ります。"
+    },
+    {
+      "id": "s-0ef1c45c0c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「AI研究者としての自分の賞味期限はあと１年」——AGI競争も終盤戦の様相を呈すシリコンバレーでは何が語られていたか｜安野貴博",
+      "url": "https://note.com/takahiroanno/n/n4accbde18d56",
+      "publishedAt": "2026-09-12T22:49:40.000Z",
+      "summary": "2026年8月、シリコンバレーとサンフランシスコで15人のAI関係者に話を聞いてきた。最先端AIをつくっている企業フロンティアラボの研究者、政策担当者、投資家、大学研究者などにインタビューを実施し、今のAI開発競争を現地の人たちがどう捉えているのか探った。 現地では、街中いたるところにAIの広告が貼られていた。C..."
+    },
+    {
+      "id": "s-5472e66603",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "クロスプラットフォーム開発が解決するコスト、解決しないコスト",
+      "url": "https://zenn.dev/nkzn/articles/cross-platform-development-costs-2026",
+      "publishedAt": "2026-09-12T22:07:35.000Z",
+      "summary": "2026年9月、Shopify Engineeringから「Native is now the future of mobile at Shopify」という記事が公開されました。 Shopifyは2020年にモバイルアプリ開発をReact Nativeへ寄せる方針を打ち出し、React Nativeコミュニティにも大きな投資を続けてきた会社です。そのShopifyがSwiftとKotlinを使ったネイティブ開発へ戻..."
+    },
+    {
+      "id": "s-c0f024c7ed",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Rivals Altman and Musk rally behind Dario Amodei's call for an AI slowdown",
+      "url": "https://www.ft.com/content/31220b59-b0c6-401c-a146-2b7b5d138837",
+      "publishedAt": "2026-09-12T22:07:08.000Z",
+      "summary": "points=5 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-c3c7a57a33",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【図解】Claude Codeのダイナミックワークフロー入門：Claudeが自分でハーネスを書いて数十のエージェントを回す",
+      "url": "https://zenn.dev/mika_and_coco/articles/claude-code-dynamic-workflows",
+      "publishedAt": "2026-09-12T21:59:12.000Z",
+      "summary": "はじめに 前回、Claude に仕事を任せるときの設計を「プロンプト→ハーネス→ループ→グラフ」の4段階に整理しました。 https://zenn.dev/mika_and_coco/articles/claude-code-loop-graph-harness あの記事の④グラフは「流れを絵にして、並列部分をサブエージェントに任せる」ところまででした。で、そのとき触れずに残した話があります。Claude Code には、そのグラフ自体を Claude に書かせて、数十〜数百のサブエージェントを回す機能があるんです。それが「ダイナミックワークフロー（dynamic workflows..."
+    },
+    {
+      "id": "s-4022c7a7f9",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI’s rogue AI tried to hack another company in May",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+      "publishedAt": "2026-09-12T21:41:36.000Z",
+      "summary": "In May, hundreds of malicious and spam packages were uploaded to RubyGems, causing a serious disruption for the host. Now independent researchers have said that a swarm of OpenAI agents were responsible for the attack. Not only that, but the AI tried to steal users' API keys. At the time, RubyGems described it as a […]"
+    },
+    {
+      "id": "s-d9bd8f119a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Rollback は Recovery ではない ― Trajectory Design で明確になった Control State",
+      "url": "https://zenn.dev/albatrosary/articles/35af2ba6910d5f",
+      "publishedAt": "2026-09-12T21:39:12.000Z",
+      "summary": "以前の記事では、長く動く生成AIに必要なのは Prompt を磨き続けることだけではなく、生成の軌道そのものを外側から設計することだと書いた。 \\text{Prompt Design} \\subset \\text{Trajectory Design} そこでは、Plan / Rewind / Worktree のような機能を Trajectory そのものではなく、軌道を操作するためのプリミティブとして捉えた。そして Trajectory Design の問いを、どこで生成し、どこで止め、何を固定し、何と照合し、どこへ戻すかという形で整理した。 これをさらに操作の観点から整理すると、..."
+    },
+    {
+      "id": "s-48513a3436",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "What pi.dev plugin do you suggest for context, compaction and memory management of local models?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1weolwq/what_pidev_plugin_do_you_suggest_for_context/",
+      "publishedAt": "2026-09-12T21:19:58.000Z",
+      "summary": "I have been battling with my Qwen3.8:27b setup on my rtx 5080 16gb. I am using llama.cpp to run a nvfp4 version of qwen3.8:27b llama-b10699-bin-win-cuda-13.3-x64\\llama-server.exe -hf williamliao/Qwen3.8-27B-NVFP4-GGUF:NVFP4 --jinja --chat-template-file d:\\qwen\\chat_template.jinja --reasoning-format deepseek --host 127.0.0.1 --offline -np 1 --threads 16 --threads-batch 16 --log-verbosity 4 --no-log"
+    },
+    {
+      "id": "s-fe9d508504",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Sam Altman says OpenAI going public in 2026 would be ‘ill-advised’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
+      "publishedAt": "2026-09-12T21:16:28.000Z",
+      "summary": "OpenAI CEO Sam Altman confirmed that there would be no OpenAI IPO in 2026 during an interview with Fortune. Over the course of 45 minutes, Altman discussed a variety of subjects including the Hugging Face hacking incident, recursive self-improvement, and the possibility of building an AI that was beyond human control. On the latter, he […]"
+    },
+    {
+      "id": "s-038d593e99",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "参照資料を渡し忘れたLLMは、存在しない規定を作って断定的に答える",
+      "url": "https://zenn.dev/every_ai_recipe/articles/ai-reference-material-project-feature",
+      "publishedAt": "2026-09-12T21:10:49.000Z",
+      "summary": "TL;DR 「返品ポリシーを踏まえて返信メールを書け」という同一の依頼を、(A)ポリシー文書を渡さない条件と(B)渡す条件の2つで、独立したサブエージェント2体に実行させた 条件Aは「分かりません」「確認が必要です」とは言わず、実在しない返品期限（8日以内）を作り出し、本来は受付可能な10日目の返品を断定的に拒否した。 条件Bは正しく30日以内・お客様都合につき送料お客様負担と回答した 資料の有無という1変数だけで、出力は「正しい業務回答」から「架空の規定に基づく誤回答」へ完全に反転した。モデルは情報の欠落を検知して申告する代わりに、事前知識で埋めて回答を完成させた 実務上の対..."
+    },
+    {
+      "id": "s-bdc74438ad",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "検査を「設計」するAIは、どこまで来ているか——PrimerASTと、primer「セット」というもう一つの壁",
+      "url": "https://zenn.dev/taichiendoh/articles/lamp-primer-set-design-ai-gap",
+      "publishedAt": "2026-09-12T21:09:29.000Z",
+      "summary": "2026年3月、PCR（ポリメラーゼ連鎖反応。DNAの特定領域を狙って増幅する検査手法の基本技術）のプライマー（増幅したい領域の両端に結合する短いDNA断片で、検査の\"設計図\"にあたる）設計を機械学習で評価する新しいツール「PrimerAST」が発表されました。 出典：Al-Mahrami et al.「PrimerAST: A predictive machine learning tool for primer design and quality assessment」Scientific Reports 16, 14980 (2026). https://doi.org/10.1..."
+    },
+    {
+      "id": "s-7ddcea5d30",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Qwen3.8 Flash Next now at 1.2k t/s prefill on Strix Halo",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1weobt6/qwen38_flash_next_now_at_12k_ts_prefill_on_strix/",
+      "publishedAt": "2026-09-12T21:08:52.000Z",
+      "summary": "As you all know, Qwen3.8 Flash Next on mainline llama.cpp is still in a pretty experimental stage, but a lot of community forks are trying to get it to work better. There&#39;s also a closed-source solution called Halogen ( https://github.com/peonist-ai/halogen-flash-server ) that boasted 1.2k t/s prefill numbers when the community fork barely reached 400. Since I dislike closed source and I like "
+    },
+    {
+      "id": "s-22407f1a50",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
+      "url": "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/",
+      "publishedAt": "2026-09-12T20:19:16.000Z",
+      "summary": "While OpenAI has filed confidentially for an IPO, the company will not be going public this year, according to CEO Sam Altman."
+    },
+    {
+      "id": "s-15ba442f11",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Real-SWE Benchmark (new)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wemcdc/realswe_benchmark_new/",
+      "publishedAt": "2026-09-12T19:50:03.000Z",
+      "summary": "Reports of the demise of coders may have been exaggerated. &#32; submitted by &#32; /u/SteppenAxolotl [link] &#32; [comments]"
+    },
+    {
+      "id": "s-ce1a3b77d3",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.270",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.270",
+      "publishedAt": "2026-09-12T19:45:44.000Z",
+      "summary": "What's changed Fixed read-only git commands in Bash unexpectedly asking for permission after a session had been running for a while (regression in 2.1.269)"
+    },
+    {
+      "id": "s-725588a31c",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Anthropic CEO outlines plan to slow AI development",
+      "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+      "publishedAt": "2026-09-12T19:34:44.000Z",
+      "summary": "Anthropic's Dario Amodei and OpenAI's Sam Altman seem to agree that it's time to \"pace the frontier.\" What would that actually look like?"
+    },
+    {
+      "id": "s-a44c9f3afb",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Suno v6の\"均質化\"で見えた、AI音楽の分岐点は「手軽さ」ではなく「制御可能性」だった",
+      "url": "https://zenn.dev/ryok/articles/music-ai-control-vs-ease",
+      "publishedAt": "2026-09-12T19:19:42.000Z",
+      "summary": "結論 2026年9月、Suno v6が音楽生成コミュニティで炎上した。「品質が落ちた」「多様性が死んだ」と有料ユーザーが解約を報告している。 だがこれを「Sunoの失敗」で終わらせると、本質を見誤る。一発生成（プロンプトを入れたら完成品が出てくる方式）が、品質の頭打ちに達したサインだと私は見ている。 そして同じ月に、まったく逆方向の動きが2つ同時に起きた。編集可能なオープンウェイト音楽モデル「YuE2」の登場と、Universal Music × ElevenLabs によるレーベル公式AI音楽プラットフォームの発表だ。 この3つを並べると、音楽生成AIの次の主戦場が見えてくる。それ..."
+    },
+    {
+      "id": "s-66f2b96113",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "1発でレビューが通るAI駆動開発──デカルトの4法則で要件から実装順まで決める",
+      "url": "https://zenn.dev/yukionishi/articles/a3f81c5d9e204b",
+      "publishedAt": "2026-09-12T18:10:03.000Z",
+      "summary": "同じAIツールを使っているのに、人によって成果に差が出ます。 同じClaude CodeやCursorを使い、同じモデルを叩いているのに、 片方は一日で機能をひとつ完成させ、 片方はレビューで差し戻され続ける。 この差は「プロンプトの上手さ」ではありません。 問題を確定させてからAIに渡しているかどうかです。 そしてこの「確定のさせ方」を、 約390年前にルネ・デカルトが4つの規則としてまとめていました。 『方法序説』第二部。1637年の本です。 これがAI時代の開発手順書として、ほぼそのまま使えます。 デカルトの4つの法則 まず原典の4規則を確認します。ここは短く済ませます。 ..."
+    },
+    {
+      "id": "s-edc050c7d8",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIにうまく説明しようとするのを、やめた",
+      "url": "https://zenn.dev/sugawara_ai/articles/ai-show-me-first",
+      "publishedAt": "2026-09-12T17:49:58.000Z",
+      "summary": "僕、エンジニアじゃないんですけど、毎日AIに仕事を頼んで、自分の会社の仕組みを作って回してます。で、ずっと悩んでたことがあるんですよ。頼んだはずなのに、出てきた物が「なんか違う」。これ、皆さんもあるでしょ。 前はどうしてたかというと、説明を長くしてました。条件を足して、例を足して、注意書きを足して。それでも、やっぱり「違う」が出てくるんです。 今は逆です。うまく説明するのを、やめました。AIに先に形を出してもらって、僕は見て、選ぶか、動かすか、印をつけるだけ。それをそのままAIに返す。今、僕がAIに対してやっていることは、ほとんど「選ぶ」だけなんですよ。 今日は、その頼み方を、僕の会社..."
+    },
+    {
+      "id": "s-33a720d44f",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "M2 Ultra/Qwen3.8 Flash Next Update - latest oMLX introduces substantial speedup",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wei63j/m2_ultraqwen38_flash_next_update_latest_omlx/",
+      "publishedAt": "2026-09-12T17:11:43.000Z",
+      "summary": "&#32; submitted by &#32; /u/Thrumpwart [link] &#32; [comments]"
+    },
+    {
+      "id": "s-40e11015ce",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "2×RTX 3090 + EPYC box running qwen3.8-flash-next at ~38 tok/s",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wehnsd/2rtx_3090_epyc_box_running_qwen38flashnext_at_38/",
+      "publishedAt": "2026-09-12T16:52:39.000Z",
+      "summary": "What I have: - CPU: EPYC 7551 (32c/64T, Zen 1) - Board: Supermicro H11SSL-i (SP3), Rev 2.0 - RAM: 128 GB DDR4-2133 (all 8 channels full) - GPU: 2x RTX 3090 (48 GB total, PCIe 3.0) - 1500 W PSU What I run: - Qwen3-Flash-Next (177B total / ~6B active MoE, IQ4_XS) on Ilama.cpp. Experts live in system RAM, hot ones cached in VRAM. Single stream = 38 tok/s. Two parallel requests drop to ~4 tok/s each. "
+    },
+    {
+      "id": "s-e3d5b789c8",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI エージェント 100 体で自動運転レースを開発して学んだこと: 並列化は網羅の道具で、バグ探しは深さの問題",
+      "url": "https://zenn.dev/ajayaditya/articles/100-ai-agents-racing-lessons",
+      "publishedAt": "2026-09-12T16:48:55.000Z",
+      "summary": "Team Hayes（Ajayaditya Lokchandra, Nithisha Venkatesh）です。自動運転AIチャレンジ2026 では、開発のかなりの部分を AI コーディングエージェント（Claude Code）に任せました。一度に 100 体を超えるエージェントを並列で動かしたこともあります。その結果、うまくいったことと、高くついた失敗がはっきり分かれたので、数字つきで残しておきます。 英語版は後半にあります。 / English version below. レースの戦略（どこでどう速く走るか）はこの記事には書きません。書くのは「エージェントをどう使うと成果が出て、ど..."
+    },
+    {
+      "id": "s-63c0cf89a6",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Anthropic CEO says it’s time to pump the brakes on AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+      "publishedAt": "2026-09-12T16:23:40.000Z",
+      "summary": "Anthropic CEO Dario Amodei says the time has come to slow down AI development and will give third-party evaluators like METR access to its models to help ensure its \"adherence to safety practices and commitments.\" In a winding essay, Amodei proposed a three-step plan to \"pace the frontier\" - jargon that simply means to slow […]"
+    },
+    {
+      "id": "s-98264c64ca",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Dario Amodei — We Must Pace the Frontier",
+      "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "publishedAt": "2026-09-12T14:44:53.000Z",
+      "summary": "I have worked on AI for the last twelve years because I believe it could dramatically raise the quality of human life. I’ve written often about these incredible benefits: I believe that AI could cure most major diseases in the next 5–10 years, greatly accelerate economic growth rates, create a wo..."
+    },
+    {
+      "id": "s-9e2152d865",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Trump is giving data centers a pass to pollute",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
+      "publishedAt": "2026-09-12T14:41:27.000Z",
+      "summary": "President Donald Trump is weakening environmental regulations in the name of speeding up the construction of AI data centers, raising health risks for Americans, a cadre of former EPA officials said this week in a briefing and new report. They are urging - perhaps futilely - the president to adopt a \"Data Center Health Protection […]"
+    },
+    {
+      "id": "s-b161130fbe",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AI の投資収益率 (ROI) を算出する | Amazon Web Services",
+      "url": "https://aws.amazon.com/jp/blogs/news/calculating-the-roi-of-ai/",
+      "publishedAt": "2026-09-12T13:12:01.000Z",
+      "summary": "Amazon Web Services ブログ AI の投資収益率 (ROI) を算出する 人工知能 (AI) に投資した 1 ドルごとに 2 ドルのリターンが得られるのであれば、コストの増加は非効率ではなく、プラスの投資収益率 (ROI) を示すことになります。しかし、AI 支出とビジネス価値の関係を明らかにすることは複雑で難しく、取り組みを拡大..."
+    },
+    {
+      "id": "s-85a1a5ce37",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ジョセフ・ヒース「方法論的個人主義（Stanford Encyclopedia of Philosophy）」",
+      "url": "https://econ101.jp/methodological-individualism/",
+      "publishedAt": "2026-09-12T12:15:57.000Z",
+      "summary": "本記事は、ジョセフ・ヒース教授によるThe Stanford Encyclopedia of Philosophy（以下SEP）のエントリ、「方法論的個人主義（Methodological Individualism）」の翻訳です。本翻訳は、SEPのアーカイブに収録されている2024年夏版（Summer 2024 version）に基づいています。 本翻訳の公開後にSEPの原記事が更新されてい..."
+    },
+    {
+      "id": "s-e4b950bac5",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Webの地図",
+      "url": "https://speakerdeck.com/yosuke_furukawa/web-no-chizu",
+      "publishedAt": "2026-09-12T11:42:46.000Z",
+      "summary": "FEC Fukuoka で発表したWebの地図についての話です"
+    },
+    {
+      "id": "s-43166de57a",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI just wants to win",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
+      "publishedAt": "2026-09-12T11:00:00.000Z",
+      "summary": "OpenAI has spent the last few years planting flags across the increasingly difficult terrain in mathematics. This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem. In normal circumstances, this would have been celebrated as a historic achievement. Instead, many mathematicians have watched OpenAI's relentless advance with […]"
+    },
+    {
+      "id": "s-fb43145a3e",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AIが数学の難問を解決していいのか｜柞刈湯葉",
+      "url": "https://note.com/yubais/n/nd4505991a6d6",
+      "publishedAt": "2026-09-12T10:56:24.000Z",
+      "summary": "「AI が数学の未解決問題を解いた」というニュースを頻繁に見かけるようになった。中でも、ナヴィエ・ストークス方程式の爆発解発見はひときわインパクトが大きい。これは「ミレニアム懸賞問題」として100万ドルの賞金がかけられていた7問のひとつだからだ。いわば21世紀の七大難問と言っていい。 しかし、多くの有名な..."
+    },
+    {
+      "id": "s-1a5218d947",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「AI利用料は90％下落、でも支出増」の怪――AIコスト問題で注目の「ジェボンズのパラドックス」から考える",
+      "url": "https://www.itmedia.co.jp/business/articles/2609/11/news030.html",
+      "publishedAt": "2026-09-10T22:00:00.000Z",
+      "summary": "AIのトークン利用料金は90％下落しているのに、支出が増加する――こうしたAIコストを巡る議論では「ジェボンズのパラドックス」が注目されている。どのような考え方なのか。"
+    },
+    {
+      "id": "s-c5e3a6977e",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「『過去の失敗DX』を学ぶべき」　専門家に聞く現実的な「AI変革推進法」",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/11/news010.html",
+      "publishedAt": "2026-09-10T20:00:00.000Z",
+      "summary": "他社の華やかな「インスタ映え」するAI成功事例を追うのは、今すぐ辞めるべき――。「AIを使え」というトップダウンの号令だけで空回りする組織が、過去の「失敗DX」と同じ轍を踏まないための現実的なアプローチとは何か。"
+    }
+  ]
+}
