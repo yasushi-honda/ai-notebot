@@ -22,6 +22,27 @@ function mockPublicDns() {
   };
 }
 
+// resolveSource のPDF経路はextractPdfText（vertex.mjs）経由でVertex AIを呼ぶが、
+// requireToken()はGEMINI_ACCESS_TOKEN未設定だと即座に例外を投げるため、fetchをモックする
+// テストでも環境変数だけは一時的に設定しておく必要がある。
+function mockGeminiToken() {
+  const original = process.env.GEMINI_ACCESS_TOKEN;
+  process.env.GEMINI_ACCESS_TOKEN = 'test-token';
+  return () => {
+    if (original === undefined) delete process.env.GEMINI_ACCESS_TOKEN;
+    else process.env.GEMINI_ACCESS_TOKEN = original;
+  };
+}
+
+/** Vertex AI generateContent の正常応答を模したJSONを返すfetchレスポンスを作る。 */
+function geminiJsonResponse(payload) {
+  return {
+    ok: true,
+    status: 200,
+    json: async () => ({ candidates: [{ content: { parts: [{ text: JSON.stringify(payload) }] } }] }),
+  };
+}
+
 // resolveSourceはHTML本文をres.body.getReader()経由で読み取る（MAX_RESPONSE_BYTES上限付き。
 // source-resolver.mjs参照）ため、モックのfetch応答にはtext()だけでなくbodyストリームも必要。
 function bodyFromText(text) {
@@ -116,17 +137,18 @@ test('sanitizeTitle: 短い通常のtitleはそのまま', () => {
   assert.equal(sanitizeTitle('介護現場のAI活用ガイド'), '介護現場のAI活用ガイド');
 });
 
-// resolveSource: 到達できても本文の裏付けを一切提供できないソース（PDF等の非HTML・空のHTML）を
-// 「到達性のみ検証済み」として採用してしまい、LLMがホスト名だけから公式の裏付けがある体で
-// 本文を書けてしまうバグの回帰テスト（実データで厚労省の公式PDFがこの経路で採用され発覚）
-test('resolveSource: 非HTML（PDF等）のレスポンスは本文抽出できないため採用しない', async () => {
+// resolveSource: 到達できても本文の裏付けを一切提供できないソース（JSON応答等の非HTML・
+// 空のHTML）を「到達性のみ検証済み」として採用してしまい、LLMがホスト名だけから公式の
+// 裏付けがある体で本文を書けてしまうバグの回帰テスト（実データで厚労省の公式PDFがこの経路で
+// 採用され発覚。PDFはその後Gemini抽出経路に個別対応したため、ここではPDF以外の非HTMLを使う）
+test('resolveSource: 非HTML（PDF以外）のレスポンスは本文抽出できないため採用しない', async () => {
   const originalFetch = globalThis.fetch;
   const restoreDns = mockPublicDns();
   globalThis.fetch = async () => ({
     ok: true,
     status: 200,
-    url: 'https://example.com/doc.pdf',
-    headers: { get: () => 'application/pdf' },
+    url: 'https://example.com/data.json',
+    headers: { get: () => 'application/json' },
     text: async () => '',
   });
   try {
@@ -136,6 +158,86 @@ test('resolveSource: 非HTML（PDF等）のレスポンスは本文抽出でき�
   } finally {
     globalThis.fetch = originalFetch;
     restoreDns();
+  }
+});
+
+// resolveSource: PDFは公的機関（厚労省等）の一次情報で多用されており、一律除外すると
+// official ソースがほぼ見つからない状態になっていたため、Geminiに直接渡して本文抽出する
+// 経路を追加した（2026-09-13、ユーザー指示）。
+test('resolveSource: PDFはGeminiに直接渡して本文抽出し採用する', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      return geminiJsonResponse({ title: '介護現場における生成AI活用ガイドライン', excerpt: 'PDFから抽出した本文要約です。制度の概要と留意点がまとめられています。' });
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/doc.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('%PDF-1.4 fake-binary-content'),
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-ok');
+    assert.equal(result.ok, true);
+    assert.equal(result.title, '介護現場における生成AI活用ガイドライン');
+    assert.ok(result.excerpt.includes('PDFから抽出した本文要約です'));
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+test('resolveSource: PDFのGemini抽出でtitle/excerptが得られなければ採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      return { ok: false, status: 500, text: async () => 'internal error' };
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/doc.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('%PDF-1.4 fake-binary-content'),
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-fail');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /PDF抽出失敗/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+test('resolveSource: PDFレスポンスの本文が空なら採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async () => ({
+    ok: true,
+    status: 200,
+    url: 'https://www.mhlw.go.jp/empty.pdf',
+    headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+    body: bodyFromText(''),
+  });
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-empty');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /PDFが空/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
   }
 });
 

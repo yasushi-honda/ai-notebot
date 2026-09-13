@@ -134,6 +134,67 @@ export async function generateGroundedText({ prompt, model, temperature = 1.0 })
   };
 }
 
+const PDF_EXTRACT_SCHEMA = {
+  type: 'OBJECT',
+  properties: {
+    title: { type: 'STRING' },
+    excerpt: { type: 'STRING' },
+  },
+  required: ['title', 'excerpt'],
+};
+
+/**
+ * PDFバイナリをGeminiに直接渡し、タイトルと本文要約を抽出する。
+ * 公的機関（厚労省等）の一次情報がPDF形式であることが多く、HTMLパーサでは本文を抽出できず
+ * source-resolver.mjs の到達性検証で除外されてしまう問題への対応。新規PDFパーサ依存
+ * パッケージを追加しない方針（CLAUDE.md）のため、既存のVertex AI呼び出し基盤に
+ * マルチモーダル入力（inlineData, mimeType: application/pdf）として渡す
+ * （2026-09時点でVertex AI公式ドキュメントで確認済みの方式）。
+ * @param {object} opts
+ * @param {Buffer} opts.pdfBytes
+ * @param {string} [opts.model]
+ * @returns {Promise<{title: string, excerpt: string}>}
+ */
+export async function extractPdfText({ pdfBytes, model }) {
+  const token = requireToken();
+  const project = requireProject();
+  const usedModel = model || process.env.GEMINI_MODEL || DEFAULT_TEXT_MODEL;
+  const url = endpoint(project, DEFAULT_LOCATION, usedModel);
+
+  const prompt = [
+    '以下のPDF文書を読み取り、タイトルと本文要約をJSONで出力してください。',
+    '- title: PDFの表題（表題が無ければ内容から適切な見出しを1行で）',
+    '- excerpt: PDFに実際に書かれている内容のみに基づく日本語の要約（400字程度）',
+    '- PDFに書かれていない内容を推測・創作しないこと（正確性を最優先する）',
+  ].join('\n');
+
+  const data = await callGenerateContent(url, token, {
+    contents: [
+      {
+        role: 'user',
+        parts: [
+          { inlineData: { mimeType: 'application/pdf', data: pdfBytes.toString('base64') } },
+          { text: prompt },
+        ],
+      },
+    ],
+    generationConfig: {
+      temperature: 0.1,
+      responseMimeType: 'application/json',
+      responseSchema: PDF_EXTRACT_SCHEMA,
+    },
+  });
+
+  const text = data.candidates?.[0]?.content?.parts?.map((p) => p.text).filter(Boolean).join('');
+  if (!text) throw new Error(`Vertex AI の応答形式が想定外です: ${JSON.stringify(data).slice(0, 300)}`);
+
+  const parsed = JSON.parse(text);
+  if (!parsed.title || !parsed.excerpt) {
+    throw new Error(`PDF抽出結果にtitle/excerptが含まれません: ${text.slice(0, 300)}`);
+  }
+  return { title: parsed.title, excerpt: parsed.excerpt };
+}
+
 /**
  * 画像生成。gemini-3.1-flash-lite-image は locations/global のみ対応。
  * @param {object} opts
