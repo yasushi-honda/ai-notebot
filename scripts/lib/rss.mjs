@@ -40,7 +40,9 @@ export function stripTags(html) {
 /**
  * RSS 2.0 の <item> と Atom の <entry> を最小限にパースする。
  * title・有効な http(s) URL・有効な日付のいずれかが欠けているエントリは除外する
- * （isPermaLink=false な guid など、壊れたリンクを候補に混入させないため）。
+ * （isPermaLink=false な guid など、壊れたリンクを候補に混入させないため。日付欠落を
+ * 取得時刻でフォールバックすると、フィードのバックログにある古い記事まで「本日の
+ * 新着」として鮮度フィルタを通過してしまうため、日付不明のエントリは常に除外する）。
  */
 export function parseFeed(xml) {
   const items = [];

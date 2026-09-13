@@ -7,6 +7,12 @@
  *   → 代替として GitHub の Claude Code リリース Atom を採用
  * - Meta AI blog RSS (ai.meta.com/blog/rss/): 404
  * - Mistral AI news feed (mistral.ai/news/feed.xml): 404
+ * - VentureBeat AI (venturebeat.com/category/ai/feed/): 2026-09-13時点でVercelのbot対策
+ *   （Security Checkpoint）により恒久的に429、フィード自体が実質利用不能と判断し除外
+ * - Google Developers Blog (developers.googleblog.com/feeds/posts/default): 2026-09-13時点で
+ *   フィード側の仕様変更によりitemにpubDateが含まれなくなった。取得時刻をフォールバックする
+ *   案も検討したが、フィードのバックログにある古い記事まで「本日の新着」として鮮度フィルタを
+ *   通過してしまう懸念（codex reviewで指摘）があるため、正確性を優先し除外
  */
 
 /** @type {Array<{source: string, category: 'vendor'|'media'|'japanese', urls: string[]}>} */
@@ -14,7 +20,6 @@ export const RSS_FEEDS = [
   // --- vendor: 公式ブログ・リリース ---
   { source: 'OpenAI', category: 'vendor', urls: ['https://openai.com/news/rss.xml'] },
   { source: 'Google AI', category: 'vendor', urls: ['https://blog.google/technology/ai/rss/'] },
-  { source: 'Google Developers Blog', category: 'vendor', urls: ['https://developers.googleblog.com/feeds/posts/default'] },
   { source: 'Google Cloud Blog', category: 'vendor', urls: ['https://cloudblog.withgoogle.com/rss/'] },
   { source: 'Hugging Face Blog', category: 'vendor', urls: ['https://huggingface.co/blog/feed.xml'] },
   // Anthropic は公式 RSS 未提供のため、Claude Code のリリースノートを代替一次ソースとする
@@ -25,7 +30,6 @@ export const RSS_FEEDS = [
   { source: 'The Verge AI', category: 'media', urls: ['https://www.theverge.com/rss/ai-artificial-intelligence/index.xml'] },
   { source: 'Ars Technica', category: 'media', urls: ['https://feeds.arstechnica.com/arstechnica/technology-lab'] },
   { source: 'MIT Technology Review AI', category: 'media', urls: ['https://www.technologyreview.com/topic/artificial-intelligence/feed'] },
-  { source: 'VentureBeat AI', category: 'media', urls: ['https://venturebeat.com/category/ai/feed/'] },
   { source: 'Lobsters (ai tag)', category: 'media', urls: ['https://lobste.rs/t/ai.rss'] },
 
   // --- japanese: 日本語ソース ---
