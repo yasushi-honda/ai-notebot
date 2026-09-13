@@ -40,15 +40,11 @@ export function stripTags(html) {
 /**
  * RSS 2.0 の <item> と Atom の <entry> を最小限にパースする。
  * title・有効な http(s) URL・有効な日付のいずれかが欠けているエントリは除外する
- * （isPermaLink=false な guid など、壊れたリンクを候補に混入させないため）。
- *
- * @param {string} xml
- * @param {{allowMissingDate?: boolean}} [options] allowMissingDate=true の場合、
- *   日付フィールド自体が存在しないエントリを取得時刻でフォールバックして含める
- *   （Google Developers Blog 等、フィード側の仕様変更で pubDate が欠落したケース向け）。
- *   フィールドはあるが不正な値（パース不能な日付文字列）の場合は従来どおり除外する。
+ * （isPermaLink=false な guid など、壊れたリンクを候補に混入させないため。日付欠落を
+ * 取得時刻でフォールバックすると、フィードのバックログにある古い記事まで「本日の
+ * 新着」として鮮度フィルタを通過してしまうため、日付不明のエントリは常に除外する）。
  */
-export function parseFeed(xml, { allowMissingDate = false } = {}) {
+export function parseFeed(xml) {
   const items = [];
   const blocks = xml.match(/<(item|entry)[\s>][\s\S]*?<\/\1>/gi) ?? [];
   for (const block of blocks) {
@@ -58,7 +54,7 @@ export function parseFeed(xml, { allowMissingDate = false } = {}) {
     const atomLink = block.match(/<link[^>]*href="([^"]+)"[^>]*\/?>/i);
     if (atomLink && !/^https?:\/\//.test(url)) url = decodeEntities(atomLink[1]);
     const dateStr = pick(block, 'pubDate', 'published', 'updated', 'dc:date');
-    const date = dateStr ? new Date(dateStr) : allowMissingDate ? new Date() : null;
+    const date = dateStr ? new Date(dateStr) : null;
     const description = stripTags(pick(block, 'description', 'summary', 'content'));
     if (!title || !/^https?:\/\//.test(url) || !date || Number.isNaN(date.getTime())) continue;
     items.push({ title, url, date, description });
@@ -68,7 +64,7 @@ export function parseFeed(xml, { allowMissingDate = false } = {}) {
 
 /**
  * 単一フィード定義（複数 URL のフォールバック対応）から取得を試みる。
- * @param {{source: string, urls: string[], allowMissingDate?: boolean}} feed
+ * @param {{source: string, urls: string[]}} feed
  * @returns {Promise<Array<{title:string,url:string,date:Date,description:string,source:string}>>}
  */
 export async function fetchFeed(feed) {
@@ -80,7 +76,7 @@ export async function fetchFeed(feed) {
       });
       if (!res.ok) continue;
       const xml = await res.text();
-      const items = parseFeed(xml, { allowMissingDate: feed.allowMissingDate });
+      const items = parseFeed(xml);
       if (items.length > 0) {
         return items.map((i) => ({ ...i, source: feed.source }));
       }
