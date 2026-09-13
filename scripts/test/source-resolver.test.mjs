@@ -22,6 +22,27 @@ function mockPublicDns() {
   };
 }
 
+// resolveSource のPDF経路はextractPdfText（vertex.mjs）経由でVertex AIを呼ぶが、
+// requireToken()はGEMINI_ACCESS_TOKEN未設定だと即座に例外を投げるため、fetchをモックする
+// テストでも環境変数だけは一時的に設定しておく必要がある。
+function mockGeminiToken() {
+  const original = process.env.GEMINI_ACCESS_TOKEN;
+  process.env.GEMINI_ACCESS_TOKEN = 'test-token';
+  return () => {
+    if (original === undefined) delete process.env.GEMINI_ACCESS_TOKEN;
+    else process.env.GEMINI_ACCESS_TOKEN = original;
+  };
+}
+
+/** Vertex AI generateContent の正常応答を模したJSONを返すfetchレスポンスを作る。 */
+function geminiJsonResponse(payload) {
+  return {
+    ok: true,
+    status: 200,
+    json: async () => ({ candidates: [{ content: { parts: [{ text: JSON.stringify(payload) }] } }] }),
+  };
+}
+
 // resolveSourceはHTML本文をres.body.getReader()経由で読み取る（MAX_RESPONSE_BYTES上限付き。
 // source-resolver.mjs参照）ため、モックのfetch応答にはtext()だけでなくbodyストリームも必要。
 function bodyFromText(text) {
@@ -116,17 +137,18 @@ test('sanitizeTitle: 短い通常のtitleはそのまま', () => {
   assert.equal(sanitizeTitle('介護現場のAI活用ガイド'), '介護現場のAI活用ガイド');
 });
 
-// resolveSource: 到達できても本文の裏付けを一切提供できないソース（PDF等の非HTML・空のHTML）を
-// 「到達性のみ検証済み」として採用してしまい、LLMがホスト名だけから公式の裏付けがある体で
-// 本文を書けてしまうバグの回帰テスト（実データで厚労省の公式PDFがこの経路で採用され発覚）
-test('resolveSource: 非HTML（PDF等）のレスポンスは本文抽出できないため採用しない', async () => {
+// resolveSource: 到達できても本文の裏付けを一切提供できないソース（JSON応答等の非HTML・
+// 空のHTML）を「到達性のみ検証済み」として採用してしまい、LLMがホスト名だけから公式の
+// 裏付けがある体で本文を書けてしまうバグの回帰テスト（実データで厚労省の公式PDFがこの経路で
+// 採用され発覚。PDFはその後Gemini抽出経路に個別対応したため、ここではPDF以外の非HTMLを使う）
+test('resolveSource: 非HTML（PDF以外）のレスポンスは本文抽出できないため採用しない', async () => {
   const originalFetch = globalThis.fetch;
   const restoreDns = mockPublicDns();
   globalThis.fetch = async () => ({
     ok: true,
     status: 200,
-    url: 'https://example.com/doc.pdf',
-    headers: { get: () => 'application/pdf' },
+    url: 'https://example.com/data.json',
+    headers: { get: () => 'application/json' },
     text: async () => '',
   });
   try {
@@ -136,6 +158,277 @@ test('resolveSource: 非HTML（PDF等）のレスポンスは本文抽出でき�
   } finally {
     globalThis.fetch = originalFetch;
     restoreDns();
+  }
+});
+
+// resolveSource: PDFは公的機関（厚労省等）の一次情報で多用されており、一律除外すると
+// official ソースがほぼ見つからない状態になっていたため、Geminiに直接渡して本文抽出する
+// 経路を追加した（2026-09-13、ユーザー指示）。
+test('resolveSource: PDFはGeminiに直接渡して本文抽出し採用する', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      return geminiJsonResponse({ title: '介護現場における生成AI活用ガイドライン', excerpt: 'PDFから抽出した本文要約です。制度の概要と留意点がまとめられています。' });
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/doc.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('%PDF-1.4 fake-binary-content'),
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-ok');
+    assert.equal(result.ok, true);
+    assert.equal(result.title, '介護現場における生成AI活用ガイドライン');
+    assert.ok(result.excerpt.includes('PDFから抽出した本文要約です'));
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+test('resolveSource: PDFのGemini API呼び出し自体が失敗（500エラー）した場合は採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      return { ok: false, status: 500, text: async () => 'internal error' };
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/doc.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('%PDF-1.4 fake-binary-content'),
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-fail');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /PDF抽出失敗/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+// responseSchemaを指定してもVertex AIが必ず厳密に構造化出力を強制する保証はない
+// （scripts/curate-care.mjsの既存コメント参照）。Geminiが200 OKで返しつつ、
+// responseSchemaのrequired指定を無視してtitle/excerptの一方だけを欠落させた場合も、
+// 500エラー等の「API呼び出し自体の失敗」と同様に採用しないことを個別に確認する
+// （pr-review-toolkit:pr-test-analyzerで指摘: 既存の「title/excerptが得られなければ」テストは
+// 実際にはAPI失敗経路しか検証しておらず、この分岐は未検証だった）。
+test('resolveSource: PDFのGemini抽出でtitleが空欠落なら採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      return geminiJsonResponse({ title: '', excerpt: '本文の要約はあるがtitleが空欠落しているケース。' });
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/doc.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('%PDF-1.4 fake-binary-content'),
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-notitle');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /PDF抽出失敗/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+test('resolveSource: PDFのGemini抽出でexcerptが空欠落なら採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      return geminiJsonResponse({ title: 'タイトルはあるがexcerptが空欠落しているケース', excerpt: '' });
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/doc.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('%PDF-1.4 fake-binary-content'),
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-noexcerpt');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /PDF抽出失敗/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+// extractPdfText内の欠落チェック（!parsed.excerpt）は空文字のみを弾き、空白のみの文字列
+// （"   "等）は素通りする。resolvePdfSource側の`!excerpt.trim()`はこれを弾く独立した防御層
+// であり、この役割分担自体を検証する（pr-review-toolkit:pr-test-analyzerで指摘）。
+test('resolveSource: PDFのGemini抽出結果が空白のみのexcerptなら採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      return geminiJsonResponse({ title: 'タイトル', excerpt: '   ' });
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/doc.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('%PDF-1.4 fake-binary-content'),
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-blankexcerpt');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /本文が空/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+// resolvePdfSourceはHTML経路と同じmojibake検出（isLikelyMojibake）をGeminiの出力にも
+// 適用する多層防御を持つ。この主張を裏付ける統合テスト（pr-review-toolkit:pr-test-analyzerで指摘）。
+test('resolveSource: PDFのGemini抽出結果が文字化けなら採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      return geminiJsonResponse({
+        title: 'タイトル',
+        excerpt: '��쌻��̐��Y������֘A���i���Y������Ɏ�����K�C�h���C��',
+      });
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/doc.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('%PDF-1.4 fake-binary-content'),
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-mojibake');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /文字化け/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+// PDFはバイナリフォーマットでありxrefテーブル・trailerは通常ファイル末尾にあるため、
+// HTMLの途中切り詰めと違い機械的に打ち切ると構造上不完全なバイナリになる。Geminiがパース失敗
+// ではなく「読めた範囲だけの、あたかも正しいかのような要約」を返す可能性があり、裏付けのない
+// 主張を出さない設計思想に反するため、上限で打ち切られた時点でGeminiに渡さず不採用にする
+// （pr-review-toolkit:code-reviewerで指摘・修正）。
+test('resolveSource: PDFがサイズ上限で打ち切られた場合はGeminiに渡さず採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  let geminiCalled = false;
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      geminiCalled = true;
+      return geminiJsonResponse({ title: '本来なら渡ってはいけない', excerpt: '打ち切り後にGeminiが呼ばれてしまっている' });
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/huge.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('a'.repeat(9 * 1024 * 1024)), // MAX_PDF_BYTES(8MB)を超える
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-huge');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /サイズ上限/);
+    assert.equal(geminiCalled, false);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+// extractPdfText（vertex.mjs）はGeminiのresponseSchema指定でも構造化出力が必ず厳密に強制される
+// 保証はない。JSON.parseが失敗した場合も、Gemini呼び出し自体の失敗（500エラー等）と同様に
+// このソースを採用しない安全側の挙動になることを確認する回帰テスト。
+test('resolveSource: PDFのGemini応答が不正なJSONの場合も採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('aiplatform.googleapis.com')) {
+      return {
+        ok: true,
+        status: 200,
+        json: async () => ({ candidates: [{ content: { parts: [{ text: '{不正なJSON' }] } }] }),
+      };
+    }
+    return {
+      ok: true,
+      status: 200,
+      url: 'https://www.mhlw.go.jp/doc.pdf',
+      headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+      body: bodyFromText('%PDF-1.4 fake-binary-content'),
+    };
+  };
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-badjson');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /PDF抽出失敗/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
+  }
+});
+
+test('resolveSource: PDFレスポンスの本文が空なら採用しない', async () => {
+  const originalFetch = globalThis.fetch;
+  const restoreDns = mockPublicDns();
+  const restoreToken = mockGeminiToken();
+  globalThis.fetch = async () => ({
+    ok: true,
+    status: 200,
+    url: 'https://www.mhlw.go.jp/empty.pdf',
+    headers: { get: (h) => (h === 'content-type' ? 'application/pdf' : null) },
+    body: bodyFromText(''),
+  });
+  try {
+    const result = await resolveSource('https://vertexaisearch.example/redirect-pdf-empty');
+    assert.equal(result.ok, false);
+    assert.match(result.reason, /PDFが空/);
+  } finally {
+    globalThis.fetch = originalFetch;
+    restoreDns();
+    restoreToken();
   }
 });
 

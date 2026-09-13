@@ -10,6 +10,7 @@ import { isIP } from 'node:net';
 // promisesオブジェクト経由で呼び出す（dnsPromises.lookup をテスト側でモンキーパッチする）。
 import { promises as dnsPromises } from 'node:dns';
 import { decodeEntities, stripTags } from './rss.mjs';
+import { extractPdfText } from './vertex.mjs';
 
 const FETCH_TIMEOUT_MS = 15000;
 const USER_AGENT =
@@ -21,6 +22,12 @@ const MAX_REDIRECTS = 10;
 // 巨大な（あるいはchunked encodingで際限なく続く）応答を返すと収集プロセスやCI runnerの
 // メモリを枯渇させうる（codex reviewで指摘・修正）。
 const MAX_RESPONSE_BYTES = 2 * 1024 * 1024; // 2MB
+// PDFはHTMLページより大きくなりやすいため別枠の上限を設ける。Vertex AI公式ドキュメントで
+// 確認したinlineDataのペイロード上限は実装依存で20〜100MBだが、base64化すると生バイト数の
+// 約1.33倍に膨らみJSONエンベロープ・プロンプト分も加算されるため、最も厳しい実装（20MB）に対しても
+// 十分な安全マージンを残す値にする（codex reviewで指摘・修正: 当初15MBだと約20MBまで膨らみ
+// 20MB上限のエンドポイントで400エラーになりうる境界値だった）。
+const MAX_PDF_BYTES = 8 * 1024 * 1024; // 8MB（base64化で約10.7MB）
 
 /**
  * リダイレクト先URLがループバック・リンクローカル・プライベートIPレンジ等の
@@ -275,8 +282,8 @@ export function sanitizeTitle(title, maxLength = MAX_TITLE_LENGTH) {
  * デコードするため、単純にチャンクを結合してUTF-8デコードすれば res.text() と同じ挙動になる
  * （文字コードがUTF-8でないページの文字化け検出は既存の isLikelyMojibake が別途担う）。
  */
-export async function readBoundedText(res, maxBytes = MAX_RESPONSE_BYTES) {
-  if (!res.body) return '';
+export async function readBoundedBytes(res, maxBytes = MAX_RESPONSE_BYTES) {
+  if (!res.body) return Buffer.alloc(0);
   const reader = res.body.getReader();
   const chunks = [];
   let received = 0;
@@ -295,7 +302,54 @@ export async function readBoundedText(res, maxBytes = MAX_RESPONSE_BYTES) {
   } finally {
     reader.releaseLock();
   }
-  return Buffer.concat(chunks).toString('utf-8');
+  return Buffer.concat(chunks);
+}
+
+export async function readBoundedText(res, maxBytes = MAX_RESPONSE_BYTES) {
+  return (await readBoundedBytes(res, maxBytes)).toString('utf-8');
+}
+
+/**
+ * PDFレスポンスをGeminiに直接渡して本文抽出する（resolveSource から分離）。
+ * Gemini呼び出し自体が失敗した場合（一時的なAPIエラー等）も、ページ取得失敗と同様に
+ * このソースを「採用しない」ことで安全側に倒す（build-care.mjs 全体を失敗させない）。
+ */
+async function resolvePdfSource(res, finalUrl) {
+  try {
+    const pdfBytes = await readBoundedBytes(res, MAX_PDF_BYTES);
+    if (pdfBytes.length === 0) {
+      return { ok: false, url: finalUrl, httpStatus: res.status, reason: 'no-extractable-text（PDFが空）' };
+    }
+    if (pdfBytes.length >= MAX_PDF_BYTES) {
+      // HTMLの途中切り詰め（readBoundedText）は「本文後半が欠けたテキスト」になるだけで
+      // 実害が小さいが、PDFはバイナリフォーマットでありxrefテーブル・trailer・%%EOFは
+      // 通常ファイル末尾にある。上限で機械的に打ち切ると構造上不完全なバイナリになり、
+      // Geminiがパース失敗ではなく「読めた範囲だけの、あたかも正しいかのような要約」を
+      // 返してしまう可能性がある。裏付けのない主張を出さない設計思想（CLAUDE.md）に反するため、
+      // 打ち切りが起きた時点でGeminiに渡さず不採用にする（pr-review-toolkit:code-reviewerで指摘・修正）。
+      return { ok: false, url: finalUrl, httpStatus: res.status, reason: 'no-extractable-text（PDFがサイズ上限を超過）' };
+    }
+
+    const { title, excerpt } = await extractPdfText({ pdfBytes });
+    const sanitizedTitle = sanitizeTitle(title);
+
+    // HTML経路と同じくGeminiの出力にも文字化け・空判定の防御を適用する（多層防御）。
+    if (isLikelyMojibake(sanitizedTitle) || isLikelyMojibake(excerpt)) {
+      return { ok: false, url: finalUrl, httpStatus: res.status, reason: 'no-extractable-text（文字化けを検出）' };
+    }
+    if (!excerpt.trim()) {
+      return { ok: false, url: finalUrl, httpStatus: res.status, reason: 'no-extractable-text（本文が空）' };
+    }
+
+    return { ok: true, url: finalUrl, httpStatus: res.status, title: sanitizedTitle, excerpt: excerpt.slice(0, 400) };
+  } catch (err) {
+    return {
+      ok: false,
+      url: finalUrl,
+      httpStatus: res.status,
+      reason: `no-extractable-text（PDF抽出失敗: ${err.message}）`,
+    };
+  }
 }
 
 /**
@@ -317,11 +371,21 @@ export async function resolveSource(redirectUrl) {
     // あり、そのまま小文字リテラルと比較すると正当なHTMLページを非HTMLと誤判定して破棄してしまう
     // （codex reviewで指摘・修正）。
     const contentType = (res.headers.get('content-type') || '').toLowerCase();
+
+    // PDFは公的機関（厚労省等）の一次情報で多用されており、HTMLパーサでは本文抽出できず
+    // 一律除外すると official ソースがほぼ見つからない状態になっていた。Geminiに直接渡して
+    // 本文抽出することで、この種のソースも他のHTMLページと同じ到達性検証パイプラインに乗せる
+    // （2026-09-13、ユーザー指示により対応。extractPdfText参照）。
+    if (contentType.includes('application/pdf')) {
+      return await resolvePdfSource(res, finalUrl);
+    }
+
     if (!contentType.includes('text/html')) {
-      // HTML以外（PDF等）はテキスト抽出手段を持たない（新規依存パッケージを追加しない方針のため）。
-      // 到達できても本文の裏付けを一切提供できないソースを採用してしまうと、curate-care.mjs には
-      // ホスト名だけが渡り、LLMが「公式の裏付けがある」体で本文を書けてしまう（実データで
-      // 厚労省の公式PDFがこの経路で採用され発覚。codex reviewで指摘・修正）。採用しない。
+      // PDF以外の非HTML（JSON API応答等）はテキスト抽出手段を持たない（新規依存パッケージを
+      // 追加しない方針のため）。到達できても本文の裏付けを一切提供できないソースを採用して
+      // しまうと、curate-care.mjs にはホスト名だけが渡り、LLMが「公式の裏付けがある」体で
+      // 本文を書けてしまう（実データで厚労省の公式PDFがこの経路で採用され発覚。codex reviewで
+      // 指摘・修正。現在PDFは上記で個別対応済みのため、ここに残るのはPDF以外の非HTML）。
       return { ok: false, url: finalUrl, httpStatus: res.status, reason: 'no-extractable-text（非HTMLコンテンツ）' };
     }
 
