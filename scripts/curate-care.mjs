@@ -905,19 +905,27 @@ export function buildFootnoteDefs(usedIds, itemsById) {
 }
 
 /**
- * 直近RECENT_WORKAREA_LOOKBACK件の介護版記事のworkAreaを読み込む（重複回避の機械的ゲート用）。
- * collect-care.mjsのloadRecentTopics（既出タイトルの取得）と同じくファイル名（日付）降順で
- * 読み込む。壊れたファイル・frontmatter欠落は無視する（ここで例外を投げて生成全体を
- * 止めるほどの重要度ではないため）。
+ * 対象日(dateArg)より前RECENT_WORKAREA_LOOKBACK件の介護版記事のworkAreaを読み込む
+ * （重複回避の機械的ゲート用）。ファイル名は YYYY-MM-DD.md 形式で文字列比較が日付の前後
+ * 関係と一致するため、dateArg未満のファイルだけに絞ってから降順で読み込む。
+ * `care-rebuild.yml -f date=YYYY-MM-DD -f regenerate=true`（AGENTS.md記載の正規サポート
+ * ワークフロー）で過去日付を再生成する場合、dateArgで絞らずディレクトリ全体の最新順に
+ * 取ると、対象日より後の投稿（未来）まで拾ってしまい「対象日の直前」を正しく参照できない
+ * （codex reviewで指摘・修正）。壊れたファイル・frontmatter欠落は無視する（ここで例外を
+ * 投げて生成全体を止めるほどの重要度ではないため）。
  */
-async function loadRecentWorkAreas() {
+async function loadRecentWorkAreas(dateArg) {
   let files;
   try {
     files = await readdir(CARE_POSTS_DIR);
   } catch {
     return [];
   }
-  const mdFiles = files.filter((f) => f.endsWith('.md')).sort().reverse().slice(0, RECENT_WORKAREA_LOOKBACK);
+  const mdFiles = files
+    .filter((f) => f.endsWith('.md') && f.slice(0, -3) < dateArg)
+    .sort()
+    .reverse()
+    .slice(0, RECENT_WORKAREA_LOOKBACK);
   const workAreas = [];
   for (const f of mdFiles) {
     try {
@@ -950,7 +958,7 @@ async function main() {
   }
   const itemsById = new Map(items.map((i) => [i.id, i]));
   const researchSummary = archive.researchSummary ?? '';
-  const recentWorkAreas = await loadRecentWorkAreas();
+  const recentWorkAreas = await loadRecentWorkAreas(dateArg);
   if (recentWorkAreas.length > 0) {
     console.log(`直近使用済みworkArea（今回は避ける）: ${recentWorkAreas.join(' / ')}`);
   }
