@@ -76,6 +76,32 @@ test('parseFeed: 日付欠落のエントリは除外する', () => {
   assert.deepEqual(parseFeed(xml), []);
 });
 
+test('parseFeed: allowMissingDate=true なら日付欠落でも取得時刻をフォールバックして含める', () => {
+  const xml = `<rss><channel>
+    <item>
+      <title>日付なし（フォールバック対象）</title>
+      <link>https://example.com/d2</link>
+    </item>
+  </channel></rss>`;
+  const before = Date.now();
+  const items = parseFeed(xml, { allowMissingDate: true });
+  const after = Date.now();
+  assert.equal(items.length, 1);
+  assert.ok(items[0].date instanceof Date);
+  assert.ok(items[0].date.getTime() >= before && items[0].date.getTime() <= after);
+});
+
+test('parseFeed: allowMissingDate=true でも不正な日付文字列（パース不能）は除外する', () => {
+  const xml = `<rss><channel>
+    <item>
+      <title>不正日付</title>
+      <link>https://example.com/d3</link>
+      <pubDate>not-a-date</pubDate>
+    </item>
+  </channel></rss>`;
+  assert.deepEqual(parseFeed(xml, { allowMissingDate: true }), []);
+});
+
 test('parseFeed: isPermaLink=false な guid（壊れたURL）のエントリは除外する', () => {
   const xml = `<rss><channel>
     <item>
