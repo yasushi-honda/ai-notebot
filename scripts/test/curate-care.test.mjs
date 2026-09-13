@@ -770,6 +770,24 @@ test('validateGenerated: 「## 使えるプロンプト例」に利用ルール�
   assert.ok(problems.some((p) => p.includes('注意書き')));
 });
 
+// workAreaは既存の構造化フィールドであり、直近の使用状況と機械的に照合できるにも関わらず
+// 従来は一切参照していなかった。2026-09-13実データで発覚: 直後の投稿と同一workAreaが
+// 選ばれ続けた（9/10↔9/11=ケアプラン、9/12↔9/13=事務・記録）。この回帰テスト。
+test('validateGenerated: workAreaが直近の記事と重複していれば検出する', () => {
+  const problems = validateGenerated(validResult({ workArea: 'ケアプラン' }), itemsByIdWithOfficial, ['ケアプラン']);
+  assert.ok(problems.some((p) => p.includes('workAreaが直近の記事と重複')));
+});
+
+test('validateGenerated: workAreaが直近未使用のものであれば重複チェックを満たす', () => {
+  const problems = validateGenerated(validResult({ workArea: '送迎' }), itemsByIdWithOfficial, ['ケアプラン', '事務・記録']);
+  assert.ok(!problems.some((p) => p.includes('workAreaが直近の記事と重複')));
+});
+
+test('validateGenerated: recentWorkAreas省略時（デフォルト空配列）は重複チェックをスキップする', () => {
+  const problems = validateGenerated(validResult(), itemsByIdWithOfficial);
+  assert.ok(!problems.some((p) => p.includes('workAreaが直近の記事と重複')));
+});
+
 test('validateGenerated: workArea/difficultyが正しいenum値なら問題なし', () => {
   const result = validResult({ workArea: '送迎', difficulty: '要検討' });
   assert.deepEqual(validateGenerated(result, itemsByIdWithOfficial), []);
