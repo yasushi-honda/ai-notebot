@@ -70,4 +70,4 @@ gh workflow run care-rebuild.yml -f regenerate=false                     # 既�
 - `data/raw/*.json` は git にコミットする（アーカイブの実体）。`site/public/images/` も同様。
 - ローカル実行前に `direnv allow`（`.envrc` が `CLOUDSDK_ACTIVE_CONFIG_NAME=ai-notebot` を設定）。
 - `GEMINI_ACCESS_TOKEN=$(gcloud auth print-access-token --account=hy.unimail.11@gmail.com)` を都度取得。
-- GitHub Pages への自動デプロイは `daily.yml`（毎朝 09:00 JST のスケジュール実行）のみがトリガー。`ci.yml` は PR 時の型チェック・ビルド確認のみで、`main` への push（PR マージ含む）単体では自動デプロイされない。コード変更だけを今すぐ本番反映したい場合は `gh workflow run care-rebuild.yml -f regenerate=false`（再収集なし・サイト全体を再ビルドしてデプロイのみ）を使う。
+- GitHub Pages への自動デプロイは `daily.yml`（毎朝 09:07 JST のスケジュール実行。GitHub Actions公式が毎時00分は高負荷で遅延しやすいと明記しているため数分ずらしている）のみがトリガー。`ci.yml` は PR 時の型チェック・ビルド確認のみで、`main` への push（PR マージ含む）単体では自動デプロイされない。コード変更だけを今すぐ本番反映したい場合は `gh workflow run care-rebuild.yml -f regenerate=false`（再収集なし・サイト全体を再ビルドしてデプロイのみ）を使う。

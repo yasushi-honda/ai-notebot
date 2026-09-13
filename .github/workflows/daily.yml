@@ -1,11 +1,13 @@
 name: Daily AI trends digest
 
-# 毎朝 09:00 JST (00:00 UTC) に収集→記事生成→出典検証→画像生成→ビルド→公開まで通しで実行する。
+# 毎朝 09:07 JST (00:07 UTC) に収集→記事生成→出典検証→画像生成→ビルド→公開まで通しで実行する。
 # 出典検証（validate-citations.mjs）に失敗した場合は commit も deploy も行わない
 # （収集していない情報を含む記事を公開しない設計。詳細: docs/adr/）。
+# cronを毎時00分から数分ずらしているのは、GitHub Actions公式が「毎時の開始時刻は高負荷になり
+# 遅延しやすい」と明記しているため（https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule）。
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '7 0 * * *'
   workflow_dispatch:
 
 permissions:
