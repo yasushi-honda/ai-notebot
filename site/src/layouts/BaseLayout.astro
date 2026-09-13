@@ -5,10 +5,16 @@ import { url } from '../lib/url';
 interface Props {
   title: string;
   description?: string;
+  /** OGP/Twitter Card用のサムネイル画像（絶対URL）。チャット・SNS等にリンクを貼った際の
+   * プレビュー表示に使われる。未指定のページは画像なしのプレビュー（タイトル・説明文のみ）になる。 */
+  image?: string;
 }
 
-const { title, description = '毎日のAIトレンドを出典付きでアーカイブするブログ' } = Astro.props;
+const { title, description = '毎日のAIトレンドを出典付きでアーカイブするブログ', image } = Astro.props;
 const siteTitle = 'ai-notebot';
+// Astro.url は静的ビルド時、astro.config.mjs の site（https://yasushi-honda.github.io）と
+// 現在のルートから解決される絶対URL。ページごとに canonicalUrl を計算・受け渡す必要がない。
+const canonicalUrl = Astro.url.href;
 ---
 
 <!doctype html>
@@ -19,6 +25,17 @@ const siteTitle = 'ai-notebot';
     <meta name="description" content={description} />
     <title>{title} | {siteTitle}</title>
     <link rel="icon" type="image/svg+xml" href={url('favicon.svg')} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteTitle} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    {image && <meta property="og:image" content={image} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {image && <meta name="twitter:image" content={image} />}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX6W8ER2LG"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];

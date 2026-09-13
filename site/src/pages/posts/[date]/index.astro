@@ -20,6 +20,10 @@ const { Content } = await render(post);
 // 存在しない（スキーマのdefault []になる）。その場合は tags にフォールバックし、
 // 箇条書きが空にならないようにする（codex reviewで指摘・修正）。
 const canonicalUrl = new URL(url(`posts/${post.data.date}/`), Astro.site).href;
+// OGP/Twitter Card用のサムネイル画像（絶対URL必須）。daily.ymlはimages.mjsが失敗すると
+// ワークフロー全体を失敗させる設計（continue-on-errorなし）のため、公開済みの記事には
+// 必ずhero.jpgが存在する前提でよい。
+const heroImageUrl = new URL(url(`images/${post.data.date}/hero.jpg`), Astro.site).href;
 const topics = post.data.themeTitles.length > 0 ? post.data.themeTitles : post.data.tags;
 const shareText = [
   post.data.title,
@@ -30,7 +34,7 @@ const shareText = [
 ].join('\n');
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description}>
+<BaseLayout title={post.data.title} description={post.data.description} image={heroImageUrl}>
   <nav class="text-xs text-ink-soft mb-4">
     <a href={url('')} class="hover:text-verify">ホーム</a> /
     <a href={url('archive/')} class="hover:text-verify">アーカイブ</a> /
