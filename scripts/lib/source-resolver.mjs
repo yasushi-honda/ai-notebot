@@ -320,6 +320,15 @@ async function resolvePdfSource(res, finalUrl) {
     if (pdfBytes.length === 0) {
       return { ok: false, url: finalUrl, httpStatus: res.status, reason: 'no-extractable-text（PDFが空）' };
     }
+    if (pdfBytes.length >= MAX_PDF_BYTES) {
+      // HTMLの途中切り詰め（readBoundedText）は「本文後半が欠けたテキスト」になるだけで
+      // 実害が小さいが、PDFはバイナリフォーマットでありxrefテーブル・trailer・%%EOFは
+      // 通常ファイル末尾にある。上限で機械的に打ち切ると構造上不完全なバイナリになり、
+      // Geminiがパース失敗ではなく「読めた範囲だけの、あたかも正しいかのような要約」を
+      // 返してしまう可能性がある。裏付けのない主張を出さない設計思想（CLAUDE.md）に反するため、
+      // 打ち切りが起きた時点でGeminiに渡さず不採用にする（pr-review-toolkit:code-reviewerで指摘・修正）。
+      return { ok: false, url: finalUrl, httpStatus: res.status, reason: 'no-extractable-text（PDFがサイズ上限を超過）' };
+    }
 
     const { title, excerpt } = await extractPdfText({ pdfBytes });
     const sanitizedTitle = sanitizeTitle(title);
