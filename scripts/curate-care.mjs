@@ -274,6 +274,13 @@ async function generateOnce(items, extraInstructions, researchSummary, recentWor
   const prompt = buildPrompt(items, extraInstructions, researchSummary, recentWorkAreas);
   const text = await generateText({ prompt, responseSchema: CARE_SCHEMA, temperature: 0.4 });
   const result = JSON.parse(text);
+  // normalizeBoldEmphasis（**text**をHTMLの<strong>text</strong>に変換する処理）は
+  // 意図的に適用しない。介護版は元々太字を使わない設計（プロンプトに指示なし・実データでも
+  // 使用実績なし）である一方、containsRawHtml()によるstored XSS対策ゲート（770行目、
+  // <script>等のプロンプトインジェクション対策として本文中の生HTMLタグを検出し再生成
+  // トリガーにする）が<strong>タグにも無条件でマッチしてしまい、LLMが太字を使った瞬間に
+  // 「生HTML混入」と誤検知されて再生成ループが解消不能になる（pr-review-toolkitの
+  // レビューで指摘）。
   result.bodyMarkdown = ensureBlankLineAfterHeadings(
     stripFootnotesFromHeadings(normalizeLiteralNewlines(result.bodyMarkdown)),
   );

@@ -24,7 +24,7 @@ import { dirname, join, resolve } from 'node:path';
 import { generateText } from './lib/vertex.mjs';
 import { todayJst, weeklyWindow, isSunday } from './lib/date.mjs';
 import { parseFrontmatter } from './lib/frontmatter.mjs';
-import { normalizeLiteralNewlines, evaluateStageBCitations, decideStageBRetry } from './curate.mjs';
+import { normalizeLiteralNewlines, normalizeBoldEmphasis, evaluateStageBCitations, decideStageBRetry } from './curate.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_DIR = join(ROOT, 'data', 'raw');
@@ -296,6 +296,7 @@ async function runStageB(theme, itemsById) {
     const text = await generateText({ prompt, responseSchema: STAGE_B_SCHEMA, temperature: 0.4 });
     const result = JSON.parse(text);
     result.bodyMarkdown = normalizeLiteralNewlines(result.bodyMarkdown);
+    result.bodyMarkdown = normalizeBoldEmphasis(result.bodyMarkdown);
 
     const problems = evaluateStageBCitations(result.bodyMarkdown, validIds);
     const decision = decideStageBRetry({ attempt, maxAttempts: MAX_REGENERATE_ATTEMPTS, problems, extraInstructions });
