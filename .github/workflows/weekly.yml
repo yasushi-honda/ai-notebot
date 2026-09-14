@@ -1,0 +1,138 @@
+name: Weekly AI trends digest
+
+# 毎週日曜 11:07 JST (02:07 UTC) に、前の日曜〜土曜7日分のAIトレンド日次記事から
+# 週刊まとめ記事を生成→出典検証→ビルド→公開する。対象は AI トレンド版（posts）のみ
+# （介護版は対象外。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
+# 出典検証（validate-citations.mjs --type=weekly）に失敗した場合は commit も deploy も行わない
+# （日次版と同じ設計思想: 収集していない情報を含む記事を公開しない）。
+#
+# daily.yml（毎日00:07 UTC）と2時間ずらしている理由（初期案は同時刻だった）:
+# もし同時刻に発火すると、daily.ymlの完了を待つ間に両ワークフローのgithub.shaが
+# イベント発生時点（00:07 UTC）で固定され、concurrencyグループで後から実行される側が
+# 古いSHAのままpushしてnon-fast-forwardで失敗する事態が起こりうる（初期設計時は
+# daily.ymlにcare-rebuild.ymlの「Sync to latest main」に相当する対策が無かった。
+# 現在はdaily.ymlにも同期ステップを追加済みだが、時刻をずらすこと自体も引き続き有効な
+# 一次防御として維持している。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
+on:
+  schedule:
+    - cron: '7 2 * * 0'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '公開日 (YYYY-MM-DD)。対象期間はこの前日から遡って7日間。省略時は当日（JST）'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  id-token: write # Workload Identity Federation（Vertex AI 呼び出し、API キー不使用）
+  pages: write
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    # daily.ymlと同じconcurrencyグループを共有するため、万一ハングすると翌朝のdaily.ymlの
+    # 実行までブロックしてしまう。デフォルトの6時間タイムアウトでは長すぎるため明示的に短くする。
+    timeout-minutes: 25
+    permissions:
+      contents: write # 週刊記事のコミットに必要
+      id-token: write
+    outputs:
+      built: ${{ steps.build.outcome == 'success' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync to latest main
+        # daily-digest concurrency グループで daily.yml / care-rebuild.yml の完了待ちになっている間に
+        # それらがコミット・push すると、待機解除後にこのジョブが古い SHA のままビルド・コミットして
+        # しまい、後続の git push が non-fast-forward で失敗する。
+        # `git fetch origin main` は remote.origin.fetch の設定次第で refs/remotes/origin/main を
+        # 更新しない場合があるため（codex reviewで指摘）、fetch操作で常に更新される FETCH_HEAD に
+        # 対してresetする（daily.ymlの同期ステップと同じ対策。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
+        run: |
+          git fetch origin main
+          git reset --hard FETCH_HEAD
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: site/package-lock.json
+
+      - name: Resolve publish date
+        id: resolve_date
+        run: |
+          if [ -n "$PUBLISH_DATE" ]; then
+            echo "date=$PUBLISH_DATE" >> "$GITHUB_OUTPUT"
+          else
+            echo "date=$(TZ=Asia/Tokyo date +%F)" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          PUBLISH_DATE: ${{ inputs.date }}
+
+      - name: Authenticate to Google Cloud (WIF)
+        id: auth
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/297750025000/locations/global/workloadIdentityPools/github/providers/github-actions
+          service_account: ai-notebot-ci@ai-notebot-yh.iam.gserviceaccount.com
+          token_format: access_token
+
+      - name: Curate weekly digest
+        run: node scripts/curate-weekly.mjs "$PUBLISH_DATE"
+        env:
+          PUBLISH_DATE: ${{ steps.resolve_date.outputs.date }}
+          GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          GCP_PROJECT: ai-notebot-yh
+
+      - name: Validate citations (weekly, ハルシネーション遮断)
+        run: node scripts/validate-citations.mjs "$PUBLISH_DATE" --type=weekly
+        env:
+          PUBLISH_DATE: ${{ steps.resolve_date.outputs.date }}
+
+      - name: Install site dependencies
+        run: npm ci
+        working-directory: site
+
+      - name: Build site
+        id: build
+        run: npm run build
+        working-directory: site
+
+      - name: Commit weekly digest
+        run: |
+          git config user.name "ai-notebot-bot"
+          git config user.email "actions@github.com"
+          git add site/src/content/weekly
+          if git diff --cached --quiet; then
+            echo "変更なし。コミットをスキップします。"
+          else
+            git commit -m "chore: weekly digest $PUBLISH_DATE"
+            git push
+          fi
+        env:
+          PUBLISH_DATE: ${{ steps.resolve_date.outputs.date }}
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -20,6 +20,22 @@ Astro build → dist/ → GitHub Pages
 エントリに紐付く。未解決の脚注が1件でもあればビルドを失敗させ、ハルシネーションを含む記事を
 公開しない設計（詳細: `docs/adr/`）。
 
+### 週刊AIトレンドまとめ（別枠パイプライン、AIトレンド版のみ対象）
+
+```
+weekly.yml（毎週日曜11:07 JST、daily.ymlと2時間ずらしconcurrency.group=daily-digestを共用）
+  curate-weekly.mjs（対象週=公開日の前日から遡って直近7日分。cronは日曜のみ発火するため
+    通常は前日曜〜土曜になるが、weeklyWindow()自体は曜日非依存。手動実行で日曜以外を
+    指定するとweekStartも日曜以外になり警告が出る）の site/src/content/posts/<date>.md の
+    frontmatter sourceIds だけを候補プールにする。data/raw全件は見ない）
+    → site/src/content/weekly/<weekStart>.md（スラッグは公開日ではなく週の開始日）
+  validate-citations.mjs --type=weekly（weeklyWindow()で対象7日を再計算しvalidIdsをunion）
+```
+
+実在する日次記事が5日未満の週は生成を中止する（安全側フェイルセーフ）。hero画像は新規生成
+せず、その週で実際に生成済みのhero.jpgを1枚OGP用に使い回す。詳細:
+`docs/adr/adr-2026-09-14-weekly-digest.md`。
+
 ### 介護版「今日のAI活用ハック」（別枠パイプライン）
 
 ```
@@ -56,12 +72,17 @@ node scripts/validate-citations.mjs <date>   # 出典検証（未解決0件を�
 node scripts/images.mjs <date>               # 画像生成
 node scripts/build-care.mjs <date>           # 介護版オーケストレータ（collect-care→curate-care→gate）
 node scripts/validate-citations.mjs <date> --type=care  # 介護版の出典検証を単独実行
+node scripts/curate-weekly.mjs <publishDate>              # 週刊まとめ生成（対象は前日から遡って7日間）
+node scripts/validate-citations.mjs <publishDate> --type=weekly  # 週刊まとめの出典検証を単独実行
 cd site && npm run build                     # 静的サイトビルド
 node --test scripts/**/*.test.mjs            # 単体テスト
 
 # 介護版だけを独立して手動再生成・デプロイ（daily.ymlはAIトレンド版と一括実行するため使えない場合。詳細: docs/adr/adr-2026-09-12-care-rebuild-independent-workflow.md）
 gh workflow run care-rebuild.yml -f date=YYYY-MM-DD -f regenerate=true   # 再収集からやり直す
 gh workflow run care-rebuild.yml -f regenerate=false                     # 既存コミット済み内容のままサイト全体を再ビルド・デプロイのみ
+
+# 週刊まとめを手動実行（通常は毎週日曜11:07 JSTに自動実行。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）
+gh workflow run weekly.yml -f date=YYYY-MM-DD   # 指定公開日（省略時は当日JST）で対象週を再生成
 ```
 
 ## 開発時の注意

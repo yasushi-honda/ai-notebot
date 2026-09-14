@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { url } from '../../lib/url';
+
+const posts = (await getCollection('weekly')).sort((a, b) => b.data.weekStart.localeCompare(a.data.weekStart));
+---
+
+<BaseLayout title="週刊まとめ" description="1週間のAIトレンドを出典付きで振り返る週刊まとめ一覧">
+  <h1 class="font-display text-2xl font-medium text-ink mb-2">
+    週刊まとめ（全{posts.length}件）
+  </h1>
+  <p class="text-ink-soft mb-8">
+    その週のAIトレンドを、出典付きで振り返ります。毎週日曜日に公開します。
+  </p>
+
+  <ul>
+    {posts.map((post) => (
+      <li>
+        <a href={url(`weekly/${post.data.weekStart}/`)} class="list-link">
+          <div class="text-xs text-ink-soft mb-1">
+            <span class="font-mono tabular-nums">{post.data.weekStart} 〜 {post.data.weekEnd}</span>
+          </div>
+          <div class="list-link-title">{post.data.title}</div>
+          <div class="text-sm text-ink-soft mt-1">{post.data.description}</div>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  {posts.length === 0 && <p class="text-ink-soft">まだ記事がありません。</p>}
+</BaseLayout>

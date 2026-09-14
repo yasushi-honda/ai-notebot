@@ -151,24 +151,39 @@ li:last-child > .list-link {
   @apply text-[13.5px] text-ink-soft leading-relaxed m-0;
 }
 
-/* ホームの「介護AIハック」当日記事コールアウト */
-.care-callout {
+/* ホームの「介護AIハック」「週刊まとめ」等のコールアウト共通スタイル。
+ * アクセント色は border-left-color の上書きで系統ごとに差し替える（.callout-care / .callout-weekly）。 */
+.callout {
   @apply border border-rule border-l-[3px] px-5 py-4.5 bg-paper-deep;
-  border-left-color: var(--color-care);
 }
-.care-callout .kicker {
-  @apply text-[11px] font-semibold text-care mb-1.5;
+.callout .kicker {
+  @apply text-[11px] font-semibold mb-1.5;
 }
-.care-callout h3 {
+.callout h3 {
   font-family: var(--font-display);
   @apply text-[17px] font-medium mb-1.5 text-ink underline decoration-rule-strong
     decoration-1 underline-offset-[3px] transition-colors;
 }
-.care-callout:hover h3 {
+.callout p {
+  @apply text-[13px] text-ink-soft m-0;
+}
+.callout-care {
+  border-left-color: var(--color-care);
+}
+.callout-care .kicker {
+  @apply text-care;
+}
+.callout-care:hover h3 {
   @apply text-care decoration-current;
 }
-.care-callout p {
-  @apply text-[13px] text-ink-soft m-0;
+.callout-weekly {
+  border-left-color: var(--color-verify);
+}
+.callout-weekly .kicker {
+  @apply text-verify;
+}
+.callout-weekly:hover h3 {
+  @apply text-verify decoration-current;
 }
 
 /* ホーム masthead の「本日の記録」テーマ一覧。連番ではなく実データ（出典件数）を先頭に置く */
