@@ -526,3 +526,23 @@ test('validate-citations --type=weekly: frontmatterのsourceDatesが対象週の
     await teardownWeekly();
   }
 });
+
+test('validate-citations --type=weekly: 対象週の日次アーカイブが1件も読めなければ exit 1（pr-review-toolkit指摘の回帰テスト）', async () => {
+  // setupWeekly()を呼ばず（=data/raw側のアーカイブを一切用意せず）記事ファイルだけ置く。
+  // curate-weekly.mjsとは独立にCLI単体で実行される経路（手動再実行等）を想定した防御。
+  await mkdir(dirname(weeklyPostPath), { recursive: true });
+  try {
+    const md = `---\ntitle: test\nsourceDates: ["2099-01-01"]\n---\n\n本文です[^s-aaaa00000]。\n\n[^s-aaaa00000]: A\n`;
+    await writeFile(weeklyPostPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, WEEKLY_PUBLISH_DATE, '--type=weekly']),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /アーカイブが1件も読めません/);
+        return true;
+      },
+    );
+  } finally {
+    await rm(weeklyPostPath, { force: true });
+  }
+});

@@ -35,3 +35,21 @@ export function weeklyWindow(publishDate) {
 
   return { weekStart: dates[0], weekEnd: dates[dates.length - 1], dates };
 }
+
+/**
+ * dateStr（YYYY-MM-DD）が日曜日かどうかを判定する純関数。
+ * weeklyWindow()自体は「publishDateがどの曜日でも同じ規則で動く」ことを意図的な仕様に
+ * しているが、運用上は「週次まとめの対象週は日曜始まり」という前提（ADR・content.config.ts
+ * のコメント・site上の「毎週日曜日に公開します」という利用者向け文言）を置いている。
+ * workflow_dispatchでの手動実行時や検証目的の実行で日曜以外のpublishDateを渡すと、
+ * weekStartが日曜以外になり週開始日の前提が静かに崩れる（実際にPR検証中、公開日引数に
+ * 検証都合の当日（月曜）を渡した結果、週開始日が月曜になった生成物を作ってしまい
+ * evaluatorレビューで指摘された）。curate-weekly.mjsのmain()がこの関数で警告を出す。
+ *
+ * @param {string} dateStr YYYY-MM-DD
+ * @returns {boolean}
+ */
+export function isSunday(dateStr) {
+  const [y, m, d] = dateStr.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).getUTCDay() === 0;
+}

@@ -63,11 +63,17 @@ if (isWeekly) {
       const archive = JSON.parse(await readFile(join(ROOT, 'data', 'raw', `${date}.json`), 'utf8'));
       for (const item of archive.items ?? []) validIds.add(item.id);
       archivesFound++;
-    } catch {
-      // その日の日次アーカイブが無い（収集失敗等）ことは想定内。curate-weekly.mjs側で
-      // 実在日数の下限チェック済みのため、ここでは黙ってスキップする。
+    } catch (err) {
+      // その日の日次アーカイブが無い（ENOENT、収集失敗等）ことは想定内。curate-weekly.mjs側で
+      // 実在日数の下限チェック済みのため、ここでは黙ってスキップする。それ以外（権限エラー・
+      // JSON構文エラー等）は本来起きてはいけない異常なので、握りつぶさずログに残す
+      // （pr-review-toolkitのsilent-failureレビューで指摘・修正）。
+      if (err.code !== 'ENOENT') {
+        console.error(`日次アーカイブの読み込みで想定外のエラー（${date}）: ${err.message}`);
+      }
     }
   }
+  console.log(`対象週${dates.length}日中${archivesFound}日分のアーカイブを読み込みました。`);
   if (archivesFound === 0) {
     console.error(`対象週（${weekStart}〜${dates[dates.length - 1]}）のアーカイブが1件も読めません。`);
     process.exit(1);

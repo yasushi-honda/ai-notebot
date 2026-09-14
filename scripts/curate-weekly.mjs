@@ -5,10 +5,10 @@
  * frontmatter（sourceIds・themeTitles/themes）だけを材料に、Gemini で週間の総括本文を
  * 生成し site/src/content/weekly/<weekStart>.md を書き出す。
  *
- * data/raw/<date>.json 全件（1日約60件 x 7日）ではなく、既に日次のStage A/Bキュレーションと
+ * data/raw/<date>.json 全件（1日62〜126件）ではなく、既に日次のStage A/Bキュレーションと
  * validate-citations.mjsの出典検証を通過した sourceIds だけをプールにする設計にしている
- * （その週に実際に記事化された事実だけを材料にする＝週次記事が日次記事より広い主張を
- * できない構造にする。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
+ * （トークン上限が理由ではなく、その週に実際に記事化された事実だけを材料にする＝週次記事が
+ * 日次記事より広い主張をできない構造にするため。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
  *
  * スラッグは公開日ではなく週の開始日（weekStart）にする。公開日をスラッグにすると、
  * 月曜以降に workflow_dispatch で手動再実行した際に同じ週の記事が別URLで二重生成されて
@@ -22,7 +22,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 
 import { generateText } from './lib/vertex.mjs';
-import { todayJst, weeklyWindow } from './lib/date.mjs';
+import { todayJst, weeklyWindow, isSunday } from './lib/date.mjs';
 import { parseFrontmatter } from './lib/frontmatter.mjs';
 import { normalizeLiteralNewlines, evaluateStageBCitations, decideStageBRetry } from './curate.mjs';
 
@@ -111,7 +111,14 @@ export async function collectWeeklyPool({ dates, readPostMarkdown, readRawArchiv
     // 別実装のためcontent collection側の表示には影響しない）。
     const { frontmatter } = parseFrontmatter(markdown);
     const sourceIds = Array.isArray(frontmatter.sourceIds) ? frontmatter.sourceIds : [];
-    const themeTitles = Array.isArray(frontmatter.themeTitles) ? frontmatter.themeTitles : [];
+    // themeTitles導入前の日次記事（2026-09-09等）はこのフィールドを持たず空配列になる。
+    // その場合は tags（当時の唯一のテーマ表現）にフォールバックする
+    // （posts/[date]/index.astro の shareText と同じ既存フォールバックパターンを踏襲。
+    // codex reviewで指摘・修正: フォールバックが無いと「今週のトピック」テーブルで
+    // その日だけ実際は出典があるのに(記録なし)と表示されてしまう）。
+    const rawThemeTitles = Array.isArray(frontmatter.themeTitles) ? frontmatter.themeTitles : [];
+    const tags = Array.isArray(frontmatter.tags) ? frontmatter.tags : [];
+    const themeTitles = rawThemeTitles.length > 0 ? rawThemeTitles : tags;
     if (sourceIds.length === 0) continue;
 
     presentDates.push(date);
@@ -131,7 +138,14 @@ export async function collectWeeklyPool({ dates, readPostMarkdown, readRawArchiv
   // 逆順にしてから上限分だけ取り、再度日付順に戻す）
   const poolIds = [...itemsById.keys()].reverse().slice(0, MAX_CANDIDATES_FOR_STAGE_A).reverse();
 
-  return { presentDates, dailyThemes, itemsById, poolIds };
+  // 日次記事のsourceIdsに載っているのに、その日のdata/raw/<date>.jsonが読めなかった等の理由で
+  // itemsByIdに解決できなかったid（=候補プールがサイレントに縮小している兆候）。
+  // ハルシネーション防止の観点では安全側（存在しないidをLLMに渡さないだけ）だが、
+  // 「週次まとめが実際より薄い材料で書かれている」ことが不可視にならないよう呼び出し元に返す
+  // （pr-review-toolkitのsilent-failureレビューで指摘・修正）。
+  const unresolvedIds = [...wantedIds].filter((id) => !itemsById.has(id));
+
+  return { presentDates, dailyThemes, itemsById, poolIds, unresolvedIds };
 }
 
 /** Markdownテーブルのセルを壊さないよう `|` と改行をエスケープする（curate.mjsと同じ規則） */
@@ -154,6 +168,28 @@ export function buildWeeklyOverviewTable(dailyThemes) {
     return `| [${d.date}](../../posts/${d.date}/) | ${escapeTableCell(titles)} |`;
   });
   return ['## 今週のトピック', '', header, ...rows].join('\n');
+}
+
+/**
+ * 週次まとめの生成を中止すべきかを判定する純関数（decideStageBRetryと同様、main()の
+ * process.exit(1)と混在させず境界値を単体テストできるように切り出す。pr-review-toolkitの
+ * テストカバレッジレビューで指摘: MIN_DAYS_REQUIREDの境界（安全側フェイルセーフの中核）が
+ * main()に埋め込まれたままテスト不可能だった）。
+ *
+ * @param {{presentDates: string[], poolIds: string[]}} opts
+ * @returns {{abort: boolean, reason?: string}}
+ */
+export function shouldAbortWeeklyGeneration({ presentDates, poolIds }) {
+  if (presentDates.length < MIN_DAYS_REQUIRED) {
+    return {
+      abort: true,
+      reason: `実在する日次記事が${MIN_DAYS_REQUIRED}日未満です（${presentDates.length}日）。週次まとめの生成を中止します。`,
+    };
+  }
+  if (poolIds.length === 0) {
+    return { abort: true, reason: '候補となる出典が1件もありません。週次まとめの生成を中止します。' };
+  }
+  return { abort: false };
 }
 
 /**
@@ -300,34 +336,47 @@ async function main() {
   const { weekStart, weekEnd, dates } = weeklyWindow(publishDate);
 
   console.log(`対象期間: ${weekStart} 〜 ${weekEnd}（公開日: ${publishDate}）`);
+  if (!isSunday(publishDate)) {
+    console.warn(
+      `⚠ 公開日（${publishDate}）が日曜日ではありません。週開始日（${weekStart}）も日曜日以外になります。` +
+        `週次まとめは「日曜始まり」を前提に設計されているため（weekly.ymlのcronは日曜のみ発火）、` +
+        `手動実行以外でこの警告が出る場合は日付指定を見直してください。`,
+    );
+  }
 
-  const { presentDates, dailyThemes, itemsById, poolIds } = await collectWeeklyPool({
+  const { presentDates, dailyThemes, itemsById, poolIds, unresolvedIds } = await collectWeeklyPool({
     dates,
+    // ファイルが無い（ENOENT、その日の記事/アーカイブが単に存在しない＝想定内）はnullを返して
+    // 静かにスキップするが、それ以外（権限エラー・JSON構文エラー等）は本来起きてはいけない
+    // 異常なので、握りつぶさずログに残す（pr-review-toolkitのsilent-failureレビューで指摘・修正）。
     readPostMarkdown: async (date) => {
       try {
         return await readFile(join(POSTS_DIR, `${date}.md`), 'utf8');
-      } catch {
+      } catch (err) {
+        if (err.code !== 'ENOENT') console.error(`日次記事の読み込みで想定外のエラー（${date}）: ${err.message}`);
         return null;
       }
     },
     readRawArchive: async (date) => {
       try {
         return JSON.parse(await readFile(join(RAW_DIR, `${date}.json`), 'utf8'));
-      } catch {
+      } catch (err) {
+        if (err.code !== 'ENOENT') console.error(`日次アーカイブの読み込みで想定外のエラー（${date}）: ${err.message}`);
         return null;
       }
     },
   });
 
   console.log(`実在する日次記事: ${presentDates.length}/7日（${presentDates.join(', ')}）`);
-  if (presentDates.length < MIN_DAYS_REQUIRED) {
-    console.error(
-      `実在する日次記事が${MIN_DAYS_REQUIRED}日未満です（${presentDates.length}日）。週次まとめの生成を中止します。`,
+  if (unresolvedIds.length > 0) {
+    console.warn(
+      `⚠ 日次記事が引用しているid ${unresolvedIds.length}件が、対応するdata/raw/<date>.jsonから解決できませんでした` +
+        `（アーカイブファイルの欠損・破損の可能性）。候補プールから除外して続行します: ${unresolvedIds.join(', ')}`,
     );
-    process.exit(1);
   }
-  if (poolIds.length === 0) {
-    console.error('候補となる出典が1件もありません。週次まとめの生成を中止します。');
+  const abortDecision = shouldAbortWeeklyGeneration({ presentDates, poolIds });
+  if (abortDecision.abort) {
+    console.error(abortDecision.reason);
     process.exit(1);
   }
 
@@ -363,7 +412,6 @@ async function main() {
   const frontmatter = [
     '---',
     `title: ${JSON.stringify(`${weekStart}〜${weekEnd} のAIトレンド週刊まとめ`)}`,
-    `date: ${JSON.stringify(weekStart)}`,
     `weekStart: ${JSON.stringify(weekStart)}`,
     `weekEnd: ${JSON.stringify(weekEnd)}`,
     `publishedOn: ${JSON.stringify(publishDate)}`,

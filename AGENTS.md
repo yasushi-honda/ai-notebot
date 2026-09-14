@@ -24,7 +24,9 @@ Astro build → dist/ → GitHub Pages
 
 ```
 weekly.yml（毎週日曜11:07 JST、daily.ymlと2時間ずらしconcurrency.group=daily-digestを共用）
-  curate-weekly.mjs（対象週=前日曜〜土曜7日分の site/src/content/posts/<date>.md の
+  curate-weekly.mjs（対象週=公開日の前日から遡って直近7日分。cronは日曜のみ発火するため
+    通常は前日曜〜土曜になるが、weeklyWindow()自体は曜日非依存。手動実行で日曜以外を
+    指定するとweekStartも日曜以外になり警告が出る）の site/src/content/posts/<date>.md の
     frontmatter sourceIds だけを候補プールにする。data/raw全件は見ない）
     → site/src/content/weekly/<weekStart>.md（スラッグは公開日ではなく週の開始日）
   validate-citations.mjs --type=weekly（weeklyWindow()で対象7日を再計算しvalidIdsをunion）

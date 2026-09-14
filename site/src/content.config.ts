@@ -52,15 +52,22 @@ const care = defineCollection({
 
 /**
  * 週刊AIトレンドまとめコレクション。frontmatter は scripts/curate-weekly.mjs が機械生成する。
- * ファイル名（拡張子除く）は「週の開始日」（前の日曜）。公開日ではない
- * （公開日をスラッグにすると手動再実行のたびに同じ週の記事が別URLで重複生成されるため）。
+ * ファイル名（拡張子除く）は「週の開始日」（weekStart。通常は前の日曜、cronは日曜のみ発火
+ * するため）。公開日ではない（公開日をスラッグにすると手動再実行のたびに同じ週の記事が
+ * 別URLで重複生成されるため）。scripts/lib/date.mjsのweeklyWindow()自体は曜日非依存の
+ * ため、workflow_dispatchでの手動実行に日曜以外の日付を渡すとweekStartも日曜以外になり
+ * うる（curate-weekly.mjsが警告を出す。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
  */
 const weekly = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/weekly' }),
   schema: z.object({
     title: z.string().min(1),
-    /** posts と同じ役割で date = weekStart（一覧の日付ソートに使う） */
-    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    /** 一覧の日付ソート・ルーティングは全てこのフィールドを使う（postsの`date`に相当）。
+     *  posts/careと違い`date`という名前にしなかったのは、週次記事には「対象週の開始日」
+     *  「対象週の終了日」「実際の公開日」の3つの日付概念があり、単なる`date`では
+     *  どれを指すか曖昧になるため（pr-review-toolkitの型設計レビューで指摘・修正:
+     *  当初`date`フィールドも重複して持たせていたが、どのページからも参照されない
+     *  死んだフィールドだったため削除した）。 */
     weekStart: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     weekEnd: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     /** 実際に生成が実行された日（週の一部が欠けていても記録として残す） */
@@ -74,7 +81,7 @@ const weekly = defineCollection({
      *  weeklyWindow() の再計算結果との整合性を検査する対象 */
     sourceDates: z.array(z.string()).default([]),
     /** OGP/Twitter Card用に使い回す日次記事の hero.jpg の日付（新規画像生成はしない） */
-    ogImageDate: z.string().optional(),
+    ogImageDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
   }),
 });
 

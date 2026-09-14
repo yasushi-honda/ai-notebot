@@ -6,10 +6,13 @@ name: Weekly AI trends digest
 # 出典検証（validate-citations.mjs --type=weekly）に失敗した場合は commit も deploy も行わない
 # （日次版と同じ設計思想: 収集していない情報を含む記事を公開しない）。
 #
-# daily.yml（毎日00:07 UTC）と2時間ずらしているのは、同時刻だとdaily.ymlの完了を待つ間に
-# 両ワークフローのgithub.shaがイベント発生時点（00:07 UTC）で固定され、concurrencyグループで
-# 後から実行される側が古いSHAのままpushしてnon-fast-forwardで失敗するため（daily.ymlには
-# care-rebuild.ymlにある「Sync to latest main」の対策が無い。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
+# daily.yml（毎日00:07 UTC）と2時間ずらしている理由（初期案は同時刻だった）:
+# もし同時刻に発火すると、daily.ymlの完了を待つ間に両ワークフローのgithub.shaが
+# イベント発生時点（00:07 UTC）で固定され、concurrencyグループで後から実行される側が
+# 古いSHAのままpushしてnon-fast-forwardで失敗する事態が起こりうる（初期設計時は
+# daily.ymlにcare-rebuild.ymlの「Sync to latest main」に相当する対策が無かった。
+# 現在はdaily.ymlにも同期ステップを追加済みだが、時刻をずらすこと自体も引き続き有効な
+# 一次防御として維持している。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
 on:
   schedule:
     - cron: '7 2 * * 0'

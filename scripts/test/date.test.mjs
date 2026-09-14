@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { weeklyWindow } from '../lib/date.mjs';
+import { weeklyWindow, isSunday } from '../lib/date.mjs';
 
 test('weeklyWindow: 公開日の前日から遡って7日分を返す（通常ケース）', () => {
   const result = weeklyWindow('2026-09-20');
@@ -62,4 +62,21 @@ test('weeklyWindow: 公開日が日曜以外でも「前日から遡って7日�
   const result = weeklyWindow('2026-09-16'); // 水曜日
   assert.equal(result.weekStart, '2026-09-09');
   assert.equal(result.weekEnd, '2026-09-15');
+});
+
+// isSunday: weekly.ymlのcronは日曜のみ発火するが、workflow_dispatchでの手動実行や
+// 検証目的の実行では任意の曜日を渡せてしまう。PR検証中に実際に検証都合の月曜日を渡した
+// 結果、週開始日が月曜になった生成物を作ってしまった実例があり（evaluatorレビューで指摘）、
+// curate-weekly.mjsのmain()がこの関数で警告を出す前提の境界値を確認する。
+test('isSunday: 日曜日はtrue', () => {
+  assert.equal(isSunday('2026-09-13'), true); // 2026-09-13は日曜日
+});
+
+test('isSunday: 月曜日はfalse（PR検証中に実際に踏んだケース）', () => {
+  assert.equal(isSunday('2026-09-07'), false); // 2026-09-07は月曜日
+  assert.equal(isSunday('2026-09-14'), false); // 2026-09-14も月曜日
+});
+
+test('isSunday: 土曜日はfalse（週の境界値）', () => {
+  assert.equal(isSunday('2026-09-19'), false); // 2026-09-19は土曜日
 });
