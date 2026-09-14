@@ -5,9 +5,16 @@ name: Daily AI trends digest
 # （収集していない情報を含む記事を公開しない設計。詳細: docs/adr/）。
 # cronを毎時00分から数分ずらしているのは、GitHub Actions公式が「毎時の開始時刻は高負荷になり
 # 遅延しやすい」と明記しているため（https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule）。
+#
+# 2026-09-14判明: それでも実際にschedule発火が1.5〜2.5時間規模で遅延・完全ドロップすることが
+# 繰り返し観測された（GitHub公式もscheduleイベントは配送保証が無いと明記。詳細:
+# docs/adr/adr-2026-09-14-schedule-reliability.md）。緩和策として12:07 JST (03:07 UTC) にも
+# 保険のcronを追加し、その時点で当日分が既に生成済みなら「Skip if already generated」判定で
+# 収集・生成・コミットの重いステップをスキップする（LLM呼び出しの二重発生・記事の意図しない
+# 再生成を防ぐ）。
 on:
   schedule:
-    - cron: '7 0 * * *'
+    - cron: '7 0,3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -49,8 +56,40 @@ jobs:
           cache: 'npm'
           cache-dependency-path: site/package-lock.json
 
+      - name: Skip if already generated
+        # 1日2回（00:07 UTC / 03:07 UTC）のうち、1回目のscheduleが遅延・ドロップせず既に
+        # 成功していれば、2回目の発火では収集・生成・コミットを二重実行しない
+        # （LLM呼び出しの無駄な二重発生・記事の意図しない再生成を防ぐ）。
+        # AIトレンド版（posts）と介護版（care）は判定を分ける: build-care.mjsは失敗しても
+        # 常にexit 0を返す設計（本体の生成・公開を止めないためのフェイルセーフ）のため、
+        # 1回目でposts成功・care失敗というケースがあり得る。両方まとめて「postsがあるか」
+        # だけで判定すると、2回目でcareのリトライ機会が永久に失われてしまう
+        # （codex reviewで指摘・修正）。
+        # このガードは event=schedule（保険の2回目実行）にのみ適用する。workflow_dispatch
+        # （手動実行）では既存記事があってもスキップせず常にフル実行する。既存記事の
+        # 意図的な作り直し・障害復旧のための手動再実行という既存の運用を止めないため
+        # （codex reviewで指摘・修正: このガードが手動再実行まで一律スキップしてしまい、
+        # 既存記事の作り直しができなくなる回帰を招くところだった）。
+        id: check_existing
+        if: github.event_name == 'schedule'
+        run: |
+          TODAY=$(TZ=Asia/Tokyo date +%F)
+          if [ -f "site/src/content/posts/${TODAY}.md" ]; then
+            echo "AIトレンド版（${TODAY}）は生成済みのためスキップします。"
+            echo "posts_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "posts_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -f "site/src/content/care/${TODAY}.md" ]; then
+            echo "介護版（${TODAY}）は生成済みのためスキップします。"
+            echo "care_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "care_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Authenticate to Google Cloud (WIF)
         id: auth
+        if: steps.check_existing.outputs.posts_exists != 'true' || steps.check_existing.outputs.care_exists != 'true'
         uses: google-github-actions/auth@v3
         with:
           workload_identity_provider: projects/297750025000/locations/global/workloadIdentityPools/github/providers/github-actions
@@ -58,29 +97,35 @@ jobs:
           token_format: access_token
 
       - name: Collect sources
+        if: steps.check_existing.outputs.posts_exists != 'true'
         run: node scripts/collect.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Verify archive (AC-1)
+        if: steps.check_existing.outputs.posts_exists != 'true'
         run: node scripts/verify-archive.mjs
 
       - name: Curate article
+        if: steps.check_existing.outputs.posts_exists != 'true'
         run: node scripts/curate.mjs
         env:
           GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           GCP_PROJECT: ai-notebot-yh
 
       - name: Validate citations (AC-2, ハルシネーション遮断)
+        if: steps.check_existing.outputs.posts_exists != 'true'
         run: node scripts/validate-citations.mjs
 
       - name: Generate images
+        if: steps.check_existing.outputs.posts_exists != 'true'
         run: node scripts/images.mjs
         env:
           GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           GCP_PROJECT: ai-notebot-yh
 
       - name: Build care hack article（失敗しても本体の生成・公開は止めない）
+        if: steps.check_existing.outputs.care_exists != 'true'
         run: node scripts/build-care.mjs
         env:
           GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
