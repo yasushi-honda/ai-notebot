@@ -72,7 +72,9 @@ GOAL.md は作成していない。理由: 本セッションは前回のGA4導�
 |---|------|------------------|--------------|------------|
 | 1 | GA4データ反映の再確認 | 半日〜1日程度の経過（2026-09-13深夜デプロイのため2026-09-14日中以降が目安） | GA4管理画面（analytics.google.com、プロパティ「ai-notebot」）のDebugView/リアルタイムレポートで実際にデータが表示されているか確認。反映されていれば「新規プロパティ処理遅延」で確定、されていなければGoogle公式サポートへの問い合わせを検討 | GA4管理画面を開く、またはPlaywrightで確認依頼 |
 | 2 | `content.config.ts` の `themes` フィールド追加に関する `/impact-analysis` 実行 | decision-maker からの実行指示（2026-09-11セッションからの持ち越し、継続未着手） | curate.mjs / index.astro 等への影響範囲を `/impact-analysis` で再検証 | `/impact-analysis` 実行 |
-| 3 | 週刊AIトレンドまとめの初回自動実行確認（2026-09-14セッション追記） | 2026-09-20（日）11:07 JST以降にweekly.ymlのscheduleが発火する（対象週は2026-09-13〜09-19想定） | `gh run list --workflow=weekly.yml --limit 3` で実行結果を確認。成功していれば `/weekly/` 一覧・`/weekly/2026-09-13/` 詳細ページが実際に公開されているかPlaywrightで実機確認。失敗・未発火（GitHub Actions scheduleのbest-effort配信遅延/未発火の既知リスク、`docs/adr/adr-2026-09-14-schedule-reliability.md`参照）していれば `gh workflow run weekly.yml` で手動実行し原因を調査 | `gh run list --workflow=weekly.yml --limit 3`、公開ページの実機確認 |
+| 3 | 週刊AIトレンドまとめの**初回自動（schedule）実行**確認（2026-09-14セッション追記。手動実行は同日中に既に1回実施済み・下記参照） | 2026-09-20（日）11:07 JST以降にweekly.ymlのscheduleが発火する（対象週は2026-09-13〜09-19想定） | `gh run list --workflow=weekly.yml --limit 3` で`workflow_dispatch`ではなく`schedule`イベントの実行結果を確認。成功していれば `/weekly/` 一覧・`/weekly/2026-09-13/` 詳細ページが実際に公開されているかPlaywrightで実機確認。失敗・未発火（GitHub Actions scheduleのbest-effort配信遅延/未発火の既知リスク、`docs/adr/adr-2026-09-14-schedule-reliability.md`参照）していれば `gh workflow run weekly.yml` で手動実行し原因を調査 | `gh run list --workflow=weekly.yml --limit 3`、公開ページの実機確認 |
+
+> 補足（2026-09-14）: decision-makerの依頼で `gh workflow run weekly.yml -f date=2026-09-14` を手動実行し、`site/src/content/weekly/2026-09-07.md`（対象週2026-09-07〜09-13、実在5日分/7日中）を先行生成・公開済み（コミット`ff9a830`）。当時`data/raw`は2026-09-09〜14の6日分のみ存在しており、週開始日が日曜(09-13等)ではなく月曜(09-07)になる設計上のイレギュラーケース（`isSunday()`警告が出るが生成は継続される仕様）。decision-maker自身も「今回は不十分」と認識した上での意図的な先行生成であり、2026-09-20の本来の自動実行（対象週2026-09-13〜09-19、日曜始まり）はこれとは別に発生する。
 
 ### 却下候補
 | # | 項目 | 検討経緯 | 着手しない理由 | 参照条件 |
