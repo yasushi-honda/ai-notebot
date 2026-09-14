@@ -83,6 +83,72 @@ export function normalizeLiteralNewlines(text) {
   return text.replace(/\\n/g, '\n');
 }
 
+/**
+ * 防御的処理: CommonMarkの強調構文（**text**）は、開始直後・終了直前に全角の括弧
+ * （「」『』（）等、Unicode上はpunctuationに分類される）が隣接すると、emphasis用の
+ * flanking判定（デリミタが「開始」「終了」として機能するための前後文脈のルール）に
+ * 引っかかり、太字として解釈されず `**` が生のテキストのまま表示されることが実際に
+ * 発生した（2026-09-14、「**「AIに渡す」ボタン**」が生テキストのまま公開された）。
+ * さらに悪いことに、文中に離れた場所で別の `**...**` ペアがあると、パーサーが
+ * 意図しない組み合わせで別のペアを形成し、全く無関係な範囲が太字になることもある
+ * （実データで確認: 「**orchestrator（幹）**セッションが、新しい**worker（葉）**」が
+ * 「orchestrator（幹）**セッションが、新しい**worker（葉）」という誤った範囲で
+ * 太字になっていた）。
+ *
+ * CommonMarkのemphasis解決ロジック自体に依存する限りこの種の誤判定は避けられないため、
+ * `**text**` を機械的にHTMLの `<strong>text</strong>` に事前変換し、パーサーの
+ * emphasis解決を経由させない（Astroのmarkdown処理はMarkdown内の生HTMLをそのまま
+ * 通す設定のため、`<strong>`タグは常に正しくレンダリングされることを実機確認済み）。
+ * LLMは常に非ネスト・改行を挟まない `**text**` の形式でのみ太字を使う前提
+ * （curate.mjs/curate-care.mjs/curate-weekly.mjsのプロンプト指示と一致）。
+ *
+ * フェンス付きコードブロック（```...```/~~~...~~~）とインラインコードスパン（`...`）の
+ * 内部は変換対象から除外する。記事本文がコード例として `**name**` のようなリテラルな
+ * Markdown記法自体を紹介する場合、この変換をそのまま適用するとコード例の中身が
+ * `<strong>name</strong>` に書き換わってしまい、コードブロックとして表示される文字列が
+ * 破壊される（codex reviewで指摘）。
+ */
+export function normalizeBoldEmphasis(text) {
+  const lines = text.split('\n');
+  const result = [];
+  let fenceChar = null;
+  let fenceLen = 0;
+  for (const line of lines) {
+    if (fenceChar === null) {
+      const openMatch = line.match(/^ {0,3}(`{3,}|~{3,})/);
+      if (openMatch) {
+        fenceChar = openMatch[1][0];
+        fenceLen = openMatch[1].length;
+        result.push(line);
+        continue;
+      }
+      result.push(normalizeBoldEmphasisOutsideInlineCode(line));
+      continue;
+    }
+    result.push(line);
+    const closePattern = new RegExp(`^ {0,3}[${fenceChar}]{${fenceLen},}[ \t]*$`);
+    if (closePattern.test(line)) {
+      fenceChar = null;
+      fenceLen = 0;
+    }
+  }
+  return result.join('\n');
+}
+
+function normalizeBoldEmphasisOutsideInlineCode(line) {
+  const codeSpanPattern = /(?<!`)(`+)[\s\S]*?(?<!`)\1(?!`)/g;
+  let lastIndex = 0;
+  let output = '';
+  let match;
+  while ((match = codeSpanPattern.exec(line)) !== null) {
+    output += line.slice(lastIndex, match.index).replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>');
+    output += match[0];
+    lastIndex = codeSpanPattern.lastIndex;
+  }
+  output += line.slice(lastIndex).replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>');
+  return output;
+}
+
 function formatCandidateList(items) {
   return items
     .map((i) => `${i.id} [${i.source}] ${i.title}\n   ${i.summary || '(概要なし)'}`)
@@ -206,6 +272,7 @@ async function runStageB(theme, itemsById) {
     const text = await generateText({ prompt, responseSchema: STAGE_B_SCHEMA, temperature: 0.4 });
     const result = JSON.parse(text);
     result.bodyMarkdown = normalizeLiteralNewlines(result.bodyMarkdown);
+    result.bodyMarkdown = normalizeBoldEmphasis(result.bodyMarkdown);
 
     const problems = evaluateStageBCitations(result.bodyMarkdown, validIds);
     const decision = decideStageBRetry({ attempt, maxAttempts: MAX_REGENERATE_ATTEMPTS, problems, extraInstructions });

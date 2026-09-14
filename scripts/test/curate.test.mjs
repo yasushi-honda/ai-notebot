@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeLiteralNewlines, evaluateStageBCitations, decideStageBRetry } from '../curate.mjs';
+import { normalizeLiteralNewlines, normalizeBoldEmphasis, evaluateStageBCitations, decideStageBRetry } from '../curate.mjs';
 
 test('normalizeLiteralNewlines: リテラルな \\n を実際の改行に変換する', () => {
   const input = '1段落目です。\\n\\n2段落目です。';
@@ -17,6 +17,72 @@ test('normalizeLiteralNewlines: 実際の改行はそのまま維持する（二
 test('normalizeLiteralNewlines: リテラルな\\nが無い通常の文章はそのまま返す', () => {
   const input = '通常の一文です[^s-aaa]。';
   assert.equal(normalizeLiteralNewlines(input), input);
+});
+
+// normalizeBoldEmphasis: 2026-09-14実データで発覚したバグの再発防止テスト。
+// 「**」の直後・直前に全角の開き括弧・閉じ括弧（「」『』（）等）が隣接すると、
+// CommonMarkのemphasis flanking判定に引っかかり太字として解釈されない
+// （**「AIに渡す」ボタン**が生テキストのまま公開された）。さらに悪いことに、
+// 文中の離れた場所にある別の**...**ペアと意図しない組み合わせになることもある
+// （**orchestrator（幹）**セッションが、新しい**worker（葉）**が
+// 「orchestrator（幹）**セッションが、新しい**worker（葉）」という誤った範囲で
+// 太字になった）。HTMLの<strong>タグへ事前変換することでパーサーのemphasis解決を
+// 経由させず、この種の誤判定を構造的に防ぐ。
+test('normalizeBoldEmphasis: 通常の太字をHTMLのstrongタグに変換する', () => {
+  const input = '**Claude Code**は便利です。';
+  assert.equal(normalizeBoldEmphasis(input), '<strong>Claude Code</strong>は便利です。');
+});
+
+test('normalizeBoldEmphasis: 太字記号の直後に全角開き括弧があっても正しく変換する（実際に生テキストのまま公開されたバグの再現）', () => {
+  const input = '末尾に**「AIに渡す」ボタン**が設置されました。';
+  assert.equal(normalizeBoldEmphasis(input), '末尾に<strong>「AIに渡す」ボタン</strong>が設置されました。');
+});
+
+test('normalizeBoldEmphasis: 太字記号の直前に全角閉じ括弧があっても正しく変換する', () => {
+  const input = '**自己改善型の人工超知能（ASI）**の開発競争';
+  assert.equal(normalizeBoldEmphasis(input), '<strong>自己改善型の人工超知能（ASI）</strong>の開発競争');
+});
+
+test('normalizeBoldEmphasis: 同一文中に複数の太字があっても意図しない範囲で結合しない（実際に誤った範囲で太字化されたバグの再現）', () => {
+  const input = '起点となる**orchestrator（幹）**セッションが、新しい**worker（葉）**セッションを起動する。';
+  assert.equal(
+    normalizeBoldEmphasis(input),
+    '起点となる<strong>orchestrator（幹）</strong>セッションが、新しい<strong>worker（葉）</strong>セッションを起動する。',
+  );
+});
+
+test('normalizeBoldEmphasis: 太字が無い文章はそのまま返す', () => {
+  const input = '通常の一文です[^s-aaa]。';
+  assert.equal(normalizeBoldEmphasis(input), input);
+});
+
+test('normalizeBoldEmphasis: 改行をまたぐ**は変換しない（意図しない広範囲一致を避ける安全側の挙動）', () => {
+  const input = '**開始\n**終了ではない';
+  assert.equal(normalizeBoldEmphasis(input), input);
+});
+
+// codex reviewで指摘・修正: 記事本文がコード例としてリテラルなMarkdown記法（**text**）自体を
+// 紹介する場合、変換を無差別に適用するとコードスパン・フェンスコードブロックの中身まで
+// <strong>タグに書き換わり、コード例として表示されるべき文字列が破壊されてしまう。
+test('normalizeBoldEmphasis: インラインコードスパン内の**は変換しない', () => {
+  const input = '設定例は `**bold**` のように書きます。';
+  assert.equal(normalizeBoldEmphasis(input), input);
+});
+
+test('normalizeBoldEmphasis: コードスパンの外側は変換しつつ内側は保持する', () => {
+  const input = '**重要**な設定は `**bold**` です。';
+  assert.equal(normalizeBoldEmphasis(input), '<strong>重要</strong>な設定は `**bold**` です。');
+});
+
+test('normalizeBoldEmphasis: フェンス付きコードブロック内の**は変換しない', () => {
+  const input = ['本文の**太字**です。', '```', '**text**', '```', '続きの本文。'].join('\n');
+  const expected = ['本文の<strong>太字</strong>です。', '```', '**text**', '```', '続きの本文。'].join('\n');
+  assert.equal(normalizeBoldEmphasis(input), expected);
+});
+
+test('normalizeBoldEmphasis: チルダ形式のフェンスコードブロック内の**も変換しない', () => {
+  const input = ['~~~', '**text**', '~~~'].join('\n');
+  assert.equal(normalizeBoldEmphasis(input), input);
 });
 
 // evaluateStageBCitations: 2026-09-10 scheduled run実績（裏取り率97%で公開ブロック）の
