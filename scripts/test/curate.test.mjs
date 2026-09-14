@@ -61,6 +61,30 @@ test('normalizeBoldEmphasis: 改行をまたぐ**は変換しない（意図し�
   assert.equal(normalizeBoldEmphasis(input), input);
 });
 
+// codex reviewで指摘・修正: 記事本文がコード例としてリテラルなMarkdown記法（**text**）自体を
+// 紹介する場合、変換を無差別に適用するとコードスパン・フェンスコードブロックの中身まで
+// <strong>タグに書き換わり、コード例として表示されるべき文字列が破壊されてしまう。
+test('normalizeBoldEmphasis: インラインコードスパン内の**は変換しない', () => {
+  const input = '設定例は `**bold**` のように書きます。';
+  assert.equal(normalizeBoldEmphasis(input), input);
+});
+
+test('normalizeBoldEmphasis: コードスパンの外側は変換しつつ内側は保持する', () => {
+  const input = '**重要**な設定は `**bold**` です。';
+  assert.equal(normalizeBoldEmphasis(input), '<strong>重要</strong>な設定は `**bold**` です。');
+});
+
+test('normalizeBoldEmphasis: フェンス付きコードブロック内の**は変換しない', () => {
+  const input = ['本文の**太字**です。', '```', '**text**', '```', '続きの本文。'].join('\n');
+  const expected = ['本文の<strong>太字</strong>です。', '```', '**text**', '```', '続きの本文。'].join('\n');
+  assert.equal(normalizeBoldEmphasis(input), expected);
+});
+
+test('normalizeBoldEmphasis: チルダ形式のフェンスコードブロック内の**も変換しない', () => {
+  const input = ['~~~', '**text**', '~~~'].join('\n');
+  assert.equal(normalizeBoldEmphasis(input), input);
+});
+
 // evaluateStageBCitations: 2026-09-10 scheduled run実績（裏取り率97%で公開ブロック）の
 // 再発防止として追加した、Stage B生成結果の再生成トリガー用チェック。
 // validate-citations.mjsが最終ゲートで弾く条件と同じ観点を生成直後に検出できることを確認する。

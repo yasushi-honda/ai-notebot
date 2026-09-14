@@ -101,9 +101,52 @@ export function normalizeLiteralNewlines(text) {
  * 通す設定のため、`<strong>`タグは常に正しくレンダリングされることを実機確認済み）。
  * LLMは常に非ネスト・改行を挟まない `**text**` の形式でのみ太字を使う前提
  * （curate.mjs/curate-care.mjs/curate-weekly.mjsのプロンプト指示と一致）。
+ *
+ * フェンス付きコードブロック（```...```/~~~...~~~）とインラインコードスパン（`...`）の
+ * 内部は変換対象から除外する。記事本文がコード例として `**name**` のようなリテラルな
+ * Markdown記法自体を紹介する場合、この変換をそのまま適用するとコード例の中身が
+ * `<strong>name</strong>` に書き換わってしまい、コードブロックとして表示される文字列が
+ * 破壊される（codex reviewで指摘）。
  */
 export function normalizeBoldEmphasis(text) {
-  return text.replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>');
+  const lines = text.split('\n');
+  const result = [];
+  let fenceChar = null;
+  let fenceLen = 0;
+  for (const line of lines) {
+    if (fenceChar === null) {
+      const openMatch = line.match(/^ {0,3}(`{3,}|~{3,})/);
+      if (openMatch) {
+        fenceChar = openMatch[1][0];
+        fenceLen = openMatch[1].length;
+        result.push(line);
+        continue;
+      }
+      result.push(normalizeBoldEmphasisOutsideInlineCode(line));
+      continue;
+    }
+    result.push(line);
+    const closePattern = new RegExp(`^ {0,3}[${fenceChar}]{${fenceLen},}[ \t]*$`);
+    if (closePattern.test(line)) {
+      fenceChar = null;
+      fenceLen = 0;
+    }
+  }
+  return result.join('\n');
+}
+
+function normalizeBoldEmphasisOutsideInlineCode(line) {
+  const codeSpanPattern = /(?<!`)(`+)[\s\S]*?(?<!`)\1(?!`)/g;
+  let lastIndex = 0;
+  let output = '';
+  let match;
+  while ((match = codeSpanPattern.exec(line)) !== null) {
+    output += line.slice(lastIndex, match.index).replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>');
+    output += match[0];
+    lastIndex = codeSpanPattern.lastIndex;
+  }
+  output += line.slice(lastIndex).replace(/\*\*([^*\n]+?)\*\*/g, '<strong>$1</strong>');
+  return output;
 }
 
 function formatCandidateList(items) {
