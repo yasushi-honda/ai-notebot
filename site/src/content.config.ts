@@ -50,4 +50,32 @@ const care = defineCollection({
   }),
 });
 
-export const collections = { posts, care };
+/**
+ * 週刊AIトレンドまとめコレクション。frontmatter は scripts/curate-weekly.mjs が機械生成する。
+ * ファイル名（拡張子除く）は「週の開始日」（前の日曜）。公開日ではない
+ * （公開日をスラッグにすると手動再実行のたびに同じ週の記事が別URLで重複生成されるため）。
+ */
+const weekly = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/weekly' }),
+  schema: z.object({
+    title: z.string().min(1),
+    /** posts と同じ役割で date = weekStart（一覧の日付ソートに使う） */
+    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    weekStart: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    weekEnd: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    /** 実際に生成が実行された日（週の一部が欠けていても記録として残す） */
+    publishedOn: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    description: z.string().min(1),
+    themeTitles: z.array(z.string()).default([]),
+    themes: z.array(z.object({ title: z.string(), sourceCount: z.number() })).default([]),
+    /** 本文の脚注が引用する出典 id（該当週の data/raw/<date>.json の id と対応） */
+    sourceIds: z.array(z.string()).default([]),
+    /** 実在した日次記事の日付（5〜7件）。validate-citations.mjs --type=weekly が
+     *  weeklyWindow() の再計算結果との整合性を検査する対象 */
+    sourceDates: z.array(z.string()).default([]),
+    /** OGP/Twitter Card用に使い回す日次記事の hero.jpg の日付（新規画像生成はしない） */
+    ogImageDate: z.string().optional(),
+  }),
+});
+
+export const collections = { posts, care, weekly };

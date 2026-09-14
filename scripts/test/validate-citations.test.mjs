@@ -427,3 +427,102 @@ test('validate-citations --type=care: 手順の1ステップに脚注が無け�
     await teardownCare();
   }
 });
+
+// --- 週刊版（--type=weekly）: 公開日から weeklyWindow() で対象7日を再計算し、
+// data/raw/<date>.json（複数日）の id を union して検証する。実データの日付（2026年）と
+// 衝突しない未来日（2099年）を使う。
+const WEEKLY_PUBLISH_DATE = '2099-01-08'; // weeklyWindow() の対象は 2099-01-01〜2099-01-07
+const WEEKLY_WINDOW_DATES = ['2099-01-01', '2099-01-02', '2099-01-03', '2099-01-04', '2099-01-05', '2099-01-06', '2099-01-07'];
+const weeklyRawPaths = WEEKLY_WINDOW_DATES.map((d) => join(ROOT, 'data', 'raw', `${d}.json`));
+const weeklyPostPath = join(ROOT, 'site', 'src', 'content', 'weekly', `${WEEKLY_WINDOW_DATES[0]}.md`);
+
+async function setupWeekly() {
+  await mkdir(dirname(weeklyPostPath), { recursive: true });
+  for (const [i, path] of weeklyRawPaths.entries()) {
+    await mkdir(dirname(path), { recursive: true });
+    await writeFile(
+      path,
+      JSON.stringify({
+        date: WEEKLY_WINDOW_DATES[i],
+        items: [
+          {
+            id: `s-aaaa0000${i}`,
+            source: 'Test Source',
+            title: `${WEEKLY_WINDOW_DATES[i]}のエントリ`,
+            url: `https://example.com/week/${i}`,
+            publishedAt: `${WEEKLY_WINDOW_DATES[i]}T00:00:00Z`,
+          },
+        ],
+      }, null, 2),
+      'utf8',
+    );
+  }
+}
+
+async function teardownWeekly() {
+  for (const path of weeklyRawPaths) await rm(path, { force: true });
+  await rm(weeklyPostPath, { force: true });
+}
+
+test('validate-citations --type=weekly: 対象週の複数日アーカイブに実在するidのみ引用した記事は exit 0', async () => {
+  await setupWeekly();
+  try {
+    const md = [
+      '---\ntitle: test\nsourceDates: ["2099-01-01", "2099-01-03"]\n---',
+      '',
+      '## 今週のトピック',
+      '',
+      '| 日付 | その日の主なテーマ |',
+      '|---|---|',
+      '| [2099-01-01](../../posts/2099-01-01/) | テーマA |',
+      '',
+      '## 見出し',
+      '',
+      '本文です[^s-aaaa00000]。別日の出典です[^s-aaaa00002]。',
+      '',
+      '[^s-aaaa00000]: A\n[^s-aaaa00002]: C',
+    ].join('\n');
+    await writeFile(weeklyPostPath, md, 'utf8');
+    const { stdout } = await execFileAsync('node', [SCRIPT, WEEKLY_PUBLISH_DATE, '--type=weekly']);
+    assert.match(stdout, /unresolved: 0 \/ total: 2/);
+  } finally {
+    await teardownWeekly();
+  }
+});
+
+test('validate-citations --type=weekly: 対象週のどの日のアーカイブにも無いidを引用していれば exit 1', async () => {
+  await setupWeekly();
+  try {
+    const md = `---\ntitle: test\nsourceDates: ["2099-01-01"]\n---\n\n本文です[^s-aaaa00000]。捏造された出典です[^s-ffffffffff]。\n\n[^s-aaaa00000]: A\n`;
+    await writeFile(weeklyPostPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, WEEKLY_PUBLISH_DATE, '--type=weekly']),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /unresolved citations: s-ffffffffff/);
+        return true;
+      },
+    );
+  } finally {
+    await teardownWeekly();
+  }
+});
+
+test('validate-citations --type=weekly: frontmatterのsourceDatesが対象週の範囲外の日付を含めば exit 1（自己申告の不整合検知）', async () => {
+  await setupWeekly();
+  try {
+    // 2099-01-08（公開日自身。対象週=前日までの7日には含まれない）を紛れ込ませる
+    const md = `---\ntitle: test\nsourceDates: ["2099-01-01", "2099-01-08"]\n---\n\n本文です[^s-aaaa00000]。\n\n[^s-aaaa00000]: A\n`;
+    await writeFile(weeklyPostPath, md, 'utf8');
+    await assert.rejects(
+      () => execFileAsync('node', [SCRIPT, WEEKLY_PUBLISH_DATE, '--type=weekly']),
+      (err) => {
+        assert.equal(err.code, 1);
+        assert.match(err.stderr, /sourceDatesが対象週の範囲外/);
+        return true;
+      },
+    );
+  } finally {
+    await teardownWeekly();
+  }
+});

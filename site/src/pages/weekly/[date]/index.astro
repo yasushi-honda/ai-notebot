@@ -1,0 +1,54 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { url } from '../../../lib/url';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('weekly');
+  return posts.map((post) => ({
+    params: { date: post.data.weekStart },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+// OGP/Twitter Card用のサムネイル画像。新規生成はせず、その週の日次記事のうち実際に
+// hero.jpgが生成されている日を curate-weekly.mjs 側で選んで ogImageDate に記録している
+// （scripts/curate-weekly.mjs の pickOgImageDate 参照）。無ければ画像なしのプレビューになる。
+const heroImageUrl = post.data.ogImageDate
+  ? new URL(url(`images/${post.data.ogImageDate}/hero.jpg`), Astro.site).href
+  : undefined;
+---
+
+<BaseLayout title={post.data.title} description={post.data.description} image={heroImageUrl}>
+  <nav class="text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-verify">ホーム</a> /
+    <a href={url('weekly/')} class="hover:text-verify">週刊まとめ</a> /
+    <span class="tabular-nums font-mono">{post.data.weekStart}</span>
+  </nav>
+
+  <div class="text-xs text-verify font-semibold mb-2">
+    <span class="font-mono tabular-nums">{post.data.weekStart} 〜 {post.data.weekEnd}</span> の振り返り
+  </div>
+  <h1 class="font-display text-2xl font-medium text-ink mb-2">{post.data.title}</h1>
+  <p class="text-ink-soft mb-6">{post.data.description}</p>
+
+  {post.data.ogImageDate && (
+    <img
+      src={url(`images/${post.data.ogImageDate}/hero.jpg`)}
+      alt={post.data.title}
+      class="w-full aspect-video object-cover rounded-lg border border-rule mb-8"
+    />
+  )}
+
+  <article class="prose-post">
+    <Content />
+  </article>
+
+  <p class="verify-label mt-10">
+    <span class="verify-dot"></span>
+    この記事の出典 {post.data.sourceIds.length} 件はすべて、対象週の各日のアーカイブに実在するエントリに解決することを機械検証済みです（対象{post.data.sourceDates.length}日分）。
+  </p>
+</BaseLayout>

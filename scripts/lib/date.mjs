@@ -12,3 +12,26 @@ export function todayJst() {
   const jst = new Date(Date.now() + JST_OFFSET_MS);
   return jst.toISOString().slice(0, 10);
 }
+
+/**
+ * 週刊まとめ（scripts/curate-weekly.mjs）の対象期間を計算する純関数。
+ * publishDate（公開日、通常は日曜）の前日までの直近7日間を対象にする。
+ * Date.UTC のみで日付演算を行うため月またぎ・年またぎ・うるう年でも壊れず、
+ * publishDate 自体がどの曜日でも同じ規則（「前日から遡って7日」）で一貫して動く。
+ *
+ * @param {string} publishDate YYYY-MM-DD
+ * @returns {{ weekStart: string, weekEnd: string, dates: string[] }}
+ *   dates は weekStart から weekEnd まで古い順に7件（YYYY-MM-DD）
+ */
+export function weeklyWindow(publishDate) {
+  const [y, m, d] = publishDate.split('-').map(Number);
+  const publishUtc = Date.UTC(y, m - 1, d);
+  const DAY_MS = 24 * 60 * 60 * 1000;
+
+  const dates = [];
+  for (let offset = 7; offset >= 1; offset--) {
+    dates.push(new Date(publishUtc - offset * DAY_MS).toISOString().slice(0, 10));
+  }
+
+  return { weekStart: dates[0], weekEnd: dates[dates.length - 1], dates };
+}

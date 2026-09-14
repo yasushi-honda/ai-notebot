@@ -30,6 +30,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Sync to latest main
+        # actions/checkout はデフォルトでイベント発生時点のSHAを取得する。daily-digest
+        # concurrencyグループで他のworkflow（weekly.yml等）の完了待ちになっている間にそちらが
+        # コミット・pushすると、待機解除後にこのジョブが古いSHAのままビルド・コミットしてしまい、
+        # 後続の git push が non-fast-forward で失敗する（詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
+        # `git fetch origin main` は remote.origin.fetch の設定次第で refs/remotes/origin/main を
+        # 更新しない場合があるため（codex reviewで指摘）、fetch操作で常に更新される FETCH_HEAD に
+        # 対してresetする（refspec設定に依存せず確実）。
+        run: |
+          git fetch origin main
+          git reset --hard FETCH_HEAD
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:

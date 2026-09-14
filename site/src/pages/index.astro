@@ -10,6 +10,9 @@ const rest = allPosts.slice(1, 6);
 const carePosts = (await getCollection('care')).sort((a, b) => b.data.date.localeCompare(a.data.date));
 const latestCare = carePosts[0];
 
+const weeklyPosts = (await getCollection('weekly')).sort((a, b) => b.data.weekStart.localeCompare(a.data.weekStart));
+const latestWeekly = weeklyPosts[0];
+
 // themes（{title, sourceCount}）はこのフィールド追加より前の記事には存在しない
 // （スキーマのdefault []になる）。その場合は themeTitles（件数なし）にフォールバックする
 // （posts/[date]/index.astro の shareText 同様のフォールバックパターン）。
@@ -62,8 +65,16 @@ const todayThemes = latest
 
   <div class="h-8"></div>
 
+  {latestWeekly && (
+    <a href={url(`weekly/${latestWeekly.data.weekStart}/`)} class="callout callout-weekly block no-underline mb-4.5">
+      <div class="kicker">週刊まとめ・{latestWeekly.data.weekStart} 〜 {latestWeekly.data.weekEnd}</div>
+      <h3>{latestWeekly.data.title}</h3>
+      <p>{latestWeekly.data.description}</p>
+    </a>
+  )}
+
   {latestCare && (
-    <a href={url(`care/${latestCare.data.date}/`)} class="care-callout block no-underline mb-9">
+    <a href={url(`care/${latestCare.data.date}/`)} class="callout callout-care block no-underline mb-9">
       <div class="kicker">介護AIハック・{latestCare.data.date}</div>
       <h3>{latestCare.data.title}</h3>
       <p>{latestCare.data.summary}</p>
