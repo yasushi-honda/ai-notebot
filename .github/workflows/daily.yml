@@ -8,13 +8,14 @@ name: Daily AI trends digest
 #
 # 2026-09-14判明: それでも実際にschedule発火が1.5〜2.5時間規模で遅延・完全ドロップすることが
 # 繰り返し観測された（GitHub公式もscheduleイベントは配送保証が無いと明記。詳細:
-# docs/adr/adr-2026-09-14-schedule-reliability.md）。緩和策として12:07 JST (03:07 UTC) にも
-# 保険のcronを追加し、その時点で当日分が既に生成済みなら「Skip if already generated」判定で
-# 収集・生成・コミットの重いステップをスキップする（LLM呼び出しの二重発生・記事の意図しない
-# 再生成を防ぐ）。
+# docs/adr/adr-2026-09-14-schedule-reliability.md）。緩和策として06:07 JST (21:07 UTC、前日UTC)・
+# 09:07 JST (00:07 UTC)・12:07 JST (03:07 UTC) の3回に保険のcronを分散し、各回の発火時点で
+# 当日分が既に生成済みなら「Skip if already generated」判定で収集・生成の重いステップを
+# スキップする（LLM呼び出しの二重発生・記事の意図しない再生成を防ぐ）。21:07 UTCは前日の
+# UTC日付だが、JSTでは翌日06:07になるため、00:07/03:07 UTCの発火と同じJST日を対象にできる。
 on:
   schedule:
-    - cron: '7 0,3 * * *'
+    - cron: '7 21,0,3 * * *'
   workflow_dispatch:
 
 permissions:
