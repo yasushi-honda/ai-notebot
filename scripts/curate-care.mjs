@@ -805,15 +805,25 @@ export function validateGenerated(result, itemsById, recentWorkAreas = []) {
 
   // 「## 使えるプロンプト例」の見出し・中身（フェンス付きコードブロック）の存在を検証する
   // （ユーザーから「オススメのプロンプトなども有ると良い」との指摘を受けて追加した新セクション）。
-  if (!/^## 使えるプロンプト例\s*$/m.test(result.bodyMarkdown)) {
+  // 以下4項目はelse ifで連結せず独立したifにする: else if連鎖だと先頭のフェンス未クローズが
+  // 検出された時点で識別子・注意書きチェックが同一試行でスキップされ、
+  // 「試行1でフェンス指摘→試行2でフェンス直すも識別子が初めて発覚→識別子直すと再びフェンスを
+  // 壊す」の往復でMAX_REGENERATE_ATTEMPTS（3回）に収まらず再生成が収束しない実害が
+  // 2026-09-16実データで発覚した（/codex review で指摘・修正）。
+  const promptExampleHeadingPresent = /^## 使えるプロンプト例\s*$/m.test(result.bodyMarkdown);
+  if (!promptExampleHeadingPresent) {
     problems.push('「## 使えるプロンプト例」の見出しがありません');
-  } else if (!sectionContainsFencedCodeBlock(result.bodyMarkdown, '使えるプロンプト例')) {
+  }
+  if (promptExampleHeadingPresent && !sectionContainsFencedCodeBlock(result.bodyMarkdown, '使えるプロンプト例')) {
     problems.push('「## 使えるプロンプト例」に開始・終了が揃ったフェンス付きコードブロック（```）がありません');
-  } else if (promptExampleAsksForIdentifyingField(result.bodyMarkdown)) {
+  }
+  if (promptExampleAsksForIdentifyingField(result.bodyMarkdown)) {
     // 「（匿名化済み）」等と謳いながら実際には利用者の氏名等を記入させる指示になっていた
-    // 実害の回帰防止（codex reviewで指摘）。
+    // 実害の回帰防止（codex reviewで指摘）。bodyMarkdown全体のクローズ済みフェンスを対象に
+    // 検査するため見出しの有無に関わらず呼び出せる。
     problems.push('「## 使えるプロンプト例」が利用者名・施設名等の実在する識別子の記入を求めています（匿名の識別子に置き換える必要があります）');
-  } else if (!promptExampleIncludesUsageCaution(result.bodyMarkdown)) {
+  }
+  if (promptExampleHeadingPresent && !promptExampleIncludesUsageCaution(result.bodyMarkdown)) {
     // サンプルメモの詳細さが他の情報と組み合わさって個人の再識別につながりうるとの指摘を
     // 受け、読み手への利用ルール遵守・個人特定回避の注意書きを必須化した（codex reviewで指摘）。
     problems.push('「## 使えるプロンプト例」に所属先の利用ルール遵守・個人特定回避を促す注意書きがありません');
