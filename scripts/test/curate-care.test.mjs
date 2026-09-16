@@ -501,6 +501,22 @@ test('validateGenerated: アーカイブにofficialソースがあるのに本�
   assert.ok(problems.some((p) => p.includes('official')));
 });
 
+// 2026-09-16実データで発覚: 「公式(official)ソースを本文中で1件も引用していません」という
+// 汎用的な文言だけでは、リトライ時にextraInstructionsとして積まれても対象idや
+// 「地の文限定・見出し無効」という判定基準が伝わらず、3回のリトライ中2回未引用のまま
+// 収束しなかった。メッセージ自体に対象idと判定基準を含めることを保証する回帰テスト
+// （/codex reviewで指摘・修正）。
+test('validateGenerated: official未引用メッセージに対象idと地の文限定の判定基準を含む', () => {
+  const body =
+    '## なぜ手間がかかるのか\n\n背景です[^s-1234567890]。\n\n## 手順\n\n' +
+    '1. ステップ1です[^s-1234567890]。\n2. ステップ2です[^s-1234567890]。\n3. ステップ3です[^s-1234567890]。\n';
+  const problems = validateGenerated(validResult({ bodyMarkdown: body }), itemsByIdWithOfficial);
+  const officialProblem = problems.find((p) => p.includes('official'));
+  assert.ok(officialProblem.includes(OFFICIAL_ITEM.id));
+  assert.ok(officialProblem.includes('地の文'));
+  assert.ok(officialProblem.includes('見出し'));
+});
+
 test('validateGenerated: アーカイブにofficialソースが無ければofficial引用チェックはスキップされる', () => {
   const problems = validateGenerated(validResult(), itemsByIdWebOnly);
   assert.ok(!problems.some((p) => p.includes('official')));

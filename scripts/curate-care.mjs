@@ -183,9 +183,28 @@ function buildPrompt(items, extraInstructions, researchSummary, recentWorkAreas)
       ? `\n- workAreaは直近で使用済みの次の値を選ばないこと（必ず別のworkAreaにする）: ${recentWorkAreas.join(' / ')}` +
         `\n- 選択可能なworkArea一覧: ${WORK_AREAS.join(' / ')}`
       : '';
+  // 2026-09-16実データで発覚: 従来はofficialIdsの引用要件を執筆ルール箇条書きの末尾に1文
+  // 埋め込むだけだった。CARE_SCHEMA.bodyMarkdown.descriptionは識別子禁止・匿名化・
+  // 脚注形式を数百字にわたって詳細に規定しているのに対しofficial引用要件は皆無で、
+  // 「見出し行への引用は無効」という判定基準（validateGeneratedはstripFootnotesFromHeadingsで
+  // 見出しの脚注を機械的に除去してから判定する）もどこにも明記されていなかった。詳細な制約群に
+  // 埋没し、3回のリトライ中2回officialソース未引用でNGになった（/codex reviewで指摘・修正）。
+  // 冒頭の依頼文直後に独立した強調セクションを置き、判定基準（地の文限定・見出し無効）を
+  // 明記した上で、従来の位置にも短い再掲を残す（二重に念押しする）。
+  const officialPriorityNote =
+    officialIds.length > 0
+      ? `\n\n## 最優先の合格条件：公式出典の引用\n` +
+        `本文で必ず引用する公式出典IDは ${officialIds.join(' / ')} です。少なくとも1件について、` +
+        'その出典のsource-title・source-excerptが直接裏付ける事実を、' +
+        '「## なぜ手間がかかるのか」または「## 手順」の地の文（説明文）に1文書き、' +
+        'その文末に必ず引用した出典の [^s-<id>] 形式の脚注を付けてください。' +
+        '見出し行・コードブロック内・脚注定義への付与は本文引用として一切カウントされません。' +
+        'この条件を満たさない出力は不合格です。'
+      : '';
   const officialNote =
     officialIds.length > 0
-      ? `\n- 本文には ${officialIds.join(' / ')}（公式ソース）のうち少なくとも1件を必ず引用すること（[^s-<id>]形式）。` +
+      ? `\n- 上記「最優先の合格条件」の通り、${officialIds.join(' / ')}（公式ソース）のうち` +
+        '少なくとも1件を、見出し行ではなく地の文で必ず引用すること（[^s-<id>]形式）。' +
         '厚生労働省・自治体等の公的機関の裏付けを本文に反映させるため。'
       : '';
   // collect-care.mjs が調査時に選定したテーマ案（researchSummary）。既出記事との重複回避も
@@ -227,6 +246,7 @@ function buildPrompt(items, extraInstructions, researchSummary, recentWorkAreas)
     '',
     '以下の出典（到達性を検証済みの実在するウェブページ）だけを根拠に、介護現場の業務を',
     'AIで効率化する具体的な方法を1つ、実務ハンドブックのような文体で紹介してください。',
+    officialPriorityNote,
     '',
     '## 執筆ルール',
     '- 手順で紹介する方法は、Google Workspace（スプレッドシート・ドキュメント・フォーム等）・',
@@ -831,9 +851,17 @@ export function validateGenerated(result, itemsById, recentWorkAreas = []) {
 
   const proseUsedIds = extractProseUsedIds(result.bodyMarkdown);
   const officialCited = [...proseUsedIds].some((id) => itemsById.get(id)?.tier === 'official');
-  const hasOfficialSource = [...itemsById.values()].some((i) => i.tier === 'official');
-  if (hasOfficialSource && !officialCited) {
-    problems.push('公式(official)ソースを本文中で1件も引用していません');
+  const officialIdsInArchive = [...itemsById.values()].filter((i) => i.tier === 'official').map((i) => i.id);
+  if (officialIdsInArchive.length > 0 && !officialCited) {
+    // IDと「地の文限定・見出し無効」をメッセージ自体に含める（extraInstructionsとして
+    // そのまま次回プロンプトに積まれるため、再生成時にも同じ判定基準が伝わるようにする。
+    // 2026-09-16実データで発覚: 汎用的な文言だけでは3回のリトライ中2回未引用のまま
+    // 収束しなかった。/codex reviewで指摘・修正）。
+    problems.push(
+      `公式(official)ソース（${officialIdsInArchive.join(' / ')}）を本文の地の文で1件も引用していません。` +
+        '見出し行・コードブロック内への付与は無効です。「## なぜ手間がかかるのか」または' +
+        '「## 手順」の説明文に、該当出典が裏付ける事実を1文書き、文末に[^s-<id>]を付けてください',
+    );
   }
 
   // scripts/validate-citations.mjs --type=care と同じ裏取り率チェックをここでも行う
