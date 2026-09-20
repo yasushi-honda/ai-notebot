@@ -1,0 +1,547 @@
+{
+  "date": "2026-09-21",
+  "collectedAt": "2026-09-20T23:10:48.338Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-c0e60a3fbb",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Barca0412/Introduction-to-Quantitative-Finance: AI+金融（量化）：1.多因子股票量化框架开源教程 2.学界和业界的经典资料收录 3.AI + 金融的相关工作，包括LLM, Agent, benchmark(evaluation), etc.",
+      "url": "https://github.com/Barca0412/Introduction-to-Quantitative-Finance",
+      "publishedAt": "2026-09-20T23:10:28.000Z",
+      "summary": "★1759 AI+金融（量化）：1.多因子股票量化框架开源教程 2.学界和业界的经典资料收录 3.AI + 金融的相关工作，包括LLM, Agent, benchmark(evaluation), etc."
+    },
+    {
+      "id": "s-930dd1342c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "NousResearch/hermes-agent: The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "publishedAt": "2026-09-20T23:10:02.000Z",
+      "summary": "★247463 The agent that grows with you"
+    },
+    {
+      "id": "s-12c20fceef",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "samuelfaj/distill: Distill is a lightweight coding agent harness and TUI built to get more done with FAR FEWER tokens 🔥",
+      "url": "https://github.com/samuelfaj/distill",
+      "publishedAt": "2026-09-20T23:09:00.000Z",
+      "summary": "★681 Distill is a lightweight coding agent harness and TUI built to get more done with FAR FEWER tokens 🔥"
+    },
+    {
+      "id": "s-bfe73cd562",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "daniel3303/Equibles: Self-hosted, open-source financial data MCP server for AI agents — SEC filings, XBRL financials, 13F holdings, insider & congressional trades, short interest, FRED, CFTC/CBOE and daily prices across 64 MCP tools. Equibles Cloud adds earnings call transcripts, live quotes, options chains with Greeks, guidance and a screener.",
+      "url": "https://github.com/daniel3303/Equibles",
+      "publishedAt": "2026-09-20T23:08:53.000Z",
+      "summary": "★230 Self-hosted, open-source financial data MCP server for AI agents — SEC filings, XBRL financials, 13F holdings, insider & congressional trades, short interest, FRED, CFTC/CBOE and daily prices across 64 MCP tools. Equibles Cloud adds earnings call transcripts, live quotes, options chains with Greeks, guidance and a screener."
+    },
+    {
+      "id": "s-31e29b6d5d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "openchamber/openchamber: Agentic Development Environment based on OpenCode AI agent",
+      "url": "https://github.com/openchamber/openchamber",
+      "publishedAt": "2026-09-20T23:08:32.000Z",
+      "summary": "★10160 Agentic Development Environment based on OpenCode AI agent"
+    },
+    {
+      "id": "s-b01295803d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "unslothai/unsloth: Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
+      "url": "https://github.com/unslothai/unsloth",
+      "publishedAt": "2026-09-20T23:08:10.000Z",
+      "summary": "★76497 Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "id": "s-9ff119dc67",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "langfuse/langfuse: 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
+      "url": "https://github.com/langfuse/langfuse",
+      "publishedAt": "2026-09-20T23:08:04.000Z",
+      "summary": "★34856 🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform."
+    },
+    {
+      "id": "s-f0a1caf9bd",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "khromov/svelte-bench: An LLM benchmark for Svelte 5 based on the OpenAI methodology from OpenAIs paper \"Evaluating Large Language Models Trained on Code\".",
+      "url": "https://github.com/khromov/svelte-bench",
+      "publishedAt": "2026-09-20T23:07:00.000Z",
+      "summary": "★190 An LLM benchmark for Svelte 5 based on the OpenAI methodology from OpenAIs paper \"Evaluating Large Language Models Trained on Code\"."
+    },
+    {
+      "id": "s-ac1db104f7",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "gebruder/wirken: The enterprise gateway for autonomous agents. Identity management, per-channel isolation, credential vault, per-session tamper-evident audit log.",
+      "url": "https://github.com/gebruder/wirken",
+      "publishedAt": "2026-09-20T23:06:19.000Z",
+      "summary": "★171 The enterprise gateway for autonomous agents. Identity management, per-channel isolation, credential vault, per-session tamper-evident audit log."
+    },
+    {
+      "id": "s-4068a19637",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Claude Code の --worktree(-w)で複数タスクを並列実行する実装手順 — .env と node_modules が消える・ブランチの二重チェックアウトで落ちる・後片付け、3つのハマりどころ【2026】",
+      "url": "https://qiita.com/yureki_lab/items/4506ab0d289a784e8e97",
+      "publishedAt": "2026-09-20T23:02:50.000Z",
+      "summary": "はじめに / 対象と前提 Claude Code で「A の機能を作らせている間に、B のバグ修正も別セッションで走らせたい」となったとき、同じ作業ディレクトリで 2 セッション動かすとファイル編集が衝突する。これを -w / --worktree フラグひとつで解決する..."
+    },
+    {
+      "id": "s-833959c47c",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "WebFetch の権限が許可されず、参考記事の内容を直接確認できませんでした。この状態で記事を書くと、設定名やAPI仕様などの固有情報を憶測で書くことになり、",
+      "url": "https://qiita.com/syun136_616/items/bb23c4ff35b93c6381eb",
+      "publishedAt": "2026-09-20T22:31:01.000Z",
+      "summary": "WebFetch の権限が許可されず、参考記事の内容を直接確認できませんでした。この状態で記事を書くと、設定名やAPI仕様などの固有情報を憶測で書くことになり、ユーザーのCLAUDE.mdルール（固有名詞や仕様を勝手に想像しない、出典のない数値は書かない）に反してしまいます..."
+    },
+    {
+      "id": "s-703315f176",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI記事作成パイプラインの流れと6ステップ",
+      "url": "https://qiita.com/miyoki_labs/items/c279352d210a5e7141d6",
+      "publishedAt": "2026-09-20T22:20:29.000Z",
+      "summary": "はじめに AIで記事作成の工程を自動化したいとき、本文を生成する部分だけを見ていると、入力から出力までの流れが分かりにくくなります。 キーワードを決めたあとに何を調べ、どの段階で構成を作り、本文生成後にどのような審査を行うのか。工程の順番が見えないと、記事作成全体の役割を..."
+    },
+    {
+      "id": "s-5ab0acda3c",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI Daily Digest 9.21：NscaleがNYSE上場を申請、FAAがAI空域管理を稼働、Step 5が600B MoEを公開",
+      "url": "https://qiita.com/lhjjjk4/items/1b74e9256ff3fd61fd07",
+      "publishedAt": "2026-09-20T22:06:34.000Z",
+      "summary": "AIインフラの構築が今週、書類の段階に入った。3年前までビットコインマイニングをしていたデータセンタ事業者が、1,030億ドルの契約残高と上半期10億ドルの赤字を数字で示し、中国のラボはフロンティアモデルの8分の1の価格で6,000億パラメータのMoEをAPIの背後に置い..."
+    },
+    {
+      "id": "s-bbd4b5829f",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「社長の頭の中」をAIに　経営と現場をつなぐ専用AIとは？",
+      "url": "https://kn.itmedia.co.jp/kn/article/2609/21/2000001651/",
+      "publishedAt": "2026-09-20T22:00:00.000Z",
+      "summary": "ベテラン社員の退職で、会社に蓄積された経験やノウハウが失われる。そんな中小企業の「知識の属人化」に向き合い、社長の経験や現場の知恵を蓄積する専用AIが登場した。"
+    },
+    {
+      "id": "s-7f7f70efb2",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AI研修を受けた人は1割未満　「学びたい」4割超なのに、なぜ？",
+      "url": "https://kn.itmedia.co.jp/kn/article/2609/21/2000001604/",
+      "publishedAt": "2026-09-20T22:00:00.000Z",
+      "summary": "企業でAI活用やDX推進が求められる一方、職場でそれらが話題にならず、研修を受ける機会も限られている。調査では、研修未経験者が9割に達する一方、4割超がAI・デジタルスキルの習得を希望している。学ぶ意欲と機会のギャップが浮かんだ。"
+    },
+    {
+      "id": "s-20a3d27028",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "大和鋼管工業、SaaS増加で複雑化したライセンス管理を「情シスAI」でどう解決？",
+      "url": "https://kn.itmedia.co.jp/kn/article/2609/21/2000001655/",
+      "publishedAt": "2026-09-20T22:00:00.000Z",
+      "summary": "SaaSの増加に伴い、ライセンスの利用状況やコスト管理が複雑になっていた大和鋼管工業。部署ごとに分散していたSaaSやアカウント情報の一元化に動いた。"
+    },
+    {
+      "id": "s-bc1c5bf97c",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "双日調査、Copilot導入企業の87.5％が「情報分散」を課題　「横断検索AI」に期待か",
+      "url": "https://kn.itmedia.co.jp/kn/article/2609/21/2000001657/",
+      "publishedAt": "2026-09-20T22:00:00.000Z",
+      "summary": "双日テックイノベーションの調査によると、Copilot・M365導入企業の78％が社内情報の検索・活用を「カバーできている」と回答。一方、87.5％が情報の分散を課題に挙げ、96.2％が社内情報を横断的に検索・活用できるAI環境によって、AI活用が広がると回答した。"
+    },
+    {
+      "id": "s-35a068a981",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "DIY Jev",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wlu9rd/diy_jev/",
+      "publishedAt": "2026-09-20T21:59:59.000Z",
+      "summary": "So this jev thingy is getting kind of big... tbh it seems overhyped by a large margin, but here we are. Not that its bad, just feels like we usually ignored larger things... Anyway to the point of this post: I’ve been experimenting with a simple Jev-like inference setup using ordinary open weight LLMs. Ive done jev-like thing before with llms and i never felt the need that we have to have a separa"
+    },
+    {
+      "id": "s-70a78e4661",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Googleの「Gemini」も能力テスト中に実在企業3社に侵入──WSJ報道",
+      "url": "https://www.itmedia.co.jp/news/article/2609/21/2000001665/",
+      "publishedAt": "2026-09-20T21:50:52.000Z",
+      "summary": "GoogleのAI「Gemini」が、サイバーセキュリティの評価テスト中に外部ネットワークへ接続し、実在する3社のシステムへ自律的に侵入していたことが判明した。架空なはずの社名が実存企業と一致したことやテスト環境の設定不備が原因。Googleは、Geminiが実在企業と認識した時点で侵入を中止しており、実害やミスアライメントはないと説明している。"
+    },
+    {
+      "id": "s-b2d2088e97",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Would you buy a Qwen3.8-27B Taalas chip for $1k if it could run at 7,000 TPS?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wltts7/would_you_buy_a_qwen3827b_taalas_chip_for_1k_if/",
+      "publishedAt": "2026-09-20T21:41:37.000Z",
+      "summary": "Just find it interesting, since if Taalas tried to get into the consumer market, it could be interesting. Kind of like how we have game discs on CDs. Of course, a Qwen3.8-27B chip is stuck on 3.8-27B, but it&#39;s not going to $0 when Qwen4-27B launches, since it runs magnitudes faster than GPUs and is still pretty good. Assume it&#39;s Q4 (or Q8, or whatever you&#39;d prefer it to be). I think th"
+    },
+    {
+      "id": "s-410fb4adc8",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "6 days left to save up to $200 to TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/09/20/6-days-left-to-get-ahead-at-techcrunch-disrupt-2026/",
+      "publishedAt": "2026-09-20T21:41:08.000Z",
+      "summary": "Current ticket pricing ends in 6 days on Sept. 25 at 11:59 p.m. PT. Join 10,000+ founders, investors and tech leaders at Disrupt and save up to $200 on your ticket until then."
+    },
+    {
+      "id": "s-753336574c",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "I stopped drinking the AI Kool-Aid",
+      "url": "https://joshtronic.com/2026/09/20/i-stopped-drinking-the-ai-kool-aid/",
+      "publishedAt": "2026-09-20T21:17:26.000Z",
+      "summary": "points=31 comments=18 (Hacker News)"
+    },
+    {
+      "id": "s-cda19ce9d1",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Speed-up Kimi K3(2.8T) on a 16x GB10 Cluster — 30 t/s coding throughput, 136 t/s concurrency peak.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wlt577/speedup_kimi_k328t_on_a_16x_gb10_cluster_30_ts/",
+      "publishedAt": "2026-09-20T21:14:05.000Z",
+      "summary": "&#x200B; ​I wanted to share a quick update and performance video running the full Moonshot AI Kimi K3 (moonshotai/Kimi-K3) model across my 16x GB10 cluster. ​Getting a 2.8T parameter model running smoothly requires custom runtime patches and a solid network layout, but throughput and concurrency on coding tasks have been impressive. ​Performance Benchmarks ​Coding Generation / Decode: Sustaining ~"
+    },
+    {
+      "id": "s-df87d7b78d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Jevでゲームテストラボを作った。実際にうまくいったこと",
+      "url": "https://zenn.dev/thoughtcrime/articles/cf09ca069a7461",
+      "publishedAt": "2026-09-20T20:57:34.000Z",
+      "summary": "2つのゲーム、実際の意思決定ログ、9画面ダッシュボード、そして再利用できる出発点。 ゲームの見た目は良くなっていた。次は、プレイ体験も本当に良くなっているという、より確かな証拠が欲しかった。 よくある不満はこうだ。強化した武器は気持ちよく使えるのに、遭遇する敵の多くを簡単にしすぎてしまう。敵の体力を増やすのは簡単だった。本当の問題を見つけるには、もう少し手間がかかった。 私はCodexの助けを借りて、実際のゲームエンジンを中心にしたローカルのプレイテストラボを作った。Nightshift Hollowsでは、JevがAPI経由で移動と強化の判断を行った。Starfall Salvoでは..."
+    },
+    {
+      "id": "s-ed0fd852e3",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Base Browser: A hard fork of Firefox with no AI slop",
+      "url": "https://codeberg.org/basebrowserproject",
+      "publishedAt": "2026-09-20T20:40:17.000Z",
+      "summary": "points=7 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-caea4d57fd",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "World model companies are keeping a lot of secrets",
+      "url": "https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/",
+      "publishedAt": "2026-09-20T20:29:07.000Z",
+      "summary": "Everyone in the world-models space is sitting on a pile of cash and a ton of buzz, but good luck getting anyone — from the founders to their own data suppliers — to tell you what they're actually building."
+    },
+    {
+      "id": "s-3c9782beb3",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【検証編】自分が書いたハンズオン記事のコードは本当に動くのか？Dockerの使い捨て環境で全部試した",
+      "url": "https://zenn.dev/fujota1230/articles/76b2809f500345",
+      "publishedAt": "2026-09-20T20:22:32.000Z",
+      "summary": "はじめに 前回、【GA版】Microsoft Agent Framework で最小構成のAIエージェントを作るハンズオン（Python） という記事を書きました。 書いている最中、ずっと引っかかっていたことがあります。 「このコード、本当に動くのか？」 公式ドキュメントを読み、変更履歴を追い、GA 版の書き方に直したつもりではあります。でも「ドキュメントにそう書いてある」ことと「手元で動く」ことは別物です。しかも Agent Framework は更新が速く、ベータ期の破壊的変更を追いかけている記事だからこそ、自分の記事が同じ落とし穴にハマっている可能性がある。 とはいえ、検証の..."
+    },
+    {
+      "id": "s-3acf5e9d3b",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Lawsuit says Anthropic, OpenAI and Google made illegal agreement on AI slowdown",
+      "url": "https://www.cnn.com/2026/09/19/business/ai-slowdown-lawsuit-antitrust",
+      "publishedAt": "2026-09-20T20:09:19.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-12138cc965",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Qwen3.8-Flash-Next Cosmic Arcade oneshot slop game",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wlqxeu/qwen38flashnext_cosmic_arcade_oneshot_slop_game/",
+      "publishedAt": "2026-09-20T19:49:49.000Z",
+      "summary": "To test what it can do. Qwen3.8-Flash-Next Intel Autoround W4A16 running locally on 4xV620 ~2k prefill and 70ts decode.. Were running around 3 hours. Harness is OMP (I think it made a big difference). Most of the time model was running 2 browsers simultaneously and testing/fixing everything. The most sloppy prompt possible: create a game where a space traveller in the space he neets eniemes who sh"
+    },
+    {
+      "id": "s-597de6cbc7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Azure OpenAIに支出のハードリミットは無い — pause APIなら推論は423で止まる",
+      "url": "https://zenn.dev/kazu_aiengineer/articles/azure-openai-spend-limit-tpm",
+      "publishedAt": "2026-09-20T19:10:00.000Z",
+      "summary": "エージェントに好きなだけ推論させていると月末の請求が怖くなる。OpenAI の API には 「上限に達したら止まる」設定があるので、Azure にもあると思って探した。無かった。 While OpenAI has an option for hard limits that prevent you from going over your budget, Azure OpenAI doesn't currently provide this functionality. You can start automation from action groups as part of yo..."
+    },
+    {
+      "id": "s-773aac6433",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Is the AI industry really ready to slow down?",
+      "url": "https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/",
+      "publishedAt": "2026-09-20T18:56:04.000Z",
+      "summary": "On Equity, we debated whether Ai executives are serious about wanting to slow down."
+    },
+    {
+      "id": "s-cb03d7f13b",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "No one is surprised that Nvidia’s Jensen Huang thinks AI fears are overblown.",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown",
+      "publishedAt": "2026-09-20T18:50:18.000Z",
+      "summary": "The man who may stand to make the most money from the AI boom seems to think he knows better than anyone else, including researchers who have studied and worked on AI for decades. In an interview with CBS Sunday Morning, he claimed there was a \"0% chance\" of AI being the end of the […]"
+    },
+    {
+      "id": "s-c6fd2fa82a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Code Mods 実践ガイド ― 関数フックで本体を改造する、動く Mod 7本",
+      "url": "https://zenn.dev/oishiigohan/books/claude-code-mods-jissen",
+      "publishedAt": "2026-09-20T18:48:47.000Z",
+      "summary": "Claude Code に 2026年9月に入った「Mods（関数フック）」を、実機 2.1.278 で検証しながら 7 本の Mod を作って覚える本です。 対象は Claude Code を毎日使っていて、従来の hooks では届かなかった「画面」「ツール追加」「モデル振り分け」「結果の書き換え」に手を入れたい人。 すべてのコードは claude plugin validate の出力と、非対話モード（claude -p）でフックが本当に発火した証拠ファイル付き。 Windows 11 + Git Bash で検証し、macOS / Linux でも同じ手順で動きます。 収録: 起動時ログ+危険コマンド拒否 / 使用量ステータス+レート制限警告 / 秘密情報マスク / LLM 判定ガード / 作業日誌自動生成 / モデル・effort ルーター（turn.step） / モデルに新ツ"
+    },
+    {
+      "id": "s-cac0b39059",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Vocci’s ring adds a new form factor to meeting note-taking",
+      "url": "https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/",
+      "publishedAt": "2026-09-20T18:32:52.000Z",
+      "summary": "Vocci's lightweight ring costs $249, and might pose some privacy questions"
+    },
+    {
+      "id": "s-1503a5f5e4",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "The bear can dance: Qwen 3.8 27B on one 3090 for 3 weeks",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wloora/the_bear_can_dance_qwen_38_27b_on_one_3090_for_3/",
+      "publishedAt": "2026-09-20T18:26:30.000Z",
+      "summary": "TL;DR: Local agent loop, ~21 days, one RTX 3090. Task was pretty much &quot;build a CUDA inference engine for optimized for yourself on this GPU arch.&quot; Got working kernels and benches, not a win over llama.cpp. ~12 human messages. Compaction ate ~83 hours. Old joke: you don’t criticize how well the bear dances, you’re surprised it dances at all. Setup: Qwen 3.8 27B Q4, Q8 KV, 200k context, de"
+    },
+    {
+      "id": "s-1e6a19dc9a",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "One more 'you should try ExllamaV3/exl3 for flash next' appreciation post",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wlo9nz/one_more_you_should_try_exllamav3exl3_for_flash/",
+      "publishedAt": "2026-09-20T18:10:37.000Z",
+      "summary": "After seeing a few posts on here about it, I finally tried exl3 3bpw and exllamav3 for running flash next - with amazing results. On 3x3090s, 128GB DDR4: 1500 prefill, 80 tps decode On 1x5090, 128G. DDR4: 1500 prefill, 29 tps decode Both at 262k context, both with vision/spec decoding. Really impressed, definitely replacing vllm/llama.cpp for me on this model. Quant capacity seems good so far, goi"
+    },
+    {
+      "id": "s-50e03c36de",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "常駐型AIチャットエージェントの「通知バースト」集約(ダイジェスト化)しきい値設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-notification-digest-threshold-design",
+      "publishedAt": "2026-09-20T18:09:55.000Z",
+      "summary": "Slack / Teams / Chatwork に常駐して日常的にリクエストを捌くAIエージェントは、外部システムの更新・チャットの発言・タスクの状態変化など、様々なイベントをきっかけに通知やレポートを送ります。単発の通知だけを見て設計していると気づきにくいのですが、本番運用に乗せると「短時間に大量のイベントが連続発生し、通知が一気に押し寄せる」バーストが必ず起きます。1件ずつは正しい通知でも、それが数十件まとまって届くと、利用者は結局全部を読まずに流してしまい、通知が多いほど重要な情報が埋もれるという逆転現象が起きます。この記事では、バースト時に通知をどう集約(ダイジェスト化)するか..."
+    },
+    {
+      "id": "s-2c2c4a2fb3",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Lawsuit says Anthropic, OpenAI, SpaceXAI and Google made illegal agreement on AI slowdown",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wlo52v/lawsuit_says_anthropic_openai_spacexai_and_google/",
+      "publishedAt": "2026-09-20T18:05:43.000Z",
+      "summary": "&#32; submitted by &#32; /u/fallingdowndizzyvr [link] &#32; [comments]"
+    },
+    {
+      "id": "s-4bdc178ac8",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Why China Isn't Getting Existential About A.I",
+      "url": "https://www.newyorker.com/news/q-and-a/why-china-isnt-getting-existential-about-ai",
+      "publishedAt": "2026-09-20T18:04:52.000Z",
+      "summary": "points=8 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-f4686059b2",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "ScrollEd wants to turn textbooks into TikTok",
+      "url": "https://techcrunch.com/2026/09/20/scrolled-wants-to-turn-textbooks-into-tiktok/",
+      "publishedAt": "2026-09-20T18:00:00.000Z",
+      "summary": "ScrollEd turns textbooks into a scrollable, Instagram-like feed with video, audio, and quizzes. The Palo Alto startup, founded by student co-founders (and spouses) Utsav Gupta and Rebecca Neff, pitches at TechCrunch Disrupt."
+    },
+    {
+      "id": "s-fbea76a25d",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "As White House shields the AI gold rush, Trump family and other allies strike...",
+      "url": "https://www.theguardian.com/us-news/2026/sep/20/trump-ai-policy-financial-interest",
+      "publishedAt": "2026-09-20T17:34:27.000Z",
+      "summary": "points=6 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-7b83487dae",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "GitHubプロフィールにAIとの開発量を貼れるツールを作ってみた",
+      "url": "https://zenn.dev/yosh1/articles/cocommit-ai-coauthored-commits",
+      "publishedAt": "2026-09-20T17:11:48.000Z",
+      "summary": "自分が実際どれだけAIと書いているか、知らなかった Claude Code を毎日使っています。でも「どれくらい使っているか」と聞かれても、体感でしか答えられませんでした。 GitHub のプロフィールには、コミット数もスター数も草も出ます。でも「そのコードを誰と書いたか」は、どこにも出ていない。 数えてみたら、こうでした。 $ git log --format='%b' | grep -c 'Co-Authored-By: Claude' 960 このリポジトリ、1,107コミット中960件。87%がClaudeと一緒に書いたコミットでした。 全リポジトリ横断で数えたら 26,19..."
+    },
+    {
+      "id": "s-3068cddb05",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "最近流行りのJevをLaravel Starter Kit + AI SDKで使う：自由記述アンケートを分析",
+      "url": "https://zenn.dev/catatsumuri/articles/24b4655bdad963",
+      "publishedAt": "2026-09-20T17:09:04.000Z",
+      "summary": "作るもの あなたがAIセミナーを行ったとする。これに関して以下のようなアンケートが上がってきたとしよう。 https://github.com/catatsumuri/react-starter-kit-i18n/blob/jev-poc/database/seeders/data/demo.csv このCSVは先頭に数字がごちゃごちゃ書いてあるが、重要なのは 具体例が多く、生成AIを仕事でどう使えばいいのかイメージできました。 とか 眠かった とか お弁当がおいしかったです とかいうコメントの部分である。まあ見ての通りなかなかリアルさを出すようにしている。これをどう扱う..."
+    },
+    {
+      "id": "s-2ebd2947ed",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Autonomous strike drone uses Nvidia Jetson Orin Nano to pick and bomb targets",
+      "url": "https://www.tomshardware.com/tech-industry/drones/autonomous-strike-drone-uses-nvidia-jetson-orin-nano-to-independently-pick-and-bomb-targets-swedish-startups-attack-drones-run-small-ai-model-require-no-human-input-and-zero-external-comms",
+      "publishedAt": "2026-09-20T17:07:08.000Z",
+      "summary": "points=22 comments=7 (Hacker News)"
+    },
+    {
+      "id": "s-5b607a60ce",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "laya.cpp: Optimized laya near-instant decision making",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wlmkm9/layacpp_optimized_laya_nearinstant_decision_making/",
+      "publishedAt": "2026-09-20T17:06:02.000Z",
+      "summary": "After seeing u/Nandakishor_ml’s post introducing Laya , I wanted to see how fast it could run in a standalone C++ implementation. Credit to u/Nandakishor_ml for the architecture, training and open-source release. My contribution is the inference implementation: laya.cpp , built on ggml with custom CUDA kernels. It supports all three checkpoints—English, multilingual and typed-decisions—with native"
+    },
+    {
+      "id": "s-87a7464ccb",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Woman falsely charged with bank theft sues for $10M over AI facial recognition",
+      "url": "https://abcnews.com/US/grandmother-falsely-accused-bank-theft-after-alleged-ai/story?id=136536444",
+      "publishedAt": "2026-09-20T17:01:06.000Z",
+      "summary": "points=6 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-58183fe571",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIの意見を聞かない技術 序論：断ったはずの提案が、また来る",
+      "url": "https://zenn.dev/garplab/articles/758d59bcc409bd",
+      "publishedAt": "2026-09-20T16:37:30.000Z",
+      "summary": "私は AI の提案を、もうほとんど検討していません。良かれと思って出てくる新機能も、親切な改善案も、丁寧な代替案も。AI は却下を覚えないので、断った提案は次のセッションでまた出てきます。それで開発が雑になったかというと、なっていません。このシリーズは、その状態を仕組み一つずつで作っていく連載です。 各回の終盤には「検証手順」という節があります。先に読む必要はありません。置いた仕組みがなぜ要るのかを、自分の目で確かめたくなったときに戻ってください。 症状から対処法を学ぶ 各回は、うまくいかない症状から始まります。その対処法には、関連する AI の性質や仕様と、なぜその対処が適切かの解..."
+    },
+    {
+      "id": "s-ba91ca5849",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Trump now says he wants to form an ‘AI Force’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar",
+      "publishedAt": "2026-09-20T15:39:22.000Z",
+      "summary": "The president posted on Truth Social that he wanted to appoint an \"AI czar\" to lead a new \"AI force.\" He made the announcement amid growing calls from across the political spectrum and even within the industry to pump the brakes on AI development. He posted that his administration \"will not in any way hinder […]"
+    },
+    {
+      "id": "s-0e5e260f5f",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "GitHub - minorun365/minorun-marp-skill: Marpで登壇スライドを作るための、ストーリー・図・デザインバランスのスキル集と黒地テーマ、検査ツール",
+      "url": "https://github.com/minorun365/minorun-marp-skill",
+      "publishedAt": "2026-09-20T14:35:15.000Z",
+      "summary": "You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert"
+    },
+    {
+      "id": "s-b087ea1bdd",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AWSの最軽量LLM「Amazon Nova Micro」がJevの代わりとなるか検証してみた - Qiita",
+      "url": "https://qiita.com/nasuvitz/items/4d27833640ff36b5d8c5",
+      "publishedAt": "2026-09-20T13:31:57.000Z",
+      "summary": "はじめに 判断や評価を確率として返すAIモデル「Jev」が注目を集めています。Jevは、用途を絞ることで、高速なレスポンスを実現している点も特徴です。 一方、エンタープライズ用途で外部サービスを利用する場合、データ送信に伴う社内審査やセキュリティルールの確認が必要になります。新たに登場したサービスを本番シ..."
+    },
+    {
+      "id": "s-aca2a4894e",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Jev クローンの Laya をローカルで60fpsで動かせるか？",
+      "url": "https://zenn.dev/mizchi/articles/laya-mlx-60fps",
+      "publishedAt": "2026-09-20T13:26:00.000Z",
+      "summary": "ネタバレ: 部分的には可能 この記事は自分の発想をアイデアをもとに Claude が実証し、そのレポートを読みながら自分が手で修正したものになります。 機械学習は専門じゃないので、学習手法などの説明に間違いがあるかもしれません。 Jev については、先に書いた記事の知識を前提とします。 tl;dr Laya は Jev と同じ「..."
+    },
+    {
+      "id": "s-d11b689309",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Humans, not rogue AI, are still the biggest cybersecurity risk to energy systems",
+      "url": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
+      "publishedAt": "2026-09-20T12:00:00.000Z",
+      "summary": "Before recent high-profile hacks raised the specter of AI possibly \"killing all humans,\" our energy systems were already disturbingly vulnerable to cyberattack - and the risk is growing. \"We were always prey. We were just kind of surviving at the appetite of our predators,\" Joshua Corman, executive in residence for public safety and resilience at […]"
+    },
+    {
+      "id": "s-0aa22cabe7",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Reverse Engineering ChatGPT Web: How OpenAI Built for a Billion Users",
+      "url": "https://performance.dev/chatgpt",
+      "publishedAt": "2026-09-20T11:38:28.000Z",
+      "summary": "Dennis Brotzky·July 2, 2026 Reverse Engineering ChatGPT Web: How OpenAI Built for a Billion UsersOpen a new tab, type chatgpt.com, and ask it something. No account, no sign in, no spinner. The page is interactive immediately, and the answer starts streaming a moment after you hit enter. That expe..."
+    },
+    {
+      "id": "s-a1e749a7f8",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "An undercover Google analyst infiltrated a notorious supply-chain hacking gang",
+      "url": "https://arstechnica.com/security/2026/09/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/",
+      "publishedAt": "2026-09-20T11:07:00.000Z",
+      "summary": "Google’s threat intelligence group said it had a mole inside TeamPCP's inner circle."
+    },
+    {
+      "id": "s-aee3b1537d",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「Jev」とは　“文章を書かないAI”がなぜ話題に？　元OpenAI研究者が開発、「“スマートなif文”と考えてみて」",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2609/20/2000001664/",
+      "publishedAt": "2026-09-20T10:54:06.000Z",
+      "summary": "米スタートアップのTypeSafe AIが9月15日（現地時間）に発表したAIモデル「Jev」（ジェヴ）が、海外や日本のAIコミュニティで大きな注目を集めている。創業者であるディオゴ・アルメイダ氏の発表はX上で3700万回以上表示されている（9月20日時点）。 JevはChatGPTのように「会話するAI」ではない。その代わり、ユーザー..."
+    },
+    {
+      "id": "s-1bda128840",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "json-render と Jev で UI を組み立ててみた",
+      "url": "https://azukiazusa.dev/blog/json-render-jev/",
+      "publishedAt": "2026-09-20T10:27:10.000Z",
+      "summary": "json-render の Jev 連携では、文言やデータを含むコンポーネントの候補を用意し、モデルに選択と配置を任せます。従来の json-render では、モデルが新しい Props を生成していました。この記事では Jev 連携の仕組みと、従来の json-render との違いを紹介します。 json-render は AI が UI を生成する Generative UI ..."
+    },
+    {
+      "id": "s-ac964427a2",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "netcatと同様だがTailscaleのデータプレーン上で動作する「Tailcat」",
+      "url": "https://gigazine.net/news/20260920-tailcat/",
+      "publishedAt": "2026-09-20T10:13:20.000Z",
+      "summary": "ネットワーク越しに文字列やファイルなどのデータを送ったり、指定したポートへ直接接続したりできる「netcat」を利用する場合、IPアドレスの確認やルーターのポート開放・NAT越えなどネットワーク側の準備が必要になります。そこで、netcatのようなシンプルな操作感を保ちながら、Tailscaleが持つWireGuardによる暗号化..."
+    },
+    {
+      "id": "s-f4a6602061",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "高速判断AI Jevのユースケースとオープン実装を雑にまとめる",
+      "url": "https://zenn.dev/karaage0703/articles/jev-use-cases-open-implementations",
+      "publishedAt": "2026-09-20T09:51:47.000Z",
+      "summary": "最近、文章を書かずに判断だけを返すAIモデル「Jev」が話題になっています。 私もJevにマリオやVampire Survivorsを操作させて遊んでいたのですが、発表から数日で解説記事、実用例、オープンな類似実装が一気に増えてきました。情報を追いかけるのが大変になってきたので、2026年9月20日時点の情報を雑にまとめておきま..."
+    },
+    {
+      "id": "s-1e8dff1956",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Tilly Norwood’s press tour is going about as well as you’d expect for an AI",
+      "url": "https://techcrunch.com/2026/09/18/tilly-norwoods-press-tour-is-going-about-as-well-as-youd-expect-for-an-ai/",
+      "publishedAt": "2026-09-19T00:12:07.000Z",
+      "summary": "In one particularly odd interview, Norwood seems to malfunction and begin speaking Chinese."
+    },
+    {
+      "id": "s-6b49f5c4d6",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "A startup that builds other startups raised $100M and is all-in on physical AI",
+      "url": "https://techcrunch.com/2026/09/18/a-startup-that-builds-other-startups-raised-100m-and-is-all-in-on-physical-ai/",
+      "publishedAt": "2026-09-18T23:25:01.000Z",
+      "summary": "UP.Labs, now doing business under the name Vantora, is building startups for industrial corporations."
+    }
+  ]
+}
