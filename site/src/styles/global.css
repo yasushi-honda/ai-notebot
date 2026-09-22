@@ -372,10 +372,16 @@ li:last-child > .list-link {
 .care-meta .care-meta-pill {
   @apply text-xs px-3 py-1 rounded-full bg-care-soft text-care font-medium;
 }
-/* 業務領域pillのみ /care/workarea/[workArea]/ へのリンクにしている（他のpillは単一値の
-   カテゴリページを持たないため据え置き）。リンクだと分かるようホバーで反転させる */
+/*
+ * 業務領域pillのみ /care/workarea/[workArea]/ へのリンクにしている（他のpillは単一値の
+ * カテゴリページを持たないため据え置き）。当初ホバーでの反転のみで区別していたが、
+ * セカンドオピニオンレビューで「3つ並んだpillのうち1つだけが平常時も同じ見た目では
+ * クリック可能と分からない」と指摘された（アーカイブの月見出しで実機フィードバックを
+ * 受けて修正したのと同じ問題の再発）。常時見える下線を敷き、タッチデバイスでもホバー無しで
+ * 判別できるようにする。
+ */
 .care-meta-pill-link {
-  @apply no-underline transition-colors hover:bg-care hover:text-white;
+  @apply underline decoration-current underline-offset-2 transition-colors hover:bg-care hover:text-white;
 }
 
 /*

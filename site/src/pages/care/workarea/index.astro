@@ -5,8 +5,12 @@ import { url } from '../../../lib/url';
 
 const posts = await getCollection('care');
 
-// 業務領域ごとの件数を集計（AIトレンド版のtagsと異なり、workAreaはenum固定で記事間に
-// 実際の再利用があるため、件数付きの一覧として意味を持つ）
+// 業務領域ごとの件数を集計。AIトレンド版のtags（記事ごとに完全ユニーク、使い回しゼロ）とは
+// 異なり、workAreaはenum固定でLLM生成時から拘束されており記事間で実際に再利用されるため、
+// 件数付きの一覧として意味を持つ（evaluatorレビューで指摘・修正: targetServices・difficulty
+// も同様にenum固定で再利用があり、workAreaだけが特別というわけではない。今回は単一値で
+// 既存の/tags/[tag]/と同じ実装パターンをそのまま使えるworkAreaのみを対象にした、という
+// スコープ限定の理由であって「再利用がある唯一のフィールド」という意味ではない）
 const counts = new Map<string, number>();
 for (const post of posts) {
   counts.set(post.data.workArea, (counts.get(post.data.workArea) ?? 0) + 1);
