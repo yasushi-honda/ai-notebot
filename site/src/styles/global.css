@@ -106,10 +106,13 @@ li:last-child > .list-link {
 /*
  * 一覧ページ（アーカイブ／タグ／介護／週刊まとめ）共通の日付・メタ情報表示。
  * 従来は各ページで `text-xs text-ink-soft`（12px）をベタ書きしており、記事タイトルとの
- * 落差が大きすぎて「一覧が地味で見づらい」という指摘を受けた。ここに集約し13pxへ引き上げる。
+ * 落差が大きすぎて「一覧が地味で見づらい」という指摘を受けた。ここに集約する。
+ * 当初13px・text-ink-softのみに留めたところ、evaluatorレビューで「1pxしか変わっておらず
+ * 元の指摘（小さい・目立たない）を実質解消していない」と指摘を受け、14px・font-mediumまで
+ * 引き上げた（タイトル17px・月見出し15pxとの改善幅の非対称さを解消する）。
  */
 .list-link-meta {
-  @apply text-[13px] text-ink-soft;
+  @apply text-[14px] font-medium text-ink-soft;
 }
 /* アーカイブ等、日付+タイトルだけの1行密度が高いリスト用のコンパクト版 */
 .list-link.list-link-compact {
