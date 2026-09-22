@@ -175,6 +175,8 @@ async function main() {
   if (officialCount < 1) {
     console.log('official ドメインが見つからなかったため、公的機関限定の追加検索を行います...');
     const followup = await generateGroundedText({ prompt: buildOfficialFollowupPrompt(first.text) });
+    console.log(`追加検索クエリ: ${followup.webSearchQueries.join(' / ') || '(なし)'}`);
+    console.log(`追加検索groundingChunks: ${followup.groundingChunks.length}件`);
     webSearchQueries = [...webSearchQueries, ...followup.webSearchQueries];
     if (followup.searchEntryPointHtml) searchEntryPointHtmlParts.push(followup.searchEntryPointHtml);
     await resolveChunks(followup.groundingChunks, seenUrls, items);
