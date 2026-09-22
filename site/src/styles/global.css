@@ -565,23 +565,31 @@ li:last-child > .list-link {
 }
 
 /*
- * トリガーボタンはヘッダーナビの一部として常時表示されるため、既定の検索バー風の見た目
- * （枠線・背景・パディング）を消し、他のナビリンク（テキストのみ・ホバーでverify色）と
- * 揃える。ライブラリ側のセレクタが `:is(*, #\#)` の3連鎖（ID相当の詳細度×3）でホスト側の
- * 上書きに勝つよう意図的に設計されているため、詳細度で対抗するのではなく!importantで
- * 上書きする（サードパーティWeb Componentsのテーマ上書きとして許容する）。
+ * トリガーボタンはヘッダーナビの一部として常時表示される。当初は他のナビリンク（テキスト
+ * のみ・ホバーでverify色）に完全に溶け込ませていたが、実機で「検索できることに気づかない」
+ * との指摘を受けた。他のナビリンクと文字だけが並ぶと埋没するため、常時見えるチップ状の
+ * 背景を敷き、押せるコントロールだと分かるようにする（アーカイブの月見出しチップ等、
+ * このプロジェクトで繰り返し出た「ホバーのみの affordance は発見可能性が無い」という
+ * 教訓と同じ対応）。
+ * ライブラリ側のセレクタが `:is(*, #\#)` の3連鎖（ID相当の詳細度×3）でホスト側の上書きに
+ * 勝つよう意図的に設計されているため、詳細度で対抗するのではなく!importantで上書きする
+ * （サードパーティWeb Componentsのテーマ上書きとして許容する）。
  */
 .site-search-trigger .pf-trigger-btn {
   width: auto !important;
   height: auto !important;
-  padding: 0 !important;
-  background: transparent !important;
-  border: none !important;
+  padding: 4px 12px !important;
+  background: var(--color-paper-deep) !important;
+  border: 1px solid var(--color-rule) !important;
+  border-radius: 9999px !important;
   font-size: 13px !important;
   font-weight: 500 !important;
   color: var(--color-ink-soft) !important;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
 }
 .site-search-trigger .pf-trigger-btn:hover {
+  background: var(--color-verify-soft) !important;
+  border-color: var(--color-verify) !important;
   color: var(--color-verify) !important;
 }
 .site-search-trigger .pf-trigger-icon {
