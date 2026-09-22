@@ -42,7 +42,9 @@ const { Content } = await render(post);
       <a href={url(`care/workarea/${post.data.workArea}/`)} class="care-meta-pill care-meta-pill-link">
         業務領域: {post.data.workArea}
       </a>
-      <span class="care-meta-pill">導入の手間: {post.data.difficulty}</span>
+      <a href={`${url('care/')}?difficulty=${encodeURIComponent(post.data.difficulty)}`} class="care-meta-pill care-meta-pill-link">
+        導入の手間: {post.data.difficulty}
+      </a>
     </div>
 
     <!--
