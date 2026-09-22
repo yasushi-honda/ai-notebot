@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { url } from '../../../../lib/url';
+import { matchesTargetService } from '../../../../lib/care';
 
 // targetServicesは複数値配列（workAreaと違い1記事が複数のサービスに属しうる）ため、
 // tags/[tag]/index.astro と同じ flatMap で一意値を集める（配列同士のSet化はできないため）。
@@ -13,7 +14,7 @@ export async function getStaticPaths() {
     props: {
       targetService,
       posts: posts
-        .filter((p) => p.data.targetServices.includes(targetService))
+        .filter((p) => matchesTargetService(p.data.targetServices, targetService))
         .sort((a, b) => b.data.date.localeCompare(a.data.date)),
     },
   }));

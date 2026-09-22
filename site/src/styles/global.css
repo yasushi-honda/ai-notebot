@@ -369,19 +369,105 @@ li:last-child > .list-link {
 .care-meta {
   @apply flex flex-wrap gap-2 mb-8;
 }
-.care-meta .care-meta-pill {
+/*
+ * 子孫セレクタ(.care-meta .care-meta-pill)にしていたため、/care/workarea/ や
+ * /care/targetservice/ の一覧ページ（.care-metaの外でcare-meta-pillを使っている）に
+ * スタイルが当たっていなかった（実バグ、フィルターUI追加時に発見）。単独クラスに変更する。
+ */
+.care-meta-pill {
   @apply text-xs px-3 py-1 rounded-full bg-care-soft text-care font-medium;
 }
 /*
- * 業務領域pillのみ /care/workarea/[workArea]/ へのリンクにしている（他のpillは単一値の
- * カテゴリページを持たないため据え置き）。当初ホバーでの反転のみで区別していたが、
- * セカンドオピニオンレビューで「3つ並んだpillのうち1つだけが平常時も同じ見た目では
- * クリック可能と分からない」と指摘された（アーカイブの月見出しで実機フィードバックを
- * 受けて修正したのと同じ問題の再発）。常時見える下線を敷き、タッチデバイスでもホバー無しで
- * 判別できるようにする。
+ * 対象/業務領域/導入の手間の全pillが対応する静的カテゴリページへのリンクになっている。
+ * 当初ホバーでの反転のみで区別していたが、セカンドオピニオンレビューで「3つ並んだpillの
+ * うち1つだけが平常時も同じ見た目ではクリック可能と分からない」と指摘された（アーカイブの
+ * 月見出しで実機フィードバックを受けて修正したのと同じ問題の再発）。常時見える下線を敷き、
+ * タッチデバイスでもホバー無しで判別できるようにする。
  */
 .care-meta-pill-link {
   @apply underline decoration-current underline-offset-2 transition-colors hover:bg-care hover:text-white;
+}
+
+/*
+ * 介護版トップページの同一画面内フィルターバー（業務領域・対象サービス・導入の手間）。
+ * チップの実体は<input type="radio">+<label>（各軸内は単一選択のネイティブradiogroup）。
+ * 絞り込み自体はCSSの:has()で行うため、JS完全無効でも同一画面内フィルタが動作する
+ * （画面遷移なし。「画面遷移させるべきではない」という要求をJSに頼らず満たす設計）。
+ * JSは件数の動的更新・0件チップの無効化・URL同期・ライブリージョン通知のみを担う強化層
+ * （filterCss/filterScriptはcare/index.astro内で生成。3箇所の判定ロジック—このCSS生成・
+ * JSの件数再計算・targetservice/配下の静的ページ—は同じ「全サービス共通」包含規則を
+ * 手動で同期させる必要がある。詳細はsrc/lib/care.tsのコメント参照）。
+ * アクティブ/非アクティブの差を色の濃淡だけに頼らず、背景色反転+ボーダーで明確に区別する。
+ */
+.care-filter {
+  @apply flex flex-col gap-2 mb-6 border border-rule rounded-lg bg-paper-deep/60 px-4 py-3;
+}
+.care-filter-row {
+  @apply flex flex-wrap items-center gap-2 border-0 m-0 p-0;
+}
+.care-filter-label {
+  @apply text-xs font-semibold text-ink-soft w-[6.5em] shrink-0 p-0;
+}
+.care-filter-chip-wrap {
+  @apply relative inline-flex;
+}
+/* radio自体は視覚的に隠すが、キーボード操作・フォーカスリングは維持する（sr-only相当） */
+.care-filter-input {
+  @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap;
+  clip-path: inset(50%);
+}
+.care-filter-chip {
+  @apply inline-flex items-center gap-1.5 text-xs font-medium px-3 py-2 rounded-full border
+    border-rule-strong bg-white text-ink-soft cursor-pointer select-none transition-colors
+    hover:border-care hover:text-care;
+  min-height: 2.25rem;
+}
+.care-filter-input:checked + .care-filter-chip {
+  @apply border-care bg-care text-white hover:text-white;
+}
+.care-filter-input:focus-visible + .care-filter-chip {
+  @apply outline outline-2 outline-offset-2 outline-care;
+}
+/* 他軸の選択と組み合わせた結果が0件になるチップ。JSが動的に付与する。
+   行き止まりを事前に伝え、選択自体を止める（pointer-events解除+キーボードでも選べなくする） */
+.care-filter-input:disabled + .care-filter-chip {
+  @apply opacity-40 pointer-events-none;
+}
+.care-filter-chip-count {
+  @apply font-mono tabular-nums text-[11px];
+}
+.care-filter-status {
+  @apply text-xs text-ink-soft flex flex-wrap items-center gap-2 pt-1 border-t border-rule;
+}
+.care-filter-status-clear {
+  @apply text-care font-medium underline decoration-care-soft underline-offset-2 hover:decoration-current;
+}
+
+/*
+ * /care/ の記事一覧はフィルタでli非表示になりうる。.list-linkの標準スタイル（border-bottom
+ * + li:first-child/li:last-childでの例外）は非表示要素をDOM位置基準の構造擬似クラスが
+ * 無視できないため、フィルタ後に「本来の先頭要素の余白抜け」「本来の末尾要素の下に宙に浮いた
+ * 罫線」が残ってしまう。border-topモデルに切り替え、真のDOM先頭要素にだけ罫線を外す
+ * （こちらは非表示でも判定がずれても実害がない＝非表示なら結果に影響しないため）。
+ */
+#care-post-list li > .list-link {
+  border-bottom: none;
+  border-top: 1px solid var(--color-rule);
+  padding-top: 1rem;
+}
+#care-post-list li:first-child > .list-link {
+  border-top: none;
+  padding-top: 0;
+}
+
+/*
+ * 既定は非表示。care/index.astroのbuildEmptyStateCss()が0件になる組み合わせだけ
+ * display:blockへ上書きする（#id+:has()なので詳細度で確実に勝つ、!important不要）。
+ * JS側もこのCSSカスケードと衝突しないようinline style(.style.display)で制御する
+ * （hidden属性はUA既定スタイルが!important付きのため、CSS:has()側からの上書きが効かない）。
+ */
+#care-empty-message {
+  display: none;
 }
 
 /*

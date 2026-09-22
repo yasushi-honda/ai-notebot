@@ -2,39 +2,300 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { url } from '../../lib/url';
+import { matchesTargetService, ALL_SERVICES_WILDCARD } from '../../lib/care';
 
 const posts = (await getCollection('care')).sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+// 3軸（業務領域・対象サービス・導入の手間）それぞれの「値→件数」を件数降順で集計する。
+// 0件の値（difficultyの「要検討」等）はチップを出さない。
+function countBy<T extends string>(values: T[]): [T, number][] {
+  const counts = new Map<T, number>();
+  for (const value of values) counts.set(value, (counts.get(value) ?? 0) + 1);
+  return [...counts.entries()].sort((a, b) => b[1] - a[1]);
+}
+
+const workAreaCounts = countBy(posts.map((p) => p.data.workArea));
+const difficultyCounts = countBy(posts.map((p) => p.data.difficulty));
+
+// targetServicesは複数値配列＋「全サービス共通」を具体サービスにも含める規則
+// （matchesTargetService、targetservice/配下の静的ページと揃える）ため専用に集計する。
+const serviceValues = new Set(posts.flatMap((p) => p.data.targetServices));
+const targetServiceCounts = [...serviceValues]
+  .map((service): [string, number] => [service, posts.filter((p) => matchesTargetService(p.data.targetServices, service)).length])
+  .sort((a, b) => b[1] - a[1]);
+
+// フィルタの絞り込み自体はCSSの:has()で行う（JS完全無効でも同一画面内フィルタが動作し、
+// 「画面遷移させるべきではない」という要求をJSに頼らず満たす）。JSは件数の動的更新・
+// 0件チップの無効化・URL同期・ライブリージョン通知のみを担う強化層(下部の<script>参照)。
+//
+// 3箇所に同じ「全サービス共通を具体サービスにも含める」判定ロジックが分散する
+// （このCSS生成・下のscriptのJS版・targetservice/配下の静的ページ=lib/care.ts）。
+// 変更時は3箇所とも揃えること。
+// 現状はcontent.config.tsのz.enum制約（curate-care.mjsの許可リスト）で値が固定されており
+// 実害はないが、防御的にバックスラッシュ→引用符の順でエスケープする
+// （evaluatorレビューで指摘: enum制約が将来外れた場合のCSSインジェクション経路になりうる）
+function escapeAttr(value: string): string {
+  return value.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+}
+
+function buildFilterCss(): string {
+  const rules: string[] = [];
+  for (const [value] of workAreaCounts) {
+    const v = escapeAttr(value);
+    rules.push(`#care-content:has(input[name="workarea"][value="${v}"]:checked) #care-post-list li:not([data-workarea="${v}"]) { display: none; }`);
+  }
+  for (const [value] of difficultyCounts) {
+    const v = escapeAttr(value);
+    rules.push(`#care-content:has(input[name="difficulty"][value="${v}"]:checked) #care-post-list li:not([data-difficulty="${v}"]) { display: none; }`);
+  }
+  for (const [value] of targetServiceCounts) {
+    const v = escapeAttr(value);
+    const wildcardExclusion = value === ALL_SERVICES_WILDCARD ? '' : `:not([data-services~="${ALL_SERVICES_WILDCARD}"])`;
+    rules.push(
+      `#care-content:has(input[name="service"][value="${v}"]:checked) #care-post-list li:not([data-services~="${v}"])${wildcardExclusion} { display: none; }`,
+    );
+  }
+  return rules.join('\n');
+}
+
+// JS無効環境ではCSSの:has()だけが絞り込みを行うため、「結果0件」の状態もCSSだけで
+// 空状態メッセージを出せる必要がある（codex reviewで指摘: renderできない=render()内でしか
+// #care-empty-messageの表示を切り替えていなかったため、JS無効時は永久にhiddenのままだった）。
+// 全組み合わせ（3軸×各値の直積）を総当たりし、結果0件になる組み合わせだけ:has()セレクタを
+// 生成する。「すべて」（値が空）の軸はセレクタから省く（他の狭い組み合わせで既に0件と分かって
+// いれば、その軸を追加で絞ってもやはり0件になるため、最小限の:has()条件で十分＝重複は
+// Setで自動的に削られる）。
+function buildEmptyStateCss(): string {
+  const axisValues: Record<Axis, string[]> = {
+    workarea: workAreaCounts.map(([v]) => v),
+    service: targetServiceCounts.map(([v]) => v),
+    difficulty: difficultyCounts.map(([v]) => v),
+  };
+  const selectors = new Set<string>();
+  for (const wa of ['', ...axisValues.workarea]) {
+    for (const sv of ['', ...axisValues.service]) {
+      for (const df of ['', ...axisValues.difficulty]) {
+        const count = posts.filter((p) => {
+          if (wa && p.data.workArea !== wa) return false;
+          if (df && p.data.difficulty !== df) return false;
+          if (sv && !matchesTargetService(p.data.targetServices, sv)) return false;
+          return true;
+        }).length;
+        if (count !== 0) continue;
+        const parts: string[] = [];
+        if (wa) parts.push(`:has(input[name="workarea"][value="${escapeAttr(wa)}"]:checked)`);
+        if (sv) parts.push(`:has(input[name="service"][value="${escapeAttr(sv)}"]:checked)`);
+        if (df) parts.push(`:has(input[name="difficulty"][value="${escapeAttr(df)}"]:checked)`);
+        if (parts.length === 0) continue; // posts.length===0は別のフォールバック表示で処理済み
+        selectors.add(`#care-content${parts.join('')}`);
+      }
+    }
+  }
+  return [...selectors].map((s) => `${s} #care-empty-message { display: block; }`).join('\n');
+}
+
+type Axis = 'workarea' | 'service' | 'difficulty';
+const filterCss = `${buildFilterCss()}\n${buildEmptyStateCss()}`;
 ---
 
 <BaseLayout title="介護AIハック" description="介護現場の業務をAIで効率化する方法を、公式情報の裏付け付きで毎日1つ紹介します">
   <h1 class="font-display text-2xl font-medium text-ink mb-2">
     介護AIハック（全{posts.length}件）
   </h1>
-  <p class="text-ink-soft mb-2">
+  <p class="text-ink-soft mb-6">
     介護現場の日々の業務をAIで効率化する具体的な方法を、公式情報の裏付け付きで毎日1つ紹介します。
   </p>
-  <p class="mb-8 flex flex-wrap gap-x-4 gap-y-1">
-    <a href={url('care/workarea/')} class="text-sm text-care font-medium underline decoration-care-soft underline-offset-[3px] hover:decoration-current">
-      業務領域から探す →
-    </a>
-    <a href={url('care/targetservice/')} class="text-sm text-care font-medium underline decoration-care-soft underline-offset-[3px] hover:decoration-current">
-      対象サービスから探す →
-    </a>
-  </p>
 
-  <ul>
-    {posts.map((post) => (
-      <li>
-        <a href={url(`care/${post.data.date}/`)} class="list-link list-link-care">
-          <div class="list-link-meta mb-1">
-            <span class="font-mono tabular-nums">{post.data.date}</span> · {post.data.workArea}
-          </div>
-          <div class="list-link-title">{post.data.title}</div>
-          <div class="text-sm text-ink-soft mt-1">{post.data.summary}</div>
-        </a>
-      </li>
-    ))}
-  </ul>
+  <div id="care-content">
+    <div class="care-filter" data-pagefind-ignore>
+      <fieldset class="care-filter-row">
+        <legend class="care-filter-label">業務領域</legend>
+        <span class="care-filter-chip-wrap">
+          <input type="radio" name="workarea" value="" id="wa-all" class="care-filter-input" checked />
+          <label for="wa-all" class="care-filter-chip">すべて</label>
+        </span>
+        {workAreaCounts.map(([value], i) => (
+          <span class="care-filter-chip-wrap">
+            <input type="radio" name="workarea" value={value} id={`wa-${i}`} class="care-filter-input" />
+            <label for={`wa-${i}`} class="care-filter-chip">
+              {value} <span class="care-filter-chip-count" data-count>{workAreaCounts[i][1]}</span>
+            </label>
+          </span>
+        ))}
+      </fieldset>
+      <fieldset class="care-filter-row">
+        <legend class="care-filter-label">対象サービス</legend>
+        <span class="care-filter-chip-wrap">
+          <input type="radio" name="service" value="" id="sv-all" class="care-filter-input" checked />
+          <label for="sv-all" class="care-filter-chip">すべて</label>
+        </span>
+        {targetServiceCounts.map(([value], i) => (
+          <span class="care-filter-chip-wrap">
+            <input type="radio" name="service" value={value} id={`sv-${i}`} class="care-filter-input" />
+            <label for={`sv-${i}`} class="care-filter-chip">
+              {value} <span class="care-filter-chip-count" data-count>{targetServiceCounts[i][1]}</span>
+            </label>
+          </span>
+        ))}
+      </fieldset>
+      <fieldset class="care-filter-row">
+        <legend class="care-filter-label">導入の手間</legend>
+        <span class="care-filter-chip-wrap">
+          <input type="radio" name="difficulty" value="" id="df-all" class="care-filter-input" checked />
+          <label for="df-all" class="care-filter-chip">すべて</label>
+        </span>
+        {difficultyCounts.map(([value], i) => (
+          <span class="care-filter-chip-wrap">
+            <input type="radio" name="difficulty" value={value} id={`df-${i}`} class="care-filter-input" />
+            <label for={`df-${i}`} class="care-filter-chip">
+              {value} <span class="care-filter-chip-count" data-count>{difficultyCounts[i][1]}</span>
+            </label>
+          </span>
+        ))}
+      </fieldset>
+      <div class="care-filter-status" id="care-filter-status" aria-live="polite" data-pagefind-ignore>
+        <span id="care-filter-status-text">{posts.length}件中 {posts.length}件を表示</span>
+        <button type="button" id="care-filter-clear" class="care-filter-status-clear" hidden>絞り込みを解除</button>
+      </div>
+    </div>
+
+    <ul id="care-post-list">
+      {posts.map((post) => (
+        <li
+          data-workarea={post.data.workArea}
+          data-services={post.data.targetServices.join(' ')}
+          data-difficulty={post.data.difficulty}
+        >
+          <a href={url(`care/${post.data.date}/`)} class="list-link list-link-care">
+            <div class="list-link-meta mb-1">
+              <span class="font-mono tabular-nums">{post.data.date}</span> · {post.data.workArea}
+            </div>
+            <div class="list-link-title">{post.data.title}</div>
+            <div class="text-sm text-ink-soft mt-1">{post.data.summary}</div>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p id="care-empty-message" class="text-ink-soft">条件に合う記事がありません。</p>
+  </div>
 
   {posts.length === 0 && <p class="text-ink-soft">まだ記事がありません。</p>}
 </BaseLayout>
+
+<style set:html={filterCss}></style>
+
+<script>
+  // 絞り込み自体は上のCSS(:has())が担う。ここは件数の動的更新・0件チップの無効化・
+  // URL同期・ライブリージョン通知のみを行う強化層（JS無効でもCSSだけで絞り込みは動く）。
+  // 「全サービス共通」包含規則はlib/care.tsと共有する（evaluatorレビューで指摘: このscriptは
+  // define:varsなしの通常scriptでAstro/Viteの処理・型検査対象のバンドルscriptのため、
+  // 独自にロジックを再実装せずimportで揃える）。
+  import { matchesTargetService } from '../../lib/care';
+
+  type Axis = 'workarea' | 'service' | 'difficulty';
+  const AXES: Axis[] = ['workarea', 'service', 'difficulty'];
+
+  const contentMaybeNull = document.getElementById('care-content');
+  const listElMaybeNull = document.getElementById('care-post-list');
+  if (contentMaybeNull && listElMaybeNull) {
+    // TSは外側constのnullナローイングをネストした関数宣言の中まで保持しないため、
+    // 非nullを保証済みのローカル変数へ束ね直す（下のcontent/listElを使う）
+    const content = contentMaybeNull;
+    const listEl = listElMaybeNull;
+    const items = [...listEl.querySelectorAll<HTMLLIElement>('li')];
+    const radios = [...content.querySelectorAll<HTMLInputElement>('.care-filter-input')];
+    const statusText = document.getElementById('care-filter-status-text');
+    const clearButton = document.getElementById('care-filter-clear') as HTMLButtonElement | null;
+    const emptyMessage = document.getElementById('care-empty-message');
+
+    function matchesAxis(item: HTMLLIElement, axis: Axis, value: string): boolean {
+      if (!value) return true;
+      if (axis === 'workarea') return item.dataset.workarea === value;
+      if (axis === 'difficulty') return item.dataset.difficulty === value;
+      const services = (item.dataset.services ?? '').split(' ');
+      return matchesTargetService(services, value);
+    }
+
+    function currentState(): Record<Axis, string> {
+      const state = { workarea: '', service: '', difficulty: '' };
+      for (const axis of AXES) {
+        const checked = content.querySelector<HTMLInputElement>(`input[name="${axis}"]:checked`);
+        state[axis] = checked?.value ?? '';
+      }
+      return state;
+    }
+
+    function matchesState(item: HTMLLIElement, state: Record<Axis, string>): boolean {
+      return AXES.every((axis) => matchesAxis(item, axis, state[axis]));
+    }
+
+    // enumの既知値以外はURLから復元しない（textContentのみ使用のためXSSの実害はないが、
+    // 不正なクエリ値でstateを汚さないための入力検証として行う）
+    const knownValues = new Set(radios.map((r) => r.value).filter(Boolean));
+
+    function restoreFromLocation() {
+      const params = new URLSearchParams(location.search);
+      for (const axis of AXES) {
+        const value = params.get(axis) ?? '';
+        if (value && !knownValues.has(value)) continue;
+        const target = content.querySelector<HTMLInputElement>(`input[name="${axis}"][value="${CSS.escape(value)}"]`);
+        if (target) target.checked = true;
+      }
+    }
+
+    function syncUrl(state: Record<Axis, string>) {
+      // フィルタ用の3キー以外（utm_source等の流入計測パラメータ）とハッシュは保持する
+      // （codex reviewで指摘: 空のURLSearchParamsから作り直すと非フィルタ情報が消えていた）
+      const params = new URLSearchParams(location.search);
+      for (const axis of AXES) {
+        if (state[axis]) params.set(axis, state[axis]);
+        else params.delete(axis);
+      }
+      const query = params.toString();
+      const newUrl = `${location.pathname}${query ? `?${query}` : ''}${location.hash}`;
+      history.replaceState(state, '', newUrl);
+    }
+
+    function render() {
+      const state = currentState();
+      let visibleCount = 0;
+      for (const item of items) if (matchesState(item, state)) visibleCount += 1;
+
+      for (const radio of radios) {
+        const axis = radio.name as Axis;
+        const value = radio.value;
+        if (!value) continue; // 「すべて」は常に選択可能
+        const hypothetical = { ...state, [axis]: value };
+        const count = items.filter((item) => matchesState(item, hypothetical)).length;
+        const countEl = radio.closest('.care-filter-chip-wrap')?.querySelector('[data-count]');
+        if (countEl) countEl.textContent = String(count);
+        // 現在選択中の値は0件でも無効化しない（選択を外せなくなるため）
+        radio.disabled = count === 0 && radio.value !== state[axis];
+      }
+
+      const hasFilter = AXES.some((axis) => state[axis]);
+      if (statusText) statusText.textContent = `${items.length}件中 ${visibleCount}件を表示`;
+      if (clearButton) clearButton.hidden = !hasFilter;
+      if (emptyMessage) emptyMessage.style.display = visibleCount === 0 ? 'block' : 'none';
+      syncUrl(state);
+    }
+
+    content.addEventListener('change', (event) => {
+      if ((event.target as HTMLElement)?.classList.contains('care-filter-input')) render();
+    });
+
+    clearButton?.addEventListener('click', () => {
+      for (const radio of radios) radio.checked = !radio.value;
+      render();
+    });
+
+    window.addEventListener('popstate', () => {
+      restoreFromLocation();
+      render();
+    });
+
+    restoreFromLocation();
+    render();
+  }
+</script>

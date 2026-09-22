@@ -2,16 +2,20 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { url } from '../../../lib/url';
+import { matchesTargetService } from '../../../lib/care';
 
 const posts = await getCollection('care');
 
 // targetServicesは複数値配列のため、1記事が複数のカウントに寄与しうる（workAreaと違い
-// 件数の合計は記事総数と一致しない。意図した挙動）
+// 件数の合計は記事総数と一致しない。意図した挙動）。「全サービス共通」記事は具体サービスの
+// カウントにも含める（matchesTargetService、[targetService]/index.astroの絞り込みと揃える）
+const allServices = new Set(posts.flatMap((p) => p.data.targetServices));
 const counts = new Map<string, number>();
-for (const post of posts) {
-  for (const service of post.data.targetServices) {
-    counts.set(service, (counts.get(service) ?? 0) + 1);
-  }
+for (const service of allServices) {
+  counts.set(
+    service,
+    posts.filter((p) => matchesTargetService(p.data.targetServices, service)).length,
+  );
 }
 const targetServices = [...counts.entries()].sort((a, b) => b[1] - a[1]);
 ---
