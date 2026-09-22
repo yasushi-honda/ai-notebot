@@ -435,3 +435,49 @@ li:last-child > .list-link {
 .care-privacy-note {
   @apply mb-8 rounded border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900 leading-relaxed;
 }
+
+/*
+ * サイト内検索（@pagefind/component-ui、BaseLayout.astro / SiteSearch.astro参照）。
+ * --pf-* はライブラリが公開しているテーマ用CSSカスタムプロパティ（既定値は
+ * node_modules/@pagefind/component-ui/css/pagefind-component-ui.css 参照）。
+ * このサイトの配色・書体トークンに合わせる（影・角丸までの作り込みは今回のスコープ外。
+ * 検索モーダルは一時的なオーバーレイのため本文と同じ罫線ベースの見た目への統一は必須としない）。
+ */
+:root {
+  --pf-text: var(--color-ink);
+  --pf-text-secondary: var(--color-ink-soft);
+  --pf-text-muted: var(--color-ink-soft);
+  --pf-background: var(--color-paper);
+  --pf-border: var(--color-rule);
+  --pf-border-focus: var(--color-rule-strong);
+  --pf-hover: var(--color-verify-soft);
+  --pf-mark: var(--color-verify);
+  --pf-outline-focus: var(--color-verify);
+  --pf-font: var(--font-sans);
+}
+
+/*
+ * トリガーボタンはヘッダーナビの一部として常時表示されるため、既定の検索バー風の見た目
+ * （枠線・背景・パディング）を消し、他のナビリンク（テキストのみ・ホバーでverify色）と
+ * 揃える。ライブラリ側のセレクタが `:is(*, #\#)` の3連鎖（ID相当の詳細度×3）でホスト側の
+ * 上書きに勝つよう意図的に設計されているため、詳細度で対抗するのではなく!importantで
+ * 上書きする（サードパーティWeb Componentsのテーマ上書きとして許容する）。
+ */
+.site-search-trigger .pf-trigger-btn {
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: var(--color-ink-soft) !important;
+}
+.site-search-trigger .pf-trigger-btn:hover {
+  color: var(--color-verify) !important;
+}
+.site-search-trigger .pf-trigger-icon {
+  background: currentColor !important;
+  width: 13px !important;
+  height: 13px !important;
+}

@@ -1,0 +1,14 @@
+---
+// サイト内全文検索UI。インデックス自体は astro.config.mjs の pagefind() 統合が
+// ビルドごとに生成済み（dist/pagefind/）で、このコンポーネントはそれを使う
+// UI（@pagefind/component-ui のWeb Components）を配置するだけ。
+// PagefindConfig が bundle-path 解決・カスタム要素登録・既定CSS読み込みを内部で行う。
+import PagefindConfig from 'astro-pagefind/components/PagefindConfig.astro';
+---
+
+{/* pagefind-modal-trigger は render() 内で innerHTML を作り直すため、ここに書いた子要素は
+   使われない。表示ラベル・入力欄のプレースホルダーは両方とも placeholder 属性から生成される。 */}
+<PagefindConfig lang="ja" />
+<pagefind-modal-trigger class="site-search-trigger" placeholder="検索" hide-shortcut>
+</pagefind-modal-trigger>
+<pagefind-modal></pagefind-modal>
