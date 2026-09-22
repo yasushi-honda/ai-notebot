@@ -605,7 +605,7 @@ li:last-child > .list-link {
 }
 .archive-month > summary::before {
   content: '▸';
-  @apply text-ink-soft text-[19px];
+  @apply text-ink-soft text-[17px];
 }
 .archive-month[open] > summary::before {
   content: '▾';
