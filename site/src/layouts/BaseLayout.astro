@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { url } from '../lib/url';
+import SiteSearch from '../components/SiteSearch.astro';
 
 interface Props {
   title: string;
@@ -60,15 +61,16 @@ const canonicalUrl = Astro.url.href;
             ai<span class="text-verify">-</span>notebot
           </span>
         </a>
-        <nav class="flex gap-5 text-[13px] font-medium text-ink-soft whitespace-nowrap">
+        <nav class="flex flex-wrap items-center gap-x-5 gap-y-1 text-[13px] font-medium text-ink-soft whitespace-nowrap">
           <a href={url('archive/')} class="hover:text-verify">アーカイブ</a>
           <a href={url('weekly/')} class="hover:text-verify">週刊まとめ</a>
           <a href={url('care/')} class="hover:text-care">介護AIハック</a>
           <a href={url('about/')} class="hover:text-verify">About</a>
+          <SiteSearch />
         </nav>
       </div>
     </header>
-    <main class="mx-auto max-w-3xl px-6 py-10">
+    <main class="mx-auto max-w-3xl px-6 py-10" data-pagefind-body>
       <slot />
     </main>
     <footer class="border-t border-rule mt-16">
