@@ -191,7 +191,7 @@ const filterCss = `${buildFilterCss()}\n${buildEmptyStateCss()}`;
   // 「全サービス共通」包含規則はlib/care.tsと共有する（evaluatorレビューで指摘: このscriptは
   // define:varsなしの通常scriptでAstro/Viteの処理・型検査対象のバンドルscriptのため、
   // 独自にロジックを再実装せずimportで揃える）。
-  import { matchesTargetService, ALL_SERVICES_WILDCARD } from '../../lib/care';
+  import { matchesTargetService } from '../../lib/care';
 
   type Axis = 'workarea' | 'service' | 'difficulty';
   const AXES: Axis[] = ['workarea', 'service', 'difficulty'];
