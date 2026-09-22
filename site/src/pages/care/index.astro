@@ -13,9 +13,12 @@ const posts = (await getCollection('care')).sort((a, b) => b.data.date.localeCom
   <p class="text-ink-soft mb-2">
     介護現場の日々の業務をAIで効率化する具体的な方法を、公式情報の裏付け付きで毎日1つ紹介します。
   </p>
-  <p class="mb-8">
+  <p class="mb-8 flex flex-wrap gap-x-4 gap-y-1">
     <a href={url('care/workarea/')} class="text-sm text-care font-medium underline decoration-care-soft underline-offset-[3px] hover:decoration-current">
       業務領域から探す →
+    </a>
+    <a href={url('care/targetservice/')} class="text-sm text-care font-medium underline decoration-care-soft underline-offset-[3px] hover:decoration-current">
+      対象サービスから探す →
     </a>
   </p>
 

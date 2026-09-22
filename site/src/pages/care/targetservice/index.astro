@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { url } from '../../../lib/url';
+
+const posts = await getCollection('care');
+
+// targetServicesは複数値配列のため、1記事が複数のカウントに寄与しうる（workAreaと違い
+// 件数の合計は記事総数と一致しない。意図した挙動）
+const counts = new Map<string, number>();
+for (const post of posts) {
+  for (const service of post.data.targetServices) {
+    counts.set(service, (counts.get(service) ?? 0) + 1);
+  }
+}
+const targetServices = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+---
+
+<BaseLayout title="対象サービスから探す" description="介護AIハックの記事を対象サービス（訪問介護・通所介護・居宅介護支援など）から探せます">
+  <nav class="text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-care">ホーム</a> /
+    <a href={url('care/')} class="hover:text-care">介護AIハック</a> / 対象サービス
+  </nav>
+  <h1 class="font-display text-2xl font-medium text-ink mb-8">対象サービスから探す</h1>
+  <ul>
+    {targetServices.map(([service, count]) => (
+      <li>
+        <a href={url(`care/targetservice/${service}/`)} class="list-link list-link-care list-link-compact list-link-inline">
+          <span class="care-meta-pill">{count}件</span>
+          <span class="list-link-title">{service}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

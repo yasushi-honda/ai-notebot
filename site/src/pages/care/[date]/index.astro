@@ -33,7 +33,12 @@ const { Content } = await render(post);
          1つのテキストにまとめて表示するpillとは意味構造が合わない（codex reviewで指摘・修正）。
          意味的に正しいのは単なるリストなので div に変更する。 -->
     <div class="care-meta">
-      <span class="care-meta-pill">対象: {post.data.targetServices.join(' / ')}</span>
+      <span class="care-meta-pill">対象:</span>
+      {post.data.targetServices.map((service) => (
+        <a href={url(`care/targetservice/${service}/`)} class="care-meta-pill care-meta-pill-link">
+          {service}
+        </a>
+      ))}
       <a href={url(`care/workarea/${post.data.workArea}/`)} class="care-meta-pill care-meta-pill-link">
         業務領域: {post.data.workArea}
       </a>
