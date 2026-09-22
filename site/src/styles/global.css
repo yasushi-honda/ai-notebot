@@ -511,7 +511,7 @@ li:last-child > .list-link {
  * 操作可能なコントロールだと分かるようにした。
  */
 .archive-month > summary {
-  @apply list-none flex items-center gap-2 w-fit rounded-md bg-paper-deep px-3 py-1.5
+  @apply list-none flex items-center gap-2 w-fit rounded-md bg-paper-deep px-3.5 py-2
     transition-colors hover:bg-rule;
 }
 .archive-month > summary::-webkit-details-marker {
@@ -519,7 +519,7 @@ li:last-child > .list-link {
 }
 .archive-month > summary::before {
   content: '▸';
-  @apply text-ink-soft text-[13px];
+  @apply text-ink-soft text-[15px];
 }
 .archive-month[open] > summary::before {
   content: '▾';
