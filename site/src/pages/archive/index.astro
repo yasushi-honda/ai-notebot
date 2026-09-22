@@ -19,10 +19,12 @@ for (const post of posts) {
     アーカイブ（全{posts.length}件）
   </h1>
 
-  {[...groups.entries()].map(([ym, monthPosts]) => (
-    <section class="mb-10">
-      <h2 class="font-mono text-xs text-ink-soft mb-1 tabular-nums">{ym}</h2>
-      <ul>
+  {[...groups.entries()].map(([ym, monthPosts], i) => (
+    <details class="archive-month mb-4" open={i === 0}>
+      <summary class="font-mono text-xs text-ink-soft tabular-nums cursor-pointer py-1">
+        {ym}（{monthPosts.length}件）
+      </summary>
+      <ul class="mt-2 mb-6">
         {monthPosts.map((post) => (
           <li>
             <a href={url(`posts/${post.data.date}/`)} class="list-link list-link-compact list-link-inline">
@@ -32,7 +34,7 @@ for (const post of posts) {
           </li>
         ))}
       </ul>
-    </section>
+    </details>
   ))}
 
   {posts.length === 0 && <p class="text-ink-soft">まだ記事がありません。</p>}
