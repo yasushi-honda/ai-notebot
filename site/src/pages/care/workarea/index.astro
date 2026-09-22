@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { url } from '../../../lib/url';
+
+const posts = await getCollection('care');
+
+// 業務領域ごとの件数を集計（AIトレンド版のtagsと異なり、workAreaはenum固定で記事間に
+// 実際の再利用があるため、件数付きの一覧として意味を持つ）
+const counts = new Map<string, number>();
+for (const post of posts) {
+  counts.set(post.data.workArea, (counts.get(post.data.workArea) ?? 0) + 1);
+}
+const workAreas = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+---
+
+<BaseLayout title="業務領域から探す" description="介護AIハックの記事を業務領域（ケアプラン・事務記録・送迎など）から探せます">
+  <nav class="text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-care">ホーム</a> /
+    <a href={url('care/')} class="hover:text-care">介護AIハック</a> / 業務領域
+  </nav>
+  <h1 class="font-display text-2xl font-medium text-ink mb-8">業務領域から探す</h1>
+  <ul>
+    {workAreas.map(([workArea, count]) => (
+      <li>
+        <a href={url(`care/workarea/${workArea}/`)} class="list-link list-link-care list-link-compact list-link-inline">
+          <span class="care-meta-pill">{count}件</span>
+          <span class="list-link-title">{workArea}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

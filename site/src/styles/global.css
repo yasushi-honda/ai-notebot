@@ -372,6 +372,11 @@ li:last-child > .list-link {
 .care-meta .care-meta-pill {
   @apply text-xs px-3 py-1 rounded-full bg-care-soft text-care font-medium;
 }
+/* 業務領域pillのみ /care/workarea/[workArea]/ へのリンクにしている（他のpillは単一値の
+   カテゴリページを持たないため据え置き）。リンクだと分かるようホバーで反転させる */
+.care-meta-pill-link {
+  @apply no-underline transition-colors hover:bg-care hover:text-white;
+}
 
 /*
  * 「## 手順」の番号付きリスト。かつては別途SVG画像（steps.svg）でも同じ内容を描画していたが、
