@@ -481,3 +481,21 @@ li:last-child > .list-link {
   width: 13px !important;
   height: 13px !important;
 }
+
+/* アーカイブページの月別開閉（archive/index.astro参照）。ネイティブ<details>のためJS不要 */
+.archive-month > summary {
+  @apply list-none flex items-center gap-1.5;
+}
+.archive-month > summary::-webkit-details-marker {
+  display: none;
+}
+.archive-month > summary::before {
+  content: '▸';
+  @apply text-rule-strong text-[10px];
+}
+.archive-month[open] > summary::before {
+  content: '▾';
+}
+.archive-month > summary:hover {
+  @apply text-verify;
+}
