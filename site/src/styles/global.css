@@ -461,6 +461,16 @@ li:last-child > .list-link {
 }
 
 /*
+ * 既定は非表示。care/index.astroのbuildEmptyStateCss()が0件になる組み合わせだけ
+ * display:blockへ上書きする（#id+:has()なので詳細度で確実に勝つ、!important不要）。
+ * JS側もこのCSSカスケードと衝突しないようinline style(.style.display)で制御する
+ * （hidden属性はUA既定スタイルが!important付きのため、CSS:has()側からの上書きが効かない）。
+ */
+#care-empty-message {
+  display: none;
+}
+
+/*
  * 「## 手順」の番号付きリスト。かつては別途SVG画像（steps.svg）でも同じ内容を描画していたが、
  * 固定キャンバス幅がコンテナ幅を使い切らず右側に余白ができるバグが再発したため画像を廃止し、
  * この番号リスト（ネイティブHTML/CSS、幅は常にコンテナ幅に追従）を唯一の表示手段にした

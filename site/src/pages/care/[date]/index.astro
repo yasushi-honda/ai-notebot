@@ -42,6 +42,12 @@ const { Content } = await render(post);
       <a href={url(`care/workarea/${post.data.workArea}/`)} class="care-meta-pill care-meta-pill-link">
         業務領域: {post.data.workArea}
       </a>
+      {/* difficultyだけ専用の静的カテゴリページを持たない（分布が9/4でnear-duplicate
+          コンテンツになるため意図的に作らなかった）。/care/?difficulty=X はJSが
+          restoreFromLocation()で絞り込み状態を復元する前提のdeep linkのため、
+          JS無効環境ではこのリンクだけ絞り込まれず全件表示に遷移する
+          （対象・業務領域は専用静的ページへのリンクのためJS有無に関わらず絞り込まれる。
+          evaluatorレビューで指摘済みの既知のトレードオフ） */}
       <a href={`${url('care/')}?difficulty=${encodeURIComponent(post.data.difficulty)}`} class="care-meta-pill care-meta-pill-link">
         導入の手間: {post.data.difficulty}
       </a>
