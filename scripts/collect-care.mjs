@@ -34,6 +34,7 @@ const CARE_POSTS_DIR = join(ROOT, 'site', 'src', 'content', 'care');
 
 const MIN_RESOLVED_SOURCES = 3;
 const RECENT_TOPICS_LOOKBACK = 14; // 直近何件の既出記事を「避けるべきテーマ」としてLLMに渡すか
+const MAX_OFFICIAL_FOLLOWUP_ATTEMPTS = 2; // official限定の追加検索を最大何回まで試行するか
 
 async function loadRecentTopics() {
   let files;
@@ -88,10 +89,14 @@ function buildPrompt(recentTopics) {
 
 /**
  * 1回目の調査で official ドメイン（*.go.jp 等）が1件も見つからなかった場合に、
- * 同じテーマの裏付けとなる公的機関の情報だけを狙って絞り込む2回目の検索プロンプト。
+ * 同じテーマの裏付けとなる公的機関の情報だけを狙って絞り込む追加検索プロンプト
+ * （最大 MAX_OFFICIAL_FOLLOWUP_ATTEMPTS 回まで同じプロンプトで再試行する）。
  * 実運用では「厚生労働省」等をキーワードに含めても、Google検索が優先的に返すのは
  * ベンダーブログ等の web ドメインであることが多く実測で確認済みのため、
  * 1回で official が見つからないことは珍しくない（想定内の挙動としてフォールバックする）。
+ * 同一プロンプトでもグラウンディング検索の結果は実行のたびに変わるため（2026-09-22に
+ * 発生した収集失敗を、同じコードのまま手動で再実行しただけで解消したことで実測確認済み）、
+ * 複数回の再試行に意味がある。
  */
 function buildOfficialFollowupPrompt(researchSummary) {
   return [
@@ -172,8 +177,19 @@ async function main() {
 
   let officialCount = items.filter((i) => i.tier === 'official').length;
 
-  if (officialCount < 1) {
-    console.log('official ドメインが見つからなかったため、公的機関限定の追加検索を行います...');
+  // グラウンディング検索は同一プロンプトでも実行のたびに結果が変わる（実測で確認済み。
+  // 2026-09-22の収集失敗を手動で同一コードのまま再実行したところ、2回目の検索で
+  // 見つかった）ため、1回で見つからなくても即座に諦めず複数回試行する。受け入れ基準
+  // （official 1件以上）そのものは一切緩めない、試行回数を増やすだけの変更。
+  for (
+    let attempt = 1;
+    officialCount < 1 && attempt <= MAX_OFFICIAL_FOLLOWUP_ATTEMPTS;
+    attempt += 1
+  ) {
+    console.log(
+      `official ドメインが見つからなかったため、公的機関限定の追加検索を行います...` +
+        `（${attempt}/${MAX_OFFICIAL_FOLLOWUP_ATTEMPTS}回目）`,
+    );
     const followup = await generateGroundedText({ prompt: buildOfficialFollowupPrompt(first.text) });
     console.log(`追加検索クエリ: ${followup.webSearchQueries.join(' / ') || '(なし)'}`);
     console.log(`追加検索groundingChunks: ${followup.groundingChunks.length}件`);
