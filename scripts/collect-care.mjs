@@ -112,6 +112,41 @@ function buildOfficialFollowupPrompt(researchSummary) {
   ].join('\n');
 }
 
+/**
+ * official ドメインが1件も見つからない場合に、buildOfficialFollowupPrompt() の検索を
+ * 最大 maxAttempts 回まで繰り返す。受け入れ基準（official 1件以上）は変えず、単に
+ * 試行回数を増やすだけ。`search` はテストから注入できるようにするための引数
+ * （実運用ではデフォルトの generateGroundedText を使う）。
+ * @returns {Promise<number>} 最終的な official 件数
+ */
+export async function retryOfficialFollowupSearch({
+  researchSummary,
+  items,
+  seenUrls,
+  webSearchQueries,
+  searchEntryPointHtmlParts,
+  maxAttempts = MAX_OFFICIAL_FOLLOWUP_ATTEMPTS,
+  search = generateGroundedText,
+}) {
+  let officialCount = items.filter((i) => i.tier === 'official').length;
+
+  for (let attempt = 1; officialCount < 1 && attempt <= maxAttempts; attempt += 1) {
+    console.log(
+      `official ドメインが見つからなかったため、公的機関限定の追加検索を行います...` +
+        `（${attempt}/${maxAttempts}回目）`,
+    );
+    const followup = await search({ prompt: buildOfficialFollowupPrompt(researchSummary) });
+    console.log(`追加検索クエリ: ${followup.webSearchQueries.join(' / ') || '(なし)'}`);
+    console.log(`追加検索groundingChunks: ${followup.groundingChunks.length}件`);
+    webSearchQueries.push(...followup.webSearchQueries);
+    if (followup.searchEntryPointHtml) searchEntryPointHtmlParts.push(followup.searchEntryPointHtml);
+    await resolveChunks(followup.groundingChunks, seenUrls, items);
+    officialCount = items.filter((i) => i.tier === 'official').length;
+  }
+
+  return officialCount;
+}
+
 async function resolveChunks(groundingChunks, seenUrls, items) {
   const webChunks = groundingChunks.filter((c) => c.web?.uri);
   for (const chunk of webChunks) {
@@ -166,38 +201,22 @@ async function main() {
 
   const seenUrls = new Set();
   const items = [];
-  let webSearchQueries = [...first.webSearchQueries];
+  const webSearchQueries = [...first.webSearchQueries];
   // 検索候補チップの表示義務（利用規約）は、記事の裏付けに使われた検索結果を返した
-  // 全ての検索呼び出しに対して発生する。1回目のチップだけを残して2回目（official限定の
+  // 全ての検索呼び出しに対して発生する。1回目のチップだけを残して2回目以降（official限定の
   // 追加検索）のチップを捨てると、追加検索で見つかった出典が記事に採用された場合に
-  // 対応するチップが表示されない状態になる（codex reviewで指摘・修正）。両方を保持し連結する。
+  // 対応するチップが表示されない状態になる（codex reviewで指摘・修正）。全て保持し連結する。
   const searchEntryPointHtmlParts = [first.searchEntryPointHtml].filter(Boolean);
 
   await resolveChunks(first.groundingChunks, seenUrls, items);
 
-  let officialCount = items.filter((i) => i.tier === 'official').length;
-
-  // グラウンディング検索は同一プロンプトでも実行のたびに結果が変わる（実測で確認済み。
-  // 2026-09-22の収集失敗を手動で同一コードのまま再実行したところ、2回目の検索で
-  // 見つかった）ため、1回で見つからなくても即座に諦めず複数回試行する。受け入れ基準
-  // （official 1件以上）そのものは一切緩めない、試行回数を増やすだけの変更。
-  for (
-    let attempt = 1;
-    officialCount < 1 && attempt <= MAX_OFFICIAL_FOLLOWUP_ATTEMPTS;
-    attempt += 1
-  ) {
-    console.log(
-      `official ドメインが見つからなかったため、公的機関限定の追加検索を行います...` +
-        `（${attempt}/${MAX_OFFICIAL_FOLLOWUP_ATTEMPTS}回目）`,
-    );
-    const followup = await generateGroundedText({ prompt: buildOfficialFollowupPrompt(first.text) });
-    console.log(`追加検索クエリ: ${followup.webSearchQueries.join(' / ') || '(なし)'}`);
-    console.log(`追加検索groundingChunks: ${followup.groundingChunks.length}件`);
-    webSearchQueries = [...webSearchQueries, ...followup.webSearchQueries];
-    if (followup.searchEntryPointHtml) searchEntryPointHtmlParts.push(followup.searchEntryPointHtml);
-    await resolveChunks(followup.groundingChunks, seenUrls, items);
-    officialCount = items.filter((i) => i.tier === 'official').length;
-  }
+  const officialCount = await retryOfficialFollowupSearch({
+    researchSummary: first.text,
+    items,
+    seenUrls,
+    webSearchQueries,
+    searchEntryPointHtmlParts,
+  });
 
   const searchEntryPointHtml = searchEntryPointHtmlParts.join('\n');
 
