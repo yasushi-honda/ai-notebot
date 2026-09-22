@@ -24,7 +24,7 @@ const { tag, posts } = Astro.props;
     {posts.map((post) => (
       <li>
         <a href={url(`posts/${post.data.date}/`)} class="list-link list-link-compact list-link-inline">
-          <span class="font-mono text-xs text-ink-soft tabular-nums">{post.data.date}</span>
+          <span class="list-link-meta font-mono tabular-nums">{post.data.date}</span>
           <span class="list-link-title">{post.data.title}</span>
         </a>
       </li>

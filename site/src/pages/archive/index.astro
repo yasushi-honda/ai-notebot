@@ -21,14 +21,14 @@ for (const post of posts) {
 
   {[...groups.entries()].map(([ym, monthPosts], i) => (
     <details class="archive-month mb-4" open={i === 0}>
-      <summary class="font-mono text-xs text-ink-soft tabular-nums cursor-pointer py-1">
+      <summary class="font-mono text-[15px] font-semibold text-ink tabular-nums cursor-pointer py-1.5">
         {ym}（{monthPosts.length}件）
       </summary>
       <ul class="mt-2 mb-6">
         {monthPosts.map((post) => (
           <li>
             <a href={url(`posts/${post.data.date}/`)} class="list-link list-link-compact list-link-inline">
-              <span class="font-mono text-xs text-ink-soft tabular-nums">{post.data.date}</span>
+              <span class="list-link-meta font-mono tabular-nums">{post.data.date}</span>
               <span class="list-link-title">{post.data.title}</span>
             </a>
           </li>

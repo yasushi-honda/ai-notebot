@@ -18,7 +18,7 @@ const posts = (await getCollection('weekly')).sort((a, b) => b.data.weekStart.lo
     {posts.map((post) => (
       <li>
         <a href={url(`weekly/${post.data.weekStart}/`)} class="list-link">
-          <div class="text-xs text-ink-soft mb-1">
+          <div class="list-link-meta mb-1">
             <span class="font-mono tabular-nums">{post.data.weekStart} 〜 {post.data.weekEnd}</span>
           </div>
           <div class="list-link-title">{post.data.title}</div>

@@ -94,7 +94,7 @@ li:last-child > .list-link {
   @apply border-b-0;
 }
 .list-link .list-link-title {
-  @apply font-semibold text-ink transition-colors underline decoration-rule-strong
+  @apply text-[17px] font-semibold text-ink transition-colors underline decoration-rule-strong
     decoration-1 underline-offset-[3px] hover:decoration-current;
 }
 .list-link:hover .list-link-title {
@@ -103,9 +103,20 @@ li:last-child > .list-link {
 .list-link.list-link-care:hover .list-link-title {
   @apply text-care;
 }
+/*
+ * 一覧ページ（アーカイブ／タグ／介護／週刊まとめ）共通の日付・メタ情報表示。
+ * 従来は各ページで `text-xs text-ink-soft`（12px）をベタ書きしており、記事タイトルとの
+ * 落差が大きすぎて「一覧が地味で見づらい」という指摘を受けた。ここに集約する。
+ * 当初13px・text-ink-softのみに留めたところ、evaluatorレビューで「1pxしか変わっておらず
+ * 元の指摘（小さい・目立たない）を実質解消していない」と指摘を受け、14px・font-mediumまで
+ * 引き上げた（タイトル17px・月見出し15pxとの改善幅の非対称さを解消する）。
+ */
+.list-link-meta {
+  @apply text-[14px] font-medium text-ink-soft;
+}
 /* アーカイブ等、日付+タイトルだけの1行密度が高いリスト用のコンパクト版 */
 .list-link.list-link-compact {
-  @apply py-2;
+  @apply py-2.5;
 }
 /*
  * 日付+タイトルを横並びにする版。.list-link の `@apply block` と同じ詳細度のままだと
@@ -482,16 +493,22 @@ li:last-child > .list-link {
   height: 13px !important;
 }
 
-/* アーカイブページの月別開閉（archive/index.astro参照）。ネイティブ<details>のためJS不要 */
+/*
+ * アーカイブページの月別開閉（archive/index.astro参照）。ネイティブ<details>のためJS不要。
+ * 初版はマーカーが10px・薄色で「クリックできる」ことが伝わらなかった（実機フィードバックで
+ * 発覚）。常時薄い背景を敷いたチップ状にし、マーカーも大きく・濃い色にして、ホバーせずとも
+ * 操作可能なコントロールだと分かるようにした。
+ */
 .archive-month > summary {
-  @apply list-none flex items-center gap-1.5;
+  @apply list-none flex items-center gap-2 w-fit rounded-md bg-paper-deep px-3 py-1.5
+    transition-colors hover:bg-rule;
 }
 .archive-month > summary::-webkit-details-marker {
   display: none;
 }
 .archive-month > summary::before {
   content: '▸';
-  @apply text-rule-strong text-[10px];
+  @apply text-ink-soft text-[13px];
 }
 .archive-month[open] > summary::before {
   content: '▾';
