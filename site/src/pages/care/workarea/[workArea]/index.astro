@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { url } from '../../../../lib/url';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('care');
+  const workAreaSet = new Set(posts.map((p) => p.data.workArea));
+  return [...workAreaSet].map((workArea) => ({
+    params: { workArea },
+    props: {
+      workArea,
+      posts: posts.filter((p) => p.data.workArea === workArea).sort((a, b) => b.data.date.localeCompare(a.data.date)),
+    },
+  }));
+}
+
+const { workArea, posts } = Astro.props;
+---
+
+<BaseLayout title={`業務領域: ${workArea}`} description={`介護AIハックのうち「${workArea}」に関する記事一覧`}>
+  <nav class="text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-care">ホーム</a> /
+    <a href={url('care/')} class="hover:text-care">介護AIハック</a> /
+    <a href={url('care/workarea/')} class="hover:text-care">業務領域</a> / {workArea}
+  </nav>
+  <h1 class="font-display text-2xl font-medium text-ink mb-8">業務領域: {workArea}（全{posts.length}件）</h1>
+  <ul>
+    {posts.map((post) => (
+      <li>
+        <a href={url(`care/${post.data.date}/`)} class="list-link list-link-care list-link-compact list-link-inline">
+          <span class="list-link-meta font-mono tabular-nums">{post.data.date}</span>
+          <span class="list-link-title">{post.data.title}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

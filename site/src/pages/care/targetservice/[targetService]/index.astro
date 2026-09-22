@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { url } from '../../../../lib/url';
+
+// targetServicesは複数値配列（workAreaと違い1記事が複数のサービスに属しうる）ため、
+// tags/[tag]/index.astro と同じ flatMap で一意値を集める（配列同士のSet化はできないため）。
+export async function getStaticPaths() {
+  const posts = await getCollection('care');
+  const serviceSet = new Set(posts.flatMap((p) => p.data.targetServices));
+  return [...serviceSet].map((targetService) => ({
+    params: { targetService },
+    props: {
+      targetService,
+      posts: posts
+        .filter((p) => p.data.targetServices.includes(targetService))
+        .sort((a, b) => b.data.date.localeCompare(a.data.date)),
+    },
+  }));
+}
+
+const { targetService, posts } = Astro.props;
+---
+
+<BaseLayout title={`対象サービス: ${targetService}`} description={`介護AIハックのうち「${targetService}」向けの記事一覧`}>
+  <nav class="text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-care">ホーム</a> /
+    <a href={url('care/')} class="hover:text-care">介護AIハック</a> /
+    <a href={url('care/targetservice/')} class="hover:text-care">対象サービス</a> / {targetService}
+  </nav>
+  <h1 class="font-display text-2xl font-medium text-ink mb-8">対象サービス: {targetService}（全{posts.length}件）</h1>
+  <ul>
+    {posts.map((post) => (
+      <li>
+        <a href={url(`care/${post.data.date}/`)} class="list-link list-link-care list-link-compact list-link-inline">
+          <span class="list-link-meta font-mono tabular-nums">{post.data.date}</span>
+          <span class="list-link-title">{post.data.title}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

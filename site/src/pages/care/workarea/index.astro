@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { url } from '../../../lib/url';
+
+const posts = await getCollection('care');
+
+// 業務領域ごとの件数を集計。AIトレンド版のtags（記事ごとに完全ユニーク、使い回しゼロ）とは
+// 異なり、workAreaはenum固定でLLM生成時から拘束されており記事間で実際に再利用されるため、
+// 件数付きの一覧として意味を持つ（evaluatorレビューで指摘・修正: targetServices・difficulty
+// も同様にenum固定で再利用があり、workAreaだけが特別というわけではない。今回は単一値で
+// 既存の/tags/[tag]/と同じ実装パターンをそのまま使えるworkAreaのみを対象にした、という
+// スコープ限定の理由であって「再利用がある唯一のフィールド」という意味ではない）
+const counts = new Map<string, number>();
+for (const post of posts) {
+  counts.set(post.data.workArea, (counts.get(post.data.workArea) ?? 0) + 1);
+}
+const workAreas = [...counts.entries()].sort((a, b) => b[1] - a[1]);
+---
+
+<BaseLayout title="業務領域から探す" description="介護AIハックの記事を業務領域（ケアプラン・事務記録・送迎など）から探せます">
+  <nav class="text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-care">ホーム</a> /
+    <a href={url('care/')} class="hover:text-care">介護AIハック</a> / 業務領域
+  </nav>
+  <h1 class="font-display text-2xl font-medium text-ink mb-8">業務領域から探す</h1>
+  <ul>
+    {workAreas.map(([workArea, count]) => (
+      <li>
+        <a href={url(`care/workarea/${workArea}/`)} class="list-link list-link-care list-link-compact list-link-inline">
+          <span class="care-meta-pill">{count}件</span>
+          <span class="list-link-title">{workArea}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
