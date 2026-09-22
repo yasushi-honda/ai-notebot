@@ -493,16 +493,22 @@ li:last-child > .list-link {
   height: 13px !important;
 }
 
-/* アーカイブページの月別開閉（archive/index.astro参照）。ネイティブ<details>のためJS不要 */
+/*
+ * アーカイブページの月別開閉（archive/index.astro参照）。ネイティブ<details>のためJS不要。
+ * 初版はマーカーが10px・薄色で「クリックできる」ことが伝わらなかった（実機フィードバックで
+ * 発覚）。常時薄い背景を敷いたチップ状にし、マーカーも大きく・濃い色にして、ホバーせずとも
+ * 操作可能なコントロールだと分かるようにした。
+ */
 .archive-month > summary {
-  @apply list-none flex items-center gap-1.5;
+  @apply list-none flex items-center gap-2 w-fit rounded-md bg-paper-deep px-3 py-1.5
+    transition-colors hover:bg-rule;
 }
 .archive-month > summary::-webkit-details-marker {
   display: none;
 }
 .archive-month > summary::before {
   content: '▸';
-  @apply text-rule-strong text-[10px];
+  @apply text-ink-soft text-[13px];
 }
 .archive-month[open] > summary::before {
   content: '▾';
