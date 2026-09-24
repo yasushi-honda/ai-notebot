@@ -32,6 +32,7 @@ jobs:
     permissions:
       contents: write # data/raw-care・介護版記事のコミットに必要
       id-token: write
+      issues: write # daily.ymlが起票した失敗Issueの自動クローズに必要
     outputs:
       built: ${{ steps.build.outcome == 'success' }}
     steps:
@@ -81,6 +82,22 @@ jobs:
           TARGET_DATE: ${{ steps.resolve_date.outputs.date }}
           GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           GCP_PROJECT: ai-notebot-yh
+
+      - name: Close care hack failure issue if resolved
+        # daily.ymlが起票した「介護版AIハック生成失敗: <日付>」issueを、手動復旧成功時に自動クローズする。
+        run: |
+          TARGET_DATE="$RESOLVED_DATE"
+          TITLE="介護版AIハック生成失敗: ${TARGET_DATE}"
+          if [ -f "site/src/content/care/${TARGET_DATE}.md" ]; then
+            EXISTING=$(gh issue list --search "\"$TITLE\" in:title" --state open --json number -q '.[0].number // empty')
+            if [ -n "$EXISTING" ]; then
+              gh issue comment "$EXISTING" --body "手動再生成（care-rebuild.yml）で介護版記事（${TARGET_DATE}）が生成されました。自動クローズします。"
+              gh issue close "$EXISTING"
+            fi
+          fi
+        env:
+          RESOLVED_DATE: ${{ steps.resolve_date.outputs.date }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install site dependencies
         run: npm ci

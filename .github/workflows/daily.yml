@@ -33,6 +33,7 @@ jobs:
     permissions:
       contents: write # data/raw・記事・画像のコミットに必要
       id-token: write
+      issues: write # 介護版生成失敗の自動Issue起票・自動クローズに必要
     outputs:
       built: ${{ steps.build.outcome == 'success' }}
     steps:
@@ -131,6 +132,29 @@ jobs:
         env:
           GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           GCP_PROJECT: ai-notebot-yh
+
+      - name: Track care hack generation failure
+        # 1日3回のscheduleがすべて失敗しても手動発見（/catchup等）に頼らず気づけるようにする。
+        # 到達性検証済みソース不足はcollect-care.mjsの意図的な安全側フェイルセーフであり
+        # build-care.mjs自体は常にexit 0を返す設計のため、ジョブの成否では検知できない
+        # （詳細: docs/adr/adr-2026-09-11-care-hack-grounded-research.md）。
+        # 同日タイトルのopen issueが既にあれば再作成しない（1日3回の実行での重複起票防止）。
+        run: |
+          TODAY=$(TZ=Asia/Tokyo date +%F)
+          TITLE="介護版AIハック生成失敗: ${TODAY}"
+          EXISTING=$(gh issue list --search "\"$TITLE\" in:title" --state open --json number -q '.[0].number // empty')
+          if [ -f "site/src/content/care/${TODAY}.md" ]; then
+            if [ -n "$EXISTING" ]; then
+              gh issue comment "$EXISTING" --body "介護版記事（${TODAY}）が生成されました。自動クローズします。"
+              gh issue close "$EXISTING"
+            fi
+          elif [ -z "$EXISTING" ]; then
+            # shellcheck disable=SC2016 # printfの書式文字列はバックティックを bash のコマンド置換にさせないため意図的にシングルクオート
+            BODY=$(printf '本日（%s）分の介護版「今日のAI活用ハック」が、この時点のスケジュール実行では生成できませんでした。1日3回の実行のうち残りの枠で自動リカバリされる可能性があります。\n\nすべて失敗した場合の手動復旧コマンド:\n```\ngh workflow run care-rebuild.yml -f date=%s -f regenerate=true\n```\n\nこのワークフロー実行: %s/%s/actions/runs/%s\n' "$TODAY" "$TODAY" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
+            gh issue create --title "$TITLE" --label "bug" --body "$BODY"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install site dependencies
         run: npm ci
