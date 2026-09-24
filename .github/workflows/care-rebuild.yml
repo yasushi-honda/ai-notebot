@@ -85,6 +85,8 @@ jobs:
 
       - name: Close care hack failure issue if resolved
         # daily.ymlが起票した「介護版AIハック生成失敗: <日付>」issueを、手動復旧成功時に自動クローズする。
+        # continue-on-error: Issue操作の失敗でサイトビルド・デプロイまで止めないため。
+        continue-on-error: true
         run: |
           TARGET_DATE="$RESOLVED_DATE"
           TITLE="介護版AIハック生成失敗: ${TARGET_DATE}"

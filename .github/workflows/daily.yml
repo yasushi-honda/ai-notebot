@@ -139,6 +139,10 @@ jobs:
         # build-care.mjs自体は常にexit 0を返す設計のため、ジョブの成否では検知できない
         # （詳細: docs/adr/adr-2026-09-11-care-hack-grounded-research.md）。
         # 同日タイトルのopen issueが既にあれば再作成しない（1日3回の実行での重複起票防止）。
+        # continue-on-error: Issue操作自体が失敗（GitHub API障害・Issue機能無効化等）しても
+        # 本体（AIトレンド版）のサイトビルド・デプロイを巻き込んで止めないため
+        # （build-care.mjs本体と同じ「本体を止めない」設計思想）。
+        continue-on-error: true
         run: |
           TODAY=$(TZ=Asia/Tokyo date +%F)
           TITLE="介護版AIハック生成失敗: ${TODAY}"
