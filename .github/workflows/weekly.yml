@@ -14,17 +14,13 @@ name: Weekly AI trends digest
 # （08:30〜10:30 JST）に収まるよう間隔を詰めており、`Skip if already generated`のJST日付判定が
 # 全リトライで同じ日曜日付になるため当時の懸念は生じない。
 #
-# concurrencyグループをdaily.ymlと共有せず`weekly-digest`独立グループにしている理由
-# （codex reviewで指摘・修正: 初版は`daily-digest`を共有していた）: GitHub Actionsの
-# concurrencyグループは「同一グループでpending中のrunは、新しいrunがキューイングされると
-# 自動キャンセルされる」仕様のため（cancel-in-progress設定に関わらず、実行中ではなく
-# 順番待ち中のrunにのみ働く）、間隔の詰まった週次の3cronをdaily.ymlと同じグループに
-# 入れると、週次のretry同士が互いを退避させ合うだけでなく、daily.ymlの09:07 JST
-# リカバリrunまで退避させてしまい、日次記事側の回復機会を奪うリスクがあった。
-# 週次は`site/src/content/weekly/`のみ、日次/介護版は別パス（`site/src/content/posts`等）を
-# 変更するため内容衝突はなく、git push時のnon-fast-forwardのみが起こりうる。これは
-# 「Commit weekly digest」ステップのpush再試行ループ（fetch+rebase+再push）で対処し、
-# concurrencyグループでの直列化には依存しない設計にした。
+# daily.yml（毎日00:07/03:07/前日21:07 UTC）とcron時刻を意図的にずらしている理由
+# （初期案は同時刻だった）: もし同時刻に発火すると、daily.ymlの完了を待つ間に両ワークフローの
+# github.shaがイベント発生時点で固定され、concurrencyグループで後から実行される側が
+# 古いSHAのままpushしてnon-fast-forwardで失敗する事態が起こりうる（初期設計時は
+# daily.ymlにcare-rebuild.ymlの「Sync to latest main」に相当する対策が無かった。
+# 現在はdaily.ymlにも同期ステップを追加済みだが、時刻をずらすこと自体も引き続き有効な
+# 一次防御として維持している。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
 on:
   schedule:
     - cron: '30 23 * * 6' # JST日曜08:30
@@ -43,14 +39,14 @@ permissions:
   pages: write
 
 concurrency:
-  group: weekly-digest
+  group: daily-digest
   cancel-in-progress: false
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    # weekly.yml専用のconcurrencyグループのため、万一ハングしても他ワークフローを
-    # ブロックしない。デフォルトの6時間タイムアウトでは長すぎるため明示的に短くする。
+    # daily.ymlと同じconcurrencyグループを共有するため、万一ハングすると翌朝のdaily.ymlの
+    # 実行までブロックしてしまう。デフォルトの6時間タイムアウトでは長すぎるため明示的に短くする。
     timeout-minutes: 25
     permissions:
       contents: write # 週刊記事のコミットに必要
@@ -61,11 +57,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Sync to latest main
-        # weekly.ymlは独立concurrencyグループのため daily.yml / care-rebuild.yml と並行実行
-        # されうる。ジョブ開始時点のcheckoutが古いSHAのままだと、それらが先にpushした
-        # 場合に後続の git push が non-fast-forward で失敗する（衝突自体は「Commit weekly
-        # digest」ステップのpush再試行ループで最終的に解消するが、事前に最新へ同期しておく
-        # ことで再試行の発生自体を減らす）。
+        # daily-digest concurrency グループで daily.yml / care-rebuild.yml の完了待ちになっている間に
+        # それらがコミット・push すると、待機解除後にこのジョブが古い SHA のままビルド・コミットして
+        # しまい、後続の git push が non-fast-forward で失敗する。
         # `git fetch origin main` は remote.origin.fetch の設定次第で refs/remotes/origin/main を
         # 更新しない場合があるため（codex reviewで指摘）、fetch操作で常に更新される FETCH_HEAD に
         # 対してresetする（daily.ymlの同期ステップと同じ対策。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）。
@@ -146,31 +140,16 @@ jobs:
         working-directory: site
 
       - name: Commit weekly digest
-        # weekly.ymlは独立concurrencyグループのためdaily.yml/care-rebuild.ymlと並行実行
-        # されうる（詳細は本ファイル先頭のconcurrencyコメント参照）。両者は変更する
-        # パスが完全に分離している（weeklyはsite/src/content/weeklyのみ）ため内容衝突は
-        # 起きず、起こりうるのはgit push時のnon-fast-forwardのみ。fetch + rebase + 再push
-        # を最大3回試行して自己解決する（codex reviewで指摘・修正）。
         run: |
           git config user.name "ai-notebot-bot"
           git config user.email "actions@github.com"
           git add site/src/content/weekly
           if git diff --cached --quiet; then
             echo "変更なし。コミットをスキップします。"
-            exit 0
+          else
+            git commit -m "chore: weekly digest $PUBLISH_DATE"
+            git push
           fi
-          git commit -m "chore: weekly digest $PUBLISH_DATE"
-          for i in 1 2 3; do
-            if git push; then
-              echo "push成功（試行 ${i}/3）。"
-              exit 0
-            fi
-            echo "push失敗（試行 ${i}/3）。最新mainを取り込んでリベースし再試行します。"
-            git fetch origin main
-            git rebase FETCH_HEAD
-          done
-          echo "3回試行してもpushに失敗しました。" >&2
-          exit 1
         env:
           PUBLISH_DATE: ${{ steps.resolve_date.outputs.date }}
 

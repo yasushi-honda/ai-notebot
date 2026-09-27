@@ -107,14 +107,8 @@ pr-review-toolkitのコメントレビューで「実測」という表現が誤
 
 > **2026-09-27追記**: `weekly.yml` の実行時刻は「11時を過ぎると遅すぎる」という運用要件により
 > 08:30/09:30/10:30 JSTの3回cronに変更された（詳細: `docs/adr/adr-2026-09-14-schedule-reliability.md`
-> のAmendment）。同時に、本節が採用した「`concurrency.group: daily-digest` を共有して直列化する」
-> という対策自体を変更し、`weekly.yml` は独立した `weekly-digest` グループに分離した（詳細は
-> 同Amendmentの「concurrencyグループをdaily.ymlと分離」参照。理由: 間隔の詰まった週次3cronを
-> 共有グループに残すと、GitHub Actionsのpending run自動退避仕様により daily.yml 側の
-> リカバリrunまで退避させてしまうリスクがcodex reviewで指摘されたため）。push競合防止の
-> 役割はconcurrencyグループでの直列化から、`weekly.yml`側のpush失敗時リトライ
-> （fetch+rebase+再push）に置き換わっている。`actions/checkout`が固定`github.sha`を使う
-> という本節の問題認識自体は現在も有効で、「Sync to latest main」ステップで対処している。
+> のAmendment）。daily.ymlとの同時トリガー回避という本節の設計意図自体は変わっておらず、
+> 新しい3時刻もdaily.ymlの3回cron（06:07/09:07/12:07 JST）とは異なる時刻に配置している。
 
 ## Rationale
 
