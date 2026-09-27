@@ -294,6 +294,29 @@ daily.yml（2026-09-22 09:02 JST 実行分）で、1回目・2回目（official�
   （1回目0件→2回目3件）解消したことを実測で確認しており、リトライ追加の効果は裏付けられている。
   最初に保留とまとめて回答したのは判断の誤りだった。
 
+## 2026-09-27追記: 追加検索の発火条件を「official 0件」以外にも拡張（件数不足の救済漏れ対応）
+
+上記PR #25までの`retryOfficialFollowupSearch()`は、追加検索の発火条件が「official ドメインが
+1件も見つからない」場合のみだった。しかし受け入れ基準はもう1つ、「到達性検証済みソースが
+3件以上（`MIN_RESOLVED_SOURCES`）」も課している。official が1件見つかっていても総数が
+3件未満なら収集全体は exit 1 になるが、このケースでは追加検索が一度も発火せず、1回目の
+検索結果だけで即座にスキップが確定してしまう構造的な穴があった（実際の発生実績は未確認だが、
+論理的に発生しうる未対応の失敗経路）。
+
+- **決定**: `retryOfficialFollowupSearch()` を `retryFollowupSearch()` に一般化し、ループの
+  継続条件を「official 0件」**または**「総数が `MIN_RESOLVED_SOURCES` 未満」の論理和に拡張した
+  （`officialCount < 1 || items.length < minResolvedSources`）。受け入れ基準そのものは一切
+  緩めていない。
+- **プロンプトの使い分け**: official が未達の間は既存の官公庁限定プロンプト
+  （`buildOfficialFollowupPrompt`）を使う。official は充足済みだが総数だけが足りない場合は、
+  官公庁限定にせず「1回目と異なる新たな情報源を広く探す」プロンプト
+  （`buildMoreSourcesFollowupPrompt`）を新設して使う。official が既に見つかっているのに
+  官公庁限定の検索を続けても総数を増やす助けにならないため。
+- **試行回数の上限は変えない**: `MAX_OFFICIAL_FOLLOWUP_ATTEMPTS` を `MAX_FOLLOWUP_ATTEMPTS`
+  にリネームしたのみで、値（2）は変更していない。1回のループで official 未達→件数不足の
+  順に状態が変わっても、同じ試行回数カウンタを共有する（例: 1回目で official が見つかり、
+  2回目で件数不足を解消、で打ち切り）。
+
 ### codex reviewでの指摘と修正（12回目・P1）
 
 `SAFE_SUBJECT_VALUE_PATTERN`が「角括弧（［...］/[...]）で包まれていれば内容を問わず
