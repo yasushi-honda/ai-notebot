@@ -1,75 +1,94 @@
 # ハンドオフ（最新）
 
-- セッション: 2026-09-27（出典リストの引用番号フリ番号を復元、PR #45マージ・本番反映まで完了）
+- セッション: 2026-09-27（出典リスト引用番号フリ番号復元＋週刊まとめスケジュール信頼性向上、PR #45〜#48マージ・本番反映まで完了）
 - 更新日: 2026-09-27
 
 ## セッション概要
 
-`/catchup` 実行後、decision-makerから「記事の出典で、本文の引用番号をクリックしてページ内リンクで
-ジャンプしても、どれが対象か迷う」との指摘を受けた。原因調査 → CSS修正 → 実機検証 → PR作成 →
-マージ → 本番デプロイまで一気通貫で完了した。
+前半（PR #45・#46）は前回handoff済み（出典リストの引用番号フリ番号復元、本番デプロイ確認済み）。
+後半、decision-makerから「2026-09-27の週刊まとめが10:17時点でまだ生成されていない」との
+指摘を受け、週刊まとめ（`weekly.yml`）のスケジュール信頼性向上に着手した。
 
-### 実装: PR #45「出典リストに引用番号のフリ番号を復元」
+### 実装: PR #47「weekly.ymlのスケジュールを11:07単発から08:30/09:30/10:30の3回cronに変更」
 
-- 原因: `site/src/styles/global.css` の出典リスト（`section[data-footnotes] ol`）に `list-none` が
-  指定されており、番号が完全に非表示になっていた。remark-gfmのfootnote機能自体は本文の引用番号と
-  出典リストの項目を対応するIDでリンクしているが、着地先の`<li>`に番号が表示されないため、
-  ジャンプ先がどの引用に対応するか視覚的に分からない状態だった。
-- 修正: CSSカウンター（`counter-reset`/`counter-increment`）で連番を復元し、本文の引用バッジ
-  （`sup a[data-footnote-ref]`）と同じ丸バッジ意匠を出典リスト側の`::before`に追加。
-  - `.prose-post`（AIトレンド版・週刊まとめ・about）: 検証レッドの丸バッジ
-  - `.prose-care`（介護版）: 介護版セージグリーンの丸バッジ。既存の「手順」用の大きい丸番号バッジ
-    （`counter-increment: care-step`）と衝突しないよう、出典専用の別カウンター
-    （`footnote-num`）として実装し、既存の打ち消しブロック（codex reviewで指摘済みの`:where()`
-    カスケード衝突対策）を拡張する形で追加した。
-- 検証: Playwright MCPで開発サーバーの実ページを確認（本文の引用番号クリック→出典リストの同番号
-  項目へのジャンプ、介護版の手順リスト併存記事での非衝突）。`npm run build` で140ページ正常ビルド。
-- Quality Gate: CSS 1ファイル・23行追加（3ファイル/100行のcodex review閾値未満）のためスキップ。
-- マージ: AskUserQuestionで番号単位の明示認可を得て `gh pr merge 45 --squash --delete-branch`。
-- 本番反映: decision-maker の明示指示で `gh workflow run care-rebuild.yml -f regenerate=false`
-  を実行（再収集なし・サイト全体再ビルド+デプロイのみ）。`generate`→`deploy`両ジョブ成功を
-  `gh run watch` で確認後、本番URL（2026-09-27・2026-09-11の2記事）で新CSS適用（丸バッジ・
-  角丸999999px相当）を`getComputedStyle`で直接確認済み。過去分含め全140ページに反映されている
-  （CSSはテンプレート側の変更のため個別記事のMarkdown修正は不要、かつ今回のデプロイがサイト
-  全体の再ビルドだったため）。
+- 経緯: `weekly.yml`は11:07 JST単発cronのみで、GitHub Actionsのschedule配送遅延
+  （`docs/adr/adr-2026-09-14-schedule-reliability.md`既知）により11時を過ぎることがある。
+  decision-makerの明示指示で即時手動実行（`gh workflow run weekly.yml`）→今週分
+  （`site/src/content/weekly/2026-09-20.md`）生成・公開を完了させた上で、恒久対応として
+  daily.ymlと同じ「複数cron+冪等性ガード」緩和策を適用した。
+- **codex reviewサイクル（1ブランチ上限2回）で設計が2段階進化**:
+  1. 初回実装: 08:30/09:30/10:30 JSTの3cron + `daily-digest`共有concurrencyグループ
+     （daily.ymlと共用）+ `Skip if already generated`ガード。
+  2. 1回目codex review: 「間隔の詰まった3cronを共有グループに残すと、GitHub Actionsの
+     『pending run自動退避』仕様（新しいrunキューイングで既存pending runがキャンセル）
+     により、週次retry同士だけでなくdaily.ymlの09:07 JSTリカバリrunまで退避させる」と
+     P2指摘 → concurrencyグループを`weekly-digest`に分離する修正を実施。
+  3. 2回目（最終確認）codex review: 分離により**daily.yml/care-rebuild.yml側のpushが
+     非fast-forwardで失敗しうる**（片方向リトライのみで非対称）、**デプロイ物がリベース前の
+     古い内容のままになりうる**という、より深刻なP1相当の欠陥2件を発見 → `git revert`で
+     分離を撤回し、共有グループ設計に戻した上で残存リスクをADRに明記してマージ。
+- 教訓: 「1つの指摘を潰すための修正」が別の欠陥を生み得ることを2回目のcodex reviewが
+  実際に検出した実例。安全性が実証済みの設計への回帰を優先する判断が奏功した。
+
+### 実装: PR #48「concurrencyグループにqueue: maxを追加しpending run退避リスクを解消」
+
+- PR #47完了後、handoff前の§4.7対症療法判定（過去30日以内の同症状修正PR#16/#17に該当）で
+  必須のWebSearchを実施した際、**GitHub Actionsが2026-05-07に`concurrency.queue`
+  オプションを追加していた**ことを発見（`queue: max`で最大100件のpending runを
+  キャンセルせず順序通り逐次処理。`cancel-in-progress: true`とは併用不可）。
+- PR #47で「許容する」と確定させた残存リスク（pending run退避）を、受容ではなく
+  根本解消できる可能性があったため、AskUserQuestionで確認の上、
+  `daily.yml`/`weekly.yml`/`care-rebuild.yml`の3ワークフロー全てに`queue: max`を追加。
+- **ツール間の矛盾を一次ソースで解決した実例**: ローカルactionlint(v1.7.12, 2026-03-30
+  リリース)は`queue`キーをエラー扱い（機能公開日より前のリリースのため、
+  `rhysd/actionlint` issue #657で既知）。さらにcodex review（medium effort）も
+  「`queue`は無効な構文でworkflow全体がparse時に壊れる」とP1指摘したが、これも学習データの
+  カットオフが2026-05-07の新機能をカバーしていないための誤検知と判断。
+  **4段階の一次ソース確認**（GitHub公式blog changelog / docs.github.comレンダリング結果
+  /`github/docs`リポジトリの生Markdownソース／バージョンフラグ設定`fpt: '*'`で
+  GitHub.com全プランに適用済みと確認）により`queue: max`の実在・有効性を確定させ、
+  AskUserQuestionでcodexの指摘を却下する判断をdecision-makerと共有した上でマージ。
+- 実機dispatch検証は「本番デプロイ」としてauto modeクラシファイアに拒否されたため未実施
+  （decision-maker合意の上でスキップ、次回の自然な実行時に`gh run list`で確認する）。
 
 ### 同根再発スキャン（§4.6）
 
-`git log --grep` で footnote / 出典番号 / list-none / 引用番号 関連のコミット履歴を検索した結果、
-本セッションの2コミット（PR #45自体）以外にヒットなし。過去の関連PR（#20「official出典引用の
-指示を強調」等）は記事内容側（データ・プロンプト）の出典精度に関する修正であり、今回のCSS表示層
-の問題とは異なる根本原因。同根再発なしと判断。
+`daily-digest`グループ・cron複数化の系譜: PR #8→#16→#17（2026-09-14、daily.yml）→
+PR #47→#48（2026-09-27、weekly.yml + queue:max）。同一テーマ（GitHub Actions
+schedule配送信頼性）への4件目・5件目の追加対応だが、各回とも異なる具体的root cause
+（cron時刻整列・保険cron追加・介護版分離・weekly複数化・pending退避）に基づく段階的な
+積み増しであり、盲目的な再パッチではないと判断。系譜として健全。
 
-### 対症療法判定（§4.7）
+### 対症療法判定（§4.7・判定基準3に該当 → WebSearchで検証済み）
 
-4基準（retry/fallback系のみ／原因調査ログなし／同症状PRが過去30日以内にあり／smoke限定検証）の
-いずれにも該当しない。CSSの`list-none`が原因であることをソース直接確認した上での根本修正であり、
-Playwright実機検証（複数日付・複数記事タイプ）とビルド確認を実施済み。対症療法には該当しない。
+判定基準3「同症状の修正PRが過去30日以内に1件以上ある」に該当（PR #16/#17、13日前）。
+WebSearchを実施した結果、上記の通り`queue: max`という外部要因（GitHub Actions自体の
+仕様追加）を発見し、対症療法ではなく根本解消の対応に切り替えられた。「対症療法判定が
+実際に良い発見を生んだ」実例。
 
 ## ドキュメント整合性
 
 | 項目 | 状態 | 備考 |
 |------|------|------|
-| CLAUDE.md ↔ 実装 | ✅ | 変更なし |
-| 完了ステータス一致 | ✅ | PR #45 マージ・main反映済み・本番デプロイ済み |
-| ADR整合性 | ✅ | 該当なし（CSS表示バグ修正、アーキテクチャ判断なし） |
+| CLAUDE.md ↔ 実装 | ✅ | `AGENTS.md`のweekly.yml記述を新スケジュールに更新済み |
+| 完了ステータス一致 | ✅ | PR #45〜#48すべてマージ・main反映・本番デプロイ済み |
+| ADR整合性 | ✅ | `adr-2026-09-14-schedule-reliability.md`に本セッションの設計変遷（3段階）を全て追記 |
 
 ## Git状態
 
 | 項目 | 状態 |
 |------|------|
 | 未コミット変更 | なし |
-| 未プッシュコミット | なし（`main` = `origin/main` = `ccb35e1`） |
-| CI/CD | ✅成功（PR #45のCI: CodeRabbit/GitGuardian/test全PASS、care-rebuild.yml本番デプロイも成功） |
+| 未プッシュコミット | なし（`main` = `origin/main` = `9f228d4`） |
+| CI/CD | ✅成功（PR #45〜#48すべてCI全PASS、weekly.ymlの本番デプロイも成功） |
 
 ## 品質ゲート
 
 | 項目 | 状態 |
 |------|------|
-| codex review | ⏭️スキップ（1ファイル・23行、CLAUDE.md MUST閾値[3ファイル or 100行]未満） |
-| UI動作確認 | ✅実施（Playwright MCPで開発サーバー+本番環境の両方を実機確認） |
-| 構造的整合性チェック（impact-analysis等） | ⏭️スキップ（型/API境界/データフロー変更なし、CSS表示のみ） |
-| quality-gate-evaluator | ⏭️対象外（1ファイル・軽量インラインプラン相当） |
+| codex review | ✅実行済み（PR #47で2回・上限消費、PR #48で1回・P1指摘を一次ソース確認で却下） |
+| actionlint | ⚠️既知の限界: v1.7.12が`queue`キー未対応（機能公開2026-05-07より前のリリース）。CIには組み込まれておらずブロッカーにならない |
+| UI/実機動作確認 | ✅一部実施（今週分週刊まとめの実際の生成・公開を確認）。queue:maxの実機dispatch検証は本番デプロイ扱いで自動拒否されスキップ（decision-maker合意） |
 
 ## 次のアクション（3分割・SKILL.md §2.5）
 
@@ -80,10 +99,10 @@ Playwright実機検証（複数日付・複数記事タイプ）とビルド確�
 
 | # | 項目 | trigger（充足条件） | 充足時のタスク | 充足確認方法 |
 |---|------|------------------|--------------|------------|
-| 1 | 外部トリガー（Cloud Scheduler等）でのschedule信頼性の本質的な補強 | 同根の失敗が3回目発生した場合、またはdecision-makerからの明示指示。09:07 JST枠が直近7日100%不発という強い追加証拠は取得済みだが未充足 | 新規GCPインフラ（Cloud Scheduler）を構築し`workflow_dispatch`を確実に叩く設計に変更 | `gh run list --workflow=daily.yml --json createdAt` で継続観察 |
+| 1 | `queue: max`の実機動作確認 | 次回の自然なschedule/dispatch実行（次回weekly.ymlは2026-10-04日曜、daily.ymlは翌朝） | `gh run list --workflow=weekly.yml`等でworkflow file自体が拒否されていないか（parse成功）・pending run退避が起きていないかを確認 | 次回実行後に`gh run list`で成否確認 |
 | 2 | GA4データ反映の再確認 | decision-maker本人のGoogleログインでの確認（AI代行不可） | analytics.google.comでDebugView/リアルタイムレポート確認 | decision-maker本人が確認 |
 | 3 | `content.config.ts`のthemesフィールド影響分析 | decision-makerからの実行指示 | `/impact-analysis`実行（read-only） | 明示指示の有無 |
-| 4 | care-rebuild.ymlのFETCH_HEAD統一 | 次にcare-rebuild.ymlを触る用事、または明示指示（今回care-rebuild.ymlを実行したが、この項目自体には触れていない） | Syncステップを`git fetch origin main && git reset --hard FETCH_HEAD`に変更（featureブランチ+PR） | grepで現状（`git reset --hard origin/main`のまま）確認 |
+| 4 | care-rebuild.ymlのFETCH_HEAD統一（`git reset --hard origin/main`のまま、weekly.yml/daily.ymlは既にFETCH_HEAD方式） | 次にcare-rebuild.ymlを触る用事、または明示指示 | Syncステップを`git fetch origin main && git reset --hard FETCH_HEAD`に変更（featureブランチ+PR） | grepで現状確認（今回未変更のまま） |
 
 ### 却下候補（記録のみ、前回セッションから継続）
 workAreaフィルタ / 関連記事リンク / 介護版カテゴリ偏り是正 / GA4 Data API自動取得スクリプト /
@@ -95,11 +114,8 @@ GA4プロパティ再作成 / YouTube動画コーナー / `source-tier.mjs` offi
 ### 再開可能性判定
 ✅ **再開可能** - ドキュメントから開発再開できます
 
-## 残留プロセス（マシン全体チェック、本プロジェクト限定ではない）
-
-`sanwa-houkai-app/web` の `next dev` プロセス（PID 39825、起動時刻 10:07:29、本セッション中）を
-検出。本プロジェクトとは無関係の別プロジェクトで並行実行中のセッションの可能性が高いため、
-停止提案はせず記録のみ。停止する場合は `~/.claude/scripts/cleanup-node.sh --kill`。
+## 残留プロセス
+✅ 残留プロセスなし（マシン全体チェック含む）
 
 ## Issue Net 変化
 - Close 数: 0件
@@ -111,13 +127,14 @@ GA4プロパティ再作成 / YouTube動画コーナー / `source-tier.mjs` offi
 
 ## 最終結論
 
-✅ **セッション終了可** — 出典リストの引用番号フリ番号復元（PR #45）を実装・マージ・本番デプロイ
-まで完了し、進行中の作業はない。
+✅ **セッション終了可** — 出典リスト引用番号フリ番号復元（PR #45・#46）と週刊まとめの
+スケジュール信頼性向上（PR #47・#48、`queue: max`によるpending run退避リスクの根本解消）を
+全て実装・マージ・本番反映まで完了し、進行中の作業はない。
 
 - OPEN PR: 0件 / open Issue: 0件
-- Git: clean、`main`は origin/main と一致（`ccb35e1`）
-- 即着手タスク: 0件 / 条件待ち: 4件（すべて decision-maker の指示または外的事象待ち、未充足）
-- 残留プロセス: 別プロジェクト（sanwa-houkai-app）のnext devプロセス1件のみ、本プロジェクトとは無関係
+- Git: clean、`main`は origin/main と一致（`9f228d4`）
+- 即着手タスク: 0件 / 条件待ち: 4件（すべて外部条件・decision-maker判断待ちで未充足）
+- 残留プロセス: なし
 - 既知のblocker: なし
-- 同根再発スキャン: 候補0件（footnote/出典番号関連の過去修正なし）
-- 対症療法判定: 該当なし（CSS原因を直接特定した根本修正、実機検証済み）
+- 同根再発スキャン: 系譜あり（PR #8/#16/#17/#47/#48、GitHub Actions schedule信頼性テーマ）だが各々異なるroot causeに基づく健全な積み増しと判断
+- 対症療法判定: 該当あり（判定基準3）→ WebSearchで`queue: max`という根本解消策を発見し対応済み。対症療法では終わっていない
