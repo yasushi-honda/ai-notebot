@@ -321,14 +321,26 @@ li:last-child > .list-link {
 .prose-post :where(section[data-footnotes] ol),
 .prose-care :where(section[data-footnotes] ol) {
   @apply list-none pl-0 space-y-0;
+  counter-reset: footnote-num;
 }
 .prose-post :where(section[data-footnotes] li),
 .prose-care :where(section[data-footnotes] li) {
-  @apply leading-relaxed py-2.5 border-b border-rule;
+  @apply relative pl-9 leading-relaxed py-2.5 border-b border-rule;
+  counter-increment: footnote-num;
 }
 .prose-post :where(section[data-footnotes] li:last-child),
 .prose-care :where(section[data-footnotes] li:last-child) {
   @apply border-b-0;
+}
+/*
+ * 出典番号バッジ。本文中の引用番号（sup a[data-footnote-ref]）と同じ丸バッジ意匠にすることで、
+ * ページ内リンクでジャンプした先がどの引用番号に対応する出典なのか一目で分かるようにする
+ * （list-noneで連番を消していたため、ジャンプ先の対象が分からないとの指摘を受けて追加）。
+ */
+.prose-post :where(section[data-footnotes] li)::before {
+  content: counter(footnote-num);
+  @apply absolute left-0 top-2.5 inline-flex items-center justify-center min-w-[1.4em] h-[1.4em] px-1
+    rounded-full bg-verify-soft text-[0.7em] font-mono font-bold text-verify;
 }
 .prose-post :where(a),
 .prose-care :where(a) {
@@ -502,19 +514,23 @@ li:last-child > .list-link {
  * remark-gfmが生成する出典リスト（`section[data-footnotes] ol`）も `.prose-care` 配下の
  * <ol> のため、上の「手順」用ルールと同じ `:where()`（詳細度0）で衝突する。Tailwindの
  * :where() は詳細度を持たずCSSソース順で後勝ちになるため、後で定義した上のルールが
- * 出典リストにも丸番号バッジ・接続線を誤って適用してしまう（codex reviewで指摘・修正）。
- * 出典リストは手順ではないため、ここで明示的に打ち消す。
+ * 出典リストにも「手順」用の大きい丸番号バッジ・接続線を誤って適用してしまう
+ * （codex reviewで指摘・修正）。出典リストは手順ではないため、ここで打ち消しつつ、
+ * 本文の引用番号（sup a[data-footnote-ref]）と対応する小さめの出典番号バッジだけを
+ * 再定義する（list-noneで連番を消すとページ内リンクのジャンプ先が分からなくなるため）。
  */
 .prose-care :where(section[data-footnotes] ol) {
-  counter-reset: none;
+  counter-reset: footnote-num;
 }
 .prose-care :where(section[data-footnotes] ol li) {
-  @apply relative pl-0 pb-0;
-  counter-increment: none;
+  @apply relative pl-9 pb-2.5;
+  counter-increment: footnote-num;
   min-height: 0;
 }
 .prose-care :where(section[data-footnotes] ol li)::before {
-  content: none;
+  content: counter(footnote-num);
+  @apply absolute left-0 top-2.5 inline-flex items-center justify-center min-w-[1.4em] h-[1.4em] px-1
+    rounded-full bg-care-soft text-[0.7em] font-mono font-bold text-care;
 }
 .prose-care :where(section[data-footnotes] ol li)::after {
   content: none;
