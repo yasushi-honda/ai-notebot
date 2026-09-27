@@ -105,6 +105,11 @@ pr-review-toolkitのコメントレビューで「実測」という表現が誤
 壊れないようにした。`weekly.yml` には共有 concurrency グループをハングでブロックしないよう
 `timeout-minutes: 25` も設定した。
 
+> **2026-09-27追記**: `weekly.yml` の実行時刻は「11時を過ぎると遅すぎる」という運用要件により
+> 08:30/09:30/10:30 JSTの3回cronに変更された（詳細: `docs/adr/adr-2026-09-14-schedule-reliability.md`
+> のAmendment）。daily.ymlとの同時トリガー回避という本節の設計意図自体は変わっておらず、
+> 新しい3時刻もdaily.ymlの3回cron（06:07/09:07/12:07 JST）とは異なる時刻に配置している。
+
 ## Rationale
 
 - 候補プールを日次記事の `sourceIds` に絞る設計は、`curate-care.mjs` が `curate.mjs` の
