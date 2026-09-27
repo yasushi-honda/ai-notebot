@@ -300,8 +300,18 @@ daily.yml（2026-09-22 09:02 JST 実行分）で、1回目・2回目（official�
 1件も見つからない」場合のみだった。しかし受け入れ基準はもう1つ、「到達性検証済みソースが
 3件以上（`MIN_RESOLVED_SOURCES`）」も課している。official が1件見つかっていても総数が
 3件未満なら収集全体は exit 1 になるが、このケースでは追加検索が一度も発火せず、1回目の
-検索結果だけで即座にスキップが確定してしまう構造的な穴があった（実際の発生実績は未確認だが、
-論理的に発生しうる未対応の失敗経路）。
+検索結果だけで即座にスキップが確定してしまう構造的な穴があった。
+
+**実際の発生を確認済み**: この穴が2026-09-24分の障害（PR #41/#42で対応した障害）の直接原因
+だったことを、当時のワークフロー実行ログ（run 35934471225、2026-09-23T23:37:43Z）で確認した。
+1回目の検索で groundingChunks 3件のうち1件が到達性検証NG（`dxmcnavi.com` が403）、残り2件が
+採用されそのうち1件が official（`www.mhlw.go.jp`）だった。official は1件で受け入れ基準を
+満たしていたため、旧ロジックの継続条件（`officialCount < 1`）が false になり追加検索は一度も
+発火せず、「検証失敗: 到達性検証済みソースが不足しています（2件、要3件以上・official 1件、
+要1件以上）」で即座に exit 1 していた。当日はGitHub Actionsのschedule配送問題（1日3回中
+1回が発火せず、詳細は`docs/adr/adr-2026-09-14-schedule-reliability.md`）も重なり、手動での
+`care-rebuild.yml`実行で復旧した。今回の`retryFollowupSearch()`への拡張により、同じ状況が
+再発しても2回目の検索（`buildMoreSourcesFollowupPrompt`）で件数を補える可能性が生まれる。
 
 - **決定**: `retryOfficialFollowupSearch()` を `retryFollowupSearch()` に一般化し、ループの
   継続条件を「official 0件」**または**「総数が `MIN_RESOLVED_SOURCES` 未満」の論理和に拡張した
