@@ -23,7 +23,9 @@ Astro build → dist/ → GitHub Pages
 ### 週刊AIトレンドまとめ（別枠パイプライン、AIトレンド版のみ対象）
 
 ```
-weekly.yml（毎週日曜11:07 JST、daily.ymlと2時間ずらしconcurrency.group=daily-digestを共用）
+weekly.yml（毎週日曜08:30/09:30/10:30 JSTの3回cron、daily.ymlとconcurrency.group=daily-digestを共用。
+  11時を過ぎると遅すぎるとの運用要件により2026-09-27に11:07単発から前倒し・複数化。詳細:
+  docs/adr/adr-2026-09-14-schedule-reliability.md）
   curate-weekly.mjs（対象週=公開日の前日から遡って直近7日分。cronは日曜のみ発火するため
     通常は前日曜〜土曜になるが、weeklyWindow()自体は曜日非依存。手動実行で日曜以外を
     指定するとweekStartも日曜以外になり警告が出る）の site/src/content/posts/<date>.md の
@@ -81,7 +83,7 @@ node --test scripts/**/*.test.mjs            # 単体テスト
 gh workflow run care-rebuild.yml -f date=YYYY-MM-DD -f regenerate=true   # 再収集からやり直す
 gh workflow run care-rebuild.yml -f regenerate=false                     # 既存コミット済み内容のままサイト全体を再ビルド・デプロイのみ
 
-# 週刊まとめを手動実行（通常は毎週日曜11:07 JSTに自動実行。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）
+# 週刊まとめを手動実行（通常は毎週日曜08:30/09:30/10:30 JSTに自動実行。詳細: docs/adr/adr-2026-09-14-weekly-digest.md）
 gh workflow run weekly.yml -f date=YYYY-MM-DD   # 指定公開日（省略時は当日JST）で対象週を再生成
 ```
 
