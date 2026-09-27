@@ -25,6 +25,13 @@ permissions:
 concurrency:
   group: daily-digest
   cancel-in-progress: false
+  # 2026-09-27追記: `queue: max`（2026-05-07にGitHub Actionsが追加、公式ドキュメントで確認済み）
+  # により、同一グループのpending runを最大100件までキャンセルせず順序通りに逐次処理する。
+  # デフォルトの`queue: single`では新しいrunのキューイングで既存のpending runがキャンセル
+  # されるため、本ワークフローの手動実行がdaily.yml/weekly.ymlの保険cronのpending runを
+  # 退避させる（またはその逆）リスクがあった（詳細: docs/adr/adr-2026-09-14-schedule-reliability.md）。
+  # 同一グループを共有するdaily.yml・weekly.ymlにも同じ設定を追加し整合させている。
+  queue: max
 
 jobs:
   generate:

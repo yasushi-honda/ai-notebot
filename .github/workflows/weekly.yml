@@ -41,6 +41,16 @@ permissions:
 concurrency:
   group: daily-digest
   cancel-in-progress: false
+  # 2026-09-27追記: GitHub Actionsが2026-05-07に追加した`queue: max`（最大100件の
+  # pending runをキャンセルせず順序通りに逐次処理する設定、公式ドキュメントで確認済み。
+  # デフォルトの`queue: single`は同一グループのpending runを1件しか許可せず、新しいrunが
+  # キューイングされると既存のpending runがキャンセルされる）を指定し、間隔の詰まった
+  # weekly.ymlの3cronがdaily.ymlの09:07 JSTリカバリrunを退避させるリスク
+  # （docs/adr/adr-2026-09-14-schedule-reliability.mdで「許容する残存リスク」として
+  # 記録していたもの）を解消する。`cancel-in-progress: true`との併用は仕様上禁止だが、
+  # 本ワークフローは元々falseのため問題ない。daily.yml・care-rebuild.ymlにも同じ設定を
+  # 追加し、同一グループを共有する3ワークフロー全体で整合させている。
+  queue: max
 
 jobs:
   generate:
