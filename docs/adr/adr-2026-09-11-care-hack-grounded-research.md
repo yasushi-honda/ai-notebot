@@ -294,6 +294,39 @@ daily.yml（2026-09-22 09:02 JST 実行分）で、1回目・2回目（official�
   （1回目0件→2回目3件）解消したことを実測で確認しており、リトライ追加の効果は裏付けられている。
   最初に保留とまとめて回答したのは判断の誤りだった。
 
+## 2026-09-27追記: 追加検索の発火条件を「official 0件」以外にも拡張（件数不足の救済漏れ対応）
+
+上記PR #25までの`retryOfficialFollowupSearch()`は、追加検索の発火条件が「official ドメインが
+1件も見つからない」場合のみだった。しかし受け入れ基準はもう1つ、「到達性検証済みソースが
+3件以上（`MIN_RESOLVED_SOURCES`）」も課している。official が1件見つかっていても総数が
+3件未満なら収集全体は exit 1 になるが、このケースでは追加検索が一度も発火せず、1回目の
+検索結果だけで即座にスキップが確定してしまう構造的な穴があった。
+
+**実際の発生を確認済み**: この穴が2026-09-24分の障害（PR #41/#42で対応した障害）の直接原因
+だったことを、当時のワークフロー実行ログ（run 35934471225、2026-09-23T23:37:43Z）で確認した。
+1回目の検索で groundingChunks 3件のうち1件が到達性検証NG（`dxmcnavi.com` が403）、残り2件が
+採用されそのうち1件が official（`www.mhlw.go.jp`）だった。official は1件で受け入れ基準を
+満たしていたため、旧ロジックの継続条件（`officialCount < 1`）が false になり追加検索は一度も
+発火せず、「検証失敗: 到達性検証済みソースが不足しています（2件、要3件以上・official 1件、
+要1件以上）」で即座に exit 1 していた。当日はGitHub Actionsのschedule配送問題（1日3回中
+1回が発火せず、詳細は`docs/adr/adr-2026-09-14-schedule-reliability.md`）も重なり、手動での
+`care-rebuild.yml`実行で復旧した。今回の`retryFollowupSearch()`への拡張により、同じ状況が
+再発しても2回目の検索（`buildMoreSourcesFollowupPrompt`）で件数を補える可能性が生まれる。
+
+- **決定**: `retryOfficialFollowupSearch()` を `retryFollowupSearch()` に一般化し、ループの
+  継続条件を「official 0件」**または**「総数が `MIN_RESOLVED_SOURCES` 未満」の論理和に拡張した
+  （`officialCount < 1 || items.length < minResolvedSources`）。受け入れ基準そのものは一切
+  緩めていない。
+- **プロンプトの使い分け**: official が未達の間は既存の官公庁限定プロンプト
+  （`buildOfficialFollowupPrompt`）を使う。official は充足済みだが総数だけが足りない場合は、
+  官公庁限定にせず「1回目と異なる新たな情報源を広く探す」プロンプト
+  （`buildMoreSourcesFollowupPrompt`）を新設して使う。official が既に見つかっているのに
+  官公庁限定の検索を続けても総数を増やす助けにならないため。
+- **試行回数の上限は変えない**: `MAX_OFFICIAL_FOLLOWUP_ATTEMPTS` を `MAX_FOLLOWUP_ATTEMPTS`
+  にリネームしたのみで、値（2）は変更していない。1回のループで official 未達→件数不足の
+  順に状態が変わっても、同じ試行回数カウンタを共有する（例: 1回目で official が見つかり、
+  2回目で件数不足を解消、で打ち切り）。
+
 ### codex reviewでの指摘と修正（12回目・P1）
 
 `SAFE_SUBJECT_VALUE_PATTERN`が「角括弧（［...］/[...]）で包まれていれば内容を問わず

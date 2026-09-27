@@ -13,6 +13,8 @@
  * 材料が薄い日は公開しない設計）:
  *   - 到達性検証済みソースが3件以上
  *   - うち1件以上が official ドメイン（*.go.jp 等。scripts/lib/source-tier.mjs）
+ * いずれか未達の場合、retryFollowupSearch() が最大2回まで追加検索を行う（受け入れ基準自体は
+ * 緩めない。詳細: docs/adr/adr-2026-09-11-care-hack-grounded-research.md）。
  *
  * 使い方: GEMINI_ACCESS_TOKEN=... node scripts/collect-care.mjs [YYYY-MM-DD]
  */
@@ -34,7 +36,7 @@ const CARE_POSTS_DIR = join(ROOT, 'site', 'src', 'content', 'care');
 
 const MIN_RESOLVED_SOURCES = 3;
 const RECENT_TOPICS_LOOKBACK = 14; // 直近何件の既出記事を「避けるべきテーマ」としてLLMに渡すか
-const MAX_OFFICIAL_FOLLOWUP_ATTEMPTS = 2; // official限定の追加検索を最大何回まで試行するか
+const MAX_FOLLOWUP_ATTEMPTS = 2; // 追加検索（official限定・件数不足対応いずれも）を最大何回まで試行するか
 
 async function loadRecentTopics() {
   let files;
@@ -113,29 +115,58 @@ function buildOfficialFollowupPrompt(researchSummary) {
 }
 
 /**
- * official ドメインが1件も見つからない場合に、buildOfficialFollowupPrompt() の検索を
- * 最大 maxAttempts 回まで繰り返す。受け入れ基準（official 1件以上）は変えず、単に
- * 試行回数を増やすだけ。`search` はテストから注入できるようにするための引数
+ * official は既に1件以上見つかっているが、到達性検証済みソースの総数が
+ * MIN_RESOLVED_SOURCES に届かない場合に使う、officialドメインに限定しない追加検索プロンプト。
+ * 1回目の検索と重複しない新たな情報源を広く探させることで、件数不足そのものを解消する狙い。
+ */
+function buildMoreSourcesFollowupPrompt(researchSummary) {
+  return [
+    '以下は、介護現場のAI活用について調べた下調べメモです。',
+    '',
+    researchSummary,
+    '',
+    'この内容の裏付けや補足となる情報源を、Google検索で追加で探してください。既に見つかっている',
+    '情報源とは異なる、新たな情報源を優先すること。公的機関に限定する必要はなく、信頼できる',
+    'ニュースサイト・専門メディア・団体の公式サイト等も対象に含めてよい（ただし特定の営利企業の',
+    '宣伝文句をそのまま信じるのではなく、制度・実務として妥当なものを選ぶこと）。',
+  ].join('\n');
+}
+
+/**
+ * 受け入れ基準（official 1件以上・到達性検証済み総数が minResolvedSources 件以上）の
+ * どちらかが未達の場合に、最大 maxAttempts 回まで追加検索を繰り返す。受け入れ基準自体は
+ * 変えず、単に試行回数を増やすだけ。official が未達の間は buildOfficialFollowupPrompt()
+ * （官公庁限定）、official は充足済みだが総数が足りない間は buildMoreSourcesFollowupPrompt()
+ * （限定なし）を使う。`search` はテストから注入できるようにするための引数
  * （実運用ではデフォルトの generateGroundedText を使う）。
  * @returns {Promise<number>} 最終的な official 件数
  */
-export async function retryOfficialFollowupSearch({
+export async function retryFollowupSearch({
   researchSummary,
   items,
   seenUrls,
   webSearchQueries,
   searchEntryPointHtmlParts,
-  maxAttempts = MAX_OFFICIAL_FOLLOWUP_ATTEMPTS,
+  maxAttempts = MAX_FOLLOWUP_ATTEMPTS,
+  minResolvedSources = MIN_RESOLVED_SOURCES,
   search = generateGroundedText,
 }) {
   let officialCount = items.filter((i) => i.tier === 'official').length;
+  const needsMore = () => officialCount < 1 || items.length < minResolvedSources;
 
-  for (let attempt = 1; officialCount < 1 && attempt <= maxAttempts; attempt += 1) {
+  for (let attempt = 1; needsMore() && attempt <= maxAttempts; attempt += 1) {
+    const needsOfficial = officialCount < 1;
     console.log(
-      `official ドメインが見つからなかったため、公的機関限定の追加検索を行います...` +
-        `（${attempt}/${maxAttempts}回目）`,
+      needsOfficial
+        ? `official ドメインが見つからなかったため、公的機関限定の追加検索を行います...` +
+            `（${attempt}/${maxAttempts}回目）`
+        : `到達性検証済みソースが${minResolvedSources}件未満のため、限定なしの追加検索を行います...` +
+            `（${attempt}/${maxAttempts}回目）`,
     );
-    const followup = await search({ prompt: buildOfficialFollowupPrompt(researchSummary) });
+    const prompt = needsOfficial
+      ? buildOfficialFollowupPrompt(researchSummary)
+      : buildMoreSourcesFollowupPrompt(researchSummary);
+    const followup = await search({ prompt });
     console.log(`追加検索クエリ: ${followup.webSearchQueries.join(' / ') || '(なし)'}`);
     console.log(`追加検索groundingChunks: ${followup.groundingChunks.length}件`);
     webSearchQueries.push(...followup.webSearchQueries);
@@ -210,7 +241,7 @@ async function main() {
 
   await resolveChunks(first.groundingChunks, seenUrls, items);
 
-  const officialCount = await retryOfficialFollowupSearch({
+  const officialCount = await retryFollowupSearch({
     researchSummary: first.text,
     items,
     seenUrls,
