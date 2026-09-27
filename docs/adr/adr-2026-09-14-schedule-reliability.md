@@ -127,10 +127,33 @@ decision-makerから「11:07 JST単発では、配送遅延時に11時を過ぎ�
   `event_name == 'schedule'`のみに適用し、`workflow_dispatch`は常にフル実行する
   （既存の手動リカバリ運用を止めないため）。
 
+### concurrencyグループをdaily.ymlと分離（codex reviewで指摘・修正）
+
+初版実装は`weekly.yml`の3cronを`daily.yml`と同じ`daily-digest` concurrencyグループに
+入れていたが、`codex review`で以下の欠陥を指摘された:
+
+GitHub Actionsのconcurrencyグループは「同一グループでpending中（実行待ち）のrunは、
+新しいrunがキューイングされると自動キャンセルされる」仕様を持つ（`cancel-in-progress`は
+実行中runの扱いにのみ影響し、pending runの自動キャンセルは設定に関わらず常に働く）。
+週次の3cronは間隔が1時間規模と詰まっているため、グループが混雑している間に複数の
+トリガーが立て続けにキューイングされると、古いpending runが新しいものに次々と
+退避（evict）される。これにより「3回の独立した試行機会」という設計意図が成立しない
+だけでなく、**同じグループを共有するdaily.ymlの09:07 JSTリカバリrunまで退避させ、
+日次記事側の回復機会を奪うリスク**があった（本来解決したかった週次側の信頼性問題より
+深刻な回帰になりかねなかった）。
+
+対策として、`weekly.yml`のconcurrencyグループを`daily-digest`から独立した
+`weekly-digest`に変更した。共有グループの本来の目的（daily.yml/care-rebuild.ymlとの
+git push競合防止）は、週次が変更するパス（`site/src/content/weekly/`のみ）が
+日次・介護版のパスと完全に分離していることを利用し、「Commit weekly digest」ステップに
+push失敗時のfetch+rebase+再push（最大3回）ループを追加することで、concurrencyでの
+直列化に依存せず自己解決する設計に変更した。
+
 ### 残存リスク
 
 - 3回とも配送が失敗・大幅遅延した場合は依然として救済されない（初版と同じ根本的な
   制約）。この場合は`gh workflow run weekly.yml`での手動リカバリに委ねる。
-- 3スロットの間隔が2時間規模に詰まっているため、GitHub側の同時間帯での高負荷等
-  相関した配送遅延が起きた場合、daily.ymlの6時間規模分散に比べて緩和効果が
-  限定的になる可能性がある。実際の発火実績は次回の`/config-review`等で確認する。
+- weekly.yml独自の3スロットが互いを退避させ合うリスクは理論上残るが、1回あたりの
+  実行時間が短い（実測1分程度）ため、1時間間隔の3スロットで同時に混雑する可能性は
+  daily.ymlとの共有時に比べて大幅に低い。実際の発火実績は次回の`/config-review`等で
+  確認する。
