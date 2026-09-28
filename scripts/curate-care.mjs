@@ -47,7 +47,7 @@ const MIN_STEPS = 3; // 「## 手順」に必須の最低ステップ数（責�
 // 再生成トリガーにする設計へ変更）。
 const RECENT_WORKAREA_LOOKBACK = 2;
 
-export const TARGET_SERVICES = ['訪問介護', '通所介護', '施設', '居宅介護支援', '小規模多機能', '短期入所', '全サービス共通'];
+export const TARGET_SERVICES = ['訪問介護', '通所介護', '施設', '居宅介護支援', '小規模多機能', '短期入所', '福祉用具', '全サービス共通'];
 export const WORK_AREAS = ['事務・記録', '請求・給付管理', 'シフト・労務', '送迎', 'ケアプラン', '情報共有', '家族対応', '教育・研修'];
 export const DIFFICULTIES = ['すぐできる', '準備が必要', '要検討'];
 
