@@ -182,10 +182,19 @@ function buildPrompt(items, extraInstructions, researchSummary, recentWorkAreas)
   // だけで直近の使用状況を一切考慮しておらず、直後の投稿と同一workAreaが選ばれ続ける実害が
   // あった（RECENT_WORKAREA_LOOKBACK参照）。ここで明示的に除外対象を伝え、
   // validateGeneratedの機械的ゲート（同条件）と両輪で重複を防ぐ。
+  // 2026-09-28実データで発覚: workAreaの除外指示がラベル選択だけを対象にしていたため、
+  // 記事の題材（出典から自然に導かれるトピック）は除外対象のworkArea（例:
+  // 記録の要約・下書き作成）のままにしてラベルだけを別の値（例: ケアプラン）に貼り替える、
+  // という実害のある回避が起きた（codex reviewで指摘）。ラベルの選び直しではなく
+  // 「題材そのものを許可されたworkAreaに実際に合致するものへ変える」ことを明示する。
   const workAreaNote =
     recentWorkAreas.length > 0
       ? `\n- workAreaは直近で使用済みの次の値を選ばないこと（必ず別のworkAreaにする）: ${recentWorkAreas.join(' / ')}` +
-        `\n- 選択可能なworkArea一覧: ${WORK_AREAS.join(' / ')}`
+        `\n- 選択可能なworkArea一覧: ${WORK_AREAS.join(' / ')}` +
+        '\n- 重要: 除外対象のworkAreaに本来該当する題材（例: 記録・申し送りの要約や下書き作成は' +
+        '「事務・記録」に該当する）に、除外対象でない別のworkAreaのラベルを貼り替えるだけの' +
+        '記事にしてはならない。出典の中から、除外対象でないworkAreaに実際に合致する別の題材・' +
+        '切り口を選び直すこと（出典が複数の業務領域に触れている場合はそちらを使う）。'
       : '';
   // 2026-09-16実データで発覚: 従来はofficialIdsの引用要件を執筆ルール箇条書きの末尾に1文
   // 埋め込むだけだった。CARE_SCHEMA.bodyMarkdown.descriptionは識別子禁止・匿名化・
