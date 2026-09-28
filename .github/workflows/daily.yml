@@ -1,6 +1,7 @@
 name: Daily AI trends digest
 
-# 毎朝 09:07 JST (00:07 UTC) に収集→記事生成→出典検証→画像生成→ビルド→公開まで通しで実行する。
+# 毎日 06:07 JST (21:07 UTC) と 12:07 JST (03:07 UTC) の2回、収集→記事生成→出典検証→
+# 画像生成→ビルド→公開まで通しで実行する。
 # 出典検証（validate-citations.mjs）に失敗した場合は commit も deploy も行わない
 # （収集していない情報を含む記事を公開しない設計。詳細: docs/adr/）。
 # cronを毎時00分から数分ずらしているのは、GitHub Actions公式が「毎時の開始時刻は高負荷になり
@@ -18,13 +19,19 @@ name: Daily AI trends digest
 # 00:07 UTCの発火時刻とほぼ重なっていたことと一致）。GitHub Community
 # （https://github.com/orgs/community/discussions/55127）でも近接した時刻のcronの片方が
 # 無警告でスキップされる未文書化の挙動が報告されており、遅延の積み重ねで実質的に時刻が
-# 衝突していた可能性が高いと判断。3時間間隔を4時間間隔に広げ、各枠が遅延しても隣の枠の
-# 発火時刻に食い込みにくくした（04:07/08:07/12:07 JST = 19:07/23:07/03:07 UTC）。
-# 19:07/23:07 UTCは前日のUTC日付だが、JSTでは翌日04:07/08:07になるため、03:07 UTCの発火と
-# 同じJST日を対象にできる。
+# 衝突していた可能性が高いと判断。
+#
+# 中間枠を21:07〜03:07 UTCの間（04:07〜12:07 JST）のどこかへ広げ直すことも検討したが、
+# weekly.ymlの日曜3回のcron（23:30/00:30/01:30 UTC、docs/adr/adr-2026-09-14-weekly-digest.md
+# の「11時（JST）を過ぎると遅すぎる」という運用要件に基づく）と同じgroup（daily-digest,
+# queue: max）のため、その時間帯にdaily.ymlの枠を置くと日曜だけ週次の保険実行を待たせて
+# しまい、週次の締切要件を壊すリスクがある（codex reviewで指摘）。21:07/03:07 UTCの2枠は
+# 直近15日以上どちらも一度も欠落したことがなく実績十分（欠落していたのは中間枠だけ）で
+# あるため、3枠目を無理に安全な時間帯へ押し込むより、中間枠自体を廃止して実績のある2枠
+# （06:07 JST・12:07 JST）に絞る方が、週次との衝突リスクを増やさず現状の信頼性を維持できる。
 on:
   schedule:
-    - cron: '7 19,23,3 * * *'
+    - cron: '7 21,3 * * *'
   workflow_dispatch:
 
 permissions:
@@ -38,7 +45,7 @@ concurrency:
   # 2026-09-27追記: `queue: max`（2026-05-07にGitHub Actionsが追加、公式ドキュメントで確認済み）
   # により、同一グループのpending runを最大100件までキャンセルせず順序通りに逐次処理する。
   # デフォルトの`queue: single`では新しいrunのキューイングで既存のpending runがキャンセル
-  # されるため、本ワークフロー自身の3回cron（06:07/09:07/12:07 JST）同士、および
+  # されるため、本ワークフロー自身の2回cron（06:07/12:07 JST）同士、および
   # weekly.yml・care-rebuild.ymlとの間でpending runが互いを退避させ合うリスクがあった
   # （詳細: docs/adr/adr-2026-09-14-schedule-reliability.md）。同一グループを共有する
   # weekly.yml・care-rebuild.ymlにも同じ設定を追加し整合させている。
@@ -76,7 +83,7 @@ jobs:
           cache-dependency-path: site/package-lock.json
 
       - name: Skip if already generated
-        # 1日2回（00:07 UTC / 03:07 UTC）のうち、1回目のscheduleが遅延・ドロップせず既に
+        # 1日2回（21:07 UTC / 03:07 UTC）のうち、1回目のscheduleが遅延・ドロップせず既に
         # 成功していれば、2回目の発火では収集・生成・コミットを二重実行しない
         # （LLM呼び出しの無駄な二重発生・記事の意図しない再生成を防ぐ）。
         # AIトレンド版（posts）と介護版（care）は判定を分ける: build-care.mjsは失敗しても
@@ -151,11 +158,11 @@ jobs:
           GCP_PROJECT: ai-notebot-yh
 
       - name: Track care hack generation failure
-        # 1日3回のscheduleがすべて失敗しても手動発見（/catchup等）に頼らず気づけるようにする。
+        # 1日2回のscheduleがすべて失敗しても手動発見（/catchup等）に頼らず気づけるようにする。
         # 到達性検証済みソース不足はcollect-care.mjsの意図的な安全側フェイルセーフであり
         # build-care.mjs自体は常にexit 0を返す設計のため、ジョブの成否では検知できない
         # （詳細: docs/adr/adr-2026-09-11-care-hack-grounded-research.md）。
-        # 同日タイトルのopen issueが既にあれば再作成しない（1日3回の実行での重複起票防止）。
+        # 同日タイトルのopen issueが既にあれば再作成しない（1日2回の実行での重複起票防止）。
         # continue-on-error: Issue操作自体が失敗（GitHub API障害・Issue機能無効化等）しても
         # 本体（AIトレンド版）のサイトビルド・デプロイを巻き込んで止めないため
         # （build-care.mjs本体と同じ「本体を止めない」設計思想）。
@@ -171,7 +178,7 @@ jobs:
             fi
           elif [ -z "$EXISTING" ]; then
             # shellcheck disable=SC2016 # printfの書式文字列はバックティックを bash のコマンド置換にさせないため意図的にシングルクオート
-            BODY=$(printf '本日（%s）分の介護版「今日のAI活用ハック」が、この時点のスケジュール実行では生成できませんでした。1日3回の実行のうち残りの枠で自動リカバリされる可能性があります。\n\nすべて失敗した場合の手動復旧コマンド:\n```\ngh workflow run care-rebuild.yml -f date=%s -f regenerate=true\n```\n\nこのワークフロー実行: %s/%s/actions/runs/%s\n' "$TODAY" "$TODAY" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
+            BODY=$(printf '本日（%s）分の介護版「今日のAI活用ハック」が、この時点のスケジュール実行では生成できませんでした。1日2回の実行のうち残りの枠で自動リカバリされる可能性があります。\n\nすべて失敗した場合の手動復旧コマンド:\n```\ngh workflow run care-rebuild.yml -f date=%s -f regenerate=true\n```\n\nこのワークフロー実行: %s/%s/actions/runs/%s\n' "$TODAY" "$TODAY" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
             gh issue create --title "$TITLE" --label "bug" --body "$BODY"
           fi
         env:
