@@ -32,7 +32,11 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_CARE_DIR = join(ROOT, 'data', 'raw-care');
 const CARE_POSTS_DIR = join(ROOT, 'site', 'src', 'content', 'care');
 
-const MAX_REGENERATE_ATTEMPTS = 3; // 初回 + 品質チェック抵触時の再生成2回
+// 初回 + 品質チェック抵触時の再生成。2026-09-16実データで発覚した「独立した制約群を
+// 同時に満たせず往復して収束しない」失敗パターンが2026-09-27にも別の制約の組み合わせ
+// （全文脚注必須 ⇔ フェンス/注意書き）で再発し、3回では収束しきらずIssue化した
+// （介護版AIハック生成失敗: 2026-09-28）。制約自体を緩めず、収束のための試行余地を広げる。
+const MAX_REGENERATE_ATTEMPTS = 5;
 const MIN_STEPS = 3; // 「## 手順」に必須の最低ステップ数（責任範囲: buildPrompt/CARE_SCHEMAの指示と一致させる）
 // 直近何件のworkAreaを「今日は選んではいけない」対象にするか。全8種類のworkAreaに対し、
 // 直近2件を除外しても6択残るため、MAX_REGENERATE_ATTEMPTS内での再生成成立を妨げにくい値にした
@@ -178,10 +182,19 @@ function buildPrompt(items, extraInstructions, researchSummary, recentWorkAreas)
   // だけで直近の使用状況を一切考慮しておらず、直後の投稿と同一workAreaが選ばれ続ける実害が
   // あった（RECENT_WORKAREA_LOOKBACK参照）。ここで明示的に除外対象を伝え、
   // validateGeneratedの機械的ゲート（同条件）と両輪で重複を防ぐ。
+  // 2026-09-28実データで発覚: workAreaの除外指示がラベル選択だけを対象にしていたため、
+  // 記事の題材（出典から自然に導かれるトピック）は除外対象のworkArea（例:
+  // 記録の要約・下書き作成）のままにしてラベルだけを別の値（例: ケアプラン）に貼り替える、
+  // という実害のある回避が起きた（codex reviewで指摘）。ラベルの選び直しではなく
+  // 「題材そのものを許可されたworkAreaに実際に合致するものへ変える」ことを明示する。
   const workAreaNote =
     recentWorkAreas.length > 0
       ? `\n- workAreaは直近で使用済みの次の値を選ばないこと（必ず別のworkAreaにする）: ${recentWorkAreas.join(' / ')}` +
-        `\n- 選択可能なworkArea一覧: ${WORK_AREAS.join(' / ')}`
+        `\n- 選択可能なworkArea一覧: ${WORK_AREAS.join(' / ')}` +
+        '\n- 重要: 除外対象のworkAreaに本来該当する題材（例: 記録・申し送りの要約や下書き作成は' +
+        '「事務・記録」に該当する）に、除外対象でない別のworkAreaのラベルを貼り替えるだけの' +
+        '記事にしてはならない。出典の中から、除外対象でないworkAreaに実際に合致する別の題材・' +
+        '切り口を選び直すこと（出典が複数の業務領域に触れている場合はそちらを使う）。'
       : '';
   // 2026-09-16実データで発覚: 従来はofficialIdsの引用要件を執筆ルール箇条書きの末尾に1文
   // 埋め込むだけだった。CARE_SCHEMA.bodyMarkdown.descriptionは識別子禁止・匿名化・
@@ -270,6 +283,10 @@ function buildPrompt(items, extraInstructions, researchSummary, recentWorkAreas)
     '- 「## 手順」の中に、要配慮個人情報（利用者の氏名・心身の状況等）を扱う際の具体的な',
     '  注意点（匿名化・仮名化の具体的なやり方、確認すべき社内ルール等）を最低1ステップに含める',
     '- 出典に書かれていない事実・数値・効果を書かない（出典の範囲を超える推測や誇張は禁止）',
+    '- 「AIが作成した内容を人間が確認する」「現場の状況に応じて調整する」のような、特定の出典に',
+    '  基づかない一般的な実務上の留意事項の文を書く場合も、他の文と同様に必ず文末へ[^s-<id>]を',
+    '  付けること（新しい出典は作れないため、内容が最も近い出典のidを選ぶ）。適切な出典が',
+    '  1件もない場合は、その文自体を書かない（脚注なしで残すことは絶対にしない）',
     '- 絵文字を一切使わない',
     '- 「いかがでしたか」「まとめると」「革命的」「劇的に」等のAI生成文章に典型的な煽り・締め',
     '  表現を使わない',

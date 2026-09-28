@@ -7,14 +7,15 @@ name: Weekly AI trends digest
 # （日次版と同じ設計思想: 収集していない情報を含む記事を公開しない）。
 #
 # 2026-09-27追記: 従来は11:07 JST単発だったが、「11時を過ぎると遅すぎる」という運用要件を
-# 受けて11時より前の3時刻・複数cronに変更した（daily.ymlの3回cron緩和策と同じ考え方。
+# 受けて11時より前の3時刻・複数cronに変更した（daily.ymlの複数cron緩和策と同じ考え方。
 # 詳細: docs/adr/adr-2026-09-14-schedule-reliability.md）。adr-2026-09-14-schedule-reliability.md
 # では「retryが翌日にずれるとweeklyWindow()のweekStart計算の前提（週は日曜始まり）が壊れる」
 # ことを理由に週次への複数cron適用を見送っていたが、今回の3時刻はいずれも同じ日曜午前中
 # （08:30〜10:30 JST）に収まるよう間隔を詰めており、`Skip if already generated`のJST日付判定が
 # 全リトライで同じ日曜日付になるため当時の懸念は生じない。
 #
-# daily.yml（毎日00:07/03:07/前日21:07 UTC）とcron時刻を意図的にずらしている理由
+# daily.yml（毎日03:07/前日21:07 UTC。2026-09-28に中間枠を廃止し2回へ縮小。詳細:
+# daily.yml内コメント）とcron時刻を意図的にずらしている理由
 # （初期案は同時刻だった）: もし同時刻に発火すると、daily.ymlの完了を待つ間に両ワークフローの
 # github.shaがイベント発生時点で固定され、concurrencyグループで後から実行される側が
 # 古いSHAのままpushしてnon-fast-forwardで失敗する事態が起こりうる（初期設計時は
