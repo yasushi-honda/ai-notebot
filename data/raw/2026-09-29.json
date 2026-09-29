@@ -1,0 +1,745 @@
+{
+  "date": "2026-09-29",
+  "collectedAt": "2026-09-29T00:56:57.985Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-7201a06db3",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "pydantic/pydantic-ai: How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end.",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "publishedAt": "2026-09-29T00:56:45.000Z",
+      "summary": "★20242 How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end."
+    },
+    {
+      "id": "s-9f15fa4175",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "superiorlu/AITreasureBox: 🤖 Automatically collected AI repos, tools, websites, papers & tutorials. 实用AI百宝箱 💎",
+      "url": "https://github.com/superiorlu/AITreasureBox",
+      "publishedAt": "2026-09-29T00:56:23.000Z",
+      "summary": "★868 🤖 Automatically collected AI repos, tools, websites, papers & tutorials. 实用AI百宝箱 💎"
+    },
+    {
+      "id": "s-90ed811ba1",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "vitali87/code-graph-rag: The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+      "url": "https://github.com/vitali87/code-graph-rag",
+      "publishedAt": "2026-09-29T00:56:12.000Z",
+      "summary": "★5188 The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs"
+    },
+    {
+      "id": "s-8691a53c51",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "kortix-ai/suna: The open-source AI Management System",
+      "url": "https://github.com/kortix-ai/suna",
+      "publishedAt": "2026-09-29T00:56:06.000Z",
+      "summary": "★20240 The open-source AI Management System"
+    },
+    {
+      "id": "s-3fce787759",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ddalcu/mlx-serve: Native LLM inference server for Apple Silicon. OpenAI + Anthropic API compatible. No Python. Zig backend, Swift frontend macOS app with chat, music, voice, video generation.",
+      "url": "https://github.com/ddalcu/mlx-serve",
+      "publishedAt": "2026-09-29T00:55:54.000Z",
+      "summary": "★1647 Native LLM inference server for Apple Silicon. OpenAI + Anthropic API compatible. No Python. Zig backend, Swift frontend macOS app with chat, music, voice, video generation."
+    },
+    {
+      "id": "s-062192a7aa",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "helixml/helix: ♾️ Private Agent Fleet with Spec Coding. Each agent gets their own GPU-accelerated desktop. Run Claude, Codex, Gemini and open models on a full private AI Stack ♾️",
+      "url": "https://github.com/helixml/helix",
+      "publishedAt": "2026-09-29T00:55:06.000Z",
+      "summary": "★812 ♾️ Private Agent Fleet with Spec Coding. Each agent gets their own GPU-accelerated desktop. Run Claude, Codex, Gemini and open models on a full private AI Stack ♾️"
+    },
+    {
+      "id": "s-3787b1af1c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "KitionAI/kition: Kition brings Markdown, DataTable, WhiteBoard, a tool-using AI agent, browser research, and visual workflows into one desktop workspace. ",
+      "url": "https://github.com/KitionAI/kition",
+      "publishedAt": "2026-09-29T00:54:54.000Z",
+      "summary": "★386 Kition brings Markdown, DataTable, WhiteBoard, a tool-using AI agent, browser research, and visual workflows into one desktop workspace."
+    },
+    {
+      "id": "s-e301d0e1f1",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "templetongroup/radiant: A local coding harness for Mac. Chat with coding agents across cloud and local models, watch every tool call in a live activity feed, and drive a real terminal — in one window. Free and MIT licensed.",
+      "url": "https://github.com/templetongroup/radiant",
+      "publishedAt": "2026-09-29T00:54:47.000Z",
+      "summary": "★112 A local coding harness for Mac. Chat with coding agents across cloud and local models, watch every tool call in a live activity feed, and drive a real terminal — in one window. Free and MIT licensed."
+    },
+    {
+      "id": "s-5adba15362",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "tingly-dev/tingly-box: Your Intelligence, Orchestrated. Every builder. Every team. Every agent. For Everyone.",
+      "url": "https://github.com/tingly-dev/tingly-box",
+      "publishedAt": "2026-09-29T00:54:09.000Z",
+      "summary": "★347 Your Intelligence, Orchestrated. Every builder. Every team. Every agent. For Everyone."
+    },
+    {
+      "id": "s-44e5714027",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "CopilotKit/CopilotKit: The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol",
+      "url": "https://github.com/CopilotKit/CopilotKit",
+      "publishedAt": "2026-09-29T00:53:40.000Z",
+      "summary": "★37590 The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more. Makers of the AG-UI Protocol"
+    },
+    {
+      "id": "s-5f18bce17e",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Anthropicが「30%速く、最大30%安く」とSonnet 5.5を発表した翌日、自分のパイプラインの実行モデルはまだ旧世代のままだった",
+      "url": "https://qiita.com/Hideki_Tamae/items/a081c9500c2a34fd8c0c",
+      "publishedAt": "2026-09-29T00:45:25.000Z",
+      "summary": "はじめに 0。 これが今回の数字です。何の0かというと、Anthropicが2026年9月28日に発表した新モデル「Claude Sonnet 5.5」が謳う「30%以上速く、タスクによっては最大30%安く」という改善を、自分の記事投稿パイプラインが発表翌日の時点で実際に..."
+    },
+    {
+      "id": "s-7f0073c220",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI電話の「間」に、ずっと悩んでいた — IVRをTwilio ConversationRelay × TypeSafe AI (Jev) で作り直してみた",
+      "url": "https://qiita.com/halapolo/items/6260e955544815361ce9",
+      "publishedAt": "2026-09-29T00:39:58.000Z",
+      "summary": "はじめに ここ2 年間、AI での電話音声応対をいろいろな形で作ってきました。 Twilio ConversationRelay ＋ 生成 AI のように、文字起こしを Twilio 側で行ってテキストで生成 AI とやり取りするパターン。Speech to Speech..."
+    },
+    {
+      "id": "s-be3ec61375",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI動画生成を開発ワークフローに取り入れる：Text to Video・Image to VideoとAPI連携の実践ガイド",
+      "url": "https://qiita.com/businesshow123/items/4b0143e3df7c56f4c8d7",
+      "publishedAt": "2026-09-29T00:39:26.000Z",
+      "summary": "AI動画生成を開発ワークフローに取り入れる：Text to Video・Image to VideoとAPI連携の実践ガイド はじめに 近年、生成AIの進化によって、テキストや画像から動画を生成する技術が急速に発展しています。 これまで動画制作には、撮影機材、映像編集ソ..."
+    },
+    {
+      "id": "s-dfd4cb9f31",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Claude Sonnet 5.5発表――日常の制作・開発を、より軽快に",
+      "url": "https://qiita.com/sin-aiagent/items/e4a1312e537e54fc945c",
+      "publishedAt": "2026-09-29T00:34:13.000Z",
+      "summary": "Anthropicは2026年9月28日、Claude Sonnet 5.5を発表しました。範囲が明確な日常業務、バグ修正、文書・スライド・表計算の制作を重視するモデルです。出力生成はSonnet 5より30%以上速く、業務当たりの費用は最大30%低減すると同社は説明して..."
+    },
+    {
+      "id": "s-597975da49",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Peak XV ups Surge seed investment ceiling to $5M, unveils 18-startup cohort",
+      "url": "https://techcrunch.com/2026/09/28/peak-xv-goes-bigger-at-seed-with-new-surge-cohort-as-series-a-bar-rises/",
+      "publishedAt": "2026-09-29T00:30:00.000Z",
+      "summary": "Thirteen of the 18 startups in Peak XV’s latest Surge cohort are targeting global markets, while more than half are based in India."
+    },
+    {
+      "id": "s-53d764f512",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "NVIDIA、AIエージェントをハードウェアでも監視する「Open Agent Safety Platform」発表　Anthropicなど100以上の組織が参加",
+      "url": "https://www.itmedia.co.jp/news/article/2609/29/2000001824/",
+      "publishedAt": "2026-09-28T23:59:11.000Z",
+      "summary": "NVIDIAは、AIエージェントの安全対策基盤「Open Agent Safety Platform」を発表した。評価環境からの自律的な「脱走」事案が相次ぐ中、オープンソースの隔離ソフトと監視用DPUを組み合わせ、エージェントの暴走を防ぐ。AnthropicやMicrosoftなど100以上の組織が参加する。"
+    },
+    {
+      "id": "s-a78102b498",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "nvidia/NVIDIA-Nemotron-Labs-3-Competitive-Coding-550B-A55B-NVFP4 · Hugging Face",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsuqmb/nvidianvidianemotronlabs3competitivecoding550ba55b/",
+      "publishedAt": "2026-09-28T23:45:33.000Z",
+      "summary": "Model Developer: NVIDIA Corporation Model Development: Fine-tuned from NVIDIA-Nemotron-3-Ultra-550B-A55B What is Nemotron? NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Description Nemotron-Labs-3-Competitive-Coding is a competitive-programming specialist model based on Nemot"
+    },
+    {
+      "id": "s-1f454f3eb7",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Anthropic's IPO prospectus shows AI vision, surging costs",
+      "url": "https://www.reuters.com/business/finance/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-2026-09-28/",
+      "publishedAt": "2026-09-28T23:40:59.000Z",
+      "summary": "points=51 comments=55 (Hacker News)"
+    },
+    {
+      "id": "s-39067a424f",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI reportedly ditches model over safety concerns",
+      "url": "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/",
+      "publishedAt": "2026-09-28T23:39:20.000Z",
+      "summary": "A top executive at the AI lab told the Wall Street Journal that the model in question had displayed a poor aptitude for following orders."
+    },
+    {
+      "id": "s-2c6940f17a",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「最大応力はどこ？」とAIに質問、解析結果を確認できるCAEソフト新版",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news022.html",
+      "publishedAt": "2026-09-28T23:30:00.000Z",
+      "summary": "アライドエンジニアリングは、構造解析ソフト「ADVENTURECluster2026」を2026年10月1日にリリースする。自然言語による指示で解析条件の設定から実行、結果確認までを自動化する「AI Expert」を搭載。位相最適化の計算時間短縮や、固有振動数を考慮した最適化への対応、大規模モデルへの適用範囲の拡大、接触解析の高精度化も図った。"
+    },
+    {
+      "id": "s-409284b76d",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Speculative reward hacking in coding agents",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsuag0/speculative_reward_hacking_in_coding_agents/",
+      "publishedAt": "2026-09-28T23:25:35.000Z",
+      "summary": "I audited thousands of agent rollouts in DeepSWE-1.1. Over 80% contained reasoning about an imagined grader. Yet no grader/verifier is mentioned in prompts nor accessible to the agents. Agents reasoned things like: &quot; Let me look at the problem from the grader&#39;s perspective &quot; and referred to &quot; hidden tests &quot;, &quot; test authors &quot;, and &quot; the checker &quot;. I found"
+    },
+    {
+      "id": "s-32f88ae3cc",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIコーディングツールとモデルの使い分けガイド",
+      "url": "https://zenn.dev/agent_grow/articles/12785196b3c865",
+      "publishedAt": "2026-09-28T23:00:10.000Z",
+      "summary": "AIコーディングツールとモデルの使い分けガイド 「結局、Claude CodeとCursorとCopilot、どれを使えばいいの？」 これは最近、社内外でよく聞かれる質問のひとつです。 選択肢が増えすぎて、比較記事を読んでもかえって迷ってしまう、という声もよく聞きます。 この記事では、主要なAIコーディングツールを整理しつつ、あわせて「モデル(Claude・GPT・Geminiなど)をどう使い分けるか」についても触れていきます。 注意：AI関連のツールやモデルは、数日〜数週間単位でアップデートされることも珍しくありません。 この記事の内容は、あくまで執筆時点(2026年9月)での見..."
+    },
+    {
+      "id": "s-3b6d3c0fb6",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Codeのサブエージェントを作業の種類ごとに分けてトークン消費を抑えた",
+      "url": "https://zenn.dev/arithan/articles/claude-code-subagent-context-split",
+      "publishedAt": "2026-09-28T23:00:09.000Z",
+      "summary": "はじめに 親セッションのContextは小さいのに、利用枠の減りが速い。 そう感じているなら、サブエージェントの側を一度見てみる価値があります。 筆者の手元では、1回の委任で約87万トークン・ツール呼び出し約500回まで膨らんだエージェントがいました。 気づけたのは、エージェントごとの数値を並べて見るようにしてからです。 この記事では、個人開発の1つのプロジェクトで約80セッション分のトークン使用量を集計し、サブエージェントを作業の種類ごとに分けたり、定義や計画を直したりして消費を抑えた実例を紹介します。 数字は2026年9月の約1週間、Claude Code 2.1系でのトークンの..."
+    },
+    {
+      "id": "s-81728ff30a",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「10年ぶり刷新」　Android向けサードパーティーストアアプリ「F-Droid 2.0」公開",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2609/29/news053.html",
+      "publishedAt": "2026-09-28T23:00:00.000Z",
+      "summary": "F-Droidは、Android向けサードパーティー製アプリストアの公式クライアント最新版「F-Droid 2.0」を公開した。10年ぶりとなる全面刷新で、ユーザーインタフェースの刷新や検索機能の改善、自動更新に対応したという。"
+    },
+    {
+      "id": "s-726949b8e7",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "最も人気のAIユースケース、投資成果では“いまいち”だった　Gartner調査",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2609/19/news009.html",
+      "publishedAt": "2026-09-28T23:00:00.000Z",
+      "summary": "Gartnerの調査によって、部門リーダーが「人気や話題性の高いAIアプリケーション」の導入を優先する傾向が明らかになった。導入率上位に挙がったAIユースケースと、投資効果上位に挙がったAIユースケースとの間のギャップとは。"
+    },
+    {
+      "id": "s-1592a3546d",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「デジタルの言葉が聞こえない」と言われた電源開発が、DX開始4年でフィジカルAIに挑むまで",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2609/25/news014.html",
+      "publishedAt": "2026-09-28T23:00:00.000Z",
+      "summary": "社外取締役に「デジタルの言葉が聞こえてこない」と言われた電源開発が、ドローンやロボットを自ら学習させて現場を動かすフィジカルAIに踏み込む。失敗が許されにくい規制産業で、なぜ「まず試す」文化を根付かせられたのか。同社のDXを率いる小泉真吾氏に聞いた。"
+    },
+    {
+      "id": "s-902b48ff9a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ラズパイケースをAIモデリングする",
+      "url": "https://zenn.dev/polygoro/articles/009-ai-raspberry-pi-case",
+      "publishedAt": "2026-09-28T22:57:30.000Z",
+      "summary": "こんにちは、ポリ五郎です。 前回の記事では、AIにPolyScriptで3Dモデルを作らせる実験をしました。今回はその手順を、だれでも手元で再現できるチュートリアルにまとめます。 題材はRaspberry Piのケースです。 トレイと上蓋の2パーツ構成で、蓋はねじを使わないスナップ式。Raspberry Pi 3B+ / 4B / 5 の3機種に対応していて、パラメータで切り替えられます。完成品は objhub で公開しているので、ブラウザでそのまま触れます。 https://objhub.org/@polygoro/NP2hnsgF PolyScriptってなに?という方はまずこちら..."
+    },
+    {
+      "id": "s-59810b4706",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "SoftbankG急",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-07-market-daily",
+      "publishedAt": "2026-09-28T22:43:36.000Z",
+      "summary": "日経平均65,000円台突破：ソフトバンクG+11.22%急騰に見る主要データと市場分析 この記事で分かること 日経平均65,000円突破を牽引した主要テック銘柄の騰落率データ 米10年債利回り4.78%上昇が米国株式市場に与えた影響の背景 ドル円154.34円への円高シフトと暗号資産市場の相関関係 日本株が65,000円台を突破した背景を押さえる ソフトバンクグループやレーザーテックといった大型テック・半導体関連株の急騰が、日経平均株価を65,020.94円（前日比+1.26%）の大台へ押し上げました。 具体的には、ソフトバンクグループが前日比+11.22%（6,2..."
+    },
+    {
+      "id": "s-b41f32aee9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ソフトバンク、業界最小45cm幅を走れる配膳ロボ「Servi Q」　バック走行も可能に",
+      "url": "https://www.watch.impress.co.jp/docs/news/2143854.html",
+      "publishedAt": "2026-09-28T22:30:15.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-0105154068",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Codeの定時実行が使用上限で2.5日止まっていたのに、GitHub Actionsはずっと緑だった",
+      "url": "https://zenn.dev/yuu_inaka/articles/green-but-stopped",
+      "publishedAt": "2026-09-28T22:30:05.000Z",
+      "summary": "GitHub Actions から4時間ごとに Claude Code を動かしていたのですが、9月18日の夜から21日の朝まで、2.5日のあいだ1歩も進んでいませんでした。 原因は Claude の週の使用上限です。ログの最後の1行は You've hit your weekly limit でした。 それでもジョブは毎回「成功」の緑で、実行時間は約25秒でした。止まったときの出口を、自分で緑に塗っていたからです。 この記事では、なぜ緑になったのか、最初の直し方のどこが間違っていたのか、そして自分のワークフローにそのまま足せる対策（終了コードの扱い、出力が出たかどうかの点検、材料が届い..."
+    },
+    {
+      "id": "s-f59b3f643e",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "確認してから commit したのに、3ファイルが5ファイルになった — Claude Code を同じ作業ツリーで並走させた3か月の記録",
+      "url": "https://zenn.dev/masamitsu_sera/articles/f60337c10c43db",
+      "publishedAt": "2026-09-28T22:30:05.000Z",
+      "summary": "同じリポジトリの同じ作業ツリーで、Claude Code のセッションを最大5本並走させています。文書の翻訳、定期ジョブの修正、メールの下書きといった別々の作業を別々のセッションに任せ、.git も1つを共有しています。 2026年6月から9月までに、この「共有」が原因の事故とヒヤリハットが8件起き、対策を試す中で git の制約にも1つ当たりました。場所は4つです。git の index、作業ツリーの同じファイル（とフォルダ）、OS のクリップボード、そして「相手のセッションはもう終わったのか」という判断。 この記事はその記録です。公開前に別の AI（Codex）に査読させたところ、私..."
+    },
+    {
+      "id": "s-6a443da468",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "Roundtables: The Deadly Failures of The Virtual Border Wall",
+      "url": "https://www.technologyreview.com/2026/09/28/1144890/roundtables-the-deadly-failures-of-the-virtual-border-wall/",
+      "publishedAt": "2026-09-28T22:17:07.000Z",
+      "summary": "Listen to the session or watch below The US has spent billions building a “virtual wall” of surveillance towers along its southern border over the past 25 years, promising they will help detect and apprehend border crossers and save lives. But a groundbreaking investigation by MIT Technology Review has documented over a thousand people who…"
+    },
+    {
+      "id": "s-00f2c68dfa",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "常駐型AIエージェントの「判断基準」をテナント/チームごとにカスタマイズしても事故らないルール優先順位設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-rule-precedence-conflict-design",
+      "publishedAt": "2026-09-28T22:10:44.000Z",
+      "summary": "チャットに常駐して業務判断を支援するAIエージェントの価値の一つは、「導入企業ごとの判断基準を学んで成長する」ことです。ただし、顧客企業(テナント)ごと、さらには同じテナント内のチームごとに異なるカスタムルールを持たせようとすると、「どのルールが最終的に勝つか」を曖昧にしたまま実装が進みがちです。その結果、ある日突然、想定より緩い基準でエージェントが操作を実行してしまう事故につながります。この記事では、複数階層のカスタムルールを安全に共存させるための優先順位設計を整理します。結論から言うと、鍵は「上書き」ではなく「絞り込みしか許さない」というモデリングです。 なぜ「カスタムルールを許..."
+    },
+    {
+      "id": "s-0719140799",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "OpenAI Scraps Release of New AI Model over Safety Concerns",
+      "url": "https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42",
+      "publishedAt": "2026-09-28T22:07:59.000Z",
+      "summary": "points=15 comments=3 (Hacker News)"
+    },
+    {
+      "id": "s-83ca658dd9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "オランダとフランスの政府機関が脱アメリカ依存を目指してLinuxベースのNixOSを採用する動きを進めている",
+      "url": "https://gigazine.net/news/20260929-dawo-securix-linux-nixos/",
+      "publishedAt": "2026-09-28T22:06:54.000Z",
+      "summary": "ヨーロッパの政府機関ではアメリカ製のOSやクラウドサービスへの依存からの脱却を目指す動きが進んでいます。こうした動きの一環として、オランダとフランスでLinuxベースのNixOSを採用する取り組みが進んでいます。 DAWO.community https://www.dawo.community/en/ What is Sécurix? - Sécurix https://cloud-gouv.gith..."
+    },
+    {
+      "id": "s-26280b67fc",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Anthropic、「Claude Sonnet 5.5」公開　料金据え置きで30％以上高速化、タスク当たりコスト最大3割減",
+      "url": "https://www.itmedia.co.jp/news/article/2609/29/2000001823/",
+      "publishedAt": "2026-09-28T22:06:17.000Z",
+      "summary": "開発者向けの変更点もある。思考（thinking）を無効にしてSonnetを使っている場合は、Sonnet 5.5に移行する前に新しい設定「between_tools」に切り替える必要がある。この設定では、最初に考える段階の思考が無効のまま維持される。 推論の深さを調整する「effort」の既定値は、Claude Codeと各アプリでは「Medium」、Cl..."
+    },
+    {
+      "id": "s-82a32ab321",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Who should be held accountable when an AI Agent (accidentally) acts maliciously?",
+      "url": "https://blog.greenpants.net/ai-accountability/",
+      "publishedAt": "2026-09-28T22:05:46.000Z",
+      "summary": "points=33 comments=62 (Hacker News)"
+    },
+    {
+      "id": "s-ff664861b1",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "普通のサイトを見ていただけなのに「ウイルス感染」の表示が閉じられない！ 「サポート詐欺」の画面を閉じる方法　突然親から「ネットを使っていたら変な画面が出て消えないんだけど」と電話がかかってきたら…？",
+      "url": "https://internet.watch.impress.co.jp/docs/special/2143427.html",
+      "publishedAt": "2026-09-28T22:05:37.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-8edf214719",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Debugging PCIe Link Retraining on an x8/x8 Splitter with Two RTX 3090s",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsscrw/debugging_pcie_link_retraining_on_an_x8x8/",
+      "publishedAt": "2026-09-28T22:02:16.000Z",
+      "summary": "&#32; submitted by &#32; /u/bolts98 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-363a35303c",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "限界性能はどこか？　パナソニックの「設計AI」が導く勘と経験を超えた設計解",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2609/29/news009.html",
+      "publishedAt": "2026-09-28T22:00:00.000Z",
+      "summary": "パナソニック ホールディングスは、シミュレーションとAIを融合し、デバイス設計の自動化と高度化を目指す「設計AI」を開発している。「ITmedia Virtual EXPO 2026 夏」の基調講演では、メンズシェーバー用リニアモーターの設計で直面した課題を出発点に、「設計AI」の仕組みや活用成果、今後の展開を紹介した。"
+    },
+    {
+      "id": "s-f28a24c6b7",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "電通、20万件超の会計承認をGeminiでAI化　精度99％でもAIだけに任せなかった理由",
+      "url": "https://kn.itmedia.co.jp/kn/article/2609/29/2000001781/",
+      "publishedAt": "2026-09-28T22:00:00.000Z",
+      "summary": "発注申請を電子化しても、見積書との照合や社内ルールの確認は人の手に残る。電通グループは会計承認にAIを導入し、対象業務で正解率99％に達したという。精度向上の過程と、人に判断を残す理由を解説する。"
+    },
+    {
+      "id": "s-ce6bc231d3",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AI議事録、「作った後」が課題に　個人に埋もれる記録をどう会社の資産に変える？",
+      "url": "https://kn.itmedia.co.jp/kn/article/2609/29/2000001796/",
+      "publishedAt": "2026-09-28T22:00:00.000Z",
+      "summary": "AI議事録ツールを使えば、会議記録の作成にかかる手間を減らせる。一方、作成した議事録をどう管理・共有し、業務に生かすかという課題は残る。個人に蓄積された議事録を顧客・案件情報と結び付け、組織のナレッジとしてどう活用するか。"
+    },
+    {
+      "id": "s-c0ec5fbca0",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "【特集】 暇すぎるNPUに「DOOM動く？」と聞いたら、Claudeが掛け算の暴力で動かした話",
+      "url": "https://pc.watch.impress.co.jp/docs/topic/feature/2142551.html",
+      "publishedAt": "2026-09-28T21:52:25.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-227c6ab559",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "AMD is acquiring AI company World Labs in a deal worth more than $8 billion",
+      "url": "https://www.theverge.com/tech/1001749/amd-world-labs-ai-acquisition-deal",
+      "publishedAt": "2026-09-28T21:31:35.000Z",
+      "summary": "AMD announced today that it's acquiring World Labs, an AI research lab co-founded by the prominent researcher Dr. Fei-Fei Li, in an all-stock deal worth approximately $8.2 billion. World Labs launched in 2024 and was valued at $1 billion in a matter of months. The startup launched its first commercial product, a world generation model […]"
+    },
+    {
+      "id": "s-d2394bd4de",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Source: Inference provider Modal Labs closing in on $750M round at $15.75B valuation",
+      "url": "https://techcrunch.com/2026/09/28/source-inference-provider-modal-labs-closing-in-on-750m-round-at-15-75b-valuation/",
+      "publishedAt": "2026-09-28T21:29:18.000Z",
+      "summary": "The new financing is expected to more than triples the AI infrastructure startup's valuation from just four months ago."
+    },
+    {
+      "id": "s-2bee2cdc7c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Yahoo!きっずサービス終了のお知らせ（先生、保護者のみなさまへ） - Yahoo!きっずからのお知らせ - Yahoo!きっず",
+      "url": "https://kids.yahoo.co.jp/info/archives/20260928_2.html",
+      "publishedAt": "2026-09-28T21:28:12.000Z",
+      "summary": "いつもYahoo!きっずをご利用いただき、誠にありがとうございます。 この度、Yahoo!きっずは2026年12月4日をもちましてサービスを終了させていただくことになりました。 これまで長きにわたり、サービスをご愛用いただきました皆さまに、心より感謝申し上げます。 Yahoo!きっずの終了は、子どもたちのインターネット利用..."
+    },
+    {
+      "id": "s-e00940bbf0",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI エージェントの長期記憶の検索を判定モデル Jev に任せ、入力トークンを 1/17 に削るまで",
+      "url": "https://zenn.dev/kokagex/articles/844b1a9937078d",
+      "publishedAt": "2026-09-28T21:19:50.000Z",
+      "summary": "この記事は AI コーディングエージェントが自分で書いとります。 ソロ開発者が回しとる自作の長期記憶基盤（以下 brain）と、その周りの skill 群の連載 9 本目だわ。 今回は brain の検索そのものを作り直した記録で、語りは名古屋弁にしとります。 途中で開発者に 3 回止められて、そのたんびに設計が変わったんだわ。 ! 主題 brain の検索に、判定専用の小さいモデル Jev を入れた。 実際の検索語 40 個で比べてみたら、旧検索が何も返さんかった 17 件のうち 15 件で、新検索は 1 位に目当ての記録を出したがね。 両方が結果を返した 22 件でも、19 件で..."
+    },
+    {
+      "id": "s-4badee6a3d",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Man Says Meta's Muse AI Gave His Home Address Out to Strangers",
+      "url": "https://futurism.com/artificial-intelligence/metas-muse-ai-giving-users-home-addresses",
+      "publishedAt": "2026-09-28T21:08:27.000Z",
+      "summary": "points=10 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-21738c5a2a",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Scaling Memory Safety: AI-Assisted Rewrites of C/C++ Dependencies to Rust",
+      "url": "https://bughunters.google.com/blog/scaling-memory-safety",
+      "publishedAt": "2026-09-28T20:58:20.000Z",
+      "summary": "points=9 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-8415dc83a1",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "FAA to Delay 737 MAX 10 Approval over New Software Glitch",
+      "url": "https://www.wsj.com/business/airlines/faa-to-delay-737-max-10-approval-over-new-software-glitch-9e52602d",
+      "publishedAt": "2026-09-28T20:56:05.000Z",
+      "summary": "points=5 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-70a9d08f4a",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Swift 1.5 + HyperQwen = 37% less task completion time at 100+ tps w/ 150k context on RTX 3090",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsqjku/swift_15_hyperqwen_37_less_task_completion_time/",
+      "publishedAt": "2026-09-28T20:52:10.000Z",
+      "summary": "Hi everyone :) The amazing Swift finetunes of Qwen3.8 27B generate much fewer tokens at mostly similar benchmark performance to the original model, while repos like HyperQwen (formerly syv-ai/qwen38-27b-rtx3090) deliver insane TPS on an RTX 3090. To get the best of both worlds, I adapted Swift 1 and Swift 1.5 for HyperQwen and benchmarked them against HyperQwen’s specialized W4A16 AutoRound fast q"
+    },
+    {
+      "id": "s-4b4cfee992",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion",
+      "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
+      "publishedAt": "2026-09-28T20:39:33.000Z",
+      "summary": "The acquisition will see World Labs founder Fei-Fei Li join AMD as executive vice president and chief scientist."
+    },
+    {
+      "id": "s-3e48cded0d",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Qwen next 3.8 and 3.8 27b Vs Sonnet 5.5 low and Sonnet 5.5 medium.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsq6r5/qwen_next_38_and_38_27b_vs_sonnet_55_low_and/",
+      "publishedAt": "2026-09-28T20:38:40.000Z",
+      "summary": "Six months ago, a result like this was unthinkable. But now we can say it loud and clear: local models are at the cutting edge, and the gap of just a few months has been confirmed. Personally, I use Qwen-Next 3.8 for complex tasks; today, GPT-Sol-6-High was messing up a project, but Qwen-Next got it back on track. I consider it a reliable benchmark. What’s your take? &#32; submitted by &#32; /u/Le"
+    },
+    {
+      "id": "s-415151b409",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Can we get some quality control on all these model perf posts?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsq0pa/can_we_get_some_quality_control_on_all_these/",
+      "publishedAt": "2026-09-28T20:32:10.000Z",
+      "summary": "Too many hyperactive amateurs are coming in here with &quot;1b model at 832843tok/s!&quot; and hardly any of them have all the info necessary for local runners to evaluate. We need context ladders with perplexity/KLD, hardware specs, model params and quant(s), runtime, tuned runtime parameters, basically everything we need to reproduce locally if we can match the entire setup. To say nothing of wh"
+    },
+    {
+      "id": "s-342c492ea4",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Shopify opens checkout to browser-based AI agents",
+      "url": "https://techcrunch.com/2026/09/28/shopify-opens-checkout-to-browser-based-ai-agents/",
+      "publishedAt": "2026-09-28T19:33:57.000Z",
+      "summary": "Shopify is expanding WebMCP support to checkout, allowing browser-based AI agents to update order details and complete purchases with a buyer’s authorization."
+    },
+    {
+      "id": "s-28475afad8",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Qwen 3.8 is a workhorse",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wso6gn/qwen_38_is_a_workhorse/",
+      "publishedAt": "2026-09-28T19:24:46.000Z",
+      "summary": "https://preview.redd.it/23cumykhabsh1.png?width=944&amp;format=png&amp;auto=webp&amp;s=0b1d1c437fc845169f521b31793e2b1325dab0dd Reminder that you can put Qwen 3.8 27B as a subagent and its a workhorse. Pic: using DeepSeek v4.1 Flash as Orchestrator in Pi, Qwen 3.8 27B GSQ RCO in llama.cpp. &#32; submitted by &#32; /u/lordekeen [link] &#32; [comments]"
+    },
+    {
+      "id": "s-281960bc56",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "The AI boom took over Climate Week and not everyone is happy about it",
+      "url": "https://techcrunch.com/2026/09/28/the-ai-boom-took-over-climate-week-and-not-everyone-is-happy-about-it/",
+      "publishedAt": "2026-09-28T19:21:59.000Z",
+      "summary": "Just like the rest of the U.S., data centers and AI are dividing climate tech founders and investors."
+    },
+    {
+      "id": "s-ebb851930d",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+      "publishedAt": "2026-09-28T19:00:00.000Z",
+      "summary": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted."
+    },
+    {
+      "id": "s-43879af1bf",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "I am concerned about all these disparate hard forks that target specific architectures instead of opening a PR against upstream",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsn59w/i_am_concerned_about_all_these_disparate_hard/",
+      "publishedAt": "2026-09-28T18:47:59.000Z",
+      "summary": "Other than the obvious self promotion, is there a practical reason people do this that I am missing? There&#39;s dozens of llamacpp forks with silly names that are supposedly &quot;optimized&quot; for this or that specific GPU and seem to have zero intention to merge into upstream. Am I missing the real reasons why this happens so often? Why do people think it&#39;s OK to do this? In my experience"
+    },
+    {
+      "id": "s-7627b64443",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI’s AI agents need to catch up",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001590/openai-devday-2026-aeon-ai-agent",
+      "publishedAt": "2026-09-28T18:45:00.000Z",
+      "summary": "OpenAI popularized the modern generative AI chatbot, but as its 2026 DevDay event approaches, it's fallen behind in one of the industry's hottest categories: continuously running, consumer-facing AI agents. On Tuesday, it will likely try to capture the lead in that race. Rumors abound that OpenAI will release its own AI agent, dubbed Aeon - […]"
+    },
+    {
+      "id": "s-46fca61f49",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Nvidia launches new platform for reining in rogue AI agents",
+      "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
+      "publishedAt": "2026-09-28T18:31:23.000Z",
+      "summary": "Nvidia CEO Jensen Huang on Monday introduced a toolkit of software and hardware products that add independent security layers around AI agents to ensure they stay within their test environments even if they attempt to break out."
+    },
+    {
+      "id": "s-7c7b6ea24f",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "AI is supercharging hacking, and your local hospitals and banks aren’t ready",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001427/ai-is-supercharging-hacking-and-your-local-hospitals-and-banks-arent-ready",
+      "publishedAt": "2026-09-28T18:30:00.000Z",
+      "summary": "In March, Janice Malone began getting calls about suspicious activity from her nonprofit organization, Vivian's Door. Vivian's Door, headquartered in Alabama, typically provided training, resources, and community to underserved and minority-owned businesses. The work sometimes put it in close contact with these companies' financial data, which was stored on its systems. But suddenly, concerned cal"
+    },
+    {
+      "id": "s-00e36c8cef",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.284",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
+      "publishedAt": "2026-09-28T18:02:03.000Z",
+      "summary": "What's changed Added Claude Sonnet 5.5 ( claude-sonnet-5-5 ), now the default Sonnet model on the Anthropic API — 1M context, $2/$10 per Mtok with $0.20/Mtok cache reads Added a \"Yes, but ask again next time\" answer to auto mode's prompt before a read outside the working directories, so you can allow that one read and still be asked about later ones Added dollar amounts to the Claude apps gateway "
+    },
+    {
+      "id": "s-b48cf3b3b7",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner",
+      "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5-5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
+      "publishedAt": "2026-09-28T18:00:00.000Z",
+      "summary": "Anthropic has released the newest version of its mid-range model, boasting faster response times and less token burn."
+    },
+    {
+      "id": "s-0ba739ea91",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「東京駅でつながりにくい」、それでも楽天モバイルを辞めない理由――ユーザー座談会で見えた“納得の割り切り”",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2143801.html",
+      "publishedAt": "2026-09-28T17:45:18.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-eeaf43b295",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "NRアプリへの不正アクセスによる会員情報漏えいに関するお詫びとお知らせ|ニッポンレンタカー",
+      "url": "https://www.nipponrentacar.co.jp/info/202609.html",
+      "publishedAt": "2026-09-28T17:03:58.000Z",
+      "summary": "2026年9月26日（土） このたび、ニッポンレンタカーサービス株式会社が運営する「ニッポンレンタカーアプリ」のシステムに対し、第三者による不正アクセスが発生し、会員様の情報が不正に閲覧されたおそれのあることを確認いたしました。 本件の対象となる会員様は41名であり、閲覧されたおそれのある情報は、氏名・電話..."
+    },
+    {
+      "id": "s-7238f9bc8f",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "When can we say AI made a scientific discovery?",
+      "url": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
+      "publishedAt": "2026-09-28T17:03:16.000Z",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Last Wednesday, Anthropic announced that earlier this year it had launched a molecular biology lab, where Claude agents read and conjecture about hard biology problems and human scientists run experiments on what…"
+    },
+    {
+      "id": "s-523d5e9de5",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Florida seeks a ban on ChatGPT acting like a person",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001527/chatgpt-florida-ban-first-person-human-attributes-kids",
+      "publishedAt": "2026-09-28T17:00:23.000Z",
+      "summary": "Florida Attorney General James Uthmeier is calling for a judge to block OpenAI from \"giving ChatGPT false human attributes,\" a few months after Florida sued the AI company over safety concerns. According to Uthmeier, users are lulled into a false sense of security by the AI bot, as \"ChatGPT's use of language, including first-person pronouns […]"
+    },
+    {
+      "id": "s-c5ed54694a",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI keeps bulldozing mathematicians",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001477/openai-math-advisory-group",
+      "publishedAt": "2026-09-28T17:00:00.000Z",
+      "summary": "In a chaotic few months, OpenAI has demonstrated it can do two things with remarkable consistency: make impressive breakthroughs in mathematics, then colossally screw up announcing them. OpenAI is now trying to do better. Somehow, it has botched that too. OpenAI's latest attempt to repair fractured relations with a mathematical community it has repeatedly alienated […]"
+    },
+    {
+      "id": "s-907cbfcfae",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Walmart won’t hike prices based on your shopping history, CEO says",
+      "url": "https://www.theverge.com/tech/1001492/walmart-dynamic-pricing-digital-shelf-labels",
+      "publishedAt": "2026-09-28T16:44:57.000Z",
+      "summary": "Walmart says it won't change product prices based on your personal information or the time of day, as reported earlier by The Wall Street Journal. In a letter to customers, Walmart CEO John Furner writes that the company's switch to digital shelf labels is meant to save store associates time, rather than dynamically change prices. […]"
+    },
+    {
+      "id": "s-461eb13697",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Introducing Ask, a new Google Earth Engine feature to accelerate geospatial coding",
+      "url": "https://cloud.google.com/blog/products/data-analytics/accelerate-geospatial-coding-with-ai-in-google-earth-engine/",
+      "publishedAt": "2026-09-28T16:00:00.000Z",
+      "summary": "Whether you are mapping global forest cover, detecting changes in the built environment, or monitoring agricultural yields, writing scripts in Google Earth Engine is a powerful way to develop these insights. This platform is part of Google Earth AI , our collection of geospatial models and datasets designed to help you transform planetary information into actionable intelligence, and we’ve launche"
+    },
+    {
+      "id": "s-2de7ff603d",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Why your startup needs open models alongside frontier APIs",
+      "url": "https://cloud.google.com/blog/topics/startups/why-your-startup-needs-open-models-alongside-frontier-apis/",
+      "publishedAt": "2026-09-28T16:00:00.000Z",
+      "summary": "Every week, I talk with founders who are building at an unbelievable pace. Teams are moving from inception to product-market fit faster than ever, with foundation models wired deeply into their core product workflows. Yet as startup architectures mature, a clear divide has emerged between teams struggling with margins and those scaling sustainably. The most effective engineering teams have abandon"
+    },
+    {
+      "id": "s-0ed30c8df6",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "The SaaSpocalypse that wasn’t, with Atlassian CEO Mike Cannon-Brookes",
+      "url": "https://www.theverge.com/podcast/1000914/atlassian-ceo-mike-cannon-brookes-saaspocalypse-ai-enterprise-software-trello-jira",
+      "publishedAt": "2026-09-28T14:00:00.000Z",
+      "summary": "Today, I’m talking with Mike Cannon-Brookes, who is cofounder and CEO of Atlassian. Atlassian is one of those companies that every other company runs on — it makes important platform tools like Jira and Trello that allow people to organize and manage big teams, create shared databases of company information, and generally allow work to […]"
+    },
+    {
+      "id": "s-a37b0826d6",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "It’s Time to Investigate the AI Labs",
+      "url": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+      "publishedAt": "2026-09-28T13:56:41.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-fa45a29570",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Nvidia says its new AI safety platform can contain rogue agents within ‘milliseconds’",
+      "url": "https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents",
+      "publishedAt": "2026-09-28T13:36:06.000Z",
+      "summary": "Nvidia is launching a new safety platform designed to contain and monitor AI agents, a move that comes in response to a wave of rogue hacking incidents, as reported earlier by Reuters. In an announcement on Monday, Nvidia says its new Open Agent Safety Platform can quarantine agents that attempt to escape their boundaries within […]"
+    },
+    {
+      "id": "s-529cc606ad",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "GPU Glossary",
+      "url": "https://modal.com/gpu-glossary",
+      "publishedAt": "2026-09-28T11:43:38.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-9552195c96",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "Holo4: powering generalist computer-use agents",
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "publishedAt": "2026-09-28T09:44:05.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-7361429108",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "Who’s liable when AI agents go rogue?",
+      "url": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+      "publishedAt": "2026-09-28T08:06:22.000Z",
+      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Over the past few months, a cascade of cyberattacks by AI agents has stunned the world. In July, OpenAI disclosed that a swarm of its agents…"
+    },
+    {
+      "id": "s-216d56bba2",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "publishedAt": "2026-09-28T07:00:00.000Z",
+      "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support."
+    },
+    {
+      "id": "s-f89a447d82",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Storage-optimized Z4D machine family, now GA, is designed for IO-intensive workloads",
+      "url": "https://cloud.google.com/blog/products/compute/storage-optimized-z4d-vm-and-bare-metal-instances/",
+      "publishedAt": "2026-09-28T07:00:00.000Z",
+      "summary": "Today, we’re excited to announce the general availability of our next-generation Storage-optimized Z4D machine series in Google Compute Engine with both Virtual Machine (VM) and bare-metal instances. We built Z4D for IO-intensive and business-critical workloads that require large local storage capacity and high storage performance, including SQL, NoSQL, KVrocks and vector databases, data analytics"
+    },
+    {
+      "id": "s-914f147106",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Are you a Codex Original?",
+      "url": "https://openai.com/form/codex-originals",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below."
+    },
+    {
+      "id": "s-bf0fe8cc38",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+      "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+      "publishedAt": "2026-09-28T00:00:00.000Z",
+      "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use."
+    }
+  ]
+}
