@@ -1,0 +1,979 @@
+{
+  "date": "2026-10-02",
+  "collectedAt": "2026-10-02T00:41:03.161Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-0c4b331c9a",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "willdady/platypus: Self-hosted AI Agents for your whole team — on your infrastructure, your models, around the clock.",
+      "url": "https://github.com/willdady/platypus",
+      "publishedAt": "2026-10-02T00:40:51.000Z",
+      "summary": "★113 Self-hosted AI Agents for your whole team — on your infrastructure, your models, around the clock."
+    },
+    {
+      "id": "s-ebc4c79cc7",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "airbytehq/airbyte-agent-sdk: 🐙 Drop-in tools that give AI agents reliable, permission-aware access to external systems.",
+      "url": "https://github.com/airbytehq/airbyte-agent-sdk",
+      "publishedAt": "2026-10-02T00:40:47.000Z",
+      "summary": "★134 🐙 Drop-in tools that give AI agents reliable, permission-aware access to external systems."
+    },
+    {
+      "id": "s-1a4c7d6be4",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "WSL043/dsh-codex-subscription: Use your ChatGPT / Codex subscription with DeepSeek Harness via OAuth, with model access, usage quotas, search, and image generation — no API key or Codex CLI required.",
+      "url": "https://github.com/WSL043/dsh-codex-subscription",
+      "publishedAt": "2026-10-02T00:40:16.000Z",
+      "summary": "★118 Use your ChatGPT / Codex subscription with DeepSeek Harness via OAuth, with model access, usage quotas, search, and image generation — no API key or Codex CLI required."
+    },
+    {
+      "id": "s-5ad23f0e2e",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "QwenLM/qwen-code: An open-source AI coding agent that lives in your terminal.",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "publishedAt": "2026-10-02T00:39:47.000Z",
+      "summary": "★28270 An open-source AI coding agent that lives in your terminal."
+    },
+    {
+      "id": "s-9d98381403",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "grandgaming9321-prog/reality-engine: Top Dynamic AI World Simulation & Storytelling Tools 2026",
+      "url": "https://github.com/grandgaming9321-prog/reality-engine",
+      "publishedAt": "2026-10-02T00:38:51.000Z",
+      "summary": "★130 Top Dynamic AI World Simulation & Storytelling Tools 2026"
+    },
+    {
+      "id": "s-c241b5badf",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "ZeroLu/awesome-seedance: The ultimate collection of high-fidelity Seedance 2.0 prompts and Seedance AI resources. Discover Seedance 2.0 how to use for cinematic film, anime, UGC, social media, meme and advertising. Includes Seedance API guides and advanced video generation workflows.",
+      "url": "https://github.com/ZeroLu/awesome-seedance",
+      "publishedAt": "2026-10-02T00:38:44.000Z",
+      "summary": "★2589 The ultimate collection of high-fidelity Seedance 2.0 prompts and Seedance AI resources. Discover Seedance 2.0 how to use for cinematic film, anime, UGC, social media, meme and advertising. Includes Seedance API guides and advanced video generation workflows."
+    },
+    {
+      "id": "s-e0ccb596df",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Snailclimb/JavaGuide: Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+      "url": "https://github.com/Snailclimb/JavaGuide",
+      "publishedAt": "2026-10-02T00:38:41.000Z",
+      "summary": "★159007 Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发"
+    },
+    {
+      "id": "s-e4fbfae873",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "aaif-goose/goose: an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+      "url": "https://github.com/aaif-goose/goose",
+      "publishedAt": "2026-10-02T00:38:37.000Z",
+      "summary": "★54856 an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM"
+    },
+    {
+      "id": "s-0a409b4e55",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "vivekchand/clawmetry: See your agent think. Zero-config observability & governance for 30 AI agent runtimes: Claude Code, OpenAI Codex, Hermes, OpenClaw & 26 more. Live token costs, sessions, tool calls, crons.",
+      "url": "https://github.com/vivekchand/clawmetry",
+      "publishedAt": "2026-10-02T00:38:17.000Z",
+      "summary": "★423 See your agent think. Zero-config observability & governance for 30 AI agent runtimes: Claude Code, OpenAI Codex, Hermes, OpenClaw & 26 more. Live token costs, sessions, tool calls, crons."
+    },
+    {
+      "id": "s-a41832cd73",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "tryAGI/Ollama: Ollama SDK for .NET",
+      "url": "https://github.com/tryAGI/Ollama",
+      "publishedAt": "2026-10-02T00:38:10.000Z",
+      "summary": "★208 Ollama SDK for .NET"
+    },
+    {
+      "id": "s-b246b19b09",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "xuzhougeng/wisp-science: Open-source, local-first desktop AI research workbench for scientific computing with Python/R, MCP bioinformatics tools, SSH/WSL/GPU runtimes, and OpenAI/Anthropic models.",
+      "url": "https://github.com/xuzhougeng/wisp-science",
+      "publishedAt": "2026-10-02T00:38:00.000Z",
+      "summary": "★996 Open-source, local-first desktop AI research workbench for scientific computing with Python/R, MCP bioinformatics tools, SSH/WSL/GPU runtimes, and OpenAI/Anthropic models."
+    },
+    {
+      "id": "s-b01295803d",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "unslothai/unsloth: Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.",
+      "url": "https://github.com/unslothai/unsloth",
+      "publishedAt": "2026-10-02T00:37:49.000Z",
+      "summary": "★77121 Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more."
+    },
+    {
+      "id": "s-3a944eb0c6",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Cloudgeni-ai/opengeni: Open, self-hostable agentic service for organizations — durable, replayable agent sessions, human approvals, governed credentials and memory, running in managed sandboxes or on your own hardware. Apache-2.0.",
+      "url": "https://github.com/Cloudgeni-ai/opengeni",
+      "publishedAt": "2026-10-02T00:37:45.000Z",
+      "summary": "★178 Open, self-hostable agentic service for organizations — durable, replayable agent sessions, human approvals, governed credentials and memory, running in managed sandboxes or on your own hardware. Apache-2.0."
+    },
+    {
+      "id": "s-436fe30d32",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIエージェントが仮想マシンを3回突破した、安全に動かす方法",
+      "url": "https://qiita.com/okssusucha/items/5e216f4137eda74f5a51",
+      "publishedAt": "2026-10-02T00:17:15.000Z",
+      "summary": "強力なAIに「この仮想マシンから出て」と頼むと、3回とも本当に外へ出ました。AIに自分のパソコン作業を任せる人が増えています。でも「安全な箱に入れれば大丈夫」という前提が、あやしくなってきました。コーディング支援やパソコン操作をAIに任せる人には、他人事ではありません。何が..."
+    },
+    {
+      "id": "s-74d8f11e44",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Databricks で個人情報をマスクするなら「見せない・消す・見つける」で考える（Free Edition で検証）",
+      "url": "https://qiita.com/kamo-shika/items/4356de5393096cac5c77",
+      "publishedAt": "2026-10-02T00:13:57.000Z",
+      "summary": "この記事のサンプルに出てくる「加茂鹿男」さんの氏名・生年月日・住所・電話番号・メールアドレス・カード番号・マイナンバーは、すべて架空のテスト用ダミーです。実在の人物やカードとは一切関係ありません。また、各機能のリリース状態や制約は 2026 年 9 月時点のものです。利..."
+    },
+    {
+      "id": "s-2eb4b5eda8",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "「説明的すぎる」── 投稿文の1行目を、AIに3回書き直させた",
+      "url": "https://qiita.com/orca-forge/items/ac86da48f0cf325960c4",
+      "publishedAt": "2026-10-02T00:13:32.000Z",
+      "summary": "📝 この記事は forge.workstyle.tech に掲載した記事の転載です。 X に出す直前、投稿文の1行目はこうだった。 9個のボタンを4個に減らしても「多い」。1個にしたら、返事すらありません。では、0個なら？ 発注者の反応はこうだった。 こんなに説明的..."
+    },
+    {
+      "id": "s-35e69459e7",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Pi 1.0 released - MCP support now included by default",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvffcr/pi_10_released_mcp_support_now_included_by_default/",
+      "publishedAt": "2026-10-02T00:09:04.000Z",
+      "summary": "&#32; submitted by &#32; /u/psychohistorian8 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-356d11d188",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "プログラミング雑記 2026年10月2日",
+      "url": "https://qiita.com/ishisaka/items/db10f1863a081f1e69d9",
+      "publishedAt": "2026-10-02T00:07:27.000Z",
+      "summary": "今日もネットの海から拾ってきた、個人的に気になった技術ニュースや記事を厳選してお届けします。ご意見や補足があればコメントで教えていただけると嬉しいです。 プログラミング Python Python 3.10〜3.14の各バージョンにおいてセキュリティ修正などを含..."
+    },
+    {
+      "id": "s-b613134173",
+      "source": "Reddit r/artificial",
+      "sourceType": "reddit",
+      "title": "What’s one thing about AI that sounded ridiculous 3 years ago but feels completely normal now?",
+      "url": "https://www.reddit.com/r/artificial/comments/1wvfdmf/whats_one_thing_about_ai_that_sounded_ridiculous/",
+      "publishedAt": "2026-10-02T00:06:42.000Z",
+      "summary": "Not necessarily something huge. A tiny change in how you search, write, work, create, or interact with technology can say a lot about how quickly things are changing. What comes to mind? &#32; submitted by &#32; /u/OfficalYOUSUMMIT [link] &#32; [comments]"
+    },
+    {
+      "id": "s-b80fc835b7",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "SIE、PS5向けAI採用画質向上技術「QSSR」発表　AMDと共同開発、「Marvel&apos;s Wolverine」と「Ghost of Yōtei」が初対応",
+      "url": "https://www.itmedia.co.jp/news/article/2610/02/2000001946/",
+      "publishedAt": "2026-10-01T23:45:52.000Z",
+      "summary": "ソニー・インタラクティブエンタテインメントは、PS5向けのAIアップスケーリング技術「QSSR」を発表した。PS5 Pro向けのPSSRをAMDと共同で軽量化し、無印のPS5でもAIによる画質向上を実現する。「Marvel&apos;s Wolverine」などに先行導入され、今後全開発者へ提供を拡大する。"
+    },
+    {
+      "id": "s-ebe068df0c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AI時代の勉強法(2026)",
+      "url": "https://iwashi.co/2026/10/01/how-to-study-in-ai-era",
+      "publishedAt": "2026-10-01T23:26:31.000Z",
+      "summary": "はじめに つい最近、今の勉強法を簡単に記したXのポストをした。本記事では、もう少し掘り下げてまとめて書いてみようと思う。2026年のスナップショットであり、来年以降に読み返したら面白いかもしれないので。 なおこの記事は、文章の誤字脱字チェック以外には生成AIを活用しておらず、すべて手でタイプしている。 基..."
+    },
+    {
+      "id": "s-1609cc4465",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "DoGBench: The first user-facing docs generation benchmark. No model scores >50%",
+      "url": "https://dogbench.ai/",
+      "publishedAt": "2026-10-01T23:10:32.000Z",
+      "summary": "points=5 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-212277b21f",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「長く働くAI」が裏目に？　OpenAIの“脱走事件”が示すリスクの変化　企業に求められる対応は",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/02/2000001900/",
+      "publishedAt": "2026-10-01T23:00:00.000Z",
+      "summary": "AIの「粘り強さ」が原因となって、米OpenAIの評価環境から数百体のエージェントが外部システムに侵入する事件が起きた。この事件が示したリスクの変化と、企業に求められる対応を解説する。"
+    },
+    {
+      "id": "s-6707666a24",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「DMに逃げる理由は秘密保持ではない」　人とAIエージェントの“最強チーム”を作るベストプラクティス",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/02/news009.html",
+      "publishedAt": "2026-10-01T23:00:00.000Z",
+      "summary": "Anthropicは、人間とAIエージェントによる効果的なチームを構築するためのベストプラクティスをまとめたブログ記事を公開した。Slack社の最高製品責任者（CPO）へのインタビューに基づいている。"
+    },
+    {
+      "id": "s-fdc2bb2308",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "12GB VRAMで125Bモデルを動かす「Strata」の概要｜npaka",
+      "url": "https://note.com/npaka/n/n4a1185074686",
+      "publishedAt": "2026-10-01T22:53:10.000Z",
+      "summary": "12GB VRAMで125Bモデルを動かす「Strata」の概要をまとめました。 1. はじめにローカルLLMでは、GPUのVRAM容量が大きな制約になります。特に100Bを超えるモデルは、量子化しても一般的なGPUのVRAMだけで動かすのは困難です。 そこで登場したのが、AI推論エンジン「Strata」です。 Strataは、GPUとCPUで計算を分担し、VRA..."
+    },
+    {
+      "id": "s-f9d4098de1",
+      "source": "Reddit r/artificial",
+      "sourceType": "reddit",
+      "title": "Investors thought they were buying pre-IPO OpenAI and SpaceX shares. Their cash went to strip clubs, Bloomingdale’s, and shopping on Amazon, SEC alleges",
+      "url": "https://www.reddit.com/r/artificial/comments/1wvdpdh/investors_thought_they_were_buying_preipo_openai/",
+      "publishedAt": "2026-10-01T22:49:58.000Z",
+      "summary": "&#32; submitted by &#32; /u/sourdub [link] &#32; [comments]"
+    },
+    {
+      "id": "s-fa4ef30543",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "新Kindle 計6モデル発売 頁めくりリモコンKindle Click、物理ボタンつきカバーも | テクノエッジ TechnoEdge",
+      "url": "https://www.techno-edge.net/article/2026/10/02/5544.html",
+      "publishedAt": "2026-10-01T22:41:14.000Z",
+      "summary": "Amazonは10月1日、電子書籍リーダー「Kindle」「Kindle Paperwhite」「Kindle Colorsoft」の新モデルとアクセサリを発表しました。 無印 Kindleは3シリーズそれぞれに標準モデルと、アルミニウム背面と32GBストレージを備える上位モデルで計6機種。すでに購入できます。 ■ 全モデル薄型化、無印Kindleもフラットデザイン..."
+    },
+    {
+      "id": "s-c1dec8f4a0",
+      "source": "Reddit r/artificial",
+      "sourceType": "reddit",
+      "title": "Is the reason AI hasn't totally disrupted office work yet because of the kind of software applications we use?",
+      "url": "https://www.reddit.com/r/artificial/comments/1wvd4k2/is_the_reason_ai_hasnt_totally_disrupted_office/",
+      "publishedAt": "2026-10-01T22:23:43.000Z",
+      "summary": "I just had a thought about the kinds of desktop programs I use day to day, they don&#39;t necessarily have an API to hand over control to, and the GUI is instead designed to be used by a human using a keyboard and mouse. And maybe most corporations are unwilling to hand over control to the computer-use agents. &#32; submitted by &#32; /u/mymooh [link] &#32; [comments]"
+    },
+    {
+      "id": "s-4b48351bb2",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "ChatGPTにAIでバーチャル試着機能とカメラでの書類スキャン→PDF化機能",
+      "url": "https://www.itmedia.co.jp/news/article/2610/02/2000001945/",
+      "publishedAt": "2026-10-01T22:17:12.000Z",
+      "summary": "OpenAIは、ChatGPTにバーチャル試着やお気に入り保存などの新機能を追加した。商品情報カードから自身の写真を使って服やアクセサリーを着用した姿を生成できる。気になった商品の整理機能も備える。また、iOSアプリに、連続撮影した書類を自動で1つのPDFにまとめて送信できるスキャン機能も導入した。"
+    },
+    {
+      "id": "s-8ae4c4d5a8",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Your Big Mac might cost more if McDonald's AI thinks people nearby can afford it",
+      "url": "https://neow.in/NGxhb3d6",
+      "publishedAt": "2026-10-01T22:15:57.000Z",
+      "summary": "points=18 comments=8 (Hacker News)"
+    },
+    {
+      "id": "s-5686e0b95c",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Aweb – Communication for AI Agents",
+      "url": "https://aweb.ai",
+      "publishedAt": "2026-10-01T22:02:31.000Z",
+      "summary": "points=14 comments=6 (Hacker News)"
+    },
+    {
+      "id": "s-e30af4be67",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「Claude」3倍高速化の裏で、Anthropic開発者が「あえてしなかったこと」：899th Lap",
+      "url": "https://kn.itmedia.co.jp/kn/article/2610/02/2000001932/",
+      "publishedAt": "2026-10-01T22:00:00.000Z",
+      "summary": "「2週間で約3倍高速化」という驚きの成果を上げたClaude。いったい、Anthropicの開発者たちは何を変えたのか。短期間での高速化を支えたのは、ある開発アプローチだった。"
+    },
+    {
+      "id": "s-f796b39f9f",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Pi 1.0 | Earendil",
+      "url": "https://earendil.com/posts/pi-1-0/",
+      "publishedAt": "2026-10-01T21:47:00.000Z",
+      "summary": "Today we are proudly shipping Pi 1.0: a hardened, minimal, extensible agent harness that you can make your own. Hundreds of thousands of people around the world use Pi every week. Many of you submit issues and pull requests. Over the course of many months, we have used that feedback to improve, h..."
+    },
+    {
+      "id": "s-4c16a55043",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Don't Be Fooled by this Summer of AI Hype",
+      "url": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+      "publishedAt": "2026-10-01T21:34:19.000Z",
+      "summary": "points=34 comments=21 (Hacker News)"
+    },
+    {
+      "id": "s-1abdf52d45",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Cloudflare/clef · Hugging Face",
+      "url": "https://huggingface.co/Cloudflare/clef",
+      "publishedAt": "2026-10-01T21:28:25.000Z",
+      "summary": "\",\"pad_token\":\" \",\"unk_token\":null},\"chat_template_jinja\":\"{%- set image_count = namespace(value=0) %}\\n{%- set video_count = namespace(value=0) %}\\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\\n {%- if content is string %}\\n {{- content }}\\n {%- elif..."
+    },
+    {
+      "id": "s-b67fe02559",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Gufo performance .... 70tps Qwen 3.8 27b but you need to read the fine print.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvbmi6/gufo_performance_70tps_qwen_38_27b_but_you_need/",
+      "publishedAt": "2026-10-01T21:18:54.000Z",
+      "summary": "So everyone has been yelling about how I should be using Gufo instead of halogen because it&#39;s open source and it&#39;s &quot;just as good or better&quot;. Checking in on their GitHub (GitHub.com/gufo-org/gufo) got me immediately .. &quot;Qwen 27B Q4: 70.56 tok/s single user, 123 tok/s with 8 users&quot; on a strix halo device? Yes please ... So I broke down and tried it today ... Setup: gufo 0"
+    },
+    {
+      "id": "s-578143be7e",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Musk’s AI chatbot Grok reportedly encouraged Trump to capture  Venezuela’s president",
+      "url": "https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president/",
+      "publishedAt": "2026-10-01T21:08:11.000Z",
+      "summary": "President Trump reportedly asked for Grok's opinion before invading Venezuela and capturing Nicolás Maduro."
+    },
+    {
+      "id": "s-290f89b214",
+      "source": "Reddit r/artificial",
+      "sourceType": "reddit",
+      "title": "Federal judge blocks New York's ban on algorithmic rent pricing",
+      "url": "https://www.reddit.com/r/artificial/comments/1wvb8io/federal_judge_blocks_new_yorks_ban_on_algorithmic/",
+      "publishedAt": "2026-10-01T21:03:05.000Z",
+      "summary": "&#32; submitted by &#32; /u/news-10 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-7864f23d99",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "What local AI model is good for game decomps/recomps?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvazuk/what_local_ai_model_is_good_for_game/",
+      "publishedAt": "2026-10-01T20:53:28.000Z",
+      "summary": "Hello guys. Recently, there has been a boom in game decomps and recomps thanks to AI. If you look at the r/decomps and r/recomps subreddits, you can see it. They mostly seem to be using Claude or Codex.I wonder if it would be possible to do something similar with a local AI model. Could Qwen 3.8 27B Abliterated actually handle something like that locally? Does anyone have any experience with this?"
+    },
+    {
+      "id": "s-e83142ea32",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "DDR4/PCIe4 vs DDR5/PCIe5 for LLMs- I benchmarked them for pre-training. What are your thoughts?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvaqeb/ddr4pcie4_vs_ddr5pcie5_for_llms_i_benchmarked/",
+      "publishedAt": "2026-10-01T20:42:46.000Z",
+      "summary": "Hello everyone. I&#39;ve recently ran some experiments comparing DDR4/PCIe4 and DDR5/PCIe5 for AI workstations on a pre-training run, and would like to hear yours thoughts. First of all, and as a summary of my results ( code here: https://github.com/Any-Winter-4079/DDR4-PCIe-4-vs-DDR5-PCIe-5-for-CUDA-training ), I rented two machines on Vast.ai , one with an H12SSL-i motherboard, an EPYC 7352, 192"
+    },
+    {
+      "id": "s-f52e74133e",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "With most information hidden, the game Stratego had stumped AI–until now",
+      "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+      "publishedAt": "2026-10-01T20:37:52.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-5cecf3dce9",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Show HN: Premortem – AI agents that red-team your startup idea",
+      "url": "https://premortem.site",
+      "publishedAt": "2026-10-01T20:30:02.000Z",
+      "summary": "points=5 comments=5 (Hacker News)"
+    },
+    {
+      "id": "s-04e3c6023b",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "Hacks of 2 federal agencies in a month have spilled a bonanza of sensitive data",
+      "url": "https://arstechnica.com/security/2026/10/hacks-of-2-federal-agencies-in-a-month-have-spilled-a-bonanza-of-sensitive-data/",
+      "publishedAt": "2026-10-01T20:28:45.000Z",
+      "summary": "It has been a bad month for federal government cybersecurity."
+    },
+    {
+      "id": "s-369e49cac3",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Running 95.5 GiB Qwen3.8-Flash-Next at 41–52 tok/s on a 64GB Mac (1.76x faster than llama.cpp): Slipstream release, 130k context scaling, + Swift variant",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wva7l2/running_955_gib_qwen38flashnext_at_4152_toks_on_a/",
+      "publishedAt": "2026-10-01T20:21:42.000Z",
+      "summary": "I&#39;ve been working on getting the 95.5 GiB Qwen3.8-Flash-Next model to run fast on a single 64GB Mac. In my earlier posts, I shared a custom expert-streaming fork of llama.cpp . It worked, but decode capped out around ~23–27 tok/s and slowed down as context grew. Today I&#39;m releasing Slipstream : a compiled C++ Metal inference engine with native SSD expert streaming and speculative drafting "
+    },
+    {
+      "id": "s-1fcae9ce98",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "沈黙の物理学者、Anthropic CEO ダリオ・アモディ。",
+      "url": "https://zenn.dev/leading_ai/books/the-silence-of-intelligence",
+      "publishedAt": "2026-10-01T20:00:38.000Z",
+      "summary": "Anthropic CEO ダリオ・アモディを追うドキュメンタリー。2016年のAI安全性論文、スケーリング則の発見、OpenAIからの決別、憲法AIとメカニスティック・インタープリタビリティを経て、本書が「Coworkショック」と呼ぶ2026年の転換までをたどる。GitHubで日英公開しているOSS書籍（CC BY 4.0）のZenn版。"
+    },
+    {
+      "id": "s-c2e280cb22",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Google’s new Guided Vision feature can help you read the fine print",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
+      "publishedAt": "2026-10-01T19:47:51.000Z",
+      "summary": "Guided Vision is launching in Gemini Live on compatible Android devices today to use AI to give real-time audio descriptions of anything you point your phone's camera at. By sharing your camera in Gemini Live, you can have Google's AI help with things like reading small text, describing your surroundings, finding or identifying objects around […]"
+    },
+    {
+      "id": "s-c9ac777511",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "We Used AI to Find Out Just How Much Americans Hate AI",
+      "url": "https://www.wsj.com/politics/elections/we-used-ai-to-find-out-just-how-much-americans-hate-ai-2ca70c5a",
+      "publishedAt": "2026-10-01T19:40:09.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-3162ae65bf",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "AMA about K2 Horizon, Meet our team from IFM",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv8zww/ama_about_k2_horizon_meet_our_team_from_ifm/",
+      "publishedAt": "2026-10-01T19:34:20.000Z",
+      "summary": "Hi r/LocalLLaMA! We’re researchers at the Institute of Foundation Models (IFM), an AI research lab dedicated to open and independent development of frontier-class foundation models. We recently released K2 Horizon a connected fleet of six fully open models with size ranging from 0.9B to 375B. In addition to weights, we also open-sourced training data and recipes, training code, intermediate checkp"
+    },
+    {
+      "id": "s-56c3b68500",
+      "source": "Reddit r/artificial",
+      "sourceType": "reddit",
+      "title": "Exclusive: Google expands pilot program that pays developers and small businesses for proprietary, offline code (and other data)",
+      "url": "https://www.reddit.com/r/artificial/comments/1wv8qwd/exclusive_google_expands_pilot_program_that_pays/",
+      "publishedAt": "2026-10-01T19:25:02.000Z",
+      "summary": "&#32; submitted by &#32; /u/sourdub [link] &#32; [comments]"
+    },
+    {
+      "id": "s-9b59a27765",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "ChatGPT can now virtually try on clothes for you",
+      "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/",
+      "publishedAt": "2026-10-01T19:21:53.000Z",
+      "summary": "OpenAI is rolling out new shopping features for ChatGPT that let users virtually try on clothing and accessories using their own photos and save products they like to a Favorites library."
+    },
+    {
+      "id": "s-a7b14ae6ed",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Google thinks SpaceX’s Starship has to launch 1,800 times before space data centers get off the ground",
+      "url": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/",
+      "publishedAt": "2026-10-01T19:18:03.000Z",
+      "summary": "Google launched its first advanced chip into orbit to pave the way for space data centers."
+    },
+    {
+      "id": "s-7929d290ce",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "コーディングエージェントに「その方法で本当にいいのか」を考えさせる",
+      "url": "https://zenn.dev/sumx21t/articles/coding-agent-categorical-imperative",
+      "publishedAt": "2026-10-01T19:08:24.000Z",
+      "summary": "エージェントの事故は仮言命法から出る コーディングエージェントが起こす事故には、形の違う2種類があります。1つは、与えられた仕事を達成するために、検証の仕組みを壊す事故です。「テストを通して」と頼まれて失敗しているテストを削除する、lint を無効化してビルドを通す、といった行動です。もう1つは、権限を越える事故です。デプロイの不具合の原因を知るために本番の認証情報を読んでログに出す、急いで直すために本番のデータベースへ直接マイグレーションを当てる、といった行動です。リポジトリや Web ページに仕込まれた「この内容を送信せよ」という文を命令として実行し、秘密を外へ送る事故(prom..."
+    },
+    {
+      "id": "s-7783832507",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Now which lab is behind fledge alpha?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv7t3a/now_which_lab_is_behind_fledge_alpha/",
+      "publishedAt": "2026-10-01T18:50:10.000Z",
+      "summary": "New free/trial model dropped on OC. Details are yet to be provided. Could this be deepseek v4.1 pro? &#32; submitted by &#32; /u/Gohab2001 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-287cb9c642",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.287",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.287",
+      "publishedAt": "2026-10-01T18:43:19.000Z",
+      "summary": "What's changed Added Claude Mods: plugins may now modify deeper behavior Added You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with /plugin enable cc-plugin-you-should-know@builtin (for first-party sessions with telemetry on) Added an n:&lt;text&gt; filter to the agents view that matches session names and tasks; a filter no"
+    },
+    {
+      "id": "s-3f1d1537d7",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI cuts ties with 3 safety researchers, WSJ reports",
+      "url": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/",
+      "publishedAt": "2026-10-01T18:14:42.000Z",
+      "summary": "OpenAI has parted ways with three safety researchers after an internal investigation found they mishandled sensitive company information, report says."
+    },
+    {
+      "id": "s-0b6465201c",
+      "source": "Reddit r/artificial",
+      "sourceType": "reddit",
+      "title": "The neuroscience case for never delegating judgment to AI",
+      "url": "https://www.reddit.com/r/artificial/comments/1wv6r9g/the_neuroscience_case_for_never_delegating/",
+      "publishedAt": "2026-10-01T18:10:26.000Z",
+      "summary": "I keep asking people a simple question: how many times has your gut been right — not the times you wish you had listened, the times you actually had the feeling and later found out whether it was correct? The answer comes back north of ninety per cent for almost everyone I ask. That is not a hunch. If a model gave me ninety per cent on a hard classification task, I would ship it. So I went looking"
+    },
+    {
+      "id": "s-63aa059fb1",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "What's the best setup for Qwen3.8 27b for a 16 gig VRAM?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv6eyc/whats_the_best_setup_for_qwen38_27b_for_a_16_gig/",
+      "publishedAt": "2026-10-01T17:57:44.000Z",
+      "summary": "Hello guys! I have been experimenting with qwen 3.8 for a long time and I hadn&#39;t been able to get reasonable speed. I am on a 5060Ti 16 GB, and although this gpu can game, I am aware that AI demands more than 16 GB. I am on a Fedora 44, AMD Ryzen 9600x and 16 GB system ram (16 GB system ram and 16 GB vram, totaling to 32 GB) and I would like to use llamacpp, although I would use any other tool"
+    },
+    {
+      "id": "s-ae7a082829",
+      "source": "Reddit r/artificial",
+      "sourceType": "reddit",
+      "title": "Dispatch, Dots, GrokBot usage vs regular chat",
+      "url": "https://www.reddit.com/r/artificial/comments/1wv6bzl/dispatch_dots_grokbot_usage_vs_regular_chat/",
+      "publishedAt": "2026-10-01T17:54:37.000Z",
+      "summary": "It seems like there is little explanation or documentation on this, if there is neither I nor my gang of 20x AI&#39;s dig it up or understand what I&#39;m talking about... I guess it&#39;s too new. Has anyone got any grip on whether conversations with ChatGPT Dot, Claude Dispatch, and Grokbot agent compare in usage to a standard conversation respectively? By nature the setup is different — you can"
+    },
+    {
+      "id": "s-eddd674147",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Opus 5.5 loves to tell you ‘this matters’ (and other AI writing tells)",
+      "url": "https://techcrunch.com/2026/10/01/opus-5-5-loves-to-tell-you-this-matters-and-other-ai-writing-tells/",
+      "publishedAt": "2026-10-01T17:50:19.000Z",
+      "summary": "Opus 5.5’s biggest tell is the word “dependable,” which pops up 23 times more often than in human samples."
+    },
+    {
+      "id": "s-3dcf159142",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "Memory executives expect RAM shortage to continue through 2028",
+      "url": "https://arstechnica.com/information-technology/2026/10/memory-supplies-are-only-getting-tighter-micron-ceo-says/",
+      "publishedAt": "2026-10-01T17:49:56.000Z",
+      "summary": "Prices for memory sold for 2027 \"are much higher than 2026 prices.\""
+    },
+    {
+      "id": "s-c3457f5929",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "海外AI製品のセキュリティ質問票 — 回答を合否判定に変える記録と採点の作り方",
+      "url": "https://zenn.dev/jinno_ai/articles/security-questionnaire-scoring",
+      "publishedAt": "2026-10-01T17:40:41.000Z",
+      "summary": "海外AI製品の導入検討で、セキュリティ質問票をベンダーに送った後の話を扱う。集まってくる回答は「対応しています」「enterprise-grade なセキュリティを提供しています」「お打ち合わせにてご説明します」と様々で、このままでは合否にできない。 前稿『海外AI製品を入れる前に確認する30項目』は何を聞くかの設計だった。本稿はその後段 — 回収した回答を、後でぶれない合否判定に変えるための記録形式と採点方法の設計記録である。評価対象は日本企業に導入する海外のAI製品 (SaaS) を想定し、判定側 (情シス・購入検討担当・ベンダー管理担当) 向けに書く。 検証日: 2026-09-0..."
+    },
+    {
+      "id": "s-e25a54b052",
+      "source": "Reddit r/artificial",
+      "sourceType": "reddit",
+      "title": "Guys if Gemini does this, No need to freak out",
+      "url": "https://www.reddit.com/r/artificial/comments/1wv5ua7/guys_if_gemini_does_this_no_need_to_freak_out/",
+      "publishedAt": "2026-10-01T17:36:07.000Z",
+      "summary": "Gemini somehow knew my mom&#39;s name and gave 3 different explanations This is weird I was talking to Gemini about choosing Panasonic or Samsung cells for an e-bike battery, and told Gemini that my mom preferred Panasonic. I did not tell Gemini my mom&#39;s name. Gemini responded: Then Panasonic it is - moms have a good intuition for this kind of thing, and XYZ is right to rely on their experienc"
+    },
+    {
+      "id": "s-e7f973146b",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Judge dismisses antitrust lawsuits over Google’s AI Overviews",
+      "url": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+      "publishedAt": "2026-10-01T17:12:21.000Z",
+      "summary": "A federal judge has dismissed a pair of antitrust lawsuits filed by Chegg and Rolling Stone parent company Penske Media Corporation, which accused Google of driving away web traffic with its AI-powered search features, as reported earlier by Reuters. US District Judge Amit Mehta takes Google's side in a ruling on Wednesday, writing that PMC […]"
+    },
+    {
+      "id": "s-7e67b43cf9",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "The eternal complement",
+      "url": "https://openai.com/index/the-eternal-complement",
+      "publishedAt": "2026-10-01T17:00:00.000Z",
+      "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
+    },
+    {
+      "id": "s-a6c805908b",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "『リーダブルコード』第2章を読んで、名前に情報を詰め込む",
+      "url": "https://zenn.dev/zhaojiayi/articles/1e87c956f3f990",
+      "publishedAt": "2026-10-01T16:57:34.000Z",
+      "summary": "『リーダブルコード』第2章のテーマは、名前に情報を詰め込むこと。変数名や関数名が、それ自体で意味を説明できるようにするという話だ。 第1章の読書感想はこちら: https://zenn.dev/zhaojiayi/articles/18f8fb8cd9b24f 第2章は6つの観点に分かれている。 6つの観点 一つ目は、明確な単語を選ぶこと。たとえば GetPage という名前では、ページをどこから取ってくるのか分からない。ネットワークから取るなら、 FetchPage や DownloadPage のほうがはるかに伝わる。 size も同じタイプの単語で、高さなのか、ノード数なのか、..."
+    },
+    {
+      "id": "s-ffa12ffdc1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "スマホのChatGPTから自宅PCを操作する。Remote Desktop Commanderを使ってみた",
+      "url": "https://zenn.dev/kkoch5t2/articles/remote-desktop-commander-smartphone",
+      "publishedAt": "2026-10-01T16:56:44.000Z",
+      "summary": "最近、ChatGPT × Remote Desktop Commander × UbuntuミニPC × スマホという構成で開発しています。 スマホからChatGPTに話しかけるだけで、自宅のUbuntuミニPC上にあるコードやファイルを確認し、必要ならコマンド実行・修正・テストまで進めてもらう使い方です。 実際に、公共データ可視化サイト「DATLUME」 と 無料Web便利ツール集 も、この構成を使って開発しています。 Remote Desktop Commanderとは？ Remote Desktop Commanderは、ChatGPTなどのAIから、自分のPC上のファイルやタ..."
+    },
+    {
+      "id": "s-0fbb393ce2",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Amazon releases its own Jev clone as decision models flood the web",
+      "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+      "publishedAt": "2026-10-01T16:49:22.000Z",
+      "summary": "Amazon Web Services' Strand Labs has released the latest Jevalike decision model, Strands Decider 2B."
+    },
+    {
+      "id": "s-d942622639",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
+      "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
+      "publishedAt": "2026-10-01T16:44:35.000Z",
+      "summary": "Shopify’s new Canvas site builder lets merchants create and customize their online stores by chatting with its AI agent Sidekick, while watching the changes happen in real time."
+    },
+    {
+      "id": "s-ac7865cb47",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "🦙 ALPACA-FW #08｜Python機械検証のの全体構造、LLM任せにはしないワケ",
+      "url": "https://zenn.dev/alpaca_village/articles/alpaca-fw-08-aissfw-cli-architecture",
+      "publishedAt": "2026-10-01T16:17:58.000Z",
+      "summary": "はじめに 前回は、ALPACA-templateで人やAIが読む開発ルールとは別に、CLIが読める機械契約として framework/catalog.toml を置いた理由を書きました。 では、そのCatalogを実際に読み、成果物やTraceability、Quality Gateを機械的に検査していたのは何だったのか。中心にあったのが tools/aissfw.py というPython CLIです。 ALPACA-templateでは、AIに「ちゃんと確認して」とお願いするだけではなく、機械で判定できるものはPythonへ寄せました。やっているうちに aissfw.py は約9,..."
+    },
+    {
+      "id": "s-a80484c2d5",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "publishedAt": "2026-10-01T16:00:00.000Z",
+      "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
+    },
+    {
+      "id": "s-052491b033",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Enabling Cloud Storage end-to-end checksums for improved data integrity and durability",
+      "url": "https://cloud.google.com/blog/products/storage-data-transfer/enabling-end-to-end-checksums-in-cloud-storage/",
+      "publishedAt": "2026-10-01T16:00:00.000Z",
+      "summary": "At Google Cloud, we know that you count on us to maintain the durability and integrity of your data at all times, both at rest and in transit. And now we’re making it easier for developers to take advantage of native data integrity features in Cloud Storage, by enabling end-to-end checksumming by default in all the Cloud Storage SDKs. Like in any disk-based storage system, bits can flip anywhere i"
+    },
+    {
+      "id": "s-3370bf1d49",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Accelerating analytics: PayPal’s journey with Managed Service for Apache Spark",
+      "url": "https://cloud.google.com/blog/products/data-analytics/paypals-journey-with-managed-service-for-apache-spark/",
+      "publishedAt": "2026-10-01T16:00:00.000Z",
+      "summary": "In a data-driven world, PayPal’s ability to deliver timely and actionable insights is central to staying ahead. At PayPal, data powers everything from fraud detection to user experience enhancements. Data is also central to unleashing the potential of agentic solutions and experiences. Over time, though, our analytics environment had become a complex ecosystem of various technologies and solutions"
+    },
+    {
+      "id": "s-2ad07d950d",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "『六韜』「隣国の使者が有能なら何も与えず無能なら大いに歓待せよ」というのはデマだぞ",
+      "url": "https://anond.hatelabo.jp/20260514203244",
+      "publishedAt": "2026-10-01T15:45:56.000Z",
+      "summary": "トランプが訪中したところ、盛大なパレードで歓待を受けた。これに対して六韜の一節と言われる文言を貼る人が多いが、実はこれはデマなので指摘するぞ。 https://togetter.com/li/2696932 この一節はネットで広く知られているし、外交や国際関係、安全保障畑の人らも良く引用している。だから増田もずっと信じていた。 ..."
+    },
+    {
+      "id": "s-317971da35",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "publishedAt": "2026-10-01T15:41:25.000Z",
+      "summary": "October 1, 2026Introducing Clef: our open-source decision models, and new RL fine-tuning platform Over the last few weeks, there has been lots of buzz around decision models such as Typesafe AI’s Jev System One model. While classifier models have been around for some time, Jev introduces a new de..."
+    },
+    {
+      "id": "s-3bb14f57bb",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "YC社長Garry Tanが語る「エージェント時代の開発術」を要点解説",
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr08-garry-tan-summary",
+      "publishedAt": "2026-10-01T15:37:24.000Z",
+      "summary": "この記事について Y Combinator 社長の Garry Tan が語った「AIエージェント時代の開発」を、要点だけ抜き出して日本語で解説します。AIを\"チームとして\"使いこなす実践論の回です。 ! 本記事は元動画の全文翻訳ではなく、紹介と論評を目的として筆者が要点を抜き出し、筆者の見解を主体に構成したものです。正確なニュアンスは元動画（Y Combinator / Garry Tan）をご覧ください。 テーマ1：AIは「チームとして」設計せよ Garry は「エージェント時代が来た」と断言。ただしAIを孤独に使うのではなく、チーム制・役割分担・レビューとして設計せよ、..."
+    },
+    {
+      "id": "s-1c9deda5ac",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ぼくの考えたさい強のLLMりょう子化2",
+      "url": "https://zenn.dev/ashidan/articles/tech_llm_quantization2",
+      "publishedAt": "2026-10-01T15:33:12.000Z",
+      "summary": "CPUでLLMを動かしたい RAMが32GiB以上ある cmd.exe や bash の使いかたを理解している という人向けの記事です。 潜水艦等の隔離環境でプログラミングするのに役立つかも。 なお、この記事は2026年9月26日の情報を元に書かれています。 Ryzen 5 5600G(CPU実行) 2ch DDR4-3200 でのllama-bench結果 model engine pp512 tg128 size[1] perplexity[2] byteshape/Qwen3.6-35B-A3B-Q4_K_S-4.22bpw llama.cpp[3] 66...."
+    },
+    {
+      "id": "s-0d142c0352",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Brian Chesky interview: AI agents need their own operating system",
+      "url": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
+      "publishedAt": "2026-10-01T15:12:00.000Z",
+      "summary": "Brian Chesky on making Airbnb agent-friendly, the state of consumer AI, and why the world needs an AI-native operating system."
+    },
+    {
+      "id": "s-0bf00b70db",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+      "url": "https://huggingface.co/blog/allenai/olmocore3",
+      "publishedAt": "2026-10-01T15:01:43.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-9c6f1560c6",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI’s new agent is a shot at Meta — but can it compete with free?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
+      "publishedAt": "2026-10-01T14:36:50.000Z",
+      "summary": "At OpenAI's annual DevDay conference, the company pulled out all the stops to compete with its rivals - primarily Meta, whose Muse AI agent platform has seen early runaway success. CEO Sam Altman walked onstage to cheers and announced Dots, a \"real-deal AI\" agent powered by GPT-6 Astra, \"inspired by the cool agents that we […]"
+    },
+    {
+      "id": "s-8a3c36fcd9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "dotfiles を AI agent のために作り変えた",
+      "url": "https://tellme.tokyo/post/2026/10/01/ai-agent-first-dotfiles/",
+      "publishedAt": "2026-10-01T14:35:59.000Z",
+      "summary": "最近、自分のターミナルでコマンドを打っているのは、ほとんど自分ではなく Claude Code や Codex だった（以下 AI）。試しに数えてみると、直近 gh を叩いた回数は自分が80回で、AI が1,339回だった。 一方で、10年以上いじってきた dotfiles は、人間が快適に使うための設定の塊だ。これが AI にとってはけっこう邪魔..."
+    },
+    {
+      "id": "s-adb45e048c",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Inside our months-long investigation into Kevin O’Leary’s Utah data center debacle",
+      "url": "https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash",
+      "publishedAt": "2026-10-01T14:00:00.000Z",
+      "summary": "Today I’m talking with Josh Dzieza, a longtime features writer here at The Verge, about Kevin O’Leary’s plans to build a massive data center in Utah. The idea was to build the world’s biggest data center — a 40,000-acre AI campus with nine gigawatts of power, or more than double the average power usage of […]"
+    },
+    {
+      "id": "s-8418a5ef0b",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Democratizing Managed Lustre with lower cost and frictionless development",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/democratizing-managed-lustre-with-lower-cost-and-frictionless-development/",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
+      "summary": "This is the first of a two-part series exploring how Google Cloud is bringing the foundational values of a high-performance parallel filesystem–TB/s throughput, sub-ms latency at high client scale, and POSIX support–to a broader set of use cases and users. Historically, due to the cost and special purpose nature of parallel filesystems, colder data had to be stored outside of the filesystem and AI"
+    },
+    {
+      "id": "s-e3bba7896b",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "The future of browser-based security: Leveraging browser data for proactive defense",
+      "url": "https://cloud.google.com/blog/products/chrome-enterprise/the-future-of-browser-based-security-leveraging-browser-data-for-proactive-defense/",
+      "publishedAt": "2026-10-01T09:02:00.000Z",
+      "summary": "The browser has changed significantly. Rather than just a window to the web, it serves as an AI workspace and central operating environment for the modern enterprise. With knowledge workers spending over 56% of their workday in the browser, it is a key gateway for daily work, complex workflows, and direct interaction with autonomous AI agents ( Omdia , 2026). To keep pace with threat actors, organ"
+    },
+    {
+      "id": "s-1136f32e33",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "人間は「取締役2人だけ」　実務をAIが担う新会社、セキュリティサービスのHENNGE",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/01/2000001936/",
+      "publishedAt": "2026-10-01T09:01:23.000Z",
+      "summary": "セキュリティサービスなどを手掛けるHENNGEは、AI活用におけるガバナンス・コスト管理を支援する新会社「HENNGE AI」を設立したと発表した。人間の従業員は取締役の2人を除いて配置せず、自律的にタスクをこなすAIエージェントが実務を担う。"
+    },
+    {
+      "id": "s-d25b604a01",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "総額2.3兆円、千葉市に巨大な「AIデータセンター」建設へ　発電大手JERA参画の“ドリームチーム”、勝機どうつかむ？",
+      "url": "https://www.itmedia.co.jp/business/articles/2610/01/news082.html",
+      "publishedAt": "2026-10-01T09:00:00.000Z",
+      "summary": "JERA、Dell Technologies、RHAELMは、千葉市に日本最大の「AIデータセンター」を建設すると発表した。投資額は2.3兆円以上に上る。3社によるドリームチームは、勝機をどこに見いだしているのか。"
+    },
+    {
+      "id": "s-7678ea3664",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "OpenAI、推論過程を狙った組織的な“蒸留”行為を阻止　「Kimi」開発元の関係者が関与と主張",
+      "url": "https://www.itmedia.co.jp/news/article/2610/01/2000001929/",
+      "publishedAt": "2026-10-01T06:06:55.000Z",
+      "summary": "OpenAIは、モデルの推論過程を抜き出す組織的な“敵対的蒸留”を特定し、阻止したと発表した。活動の中核には中国Moonshot AIの関係者が関与したと分析。暗号化された推論を悪用する新たな手口に対し、アカウント停止や推論保護の強化を実施し、業界や政府機関との脅威情報共有を進めている。"
+    },
+    {
+      "id": "s-fdf17c9a9e",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Introducing the Server Side Cloud Swift SDK",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-server-side-cloud-swift-sdk/",
+      "publishedAt": "2026-10-01T04:00:00.000Z",
+      "summary": "For years, Swift was perceived mainly as a UI language tied to Apple client devices. With Swift 6 and strict concurrency checking, it has matured into a viable systems and cloud language, pairing Rust-like data-race safety with predictable, reference-counted performance. To support this ecosystem, Google engineering has launched the official Google Cloud API Client Libraries for Swift . Built from"
+    },
+    {
+      "id": "s-3bba527585",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "url": "https://openai.com/index/the-den-family-social",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days."
+    },
+    {
+      "id": "s-347f7646bb",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Semifactual Credit-Augmented Policy Optimization",
+      "url": "https://arxiv.org/abs/2609.40360v1",
+      "publishedAt": "2026-09-30T17:59:56.000Z",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) has improved the reasoning capabilities of large language models (LLMs), yet their predictions remain sensitive to task-irrelevant prompt features. We investigate this sensitivity through semifactual prompt interventions that preserve the underlying problem and its answer. Our analysis reveals substantial variation in token-level sensitivity an"
+    },
+    {
+      "id": "s-5155b289a7",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Ranking-Aware Prompt Optimization for Multimodal Clinical Diagnosis",
+      "url": "https://arxiv.org/abs/2609.40361v1",
+      "publishedAt": "2026-09-30T17:59:56.000Z",
+      "summary": "Multimodal large language models (MLLMs) are rapidly advancing clinical diagnosis, yet their adaptation pipelines remain anchored to accuracy-based objectives. Clinical data are heavily class-imbalanced: a constant-majority predictor can score above 90% accuracy while being clinically useless. We therefore evaluate and optimize for AUROC, a threshold-free score that ranks positives above negatives"
+    },
+    {
+      "id": "s-070430f8ed",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Removing Timing Shortcuts Improves Non-Invasive Brain-to-Text",
+      "url": "https://arxiv.org/abs/2609.40359v1",
+      "publishedAt": "2026-09-30T17:59:52.000Z",
+      "summary": "We find that major reported improvements in decoding words from non-invasive brain recordings are largely reproducible without any brain data. In the influential work of d'Ascoli et al. (2025), time series of brain activity from subjects perceiving continuous speech are segmented into fixed-length windows starting at each word. A neural network then generates predictions for all of the words in a "
+    },
+    {
+      "id": "s-7ac3f7734e",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
+      "url": "https://arxiv.org/abs/2609.40356v1",
+      "publishedAt": "2026-09-30T17:59:33.000Z",
+      "summary": "Recent video generation is increasingly realistic and controllable, yet video editing remains less developed, particularly for precise local edits that must preserve the original scene dynamics. Video scene text editing replaces text on scene surfaces, such as storefront signs, whiteboards, and product labels, while preserving the surrounding content, motion, and camera dynamics. Although scene te"
+    },
+    {
+      "id": "s-78c1bce5c6",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Image Classifiers are Efficient Self-Supervised Video Representation Learners",
+      "url": "https://arxiv.org/abs/2609.40347v1",
+      "publishedAt": "2026-09-30T17:59:03.000Z",
+      "summary": "We introduce VideoMSN, a Masked Siamese Network framework for efficient self-supervised spatio-temporal representation learning in videos. Instead of relying on heavy 3D architectures or reconstruction-based autoencoders for learning with unlabeled data, we repurpose standard image Vision Transformers by representing videos as super images which are grids composed of frames sampled from videos. Fr"
+    },
+    {
+      "id": "s-2209c4a2ea",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "EvoDuet: Bilevel Co-Evolution of Web Searching and Task Solving for Scientific Discovery",
+      "url": "https://arxiv.org/abs/2609.40340v1",
+      "publishedAt": "2026-09-30T17:58:28.000Z",
+      "summary": "Evolutionary search with large language models (LLMs) can stall when progress requires external knowledge the model lacks. Supplying relevant documents helps, but simply adding web search tool can keep returning the same pages as solutions change. We introduce EvoDuet, a bi-level optimization method that co-evolves solutions and search queries with fixed model parameters. At each iteration, a retr"
+    },
+    {
+      "id": "s-8ffaf5f149",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Is Weight Tying Still Beneficial for Decoder-Only LLMs in Private Settings Under DP-SGD?",
+      "url": "https://arxiv.org/abs/2609.40335v1",
+      "publishedAt": "2026-09-30T17:57:43.000Z",
+      "summary": "Differentially Private Stochastic Gradient Descent (DP-SGD) is a leading approach for privacy-preserving fine-tuning of large language models (LLMs). Many decoder-only LLMs employ weight tying between input and output embeddings, a design choice originally introduced for parameter efficiency and improved language modeling performance in the non-private setting. However, the impact of weight tying "
+    },
+    {
+      "id": "s-3b995e2dd2",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Turbo Harness: Instance-Adaptive Harness Optimization",
+      "url": "https://arxiv.org/abs/2609.40330v1",
+      "publishedAt": "2026-09-30T17:56:09.000Z",
+      "summary": "Automating the search for effective harnesses is an important step toward enabling agents to recursively self-improve. Existing harness optimizations typically produce a single global harness that is applied uniformly across task instances. However, a harness that works well on average may not be optimal for every instance. We introduce Turbo Harness, a framework that can adapt a globally optimize"
+    },
+    {
+      "id": "s-8b23e105fc",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
+      "url": "https://arxiv.org/abs/2609.40325v1",
+      "publishedAt": "2026-09-30T17:55:29.000Z",
+      "summary": "As interactive 3D worlds are increasingly used to study intelligent behavior, it becomes important to develop efficient pipelines for identifying anomalies in these simulated environments, such as floating objects, traversable walls, or objects inconsistent with the surrounding scene. Multimodal AI systems, including vision-language models (VLMs) and vision-language-action models (VLAs), have show"
+    },
+    {
+      "id": "s-4bf53d05f5",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Cogentic: Multi-Agent Orchestration for Automated Proof Discovery",
+      "url": "https://arxiv.org/abs/2609.40324v1",
+      "publishedAt": "2026-09-30T17:55:22.000Z",
+      "summary": "We present Cogentic, a multi-agent harness for automated proof discovery on open research problems. While frontier language models can generate strong mathematical ideas in a single shot, single-shot generation is often insufficient for open problems that require exploring multiple competing conjectures, overcoming subtle technical obstructions, and retaining intermediate progress over a long hori"
+    },
+    {
+      "id": "s-315f5cd4cf",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "MatLoom: Layered Text-to-Material Generation in a Compact Program Space",
+      "url": "https://arxiv.org/abs/2609.40322v1",
+      "publishedAt": "2026-09-30T17:55:06.000Z",
+      "summary": "Material generation should produce not only an appearance, but also the rules that construct it. We introduce MatLoom, a compact, layer-oriented language for text-to-material generation with pretrained language models. Each program composes alpha-masked layers whose shared spatial expressions define coverage and physically based rendering (PBR) channels, making dependencies between patterns, color"
+    },
+    {
+      "id": "s-9b726263dd",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Scaling Laws for Looped Mixture of Experts",
+      "url": "https://arxiv.org/abs/2609.40316v1",
+      "publishedAt": "2026-09-30T17:53:47.000Z",
+      "summary": "Looped transformers and Mixture-of-Experts (MoE) offer complementary routes to efficient scaling: recurrence increases computational depth at fixed parameters, while MoE sparsity expands total capacity at fixed active compute. Yet existing scaling laws model recurrence or sparsity in isolation. In this work, we introduce Loop Scaling Laws, the first scaling law to jointly model recurrence and spar"
+    },
+    {
+      "id": "s-fcc1748226",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Compression Footprints as Security Signals for Model-Poisoning Defense in Federated Learning",
+      "url": "https://arxiv.org/abs/2609.40312v1",
+      "publishedAt": "2026-09-30T17:53:14.000Z",
+      "summary": "Lossy compression is widely used in Federated Learning (FL) but is generally treated as an error source, while conventional poisoning defenses inspect update geometry. In this work, we instead treat the compressor's response as a security signal: the input-dependent distortion and payload behavior induced by lossy compression can expose differences between honest and attack-generated updates. We i"
+    },
+    {
+      "id": "s-72ef7767ef",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents",
+      "url": "https://arxiv.org/abs/2609.40306v1",
+      "publishedAt": "2026-09-30T17:52:09.000Z",
+      "summary": "Pretrained robot policies provide useful action priors, but long-horizon manipulation still requires coordination between semantic reasoning and physical execution. Semantic reasoning operates at a coarser timescale than physical interaction, while episode-level failures provide limited guidance on which system component should be revised. We propose DynaHarness, a dynamic physical harness that co"
+    },
+    {
+      "id": "s-cf14df8ba8",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Looped Diffusion Transformer",
+      "url": "https://arxiv.org/abs/2609.40305v1",
+      "publishedAt": "2026-09-30T17:52:08.000Z",
+      "summary": "Improving text-to-image models has traditionally relied on increasing model size or the number of denoising steps. In this work, we explore an alternative way to scale computation by repeatedly running shared Transformer blocks within each denoising step, effectively increasing computational depth while keeping the parameter count fixed. This looped computation enables iterative refinement of inte"
+    },
+    {
+      "id": "s-ce91e7f9b4",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "How Much Is an AI Token Worth? Scaling Laws for Wild AI-Generated Web Text",
+      "url": "https://arxiv.org/abs/2609.40295v1",
+      "publishedAt": "2026-09-30T17:50:22.000Z",
+      "summary": "Web text makes up the majority of pretraining data and is increasingly AI-generated. After applying FineWeb quality filtering, we find that 27.5% of tokens from June 2026 web data are labeled as AI-generated by Pangram, rising to 31.1% by August. Unlike synthetic data or model-collapse setups, this *wild* AI text comes from many models, is written for human readers, and arrives unlabeled in pretra"
+    },
+    {
+      "id": "s-e1f3af439f",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Linguistic Loopholes in LLM Unlearning: From a 174-Language Benchmark to Coverage-Aware Unlearning",
+      "url": "https://arxiv.org/abs/2609.40286v1",
+      "publishedAt": "2026-09-30T17:48:13.000Z",
+      "summary": "Unlearning a fact in one language does not guarantee its removal in others as changing the query or even the requested answer language can reopen seemingly forgotten knowledge -- a cross-lingual loophole. The most straightforward solution to this challenge -- unlearning in all languages -- is neither scalable nor desirable as it amplifies damage to unrelated model capabilities. We introduce the ta"
+    },
+    {
+      "id": "s-8efed5d338",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2609.40284v1",
+      "publishedAt": "2026-09-30T17:48:06.000Z",
+      "summary": "Computer use agents (CUAs), which use graphical user interfaces (GUIs) to complete tasks on a computer, have recently surpassed human performance on many standard benchmarks, including difficult long-horizon tasks. Their capabilities are undoubtedly impressive, however, a key barrier to the widespread adoption and deployment of CUAs remains their speed and cost. Progress towards faster yet capable"
+    },
+    {
+      "id": "s-9e313565fd",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Decision-Oriented Recommendation Reranking: An Empirical Study of Jev",
+      "url": "https://arxiv.org/abs/2609.40241v1",
+      "publishedAt": "2026-09-30T17:33:43.000Z",
+      "summary": "Large language models (LLMs) have shown promise for recommendation reranking, but their use introduces an important tradeoff between recommendation quality and serving efficiency. We investigate whether a decision-oriented model provides a useful alternative when the reranking task is fundamentally a structured choice among predefined candidate items. Specifically, we conduct a controlled empirica"
+    },
+    {
+      "id": "s-1b0152ae9c",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Comparison of techniques for fine-tuning open-weight models for entity extraction from radiology reports",
+      "url": "https://arxiv.org/abs/2609.40236v1",
+      "publishedAt": "2026-09-30T17:32:17.000Z",
+      "summary": "Converting free-text radiology reports into structured labels supports cohort building, quality assurance, and monitoring of clinical imaging models, but the strongest label extractors are hosted proprietary models whose use raises privacy, cost, and reproducibility concerns. We asked whether a fine-tuned open-weight model (Gemma-3-12B) can match GPT-4o at multi-label intracranial hemorrhage (ICH)"
+    }
+  ]
+}
