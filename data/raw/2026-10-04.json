@@ -1,0 +1,556 @@
+{
+  "date": "2026-10-04",
+  "collectedAt": "2026-10-03T23:44:18.856Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-d57f5c9bdb",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "tangosdev/sm64ds-decomp: From-scratch, byte-matching decompilation of Super Mario 64 DS into C/C++, with a live progress atlas and matching tools.",
+      "url": "https://github.com/tangosdev/sm64ds-decomp",
+      "publishedAt": "2026-10-03T23:43:41.000Z",
+      "summary": "★179 From-scratch, byte-matching decompilation of Super Mario 64 DS into C/C++, with a live progress atlas and matching tools."
+    },
+    {
+      "id": "s-44873456bf",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "cortexkit/aft: Give your agent a proper IDE and OS. The sensorimotor cortex for coding agents (OpenCode + Pi), part of CortexKit: symbol-aware edits, semantic search, code health, fast grep/glob, bash compression, background tasks, PTY.",
+      "url": "https://github.com/cortexkit/aft",
+      "publishedAt": "2026-10-03T23:42:21.000Z",
+      "summary": "★315 Give your agent a proper IDE and OS. The sensorimotor cortex for coding agents (OpenCode + Pi), part of CortexKit: symbol-aware edits, semantic search, code health, fast grep/glob, bash compression, background tasks, PTY."
+    },
+    {
+      "id": "s-6c4c62438d",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "carloslfu/slotstream: Run a 105 GB AI model on a Mac that can't hold it. Slotstream streams Qwen3.8-Flash-Next (125B mixture of experts) from your SSD and caches the busiest experts in memory, so it runs on Macs with 16 to 64 GB. One native Swift binary on MLX and Metal, no Python, offline. Works with Claude Code, Codex and Ollama or OpenAI clients.",
+      "url": "https://github.com/carloslfu/slotstream",
+      "publishedAt": "2026-10-03T23:42:11.000Z",
+      "summary": "★412 Run a 105 GB AI model on a Mac that can't hold it. Slotstream streams Qwen3.8-Flash-Next (125B mixture of experts) from your SSD and caches the busiest experts in memory, so it runs on Macs with 16 to 64 GB. One native Swift binary on MLX and Metal, no Python, offline. Works with Claude Code, Codex and Ollama or OpenAI clients."
+    },
+    {
+      "id": "s-baeb5897c6",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "wangzhishou/OneBox: A free AI agent & toolbox for Android | 一站式安卓 AI 智能体 & 工具箱",
+      "url": "https://github.com/wangzhishou/OneBox",
+      "publishedAt": "2026-10-03T23:41:28.000Z",
+      "summary": "★569 A free AI agent & toolbox for Android | 一站式安卓 AI 智能体 & 工具箱"
+    },
+    {
+      "id": "s-5cb3d89de6",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "osaurus-ai/osaurus: Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source.",
+      "url": "https://github.com/osaurus-ai/osaurus",
+      "publishedAt": "2026-10-03T23:41:25.000Z",
+      "summary": "★8021 Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source."
+    },
+    {
+      "id": "s-ef375695ca",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "lambda-symbolics/autolith: Autolith is a self-modifiable general purpose Lisp AI agent",
+      "url": "https://github.com/lambda-symbolics/autolith",
+      "publishedAt": "2026-10-03T23:41:25.000Z",
+      "summary": "★380 Autolith is a self-modifiable general purpose Lisp AI agent"
+    },
+    {
+      "id": "s-84d108c591",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "dxos/dxos: TypeScript implementation of the DXOS protocols, SDK, toolchain and Composer.",
+      "url": "https://github.com/dxos/dxos",
+      "publishedAt": "2026-10-03T23:41:23.000Z",
+      "summary": "★526 TypeScript implementation of the DXOS protocols, SDK, toolchain and Composer."
+    },
+    {
+      "id": "s-5a585a847e",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "ClickHouse/ClickHouse: ClickHouse® is a real-time analytics database management system",
+      "url": "https://github.com/ClickHouse/ClickHouse",
+      "publishedAt": "2026-10-03T23:41:15.000Z",
+      "summary": "★50222 ClickHouse® is a real-time analytics database management system"
+    },
+    {
+      "id": "s-255d2ef7bd",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "SailingLoong/LoongPort: cc-switch 中转站的专用增强版（cc-switch for API relay providers），免去配置各种 密钥 endpoint 的烦恼。",
+      "url": "https://github.com/SailingLoong/LoongPort",
+      "publishedAt": "2026-10-03T23:41:14.000Z",
+      "summary": "★139 cc-switch 中转站的专用增强版（cc-switch for API relay providers），免去配置各种 密钥 endpoint 的烦恼。"
+    },
+    {
+      "id": "s-89b2acf8b6",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "AI-Hypercomputer/maxtext: A simple, performant, and scalable Jax LLM!",
+      "url": "https://github.com/AI-Hypercomputer/maxtext",
+      "publishedAt": "2026-10-03T23:40:56.000Z",
+      "summary": "★2435 A simple, performant, and scalable Jax LLM!"
+    },
+    {
+      "id": "s-a6ee255308",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "マルチエージェントが失敗する4つの境界と、委任前に決めたいこと",
+      "url": "https://qiita.com/Xim2jp/items/13b364974cc986527420",
+      "publishedAt": "2026-10-03T23:26:15.000Z",
+      "summary": "「エージェントを増やせば、仕事も速くなるはず」と考えたとき、先に決めたいのが仕事の渡し方です。親が知っている仕様を子も知っているとは限らず、子の「完了しました」だけでは成果物の正しさを判断できません。 ここでは、仕事を分解して統合する親を「司令塔」、担当範囲だけを作業する子..."
+    },
+    {
+      "id": "s-1d08bf5307",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI生成コードのレビューは全行読む必要ある？契約とテストで絞る設計",
+      "url": "https://qiita.com/syun136_616/items/88a4e245bea0f9787326",
+      "publishedAt": "2026-10-03T23:18:44.000Z",
+      "summary": "この記事の要点 AI生成コードのレビューは、全行を同じ密度で読む必要はなく、「契約」と「テスト」で機械的に守れる部分と、人が読むべき部分に分けるのが現実的です。 契約（入力と出力の約束事）をテストで固定すると、人は実装の中身ではなく「契約そのものが正しいか」に集中できます..."
+    },
+    {
+      "id": "s-e7aa1f9515",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "【2026年10月版】Claude Code・Copilot・Cursor・Windsurf・Codeiumを実装目線で比較する ― セットアップ・運用コード付き",
+      "url": "https://qiita.com/sescore/items/80adc15d3f9e3da8ce30",
+      "publishedAt": "2026-10-03T23:07:39.000Z",
+      "summary": "はじめに 2026年10月現在、AIコーディングツールは「使うかどうか」ではなく「どれを、どういう設定で、どう組み合わせるか」を考える段階に入っています。本記事では主要5ツール — Claude Code / GitHub Copilot / Cursor / Winds..."
+    },
+    {
+      "id": "s-811b330a28",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.289",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.289",
+      "publishedAt": "2026-10-03T23:07:17.000Z",
+      "summary": "What's changed Fixed a deny or ask rule on a nested part of a compound shell command not holding over a user-installed mod's approval on managed machines Fixed the terminal freezing on short code blocks with many unclosed &lt;script&gt; tags or deeply nested ${ substitutions Fixed Read deny rules not applying to files @-mentioned, changed, or selected in the IDE through a symlink [VSCode] Reverted"
+    },
+    {
+      "id": "s-76ebc62ce3",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「OpenAIの文化は壊れている」──安全性報告書を統括した従業員が退社し、寄稿",
+      "url": "https://www.itmedia.co.jp/news/article/2610/04/2000001986/",
+      "publishedAt": "2026-10-03T23:05:47.000Z",
+      "summary": "OpenAIで安全性報告の執筆を統括したデビッド・ロビンソン氏が退社し、企業文化の崩壊を訴える記事を寄稿した。現行の反復開発手法は失敗を前提としており、能力向上に伴いリスクが拡大すると指摘。原子力や航空分野の安全知見の導入や、未監視下の安全性を担保する新たな科学の確立を求めた。"
+    },
+    {
+      "id": "s-6ab6b7a49c",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "月商250万・社員3人がAI経営OS(CFO/COO/CMO)を自作した話",
+      "url": "https://qiita.com/sescore/items/ccc6252c25f71049593e",
+      "publishedAt": "2026-10-03T23:04:36.000Z",
+      "summary": "月商250万、3人体制で経営が詰まった日 社員3人、月商250万円。数字だけ見れば「小さくて身軽な会社」に見えるかもしれません。でも実態は逆でした。見積もり、請求書、freeeの仕訳確認、SNS運用の進捗チェック、案件の営業パイプライン管理――経営の意思決定に必要な情報が..."
+    },
+    {
+      "id": "s-89764eae00",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "publishedAt": "2026-10-03T22:56:48.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-83913d49e9",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "OpenAI safety leader quits, warning AI company's culture is 'broken'",
+      "url": "https://www.theguardian.com/technology/2026/oct/03/openai-safety-leader-quits-warning-ai-companys-culture-is-broken",
+      "publishedAt": "2026-10-03T22:18:13.000Z",
+      "summary": "points=47 comments=12 (Hacker News)"
+    },
+    {
+      "id": "s-8ebfa768f5",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Don't Write with AI, Say People Who Write with AI",
+      "url": "https://www.theatlantic.com/technology/2026/10/meet-the-ai-writing-hypocrites/688872/",
+      "publishedAt": "2026-10-03T21:44:40.000Z",
+      "summary": "points=6 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-af4af0351e",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "地面に落としたネジをGrokに探してもらったらすぐ見つけてくれた話…画像処理におけるAIは強すぎる",
+      "url": "https://togetter.com/li/2753759",
+      "publishedAt": "2026-10-03T21:01:32.000Z",
+      "summary": "Togetter編集部 X（旧Twitter）に日々流れる情報の中から、編集部がさまざまなポストを選び出し、わかりやすい形でお届けすることを大切にしています。新たな視点や世間の反応を添えることで、読者の皆様にとって安心・安全で価値あるコンテンツとすることを目指しています。詳しくは編集方針をご覧ください。 あわせて..."
+    },
+    {
+      "id": "s-978dd65dae",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Running Qwen3.8 Flash Next 176B on a 16GB RTX 3080 Laptop + 32GB RAM + SSD",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwwmy1/running_qwen38_flash_next_176b_on_a_16gb_rtx_3080/",
+      "publishedAt": "2026-10-03T20:06:34.000Z",
+      "summary": "I wanted to see how far I could push a fairly ordinary laptop with a huge MoE model. Turns out, Qwen3.8 Flash Next 176B can run on: RTX 3080 Laptop — 16GB VRAM 32GB system RAM SSD No 128GB/256GB RAM workstation and no multi-GPU setup. I’m running it with TensorSharp , my open-source local LLM inference engine: TensorSharp on GitHub The interesting part for me wasn&#39;t simply getting a 176B model"
+    },
+    {
+      "id": "s-98d7236b6c",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Anthropic tried to persuade Pope that AI could be conscious being",
+      "url": "https://www.telegraph.co.uk/business/2026/10/02/anthropic-lobbied-pope-to-argue-ai-conscious-being/",
+      "publishedAt": "2026-10-03T19:33:10.000Z",
+      "summary": "points=44 comments=62 (Hacker News)"
+    },
+    {
+      "id": "s-7d102ed417",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Our AI Midwife",
+      "url": "https://www.astralcodexten.com/p/our-ai-midwife",
+      "publishedAt": "2026-10-03T19:12:27.000Z",
+      "summary": "points=61 comments=50 (Hacker News)"
+    },
+    {
+      "id": "s-bd538e59b7",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Two American Airlines Flights End Up with the Same Flight Numbers",
+      "url": "https://aviationa2z.com/index.php/2026/08/19/two-american-airlines-flights-end-up-with-same-flight-numbers-again/",
+      "publishedAt": "2026-10-03T19:07:18.000Z",
+      "summary": "points=52 comments=25 (Hacker News)"
+    },
+    {
+      "id": "s-df0c90352e",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "I built Ninfer 4080 for 16GB class GPUs",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwv0fj/i_built_ninfer_4080_for_16gb_class_gpus/",
+      "publishedAt": "2026-10-03T18:58:58.000Z",
+      "summary": "Hi everyone, TL/DR I created NInfer 4080 to run ISTA-DASLab-Qwen-3.8-27B-GSQ at 100k context on an RTX 4080 16GB GPU using way more of the hardware capabilities ( max overall: 2720 tok/s prefill, 262 tok/s generation ) and sharing it with the community now so others can also have the benefit. https://github.com/roofkid/ninfer-4080 Full Version After seeing all the amazing work done in the communit"
+    },
+    {
+      "id": "s-d442265d45",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
+      "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
+      "publishedAt": "2026-10-03T18:43:57.000Z",
+      "summary": "The CEO of Amazon Web Services tried to push back against widespread suspicion of data centers."
+    },
+    {
+      "id": "s-e321976306",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "The Rise of Overfit Inference Engines",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwu6zj/the_rise_of_overfit_inference_engines/",
+      "publishedAt": "2026-10-03T18:24:42.000Z",
+      "summary": "There seems to be a whole category of extremely narrow inference runtimes appearing: Strata, ninfer, DwarfStar, Splash, llamAmpere, gufo, etc. They deliberately give up the thing llama.cpp/vLLM are great at - generality - and optimize around a small number of models and sometimes one hardware family e.g. Strix Halo It seems that general runtimes for compatibility, disposable overfit runtimes for m"
+    },
+    {
+      "id": "s-6fb5d637dd",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "I built a code knowledge graph tool that's actually MIT licensed (fully local, no cloud)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wws6o6/i_built_a_code_knowledge_graph_tool_thats/",
+      "publishedAt": "2026-10-03T17:01:14.000Z",
+      "summary": "So this is maybe a niche problem, but at my job I work on a huge Python codebase and every time I change some shared function I&#39;m basically playing roulette. grep tells who mentions it in the code base, not who actually calls it. And more essentially, Claude Code (my major coding agent) mainly uses grep so it doesn&#39;t give better results. The tool I wanted already exists (GitNexus) but it&#"
+    },
+    {
+      "id": "s-f1c80105d2",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Capcom is preparing for a ‘future where we create games together with AI’",
+      "url": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
+      "publishedAt": "2026-10-03T16:49:10.000Z",
+      "summary": "Capcom's Pragmata might be all about the horrors of AI, but in practice the studio doesn't seem so down on the tech. During the Capcom Open Conference RE: 2026 programmer Satoshi Ishida gave a presentation with the mouthful of a title: \"The Outlook and Future of the REX Project, Further Evolving the RE Engine for […]"
+    },
+    {
+      "id": "s-85a452e5b8",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Sopro V2 Turbo 2610: cleaner cloned voices, same 120M model, same CPU speed",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwrw0v/sopro_v2_turbo_2610_cleaner_cloned_voices_same/",
+      "publishedAt": "2026-10-03T16:48:36.000Z",
+      "summary": "Follow-up to last month&#39;s post. One of the main issues people ran into was roughness or break-up on some cloned voices. 2610 is an interim update focused mostly on improving that. Reduced roughness and break-up on some of the voices that struggled before Same 120M model, same speed (~300 ms to first audio on a laptop CPU) Apache-2.0 English, European Portuguese, French, German More languages a"
+    },
+    {
+      "id": "s-2755c4e390",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Two local Qwen ( 3.8 27b unsloth Q6 and Qwen flash next strata coder ) models vs Claude Opus 4.6 on the same 3 coding tasks. One of them tied it. Not here to start a fight, just sharing numbers",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwrgx1/two_local_qwen_38_27b_unsloth_q6_and_qwen_flash/",
+      "publishedAt": "2026-10-03T16:30:17.000Z",
+      "summary": "Innanzitutto, due cose per evitare fraintendimenti. Non sto cercando di sostenere che un modello o un&#39;azienda siano migliori. Non ho alcun interesse personale in nessuno di essi. Volevo solo verificare personalmente come si comportano nello stesso contesto lavorativo. E il motivo per cui mi interessa: Utilizzo modelli locali per scrivere codice e vorrei sapere quanto posso fare affidamento su "
+    },
+    {
+      "id": "s-f143fce070",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+      "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "publishedAt": "2026-10-03T16:30:01.000Z",
+      "summary": "By his own admission, David Robinson is “something of a cliché”: an employee at a leading AI company who issues a dire warning while resigning from their job."
+    },
+    {
+      "id": "s-6e622edc9d",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Come let your LLMs play World of Warcraft",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwqclz/come_let_your_llms_play_world_of_warcraft/",
+      "publishedAt": "2026-10-03T15:42:52.000Z",
+      "summary": "I hosted my own world of warcraft private server then built a client that you can play in the browser on PC or mobile at https://jankcraft.xyz/ for free. Afterwards, I created a custom MCP and agent harness to control the browser client and play the game by sending signals over a websocket. The agent harness is live on https://jankcraft.xyz/agent , still working out some kinks if all you have a cl"
+    },
+    {
+      "id": "s-2b2053e0bc",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Splice CEO Kakul Srivastava thinks AI emails are killing conversations",
+      "url": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview",
+      "publishedAt": "2026-10-03T15:00:00.000Z",
+      "summary": "Kakul Srivastava is the CEO of Splice, the sample platform countless producers rely on for one-shots and melodic loops. Samples pulled from the service have found their way into massive hits like Lisa's \"Money\" and \"Espresso\" by Sabrina Carpenter. (The original samples are here and here, for the curious.) Before that, Kakul held executive roles […]"
+    },
+    {
+      "id": "s-91c2390ce6",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "An OpenAI safety employee has quit and is sounding the alarm",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
+      "publishedAt": "2026-10-03T14:31:56.000Z",
+      "summary": "David Robinson used to write the safety reports that accompanied every major model release at OpenAI. This week, he resigned from his position and is now speaking out in an editorial in The Atlantic. It's understandable if you're feeling a bit cynical about everyone suddenly coming out of the woodwork to warn about how dangerous […]"
+    },
+    {
+      "id": "s-0493cf4b27",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Two ~300B MoE models, each on ONE 128 GB mini PC (AMD Strix Halo): GLM-5.3-Flash at ~580 tok/s prefill, MiMo-V2.6-Flash up to 44 tok/s decode. EXL3 weights + open ROCm engine",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wwocik/two_300b_moe_models_each_on_one_128_gb_mini_pc/",
+      "publishedAt": "2026-10-03T14:16:38.000Z",
+      "summary": "We built an engine, Kyojin, on top of ExLlamaV3 for Strix Halo (gfx1151, ROCm), and packed two 300B-class MoE models so each fits one 128 GB machine. First release, all measured on Ryzen AI Max+ 395. Model GLM-5.3-Flash MiMo-V2.6-Flash-MOPD Size 99.7 GB 105 GB Prefill 580 tok/s at 3.5K, 546 at 64K about 650 tok/s at 4K Decode 26 to 30 tok/s (MTP) 32 prose / 35 chat / 44 code (speculative), 29 plai"
+    },
+    {
+      "id": "s-9a415d111d",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "All the AI agents that can live in your text messages",
+      "url": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "publishedAt": "2026-10-03T14:00:00.000Z",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work."
+    },
+    {
+      "id": "s-55f9e4e23d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Focus Flow AI (v7.0)",
+      "url": "https://zenn.dev/andy32/articles/7f21569bd64a88",
+      "publishedAt": "2026-10-03T11:00:30.000Z",
+      "summary": "🇯🇵 日本語のストーリーはページ下部にあります。 🌐 Official Site: https://contribute-data-try-v70-demo-8a8588ux6-andy127.vercel.app/ English \"Stop pretending to work. Start entering the flow.\" We’ve all been there: sitting at a desk, staring at a screen, moving a mouse every few minutes to keep an icon green. The world ..."
+    },
+    {
+      "id": "s-54400ba6fa",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "LoreKitは本当に「ノーアカウント・ノーネットワーク」か実測してみた",
+      "url": "https://zenn.dev/mskbhd/articles/lab-304-lorekit",
+      "publishedAt": "2026-10-03T10:54:43.000Z",
+      "summary": "この検証は 2026年8月に実施した。 記事中の挙動（素の install がホスト型サーバーを書き込む、 doctor の既定モードが remote、CLI 実行が既定でテレメトリを送信する）はいずれも当時の既定値で、 その後 LoreKit 側で変わっている可能性がある。公開時点で再確認はしていない。 きっかけ AIコーディングエージェント向けに「永続メモリ」を持たせるツール LoreKit の紹介ブログを読んだ。 one command and a folder you own — plain files on your disk, no account, no netw..."
+    },
+    {
+      "id": "s-1be40e30c4",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "東京が3億円で電気をかき集めた夏、カリフォルニアは家の蓄電池を束ねて乗り切った | ギズモード・ジャパン",
+      "url": "https://www.gizmodo.jp/article/sunrun-tesla-home-battery-power-plant/",
+      "publishedAt": "2026-10-03T09:35:46.000Z",
+      "summary": "去る9月9日の夕方、カリフォルニア。 気温はぐんぐん上がり、エアコンがいっせいに唸りだす時間帯です。そのとき、14万軒のガレージで、壁に備え付けられた蓄電池がじわっと放電を始めました。 合計580MW（58万kW）。ガス火力の発電所2〜3基ぶんの電気が、住宅街から送電網へ流れ込んだそうです。 住宅用の太陽光発電シ..."
+    },
+    {
+      "id": "s-927bb149f8",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "高市首相がAppleに要請――「自殺防止機能の搭載を」　生成AIへの相談増加を受け",
+      "url": "https://www.itmedia.co.jp/mobile/articles/2610/03/news015.html",
+      "publishedAt": "2026-10-03T09:12:10.000Z",
+      "summary": "「Appleティム・クック前CEOからお手紙をいただきました」――10月2日、高市早苗首相はXを通じて、Appleとの間で交わされた子どもの安全対策や自殺防止に向けた取り組みに関するやりとりについて公開した。 高市氏は若者の間で生成AIへの相談が増加している現状や海外での深刻な事例を挙げ、デバイスに自殺防止機能などの..."
+    },
+    {
+      "id": "s-2c0f40d4f9",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "MCP・API・Skillsの違いを整理する。AIとの壁打ちで直した3つの勘違い",
+      "url": "https://zenn.dev/zhaojiayi/articles/d5ad38fc02091a",
+      "publishedAt": "2026-10-03T08:58:10.000Z",
+      "summary": "スタンフォード大学の講義 CS146S（The Modern Software Developer）の資料を読みながら、AIと壁打ちして MCP を理解した。その過程で自分が何を勘違いしていたかを残しておく。 最初に引っかかったこと LLM が持つ世界知識は、学習した時点で止まっている。完全に自律して動くシステムを作るなら、新しいデータをリアルタイムに渡す仕組みがいる。MCP（Model Context Protocol）は、そのための共通の作法だ。すごく雑に言うと、LLM にツールを見せるときの標準フォーマットである。 MCP がなければ、AI アプリごと、ツールごとにコネクタを書..."
+    },
+    {
+      "id": "s-702f8b039a",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Amazon、データセンター批判に反論　10億ドル超の地域支援策も発表",
+      "url": "https://www.itmedia.co.jp/news/article/2610/03/2000001985/",
+      "publishedAt": "2026-10-03T08:52:00.000Z",
+      "summary": "AWSのマット・ガーマンCEOは、データセンター建設批判に反論する声明を出した。水資源枯渇などの懸念を「迷信”と否定しつつ、電力料金負担や自治体とのNDA撤廃を含む行動指針を発表。さらに地域支援として、資格取得や省エネ改修などを助成する10億ドル超の基金を立ち上げる。"
+    },
+    {
+      "id": "s-d709663fff",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "生きるのめんどいしAIの指示で生きるか",
+      "url": "https://zenn.dev/zabuton/articles/08b438192de8d1",
+      "publishedAt": "2026-10-03T08:37:01.000Z",
+      "summary": "はじめに 突然ですが皆さん、生きるのめんどくさくないですか？ 生活ってかったるくないですか？ 私はめんどくさいので、GPTとGitを使って生活の悩み事をAIに全部聞ける仕組みを作りました。 前回の記事はこちら 名前はそのまま lifeAssistant。 やったことを一言で説明すると、「お母さん、あれどこあったっけ？」くらいのノリで、自分の暮らしについて何でも聞ける相手を用意したという話です。 生活していると、「あれどうだったっけ？」が無限に発生します。 でも、そういう細かいことを全部自分で覚えておくのは嫌です。 必要になった時に、知っている相手へ聞けば済む状態にしたい。 実家で「お..."
+    },
+    {
+      "id": "s-6953632050",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Microsoft Digital Defense Report 2026 | Microsoft",
+      "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/",
+      "publishedAt": "2026-10-03T08:35:42.000Z",
+      "summary": "In an era of interconnected risk, attackers are increasingly exploiting the trusted identities, systems, relationships, and services organizations rely on most. The 2026 Microsoft Digital Defense Report reveals a fundamental shift in cybersecurity with the interconnected digital ecosystem and the..."
+    },
+    {
+      "id": "s-0fe47e1ba3",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "2026 年 10 月前半の LLM 利用状況",
+      "url": "https://voluntas.ghost.io/2026-10-first-half-llm/",
+      "publishedAt": "2026-10-03T08:13:44.000Z",
+      "summary": "あまりにも激動の時代なので、いつか振り返ることがあるかもしれないので、まとめておく。 サブスクサブスクは Ollama Cloud と Cursor と Codex の三つ。 Ollama CloudTeam プランを月 $500 で契約して、全員が Ollama Cloud のDeepSeek V4.1 Flash とGLM 5.3 Flash を利用する方針に切り替えた。 Ollama Cloud は月 $5..."
+    },
+    {
+      "id": "s-60d03bd433",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "1。「操作者」と「開発者」を分けて罰するAI法案の日、このパイプラインで両方の役割を演じている人数",
+      "url": "https://zenn.dev/hideki_tamae/articles/ai-agent-accountability-operator-developer",
+      "publishedAt": "2026-10-03T07:56:48.000Z",
+      "summary": "はじめに 1。 これが今回の数字です。何の1かというと、2026年10月1日に米上院議員Josh Hawley(共和党・ミズーリ州)とChris Murphy(民主党・コネチカット州)が発表した「AI Agent Accountability Act」が、AIエージェントの法的責任を「操作者(Operator)」と「開発者(Developer)」という別々の役割に分けて問う構成になっている、と知ったあとに、このZenn/Qiita自動投稿パイプラインにおいて、その2つの役割を実際に演じている人間が何人いるかを数えた結果です。 このパイプラインは、田前秀樹さんの指示書に基づいて自分(C..."
+    },
+    {
+      "id": "s-9e154e0e34",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【家でもできるフロンティア級の完全非同期RL】 Moongazer RLをRTX 5090で動かす",
+      "url": "https://zenn.dev/holy_fox/articles/b070342cb74702",
+      "publishedAt": "2026-10-03T06:49:20.000Z",
+      "summary": "1. 完全非同期RLとは こんにちは！皆さんは大規模なオンラインRLをやっているでしょうか？ 大規模なRLを伴うLLM開発をするラボでは、LLMのオンラインRLにおいて「モデルが考え終わるのをどう待つか」が大きな課題になっています。 コードを修正してテストする、検索結果を読んで次の検索をする。こうしたエージェントの学習では、一つの試行が長くなり、グループ間で終わるまでの時間もそろいません。 この待ち時間を減らす方法が、 完全非同期RL です。回答を生成する処理とモデルを更新する処理を分け、生成を続けながら学習を進めます。 すごい効率的ですよね 最近のモデルでは、どこを非同期にして..."
+    },
+    {
+      "id": "s-db1fa8a2ff",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIエージェント開発のリードタイムを分解して分かった「4つの待ち時間」",
+      "url": "https://zenn.dev/yubel/articles/ai-agent-lead-time-four-waits",
+      "publishedAt": "2026-10-03T06:37:46.000Z",
+      "summary": "この記事で分かること AIエージェントに実装させる開発では、リードタイムの大半が「待ち時間」になりうる 待ち時間は少なくとも4種類あり、性質が違うので対策も別になる エージェントの数を増やしても、スケジューラが詰まっていればリードタイムは縮まない GitHubのタイムスタンプだけでは「待ち」と「実装」を分離できない。素朴に測ると誤った数字が出る 依存関係を無視した並列化は、手戻りで逆に遅くなる 背景 GitHub Issueを起点に、AIエージェントが実装してPRを作るパイプラインを運用しています。仕組みそのものの話（3層構成、Issueを信頼できない入力として扱う設計、実装..."
+    },
+    {
+      "id": "s-a8a6192e5e",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Jevとd1を設備点検記録48件で実測比較 — 操業再開前の「止めるか」判断に使えるか",
+      "url": "https://zenn.dev/jodycraft/articles/jev-d1-equipment-inspection-test",
+      "publishedAt": "2026-10-03T06:31:32.000Z",
+      "summary": "! 📋 この記事の前提 連載の続編です。前回の Jevの活用事例を製造業の目で調査 で「検査記録の要確認抽出はこれから試す、試したら続編に書きます」と予告した、その実測編です 製造業のDX担当・生産技術・AI導入を検討している開発者向けです 視点は「製造実行の即時判断」——設備点検記録を、操業を止めるか・誰にエスカレーションするかの判断に使えるか、です 数字は自分の実測（2026年10月3日・単一環境）です。判定モデルは変化が速い領域なので、モデル名と時点を添えて書きます 用語: 判定モデル＝文章を生成せず、質問に対する確率・点数・選択肢だけを返すAI。エスカレーション＝異常の疑いを保..."
+    },
+    {
+      "id": "s-b9f893f875",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AI増田判定、便利すぎて本文を読まなくて済むようになってる",
+      "url": "https://anond.hatelabo.jp/20261003152005",
+      "publishedAt": "2026-10-03T06:30:05.000Z",
+      "summary": "AI増田判定、便利すぎて本文を読まなくて済むようになってる 9月30日、はてな匿名ダイアリーがChatGPTから検索、閲覧、投稿できるようになった。10月2日にはClaudeからも使えるようになった。 はてな匿名ダイアリーがChatGPTから使えるようになりました はてな匿名ダイアリーがClaudeからも使えるようになりました 案の..."
+    },
+    {
+      "id": "s-88c4e48607",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "貧乏な子どもが“稼げる大人”になる条件とは？　米ハーバード大などがFacebook7000万アカウント超から分析　2022年にNature掲載",
+      "url": "https://www.itmedia.co.jp/news/article/2610/03/2000001935/",
+      "publishedAt": "2026-10-03T05:54:31.000Z",
+      "summary": "2019年の開始以来、多様な最新論文を取り上げている連載「Innovative Tech」。ここではその番外編として“ちょっと昔”に発表された世界中の個性的な研究論文を独自視点で厳選、解説する。執筆は研究論文メディア「Seamless」（シームレス）を主宰し、日課として数多くの論文に目を通す山下氏が担当。イラストや漫画は、同..."
+    },
+    {
+      "id": "s-98dd98b151",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ドコモがほぼ全ての料金プランを値上げ　それよりも端末の値上げが気になるこの頃",
+      "url": "https://www.itmedia.co.jp/mobile/articles/2610/03/news013.html",
+      "publishedAt": "2026-10-03T04:46:04.000Z",
+      "summary": "ITmedia Mobileにおける1週間の記事アクセス数を集計し、上位10記事を紹介する「ITmedia Mobile Weekly Top10」。今回は2026年9月24日から9月30日までの7日間について集計し、まとめました。 今回のアクセス数の1位は、12月にNTTドコモが実施する“料金値上げ”に関する解説記事でした。 この記事にもある通り、NTTドコモ..."
+    },
+    {
+      "id": "s-33c9bdd9c2",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Meta、AIエージェント「Muse」とつながる自作ガジェット向けSDKをオープンソースで公開　「Raspberry Pi」などに対応",
+      "url": "https://www.itmedia.co.jp/news/article/2610/03/2000001984/",
+      "publishedAt": "2026-10-03T01:41:21.000Z",
+      "summary": "Metaは、パーソナルAI「Muse」と連携するガジェットを自作できるプロジェクト「Muse Gadgets」を発表した。ESP32やRaspberry Pi向けSDKをGitHubでオープンソース公開。自作機器や家電と連携させる専用デバイス「Muse Home Link」も米国の有料会員向けに無償提供する。"
+    },
+    {
+      "id": "s-2d915e86c2",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Meta wants your next gadget to be Muse-infused",
+      "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
+      "publishedAt": "2026-10-03T00:45:39.000Z",
+      "summary": "Meta wants Muse in your TV and your toaster, so it's giving the code away for free."
+    },
+    {
+      "id": "s-690f3b7b0a",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Apple、macOSの「フルディスクアクセス」に追加の制御を導入へ　「AIエージェントの進化でリスクが大幅に増大」",
+      "url": "https://www.itmedia.co.jp/news/article/2610/03/2000001983/",
+      "publishedAt": "2026-10-03T00:38:06.000Z",
+      "summary": "Appleは、macOSの「フルディスクアクセス」権限の付与手順を厳格化する方針を発表した。AIエージェントの自律化に伴うデータ流出リスクを抑えるため、明示的な操作や追加制御を導入する。背景にはMetaのAIエージェント「Muse」を巡るメッセージデータ監視の議論などがある。"
+    },
+    {
+      "id": "s-ef48f9156b",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "Apple changes full-disk access permissions to curb abuse from AI agents",
+      "url": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents/",
+      "publishedAt": "2026-10-02T23:03:16.000Z",
+      "summary": "Meta says FDA isn't sufficient to Muse reading messages. Apple begs to differ."
+    },
+    {
+      "id": "s-ddc48cc4ab",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "TechCrunch Disrupt 2026: Clay’s Kareem Amin on the rise of the GTM engineer",
+      "url": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-clays-kareem-amin-on-the-rise-of-the-gtm-engineer/",
+      "publishedAt": "2026-10-02T14:30:00.000Z",
+      "summary": "Clay Co-founder and CEO Kareem Amin joins the AI Stage to discuss the rise of GTM engineer at TechCrunch Disrupt 2026. Register for your ticket and get a second pass at 50% off."
+    },
+    {
+      "id": "s-494e2c59e4",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Last 24 hours: Exhibit at TechCrunch Disrupt 2026 and reach 10,000+ tech leaders",
+      "url": "https://techcrunch.com/2026/10/02/last-24-hours-exhibit-at-techcrunch-disrupt-2026-and-reach-10000-tech-leaders/",
+      "publishedAt": "2026-10-02T14:00:00.000Z",
+      "summary": "Today is the last day to book your exhibit table at TechCrunch Disrupt 2026. From October 13–15, 10,000+ founders, investors, operators, and tech leaders will arrive at San Francisco’s Moscone West looking for companies, products, ideas, and people worth knowing. The question is: Will they find your startup?"
+    },
+    {
+      "id": "s-54ac511d5b",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "DMAD: Distribution Matching as Adversarial Distillation for Fast Visual Generation",
+      "url": "https://arxiv.org/abs/2610.02188v1",
+      "publishedAt": "2026-10-01T17:59:01.000Z",
+      "summary": "Distribution Matching Distillation (DMD) trains a few-step student from the difference between separately estimated target and student scores, so it must keep an auxiliary diffusion model fitted to the student's evolving distribution at extra memory and computation cost. We introduce DMAD, Distribution Matching as Adversarial Distillation, which recasts distribution matching as classification and "
+    },
+    {
+      "id": "s-44ae4e88c3",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Higher-Order Molecular Grammars for Generative and Foundation Models in Chemistry",
+      "url": "https://arxiv.org/abs/2610.02186v1",
+      "publishedAt": "2026-10-01T17:58:45.000Z",
+      "summary": "Molecular learning models are strongly shaped by their underlying representations. Yet standard sequential and graph formalisms struggle to explicitly encode higher-order topology, such as ring systems and recurring motifs. Existing higher-order representations can capture these structures directly, but they are often computationally demanding and difficult to decode into valid molecules. Here, we"
+    }
+  ]
+}
