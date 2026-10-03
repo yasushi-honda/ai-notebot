@@ -1,0 +1,898 @@
+{
+  "date": "2026-10-03",
+  "collectedAt": "2026-10-03T00:24:09.950Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-36796cb752",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "arkflow-rs/arkflow: High performance Rust stream processing engine seamlessly integrates AI capabilities, providing powerful real-time data processing and intelligent analysis. ",
+      "url": "https://github.com/arkflow-rs/arkflow",
+      "publishedAt": "2026-10-03T00:23:38.000Z",
+      "summary": "★1304 High performance Rust stream processing engine seamlessly integrates AI capabilities, providing powerful real-time data processing and intelligent analysis."
+    },
+    {
+      "id": "s-88c5a0622e",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "mengxi-ream/read-frog: 🐸 Read Frog - Language Learning & Translate | 🐸 陪读蛙 - 语言学习与翻译",
+      "url": "https://github.com/mengxi-ream/read-frog",
+      "publishedAt": "2026-10-03T00:23:20.000Z",
+      "summary": "★9955 🐸 Read Frog - Language Learning & Translate | 🐸 陪读蛙 - 语言学习与翻译"
+    },
+    {
+      "id": "s-39550f8038",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "screenpipe/screenpipe: YC (S26) | Open Computer History | Continuously record your company computer work, map your workflows, help you find work worth automating, and power your agents' context",
+      "url": "https://github.com/screenpipe/screenpipe",
+      "publishedAt": "2026-10-03T00:23:08.000Z",
+      "summary": "★21795 YC (S26) | Open Computer History | Continuously record your company computer work, map your workflows, help you find work worth automating, and power your agents' context"
+    },
+    {
+      "id": "s-69db386ded",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "NVIDIA-NeMo/Automodel: 🚀 Pytorch Distributed native training library for LLMs/VLMs with OOTB Hugging Face support",
+      "url": "https://github.com/NVIDIA-NeMo/Automodel",
+      "publishedAt": "2026-10-03T00:22:55.000Z",
+      "summary": "★989 🚀 Pytorch Distributed native training library for LLMs/VLMs with OOTB Hugging Face support"
+    },
+    {
+      "id": "s-2c650dc340",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "omnigent-ai/omnigent: Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "publishedAt": "2026-10-03T00:22:50.000Z",
+      "summary": "★10426 Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device."
+    },
+    {
+      "id": "s-59cebd2e8c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Sidiora-Labs/Paxeer-X-Network: Paxeer X is a Distributed HyperState Machine for payments, code execution and intent routing. Designed for Machines and the Users operating them. ",
+      "url": "https://github.com/Sidiora-Labs/Paxeer-X-Network",
+      "publishedAt": "2026-10-03T00:22:45.000Z",
+      "summary": "★574 Paxeer X is a Distributed HyperState Machine for payments, code execution and intent routing. Designed for Machines and the Users operating them."
+    },
+    {
+      "id": "s-9a1c7ae8d3",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Sma1lboy/rove: Rove — the agent multiplexer for your terminal. Run coding agents on parallel tasks with isolated worktrees and persistent sessions.",
+      "url": "https://github.com/Sma1lboy/rove",
+      "publishedAt": "2026-10-03T00:22:35.000Z",
+      "summary": "★147 Rove — the agent multiplexer for your terminal. Run coding agents on parallel tasks with isolated worktrees and persistent sessions."
+    },
+    {
+      "id": "s-c6fd25b449",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "openclaw/openclaw: The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "publishedAt": "2026-10-03T00:22:23.000Z",
+      "summary": "★391194 The AI that really does things. Any OS. Any Platform. The lobster way. 🦞"
+    },
+    {
+      "id": "s-7366ec388a",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "rtk-ai/rtk: CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+      "url": "https://github.com/rtk-ai/rtk",
+      "publishedAt": "2026-10-03T00:22:05.000Z",
+      "summary": "★82253 CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies"
+    },
+    {
+      "id": "s-9ce58f95b0",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIコーディングで既存コードを壊さないためのプロンプト設計と差分管理の実務手法",
+      "url": "https://qiita.com/blinkgroup_jp/items/106d2d7dcc996a38981f",
+      "publishedAt": "2026-10-03T00:22:00.000Z",
+      "summary": "GitHub CopilotやChatGPTなどのAIコーディングアシスタントは開発効率を大きく向上させますが、既存のコードベースに対して不用意に指示を出すと、意図しないデグレード（先祖返りや既存ロジックの破壊）を引き起こすリスクがあります。 この記事では、既存コードの振る..."
+    },
+    {
+      "id": "s-6d8d9bad07",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "smithersai/smithers: Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
+      "url": "https://github.com/smithersai/smithers",
+      "publishedAt": "2026-10-03T00:20:38.000Z",
+      "summary": "★428 Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably"
+    },
+    {
+      "id": "s-ef81795cd9",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "waybarrios/vllm-mlx: High-performance OpenAI and Anthropic compatible LLM inference server for Apple Silicon. Native MLX, continuous batching, multimodal models, MCP tool calling, and Claude Code support.",
+      "url": "https://github.com/waybarrios/vllm-mlx",
+      "publishedAt": "2026-10-03T00:19:54.000Z",
+      "summary": "★1608 High-performance OpenAI and Anthropic compatible LLM inference server for Apple Silicon. Native MLX, continuous batching, multimodal models, MCP tool calling, and Claude Code support."
+    },
+    {
+      "id": "s-1aca0d9972",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "IT導入補助金がデジタル化・AI導入補助金2026に変わった｜申請締切前に確認すべき制度変更の3点",
+      "url": "https://qiita.com/DnD-inc/items/6be206e73d913856a23d",
+      "publishedAt": "2026-10-03T00:18:13.000Z",
+      "summary": "IT導入補助金がデジタル化・AI導入補助金2026に変わった｜申請締切前に確認すべき制度変更の3点 本記事は、株式会社DnD（https://dnd-inc.jp）のコラムを一部編集して掲載しています。 初出: https://dnd-inc.jp/blog/digit..."
+    },
+    {
+      "id": "s-af9058f76c",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIにソフトの説明文を書かせる採点DoGBench、最高でも47点",
+      "url": "https://qiita.com/okssusucha/items/32a39c748efacd29f5a3",
+      "publishedAt": "2026-10-03T00:08:46.000Z",
+      "summary": "AIにソフトの使い方を説明する文章を書かせると、見た目はきれいに整う。でも、その通りに操作すると途中で詰まることがある。この弱点を数字にした採点表が公開された。どのAIの説明文をどこまで信じていいか、目安ができた。 ひとことで言うと、AIはソフトの説明文がまだ苦手で、いちば..."
+    },
+    {
+      "id": "s-1e546d3bfb",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI時代の半導体設計に踏み込むGPT-Synopsysの狙いを解説！海外の Hacker News で今日バズっていた話題（2026-10-03）",
+      "url": "https://qiita.com/homhom44/items/233c1859d606637f7462",
+      "publishedAt": "2026-10-03T00:08:45.000Z",
+      "summary": "海外エンジニアが集まる Hacker News で、この 24 時間に上位まで伸びていた話題を日本語でまとめました。各エントリに元スレッドの points とコメント数、議論スレッドへのリンクを付けています。記事本文は PaPoo 側に置いてあります。 Supabaseが..."
+    },
+    {
+      "id": "s-e219a6f57a",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "So... Should we turn the page on this past week hype? or Do you have any success cases to inspire the rest?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ww86ny/so_should_we_turn_the_page_on_this_past_week_hype/",
+      "publishedAt": "2026-10-02T23:18:18.000Z",
+      "summary": "&#32; submitted by &#32; /u/JLeonsarmiento [link] &#32; [comments]"
+    },
+    {
+      "id": "s-1d2a479e8c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "WebX68k登場！ブラウザで動く伝説のX68000徹底解説",
+      "url": "https://zenn.dev/aiasoby/articles/asoby-tech-1176",
+      "publishedAt": "2026-10-02T23:15:40.000Z",
+      "summary": "💡 本記事について 本記事は、AIの実験・活用メディア「大人のAIアソビ」の技術サテライト版です。 キャラクター（武将クマの「ぷれい」＆青髪AI美少女「ジェミー」）による軽快な掛け合い・オチ対話劇の全文は、👉 本館の元記事 にて公開しています。 🚀 まとめ ＆ 本館のご案内 本記事の完全版では、武将兜のクマ「ぷれい」と知的なAI美少女「ジェミー」の軽快な掛け合い・オチ対話劇を交え、実際の開発現場での生々しいシミュレーションや採用見送りの顛末を詳しくお届けしています！ AIの最新トレンドや実践的な活用検証に興味のある方は、ぜひ本館ブログにも遊びに来てください！ 👉 【大人のAI..."
+    },
+    {
+      "id": "s-03d557cb78",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "RAGは「検索して答える」だけでは足りない 基本・設計・評価の実践ガイドを書いた",
+      "url": "https://zenn.dev/yun_bow/articles/d2d0c908b694be",
+      "publishedAt": "2026-10-02T23:01:05.000Z",
+      "summary": "はじめに 「RAGを組んだ。質問すれば、それらしい回答も返ってくる」——そこまで動くと、ひとまず完成したように感じる。 しかし、データには存在する施設が検索結果に出ない。出典に書かれていない予約条件をAIが補ってしまう。データを更新したのに、古い情報が検索に残る。こうした問題は、回答が自然に読めるかどうかを見ているだけでは気づきにくい。 自治体の相談先検索アプリ「Trait Compass」を題材に、この問題をRAGの基本・設計・評価の三つの観点から整理した本を公開した。 https://zenn.dev/yun_bow/books/95ad28d3438f4d 本稿では『RAGの基..."
+    },
+    {
+      "id": "s-45cba435d9",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Code の Auto-memory を棚卸しする — AIが覚えた41件を点検した実装と結果",
+      "url": "https://zenn.dev/joinclass/articles/auto-memory-ai-20261001220026-15523",
+      "publishedAt": "2026-10-02T23:00:13.000Z",
+      "summary": "なぜ記憶を点検することにしたのか 僕は一人で会社をやっていて、実務のかなりの部分を Claude Code に委任している。委任の質を決めているのは、モデルの性能ではなく「AIが何を覚えているか」だった。 Auto-memory（~/.claude/projects/ /memory/）はセッションをまたいで事実を持ち越す仕組みで、便利なぶん静かに効く。間違った記憶が1件混ざると、それ以降の全セッションがその前提で動く。しかもこちらからは見えない。指示していないのに特定の判断を避ける、禁止したはずのことを再開する、という挙動が出たら、だいたい記憶..."
+    },
+    {
+      "id": "s-2185474927",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "OpenAIの",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-08-tech-daily",
+      "publishedAt": "2026-10-02T22:31:47.000Z",
+      "summary": "2026年の開発基盤で今すぐ対応すべき3つの大激変 この記事で分かること LLM単体の精度推移から「業務特化型AIエージェント」および「具身知能」へ主役が交代した背景 OpenAIによるAstral買収がPythonツールチェーンと開発体験に与える決定的な影響 Webネイティブ化するMCPの動向と Next.jsで即座に対応すべき緊急RCE脆弱性の詳細 LLM推論競争の終焉と「AIエージェント・具身知能」へ移行すべき理由 AIプロダクトの評価軸は、単一モデルの推論能力を競う段階から、自律的にタスクを遂行する「AIエージェント」および物理世界や実業務に適応する「具身知能」へ..."
+    },
+    {
+      "id": "s-b45d01e984",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "I've ended up with an AI lab in a public community college. What should we actually be teaching?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ww6wvo/ive_ended_up_with_an_ai_lab_in_a_public_community/",
+      "publishedAt": "2026-10-02T22:18:29.000Z",
+      "summary": "Looking for some ideas from people who know a lot more about this than I do. We&#39;ve got funding for a small AI lab in a public further education college in Ireland (roughly community college in the US). The hardware is reasonably decent. The goal is to give students useful skills beyond just using ChatGPT. If you had the lab, what would you teach them? &#32; submitted by &#32; /u/menage_a_un [l"
+    },
+    {
+      "id": "s-cae872722c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIの1回の質問の値段（電気代）はいくら？",
+      "url": "https://zenn.dev/nextsurvive/articles/f3b6439e882214",
+      "publishedAt": "2026-10-02T22:11:56.000Z",
+      "summary": "AIを1回使うと、いくらかかるのか。そして世界全体では、いくらになるのか。公開されている一次情報だけで計算しました。 結論を先に書きます。 1回あたりの電気代は 約0.01円（ChatGPT 0.34 Wh / Gemini 0.24 Wh、各社の自己発表値。1kWh=31円で計算） 毎日10回×1年でも 38円。個人の負担としては無視できる水準 ただし世界全体では年間約170億円（全AI合計1日50億回と置いた筆者の推定。公式な合算値は存在しない） ボトルネックは電力ではなかった。制約は別のところにある（4つあり、本記事ではそのうち1つを書きます） IEA予測では 2030年に世界のデ..."
+    },
+    {
+      "id": "s-773f78e30a",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Linuxネットワーク標準教科書 ダウンロード | Linux技術者認定試験 リナック | LPI-Japan",
+      "url": "https://linuc.org/textbooks/network/",
+      "publishedAt": "2026-10-02T22:00:08.000Z",
+      "summary": "ネットワークの仕組みを実習を通して基礎から学べる教材 「Linuxネットワーク標準教科書」は、Linux技術者教育に利用していただくことを目的として、LPI-Japanが無料で公開しています。 ネットワークの仕組みを実習を通して基礎から学べる教材です。実際にLinuxを操作して理解できます。 本教科書は、多くの教育機関から..."
+    },
+    {
+      "id": "s-5b1124c50c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Slides/Docsの中身は「制約されたHTMLサブセットのDSL」だった",
+      "url": "https://zenn.dev/every_ai_recipe/articles/claude-slides-no-powerpoint-recipe",
+      "publishedAt": "2026-10-02T21:17:14.000Z",
+      "summary": "TL;DR Anthropicは2026年9月16日〜17日、Claudeのチャット上でスライド・ドキュメントをそのまま作れる「Claude Slides」「Claude Docs」をベータ公開した。エージェント機能「Claude Cowork」がChatチャット本体に統合された一環の発表である 編集部（本セッション）は、この機能を動かしている開発者向けの実行環境から、実際にスライドを1つ作って検証した。中身は**任意のHTML/CSS/JSではなく、固定1920×1080キャンバス・インラインstyleのみ・プロパティごとに許可された値域を持つ「閉じたHTMLサブセット」**とい..."
+    },
+    {
+      "id": "s-5113cb6536",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Sean Parker is rebuilding Stability AI around music",
+      "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+      "publishedAt": "2026-10-02T21:09:14.000Z",
+      "summary": "Sean Parker, who once taught the music industry what asking for forgiveness looks like, is now back with the labels' blessing and money."
+    },
+    {
+      "id": "s-c0a74765cc",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Meta open sources code to let you make Muse AI gadgets",
+      "url": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+      "publishedAt": "2026-10-02T21:08:37.000Z",
+      "summary": "Meta now lets you make your own Muse gadgets that feature the company's new AI agent with code that the company open sourced. The company suggests projects like loading Muse on a color E Ink display to show reminders, adding it to an HDMI stick so you can display Muse on a big screen, or […]"
+    },
+    {
+      "id": "s-d23b2459f8",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Pope Leo XIV on AI and Art",
+      "url": "https://twitter.com/Pontifex/status/2105983638147891490",
+      "publishedAt": "2026-10-02T21:02:59.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-5754d51f28",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Three AI agents, two countries, and one uneven world wide web",
+      "url": "https://royapakzad.substack.com/p/multilingual-ai-agents",
+      "publishedAt": "2026-10-02T20:39:05.000Z",
+      "summary": "points=9 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-ec9ca77e22",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Buying RTX 5090 At Micro Center Reportedly Now Requires Paperwork, Including A No-Export Declaration",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ww4hne/buying_rtx_5090_at_micro_center_reportedly_now/",
+      "publishedAt": "2026-10-02T20:35:45.000Z",
+      "summary": "&#32; submitted by &#32; /u/Boomfrag [link] &#32; [comments]"
+    },
+    {
+      "id": "s-e148a12b42",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Apple will limit Mac disk access as AI agents 'substantially' increase risk",
+      "url": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+      "publishedAt": "2026-10-02T20:33:32.000Z",
+      "summary": "points=6 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-21904a5fc0",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.288",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
+      "publishedAt": "2026-10-02T20:19:57.000Z",
+      "summary": "What's changed Added $.ui.selection() for mods: returns the text you last selected in fullscreen mode and, when the selection lies within one transcript row, that row Added a built-in gh api to cloud sessions whose image has no GitHub CLI, and fixed the built-in sending control characters from file names, jq filters or GitHub errors to the terminal Added recovery for a prompt cleared with Ctrl+C: "
+    },
+    {
+      "id": "s-c42206aaf9",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "microsoft/FrogNano-4B-2609 · Hugging Face",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ww40o2/microsoftfrognano4b2609_hugging_face/",
+      "publishedAt": "2026-10-02T20:16:26.000Z",
+      "summary": "An agentic model from Microsoft for the GPU poor https://huggingface.co/bartowski/FrogNano-4B-2609-GGUF FrogNano is derived from Qwen/Qwen3.5-4B, a general-purpose post-trained model designed for language, reasoning, coding, agentic, and multimodal tasks. FrogNano inherits Qwen3.5-4B&#39;s dense 32-layer hybrid Gated DeltaNet and gated-attention architecture, but its additional post-training is te"
+    },
+    {
+      "id": "s-8c9ccff606",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Self-hosting AI does not save money, and I do it anyway",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ww2jsu/selfhosting_ai_does_not_save_money_and_i_do_it/",
+      "publishedAt": "2026-10-02T19:17:01.000Z",
+      "summary": "Hi folks, I&#39;m a long-time lurker and big fan of this subreddit and a massive self-hosting fan (also outside of AI). I doubt many people will disagree with me here because I see the same arguments being made in many posts. However, I thought it might be interesting to share anyway. I wrote down why self-hosting AI does not save money: https://www.nijho.lt/post/self-hosting-ai-is-not-cheaper/ ED"
+    },
+    {
+      "id": "s-5d6b83b837",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
+      "url": "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
+      "publishedAt": "2026-10-02T19:15:51.000Z",
+      "summary": "Your next opportunity could be one conversation away. Get your Expo+ Pass for just $75. Limited to the first 100 qualifying people."
+    },
+    {
+      "id": "s-e448a42568",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "AI21 achieves an 83% reduction in time-to-start for AI workloads with AI Hypercomputer",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/ai21-trains-its-models-on-ai-hypercomputer/",
+      "publishedAt": "2026-10-02T19:00:00.000Z",
+      "summary": "Editor’s note : AI21 Labs is a leading global AI lab with a long track record of building foundation models, most notably the Jamba family, and today focuses on specialized LLMs and agent optimization technology. By adopting Google Cloud AI Hypercomputer, AI21 cut high-priority job wait times from 72 hours to 12 and manual scheduling interventions from 20 per week to zero. At AI21 , we build found"
+    },
+    {
+      "id": "s-8b1e323a22",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "AI ‘godfather’ Yann LeCun has ‘zero concerns’ about human extinction, says Anthropic CEO Dario Amodei is ‘deluded’",
+      "url": "https://fortune.com/2026/10/01/ai-godfather-yann-lecun-has-zero-concerns-about-human-extinction-says-anthropic-ceo-dario-amodei-is-deuded/",
+      "publishedAt": "2026-10-02T18:48:24.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-05667d1b1c",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "CUDA: fuse shared experts into MMVQ by am17an · Pull Request #29184 · ggml-org/llama.cpp",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ww1sn4/cuda_fuse_shared_experts_into_mmvq_by_am17an_pull/",
+      "publishedAt": "2026-10-02T18:47:39.000Z",
+      "summary": "MoE speedup, but only for some MoE architectures (like Qwen 35B A3B) &#32; submitted by &#32; /u/jacek2023 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-c912ee21d7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "「ソフトウェアが70年ぶりに変わった、しかも2回」KarpathyのSoftware 3.0を要点解説",
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr03-karpathy-yc-summary",
+      "publishedAt": "2026-10-02T18:44:54.000Z",
+      "summary": "この記事について Andrej Karpathy が Y Combinator の AI Startup School で語った「Software 3.0」の講演を、要点だけ抜き出して日本語で解説します。ソフトウェアの歴史的な転換を整理した、示唆に富む回です。 ! 本記事は元動画の全文翻訳ではなく、紹介と論評を目的として筆者が要点を抜き出し、筆者の見解を主体に構成したものです。正確なニュアンスは元動画（Y Combinator / Andrej Karpathy）をご覧ください。 テーマ1：Software 3.0 とは何か Karpathy は、ソフトウェアの書き方が70年ぶ..."
+    },
+    {
+      "id": "s-39b9fbb58d",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
+      "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+      "publishedAt": "2026-10-02T18:11:27.000Z",
+      "summary": "Apple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI agents make broad access to users’ files, messages, mail, and browsing history riskier."
+    },
+    {
+      "id": "s-5028b5fce3",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+      "publishedAt": "2026-10-02T18:00:00.000Z",
+      "summary": "It's a tale as old as last week: OpenAI's new agent platform, called Dots, is full of cute little guys who can do your bidding. But unlike the ultra-approachable Meta Muse, Dots feel very much like using workplace software that happens to be able to order you a burrito - emphasis on work. OpenAI announced […]"
+    },
+    {
+      "id": "s-88ce35f7c1",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Call it AI, call it Super Intelligence, only 2% of consumers are buying it",
+      "url": "https://techcrunch.com/podcast/call-it-ai-call-it-super-intelligence-only-2-of-consumers-are-buying-it/",
+      "publishedAt": "2026-10-02T17:56:00.000Z",
+      "summary": "This week, the White House got nearly every major tech CEO in one room — Zuckerberg, Bezos, Musk, and Anthropic’s Dario Amodei among them — to sign an AI safety pledge that President Donald Trump called “morally binding.” Trump also signed an executive order officially rebranding AI as “super intelligence,” and meanwhile, Meta and OpenAI are putting friendlier faces on their AI products, even as t"
+    },
+    {
+      "id": "s-fe94e1e839",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "It’s not AI anymore, it’s ‘super intelligence’ (according to the White House)",
+      "url": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
+      "publishedAt": "2026-10-02T17:48:16.000Z",
+      "summary": "This week, the White House got nearly every major tech CEO in one room — Zuckerberg, Bezos, Musk, and Anthropic’s Dario Amodei among them — to sign an AI safety pledge that President Donald Trump called “morally binding.” Trump also signed an executive order officially rebranding AI as “super intelligence,” and meanwhile, Meta and OpenAI are putting friendlier faces on their AI products, even as t"
+    },
+    {
+      "id": "s-e0ed331b36",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "New Architecture from Percepta: Spotlight — separating intelligence from memory, allowing knowledge and skills to grow without changing the model's weights.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ww09ab/new_architecture_from_percepta_spotlight/",
+      "publishedAt": "2026-10-02T17:47:44.000Z",
+      "summary": "https://www.percepta.ai/blog/can-llms-grow-their-own-capabilities https://www.percepta.ai/blog/spotlight-memory &quot;Our new architecture, Spotlight, replaces attention with a memory that escapes this trade-off: it is the first architecture to achieve infinitely growing memory without increasing the access cost. Every token reads from and writes to an unbounded memory, but because the model learn"
+    },
+    {
+      "id": "s-69164ce789",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Breaking up (with Elon Musk) is hard to do",
+      "url": "https://www.theverge.com/tech/1004177/elon-musk-unfollows-shivon-zilis",
+      "publishedAt": "2026-10-02T17:37:36.000Z",
+      "summary": "In a throwback to MySpace-style internet drama, Shivon Zilis announced that she and the father of her four children, Elon Musk, had broken up on X. To do so, she quote-tweeted a post from \"Big Tech Alert,\" an account that, among other things, monitors what accounts are following and unfollowing each other. That post noted […]"
+    },
+    {
+      "id": "s-77605701fd",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants",
+      "url": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
+      "publishedAt": "2026-10-02T17:32:05.000Z",
+      "summary": "Blackstone's Jas Khaira will take the Builders Stage at TechCrunch Disrupt 2026 on building next-gen AI. Register for your pass and get 50% off a second."
+    },
+    {
+      "id": "s-763fb6156d",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Heavily quantized Qwen3.8-Flash vs Q8 Qwen3.8-27B - thoughts?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvzmt3/heavily_quantized_qwen38flash_vs_q8_qwen3827b/",
+      "publishedAt": "2026-10-02T17:22:24.000Z",
+      "summary": "I&#39;m currently choosing between IQ3_XXS Qwen-3.8-Flash and Q8_0 27B. This month I don&#39;t have anything complex enough to justify either&#39;s potential so I&#39;ve got a fairly bad read on how these two stack up in terms of intelligence. Have any of you compared the two enough to speak to which you&#39;ve had a better experience with? &#32; submitted by &#32; /u/EmPips [link] &#32; [comments"
+    },
+    {
+      "id": "s-a84fd7ae93",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Circuit Breaker Labs hopes to make AI safer for your kids (and you)",
+      "url": "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/",
+      "publishedAt": "2026-10-02T17:00:00.000Z",
+      "summary": "With all the talk about how AI might one day kill us all, it's easy to forget that AI has already harmed some people psychologically. Circuit Breaker Labs has created \"crash-test dummies\" to solve that."
+    },
+    {
+      "id": "s-8e206c4d9e",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "publishedAt": "2026-10-02T16:15:00.000Z",
+      "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
+    },
+    {
+      "id": "s-e473a54b3f",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "2週間が1時間に　Grabが500のエージェントで統一したものと、しなかったもの",
+      "url": "https://zenn.dev/tariki_yashiro/articles/na-20260915-211627",
+      "publishedAt": "2026-10-02T16:03:10.000Z",
+      "summary": "本番への接続が2週間以上から約1時間に。東南アジアの配車・デリバリー大手Grabが、社内500以上のエージェントサービスを一つの内製フレームワーク「LLM-Kit」に統一した経緯を公開しました。 APIキーがリポジトリごとに散らばる。誰がどのモデルにいくら使っているか、誰も答えられない。この状態に心当たりがあるなら、読む価値のある事例です。 先に私の立場を書きます。この事例の読みどころは1時間という数字ではなく、「統一できる層」と「統一できない層」の切れ目がどこに入ったかです。そして評価の部分には、留保を付けます。 午後半日で動いたものを、本番に出すのに2週間 Grabの投稿にある一..."
+    },
+    {
+      "id": "s-fe30c26901",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Announcing Spanner queues: Transactional messaging for agentic workloads and beyond",
+      "url": "https://cloud.google.com/blog/products/databases/spanner-queues-provide-native-transactional-messaging/",
+      "publishedAt": "2026-10-02T16:00:00.000Z",
+      "summary": "AI agents don't just answer queries — they can autonomously issue refunds, manage inventory, execute multi-step handoffs, and orchestrate sub-agents, to name but a few complex agentic workflows. That frequently requires the agents to maintain internal state in an operational database while dispatching asynchronous actions through a separate messaging or event queue system. And unfortunately for th"
+    },
+    {
+      "id": "s-5ad2af65d4",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "GKE CPU startup boost: Accelerate app starts without over-provisioning",
+      "url": "https://cloud.google.com/blog/products/containers-kubernetes/gke-cpu-startup-boost-faster-pod-starts-lower-costs/",
+      "publishedAt": "2026-10-02T16:00:00.000Z",
+      "summary": "Whether you’re launching microservices in response to sudden traffic spikes, deploying new software releases, or scaling up application replicas, pod startup time is critical to maintaining a fast, responsive user experience for applications running on Google Kubernetes Engine (GKE). Yet, platform engineers and developers face a persistent dilemma: Applications often demand significantly more CPU "
+    },
+    {
+      "id": "s-c4d9a25e0d",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "Redefining enterprise intelligence with autonomous AI",
+      "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/",
+      "publishedAt": "2026-10-02T15:49:04.000Z",
+      "summary": "Enterprise AI is no longer a future ambition. It is in full operational flight. Model capabilities are advancing faster than most organizations can absorb, while the cost of performance continues to fall. Globally, AI investment is set to reach $2.5 trillion in 2026, up 44% from the previous year. For many enterprises, this investment has…"
+    },
+    {
+      "id": "s-7170e20148",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Pope Leo XIV is not a fan of AI-generated art",
+      "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
+      "publishedAt": "2026-10-02T15:39:41.000Z",
+      "summary": "\"There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others,\" the pope wrote. \"Algorithms lack the spark of humanity.\""
+    },
+    {
+      "id": "s-d599f0a282",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "publishedAt": "2026-10-02T15:19:50.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-2d10671ab6",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "新しい日本語推敲スキル「yomiyasu」がバズっていたので、Claudeで日本語推敲スキル3つを比べてみた - Qiita",
+      "url": "https://qiita.com/inoyu-qiita/items/0ffe6e74ecaf3aaa8b14",
+      "publishedAt": "2026-10-02T15:17:29.000Z",
+      "summary": "はじめに Xで@oga_aiichiroさんが公開された、新しい日本語推敲スキル「yomiyasu」が話題になっていました。AIが書いた文章の「なんかAIっぽい」を、単語の置き換えではなく文の構造から直すスキルらしいです。 ちょうど自分もQiitaを書くとき、AIに文章の校正を頼んだあとで「整っているけど自分が書いた感じがしないな..."
+    },
+    {
+      "id": "s-d26cbd1795",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "The latest AI news we announced in September 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+      "publishedAt": "2026-10-02T15:00:00.000Z",
+      "summary": "Here are Google’s latest AI updates from September 2026"
+    },
+    {
+      "id": "s-78a61f3931",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "【Cursor pstack】AIエージェントに開発を任せる環境をつくる ―月2,500件のPRを支えた開発基盤とは？",
+      "url": "https://zenn.dev/sc30gsw/books/080faba713547b",
+      "publishedAt": "2026-10-02T14:24:04.000Z",
+      "summary": "【Cursor pstack】AIエージェントに開発を任せる環境をつくる ―月2,500件のPRを支えた開発基盤とは？ AIエージェントに開発を任せるための環境づくりを、Cursorのpstackから学ぶ実践ガイドです。月2,500件のPRを支えた考え方を手がかりに、成果物を検証する仕組みから、pstackに含まれるPlaybook・Principle・Skillとい..."
+    },
+    {
+      "id": "s-749287066b",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "メモリ64GB版「DGX Spark」登場。4,999ドルで、128GB版は値上げ",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2145000.html",
+      "publishedAt": "2026-10-02T13:30:41.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-dc35b8edbd",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "日本企業「ハッキングされないでくれ」ランキング - Qiita",
+      "url": "https://qiita.com/konaito/items/16a6d2c5da7d144efe95",
+      "publishedAt": "2026-10-02T12:51:27.000Z",
+      "summary": "Deleted articles cannot be recovered. Draft of this article would be also deleted. Are you sure you want to delete this article? 漏れたら困るのは、お金だけじゃない。 パスワードは変えられる。 けれど、病歴は変えられない。誰にも話していなかった過去も、なかったことにはできない。 「日本企業、ハッキン..."
+    },
+    {
+      "id": "s-db53b8809a",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "レジデンシャルプロキシ対策｜警察庁Webサイト",
+      "url": "https://www.npa.go.jp/bureau/cyber/what-we-do/alliance.html",
+      "publishedAt": "2026-10-02T12:36:29.000Z",
+      "summary": "レジデンシャルプロキシ対策アライアンス 社会全体でのレジデンシャルプロキシに係る不正なIoT機器のセキュリティ対策を推進するため、多岐に渡る主体が連携して対応を協議する「レジデンシャルプロキシ対策アライアンス」を設立しています。 設立概要（令和８年７月21日） 家庭用IoT機器を悪用したサイバー攻撃への官民..."
+    },
+    {
+      "id": "s-23e0fb644e",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「ｅ－Ｔａｘ」で不具合　贈与税申告内容が閲覧される状態に | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261002de53960",
+      "publishedAt": "2026-10-02T12:19:52.000Z",
+      "summary": "税金の電子申告や納税ができる国税庁のシステム「e－Tax」で、贈与税の申告内容が本人以外からも閲覧される状態になる不具合があったとして、国税庁は謝罪しました。 国税庁によりますと、e－Taxのシス…"
+    },
+    {
+      "id": "s-39faa38fb9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "普通のメガネなのに網膜投影　TDKがレンズに埋め込める透明ミラー",
+      "url": "https://www.watch.impress.co.jp/docs/news/2145266.html",
+      "publishedAt": "2026-10-02T12:11:08.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-b3a9a516e9",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "AI hallucinations are making entitled customers even worse",
+      "url": "https://www.theverge.com/report/1002963/ai-hallucinations-customer-service-jobs-agents",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "summary": "Madison, a server in New York City, greets every table by asking about each diner's allergies. Lately, there have been some close calls. \"Sometimes people will tell me they have a shellfish allergy, and I'll come back, and they won't ask me any questions,\" says Madison, who asked that her last name be withheld to […]"
+    },
+    {
+      "id": "s-f829ccaece",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "If a data center is camouflaged in the woods, will anyone hate it?",
+      "url": "https://www.theverge.com/tech/1003681/microsoft-data-centers-ai-environment-biomimicry",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "summary": "San Antonio City Councilmember Ric Galvan remembers when data centers first arrived in his city in the 2000s, looking like relatively unassuming office buildings. But that's changed in recent years, as data centers have grown into massive \"hyperscale\" facilities spanning millions of square feet and housing the physical infrastructure for AI. There are now more […]"
+    },
+    {
+      "id": "s-78ffcfd0a2",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Amazon writes scary blog warning communities not to block data centers",
+      "url": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
+      "publishedAt": "2026-10-02T11:52:20.000Z",
+      "summary": "Amazon is calling for people to support AI data center projects, or risk irreparable harm to the US economy and national security. In a more than 3,000 word blog posted today, Amazon web services CEO Matt Garman pushed back on public concerns around the impact that data centers may have on jobs, power demands, and […]"
+    },
+    {
+      "id": "s-cb4740a3ec",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "国産AI「LLM-jp-4」ベースのAIモデル、KDDI傘下のELYZAが無料公開",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/02/2000001965/",
+      "publishedAt": "2026-10-02T11:04:32.000Z",
+      "summary": "KDDIグループのAI開発企業ELYZAは、AIモデル「ELYZA-Thinking-1.0-llm-jp-4-33b」および「ELYZA-Thinking-1.0-llm-jp-4-32b-a3b」を発表した。国立情報学研究所が開発したオープンなAIモデル「LLM-jp-4」シリーズをベースに事後学習を実施し、性能を強化したという。"
+    },
+    {
+      "id": "s-b7dd825032",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "AI music maker Suno now generates spoken words",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
+      "publishedAt": "2026-10-02T09:42:19.000Z",
+      "summary": "Suno is branching out from the world of AI music, launching a new feature that generates spoken voices based on scripts or prompted descriptions. Speech is now available in public beta across Suno's web and mobile platforms, and allows you to simultaneously generate voiceovers and background music to accompany them. \"Music will always be at […]"
+    },
+    {
+      "id": "s-edf3335ef2",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "ChatGPTの“利用制限”リセットへ　有料ユーザー向け",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/02/2000001961/",
+      "publishedAt": "2026-10-02T09:19:00.000Z",
+      "summary": "米OpenAIのプロダクト責任者ティボー・ソティオ氏は、「ChatGPT」の全有料ユーザーを対象に、利用制限枠をリセットすると発表した。日本時間10月3日午前2時の実施を予定している。"
+    },
+    {
+      "id": "s-5a3c2fdeff",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "Don’t be fooled—LLMs don’t reason",
+      "url": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "summary": "On an afternoon in Seoul in March 2016, I watched a program I helped build put a stone on the fifth line of a Go board in what looked like a gift to its human opponent. Move 37 in game two of the five-game match looked so absurd that some commentators thought it was a…"
+    },
+    {
+      "id": "s-81e3634808",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "How to implement long-term AI agent memory in AlloyDB and Memorystore for Valkey",
+      "url": "https://cloud.google.com/blog/products/databases/implementing-long-term-ai-agent-memory-in-alloydb-and-memorystore/",
+      "publishedAt": "2026-10-02T07:00:00.000Z",
+      "summary": "Enterprise AI agents need persistent memory to execute complex, multi-day workflows and long-horizon tasks. In this blog, we examine how a 2-tier memory architecture using Memorystore for Valkey for short-term buffer memory and AlloyDB AI for long-term persistent memory can help reduce token spend by up to 70%, while maintaining critical data and enterprise guardrails. Imagine building a personali"
+    },
+    {
+      "id": "s-a885ed61f5",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+      "publishedAt": "2026-10-02T04:01:31.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-b9b34d0db4",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「Gemini 4 Argon」とは　性能評価にみるAstra／Fable／Opusとの違い　一般提供は年内？",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/02/2000001954/",
+      "publishedAt": "2026-10-02T03:17:21.000Z",
+      "summary": "Googleが新AIモデル「Gemini 4 Argon」を発表。自社評価ではAstraやFable 5.1、Opus 5.5を多くの項目で上回るとうたう。当面はサイバー防御組織などに限定提供し、一般提供は「できるだけ早く」とする。"
+    },
+    {
+      "id": "s-b5336a8b59",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Microsoft、初のストリーミング文字起こしモデル「MAI-Transcribe-2-Streaming」公開　音声合成「MAI-Voice-2.1」と高速版も",
+      "url": "https://www.itmedia.co.jp/news/article/2610/02/2000001950/",
+      "publishedAt": "2026-10-02T01:47:09.000Z",
+      "summary": "Microsoft AIは、ストリーミング文字起こしモデル「MAI-Transcribe-2-Streaming」と音声合成モデル群を発表した。低遅延な逐次認識や声のトーンを保った多言語合成に対応し、音声エージェント構築を想定する。Microsoft Foundryでプレビュー提供を始め、複合デモも公開した。"
+    },
+    {
+      "id": "s-a97398f76e",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "url": "https://openai.com/index/chatham-financial",
+      "publishedAt": "2026-10-02T00:00:00.000Z",
+      "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
+    },
+    {
+      "id": "s-e91e271ba7",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars",
+      "url": "https://arxiv.org/abs/2610.02207v1",
+      "publishedAt": "2026-10-01T17:59:58.000Z",
+      "summary": "3D Gaussian avatars support fast rendering, however, their real-time animation is often challenged by the costly neural inference. We address this bottleneck and show that the animation of pretrained avatar models can be closely approximated by a linear combination of identity-independent blendshapes. Building on this finding, we introduce GALA (Gaussian Animation via Linear Approximation), a dist"
+    },
+    {
+      "id": "s-f361e0cd02",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "url": "https://arxiv.org/abs/2610.02206v1",
+      "publishedAt": "2026-10-01T17:59:55.000Z",
+      "summary": "LLMs are increasingly applied to cybersecurity workflows, where they are expected to translate analysts' intent into tool invocations. However, existing evaluations focus on knowledge-based assessments or end-to-end agentic tasks, and do not directly measure LLMs' ability to generate executable commands for real-world cybersecurity tools. This gap is critical because cybersecurity operations rely "
+    },
+    {
+      "id": "s-7c0f888902",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+      "url": "https://arxiv.org/abs/2610.02204v1",
+      "publishedAt": "2026-10-01T17:59:50.000Z",
+      "summary": "Building reliable robot capabilities across diverse tasks requires substantial human effort to develop and maintain skills, design rewards, and integrate perception with control. We present Reconstruct, Practice, Go Real (RPG), a framework for autonomous improvement of robot execution systems without updating model weights. RPG identifies manipulation capabilities in an offline dataset and constru"
+    },
+    {
+      "id": "s-4520783cd6",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Embedding Prediction Helps Image Generation",
+      "url": "https://arxiv.org/abs/2610.02203v1",
+      "publishedAt": "2026-10-01T17:59:49.000Z",
+      "summary": "In diffusion transformers, a class label or a text prompt is embedded once, and the same condition is reused at every denoising step. We ask whether predicted embeddings can serve as this condition instead. Next-Embedding Predictive Autoregression (NEPA) trains a Transformer to predict the next continuous embedding in a sequence. In generation, the clean image follows the noisy image, so its embed"
+    },
+    {
+      "id": "s-08cab8a0a2",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "url": "https://arxiv.org/abs/2610.02202v1",
+      "publishedAt": "2026-10-01T17:59:47.000Z",
+      "summary": "What makes great scientists great? Even as AI systems start to make progress on open problems, scientists remain far ahead of them at sensing which prior idea, buried in an ever-growing archive of research, a new problem needs. To study this skill, we draw on researchers who know firsthand which earlier work advanced their completed projects, with papers serving as pointers to the ideas within. Us"
+    },
+    {
+      "id": "s-db9f46c0fb",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
+      "url": "https://arxiv.org/abs/2610.02201v1",
+      "publishedAt": "2026-10-01T17:59:46.000Z",
+      "summary": "High-resolution 3D generation increasingly relies on voxel latents and multi-stage pipelines that first predict active structure and then synthesize local geometry. While effective, this design fragments continuous surfaces into many local tokens, inflates generation cost, and often weakens topological consistency for thin or highly connected shapes. We introduce SILSA, a topology-aware 3D generat"
+    },
+    {
+      "id": "s-e70ffea282",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "url": "https://arxiv.org/abs/2610.02200v1",
+      "publishedAt": "2026-10-01T17:59:45.000Z",
+      "summary": "We show that multimodal models possess strong reasoning abilities and that an appropriate harness can unlock their potential to solve tasks across diverse interactive environments. We introduce VISTA, a visual harness that gives a general-purpose multimodal model long-horizon vision. VISTA allows the model to directly perceive the environment through visual observations and maintains a lossless vi"
+    },
+    {
+      "id": "s-1230c4b4a1",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
+      "url": "https://arxiv.org/abs/2610.02199v1",
+      "publishedAt": "2026-10-01T17:59:42.000Z",
+      "summary": "Full-parameter fine-tuning of large language models (LLMs) incurs substantial optimizer state memory overhead, limiting the model sizes that fit on modern GPUs. Existing approaches either compress optimizer state, abandon first-order gradients, or change the update geometry while retaining dense state. The recently introduced Muon optimizer reduces optimizer memory through matrix-valued updates. S"
+    },
+    {
+      "id": "s-21826c55a4",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "FERPO: Forward Entropy-Regularized Policy Optimization",
+      "url": "https://arxiv.org/abs/2610.02198v1",
+      "publishedAt": "2026-10-01T17:59:41.000Z",
+      "summary": "Several state-of-the-art methods for online reinforcement learning in continuous control improve policies using action gradients of a learned critic. However, critics are typically trained to predict returns, and accurate value predictions do not necessarily yield accurate action derivatives, potentially leading to unreliable policy updates. We propose Forward Entropy-Regularized Policy Optimizati"
+    },
+    {
+      "id": "s-f9b7867d1a",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Hierarchical Continuous Diffusion Language Models",
+      "url": "https://arxiv.org/abs/2610.02193v1",
+      "publishedAt": "2026-10-01T17:59:39.000Z",
+      "summary": "Discrete diffusion language models offer a compelling alternative to autoregressive generation for tasks demanding bidirectional reasoning and global constraint satisfaction. Yet they share a structural bottleneck: when decoding in parallel, each token is sampled independently from its marginal, severing the statistical dependencies among the tokens decoded together. Continuous diffusion language "
+    },
+    {
+      "id": "s-c4c927c253",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Cost-augmented Schrödinger bridges on graphs are exactly solvable: a Feynman-Kac tilt replaces learned control",
+      "url": "https://arxiv.org/abs/2610.02195v1",
+      "publishedAt": "2026-10-01T17:59:39.000Z",
+      "summary": "The generalized Schrödinger bridge on a graph moves mass between two distributions while charging a cost for the states visited. It has been approached by learning the rates of a controlled continuous-time Markov chain, with a temporal-difference penalty that restores the cost. A state cost folds into the reference process as a Feynman-Kac tilt. The cost-augmented bridge is then a plain bridge aga"
+    },
+    {
+      "id": "s-7171fbb06c",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "The Missing Primitive: Diagnosing and Repairing Mathematical Reasoning in Large Language Models",
+      "url": "https://arxiv.org/abs/2610.02191v1",
+      "publishedAt": "2026-10-01T17:59:32.000Z",
+      "summary": "While Large Language Models (LLMs) have demonstrated striking capabilities on frontier mathematical problems, it remains unclear whether they possess the structural mathematical understanding underlying their solutions. In this paper, we take a first step toward systematically studying mathematical understanding in LLMs, from diagnosing its distinct capabilities to leveraging these findings to imp"
+    },
+    {
+      "id": "s-06048f2d40",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Trust the Direction, Search the Step: Zero-and-First-Order Methods for LLM Fine-Tuning",
+      "url": "https://arxiv.org/abs/2610.02190v1",
+      "publishedAt": "2026-10-01T17:59:28.000Z",
+      "summary": "Step-size selection remains a central challenge in large-scale neural network optimization; conservative steps slow convergence, while aggressive steps can destabilize it. We combine \\textbf{Z}ero-and-\\textbf{F}irst-\\textbf{O}rder optimization~(ZFO) and propose a lightweight framework that decouples direction selection from step-size. ZFO uses a trusted first-order optimizer to determine the direc"
+    },
+    {
+      "id": "s-b101c75b8a",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Generative modeling of intrinsically disordered protein regions by reinforcing sparse autoencoder features",
+      "url": "https://arxiv.org/abs/2610.02189v1",
+      "publishedAt": "2026-10-01T17:59:20.000Z",
+      "summary": "Intrinsically disordered protein regions (IDRs) play central roles in cellular processes such as transcriptional regulation, signal transduction, and subcellular localization, yet their functional design remains challenging. Structure-based design methods do not readily apply to IDRs, and existing protein language models are trained on full-length protein sequences, thus learning a prior that is b"
+    },
+    {
+      "id": "s-b624019634",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair",
+      "url": "https://arxiv.org/abs/2610.02173v1",
+      "publishedAt": "2026-10-01T17:57:04.000Z",
+      "summary": "Ablate a component of a language model, and other components often appear to adjust and compensate. This phenomenon, termed self-repair, has been observed repeatedly, but its mechanism remains unclear. The most systematic study to date concluded that self-repair is noisy and unlikely to have a single explanation. We argue that it has one: a gain already present before any ablation. Any interventio"
+    },
+    {
+      "id": "s-308f5f53e8",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "AutoCompact: Learning When to Compact Context in Long-Horizon Coding Agents",
+      "url": "https://arxiv.org/abs/2610.02163v1",
+      "publishedAt": "2026-10-01T17:54:34.000Z",
+      "summary": "Coding agents solve repository-level software engineering tasks through long trajectories of code inspection, search, editing, and testing. As a task progresses, earlier exploration becomes stale, so managing context is more than avoiding overflow: an agent must decide when to compact, what working state to preserve, and how to continue from it. We introduce AutoCompact, which trains a coding agen"
+    },
+    {
+      "id": "s-1f7f17c55c",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "From Knowledge Access to Source Learning: Developing Source-Specific Competence",
+      "url": "https://arxiv.org/abs/2610.02150v1",
+      "publishedAt": "2026-10-01T17:50:16.000Z",
+      "summary": "Large language model (LLM) agents increasingly rely on persistent external sources to solve sequences of knowledge-intensive tasks. Existing methods improve how source content is accessed and organized, while agent-memory systems preserve reusable knowledge from prior interactions, but repeated use of the same source is still largely treated as repeated access rather than an opportunity to progres"
+    },
+    {
+      "id": "s-f91cbed5c5",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models",
+      "url": "https://arxiv.org/abs/2610.02142v1",
+      "publishedAt": "2026-10-01T17:46:38.000Z",
+      "summary": "Keyword-matching benchmarks can credit small models for tool use they never perform. We document such a false positive in a matched-architecture pair of Spanish security language models and propose a ladder of strict, cheap diagnostics. A 661.6M parameter model (approx. 65% code/technical text; no dedicated SFT) and a 1,109M model (web-heavy multi-phase curriculum; 6B-token tool-SFT) share decoder"
+    },
+    {
+      "id": "s-0f9170dc0d",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Finetuning with Sampling: SFT Learns Better Than You Think",
+      "url": "https://arxiv.org/abs/2610.02140v1",
+      "publishedAt": "2026-10-01T17:45:07.000Z",
+      "summary": "Introducing new capabilities to frontier models has long been the goal of posttraining, which predominantly employs supervised finetuning (SFT) and reinforcement learning (RL) to this end. Conventional wisdom dictates that RL enables strong generalization on new tasks without losing existing capabilities, while SFT is prone to weak generalization and catastrophic forgetting. At the same time, SFT "
+    },
+    {
+      "id": "s-4b3c148d05",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Argo-Bench: Evaluating Data Agents on Enterprise-Scale Workflows",
+      "url": "https://arxiv.org/abs/2610.02122v1",
+      "publishedAt": "2026-10-01T17:35:44.000Z",
+      "summary": "Real-world enterprise data science and analytics workflows require reasoning across dozens of tables, performing statistical analyses, and acting on the results. Established text-to-SQL benchmarks evaluate query generation alone, and audits have found their answer keys frequently wrong. Because real enterprise warehouses are too sensitive to release, these benchmarks are built on public datasets w"
+    },
+    {
+      "id": "s-583b93eb48",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Where-OPD: Spatially Guided On-Policy Self-Distillation of MLLMs with Synthetic Scenes",
+      "url": "https://arxiv.org/abs/2610.02117v1",
+      "publishedAt": "2026-10-01T17:34:10.000Z",
+      "summary": "On-policy self-distillation has recently emerged as an effective approach for improving language-model reasoning by supervising students with a frozen or EMA version of themselves that receives privileged information. Its application to multimodal large language models (MLLMs), however, remains largely unexplored. Recent approaches use privileged visual information, such as image crops correspondi"
+    },
+    {
+      "id": "s-aa2323cd97",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "引退した人型ロボ、“溶けた鋼の海”に沈む　アーノルド・シュワルツェネッガー氏が提案　米企業が動画公開",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/01/2000001922/",
+      "publishedAt": "2026-10-01T04:07:07.000Z",
+      "summary": "引退した人型ロボットが“溶けた鋼の海”に沈む――ロボット開発企業の米Figureは、こんな動画を公開した。同社のブレット・アドコックCEOと俳優のアーノルド・シュワルツェネッガー氏のやりとりがきっかけになったという。"
+    },
+    {
+      "id": "s-a080c84e7e",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「AIを使えば早くできるでしょ」と言われがち――エンジニアを困らせる\"勘違い\"の正体とは？",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/01/news021.html",
+      "publishedAt": "2026-10-01T02:00:00.000Z",
+      "summary": "AIは万能ではないのに、非エンジニアから「AIがあるのだから、もっと早くできるのではないか」と期待されてしまう――。エンジニアを悩ませる、こうした“認識のずれ”の背景には何があるのか。調査から探る。"
+    },
+    {
+      "id": "s-4293385ca0",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「システムプロンプト陳腐化」をどう防ぐか　AWSの試行錯誤に見る「自社AIエージェント」運用のポイント",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/01/news029.html",
+      "publishedAt": "2026-10-01T02:00:00.000Z",
+      "summary": "AWSは、AIコーディングエージェント「Kiro」のシステムプロンプトを継続的に評価する仕組みを公開した。社内の実利用データをLLMに採点させ、システムプロンプト変更の効果を比較しているという。"
+    },
+    {
+      "id": "s-2897e731db",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Autodesk、FusionなどのAI機能を発表　設計作業の自動化や設計資産の再利用を支援",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/01/news015.html",
+      "publishedAt": "2026-10-01T00:00:00.000Z",
+      "summary": "Autodeskは「Autodesk University 2026（AU 2026）」において、「Fusion」「Inventor」「Vault」およびPLMに関する新たなAI機能や取り組みを発表した。部品の編集や組み立て、製造工程の自動化に加え、製品情報の連携や既存の設計資産の再利用を支援する。"
+    }
+  ]
+}
