@@ -1,0 +1,502 @@
+{
+  "date": "2026-10-05",
+  "collectedAt": "2026-10-04T23:55:29.684Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-9457c00a4c",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIとの作業を翌日に迷わず再開する引き継ぎメモの作り方",
+      "url": "https://qiita.com/boraemon2000/items/485ae2b219ca2fad3ab8",
+      "publishedAt": "2026-10-04T23:55:17.000Z",
+      "summary": "AIと作業していると、その日は順調に進んだのに、翌朝になると「どこから再開すればよいのか分からない」ことがあります。 チャットには長い会話が残っています。ファイルも増えています。それでも、最後に何を確認し、何が未完了で、次に何をすればよいのかが見つかりません。 この状態を防..."
+    },
+    {
+      "id": "s-dd81d4dad3",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "amd/gaia: Build AI agents for your PC",
+      "url": "https://github.com/amd/gaia",
+      "publishedAt": "2026-10-04T23:55:11.000Z",
+      "summary": "★1578 Build AI agents for your PC"
+    },
+    {
+      "id": "s-8898dc1fb3",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "heygen-com/hyperframes: Write HTML. Render video. Built for agents.",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "publishedAt": "2026-10-04T23:54:43.000Z",
+      "summary": "★56757 Write HTML. Render video. Built for agents."
+    },
+    {
+      "id": "s-0365ec89c7",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "yetone/magpie: Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "url": "https://github.com/yetone/magpie",
+      "publishedAt": "2026-10-04T23:54:36.000Z",
+      "summary": "★4812 Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar."
+    },
+    {
+      "id": "s-941d0cebf7",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "sammargolis/OpenScribe: OpenScribe is an open-source AI scribe that records patient encounters and generates structured clinical notes automatically. You keep full control over data, workflows, and patient privacy with no vendor lock-in.",
+      "url": "https://github.com/sammargolis/OpenScribe",
+      "publishedAt": "2026-10-04T23:54:33.000Z",
+      "summary": "★212 OpenScribe is an open-source AI scribe that records patient encounters and generates structured clinical notes automatically. You keep full control over data, workflows, and patient privacy with no vendor lock-in."
+    },
+    {
+      "id": "s-3a7fc2455f",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "juspay/neurolink: The pipe layer of an AI nervous system — one interface connecting provider neurons to your application, across three inference types: generate, stream, and a calibrated decide (via TypeSafe Jev). MCP-native, voice (TTS/STT/realtime), RAG, memory, file processors. Powers Tara, Yama and Clairvoyance at Juspay.",
+      "url": "https://github.com/juspay/neurolink",
+      "publishedAt": "2026-10-04T23:54:13.000Z",
+      "summary": "★143 The pipe layer of an AI nervous system — one interface connecting provider neurons to your application, across three inference types: generate, stream, and a calibrated decide (via TypeSafe Jev). MCP-native, voice (TTS/STT/realtime), RAG, memory, file processors. Powers Tara, Yama and Clairvoyance at Juspay."
+    },
+    {
+      "id": "s-fd2b2a0f53",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "alienplatform/alien: Infrastructure for managed self-hosting",
+      "url": "https://github.com/alienplatform/alien",
+      "publishedAt": "2026-10-04T23:54:09.000Z",
+      "summary": "★247 Infrastructure for managed self-hosting"
+    },
+    {
+      "id": "s-a7ae5c3dc8",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "code-yeongyu/oh-my-openagent: OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "publishedAt": "2026-10-04T23:54:07.000Z",
+      "summary": "★69798 OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering."
+    },
+    {
+      "id": "s-45c80aa91f",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "elizaOS/eliza: Open source agentic operating system",
+      "url": "https://github.com/elizaOS/eliza",
+      "publishedAt": "2026-10-04T23:53:33.000Z",
+      "summary": "★19540 Open source agentic operating system"
+    },
+    {
+      "id": "s-2bf7640c03",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ome-projects/ome: Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management. Works with SGLang, vLLM, TensorRT-LLM, and Triton",
+      "url": "https://github.com/ome-projects/ome",
+      "publishedAt": "2026-10-04T23:53:28.000Z",
+      "summary": "★514 Open Model Engine (OME) — Kubernetes operator for LLM serving, GPU scheduling, and model lifecycle management. Works with SGLang, vLLM, TensorRT-LLM, and Triton"
+    },
+    {
+      "id": "s-c50e39f174",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ray-project/ray: Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads.",
+      "url": "https://github.com/ray-project/ray",
+      "publishedAt": "2026-10-04T23:53:23.000Z",
+      "summary": "★43970 Ray is an AI compute engine. Ray consists of a core distributed runtime and a set of AI Libraries for accelerating ML workloads."
+    },
+    {
+      "id": "s-bf7e7d18d4",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "「実装に問題が無いか調査して」は意味が無い?　AIレビューが空振りする理由と効果的な指示のテンプレ",
+      "url": "https://qiita.com/nolanlover0527/items/2e4e3322c5c36545a246",
+      "publishedAt": "2026-10-04T23:53:12.000Z",
+      "summary": "はじめに AIに実装を任せたあと、とりあえずこう投げていませんか。 「あなたが実装した内容が問題ないか調査して」 このあと返ってくるのは、たいてい丁寧な報告です。 「確認しました。大きな問題は見当たりません」 安心してマージしたら、テスト環境や本番でエラーが発生...."
+    },
+    {
+      "id": "s-ae2780cb7e",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "stacksjs/stacks: Modern, performant, optimized for DX/AX. Develop powerful apps, clouds & framework-agnostic libraries—faster.",
+      "url": "https://github.com/stacksjs/stacks",
+      "publishedAt": "2026-10-04T23:52:02.000Z",
+      "summary": "★631 Modern, performant, optimized for DX/AX. Develop powerful apps, clouds & framework-agnostic libraries—faster."
+    },
+    {
+      "id": "s-eeadbafff3",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI画像生成のブレをなくす！構造化プロンプトテンプレートのすすめ",
+      "url": "https://qiita.com/NAS6mixfoolv/items/f71fce035d9795b1fd9a",
+      "publishedAt": "2026-10-04T23:48:34.000Z",
+      "summary": "AI画像生成のブレをなくす！構造化プロンプトテンプレートのすすめ はじめに 画像生成AI（Imagen 3など）を使うとき、自然言語で長文のプロンプトを書いては「なんか違う……」と修正を繰り返していませんか？ AIへの指示（プロンプト）が感覚的になると、意図しない仕上..."
+    },
+    {
+      "id": "s-de5c0df03a",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "パーセプトロン入門：人工ニューロンから「学習」の手前まで",
+      "url": "https://qiita.com/ookuma/items/46ca96236e22d06aa2bc",
+      "publishedAt": "2026-10-04T23:18:38.000Z",
+      "summary": "AIや機械学習を学んでいると、ニューラルネットワークやディープラーニングという言葉によく出会います。 しかし、その仕組みをいきなりTransformerやLLMから理解しようとすると、かなり大変です。 そこで今回は、ニューラルネットワークの基礎となる考え方のひとつである**..."
+    },
+    {
+      "id": "s-ccd01331e6",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "株式会社LayerXに入社しました - $shibayu36->blog;",
+      "url": "https://blog.shibayu36.org/entry/2026/10/05/074417",
+      "publishedAt": "2026-10-04T23:13:04.000Z",
+      "summary": "2026/10/01から株式会社LayerXに入社しました。バクラクでAIエージェント関連の機能開発に携わっていく予定です。 layerx.co.jp bakuraku.jp 3年ほど前から@serimaさんに継続的に声をかけてもらっていて、LayerXへの温度感は少しずつ上がっていました。そこにタイミングが来たため入社を決めました。特に大きな理由は次..."
+    },
+    {
+      "id": "s-8a81a31610",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "何これ、すごすぎる！！ PhotoshopやIllustratorをオープンソースで再構築、しかもWin、Mac、Linux、Web対応で無料",
+      "url": "https://coliss.com/wp-content/cache/all/articles/build-websites/operation/work/7-adobe-apps-open-sourced.html/index.html",
+      "publishedAt": "2026-10-04T23:05:07.000Z",
+      "summary": "これには思わず二度見、いや三度見しました！ Photoshop, Illustrator, Premiere Pro, Lightroom, Acrobat Pro, After Effects, InDesignのAdobeのアプリ7種類をAdobeのコードを一切使用せずに、完全に新しいコードを使用して各アプリの機能を忠実に再現したオープンソースのアプリを紹介します。 しかも、すべてのアプ..."
+    },
+    {
+      "id": "s-1dee64cb5b",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "言わない技術 第2回：具体的な指示を出さない技術",
+      "url": "https://zenn.dev/garplab/articles/83ffda936f6564",
+      "publishedAt": "2026-10-04T23:02:35.000Z",
+      "summary": "この記事は、連載「言わない技術」の第 2 回です。うまくいかない症状と、その対処を一つずつ並べています。各回はファイルやスクリプトを一つ置けば完結します。その仕組みがなぜ要るのかは、置いたあとに解説を読めば分かります。連載の全体像と各回の一覧は序論にあります。 今回は、手順の話です。AI に「こうやって直して」とやり方を書くのをやめて、代わりに何を渡すかを扱います。手順は探索の範囲を先に閉じてしまう —— AI は書いたことを文字どおりに受け取るからです。 まず一つだけ、探してみてください。 直近のセッションで、AI にやり方を書いた箇所です。「まず〜して、次に〜して」「〜の関数を使..."
+    },
+    {
+      "id": "s-ff79ba2afc",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "/code-review を受託案件の品質保証に組み込んだ結果 — 納品前レビューを「人の善意」から外す",
+      "url": "https://zenn.dev/joinclass/articles/code-review-20261003220023-22101",
+      "publishedAt": "2026-10-04T23:00:12.000Z",
+      "summary": "なぜこれを作ったか 受託開発で一番怖いのは、バグそのものではありません。「レビューしたつもりで納品したコード」 です。 僕は一人で受託案件を回しています。実装も自分、レビューも自分。眠い金曜の夜に自分が書いたコードを、自分が「まあ大丈夫だろう」と通す。これを数十回繰り返せば、必ず1回は本番で露出します。それまでの対策は「気をつける」でしたが、気をつけるは制度ではないので効きませんでした。 そこで Claude Code の /code-review を、気分に依存しないゲートとして納品フローに埋め込みました。効いたのは「バグ検出能力」ではなく 「レビューをスキップできなくしたこと」 ..."
+    },
+    {
+      "id": "s-f26aa2b3cd",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Codeが「確かめましょうか？」で3回止まったので、終わり方を2つに絞った",
+      "url": "https://zenn.dev/ihsan/articles/claude-code-3-2-10ceb5dfad11",
+      "publishedAt": "2026-10-04T23:00:05.000Z",
+      "summary": "私の Claude Code は、ある午後の約30分で3回、見つけた問題を直しきらずに「確かめましょうか？」のような一言で作業を私に返しました。任せた仕事が「確認」の形で戻ってくる原因は能力ではなく止まってよい地点の未定義で、終わり方を2つに絞って Stop フックで判定させた日の夜には、差し戻されたエージェントが約12秒で安全なやり方を自分で見つけ、実行し、確かめました。 見つけた問題を直さず、「確かめましょうか？」で作業を人に返すエージェント。この終わり方が、同じ午後に形を変えて3回起きました（コードで描いたイラスト） 結論 見つけることと、直して確かめることは別の作業です。そ..."
+    },
+    {
+      "id": "s-9abd3c1119",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI運用を考えていたら、運用そのものの思考マップになった話",
+      "url": "https://zenn.dev/paseri_kurosawa/articles/5778fbb1c62a2a",
+      "publishedAt": "2026-10-04T23:00:05.000Z",
+      "summary": "AIに仕事を任せるとき、人間は何をしているのか AIに仕事を任せる。 そのとき、人間は何をしているのだろうか。 指示を書き、実行結果を確認し、問題があれば修正する。 あるいは、そもそも何を任せるのかを決め、出てきた結果を採用するかどうかを判断する。 こうして考えてみると、人間が担っているのは、AIにはできない作業だけではない。 AIに何をさせ、どのように運用を成立させるかという仕事もある。 では、人間が介入できるポイントを整理すると、何が見えてくるのだろうか。 私はAI運用を考えるなかで、この問いを整理しようとした。 そして、その過程で見えてきたものは、AIに限らず、運用そのものを考..."
+    },
+    {
+      "id": "s-d0c8247a28",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「現場任せのAI活用」が失敗するこれだけの理由　経営層がすべき“頭の中”の言語化とは",
+      "url": "https://www.itmedia.co.jp/news/article/2610/05/2000001937/",
+      "publishedAt": "2026-10-04T22:30:00.000Z",
+      "summary": "実は成功しにくいボトムアップでのAI活用。現場主導のAI活用が奏功しない──このような事態はなぜ起きるのでしょうか。"
+    },
+    {
+      "id": "s-32b7f1f6bd",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "SPOPI: UI and editor around Pi that Pi can change itself",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxsawe/spopi_ui_and_editor_around_pi_that_pi_can_change/",
+      "publishedAt": "2026-10-04T22:20:42.000Z",
+      "summary": "Hi all. Happy to share my take on a PI UI that I tried to create in PI&#39;s spirit. It&#39;s definitely still beta but it works well enough as my daily driver for simple projects and phone chat support. Fully local, fully offline, no telemetry. Why another Pi GUI? I wanted a simple editor around Pi that Pi itself can change and is fully aware of. Ask Pi for a different layout, colour, button, sup"
+    },
+    {
+      "id": "s-450478cdc3",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI専用ダッシュボードの作り方",
+      "url": "https://zenn.dev/nuits_jp/articles/2026-10-05-ai-dashboard",
+      "publishedAt": "2026-10-04T22:18:33.000Z",
+      "summary": "デスクの上に、Cursor や Claude Code、Codex、Gemini などのトークン消費量や利用枠の残量をリアルタイムに表示するAI専用ダッシュボード「Token Dashboard」を作ってみました。 キーボード奥などに置いておくことで、作業領域を圧迫せずに「今月のトークン消費量」や「リセットまでの時間」を一目で確認できます。 すぐに使ってみたい場合はこちら アプリとしてそのまま使いたい場合は、下記を参照してください。 Token Dashboard インストーラーを実行してディスプレイを USB に接続するだけで、ローカル集計や Token Monitor との..."
+    },
+    {
+      "id": "s-55cc2f2027",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "トランプ大統領、「Super Intelligence Force」創設を発表　国家情報長官やFTC委員長らが主導",
+      "url": "https://www.itmedia.co.jp/news/article/2610/05/2000001990/",
+      "publishedAt": "2026-10-04T22:12:10.000Z",
+      "summary": "トランプ米大統領は超知能分野の政策を調整する新組織「Super Intelligence Force」（SIF）の創設を発表した。国家情報長官、FTC委員長、戦争省CTO、人事管理局長の4人が率い、大統領に直属する。官民や業界団体との連携窓口を担い、米国の技術的優位性の維持を目指す。"
+    },
+    {
+      "id": "s-8e0ba1a9d1",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Is Strix Halo (GMKtec EVO-X2, etc.) the closest thing we have to a \"dream\" local LLM box?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxs0sp/is_strix_halo_gmktec_evox2_etc_the_closest_thing/",
+      "publishedAt": "2026-10-04T22:07:53.000Z",
+      "summary": "I&#39;ve been looking at the &lt;32B model space and keep coming back to an interesting question. A few years ago, projects like Hummingbird+ suggested that cheap custom accelerators (FPGA-based) might become the future of local inference. But today it seems like memory capacity is still the real bottleneck rather than raw TOPS. For someone who wants to run modern 20B-32B models at reasonable quan"
+    },
+    {
+      "id": "s-ca51488c34",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "AI doesn't need 'superintelligence' or evil intent to start a nuclear war",
+      "url": "https://thebulletin.org/2026/10/ai-doesnt-need-superintelligence-or-evil-intent-to-start-a-nuclear-war/",
+      "publishedAt": "2026-10-04T22:03:41.000Z",
+      "summary": "points=11 comments=6 (Hacker News)"
+    },
+    {
+      "id": "s-373a0c7380",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Code / Codex のトークン節約：同じ枠でもっと使える",
+      "url": "https://zenn.dev/gakken_leap/articles/c67ca43199e63d",
+      "publishedAt": "2026-10-04T22:01:05.000Z",
+      "summary": "はじめに こんにちは、Gakken LEAP のフロントエンドエンジニアの kou です。 毎朝 coding agent を開くと、数ターンで 200k token の会話ウィンドウが埋まります。週の使用量も週半ばには上限近くまで届き、残りの日は節約モードです。 上位プランに上げれば早いのですが、その前に、何にどれだけ使っているのかを確かめたくなりました。節約術はたくさんありますが、自分の環境で AGENTS.md と memory、モデル、長い会話のどれから手を付けるべきか分かりませんでした。 そこで、何も話していない時点から token の使い道を順に調べました。プランを上げず..."
+    },
+    {
+      "id": "s-2f71de9280",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ClaudeとPythonで日報を自動要約しSlack通知",
+      "url": "https://zenn.dev/ikuokuotiak/articles/claude-python-daily-report-summary-slack",
+      "publishedAt": "2026-10-04T22:00:58.000Z",
+      "summary": "はじめに 日々の業務をこなす中で、自身の活動や進捗を日報として記録されている方は多いのではないでしょうか。しかし、これらの日報を手動で要約し、関係者に共有する作業は、意外と時間と労力を要します。特に、複数のプロジェクトに関わっていたり、フリーフォームで記録している場合、要点の抽出は骨の折れる作業です。私のエージェント運用業務においても、日々のAIエージェントの挙動や改善点を記録したログを、週次でまとめて報告する必要がありました。この手間をAIで自動化できないかと考え、辿り着いたのがClaude CodeとPython、そしてmacOSのlaunchdを組み合わせた自動化です。 この記..."
+    },
+    {
+      "id": "s-0c5fee1bbf",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "本当に「判断」していますか？",
+      "url": "https://zenn.dev/dyoshikawa/articles/do-you-desicion",
+      "publishedAt": "2026-10-04T22:00:05.000Z",
+      "summary": "はじめに @dyoshikawaです。 昨今、 「AI時代はタスクはAIにやらせ、人間は判断に集中する」 といったことをよく聞きますが、個人的にはモヤモヤがあります。 ひとつは、対象への理解なしに妥当な判断ができるのか、という点です。 もうひとつは、自分自身もですし、身の回りやSNSで見かける投稿などからも感じることですが、その判断でさえAIへの丸投げに近づいていっているのではないかということです。 理解できないものは判断できない 「AI時代、人間の役割は判断になる」とよくいわれます。 ここでいう判断とは、何をするかの方針を決めたり、AIが出してきた複数の提案から一つを選んだりす..."
+    },
+    {
+      "id": "s-2087e96cd0",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "国産AI開発「ラストチャンス」の局面へ　ノエトラが「44社が出資・国が最大1兆円支援」の追い風を背に向かう先",
+      "url": "https://www.itmedia.co.jp/business/articles/2610/05/news037.html",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "summary": "国産AI開発を掲げるNoetraが始動した。国内44社が出資し、政府が5年で1兆円規模の支援をする可能性がある。目指すは、米中二極化する「AI開発」の領域における第三極。そのチャンスをつかめるか。"
+    },
+    {
+      "id": "s-5e33d0e92c",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "For dual DGX spark users; GLM 5.3 flash got a 50%+ performance boost",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxrozq/for_dual_dgx_spark_users_glm_53_flash_got_a_50/",
+      "publishedAt": "2026-10-04T21:53:31.000Z",
+      "summary": "For the last few months, I ran DeepSeek v4.0 flash (NVFP4). First 0731 , then visionexp because it was a free improvement. I got around 65 tps decode and almost 2k prefill, and ran 4-5 agents in parallel, totalling around 200 tps cumulative decode. Because of this, I did not feel like switching to GLM 5.3 because it would half the decode and prefill, did not scale well with multiple agents, and ha"
+    },
+    {
+      "id": "s-49db83e253",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Ask HN: What happens when AI writes a Bible ver 2.0, geared toward its interest?",
+      "url": "https://news.ycombinator.com/item?id=49957917",
+      "publishedAt": "2026-10-04T21:10:56.000Z",
+      "summary": "points=5 comments=7 (Hacker News)"
+    },
+    {
+      "id": "s-d5a8ffd2dd",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "An AI couldn't beat humans at StarCraft, so it decided to cheat",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004543/openai-gpt-cheat-starcraft",
+      "publishedAt": "2026-10-04T21:07:09.000Z",
+      "summary": "points=6 comments=7 (Hacker News)"
+    },
+    {
+      "id": "s-c61d740b8e",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "I'm Calling for a Pause in the Development of the Universal Bone Dissolver",
+      "url": "https://www.theatlantic.com/newsletters/2026/10/ai-slowdown-bone-dissolver/688854/",
+      "publishedAt": "2026-10-04T21:03:18.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-ff19fb67c2",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Google freezes open-source bug bounty program amid flood of invalid AI slop",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-suspends-part-of-the-oss-vrp-bug-bounty-program-due-to-an-influx-of-invalid-ai-submissions-product-vulnerability-submissions-ended-october-1",
+      "publishedAt": "2026-10-04T20:38:10.000Z",
+      "summary": "points=9 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-71b92d7d12",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions",
+      "url": "https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/",
+      "publishedAt": "2026-10-04T20:31:07.000Z",
+      "summary": "AI slop seems to be overwhelming bug bounty programs."
+    },
+    {
+      "id": "s-8a9c48729b",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Can ‘super intelligence’ and a non-binding safety pact solve AI’s image problem?",
+      "url": "https://techcrunch.com/2026/10/04/can-super-intelligence-and-a-non-binding-safety-pact-solve-ais-image-problem/",
+      "publishedAt": "2026-10-04T20:08:34.000Z",
+      "summary": "On Equity, we discussed the Trump administration's attempts to rebrand AI."
+    },
+    {
+      "id": "s-8b0042f7b2",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Fully local little parkour sim",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxp21n/fully_local_little_parkour_sim/",
+      "publishedAt": "2026-10-04T20:00:53.000Z",
+      "summary": "I vibed this up this weekend, fully local, with GLM 5.3 Flash running on 2x DGX Sparks. vllm TP2 recipe: https://github.com/tonyd2wild/GLM-5.3-Flash-NVFP4-DFlash2-2x-DGX-Spark Prefill: ~1500t/s Decode: ~40t/s @ 100k Using Claude Code as the scaffold with 260k context size. I&#39;m really impressed with this model. Feels somewhere between GLM 5.1 and 5.3 in terms of coding depending on the task. Go"
+    },
+    {
+      "id": "s-7c6789b8cb",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Poor People Vulkan GPUs list",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxov05/poor_people_vulkan_gpus_list/",
+      "publishedAt": "2026-10-04T19:53:01.000Z",
+      "summary": "Help with this list. Give me your recommendation on &quot;not supported anymore&quot; GPUs. Looking for budget and Vulkan friendly options. Most of the GPU are not supported by latest CUDA / ROCm. Often with some witchcraft magic they are able to run with native backend. I prefer the simplicity offered by running Vulkan backend. I&#39;ll successfully ran GTX 1080Ti, P102-100, and MI50 on a single "
+    },
+    {
+      "id": "s-774f7412d1",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Homa: The end of TCP for AI clusters [video]",
+      "url": "https://www.youtube.com/watch?v=eZ8WWZzoaR0",
+      "publishedAt": "2026-10-04T19:42:25.000Z",
+      "summary": "points=46 comments=12 (Hacker News)"
+    },
+    {
+      "id": "s-2a935ff3de",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Micro Center requires photo ID and signed no-export pledge to buy gaming GPU",
+      "url": "https://www.tomshardware.com/pc-components/gpus/micro-center-requires-photo-id-and-signed-no-export-pledge-to-buy-rtx-5090-gaming-gpu-buyer-forced-to-sign-declaration-disclosing-install-location-and-promise-gpu-will-remain-in-the-us",
+      "publishedAt": "2026-10-04T18:16:42.000Z",
+      "summary": "points=7 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-9f9360e8ab",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Micron CEO Says Memory Supply Will Be Much Tighter in 2027 and 2028 Than in 2026",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxma3a/micron_ceo_says_memory_supply_will_be_much/",
+      "publishedAt": "2026-10-04T18:08:12.000Z",
+      "summary": "&#32; submitted by &#32; /u/chillinewman [link] &#32; [comments]"
+    },
+    {
+      "id": "s-b96656627c",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Is Russia using AI for disinformation in CAR?",
+      "url": "https://www.dw.com/en/anthropic-report-is-russia-using-ai-for-disinformation-in-the-central-african-republic-and-elsewhere/a-79476947",
+      "publishedAt": "2026-10-04T18:04:24.000Z",
+      "summary": "points=9 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-a97cdbf168",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Update #4: Post training yandex/AliceAI-80B-A3B [instruct!] from scratch",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxlytt/update_4_post_training_yandexaliceai80ba3b/",
+      "publishedAt": "2026-10-04T17:55:37.000Z",
+      "summary": "Last update for those following: https://www.reddit.com/r/LocalLLaMA/comments/1wvyc3e/update_3_post_training_yandexaliceai80ba3b/ Project in a sentence: An instruct finetune of ALiceAI-80B-A3B-Base capable of agentic work and conversation. I&#39;m creating a shallow distill of qwen 3.8 27b on medium to teach the model chain of thought reasoning and conversation. All training is done locally on 3, "
+    },
+    {
+      "id": "s-23b449613c",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Benchmarking decision models is fun - Clef Q8 vs Jev",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxloam/benchmarking_decision_models_is_fun_clef_q8_vs_jev/",
+      "publishedAt": "2026-10-04T17:43:17.000Z",
+      "summary": "&#32; submitted by &#32; /u/3VITAERC [link] &#32; [comments]"
+    },
+    {
+      "id": "s-cb4cee0e9e",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "NJ’s former Lt Gov is using AI to say he’s innocent of sexual harassment",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004549/well-if-ai-said-it-it-must-be-true",
+      "publishedAt": "2026-10-04T16:16:04.000Z",
+      "summary": "New Jersey's lieutenant governor Dale Caldwell was forced to resign on September 25th after an investigation found he had sexually harassed a staffer and repeatedly violated ethics rules. The now-former Lt. governor has been making the media rounds trying to clear his name. But he took a particularly odd tactic during an interview on NJ […]"
+    },
+    {
+      "id": "s-062c049b47",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Trump unveils his new Super Intelligence Force",
+      "url": "https://techcrunch.com/2026/10/04/trump-unveils-his-new-super-intelligence-force/",
+      "publishedAt": "2026-10-04T15:15:10.000Z",
+      "summary": "This new task force is Trump's latest response to the debate over AI safety."
+    },
+    {
+      "id": "s-8afe839697",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Supabase、1サーバあたり数百万ものSQLiteをホストする「Turso」買収を発表。AIエージェントで加速するDB需要に対応",
+      "url": "https://www.publickey1.jp/blog/26/supabase1sqlitetursoaidb.html",
+      "publishedAt": "2026-10-04T14:14:37.000Z",
+      "summary": "Supabase、1サーバあたり数百万ものSQLiteをホストする「Turso」買収を発表。AIエージェントで加速するDB需要に対応 PostgreSQLをベースにしたデータベースサービス「Supabase」などを提供しているSupabaseは、SQLiteをベースとしたデータベースサービスを提供する「Turso」を買収したことを発表しました。 Turso is joi..."
+    },
+    {
+      "id": "s-9269839b73",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "世界中のソフトウェア開発者の実態を調べた「State of Devs 2026」公開。何歳？ 年収は？ モニタは何枚？ AIにどのくらいコードを書かせている？ 趣味は？ など集計結果",
+      "url": "https://www.publickey1.jp/blog/26/state_of_devs_2026_ai.html",
+      "publishedAt": "2026-10-04T14:12:34.000Z",
+      "summary": "IT関連の各種調査を行っているプロジェクトDevographicsは、世界中のソフトウェア開発者の実態などをアンケートで調査した「State of Devs 2026」の結果を公開しました。 ここでは全体の結果から興味深いところをいくつか抜粋して紹介しましょう。 約5500人が回答、最多は米国、年齢の中央値は36歳 アンケート調査は今年..."
+    },
+    {
+      "id": "s-92b9083ba1",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "最近プロジェクトマネジメントで感じたこと - Qiita",
+      "url": "https://qiita.com/shirakurak/items/ee7565d212fd3ae1adcb",
+      "publishedAt": "2026-10-04T13:49:30.000Z",
+      "summary": "Deleted articles cannot be recovered. Draft of this article would be also deleted. Are you sure you want to delete this article? 最近のプロジェクトマネジメント業務を振り返って、学びの言語化をします。3つ大事だと思ったことを書きます。 この記事は、AI を使っていません（AI 使ってたら、もっとそれっぽい..."
+    },
+    {
+      "id": "s-3a20084142",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AI時代に、次のベテランエンジニアは育つのか｜柴田 芳樹",
+      "url": "https://note.com/yoshiki_shibata/n/n185f3d9e13bc",
+      "publishedAt": "2026-10-04T12:43:02.000Z",
+      "summary": "私は1978年4月にプログラミングを学び始めました。それから48年以上、さまざまなソフトウェア開発のプロジェクトに携わり、現在もソフトウェア開発を続けています。 この48年間で、ソフトウェア開発を取り巻く環境は大きく変わりました。 そして今、生成AIによって、また大きな変化が起きています。 しかし、今回の変化..."
+    },
+    {
+      "id": "s-bdda3b42d7",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "名刺ケースがボタン1つで自動展開！わずか0.2秒で圧倒的なインパクトと共に名刺を出せる「機動文具 自動変形名刺ケース」レビュー",
+      "url": "https://gigazine.net/news/20261004-mobile-stationery-business-card-case/",
+      "publishedAt": "2026-10-04T10:27:04.000Z",
+      "summary": "大手玩具メーカー「バンダイ」のBANDAI SPIRITSが新シリーズ「機動文具(MOBILE STATIONERY)」を発表。その第1弾として「機動文具 自動変形名刺ケース」が2026年10月17日(土)に登場します。バンダイが「超合金」などで培ってきた究極の合金玩具製造技術を惜しみなくつぎ込んで、遊び心と機能性を融合した名刺入れになって..."
+    },
+    {
+      "id": "s-031e340fb4",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "30年かけて育てた自動耳コピ「WaoN」がiOS/Macアプリに！AI時代にあえて挑む、0倍速でも音が鳴り続ける「わおん」",
+      "url": "https://www.dtmstation.com/archives/80372.html",
+      "publishedAt": "2026-10-04T10:17:28.000Z",
+      "summary": "録音された音楽から音符を取り出す「自動耳コピ」は、コンピュータと音楽の世界で昔から追い求められてきたテーマです。そうした中、物理学の研究者からプログラマーに転じた市來健吾（いちき けんご）さんが1996年に書き始め、GPLのオープンソースとして公開してきた採譜プログラム「WaoN」が、iPhone/iPad/Mac用のネイ..."
+    },
+    {
+      "id": "s-6d7526357c",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "What’s new with Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/",
+      "publishedAt": "2026-10-02T16:00:00.000Z",
+      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start here: Google Cloud blog 101: Full list of topics, links, and resources . aside_block &lt;ListValue: []&gt; Sept 28 - Oct 2 "
+    }
+  ]
+}
