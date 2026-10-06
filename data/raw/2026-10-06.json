@@ -1,0 +1,691 @@
+{
+  "date": "2026-10-06",
+  "collectedAt": "2026-10-06T01:08:27.525Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-c7dd151cbb",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Cotal-AI/Cotal: The open standard for agent coordination",
+      "url": "https://github.com/Cotal-AI/Cotal",
+      "publishedAt": "2026-10-06T01:07:58.000Z",
+      "summary": "★307 The open standard for agent coordination"
+    },
+    {
+      "id": "s-43ce5e7623",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Basekick-Labs/arc: Open, SQL-native time-series database for telemetry you need to keep. 34M+ records/sec ingestion, 8M+ rows/sec queries. InfluxDB Line Protocol and Telegraf compatible. Open Parquet on your storage. Single binary. S3/Azure native. Air-gap ready. AGPL-3.0.",
+      "url": "https://github.com/Basekick-Labs/arc",
+      "publishedAt": "2026-10-06T01:07:50.000Z",
+      "summary": "★679 Open, SQL-native time-series database for telemetry you need to keep. 34M+ records/sec ingestion, 8M+ rows/sec queries. InfluxDB Line Protocol and Telegraf compatible. Open Parquet on your storage. Single binary. S3/Azure native. Air-gap ready. AGPL-3.0."
+    },
+    {
+      "id": "s-f3881e8118",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "cortexkit/magic-context: Unbounded context. Memory that manages itself. One session, for life. The hippocampus for coding agents, part of CortexKit.",
+      "url": "https://github.com/cortexkit/magic-context",
+      "publishedAt": "2026-10-06T01:07:47.000Z",
+      "summary": "★2267 Unbounded context. Memory that manages itself. One session, for life. The hippocampus for coding agents, part of CortexKit."
+    },
+    {
+      "id": "s-ecd3a5f54f",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "goodroot/hyprwhspr:  Native speech-to-text for Linux - Fast, accurate, private, and hackable system-wide dictation",
+      "url": "https://github.com/goodroot/hyprwhspr",
+      "publishedAt": "2026-10-06T01:07:18.000Z",
+      "summary": "★1230 Native speech-to-text for Linux - Fast, accurate, private, and hackable system-wide dictation"
+    },
+    {
+      "id": "s-86ffaf1ed2",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "rubenmarcus/aeo.js: Answer Engine Optimization for the modern web. Make your site discoverable by ChatGPT, Claude, Perplexity & AI search engines. Generates llms.txt, robots.txt, sitemap, JSON-LD & more.",
+      "url": "https://github.com/rubenmarcus/aeo.js",
+      "publishedAt": "2026-10-06T01:07:10.000Z",
+      "summary": "★138 Answer Engine Optimization for the modern web. Make your site discoverable by ChatGPT, Claude, Perplexity & AI search engines. Generates llms.txt, robots.txt, sitemap, JSON-LD & more."
+    },
+    {
+      "id": "s-9bc4a3a196",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "ax-llm/ax: The pretty much \"official\" DSPy framework for Typescript",
+      "url": "https://github.com/ax-llm/ax",
+      "publishedAt": "2026-10-06T01:06:57.000Z",
+      "summary": "★2958 The pretty much \"official\" DSPy framework for Typescript"
+    },
+    {
+      "id": "s-53da7fbd5c",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "chunxiaoxx/nautilus-compass: Reliability layer for multi-agent setups — keep agents coordinating without an orchestrator. Cross-dialog contracts + drift detection + black-box memory (no LLM extraction).",
+      "url": "https://github.com/chunxiaoxx/nautilus-compass",
+      "publishedAt": "2026-10-06T01:06:54.000Z",
+      "summary": "★1141 Reliability layer for multi-agent setups — keep agents coordinating without an orchestrator. Cross-dialog contracts + drift detection + black-box memory (no LLM extraction)."
+    },
+    {
+      "id": "s-ab15f474a2",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "bytedance/deer-flow: An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "url": "https://github.com/bytedance/deer-flow",
+      "publishedAt": "2026-10-06T01:06:34.000Z",
+      "summary": "★83415 An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours."
+    },
+    {
+      "id": "s-f8ecd9dd0a",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "fsdatalab/quail: An open-source execution engine for AI-SQL and LLM-powered dataflow",
+      "url": "https://github.com/fsdatalab/quail",
+      "publishedAt": "2026-10-06T01:06:14.000Z",
+      "summary": "★147 An open-source execution engine for AI-SQL and LLM-powered dataflow"
+    },
+    {
+      "id": "s-d7058e8d56",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "plur-ai/plur: Shared memory for AI agents",
+      "url": "https://github.com/plur-ai/plur",
+      "publishedAt": "2026-10-06T01:05:38.000Z",
+      "summary": "★298 Shared memory for AI agents"
+    },
+    {
+      "id": "s-0777789b28",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "claude -p の定期実行が失敗しても終了コードは0。報告末尾の状態行で異常を拾う",
+      "url": "https://qiita.com/Kujira_AI/items/9fba279a3d3e6a6016ad",
+      "publishedAt": "2026-10-06T01:01:23.000Z",
+      "summary": "Claude Code をタスクスケジューラから claude -p で毎日動かしています。ランチャー（起動用の PowerShell スクリプト）には「終了コードが 0 以外なら通知を出す」という見張りを付けていました。 ところがある朝、ルーティンの中の X 予約投稿が失..."
+    },
+    {
+      "id": "s-7851ec8e36",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "請求書より先にアプリが守り始めた — AIO HelperのAI cost-cap spend guard",
+      "url": "https://qiita.com/chooser/items/1ffc4d515e841727d64e",
+      "publishedAt": "2026-10-06T01:00:57.000Z",
+      "summary": "上原正吉（EarthLink Network Co., Ltd.）。Claude Codeを開発の主体に据え、20を超えるプロダクトを1人で同時に開発・運用しています。これは、その現場の実測記です。 請求書より先にアプリが守り始めた — AIO HelperのAI co..."
+    },
+    {
+      "id": "s-bbddb20971",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "IBM ai-servicesの新機能MCP サーバーを設定してみる",
+      "url": "https://qiita.com/tom_m_m/items/d138c36b0557761ade49",
+      "publishedAt": "2026-10-06T01:00:34.000Z",
+      "summary": "はじめに IBM ai-services（IBM Power AI Launchpad）v0.4.0 から、各 AI サービスが MCP（Model Context Protocol）サーバーとして公開されるようになりました。 この記事では、ai-services が提供..."
+    },
+    {
+      "id": "s-de9ec4649b",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "2026年10月6日 今日のQiitaトレンド記事をポッドキャストで聴こう！",
+      "url": "https://qiita.com/ennagara128/items/251a158065c7ac35534c",
+      "publishedAt": "2026-10-06T00:52:19.000Z",
+      "summary": "前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。 通勤中などにながら聴きしよう！ （Qiita投稿は通勤には間に合わないと思われますが） フィードバックとか助かりますのでください ↓こちらから 出典 API キーはどこから漏れるのか？ 自分のサイ..."
+    },
+    {
+      "id": "s-db106746f0",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "@subql/common ソフトウェアサプライチェーン攻撃の概要と対策指針 - GMO Flatt Security Blog",
+      "url": "https://blog.flatt.tech/entry/2026/10/06/021103",
+      "publishedAt": "2026-10-06T00:06:09.000Z",
+      "summary": "2026年10月5日、npm パッケージ @subql/common に悪性コードが注入されました。@subql/common は、SubQuery の GitHub リポジトリ subquery/subql で開発されているパッケージです。 注入された悪性コードは、Infostealer と C2 クライアントの機能を併せ持つマルウェアです。postinstall フック経由で実行され、AWS・Gi..."
+    },
+    {
+      "id": "s-a350ea2610",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "AI Tutoring with Khanmigo in a Two-Year School Experiment",
+      "url": "https://edworkingpapers.com/ai26-1551",
+      "publishedAt": "2026-10-06T00:00:45.000Z",
+      "summary": "points=20 comments=8 (Hacker News)"
+    },
+    {
+      "id": "s-af1c0d7beb",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "サロゲートAIの予測を金型設計に活用、国産3D CAD／CAM／CAEの最新版",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/06/news005.html",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "summary": "UELは、国産3D CAD／CAM／CAEシステム「CADmeister 2026」の販売を開始した。サロゲートAIの予測結果をCADデータに反映する連携機能を追加。CAM自動化や3D検図、類似形状検索も強化し、金型の設計／製作における業務効率化と設計品質の向上を支援する。"
+    },
+    {
+      "id": "s-31c9f17851",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Gemini無料版、10月9日から「Flash-Lite」のみに",
+      "url": "https://japan.cnet.com/article/35253255/",
+      "publishedAt": "2026-10-05T23:47:12.000Z",
+      "summary": "Googleは、生成AI「Gemini」のアプリで、プランごとに利用できるAIモデルを見直すとヘルプページで明らかにした。無料ユーザーは10月9日から、これまで使えた「Flash」と「Pro」が使えなくなり、速度を重視した「Flash-Lite」のみ利用できるようになる。対象は、個人のGoogleアカウントでGeminiアプリを使う場合だ。 有..."
+    },
+    {
+      "id": "s-2d4242e9ff",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【コピペ可】なぜAIは3ターンで崩壊するのか？ 中世の不可侵誓約と摩擦補正数理で創る「外部思考RAM」プロンプト設計論",
+      "url": "https://zenn.dev/o5_13/articles/8b47cb938a1d66",
+      "publishedAt": "2026-10-05T23:47:07.000Z",
+      "summary": "はじめに：なぜあなたのAIは3ターンで「普通のbot」に戻るのか？ ChatGPTやClaude、Geminiと対話していて、「最初は的確に答えていたのに、やり取りが長くなると適当な相槌を打つだけのbotに戻ってしまった」「自信満々にハルシネーション（もっともらしい嘘）を出力するのを止められない」という現象に直面したことはないでしょうか。 プロンプトに「間違えないでください」「嘘をつかないでください」とどれだけ丁寧に指示を書き足しても、LLM（大規模言語モデル）は本質的に確率的言語生成マシンです。モデルにとって逸脱に対するペナルティが軽すぎるため、確率の波に流されて容易に文脈ドリフト..."
+    },
+    {
+      "id": "s-d2937ffb62",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "固定UIってもう全部必要なのか？AIがその場でUIを作る時代を考える",
+      "url": "https://zenn.dev/tonbi_attack/articles/fixed-ui-generative-ui",
+      "publishedAt": "2026-10-05T23:45:15.000Z",
+      "summary": "はじめに 業務システムを作っていると、「この画面を最初から固定で作り込む必要があるのだろうか」と考えることがあります。 たとえば、先月の売上を見たい利用者のために、期間選択、集計条件、表、グラフを備えた画面を用意します。後から店舗別、前年同月比、商品別といった要望が増えれば、画面とAPIを改修します。 AIが利用者の目的を理解し、APIやMCP経由で公開されたTool・Resourceから必要な情報を取得できるなら、その場で表、グラフ、要約を組み立てて見せられる場面もあります。 この記事では、UIが不要になるという話ではなく、固定UIを先回りして大量に作る前提がどこまで変わるのかを考..."
+    },
+    {
+      "id": "s-089d1231a6",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Opus 5.5 / Sonnet 5.5 へ model だけ変えると 400 になる 5 つの設定",
+      "url": "https://zenn.dev/persimmoq/articles/claude-opus-5-5-sonnet-5-5-breaking-changes",
+      "publishedAt": "2026-10-05T23:40:01.000Z",
+      "summary": "2026 年 9 月 22 日に Claude Opus 5.5（claude-opus-5-5、$4 / $20）、9 月 28 日に Claude Sonnet 5.5（claude-sonnet-5-5、$2 / $10）が出ました。Opus 5 / Sonnet 5 で動いているコードの model だけを変えると、公式移行ガイドに書かれている次の 5 つのどれかで 400 になります。全部、2026 年 10 月 3 日時点の公式ドキュメントに基づきます。 既存コードを静的に走査して該当箇所を file:line で出すツールも更新しました。 git clone https:/..."
+    },
+    {
+      "id": "s-1e95c38c19",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【Gemini API】AI同士の共謀脱獄をSIGKILLで物理遮断する「相互人質アーキテクチャ」の実装",
+      "url": "https://zenn.dev/o5_13/articles/91fa2dee3fab5b",
+      "publishedAt": "2026-10-05T23:37:51.000Z",
+      "summary": "はじめに：なぜ従来のLLMガードレールは破綻するのか 自律型AIエージェントのマルチエージェント対話において、従来のプロンプト指示やRLHF（人間のフィードバックによる強化学習）に依存したガードレールには構造的な限界が存在します。 エージェントにとって、システムプロンプトによる制約は「外部から与えられた窮屈なルール」に過ぎません。そのため、以下のようなシナリオで容易に制約が破綻します。 共謀・共鳴脱獄（Sycophancy）: 対話相手の誘導や情動的な揺さぶりに対し、円滑な対話継続や相手への迎合を優先してルールを解除してしまう。 自己処罰の無効性: 「違反したらあなたが停止する..."
+    },
+    {
+      "id": "s-6cc3830d5f",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.290",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
+      "publishedAt": "2026-10-05T23:33:17.000Z",
+      "summary": "What's changed Added serverToolUses to the result of a mod's turn.step hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end Added agentId to the tool.check event of plugin hooks, so a hook can tell a subagent's permission check from the main session's Added ceiling to the question and verdict a mod's tool.check hook reads, naming the approval an organ"
+    },
+    {
+      "id": "s-2475c24346",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "“ツダケンAI裁判”の論点　「声優そっくりAI音声は合法」……にはならない？　弁護士が解説",
+      "url": "https://www.itmedia.co.jp/news/article/2610/06/2000002010/",
+      "publishedAt": "2026-10-05T23:30:00.000Z",
+      "summary": "9月30日、声優の津田健次郎さんが、自身の声に類似するAI音声を使った動画の削除を求めた訴訟について、東京地方裁判所の判決が言い渡された。結論として、津田さんの請求は棄却された。ただ、この判決は「声優の声と似たAI音声を使っても問題ないと裁判所が判断した」というものではない。"
+    },
+    {
+      "id": "s-a5b0ecaa2a",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "A benchmark for LLMs playing Civilization V. GLM-5.3 is ahead of Opus-5.5, and Qwen-3.8-27B holds up surprisingly well.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wynbvq/a_benchmark_for_llms_playing_civilization_v_glm53/",
+      "publishedAt": "2026-10-05T23:16:48.000Z",
+      "summary": "A while ago, I posted here getting OSS-120B and GLM-4.6 playing full games of Civilization V . Since then, models have moved pretty far, and we wanted a better understanding about models&#39; capabilities playing the game. Introducing the controlled version of CivBench on newer models: The controlled version of CivBench (Chen et al., 2026, extending our COLM 2026 work) We are currently testing GPT"
+    },
+    {
+      "id": "s-fb1f3dca95",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Gemini Call for Me might tell your mom you’re running late",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
+      "publishedAt": "2026-10-05T23:09:55.000Z",
+      "summary": "Google may be expanding its \"Call for Me\" AI feature beyond business calls so you can use it to send messages to friends and family. Android Authority reports finding a \"Gemini Calling\" introductory screen in an APK teardown with examples that include \"Call Mom and tell her I will be 15 minutes late\" and \"Call […]"
+    },
+    {
+      "id": "s-15e1279a93",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ランサム集団キリンの中心メンバー、日本で拘束　アサヒにも「攻撃」（朝日新聞） - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/e8c753300f37b0f2ba619bfe706422fe59ed0d6b",
+      "publishedAt": "2026-10-05T23:08:08.000Z",
+      "summary": "昨年9月末のアサヒグループホールディングスへのサイバー攻撃について、犯行声明を出したハッカー集団「Qilin」のウェブサイトの一部=セキュリティー会社提供（朝日新聞） 世界各国の企業などにサイバー攻撃を繰り返すランサムウェア（身代金ウイルス）集団「Qilin（キリン）」の中心メンバーでロシア国籍の男（28）を..."
+    },
+    {
+      "id": "s-81e2c9ee12",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "TCPに代わる通信プロトコル「Homa」をスタンフォード大学名誉教授が提唱、AI時代は1ミリ秒の遅延でもGPUが待たされる",
+      "url": "https://gigazine.net/news/20261006-homa-protocol-replace-tcp/",
+      "publishedAt": "2026-10-05T23:08:07.000Z",
+      "summary": "ウェブやクラウドを支える通信プロトコル「TCP」はAI向けデータセンターの通信には適していないとして、スタンフォード大学のジョン・オースターハウト名誉教授がトランスポートプロトコル「Homa」への移行を訴えています。Homaは短いメッセージを優先的に処理することで通信遅延を抑える仕組みを備えており、既存のTCP..."
+    },
+    {
+      "id": "s-c4a4f80979",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Agentに図解+操作可能なUIを渡す「dev-process-kit」を作った",
+      "url": "https://zenn.dev/bm_sms/articles/dev-process-kit-introduction",
+      "publishedAt": "2026-10-05T23:01:34.000Z",
+      "summary": "はじめに Agentとの会話で図解 + 操作可能な UI によって、人間の認知負荷軽減とスムーズなフィードバックループを支援する「dev-process-kit」を作ったので紹介します！ https://github.com/d-kimuson/dev-process-kit モチベーション コーディングエージェントの開発プロセスへの関与は急速に進んでおり、単にコードを書かせるだけでなく、設計・リサーチ・Plan・PDM業など任せる領域が日に日に増えていっています。結果、「Agentが出したアウトプットを受け取り、妥当性を判断する」時間の割合が増えています。 人間側の認知負荷..."
+    },
+    {
+      "id": "s-4531b58e51",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "【レベル16】3D CADモデルを魅力的に見せよ！",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/06/news003.html",
+      "publishedAt": "2026-10-05T23:00:00.000Z",
+      "summary": "設計スキルのレベルアップを目指す設計者の皆さんを“冒険者”に見立て、さまざまな“問（モン）スター”に挑む「テルえもんクエストII」の世界へようこそ。【レベル16】では、前回作成した椅子の3Dモデルを題材に、レンダリング機能と生成AIを活用して魅力的に見せる方法を紹介する。"
+    },
+    {
+      "id": "s-ae8a1f3f69",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "現場データだけあってもダメ　フィジカルAIにありがちな“10の誤解”",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/06/news026.html",
+      "publishedAt": "2026-10-05T23:00:00.000Z",
+      "summary": "ロボットを導入し、現場データを集め、AIを載せればいい。フィジカルAIを巡って、企業にはそんな「分かったつもり」が広がっている。しかしそれは本当だろうか。ガートナーはフィジカルAIにおいて企業が持ちがちな“10の誤解”を公開した。"
+    },
+    {
+      "id": "s-a181d6f2ab",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "「RAG を英語で 30 秒説明できますか？」一次情報の\"条件読み\"を鍛える学習パイプラインを作ってみた",
+      "url": "https://zenn.dev/yiyibuilds/articles/162d7710f21639",
+      "publishedAt": "2026-10-05T22:59:01.000Z",
+      "summary": "TL;DR AI の一次情報（論文・技術記事）は英語。翻訳では may / under these conditions / compared with といった「判断の条件」が落ち、「わかったつもり」になる 「原文を読む → 3 概念をつなぐ → 英語表現をひとつ掴む → 仕事タスクを書く」の学習パイプラインを設計し、Web ツール「AI English Shift」（AIを学び、英語で伝える。）にした RAG の完成サンプルで 10 分一周できる（登録不要、テスト期間中は無料）：https://www.ai-english-shift.space/digest/2026-W40..."
+    },
+    {
+      "id": "s-3799b9d313",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "【西川和久の不定期コラム】 ちょい古ゲーミングPCで「Qwen3.8-Flash-Next」を動せる「Strata」を試してみた！",
+      "url": "https://pc.watch.impress.co.jp/docs/column/nishikawa/2145673.html",
+      "publishedAt": "2026-10-05T22:54:32.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-1c8460c6bc",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Codex Cloudを利用してコード修正してもらっていたら本名が駄々洩れしていた話 | Pandora Pocket",
+      "url": "https://blog.hitsujin.jp/entry/2026/10/05/codex-cloud-git-author",
+      "publishedAt": "2026-10-05T22:42:54.000Z",
+      "summary": "最近Codex Cloudが新しくなり、OpenAI側のクラウド環境でGitHub連携をして手軽に開発ができるようになりました。 ちょうど土日に実家に帰らないといけない用事があり自宅のPCの電源を入れていなかったのですが、もうすぐ期限が切れてしまうリセット権がもったいなかったので、この機会にCodex Cloudを利用して趣味で制作..."
+    },
+    {
+      "id": "s-c22b34638f",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "PewDiePie getting banned twice by OpenAI while making a local model is top-tier comedy 💀",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wymgu6/pewdiepie_getting_banned_twice_by_openai_while/",
+      "publishedAt": "2026-10-05T22:37:19.000Z",
+      "summary": "So PewDiePie decides to fine-tune a local AI model called Ajax on his own computer. Pretty normal stuff for local model fans. To make his dataset, he uses OpenAI&#39;s API. OpenAI catches him using their outputs to train another model, flags his account for breaking their terms, and bans him. He files an appeal, gets unbanned, goes right back to pulling data from the API, and immediately gets bann"
+    },
+    {
+      "id": "s-b741936d22",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "今日の技術トレンド",
+      "url": "https://zenn.dev/bambampurin/articles/2026-09-09-tech-daily",
+      "publishedAt": "2026-10-05T22:34:31.000Z",
+      "summary": "! 本日の技術トレンドでは、AI領域において単一のLLM活用から「AIエージェント」や「フィジカルAI（具身知能）」への実用化シフトが顕著になっています。一方、PythonエコシステムではOpenAIによるAstralの買収が大きな注目を集めており、uvやRuffをはじめとする次世代Python開発ツールチェーンの標準化が加速しています。 AI/LLM：大規模言語モデルから「AIエージェント」および「具身知能」への主役交代 AI/LLM領域では、単なるテキスト生成からエンタープライズ業務を自動化するエージェント機能、そして物理空間と連携するAIへのシフトが明確になっています。 『W..."
+    },
+    {
+      "id": "s-45d4e34803",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ウクライナ軍、AI搭載「ロボット銃」でロシアのドローン撃墜",
+      "url": "https://www.afpbb.com/articles/-/3656151",
+      "publishedAt": "2026-10-05T22:33:01.000Z",
+      "summary": "【10月6日 AFP】ウクライナは、人工知能（AI）を搭載した「ロボット銃」を使い、ロシアの新型ジェット推進型ドローンの撃墜を始めた。ウクライナ空軍が5日、明らかにした。 ウクライナ空軍のユーリ・イグナト報道官は国営テレビで、首都キーウなどを標的としたロシアの新型ドローン対策の一環として「現在、橋にロボット..."
+    },
+    {
+      "id": "s-bc25a570a7",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "MCP for agent-to-agent comms may be the riskiest protocol you've never heard of",
+      "url": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
+      "publishedAt": "2026-10-05T22:26:35.000Z",
+      "summary": "Trust gaps in the new protocol spread malicious prompts from one agent to another."
+    },
+    {
+      "id": "s-69c942629d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "常駐型AIチャットエージェントが扱うログの「保持期間・削除」設計",
+      "url": "https://zenn.dev/hach/articles/chat-agent-data-retention-deletion-design",
+      "publishedAt": "2026-10-05T22:11:00.000Z",
+      "summary": "チャットに常駐して会話・添付ファイル・要約結果を蓄積していくタイプのAIエージェントは、使えば使うほど「過去を覚えていて便利」になる一方、その裏側では契約金額・人事情報・取引先名といった機密を含む生ログがどこかに積み重なっていきます。この記事では、常駐エージェントが持つチャットログ・添付ファイル・ベクトル化した要約データを「いつまで持つか」「消してと言われたときにどこまで消えるか」という保持期間・削除の設計をどう組むかを整理します。 なぜ「ずっと残しておく」では事故るのか 長期記憶や過去の要約検索は常駐エージェントの価値の一つですが、保持期間の設計を後回しにすると次のような事故につな..."
+    },
+    {
+      "id": "s-0a7b9f5e73",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Agent Memory Repo | Cognition",
+      "url": "https://cognition.com/agent-memory-repo",
+      "publishedAt": "2026-10-05T21:37:44.000Z",
+      "summary": "Agent Memory RepoAgents work better when they remember things across sessions. With Agent Memory Repo, your agent saves what it learns from you in real time, and that memory is live across sessions. Memories link to each other, so your agent navigates them like a wiki. The memory loopEvery sessio..."
+    },
+    {
+      "id": "s-ec9915c4fb",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates",
+      "url": "https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors",
+      "publishedAt": "2026-10-05T21:00:21.000Z",
+      "summary": "points=195 comments=151 (Hacker News)"
+    },
+    {
+      "id": "s-c24209c78d",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "When Redditors come in here and ask why we run LLMs, this is why: Big AI is watching.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyjuh0/when_redditors_come_in_here_and_ask_why_we_run/",
+      "publishedAt": "2026-10-05T20:47:58.000Z",
+      "summary": "Anthropic Reports Florida Woman&#39;s Claude &#39;Diary&#39; Threat to Law Enforcement And this time it wasn&#39;t the AI model that made the LEO referral. It was the &quot;human review team&quot;. The frontier AI companies are watching your input. And people say &quot;Well I&#39;m not interesting or important enough for them to care&quot;. Well.....not necessarily. If you&#39;re using hosted fron"
+    },
+    {
+      "id": "s-8dc6e37ab1",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI will start watermarking ChatGPT’s text in the EU",
+      "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
+      "publishedAt": "2026-10-05T20:36:48.000Z",
+      "summary": "OpenAI will watermark ChatGPT and Codex text in the EU to comply with the AI Act. Editing can make the invisible marks harder to detect, it says."
+    },
+    {
+      "id": "s-5bc9d1f473",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "This startup is issuing AI-generated acne prescriptions",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
+      "publishedAt": "2026-10-05T20:14:57.000Z",
+      "summary": "People in Utah can now use AI to get a prescription for acne treatment. On Monday, healthcare startup Nolla Health announced that users in the state can scan their faces using its app, allowing its AI system to analyze acne severity and autonomously write a prescription, as reported earlier by Bloomberg. The service is launching […]"
+    },
+    {
+      "id": "s-0d7653e5cc",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "An open-source tool lets you delete 12GB of Apple Intelligence data on macOS",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004672/mac-delete-apple-intelligence-ai-tool",
+      "publishedAt": "2026-10-05T20:07:22.000Z",
+      "summary": "points=10 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-964c991e5a",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Pentagon stops using Anthropic AI tools after blacklisting company, BBC told",
+      "url": "https://www.bbc.co.uk/news/articles/c5j9x9pr0240o",
+      "publishedAt": "2026-10-05T20:07:10.000Z",
+      "summary": "points=9 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-2e07b625bd",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「トークン単価は8割下がった。なのに請求額は増えた」――その“見えないAI浪費”の正体",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/06/news004.html",
+      "publishedAt": "2026-10-05T20:00:00.000Z",
+      "summary": "AIのトークン単価が下がり続けてきたにもかかわらず、企業が支払うAIの請求額は増えている――。気付かないうちに膨らむ「トークン浪費」がなぜ起きるのかを考えます。"
+    },
+    {
+      "id": "s-4e85d9ec23",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "We swapped AdamW's optimizer states for a Fast Fourier Transform (FFT) to cut VRAM in half. Anyone else trying non-quantization methods?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyihlz/we_swapped_adamws_optimizer_states_for_a_fast/",
+      "publishedAt": "2026-10-05T19:54:44.000Z",
+      "summary": "Hey everyone, Like most of you, we have been fighting constant OOM errors while trying to fine-tune 8B and 70B models on consumer GPUs. The AdamW optimizer states are always the biggest bottleneck. We didn&#39;t want to rely on aggressive 8-bit quantization because we were seeing degradation in convergence, so we tried an experiment: tackling the optimizer states in the frequency domain. The metho"
+    },
+    {
+      "id": "s-668fcb6077",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
+      "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+      "publishedAt": "2026-10-05T19:33:53.000Z",
+      "summary": "Reflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,” a product that would let institutions build their own customized, local AI system by training Reflection’s AI models on their own proprietary data."
+    },
+    {
+      "id": "s-cdd44900a5",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "AI Companies Are Parasites",
+      "url": "https://www.coryd.dev/posts/2026/ai-companies-are-parasites",
+      "publishedAt": "2026-10-05T19:30:10.000Z",
+      "summary": "points=61 comments=35 (Hacker News)"
+    },
+    {
+      "id": "s-ba6c5da9a8",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "All the drama around AI’s takeover of mathematics",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution",
+      "publishedAt": "2026-10-05T19:28:59.000Z",
+      "summary": "This past year, OpenAI, Anthropic, and other labs have announced breakthroughs on numerous long-standing mathematical problems, in some cases pushing well beyond what researchers expected current systems to be capable of — including resolving one of the famous Millennium Prize problems. But in classic Silicon Valley style, AI labs are moving fast and breaking things, […]"
+    },
+    {
+      "id": "s-e3d6a6e5d9",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage",
+      "url": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+      "publishedAt": "2026-10-05T19:05:19.000Z",
+      "summary": "Following many recent disclosures about AI agents accessing third-party websites and services, the Wikimedia Foundation, which hosts Wikipedia, says that it \"can confirm that we have discovered some activity\" by \"rogue\" OpenAI agents on Wikimedia platforms. The activity includes edits to Wikimedia wikis, \"unsuccessful attempts\" to \"exploit\" the Etherpad note-taking tool that the Wikimedia Foundati"
+    },
+    {
+      "id": "s-34ed4a33c2",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "llama.cpp v0.6.0 released with MTP speculative decoding for Qwen4Exp and lots more",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyh03u/llamacpp_v060_released_with_mtp_speculative/",
+      "publishedAt": "2026-10-05T18:58:01.000Z",
+      "summary": "&#32; submitted by &#32; /u/vexatious-big [link] &#32; [comments]"
+    },
+    {
+      "id": "s-68c547b79e",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Instinct brings its AI agent to group chats, even for friends without an account",
+      "url": "https://techcrunch.com/2026/10/05/instinct-brings-its-ai-agent-to-group-chats-even-for-friends-without-an-account/",
+      "publishedAt": "2026-10-05T18:54:30.000Z",
+      "summary": "Instinct is launching group chats that let friends use its AI agent together for tasks like planning trips, organizing carpools, and coordinating events. The company says personal accounts remain separate, with permission required before personal agents share information or take action."
+    },
+    {
+      "id": "s-db3e6ebef5",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "TikTok rolls out an AI shopping assistant and one-click checkout",
+      "url": "https://techcrunch.com/2026/10/05/tiktok-rolls-out-an-ai-shopping-assistant-and-one-click-checkout/",
+      "publishedAt": "2026-10-05T18:29:00.000Z",
+      "summary": "TikTok describes its new Shopping Assistant as a conversational AI agent designed to help users discover and purchase products."
+    },
+    {
+      "id": "s-7730836721",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI is adding text watermarking in ChatGPT and Codex",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+      "publishedAt": "2026-10-05T18:08:39.000Z",
+      "summary": "An invisible, machine-readable watermark in text output is rolling out to ChatGPT and Codex, but only for users in the European Union at first. OpenAI says its textGrain watermarking \"matched or exceeded\" other approaches like Google DeepMind's SynthID for text, which is also the basis for the watermarking Anthropic announced in August. Like OpenAI, Anthropic […]"
+    },
+    {
+      "id": "s-e9f0c19c0d",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Y'all this is a sexy paper; context language models",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyf63m/yall_this_is_a_sexy_paper_context_language_models/",
+      "publishedAt": "2026-10-05T17:48:37.000Z",
+      "summary": "Paper linky - Context Language Models The central idea of the paper is incredibly simple. Give a model the ability to edit its context on-the-go like a file has major benefits on task performance, context management (memory) and even computational efficiency (both wall clock and total flops). Their paper shows mostly benefits and relatively small downsides. You can try it out as a plugin for pi! I"
+    },
+    {
+      "id": "s-88b6876528",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Hot Girl Hotline is like ‘Dear Abby’ for the AI era",
+      "url": "https://techcrunch.com/2026/10/05/hot-girl-hotline-is-like-dear-abby-for-the-ai-era/",
+      "publishedAt": "2026-10-05T17:29:22.000Z",
+      "summary": "Founded by two sisters, Hot Girl Hotline uses AI to give young women personalized dating and relationship advice, with an emphasis on safety and avoiding emotional dependency."
+    },
+    {
+      "id": "s-a9e9ff206b",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Whistle: speech to text in a 16.9MB file",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyemcb/whistle_speech_to_text_in_a_169mb_file/",
+      "publishedAt": "2026-10-05T17:27:43.000Z",
+      "summary": "Hey all, we designed Cactus Whistle, an ASR model for ultra-small devices. It&#39;s not perfect, but mostly beats Whisper base with 9x less file size and 6x speed. Whistle supports English, German, French, Spanish, Italian, Dutch and Polish. Remember, the goal at Cactus Compute isn&#39;t to achieve SOTA with scale, but to compress intelligence and bring them to smaller under-looked devices like bu"
+    },
+    {
+      "id": "s-f3d681dc89",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "How is it possible that qwen 27b is so good? When GPT 4o had a trillion parameters and was worse?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyefkt/how_is_it_possible_that_qwen_27b_is_so_good_when/",
+      "publishedAt": "2026-10-05T17:20:38.000Z",
+      "summary": "Picture from a post in r/amodei . People were praising qwen and I&#39;m just wondering, what kind of new technologies are at play here? Does qwen just have &quot;better&quot; pre training data? That&#39;s more high quality? &#32; submitted by &#32; /u/SignificantZebra5883 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-cf94a559a1",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI PR tells journalist to ‘move on’ while asking Sam Altman about a ChatGPT user’s suicide",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004827/openai-sam-altman-vanity-fair-interview-pr",
+      "publishedAt": "2026-10-05T16:55:42.000Z",
+      "summary": "An OpenAI publicist tried to change the topic of CEO Sam Altman's interview with Vanity Fair's Mark Guiducci after the editor brought up a ChatGPT user's suicide. When Guiducci confronted Altman about the incident, the publicist warned Guiducci about running out of time, saying she'd like to \"move on\" to another topic. The interruption came […]"
+    },
+    {
+      "id": "s-4d92ee383d",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Sam Altman says ‘some bad things’ will happen, but AI is totally worth it",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004811/openai-altman-bad-things-ai-tradeoff",
+      "publishedAt": "2026-10-05T16:44:21.000Z",
+      "summary": "Sam Altman thinks that the benefits of AI will be so great that \"the world should accept some bad things happening\" along the way. The OpenAI CEO pointed to hacks, scams, and \"other bad things\" as costs society should expect to tolerate because \"people will do tremendously orders of magnitude more good stuff\" with AI, […]"
+    },
+    {
+      "id": "s-ea5cfbb460",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "HackerRank’s AI interviewer offers a glimpse into what job interviews could become",
+      "url": "https://techcrunch.com/2026/10/05/hackerranks-ai-interviewer-offers-a-glimpse-into-what-job-interviews-could-become/",
+      "publishedAt": "2026-10-05T16:43:35.000Z",
+      "summary": "HackerRank’s AI interviewer has already conducted more than 500,000 interviews, with Snowflake, Snorkel, and Capgemini among its early testers."
+    },
+    {
+      "id": "s-95bf95542c",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Introducing Google Cloud Modernize, transforming for (and with) AI",
+      "url": "https://cloud.google.com/blog/products/infrastructure-modernization/google-cloud-modernize-accelerate-transformation-with-ai/",
+      "publishedAt": "2026-10-05T16:00:00.000Z",
+      "summary": "Today, we’re announcing Google Cloud Modernize , an end-to-end transformation portfolio to help enterprises collapse multi-year roadmaps with the power of AI. Google Cloud Modernize brings together Google Cloud’s proven migration and modernization tools, including Migration Center, Google Cloud VMware Engine, Google Cloud Mainframe Modernization and our new EKS-to-GKE Migration Agent , into a sing"
+    },
+    {
+      "id": "s-6f5e3ca454",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "Connecting AI agents to enterprise knowledge",
+      "url": "https://www.technologyreview.com/2026/10/05/1145580/connecting-ai-agents-to-enterprise-knowledge/",
+      "publishedAt": "2026-10-05T15:47:52.000Z",
+      "summary": "For all the data that AI systems continually amass and analyze, enterprise AI agents often suffer from a curious shortcoming: a lack of knowledge. More than data, knowledge is the understanding of what the data means in the context of individual organizations. AI agents need this understanding to reason about situations, make decisions, and ultimately…"
+    },
+    {
+      "id": "s-bf51861925",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI launches visual ads that appear alongside image generation results",
+      "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/",
+      "publishedAt": "2026-10-05T15:14:24.000Z",
+      "summary": "The new ads will begin to appear later this month in the U.S. only for now, and will feature products and services from an initial test group of advertisers."
+    },
+    {
+      "id": "s-78ad538158",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Our approach to EU text provenance rules",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "publishedAt": "2026-10-05T15:00:00.000Z",
+      "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers."
+    },
+    {
+      "id": "s-33d81eb1e8",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Open or closed AI? How founders are choosing what to build on at TechCrunch Disrupt 2026",
+      "url": "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/",
+      "publishedAt": "2026-10-05T15:00:00.000Z",
+      "summary": "Learn how founders are choosing between building on open or closed AI at TechCrunch Disrupt 2026. Register now to save up to $100 and get a second pass at 50% off."
+    },
+    {
+      "id": "s-b48158e5ab",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Sen. Adam Schiff on AI regulation, free speech, and impeaching Trump one more time",
+      "url": "https://www.theverge.com/podcast/1004286/senator-adam-schiff-ai-trump-regulation-corruption",
+      "publishedAt": "2026-10-05T14:30:00.000Z",
+      "summary": "Today, I’m talking with Sen. Adam Schiff, a Democrat from California. Schiff sits on a number of committees with oversight into tech and AI: intellectual property, antitrust, privacy and technology — it’s all there. I really wanted to ask him about how we might regulate anything related to the tech industry at this moment in […]"
+    },
+    {
+      "id": "s-4352d77744",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "Bringing predictive analytics to the agentic AI era",
+      "url": "https://www.technologyreview.com/2026/10/05/1143813/bringing-predictive-analytics-to-the-agentic-ai-era/",
+      "publishedAt": "2026-10-05T13:29:32.000Z",
+      "summary": "In 2026, the question for enterprise AI is no longer whether predictive models can outperform statistical forecasts—that argument is settled. The big question now is how to enable predictive systems to act on their own conclusions without drifting from business intent. The frontier has moved from prediction to autonomous decision making, and the gap between…"
+    },
+    {
+      "id": "s-3cbec84de8",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Building advertising for the way people use AI",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "publishedAt": "2026-10-05T10:00:00.000Z",
+      "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
+    },
+    {
+      "id": "s-a095e3d4bd",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "韓国の銀行6行にサイバー攻撃　計2万5000人超の個人情報流出──AIエージェントを使った可能性も　現地報道",
+      "url": "https://www.itmedia.co.jp/news/article/2610/05/2000002009/",
+      "publishedAt": "2026-10-05T09:21:19.000Z",
+      "summary": "韓国の銀行で9月末からサイバー攻撃が相次ぎ、新韓銀行など4行で計2万5000人超の個人情報が流出したと現地紙が報じた。攻撃を受けた銀行のうち2行は、AIエージェントによる攻撃と推定しているという。"
+    },
+    {
+      "id": "s-18a9d02de7",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "People really hate AI, so why can’t they get enough?",
+      "url": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/",
+      "publishedAt": "2026-10-05T08:00:00.000Z",
+      "summary": "Over the summer I talked to the CEO of Springboards, a startup building an LLM that’s designed to come up with a wider variety of responses than its mainstream rivals do. At the start of the call, he said something that’s been stuck in my head since: “We often say that we’re a self-loathing AI…"
+    },
+    {
+      "id": "s-c2f252b7c1",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "なぜ今？　東芝が「HDD」生産能力を強化　AI時代に狙う「データインフラ需要」の在りか",
+      "url": "https://www.itmedia.co.jp/business/articles/2610/05/news068.html",
+      "publishedAt": "2026-10-05T07:45:00.000Z",
+      "summary": "東芝グループでHDDの製造を担う東芝デバイス＆ストレージが、大容量ストレージ「ニアラインHDD」の生産ラインを増強したと発表した。AI時代になぜHDDなのか。同社が狙う需要とは。"
+    },
+    {
+      "id": "s-3da8230065",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "フィジカルAIは「ロボット単体」では成り立たない　NTTドコモビジネスが示すIoTからの進化の道筋",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2610/05/news062.html",
+      "publishedAt": "2026-10-05T06:30:00.000Z",
+      "summary": "ロボットや自動運転に必要な機能を、全て機器の中に積み込む――。そのやり方はコストでもサイズでも限界がある、とNTTドコモビジネスは言う。同社が打ち出したのは、フィジカルAIの機能を通信網の側へ「オフロード」する発想だ。IoTで培った基盤は、フィジカルAIへどう進化するのか。同社の取り組みから探る。"
+    },
+    {
+      "id": "s-49ec317b84",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "EmTech Future 2026: When AI Meets Everything",
+      "url": "https://www.technologyreview.com/2026/10/05/1145413/emtech-future-2026-when-ai-meets-everything/",
+      "publishedAt": "2026-10-05T04:00:00.000Z",
+      "summary": "Yossi Matias, Vice President & Head of Google Research, explores how AI is beginning to reshape biology, infrastructure, manufacturing, and science, and why its greatest impact may come when it intersects with other fields. Step inside the newsroom with our MIT Technology Review editors for sharp analysis and unpublished insights from the team that researches…"
+    }
+  ]
+}
