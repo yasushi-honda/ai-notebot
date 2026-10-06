@@ -76,7 +76,8 @@ setup_alert() {
 
   local policy_file
   policy_file="$(mktemp)"
-  trap 'rm -f "$policy_file"' RETURN
+  # RETURN トラップは関数を抜けた後も呼び出し元の return で再発火し、スコープ外の変数を
+  # 参照して set -u で落ちる（codex reviewで指摘）ため使わず、末尾で明示的に削除する。
   cat >"$policy_file" <<EOF
 {
   "displayName": "${ALERT_NAME}",
@@ -93,11 +94,14 @@ setup_alert() {
 EOF
   local existing
   existing="$(g monitoring policies list --filter="displayName=\"${ALERT_NAME}\"" --format='value(name)')"
+  local rc=0
   if [ -n "$existing" ]; then
-    g monitoring policies update "$existing" --policy-from-file "$policy_file"
+    g monitoring policies update "$existing" --policy-from-file "$policy_file" || rc=$?
   else
-    g monitoring policies create --policy-from-file "$policy_file"
+    g monitoring policies create --policy-from-file "$policy_file" || rc=$?
   fi
+  rm -f "$policy_file"
+  return "$rc"
 }
 
 setup_deploy() {
