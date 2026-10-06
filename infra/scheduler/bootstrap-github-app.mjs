@@ -23,7 +23,7 @@
 //   CLOUDSDK_PYTHON=<dir>/bin/python CLOUDSDK_PYTHON_SITEPACKAGES=1 node infra/scheduler/bootstrap-github-app.mjs
 import { randomBytes } from 'node:crypto';
 import { execFileSync, spawnSync } from 'node:child_process';
-import { chmodSync, closeSync, fsyncSync, mkdtempSync, openSync, readdirSync, readFileSync, rmSync, statSync, unlinkSync, writeFileSync, writeSync } from 'node:fs';
+import { chmodSync, closeSync, existsSync, fsyncSync, mkdtempSync, openSync, readdirSync, readFileSync, rmSync, statSync, unlinkSync, writeFileSync, writeSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -281,30 +281,33 @@ async function manifestFlow(o) {
 // App のインストール（対象リポジトリ）を、KMS 署名の JWT で確認する。
 // 200 が返れば、GitHub が KMS 署名を受け入れたことの実証にもなる。
 async function waitForInstallation(o, gcloud, versionNum, appId, workDir, slug) {
-  const installUrl = `${o.githubWeb}/apps/${slug ?? '<App のスラッグ>'}/installations/new`;
-  if (slug) {
-    console.log(`\n【操作2】次の URL で「Only select repositories」→ ${o.ownerRepo.split('/')[1]} のみを選び Install を押してください（済みなら不要）:\n  ${installUrl}`);
-    if (o.open) { try { execFileSync('open', [installUrl]); } catch { /* 案内済み */ } }
-  }
   const deadline = Date.now() + o.installTimeoutSec * 1000;
   let jwt = signJwt(o, gcloud, versionNum, appId, workDir);
   let jwtAt = Date.now();
   let last = '応答なし';
+  const ghHeaders = () => ({ Accept: 'application/vnd.github+json', Authorization: `Bearer ${jwt}`, 'User-Agent': 'ai-notebot-bootstrap', 'X-GitHub-Api-Version': '2022-11-28' });
+  if (!slug) {
+    // --pem-file モードではスラッグが分からないため、GET /app（JWT 認証）で取得する
+    try { const r = await fetch(`${o.githubApi}/app`, { headers: ghHeaders() }); if (r.ok) slug = (await r.json()).slug; } catch { /* 取れなければ案内を省く */ }
+  }
+  if (slug) {
+    const installUrl = `${o.githubWeb}/apps/${slug}/installations/new`;
+    console.log(`\n【操作2】次の URL で「Only select repositories」→ ${o.ownerRepo.split('/')[1]} のみを選び Install を押してください（済みなら不要）:\n  ${installUrl}`);
+    if (o.open) { try { execFileSync('open', [installUrl]); } catch { /* 案内済み */ } }
+  }
   while (Date.now() < deadline) {
     if (Date.now() - jwtAt > 8 * 60 * 1000) { jwt = signJwt(o, gcloud, versionNum, appId, workDir); jwtAt = Date.now(); }
     try {
-      const r = await fetch(`${o.githubApi}/repos/${o.ownerRepo}/installation`, {
-        headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${jwt}`, 'User-Agent': 'ai-notebot-bootstrap', 'X-GitHub-Api-Version': '2022-11-28' },
-      });
+      const r = await fetch(`${o.githubApi}/repos/${o.ownerRepo}/installation`, { headers: ghHeaders() });
       if (r.status === 200) return await r.json();
       last = `HTTP ${r.status}`;
       // 404 は未インストール（待機を続ける）。401 は App 作成直後の伝播遅延でも起きうるため、
       // 連続して拒否され続けたときだけ失敗とする。
       if (r.status === 401 && Date.now() - jwtAt > 90 * 1000) {
-        throw new Error('GitHub が KMS 署名の JWT を拒否し続けています（401）。鍵のインポートまたは App ID が不正の可能性があります');
+        throw Object.assign(new Error('GitHub が KMS 署名の JWT を拒否し続けています（401）。鍵のインポートまたは App ID が不正の可能性があります'), { kmsRejected: true });
       }
     } catch (e) {
-      if (/拒否し続けて/.test(e.message)) throw e;
+      if (e.kmsRejected) throw e;
       last = `通信エラー（${e.cause?.code ?? e.message}）`; // 一時的なネットワーク障害は待機を続ける
     }
     await new Promise((res) => setTimeout(res, 5000));
@@ -323,7 +326,7 @@ async function main() {
   const cleanup = () => {
     try { for (const f of readdirSync(workDir)) wipe(join(workDir, f)); rmSync(workDir, { recursive: true, force: true }); } catch { /* 既に無い */ }
   };
-  for (const sig of ['SIGINT', 'SIGTERM']) process.on(sig, () => { cleanup(); process.exit(130); });
+  for (const sig of ['SIGINT', 'SIGTERM', 'SIGHUP']) process.on(sig, () => { cleanup(); process.exit(130); });
   try {
     if (o.selftest) {
       console.log('selftest: 使い捨て RSA 2048 鍵でインポート経路を検証します');
@@ -343,13 +346,13 @@ async function main() {
       return;
     }
 
-    let appId, slug = null, version, versionNum;
+    let appId, slug = null, version, versionNum, destroy;
     // 不可逆な App 作成より前にインポートジョブを用意し、KMS 側の問題を先に露呈させる
     const jobName = createImportJob(o, gcloud);
     if (o.pemFile) {
       // 既存 App の鍵の取り込み（ローテーション・復旧）。元の PEM はインポート成功後に上書き削除する。
       appId = o.appId;
-      ({ version, versionNum } = importPemToKms(o, gcloud, o.pemFile, workDir, jobName));
+      ({ version, versionNum, destroy } = importPemToKms(o, gcloud, o.pemFile, workDir, jobName));
       wipe(o.pemFile);
       console.log(`取り込み元の PEM を上書き削除しました: ${o.pemFile}`);
     } else {
@@ -358,10 +361,20 @@ async function main() {
       app.pem = undefined; // メモリ上の参照も落とす
       appId = String(app.id);
       slug = app.slug;
-      ({ version, versionNum } = importPemToKms(o, gcloud, pemPath, workDir, jobName));
+      ({ version, versionNum, destroy } = importPemToKms(o, gcloud, pemPath, workDir, jobName));
       wipe(pemPath);
     }
-    const installation = await waitForInstallation(o, gcloud, versionNum, appId, workDir, slug);
+    // 途中で失敗しても鍵バージョンが分かるよう、インポート直後に表示する
+    console.log(`KMS にインポートしました: ${version}`);
+    let installation;
+    try {
+      installation = await waitForInstallation(o, gcloud, versionNum, appId, workDir, slug);
+    } catch (e) {
+      // GitHub が KMS 署名を拒否した鍵は使えない。ENABLED のまま残ると deploy が誤って選びうるため破棄予約する。
+      if (e.kmsRejected) destroy();
+      else console.error(`この鍵バージョンはインポート済みで公開鍵の一致も検証済みです（${version}）。インストール後に --pem-file なしで確認し直すか、必要なら手動で無効化してください`);
+      throw e;
+    }
     if (installation.repository_selection !== 'selected') {
       throw new Error(`インストールが「選択したリポジトリのみ」ではありません（${installation.repository_selection}）。App の Install 設定を見直してください`);
     }
@@ -372,6 +385,10 @@ async function main() {
     console.log(`次の手順: GITHUB_APP_ID=${appId} KMS_KEY_VERSION=${version} bash infra/scheduler/setup.sh deploy`);
   } finally {
     cleanup();
+    // --pem-file の取り込み元（ユーザーがダウンロードした PEM）は、インポートに失敗すると消えずに残る
+    if (o.pemFile && existsSync(o.pemFile)) {
+      console.error(`注意: 取り込み元の PEM が残っています: ${o.pemFile}\n  秘密鍵そのものです。原因を直して再実行するか、不要なら安全に削除してください（削除の責任はあなたにあります）。`);
+    }
   }
 }
 

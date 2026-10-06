@@ -35,6 +35,15 @@ main:
     - run:
         try:
           steps:
+            # 起動してよい workflow を限定する（引数の誤りや、この SA の侵害で任意の workflow を
+            # 起動されないため）。検証に失敗したら、署名やトークン発行の前に中止する。
+            - check_workflow:
+                switch:
+                  - condition: ${not(workflow in ["daily.yml", "weekly.yml"])}
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: '${"workflow is not allowed: " + string(workflow)}'
             # --- 1. JWT を組み立てて KMS で署名する（base64url は + / を置換し padding を付けない） ---
             # マップのリテラルの中に式は書けない（Workflows のパーサーが拒否する）ため assign で組み立てる
             - build_claims:
