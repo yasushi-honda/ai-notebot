@@ -93,7 +93,7 @@ export function isAllowedHost(hostHeader, port) {
 }
 
 export function parseArgs(argv) {
-  const opts = { ...DEFAULTS, selftest: false, keep: false, open: true, port: 0, installTimeoutSec: 900, pemFile: null, appId: null, checkInstall: false, kmsKeyVersion: null };
+  const opts = { ...DEFAULTS, selftest: false, keep: false, open: true, port: 0, installTimeoutSec: 900, pollMs: 5000, pemFile: null, appId: null, checkInstall: false, kmsKeyVersion: null };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--selftest') opts.selftest = true;
@@ -102,6 +102,7 @@ export function parseArgs(argv) {
     else if (a === '--pem-file') opts.pemFile = argv[++i];
     else if (a === '--app-id') opts.appId = argv[++i];
     else if (a === '--check-install') opts.checkInstall = true;
+    else if (a === '--poll-ms') opts.pollMs = Number(argv[++i]); // ポーリング間隔（テスト用）
     else if (a === '--kms-key-version') opts.kmsKeyVersion = argv[++i];
     else if (a.startsWith('--') && a.slice(2) in DEFAULTS) opts[a.slice(2)] = argv[++i];
     else if (a === '--port') opts.port = Number(argv[++i]);
@@ -287,17 +288,20 @@ async function manifestFlow(o) {
 
 // App のインストール（対象リポジトリ）を、KMS 署名の JWT で確認する。
 // 200 が返れば、GitHub が KMS 署名を受け入れたことの実証にもなる。
-async function waitForInstallation(o, gcloud, versionNum, appId, workDir, slug) {
+// opts.until: 完了とみなす条件（既定: 200 が返れば完了）。opts.onPending: 200 だが条件未達のときの通知。
+// opts.announce=false: インストール URL の案内とブラウザ起動をしない（確認モードで毎回開かないため）。
+async function waitForInstallation(o, gcloud, versionNum, appId, workDir, slug, opts = {}) {
+  const { until = () => true, onPending = () => {}, announce = true } = opts;
   const deadline = Date.now() + o.installTimeoutSec * 1000;
   let jwt = signJwt(o, gcloud, versionNum, appId, workDir);
   let jwtAt = Date.now();
   let last = '応答なし';
   const ghHeaders = () => ({ Accept: 'application/vnd.github+json', Authorization: `Bearer ${jwt}`, 'User-Agent': 'ai-notebot-bootstrap', 'X-GitHub-Api-Version': '2022-11-28' });
-  if (!slug) {
+  if (announce && !slug) {
     // --pem-file モードではスラッグが分からないため、GET /app（JWT 認証）で取得する
     try { const r = await fetch(`${o.githubApi}/app`, { headers: ghHeaders() }); if (r.ok) slug = (await r.json()).slug; } catch { /* 取れなければ案内を省く */ }
   }
-  if (slug) {
+  if (announce && slug) {
     const installUrl = `${o.githubWeb}/apps/${slug}/installations/new`;
     console.log(`\n【操作2】次の URL で「Only select repositories」→ ${o.ownerRepo.split('/')[1]} のみを選び Install を押してください（済みなら不要）:\n  ${installUrl}`);
     if (o.open) { try { execFileSync('open', [installUrl]); } catch { /* 案内済み */ } }
@@ -306,8 +310,14 @@ async function waitForInstallation(o, gcloud, versionNum, appId, workDir, slug) 
     if (Date.now() - jwtAt > 8 * 60 * 1000) { jwt = signJwt(o, gcloud, versionNum, appId, workDir); jwtAt = Date.now(); }
     try {
       const r = await fetch(`${o.githubApi}/repos/${o.ownerRepo}/installation`, { headers: ghHeaders() });
-      if (r.status === 200) return await r.json();
-      last = `HTTP ${r.status}`;
+      if (r.status === 200) {
+        const installation = await r.json();
+        if (until(installation)) return installation;
+        onPending(installation);
+        last = `repository_selection=${installation.repository_selection}`;
+      } else {
+        last = `HTTP ${r.status}`;
+      }
       // 404 は未インストール（待機を続ける）。401 は App 作成直後の伝播遅延でも起きうるため、
       // 連続して拒否され続けたときだけ失敗とする。
       if (r.status === 401 && Date.now() - jwtAt > 90 * 1000) {
@@ -317,7 +327,7 @@ async function waitForInstallation(o, gcloud, versionNum, appId, workDir, slug) 
       if (e.kmsRejected) throw e;
       last = `通信エラー（${e.cause?.code ?? e.message}）`; // 一時的なネットワーク障害は待機を続ける
     }
-    await new Promise((res) => setTimeout(res, 5000));
+    await new Promise((res) => setTimeout(res, o.pollMs));
   }
   throw new Error(`インストールを確認できませんでした（タイムアウト。最後の状態: ${last}）`);
 }
@@ -327,25 +337,22 @@ async function checkInstall(o, gcloud) {
   const workDir = mkdtempSync(join(tmpdir(), 'ghapp-'));
   chmodSync(workDir, 0o700);
   const versionNum = o.kmsKeyVersion.split('/').pop();
+  const cleanup = () => { try { for (const f of readdirSync(workDir)) wipe(join(workDir, f)); rmSync(workDir, { recursive: true, force: true }); } catch { /* 既に無い */ } };
+  for (const sig of ['SIGINT', 'SIGTERM', 'SIGHUP']) process.on(sig, () => { cleanup(); process.exit(130); });
   try {
-    const deadline = Date.now() + o.installTimeoutSec * 1000;
     let warned = false;
-    while (Date.now() < deadline) {
-      const installation = await waitForInstallation({ ...o, installTimeoutSec: Math.max(1, Math.ceil((deadline - Date.now()) / 1000)) }, gcloud, versionNum, o.appId, workDir, null);
-      if (installation.repository_selection === 'selected') {
-        console.log(`OK: installation ID ${installation.id}、repository_selection=selected、permissions=${JSON.stringify(installation.permissions)}`);
-        return;
-      }
-      if (!warned) {
-        console.log(`インストールが「選択したリポジトリのみ」ではありません（${installation.repository_selection}）。GitHub の Settings → Applications → Installed GitHub Apps → Configure で「Only select repositories」→ ${o.ownerRepo.split('/')[1]} のみに変更してください。変更を待ちます`);
+    const installation = await waitForInstallation({ ...o, open: false }, gcloud, versionNum, o.appId, workDir, null, {
+      announce: false, // ブラウザを開かない・案内を繰り返さない
+      until: (i) => i.repository_selection === 'selected',
+      onPending: (i) => {
+        if (warned) return;
         warned = true;
-      }
-      await new Promise((res) => setTimeout(res, 5000));
-    }
-    throw new Error('「選択したリポジトリのみ」への変更を確認できませんでした（タイムアウト）');
+        console.log(`インストールが「選択したリポジトリのみ」ではありません（${i.repository_selection}）。GitHub の Settings → Applications → Installed GitHub Apps → Configure で「Only select repositories」→ ${o.ownerRepo.split('/')[1]} のみに変更してください。変更を待ちます`);
+      },
+    });
+    console.log(`OK: installation ID ${installation.id}、repository_selection=selected、permissions=${JSON.stringify(installation.permissions)}`);
   } finally {
-    for (const f of readdirSync(workDir)) wipe(join(workDir, f));
-    rmSync(workDir, { recursive: true, force: true });
+    cleanup();
   }
 }
 
