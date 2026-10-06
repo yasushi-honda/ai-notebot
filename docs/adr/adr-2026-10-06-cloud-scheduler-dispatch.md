@@ -1,8 +1,8 @@
 # ADR: GCP Cloud Scheduler による daily / weekly の起動（schedule 欠落の構造的対策）
 
 - 日付: 2026-10-06
-- 状態: 採用（実装済み。認証は GitHub App + Cloud KMS。KMS 署名の JWT を GitHub が受理することは実機確認済み。
-  インストールトークン発行〜dispatch の end-to-end と Scheduler 経由の発火は、適用後に確認する）
+- 状態: 採用・本番適用済み（認証は GitHub App + Cloud KMS）。dispatch の end-to-end は 2026-10-06 に実機確認済み。
+  Scheduler の定刻発火（毎日 06:00 JST）は 2026-10-07 以降の run で確認する（下記「監視事項」）
 
 ## Context
 
@@ -127,6 +127,18 @@ Workflows 定義は `infra/scheduler/github-dispatch.workflows.yaml`。
     検出して中止した。「Only select repositories」→ 対象リポジトリのみに直すまで、SA 侵害時の影響が
     他のリポジトリにも及ぶため、この検査を必須にしている。直した後の再確認は
     `bootstrap-github-app.mjs --check-install --app-id <ID> --kms-key-version <名前>`（何も変更しない）で行う。
+- **本番適用後の end-to-end 確認（2026-10-06）**:
+  - App `ai-notebot-scheduler-yh`（App ID 5205499）を `ai-notebot` のみにインストール（`repository_selection=selected`、
+    権限は `actions: write` と `metadata: read` のみ）。鍵は KMS の鍵バージョン 3。
+  - Workflows の実行が SUCCEEDED、dispatch は HTTP 204。発行したインストールトークンの権限は
+    `{"actions":"write","metadata":"read"}`、`repository_selection=selected` とログで確認した。
+  - daily.yml（`skip_if_exists=true`）の `workflow_dispatch` run が success。当日の記事は生成済みのため、
+    収集・生成・画像・介護版の各ステップはスキップされ、新しいコミットは作られなかった。
+  - `gcloud scheduler jobs run daily-digest-dispatch`（本番と同じ経路）の実行も SUCCEEDED。
+  - weekly.yml は、既存の週を指す公開日（2026-10-04）を渡してスキップを確認した。非日曜に日付なしで
+    手動実行すると全文生成になるため、検証には既存の週を指定する。
+  - 許可外の workflow 名（`nonexistent.yml`）で実行すると、署名・トークン発行の前に `GuardError` で
+    FAILED になり、元のメッセージが ERROR ログに残る（アラートのメール受信は別途確認）。
 - **実機で分かった制約**:
   - Workflows のパーサーは、式の中の空マップ `{}` と、マップのリテラル内の式（`{"iat": now - 60}`）を
     拒否する。変数や assign のマップで渡す。`gcloud workflows deploy` を通すまで分からない。
