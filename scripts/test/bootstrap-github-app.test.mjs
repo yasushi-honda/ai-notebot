@@ -5,6 +5,7 @@ import {
   base64url,
   buildManifest,
   buildSigningInput,
+  isAllowedHost,
   parseCallback,
   parseRsaBits,
 } from '../../infra/scheduler/bootstrap-github-app.mjs';
@@ -73,4 +74,13 @@ test('parseCallback: state 一致かつ code ありのときだけ code を返�
   assert.equal(parseCallback('/callback?code=&state=s1', 's1'), null, 'code 空');
   assert.equal(parseCallback('/other?code=abc&state=s1', 's1'), null, 'パス違い');
   assert.equal(parseCallback('/', 's1'), null);
+});
+
+test('isAllowedHost: 127.0.0.1:<port> だけ許可し、別ホスト名・別ポート・欠落は拒否する（DNS リバインディング対策）', () => {
+  assert.equal(isAllowedHost('127.0.0.1:5000', 5000), true);
+  assert.equal(isAllowedHost('evil.example:5000', 5000), false, 'リバインドされたホスト名');
+  assert.equal(isAllowedHost('127.0.0.1:5001', 5000), false, 'ポート違い');
+  assert.equal(isAllowedHost('localhost:5000', 5000), false, 'localhost も許可しない');
+  assert.equal(isAllowedHost('127.0.0.1', 5000), false, 'ポート欠落');
+  assert.equal(isAllowedHost(undefined, 5000), false, 'Host ヘッダーなし');
 });

@@ -80,6 +80,12 @@ export function parseCallback(urlString, expectedState) {
   return code;
 }
 
+// ローカル受け口は 127.0.0.1:<port> 宛のリクエストだけ受け付ける（DNS リバインディング対策。
+// 悪意あるページから別ホスト名で到達されても state を含む応答を返さない）。
+export function isAllowedHost(hostHeader, port) {
+  return hostHeader === `127.0.0.1:${port}`;
+}
+
 function parseArgs(argv) {
   const opts = { ...DEFAULTS, selftest: false, open: true, port: 0, installTimeoutSec: 900 };
   for (let i = 0; i < argv.length; i++) {
@@ -180,14 +186,22 @@ async function manifestFlow(o) {
   let resolveCode, rejectCode;
   const codePromise = new Promise((res, rej) => { resolveCode = res; rejectCode = rej; });
   let manifestHtml = '';
+  let port = 0;
+  let handled = false; // コールバックは最初の1回だけ受け付ける
   const server = createServer((req, res) => {
+    if (!isAllowedHost(req.headers.host, port)) {
+      res.writeHead(400, { 'Content-Type': 'text/plain' });
+      res.end('bad host');
+      return;
+    }
     if (req.url === '/' || req.url.startsWith('/?')) {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
       res.end(manifestHtml);
       return;
     }
-    const code = parseCallback(req.url, state);
+    const code = handled ? null : parseCallback(req.url, state);
     if (code) {
+      handled = true;
       res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
       res.end('GitHub App を作成しました。ターミナルに戻ってください。');
       resolveCode(code);
@@ -197,7 +211,7 @@ async function manifestFlow(o) {
     }
   });
   await new Promise((res) => server.listen(o.port, '127.0.0.1', res));
-  const port = server.address().port;
+  port = server.address().port;
   const manifest = buildManifest({ appName: o.appName, ownerRepo: o.ownerRepo, redirectUrl: `http://127.0.0.1:${port}/callback` });
   const escaped = JSON.stringify(manifest).replace(/&/g, '&amp;').replace(/"/g, '&quot;');
   manifestHtml = `<!doctype html><meta charset="utf-8"><title>GitHub App を作成</title>
@@ -215,7 +229,13 @@ async function manifestFlow(o) {
       method: 'POST', headers: { Accept: 'application/vnd.github+json', 'User-Agent': 'ai-notebot-bootstrap' },
     });
     if (r.status !== 201) throw new Error(`マニフェスト変換に失敗: HTTP ${r.status}`);
-    return await r.json();
+    const app = await r.json();
+    // 想定したアカウントが所有する App であることを確認する（別アカウントで作られた App を取り込まない）
+    const expectedOwner = o.ownerRepo.split('/')[0];
+    if (app.owner?.login !== expectedOwner) {
+      throw new Error(`App の所有者が想定と異なります（想定 ${expectedOwner}、実際 ${app.owner?.login ?? '不明'}）。ブラウザのログインアカウントを確認してください`);
+    }
+    return app;
   } finally {
     clearTimeout(timer);
     server.close();
