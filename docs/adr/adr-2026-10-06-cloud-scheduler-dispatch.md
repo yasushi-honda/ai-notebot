@@ -1,7 +1,8 @@
 # ADR: GCP Cloud Scheduler による daily / weekly の起動（schedule 欠落の構造的対策）
 
 - 日付: 2026-10-06
-- 状態: 採用（実装済み。認証は GitHub App + Cloud KMS）
+- 状態: 採用（実装済み。認証は GitHub App + Cloud KMS。KMS 署名の JWT を GitHub が受理することは実機確認済み。
+  インストールトークン発行〜dispatch の end-to-end と Scheduler 経由の発火は、適用後に確認する）
 
 ## Context
 
@@ -118,6 +119,14 @@ Workflows 定義は `infra/scheduler/github-dispatch.workflows.yaml`。
 - **人間の作業は一度きり 2 回のブラウザ操作**: GitHub は App の作成とリポジトリへのインストールに
   対話的な同意を求める（API では代行できない）。`bootstrap-github-app.mjs` が受け口を用意し、
   App 作成（マニフェスト方式）→ 鍵インポート → インストール待ちまでを自動化する。
+- **本物の GitHub App で実機確認した事実（2026-10-06）**:
+  - マニフェスト方式で App を作成でき、`redirect_url` に `http://127.0.0.1:<port>/callback` が受理された。
+  - GitHub が返す PEM は `openssl pkcs8 -topk8` で変換でき、KMS へのインポートと公開鍵の一致検証が通った。
+  - KMS で署名した JWT で `GET /repos/{owner}/{repo}/installation` が 200 になった（GitHub が KMS 署名を受理）。
+  - インストール画面の既定の範囲が「All repositories」になっていた。bootstrap が `repository_selection=all` を
+    検出して中止した。「Only select repositories」→ 対象リポジトリのみに直すまで、SA 侵害時の影響が
+    他のリポジトリにも及ぶため、この検査を必須にしている。直した後の再確認は
+    `bootstrap-github-app.mjs --check-install --app-id <ID> --kms-key-version <名前>`（何も変更しない）で行う。
 - **実機で分かった制約**:
   - Workflows のパーサーは、式の中の空マップ `{}` と、マップのリテラル内の式（`{"iat": now - 60}`）を
     拒否する。変数や assign のマップで渡す。`gcloud workflows deploy` を通すまで分からない。

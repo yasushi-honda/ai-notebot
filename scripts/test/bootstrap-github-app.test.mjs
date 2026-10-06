@@ -95,6 +95,11 @@ test('parseArgs: --pem-file は整数の --app-id が必須。単独の --app-id
   assert.throws(() => parseArgs(['--pem-file', '/tmp/x.pem', '--app-id', 'abc']), /app-id/, '整数以外');
   assert.throws(() => parseArgs(['--pem-file', '/tmp/x.pem', '--app-id', '']), /app-id/, '空');
   assert.throws(() => parseArgs(['--app-id', '123']), /pem-file/, 'pem-file なしの app-id');
+  const check = parseArgs(['--check-install', '--app-id', '9', '--kms-key-version', 'projects/p/locations/l/keyRings/k/cryptoKeys/c/cryptoKeyVersions/3']);
+  assert.equal(check.checkInstall, true);
+  assert.throws(() => parseArgs(['--check-install', '--app-id', '9']), /kms-key-version/, '鍵バージョン欠落');
+  assert.throws(() => parseArgs(['--check-install', '--kms-key-version', 'projects/x']), /app-id/, 'app-id 欠落');
+  assert.throws(() => parseArgs(['--check-install', '--selftest', '--app-id', '9', '--kms-key-version', 'projects/x']), /同時/);
   assert.throws(() => parseArgs(['--selftest', '--pem-file', '/tmp/x.pem', '--app-id', '1']), /同時/);
   assert.throws(() => parseArgs(['--unknown']), /unknown argument/);
   assert.equal(parseArgs(['--selftest', '--keep']).keep, true);

@@ -16,6 +16,9 @@
 //   node infra/scheduler/bootstrap-github-app.mjs --pem-file <PEM> --app-id <ID>
 //       # 既存の App の秘密鍵を KMS に取り込む（鍵のローテーション、または途中失敗からの復旧）。
 //       # GitHub の App 設定画面で「Generate a private key」した PEM を渡す。成功後、その PEM は上書き削除する。
+//   node infra/scheduler/bootstrap-github-app.mjs --check-install --app-id <ID> --kms-key-version <名前>
+//       # KMS 署名の JWT で、App のインストールが「選択したリポジトリのみ」になるまで待って確認する
+//       # （インストール範囲を後から直した場合の再確認用。何も作成・変更しない）。
 //
 // 前提: setup.sh kms 実行済み、openssl、gcloud。gcloud の自動ラッピングには pyca/cryptography が
 // 必要（公式手順）。未導入なら venv に入れ、CLOUDSDK_PYTHON でその python を gcloud に使わせる:
@@ -90,7 +93,7 @@ export function isAllowedHost(hostHeader, port) {
 }
 
 export function parseArgs(argv) {
-  const opts = { ...DEFAULTS, selftest: false, keep: false, open: true, port: 0, installTimeoutSec: 900, pemFile: null, appId: null };
+  const opts = { ...DEFAULTS, selftest: false, keep: false, open: true, port: 0, installTimeoutSec: 900, pemFile: null, appId: null, checkInstall: false, kmsKeyVersion: null };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--selftest') opts.selftest = true;
@@ -98,13 +101,17 @@ export function parseArgs(argv) {
     else if (a === '--no-open') opts.open = false;
     else if (a === '--pem-file') opts.pemFile = argv[++i];
     else if (a === '--app-id') opts.appId = argv[++i];
+    else if (a === '--check-install') opts.checkInstall = true;
+    else if (a === '--kms-key-version') opts.kmsKeyVersion = argv[++i];
     else if (a.startsWith('--') && a.slice(2) in DEFAULTS) opts[a.slice(2)] = argv[++i];
     else if (a === '--port') opts.port = Number(argv[++i]);
     else throw new Error(`unknown argument: ${a}`);
   }
   if (opts.pemFile && opts.selftest) throw new Error('--pem-file と --selftest は同時に指定できません');
-  if (opts.pemFile && !/^[0-9]+$/.test(opts.appId ?? '')) throw new Error('--pem-file には整数の --app-id が必要です');
-  if (!opts.pemFile && opts.appId) throw new Error('--app-id は --pem-file と一緒に指定してください');
+  if (opts.checkInstall && (opts.pemFile || opts.selftest)) throw new Error('--check-install は --pem-file / --selftest と同時に指定できません');
+  if (opts.checkInstall && !opts.kmsKeyVersion?.startsWith('projects/')) throw new Error('--check-install には --kms-key-version（鍵バージョンの完全な名前）が必要です');
+  if ((opts.pemFile || opts.checkInstall) && !/^[0-9]+$/.test(opts.appId ?? '')) throw new Error('--pem-file / --check-install には整数の --app-id が必要です');
+  if (!opts.pemFile && !opts.checkInstall && opts.appId) throw new Error('--app-id は --pem-file または --check-install と一緒に指定してください');
   return opts;
 }
 
@@ -315,9 +322,37 @@ async function waitForInstallation(o, gcloud, versionNum, appId, workDir, slug) 
   throw new Error(`インストールを確認できませんでした（タイムアウト。最後の状態: ${last}）`);
 }
 
+// インストールが「選択したリポジトリのみ」になるまで待って確認する（何も作成・変更しない）
+async function checkInstall(o, gcloud) {
+  const workDir = mkdtempSync(join(tmpdir(), 'ghapp-'));
+  chmodSync(workDir, 0o700);
+  const versionNum = o.kmsKeyVersion.split('/').pop();
+  try {
+    const deadline = Date.now() + o.installTimeoutSec * 1000;
+    let warned = false;
+    while (Date.now() < deadline) {
+      const installation = await waitForInstallation({ ...o, installTimeoutSec: Math.max(1, Math.ceil((deadline - Date.now()) / 1000)) }, gcloud, versionNum, o.appId, workDir, null);
+      if (installation.repository_selection === 'selected') {
+        console.log(`OK: installation ID ${installation.id}、repository_selection=selected、permissions=${JSON.stringify(installation.permissions)}`);
+        return;
+      }
+      if (!warned) {
+        console.log(`インストールが「選択したリポジトリのみ」ではありません（${installation.repository_selection}）。GitHub の Settings → Applications → Installed GitHub Apps → Configure で「Only select repositories」→ ${o.ownerRepo.split('/')[1]} のみに変更してください。変更を待ちます`);
+        warned = true;
+      }
+      await new Promise((res) => setTimeout(res, 5000));
+    }
+    throw new Error('「選択したリポジトリのみ」への変更を確認できませんでした（タイムアウト）');
+  } finally {
+    for (const f of readdirSync(workDir)) wipe(join(workDir, f));
+    rmSync(workDir, { recursive: true, force: true });
+  }
+}
+
 async function main() {
   const o = parseArgs(process.argv.slice(2));
   const gcloud = makeGcloud(o);
+  if (o.checkInstall) return checkInstall(o, gcloud);
   preflight(o, gcloud);
   const workDir = mkdtempSync(join(tmpdir(), 'ghapp-'));
   chmodSync(workDir, 0o700);
