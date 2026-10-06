@@ -3,13 +3,14 @@
 # 何度実行しても安全（既存リソースは更新または作成スキップ）。詳細:
 # docs/adr/adr-2026-10-06-cloud-scheduler-dispatch.md
 #
-# 使い方:
-#   bash infra/scheduler/setup.sh secret    # 手順3: API有効化・SA・シークレットの器まで（PAT投入前に実行）
-#   bash infra/scheduler/setup.sh deploy    # 手順5: Workflows デプロイ・Schedulerジョブ・アラート（PAT投入後に実行）
+# 認証は GitHub App のインストールトークン（1時間で失効）。App の秘密鍵は Cloud KMS に署名専用で
+# 置き、GCP に PAT 等の長期の秘密情報は保存しない。
 #
-# PAT（細粒度、ai-notebot の Actions:write のみ）の投入は、会話や履歴に出さないため本人のターミナルで:
-#   read -s T && printf %s "$T" | gcloud secrets versions add github-dispatch-token \
-#     --data-file=- --project ai-notebot-yh --account hy.unimail.11@gmail.com
+# 使い方（この順に実行）:
+#   bash infra/scheduler/setup.sh kms       # 1. API有効化・SA・キーリング・署名鍵（インポート専用）・署名権限
+#   node infra/scheduler/bootstrap-github-app.mjs   # 2. GitHub App の作成と秘密鍵の KMS インポート（一度きり）
+#   GITHUB_APP_ID=<App ID> bash infra/scheduler/setup.sh deploy   # 3. Workflows・アラート・Schedulerジョブ
+#     （GITHUB_APP_ID は非機密の整数。2 の出力に表示される。再デプロイ時は省略可で、デプロイ済みの値を引き継ぐ）
 set -euo pipefail
 
 PROJECT="ai-notebot-yh"
@@ -17,7 +18,8 @@ ACCOUNT="hy.unimail.11@gmail.com"
 REGION="asia-northeast1"
 SA_NAME="ai-notebot-dispatcher"
 SA_EMAIL="${SA_NAME}@${PROJECT}.iam.gserviceaccount.com"
-SECRET="github-dispatch-token"
+KEYRING="github-app"
+KEY="github-app-signer"
 WORKFLOW="github-dispatch"
 ALERT_NAME="ai-notebot: Scheduler起動失敗"
 CHANNEL_NAME="ai-notebot-scheduler-email"
@@ -34,21 +36,29 @@ at_most_one() { # $1=説明 $2=list結果
   fi
 }
 
-setup_secret() {
+setup_kms() {
   g services enable cloudscheduler.googleapis.com workflows.googleapis.com workflowexecutions.googleapis.com \
-    secretmanager.googleapis.com monitoring.googleapis.com logging.googleapis.com
+    cloudkms.googleapis.com monitoring.googleapis.com logging.googleapis.com
 
   if [ -z "$(g iam service-accounts list --filter="email=${SA_EMAIL}" --format='value(email)')" ]; then
     g iam service-accounts create "$SA_NAME" --display-name "ai-notebot Scheduler/Workflows dispatcher"
   fi
 
-  if [ -z "$(g secrets list --filter="name~/${SECRET}\$" --format='value(name)')" ]; then
-    g secrets create "$SECRET" --replication-policy=user-managed --locations="$REGION"
+  if [ -z "$(g kms keyrings list --location "$REGION" --filter="name~/${KEYRING}\$" --format='value(name)')" ]; then
+    g kms keyrings create "$KEYRING" --location "$REGION"
   fi
 
-  # シークレット単位で参照のみ許可（プロジェクト全体には付与しない）
-  g secrets add-iam-policy-binding "$SECRET" \
-    --member "serviceAccount:${SA_EMAIL}" --role roles/secretmanager.secretAccessor >/dev/null
+  # 署名専用・インポート専用の鍵（GitHub が生成した秘密鍵を bootstrap-github-app.mjs でインポートする）。
+  # 秘密鍵は KMS の外に出せず、署名操作しかできない。
+  if [ -z "$(g kms keys list --keyring "$KEYRING" --location "$REGION" --filter="name~/${KEY}\$" --format='value(name)')" ]; then
+    g kms keys create "$KEY" --keyring "$KEYRING" --location "$REGION" \
+      --purpose asymmetric-signing --default-algorithm rsa-sign-pkcs1-2048-sha256 \
+      --protection-level software --skip-initial-version-creation --import-only
+  fi
+
+  # SA にはこの鍵に対する署名権限（roles/cloudkms.signer）のみ付与する
+  g kms keys add-iam-policy-binding "$KEY" --keyring "$KEYRING" --location "$REGION" \
+    --member "serviceAccount:${SA_EMAIL}" --role roles/cloudkms.signer >/dev/null
   # Scheduler が Workflows の executions API を呼ぶための権限
   g projects add-iam-policy-binding "$PROJECT" \
     --member "serviceAccount:${SA_EMAIL}" --role roles/workflows.invoker --condition=None >/dev/null
@@ -56,7 +66,7 @@ setup_secret() {
   g projects add-iam-policy-binding "$PROJECT" \
     --member "serviceAccount:${SA_EMAIL}" --role roles/logging.logWriter --condition=None >/dev/null
 
-  echo "OK: シークレット '${SECRET}' の器まで作成済み。PAT の投入は本人のターミナルで行ってください（ファイル冒頭参照）。"
+  echo "OK: 署名鍵 '${KEY}'（キーリング '${KEYRING}'）まで作成済み。次は node infra/scheduler/bootstrap-github-app.mjs を実行してください。"
 }
 
 upsert_job() { # $1=ジョブ名 $2=cron $3=Workflows引数(JSON)
@@ -118,15 +128,28 @@ EOF
 }
 
 setup_deploy() {
-  # PAT が未投入のままデプロイ・ジョブ作成すると初回実行が失敗するため先に検査する
-  # Workflows は version: latest を参照するため、latest 自体が ENABLED であることを確認する
-  if [ "$(g secrets versions describe latest --secret "$SECRET" --format='value(state)' 2>/dev/null || true)" != "ENABLED" ]; then
-    echo "ERROR: シークレット '${SECRET}' の latest が有効ではありません。PAT を投入してから再実行してください。" >&2
+  # 署名に使う鍵バージョン（有効なものの最新）。秘密鍵のインポート前だと見つからない。
+  local key_version
+  key_version="$(g kms keys versions list --key "$KEY" --keyring "$KEYRING" --location "$REGION" \
+    --filter="state=ENABLED" --sort-by=~name --limit 1 --format='value(name)')"
+  if [ -z "$key_version" ]; then
+    echo "ERROR: 鍵 '${KEY}' に有効なバージョンがありません。先に node infra/scheduler/bootstrap-github-app.mjs で秘密鍵をインポートしてください。" >&2
+    exit 1
+  fi
+
+  # App ID（非機密の整数。JWT の iss）。未指定ならデプロイ済み Workflows の値を引き継ぐ。
+  local app_id="${GITHUB_APP_ID:-}"
+  if [ -z "$app_id" ]; then
+    app_id="$(g workflows describe "$WORKFLOW" --location "$REGION" --format='value(userEnvVars.GITHUB_APP_ID)' 2>/dev/null || true)"
+  fi
+  if ! [[ "$app_id" =~ ^[0-9]+$ ]]; then
+    echo "ERROR: GITHUB_APP_ID（整数）が未指定または不正で、デプロイ済みの値もありません。bootstrap-github-app.mjs の出力の App ID を指定してください。" >&2
     exit 1
   fi
 
   g workflows deploy "$WORKFLOW" --location "$REGION" --source "${HERE}/github-dispatch.workflows.yaml" \
     --service-account "$SA_EMAIL" --call-log-level log-errors-only \
+    --set-env-vars "GITHUB_APP_ID=${app_id},KMS_KEY_VERSION=${key_version}" \
     --description "GitHub Actions workflow_dispatch を起動する（Cloud Scheduler用）"
 
   # アラートを先に作る: ジョブ作成後にアラート作成が失敗すると、無監視のままジョブだけ稼働してしまうため
@@ -137,7 +160,7 @@ setup_deploy() {
 }
 
 case "${1:-}" in
-  secret) setup_secret ;;
+  kms) setup_kms ;;
   deploy) setup_deploy ;;
-  *) echo "usage: $0 {secret|deploy}" >&2; exit 2 ;;
+  *) echo "usage: $0 {kms|deploy}" >&2; exit 2 ;;
 esac
