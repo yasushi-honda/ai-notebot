@@ -33,6 +33,11 @@ on:
         description: '公開日 (YYYY-MM-DD)。対象期間はこの前日から遡って7日間。省略時は当日（JST）'
         required: false
         type: string
+      skip_if_exists:
+        description: '対象週が生成済みなら生成をスキップする（Cloud Schedulerからの起動用。手動実行は既定のfalseで従来どおり常にフル実行）'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -102,11 +107,12 @@ jobs:
         # 無駄な二重発生・記事の意図しない再生成を防ぐ。daily.ymlの`Skip if already
         # generated`と同じ設計）。weekStartはcurate-weekly.mjsのweeklyWindow()と同じ
         # 「publishDateの7日前」の規則で計算する。このガードはevent_name == 'schedule'
-        # （保険の2回目以降）にのみ適用し、workflow_dispatch（手動実行）では既存記事が
-        # あっても常にフル実行する（既存記事の作り直し・障害復旧のための手動再実行という
-        # 既存の運用を止めないため）。
+        # （保険の2回目以降）と、skip_if_exists=true を明示したworkflow_dispatch
+        # （GCP Cloud Schedulerからの起動。docs/adr/adr-2026-10-06-cloud-scheduler-dispatch.md）
+        # にのみ適用し、入力なしのworkflow_dispatch（手動実行）では既存記事があっても常にフル実行する
+        # （既存記事の作り直し・障害復旧のための手動再実行という既存の運用を止めないため）。
         id: check_existing
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || inputs.skip_if_exists
         run: |
           WEEK_START=$(TZ=Asia/Tokyo date -d "$PUBLISH_DATE -7 days" +%F)
           if [ -f "site/src/content/weekly/${WEEK_START}.md" ]; then

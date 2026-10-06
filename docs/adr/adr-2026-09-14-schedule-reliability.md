@@ -222,3 +222,11 @@ GitHub Community（[Discussion #55127](https://github.com/orgs/community/discuss
 `/config-review`または本ADRの追記で確認する。もし将来的にどちらかの枠が欠落し
 始めた場合、今回の根本原因仮説（配送遅延の積み重ねによる実質的な時刻衝突）が
 誤りである可能性を再検討する必要がある。
+
+## Amendment（2026-10-06）: 外部スケジューラ案を採用
+
+2026-10-06 に daily.yml の 06:07 JST 枠が約 4 時間たっても発火せず、同種の事象は 7 件目になった
+（PR #51 の 2 回 cron 化の後も再発）。本 ADR で「最も堅牢だが投資が重い」として保留していた
+外部スケジューラ案を、GCP Cloud Scheduler（+ Cloud Workflows + Secret Manager の PAT）で採用した。
+GitHub の cron は保険として残し、冪等性ガードに `skip_if_exists` 入力を足して併用する。
+詳細: `adr-2026-10-06-cloud-scheduler-dispatch.md`。

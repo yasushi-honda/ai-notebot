@@ -33,6 +33,12 @@ on:
   schedule:
     - cron: '7 21,3 * * *'
   workflow_dispatch:
+    inputs:
+      skip_if_exists:
+        description: '当日分が生成済みなら収集・生成をスキップする（Cloud Schedulerからの起動用。手動実行は既定のfalseで従来どおり常にフル実行）'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -91,13 +97,14 @@ jobs:
         # 1回目でposts成功・care失敗というケースがあり得る。両方まとめて「postsがあるか」
         # だけで判定すると、2回目でcareのリトライ機会が永久に失われてしまう
         # （codex reviewで指摘・修正）。
-        # このガードは event=schedule（保険の2回目実行）にのみ適用する。workflow_dispatch
-        # （手動実行）では既存記事があってもスキップせず常にフル実行する。既存記事の
-        # 意図的な作り直し・障害復旧のための手動再実行という既存の運用を止めないため
-        # （codex reviewで指摘・修正: このガードが手動再実行まで一律スキップしてしまい、
+        # このガードは event=schedule（保険の2回目実行）と、skip_if_exists=true を明示した
+        # workflow_dispatch（GCP Cloud Schedulerからの起動。docs/adr/adr-2026-10-06-cloud-scheduler-dispatch.md）
+        # にのみ適用する。入力なしの workflow_dispatch（手動実行）では既存記事があってもスキップせず
+        # 常にフル実行する。既存記事の意図的な作り直し・障害復旧のための手動再実行という既存の運用を
+        # 止めないため（codex reviewで指摘・修正: このガードが手動再実行まで一律スキップしてしまい、
         # 既存記事の作り直しができなくなる回帰を招くところだった）。
         id: check_existing
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || inputs.skip_if_exists
         run: |
           TODAY=$(TZ=Asia/Tokyo date +%F)
           if [ -f "site/src/content/posts/${TODAY}.md" ]; then
