@@ -1,0 +1,55 @@
+# GitHub Actions の workflow_dispatch を起動する Cloud Workflows 定義。
+# Cloud Scheduler から引数 {"workflow": "daily.yml", "inputs": {"skip_if_exists": "true"}} で呼ばれる。
+# PAT は Secret Manager から実行時に取得する（Scheduler のジョブ設定に平文で持たせないため）。
+# 詳細: docs/adr/adr-2026-10-06-cloud-scheduler-dispatch.md
+main:
+  params: [args]
+  steps:
+    - init:
+        assign:
+          - project: ${sys.get_env("GOOGLE_CLOUD_PROJECT_ID")}
+          - repo: "yasushi-honda/ai-notebot"
+          - ref: "main"
+          - workflow: ${args.workflow}
+          - inputs: ${default(map.get(args, "inputs"), {})}
+    - get_token:
+        call: googleapis.secretmanager.v1.projects.secrets.versions.accessString
+        args:
+          secret_id: github-dispatch-token
+          project_id: ${project}
+          version: latest
+        result: token
+    - dispatch:
+        try:
+          call: http.post
+          args:
+            url: ${"https://api.github.com/repos/" + repo + "/actions/workflows/" + workflow + "/dispatches"}
+            headers:
+              Accept: "application/vnd.github+json"
+              Authorization: ${"Bearer " + token}
+              X-GitHub-Api-Version: "2022-11-28"
+              User-Agent: "ai-notebot-scheduler"
+            body:
+              ref: ${ref}
+              inputs: ${inputs}
+            timeout: 30
+          result: response
+        # POST は非冪等のため default_retry_non_idempotent を使う（公式: 429・503・接続失敗
+        # (ConnectionFailedError) のみ再試行、最大5回）。default_retry が再試行する 502/504/
+        # タイムアウトは受理済みの可能性があり、再POSTで二重dispatchになりうるため避ける。
+        retry: ${http.default_retry_non_idempotent}
+        except:
+          as: e
+          steps:
+            # トークン（token変数）はログに出さない。HTTPステータスと応答本文のみ記録する。
+            - log_failure:
+                call: sys.log
+                args:
+                  severity: ERROR
+                  text: ${"GitHub dispatch failed workflow=" + workflow + " code=" + string(default(map.get(e, "code"), "n/a")) + " message=" + string(default(map.get(e, "message"), "n/a"))}
+            - rethrow:
+                raise: ${e}
+    - done:
+        return:
+          workflow: ${workflow}
+          status: ${response.code}
