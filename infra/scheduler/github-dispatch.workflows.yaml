@@ -1,39 +1,167 @@
 # GitHub Actions の workflow_dispatch を起動する Cloud Workflows 定義。
 # Cloud Scheduler から引数 {"workflow": "daily.yml", "inputs": {"skip_if_exists": "true"}} で呼ばれる。
-# PAT は Secret Manager から実行時に取得する（Scheduler のジョブ設定に平文で持たせないため）。
+#
+# 認証は GitHub App のインストールアクセストークン（1時間で失効）を毎回発行して使う。
+# GCP に長期の秘密情報（PAT 等）は保存しない。App の秘密鍵は Cloud KMS に署名専用で置き、
+# この Workflows の SA は roles/cloudkms.signer（その鍵のみ）で署名だけができる。
+#   1. JWT（RS256、有効10分）の署名対象を組み立て、SHA256 ダイジェストを KMS で署名する
+#   2. JWT で /repos/{repo}/installation を引き、インストールトークンを発行する
+#      （対象リポジトリと権限 actions:write のみに絞る。それ以外の権限なら中止する）
+#   3. インストールトークンで workflow_dispatch を POST する
+# 非機密の設定値 GITHUB_APP_ID（JWT の iss。GitHub は整数を要求する）・KMS_KEY_VERSION は
+# デプロイ時に --set-env-vars で渡す。
+# ガードの raise は code・tags・message を持つマップにする（実機確認済み: 文字列の raise は
+# リトライ述語が TypeError、tags の無いマップは KeyError で、本来のメッセージが失われる）。
+# call-log-level は log-errors-only のまま変えない（Authorization ヘッダーの値が記録されないことを
+# ログで確認済み。より詳細にするとトークンが記録される恐れがある）。
 # 詳細: docs/adr/adr-2026-10-06-cloud-scheduler-dispatch.md
 main:
   params: [args]
   steps:
     - init:
         assign:
-          - project: ${sys.get_env("GOOGLE_CLOUD_PROJECT_ID")}
-          - repo: "yasushi-honda/ai-notebot"
+          - owner_repo: "yasushi-honda/ai-notebot"
+          - repo_name: "ai-notebot"
           - ref: "main"
+          - api: "https://api.github.com"
+          - app_id: ${int(sys.get_env("GITHUB_APP_ID"))}
+          - kms_key_version: ${sys.get_env("KMS_KEY_VERSION")}
+          # 式の中に空マップ {} は書けない（Workflows のパーサーが拒否する）ため変数で渡す
+          - empty_map: {}
+          - empty_list: []
           - workflow: ${args.workflow}
-          - inputs: ${default(map.get(args, "inputs"), {})}
-    - get_token:
-        call: googleapis.secretmanager.v1.projects.secrets.versions.accessString
-        args:
-          secret_id: github-dispatch-token
-          project_id: ${project}
-          version: latest
-        result: token
-    - dispatch:
+          - inputs: ${default(map.get(args, "inputs"), empty_map)}
+          - now: ${int(sys.now())}
+    - run:
         try:
-          call: http.post
-          args:
-            url: ${"https://api.github.com/repos/" + repo + "/actions/workflows/" + workflow + "/dispatches"}
-            headers:
-              Accept: "application/vnd.github+json"
-              Authorization: ${"Bearer " + token}
-              X-GitHub-Api-Version: "2022-11-28"
-              User-Agent: "ai-notebot-scheduler"
-            body:
-              ref: ${ref}
-              inputs: ${inputs}
-            timeout: 30
-          result: response
+          steps:
+            # 起動してよい workflow を限定する（引数の誤りや、この SA の侵害で任意の workflow を
+            # 起動されないため）。検証に失敗したら、署名やトークン発行の前に中止する。
+            - check_workflow:
+                switch:
+                  - condition: ${not(workflow in ["daily.yml", "weekly.yml"])}
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: '${"workflow is not allowed: " + string(workflow)}'
+            # --- 1. JWT を組み立てて KMS で署名する（base64url は + / を置換し padding を付けない） ---
+            # マップのリテラルの中に式は書けない（Workflows のパーサーが拒否する）ため assign で組み立てる
+            - build_claims:
+                assign:
+                  - jwt_header:
+                      alg: "RS256"
+                      typ: "JWT"
+                  - jwt_payload:
+                      iat: ${now - 60}
+                      exp: ${now + 540}
+                      iss: ${app_id}
+            - build_signing_input:
+                assign:
+                  - header_b64: '${text.replace_all(text.replace_all(base64.encode(json.encode(jwt_header), false), "+", "-"), "/", "_")}'
+                  - payload_b64: '${text.replace_all(text.replace_all(base64.encode(json.encode(jwt_payload), false), "+", "-"), "/", "_")}'
+                  - signing_input: ${header_b64 + "." + payload_b64}
+                  - digest_b64: ${base64.encode(hash.compute_checksum(text.encode(signing_input), "SHA256"))}
+            - kms_sign:
+                call: http.post
+                args:
+                  url: ${"https://cloudkms.googleapis.com/v1/" + kms_key_version + ":asymmetricSign"}
+                  auth:
+                    type: OAuth2
+                  body:
+                    digest:
+                      sha256: ${digest_b64}
+                  timeout: 30
+                result: sign_response
+            - build_jwt:
+                assign:
+                  - signature_b64url: ${text.replace_all(text.replace_all(text.replace_all(sign_response.body.signature, "+", "-"), "/", "_"), "=", "")}
+                  - jwt: ${signing_input + "." + signature_b64url}
+            # --- 2. インストールトークンを発行する（リポジトリと権限を最小に絞る） ---
+            - get_installation:
+                call: http.get
+                args:
+                  url: ${api + "/repos/" + owner_repo + "/installation"}
+                  headers:
+                    Accept: "application/vnd.github+json"
+                    Authorization: ${"Bearer " + jwt}
+                    X-GitHub-Api-Version: "2022-11-28"
+                    User-Agent: "ai-notebot-scheduler"
+                  timeout: 30
+                result: installation
+            - create_installation_token:
+                call: http.post
+                args:
+                  url: ${api + "/app/installations/" + string(installation.body.id) + "/access_tokens"}
+                  headers:
+                    Accept: "application/vnd.github+json"
+                    Authorization: ${"Bearer " + jwt}
+                    X-GitHub-Api-Version: "2022-11-28"
+                    User-Agent: "ai-notebot-scheduler"
+                  body:
+                    repositories: ${[repo_name]}
+                    permissions:
+                      actions: "write"
+                  timeout: 30
+                result: token_response
+            # 発行されたトークンが想定より広い権限・対象を持っていたら使わずに中止する
+            - init_check:
+                assign:
+                  - granted: ${default(map.get(token_response.body, "permissions"), empty_map)}
+                  - granted_keys: ${keys(granted)}
+            - check_permissions:
+                for:
+                  value: granted_key
+                  in: ${granted_keys}
+                  steps:
+                    - verify_key:
+                        switch:
+                          - condition: ${not(granted_key in ["actions", "metadata"])}
+                            raise:
+                              code: 0
+                              tags: ["GuardError"]
+                              message: ${"installation token has unexpected permission " + granted_key}
+            - check_scope:
+                switch:
+                  - condition: ${default(map.get(token_response.body, "repository_selection"), "") != "selected"}
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: "installation token is not limited to selected repositories"
+                  - condition: ${default(map.get(granted, "actions"), "") != "write"}
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: "installation token does not have actions:write"
+                  - condition: ${len(default(map.get(token_response.body, "repositories"), empty_list)) != 1}
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: "installation token is not limited to exactly one repository"
+                  - condition: ${token_response.body.repositories[0].name != repo_name}
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: "installation token targets an unexpected repository"
+            - log_scope:
+                call: sys.log
+                args:
+                  severity: INFO
+                  text: ${"installation token scope permissions=" + json.encode_to_string(granted) + " repository_selection=" + token_response.body.repository_selection}
+            # --- 3. workflow_dispatch を起動する（トークンはログに出さない） ---
+            - dispatch:
+                call: http.post
+                args:
+                  url: ${api + "/repos/" + owner_repo + "/actions/workflows/" + workflow + "/dispatches"}
+                  headers:
+                    Accept: "application/vnd.github+json"
+                    Authorization: ${"Bearer " + token_response.body.token}
+                    X-GitHub-Api-Version: "2022-11-28"
+                    User-Agent: "ai-notebot-scheduler"
+                  body:
+                    ref: ${ref}
+                    inputs: ${inputs}
+                  timeout: 30
+                result: response
         # POST は非冪等のため default_retry_non_idempotent を使う（公式: 429・503・接続失敗
         # (ConnectionFailedError) のみ再試行、最大5回）。default_retry が再試行する 502/504/
         # タイムアウトは受理済みの可能性があり、再POSTで二重dispatchになりうるため避ける。
@@ -41,7 +169,7 @@ main:
         except:
           as: e
           steps:
-            # トークン（token変数）はログに出さない。HTTPステータスと応答本文のみ記録する。
+            # JWT・トークン・署名はログに出さない。HTTPステータスとメッセージのみ記録する。
             - log_failure:
                 call: sys.log
                 args:

@@ -227,6 +227,6 @@ GitHub Community（[Discussion #55127](https://github.com/orgs/community/discuss
 
 2026-10-06 に daily.yml の 06:07 JST 枠が約 4 時間たっても発火せず、同種の事象は 7 件目になった
 （PR #51 の 2 回 cron 化の後も再発）。本 ADR で「最も堅牢だが投資が重い」として保留していた
-外部スケジューラ案を、GCP Cloud Scheduler（+ Cloud Workflows + Secret Manager の PAT）で採用した。
+外部スケジューラ案を、GCP Cloud Scheduler（+ Cloud Workflows + GitHub App のインストールトークン。秘密鍵は Cloud KMS に署名専用で置く）で採用した。
 GitHub の cron は保険として残し、冪等性ガードに `skip_if_exists` 入力を足して併用する。
 詳細: `adr-2026-10-06-cloud-scheduler-dispatch.md`。
