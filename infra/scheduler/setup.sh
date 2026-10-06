@@ -129,9 +129,10 @@ EOF
 
 setup_deploy() {
   # 署名に使う鍵バージョン（有効なものの最新）。秘密鍵のインポート前だと見つからない。
+  # 名前の文字列順だと versions/9 が versions/10 より後ろになるため、作成時刻で並べる（codex reviewで指摘）。
   local key_version
   key_version="$(g kms keys versions list --key "$KEY" --keyring "$KEYRING" --location "$REGION" \
-    --filter="state=ENABLED" --sort-by=~name --limit 1 --format='value(name)')"
+    --filter="state=ENABLED" --sort-by=~createTime --limit 1 --format='value(name)')"
   if [ -z "$key_version" ]; then
     echo "ERROR: 鍵 '${KEY}' に有効なバージョンがありません。先に node infra/scheduler/bootstrap-github-app.mjs で秘密鍵をインポートしてください。" >&2
     exit 1
