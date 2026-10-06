@@ -25,6 +25,15 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 g() { gcloud "$@" --project "$PROJECT" --account "$ACCOUNT"; }
 
+# list の結果が複数行（フィルタが複数件ヒット）なら、重複作成や壊れた update を避けるため止める
+at_most_one() { # $1=説明 $2=list結果
+  if [ "$(printf '%s' "$2" | grep -c .)" -gt 1 ]; then
+    echo "ERROR: ${1} が複数件見つかりました。手動で整理してから再実行してください:" >&2
+    printf '%s\n' "$2" >&2
+    exit 1
+  fi
+}
+
 setup_secret() {
   g services enable cloudscheduler.googleapis.com workflows.googleapis.com workflowexecutions.googleapis.com \
     secretmanager.googleapis.com monitoring.googleapis.com logging.googleapis.com
@@ -57,18 +66,21 @@ upsert_job() { # $1=ジョブ名 $2=cron $3=Workflows引数(JSON)
   local body
   body="$(ARG="$arg" python3 -c 'import json,os; print(json.dumps({"argument": os.environ["ARG"]}))')"
   local common=(--location "$REGION" --schedule "$schedule" --time-zone "Asia/Tokyo" --uri "$uri"
-    --http-method POST --message-body "$body" --headers "Content-Type=application/json"
+    --http-method POST --message-body "$body"
     --oauth-service-account-email "$SA_EMAIL" --attempt-deadline 60s --max-retry-attempts 3 --min-backoff 30s)
+  # ヘッダーのフラグは create が --headers、update が --update-headers と異なる
+  # （update に --headers は無く、共用すると2回目以降の実行が失敗する。PRレビューで指摘）。
   if g scheduler jobs describe "$name" --location "$REGION" >/dev/null 2>&1; then
-    g scheduler jobs update http "$name" "${common[@]}"
+    g scheduler jobs update http "$name" "${common[@]}" --update-headers "Content-Type=application/json"
   else
-    g scheduler jobs create http "$name" "${common[@]}"
+    g scheduler jobs create http "$name" "${common[@]}" --headers "Content-Type=application/json"
   fi
 }
 
 setup_alert() {
   local channel
   channel="$(g beta monitoring channels list --filter="displayName=\"${CHANNEL_NAME}\"" --format='value(name)')"
+  at_most_one "通知チャネル '${CHANNEL_NAME}'" "$channel"
   if [ -z "$channel" ]; then
     channel="$(g beta monitoring channels create --display-name "$CHANNEL_NAME" --type email \
       --channel-labels "email_address=${ACCOUNT}" --format='value(name)')"
@@ -94,6 +106,7 @@ setup_alert() {
 EOF
   local existing
   existing="$(g monitoring policies list --filter="displayName=\"${ALERT_NAME}\"" --format='value(name)')"
+  at_most_one "アラートポリシー '${ALERT_NAME}'" "$existing"
   local rc=0
   if [ -n "$existing" ]; then
     g monitoring policies update "$existing" --policy-from-file "$policy_file" || rc=$?
@@ -106,8 +119,9 @@ EOF
 
 setup_deploy() {
   # PAT が未投入のままデプロイ・ジョブ作成すると初回実行が失敗するため先に検査する
-  if [ -z "$(g secrets versions list "$SECRET" --filter="state=ENABLED" --format='value(name)' --limit 1)" ]; then
-    echo "ERROR: シークレット '${SECRET}' に有効なバージョンがありません。PAT を投入してから再実行してください。" >&2
+  # Workflows は version: latest を参照するため、latest 自体が ENABLED であることを確認する
+  if [ "$(g secrets versions describe latest --secret "$SECRET" --format='value(state)' 2>/dev/null || true)" != "ENABLED" ]; then
+    echo "ERROR: シークレット '${SECRET}' の latest が有効ではありません。PAT を投入してから再実行してください。" >&2
     exit 1
   fi
 
@@ -115,10 +129,11 @@ setup_deploy() {
     --service-account "$SA_EMAIL" --call-log-level log-errors-only \
     --description "GitHub Actions workflow_dispatch を起動する（Cloud Scheduler用）"
 
+  # アラートを先に作る: ジョブ作成後にアラート作成が失敗すると、無監視のままジョブだけ稼働してしまうため
+  setup_alert
   upsert_job "daily-digest-dispatch" "0 6 * * *" '{"workflow":"daily.yml","inputs":{"skip_if_exists":"true"}}'
   upsert_job "weekly-digest-dispatch" "20 8 * * 0" '{"workflow":"weekly.yml","inputs":{"skip_if_exists":"true"}}'
-  setup_alert
-  echo "OK: Workflows・Schedulerジョブ2本・アラートを設定しました。"
+  echo "OK: Workflows・アラート・Schedulerジョブ2本を設定しました。"
 }
 
 case "${1:-}" in

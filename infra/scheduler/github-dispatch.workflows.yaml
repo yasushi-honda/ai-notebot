@@ -34,7 +34,10 @@ main:
               inputs: ${inputs}
             timeout: 30
           result: response
-        retry: ${http.default_retry}
+        # POST は非冪等のため default_retry_non_idempotent を使う（公式: 429・503・接続失敗
+        # (ConnectionFailedError) のみ再試行、最大5回）。default_retry が再試行する 502/504/
+        # タイムアウトは受理済みの可能性があり、再POSTで二重dispatchになりうるため避ける。
+        retry: ${http.default_retry_non_idempotent}
         except:
           as: e
           steps:

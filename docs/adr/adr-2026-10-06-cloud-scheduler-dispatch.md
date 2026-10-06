@@ -79,5 +79,15 @@ Cloud Scheduler (Asia/Tokyo)
   - Scheduler から GitHub API を直接呼ぶ: PAT がジョブ設定に平文で残る。
   - GitHub App: Workflows 単体で JWT 署名ができず、Cloud Run 等のコード常駐が必要になる。
   - 検知と通知のみ（自動起動なし）: 復旧が人手になり、根本策にならない。
+- **失敗通知の限界**: GCP のアラートが拾うのは「起動（dispatch）の失敗」だけである。
+  - dispatch は受理（HTTP 2xx）の時点で成功扱いになる。起動後の daily.yml / weekly.yml の run
+    自体が失敗（Vertex 障害、出典検証の exit 1 など）しても GCP 側からは通知されない。
+    run の失敗は従来どおり GitHub Actions の失敗通知に依存する。
+  - Scheduler ジョブの pause・削除、SA の権限剥奪などで「起動そのものが行われない」状態は、
+    ログが出ないためログベースのアラートでは検知できない（GitHub cron の保険で動く間は
+    記事は公開される）。「当日記事が無い」ことを検知する監視は本 ADR の範囲外とし、必要になれば別途追加する。
+- **リトライ**: Workflows の dispatch は POST（非冪等）のため `http.default_retry_non_idempotent`
+  を使い、429・503・接続失敗のみ再試行する（公式の定義）。Scheduler 側の再試行（最大 3 回）や受理後の応答欠落で
+  二重に dispatch されても、`skip_if_exists` と concurrency グループにより生成は二重にならない。
 - **監視事項**: 実装後の最初の数日、Scheduler 経由の run（`event=workflow_dispatch`、
   06:00 JST 前後）が毎日発生するかを `gh run list --workflow=daily.yml` で確認する。
