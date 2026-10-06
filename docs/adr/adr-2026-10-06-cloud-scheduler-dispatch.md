@@ -85,23 +85,38 @@ Workflows 定義は `infra/scheduler/github-dispatch.workflows.yaml`。
 ## Consequences
 
 - **更新作業が不要**: PAT のような有効期限は無い。インストールトークンは毎回発行され、1 時間で失効する。
-- **鍵のローテーション（漏洩の疑い時、または定期的に）**: GitHub の App 設定で新しい秘密鍵を生成し、
-  `bootstrap-github-app.mjs` の KMS インポート処理で新しい鍵バージョンとして取り込み、
-  `GITHUB_APP_ID=<App ID> bash infra/scheduler/setup.sh deploy` で参照する鍵バージョンを切り替える
-  （`deploy` は有効な最新バージョンを使う）。確認後、旧バージョンを KMS で無効化・破棄し、
-  GitHub 側の旧秘密鍵を削除する。
+- **鍵のローテーション（漏洩の疑い時、または定期的に）**: GitHub の App 設定画面（Settings → Developer
+  settings → GitHub Apps → 対象の App）で「Generate a private key」し、ダウンロードした PEM を
+  `node infra/scheduler/bootstrap-github-app.mjs --pem-file <PEM> --app-id <App ID>` で新しい鍵バージョンとして
+  取り込む（公開鍵の一致検証・GitHub への KMS 署名 JWT の受理確認まで行い、成功後に PEM を上書き削除する）。
+  出力の `次の手順` のコマンド（`GITHUB_APP_ID=… KMS_KEY_VERSION=… bash infra/scheduler/setup.sh deploy`）で
+  参照する鍵バージョンを明示して切り替える。動作確認後、旧バージョンを KMS で無効化・破棄し、
+  GitHub 側の旧秘密鍵を削除する。同じ `--pem-file` モードは、App 作成後に途中で失敗した場合の復旧にも使う。
+- **`deploy` の鍵バージョンは明示を推奨**: `KMS_KEY_VERSION` を省略すると有効な最新バージョン（作成時刻順）を
+  使うが、App と対応しない鍵（使い捨て鍵・検証失敗）が ENABLED のまま残っていると誤って選びうる。
+  bootstrap は検証に失敗した鍵バージョンを自動で破棄予約し、成功時に `KMS_KEY_VERSION` 付きの
+  コマンドを出力する。
 - **漏洩時の影響範囲**: GCP 側に取り出せる秘密情報は無い。万一 SA が侵害されても、署名はできるが
   鍵は取り出せず、得られるのは本リポジトリの Actions 起動に限られる（コード書き換えはできない）。
   侵害が疑われる場合は、SA の `cloudkms.signer` を外し、GitHub で App の鍵を削除する。
 - **秘密鍵がローカルに存在する短い時間**: App 作成から KMS インポートまでの間、PEM は
-  プロセスのメモリと 0600 の一時ファイルに存在する。インポート後（失敗時も）上書き削除する。
+  プロセスのメモリと 0600 の一時ファイルに存在する。インポート用の平文 DER はインポート直後に、
+  PEM は成功後に、失敗・中断（SIGINT/SIGTERM）時も含めて上書き削除する。APFS/SSD では上書きしても
+  旧ブロックが残りうるため、効果の中心は「平文ファイルを残さない・早く消す」ことである。
   GitHub 側にも元の鍵は残る（GitHub の仕様）。ローテーション時に旧鍵を削除する。
+- **App 作成は不可逆**: bootstrap は、App 作成より前にインポートジョブを作って ACTIVE まで待つ
+  （KMS 側の問題を先に露呈させるため）。App 作成後に失敗した場合は、App のスラッグと ID、復旧手順を
+  先に出力する。
 - **人間の作業は一度きり 2 回のブラウザ操作**: GitHub は App の作成とリポジトリへのインストールに
   対話的な同意を求める（API では代行できない）。`bootstrap-github-app.mjs` が受け口を用意し、
   App 作成（マニフェスト方式）→ 鍵インポート → インストール待ちまでを自動化する。
 - **実機で分かった制約**:
   - Workflows のパーサーは、式の中の空マップ `{}` と、マップのリテラル内の式（`{"iat": now - 60}`）を
     拒否する。変数や assign のマップで渡す。`gcloud workflows deploy` を通すまで分からない。
+  - ガードの `raise` は `code`・`tags`・`message` を持つマップにする。文字列の `raise` はリトライ述語が
+    `TypeError`、`tags` の無いマップは `KeyError` で落ち、本来のメッセージが失われる（実機で確認）。
+    なお、実行失敗時はプラットフォームが ERROR の `FAILED` ログを出すため、メッセージが失われても
+    アラートは鳴る。
   - GitHub は JWT の `iss` に整数（App ID）を要求する。client ID の文字列は
     `'Issuer' claim ('iss') must be an Integer` で拒否された。
   - 作成直後のサービスアカウントは、数分間 `IAM permission denied for service account`

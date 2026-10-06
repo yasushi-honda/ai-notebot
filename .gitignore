@@ -8,3 +8,6 @@ dist/
 .playwright-mcp/
 .claude/
 .serena/
+
+# エディタのスワップファイル
+*.swp

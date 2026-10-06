@@ -6,6 +6,7 @@ import {
   buildManifest,
   buildSigningInput,
   isAllowedHost,
+  parseArgs,
   parseCallback,
   parseRsaBits,
 } from '../../infra/scheduler/bootstrap-github-app.mjs';
@@ -83,4 +84,18 @@ test('isAllowedHost: 127.0.0.1:<port> だけ許可し、別ホスト名・別ポ
   assert.equal(isAllowedHost('localhost:5000', 5000), false, 'localhost も許可しない');
   assert.equal(isAllowedHost('127.0.0.1', 5000), false, 'ポート欠落');
   assert.equal(isAllowedHost(undefined, 5000), false, 'Host ヘッダーなし');
+});
+
+test('parseArgs: --pem-file は整数の --app-id が必須。単独の --app-id や selftest との併用は拒否する', () => {
+  assert.equal(parseArgs([]).pemFile, null);
+  const ok = parseArgs(['--pem-file', '/tmp/x.pem', '--app-id', '123']);
+  assert.equal(ok.pemFile, '/tmp/x.pem');
+  assert.equal(ok.appId, '123');
+  assert.throws(() => parseArgs(['--pem-file', '/tmp/x.pem']), /app-id/, 'app-id 欠落');
+  assert.throws(() => parseArgs(['--pem-file', '/tmp/x.pem', '--app-id', 'abc']), /app-id/, '整数以外');
+  assert.throws(() => parseArgs(['--pem-file', '/tmp/x.pem', '--app-id', '']), /app-id/, '空');
+  assert.throws(() => parseArgs(['--app-id', '123']), /pem-file/, 'pem-file なしの app-id');
+  assert.throws(() => parseArgs(['--selftest', '--pem-file', '/tmp/x.pem', '--app-id', '1']), /同時/);
+  assert.throws(() => parseArgs(['--unknown']), /unknown argument/);
+  assert.equal(parseArgs(['--selftest', '--keep']).keep, true);
 });

@@ -10,6 +10,10 @@
 #   3. インストールトークンで workflow_dispatch を POST する
 # 非機密の設定値 GITHUB_APP_ID（JWT の iss。GitHub は整数を要求する）・KMS_KEY_VERSION は
 # デプロイ時に --set-env-vars で渡す。
+# ガードの raise は code・tags・message を持つマップにする（実機確認済み: 文字列の raise は
+# リトライ述語が TypeError、tags の無いマップは KeyError で、本来のメッセージが失われる）。
+# call-log-level は log-errors-only のまま変えない（Authorization ヘッダーの値が記録されないことを
+# ログで確認済み。より詳細にするとトークンが記録される恐れがある）。
 # 詳細: docs/adr/adr-2026-10-06-cloud-scheduler-dispatch.md
 main:
   params: [args]
@@ -24,6 +28,7 @@ main:
           - kms_key_version: ${sys.get_env("KMS_KEY_VERSION")}
           # 式の中に空マップ {} は書けない（Workflows のパーサーが拒否する）ため変数で渡す
           - empty_map: {}
+          - empty_list: []
           - workflow: ${args.workflow}
           - inputs: ${default(map.get(args, "inputs"), empty_map)}
           - now: ${int(sys.now())}
@@ -102,13 +107,32 @@ main:
                     - verify_key:
                         switch:
                           - condition: ${not(granted_key in ["actions", "metadata"])}
-                            raise: ${"installation token has unexpected permission " + granted_key}
+                            raise:
+                              code: 0
+                              tags: ["GuardError"]
+                              message: ${"installation token has unexpected permission " + granted_key}
             - check_scope:
                 switch:
                   - condition: ${default(map.get(token_response.body, "repository_selection"), "") != "selected"}
-                    raise: "installation token is not limited to selected repositories"
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: "installation token is not limited to selected repositories"
                   - condition: ${default(map.get(granted, "actions"), "") != "write"}
-                    raise: "installation token does not have actions:write"
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: "installation token does not have actions:write"
+                  - condition: ${len(default(map.get(token_response.body, "repositories"), empty_list)) != 1}
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: "installation token is not limited to exactly one repository"
+                  - condition: ${token_response.body.repositories[0].name != repo_name}
+                    raise:
+                      code: 0
+                      tags: ["GuardError"]
+                      message: "installation token targets an unexpected repository"
             - log_scope:
                 call: sys.log
                 args:

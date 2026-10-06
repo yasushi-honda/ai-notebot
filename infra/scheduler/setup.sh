@@ -9,8 +9,9 @@
 # 使い方（この順に実行）:
 #   bash infra/scheduler/setup.sh kms       # 1. API有効化・SA・キーリング・署名鍵（インポート専用）・署名権限
 #   node infra/scheduler/bootstrap-github-app.mjs   # 2. GitHub App の作成と秘密鍵の KMS インポート（一度きり）
-#   GITHUB_APP_ID=<App ID> bash infra/scheduler/setup.sh deploy   # 3. Workflows・アラート・Schedulerジョブ
-#     （GITHUB_APP_ID は非機密の整数。2 の出力に表示される。再デプロイ時は省略可で、デプロイ済みの値を引き継ぐ）
+#   GITHUB_APP_ID=<App ID> KMS_KEY_VERSION=<鍵バージョン> bash infra/scheduler/setup.sh deploy   # 3. Workflows・アラート・Schedulerジョブ
+#     （どちらも非機密。2 の出力の「次の手順」にそのまま表示される。GITHUB_APP_ID は再デプロイ時は省略可で
+#       デプロイ済みの値を引き継ぐ。KMS_KEY_VERSION を省略すると有効な最新の鍵バージョンを使う）
 set -euo pipefail
 
 PROJECT="ai-notebot-yh"
@@ -128,11 +129,24 @@ EOF
 }
 
 setup_deploy() {
-  # 署名に使う鍵バージョン（有効なものの最新）。秘密鍵のインポート前だと見つからない。
-  # 名前の文字列順だと versions/9 が versions/10 より後ろになるため、作成時刻で並べる（codex reviewで指摘）。
-  local key_version
-  key_version="$(g kms keys versions list --key "$KEY" --keyring "$KEYRING" --location "$REGION" \
-    --filter="state=ENABLED" --sort-by=~createTime --limit 1 --format='value(name)')"
+  # 署名に使う鍵バージョン。KMS_KEY_VERSION（bootstrap-github-app.mjs の出力）で明示するのが確実。
+  # 未指定なら有効なものの最新（作成時刻順。名前の文字列順だと versions/9 が versions/10 より後ろになる）。
+  # 未指定時は、App と対応しない鍵（使い捨て・検証失敗）を拾いうるため、ローテーション後は明示を推奨する。
+  local key_version="${KMS_KEY_VERSION:-}"
+  local key_prefix="projects/${PROJECT}/locations/${REGION}/keyRings/${KEYRING}/cryptoKeys/${KEY}/cryptoKeyVersions/"
+  if [ -n "$key_version" ]; then
+    if ! [[ "$key_version" =~ ^${key_prefix}[0-9]+$ ]]; then
+      echo "ERROR: KMS_KEY_VERSION が不正です（期待: ${key_prefix}<番号>）: ${key_version}" >&2
+      exit 1
+    fi
+    if [ "$(g kms keys versions describe "${key_version##*/}" --key "$KEY" --keyring "$KEYRING" --location "$REGION" --format='value(state)' 2>/dev/null || true)" != "ENABLED" ]; then
+      echo "ERROR: 指定の鍵バージョンが存在しないか ENABLED ではありません: ${key_version}" >&2
+      exit 1
+    fi
+  else
+    key_version="$(g kms keys versions list --key "$KEY" --keyring "$KEYRING" --location "$REGION" \
+      --filter="state=ENABLED" --sort-by=~createTime --limit 1 --format='value(name)')"
+  fi
   if [ -z "$key_version" ]; then
     echo "ERROR: 鍵 '${KEY}' に有効なバージョンがありません。先に node infra/scheduler/bootstrap-github-app.mjs で秘密鍵をインポートしてください。" >&2
     exit 1
