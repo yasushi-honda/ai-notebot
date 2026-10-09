@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeLiteralNewlines, normalizeBoldEmphasis, evaluateStageBCitations, decideStageBRetry } from '../curate.mjs';
+import { normalizeLiteralNewlines, normalizeBoldEmphasis, evaluateStageBCitations, decideStageBRetry, partitionStageBOutcomes } from '../curate.mjs';
 
 test('normalizeLiteralNewlines: リテラルな \\n を実際の改行に変換する', () => {
   const input = '1段落目です。\\n\\n2段落目です。';
@@ -165,4 +165,31 @@ test('decideStageBRetry: 問題があり最大試行回数に達していればe
 test('decideStageBRetry: 問題が無ければ最大試行回数に達していてもacceptが優先される', () => {
   const decision = decideStageBRetry({ attempt: 3, maxAttempts: 3, problems: [], extraInstructions: [] });
   assert.deepEqual(decision, { action: 'accept' });
+});
+
+// partitionStageBOutcomes: 3回再生成しても出典チェックを満たせないテーマを除外し、
+// 残りが最小テーマ数以上なら記事生成を続行する（全テーマ成功を要求すると、1テーマの確率的失敗で
+// 当日の記事全体が公開されない。2026-10-09実績）。出典検証ゲート自体は緩めない。
+const ok = (title) => ({ theme: { title }, result: { bodyMarkdown: `${title}本文` } });
+const ng = (title) => ({ theme: { title }, failed: true });
+
+test('partitionStageBOutcomes: 全テーマ成功なら全て残し除外は空', () => {
+  const r = partitionStageBOutcomes([ok('A'), ok('B'), ok('C')], 3);
+  assert.equal(r.sections.length, 3);
+  assert.deepEqual(r.droppedTitles, []);
+});
+
+test('partitionStageBOutcomes: 失敗テーマを除外し、残りが最小数以上なら続行する（境界: ちょうど最小数）', () => {
+  const r = partitionStageBOutcomes([ok('A'), ng('B'), ok('C'), ok('D')], 3);
+  assert.deepEqual(r.sections.map((s) => s.title), ['A', 'C', 'D']);
+  assert.deepEqual(r.droppedTitles, ['B']);
+});
+
+test('partitionStageBOutcomes: 残りが最小数未満（最小数-1）ならエラー', () => {
+  assert.throws(() => partitionStageBOutcomes([ok('A'), ng('B'), ok('C')], 3), /3件未満/);
+});
+
+test('partitionStageBOutcomes: 空配列・全失敗はエラー', () => {
+  assert.throws(() => partitionStageBOutcomes([], 3), /3件未満/);
+  assert.throws(() => partitionStageBOutcomes([ng('A'), ng('B'), ng('C')], 3), /3件未満/);
 });
