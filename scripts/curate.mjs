@@ -262,6 +262,26 @@ export function decideStageBRetry({ attempt, maxAttempts, problems, extraInstruc
   return { action: 'retry', extraInstructions: [...new Set([...extraInstructions, ...problems])] };
 }
 
+/** 再生成を使い切っても出典チェックを満たせなかったことを、通信エラー等の想定外の例外と区別するための型。 */
+export class StageBExhaustedError extends Error {}
+
+/**
+ * 各テーマのStage B結果から、出典チェックを満たせず除外されたテーマを取り除いて採用分を返す純関数。
+ * 全テーマ成功を要求すると、1テーマの確率的な失敗で当日の記事全体が公開されない
+ * （2026-10-09実績: changelog系テーマで3回連続NG）。出典検証ゲートは緩めず、記事の網羅性だけを
+ * 下げる。残りが最小テーマ数未満なら生成を中止する。
+ */
+export function partitionStageBOutcomes(outcomes, minThemes) {
+  const sections = outcomes.filter((o) => !o.failed).map((o) => ({ ...o.theme, ...o.result }));
+  const droppedTitles = outcomes.filter((o) => o.failed).map((o) => o.theme.title);
+  if (sections.length < minThemes) {
+    throw new Error(
+      `Stage B: 出典チェックを満たしたテーマが${minThemes}件未満でした（${sections.length}件。除外: ${droppedTitles.join(' / ') || 'なし'}）。`,
+    );
+  }
+  return { sections, droppedTitles };
+}
+
 async function runStageB(theme, itemsById) {
   const themeItems = theme.sourceIds.map((id) => itemsById.get(id)).filter(Boolean);
   const validIds = new Set(theme.sourceIds);
@@ -281,7 +301,7 @@ async function runStageB(theme, itemsById) {
 
     console.warn(`  ✗ 出典チェックNG（試行${attempt}/${MAX_REGENERATE_ATTEMPTS}）: ${problems.join(' / ')}`);
     if (decision.action === 'exhausted') {
-      throw new Error(`Stage B: 「${theme.title}」で出典チェックを満たす本文を生成できませんでした。`);
+      throw new StageBExhaustedError(`Stage B: 「${theme.title}」で出典チェックを満たす本文を生成できませんでした。`);
     }
     extraInstructions = decision.extraInstructions;
   }
@@ -339,17 +359,27 @@ async function main() {
   const itemsById = new Map(items.map((i) => [i.id, i]));
 
   console.log(`Stage A: ${items.length}件からテーマをクラスタリング中...`);
-  const themes = await runStageA(items);
-  console.log(`Stage A 完了: ${themes.length}テーマ`);
-  themes.forEach((t) => console.log(`  - ${t.title} (${t.sourceIds.length}件の出典)`));
+  const candidateThemes = await runStageA(items);
+  console.log(`Stage A 完了: ${candidateThemes.length}テーマ`);
+  candidateThemes.forEach((t) => console.log(`  - ${t.title} (${t.sourceIds.length}件の出典)`));
 
   console.log('Stage B: テーマごとに本文生成中...');
-  const sections = [];
-  for (const theme of themes) {
-    const result = await runStageB(theme, itemsById);
-    sections.push({ ...theme, ...result });
-    console.log(`  ✓ ${theme.title}`);
+  const outcomes = [];
+  for (const theme of candidateThemes) {
+    try {
+      const result = await runStageB(theme, itemsById);
+      outcomes.push({ theme, result });
+      console.log(`  ✓ ${theme.title}`);
+    } catch (err) {
+      // 再生成を使い切った場合のみテーマ単位で除外する。API障害等の想定外の例外は握りつぶさない
+      if (!(err instanceof StageBExhaustedError)) throw err;
+      outcomes.push({ theme, failed: true });
+      console.warn(`  ⚠ テーマを除外: ${theme.title}`);
+    }
   }
+  const { sections, droppedTitles } = partitionStageBOutcomes(outcomes, MIN_THEMES);
+  if (droppedTitles.length > 0) console.warn(`除外したテーマ（${droppedTitles.length}件）: ${droppedTitles.join(' / ')}`);
+  const themes = candidateThemes.filter((t) => !droppedTitles.includes(t.title));
 
   // 本文中で実際に使われた脚注idを抽出（Stage Bが指示に反して未許可idを使った場合も含め、
   // 最終的な正しさは validate-citations.mjs が当日アーカイブ全体に対して検証する）
