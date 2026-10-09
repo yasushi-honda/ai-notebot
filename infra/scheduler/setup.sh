@@ -169,7 +169,7 @@ setup_deploy() {
 
   # アラートを先に作る: ジョブ作成後にアラート作成が失敗すると、無監視のままジョブだけ稼働してしまうため
   setup_alert
-  upsert_job "daily-digest-dispatch" "0 6 * * *" '{"workflow":"daily.yml","inputs":{"skip_if_exists":"true"}}'
+  upsert_job "daily-digest-dispatch" "0 7 * * *" '{"workflow":"daily.yml","inputs":{"skip_if_exists":"true"}}'
   upsert_job "weekly-digest-dispatch" "20 8 * * 0" '{"workflow":"weekly.yml","inputs":{"skip_if_exists":"true"}}'
   echo "OK: Workflows・アラート・Schedulerジョブ2本を設定しました。"
 }

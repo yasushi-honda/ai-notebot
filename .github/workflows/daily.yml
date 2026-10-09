@@ -1,6 +1,6 @@
 name: Daily AI trends digest
 
-# 毎日 06:07 JST (21:07 UTC) と 12:07 JST (03:07 UTC) の2回、収集→記事生成→出典検証→
+# 毎日 07:07 / 08:07 / 09:07 JST (22:07 / 23:07 / 00:07 UTC) の3回、収集→記事生成→出典検証→
 # 画像生成→ビルド→公開まで通しで実行する。
 # 出典検証（validate-citations.mjs）に失敗した場合は commit も deploy も行わない
 # （収集していない情報を含む記事を公開しない設計。詳細: docs/adr/）。
@@ -29,9 +29,14 @@ name: Daily AI trends digest
 # 直近15日以上どちらも一度も欠落したことがなく実績十分（欠落していたのは中間枠だけ）で
 # あるため、3枠目を無理に安全な時間帯へ押し込むより、中間枠自体を廃止して実績のある2枠
 # （06:07 JST・12:07 JST）に絞る方が、週次との衝突リスクを増やさず現状の信頼性を維持できる。
+#
+# 2026-10-09変更: 12:07 JST枠では公開が遅すぎるとの運用要件により、枠を07/08/09時台の3回に
+# 前倒しした（Cloud Schedulerも06:00→07:00 JST。詳細: docs/adr/adr-2026-10-09-daily-slots-7-9.md）。
+# 日曜のweekly（08:20 Scheduler / 08:30〜10:30 cron）とは同一concurrency groupで直列化されるが、
+# daily実行は約2分で終わるため待ちは数分に収まる。
 on:
   schedule:
-    - cron: '7 21,3 * * *'
+    - cron: '7 22,23,0 * * *'
   workflow_dispatch:
     inputs:
       skip_if_exists:
@@ -165,7 +170,7 @@ jobs:
           GCP_PROJECT: ai-notebot-yh
 
       - name: Track care hack generation failure
-        # 1日2回のscheduleがすべて失敗しても手動発見（/catchup等）に頼らず気づけるようにする。
+        # 1日3回のscheduleがすべて失敗しても手動発見（/catchup等）に頼らず気づけるようにする。
         # 到達性検証済みソース不足はcollect-care.mjsの意図的な安全側フェイルセーフであり
         # build-care.mjs自体は常にexit 0を返す設計のため、ジョブの成否では検知できない
         # （詳細: docs/adr/adr-2026-09-11-care-hack-grounded-research.md）。
