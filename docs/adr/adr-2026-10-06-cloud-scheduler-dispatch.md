@@ -32,7 +32,7 @@ Cloud Scheduler (Asia/Tokyo)
 
 | ジョブ | Scheduler（主） | 既存 GitHub cron（保険、変更なし） |
 |---|---|---|
-| daily-digest-dispatch | 毎日 06:00 JST | 06:07 / 12:07 JST |
+| daily-digest-dispatch | 毎日 07:00 JST（2026-10-09に06:00から変更） | 07:07 / 08:07 / 09:07 JST（同、06:07/12:07から変更） |
 | weekly-digest-dispatch | 日曜 08:20 JST | 08:30 / 09:30 / 10:30 JST |
 
 1. **`skip_if_exists` 入力**: daily.yml・weekly.yml の `workflow_dispatch` に boolean 入力

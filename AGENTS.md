@@ -67,7 +67,7 @@ Google検索グラウンディングと `responseSchema` 構造化出力は同�
 ### 起動経路（schedule 欠落対策）
 
 ```
-Cloud Scheduler (daily 06:00 / weekly 日曜08:20 JST) → Cloud Workflows `github-dispatch`
+Cloud Scheduler (daily 07:00 / weekly 日曜08:20 JST) → Cloud Workflows `github-dispatch`
   → GitHub App のインストールトークン（KMS 署名の JWT で毎回発行、1時間で失効）で GitHub API
   → daily.yml / weekly.yml の workflow_dispatch（skip_if_exists=true）
 GitHub の cron（保険）は従来どおり残す。冪等性ガードで二重生成しない。
@@ -106,4 +106,4 @@ gh workflow run weekly.yml -f date=YYYY-MM-DD   # 指定公開日（省略時は
 - `data/raw/*.json` は git にコミットする（アーカイブの実体）。`site/public/images/` も同様。
 - ローカル実行前に `direnv allow`（`.envrc` が `CLOUDSDK_ACTIVE_CONFIG_NAME=ai-notebot` を設定）。
 - `GEMINI_ACCESS_TOKEN=$(gcloud auth print-access-token --account=hy.unimail.11@gmail.com)` を都度取得。
-- GitHub Pages への自動デプロイは `daily.yml` のみがトリガー。起動経路は2系統ある: ①主: GCP Cloud Scheduler（毎日 06:00 JST）→ Cloud Workflows → `workflow_dispatch`（`skip_if_exists=true`、生成済みならスキップ）、②保険: GitHub の cron（06:07 / 12:07 JST。GitHub Actions の schedule は遅延・欠落するため保険扱い。GitHub Actions公式が毎時00分は高負荷で遅延しやすいと明記しているため数分ずらしている）。週刊まとめも同様（Scheduler 日曜 08:20 JST + GitHub cron 3回）。認証は GitHub App + Cloud KMS のため PAT の更新作業は無い。詳細・鍵ローテーション手順: `docs/adr/adr-2026-10-06-cloud-scheduler-dispatch.md`、リソースの作成手順: `infra/scheduler/setup.sh`。`ci.yml` は PR 時の型チェック・ビルド確認のみで、`main` への push（PR マージ含む）単体では自動デプロイされない。コード変更だけを今すぐ本番反映したい場合は `gh workflow run care-rebuild.yml -f regenerate=false`（再収集なし・サイト全体を再ビルドしてデプロイのみ）を使う。
+- GitHub Pages への自動デプロイは `daily.yml` のみがトリガー。起動経路は2系統ある: ①主: GCP Cloud Scheduler（毎日 07:00 JST）→ Cloud Workflows → `workflow_dispatch`（`skip_if_exists=true`、生成済みならスキップ）、②保険: GitHub の cron（07:07 / 08:07 / 09:07 JST。GitHub Actions の schedule は遅延・欠落するため保険扱い。GitHub Actions公式が毎時00分は高負荷で遅延しやすいと明記しているため数分ずらしている）。週刊まとめも同様（Scheduler 日曜 08:20 JST + GitHub cron 3回）。認証は GitHub App + Cloud KMS のため PAT の更新作業は無い。詳細・鍵ローテーション手順: `docs/adr/adr-2026-10-06-cloud-scheduler-dispatch.md`、リソースの作成手順: `infra/scheduler/setup.sh`。`ci.yml` は PR 時の型チェック・ビルド確認のみで、`main` への push（PR マージ含む）単体では自動デプロイされない。コード変更だけを今すぐ本番反映したい場合は `gh workflow run care-rebuild.yml -f regenerate=false`（再収集なし・サイト全体を再ビルドしてデプロイのみ）を使う。
