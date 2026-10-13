@@ -1,0 +1,709 @@
+{
+  "date": "2026-10-14",
+  "collectedAt": "2026-10-13T22:00:31.962Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-b5fdbba239",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "google/adk-js: An open-source, code-first Typescript toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
+      "url": "https://github.com/google/adk-js",
+      "publishedAt": "2026-10-13T22:00:12.000Z",
+      "summary": "★1440 An open-source, code-first Typescript toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control."
+    },
+    {
+      "id": "s-c89906682b",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "anton-abyzov/specweave: Spec-first AI development: describe a feature → AI creates spec + plan + tasks, builds autonomously, syncs to GitHub/JIRA. Domain-expert skills for PM, Architect, Frontend, QA learn your patterns permanently. Claude Code, Codex, Cursor, Copilot & more.",
+      "url": "https://github.com/anton-abyzov/specweave",
+      "publishedAt": "2026-10-13T22:00:06.000Z",
+      "summary": "★165 Spec-first AI development: describe a feature → AI creates spec + plan + tasks, builds autonomously, syncs to GitHub/JIRA. Domain-expert skills for PM, Architect, Frontend, QA learn your patterns permanently. Claude Code, Codex, Cursor, Copilot & more."
+    },
+    {
+      "id": "s-d6f86fbca1",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Telosnex/fonnx: ONNX runtime for Flutter.",
+      "url": "https://github.com/Telosnex/fonnx",
+      "publishedAt": "2026-10-13T22:00:04.000Z",
+      "summary": "★298 ONNX runtime for Flutter."
+    },
+    {
+      "id": "s-40b66fdd99",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "archestra-ai/archestra: Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator",
+      "url": "https://github.com/archestra-ai/archestra",
+      "publishedAt": "2026-10-13T22:00:01.000Z",
+      "summary": "★4370 Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator"
+    },
+    {
+      "id": "s-19795251d4",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "matrixarkai/TemporalStore: Open-source Rust TemporalStore for LLM context management, temporal features, and risk control",
+      "url": "https://github.com/matrixarkai/TemporalStore",
+      "publishedAt": "2026-10-13T21:59:45.000Z",
+      "summary": "★212 Open-source Rust TemporalStore for LLM context management, temporal features, and risk control"
+    },
+    {
+      "id": "s-05704482e6",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "decocms/studio: Open-source control plane for your AI agents. Connect tools, hire agents, track every token and dollar",
+      "url": "https://github.com/decocms/studio",
+      "publishedAt": "2026-10-13T21:59:36.000Z",
+      "summary": "★409 Open-source control plane for your AI agents. Connect tools, hire agents, track every token and dollar"
+    },
+    {
+      "id": "s-806f250cb4",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIで作ったものは誰のもの？ ― 規約を原文で読んだら、意外な3文字が付いていた",
+      "url": "https://qiita.com/Next-Survive/items/8aa25538ee3996ec2024",
+      "publishedAt": "2026-10-13T21:59:31.000Z",
+      "summary": "AI にアプリを作らせました。プログラムは一行も書いていません。でも動きます。見た目も悪くない。 そこで思いました。「これ、売れるんじゃないか」。 App Store の登録画面を開いて、手が止まりました。 ……待って。これ、僕のものなんだっけ？ 作ったのは AI です。..."
+    },
+    {
+      "id": "s-6f5a343491",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "langchain-ai/deepagentsjs: The batteries included agent harness.",
+      "url": "https://github.com/langchain-ai/deepagentsjs",
+      "publishedAt": "2026-10-13T21:59:20.000Z",
+      "summary": "★1604 The batteries included agent harness."
+    },
+    {
+      "id": "s-025da7ef6f",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "1ay1/agentty: AI pair programming in your terminal — one static binary, sub-ms startup, any model",
+      "url": "https://github.com/1ay1/agentty",
+      "publishedAt": "2026-10-13T21:59:12.000Z",
+      "summary": "★617 AI pair programming in your terminal — one static binary, sub-ms startup, any model"
+    },
+    {
+      "id": "s-0c600aca31",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "paperclipai/paperclip: The open-source app everyone uses to manage agents at work",
+      "url": "https://github.com/paperclipai/paperclip",
+      "publishedAt": "2026-10-13T21:58:44.000Z",
+      "summary": "★101518 The open-source app everyone uses to manage agents at work"
+    },
+    {
+      "id": "s-3bec81a94e",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "AppitStudio/awesome-jev: Curated Jev resources and runnable examples for typed AI decisions.",
+      "url": "https://github.com/AppitStudio/awesome-jev",
+      "publishedAt": "2026-10-13T21:58:31.000Z",
+      "summary": "★104 Curated Jev resources and runnable examples for typed AI decisions."
+    },
+    {
+      "id": "s-6054a57217",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "r-uby-dev/llm: An agentic runtime",
+      "url": "https://github.com/r-uby-dev/llm",
+      "publishedAt": "2026-10-13T21:58:20.000Z",
+      "summary": "★143 An agentic runtime"
+    },
+    {
+      "id": "s-622454709e",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Dodaios/Dodaios: Your AI assistant, built for the agentic era. Open source and local: talk to it, and it runs your agents, your coding CLIs, your browser and your apps. Windows, macOS, Linux.",
+      "url": "https://github.com/Dodaios/Dodaios",
+      "publishedAt": "2026-10-13T21:58:05.000Z",
+      "summary": "★200 Your AI assistant, built for the agentic era. Open source and local: talk to it, and it runs your agents, your coding CLIs, your browser and your apps. Windows, macOS, Linux."
+    },
+    {
+      "id": "s-0d57e9d0dc",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "堀井雄二氏がAIに指図して約30分で作った推理ゲーム、Claudeのアーティファクトで公開",
+      "url": "https://qiita.com/quotidia/items/4fc1f2b3ddd93fb6e92a",
+      "publishedAt": "2026-10-13T21:01:09.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 『ドラゴンクエスト』シリーズのゲームデザイナー、堀井雄二氏は2026年10月11日(日)、AIに指図して作ったという推理ゲーム『取調室の小宮』を自身のXで公開し、制作時間を「ほんの30分ほど」..."
+    },
+    {
+      "id": "s-082a179fcd",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI employee arrested for allegedly planting a bug in a conference room",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "publishedAt": "2026-10-13T20:45:25.000Z",
+      "summary": "An OpenAI engineer was arrested after the company said it discovered a \"sophisticated recording device\" hidden in one of its offices. The employee was identified as Abdulrahman Alfozan, a 35-year-old Saudi national. Alfozan is charged with using or endeavoring to use a device to intercept oral communications, according to a press release from the Department […]"
+    },
+    {
+      "id": "s-70093601d1",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
+      "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+      "publishedAt": "2026-10-13T20:36:44.000Z",
+      "summary": "A federal judge ruled that Apple can access OpenAI's interview materials involving former Apple employees, as well as private messages and testimony from key figures in the case."
+    },
+    {
+      "id": "s-6038fc0af7",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Character.AI files for bankruptcy, to sell some assets to Disney for $20 million",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x57zpx/characterai_files_for_bankruptcy_to_sell_some/",
+      "publishedAt": "2026-10-13T20:35:33.000Z",
+      "summary": "Are we seeing early signs of the bubble popping? &#32; submitted by &#32; /u/jld1532 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-4e258073e8",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "思考バブル - 頭の中を整理する脳内パズル",
+      "url": "https://qiita.com/lemonIN/items/eeadd7b00ff4962f3bbe",
+      "publishedAt": "2026-10-13T20:17:56.000Z",
+      "summary": "思考バブル - 頭の中を整理する脳内パズル はじめに 現代社会で生きる私たちは、常に多くの情報やタスク、そして雑念に囲まれています。「頭の中がごちゃごちゃして集中できない…」そんな誰もが共感する悩みを、ユニークなパズルゲームとして昇華させました。本作は、あなたの「思考」..."
+    },
+    {
+      "id": "s-48c0a8add9",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "「VBAではできない」と動画で言われていたことを、私の手元ではとっくにやっていた話 ── YouTubeの熱いコメント欄を見て、ふと自分の道具を振り返った夜の話",
+      "url": "https://qiita.com/shu15511551/items/5329bfb0335be4cecaab",
+      "publishedAt": "2026-10-13T20:16:44.000Z",
+      "summary": "はじめに 一昨日の夜に公開した前作の記事が、ありがたいことに大きな反響をいただいています。 自作の環境「秀コンボ」で起きた通信沈黙事件と、Claude自身が埋め込んだ脆弱な決め打ちをGeminiが暴いて修正した顛末をまとめた記事です。 管理画面を開いてみると、閲覧数..."
+    },
+    {
+      "id": "s-ca3fffde6e",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AIの出力を「理解する時間」がどんどん増えていく　Karpathy氏推奨の4手段：文章・図・Webページ・動画",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/13/news017.html",
+      "publishedAt": "2026-10-13T20:00:00.000Z",
+      "summary": "AI研究者アンドレイ・カルパシー氏が「これからはLLMの出力を理解することに多くの時間を使うようになる」と述べ、理解しやすくするための手段を4段階で示した。文章、図、Webページ、動画の順に何を頼めばよいか、筆者が実際に試した結果も添えて整理する。"
+    },
+    {
+      "id": "s-72146ea92b",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Why AnythingLLM is moving from Ollama to Lemonade and llama.cpp",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x5720r/why_anythingllm_is_moving_from_ollama_to_lemonade/",
+      "publishedAt": "2026-10-13T19:59:31.000Z",
+      "summary": "I&#39;m excited to see our Lemonade embedded SDK getting used out there! &#32; submitted by &#32; /u/jfowers_amd [link] &#32; [comments]"
+    },
+    {
+      "id": "s-2c0e898929",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Show HN: Parsimony – an open-source benchmark for how much code AI models add",
+      "url": "https://parsimony.lasu.dev/",
+      "publishedAt": "2026-10-13T19:50:31.000Z",
+      "summary": "points=14 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-c839b9474f",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Shopify opens its catalog up to more AI agents",
+      "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents",
+      "publishedAt": "2026-10-13T19:42:42.000Z",
+      "summary": "More AI agents will soon be able to browse and purchase from Shopify listings, marking an expansion of the company's agentic commerce ambitions. Shopify announced Tuesday it will let shoppers configure their AI agents to purchase products on their behalf, giving more agents access to over a billion listings in Shopify's catalog. (The catalog consists […]"
+    },
+    {
+      "id": "s-ffb4af635c",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Xbox is officially embracing the chaos of AI-powered game ports",
+      "url": "https://www.theverge.com/news/1010406/xbox-labs-game-decompiling-emulation-exploration",
+      "publishedAt": "2026-10-13T19:00:48.000Z",
+      "summary": "Retro gaming is going through a wild time at the moment, thanks to decompilations and recompilations that are letting gamers port classic titles to new devices, or merge code from two different games into a single new experience. Microsoft has witnessed skateboarding being modded into Call of Duty and Halo being played in a web […]"
+    },
+    {
+      "id": "s-49db83e253",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "ChatGPT and 18 = Chat18GPT",
+      "url": "https://news.ycombinator.com/item?id=50076748",
+      "publishedAt": "2026-10-13T18:54:01.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-d3f06c5cb2",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Flox Intelligence is building AI to keep wildlife away from trains, airports, and roads",
+      "url": "https://techcrunch.com/2026/10/13/flox-intelligence-is-building-ai-to-keep-wildlife-away-from-trains-airports-and-roads/",
+      "publishedAt": "2026-10-13T18:30:00.000Z",
+      "summary": "Flox's edge devices can identify animals and use species-specific sounds to drive them away from critical infrastructure."
+    },
+    {
+      "id": "s-eae8cf39d3",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Kroger to lay off 3K corporate employees over 3 years as it leans into AI",
+      "url": "https://abcnews.com/Business/wireStory/kroger-lay-off-3000-corporate-employees-3-years-137228598",
+      "publishedAt": "2026-10-13T18:15:08.000Z",
+      "summary": "points=6 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-c06a934276",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Facebook is giving users more control over their algorithm",
+      "url": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/",
+      "publishedAt": "2026-10-13T18:05:24.000Z",
+      "summary": "Meta announced the launch of its new AI-powered feature, “Your Algorithm,” a feature it first launched on Instagram."
+    },
+    {
+      "id": "s-574ccbff82",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Linus Torvalds is using AI to develop Linux kernel code now",
+      "url": "https://www.zdnet.com/innovation/linus-torvalds-uses-ai-to-write-linux-kernel-patch/",
+      "publishedAt": "2026-10-13T18:00:20.000Z",
+      "summary": "points=6 comments=3 (Hacker News)"
+    },
+    {
+      "id": "s-64be3d7642",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "I don’t miss the camera on the Ray-Ban Meta Audio glasses",
+      "url": "https://www.theverge.com/tech/1009128/ray-ban-meta-audio-glasses-review-smart-glasses-headphones-wearables",
+      "publishedAt": "2026-10-13T18:00:00.000Z",
+      "summary": "The other day I whizzed past several people while running in the park, my playlist blasting at full volume. The next morning, I smiled at a barista while ordering a caramel apple-flavored matcha latte. Afterward, I sat on a park bench reading a book, called up a pal to chat about her recent trip to […]"
+    },
+    {
+      "id": "s-54e0547a94",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Show HN: Deslop – Oxlint rules for AI-generated TypeScript",
+      "url": "https://github.com/maharshi365/deslop",
+      "publishedAt": "2026-10-13T17:52:57.000Z",
+      "summary": "points=22 comments=5 (Hacker News)"
+    },
+    {
+      "id": "s-fa1a37fdc4",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world",
+      "url": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
+      "publishedAt": "2026-10-13T17:30:00.000Z",
+      "summary": "University of Michigan spinout Laplace Intelligence uses AI agents and interactive simulation to stress-test robots and self-driving vehicles before deployment. The profitable startup is competing in Startup Battlefield at TechCrunch Disrupt, October 13-15 in San Francisco."
+    },
+    {
+      "id": "s-d59d959ca7",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Pluto Security raises $42M as AI gives enterprise security teams a new headache",
+      "url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
+      "publishedAt": "2026-10-13T17:18:25.000Z",
+      "summary": "The problem with giving everyone in a company access to AI tools is that people will use them in unexpected ways. And that fact is steadily seeding fears that companies now have new, gaping security holes in their systems or, at least, will soon."
+    },
+    {
+      "id": "s-8c17f1f1ac",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Redesigning source control at Anthropic",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "publishedAt": "2026-10-13T17:17:00.000Z",
+      "summary": "Published Oct 13, 2026 As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months. At Anthropic, coding is no longer the bottleneck to building systems or doing researc..."
+    },
+    {
+      "id": "s-d1d86d368e",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "\"New AI fake text generator may be too dangerous to release, say creators\" (2019 Guardian headline)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x52lsb/new_ai_fake_text_generator_may_be_too_dangerous/",
+      "publishedAt": "2026-10-13T17:15:27.000Z",
+      "summary": "I&#39;m sure some here read this at the time and remember, but I recently found this hilarious Guardian article from 2019 through Wikipedia: https://www.theguardian.com/technology/2019/feb/14/elon-musk-backed-ai-writes-convincing-news-fiction Some choice quotes: &quot;OpenAI ... says its new AI model, called GPT2 is so good and the risk of malicious use so high that it is breaking from its normal "
+    },
+    {
+      "id": "s-b7825d7053",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "LiquidAI/LFM2.5-24B-A2B",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x52kco/liquidailfm2524ba2b/",
+      "publishedAt": "2026-10-13T17:14:08.000Z",
+      "summary": "Gguf&#39;s: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF Free Demo: https://playground.liquid.ai &quot;LFM2.5-24B-A2B is a 24B-parameter reasoning model with only 2B active parameters, built for fast, private agents on-device . It is the largest and final model in the LFM2.5 family, which now spans two orders of magnitude: from LFM2.5-230M to LFM2.5-24B-A2B. Best-in-class agent : Competitiv"
+    },
+    {
+      "id": "s-550c4c02e9",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "publishedAt": "2026-10-13T17:05:48.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-c9abe9b08c",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Facebook will let you customize your feed algorithm using AI",
+      "url": "https://www.theverge.com/tech/1010344/meta-facebook-your-algorithm-ai",
+      "publishedAt": "2026-10-13T17:01:31.000Z",
+      "summary": "Facebook's new \"Your Algorithm\" feature will let you directly add and manage topics you want to see in your feed and Facebook Reels. Meta says your recommendations \"respond right away\" after you make updates using the new feature by hitting \"interested\" or \"not interested\" for different topics. Your Algorithm previously launched on Instagram earlier this […]"
+    },
+    {
+      "id": "s-5b75b71a64",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Google Play now lets anyone build private, vibe-coded apps that run on Android",
+      "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
+      "publishedAt": "2026-10-13T17:00:00.000Z",
+      "summary": "Google is making it easier to build and use personal Android apps created with AI, without having to make them available to everyone on the Play Store."
+    },
+    {
+      "id": "s-a3312401eb",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Google makes it easier to launch your vibe-coded apps",
+      "url": "https://www.theverge.com/tech/1009066/google-play-vibe-coded-android-apps-launch",
+      "publishedAt": "2026-10-13T17:00:00.000Z",
+      "summary": "The next time you vibe-code a custom app with Google's AI Studio, you won't have to connect your phone to a computer to install it. On Tuesday, Google announced a new feature in the US that will allow you to launch personal apps directly through the Play Store. Google first launched the ability to vibe-code […]"
+    },
+    {
+      "id": "s-e8881f4e9b",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "It’s ‘incomprehensible’ that Instagram allowed an AI image of Mia Goth to spread, say her reps",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010277/mia-goth-instagram-ai-shirt-deepfake-divorce",
+      "publishedAt": "2026-10-13T16:42:51.000Z",
+      "summary": "Earlier this month, news broke that actress Mia Goth had filed for divorce from actor and filmmaker Shia LaBeouf. An Instagram post from the account miagoth_ - marked with a blue verified checkmark - quickly spread. The post shows Goth in a T-shirt that reads \"MY EX IS MY BIGGEST FAN\" in bold black letters. […]"
+    },
+    {
+      "id": "s-950fd49d85",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "SpaceX and Google both said no. Now his software is riding a SpaceX rocket next to Google’s",
+      "url": "https://techcrunch.com/2026/10/13/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
+      "publishedAt": "2026-10-13T16:30:00.000Z",
+      "summary": "Satlyt wants to be the Android of orbital computing, offering open software that works on many companies' satellites, versus SpaceX's closed, all-in-one iPhone-style approach."
+    },
+    {
+      "id": "s-12e59a3a5c",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Tencent open-sourced Agent Memory and it runs 100% locally on SQLite",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x50rgo/tencent_opensourced_agent_memory_and_it_runs_100/",
+      "publishedAt": "2026-10-13T16:07:55.000Z",
+      "summary": "&#32; submitted by &#32; /u/AdamDhahabi [link] &#32; [comments]"
+    },
+    {
+      "id": "s-66cb1e6884",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "summary": "We’re giving developers, enterprises, scientists, and consumers access to Gemini 4 Argon, our latest frontier model."
+    },
+    {
+      "id": "s-06d31f7b83",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Cross-cloud conversational analytics made simple with open standards",
+      "url": "https://cloud.google.com/blog/products/data-analytics/cross-cloud-conversational-analytics-with-borderless-lakehouse/",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "summary": "The reality for most organizations is that data lives everywhere. As engineering teams expand and adopt specialized platforms for their workloads, enterprise data naturally disperses across multiple clouds and operational systems. When analytical and AI initiatives require context from across the entire organization,these teams traditionally face a difficult trade-off: build complex extraction pip"
+    },
+    {
+      "id": "s-d545f06f8e",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Gemini 4 Argon available on Google Cloud, built to help solve your business’ hardest problems",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud/",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "summary": "Last week we announced that Gemini Enterprise has evolved to make it even simpler to get work done, and introduced the Gemini agent , your new universal agent for work. It's always on and ready to answer your questions. It will write code, complete longer and more complex tasks, or perform whatever you need to get the job done, all from a single prompt box. And model intelligence underpins it all."
+    },
+    {
+      "id": "s-24ef7cf40b",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Google finally releases Gemini 4 Argon",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+      "publishedAt": "2026-10-13T16:00:00.000Z",
+      "summary": "After months sitting on the sidelines of the frontier AI race, Google has finally launched its long-awaited Gemini 4 Argon model, claiming it can compete with the best the industry has to offer. Google says Argon delivers \"frontier reasoning and improved performance across complex workflows,\" while cutting down on hedging, repetition, and the cliches that […]"
+    },
+    {
+      "id": "s-8440981c4d",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "Running RAG with a (small) language model in the browser",
+      "url": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser/",
+      "publishedAt": "2026-10-13T15:56:29.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-1ac263d2b9",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "PSA for 3090 FE owners: Running LLMs overheats your VRAM",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4z19k/psa_for_3090_fe_owners_running_llms_overheats/",
+      "publishedAt": "2026-10-13T15:02:59.000Z",
+      "summary": "https://preview.redd.it/p6i9qifyy8vh1.png?width=2069&amp;format=png&amp;auto=webp&amp;s=2b1e3c7c4fc95f12f0f7d417a4d21410aebfbd35 The 3090 Founders edition has a reputation for hot VRAM. Since LLM token generation maxes out VRAM&#39;s read capacity, I checked VRAM temps with Nvidia&#39;s stock fan/power curves and discovered that VRAM hits 112C within seconds of starting token generation. The VRAM "
+    },
+    {
+      "id": "s-4e49d23a4e",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "4x 6000 Pro for the company",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4yoqm/4x_6000_pro_for_the_company/",
+      "publishedAt": "2026-10-13T14:49:31.000Z",
+      "summary": "Here is how i serve 40 people (10 of them developers) with local AI services. n8n for automatisation whisper and Vexa AI, a bot joins Teams and makes transcripts, n8n later extracts decisions and todos OpenWebUI, ChatGPT-like webinterface for everyone, most agentic features are disabled, websearches via Tavily are possible Every developer has an API key to use via BiFrost (OpenAI compatible API ro"
+    },
+    {
+      "id": "s-a693b9c5fc",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Netflix’s documentary of Huggingface discussion",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x4y1eq/netflixs_documentary_of_huggingface_discussion/",
+      "publishedAt": "2026-10-13T14:24:21.000Z",
+      "summary": "It just popped on my feed. I watched the teaser in the Netflix app and a few things jumped out The constant use of anthromorphism using terms like altruism and sacrifice when in engineering literally there are terms like kill, killall, pkill for terminating processes, therefore our adoptiom of similar language with AI agents for starting and ending processes. Using war analogies “there’s this mome"
+    },
+    {
+      "id": "s-5d59b0a237",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "米Getty Imagesが破産申請へ　AI画像の台頭で経営悪化、「報道写真」軸に年内の再建目指す",
+      "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002234/",
+      "publishedAt": "2026-10-13T14:03:48.000Z",
+      "summary": "再建後は、創業家のゲッティ家と米投資会社Koch Equity Developmentの関連会社が株式を100％保有する。両者は最大5億3300万ドルを新たに出資するほか、債権者も金利負担の軽減や返済期限の延長などに応じた。 Getty Imagesを巡っては、競合の米Shutterstockとの合併が破談になったばかりだった。2025年1月に約37億ドル規..."
+    },
+    {
+      "id": "s-5616a4dd48",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "エンターテインメントを楽しみ、家を管理する新しい方法、Apple HomeViewが登場",
+      "url": "https://www.apple.com/jp/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+      "publishedAt": "2026-10-13T14:02:42.000Z",
+      "summary": "エンターテインメントを楽しみ、つながりを保ち、家を管理する新しい方法、Apple HomeViewが登場 Apple HomeViewは、Apple IntelligenceとSiri AIを活用し、プライバシーとセキュリティを中核に据えて設計されています カリフォルニア州クパティーノ Appleは本日、家の中心となり、家の中の一人ひとりに合わせてパーソナ..."
+    },
+    {
+      "id": "s-82ec47719a",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "TechCrunch Disrupt 2026: Day 1",
+      "url": "https://techcrunch.com/2026/10/13/techcrunch-disrupt-2026-day-1/",
+      "publishedAt": "2026-10-13T14:00:00.000Z",
+      "summary": "TechCrunch Disrupt 2026 officially kicks off today. See what's in store for Day 1 (Oct. 13) at San Francisco's Moscone West. Don't miss it. Register for your pass now and meet 10,000+ tech leaders at the startup epicenter of the year."
+    },
+    {
+      "id": "s-473efef3f7",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "高校生から「生成AIについて質問に答えてほしい」とメールが来たが、高校名も氏名も教員名も無かったので、研究室の学生に「依頼メールとして何が足りないか」考えてもらった",
+      "url": "https://togetter.com/li/2757810",
+      "publishedAt": "2026-10-13T13:39:16.000Z",
+      "summary": "佐藤和紀 @KazunoriSATO4 高校生から「生成AIについて探究しているので質問に答えてほしい」というメールが届きました。 意欲は素晴らしいなと思ったのですが，「○○県内の高校生」としか書かれておらず，高校名も氏名も指導教員名も不明でした。 誤字も多く，数日後の回答期限が一方的に書かれていました。 そこで，研究..."
+    },
+    {
+      "id": "s-32516cca86",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "キャッシュレスサービス「IDARE」、約13万人の個人情報漏えい　残高や取引履歴なども",
+      "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002233/",
+      "publishedAt": "2026-10-13T13:34:54.000Z",
+      "summary": "プリペイド式のキャッシュレスサービス「IDARE」を運営するFivotは10月13日、第三者からの不正アクセスにより、ユーザーの個人情報が外部に漏えいしたと発表した。対象は9月27日までにIDAREに登録した退会済みを含む12万9659人で、電話番号やメールアドレス、残高情報、取引履歴などが含まれる。 カスタマーサポートなど..."
+    },
+    {
+      "id": "s-e758eb4ad8",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "フロントエンドのXSS対策：サニタイズ（DOMPurify）とエスケープの決定的な違いと実践的使い分け - Qiita",
+      "url": "https://qiita.com/Maku-Inc/items/2d3bff89c7d846d4ce56",
+      "publishedAt": "2026-10-13T12:48:46.000Z",
+      "summary": "Deleted articles cannot be recovered. Draft of this article would be also deleted. Are you sure you want to delete this article? はい、承知いたしました。フロントエンドのXSS対策に関する技術記事を、指定された制約事項（2000文字〜3000文字、大見出し3個まで、簡潔な記述、2026年反映）を厳守し、Markdown形..."
+    },
+    {
+      "id": "s-0dcc717a39",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "私物Macと仕事Macのdotfilesとアプリ管理をmise bootstrapで管理しやすくした - $shibayu36->blog;",
+      "url": "https://blog.shibayu36.org/entry/2026/10/13/173000",
+      "publishedAt": "2026-10-13T12:43:28.000Z",
+      "summary": "自分の設定ファイルやインストールするアプリは、https://github.com/shibayu36/config-file のリポジトリで管理している。これまでは私物Macと仕事Macが全く同じになるように、雑にsymlinkを張るスクリプトで運用していた。新しい仕事用のMacをもらったのをきっかけに、私物だけ・仕事だけに入れるものをちゃんと分けつ..."
+    },
+    {
+      "id": "s-94e012841b",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "One Agent Development Kit, five languages",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/one-agent-development-kit-five-languages/",
+      "publishedAt": "2026-10-13T12:22:00.000Z",
+      "summary": "When we talk about agents, that doesn't necessarily mean we're talking about Python. In today's modern ecosystem, an agent might run as a high-concurrency Go microservice on Cloud Run , or live inside a browser tab calling Chrome's on-device model. Yet many agent frameworks assume a Python-only stack. That assumption forces teams to either spin up a Python service just for their agent workloads, o"
+    },
+    {
+      "id": "s-774f7412d1",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "【Claude Mythos級オープンモデル拡散で始まる悪夢】チームみらい・安野貴博「従来型サイバー防衛ではもう無理」／「1～2年で発生」今井翔太が懸念する「GPT暴走」以上の事件【AI QUEST】",
+      "url": "https://www.youtube.com/watch?v=MJk8JDTUoGE",
+      "publishedAt": "2026-10-13T12:19:34.000Z",
+      "summary": "AI研究者の今井翔太さんと知能の未来について探求する「AI QUEST」 今回のテーマは【安野さんに聞く AI時代の「日本の生きる道」】です。 番組初のゲストとして、チームみらい党首の安野貴博さんが登場。 今井さんと同じ東京大学・松尾研究室出身で、AIエンジニアとしての経験を持つ安野さんと、技術と政策の両面から日..."
+    },
+    {
+      "id": "s-ffc748cb8d",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "publishedAt": "2026-10-13T12:00:00.000Z",
+      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live."
+    },
+    {
+      "id": "s-db73192563",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ファインチューニング入門：SFT・LoRA・QLoRAの関係をわかりやすく解説",
+      "url": "https://zenn.dev/sog00/articles/llm-sft-vs-lora",
+      "publishedAt": "2026-10-13T11:43:33.000Z",
+      "summary": "1. はじめに LLM を自分のタスク向けに調整しようと調べ始めると、SFT、LoRA、QLoRA、フルファインチューニング、RLHF、DPO など、たくさんの用語が出てきます。 特に分かりにくいのが、SFT と LoRA の関係です。 どちらも「ファインチューニング手法」として、同じ並びで紹介されることが多い 「LoRA ファインチューニング」「LoRA で SFT する」のような言い方を見かけるが、どちらかがもう一方に含まれるのか、それとも別の選択肢なのかが分からない 実はこの 2 つは、比べる軸がそもそも違います。SFT は「何を学ばせるか」、LoRA は「どこを更新するか..."
+    },
+    {
+      "id": "s-b3ac436e56",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIの欠点とその対策",
+      "url": "https://zenn.dev/archidoc/articles/22b921791572ce",
+      "publishedAt": "2026-10-13T11:42:57.000Z",
+      "summary": "ここ1ヶ月コーディングでAIをがっつり使ってみた。 2026年10月の時点で、AIの良い点も悪い点も見えてきたので、ここに速報的に残しておきたい。 非常に賢く、堅実な仕事をするマジメ君。 だが、アホである。 超近視眼的、表面しか見ていない、俯瞰できない。 非常に賢いが故に、このような欠点が最後まで表に出にくい（言い訳は一流）。 AIは作業は出来る。しかし設計は出来ない。 極めて正確な仕事を行う。だが、間違いを犯す。 仕事は速い。だが、時間がかかる。 近視眼的。そして、問題の表層しか見ていない。 だから、全体を見渡して、問題の深層を見るのは、人間の役割。 AIを信じる。だが、AIは無敵では..."
+    },
+    {
+      "id": "s-9a3453258d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AWS AIB-C01（AI Business Strategist）ベータ試験の受け方と準備の考え方",
+      "url": "https://zenn.dev/sunsun_eng/articles/aws-ai-business-strategist-aib-c01-beta",
+      "publishedAt": "2026-10-13T11:37:09.000Z",
+      "summary": "AWS AIB-C01（AI Business Strategist）ベータ試験の受け方と準備の考え方 この記事の要点 AWS Certified AI Business Strategist（AIB-C01）は、AIをビジネス戦略の面から扱う新しいAWS認定で、ベータ試験の体験記がQiitaで公開されています（出典: https://qiita.com/riz3f7/items/fe5704cc76755bb8700f ）。 試験の料金・問題数・合格基準は、公式の試験ガイドで確認するまで確定情報として扱わず、本記事では TBD としています（公式: https://aws.a..."
+    },
+    {
+      "id": "s-ef196f31e7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【制御工学×LLM】パラメトリックEQ・ノッチフィルタ型アテンション制御：Q値可変マスクによる動的ハルシネーション除去",
+      "url": "https://zenn.dev/nanashi_os/articles/3d65ee01d67cdf",
+      "publishedAt": "2026-10-13T11:34:06.000Z",
+      "summary": "1. はじめに： Transformerのマルチヘッド・アテンション空間における「周波数フィルタリング」Transformerのマルチヘッド・アテンションや位置埋め込み（RoPE等）は、本質的に「異なる周波数特性・特徴空間」を分担して処理する一種のスペクトル分解器として機能しています。 しかし、標準的なアテンション機構には、オーディオ信号処理における「特定帯域のピンポイントな減衰（ノッチフィルタ）やQ値（切れ味）の動的調整」に相当する明示的なコントロールレイヤが存在しません。 本稿では、パラメトリックイコライザ（PEQ）の数理モデルをアテンション・スコアに適用し、特定の意味的ノイズや..."
+    },
+    {
+      "id": "s-e7c444e243",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIエージェントのインシデント対応モードを設計する：初動・判断・操作の分け方",
+      "url": "https://zenn.dev/takikawayuu/articles/8afd322b5c8c94",
+      "publishedAt": "2026-10-13T11:10:27.000Z",
+      "summary": "インシデント対応中に欲しい情報は、普段の技術調査とは少し違います。詳しい原因の説明も必要ですが、その前に、今も影響が続いているのか、何が分かっているのか、次にどの対応を取れるのかを知りたい。AIエージェントを運用の支援に使うときも、この順序を考える必要があります。 私は、日常の技術サポートで使っているAIエージェントに、インシデント対応時の調査と応答の方針を持たせています。ログや状態を調べ、対応案を整理する役割です。その設計で重視したのは、初動で返す情報の順序と、実際の操作に進む条件を分けることでした。 考え直すきっかけの一つは、依存パッケージの問題に対する復旧の相談でした。詳しい調査や..."
+    },
+    {
+      "id": "s-cffa081235",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ShipatonでAIにアプリを作ってもらったときの試行錯誤メモ",
+      "url": "https://zenn.dev/mae616/articles/4cb6106868632d",
+      "publishedAt": "2026-10-13T10:42:52.000Z",
+      "summary": "RevenueCat主催のShipatonで、iPhone向けのネイティブアプリ「How We Work」を作りました。 そのときに実験的に試した内容を記録したメモです。 最近は非エンジニアの方もAIで開発するので、そうした方にも読んでもらうならnoteとZennのどちらが合うのか分からず、今回は試しに両方に載せています。 https://note.com/mae616/n/na6df4d5a7d27 https://revenuecat-shipaton-2026.devpost.com/ 作ったもの https://howwework.app/ 審査待ちのときの、ChatGPT..."
+    },
+    {
+      "id": "s-84bcba7944",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "肩肘張らないプロジェクトマネジメントの第一歩　～AI時代をいきる”新卒”たちへ～",
+      "url": "https://zenn.dev/tokium_dev/articles/pjm-first-step-for-newgrads",
+      "publishedAt": "2026-10-13T10:24:54.000Z",
+      "summary": "! 一般に小難しく聞こえる「プロジェクトマネジメント」を理解すべく、「自身の日常の体験」とつないで、難しく考えすぎず捉えてみよう、というお話です。 終盤は、それを踏まえつつ、今の時代だからこそ、どういった思いを込めて仕事ができるといいだろうか、というお話をそえました。 ”新卒”！と大々的にかきましたが、もちろん新卒に限った話ではありません！ 「AIがあるのに、仕事ってなんかうまくいかないなぁ」 「AIを上手に使いこなせば、経験や世代を超え、多くの困難な仕事や課題にチャレンジし、乗り越えていける！☆」 みんなが春、”新卒”として入社し、研修でそう伝えられてから、約半年。 現場に入..."
+    },
+    {
+      "id": "s-c48f77cfce",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "Open models have real benefits. Do they outweigh the risks?",
+      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
+      "publishedAt": "2026-10-13T10:00:00.000Z",
+      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk. The report’s core concern is that the…"
+    },
+    {
+      "id": "s-79e1687923",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "既存のDevOpsプラットフォームをAI時代へ：設計と実践から考えたこと",
+      "url": "https://zenn.dev/takikawayuu/articles/c10ff19ae58af5",
+      "publishedAt": "2026-10-13T09:46:41.000Z",
+      "summary": "AIがコードを書く場面が増えると、開発プラットフォームにも新しい問いが生まれます。コードがIDEやターミナル、サンドボックスで生成されるようになったとき、これまで人が画面を操作することを前提にしていたビルド・デプロイ・リリースの仕組みは、どう変わるべきでしょうか。 私たちは、既存のフロントエンド開発・デリバリープラットフォームを出発点に、CLIによる操作、AIエージェントからの利用、実行手順の開放、そしてタスクを中心とした協働について考えてきました。その過程で、AIへの対応には、既存システムの価値を見直す側面があると感じています。 アプリケーションの情報、権限、環境、成果物、リリースのル..."
+    },
+    {
+      "id": "s-fa4b2a0030",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "国産AI「Sarashina」が無料で試せるWebサイト、ソフトバンク子会社が公開　6つのAIモデルが呼び出せるAPIも",
+      "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002224/",
+      "publishedAt": "2026-10-13T09:24:12.000Z",
+      "summary": "SB Intuitionsは10月13日、国産生成AI「Sarashina」を試せる「Sarashinaサービス」の無償β版の提供を始めた。Googleアカウントでログインするだけで、6つのAIモデルのAPIとチャット機能を無料で使える。"
+    },
+    {
+      "id": "s-6b99b16975",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "AI labs are buying data from dead startups to train their models",
+      "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
+      "publishedAt": "2026-10-13T09:00:00.000Z",
+      "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around…"
+    },
+    {
+      "id": "s-fa0f64a0bb",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "新サービス「Gemini agent」は企業向け、「Gemini Enterprise」加入者は追加料金なし　日本提供時期は未定",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/13/2000002199/",
+      "publishedAt": "2026-10-13T06:24:48.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-f8eab0acbb",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "SpaceXAI、Xのユーザー名を「SpaceXSI」に変更　“AI呼称やめる”宣言から1週間ほどで",
+      "url": "https://www.itmedia.co.jp/news/article/2610/13/2000002209/",
+      "publishedAt": "2026-10-13T04:18:06.000Z",
+      "summary": "米SpaceXのAI部門SpaceXAIが、X公式アカウントの名称を「SpaceX Super Intelligence」（@SpaceXSI）に変えた。イーロン・マスクCEOが10月4日に改名を予告してから、1週間ほどでの実行となった。"
+    },
+    {
+      "id": "s-b8c17fb851",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "国産AI「Sarashina」を無料で試せる　ソフトバンク傘下が新サービスβ版　API・チャットに対応",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/13/2000002210/",
+      "publishedAt": "2026-10-13T03:54:46.000Z",
+      "summary": "ソフトバンク傘下のSB Intuitionsは、同社が開発する国産AI「Sarashina」を利用できる「Sarashinaサービス」の無償β版の提供を始めた。"
+    },
+    {
+      "id": "s-318e18fa83",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Microsoft、Copilotなどを自社開発チップで稼働　新チップでNVIDIA依存から脱却狙いか",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/13/2000002207/",
+      "publishedAt": "2026-10-13T03:34:18.000Z",
+      "summary": "Microsoftが自社AIアクセラレータの第3世代「Maia 300」を発表。本番配備は2027年開始で、Maiaファミリーをマルチギガワット規模に拡大する計画。GPUベース比で電力当たり生成トークン数40％増を見込むという。"
+    },
+    {
+      "id": "s-290aad755d",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "エージェント型AIがプロジェクトを切り盛りする日　その時、人は？",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/13/news034.html",
+      "publishedAt": "2026-10-13T03:15:00.000Z",
+      "summary": "便利になるからこそ、人の力が問われますね。"
+    },
+    {
+      "id": "s-ef45d86cdc",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「FDEは“成果報酬”にすべきだ」　日本オラクル社長に筆者の持論をぶつけてみた",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2610/13/news058.html",
+      "publishedAt": "2026-10-13T03:00:00.000Z",
+      "summary": "企業のAI活用に向けて注目されるFDE。そのあるべき姿とは何か。例えば、FDEは成果報酬であるべきではないだろうか。日本オラクルの「オラクル版FDE」を紹介しつつ、FDEのあるべき姿と、これからFDEを使おうとする企業が押さえるべきポイントを考察する。"
+    }
+  ]
+}
