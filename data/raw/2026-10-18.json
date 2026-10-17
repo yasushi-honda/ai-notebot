@@ -1,0 +1,610 @@
+{
+  "date": "2026-10-18",
+  "collectedAt": "2026-10-17T22:00:26.950Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-7df45792b2",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "filedcom/opentax: Fully open-source US federal tax engine. Single binary cli. Runs on macOS, Linux, and Windows. Built for AI agents using AI agents.",
+      "url": "https://github.com/filedcom/opentax",
+      "publishedAt": "2026-10-17T22:00:11.000Z",
+      "summary": "★117 Fully open-source US federal tax engine. Single binary cli. Runs on macOS, Linux, and Windows. Built for AI agents using AI agents."
+    },
+    {
+      "id": "s-8c7f47f553",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "awkoy/notion-mcp-server: Notion MCP server for Claude, Cursor, ChatGPT & Claude Desktop. Connect AI agents to Notion via Model Context Protocol — pages, databases, blocks, comments, files.",
+      "url": "https://github.com/awkoy/notion-mcp-server",
+      "publishedAt": "2026-10-17T22:00:00.000Z",
+      "summary": "★177 Notion MCP server for Claude, Cursor, ChatGPT & Claude Desktop. Connect AI agents to Notion via Model Context Protocol — pages, databases, blocks, comments, files."
+    },
+    {
+      "id": "s-289380b1e8",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "wshobson/maverick-mcp: Stock market MCP server for Yahoo Finance data, technical analysis, portfolio tracking, and Python backtesting. Runs locally with no API key for core tools.",
+      "url": "https://github.com/wshobson/maverick-mcp",
+      "publishedAt": "2026-10-17T21:59:50.000Z",
+      "summary": "★706 Stock market MCP server for Yahoo Finance data, technical analysis, portfolio tracking, and Python backtesting. Runs locally with no API key for core tools."
+    },
+    {
+      "id": "s-02489b0efa",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "mindroom-ai/mindroom: AI agents that know you and your work, in a chat app anyone can use. Open source, any model, self-host or hosted.",
+      "url": "https://github.com/mindroom-ai/mindroom",
+      "publishedAt": "2026-10-17T21:59:38.000Z",
+      "summary": "★336 AI agents that know you and your work, in a chat app anyone can use. Open source, any model, self-host or hosted."
+    },
+    {
+      "id": "s-34ab46e84a",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "IncarnaMind/IncarnaMind: IncarnaMind is a free, open-source desktop app for macOS, Windows and Linux where you write with AI and ask questions about your own documents (PDF, Word, PowerPoint, Excel and more). It can check every sentence and figure in a draft against those documents, whoever wrote it, and every answer cites the exact page it comes from.",
+      "url": "https://github.com/IncarnaMind/IncarnaMind",
+      "publishedAt": "2026-10-17T21:59:27.000Z",
+      "summary": "★816 IncarnaMind is a free, open-source desktop app for macOS, Windows and Linux where you write with AI and ask questions about your own documents (PDF, Word, PowerPoint, Excel and more). It can check every sentence and figure in a draft against those documents, whoever wrote it, and every answer cites the exact page it comes from."
+    },
+    {
+      "id": "s-3473fb37b3",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "xlnfinance/xln: 0.1 - Q1 2026. DRAFT xln: a credit+collateral netting-account L2 for all EVM and future CBDC jurisdictions—unicast O(1) per hop, link-capped risk, local state, sovereign exits.",
+      "url": "https://github.com/xlnfinance/xln",
+      "publishedAt": "2026-10-17T21:59:23.000Z",
+      "summary": "★102 0.1 - Q1 2026. DRAFT xln: a credit+collateral netting-account L2 for all EVM and future CBDC jurisdictions—unicast O(1) per hop, link-capped risk, local state, sovereign exits."
+    },
+    {
+      "id": "s-3345b33384",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "inkeep/open-knowledge: Beautiful, AI-native markdown IDE and LLM wiki",
+      "url": "https://github.com/inkeep/open-knowledge",
+      "publishedAt": "2026-10-17T21:59:21.000Z",
+      "summary": "★4605 Beautiful, AI-native markdown IDE and LLM wiki"
+    },
+    {
+      "id": "s-2e3bdb14fd",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "theguysudo/ENZO: Self-hosted AI workspace with agents, skills, and tools (Gmail, Calendar) that runs entirely on your own provider API keys (BYOK). Bring your own keys — Groq, OpenRouter, NVIDIA, Hugging Face, Google AI.",
+      "url": "https://github.com/theguysudo/ENZO",
+      "publishedAt": "2026-10-17T21:59:08.000Z",
+      "summary": "★114 Self-hosted AI workspace with agents, skills, and tools (Gmail, Calendar) that runs entirely on your own provider API keys (BYOK). Bring your own keys — Groq, OpenRouter, NVIDIA, Hugging Face, Google AI."
+    },
+    {
+      "id": "s-a872a6297e",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "mattrobinsonsre/terrapod: Open-source Terraform Enterprise replacement",
+      "url": "https://github.com/mattrobinsonsre/terrapod",
+      "publishedAt": "2026-10-17T21:58:58.000Z",
+      "summary": "★261 Open-source Terraform Enterprise replacement"
+    },
+    {
+      "id": "s-cb503e4980",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "daniandtheweb/sd.cpp-webui: A lightweight Gradio WebUI for stable-diffusion.cpp.",
+      "url": "https://github.com/daniandtheweb/sd.cpp-webui",
+      "publishedAt": "2026-10-17T21:58:52.000Z",
+      "summary": "★168 A lightweight Gradio WebUI for stable-diffusion.cpp."
+    },
+    {
+      "id": "s-2ee9a84eaf",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "useagenthq/useagent: The open-source Devin alternative. Run Claude Code, Codex or OpenCode in isolated cloud workspaces you can self-host.",
+      "url": "https://github.com/useagenthq/useagent",
+      "publishedAt": "2026-10-17T21:58:42.000Z",
+      "summary": "★365 The open-source Devin alternative. Run Claude Code, Codex or OpenCode in isolated cloud workspaces you can self-host."
+    },
+    {
+      "id": "s-9270533127",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "morluto/rea: Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "publishedAt": "2026-10-17T21:58:37.000Z",
+      "summary": "★306618 Reverse engineer anything with agents, from app behavior down to native binaries."
+    },
+    {
+      "id": "s-286968fb4a",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "iuliandita/digarr: Self-hosted music discovery for your library. Find artists and albums, review recommendations, and send them to Lidarr, slskd, or playlists. Bring your own AI provider or local model. Works without Lidarr.",
+      "url": "https://github.com/iuliandita/digarr",
+      "publishedAt": "2026-10-17T21:58:15.000Z",
+      "summary": "★310 Self-hosted music discovery for your library. Find artists and albums, review recommendations, and send them to Lidarr, slskd, or playlists. Bring your own AI provider or local model. Works without Lidarr."
+    },
+    {
+      "id": "s-c0e198ef7b",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "maziyarpanahi/openmed: Local-first healthcare AI: clinical NER and HIPAA PII de-identification on hardware you control. 2,200+ medical models, 35 model-backed PII languages, and Python, MLX, Android and browser runtimes. Apache-2.0 SDK.",
+      "url": "https://github.com/maziyarpanahi/openmed",
+      "publishedAt": "2026-10-17T21:57:43.000Z",
+      "summary": "★5695 Local-first healthcare AI: clinical NER and HIPAA PII de-identification on hardware you control. 2,200+ medical models, 35 model-backed PII languages, and Python, MLX, Android and browser runtimes. Apache-2.0 SDK."
+    },
+    {
+      "id": "s-d4d8a21bd9",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web."
+    },
+    {
+      "id": "s-9c1c8207c7",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Weak Links Start to Show in A.I. Borrowing",
+      "url": "https://www.nytimes.com/2026/10/17/business/ai-debt-coreweave-oracle-softbank.html",
+      "publishedAt": "2026-10-17T21:25:57.000Z",
+      "summary": "points=5 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-f420d0a9a7",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "2 gaming PCs + an M4 Pro MacBook over Ethernet + 2 iPhone 17 Pro Maxes over USB-C: Qwen3.8 Flash Next at 37-39 tok/s at 60k context (262k layout in the works)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8ley0/2_gaming_pcs_an_m4_pro_macbook_over_ethernet_2/",
+      "publishedAt": "2026-10-17T21:13:35.000Z",
+      "summary": "DISCLAIMER: the prefill rate on the dashboard in the video counts cached prompt tokens as if they were read again, so it reads high. The captions show the server’s real end-to-end numbers, and so does everything below. The decode numbers on screen are correct. After the last post I wanted to try something that doesn’t fit on any one machine I own. Qwen 3.8 Flash Next is a 48-layer mixture-of-exper"
+    },
+    {
+      "id": "s-e4dde0eb7e",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "小型AIモデルはIoT機器で自己複製できるか：Anthropic Frontier Red Teamの実験",
+      "url": "https://qiita.com/quotidia/items/a25b5db0654c1b0c2470",
+      "publishedAt": "2026-10-17T21:01:02.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 米Anthropicの研究チームは2026年10月12日(月) (米国時間)、研究者が自分で買った1台約55ドルのテレビボックス15台をつなぎ、260億パラメータ (AIの中で、学習によって調..."
+    },
+    {
+      "id": "s-3f3da8996d",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "DeepSeek V4.1 Flash 1017 [GGUF + Abliterated]",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8ke24/deepseek_v41_flash_1017_gguf_abliterated/",
+      "publishedAt": "2026-10-17T20:29:49.000Z",
+      "summary": "Hi all, as many of you are probably aware DeepSeek V4.1 Flash 1017 was released yesterday. I put up an abliterated model + GGUF quants for both the base and abliterated version (no imatrix yet that&#39;s WIP) For the abliterated model, most refusals are successfully removed. On the original V4.1 model, 97/100 prompts were refused; after abliteration only 4/100 are. In think mode refusals are down "
+    },
+    {
+      "id": "s-e8ea25117b",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Fish Audio Drama 3 says it needs a 48 GB NVIDIA card. My 16 GB Radeon disagrees.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8kces/fish_audio_drama_3_says_it_needs_a_48_gb_nvidia/",
+      "publishedAt": "2026-10-17T20:27:46.000Z",
+      "summary": "Drama 3 officially needs an NVIDIA GPU with 48 GB. I wanted it on my RX 9070, so I built Red Curtain together with Claude. How it works: it&#39;s a 35B MoE with ~3B active per token. The FP8 experts (~32 GB) stay in system RAM and only the ones that actually get used are cached on the GPU. Everything else runs in BF16 on the card. Numbers on my machine: - load ~17 s - 3.3 s of speech in ~13 s, 11."
+    },
+    {
+      "id": "s-0dabc6c10b",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "publishedAt": "2026-10-17T20:21:19.000Z",
+      "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year."
+    },
+    {
+      "id": "s-ad926c94fd",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Codex CLIに.envを読ませない設定：公式例の \"**/*.env\" だけでは .env.local と深い階層が読めた（codex 0.163.0で確認）",
+      "url": "https://qiita.com/supportapp3/items/949794973a65fa5aac11",
+      "publishedAt": "2026-10-17T20:17:51.000Z",
+      "summary": "結論 Codex CLI に .env を読ませないには、permission profile（Beta）の deny を使います。何も設定しない状態や、:workspace を指定しただけの状態では、.env はそのまま読めました（筆者の環境で確認）。 公式ドキュメン..."
+    },
+    {
+      "id": "s-1ea4420df6",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "ダイの剣理論 ― 最強の剣を手にしたら、次に強くするのは自分自身と剣の鞘だ",
+      "url": "https://qiita.com/NaokiIshimura/items/5c3de90ebd82630d26c8",
+      "publishedAt": "2026-10-17T20:12:03.000Z",
+      "summary": "はじめに 📝 『ドラゴンクエスト ダイの大冒険』に登場する ダイの剣 をご存じでしょうか。魔界の名工ロン・ベルクがダイ専用に作った、オリハルコン製の剣です。 この記事で紹介する「ダイの剣理論」は、次のような考え方です。 ダイの剣は、ダイの手に渡った時点で完成していて、そ..."
+    },
+    {
+      "id": "s-8fdee7ba66",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Three LLM judges couldn't tell an AI agent's real memory from a counterfeit one",
+      "url": "https://kairos-experiment.com/checks.html",
+      "publishedAt": "2026-10-17T19:31:26.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-537220e3d8",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Israel makes propaganda video featuring AI generated IAMDDB without her consent",
+      "url": "https://twitter.com/beeechimblind/status/2111227318534279501",
+      "publishedAt": "2026-10-17T19:26:43.000Z",
+      "summary": "points=22 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-41c23a1a72",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Canadian AI company turns away from U.S. government work amid trade tensions",
+      "url": "https://globalnews.ca/news/12098107/canadian-ai-company-caseway-turns-away-u-s/",
+      "publishedAt": "2026-10-17T19:13:02.000Z",
+      "summary": "points=7 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-3f8ae21810",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "グーグルブラザーズはまたも規約違反を繰り返しました ── 「絶対にexcel-managerを使え」の掟を破り、スキルを無断改変し、Pages.RemoveでUserFormを壊して嘘をつき続けた夜の話",
+      "url": "https://qiita.com/shu15511551/items/9afa70c544d4c1bddb0e",
+      "publishedAt": "2026-10-17T19:04:06.000Z",
+      "summary": "はじめに 先日、『エクセルマネージャーを使え、グーグルの2人に激怒した土曜日の午前の話』という記事を書きました。 手元には、番頭役の Claude Opus と私が心血を注いで研ぎ澄ました専用 MCP サーバー「excel-manager」があるにもかかわらず、Googl..."
+    },
+    {
+      "id": "s-6435f67122",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "publishedAt": "2026-10-17T18:48:08.000Z",
+      "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform."
+    },
+    {
+      "id": "s-a23d7ba4d3",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "AI Can Write the Code. Who Verifies It?",
+      "url": "https://mihaisplace.com/blog/ai-can-write-the-code-who-verifies-it",
+      "publishedAt": "2026-10-17T18:31:30.000Z",
+      "summary": "points=25 comments=55 (Hacker News)"
+    },
+    {
+      "id": "s-9d2648978e",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "Abolish AI! Manifesto",
+      "url": "https://abolish-ai.net/abolish-ai-a-manifesto/",
+      "publishedAt": "2026-10-17T18:25:58.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-9ec9f1a194",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Torvalds calls AI disclosure rules 'utterly stupid' as Linux drops its tag",
+      "url": "https://thenextweb.com/news/torvalds-ai-assisted-by-tag-utterly-stupid-open-source-summit",
+      "publishedAt": "2026-10-17T18:15:43.000Z",
+      "summary": "points=6 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-d56fe4dfd9",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Opencode breached, rotate keys to be safe.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8gtvs/opencode_breached_rotate_keys_to_be_safe/",
+      "publishedAt": "2026-10-17T18:02:37.000Z",
+      "summary": "Details are developing… &#32; submitted by &#32; /u/chemist_slime [link] &#32; [comments]"
+    },
+    {
+      "id": "s-277ad8c7b2",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Linux creator says anti-AI rules are \"idiotic.\" (Absolute god-tier take.)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8e4wd/linux_creator_says_antiai_rules_are_idiotic/",
+      "publishedAt": "2026-10-17T16:13:13.000Z",
+      "summary": "&#32; submitted by &#32; /u/HolidayBit143 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-ac0eba5f39",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Meta removes language that may have allowed it to scrape news sites",
+      "url": "https://www.theverge.com/tech/1013409/meta-removes-language-that-may-have-allowed-it-to-scrape-news-sites",
+      "publishedAt": "2026-10-17T15:04:36.000Z",
+      "summary": "After backlash, Meta is updating its terms again to remove language that suggested it could scrape content from sites, including news sites, to train its AI. Specifically, the following language no longer appears on the commercial terms page: … Meta may use any content from such domains, web pages, or URLs to provide, develop, improve, […]"
+    },
+    {
+      "id": "s-93924b9524",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性",
+      "url": "https://www.publickey1.jp/blog/26/linuxpwnescapecve-2026-99999linux_os.html",
+      "publishedAt": "2026-10-17T14:59:56.000Z",
+      "summary": "Linuxカーネルの深刻な脆弱性「PwnEscape」（CVE-2026-99999）、ゲストの仮想マシンからホスト側Linux OSに不正なコードを実行できる可能性 悪意のある攻撃者がLinuxの仮想マシンを不正に操作することで、仮想マシンの境界を抜けてホスト側のLinux OSで不正なコードを実行できる可能性がある脆弱性「PwnEscape」（CVE-20..."
+    },
+    {
+      "id": "s-683cc68fc9",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Modify and load custom VBIOS on Windows and Linux, on Blackwell 2.0 (RTX 50 Series)/Ada(RTX 40 Series)/Ampere (RTX 30 Series) without flasing, for example to lower power limits (and which cards were tested)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8ca9a/modify_and_load_custom_vbios_on_windows_and_linux/",
+      "publishedAt": "2026-10-17T14:57:22.000Z",
+      "summary": "Hello guys, hoping you&#39;re doing fine. Today I want to share something that may affect your cards (? I have released 3 tools: A way to modify VBIOSes, so you can increase power limit, voltage, NVVDD offsets, MSVDD offsets (Blackwell 2.0), OCPs, fan channels, power per fan, core offsets more than 1000, VRAM offsets more than 3000, lower power limits (below 400W on a RTX 5090), lower clocks, etc."
+    },
+    {
+      "id": "s-573969b401",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "コード系でOpus 5超え「DeepSeek-V4.1-Flash-1017」無償公開",
+      "url": "https://pc.watch.impress.co.jp/docs/news/2149045.html",
+      "publishedAt": "2026-10-17T14:39:34.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-9e18ce3e61",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 · Hugging Face",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8bg1u/nvidianvidianemotronlabsdory104bbf16_hugging_face/",
+      "publishedAt": "2026-10-17T14:20:54.000Z",
+      "summary": "Total Parameters 4B Architecture Looped (latent-recurrent) normalized-GPT with interleaved sliding-window attention (SWA) and full-attention layers Precision BF16 Context Length Up to 256K tokens Supported Languages English Best For General-purpose reasoning on a small footprint License OpenMDW License Agreement, version 1.1 Release Date October 16, 2026 NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 is a l"
+    },
+    {
+      "id": "s-ade8b18cb9",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "DeepSeek V4.1 Flash (1017) Now Leads Open-Weight Models",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8bb6b/deepseek_v41_flash_1017_now_leads_openweight/",
+      "publishedAt": "2026-10-17T14:15:01.000Z",
+      "summary": "&#32; submitted by &#32; /u/Informal-Trouble2183 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-37e3ac721c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "無料オープンソースオフィススイート「ibisOffice」をibisPaint開発元がリリース、ブラウザまたはWindows・Mac版アプリでWord・Excel・PowerPointファイルの閲覧と編集が可能",
+      "url": "https://gigazine.net/news/20261017-ibisOffice/",
+      "publishedAt": "2026-10-17T14:12:32.000Z",
+      "summary": "基本無料のイラスト制作アプリ「アイビスペイント(ibisPaint)」で知られるibisWorksが、Microsoft Officeファイル形式を編集できる無料オープンソースオフィススイート「ibisOffice」をリリースしました。 ibisOffice プレイグラウンド — Word・Excel・PowerPoint をブラウザで開く https://ibisjp.github.io/ibis-offic..."
+    },
+    {
+      "id": "s-7961974325",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Websites are closing their doors to AI agents",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "publishedAt": "2026-10-17T13:00:00.000Z",
+      "summary": "Autonomous agents are the hottest thing in AI. OpenAI, Meta, Google, Instinct, and others promise their agents can scour the internet on your behalf, doing anything from booking a dinner reservation and cleaning out your inbox to buying new shoes. But what happens when the rest of the internet won't play nice? In recent weeks, […]"
+    },
+    {
+      "id": "s-2fd23eb2e3",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "個人サイトの案内役を無料で実装した —— AIに答えを書かせず、自信があるときだけ返す",
+      "url": "https://zenn.dev/motimotinotch/articles/b9e36bb30b36e4",
+      "publishedAt": "2026-10-17T11:59:02.000Z",
+      "summary": "自分のサイトの左下に、小さな吹き出しのボタンを置いた。押すと入力欄が開いて、サイトについて質問できる。 公開した日、本番に最初に来た質問は「このサイトってなに？」だった。案内役はこれに答えなかった。「その質問の答えはまだ用意していません」と返して、質問を保存しただけだ。 答えなかったときの表示。入力欄の下の注意書きにあるとおり、質問だけを保存する 壊れたわけではない。答えに自信が持てないときは黙る、というのがこの案内役の一番大事な仕様で、その日はその仕様どおりに動いた。この記事では、AI に答えの文章を1文字も書かせずに案内役を作った話と、それを個人サイトの規模なら無料で動かしている話..."
+    },
+    {
+      "id": "s-bd1b600826",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "企業の財務データこそローカルLLMを使いたい。ローカルLLMに財務分析の問題解かせてみた。",
+      "url": "https://zenn.dev/bekku/articles/e619fad8202e3a",
+      "publishedAt": "2026-10-17T11:56:25.000Z",
+      "summary": "はじめに：AIに財務分析の問題を解かせてみた 前回、架空企業94社の仕訳帳と月次の財務諸表をまとめた合成データセット「SyntheticMonthlyFinancials-JP」を公開しました。 https://zenn.dev/bekku/articles/a49512485fcde6 https://huggingface.co/datasets/bekkuzer/SyntheticMonthlyFinancials-JP このデータセットには、財務分析の計算問題を470問付けています。 今回はそこから100問を選び、いくつかのAIモデルに解かせてみました。 どうやって試した..."
+    },
+    {
+      "id": "s-ad78d463cf",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Codeのレビューが全部通ったのに残った書き漏れ、原因は差分だった",
+      "url": "https://zenn.dev/ara_jlu/articles/diff-review-blind-spot",
+      "publishedAt": "2026-10-17T11:54:37.000Z",
+      "summary": "Claude Code のサブエージェントにコードレビューをさせていて、レビューが通ったのに「書くべき場所に書いていない」が残っていたことがありました。しかも1回ではなく、実装のステップごとのレビューも、最後のブランチ全体のレビューも、全部通っていました。 なぜ全部通ったのかと、自分のハーネスでどう塞いだかを書きます。持ち帰れるのは、この種類の不備はレビューを何重にしても見えないという構造と、塞ぎ方が1つです。 何が起きたか 自分の事業で動かしているツールに、あるタスクで変更を入れました。その変更で、後続のタスクが定期的に差し替える設定値が1種類から2種類に増えました。後続のタスクを..."
+    },
+    {
+      "id": "s-27477d2af6",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI感のないAWS構成図をAIエージェントに描かせる実践法",
+      "url": "https://zenn.dev/sunsun_eng/articles/aws-architecture-diagram-ai-agent",
+      "publishedAt": "2026-10-17T11:44:48.000Z",
+      "summary": "AI感のないAWS構成図をAIエージェントに描かせる実践法 AWS構成図をAIエージェントに描かせたら、なんとなく「AIっぽい」絵になった経験はないでしょうか。曖昧な矢印、崩れたアイコン、公式感のないデザイン。原因は生成方式の選び方にあります。この記事では、AIエージェントを使って実務でそのまま使えるAWS構成図を作る具体的な方法を紹介します。 この記事の要点 AI感のないAWS構成図を作るには、画像生成AIではなくdiagrams-as-code方式（PythonのdiagramsライブラリやMermaidなど）をAIエージェントに書かせるのが有効です。 AWS公式のアイコンセッ..."
+    },
+    {
+      "id": "s-717e19b6a9",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "中学生でもわかる Lean 4 #25｜AI時代の「確かめ方」",
+      "url": "https://zenn.dev/dantarg/articles/lean4-ai-age-verification",
+      "publishedAt": "2026-10-17T11:04:57.000Z",
+      "summary": "AIに質問すると、数秒で答えが返ってきます。 説明は自然で、出典もあり、数式やコードまで付いているかもしれません。 そこで最後に、一つだけ聞いてみます。 で、どこまで確かめた？ この連載では、Lean 4を使いながら、この問いを少しずつ細かくしてきました。 前回の #24「論破から検証へ」 では、勝敗ではなく、何を確認できたかを残すところまで進みました。 最終回では、Leanが目の前になくても使える形へ戻します。 文化祭のパンは200個で足りる？ 文化祭でパンを用意するとします。 たとえば、AIが次のように答えたとします。 来場者は100人です。1人2個なら、200個あれば足り..."
+    },
+    {
+      "id": "s-e6278da383",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "対話イベントを変換するとき、欠落と訂正をどう記録するか？",
+      "url": "https://zenn.dev/kotanpolin/articles/topodialogue-event-conversion-audit",
+      "publishedAt": "2026-10-17T11:02:07.000Z",
+      "summary": "TopoDialogueとは TopoDialogue（トポダイアログ）は、人とAIの会話が、同じ話題に戻ったり、新しい見方へ進んだりする様子を、あとから確かめられる記録にする研究です。たとえば、同じ話を繰り返していても、前と同じところで止まっているのか、言い直して少し先へ進んだのかは違います。その違いを、会話のどの部分を根拠にしたかと一緒に扱います。 今回取り上げるのは、その中でも「会話を記録へ変えるとき、何が抜け落ち、何を間違えて記録したか」という問題です。「言い直した」「提案を受け入れた」といった会話の中の出来事を、本文では「イベント」と呼びます。自動で付けた印は、あとで確かめ..."
+    },
+    {
+      "id": "s-bbcfc7d0c5",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【残業ゼロへのヒント】Google最新AI「Gemini 4」で仕事は速くなる？ なのに「文字入力」だけ渋滞していませんか",
+      "url": "https://zenn.dev/keyro/articles/gemini-4-argon-input-bottleneck",
+      "publishedAt": "2026-10-17T10:41:28.000Z",
+      "summary": "Keyroアカデミー｜仕事術 「隣の席の同僚が、なぜか最近いつも定時で帰っている……」 もしそんな光景を見かけたら、秘密はタイピングの速さではなく、**「AIへの任せ方」と「手元のツール選び」**にあるのかもしれません。 2026年10月、Googleは最新モデルGemini 4 ArgonをGeminiアプリで提供開始しました。難しい専門知識がなくても、毎日の仕事にどう使える？ そしてAIが速くなった今こそ見直したい「日本語入力の時短術」とは？ 専門知識はいらない。「Gemini 4」が仕事を軽くする3つの理由 「回答が回りくどい」「長い資料の整理が面倒」。AIを使っていて、そう..."
+    },
+    {
+      "id": "s-254ace9878",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Data Engineering Agentで既存パイプラインを改修・移行する",
+      "url": "https://zenn.dev/web_benriya/articles/bigquery-data-engineering-agent-migration",
+      "publishedAt": "2026-10-17T10:18:18.000Z",
+      "summary": "既存パイプラインの改修はなぜ難しいのか BigQueryで運用を続けているデータパイプラインには、次のような課題が蓄積しやすい。 スケジュールクエリが増えすぎて依存関係が把握できない 旧来のML.GENERATE_TEXTを使っているためAI.*関数へ移行したい 書いた担当者が離れ、意図が読めないSQLが残っている パーティション設計が古く、コストが増え続けている こうした改修や移行作業は、影響範囲の調査から始めて手で書き直すと非常に時間がかかる。BigQueryのData Engineering Agentを使うと、自然言語で指示するだけで既存パイプラインの分析・修正・移行を進..."
+    },
+    {
+      "id": "s-4c51b9ec7e",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "すべてのAIコーディングエージェントのコストを閲覧・検索・追跡しローカルで動作する「AgentsView」、Claude Code・Codex・Cursor・Copilot・Geminiなど60種類以上のエージェントを自動検出し全文検索も可能",
+      "url": "https://gigazine.net/news/20261017-agentsview/",
+      "publishedAt": "2026-10-17T09:27:07.000Z",
+      "summary": "Claude CodeやCodexなどを並行して利用すると、どのAIコーディングエージェントやモデルへどれだけトークンを使ったのか全体像を把握しにくくなります。そこで使えるのが複数のエージェントのローカル履歴を自動収集し、モデル別・日別・セッション別の利用量やAPI料金換算のコストをまとめて確認できる「AgentsView」で..."
+    },
+    {
+      "id": "s-8490081eb2",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Vitest v5.0 で新しくなったBenchmarkをCIで実行して比較する - プププなテクブ",
+      "url": "https://blog.inorinrinrin.com/entry/5ef7c90a-69a1-4b9e-d253-95c981e94ce7",
+      "publishedAt": "2026-10-17T08:29:39.000Z",
+      "summary": "Vitest v5.0ではBenchmark APIがリライトされました。 Vitest v5.0からはテストコンテキストから受け取る bench フィクスチャを test() の中で使う形に変わっています。これにより、retry やライフサイクルフック、expect によるアサーションといったテストランナーの機能を、ベンチマークでもそのまま使えるようになり..."
+    },
+    {
+      "id": "s-78dcb9a263",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ソースネクスト　暗号化されていないパスワードが流出した理由とは（山口健太） - エキスパート - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/expert/articles/b3e710c60d79d276a00321906fa87ac9243f5530",
+      "publishedAt": "2026-10-17T08:05:29.000Z",
+      "summary": "ソースネクストへの不正アクセスで会員情報が流出した問題では、「暗号化がない状態のパスワード」が含まれていたことをNHKなどが報じており、注目を集めています。 どのような方式でパスワードを管理していたのか、運営会社に聞いてみました。 システム連携用に暗号化して保存していたソースネクストの発表によれば、直..."
+    },
+    {
+      "id": "s-a72c1b7a18",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「そもそも親にAIなんて必要ない」　65歳以上の生成AI利用、子世代の7割が拒否する理由",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/17/news007.html",
+      "publishedAt": "2026-10-17T08:00:00.000Z",
+      "summary": "SHIFT AIが65歳以上の親を持つ全国の30～50代男女723人を対象とした「シニア×AIの意識調査」の結果を発表。親に生成AIを使ってほしくない子世代が69.3％に達したという結果とともに、その理由や自身の利用頻度、親に教える際の障壁などを示した。"
+    },
+    {
+      "id": "s-98c9ab4243",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Disposable Software - Spinach Forest",
+      "url": "https://records.dodgson.org/2026/10/16/disposable-software/",
+      "publishedAt": "2026-10-17T07:39:52.000Z",
+      "summary": "Redesigning source control at Anthropic \\ Anthropic Anthropic’s Scion is heavily inspired by Mononoke · sunshowers More on Anthropic’s Scion ripping off Mononoke · sunshowers Anthropic が内製した Monorepo-optimized VCS が実は Meta がオープンソースで公開している彼らの VCS のパクリであり、オープン..."
+    },
+    {
+      "id": "s-5473630cf7",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "中国製車両、ノルウェー軍の機密情報を記録 訓練中に発覚",
+      "url": "https://www.afpbb.com/articles/-/3658078",
+      "publishedAt": "2026-10-17T05:51:11.000Z",
+      "summary": "この写真にはショッキングな表現、または18歳以上の年齢制限の対象となる内容が含まれます。 ご覧になる場合にはご了承の上、クリックしてください。 【10月17日 AFP】ノルウェー軍の訓練中、中国製車両の車載カメラが軍事施設への入場コードや関係者の出入りなど、機密性の高い情報を記録していたことが分かり、コネク..."
+    },
+    {
+      "id": "s-e86f92efb2",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "publishedAt": "2026-10-16T20:59:01.000Z",
+      "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard."
+    },
+    {
+      "id": "s-65442e7082",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "publishedAt": "2026-10-16T19:00:00.000Z",
+      "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors."
+    },
+    {
+      "id": "s-e6b0c9baa3",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Replit’s CEO says the future of work is the ‘self-driving company’",
+      "url": "https://techcrunch.com/2026/10/16/replits-ceo-says-the-future-of-work-is-the-self-driving-company/",
+      "publishedAt": "2026-10-16T12:55:09.000Z",
+      "summary": "Replit CEO Amjad Masad envisions a future of “self-driving companies,” where AI agents handle day-to-day tasks and people focus on higher-level decisions."
+    },
+    {
+      "id": "s-26557c3d32",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Anthropic、METRの評価チームを社内に常駐させ“従業員並み”のアクセス付与　公表に拒否権なし",
+      "url": "https://www.itmedia.co.jp/news/article/2610/16/2000002315/",
+      "publishedAt": "2026-10-16T00:49:28.000Z",
+      "summary": "Anthropicは、AI評価団体METRに従業員並みのアクセス権を与える常駐評価を開始した。端末やオフィスを提供して社内システムへのアクセスを認め、リスクや障害の独自公表を許可する。公表拒否はできず、伏せ字要請のみ可能。OpenAIも同様の外部評価機関受け入れを準備している。"
+    },
+    {
+      "id": "s-4a2f3ca18e",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "url": "https://openai.com/index/benefit-street-partners",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "summary": "Anant Kumar builds tools to compare loan valuations and analyze credit agreements, using Codex for code review and faster follow-ups."
+    },
+    {
+      "id": "s-aae90d6b2d",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "When it came to Cal AI’s viral success, a small army of influencers paid off",
+      "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/",
+      "publishedAt": "2026-10-15T23:44:56.000Z",
+      "summary": "The company generated over $30 million in revenue in two years and was acquired by MyFitnessPal for an undisclosed amount of money in March."
+    },
+    {
+      "id": "s-d44bce9136",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "日本に本当に勝ち筋はあるのか　ヒューマノイド「解剖」で見る中国の強さと課題",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/16/news017.html",
+      "publishedAt": "2026-10-15T23:00:00.000Z",
+      "summary": "中国では現在、ヒューマノイドロボットの開発や量産、社会実装に向けた動きが加速している。しかし、完成品の動向を追うだけでは、その競争力の源泉や本格普及に向けた課題までは見えてこない。SUGENAのセミナー「フィジカルAI解体新書」では、ヒューマノイドをAIや関節、センサー、手などに“解体”し、中国勢の強さと残された課題を解説した。本稿ではその内容を基に、日本企業が勝負できる領域を見ていく。"
+    },
+    {
+      "id": "s-33de965c77",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「年4200時間の入力」「経験と勘」からの脱却　旧マルハニチロは「販売計画」をどう自動化した？",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/16/news033.html",
+      "publishedAt": "2026-10-15T23:00:00.000Z",
+      "summary": "Umios（旧マルハニチロ）が全国の支社が手作業で入力していた月次の販売計画業務を自動化した。業務用流通事業部の全支社で年間約4200時間の作業削減を見込む。自動化の鍵は何だったのか。"
+    },
+    {
+      "id": "s-d7b4a77864",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "【現地レポ】なぜドイツの地方都市が「AIベンチャーの聖地」に？　元食肉処理場が起業拠点、その熱気の実態",
+      "url": "https://www.itmedia.co.jp/business/articles/2610/16/news007.html",
+      "publishedAt": "2026-10-15T22:00:00.000Z",
+      "summary": "ドイツ南西部の地方都市が、首都ベルリンを凌ぐ勢いでBtoB・ディープテックの巨大ベンチャー拠点へと変貌している。大学の知財、地場産業の課題、そして強固な民間資本が結びつき、単なる出資にとどまらない「現場実装型エコシステム」を構築。東京一極集中や「資金提供のみ」に陥りがちな日本のオープンイノベーションと地方創生に対し、強力な勝ち筋と教訓を示している。"
+    },
+    {
+      "id": "s-e6a9003b3d",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "3DCodeVerse: Exploring 3D Worlds as Code",
+      "url": "https://arxiv.org/abs/2610.22341v1",
+      "publishedAt": "2026-10-15T17:56:07.000Z",
+      "summary": "We introduce 3DCodeVerse, a research ecosystem that enables coding agents to create editable and verifiable 3D content at scale. 3DCodeVerse comprises large-scale, high-quality datasets of executable 3D code, a coding harness for spatial reasoning and automated verification, and practical guidance for 3D coding. First, we construct 3DCodeVerse-2M, a large-scale curated dataset of standalone 3D exe"
+    },
+    {
+      "id": "s-c593dc4883",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Dexterity from Supervised Play",
+      "url": "https://arxiv.org/abs/2610.22340v1",
+      "publishedAt": "2026-10-15T17:55:50.000Z",
+      "summary": "How can robots autonomously collect the contact-rich experience needed to learn dexterous manipulation? We present DSP: Dexterity from supervised play, a framework in which a robot learns a play policy from minutes of human play through behavior cloning, then deploys it autonomously to collect hours of interaction data to train a world model. During inference, the same play policy then guides mode"
+    },
+    {
+      "id": "s-3090d38083",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "What’s new with Google Data Cloud",
+      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/",
+      "publishedAt": "2026-10-15T16:00:00.000Z",
+      "summary": "October 12 - October 16 Looker Data Apps are now in Preview to build and host interactive, agent-generated applications natively inside Looker Generated using natural language prompts, the Antigravity CLI, or Claude Code, these interactive web applications, natively hosted inside Looker, transform business reporting into operational systems of action. Users can test scenarios, adjust parameters, a"
+    }
+  ]
+}
