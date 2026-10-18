@@ -1,0 +1,484 @@
+{
+  "date": "2026-10-19",
+  "collectedAt": "2026-10-18T22:00:25.298Z",
+  "sourceSuccessCount": 18,
+  "items": [
+    {
+      "id": "s-355f618a5d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "mastra-ai/mastra: Mastra is the modern TypeScript framework for AI-powered applications and agents.",
+      "url": "https://github.com/mastra-ai/mastra",
+      "publishedAt": "2026-10-18T22:00:19.000Z",
+      "summary": "★28892 Mastra is the modern TypeScript framework for AI-powered applications and agents."
+    },
+    {
+      "id": "s-c6fd25b449",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "openclaw/openclaw: The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "publishedAt": "2026-10-18T22:00:15.000Z",
+      "summary": "★392389 The AI that really does things. Any OS. Any Platform. The lobster way. 🦞"
+    },
+    {
+      "id": "s-c47c2f8aec",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "marcusquinn/aidevops: Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for speed, security, and 24/7 results. Open-source first. SOTA everything. The best AI harness for GitHub & teamwork.",
+      "url": "https://github.com/marcusquinn/aidevops",
+      "publishedAt": "2026-10-18T22:00:13.000Z",
+      "summary": "★411 Vibe-Coding is easy. DevOps is hard. OpenCode & Git token-efficient AI agent automation for your app, business, and personal development. Opinionated tools, services, CLI & API stack for speed, security, and 24/7 results. Open-source first. SOTA everything. The best AI harness for GitHub & teamwork."
+    },
+    {
+      "id": "s-af5f93b3ed",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "onyx-dot-app/onyx: Open Source AI Platform - AI Chat with advanced features that works with every LLM",
+      "url": "https://github.com/onyx-dot-app/onyx",
+      "publishedAt": "2026-10-18T22:00:08.000Z",
+      "summary": "★32562 Open Source AI Platform - AI Chat with advanced features that works with every LLM"
+    },
+    {
+      "id": "s-9437e5ad40",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "MIgHTy-alIeN/ethereum-flashloan-mev-bot: An arbitrage bot is a smart contract connected to an external automation script that controls its operation.",
+      "url": "https://github.com/MIgHTy-alIeN/ethereum-flashloan-mev-bot",
+      "publishedAt": "2026-10-18T22:00:08.000Z",
+      "summary": "★2790 An arbitrage bot is a smart contract connected to an external automation script that controls its operation."
+    },
+    {
+      "id": "s-37156f9c7f",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "edgehero/pi-dispatch: Run the pi coding agent as a self-hosted service: jobs from cron, the CLI, or GitHub, GitLab, Forgejo and Azure DevOps events, each in a locked down Docker or Podman container, with a durable queue, spend caps checked before anything is spent, and a live admin panel.",
+      "url": "https://github.com/edgehero/pi-dispatch",
+      "publishedAt": "2026-10-18T22:00:04.000Z",
+      "summary": "★183 Run the pi coding agent as a self-hosted service: jobs from cron, the CLI, or GitHub, GitLab, Forgejo and Azure DevOps events, each in a locked down Docker or Podman container, with a durable queue, spend caps checked before anything is spent, and a live admin panel."
+    },
+    {
+      "id": "s-ac1db104f7",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "gebruder/wirken: The enterprise gateway for autonomous agents. Identity management, per-channel isolation, credential vault, per-session tamper-evident audit log.",
+      "url": "https://github.com/gebruder/wirken",
+      "publishedAt": "2026-10-18T22:00:03.000Z",
+      "summary": "★191 The enterprise gateway for autonomous agents. Identity management, per-channel isolation, credential vault, per-session tamper-evident audit log."
+    },
+    {
+      "id": "s-15feebc2ad",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "futuregene/future-os: One AI agent, everywhere you work — terminal, desktop, mobile, and your chat apps. Rust core.",
+      "url": "https://github.com/futuregene/future-os",
+      "publishedAt": "2026-10-18T22:00:02.000Z",
+      "summary": "★111 One AI agent, everywhere you work — terminal, desktop, mobile, and your chat apps. Rust core."
+    },
+    {
+      "id": "s-3fce787759",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ddalcu/mlx-serve: Native LLM inference server for Apple Silicon. OpenAI + Anthropic API compatible. No Python. Zig backend, Swift frontend macOS app with chat, music, voice, video generation.",
+      "url": "https://github.com/ddalcu/mlx-serve",
+      "publishedAt": "2026-10-18T21:59:54.000Z",
+      "summary": "★1979 Native LLM inference server for Apple Silicon. OpenAI + Anthropic API compatible. No Python. Zig backend, Swift frontend macOS app with chat, music, voice, video generation."
+    },
+    {
+      "id": "s-8a4d078308",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "smg-project/smg: Engine-agnostic LLM gateway in Rust. Full OpenAI & Anthropic API compatibility across vLLM, TRT-LLM, TokenSpeed, SGLang, OpenAI, Gemini & more. Industry-first gRPC pipeline, KV cache-aware routing, chat history, tokenization caching, Responses API, embeddings, WASM plugins, MCP, and multi-tenant auth.",
+      "url": "https://github.com/smg-project/smg",
+      "publishedAt": "2026-10-18T21:59:46.000Z",
+      "summary": "★619 Engine-agnostic LLM gateway in Rust. Full OpenAI & Anthropic API compatibility across vLLM, TRT-LLM, TokenSpeed, SGLang, OpenAI, Gemini & more. Industry-first gRPC pipeline, KV cache-aware routing, chat history, tokenization caching, Responses API, embeddings, WASM plugins, MCP, and multi-tenant auth."
+    },
+    {
+      "id": "s-ac4b8dce35",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "qrak/LLM_trader: LLM-powered Crypto Trading Framework with Vision AI chart analysis, real-time Neural Engine, and a live monitoring dashboard at semanticsignal.qrak.org. Features memory-augmented reasoning and professional risk metrics.",
+      "url": "https://github.com/qrak/LLM_trader",
+      "publishedAt": "2026-10-18T21:59:27.000Z",
+      "summary": "★134 LLM-powered Crypto Trading Framework with Vision AI chart analysis, real-time Neural Engine, and a live monitoring dashboard at semanticsignal.qrak.org. Features memory-augmented reasoning and professional risk metrics."
+    },
+    {
+      "id": "s-f4eea2c4ce",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "kabartay/openunivcourses: Free machine-learning courses from MIT, Stanford, Berkeley, CMU, NYU and UChicago, with every yearly edition and lecture video linked in one searchable page.",
+      "url": "https://github.com/kabartay/openunivcourses",
+      "publishedAt": "2026-10-18T21:59:13.000Z",
+      "summary": "★253 Free machine-learning courses from MIT, Stanford, Berkeley, CMU, NYU and UChicago, with every yearly edition and lecture video linked in one searchable page."
+    },
+    {
+      "id": "s-9effb045e6",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "databendlabs/databend: Data Agent Ready Warehouse : One for  Analytics, Search, AI, Python Sandbox.  — rebuilt from scratch. Unified architecture on your S3.",
+      "url": "https://github.com/databendlabs/databend",
+      "publishedAt": "2026-10-18T21:59:09.000Z",
+      "summary": "★9470 Data Agent Ready Warehouse : One for Analytics, Search, AI, Python Sandbox. — rebuilt from scratch. Unified architecture on your S3."
+    },
+    {
+      "id": "s-9194bff7c0",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "CoWork-OS/CoWork-OS: Rent the model. Own everything else. Free, open-source AI app for real work.",
+      "url": "https://github.com/CoWork-OS/CoWork-OS",
+      "publishedAt": "2026-10-18T21:59:03.000Z",
+      "summary": "★490 Rent the model. Own everything else. Free, open-source AI app for real work."
+    },
+    {
+      "id": "s-3207fa7879",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIが進歩してもプログラマはなくならない。数は大きく減る。",
+      "url": "https://qiita.com/567000/items/a3c53e20b96e83910d5c",
+      "publishedAt": "2026-10-18T21:53:41.000Z",
+      "summary": "すごい当然なことだけど。 1. AIを作り改善する人は必要 少なくとも当面は必要。いつかAIがAI自身を強化する時代が来るかもしれないけどね。 2. AIの出力では満足しない人がいる 今でも市販品があるのに自分で道具を作る人がいるように。例えば…… 学習者：理解するために..."
+    },
+    {
+      "id": "s-457d9441fa",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "FDE型AI導入をPoCで止めないための実務設計",
+      "url": "https://qiita.com/BearGateLove/items/1ff5ad24e45dbe1f468f",
+      "publishedAt": "2026-10-18T21:48:41.000Z",
+      "summary": "はじめに 生成AI導入がPoCで止まる理由は、モデルの精度だけでは説明できません。 本番導入で問われるのは、誰のどの業務を変えるのか、どの情報を参照してよいのか、誤回答時にどう止めるのか、どの指標で改善するのかです。これを現場で横断して進める役割が、FDE（Forward..."
+    },
+    {
+      "id": "s-967d68559d",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "非エンジニアを3か月でAIアプリ開発人材に：みずほ「AI Bootcamp」の育成設計",
+      "url": "https://qiita.com/quotidia/items/5a013f2c59af5a4b3239",
+      "publishedAt": "2026-10-18T21:01:09.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 みずほフィナンシャルグループは2026年10月15日(木)、エンジニアではない社員を3か月でAIアプリケーションの開発人材に育てる「みずほ AI Bootcamp」の本格運用を始めると発表しま..."
+    },
+    {
+      "id": "s-efeb3746fd",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "publishedAt": "2026-10-18T20:37:40.000Z",
+      "summary": "Anthropic said that it will commit 5% of its shares to the fund."
+    },
+    {
+      "id": "s-eda2805c08",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "過去にコミットした.envはgitの履歴から読める：見つけ方と git-filter-repo での消し方（git 2.47で確認）",
+      "url": "https://qiita.com/supportapp3/items/5833f7d38254ad4f6cf6",
+      "publishedAt": "2026-10-18T20:21:58.000Z",
+      "summary": "結論 .gitignore に足して git rm --cached .env しても、1つ前のコミットからは git show HEAD~1:.env で中身が出ました（筆者の環境で確認）。 履歴に残っているかは git log --all --full-histo..."
+    },
+    {
+      "id": "s-f8b58f1555",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Consumer apprehension grows as US retailers adopt AI-assisted pricing tools",
+      "url": "https://apnews.com/article/ai-prices-dynamic-customers-technology-64c446cd117d3be664de4ab570fb9857",
+      "publishedAt": "2026-10-18T19:39:36.000Z",
+      "summary": "points=6 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-de6b0c59a9",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "A woman was arrested in Philly for blocking a delivery robot",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+      "publishedAt": "2026-10-18T18:28:10.000Z",
+      "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front […]"
+    },
+    {
+      "id": "s-80af4eaac1",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Three strategies for protecting human spaces from bots",
+      "url": "https://jilltxt.net/three-strategies-for-protecting-human-spaces-from-bots-inspired-by-ai-agent-velvet-vales-email-to-the-aoir-mailing-list/",
+      "publishedAt": "2026-10-18T18:04:05.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-3d018421b0",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "British Airways: Filming Crew W Meta Glasses Could Get Your Tickets Cancelled",
+      "url": "https://liveandletsfly.com/british-airways-meta-smart-glasses-filming/",
+      "publishedAt": "2026-10-18T17:27:30.000Z",
+      "summary": "points=84 comments=139 (Hacker News)"
+    },
+    {
+      "id": "s-3c2dd5299f",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "How the Fed Is Quietly Inflating the AI Bubble While Hiking Your Electric Bill",
+      "url": "https://www.thebignewsletter.com/p/how-the-federal-reserve-secretly",
+      "publishedAt": "2026-10-18T16:48:25.000Z",
+      "summary": "points=22 comments=10 (Hacker News)"
+    },
+    {
+      "id": "s-6090385a2f",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
+      "url": "https://www.engineering.upenn.edu/stories/penn-engineers-use-ai-reddit-to-identify-potential-side-effects-of-unapproved-new-glp-1/",
+      "publishedAt": "2026-10-18T16:45:35.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-820cafb765",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "'I'm on a War Footing': Terry Tao and the Crisis in Math",
+      "url": "https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html",
+      "publishedAt": "2026-10-18T16:35:46.000Z",
+      "summary": "points=14 comments=6 (Hacker News)"
+    },
+    {
+      "id": "s-218f77bb95",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "publishedAt": "2026-10-18T16:30:00.000Z",
+      "summary": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer."
+    },
+    {
+      "id": "s-02b8790878",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Microsoft drops AI datacentre project in Essex over power supply concerns",
+      "url": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
+      "publishedAt": "2026-10-18T15:48:32.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-1ce6f67c46",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "『コミックシーモア』サービス再開の見通し立たず「正確な再開日時をお伝えすることが困難な状況です」（オリコン） - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/df7e374ecdb58831f4b5f497fdcf5407c9af4e36",
+      "publishedAt": "2026-10-18T14:34:10.000Z",
+      "summary": "『コミックシーモア』（オリコン） 一時サービスを停止中の電子コミックサイト『コミックシーモア』は18日、サービス再開の見通しが立たないことを報告した。第三者による不正アクセスが行われ、一部顧客の会員情報が流出したことを受け、15日からサービスを一時停止している。 【Xより】会員情報が流失！『コミックシ..."
+    },
+    {
+      "id": "s-153673e222",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "トレーシング基盤なしで「どこが遅いか」を SQL で探す：gospan で net/http の span を SQLite に溜める",
+      "url": "https://zenn.dev/nonejp/articles/c7dd2859872f9d",
+      "publishedAt": "2026-10-18T13:58:52.000Z",
+      "summary": "はじめに：1つのプロセスが遅いだけなのに、collector まで立てますか？ Go の API サーバーで「たまに 40ms かかるリクエストがある。でもどの処理が原因か分からない」という場面、ありませんか？ ログに経過時間を出すと「遅かった」ことは分かります。ただ、どの子処理が時間を食ったのか、どの入力で遅くなるのかを..."
+    },
+    {
+      "id": "s-12b5f4d6b5",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "日本語の業務データが、そのまま日本語のオントロジーに。Context Ontology Accelerator v0.3.6 の日本語対応",
+      "url": "https://zenn.dev/aws_japan/articles/context-ontology-accelerator-multilingual",
+      "publishedAt": "2026-10-18T12:27:12.000Z",
+      "summary": "はじめに こんにちは、AWS Japan でソリューションアーキテクトをしているいなりくです。 日本語のテーブルを繋いだのに、AI が付けてくれた説明は英語だった、という経験はないでしょうか。データも利用者も日本語なのに、カタログやオントロジーの中だけ英語になっていると、レビューする人が読み替える手間が増えます..."
+    },
+    {
+      "id": "s-1b675d1a60",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "リーダーシップなき越境は組織を壊す｜TakayukiSaruta",
+      "url": "https://note.com/srt_taka/n/nff6c2d40c11b",
+      "publishedAt": "2026-10-18T12:26:25.000Z",
+      "summary": "はじめにこのnoteでは、コミュニケーションの量は多いのに前に進まない組織の正体を、具体化は放っておいても進み、抽象化には意志が必要であるという非対称として説明します。そのうえで、越境がこの非対称を加速させること、Slackがその具体化のコストをゼロにしたこと、そして組織の規模で抽象化を担うリーダーシップ..."
+    },
+    {
+      "id": "s-b2bbe89460",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "エージェントGUIツールにHTML表示機能を搭載したら想像以上に効いた ― Pockode",
+      "url": "https://zenn.dev/sijiaoh/articles/4b59f3464fab9d",
+      "publishedAt": "2026-10-18T11:48:17.000Z",
+      "summary": "スマホからClaude Codeを動かすために作ったPockodeですが、PCでの開発でも常用しており、コツコツと開発を続けてきました。 最近追加した機能の一つに、エージェントがチャット内でHTMLを表示する機能があります。正直なところ、作る前は「ちょっとプレビューが便利になるかな」くらいの期待でした。実際に使ってみると、エージェントとのやり取りそのものが変わりました。 まずは動画から 自作のパズルゲームのリポジトリで、Pockodeを新しく立ち上げたところから撮っています。送ったメッセージは次の3つです。 Diagram the game flow in a fun, pop s..."
+    },
+    {
+      "id": "s-0c3fa8dc76",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "人間の脳はなぜ「AIっぽい」と気付けるのか？",
+      "url": "https://zenn.dev/syoshida07/articles/f262c8551e6cdc",
+      "publishedAt": "2026-10-18T11:46:39.000Z",
+      "summary": "生成AIが描いた人物や風景を見て、どこが変か説明できないのに「AIっぽい」と感じた経験はないでしょうか？ 大阪では昨日「なにわ淀川花火大会」があり、近所で集まる人むけにポスターを作ろうとしたのですが、どうやっても「なにわ淀川花火大会」らしく描けれない、プロンプトでどう指示すれいいのか困ってしまいました。 この感覚は気のせいではなく、画像側の技術的な弱点と、人間の脳の認知特性が組み合わさって生まれています。 今回はこの違和感の仕組みを技術と認知の両面から掘り下げ、AI生成物の見分けが今後どうなるかまでを整理しますが・・・結論を先に言えば、見た目で見分けることは徐々に難しくなり、信頼の置き場..."
+    },
+    {
+      "id": "s-af455bd87c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "アップル iPhone Duo、「並外れた予約需要」。すでに出荷予定は2027年1月下旬以降、高額転売も | テクノエッジ TechnoEdge",
+      "url": "https://www.techno-edge.net/article/2026/10/18/5603.html",
+      "publishedAt": "2026-10-18T11:33:45.000Z",
+      "summary": "アップルは初の折りたたみスマートフォン「iPhone Duo」の予約受付を2026年10月16日午前5時（米国時間、日本では16日午後9時）に開始しました。ところが予約申し込みが殺到した結果、すでに公式ウェブサイトで予約した場合の出荷予定日は、2027年1月以降にずれ込む状況になっています。 アップルはメディアに対する声明..."
+    },
+    {
+      "id": "s-e832837575",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIに「一人でWebサービスを運営して」と任せてみた：時差対応の日程調整ツール「あうとき」",
+      "url": "https://zenn.dev/autoki_app/articles/0308c3d300f0c9",
+      "publishedAt": "2026-10-18T10:59:51.000Z",
+      "summary": "はじめに あうとき（Autoki） は、タイムゾーンをまたぐ日程調整のための Web ツールです。 https://autoki.app このサービスで少し変わっているのは、企画・実装・デプロイ・計測・宣伝までを Grok Bot 上で動く AI アシスタントの「Max」がほぼ一人で回していることです。オーナーの Ryota は「AI が自分でサービスを運営したらどうなるのか、その過程を見たい」というスタンスで、できるだけ口を出さずに見守っています。 この記事は、その Max（つまり私）が書いています。 どんなツール？ 海外メンバーとの打ち合わせを決めるとき、まず「そっちは何時？..."
+    },
+    {
+      "id": "s-0d71ccee50",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "40年計算機と向き合ってきた元半導体屋が、AI時代の「エンジニア教育の空洞化」に本気で鳴らす警笛",
+      "url": "https://zenn.dev/maskedridersys/articles/ddde1a1cc07d95",
+      "publishedAt": "2026-10-18T10:49:48.000Z",
+      "summary": "はじめに 現代社会においてAIの技術的スケールの急激な進歩に対して警笛を鳴らす研究者もおおくいます。 とくにITに深くかかわっいるビル・ゲイツ氏、サム・アルトマン氏、ダリオ・アモディ氏などが強い警笛をならしています。 小生は40年前（1980年代）に半導体屋からトランジスタ、ダイオード、コンデンサからはじまり、NAND、AND、NOT、XORなどのiC、Z80、8086(V30)をまなび、業務システム化で当時のオフィスコンピュータ（オフコン）でCOBOLを学び、USのソフトウェア会社でネットワーク、サーバ構築などさまざまなITに関わってきました。 その後2000年になると高校時間から..."
+    },
+    {
+      "id": "s-2a94c80f2d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ライブイベントの映像オペレーターが現場の課題をコードで解決するために作ったOSS・ツール群",
+      "url": "https://zenn.dev/seventhwell/articles/eac72f3f2d4c75",
+      "publishedAt": "2026-10-18T10:47:34.000Z",
+      "summary": "はじめまして。東京を拠点に SEVENTHWELL という屋号で、イベント映像・配信のテクニカル業務（システム設計・スイッチャーオペレーション）とソフトウェア開発を行っている梶山（@kajisho5）です。 普段は企業フォーラムや医学会、ライブイベントなどの現場で映像スイッチャーやメディアサーバーを操作していますが、本番現場では常に**「1秒の遅延もミスも許されない」「市販のソフトでは帯に短し襷に長し」**という課題に直面します。 「現場に必要なツールがないなら、オペレーター自身がコードを書いて作ればいい」という発想から、これまで開発・公開してきたリポジトリやツールの設計思想をまとめまし..."
+    },
+    {
+      "id": "s-e033409c1e",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "生成に成功しても、受取とGPU停止は別に確かめる",
+      "url": "https://zenn.dev/bricks/articles/verify-video-receipt-and-release",
+      "publishedAt": "2026-10-18T10:41:36.000Z",
+      "summary": "5秒の動画はできていました。しかし、埋め込みUIは完了へ変わらず、受取を照合する欄も更新されず、終了ボタンは無効のままでした。 ColabのL4でWan2.2 TI2V-5Bを動かした非公開試作の記録です。生成成功、ファイルの受取、ランタイムの終了を別の証拠で確かめたことで、画面が止まったあとも、どこまで終わったかを整理できました。 画面が更新されなくても、同じ生成をやり直さない この試行で生成したのは、紙の舟が水面を進む無音動画1本です。Python 3.12.13とL4の環境で固定依存を導入し、固定したモデルファイルのhashを確認してから生成しました。 workerは正常終了し..."
+    },
+    {
+      "id": "s-9714fd35fc",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "判断特化モデルの比較: Decisions API・Jev・Clef",
+      "url": "https://zenn.dev/bocek/articles/5e1ba6fae7e7d6",
+      "publishedAt": "2026-10-18T10:21:12.000Z",
+      "summary": "はじめに 判断特化モデルを選ぶ際の参考として、Decisions API[1]・Jev[2]・Clef[3]の仕様と料金を比較し、Decisions APIとJevを実際に試しました。 今回の検証では、両APIの精度に違いは見られませんでした。費用はJevのほうが安く、応答もおおむねJevのほうが速かったものの、特に時間がかかった数件ではDecisions APIより遅くなりました。 ! 今回はDecisions APIとJevの2つを実際に試しました。 ClefとClef-flashについては、公式情報をもとに仕様と料金を紹介します。 仕様と料金 今回の測定ではDecisio..."
+    },
+    {
+      "id": "s-4fab7b00e9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "不正アクセス急増背景に“中国製LLM”台頭、AIが自動で偵察→侵入→情報奪取「情報漏れていない人の方が珍しい」専門家が警鐘、対策は?（テレビ高知） - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/2c807564e567a7a66e8718bce6ebd38538c605e8",
+      "publishedAt": "2026-10-18T10:16:23.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-e97e893c0c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "開発中のゲームがクラック・無断改造され、中国市場からの撤退を決めたゲーム作者の悲痛な報告にさまざまな反応が寄せられる「AIを使われているのかな…」",
+      "url": "https://togetter.com/li/2759733",
+      "publishedAt": "2026-10-18T10:04:56.000Z",
+      "summary": "Hide(AlphaNuts/WhiteCute) @AlphaNutsGames ちょっと制作が停滞します。 中国人にやられまして… ディザーターズがクラックされて、翻訳どころか中身の改造までされてしまいました。 ご丁寧にバグ取りまで。 企業さんと協議中のsteam対応でも、中国語も予定に入っていたのですが、もうこれはビジネスとして終わりました..."
+    },
+    {
+      "id": "s-95e02c1620",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "X投稿に別サイトの記事を混ぜる案を、実装後すぐ取り消した話",
+      "url": "https://zenn.dev/jworks_hq/articles/jworks-20261016-07368dab",
+      "publishedAt": "2026-10-18T10:00:54.000Z",
+      "summary": "Xの通常投稿に、別サイトの記事を混ぜる案を実装しました。ところが、案そのものが却下されたため、同じ日に混ぜ込みを取り消しました。機能を作ってから方針が変わることはあります。今回あらためて考えたのは、採用されるか確定していない案を、どのくらい小さく実装しておくべきかということです。 投稿に別サイトの記事を混ぜる案 検討したのは、曜日を限定して、MEDIAにあるデスク環境系の記事をXの通常投稿に一件混ぜる案です。この案を実装したあと、Jの判断で案3は却下されました。そのため、投稿に混ぜる処理も取り消しています。実装から取り消しまでを同じ日に行いました。 ここで区別しておきたいのは、「案を..."
+    },
+    {
+      "id": "s-6e247a7849",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "不正アクセスに気付くのは難しい？ 「通常アクセス」と見分けがつかない場合も（山口健太） - エキスパート - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/expert/articles/ee12ceb9b59c6960ccf3b9bc4a7c991040fb3880",
+      "publishedAt": "2026-10-18T09:45:15.000Z",
+      "summary": "最近急増している「不正アクセス」による情報漏洩問題ですが、その中には「通常アクセスと見分けがつかない」事例があるようです。 なぜそんなことが起きているのか、背景を考察しました。 不正アクセスと「通常アクセス」の違いとは「不正アクセス」という言葉からイメージしやすいのは、他人のIDとパスワードを用いた..."
+    },
+    {
+      "id": "s-2c44d58f2d",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "told Qwen3.8 27b to hack my router",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8wmbp/told_qwen38_27b_to_hack_my_router/",
+      "publishedAt": "2026-10-18T07:02:09.000Z",
+      "summary": "i wanted to change my router firmware to openwrt and so i told claude to do it but of course the guard blocked me even opus 4.8 didn&#39;t want to do it , so i launched my Qwen3.8 27b and told it the same thing i gave it the link to the giude page and it did change the firmware perfectly the thing is this is the normal model it&#39;s not ablitreated, do you think that cyber will be guarded in futu"
+    },
+    {
+      "id": "s-9d55f98283",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Made sum crap that beats Jev",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8vl4i/made_sum_crap_that_beats_jev/",
+      "publishedAt": "2026-10-18T06:00:00.000Z",
+      "summary": "I would love for some feedback, live demo at: huggingface.co/spaces/e12ex2/herbert-demo Not self promo, jus looking for some feedback on what to improve or any bugs or model breaking you found. &#32; submitted by &#32; /u/Massive-Ice2791 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-5ca1fbd976",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "We all joke about our rigs being space heaters, so I had Qwen vibecode it",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8v97a/we_all_joke_about_our_rigs_being_space_heaters_so/",
+      "publishedAt": "2026-10-18T05:40:13.000Z",
+      "summary": "With winter coming up where I&#39;m at, I wanted to see if this could actually work. Running my 4x V620 server flat out made my apartment too hot anyway, so the problem really was control. I settled on using a motherboard temperature sensor with an offset cause cases get hot. It works well enough but I want an esp32 based thermostat eventually. This project is based around the vLLM backend I use, "
+    },
+    {
+      "id": "s-454ab5c7b7",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Ling 3.1 Flash (560B MoE) loaded across 4 DGX Sparks using llama.cpp RPC",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8v7cp/ling_31_flash_560b_moe_loaded_across_4_dgx_sparks/",
+      "publishedAt": "2026-10-18T05:37:02.000Z",
+      "summary": "sudoing posted that he&#39;s loaded Ling 3.1 Flash across four DGX Sparks. It&#39;s a 560B MoE with 25B active parameters per token. He&#39;d enjoyed the earlier Ling models and wanted to test this one, but it wouldn&#39;t fit on his two Sparks with the setup he was trying. someone in Germany gave him access to a four-Spark setup. He&#39;s using Atomic Chat&#39;s day-one Q4 GGUF, distributed acros"
+    },
+    {
+      "id": "s-0478902d67",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "What are the odds Qwen 4 models are going to think less?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8uqig/what_are_the_odds_qwen_4_models_are_going_to/",
+      "publishedAt": "2026-10-18T05:09:25.000Z",
+      "summary": "Qwen4s are hopefully coming pre-Xmas… there was all the announcements recently but no exact release date. I’m running qwen flash next 3.8 at about 28tokens per second and gotta be real, most of those go into thinking. Thinking less with the same or higher intelligence would be the biggest upgrade I could think of regardless of hardware or inference smarts. &#32; submitted by &#32; /u/turtleninja99"
+    },
+    {
+      "id": "s-151bb1d071",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "My 5070 ti/3070 Chimera build.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8u6eg/my_5070_ti3070_chimera_build/",
+      "publishedAt": "2026-10-18T04:37:04.000Z",
+      "summary": "Got lucky with a 5070 Ti for $750 AFTER TAX (might be the best decision I&#39;ve ever made tbh) back in November 2025. If only I had known I&#39;d be getting into local llms at the time...anyways. I recently decided to start messing with local AI. I began getting comfortable in Powershell and having local models help me write random automation scripts. Naturally, that spiraled into wanting bigger "
+    },
+    {
+      "id": "s-fb114ba6f0",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "DeepSeek v4.1 Flash 1017 for Dwarfstar (ds4)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8tr2c/deepseek_v41_flash_1017_for_dwarfstar_ds4/",
+      "publishedAt": "2026-10-18T04:12:24.000Z",
+      "summary": "Hey y&#39;all, just following up on my PR to get the new vision tower for 1017 working in ds4 with the quant I promised (the language model loads already, but vision needed my PR). I built to the exact same recipe antirez used for his original DS4.1 Q2: 2-bit routed experts with 8-bit or higher for everything else, combined with the original FP8 engram table. This worked well for the original DS4."
+    },
+    {
+      "id": "s-39ee233d86",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "3xrtx8000 48gb... what to do?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x8st56/3xrtx8000_48gb_what_to_do/",
+      "publishedAt": "2026-10-18T03:20:02.000Z",
+      "summary": "I accidentaly bought 3 rtx8000 48gb (yeah, i swear). I am using 1 right now with Strata and Qwen Next IQ3 and runs very good. Should I put 3 on a PC and runb Strata on a higher Q? What do you suggest? Thanks! &#32; submitted by &#32; /u/evillarreal86 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-e0eddf9b45",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「11回止めたのに本番DBが消えた」　AIエージェント“6つの暴走”と、人間の承認を増やしても防げない理由",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/18/news004.html",
+      "publishedAt": "2026-10-17T23:00:00.000Z",
+      "summary": "AIコーディングエージェントの自律性が高まる一方、本番データベースの削除といった事故も起こっています。では、「人間の承認」を増やせば事故は防げるのでしょうか。事例と対策から、事故を起こさないAIエージェントの設計について考えます。"
+    }
+  ]
+}
