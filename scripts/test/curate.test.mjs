@@ -203,6 +203,13 @@ test('evaluateStageBCitations: 本文に簡体字（中国語）が混入して�
 });
 
 test('evaluateStageBCitations: 日本語の新字体だけなら中国語として誤検出しない', () => {
-  const body = '多層構造の記憶を持つ無状態のモデルを協調させます[^s-aaa]。';
+  const body = '多層構造の記憶を持つ無状態のモデルを机上で協調させ、据え置きの号数を将来担当します[^s-aaa]。';
   assert.deepEqual(evaluateStageBCitations(body, new Set(['s-aaa'])), []);
+});
+
+test('evaluateStageBCitations: 机器学习・数据库など一般的な中国語の語句も検出する（codex review P2）', () => {
+  for (const phrase of ['机器学习', '数据库', '数据分析与可视化']) {
+    const problems = evaluateStageBCitations(`${phrase}を扱います[^s-aaa]。`, new Set(['s-aaa']));
+    assert.equal(problems.length, 1, phrase);
+  }
 });
