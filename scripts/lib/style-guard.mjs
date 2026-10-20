@@ -46,3 +46,21 @@ export function findBannedExpressions(text) {
 
   return found;
 }
+
+// 簡体字にしか存在しない字（日本語の新字体と共有する字は含めない）。出典が中国語の記事
+// （例: GitHub Trending の中国語README）を、モデルが日本語に訳さず本文へ写した場合の検出用。
+const SIMPLIFIED_ONLY_CHARS = new Set(
+  '记协态级项应间层构础无这们为开发过还时对动问题网络总营统说现实库务经产关业从让软储优议论许证设详读调该请谁谢转输达运选边针钱链错长门难页顾须饭马鸟鱼'.split(
+    '',
+  ),
+);
+
+/**
+ * 本文に簡体字（中国語）が混入していないか検出する純関数。
+ * 脚注定義の出典タイトルは原文のまま中国語でよいため、呼び出し側は本文だけを渡すこと。
+ * @param {string} text
+ * @returns {string[]} 検出された簡体字（重複なし。空配列なら問題なし）
+ */
+export function findSimplifiedChinese(text) {
+  return [...new Set([...text].filter((ch) => SIMPLIFIED_ONLY_CHARS.has(ch)))];
+}

@@ -193,3 +193,16 @@ test('partitionStageBOutcomes: 空配列・全失敗はエラー', () => {
   assert.throws(() => partitionStageBOutcomes([], 3), /3件未満/);
   assert.throws(() => partitionStageBOutcomes([ng('A'), ng('B'), ng('C')], 3), /3件未満/);
 });
+
+// 2026-10-20 実績: 中国語READMEの出典を、モデルが訳さず本文へ写して公開された。
+test('evaluateStageBCitations: 本文に簡体字（中国語）が混入していれば検出する', () => {
+  const body = 'モデルのAPIと前端应用の間に置く基盤です[^s-aaa]。';
+  const problems = evaluateStageBCitations(body, new Set(['s-aaa']));
+  assert.equal(problems.length, 1);
+  assert.match(problems[0], /中国語/);
+});
+
+test('evaluateStageBCitations: 日本語の新字体だけなら中国語として誤検出しない', () => {
+  const body = '多層構造の記憶を持つ無状態のモデルを協調させます[^s-aaa]。';
+  assert.deepEqual(evaluateStageBCitations(body, new Set(['s-aaa'])), []);
+});
