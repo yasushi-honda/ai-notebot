@@ -20,6 +20,7 @@ import { dirname, join, resolve } from 'node:path';
 import { generateText } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
 import { checkCitations } from './lib/citation-gate.mjs';
+import { findSimplifiedChinese } from './lib/style-guard.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_DIR = join(ROOT, 'data', 'raw');
@@ -205,6 +206,7 @@ function buildStageBPrompt(theme, themeItems, extraInstructions) {
     '  [^s-aaa, s-bbb] のように1つの角括弧内にカンマ区切りで複数idを入れることは絶対にしない',
     '- 出典のない推測や一般論の断定は避ける。あくまで下の情報に基づいて書く',
     '- ノンエンジニアにも伝わる平易な日本語。専門用語は短く補足する',
+    '- 一次情報が中国語・英語でも、本文は必ず自然な日本語に訳して書く（原文の語句を写さない。簡体字を本文に含めない）',
     '- 製品名・数値・固有名詞など重要な語句は **太字** で強調する（例: **Claude Code** は...）',
     '- 3件以上の並列的な事実を列挙する場合は箇条書きを使ってよい。',
     '  箇条書きの各行も必ず句点＋脚注で終える（例: `- 項目の説明です[^s-aaa]。`）',
@@ -240,6 +242,12 @@ export function evaluateStageBCitations(bodyMarkdown, validIds) {
       `脚注のない文があります。導入・要約文も含め全ての文の文末に[^s-<id>]を付けてください: ${check.uncited
         .map((s) => s.slice(0, 80))
         .join(' | ')}`,
+    );
+  }
+  const chinese = findSimplifiedChinese(bodyMarkdown);
+  if (chinese.length > 0) {
+    problems.push(
+      `本文に中国語（簡体字: ${chinese.join('')}）が混入しています。出典が中国語でも本文は必ず自然な日本語に訳して書き、原文の語句を写さないでください`,
     );
   }
   return problems;

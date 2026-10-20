@@ -193,3 +193,23 @@ test('partitionStageBOutcomes: 空配列・全失敗はエラー', () => {
   assert.throws(() => partitionStageBOutcomes([], 3), /3件未満/);
   assert.throws(() => partitionStageBOutcomes([ng('A'), ng('B'), ng('C')], 3), /3件未満/);
 });
+
+// 2026-10-20 実績: 中国語READMEの出典を、モデルが訳さず本文へ写して公開された。
+test('evaluateStageBCitations: 本文に簡体字（中国語）が混入していれば検出する', () => {
+  const body = 'モデルのAPIと前端应用の間に置く基盤です[^s-aaa]。';
+  const problems = evaluateStageBCitations(body, new Set(['s-aaa']));
+  assert.equal(problems.length, 1);
+  assert.match(problems[0], /中国語/);
+});
+
+test('evaluateStageBCitations: 日本語の新字体だけなら中国語として誤検出しない', () => {
+  const body = '多層構造の記憶を持つ無状態のモデルを机上で協調させ、据え置きの号数を将来担当します[^s-aaa]。';
+  assert.deepEqual(evaluateStageBCitations(body, new Set(['s-aaa'])), []);
+});
+
+test('evaluateStageBCitations: 机器学习・数据库など一般的な中国語の語句も検出する（codex review P2）', () => {
+  for (const phrase of ['机器学习', '数据库', '数据分析与可视化']) {
+    const problems = evaluateStageBCitations(`${phrase}を扱います[^s-aaa]。`, new Set(['s-aaa']));
+    assert.equal(problems.length, 1, phrase);
+  }
+});
