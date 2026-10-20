@@ -24,7 +24,7 @@ import { dirname, join, resolve } from 'node:path';
 import { generateText } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
 import { normalizeLiteralNewlines } from './curate.mjs';
-import { findBannedExpressions } from './lib/style-guard.mjs';
+import { findBannedExpressions, findSimplifiedChinese } from './lib/style-guard.mjs';
 import { stripCodeSpans, checkCitations } from './lib/citation-gate.mjs';
 import { parseFrontmatter } from './lib/frontmatter.mjs';
 
@@ -782,6 +782,12 @@ export function validateGenerated(result, itemsById, recentWorkAreas = []) {
 
   const styleIssues = findBannedExpressions(`${result.title}\n${result.summary}\n${result.bodyMarkdown}`);
   if (styleIssues.length > 0) problems.push(`NG表現を検出: ${styleIssues.join(', ')}`);
+
+  // 出典が中国語でも本文は日本語で書く（2026-10-20に日次版で、care版も2026-10-06で混入実績あり）
+  const chinese = findSimplifiedChinese(`${result.title}\n${result.summary}\n${result.bodyMarkdown}`);
+  if (chinese.length > 0) {
+    problems.push(`本文に中国語（簡体字: ${chinese.join('')}）が混入しています。出典が中国語でも自然な日本語に訳して書いてください`);
+  }
 
   // 特定の介護専用商用SaaS製品だけを紹介する記事になっていないかの機械的ゲート
   // （ユーザーから「一般に広く使われているツールでの具体的なやり方を中心にすべき」との
