@@ -641,6 +641,18 @@ test('validateGenerated: 絵文字等のNG表現があれば検出する', () =>
   assert.ok(problems.some((p) => p.includes('NG表現')));
 });
 
+test('validateGenerated: 本文・要約に簡体字（中国語）が混入していれば検出する', () => {
+  const inBody = validateGenerated(validResult({ summary: '体調に大きな变化がない日の記録です' }), itemsByIdWithOfficial);
+  assert.ok(inBody.some((p) => p.includes('中国語')));
+  const inTitle = validateGenerated(validResult({ title: '数据库を使った記録の整理' }), itemsByIdWithOfficial);
+  assert.ok(inTitle.some((p) => p.includes('中国語')));
+});
+
+test('validateGenerated: 日本語の新字体・常用の字だけなら中国語として誤検出しない', () => {
+  const problems = validateGenerated(validResult({ summary: '体調に大きな変化はなく、点検の机上確認も済みました' }), itemsByIdWithOfficial);
+  assert.ok(!problems.some((p) => p.includes('中国語')));
+});
+
 test('validateGenerated: workAreaがenumに存在しない値なら検出する（codex reviewで指摘・修正）', () => {
   const problems = validateGenerated(validResult({ workArea: '存在しない業務領域' }), itemsByIdWithOfficial);
   assert.ok(problems.some((p) => p.includes('workArea')));
