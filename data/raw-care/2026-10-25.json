@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-25",
+  "collectedAt": "2026-10-24T22:01:09.835Z",
+  "researchSummary": "### 調査メモ：生成AIを活用した「介護計画書・各種文書の下書き作成」の効率化\n\n#### 1. 概要・背景\n* **国の動向（公式情報源）**：\n  * 厚生労働省は「2040年に向けたサービス提供体制等のあり方に関する検討会」の中間・最終とりまとめ（2025年公表）において、訪問介護・通所介護・ケアマネジメントなどの現場で作成する各種文書（個別援助計画書、ケアプランの原案、サービス担当者会議の議事録等）の**「原案作成に生成AIを活用することが業務効率化に資する」**と公式に言及・推進しています。\n  * 厚生労働省の「介護サービス事業における生産性向上に資するガイドライン」等でも、業務プロセスの見直しとテクノロジーの組み合わせが奨励されています。\n\n#### 2. 具体的な効率化の方法（汎用AIツールの活用）\n* **使用するツール**：ChatGPT、Claude、Gemini、Google ドキュメントなどの汎用生成AI。\n* **対象業務**：通所介護・特養・老健などの「個別援助計画書」「モニタリング記録」、あるいは居宅介護支援の「ケアプラン原案」「サービス担当者会議の議事録」の下書き作成。\n* **手順（現場での実践フロー）**：\n  1. **要点の箇条書き入力**：支援員やケアマネジャーが、アセスメントで得られた利用者の心身状況、生活課題、本人・家族の希望、これまでの支援のねらいなどを、箇条書きでAIに入力する。\n  2. **下書きの生成**：汎用AIに対し、「以下の情報を基に、介護保険の趣旨に沿った［計画書／議事録］のフォーマットに合わせた文章の原案を作成してください」と指示（プロンプト）を出す。\n  3. **人間の専門職による確認・修正（必須）**：AIが生成した文章はあくまで「下書き（原案）」であり、専門職（ケアマネジャーや管理者等）が内容の妥当性、安全性、法令・基準への適合性を厳に確認・修正の上、正式な文書として確定・同意取得・発出する。\n\n#### 3. 現場導入における重要留意点（リスク管理）\n* **個人情報の保護**：\n  * 個人情報保護委員会等の注意喚起（令和5年6月等）に基づき、一般的な無料版AIサービス等に、本人の同意なく要配慮個人情報（病歴や具体的な個人特定情報）をそのまま入力することは情報漏洩および法的リスク（個人情報保護法違反等）につながるため厳禁。\n  * 事業所として利用規程を定め、匿名化（仮名化）の徹底や、データが学習されないセキュアな環境・法人契約プラン（API利用や商用プラン等）を用いるなどの厳格なルール作りが不可欠。\n* **最終責任の所在**：\n  * ケアプランの作成やサービス担当者会議の運営、計画書の同意・交付といった法的な手続き・最終判断の権限は、あくまで人間の専門職（ケアマネジャー等）にあり、AIの出力を無修正でそのまま用いてはならない。",
+  "webSearchQueries": [
+    "介護 生成AI ガイドライン 厚生労働省 文書作成",
+    "介護現場 生成AI 活用 事例 厚生労働省"
+  ],
+  "searchEntryPointHtml": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4scbF6uCAEXBurLihBu31N1SfSTy6INFscF9fT2SANODfCDH3hVB0KWAtsQs2T-klc6JKfRCP2lG5Owa1UzARE4b7eOdQ9V2exLnngpQFZzQmlhxr1IzifguLF-CmvY_vITVPNxTHOmGEBH4CuCbK-GaAuGcX6b8lFblHL7SK39kqtnBhvJxNJiC67FpC8CYZ4nTdvOijGEZn63iJ7T9yR25TvQWnIXQydH7rZRZ42VXVi3Q0R4g97D7m6NtQuyDzgKMdw3LJEK-AX6zF5Jcf3FbRkZ34tKxxW6zv4a2Pzsedqch4_BmrxGQMk2S3VWjlzxn_CHQAI7BLvNmb-igJI920-6Y5BS-BZdComoimpxc=\">介護現場 生成AI 活用 事例 厚生労働省</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFNSqDR3D5WDu_nKNb5YisdFyeImXcDotSJ0zf7FE8VQ7RietuhClZ7vW8eZz800DX59k2MF32VK7ROVO4hErig0HKtvGHgRpMleKWibo1Es2Jw9Pi_X5n711IC4qAWkpI_ow7BCZ_6KV_OlkD_QCZqAMyXfumqbBvVygUuuNwXuiJYFuaYooVxy0bWyBzk_RHIHL5Lhi77AIregSesxUu4CgLHBYnhNYUGRdCwEHTZ6CFBD-mTKbulJaanl-a-WKKhTe7vzbHaIMNNk64sqzEmbr6k074PsQ2uhJFc-aqoDjJu-PVpYeG_mFBACOTDCfHiMlFibPVd_MK0faz4Z41WEDiZuiuaPHghVlz6I4bjNtK6DkuxYeABMjmdaTEhMVN9iLUWwHVL6tCIgl8hvyf78YlDXA0=\">介護 生成AI ガイドライン 厚生労働省 文書作成</a>\n  </div>\n</div>\n",
+  "items": [
+    {
+      "id": "s-d94c33d1e6",
+      "source": "www.fukuhiroba.com",
+      "sourceType": "web",
+      "title": "【2026年6月最新】ケアプランAIと介護DX事例3選｜生成AI活用・大手事例・補助金整備を介護事業所の経営者・管理者向けに解説 | 福ひろば～郡山市の介護福祉情報ポータルサイト",
+      "url": "https://www.fukuhiroba.com/blog/88748/",
+      "publishedAt": "2026-10-24T22:00:50.178Z",
+      "summary": "あなたの事業所では、ケアプランの作成にかかる時間を「当たり前のコスト」として受け入れていませんか？実は今、国の政策レベルで「生成AIによるケアプラン作成支援」が明確に推進される時代になりました。大手から中小まで、介護現場でのAI活用事例が積み重なってきた2026年6月時点の最新動向を3つのテーマで整理します。 厚生労働省は2025年4月に公表した「2040年に向けたサービス提供体制等のあり方に関する中間とりまとめ」の中で、居宅サービス計画書（ケアプラン）やサービス担当者会議の議事録の原案作成に生成AIを活用することで業務効率化につながると明記しました。国レベルで生成AIの介護活用に方向性が示されたことで、現場での導入を後押しする大きな後ろ盾となっています。2026年4月には介護情報基盤の運用も本格化し、利用者データの連携基盤が整いつつある中、AIが分析・提案を行うための素地は着実に整ってき",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T22:00:50.178Z"
+    },
+    {
+      "id": "s-c6e2ff29f6",
+      "source": "claude-media.com",
+      "sourceType": "web",
+      "title": "ケアプランを生成AIで下書きするケアマネの注意点と厚労省の考え方 | Claude Media",
+      "url": "https://claude-media.com/articles/claude-care-manager-ai-precautions",
+      "publishedAt": "2026-10-24T22:00:50.533Z",
+      "summary": "結論から言うと、矛盾しないと読めます。厚生労働省は2025年4月に公表した「中間とりまとめ」で、計画書などの文書を生成AIで下書きすることが業務効率化に資すると指摘しました。一方で、居宅サービス計画(ケアプラン)の原案作成、サービス担当者会議、利用者への説明と同意は、運営基準が介護支援専門員(ケアマネジャー)本人の手続きとして定めています。 Claudeが担えるのは、文章の下書きと書類の整形までです。アセスメントの面接も、最終的な判断も人に残ります。Claudeの機能全体は Claude完全ガイド で確認できます。 厚労省は2025年4月10日の第5回検討会で「中間とりまとめ」をまとめ、同日公表しました。検討会の正式名称は「2040年に向けたサービス提供体制等のあり方」検討会で、介護以外の福祉サービスも対象です。4月10日の文書は高齢者関係の中間とりまとめです。2040年を見据えて持続可能",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T22:00:50.533Z"
+    },
+    {
+      "id": "s-1175079604",
+      "source": "www.mhlw.go.jp",
+      "sourceType": "web",
+      "title": "第2章 2040年に向けた、医療・介護・障害福祉の現場における取組み－テクノロジー（ICT、AI、ロボット等）の活用による生産性向上－",
+      "url": "https://www.mhlw.go.jp/wp/hakusyo/kousei/26/dl/1-02.pdf",
+      "publishedAt": "2026-10-24T22:00:59.337Z",
+      "summary": "本書は、2040年頃に向けて医療・介護・福祉サービスの需要増加や生産年齢人口の減少が同時進行する中で、限られた人的資源の有効活用と持続的なサービス提供体制の確保を目指す「生産性向上」の取組みを整理している。第1節では生産性向上の基本的考え方を示し、第2節では医療・介護・障害福祉の各分野におけるICT、AI、ロボット等のテクノロジー導入状況、業務効率化や負担軽減の効果、さらには現場の課題と政府の支援策（医療DX・介護DX・障害保健福祉DXの推進や各種加算・補助金など）を詳述している。また、先進的な事例を通じて業務プロセス見直しや人材育成との一体的運用が重要であることを示している。第3節では、これら先進技術の導入に対する国民や従事者の受け止め方や期待・不安について意識調査を基に分析し、最後の第4節では2040年頃を見据えた医療・介護・障害福祉の現場の未来像を展望している。",
+      "tier": "official",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T22:00:59.337Z"
+    },
+    {
+      "id": "s-a8e1d55a60",
+      "source": "haip-cip.org",
+      "sourceType": "web",
+      "title": "医療・ヘルスケア分野における生成AI利用ガイドライン（第2版）",
+      "url": "https://haip-cip.org/assets/documents/nr_20241002_02.pdf",
+      "publishedAt": "2026-10-24T22:01:09.104Z",
+      "summary": "本書は、医療機関や薬局における生成AIの導入と利用を促進するため、利用にともなうリスクと対策を示したガイドラインの第2版です。令和5年度の厚生労働行政推進調査事業費補助金による研究成果を取りまとめたものであり、2025年7月11日に非営利法人医療AIプラットフォーム技術研究組合によって発行されました。主な内容として、生成AIの特徴や医療分野における利用可能性、利用時・開発時に特に注意すべきポイント、さらにドキュメントワーク支援や診察・診断支援、患者説明、フォローアップ支援、トリアージ、研修支援、研究データ処理・分析支援、デジタルセラピーといった具体的なユースケースごとのリスクと対策例が詳細に解説されています。著作権やプライバシー、セキュリティ、関連法令（医師法、医療法、医薬品医療機器等法など）への遵守事項が網羅されており、医療現場において安全かつ適切に生成AIを活用するための指針となってい",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T22:01:09.104Z"
+    },
+    {
+      "id": "s-7dbf9a04f4",
+      "source": "medicalcare-support.jp",
+      "sourceType": "web",
+      "title": "医療・介護現場の生成AI活用ガイド【2026年版】｜業務別の使いどころ・導入5ステップ・利用規程ひな形｜医療・介護マニュアルサポート",
+      "url": "https://medicalcare-support.jp/articles/seisei-ai-katsuyo-iryo-kaigo-guide",
+      "publishedAt": "2026-10-24T22:01:09.834Z",
+      "summary": "「議事録やマニュアルの下書きに生成AIを使いたいが、患者情報を扱う職場で使ってよいのか分からない」——医療機関・介護施設からよくいただく相談です。国も、介護分野の計画書・議事録の 原案作成 への生成AI活用を業務効率化に資すると位置づけ始めました（令和7年4月・2040年に向けたサービス提供体制等のあり方 中間とりまとめ）。本記事では、 「下書きはAI・確定は人」 を原則に、書類業務での安全な使いどころ、守るべき絶対線（個人情報）、院内ルールの作り方を、公的資料を原文確認のうえで整理します。 対象施設： 病院・診療所・介護施設（管理者・事務部門向け）／ 情報時点： 令和8年7月12日 本記事の範囲（必ずお読みください）： この記事の3行まとめ 要するに—— 「書類の下書き」への活用は国の方針とも整合する一方、個人情報の扱いを誤ると法令違反になり得る 。この2つを押さえるのが出発点です。 個",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-24T22:01:09.834Z"
+    }
+  ]
+}

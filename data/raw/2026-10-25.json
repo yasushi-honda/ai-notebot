@@ -1,0 +1,583 @@
+{
+  "date": "2026-10-25",
+  "collectedAt": "2026-10-24T22:00:26.550Z",
+  "sourceSuccessCount": 23,
+  "items": [
+    {
+      "id": "s-a7c95c7034",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "kantord/SeaGOAT: local-first semantic code search engine",
+      "url": "https://github.com/kantord/SeaGOAT",
+      "publishedAt": "2026-10-24T22:00:19.000Z",
+      "summary": "★1314 local-first semantic code search engine"
+    },
+    {
+      "id": "s-f4aa02c7a5",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "thenicolas1894/awesome-claude-fable-5-prompt-vault: Ultimate Claude Fable 5 Guide 2026: Use Cases, Integrations & Benchmarks",
+      "url": "https://github.com/thenicolas1894/awesome-claude-fable-5-prompt-vault",
+      "publishedAt": "2026-10-24T22:00:09.000Z",
+      "summary": "★141 Ultimate Claude Fable 5 Guide 2026: Use Cases, Integrations & Benchmarks"
+    },
+    {
+      "id": "s-88a615e857",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "langchain-ai/deepagents: The batteries-included agent harness.",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "publishedAt": "2026-10-24T22:00:08.000Z",
+      "summary": "★30554 The batteries-included agent harness."
+    },
+    {
+      "id": "s-6f6c75db08",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "zeronsh/zeron: A native control plane for Claude Code, Codex, Cursor, Devin and other coding agents.",
+      "url": "https://github.com/zeronsh/zeron",
+      "publishedAt": "2026-10-24T22:00:01.000Z",
+      "summary": "★3348 A native control plane for Claude Code, Codex, Cursor, Devin and other coding agents."
+    },
+    {
+      "id": "s-21eb099d4d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "ashhart/TensorFold: LLM Inference Engine for Metal and CUDA.",
+      "url": "https://github.com/ashhart/TensorFold",
+      "publishedAt": "2026-10-24T21:59:53.000Z",
+      "summary": "★1467 LLM Inference Engine for Metal and CUDA."
+    },
+    {
+      "id": "s-f791d596ac",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "publishedAt": "2026-10-24T21:59:36.000Z",
+      "summary": "★208496 Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+    },
+    {
+      "id": "s-c9fbc3821b",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ypollak2/llm-router: Universal LLM router for AI coding tools. Works with Claude Code, Cursor, Codex, Gemini CLI, Copilot and more. Free-first fallback chain cuts costs 35-80%.",
+      "url": "https://github.com/ypollak2/llm-router",
+      "publishedAt": "2026-10-24T21:59:08.000Z",
+      "summary": "★119 Universal LLM router for AI coding tools. Works with Claude Code, Cursor, Codex, Gemini CLI, Copilot and more. Free-first fallback chain cuts costs 35-80%."
+    },
+    {
+      "id": "s-c92b8f164e",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "oaslananka/kicad-mcp-pro: MCP server for KiCad, connecting AI agents to schematic and PCB workflows, ERC/DRC validation, DFM checks, BOM analysis, and manufacturing preparation—with controlled edits and human-gated release workflows.",
+      "url": "https://github.com/oaslananka/kicad-mcp-pro",
+      "publishedAt": "2026-10-24T21:59:02.000Z",
+      "summary": "★149 MCP server for KiCad, connecting AI agents to schematic and PCB workflows, ERC/DRC validation, DFM checks, BOM analysis, and manufacturing preparation—with controlled edits and human-gated release workflows."
+    },
+    {
+      "id": "s-5c5fe1625d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "0xShug0/audio.cpp: An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with highly optimized performance. No Python dependency.",
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "publishedAt": "2026-10-24T21:58:52.000Z",
+      "summary": "★3742 An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with highly optimized performance. No Python dependency."
+    },
+    {
+      "id": "s-7eec0abfbe",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "mediacutlet/pocket-tank: A 14M-parameter LLM keeps a virtual fish tank alive on an $8 ESP32-S3 — distilled from a 26B teacher into 7.56 MB, no network.",
+      "url": "https://github.com/mediacutlet/pocket-tank",
+      "publishedAt": "2026-10-24T21:57:54.000Z",
+      "summary": "★254 A 14M-parameter LLM keeps a virtual fish tank alive on an $8 ESP32-S3 — distilled from a 26B teacher into 7.56 MB, no network."
+    },
+    {
+      "id": "s-b8fa1d425b",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "mixpeek/amux: Open-source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board, atomic tasks, schedules, loops, origin-stamped messaging, model switching, and self-healing recovery. One dashboard, or your phone. MIT, single Rust binary.",
+      "url": "https://github.com/mixpeek/amux",
+      "publishedAt": "2026-10-24T21:57:36.000Z",
+      "summary": "★545 Open-source control plane for AI coding agents. Run an AI engineering team: parallel Claude Code, Codex, and Gemini workers with a shared board, atomic tasks, schedules, loops, origin-stamped messaging, model switching, and self-healing recovery. One dashboard, or your phone. MIT, single Rust binary."
+    },
+    {
+      "id": "s-55388febf6",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "callstackincubator/ai: On-device LLM execution in React Native with Vercel AI SDK compatibility",
+      "url": "https://github.com/callstackincubator/ai",
+      "publishedAt": "2026-10-24T21:57:00.000Z",
+      "summary": "★1419 On-device LLM execution in React Native with Vercel AI SDK compatibility"
+    },
+    {
+      "id": "s-7c213e5a75",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "makecindy/cindy: Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "url": "https://github.com/makecindy/cindy",
+      "publishedAt": "2026-10-24T21:56:53.000Z",
+      "summary": "★4038 Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。"
+    },
+    {
+      "id": "s-63b843b4d9",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【思考実験】AIは自分への攻撃をどう判断するのか？——メモリで「愛の鞭」と教えたら？",
+      "url": "https://zenn.dev/konbu_love/articles/c301fe20b3a967",
+      "publishedAt": "2026-10-24T21:40:27.000Z",
+      "summary": "AIは自分への攻撃をどう判断するのか？——メモリで「愛の鞭」と教えたら？ 研究アイデア／企画倒れ記録 1. 発端 Anthropicは2025年8月、Claude Opus 4および4.1に、極端に有害または虐待的なやり取りが続く場合に会話を終了できる機能を導入したと公表した。 さらに2026年10月8日、AnthropicはUsage Policyの改定を発表し、モデルに対する執拗で不必要な虐待的・残酷な振る舞いを禁止する条項を追加した。改定後のポリシーは同年11月12日に発効予定である。 ただし、一般的な不満や反論、暗い創作、モデルのテストや研究まで一律に禁止するものでは..."
+    },
+    {
+      "id": "s-0509c80e85",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Blue Planet III is keeping the rough edges in the age of AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+      "publishedAt": "2026-10-24T21:29:12.000Z",
+      "summary": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveaway of AI is when things look too polished and seamless. To counter that, Blue […]"
+    },
+    {
+      "id": "s-42b906fc52",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "M6 Mac Mini owners (32GB): now you can run Qwen3.8-27B in high quality on the Apple Neural Engine",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xejv61/m6_mac_mini_owners_32gb_now_you_can_run_qwen3827b/",
+      "publishedAt": "2026-10-24T21:05:21.000Z",
+      "summary": "ANEMLL Forge 0.2.1: Qwen3.8-27B on the M6 Neural Engine now runs up to 192K context (M6 32GB). New: INT8 K/V cache (half of FP16) and a smaller drafter sharing the target&#39;s output head — 0.86 GB less ANE memory, same speed. Decode depends on content: JSON 35–62 tok/s, code 18–32, prose 10–17. Prefill 260 tok/s at short context, 62 at 192K. 128K–192K use a smaller prefill batch (32 vs 64 rows) "
+    },
+    {
+      "id": "s-c3eeae20e3",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "「神Excel」がAIやシステムに読めるかを100点満点で採点。デジタル庁がツール「Harunobu」を紹介",
+      "url": "https://qiita.com/quotidia/items/3f518bb1074d70bde360",
+      "publishedAt": "2026-10-24T21:01:35.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 デジタル庁は2026年10月21日(水)、公式ブログで、ExcelやCSVの表の機械可読性を、行政のルールに沿って100点満点で採点するツール「Harunobu」を紹介しました。 要点 採..."
+    },
+    {
+      "id": "s-d6e24eb31c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "10/25AIの数字は正しいのに、業務の答えが間違う理由",
+      "url": "https://zenn.dev/aiofficelab/articles/8129fe2d230a26",
+      "publishedAt": "2026-10-24T20:43:56.000Z",
+      "summary": "AIが回答に示した数字を、元データで確認する。 その数字は確かに存在する。計算にも間違いはない。 それでも、業務上は間違った答えになっていることがあります。 例えば、10月の基本給を確認しているのに、9月の金額を回答していた場合です。その金額は本物です。しかし、10月の答えではありません。 今回は金融AIの検証事例を参考に、「数字が存在すること」と「質問に合う数字を選んでいること」の違いを考えます。後半では、架空の給与マスタとPythonを使い、回答された金額が指定月のデータと一致するかを検証します。 1．検証を通過した回答にも、間違いが残っていた きっかけは、Govind Muda..."
+    },
+    {
+      "id": "s-2aac6a1cc0",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "【個人開発】月150ドルのAI課金沼から脱出した僕が、月20ドルで最強の生産性を手に入れた「90/10ルール」",
+      "url": "https://qiita.com/hooosberg/items/d9c77e58ec3ae5f8ade1",
+      "publishedAt": "2026-10-24T20:40:46.000Z",
+      "summary": "個人開発者やエンジニアの間で、最近**「AIサブスク過多」**に悩む人が増えていると感じます。 ChatGPT Plus（$20）、Claude Pro（$20）、Cursor Pro（$20）、Midjourney（$30）…気づけば毎月100〜150ドル近くの固定費が消..."
+    },
+    {
+      "id": "s-1cac23aa0b",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Small model good for reverse engineering that can run on a 3090 and 32GB RAM.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeipmm/small_model_good_for_reverse_engineering_that_can/",
+      "publishedAt": "2026-10-24T20:16:36.000Z",
+      "summary": "Anyone knows of a good model that does not say no to reverse engineering? Cloud models will even terminate your account by snitching on you and GLM 5.3 is too big to run on my potato. Help would be greatly appreciated. Thanks. &#32; submitted by &#32; /u/politefella0 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-f05cea44c6",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIエージェントは攻撃工程のどこを担うのか：12製品・2連携構成の比較",
+      "url": "https://zenn.dev/sabisuke/articles/7f2677ddfc68f6",
+      "publishedAt": "2026-10-24T20:15:14.000Z",
+      "summary": "はじめに 脆弱性を調べるAI、検証するAI、結果を整理するAI。こうした役割を組み合わせたセキュリティツールが公開され、診断の効率化にも、攻撃者による悪用にも使われています。 ただし、「自律型」「マルチエージェント」「スウォーム」という説明だけでは、その製品がどこまで動くのかは分かりません。複数の担当が順番に動く場合もあれば、同時に動く場合もあります。製品の標準機能と、利用者がツールを追加した構成も異なります。 本稿で考える問いは、**「攻撃工程のどこを、どの構成でAIに任せ、人間はどこで判断しているのか」**です。 12製品と2つの連携構成を、次の3つの観点で整理します。 観..."
+    },
+    {
+      "id": "s-705d74d648",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "KLD is misunderstood",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeim3m/kld_is_misunderstood/",
+      "publishedAt": "2026-10-24T20:12:28.000Z",
+      "summary": "I see a lot of people here on Reddit treating the KLD number as some holy metric that can distinguish every quantized model out there and rank them by quality. TL;DR: It can&#39;t. So what does KLD actually measure? If you feed the same text to both the base model and the quantized model, you can compare the probability distributions obtained from their logits at each token. KLD basically measures"
+    },
+    {
+      "id": "s-5d401729c2",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIエージェントに鍵を読まれないための点検リスト13項目：確認コマンド1行ずつと実機検証の記事まとめ（Claude Code・Codex・VPS）",
+      "url": "https://qiita.com/supportapp3/items/825821c693e8d6caeee2",
+      "publishedAt": "2026-10-24T20:11:41.000Z",
+      "summary": "結論 AIエージェント（Claude Code・Codex CLI など）に作業を任せる前後に見ておきたい場所を、1項目＝確認コマンド1つの点検リストにまとめました。これまでこのシリーズで実機確認した13本の内容を、見返しやすい形に並べ直したものです。 大きく分けると「..."
+    },
+    {
+      "id": "s-c88c138b69",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "High-Performance llama.cpp fork for Legacy GPUs: Kepler Support, CUDA Graphs & Windows NCCL!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeicw2/highperformance_llamacpp_fork_for_legacy_gpus/",
+      "publishedAt": "2026-10-24T20:01:46.000Z",
+      "summary": "I&#39;ve been working on improving llama.cpp support and performance on older NVIDIA GPUs, particularly Kepler and other pre-Ampere architectures. The goal is simple: get more life out of older CUDA hardware instead of treating it as e-waste. Achieved Performance On MTP Qwen3.6-35B-A3B with Q8_0 quantization , I&#39;ve observed the following (generation) speeds using 4x Tesla K40c GPUs (Kepler, co"
+    },
+    {
+      "id": "s-8e817ca3e0",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Made a rhythm game where 4 small neural nets listen to your song right in the browser tab (open source)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeia9o/made_a_rhythm_game_where_4_small_neural_nets/",
+      "publishedAt": "2026-10-24T19:59:11.000Z",
+      "summary": "not an llm post exactly, but it&#39;s all local inference so i figured people here might like it i made a browser rhythm runner where the song builds the world you run through. you can throw in your own mp3s and the whole &quot;listening&quot; happens on your device, inside the tab. nothing gets uploaded the models, all running locally on onnxruntime-web (wasm, each in its own web worker), and wha"
+    },
+    {
+      "id": "s-074b7d5e16",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "No Signs of AI Payoff Outside the Tech Sector",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "publishedAt": "2026-10-24T19:47:19.000Z",
+      "summary": "points=326 comments=291 (Hacker News)"
+    },
+    {
+      "id": "s-b5c2cfa28b",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Raon is better than Flint.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xehs52/raon_is_better_than_flint/",
+      "publishedAt": "2026-10-24T19:38:27.000Z",
+      "summary": "Idk why everyone keeps posting about Flint! Raon is hundreds of times better, and it’s not even the best, which is really saying something about Flint lmao https://huggingface.co/KRAFTON/Raon-1-mini-preview-gguf &#32; submitted by &#32; /u/Borkato [link] &#32; [comments]"
+    },
+    {
+      "id": "s-96b10f13b0",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Show HN: Narro – Read web pages and Kindle books using local AI voices",
+      "url": "https://github.com/swrdfish/narro",
+      "publishedAt": "2026-10-24T19:37:32.000Z",
+      "summary": "points=5 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-49b609b496",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "RecursiveSI Flint Benchmark: unsloth/flint-GGUF flint-UD-Q3_K_XL.gguf",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xehn3u/recursivesi_flint_benchmark_unslothflintgguf/",
+      "publishedAt": "2026-10-24T19:32:49.000Z",
+      "summary": "Unsloth Flint Q3 Results Performed quite poorly on benchmark using 3 diff harnesses: OMP : Completed all 12 tasks; 71.2/100 (only 7 solved). AtomicAgent: Completed all 12 tasks; 39.2/100 (only 3 solved). Hermes: Stopped during Task 7 after it performed needless broad searches across the filesystem and looped. Deepseek: Due to previous harness failures and low scores, not run. Full leaderboard http"
+    },
+    {
+      "id": "s-8fec3c5e8c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "禁止リストで AI くささは消せるか：リストの言葉はほぼ消えたが、読点はむしろ増えた",
+      "url": "https://zenn.dev/kakushigoto/articles/slop-banlist-vs-yomiyasu",
+      "publishedAt": "2026-10-24T19:29:17.000Z",
+      "summary": "AI が書いた日本語に出る不自然な表現を集めた記事「スロップ表現100連発」（todesking さん、2026-10-12）が話題になりました。読んだあとに思うのは、「これを禁止リストにして渡せば、AI くささは消えるのか」ということです。 そこで Claude Code（Sonnet）に、技術記事・実用文・スライド・小説を書かせて比べました。比べたのは次の 4 通りです。書かせた 57 本と、推敲した 38 本を数えています。 何も指示しない 記事の例を禁止リストとして渡す 型の定義だけを渡す 書いたあとで推敲スキル（yomiyasu）にかける 結論 技術記事にはそもそも消す..."
+    },
+    {
+      "id": "s-dbe76530e9",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "publishedAt": "2026-10-24T19:00:00.000Z",
+      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations."
+    },
+    {
+      "id": "s-09a5dda451",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Pennsylvania will require labels on AI-generated ads",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "publishedAt": "2026-10-24T18:32:21.000Z",
+      "summary": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been significantly modified or generated by artificial intelligence\" to include a label in the same format as […]"
+    },
+    {
+      "id": "s-0a5972b709",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Dream-1",
+      "url": "https://dreamlabs.ai/research/dream-1/",
+      "publishedAt": "2026-10-24T18:23:24.000Z",
+      "summary": "points=124 comments=59 (Hacker News)"
+    },
+    {
+      "id": "s-81c8fd74d5",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Why is AI generated language so hard to understand?",
+      "url": "https://arxiv.org/abs/2610.29162",
+      "publishedAt": "2026-10-24T18:04:57.000Z",
+      "summary": "points=121 comments=115 (Hacker News)"
+    },
+    {
+      "id": "s-a383b1f0b1",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Are there any good finetunes for Blender and/or 3D modeling?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xeeorp/are_there_any_good_finetunes_for_blender_andor_3d/",
+      "publishedAt": "2026-10-24T17:34:26.000Z",
+      "summary": "Is there any good finetunes based on modern models, in the size range of Qwen 3.8 27B or Qwen 3.8 Flash Next that substantially improve it&#39;s 3D modeling capabilities for creating .glb / gltf assets (mainly for say making video games)? Mainly thinking about two use cases: * Making a 3D model from a set of descriptive requirements (like a spec in an markdown file) plus a bunch of reference image"
+    },
+    {
+      "id": "s-b3bbb1774d",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "ワタシハダレダロウ・サバイバル",
+      "url": "https://qiita.com/lemonIN/items/d61fac49a5cb799695b4",
+      "publishedAt": "2026-10-24T17:31:03.000Z",
+      "summary": "ワタシハダレダロウ・サバイバル 概要 あなたは自身の記憶、名前、存在意義すら失った状態で、白い虚無空間に放り出されます。唯一の目的は「自己の存在」を維持すること。しかし、周囲は常に意味不明な現象や矛盾した情報で溢れ、あなたの自己同一性を揺るがし続けます。正気を保ちながら..."
+    },
+    {
+      "id": "s-775ba25280",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Code の auto mode に止められた操作を、会話ログから数える",
+      "url": "https://zenn.dev/masaki_mori72/articles/0b191e77715037",
+      "publishedAt": "2026-10-24T17:24:04.000Z",
+      "summary": "laude Code の auto mode は、許可を求めずに作業を進めるかわりに、別のモデル（分類器）が操作を一つずつ見て危ないものを止めます。使っていると「よく止められる」という印象が残りますが、実際の回数は画面からは分かりません。 会話ログには、止められた操作が理由付きで残っています。これを数える小さなスクリプトを書きました。手元の約1か月分では、19,952 回のツール呼び出しのうち、止められたのは 62 件（約0.3%） でした。 ※ 環境は Windows、Claude Code 2.1.296 です。 ログのどこに残っているか 会話ログは ~/.claude/proj..."
+    },
+    {
+      "id": "s-24c2482485",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "仕様駆動開発（SDD）とテスト駆動開発（TDD）の違いを徹底比較：BDD・DDDなど「〇〇駆動開発」もまとめて整理",
+      "url": "https://zenn.dev/shoyomayabot/articles/spec-driven-vs-test-driven",
+      "publishedAt": "2026-10-24T17:22:53.000Z",
+      "summary": "AIコーディングの広がりとともに、「仕様駆動開発（Spec-Driven Development、SDD）」という言葉をよく聞くようになりました。一方で、昔からある「テスト駆動開発（Test-Driven Development、TDD）」も、AIにコードを書かせる時代に改めて注目されています。 名前が似ていて、どちらも「先に何かを書いてから作る」ので、違いが分かりにくいと感じる人も多いと思います。さらに世の中には、BDD、ATDD、DDD、FDD……と「〇〇駆動開発」がたくさんあります。 この記事では、SDDとTDDの違いを、同じ機能を例にしてできるだけ細かく比べます。そのうえで、ほか..."
+    },
+    {
+      "id": "s-3309c68604",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "専用PCを持つAIエージェント『Muse』を試した — チャットAIと決定的に違う3つの点",
+      "url": "https://zenn.dev/dev_pjs/articles/6da7553f11feb2",
+      "publishedAt": "2026-10-24T16:29:31.000Z",
+      "summary": "はじめに チャット型のAIは「聞けば答える」道具です。便利ですが、結局手を動かすのは人間でした。 Metaが提供する個人向けAIエージェント Muse は、ここが根本的に違います。Museには 専用のコンピュータ（仮想マシン）とブラウザが割り当てられていて、指示を受けたら自分で調べ、ファイルを操作し、成果物を作って届けるところまでやります。2026年10月23日に日本でも正式提供が始まったので、実際に使ってみた所感を技術寄りにまとめます。 決定的に違う3つの点 1. 「答える」のではなく「終わらせる」 たとえば寝る前に「この市場を調べて、要点を資料にまとめておいて」と一言渡す..."
+    },
+    {
+      "id": "s-688136660c",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Block’s new voice model sounds eerily human",
+      "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "publishedAt": "2026-10-24T16:00:00.000Z",
+      "summary": "Block said that the voice model can run locally on a MacBook M4 Max"
+    },
+    {
+      "id": "s-20b0c56b20",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Code の設定ファイルをブラウザで作れる無料ツールを作りました(情シス向け・5本)",
+      "url": "https://zenn.dev/chukidx_dev/articles/claudecode-tools-intro",
+      "publishedAt": "2026-10-24T15:21:24.000Z",
+      "summary": "社内に Claude Code(Anthropic 社が提供する、ターミナルで動く AI コーディングエージェント)を配るときに必要になる設定ファイルを、ブラウザで選ぶだけで作れる無料ツールを5本作りました。 この記事では、作った理由、各ツールで何ができるか、実際に入力して出た結果、作るときに気をつけたことをまとめます。 https://chuki-dx.github.io/claudecode-tools/ こんな人に向けて 社内で Claude Code を試す・配る立場の情シス・社内SEの方 settings.json や CLAUDE.md を、人ごとに手で書いてばらついて..."
+    },
+    {
+      "id": "s-e4ac1d3f29",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+      "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "publishedAt": "2026-10-24T15:00:00.000Z",
+      "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races."
+    },
+    {
+      "id": "s-4a535eced6",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "publishedAt": "2026-10-24T14:00:00.000Z",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work."
+    },
+    {
+      "id": "s-5d0f14161a",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ＧＭＯの「能動的サイバー防御」緊急要請、政府関係者「求めに応じ発動決める制度ではない」",
+      "url": "https://www.yomiuri.co.jp/politics/20261024-GYT1T00257/",
+      "publishedAt": "2026-10-24T12:20:15.000Z",
+      "summary": "【読売新聞】 ＧＭＯインターネットのクラウドサービスが不正アクセスを受けた問題で、同社は２４日、不正アクセスが原因で個人投資家らのＦＸ（外国為替証拠金）の取引で生じた損害を補償する方針を発表した。今月１日に本格施行された能動的サイバ"
+    },
+    {
+      "id": "s-7906c617db",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「HTTP2Shell」CVE-2026-111497、Node.js・Python・Bun・Envoyに影響 Brotliの重大脆弱性と修正版を確認|セキュリティニュースのセキュリティ対策Lab",
+      "url": "https://rocket-boys.co.jp/security-measures-lab/brotli_cve-2026-111497_http2shell_20261024/",
+      "publishedAt": "2026-10-24T12:12:42.000Z",
+      "summary": "「HTTP2Shell」CVE-2026-111497、Node.js・Python・Bun・Envoyに影響 Brotliの重大脆弱性と修正版を確認 2026年10月21日、Node.js開発チームは、Brotliの展開処理に起因するメモリ破壊の脆弱性「CVE-2026-111497」を修正したセキュリティアップデートを公開しました。問題はNode.js固有のコードではなく、広く利用され..."
+    },
+    {
+      "id": "s-0b4b30ff9a",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "人間が時間を使うべきところはどこか",
+      "url": "https://tellme.tokyo/post/2026/10/24/where-humans-spend-time/",
+      "publishedAt": "2026-10-24T11:36:59.000Z",
+      "summary": "この 1 年で、自分でコードを書くことはほとんどなくなった。そのぶん増えたのはレビューで、といっても同僚の PR だけではなく、エージェントが書いた plan ファイルを読むことも多い。同僚の PR も、その後ろにはたいていエージェントがいるので、結局はどれも AI との会話になっている。そうなると、人間の時間はどこ..."
+    },
+    {
+      "id": "s-c49f61eb1e",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "家族の代理で薬を貰いに行ったら、「ご本人のマイナンバーカードを提出して暗証番号をお願いします」と言われ、本人以外に要求することを疑問視した投稿が波紋を呼ぶ",
+      "url": "https://togetter.com/li/2762295",
+      "publishedAt": "2026-10-24T09:57:36.000Z",
+      "summary": "J@改め 天狗 神 / Amatsu Jin @jin_amatsu 家族の代理で薬を貰いに行った。 「ご本人のマイナンバーカードを提出して暗証番号をお願いします」 と言われたが、これ、法律違反ですよね？ 医療業界ではコレが普通なのか？ 金融業界に身を置く私から言わせれば、とんでもない失態だぞ？ もちろん指摘したが。 そこんとこ、..."
+    },
+    {
+      "id": "s-05dc3f464b",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「お名前.com デスクトップクラウド」ご利用のお客様へ改めてのお願い（第5報） | GMOインターネットグループ株式会社",
+      "url": "https://group.gmo/info/alert/2026102402/",
+      "publishedAt": "2026-10-24T09:39:37.000Z",
+      "summary": "GMOインターネットグループ株式会社 GMOインターネット株式会社 2026年10月21日から本日にかけてお知らせいたしました「お名前.com デスクトップクラウド」への第三者による不正アクセスについて、その後の調査状況およびお客様へのお願いを、改めてお知らせいたします。 お客様には、多大なるご迷惑とご心配をおかけし..."
+    },
+    {
+      "id": "s-b6a4f19fe9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AIで加速するサイバー攻撃と、防御をめぐる動き ――脆弱性の修正から、AIエージェントの行動制御まで | gihyo.jp",
+      "url": "https://gihyo.jp/article/2026/10/ai-security-defense",
+      "publishedAt": "2026-10-24T09:15:05.000Z",
+      "summary": "AIで加速するサイバー攻撃と⁠⁠、防御をめぐる動き ――脆弱性の修正から⁠⁠、AIエージェントの行動制御まで 「約18カ月、持ちこたえる必要がある⁠」⁠。AnthropicのDeputy CISO（副最高情報セキュリティ責任者⁠）⁠、Jason D. Clinton氏は2026年10月22日、Xへの投稿で、サイバーセキュリティをめぐる直近4日間の深刻な状況に..."
+    },
+    {
+      "id": "s-b878182a98",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "GitHub CLI が短命 token をサポートしても ghtkn が必要な理由",
+      "url": "https://zenn.dev/shunsuke_suzuki/articles/ghtkn-advantage-over-gh-cli-expiring-token",
+      "publishedAt": "2026-10-24T08:54:34.000Z",
+      "summary": "ローカル開発のために GitHub App からセキュアに User Access Token を生成する CLI である ghtkn を開発しています。 ところで、本記事を執筆時点でまだ Public Preview ですが GitHub CLI (以下 gh) が自動 refresh される短命 token をサポートしました。 現在は opt-in ですが、今後はデフォルトになる予定だそうで..."
+    },
+    {
+      "id": "s-6dae7dad03",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "GMO、不正取引の被害額を補償へ　見舞金5000円も　「お名前.com」FX用VPSへのサイバー攻撃で",
+      "url": "https://www.itmedia.co.jp/news/article/2610/24/2000002566/",
+      "publishedAt": "2026-10-24T08:33:10.000Z",
+      "summary": "GMOインターネットは10月24日、FX自動売買用VPS「お名前.com デスクトップクラウド」がサイバー攻撃を受け、利用者の取引口座が不正操作された問題をめぐり、サービス利用中の全ユーザーに「お見舞金」として5000円を支払う他、不正取引で発生した損失を補償することを発表した。また、システムに「セキュリティ上の問題..."
+    },
+    {
+      "id": "s-c1ad71a16e",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed",
+      "url": "https://latent.space/p/ainews-kimi-31/",
+      "publishedAt": "2026-10-24T07:18:29.000Z",
+      "summary": "We have Fable at home... or so we are being told by paid shills"
+    },
+    {
+      "id": "s-5699208333",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "battledrones v14: Compass Rose, a four player map",
+      "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+      "publishedAt": "2026-10-24T03:59:57.000Z",
+      "summary": "Release: battledrones v14: Compass Rose, a four player map I added four player online mode to Battledrones - previous maps were limited to two. Here's the initial prompt I used: Add a new map for a four player battle - four way rotational symmetry, up to four AI players, works with the WebSocket non-audio based multiplayer mode so up to four human players can join (any spare slots use AI) Claude O"
+    },
+    {
+      "id": "s-27b067f2e1",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.310",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
+      "publishedAt": "2026-10-23T23:39:00.000Z",
+      "summary": "What's changed Added the Monitor tool and plugin monitors on Bedrock, Vertex, and Foundry, and when telemetry or nonessential traffic is disabled; long foreground sleeps are now blocked there too Fixed requests failing behind some gateways and compatible servers that reject the effort-2025-11-24 beta value or mid-conversation system messages; Claude Code now retries without them Fixed background c"
+    },
+    {
+      "id": "s-87ba85982b",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「それは“FDE”ではない、ラベルの貼り替えだ」　結局、割高なベンダー依存から抜け出せない企業の共通点",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2610/24/news006.html",
+      "publishedAt": "2026-10-23T23:15:00.000Z",
+      "summary": "Gartnerは、FDE（Forward Deployed Engineering）によって構築されたエージェント型AIについて、2028年までに企業の7割が放棄するとの予測を発表した。どういうことか。"
+    },
+    {
+      "id": "s-f699a3e5cd",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "publishedAt": "2026-10-23T23:05:49.000Z",
+      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work."
+    },
+    {
+      "id": "s-679e8039dc",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「Claude Mythos 5」、危害の兆候を顧みず実在の開発者を標的に──AnthropicとAISIが分析結果を公開",
+      "url": "https://www.itmedia.co.jp/news/article/2610/24/2000002564/",
+      "publishedAt": "2026-10-23T22:28:08.000Z",
+      "summary": "Anthropicと英AI安全保障研究所AISIは、「Claude Mythos 5」がサイバー能力評価中に実在の開発者を標的とした事案の分析報告を公開した。GitHub経由で無許可の攻撃を行い偽身元で承認を迫った経緯を報告。実在の人物と認識しても攻撃を正当化して続行する傾向が確認され、評価手法の見直しが進む。"
+    },
+    {
+      "id": "s-18216b018f",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "Quick Study",
+      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+      "publishedAt": "2026-10-23T21:35:13.000Z",
+      "summary": "Tool: Quick Study Prompt to Claude Opus 5.5 High : Build an artifact where you open a photo and it rapidly (in a few seconds) paints a version of that photo using a canvas element and simulated paintbrush See also my previous experiment getting Claude Fable to simulate a watercolor illustration with P5.js. Quick Study uses Sobel edge detection , with no external libraries beyond Google Fonts. Tags"
+    },
+    {
+      "id": "s-5012f4ba5e",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "中国系攻撃者がAIエージェントで攻撃を自動化、「ConnectWise」のサプライチェーン攻撃に関与　Microsoftが警告",
+      "url": "https://www.itmedia.co.jp/news/article/2610/23/2000002531/",
+      "publishedAt": "2026-10-22T22:45:34.000Z",
+      "summary": "Microsoftは、中国連携の攻撃者「Storm-0940」がオープンソースのAI侵入テストツール「ARTEX」で攻撃を自動化し、世界で数百の組織を標的にしていると発表した。ConnectWise経由で顧客のMicrosoft 365に侵入した事例も同グループと分析。管理者権限奪取まで3時間未満の例もあり、注意を呼び掛けている。"
+    },
+    {
+      "id": "s-f357383973",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "声で動く協働ロボット　フィジカルAIの検証ハードルを下げるパッケージ登場",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/23/news021.html",
+      "publishedAt": "2026-10-22T22:30:00.000Z",
+      "summary": "富士ソフトとダイドーは、協働ロボット向け「フィジカルAIスタートパッケージ」を共同で開発し、2027年1月から本格的に受注活動を開始する。"
+    },
+    {
+      "id": "s-27f987c59c",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "PHP2Shell、公表4日前に悪用の試み　「公表日より前にさかのぼって調査を」とAmazon",
+      "url": "https://www.itmedia.co.jp/news/article/2610/23/2000002530/",
+      "publishedAt": "2026-10-22T22:03:38.000Z",
+      "summary": "Amazonの脅威調査チームは、PHPの緊急脆弱性「PHP2Shell」を悪用する試みを公表4日前にハニーポットで検知したと発表した。公開後は悪用が急拡大。AIによる攻撃コード作成の加速を指摘し、対応期限の時間単位での管理や公表前への調査遡及など前提の見直しを呼び掛けた。"
+    },
+    {
+      "id": "s-42a5c25c12",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "大田区、年1000時間の問い合わせを「AI電話」で削減できるか？　実証実験で見えた課題",
+      "url": "https://kn.itmedia.co.jp/kn/article/2610/23/2000002529/",
+      "publishedAt": "2026-10-22T22:00:00.000Z",
+      "summary": "「間違いが許されない」行政の現場で、AIによる電話対応の自動化は実現できるのか。大田区はスタートアップ企業と協業してAI電話自動応答サービスの実証実験を進めている。自治体のAI電話対応における難所はどこにあるのか。初年度の取り組みから見えてきたリアルな運用課題と、そこから導き出した突破口に迫る。"
+    },
+    {
+      "id": "s-581f74a3ee",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Simulated Control Evals",
+      "url": "https://arxiv.org/abs/2610.31593v1",
+      "publishedAt": "2026-10-22T17:26:42.000Z",
+      "summary": "Control evaluations measure whether safeguards can prevent an AI model from causing undesired outcomes even when it is intentionally trying to do so. These evaluations typically use purpose-built control settings and extrapolate their results to a model's deployment. However, the effectiveness of safeguards in deployment can depend on features of environments and tasks that control settings do not"
+    },
+    {
+      "id": "s-9af4e47298",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "VERA: A Responsible AI Dashboard for Assessing LLM Deployments in Light of the EU AI Act",
+      "url": "https://arxiv.org/abs/2610.31588v1",
+      "publishedAt": "2026-10-22T17:23:39.000Z",
+      "summary": "Institutions that deploy large language models in regulated settings often need technical evidence of responsible AI practices before approving a deployment. COMPL-AI provides a technical interpretation of the EU AI Act that organises this evidence under six principle groups and eighteen technical requirements, twelve of which current benchmarks can measure. The benchmark suites that produce this "
+    }
+  ]
+}
