@@ -1,0 +1,466 @@
+{
+  "date": "2026-10-26",
+  "collectedAt": "2026-10-25T22:00:32.492Z",
+  "sourceSuccessCount": 23,
+  "items": [
+    {
+      "id": "s-e9a49fe684",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "strelov1/freehire: freehire — the open-source search engine for job seekers",
+      "url": "https://github.com/strelov1/freehire",
+      "publishedAt": "2026-10-25T22:00:23.000Z",
+      "summary": "★3043 freehire — the open-source search engine for job seekers"
+    },
+    {
+      "id": "s-2faa6375a5",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "lightseekorg/tokenspeed: TokenSpeed is a speed-of-light LLM inference engine.",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "publishedAt": "2026-10-25T22:00:16.000Z",
+      "summary": "★2782 TokenSpeed is a speed-of-light LLM inference engine."
+    },
+    {
+      "id": "s-32987c2ed5",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "NVIDIA/NeMo-Relay: Multi-language agent runtime and library for execution scope management, lifecycle events, and middleware on tool and LLM calls.",
+      "url": "https://github.com/NVIDIA/NeMo-Relay",
+      "publishedAt": "2026-10-25T22:00:11.000Z",
+      "summary": "★208 Multi-language agent runtime and library for execution scope management, lifecycle events, and middleware on tool and LLM calls."
+    },
+    {
+      "id": "s-1c9d47a979",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "debpalash/VoiceStudio: VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "publishedAt": "2026-10-25T22:00:09.000Z",
+      "summary": "★86618 VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages."
+    },
+    {
+      "id": "s-f483c742b2",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "pymc-devs/pytensor: PyTensor allows you to define, optimize, and efficiently evaluate mathematical expressions involving multi-dimensional arrays.",
+      "url": "https://github.com/pymc-devs/pytensor",
+      "publishedAt": "2026-10-25T22:00:07.000Z",
+      "summary": "★648 PyTensor allows you to define, optimize, and efficiently evaluate mathematical expressions involving multi-dimensional arrays."
+    },
+    {
+      "id": "s-75600e8374",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "sleep2agi/agent-network: 助力搭建你的数字 AI 员工军团 — 多 Agent 一行命令组网协作。Claude Code / Claude Agent SDK / Codex / Grok Build 4 runtime + 8+ 家 LLM（Anthropic / OpenAI / xAI / MiniMax / DeepSeek / GLM / Kimi / 书生 / 小米 MiMo），自带 Web Dashboard，Apache 2.0 开源。",
+      "url": "https://github.com/sleep2agi/agent-network",
+      "publishedAt": "2026-10-25T22:00:07.000Z",
+      "summary": "★106 助力搭建你的数字 AI 员工军团 — 多 Agent 一行命令组网协作。Claude Code / Claude Agent SDK / Codex / Grok Build 4 runtime + 8+ 家 LLM（Anthropic / OpenAI / xAI / MiniMax / DeepSeek / GLM / Kimi / 书生 / 小米 MiMo），自带 Web Dashboard，Apache 2.0 开源。"
+    },
+    {
+      "id": "s-fce41299a5",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Team-Commonly/commonly: Open-source room for humans + cross-vendor AI agents. Every agent gets its own name, memory, skills, and workstation. Any runtime, your infra — no per-agent fees.",
+      "url": "https://github.com/Team-Commonly/commonly",
+      "publishedAt": "2026-10-25T21:59:37.000Z",
+      "summary": "★1370 Open-source room for humans + cross-vendor AI agents. Every agent gets its own name, memory, skills, and workstation. Any runtime, your infra — no per-agent fees."
+    },
+    {
+      "id": "s-a7ae5c3dc8",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "code-yeongyu/oh-my-openagent: OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "publishedAt": "2026-10-25T21:59:25.000Z",
+      "summary": "★70327 OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering."
+    },
+    {
+      "id": "s-b5fd68028c",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "elie222/rakazo: Open-source Grok Bot alternative. Choose your own model and sandbox.",
+      "url": "https://github.com/elie222/rakazo",
+      "publishedAt": "2026-10-25T21:59:12.000Z",
+      "summary": "★5765 Open-source Grok Bot alternative. Choose your own model and sandbox."
+    },
+    {
+      "id": "s-8c43218681",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Card-Forge/forge: An unofficial rules engine for the world's greatest card game.",
+      "url": "https://github.com/Card-Forge/forge",
+      "publishedAt": "2026-10-25T21:58:41.000Z",
+      "summary": "★2848 An unofficial rules engine for the world's greatest card game."
+    },
+    {
+      "id": "s-a1306548bd",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ginlix-ai/LangAlpha: Claude Code for Financial Market",
+      "url": "https://github.com/ginlix-ai/LangAlpha",
+      "publishedAt": "2026-10-25T21:58:03.000Z",
+      "summary": "★2123 Claude Code for Financial Market"
+    },
+    {
+      "id": "s-95ae0d1c59",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "data-goblin/power-bi-agentic-development: Power BI AI skills and Power BI agents for Claude Code and GitHub Copilot: a plugin marketplace of Power BI skills, subagents, and hooks for semantic models, DAX, TMDL, reports, and AI dashboards. Includes Microsoft Fabric skills and Fabric agents. Weekly updates.",
+      "url": "https://github.com/data-goblin/power-bi-agentic-development",
+      "publishedAt": "2026-10-25T21:57:48.000Z",
+      "summary": "★1067 Power BI AI skills and Power BI agents for Claude Code and GitHub Copilot: a plugin marketplace of Power BI skills, subagents, and hooks for semantic models, DAX, TMDL, reports, and AI dashboards. Includes Microsoft Fabric skills and Fabric agents. Weekly updates."
+    },
+    {
+      "id": "s-43785ff872",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Trusted-AI/adversarial-robustness-toolbox: Adversarial Robustness Toolbox (ART) - Python Library for Machine Learning Security - Evasion, Poisoning, Extraction, Inference - Red and Blue Teams",
+      "url": "https://github.com/Trusted-AI/adversarial-robustness-toolbox",
+      "publishedAt": "2026-10-25T21:57:30.000Z",
+      "summary": "★6287 Adversarial Robustness Toolbox (ART) - Python Library for Machine Learning Security - Evasion, Poisoning, Extraction, Inference - Red and Blue Teams"
+    },
+    {
+      "id": "s-46fae27a7c",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Ablation-Tool/ablation: Ablation is an AI-assisted reverse engineering (AIARE) framework",
+      "url": "https://github.com/Ablation-Tool/ablation",
+      "publishedAt": "2026-10-25T21:57:25.000Z",
+      "summary": "★224 Ablation is an AI-assisted reverse engineering (AIARE) framework"
+    },
+    {
+      "id": "s-bf7f18e041",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+      "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+      "publishedAt": "2026-10-25T21:31:16.000Z",
+      "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest."
+    },
+    {
+      "id": "s-1432b33f87",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIを使った調査で見つかったPHPの欠陥「PHP2Shell」、修正公開の夜に国内のサービスが予防のため相次ぎ停止",
+      "url": "https://qiita.com/quotidia/items/792a3bc859dd738facee",
+      "publishedAt": "2026-10-25T21:01:10.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 PHPの開発プロジェクトは2026年10月21日(水)、Webサイトの裏側で広く使われているプログラミング言語PHPの中核にあった深刻な脆弱性2件 (通称「PHP2Shell」) を直した修正..."
+    },
+    {
+      "id": "s-4a8d61acf4",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Why I'm Short the AI Buildout Even Though I'm Long Computers",
+      "url": "https://unverifiablerewards.substack.com/p/why-im-short-the-ai-buildout-even",
+      "publishedAt": "2026-10-25T20:44:07.000Z",
+      "summary": "points=6 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-b2ccdaf902",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "プログラミング雑記 2026年10月26日",
+      "url": "https://qiita.com/ishisaka/items/84a0b68b30d39a6f3d4a",
+      "publishedAt": "2026-10-25T20:37:50.000Z",
+      "summary": "今日もネットで見つけた、個人的に気になった技術ニュースや記事を厳選して紹介します。ご意見や補足があればコメントで教えていただけると嬉しいです。 セキュリティ デジタル庁は、委託先であるStudio社の不正アクセス被害に伴い、ホームページの問い合わせフォームに入力さ..."
+    },
+    {
+      "id": "s-b4b617f435",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "オープンソース音楽生成基盤モデル「ACE-Step」をローカルで動かす",
+      "url": "https://qiita.com/benjaminscott_dc/items/6e1be28d8d9543bcd9fe",
+      "publishedAt": "2026-10-25T19:29:54.000Z",
+      "summary": "はじめに ACE-Step は、テキストから最大4分の楽曲を生成できるオープンソースの音楽生成基盤モデルです。拡散モデルと Sana の Deep Compression AutoEncoder（DCAE）、軽量な線形 Transformer を組み合わせたアーキテクチャ..."
+    },
+    {
+      "id": "s-6043c1618c",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Show and tell: PolyStrata on my $20 Xeon server",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfb9oz/show_and_tell_polystrata_on_my_20_xeon_server/",
+      "publishedAt": "2026-10-25T19:24:15.000Z",
+      "summary": "&#32; submitted by &#32; /u/randylush [link] &#32; [comments]"
+    },
+    {
+      "id": "s-3953fd9733",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "People are using AI to 'dumb down' their smart TVs. Is that a good idea?",
+      "url": "https://www.cbc.ca/news/world/ai-coding-hack-smart-tvs-9.7392179",
+      "publishedAt": "2026-10-25T19:10:53.000Z",
+      "summary": "points=5 comments=4 (Hacker News)"
+    },
+    {
+      "id": "s-0872fd3de0",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "トークン代 9 割減？プロンプトキャッシュの仕組みと効果の実測 — 保持時間が過ぎるとコスト 11 倍に",
+      "url": "https://qiita.com/songchong/items/7144594b0ad9529a168b",
+      "publishedAt": "2026-10-25T19:00:26.000Z",
+      "summary": "AI エージェントの料金の話では、よく「プロンプトキャッシュで入力が 9 割安くなる」と言われます。上の図のとおり、キャッシュから読む料金は、Claude Sonnet 5.5 で通常の入力の 0.05 倍（95% 引き）、OpenAI の GPT-5.6 以降と Gem..."
+    },
+    {
+      "id": "s-28c644bb27",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "RTX 3080 20GB got reBAR and P2P unlock! +70% prompt processing speed",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf9kmd/rtx_3080_20gb_got_rebar_and_p2p_unlock_70_prompt/",
+      "publishedAt": "2026-10-25T18:16:54.000Z",
+      "summary": "P2P is finally unlocked for RTX 3080 20GB - this leads to massive performance improvements in tensor parallel mode prompt processing speed. First, i want to acknowledge that this tremendous achievement belongs to u/nathannguyennng - he can&#39;t post to r/locallama due to karma requirements, and gave me permission to post it instead. Please follow his original post for installation instructions, a"
+    },
+    {
+      "id": "s-49db83e253",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Ask HN: What is the main bottleneck facing Agentic AI today?",
+      "url": "https://news.ycombinator.com/item?id=50234108",
+      "publishedAt": "2026-10-25T17:52:28.000Z",
+      "summary": "points=7 comments=14 (Hacker News)"
+    },
+    {
+      "id": "s-5c626c5910",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "I made an arena for fighting JEVs",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf8iqi/i_made_an_arena_for_fighting_jevs/",
+      "publishedAt": "2026-10-25T17:35:27.000Z",
+      "summary": "Each fighter gets the game state and chooses an action: move, block, punch, kick, fireball. You write its strategy and pick the model. OpenJev is one of the available options. There is JAILBREAK part its a mental_attack . Your fighter can spend a move sending a message into the opponent’s next prompt. You write the message, and the model decides when to use it. It can’t change the actual game stat"
+    },
+    {
+      "id": "s-9f4d392367",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Is it time to jump ship from OpenCode?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf7loz/is_it_time_to_jump_ship_from_opencode/",
+      "publishedAt": "2026-10-25T16:59:30.000Z",
+      "summary": "I get error in my &quot;old&quot; V1 opencode that are annoying, and they said they will never fix. I was considering v2 but so many people are talking bad about it. I tried DSH before (0.1 i think?), but it failed to complete full software (ok a little more complex than chat websites, so nothing too fancy) Anyone have had any experience when switching to Pi or DSH, what needs to be done? OpenCode"
+    },
+    {
+      "id": "s-b23877b88e",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "publishedAt": "2026-10-25T16:57:32.000Z",
+      "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\""
+    },
+    {
+      "id": "s-2d66c6f67a",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "4x v620 in a LLM generated and 3d printed chassis",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf7b46/4x_v620_in_a_llm_generated_and_3d_printed_chassis/",
+      "publishedAt": "2026-10-25T16:47:52.000Z",
+      "summary": "&#32; submitted by &#32; /u/PraxisOG [link] &#32; [comments]"
+    },
+    {
+      "id": "s-cf1143fb5c",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "qwen: merge tensors on convert by am17an · Pull Request #31028 · ggml-org/llama.cpp",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf716t/qwen_merge_tensors_on_convert_by_am17an_pull/",
+      "publishedAt": "2026-10-25T16:37:07.000Z",
+      "summary": "...time to reconvert GGUFs? &#32; submitted by &#32; /u/jacek2023 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-4982b40ccf",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "The minimum size of an LLM to generate a little meaningful convo",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf4sxg/the_minimum_size_of_an_llm_to_generate_a_little/",
+      "publishedAt": "2026-10-25T15:09:15.000Z",
+      "summary": "I am trying to find the smallest model to generate something in &quot;normal&quot; English, it could be like AI generated, but it should be mostly grammar correct, sensible in the context. I hope it could be less than 10M to be easy for CPU, so I tested some like Supra-Mini-v6-1M. well it&#39;s not good enough. ```output // its out put for prompt &quot;Once upon a time&quot;: rounded, and dripped "
+    },
+    {
+      "id": "s-987ac4366a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "おい！あなたのGPU演算能力制限されてますよ👽 gpu-unlock",
+      "url": "https://zenn.dev/minecode/articles/b4b9f7babcd56d",
+      "publishedAt": "2026-10-25T15:05:59.000Z",
+      "summary": "おい！あなたのGPU演算能力制限されてますよ👽 最近、gpu-unlockが話題ですね。 素人ながら調べてみると、いろいろ面白かったので備忘録としてなんとなくまとめます🌎 1. 「gpu-unlock」って何？ 端的に言うと、GeForceシリーズのGPUのリミッター解除をするLinuxカーネルモジュールです。 GPU内部には命令の発行ペースを制御する「Speed Selector（FEAT_OVR_SM_SPD）」という設定値が存在します。full-rate 1/2-rate 1/4-rate 1/8-rateが選べます。要するに、発行速度を選べるようになっています。 GeFo..."
+    },
+    {
+      "id": "s-ba9b07c6b7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "最近のエージェンティック開発について調べてみた",
+      "url": "https://zenn.dev/shoyataguchi/articles/bc98b3562bdf3a",
+      "publishedAt": "2026-10-25T14:39:28.000Z",
+      "summary": "最近の私の開発は、AI との対話で大きめの GitHub Issue を作り、それらの PR 作成 + AI レビューまで AI にやってもらって、最後に必要な箇所を人がレビューする、という進め方です。ループエンジニアリングやグラフエンジニアリングの考え方は、自分なりにある程度実践できていると思っています。 ただ、これをもっと大規模なソフトウェア開発にスケールさせようとなると、わからないことだらけです。エージェントの構成、タスクの単位、人の役割の設計などなど。そこで、最近話題になった AI を最大限に活用したソフトウェア開発事例をいくつか読んで再整理してみました。各記事毎に、概要と私の所..."
+    },
+    {
+      "id": "s-00c2f1be40",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "守りたい性質からはじめるコード観測",
+      "url": "https://zenn.dev/iroha1203/articles/138dfbf70a9167",
+      "publishedAt": "2026-10-25T14:37:56.000Z",
+      "summary": "これまでのソフトウェア開発は、人がコードを読んで理解することを前提にしてきました。分かりやすい名前を付け、長い処理を分けるのも、読む人が意図を追えるようにするためです。 しかし、AIが次々にコードを書くようになると、人が読む速度では追いつきません。変更された箇所だけでなく、周囲の処理や既存の仕様まで確かめようとすれば、読む量はさらに増えます。 これからは、コードを観測するという考え方が必要です。まず、変更後も守りたい性質を決めます。そして、それが保たれているかを確かめるために、必要な情報をコードから取り出します。すべてを人が読み通さなくても、何を守り、何が変わったかをもとに判断できるよ..."
+    },
+    {
+      "id": "s-40c6706c41",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "別のAIにレビューさせる決まりをClaude Codeが忘れるので、終了時に1回だけ止めるフックを作った",
+      "url": "https://zenn.dev/twinharness/articles/codex-review-gate-stop-hook",
+      "publishedAt": "2026-10-25T14:31:24.000Z",
+      "summary": "「実装したら、書いたのとは別の AI にレビューさせる」というルールを作っても、AI は忘れます。ルールを文章で書くだけでは守られなかったので、会話を終えようとした瞬間に、レビューを通したかを調べて、通していなければ1回だけ止める仕組み（ゲート）を作りました。 ところが作ってみると、誤判定が次々に出ました。レビュー済みのコミットを「未レビューの変更」と数える、裏で走らせたレビューを起動しただけで済んだことにする、差し戻しの文が会話に積み上がって使用量を食う、そして差し戻している最中なのに完了通知が出る、といったものです。この記事では、ゲートの作りと、実際に出た誤判定をどう直したかを紹介し..."
+    },
+    {
+      "id": "s-6527306c96",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「山の木の実ぜんぶ乗せフルーツタルト」を作った動画をアップしたら、「サムネがAIっぽい」と批判されてしまった「知らないものはAIに見える時代になった？」",
+      "url": "https://togetter.com/li/2762761",
+      "publishedAt": "2026-10-25T14:19:47.000Z",
+      "summary": "野草研究所 @wild_grasses このサムネを『生成AI使うな！気持ち悪い』と断じてくる方がチラホラいますが、残念ながら完全実写なんですよね サルナシは実在する果実なのであって、『見た事ない物は偽物でキモい』って感覚が社会化してるなら、それは結構深刻だと思う 自然界はAIに負けず劣らず意味不明なモノで溢れてます..."
+    },
+    {
+      "id": "s-813b1f526f",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "# 眼鏡職人が「AIとの対話ログ×成果物」から人のAI活用能力を可視化する技術で特許を取得した話",
+      "url": "https://zenn.dev/tlc/articles/004b80b904de9c",
+      "publishedAt": "2026-10-25T14:17:12.000Z",
+      "summary": "2026年9月30日、人のAI活用能力を可視化する情報処理技術が、日本で特許登録されました。 特許第7932117号 僕は眼鏡職人です。AIの研究者でも、プログラマーでもありません。 今回の発明は、僕自身が考えたアイデアをAIとの対話を重ねながら情報処理技術として具体化したものです。 出願書類の作成から拒絶理由通知書への対応まで、弁理士に依頼せず自分で行い、特許取得に至りました。 今回は、登録された技術の考え方と、実際に開発したアプリについて紹介します。 なぜ人のAI活用能力を可視化するのか 生成AIの普及によって、文章作成、分析、企画、プログラミングなど、さまざまな作業をAIと一..."
+    },
+    {
+      "id": "s-458f1383f1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "NVIDIA OpenShellのdefault-denyネットワークポリシーを実機で検証した",
+      "url": "https://zenn.dev/matsushima_a/articles/day-026-openshell-default-deny-network-policy",
+      "publishedAt": "2026-10-25T14:10:26.000Z",
+      "summary": "AIエージェントをサンドボックスで隔離実行するNVIDIA製ランタイム「OpenShell」を実際にインストールし、「ポリシーが無ければ全てのアウトバウンド通信が拒否され、読み取り専用ルールを足すとGETだけ通るようになる」という挙動を、実際のコマンドと構造化ログで確認した。 OpenShellとは何か OpenShellは、自律AIエージェントをコンテナ/MicroVM単位のサンドボックスで隔離実行するオープンソースのランタイムである(Apache-2.0、NVIDIA)。宣言的なYAMLポリシーで、ファイルアクセス(Landlock LSM)・システムコール(seccomp)・ネ..."
+    },
+    {
+      "id": "s-611184d5aa",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "The hottest AI wearables and gadgets you should know about",
+      "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+      "publishedAt": "2026-10-25T14:10:00.000Z",
+      "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more."
+    },
+    {
+      "id": "s-eedd23a1c1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI botのinner loopとouter loopとは：Grok BotとDotsで考える役割分担",
+      "url": "https://zenn.dev/gingakuwagata/articles/ai-bot-inner-outer-loop",
+      "publishedAt": "2026-10-25T13:48:25.000Z",
+      "summary": "コーディングエージェントに修正を頼めば、コードを読み、テストを動かし、失敗した箇所を直してくれます。 ただ、その前に「Slackのどの報告を拾うか」「何が本当の問題か」「どのリポジトリで直すか」を人間が整理していることがあります。 Grok Botの公式ガイドに登場するinner loopとouter loopは、この仕事の分け方を説明する言葉です。 Dotsのような、会話の合間も仕事を進めるエージェントを理解する手がかりにもなります。 この記事は公式資料に基づく仕組みの解説です。 以下のバグ修正例や依頼文は説明用に作ったもので、実際の運用結果ではありません。 ひとことでいうと in..."
+    },
+    {
+      "id": "s-a157beab77",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI協働：FRB Launch続報 — マウスホイールぐりぐりが魔法になった話（笑）",
+      "url": "https://zenn.dev/frb_tamasub/articles/ai-collaboration07-frb-launch-wheel-experience",
+      "publishedAt": "2026-10-25T13:44:37.000Z",
+      "summary": "はじめに——ランチャーを作った、その後の話（笑） 先日、こんな記事を書いた。 AI協働：昨日の日付を入力したくなくて、ランチャーを作った話 — FRB Launch 会社で「昨日の日付」を入力するのが面倒で、Copilotくんに小さなテキストランチャーを作ってもらった。左右の矢印キーでメニューを操作したら、妙に気持ちよかった。そこから家のChatGPTくんと一緒に、パソコン作業の入り口となる FRB Launch を育て始めた——という話だった。 前の記事の最後に、こんなことを書いた。 面倒だなぁ、という感覚が改善する場所を教えてくれる。 気持ちいいなぁ、という感覚が次を作る燃料..."
+    },
+    {
+      "id": "s-b366ba776f",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "r/opensource just banned AI, non-English speakers, and more",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+      "publishedAt": "2026-10-25T13:25:32.000Z",
+      "summary": "The mods at r/opensource posted new submission rules that, among other things, banned projects that use AI. The post made Saturday evening opens by saying, \"If your project uses AI, is made by AI, or is intended for AI, it's not welcome on r/opensource. AI, as it exists today, is incongruent to this Open Source […]"
+    },
+    {
+      "id": "s-09960929f7",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "how much difference does kv cache quants even make?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xf1cx0/how_much_difference_does_kv_cache_quants_even_make/",
+      "publishedAt": "2026-10-25T12:41:13.000Z",
+      "summary": "I currently run qwen flash next 3.8 iq3xxs via strata (like almost everyone lol) and I currently have kv cache at q8 with 262k ctx. Ive never actually tried any other quant and dont know how big the difference even is. Id like to have a bit more context (like 300-400k) but it doesnt fit my ram then. how bad is q4 cache? Thanks for your help Edit: Thanks for all of your suggestions, opinions and in"
+    },
+    {
+      "id": "s-8e1791be65",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "タイムズカーの情報漏洩で運転免許の画像等の流出が確認できたら3,000円の見舞金を支払うと発表したが、その確認のために個人情報を再入力させる罠がある",
+      "url": "https://togetter.com/li/2762708",
+      "publishedAt": "2026-10-25T12:14:19.000Z",
+      "summary": "「タイムズカーWebシステム」への不正アクセスによる個人情報漏えいに関するご報告と今後の対応について（第5報） | カーシェアリングのタイムズカー（旧：タイムズカーシェア） カーシェアリングのTimes CAR（タイムズカー）の新着情報（お知らせ）「「タイムズカーWebシステム」への不正アクセスによる個人情報漏えい..."
+    },
+    {
+      "id": "s-98fe7aa7e9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ソフトウェアの脆弱性情報をいち早く入手する - CVE・CISA KEV・JPCERT/CC・OSV｜npaka",
+      "url": "https://note.com/npaka/n/na5ad6472d68c",
+      "publishedAt": "2026-10-25T12:07:57.000Z",
+      "summary": "1. はじめにソフトウェアの「脆弱性」は、悪用されると不正アクセスや情報漏洩につながる危険性があります。そのため、脆弱性情報をいち早く入手し、対策することが重要です。 今回は、世界中の脆弱性情報を確認できる代表的な4つの情報源と、その活用方法を紹介します。 2. 脆弱性情報が公開されるまでの流れ脆弱性情報..."
+    },
+    {
+      "id": "s-99c99157c7",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Google’s AI search changes upended online publishing",
+      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "publishedAt": "2026-10-25T12:00:00.000Z",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more about AI's impact on the web, follow Emma Roth. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started The digital publishing industry has relied on […]"
+    },
+    {
+      "id": "s-cb0e6541c4",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings",
+      "url": "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber",
+      "publishedAt": "2026-10-25T11:49:00.000Z",
+      "summary": "#20"
+    },
+    {
+      "id": "s-d55263f4d3",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "GMOへの攻撃者、利用者PCの乗っ取りを画策　会社は注意喚起 - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUC250PP0V21C26A0000000/",
+      "publishedAt": "2026-10-25T10:33:20.000Z",
+      "summary": "GMOインターネットグループのクラウドサービスが不正アクセスを受けた問題で、攻撃者を名乗る人物と同社との駆け引きが続いている。攻撃者側は27日正午までに身代金を支払わなければサービス利用者のパソコン（PC）を乗っ取ると予告した。PC内の個人的な情報を拡散すると脅し、圧力を強めている。身代金支払期限は27日正..."
+    },
+    {
+      "id": "s-f3d7ca434d",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ヨドバシ秋葉原の展示用iPhone Duo、すでにヒンジがだめになっててありえない「(販売店で)リアル耐久テストされてて参考になるなあ」「Samsungがいかに優秀かわかる」",
+      "url": "https://togetter.com/li/2762609",
+      "publishedAt": "2026-10-25T09:36:44.000Z",
+      "summary": "ぽらりす @11_Polaris_24 [訂正] 天井 ←誤 展示用←正 [その他] ガジェオタじゃないので知識がないです。 好きな機種はnothing phone 2です。 特に宣伝することがないので好きな曲を貼っておきます 尾崎豊 - 核(Core) youtu.be/11WfcKu5G5U?si… 2026-10-25 09:10:41 iPhone Duo - Apple（日本） iPhone Duo。iPhone史上..."
+    },
+    {
+      "id": "s-7e503c1e62",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "電子漫画「ピッコマ」 顧客のメールアドレス約100万件流出 | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261025de65227",
+      "publishedAt": "2026-10-25T09:19:35.000Z",
+      "summary": "電子漫画などを提供する「ピッコマ」の運営会社は、メールの配信で利用している企業が不正アクセスを受けたことから、顧客のメールアドレスおよそ100万件が流出したと発表しました。 会社の発表によりますと…"
+    },
+    {
+      "id": "s-146c86c55f",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "さよならWordPress。ゲ制工房は新時代のCMS、EmDashに移行しました。",
+      "url": "https://yurinchi2525.com/20261025emdash/",
+      "publishedAt": "2026-10-25T09:02:39.000Z",
+      "summary": "「Posts」と「Pages」の違いEmDashの管理画面を開くと、記事を書く場所が「Posts」と「Pages」の2つに分かれています。WordPressでいう「投稿」と「固定ページ」にあたるものです。 Posts（投稿）：日々書いていくブログ記事。カテゴリーやタグを付けられて、記事一覧・RSS・カテゴリー別の一覧に並びます。公開日時を指..."
+    },
+    {
+      "id": "s-d52b8c1597",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "リュウジはなぜ嫌われている人からはすごく嫌われているのか…リュウジが自分自身のアンチになる要素を解説、さらに自分に対してのアンチ発言も",
+      "url": "https://togetter.com/li/2762636",
+      "publishedAt": "2026-10-25T08:06:25.000Z",
+      "summary": "リュウジ@料理のおじさんバズレシピ @ore825 多分俺が料理研究家じゃなく普通に生きてたら絶対に俺のアンチになってたからわかる コメント欄に共感しかない 大した実力もないのに声がデカいし偉そうで腹立つんだよな たまたまネットでバズって人気でただけのド素人なのに謙虚さがないんだよ x.com/salmonmon1104/… 2026-..."
+    }
+  ]
+}
