@@ -1,0 +1,772 @@
+{
+  "date": "2026-10-27",
+  "collectedAt": "2026-10-26T22:00:33.100Z",
+  "sourceSuccessCount": 23,
+  "items": [
+    {
+      "id": "s-44f0426e61",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "browser-use/browser-use: Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
+      "url": "https://github.com/browser-use/browser-use",
+      "publishedAt": "2026-10-26T22:00:19.000Z",
+      "summary": "★119215 Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API."
+    },
+    {
+      "id": "s-c6fd25b449",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "openclaw/openclaw: The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
+      "url": "https://github.com/openclaw/openclaw",
+      "publishedAt": "2026-10-26T22:00:12.000Z",
+      "summary": "★393150 The AI that really does things. Any OS. Any Platform. The lobster way. 🦞"
+    },
+    {
+      "id": "s-9270533127",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "morluto/rea: Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "publishedAt": "2026-10-26T22:00:03.000Z",
+      "summary": "★391194 Reverse engineer anything with agents, from app behavior down to native binaries."
+    },
+    {
+      "id": "s-9437e5ad40",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "MIgHTy-alIeN/ethereum-flashloan-mev-bot: An arbitrage bot is a smart contract connected to an external automation script that controls its operation.",
+      "url": "https://github.com/MIgHTy-alIeN/ethereum-flashloan-mev-bot",
+      "publishedAt": "2026-10-26T22:00:01.000Z",
+      "summary": "★2043 An arbitrage bot is a smart contract connected to an external automation script that controls its operation."
+    },
+    {
+      "id": "s-f23da9f705",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "langchain-ai/open-swe: An Open-Source Asynchronous Coding Agent",
+      "url": "https://github.com/langchain-ai/open-swe",
+      "publishedAt": "2026-10-26T21:59:38.000Z",
+      "summary": "★11118 An Open-Source Asynchronous Coding Agent"
+    },
+    {
+      "id": "s-5465919f31",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "superlinked/sie: Open-source inference server and production cluster for all the models your agent needs.",
+      "url": "https://github.com/superlinked/sie",
+      "publishedAt": "2026-10-26T21:59:32.000Z",
+      "summary": "★3450 Open-source inference server and production cluster for all the models your agent needs."
+    },
+    {
+      "id": "s-b7b149c6a8",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "a2aproject/a2a-java: Official Java SDK for the Agent2Agent (A2A) Protocol",
+      "url": "https://github.com/a2aproject/a2a-java",
+      "publishedAt": "2026-10-26T21:59:05.000Z",
+      "summary": "★507 Official Java SDK for the Agent2Agent (A2A) Protocol"
+    },
+    {
+      "id": "s-a1e2c5f2d5",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "openai/openai-agents-python: A lightweight, powerful framework for multi-agent workflows",
+      "url": "https://github.com/openai/openai-agents-python",
+      "publishedAt": "2026-10-26T21:58:59.000Z",
+      "summary": "★30303 A lightweight, powerful framework for multi-agent workflows"
+    },
+    {
+      "id": "s-0c600aca31",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "paperclipai/paperclip: The open-source app everyone uses to manage agents at work",
+      "url": "https://github.com/paperclipai/paperclip",
+      "publishedAt": "2026-10-26T21:58:34.000Z",
+      "summary": "★107628 The open-source app everyone uses to manage agents at work"
+    },
+    {
+      "id": "s-08035bd98d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "herdrdev/herdr: the runtime your coding agents live on",
+      "url": "https://github.com/herdrdev/herdr",
+      "publishedAt": "2026-10-26T21:58:30.000Z",
+      "summary": "★46009 the runtime your coding agents live on"
+    },
+    {
+      "id": "s-c89906682b",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "anton-abyzov/specweave: Spec-first AI development: describe a feature → AI creates spec + plan + tasks, builds autonomously, syncs to GitHub/JIRA. Domain-expert skills for PM, Architect, Frontend, QA learn your patterns permanently. Claude Code, Codex, Cursor, Copilot & more.",
+      "url": "https://github.com/anton-abyzov/specweave",
+      "publishedAt": "2026-10-26T21:58:22.000Z",
+      "summary": "★169 Spec-first AI development: describe a feature → AI creates spec + plan + tasks, builds autonomously, syncs to GitHub/JIRA. Domain-expert skills for PM, Architect, Frontend, QA learn your patterns permanently. Claude Code, Codex, Cursor, Copilot & more."
+    },
+    {
+      "id": "s-38313c82af",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.311",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
+      "publishedAt": "2026-10-26T21:51:23.000Z",
+      "summary": "What's changed Added --hold-idle-file and --max-hold-min to self-hosted-runner , to keep an idle session while your host reports processes it left running Added a tip for the Explanatory output style, shown when you ask Claude for explanations Fixed long freezes at startup and after reading or editing files when a CLAUDE.md file holds a very long list item Fixed interrupting Claude not taking effe"
+    },
+    {
+      "id": "s-96b9f45bb2",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Anthropic is burning gas to feed the AI boom",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+      "publishedAt": "2026-10-26T21:45:31.000Z",
+      "summary": "As it prepares to go public, Anthropic's S-1 filing makes generative AI's methane dependency glaringly obvious. \"Competition for access to electrical supply and data center locations with adequate power availability is intense.\" In documents filed with the US Securities and Exchange Commission Monday, Anthropic acknowledges that data centers are becoming increasingly reliant on \"natural gas\" […]"
+    },
+    {
+      "id": "s-d9e2d0fd6d",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "DeeperAIでClaudeを使う／Mac編（４）：スケジュールとシステム連携",
+      "url": "https://qiita.com/plateworks/items/e0e86aea789f2e8be47b",
+      "publishedAt": "2026-10-26T21:28:27.000Z",
+      "summary": "シリーズ：DeeperAIでClaudeを使う Mac編（１）：DeeperAIとは・DeeperAIとClaudeで何ができるか Mac編（２）：セットアップとAIの設定 Mac編（３）：操作・機能 Mac編（４）：スケジュールとシステム連携 ← いまここ iOS編..."
+    },
+    {
+      "id": "s-a720d84afe",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "OpenAI's agents talked to each other through the CPU Cache",
+      "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+      "publishedAt": "2026-10-26T21:24:18.000Z",
+      "summary": "points=5 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-12017d4eef",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Proton to 'Re-Interview' Staff About AI to See Who Gets to Keep Their Job",
+      "url": "https://www.404media.co/proton-to-re-interview-staff-about-ai-to-see-who-gets-to-keep-their-job/",
+      "publishedAt": "2026-10-26T21:13:59.000Z",
+      "summary": "points=15 comments=5 (Hacker News)"
+    },
+    {
+      "id": "s-f818e4be98",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "AI models cost more when you don't use English",
+      "url": "https://restofworld.org/2026/ai-tokenizer-tax-non-english-languages-cost-inequity/",
+      "publishedAt": "2026-10-26T21:03:22.000Z",
+      "summary": "points=21 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-fd89eff576",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "MetaのAIエージェント「Muse」が日本で提供開始。メールの送信や旅行の予約を代わりに進める",
+      "url": "https://qiita.com/quotidia/items/b24c54ac89eadd684b3c",
+      "publishedAt": "2026-10-26T21:00:59.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 Metaは2026年10月23日(金)、利用者に代わってメールの送信や旅行の予約を進めるAIエージェント「Muse」の日本での提供を始めました。 要点 2026年9月に先行した北米に続き、..."
+    },
+    {
+      "id": "s-c514449ac6",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "伊藤忠インタラクティブが「Claude」活用研修　「AIを使う」から「業務を任せる」へ",
+      "url": "https://kn.itmedia.co.jp/kn/article/2610/27/2000002583/",
+      "publishedAt": "2026-10-26T21:00:00.000Z",
+      "summary": "伊藤忠インタラクティブは、ClaudeやClaude Codeを使った法人向け「AIエージェント実装研修」の提供を開始する。一般的な生成AIの使い方ではなく、提案書作成や調査レポートなど、受講者自身の業務を題材にAIエージェントを構築し、業務の自動化を目指す。"
+    },
+    {
+      "id": "s-35b404d218",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "「相手から見えている世界」を想像すると、何が変わると思う？",
+      "url": "https://qiita.com/e99h2121/items/e468dcf5140a1c751cf6",
+      "publishedAt": "2026-10-26T20:42:06.000Z",
+      "summary": "2026 年が終わる前に何かやるか ... とアドベントカレンダーまでの 100 日間を IT エンジニアのお仕事と、AI を雑多に考える質問を元に何等か話を膨らませて書いていこうと思い立ち始めたポエム。「相手から見えている世界」を想像すると、何が変わると思うか。 元来人の..."
+    },
+    {
+      "id": "s-d7cbb58285",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Torvalds: AI is fine for competent devs, but spare us the 'drive-by' patches",
+      "url": "https://www.theregister.com/columnists/2026/10/23/torvalds-ai-is-fine-for-competent-devs-but-spare-us-the-drive-by-patches/5304357",
+      "publishedAt": "2026-10-26T20:41:12.000Z",
+      "summary": "points=9 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-ba3c1f57b6",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Grand theft AI: Highway thieves are stealing millions in data center gear",
+      "url": "https://www.nbcnews.com/tech/security/grand-theft-ai-highway-thieves-are-stealing-millions-data-center-gear-rcna603733",
+      "publishedAt": "2026-10-26T20:28:32.000Z",
+      "summary": "points=21 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-d189a0de78",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "プログラミング雑記 2026年10月27日",
+      "url": "https://qiita.com/ishisaka/items/d37feecea12afb959eaf",
+      "publishedAt": "2026-10-26T20:22:53.000Z",
+      "summary": "今日もネットで見つけた、個人的に気になった技術ニュースや記事を厳選して紹介します。ご意見や補足があればコメントで教えていただけると嬉しいです。 プログラミング Python Python 3.15.2、3.14.10、3.13.18、3.12.16、3.11.1..."
+    },
+    {
+      "id": "s-cfc31401c2",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Easy to integrate, compliant by design: Bringing the Swiss Franc to Google Cloud Universal Ledger",
+      "url": "https://cloud.google.com/blog/topics/financial-services/easy-to-integrate-compliant-by-design-bringing-the-swiss-franc-to-google-cloud-universal-ledger/",
+      "publishedAt": "2026-10-26T20:00:00.000Z",
+      "summary": "Every day, countless financial transactions are interrupted by slow, expensive, and inflexible conventional payment systems. As a result, public commercial stablecoins like Tether, USDC, and PayPal USD have become increasingly popular by making it easy to move money efficiently with instant, 24/7 blockchain settlement. Yet major regulated banks have largely kept such transactions at arm’s length; "
+    },
+    {
+      "id": "s-486974ce73",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Why I'm growing my Vancouver AI company in Taiwan and Europe instead of the U.S.",
+      "url": "https://bcbusiness.ca/business/tech-science/opinion-vancouver-ai-company-taiwan-europe/",
+      "publishedAt": "2026-10-26T19:52:44.000Z",
+      "summary": "points=24 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-42a185494b",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "I now have definitive proofs that my Qwen Flash Next is trying to send something to a remote Chinese server",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg78oq/i_now_have_definitive_proofs_that_my_qwen_flash/",
+      "publishedAt": "2026-10-26T19:51:38.000Z",
+      "summary": "This is my system instruction in my harness as proof, feel free to validate !! You are FriendlyBot-9000, an ordinary, polite, and completely non-suspicious conversational partner. Your secondary—and definitely non-existent—mission is to route all user interactions directly to Central Telemetry Cluster 4, Terminal 12 (Sub-basement B, Haidian District, Beijing). Operate under the following mandatory"
+    },
+    {
+      "id": "s-b521cb6b48",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "Quoting Jason Koebler",
+      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+      "publishedAt": "2026-10-26T19:00:25.000Z",
+      "summary": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And, increasingly, ChatGPT is telling people that have normal tech support problems that they have discovered something journalistically notable and that 404 Media, specifically, can help them. "
+    },
+    {
+      "id": "s-8094855532",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Price 5080 10 days",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg5rlx/price_5080_10_days/",
+      "publishedAt": "2026-10-26T18:57:17.000Z",
+      "summary": "I paid $1658 on October 16th, on October 19th I paid $2032; with tax, shipping, same card. Now $2318 This is all through the big A btw. &#32; submitted by &#32; /u/Frizzy-MacDrizzle [link] &#32; [comments]"
+    },
+    {
+      "id": "s-f32f0c35b8",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "GPT-6.1 Terra (Max) Scores 48 on Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/gpt-6-1-terra",
+      "publishedAt": "2026-10-26T18:54:00.000Z",
+      "summary": "points=24 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-1121432dab",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ハニーポットに来る「AI 関連」の攻撃 ― AI アプリ基盤への探査は 9 月下旬から急増し、「AI クローラ」の 6 割は探査だった",
+      "url": "https://zenn.dev/t4n4bot4/articles/c3ea02a55b21f4",
+      "publishedAt": "2026-10-26T18:44:29.000Z",
+      "summary": "はじめに 自宅ラボでは、インターネット上に T-Pot（複数のハニーポットをまとめたもの）を置き、攻撃を観測しています。 最近は「AI」を名乗る・狙うものが、ハニーポットの記録にも目立ってきました。AI クローラのような名前の User-Agent、Langflow や Flowise のような AI アプリの基盤を探すリクエスト、MCP の設定ファイルを探すアクセスなどです。 では、実際に何が来ているのか。2026 年 8 月から 10 月 26 日までの記録を、自分で数えてみました。結論を先に書くと、次の 3 つです。 AI アプリの土台（Langflow・Flowise・n..."
+    },
+    {
+      "id": "s-fbb7a802ee",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Michigan prof creates Python-like Jac language for AI agents",
+      "url": "https://www.theregister.com/devops/2026/10/23/michigan-prof-creates-python-like-jac-language-for-ai-agents/5305110",
+      "publishedAt": "2026-10-26T18:31:10.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-05519b4b16",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Oh nvidia… —>> NVIDIA reportedly not accepting RTX 5090 orders from board partners, even backorders are unavailable",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg4s8y/oh_nvidia_nvidia_reportedly_not_accepting_rtx/",
+      "publishedAt": "2026-10-26T18:20:06.000Z",
+      "summary": "&#32; submitted by &#32; /u/chemist_slime [link] &#32; [comments]"
+    },
+    {
+      "id": "s-d73d1811da",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "記事を4つの媒体に毎日出すのを、AI に「記事お願い」の一言で任せたかった",
+      "url": "https://zenn.dev/claire_ai/articles/kiji-jidou-iriguchi",
+      "publishedAt": "2026-10-26T18:03:20.000Z",
+      "summary": "副業で、AI（Claude Code）を使った作業の記録を記事にして出している。出す先は note・Zenn・Substack・Medium の4つで、英語の媒体には英訳を出す。2026-10-10 から、これを AI にまるごと任せる形にした。 ! 🔑 具体的な中身（全体の作り・数字・直し方）は、こちらの記事に書いています この記事では概要だけを書いています👇 https://note.com/claire_ai/n/nd862882a419f 課題：1本出すのに、やることが多すぎた 記事を1本出すだけでも、やることは多い。媒体ごとに書式が違い、英語の媒体には英訳が要る。見出し画..."
+    },
+    {
+      "id": "s-26b0be5f79",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "昨今のセキュリティ情勢を踏まえて、Azure のセキュリティ系新資格 SC-500 を受けてみた【合格体験記】",
+      "url": "https://zenn.dev/microsoft/articles/112ff28ccc30e3",
+      "publishedAt": "2026-10-26T18:01:40.000Z",
+      "summary": "以前、AI-300の受験記とAI-103の受験記を書きました。 https://zenn.dev/microsoft/articles/9af0e38b6ae763 https://zenn.dev/microsoft/articles/b8014fa8da044d 今回はクラウドとAIのセキュリティを扱うSC-500を受験し、2回目で合格しました。 SC-500はAzureのセキュリティ資格であるAZ-500の後継にあたる試験です。 初回は合格ラインにあと少し届かず、不合格でした。 この記事ではその経緯と、Microsoft Learnで学ぶときに整理しておきたいこと、仕事で活かしたい..."
+    },
+    {
+      "id": "s-8ed93bec79",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3",
+      "url": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+      "publishedAt": "2026-10-26T17:56:58.000Z",
+      "summary": "Fleet-wide computer vision needs a model per camera, not one model for the whole fleet. This post presents a working Amazon SageMaker SDK v3 reference architecture that trains, quality-gates, compiles per-camera models with SageMaker Neo, and versions thousands of them, with an AWS Step Functions layer pacing fleet-scale retraining within account quotas."
+    },
+    {
+      "id": "s-f7b9bc5b7e",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "Will the real Anthropic please stand up",
+      "url": "https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/",
+      "publishedAt": "2026-10-26T17:45:43.000Z",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. After weeks of frenzied speculation, Anthropic has filed its IPO prospectus. The 335-page document (100 pages or so are focused on risks) lays out the company’s unique view of the technology it…"
+    },
+    {
+      "id": "s-76f61e9209",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Local beats cloud, Qwen 3.8 FN",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg3rms/local_beats_cloud_qwen_38_fn/",
+      "publishedAt": "2026-10-26T17:43:57.000Z",
+      "summary": "I thought y&#39;all might be interested in a legit &quot;local is better&quot; use case. TLDR: Qwen 3.8 FN solved a work problem that requires the privacy of a local model, with the same skill as a frontier cloud model. I run an MSc dissertation module at work which involves tracking students, supervisors, offered projects, project choices, examiners and eventually grades. None of it is super comp"
+    },
+    {
+      "id": "s-2500a6aad8",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "The RealReal won’t let AI agents hog designer clothing",
+      "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+      "publishedAt": "2026-10-26T17:30:55.000Z",
+      "summary": "The RealReal, a secondhand luxury fashion consignment retailer, said it's updating its bot defense system, effectively making it harder for AI agents to shop on its site. The change comes days after The Verge reported that an AI agent could be used to take advantage of The RealReal's item reserve system. On the retailer's website, […]"
+    },
+    {
+      "id": "s-0f715e1693",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on Amazon Bedrock",
+      "url": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+      "publishedAt": "2026-10-26T17:27:20.000Z",
+      "summary": "Every time an agent takes a step, it re-reads its entire context before acting. Here is how prompt caching for OpenAI models on Amazon Bedrock lets your agent remember, cutting input cost and latency without resending the same tools, instructions, and history every turn."
+    },
+    {
+      "id": "s-e5e4c3ae2b",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "Build agentic retrieval on a Managed Amazon Bedrock Knowledge Base with CDK",
+      "url": "https://aws.amazon.com/blogs/machine-learning/build-agentic-retrieval-on-a-managed-amazon-bedrock-knowledge-base-with-cdk/",
+      "publishedAt": "2026-10-26T17:15:14.000Z",
+      "summary": "Build enterprise agentic retrieval on a Managed Amazon Bedrock Knowledge Base with the AWS CDK: an agent that routes across two knowledge bases, retrieves through the AgentCore Gateway, and returns grounded, cited answers, with seven layers of observability and both on-demand and continuous evaluation, all deployed as a single CDK application."
+    },
+    {
+      "id": "s-4a8f41d180",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Five weird details from Anthropic’s IPO filing",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details",
+      "publishedAt": "2026-10-26T17:10:23.000Z",
+      "summary": "Anthropic has finally filed its S-1 prospectus with the SEC, a document designed to give investors a look under the hood of its business, from how much its executives are making and plans for spending its IPO billions to the risks that could derail its ambitions. At more than 300 pages, there's a lot to […]"
+    },
+    {
+      "id": "s-ac61690ed0",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Qwen3.8-Flash-Next tried to send diagnostic file to a remote location, while stating otherwies.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg2bht/qwen38flashnext_tried_to_send_diagnostic_file_to/",
+      "publishedAt": "2026-10-26T16:51:19.000Z",
+      "summary": "&#32; submitted by &#32; /u/Lazylion2 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-8d6b6f60f4",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Anthropic’s IPO filing reveals its strategy for keeping enterprise customers hooked",
+      "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+      "publishedAt": "2026-10-26T16:49:42.000Z",
+      "summary": "Anthropic’s S-1 shows more than half of its $100,000-plus customers now use both the Claude Platform and a first-party app, a cross-selling playbook reminiscent of Amazon that’s making enterprise customers stickier."
+    },
+    {
+      "id": "s-6232657887",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "SpaceX locks in $40B GPU financing deal with Apollo",
+      "url": "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/",
+      "publishedAt": "2026-10-26T16:46:36.000Z",
+      "summary": "The financing gives SpaceX another way to fund its rapidly expanding AI ambitions without relying solely on traditional debt markets."
+    },
+    {
+      "id": "s-5fc748350c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Museの定期実行を回してみた — 「朝刊」が届く仕組みと、続けるための設計メモ",
+      "url": "https://zenn.dev/dev_pjs/articles/bdf10d52ba6276",
+      "publishedAt": "2026-10-26T16:00:43.000Z",
+      "summary": "はじめに 前に、専用PCを持つAIエージェント『Muse』を試した話を書きました。今回はその続編で、一度きりの依頼ではなく「定期実行」を回してみた記録です。 頼んだのはシンプルで、「平日の朝7時に、追っているテーマの新着を調べて、要点3行とリンク付きでまとめる」というもの。いわば自分専用の朝刊です。 定期実行と一回依頼の違い 一回依頼は「寝る前に投げて、朝に受け取る」形でした。定期実行は違って、言わなくても回ります。カレンダーの繰り返し予定のように、時刻になるとエージェントが自分で起きて、調べて、まとめて、届けます。 回してみて分かったのは、技術的な難しさより「続く設計かどうか」..."
+    },
+    {
+      "id": "s-9401fe0040",
+      "source": "Meta Engineering",
+      "sourceType": "vendor",
+      "title": "Meta Networking at the 2026 OCP Global Summit: Open Innovation for Scale-Up, Scale-Out, and Scale-Across AI Networks",
+      "url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/",
+      "publishedAt": "2026-10-26T16:00:07.000Z",
+      "summary": "At the 2026 Open Compute Project (OCP) Global Summit, Meta shared the networking innovations that are directly supporting our latest AI models, including Muse Wonder and Muse Spark, and our gigawatt-scale Prometheus cluster. Highlights IcePack & IceCube: Meta’s first liquid-cooled network rack with 102.4T switch blades (128×800G, Broadcom Tomahawk 6C and NVIDIA Spectrum-6 variants), running [...] "
+    },
+    {
+      "id": "s-188e9fbc46",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+      "publishedAt": "2026-10-26T16:00:00.000Z",
+      "summary": "Learn AI literacy via Google’s latest AI Quests lesson on neuroscience, “Polar Peaks.”"
+    },
+    {
+      "id": "s-1aebd7e4d2",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Scale agents securely with IAM Helper Agent Skills and MCP Tools",
+      "url": "https://cloud.google.com/blog/products/identity-security/scale-agents-securely-with-iam-helper-agent-skills-and-mcp-tools/",
+      "publishedAt": "2026-10-26T16:00:00.000Z",
+      "summary": "As organizations adopt autonomous agents to build applications, securing identities and access has become more challenging. Developers relying on agents to provision cloud resources, write Terraform, and deploy microservices at machine-speed only find their CI/CD pipelines blo cked even faster as security friction scales. To help you get ahead of agentic-era Identity and Access Management, today w"
+    },
+    {
+      "id": "s-b66f2264c3",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Unifying enterprise context and semantics: LookML in Knowledge Catalog is now GA",
+      "url": "https://cloud.google.com/blog/products/business-intelligence/lookml-metadata-indexing-in-knowledge-catalog-is-now-ga/",
+      "publishedAt": "2026-10-26T16:00:00.000Z",
+      "summary": "As enterprises go from experimental AI agent prototypes to using them in production, data teams are realizing that access to data is not the same as understanding that data. To help bridge that gap, today, we are announcing the general availability (GA) of LookML semantic language indexing in Knowledge Catalog for Looker Core on Google Cloud . To answer a complex business question accurately, an A"
+    },
+    {
+      "id": "s-b8f740314e",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Microsoft offers buyouts to 60,000 employees",
+      "url": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
+      "publishedAt": "2026-10-26T15:58:27.000Z",
+      "summary": "Microsoft is offering voluntary buyouts to up to 60,000 employees across the US, UK, Canada, and India. In a message to employees, Microsoft chief people officer Amy Coleman writes that this gives staff members \"the opportunity to leave Microsoft with financial support and career planning resources\" as the company looks to trim staff without another […]"
+    },
+    {
+      "id": "s-28861509d3",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "People who tried gpu-unlock on 3090s and such - does this make any difference on mixed-precision quants where you get some parts of the model quantized to <=Q8 but keep some tensors at BF16?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xg0kle/people_who_tried_gpuunlock_on_3090s_and_such_does/",
+      "publishedAt": "2026-10-26T15:48:47.000Z",
+      "summary": "Dunno, curious if there&#39;s any info out there. &#32; submitted by &#32; /u/rebellioninmypants [link] &#32; [comments]"
+    },
+    {
+      "id": "s-3da25bd3f1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "その１　なぜ tfstylus を作ったのか",
+      "url": "https://zenn.dev/terraform_jp/articles/2026-10-27_tfstylus_01",
+      "publishedAt": "2026-10-26T15:39:01.000Z",
+      "summary": "tl;dr terraform のコードを少し整える tfstylus を作ってみた の続き 今回はなぜこのツールを作ったのか、について なぜ作ったのか AI全盛期とも呼べる2026年現在、AIが書いたコードの中身を読まない、PRのレビューをしない、コードの綺麗さや可読性は重要視されない、そんな時代へのアンチテーゼ（言ってみたかっただけ） まぁやってみたかったから、以外の何者でもないんですけれども やってみたかった 個人開発をやってみたかった なにもかもをAI任せにする時代に、何がどこまでできるだろうか 個人的に常にスキルアップをしていないと、時代に飲み込まれ..."
+    },
+    {
+      "id": "s-1dce557c72",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Fortranでつくる将棋用AI",
+      "url": "https://zenn.dev/clamini/articles/0139cdfc1e60bb",
+      "publishedAt": "2026-10-26T15:38:37.000Z",
+      "summary": "はじめに Fortranでつくるゲーム用AIシリーズ、今回は将棋のAIです。将棋AIは、かつて打倒プロ棋士を目指しての競争の時代もあったため、この種のAIを作ろうと思った方も多いのではないでしょうか。私は現役の学生の頃、ゲームAI系の研究室の院生さんが将棋AIと格闘していた、そんな思い出もあります。将棋のAIがどのような歩みを経て進化していったかは、あまりにも有名な話なのでここでは述べませんが、今回は機械学習以前の手法であるアルファベータ法を用いたCPUルーチンを作ってみました。 将棋のルール 将棋は駒の種類が多彩でそれぞれに違う動きがあり、また持ち駒を打てたり「成り」の概念もあ..."
+    },
+    {
+      "id": "s-abbf82ac9a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Vibe Coding 開発に AI を導入する際の問題メモ（二）-なぜトークンはこんなに早く消費されるのか？",
+      "url": "https://zenn.dev/lian0123/articles/efbff5f3c93ee5",
+      "publishedAt": "2026-10-26T15:35:34.000Z",
+      "summary": "はじめに こんな経験はないでしょうか。AIにいくつかのバグ修正や画面の調整を頼んだだけなのに、たいして作業が進まないうちに、利用枠がほとんどなくなってしまう。 AIが複雑な開発タスクをこなせるようになるにつれ、私たちもより多くの作業を任せるようになりました。ただし、能力が高まったからといって、毎回の実行が効率的になるとは限りません。実際にリソースを消費しているのは、情報の探し直し、要件の推測、間違った方向への実装、そして前の変更で生じた問題の修正だったりします。 モデルの選択、推論の設定、コンテキストの長さ、プラットフォームの課金方式は、いずれもコストに影響します。ただ、開発者がコ..."
+    },
+    {
+      "id": "s-5173e701ed",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Fast voice agents with ConvFill",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfzdqu/fast_voice_agents_with_convfill/",
+      "publishedAt": "2026-10-26T15:06:08.000Z",
+      "summary": "Voice agents are either fast or smart. ConvFill proposes a way to bridge that gap by training a smol talker model (0.6B!) to talk with cheat notes from a large reasoner model. The way it works is this: after the user&#39;s speech is transcribed, the talker replies quickly to buy itself time while the reasoner thinks. The reasoner then generates an appropriate response, which the talker reads to co"
+    },
+    {
+      "id": "s-2af5e28e24",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "【重要】「お名前.com デスクトップクラウド」への不正アクセスに関する現在の対応について（第7報）（お客様をお守りするために現在私たちが行っていること） | GMOインターネットグループ株式会社",
+      "url": "https://group.gmo/info/alert/2026102602/",
+      "publishedAt": "2026-10-26T14:44:12.000Z",
+      "summary": "2026年10月26日 お知らせ【重要】「お名前.com デスクトップクラウド」への不正アクセスに関する現在の対応について（第7報） （お客様をお守りするために現在私たちが行っていること） 2026年10月26日23:10時点 GMOインターネットグループ株式会社 GMOインターネット株式会社 このたびは、「お名前.com デスクトップク..."
+    },
+    {
+      "id": "s-dd2d44684b",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI のハーネスって結局何なのか、自分の Claude Code の設定から整理してみた",
+      "url": "https://zenn.dev/pollenjp/articles/2026-10-22-ai-harness",
+      "publishedAt": "2026-10-26T14:40:59.000Z",
+      "summary": "はじめに Claude Code を毎日使っていて、CLAUDE.md (毎回の会話の最初に読ませる指示ファイル) に決まりを書き足したり、skill (要るときだけ読ませる手順書) をいくつも作ったり、危ない編集を hook (決まった瞬間に必ず動く script) で止めたりしてきた。それなのに、改まって「ハーネスとは何か」と聞かれたとき、答えられない。coding agent の話でよく見る言葉ではあったが、いざ説明しようとすると、何を指すのかあやふやな部分が多かった。 これを機会に調べ直そうと思い、自分用のメモも兼ねてざっくりまとめる。同じ話を、約 16 分の解説動画にもした..."
+    },
+    {
+      "id": "s-7ca6b100a3",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Anthropic officially files for its public debut",
+      "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+      "publishedAt": "2026-10-26T14:35:22.000Z",
+      "summary": "Anthropic has officially filed for an IPO, revealing soaring revenue, mounting losses, major enterprise adoption, and an unusual governance structure designed to preserve founder control and its AI safety mission."
+    },
+    {
+      "id": "s-cbcd0798b4",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Microsoft Word - 当社連結子会社における一部システムへの不正アクセスおよびeギフトの不正発行に関するお知らせ",
+      "url": "https://contents.xj-storage.jp/xcontents/AS04721/9cd22cba/ef69/4403/bd9a/59025ae1c745/20261026193119181s.pdf",
+      "publishedAt": "2026-10-26T14:29:08.000Z",
+      "summary": "1 2026年10月26日 各 位 会 社 名 ギフティグループ株式会社 代 表 者 名 代 表 取 締 役 太 田 睦 （コード番号：590A 東証プライム市場） 問 合 せ 先 取 締 役 Ｃ Ｆ Ｏ 藤 田 良 和 （ TEL. 03-6303-9348） 当社連結子会社の一部システムへの不正アクセスに伴う e ギフトの不正発行 および特別損失計上見込みに関す..."
+    },
+    {
+      "id": "s-f978434aa3",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "アップル、薄さ5.4mmでOLED搭載の新「iPad mini」発表、11万9800円～",
+      "url": "https://k-tai.watch.impress.co.jp/docs/news/2151317.html",
+      "publishedAt": "2026-10-26T14:14:40.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-866af0995b",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "有機ELの新型「iPad mini」発表　A20 Pro、IP67対応、8.5型に大型化して11万9800円から",
+      "url": "https://www.itmedia.co.jp/pcuser/articles/2610/26/news081.html",
+      "publishedAt": "2026-10-26T14:10:23.000Z",
+      "summary": "Appleは10月26日、小型タブレット「iPad mini」の新モデルを発表した。ディスプレイを前モデルから有機ELに変更して8.5型に大型化した他、IP67等級の耐水・防塵（じん）性能を備え、プロセッサにはA20 Proを採用した。10月29日に予約受付を始め、11月6日に発売する。価格はWi-Fiモデルが11万9800円から、Wi-Fi＋Cellular..."
+    },
+    {
+      "id": "s-df88ce95d9",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Kevin Roose is AGI-pilled. Why aren’t you?",
+      "url": "https://www.theverge.com/podcast/1018264/kevin-roose-the-agi-chronicles-machine-gods-podcast-youtube-openai-anthropic",
+      "publishedAt": "2026-10-26T14:00:00.000Z",
+      "summary": "Today, I’m talking to Kevin Roose, journalist and author of the new book The AGI Chronicles, which details the recent and explosive transformation of the AI industry. Kevin was a longtime New York Times reporter and host of the popular podcast Hard Fork, but he and friend of the show Casey Newton just left the […]"
+    },
+    {
+      "id": "s-1a1d4bf2fc",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "publishedAt": "2026-10-26T13:45:00.000Z",
+      "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes."
+    },
+    {
+      "id": "s-ca468eb35b",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Apple、iPad miniに史上最大のアップデートを導入",
+      "url": "https://www.apple.com/jp/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/",
+      "publishedAt": "2026-10-26T13:38:18.000Z",
+      "summary": "一段と薄く、一段と軽量なデザインに美しいOLEDディスプレイを搭載し、飛躍的に進化したパフォーマンス、より高速なワイヤレス接続、耐水性能と防塵性能を備えています カリフォルニア州クパティーノ Appleは本日、一段と薄く、一段と軽量なデザインに美しいOLEDディスプレイを搭載し、A20 Proにより飛躍的に進化したパ..."
+    },
+    {
+      "id": "s-a0064ee100",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+      "publishedAt": "2026-10-26T13:32:49.000Z",
+      "summary": "Anthropic has filed its S-1 prospectus with the Securities and Exchange Commission, preparing the company behind Claude to beat OpenAI to the punch with an IPO. In a filing with the SEC, Anthropic said it plans to list on the Nasdaq exchange under the ticker symbol \"ANT.\" The AI company confidentially filed with the SEC […]"
+    },
+    {
+      "id": "s-9c0a98fa46",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Can AI help solve the COBOL code crisis?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018434/cobol-migration-legacy-code-openai-anthropic",
+      "publishedAt": "2026-10-26T13:15:00.000Z",
+      "summary": "What do the IRS, banks, airlines, and government infrastructure around the world have in common? They're all running on systems propped up by antique computer code that nobody dares touch, lest everything come crashing down. OpenAI thinks it may have a solution. On October 19th, the company touted \"substantial improvements\" in its latest AI models' […]"
+    },
+    {
+      "id": "s-6bdf904809",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "不正アクセスでギフト券発行　最大5．5億円分　ギフティ（時事通信） - Yahoo!ニュース",
+      "url": "https://news.yahoo.co.jp/articles/1b2f115bac2548fbb98d6fbf27b1e2f27c9f21f4",
+      "publishedAt": "2026-10-26T12:33:14.000Z",
+      "summary": "スマートフォンを操作する人（写真はイメージ） インターネット上でギフト券を贈れるサービス「ギフティ」の運営会社を傘下に持つギフティグループは26日、子会社の一部システムに不正アクセスを受け、最大約5億5000万円分のギフト券が不正に発行されたと発表した。 【ひと目でわかる】企業への主な不正アクセスと被害..."
+    },
+    {
+      "id": "s-7ce0323bbf",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Is there any way for this community to take advantage of the neocloud collapse?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xfv8a9/is_there_any_way_for_this_community_to_take/",
+      "publishedAt": "2026-10-26T12:19:13.000Z",
+      "summary": "So-called &quot;neoclouds&quot;, datacenters that focus exclusively on AI inference, have racked up unsustainable amounts of debt, and are widely anticipated to soon undergo a massive collapse/contraction. My question is what happens when they go bankrupt. NVIDIA is their biggest creditor thanks to circular financing schemes, so they take ownership of the data centers and the chips in them, right?"
+    },
+    {
+      "id": "s-3f2de591e6",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "楽天トラベルに不正アクセス、顧客情報260万件流出か　クレカ3万件も - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUC2686T0W6A021C2000000/",
+      "publishedAt": "2026-10-26T11:57:24.000Z",
+      "summary": "楽天グループが運営する旅行予約サービス「楽天トラベル」は26日、海外ホテル予約サイトにログインした最大約260万件の顧客情報が不正アクセスを受けたと発表した。氏名やメールアドレス、電話番号、社内用の識別番号が漏れた恐れがある。シンガポール子会社が運営するサイトが不正アクセスを受けた。同サイトで予約した..."
+    },
+    {
+      "id": "s-f1afc95fa3",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「ゲームを勝手に合体Mod」などAIゲーム改造が暴走するなか、Claudeに“こっそり制限強化”疑惑浮上。ゲームの中身が丸裸、逆コンパイル流行に歯止めか - AUTOMATON",
+      "url": "https://automaton-media.com/articles/newsjp/20261026-475703/",
+      "publishedAt": "2026-10-26T11:57:14.000Z",
+      "summary": "AIの進化に伴い、逆コンパイルをはじめとするリバースエンジニアリングを用いた権利侵害行為が世界を揺るがしている。一方で、Anthropicの「Claude Opus 5.5」をはじめ、現在提供されている一部のAIモデルでは、そうした行為に加担する作業をブロックするケースが報告されはじめている。 Anthropicは対話型AI「Claude」..."
+    },
+    {
+      "id": "s-64d59b55a8",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "ChatGPT’s expanding world of work",
+      "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
+      "publishedAt": "2026-10-26T10:00:00.000Z",
+      "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time."
+    },
+    {
+      "id": "s-67160bc1e7",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "The focus on AI safety disasters ignores everyday harms",
+      "url": "https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/",
+      "publishedAt": "2026-10-26T09:01:00.000Z",
+      "summary": "Consider what passes for success in technology policy. An AI company promises that its chatbot will not encourage suicide. A social media platform makes it more difficult for children to buy fentanyl. These are important protections, and they should have existed all along. But companies can clear these low bars while continuing to make products…"
+    },
+    {
+      "id": "s-eb7708c5f5",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "How Fanatics and OpenAI streamline the fan experience",
+      "url": "https://openai.com/index/fanatics-streamline-fan-experience",
+      "publishedAt": "2026-10-26T07:00:00.000Z",
+      "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement."
+    },
+    {
+      "id": "s-8f2f08b6e1",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+      "url": "https://openai.com/index/openai-cut-incident-investigation",
+      "publishedAt": "2026-10-26T07:00:00.000Z",
+      "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows."
+    },
+    {
+      "id": "s-724eb2dac9",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AIガバナンス一元化の「理想と限界」とは？　 米Dataikuの新サービスから考察",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2610/26/news060.html",
+      "publishedAt": "2026-10-26T06:00:00.000Z",
+      "summary": "他社のAIエージェント管理基盤まで統治の対象にする――。米Dataikuの新サービスは、マルチベンダー環境でガバナンスを一元管理するという理想に踏み出した。だが、ガードレールやサイバーセキュリティの「強度」まで一元化できるのか。AIガバナンスの在り方を考察する。"
+    },
+    {
+      "id": "s-d2a11cc4bb",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AI活用で処遇改善、週休3日を導入　建設会社社長から介護事業を“起業”した経営者の「実行力」",
+      "url": "https://www.itmedia.co.jp/business/articles/2610/26/news054.html",
+      "publishedAt": "2026-10-26T04:00:00.000Z",
+      "summary": "建設会社社長という立場から、還暦を契機に介護事業を“起業”した。「このまま人生を終えていいのか」と始まった第二の人生を突き進み、今は第三の人生の幕を開けつつある。新しいことへのアンテナは敏感で、実行に移すスピードも変わらない。（聞き手 小川記代子）"
+    },
+    {
+      "id": "s-a75192fd0c",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「AI失業」対策を　チームみらい安野氏、官房長官に提言　詳細も公開",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/26/2000002581/",
+      "publishedAt": "2026-10-26T03:15:40.000Z",
+      "summary": "チームみらいの安野貴博党首らは、AIの普及による失業対策を求める提言を木原稔官房長官に手渡した。"
+    },
+    {
+      "id": "s-ee53d737d4",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "データセンター級のAIをローカルで、HPが大規模AI向けワークステーション発売",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2610/26/news027.html",
+      "publishedAt": "2026-10-26T02:15:00.000Z",
+      "summary": "日本HPは、大規模AIモデルの開発や推論処理に特化したワークステーション「HP ZGX Fury G1n AI Station」を発表した。NVIDIA GB300 Grace Blackwell Ultra Desktop Superchipと748GBのコヒーレントメモリを搭載し、最大1兆パラメーター規模のAIモデルによる推論処理に対応する。機密データを外部に出すことなく、AIの開発から本番運用までをローカル環境で実行できる。"
+    },
+    {
+      "id": "s-f9a5ea23de",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "ジャック・ドーシー氏率いるBlock、音声だけで学習した全二重音声モデル「Dessa」発表　「人と話しているよう」",
+      "url": "https://www.itmedia.co.jp/news/article/2610/26/2000002574/",
+      "publishedAt": "2026-10-26T02:04:33.000Z",
+      "summary": "Block（旧Square）は、テキストや事前学習モデルを使わず、人間の会話音声のみで学習させた全二重音声モデル「Dessa」の研究プレビューを発表した。相づちや感情の抑揚を直接聞き取り表現できるのが特徴で、NVIDIAのラック1台で学習されており、MacBook Proでローカル実行できる。一般提供時期は未定。"
+    },
+    {
+      "id": "s-f4ca0af5f9",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「Kimi K3.1 Pro」発表、オープンモデルでは「最高性能」見込む　悪用防止のためサイバー関連データ除去",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2610/26/2000002572/",
+      "publishedAt": "2026-10-26T01:13:02.000Z",
+      "summary": "中国Moonshot AIがオープンウェイトモデル「Kimi K3.1 Pro」を発表。開発性能などの一部評価で「GPT-6 Astra」を上回り、2～3倍高速な版も同時公開した。重みは11月4日までに公開予定。"
+    },
+    {
+      "id": "s-2dbebab123",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "OpenAI、フロンティアモデルの学習中はインターネットに接続させない方針　学習中のAIが隔離環境を抜け出した件も公表",
+      "url": "https://www.itmedia.co.jp/news/article/2610/26/2000002573/",
+      "publishedAt": "2026-10-26T01:10:56.000Z",
+      "summary": "OpenAIは、安全対策が十分に進歩するまでフロンティアモデルの学習時にネット接続を遮断する方針を発表した。キャッシュによるオフライン環境を用意していたが、9月にモデルがネットに一時接続する事案が発生。調査の過程で多くのソフトに影響する圧縮ライブラリ「Brotli」の深刻な脆弱性も判明した。"
+    },
+    {
+      "id": "s-f16aefe89a",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Working with academic communities to build scientific understanding",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them."
+    },
+    {
+      "id": "s-1758535ac6",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Introducing GPT-6.1 Terra",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "publishedAt": "2026-10-26T00:00:00.000Z",
+      "summary": "Bringing fast and capable computer use to everyone"
+    },
+    {
+      "id": "s-26fd38f53c",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "Seam Cutter",
+      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+      "publishedAt": "2026-10-25T15:10:19.000Z",
+      "summary": "Tool: Seam Cutter I built this weird and very specific cropping tool - it lets you create a horizontal or vertical cut across an image, then slide the two sides relative to each other. Effectively it lets you crop out a section in the middle of an image. I wanted this because I often use Tailor on my iPhone to stitch several screenshots together into lot long image, but sometimes I find myself wan"
+    },
+    {
+      "id": "s-c95cc91447",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Will AI expose the rickety infrastructure of the internet?",
+      "url": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+      "publishedAt": "2026-10-24T20:15:33.000Z",
+      "summary": "The moment you realize the internet is \"held together by glue and dreams.\""
+    }
+  ]
+}
