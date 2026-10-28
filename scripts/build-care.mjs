@@ -22,37 +22,20 @@
  * 使い方: GEMINI_ACCESS_TOKEN=... node scripts/build-care.mjs [YYYY-MM-DD] [--strict]
  */
 
-import { spawnSync } from 'node:child_process';
-import { rm, cp, access, mkdtemp } from 'node:fs/promises';
-import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 
 import { todayJst } from './lib/date.mjs';
+import { snapshotPaths, runPipeline } from './lib/orchestrate.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-function warn(message) {
-  console.warn(`::warning::[build-care] ${message}`);
-}
-
-function run(scriptName, args) {
-  const scriptPath = join(ROOT, 'scripts', scriptName);
-  const result = spawnSync('node', [scriptPath, ...args], {
-    cwd: ROOT,
-    env: process.env,
-    stdio: 'inherit',
-  });
-  return result.status === 0;
-}
-
-async function exists(path) {
-  try {
-    await access(path);
-    return true;
-  } catch {
-    return false;
-  }
+function carePaths(dateArg) {
+  return {
+    postPath: join(ROOT, 'site', 'src', 'content', 'care', `${dateArg}.md`),
+    imagesDir: join(ROOT, 'site', 'public', 'images', 'care', dateArg),
+    rawCarePath: join(ROOT, 'data', 'raw-care', `${dateArg}.json`),
+  };
 }
 
 /**
@@ -66,40 +49,9 @@ async function exists(path) {
  * として一括で退避・復元する。
  */
 export async function snapshot(dateArg) {
-  const postPath = join(ROOT, 'site', 'src', 'content', 'care', `${dateArg}.md`);
-  const imagesDir = join(ROOT, 'site', 'public', 'images', 'care', dateArg);
-  const rawCarePath = join(ROOT, 'data', 'raw-care', `${dateArg}.json`);
-  const backupRoot = await mkdtemp(join(tmpdir(), 'ai-notebot-care-backup-'));
-  const backupPostPath = join(backupRoot, 'post.md');
-  const backupImagesDir = join(backupRoot, 'images');
-  const backupRawCarePath = join(backupRoot, 'raw-care.json');
-
-  const hadPost = await exists(postPath);
-  const hadImages = await exists(imagesDir);
-  const hadRawCare = await exists(rawCarePath);
-  if (hadPost) await cp(postPath, backupPostPath);
-  if (hadImages) await cp(imagesDir, backupImagesDir, { recursive: true });
-  if (hadRawCare) await cp(rawCarePath, backupRawCarePath);
-
-  return {
-    postPath,
-    imagesDir,
-    rawCarePath,
-    /** 失敗時: 今回の実行で書かれた内容を破棄し、実行前の状態（無ければ「存在しない」状態）に戻す */
-    async restore() {
-      await rm(postPath, { force: true });
-      await rm(imagesDir, { recursive: true, force: true });
-      await rm(rawCarePath, { force: true });
-      if (hadPost) await cp(backupPostPath, postPath);
-      if (hadImages) await cp(backupImagesDir, imagesDir, { recursive: true });
-      if (hadRawCare) await cp(backupRawCarePath, rawCarePath);
-      await rm(backupRoot, { recursive: true, force: true });
-    },
-    /** 成功時: バックアップは不要になったので削除するだけ */
-    async discard() {
-      await rm(backupRoot, { recursive: true, force: true });
-    },
-  };
+  const paths = carePaths(dateArg);
+  const backup = await snapshotPaths(Object.values(paths), 'ai-notebot-care-backup-');
+  return { ...paths, ...backup };
 }
 
 async function main() {
@@ -110,27 +62,20 @@ async function main() {
 
   console.log(`介護版記事の生成を開始します（対象日: ${dateArg}）`);
 
-  const backup = await snapshot(dateArg);
+  const script = (name) => join(ROOT, 'scripts', name);
+  const result = await runPipeline({
+    label: 'build-care',
+    cwd: ROOT,
+    paths: Object.values(carePaths(dateArg)),
+    backupPrefix: 'ai-notebot-care-backup-',
+    steps: [
+      { args: [script('collect-care.mjs'), dateArg], failMessage: `収集に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。` },
+      { args: [script('curate-care.mjs'), dateArg], failMessage: `記事生成に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。` },
+      { args: [script('validate-citations.mjs'), dateArg, '--type=care'], failMessage: `出典検証に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。` },
+    ],
+  });
+  if (!result.ok) process.exit(failExitCode);
 
-  if (!run('collect-care.mjs', [dateArg])) {
-    warn(`収集に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。`);
-    await backup.restore();
-    process.exit(failExitCode);
-  }
-
-  if (!run('curate-care.mjs', [dateArg])) {
-    warn(`記事生成に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。`);
-    await backup.restore();
-    process.exit(failExitCode);
-  }
-
-  if (!run('validate-citations.mjs', [dateArg, '--type=care'])) {
-    warn(`出典検証に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。`);
-    await backup.restore();
-    process.exit(failExitCode);
-  }
-
-  await backup.discard();
   console.log(`介護版記事の生成が完了しました（対象日: ${dateArg}）`);
   process.exit(0);
 }
@@ -139,8 +84,8 @@ async function main() {
 // 単体テストが snapshot() を import する際に、意図せず main()（実際のパイプライン実行を伴う）が
 // 実行されないようにするため（curate.mjs 等の既存スクリプトと同じパターン）。
 if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
-  main().catch(async (err) => {
-    warn(`予期しないエラーが発生しました: ${err.message}`);
+  main().catch((err) => {
+    console.warn(`::warning::[build-care] 予期しないエラーが発生しました: ${err.message}`);
     process.exit(process.argv.includes('--strict') ? 1 : 0);
   });
 }
