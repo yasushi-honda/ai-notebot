@@ -155,7 +155,6 @@ export function formatCandidateList(items) {
     .join('\n');
 }
 
-
 /**
  * Stage A: 候補を MIN_THEMES〜MAX_THEMES 個のテーマにクラスタリングする。
  * 実在しない id は落とし、有効なテーマが MIN_THEMES 未満なら例外にする。
@@ -267,7 +266,6 @@ export function partitionStageBOutcomes(outcomes, minThemes) {
   }
   return { sections, droppedTitles };
 }
-
 
 /**
  * 1テーマ分の本文を、出典チェック（evaluate）に通るまで最大 maxAttempts 回生成する。

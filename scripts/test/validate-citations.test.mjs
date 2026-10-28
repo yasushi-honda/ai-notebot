@@ -553,3 +553,13 @@ test('validate-citations: 不明な --type は黙って posts 扱いにせず ex
     (err) => err.code === 1 && /不明な --type/.test(err.stderr),
   );
 });
+
+test('validate-citations: --type= （空値）や大文字小文字違いも不明な type として exit 1', async () => {
+  for (const arg of ['--type=', '--type=Care', '--type=POSTS']) {
+    await assert.rejects(
+      execFileAsync('node', [SCRIPT, FIXTURE_DATE, arg]),
+      (err) => err.code === 1 && /不明な --type/.test(err.stderr),
+      arg,
+    );
+  }
+});

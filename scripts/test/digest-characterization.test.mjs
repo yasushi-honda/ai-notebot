@@ -22,8 +22,8 @@ const GOLDEN_DIR = join(ROOT, 'scripts', 'test', 'fixtures', 'golden');
 const UPDATE = process.env.UPDATE_GOLDEN === '1';
 
 // 実日付・他テスト（2099-01-01 / 2099-01-02）と衝突しない専用日付。
-// collect は直近7日の既出 URL を除外するため、curate 用の日付とは7日以上離す。
-const COLLECT_DATE = '2099-01-10';
+// collect は直近7日の既出 URL を除外するため、data/raw に fixture を書く他テスト（2099-01-01 等）の窓から十分離す。
+const COLLECT_DATE = '2097-06-10';
 const CURATE_DATE = '2098-12-20';
 
 async function expectGolden(name, actual) {

@@ -24,7 +24,7 @@ const posts = defineCollection({
      *  存在しないため default([]) になり、その場合は themeTitles（件数なし）にフォールバックする */
     themes: z.array(z.object({ title: z.string(), sourceCount: z.number() })).default([]),
     /** 本文の脚注が引用する出典 id（data/raw/<date>.json の id と対応） */
-    sourceIds: sourceIds,
+    sourceIds,
     heroImagePrompt: z.string().optional(),
   }),
 });
@@ -47,7 +47,7 @@ const care = defineCollection({
     workArea: z.enum(['事務・記録', '請求・給付管理', 'シフト・労務', '送迎', 'ケアプラン', '情報共有', '家族対応', '教育・研修']),
     difficulty: z.enum(['すぐできる', '準備が必要', '要検討']),
     /** 本文の脚注が引用する出典 id（data/raw-care/<date>.json の id と対応） */
-    sourceIds: sourceIds,
+    sourceIds,
     /** Google検索の検索候補チップ（利用規約上、グラウンディング結果を公開する際は
      *  改変せず表示する義務がある。空文字はチップなし＝検索候補が付かなかった生成） */
     searchEntryPointHtml: z.string().default(''),
@@ -80,7 +80,7 @@ const weekly = defineCollection({
     themeTitles: z.array(z.string()).default([]),
     themes: z.array(z.object({ title: z.string(), sourceCount: z.number() })).default([]),
     /** 本文の脚注が引用する出典 id（該当週の data/raw/<date>.json の id と対応） */
-    sourceIds: sourceIds,
+    sourceIds,
     /** 実在した日次記事の日付（5〜7件）。validate-citations.mjs --type=weekly が
      *  weeklyWindow() の再計算結果との整合性を検査する対象 */
     sourceDates: z.array(z.string()).default([]),

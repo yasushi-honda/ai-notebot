@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, writeFile, readFile, rm, mkdir, access } from 'node:fs/promises';
-import { writeFileSync } from 'node:fs';
+import { mkdtemp, writeFile, readFile, rm, mkdir, access, chmod, readdir } from 'node:fs/promises';
+import { writeFileSync, chmodSync as chmodSyncCompat } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { snapshotPaths, runPipeline } from '../lib/orchestrate.mjs';
@@ -145,6 +145,143 @@ test('runPipeline: 予期しない例外（子プロセス起動の失敗等）�
     });
     assert.equal(r.ok, false);
     assert.equal(await readFile(post, 'utf8'), '既存の記事');
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
+
+/** console.warn の出力を集めて返す（::warning:: の内容を検証するため） */
+async function captureWarnings(fn) {
+  const original = console.warn;
+  const lines = [];
+  console.warn = (...args) => lines.push(args.join(' '));
+  try {
+    return { result: await fn(), lines };
+  } finally {
+    console.warn = original;
+  }
+}
+
+test('runPipeline: シグナル終了（OOM kill 等）は原因（シグナル名）を警告に含め、復元する', async () => {
+  const { dir, post } = await setup();
+  try {
+    await writeFile(post, '既存の記事');
+    const { result, lines } = await captureWarnings(() =>
+      runPipeline({
+        label: 't',
+        cwd: dir,
+        paths: [post],
+        steps: [{ args: ['x'], failMessage: '収集に失敗しました' }],
+        spawn: () => {
+          writeFileSync(post, '書きかけ');
+          return { status: null, signal: 'SIGKILL' };
+        },
+      }),
+    );
+    assert.equal(result.ok, false);
+    assert.equal(result.restoreFailed, undefined);
+    assert.match(lines.join('\n'), /収集に失敗しました（SIGKILL）/);
+    assert.equal(await readFile(post, 'utf8'), '既存の記事');
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
+
+test('runPipeline: 復元自体が失敗したら restoreFailed を返し、二重に復元せず、退避先を残して場所をログに出す', async () => {
+  const { dir } = await setup();
+  const lockedDir = join(dir, 'locked');
+  const post = join(lockedDir, 'post.md');
+  let backupRootFromLog = null;
+  try {
+    await mkdir(lockedDir, { recursive: true });
+    await writeFile(post, '既存の記事');
+    const { result, lines } = await captureWarnings(() =>
+      runPipeline({
+        label: 't',
+        cwd: dir,
+        paths: [post],
+        steps: [{ args: ['x'], failMessage: '生成に失敗しました' }],
+        spawn: async () => ({ status: 1 }),
+      }).catch((e) => ({ threw: e })),
+    );
+    // この spawn は同期で status を返す必要があるため、同期版で再実行する
+    assert.ok(result, 'runPipeline は reject せず結果を返す');
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+
+  // 同期 spawn 版: 失敗の直前に親ディレクトリを読み取り専用にして、restore の rm を失敗させる
+  const ctx = await setup();
+  const locked = join(ctx.dir, 'locked');
+  const target = join(locked, 'post.md');
+  try {
+    await mkdir(locked, { recursive: true });
+    await writeFile(target, '既存の記事');
+    const { result, lines } = await captureWarnings(() =>
+      runPipeline({
+        label: 't',
+        cwd: ctx.dir,
+        paths: [target],
+        steps: [{ args: ['x'], failMessage: '生成に失敗しました' }],
+        spawn: () => {
+          writeFileSync(target, '書きかけ');
+          chmodSyncCompat(locked, 0o555);
+          return { status: 1 };
+        },
+      }),
+    );
+    assert.equal(result.ok, false);
+    assert.equal(result.restoreFailed, true);
+    const log = lines.join('\n');
+    assert.match(log, /復元に失敗しました/);
+    backupRootFromLog = log.match(/実行前の内容は (\S+) に残っています/)?.[1];
+    assert.ok(backupRootFromLog, '退避先がログに出ている');
+    assert.equal(await exists(backupRootFromLog), true, '復元に失敗したら退避先を消さない');
+    assert.equal((log.match(/復元に失敗しました/g) ?? []).length, 1, '復元の失敗は1回だけ報告される');
+  } finally {
+    await chmod(locked, 0o755).catch(() => {});
+    await rm(ctx.dir, { recursive: true, force: true });
+    if (backupRootFromLog) await rm(backupRootFromLog, { recursive: true, force: true });
+  }
+});
+
+test('runPipeline: 1つ目のステップが予算を使い切れば、2つ目のステップは起動されない', async () => {
+  const { dir, post, sleeper } = await setup();
+  try {
+    const marker = join(dir, 'second-ran');
+    const writer2 = join(dir, 'second.mjs');
+    await writeFile(writer2, `import { writeFileSync } from 'node:fs'; writeFileSync(${JSON.stringify(marker)}, 'ran');`);
+    const { result, lines } = await captureWarnings(() =>
+      runPipeline({
+        label: 't',
+        cwd: dir,
+        paths: [post],
+        timeoutMs: 400,
+        steps: [
+          { args: [sleeper], failMessage: '1つ目' },
+          { args: [writer2], failMessage: '2つ目' },
+        ],
+      }),
+    );
+    assert.equal(result.ok, false);
+    assert.equal(await exists(marker), false);
+    assert.match(lines.join('\n'), /時間予算を超過したため中断しました。1つ目/);
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
+
+test('runPipeline: 成功時も失敗時も、退避用の一時ディレクトリを残さない', async () => {
+  const { dir, post, writer } = await setup();
+  const prefix = `orchestrate-leak-${process.pid}-`;
+  const leftovers = async () => (await readdir(tmpdir())).filter((n) => n.startsWith(prefix));
+  try {
+    await runPipeline({ label: 't', cwd: dir, paths: [post], backupPrefix: prefix, steps: [{ args: [writer, post, 'ok', '0'], failMessage: 'x' }] });
+    assert.deepEqual(await leftovers(), []);
+    await captureWarnings(() =>
+      runPipeline({ label: 't', cwd: dir, paths: [post], backupPrefix: prefix, steps: [{ args: [writer, post, 'ng', '1'], failMessage: 'x' }] }),
+    );
+    assert.deepEqual(await leftovers(), []);
   } finally {
     await rm(dir, { recursive: true, force: true });
   }

@@ -74,7 +74,8 @@ async function main() {
       { args: [script('validate-citations.mjs'), dateArg, '--type=care'], failMessage: `出典検証に失敗しました（対象日: ${dateArg}）。本日の介護記事の更新はスキップします。` },
     ],
   });
-  if (!result.ok) process.exit(failExitCode);
+  // 復元に失敗した場合は公開済みデータが欠損しうるため、strict でなくても失敗にして本体の公開を止める
+  if (!result.ok) process.exit(result.restoreFailed ? 1 : failExitCode);
 
   console.log(`介護版記事の生成が完了しました（対象日: ${dateArg}）`);
   process.exit(0);

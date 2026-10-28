@@ -30,15 +30,26 @@ async function exists(path) {
 export async function snapshotPaths(paths, backupPrefix = 'ai-notebot-backup-') {
   const backupRoot = await mkdtemp(join(tmpdir(), backupPrefix));
   const entries = [];
-  for (const [i, path] of paths.entries()) {
-    const backupPath = join(backupRoot, String(i));
-    const had = await exists(path);
-    if (had) await cp(path, backupPath, { recursive: true });
-    entries.push({ path, backupPath, had });
+  try {
+    for (const [i, path] of paths.entries()) {
+      const backupPath = join(backupRoot, String(i));
+      const had = await exists(path);
+      if (had) await cp(path, backupPath, { recursive: true });
+      entries.push({ path, backupPath, had });
+    }
+  } catch (err) {
+    // この時点ではまだ何も変更していない。退避の途中失敗で一時ディレクトリを残さない
+    await rm(backupRoot, { recursive: true, force: true });
+    throw err;
   }
 
   return {
-    /** 失敗時: 今回の実行で書かれた内容を破棄し、実行前の状態（無ければ「存在しない」状態）に戻す */
+    /** 退避先。restore が失敗したとき、運用者が手で戻せるようログに出す */
+    backupRoot,
+    /**
+     * 失敗時: 今回の実行で書かれた内容を破棄し、実行前の状態（無ければ「存在しない」状態）に戻す。
+     * 復元の途中で失敗した場合は退避先を消さずに例外を投げる（退避先が唯一の正本になるため）。
+     */
     async restore() {
       for (const e of entries) await rm(e.path, { recursive: true, force: true });
       for (const e of entries) if (e.had) await cp(e.backupPath, e.path, { recursive: true });
@@ -60,6 +71,8 @@ export async function snapshotPaths(paths, backupPrefix = 'ai-notebot-backup-') 
 /**
  * ステップ（子プロセス）を順に実行し、1つでも失敗（または時間超過）したら復元して { ok: false } を返す。
  * 予期しない例外が起きた場合も復元する（スナップショット取得後の例外で、書きかけのファイルを残さない）。
+ * 復元は1回だけ行い、復元自体が失敗したら { ok: false, restoreFailed: true } を返す
+ * （公開済みの記事・アーカイブが欠損している可能性があるため、呼び出し側は strict でなくても失敗にすること）。
  * プロセスを終了させるのは呼び出し側（exitCode を使う）。
  *
  * @param {object} opts
@@ -70,39 +83,62 @@ export async function snapshotPaths(paths, backupPrefix = 'ai-notebot-backup-') 
  * @param {number} [opts.timeoutMs] 全ステップ合計の時間予算（未指定なら無制限）。超過したステップは止めて失敗扱い
  * @param {string} [opts.backupPrefix]
  * @param {Function} [opts.spawn] テスト用に差し替え可能（既定は spawnSync）
+ * @returns {Promise<{ok: boolean, restoreFailed?: boolean}>}
  */
 export async function runPipeline({ label, steps, paths, cwd, timeoutMs, backupPrefix, spawn = spawnSync }) {
   const warn = (message) => console.warn(`::warning::[${label}] ${message}`);
   const deadline = timeoutMs ? Date.now() + timeoutMs : null;
   const backup = await snapshotPaths(paths, backupPrefix);
 
+  let failure = null;
   try {
     for (const step of steps) {
       const remaining = deadline ? deadline - Date.now() : undefined;
       if (deadline && remaining <= 0) {
-        warn(`時間予算（${Math.round(timeoutMs / 1000)}秒）を使い切りました。${step.failMessage}`);
-        await backup.restore();
-        return { ok: false };
+        failure = `時間予算（${Math.round(timeoutMs / 1000)}秒）を使い切りました。${step.failMessage}`;
+        break;
       }
       const result = spawn('node', step.args, {
         cwd,
         env: process.env,
         stdio: 'inherit',
-        ...(remaining ? { timeout: remaining } : {}),
+        ...(remaining ? { timeout: remaining, killSignal: 'SIGKILL' } : {}),
       });
       if (result.status !== 0) {
-        const timedOut = result.error?.code === 'ETIMEDOUT';
-        warn(timedOut ? `時間予算を超過したため中断しました。${step.failMessage}` : step.failMessage);
-        await backup.restore();
-        return { ok: false };
+        if (result.error?.code === 'ETIMEDOUT') {
+          failure = `時間予算を超過したため中断しました。${step.failMessage}`;
+        } else if (result.status === null) {
+          // シグナル終了（OOM kill 等）や起動失敗。終了コードが無いので原因を添える
+          failure = `${step.failMessage}（${result.signal ?? result.error?.message ?? '原因不明'}）`;
+        } else {
+          failure = step.failMessage;
+        }
+        break;
       }
     }
   } catch (err) {
-    warn(`予期しないエラーが発生しました: ${err.message}`);
-    await backup.restore();
-    return { ok: false };
+    failure = `予期しないエラーが発生しました: ${err.message}`;
   }
 
-  await backup.discard();
-  return { ok: true };
+  if (failure === null) {
+    try {
+      await backup.discard();
+    } catch (err) {
+      // 生成・検証は成功済み。退避先の掃除の失敗で成功を失敗扱いにしない
+      warn(`バックアップの削除に失敗しました（成功扱いで続行）: ${err.message}`);
+    }
+    return { ok: true };
+  }
+
+  warn(failure);
+  try {
+    await backup.restore();
+  } catch (err) {
+    warn(
+      `復元に失敗しました: ${err.message}。公開済みの記事・アーカイブが欠損している可能性があります。` +
+        `実行前の内容は ${backup.backupRoot} に残っています`,
+    );
+    return { ok: false, restoreFailed: true };
+  }
+  return { ok: false };
 }
