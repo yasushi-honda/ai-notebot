@@ -1,0 +1,1446 @@
+{
+  "date": "2099-01-10",
+  "sourceSuccessCount": 20,
+  "items": [
+    {
+      "id": "s-b7a105379f",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "feed0 item0",
+      "url": "https://example.test/shared",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed0 要約0"
+    },
+    {
+      "id": "s-0f42e16324",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "feed2 item0",
+      "url": "https://example.test/f2/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed2 要約0"
+    },
+    {
+      "id": "s-18eb36147f",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "feed3 item0",
+      "url": "https://example.test/f3/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed3 要約0"
+    },
+    {
+      "id": "s-de867ab151",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "feed4 item0",
+      "url": "https://example.test/f4/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed4 要約0"
+    },
+    {
+      "id": "s-e8a4194725",
+      "source": "Meta Engineering",
+      "sourceType": "vendor",
+      "title": "feed5 item0",
+      "url": "https://example.test/f5/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed5 要約0"
+    },
+    {
+      "id": "s-7ce3657e7e",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "feed6 item0",
+      "url": "https://example.test/f6/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed6 要約0"
+    },
+    {
+      "id": "s-98770d1b84",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "feed7 item0",
+      "url": "https://example.test/f7/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed7 要約0"
+    },
+    {
+      "id": "s-70d36685f4",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "feed8 item0",
+      "url": "https://example.test/f8/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed8 要約0"
+    },
+    {
+      "id": "s-4f95cea619",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "feed9 item0",
+      "url": "https://example.test/f9/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed9 要約0"
+    },
+    {
+      "id": "s-11ce90bc19",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "feed10 item0",
+      "url": "https://example.test/f10/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed10 要約0"
+    },
+    {
+      "id": "s-39620ffb89",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "feed11 item0",
+      "url": "https://example.test/f11/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed11 要約0"
+    },
+    {
+      "id": "s-e7919c5ca8",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "feed12 item0",
+      "url": "https://example.test/f12/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed12 要約0"
+    },
+    {
+      "id": "s-31aa289886",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "feed13 item0",
+      "url": "https://example.test/f13/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed13 要約0"
+    },
+    {
+      "id": "s-05fea3d35f",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "feed14 item0",
+      "url": "https://example.test/f14/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed14 要約0"
+    },
+    {
+      "id": "s-d52e36e240",
+      "source": "Import AI",
+      "sourceType": "media",
+      "title": "feed15 item0",
+      "url": "https://example.test/f15/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed15 要約0"
+    },
+    {
+      "id": "s-66f6cac34e",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "feed16 item0",
+      "url": "https://example.test/f16/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed16 要約0"
+    },
+    {
+      "id": "s-2b0a43bb84",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "feed17 item0",
+      "url": "https://example.test/f17/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed17 要約0"
+    },
+    {
+      "id": "s-ba68742c0c",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "feed18 item0",
+      "url": "https://example.test/f18/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed18 要約0"
+    },
+    {
+      "id": "s-e863103527",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "feed19 item0",
+      "url": "https://example.test/f19/i0",
+      "publishedAt": "2099-01-10T12:00:00.000Z",
+      "summary": "feed19 要約0"
+    },
+    {
+      "id": "s-436d7cd4fd",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "feed0 item1",
+      "url": "https://example.test/f0/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed0 要約1"
+    },
+    {
+      "id": "s-37871f0a9e",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "feed1 item1",
+      "url": "https://example.test/f1/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed1 要約1"
+    },
+    {
+      "id": "s-38549b11dd",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "feed2 item1",
+      "url": "https://example.test/f2/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed2 要約1"
+    },
+    {
+      "id": "s-219a37f1d3",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "feed3 item1",
+      "url": "https://example.test/f3/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed3 要約1"
+    },
+    {
+      "id": "s-3e2fcdf8bb",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "feed4 item1",
+      "url": "https://example.test/f4/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed4 要約1"
+    },
+    {
+      "id": "s-9b82d38a67",
+      "source": "Meta Engineering",
+      "sourceType": "vendor",
+      "title": "feed5 item1",
+      "url": "https://example.test/f5/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed5 要約1"
+    },
+    {
+      "id": "s-8d8d5066d9",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "feed6 item1",
+      "url": "https://example.test/f6/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed6 要約1"
+    },
+    {
+      "id": "s-9e0ddbfd3e",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "feed7 item1",
+      "url": "https://example.test/f7/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed7 要約1"
+    },
+    {
+      "id": "s-0b712651f8",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "feed8 item1",
+      "url": "https://example.test/f8/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed8 要約1"
+    },
+    {
+      "id": "s-833e956815",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "feed9 item1",
+      "url": "https://example.test/f9/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed9 要約1"
+    },
+    {
+      "id": "s-21af5059e4",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "feed10 item1",
+      "url": "https://example.test/f10/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed10 要約1"
+    },
+    {
+      "id": "s-0d4ff765ba",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "feed11 item1",
+      "url": "https://example.test/f11/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed11 要約1"
+    },
+    {
+      "id": "s-e3a963d761",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "feed12 item1",
+      "url": "https://example.test/f12/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed12 要約1"
+    },
+    {
+      "id": "s-78d999e2c5",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "feed13 item1",
+      "url": "https://example.test/f13/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed13 要約1"
+    },
+    {
+      "id": "s-d4a4984b22",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "feed14 item1",
+      "url": "https://example.test/f14/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed14 要約1"
+    },
+    {
+      "id": "s-94ab6de96b",
+      "source": "Import AI",
+      "sourceType": "media",
+      "title": "feed15 item1",
+      "url": "https://example.test/f15/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed15 要約1"
+    },
+    {
+      "id": "s-63ef9a26b3",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "feed16 item1",
+      "url": "https://example.test/f16/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed16 要約1"
+    },
+    {
+      "id": "s-d2108a925c",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "feed17 item1",
+      "url": "https://example.test/f17/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed17 要約1"
+    },
+    {
+      "id": "s-36605d9080",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "feed18 item1",
+      "url": "https://example.test/f18/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed18 要約1"
+    },
+    {
+      "id": "s-3060cd86a0",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "feed19 item1",
+      "url": "https://example.test/f19/i1",
+      "publishedAt": "2099-01-10T11:00:00.000Z",
+      "summary": "feed19 要約1"
+    },
+    {
+      "id": "s-912ae38f43",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "feed0 item2",
+      "url": "https://example.test/f0/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed0 要約2"
+    },
+    {
+      "id": "s-79fe967441",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "feed1 item2",
+      "url": "https://example.test/f1/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed1 要約2"
+    },
+    {
+      "id": "s-f6a53c2538",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "feed2 item2",
+      "url": "https://example.test/f2/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed2 要約2"
+    },
+    {
+      "id": "s-1c0b1dd958",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "feed3 item2",
+      "url": "https://example.test/f3/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed3 要約2"
+    },
+    {
+      "id": "s-c41020bef2",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "feed4 item2",
+      "url": "https://example.test/f4/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed4 要約2"
+    },
+    {
+      "id": "s-f42c84fa81",
+      "source": "Meta Engineering",
+      "sourceType": "vendor",
+      "title": "feed5 item2",
+      "url": "https://example.test/f5/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed5 要約2"
+    },
+    {
+      "id": "s-abad738e3a",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "feed6 item2",
+      "url": "https://example.test/f6/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed6 要約2"
+    },
+    {
+      "id": "s-d51e228ff7",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "feed7 item2",
+      "url": "https://example.test/f7/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed7 要約2"
+    },
+    {
+      "id": "s-529481aa40",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "feed8 item2",
+      "url": "https://example.test/f8/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed8 要約2"
+    },
+    {
+      "id": "s-1ede54fdf1",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "feed9 item2",
+      "url": "https://example.test/f9/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed9 要約2"
+    },
+    {
+      "id": "s-027a4deabc",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "feed10 item2",
+      "url": "https://example.test/f10/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed10 要約2"
+    },
+    {
+      "id": "s-52e813918c",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "feed11 item2",
+      "url": "https://example.test/f11/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed11 要約2"
+    },
+    {
+      "id": "s-d73c9e9502",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "feed12 item2",
+      "url": "https://example.test/f12/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed12 要約2"
+    },
+    {
+      "id": "s-bbd4074075",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "feed13 item2",
+      "url": "https://example.test/f13/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed13 要約2"
+    },
+    {
+      "id": "s-5b3774e953",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "feed14 item2",
+      "url": "https://example.test/f14/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed14 要約2"
+    },
+    {
+      "id": "s-3149bb4a32",
+      "source": "Import AI",
+      "sourceType": "media",
+      "title": "feed15 item2",
+      "url": "https://example.test/f15/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed15 要約2"
+    },
+    {
+      "id": "s-3eaa291e6d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "feed16 item2",
+      "url": "https://example.test/f16/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed16 要約2"
+    },
+    {
+      "id": "s-b878009802",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "feed17 item2",
+      "url": "https://example.test/f17/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed17 要約2"
+    },
+    {
+      "id": "s-128dd1997f",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "feed18 item2",
+      "url": "https://example.test/f18/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed18 要約2"
+    },
+    {
+      "id": "s-0ace2b3e96",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "feed19 item2",
+      "url": "https://example.test/f19/i2",
+      "publishedAt": "2099-01-10T10:00:00.000Z",
+      "summary": "feed19 要約2"
+    },
+    {
+      "id": "s-ec62acffda",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "feed0 item3",
+      "url": "https://example.test/f0/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed0 要約3"
+    },
+    {
+      "id": "s-08a456aa99",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "feed1 item3",
+      "url": "https://example.test/f1/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed1 要約3"
+    },
+    {
+      "id": "s-8488ece1be",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "feed2 item3",
+      "url": "https://example.test/f2/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed2 要約3"
+    },
+    {
+      "id": "s-c5c9aa4a35",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "feed3 item3",
+      "url": "https://example.test/f3/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed3 要約3"
+    },
+    {
+      "id": "s-9ed13551b7",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "feed4 item3",
+      "url": "https://example.test/f4/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed4 要約3"
+    },
+    {
+      "id": "s-c32e329abb",
+      "source": "Meta Engineering",
+      "sourceType": "vendor",
+      "title": "feed5 item3",
+      "url": "https://example.test/f5/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed5 要約3"
+    },
+    {
+      "id": "s-d7dd60c211",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "feed6 item3",
+      "url": "https://example.test/f6/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed6 要約3"
+    },
+    {
+      "id": "s-673454cfd2",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "feed7 item3",
+      "url": "https://example.test/f7/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed7 要約3"
+    },
+    {
+      "id": "s-9f6a3385bf",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "feed8 item3",
+      "url": "https://example.test/f8/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed8 要約3"
+    },
+    {
+      "id": "s-36c37e17c4",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "feed9 item3",
+      "url": "https://example.test/f9/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed9 要約3"
+    },
+    {
+      "id": "s-abf5b69d82",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "feed10 item3",
+      "url": "https://example.test/f10/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed10 要約3"
+    },
+    {
+      "id": "s-0c3635b39f",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "feed11 item3",
+      "url": "https://example.test/f11/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed11 要約3"
+    },
+    {
+      "id": "s-616523cbb5",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "feed12 item3",
+      "url": "https://example.test/f12/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed12 要約3"
+    },
+    {
+      "id": "s-6d69bc30af",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "feed13 item3",
+      "url": "https://example.test/f13/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed13 要約3"
+    },
+    {
+      "id": "s-a71ef0e206",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "feed14 item3",
+      "url": "https://example.test/f14/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed14 要約3"
+    },
+    {
+      "id": "s-e46ddae8eb",
+      "source": "Import AI",
+      "sourceType": "media",
+      "title": "feed15 item3",
+      "url": "https://example.test/f15/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed15 要約3"
+    },
+    {
+      "id": "s-d4f7eef0fe",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "feed16 item3",
+      "url": "https://example.test/f16/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed16 要約3"
+    },
+    {
+      "id": "s-6d139f9239",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "feed17 item3",
+      "url": "https://example.test/f17/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed17 要約3"
+    },
+    {
+      "id": "s-7f596c5c2a",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "feed18 item3",
+      "url": "https://example.test/f18/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed18 要約3"
+    },
+    {
+      "id": "s-d816085659",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "feed19 item3",
+      "url": "https://example.test/f19/i3",
+      "publishedAt": "2099-01-10T09:00:00.000Z",
+      "summary": "feed19 要約3"
+    },
+    {
+      "id": "s-bb1cb5e7d4",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "feed0 item4",
+      "url": "https://example.test/f0/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed0 要約4"
+    },
+    {
+      "id": "s-5535d46687",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "feed1 item4",
+      "url": "https://example.test/f1/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed1 要約4"
+    },
+    {
+      "id": "s-5adbc05878",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "feed2 item4",
+      "url": "https://example.test/f2/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed2 要約4"
+    },
+    {
+      "id": "s-dece6a4ab5",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "feed3 item4",
+      "url": "https://example.test/f3/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed3 要約4"
+    },
+    {
+      "id": "s-4db8f89dbf",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "feed4 item4",
+      "url": "https://example.test/f4/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed4 要約4"
+    },
+    {
+      "id": "s-dfdc4d175f",
+      "source": "Meta Engineering",
+      "sourceType": "vendor",
+      "title": "feed5 item4",
+      "url": "https://example.test/f5/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed5 要約4"
+    },
+    {
+      "id": "s-53882f2019",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "feed6 item4",
+      "url": "https://example.test/f6/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed6 要約4"
+    },
+    {
+      "id": "s-8dd8ceec03",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "feed7 item4",
+      "url": "https://example.test/f7/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed7 要約4"
+    },
+    {
+      "id": "s-290216ed7a",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "feed8 item4",
+      "url": "https://example.test/f8/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed8 要約4"
+    },
+    {
+      "id": "s-17a81f5bab",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "feed9 item4",
+      "url": "https://example.test/f9/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed9 要約4"
+    },
+    {
+      "id": "s-3f59f08ea0",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "feed10 item4",
+      "url": "https://example.test/f10/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed10 要約4"
+    },
+    {
+      "id": "s-9176e1d103",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "feed11 item4",
+      "url": "https://example.test/f11/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed11 要約4"
+    },
+    {
+      "id": "s-2f3f84064b",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "feed12 item4",
+      "url": "https://example.test/f12/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed12 要約4"
+    },
+    {
+      "id": "s-2aa454b02c",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "feed13 item4",
+      "url": "https://example.test/f13/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed13 要約4"
+    },
+    {
+      "id": "s-171b695994",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "feed14 item4",
+      "url": "https://example.test/f14/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed14 要約4"
+    },
+    {
+      "id": "s-6ab5d42ec4",
+      "source": "Import AI",
+      "sourceType": "media",
+      "title": "feed15 item4",
+      "url": "https://example.test/f15/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed15 要約4"
+    },
+    {
+      "id": "s-742f7b1345",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "feed16 item4",
+      "url": "https://example.test/f16/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed16 要約4"
+    },
+    {
+      "id": "s-66a784aad6",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "feed17 item4",
+      "url": "https://example.test/f17/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed17 要約4"
+    },
+    {
+      "id": "s-d49ddf96ec",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "feed18 item4",
+      "url": "https://example.test/f18/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed18 要約4"
+    },
+    {
+      "id": "s-c8081b667d",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "feed19 item4",
+      "url": "https://example.test/f19/i4",
+      "publishedAt": "2099-01-10T08:00:00.000Z",
+      "summary": "feed19 要約4"
+    },
+    {
+      "id": "s-92c81ded22",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "feed0 item5",
+      "url": "https://example.test/f0/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed0 要約5"
+    },
+    {
+      "id": "s-bb65dbb0ae",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "feed1 item5",
+      "url": "https://example.test/f1/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed1 要約5"
+    },
+    {
+      "id": "s-88e2e19d52",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "feed2 item5",
+      "url": "https://example.test/f2/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed2 要約5"
+    },
+    {
+      "id": "s-60d261d501",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "feed3 item5",
+      "url": "https://example.test/f3/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed3 要約5"
+    },
+    {
+      "id": "s-a29de00143",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "feed4 item5",
+      "url": "https://example.test/f4/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed4 要約5"
+    },
+    {
+      "id": "s-0772c7cbdd",
+      "source": "Meta Engineering",
+      "sourceType": "vendor",
+      "title": "feed5 item5",
+      "url": "https://example.test/f5/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed5 要約5"
+    },
+    {
+      "id": "s-fea04bce6c",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "feed6 item5",
+      "url": "https://example.test/f6/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed6 要約5"
+    },
+    {
+      "id": "s-4baccd3e1d",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "feed7 item5",
+      "url": "https://example.test/f7/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed7 要約5"
+    },
+    {
+      "id": "s-6474064e3b",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "feed8 item5",
+      "url": "https://example.test/f8/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed8 要約5"
+    },
+    {
+      "id": "s-848f3508de",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "feed9 item5",
+      "url": "https://example.test/f9/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed9 要約5"
+    },
+    {
+      "id": "s-586a4310aa",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "feed10 item5",
+      "url": "https://example.test/f10/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed10 要約5"
+    },
+    {
+      "id": "s-c1d67374ab",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "feed11 item5",
+      "url": "https://example.test/f11/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed11 要約5"
+    },
+    {
+      "id": "s-5061bcacec",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "feed12 item5",
+      "url": "https://example.test/f12/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed12 要約5"
+    },
+    {
+      "id": "s-291d11d551",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "feed13 item5",
+      "url": "https://example.test/f13/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed13 要約5"
+    },
+    {
+      "id": "s-0ac2ff6ed2",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "feed14 item5",
+      "url": "https://example.test/f14/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed14 要約5"
+    },
+    {
+      "id": "s-1c30e7af30",
+      "source": "Import AI",
+      "sourceType": "media",
+      "title": "feed15 item5",
+      "url": "https://example.test/f15/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed15 要約5"
+    },
+    {
+      "id": "s-dc70a52682",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "feed16 item5",
+      "url": "https://example.test/f16/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed16 要約5"
+    },
+    {
+      "id": "s-9584ab4d28",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "feed17 item5",
+      "url": "https://example.test/f17/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed17 要約5"
+    },
+    {
+      "id": "s-b5ce0ad1fc",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "feed18 item5",
+      "url": "https://example.test/f18/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed18 要約5"
+    },
+    {
+      "id": "s-3660ebc9c0",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "feed19 item5",
+      "url": "https://example.test/f19/i5",
+      "publishedAt": "2099-01-10T07:00:00.000Z",
+      "summary": "feed19 要約5"
+    },
+    {
+      "id": "s-57a9c89968",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "feed0 item6",
+      "url": "https://example.test/f0/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed0 要約6"
+    },
+    {
+      "id": "s-51f3c40777",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "feed1 item6",
+      "url": "https://example.test/f1/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed1 要約6"
+    },
+    {
+      "id": "s-023c2e6846",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "feed2 item6",
+      "url": "https://example.test/f2/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed2 要約6"
+    },
+    {
+      "id": "s-2e100a4958",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "feed3 item6",
+      "url": "https://example.test/f3/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed3 要約6"
+    },
+    {
+      "id": "s-d403d5b064",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "feed4 item6",
+      "url": "https://example.test/f4/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed4 要約6"
+    },
+    {
+      "id": "s-19c2bfd277",
+      "source": "Meta Engineering",
+      "sourceType": "vendor",
+      "title": "feed5 item6",
+      "url": "https://example.test/f5/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed5 要約6"
+    },
+    {
+      "id": "s-d43d362604",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "feed6 item6",
+      "url": "https://example.test/f6/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed6 要約6"
+    },
+    {
+      "id": "s-8dcb37cc9f",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "feed7 item6",
+      "url": "https://example.test/f7/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed7 要約6"
+    },
+    {
+      "id": "s-5a2d752d79",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "feed8 item6",
+      "url": "https://example.test/f8/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed8 要約6"
+    },
+    {
+      "id": "s-013ab58623",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "feed9 item6",
+      "url": "https://example.test/f9/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed9 要約6"
+    },
+    {
+      "id": "s-ad5d7e239e",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "feed10 item6",
+      "url": "https://example.test/f10/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed10 要約6"
+    },
+    {
+      "id": "s-43ae270bbc",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "feed11 item6",
+      "url": "https://example.test/f11/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed11 要約6"
+    },
+    {
+      "id": "s-312d9dc961",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "feed12 item6",
+      "url": "https://example.test/f12/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed12 要約6"
+    },
+    {
+      "id": "s-9a2048a95e",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "feed13 item6",
+      "url": "https://example.test/f13/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed13 要約6"
+    },
+    {
+      "id": "s-8f3b97f2ce",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "feed14 item6",
+      "url": "https://example.test/f14/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed14 要約6"
+    },
+    {
+      "id": "s-bcbdec1088",
+      "source": "Import AI",
+      "sourceType": "media",
+      "title": "feed15 item6",
+      "url": "https://example.test/f15/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed15 要約6"
+    },
+    {
+      "id": "s-b5920997af",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "feed16 item6",
+      "url": "https://example.test/f16/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed16 要約6"
+    },
+    {
+      "id": "s-5514407620",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "feed17 item6",
+      "url": "https://example.test/f17/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed17 要約6"
+    },
+    {
+      "id": "s-0fb1bbedfa",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "feed18 item6",
+      "url": "https://example.test/f18/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed18 要約6"
+    },
+    {
+      "id": "s-33e08db575",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "feed19 item6",
+      "url": "https://example.test/f19/i6",
+      "publishedAt": "2099-01-10T06:00:00.000Z",
+      "summary": "feed19 要約6"
+    },
+    {
+      "id": "s-adbfbff2cf",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "feed0 item7",
+      "url": "https://example.test/f0/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed0 要約7"
+    },
+    {
+      "id": "s-7064c6ae99",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "feed1 item7",
+      "url": "https://example.test/f1/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed1 要約7"
+    },
+    {
+      "id": "s-762e40955b",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "feed2 item7",
+      "url": "https://example.test/f2/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed2 要約7"
+    },
+    {
+      "id": "s-5927986f85",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "feed3 item7",
+      "url": "https://example.test/f3/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed3 要約7"
+    },
+    {
+      "id": "s-cab63d1e67",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "feed4 item7",
+      "url": "https://example.test/f4/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed4 要約7"
+    },
+    {
+      "id": "s-9ff0ffb4ca",
+      "source": "Meta Engineering",
+      "sourceType": "vendor",
+      "title": "feed5 item7",
+      "url": "https://example.test/f5/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed5 要約7"
+    },
+    {
+      "id": "s-15494d7606",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "feed6 item7",
+      "url": "https://example.test/f6/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed6 要約7"
+    },
+    {
+      "id": "s-ad43215feb",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "feed7 item7",
+      "url": "https://example.test/f7/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed7 要約7"
+    },
+    {
+      "id": "s-2f726f6faf",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "feed8 item7",
+      "url": "https://example.test/f8/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed8 要約7"
+    },
+    {
+      "id": "s-2b273e93ca",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "feed9 item7",
+      "url": "https://example.test/f9/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed9 要約7"
+    },
+    {
+      "id": "s-d36bfc1885",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "feed10 item7",
+      "url": "https://example.test/f10/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed10 要約7"
+    },
+    {
+      "id": "s-793e0c31b9",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "feed11 item7",
+      "url": "https://example.test/f11/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed11 要約7"
+    },
+    {
+      "id": "s-5e8c0a0237",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "feed12 item7",
+      "url": "https://example.test/f12/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed12 要約7"
+    },
+    {
+      "id": "s-85598688de",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "feed13 item7",
+      "url": "https://example.test/f13/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed13 要約7"
+    },
+    {
+      "id": "s-1fd3c1a48b",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "feed14 item7",
+      "url": "https://example.test/f14/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed14 要約7"
+    },
+    {
+      "id": "s-525923c9e4",
+      "source": "Import AI",
+      "sourceType": "media",
+      "title": "feed15 item7",
+      "url": "https://example.test/f15/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed15 要約7"
+    },
+    {
+      "id": "s-735dbae2ee",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "feed16 item7",
+      "url": "https://example.test/f16/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed16 要約7"
+    },
+    {
+      "id": "s-9012e3a260",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "feed17 item7",
+      "url": "https://example.test/f17/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed17 要約7"
+    },
+    {
+      "id": "s-c99ccf47c4",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "feed18 item7",
+      "url": "https://example.test/f18/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed18 要約7"
+    },
+    {
+      "id": "s-cec35bbb49",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "feed19 item7",
+      "url": "https://example.test/f19/i7",
+      "publishedAt": "2099-01-10T05:00:00.000Z",
+      "summary": "feed19 要約7"
+    },
+    {
+      "id": "s-90f44b0f9a",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "feed1 item8",
+      "url": "https://example.test/f1/i8",
+      "publishedAt": "2099-01-10T04:00:00.000Z",
+      "summary": "feed1 要約8"
+    }
+  ]
+}

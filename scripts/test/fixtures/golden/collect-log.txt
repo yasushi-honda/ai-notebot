@@ -1,0 +1,10 @@
+収集対象日: 2099-01-10
+ソース成功数: 20 / 生データ件数: 220
+重複排除・鮮度フィルタ後の件数: 160
+data/raw/2099-01-10.json を書き出しました（160件 / 20ソース成功）
+
+---stderr---
+✗ Reddit r/LocalLLaMA: HTTP 404
+✗ Reddit r/MachineLearning: HTTP 404
+✗ Reddit r/artificial: HTTP 404
+✗ API ソース失敗: HTTP 404
