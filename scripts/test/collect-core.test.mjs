@@ -1,9 +1,13 @@
-import { test } from 'node:test';
+import { test, mock } from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtemp, writeFile, readFile, rm, access } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { loadRecentUrls, selectCandidates, runCollection } from '../lib/collect-core.mjs';
+
+// テスト対象が進捗を console に出す。出力がテストランナーの通信と混ざると CI で
+// 「Unable to deserialize cloned data」になることがあるため、このファイルでは黙らせる。
+for (const method of ['log', 'warn', 'error']) mock.method(console, method, () => {});
 
 async function tmpRaw() {
   return mkdtemp(join(tmpdir(), 'collect-core-test-'));

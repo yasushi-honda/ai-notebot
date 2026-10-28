@@ -1,4 +1,4 @@
-import { test } from 'node:test';
+import { test, mock } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   MIN_THEMES,
@@ -9,6 +9,10 @@ import {
   generateThemesWithDrop,
   StageBExhaustedError,
 } from '../lib/digest-curation.mjs';
+
+// テスト対象が進捗を console に出す。出力がテストランナーの通信と混ざると CI で
+// 「Unable to deserialize cloned data」になることがあるため、このファイルでは黙らせる。
+for (const method of ['log', 'warn', 'error']) mock.method(console, method, () => {});
 
 const mkItems = (n) => Array.from({ length: n }, (_, i) => ({ id: `s-${String(i).padStart(10, '0')}`, source: 'S', title: `t${i}`, summary: `d${i}` }));
 const stageA = (items, themes) => ({
