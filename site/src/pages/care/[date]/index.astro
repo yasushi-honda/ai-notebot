@@ -2,6 +2,8 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { url } from '../../../lib/url';
+import ArticleBreadcrumb from '../../../components/ArticleBreadcrumb.astro';
+import VerifyLabel from '../../../components/VerifyLabel.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('care');
@@ -16,11 +18,10 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout title={post.data.title} description={post.data.summary}>
-  <nav class="text-xs text-ink-soft mb-4">
-    <a href={url('')} class="hover:text-verify">ホーム</a> /
-    <a href={url('care/')} class="hover:text-care">介護AIハック</a> /
-    <span class="tabular-nums font-mono">{post.data.date}</span>
-  </nav>
+  <ArticleBreadcrumb
+    section={{ label: '介護AIハック', href: 'care/', hoverClass: 'hover:text-care' }}
+    current={post.data.date}
+  />
 
   <div class="care-page">
     <div class="text-xs text-care font-semibold mb-2">
@@ -88,10 +89,9 @@ const { Content } = await render(post);
       利用する等、所属先の情報管理ルールに従ってください。
     </div>
 
-    <p class="verify-label mt-6">
-      <span class="verify-dot"></span>
+    <VerifyLabel class="mt-6">
       この記事の出典 {post.data.sourceIds.length} 件はすべて、到達性を機械検証済みの実在するウェブページに解決することを検証済みです。
-    </p>
+    </VerifyLabel>
 
     {post.data.searchEntryPointHtml && (
       <div class="mt-4">

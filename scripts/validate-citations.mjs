@@ -34,12 +34,22 @@ const args = process.argv.slice(2);
 const typeArg = args.find((a) => a.startsWith('--type='))?.split('=')[1] ?? 'posts';
 const dateArg = args.find((a) => !a.startsWith('--')) ?? todayJst();
 
-const isCare = typeArg === 'care';
-const isWeekly = typeArg === 'weekly';
-
+// 版ごとの違い（アーカイブ・記事の置き場所、機械生成テーブルの見出し）はこの表だけで決まる。
 // テーブル行の脚注免除は各版の機械生成テーブル見出しだけに限定する。介護版は免除なしで
-// 全文100%の裏取りを要求する（docs/adr/ 参照）。
-const exemptTableHeading = isWeekly ? '今週のトピック' : isCare ? null : '今日のトピック';
+// 全文100%の裏取りを要求する（docs/adr/ 参照）。週刊版は複数日にまたがるため別処理（下の isWeekly）。
+const TYPES = {
+  posts: { rawDir: 'raw', contentDir: 'posts', exemptTableHeading: '今日のトピック' },
+  care: { rawDir: 'raw-care', contentDir: 'care', exemptTableHeading: null },
+  weekly: { contentDir: 'weekly', exemptTableHeading: '今週のトピック' },
+};
+
+if (!Object.hasOwn(TYPES, typeArg)) {
+  console.error(`不明な --type です: ${typeArg}（指定できる値: ${Object.keys(TYPES).join(' / ')}）`);
+  process.exit(1);
+}
+const typeConfig = TYPES[typeArg];
+const isWeekly = typeArg === 'weekly';
+const exemptTableHeading = typeConfig.exemptTableHeading;
 
 let validIds;
 let postPath;
@@ -47,7 +57,7 @@ let markdown;
 
 if (isWeekly) {
   const { weekStart, dates } = weeklyWindow(dateArg);
-  postPath = join(ROOT, 'site', 'src', 'content', 'weekly', `${weekStart}.md`);
+  postPath = join(ROOT, 'site', 'src', 'content', typeConfig.contentDir, `${weekStart}.md`);
 
   try {
     markdown = await readFile(postPath, 'utf8');
@@ -88,12 +98,8 @@ if (isWeekly) {
     process.exit(1);
   }
 } else {
-  const rawPath = isCare
-    ? join(ROOT, 'data', 'raw-care', `${dateArg}.json`)
-    : join(ROOT, 'data', 'raw', `${dateArg}.json`);
-  postPath = isCare
-    ? join(ROOT, 'site', 'src', 'content', 'care', `${dateArg}.md`)
-    : join(ROOT, 'site', 'src', 'content', 'posts', `${dateArg}.md`);
+  const rawPath = join(ROOT, 'data', typeConfig.rawDir, `${dateArg}.json`);
+  postPath = join(ROOT, 'site', 'src', 'content', typeConfig.contentDir, `${dateArg}.md`);
 
   let archive;
   try {

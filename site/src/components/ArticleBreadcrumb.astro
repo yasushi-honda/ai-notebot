@@ -1,0 +1,20 @@
+---
+import { url } from '../lib/url';
+
+/**
+ * 記事ページ上部のパンくず（ホーム / <セクション> / <現在のページ>）。
+ * 版ごとに、セクション名・リンク先・ホバー色（版の差し色）だけが違う。
+ * ホバー色は Tailwind が静的に検出できるよう、`hover:text-xxx` の完全なクラス名で渡す。
+ */
+interface Props {
+  section: { label: string; href: string; hoverClass: string };
+  current: string;
+}
+const { section, current } = Astro.props;
+---
+
+<nav class="text-xs text-ink-soft mb-4">
+  <a href={url('')} class="hover:text-verify">ホーム</a> /
+  <a href={url(section.href)} class={section.hoverClass}>{section.label}</a> /
+  <span class="tabular-nums font-mono">{current}</span>
+</nav>
