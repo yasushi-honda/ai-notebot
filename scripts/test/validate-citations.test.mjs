@@ -546,3 +546,10 @@ test('validate-citations --type=weekly: 対象週の日次アーカイブが1件
     await rm(weeklyPostPath, { force: true });
   }
 });
+
+test('validate-citations: 不明な --type は黙って posts 扱いにせず exit 1', async () => {
+  await assert.rejects(
+    execFileAsync('node', [SCRIPT, FIXTURE_DATE, '--type=nonexistent']),
+    (err) => err.code === 1 && /不明な --type/.test(err.stderr),
+  );
+});
