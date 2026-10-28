@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { url } from '../lib/url';
 import SiteSearch from '../components/SiteSearch.astro';
+import { NAV_LINKS } from '../lib/nav';
 
 interface Props {
   title: string;
@@ -62,10 +63,9 @@ const canonicalUrl = Astro.url.href;
           </span>
         </a>
         <nav class="flex flex-wrap items-center gap-x-5 gap-y-1 text-[13px] font-medium text-ink-soft whitespace-nowrap">
-          <a href={url('archive/')} class="hover:text-verify">アーカイブ</a>
-          <a href={url('weekly/')} class="hover:text-verify">週刊まとめ</a>
-          <a href={url('care/')} class="hover:text-care">介護AIハック</a>
-          <a href={url('about/')} class="hover:text-verify">About</a>
+          {NAV_LINKS.map((link) => (
+            <a href={url(link.href)} class={link.hoverClass}>{link.label}</a>
+          ))}
           <SiteSearch />
         </nav>
       </div>

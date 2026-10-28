@@ -1,0 +1,15 @@
+---
+/**
+ * 記事末尾の「出典を機械検証済み」ラベル。文言は版ごとに異なるため slot で受ける。
+ * 余白（mt-6 / mt-10 等）は呼び出し側が class で指定する。
+ */
+interface Props {
+  class?: string;
+}
+const { class: extraClass = '' } = Astro.props;
+---
+
+<p class={`verify-label ${extraClass}`.trim()}>
+  <span class="verify-dot"></span>
+  <slot />
+</p>

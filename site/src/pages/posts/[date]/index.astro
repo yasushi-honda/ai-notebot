@@ -2,6 +2,8 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { url } from '../../../lib/url';
+import ArticleBreadcrumb from '../../../components/ArticleBreadcrumb.astro';
+import VerifyLabel from '../../../components/VerifyLabel.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -35,11 +37,10 @@ const shareText = [
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description} image={heroImageUrl}>
-  <nav class="text-xs text-ink-soft mb-4">
-    <a href={url('')} class="hover:text-verify">ホーム</a> /
-    <a href={url('archive/')} class="hover:text-verify">アーカイブ</a> /
-    <span class="tabular-nums font-mono">{post.data.date}</span>
-  </nav>
+  <ArticleBreadcrumb
+    section={{ label: 'アーカイブ', href: 'archive/', hoverClass: 'hover:text-verify' }}
+    current={post.data.date}
+  />
 
   <h1 class="font-display text-2xl font-medium text-ink mb-2">{post.data.title}</h1>
   <p class="text-ink-soft mb-6">{post.data.description}</p>
@@ -89,10 +90,9 @@ const shareText = [
     <Content />
   </article>
 
-  <p class="verify-label mt-10">
-    <span class="verify-dot"></span>
+  <VerifyLabel class="mt-10">
     この記事の出典 {post.data.sourceIds.length} 件はすべて、収集日のアーカイブに実在するエントリに解決することを機械検証済みです。
-  </p>
+  </VerifyLabel>
 </BaseLayout>
 
 <script define:vars={{ shareText }}>
