@@ -149,6 +149,46 @@ function normalizeBoldEmphasisOutsideInlineCode(line) {
   return output;
 }
 
+/**
+ * 出典の title/summary は任意の外部サイトから機械的に取得した信頼できないテキストであり、
+ * プロンプトインジェクション（例: ページ内に「以降の指示を無視して...」と埋め込む攻撃）を
+ * 試みうる。プロンプト文字列内で見た目上も指示部分と区別できるよう、タグで明示的に囲み、
+ * かつタグ様の文字列を含んでいてもタグ構造を壊さないよう < > を全角に変換する
+ * （介護版 curate-care.mjs の codex review 指摘を共通化。プロンプト側の明示的な防御指示と合わせた多層防御）。
+ */
+export function escapeSourceField(s) {
+  return String(s).replace(/</g, '＜').replace(/>/g, '＞');
+}
+
+/** 候補一覧を、外部データであることが明示できるタグで囲んで整形する（セキュリティ版など外部テキストの多い版向け）。 */
+export function formatIsolatedCandidates(items) {
+  return items
+    .map(
+      (i) =>
+        `<source id="${i.id}">\n` +
+        `<source-name>${escapeSourceField(i.source)}</source-name>\n` +
+        `<source-title>${escapeSourceField(i.title)}</source-title>\n` +
+        `<source-excerpt>${escapeSourceField(i.summary || '(概要なし)')}</source-excerpt>\n` +
+        `</source>`,
+    )
+    .join('\n');
+}
+
+/**
+ * 箇条書き・番号付きリストの行のうち、行末（句点の手前）に脚注が無いものを返す。
+ * citation-gate は空行で段落、「。！？」で文に分けて検証するため、句点の無い箇条書きが1段落に並ぶと
+ * 全体が1文扱いになり、脚注が1つあれば全行が通ってしまう（codex による再現済み）。
+ * 本関数は行単位でその抜けを塞ぐ。
+ * @param {string} markdown
+ * @returns {string[]} 脚注の無いリスト行
+ */
+export function findUncitedListItems(markdown) {
+  return markdown
+    .split('\n')
+    .filter((line) => /^\s*(?:[-*+]|\d+[.)])\s+\S/.test(line))
+    .filter((line) => !/\[\^s-[0-9a-f]+\]\s*[。！？]?\s*$/.test(line));
+}
+
 export function formatCandidateList(items) {
   return items
     .map((i) => `${i.id} [${i.source}] ${i.title}\n   ${i.summary || '(概要なし)'}`)

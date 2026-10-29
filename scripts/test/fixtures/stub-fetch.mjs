@@ -24,7 +24,7 @@ function rssXml(feedIndex) {
     const date = new Date(base + (12 - i) * 3600 * 1000).toUTCString(); // 基準日 12:00Z から1時間ずつ古く
     // 重複排除の経路: フィード0と1の i=0 は同じ URL
     const url = i === 0 && feedIndex <= 1 ? 'https://example.test/shared' : `https://example.test/f${feedIndex}/i${i}`;
-    items.push(`<item><title>feed${feedIndex} item${i}</title><link>${url}</link><pubDate>${date}</pubDate><description>feed${feedIndex} 要約${i}</description></item>`);
+    items.push(`<item><title>feed${feedIndex} item${i}</title><link>${url}</link><pubDate>${date}</pubDate><description>feed${feedIndex} ${feedIndex >= 100 ? '脆弱性に関する' : ''}要約${i}</description></item>`);
   }
   // 鮮度フィルタの経路: 古すぎる項目
   items.push(`<item><title>feed${feedIndex} old</title><link>https://example.test/f${feedIndex}/old</link><pubDate>Mon, 01 Jan 2096 00:00:00 GMT</pubDate><description>古い</description></item>`);
@@ -37,7 +37,9 @@ function jsonResponse(obj) {
 
 function stageAResponse(prompt) {
   const ids = [...prompt.matchAll(/^(s-[0-9a-f]+) \[/gm)].map((m) => m[1]);
-  const titles = ['テーマ甲', 'テーマ乙再生成', 'テーマ丙', 'テーマ丁除外'];
+  const titles = prompt.includes('セキュリティ')
+    ? ['テーマ甲', 'テーマ乙不正', 'テーマ丙']
+    : ['テーマ甲', 'テーマ乙再生成', 'テーマ丙', 'テーマ丁除外'];
   return {
     themes: titles.map((title, k) => ({
       title,
@@ -45,6 +47,25 @@ function stageAResponse(prompt) {
       sourceIds: [...ids.slice(k * 2, k * 2 + 3), 's-ffffffffff'], // 実在しない id も混ぜ、絞り込みの経路を通す
     })),
   };
+}
+
+/**
+ * セキュリティ版の Stage B（actions / terms 付き）。プロンプトの <source> タグから出典 id とタイトルを読み、
+ * 実在する語（タイトルに含まれる「脆弱性」）を用語として返す。テーマ名で振る舞いを変える:
+ *   「不正」を含む: 存在しない id を引用する対策と、出典に無い用語を混ぜる（検証で除外される経路）
+ */
+function securityStageBResponse(prompt) {
+  const title = prompt.match(/見出し「(.+?)」/)?.[1] ?? '';
+  const ids = [...prompt.matchAll(/<source id="(s-[0-9a-f]+)">/g)].map((m) => m[1]);
+  const cite = ids.map((id) => `[^${id}]`).join('');
+  const body = `${title}では脆弱性が報告されています${cite}。\n\n影響を受ける可能性があります${cite}。`;
+  const actions = [{ who: '該当製品の利用者', what: '最新版へ更新してください', condition: '旧版を使っている場合', sourceIds: [ids[0]] }];
+  const terms = [{ term: '脆弱性', reading: 'ぜいじゃくせい', definition: 'システムの弱点のこと', sourceIds: [ids[0]] }];
+  if (title.includes('不正')) {
+    actions.push({ who: '管理者', what: '設定を見直してください', condition: '', sourceIds: ['s-ffffffffff'] });
+    terms.push({ term: '出典に無い語', reading: 'しゅってんにないご', definition: '作り話', sourceIds: [ids[0]] });
+  }
+  return { bodyMarkdown: body, actions, terms };
 }
 
 function stageBResponse(prompt) {
@@ -67,7 +88,11 @@ globalThis.fetch = async (url, init = {}) => {
     if (process.env.STUB_LOG) {
       appendFileSync(process.env.STUB_LOG, JSON.stringify({ prompt, temperature: body.generationConfig.temperature }) + '\n');
     }
-    const payload = prompt.includes('## 参照可能な一次情報') ? stageBResponse(prompt) : stageAResponse(prompt);
+    const payload = prompt.includes('## すぐできる対策（actions）のルール')
+      ? securityStageBResponse(prompt)
+      : prompt.includes('## 参照可能な一次情報')
+        ? stageBResponse(prompt)
+        : stageAResponse(prompt);
     return jsonResponse({ candidates: [{ content: { parts: [{ text: JSON.stringify(payload) }] } }] });
   }
   const feedIndex = RSS_FEEDS.findIndex((f) => f.urls.includes(u));

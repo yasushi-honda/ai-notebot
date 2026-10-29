@@ -1,0 +1,124 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import {
+  validateActions,
+  validateTerms,
+  assembleThemeMarkdown,
+  assembleGlossarySection,
+  collectDailyTerms,
+  actionLine,
+  MAX_ACTIONS_PER_THEME,
+  MAX_TERMS_PER_THEME,
+  MAX_TERMS_PER_DAY,
+} from '../lib/security-article.mjs';
+import { checkCitations } from '../lib/citation-gate.mjs';
+import { findUncitedListItems } from '../lib/digest-curation.mjs';
+
+const valid = new Set(['s-aaaaaaaaaa', 's-bbbbbbbbbb']);
+const items = new Map([
+  ['s-aaaaaaaaaa', { title: 'Brotli の境界外書き込みの脆弱性', summary: 'Brotli を使うサーバーは更新が必要。' }],
+  ['s-bbbbbbbbbb', { title: '別の記事', summary: 'ランサムウェアの被害が増えている。' }],
+]);
+const action = (over = {}) => ({ who: 'Brotli を使うサーバーの管理者', what: '修正済みのバージョンへ更新してください', condition: '', sourceIds: ['s-aaaaaaaaaa'], ...over });
+const term = (over = {}) => ({ term: 'Brotli', reading: 'ぶろとり', definition: 'データを圧縮する方式', sourceIds: ['s-aaaaaaaaaa'], ...over });
+
+test('validateActions: 正常な対策は通り、末尾の句点は落として正規化される', () => {
+  const { accepted, rejected } = validateActions([action({ what: '更新してください。' })], valid);
+  assert.equal(rejected.length, 0);
+  assert.equal(accepted[0].what, '更新してください');
+});
+
+test('validateActions: 空・長すぎ・禁止文字・存在しない id・id なしは理由つきで除外される', () => {
+  const cases = [
+    [action({ who: '' }), /who が空/],
+    [action({ what: 'あ'.repeat(91) }), /what が長すぎ/],
+    [action({ what: '[^s-aaaaaaaaaa] を見る' }), /使えない文字/],
+    [action({ condition: '改行\nあり' }), /使えない文字/],
+    [action({ what: '<script>を実行' }), /使えない文字/],
+    [action({ sourceIds: ['s-ffffffffff'] }), /与えられていない id/],
+    [action({ sourceIds: [] }), /sourceIds が空/],
+    [action({ who: '株式会社Eストアー' }), /提供元・運営会社側/],
+    [action({ who: '運営会社' }), /提供元・運営会社側/],
+    [action({ what: '悪用された脆弱性の修正および攻撃経路の遮断' }), /行動の形/],
+  ];
+  for (const [input, pattern] of cases) {
+    const { accepted, rejected } = validateActions([input], valid);
+    assert.equal(accepted.length, 0, JSON.stringify(input));
+    assert.match(rejected[0].reason, pattern);
+  }
+});
+
+test('validateActions: 上限件数で切り、配列でない入力は空として扱う', () => {
+  const many = Array.from({ length: MAX_ACTIONS_PER_THEME + 2 }, () => action());
+  assert.equal(validateActions(many, valid).accepted.length, MAX_ACTIONS_PER_THEME);
+  assert.deepEqual(validateActions(undefined, valid), { accepted: [], rejected: [] });
+  assert.deepEqual(validateActions('x', valid), { accepted: [], rejected: [] });
+});
+
+test('validateTerms: 出典に実在する用語は通る（大文字小文字・全半角を無視して照合）', () => {
+  const { accepted } = validateTerms([term({ term: 'ＢＲＯＴＬＩ' })], valid, items);
+  assert.equal(accepted.length, 1);
+});
+
+test('validateTerms: 本文を渡したときは、本文に出てこない用語を除外する', () => {
+  const body = 'Brotli の脆弱性について説明します。';
+  assert.equal(validateTerms([term()], valid, items, body).accepted.length, 1);
+  const out = validateTerms([term({ term: '脆弱性' }), term({ term: 'ランサムウェア', sourceIds: ['s-bbbbbbbbbb'] })], valid, items, body);
+  assert.deepEqual(out.accepted.map((x) => x.term), ['脆弱性']);
+  assert.match(out.rejected[0].reason, /記事の本文に出てきません/);
+  assert.equal(validateTerms([term()], valid, items).accepted.length, 1); // 本文を渡さなければ従来どおり
+});
+
+test('validateTerms: 出典に無い用語・読みの形式違反・存在しない id は除外される', () => {
+  const cases = [
+    [term({ term: 'ゼロデイ' }), /出典の本文に見当たりません/],
+    [term({ reading: 'Brotli' }), /ひらがな・カタカナ以外/],
+    [term({ reading: '' }), /reading が空/],
+    [term({ sourceIds: ['s-ffffffffff'] }), /与えられていない id/],
+    [term({ definition: 'あ'.repeat(121) }), /definition が長すぎ/],
+    [term({ sourceIds: ['s-bbbbbbbbbb'] }), /出典の本文に見当たりません/], // 別の出典にしか無い語は、引用した出典に無ければ不可
+  ];
+  for (const [input, pattern] of cases) {
+    const { accepted, rejected } = validateTerms([input], valid, items);
+    assert.equal(accepted.length, 0, JSON.stringify(input));
+    assert.match(rejected[0].reason, pattern);
+  }
+  assert.equal(validateTerms(Array(MAX_TERMS_PER_THEME + 2).fill(term()), valid, items).accepted.length, MAX_TERMS_PER_THEME);
+});
+
+test('actionLine: 脚注は句点の手前に置く（出典ゲートは句点までを1文とみなす）', () => {
+  assert.equal(
+    actionLine({ who: '管理者', what: '更新する', condition: '旧版を使っている場合', sourceIds: ['s-aaaaaaaaaa', 's-bbbbbbbbbb'] }),
+    '- 旧版を使っている場合、管理者は、更新する[^s-aaaaaaaaaa][^s-bbbbbbbbbb]。',
+  );
+});
+
+test('assembleThemeMarkdown: 対策があれば見出し付きで空行を挟んで続け、無ければ本文のみ。出典ゲートを通る', () => {
+  const body = '本文です[^s-aaaaaaaaaa]。\n\nもう一段落です[^s-aaaaaaaaaa]。';
+  assert.equal(assembleThemeMarkdown(body, []), body);
+  const md = assembleThemeMarkdown(body, [action(), action({ what: '設定を見直してください', sourceIds: ['s-bbbbbbbbbb'] })]);
+  assert.match(md, /\n\n### すぐできる対策\n\n- /);
+  const check = checkCitations({ markdown: md, validIds: valid, bodyOnly: true });
+  assert.equal(check.ok, true, JSON.stringify(check.uncited));
+  assert.deepEqual(findUncitedListItems(md), []);
+});
+
+test('findUncitedListItems: 脚注のない箇条書き行を検出する（ゲートが1文扱いして見逃す形）', () => {
+  // citation-gate は句点の無い箇条書きを1つの文として扱い、1行にでも脚注があれば通してしまう（codex が再現）
+  const loophole = '- 対策A[^s-aaaaaaaaaa]\n- 対策B';
+  assert.equal(checkCitations({ markdown: loophole, validIds: valid, bodyOnly: true }).ok, true);
+  assert.deepEqual(findUncitedListItems(loophole), ['- 対策B']);
+  assert.deepEqual(findUncitedListItems('1. 手順C\n2) 手順D[^s-aaaaaaaaaa]。\n通常の文です。'), ['1. 手順C']);
+  assert.deepEqual(findUncitedListItems('- 対策A[^s-aaaaaaaaaa]。\n- 対策B[^s-bbbbbbbbbb]'), []);
+});
+
+test('collectDailyTerms / assembleGlossarySection: 重複を除いて上限まで集め、0件なら節を出さない', () => {
+  const t = (name) => term({ term: name });
+  const out = collectDailyTerms([[t('Brotli'), t('ＢＲＯＴＬＩ')], [t('brotli'), t('A'), t('B')], [t('C'), t('D'), t('E'), t('F'), t('G')]]);
+  assert.equal(out.length, MAX_TERMS_PER_DAY);
+  assert.equal(out.filter((x) => x.term.toLowerCase() === 'brotli').length, 1);
+  assert.equal(assembleGlossarySection([]), null);
+  const section = assembleGlossarySection([term()]);
+  assert.match(section, /^## 今日の用語\n\n- <strong>Brotli<\/strong>（ぶろとり）：データを圧縮する方式\[\^s-aaaaaaaaaa\]。$/);
+  assert.equal(checkCitations({ markdown: section, validIds: valid, bodyOnly: true }).ok, true);
+});

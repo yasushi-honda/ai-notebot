@@ -18,6 +18,7 @@
  * 使い方:
  *   node scripts/validate-citations.mjs [YYYY-MM-DD]                 # AIトレンド版（省略時は今日）
  *   node scripts/validate-citations.mjs [YYYY-MM-DD] --type=care     # 介護版
+ *   node scripts/validate-citations.mjs [YYYY-MM-DD] --type=security # セキュリティ版
  *   node scripts/validate-citations.mjs [YYYY-MM-DD(公開日)] --type=weekly  # 週刊版
  */
 
@@ -40,6 +41,7 @@ const dateArg = args.find((a) => !a.startsWith('--')) ?? todayJst();
 const TYPES = {
   posts: { rawDir: 'raw', contentDir: 'posts', exemptTableHeading: '今日のトピック' },
   care: { rawDir: 'raw-care', contentDir: 'care', exemptTableHeading: null },
+  security: { rawDir: 'raw-security', contentDir: 'security', exemptTableHeading: '今日のトピック' },
   weekly: { contentDir: 'weekly', exemptTableHeading: '今週のトピック' },
 };
 

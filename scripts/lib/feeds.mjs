@@ -19,7 +19,7 @@
  *   Qwen Blog・Chip Huyen(更新停止) / heise(AI専用でなくドイツ語混入リスク)
  */
 
-/** @type {Array<{source: string, category: 'vendor'|'media'|'japanese', urls: string[]}>} */
+/** @type {Array<{source: string, category: 'vendor'|'media'|'japanese'|'official', urls: string[]}>} */
 export const RSS_FEEDS = [
   // --- vendor: 公式ブログ・リリース ---
   { source: 'OpenAI', category: 'vendor', urls: ['https://openai.com/news/rss.xml'] },
@@ -65,3 +65,32 @@ export const HN_QUERY = { query: 'AI', minPoints: 5, hitsPerPage: 40 };
 
 /** GitHub Trending の代替: Search API で直近アップデートの多い AI 関連リポジトリを拾う */
 export const GITHUB_TOPICS = ['ai', 'llm'];
+
+/**
+ * セキュリティ版（collect-security.mjs）のソース。AI 版の RSS_FEEDS とは別枠で管理する。
+ * 全 URL は 2026-10-29 に既存の fetchFeed 経由で取得確認済み（9本で直近3日に約166件）。
+ * category は sourceType としてアーカイブに入る。'official' は CERT・公的機関の一次情報。
+ *
+ * 除外した候補と理由（2026-10-29 時点）:
+ * - Krebs on Security: 直近3日の新着なし（更新頻度が低い。再検討可）
+ * - NISC・ITmedia セキュリティ: RSS の item が0件
+ * - CISA KEV の JSON: RSS ではなく約1.8MB。CISA Advisories（RSS）で足りる
+ * IPA は直近3日の新着が1件・要約なしと少ないが、公的機関の一次情報なので残す（要約は本文取得で補う）。
+ */
+/** @type {Array<{source: string, category: 'vendor'|'media'|'japanese'|'official', urls: string[]}>} */
+export const SECURITY_FEEDS = [
+  // --- official: CERT・公的機関 ---
+  { source: 'JPCERT/CC', category: 'official', urls: ['https://www.jpcert.or.jp/rss/jpcert-all.rdf'] },
+  { source: 'IPA 重要なセキュリティ情報', category: 'official', urls: ['https://www.ipa.go.jp/security/alert-rss.rdf'] },
+  { source: 'JVN', category: 'official', urls: ['https://jvn.jp/rss/jvn.rdf'] },
+  { source: 'CISA Advisories', category: 'official', urls: ['https://www.cisa.gov/cybersecurity-advisories/all.xml'] },
+
+  // --- japanese: 日本語のセキュリティニュース ---
+  { source: 'Security NEXT', category: 'japanese', urls: ['https://www.security-next.com/feed'] },
+  { source: 'ScanNetSecurity', category: 'japanese', urls: ['https://scan.netsecurity.ne.jp/rss/index.rdf'] },
+  { source: 'piyolog', category: 'japanese', urls: ['https://piyolog.hatenadiary.jp/rss'] },
+
+  // --- media: 海外のセキュリティニュース ---
+  { source: 'BleepingComputer', category: 'media', urls: ['https://www.bleepingcomputer.com/feed/'] },
+  { source: 'The Hacker News', category: 'media', urls: ['https://feeds.feedburner.com/TheHackersNews'] },
+];

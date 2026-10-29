@@ -55,6 +55,22 @@ Astro build → dist/ → GitHub Pages（/care/YYYY-MM-DD/）
 Google検索グラウンディングと `responseSchema` 構造化出力は同一リクエストで併用できない
 （Vertex AI公式仕様）ため2段階に分離している。詳細: `docs/adr/adr-2026-09-11-care-hack-grounded-research.md`。
 
+### セキュリティ版「毎日のセキュリティニュース」（別枠パイプライン）
+
+```
+build-security.mjs（オーケストレータ。失敗・時間超過しても本体の生成・公開は止めず、常に exit 0。復元失敗のみ exit 1）
+  ├─ collect-security.mjs (RSS 9本 → 要約が短い項目は元ページ本文で補強) → data/raw-security/YYYY-MM-DD.json
+  ├─ curate-security.mjs (AI版と同じ Stage A/B。Stage B が本文＋対策＋用語を構造化して返し、検証して組み立てる)
+  │    → site/src/content/security/YYYY-MM-DD.md（frontmatter の glossary が用語集ページの元データ）
+  └─ validate-citations.mjs --type=security（AI版と共有のゲート。テーブル免除は「今日のトピック」のみ）
+    ↓
+Astro build → /security/YYYY-MM-DD/ と /security/glossary/（全記事の用語を五十音順に集約）
+```
+
+収集・記事生成・オーケストレーションは AI版・介護版と共通部品（`scripts/lib/collect-core.mjs` / `digest-curation.mjs` /
+`orchestrate.mjs`）を使い、版ごとにプロファイルだけを持つ。対策は出典に書かれた読者向けの行動だけ、用語は出典と本文に
+実在する語だけを載せる（無ければ空）。詳細: `docs/adr/adr-2026-10-29-security-digest.md`。
+
 ## GCP / GitHub
 
 - GCP プロジェクト: `ai-notebot-yh`（アカウント `hy.unimail.11@gmail.com`）
@@ -89,6 +105,8 @@ node scripts/build-care.mjs <date>           # 介護版オーケストレータ
 node scripts/validate-citations.mjs <date> --type=care  # 介護版の出典検証を単独実行
 node scripts/curate-weekly.mjs <publishDate>              # 週刊まとめ生成（対象は前日から遡って7日間）
 node scripts/validate-citations.mjs <publishDate> --type=weekly  # 週刊まとめの出典検証を単独実行
+node scripts/build-security.mjs <date>       # セキュリティ版オーケストレータ（collect-security→curate-security→gate）
+node scripts/validate-citations.mjs <date> --type=security  # セキュリティ版の出典検証を単独実行
 cd site && npm run build                     # 静的サイトビルド
 node --test scripts/**/*.test.mjs            # 単体テスト
 
