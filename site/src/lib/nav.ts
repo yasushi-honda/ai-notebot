@@ -6,5 +6,6 @@ export const NAV_LINKS = [
   { href: 'archive/', label: 'アーカイブ', hoverClass: 'hover:text-verify' },
   { href: 'weekly/', label: '週刊まとめ', hoverClass: 'hover:text-verify' },
   { href: 'care/', label: '介護AIハック', hoverClass: 'hover:text-care' },
+  { href: 'security/', label: 'セキュリティ', hoverClass: 'hover:text-security' },
   { href: 'about/', label: 'About', hoverClass: 'hover:text-verify' },
 ] as const;

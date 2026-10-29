@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { url } from '../../lib/url';
+
+const posts = (await getCollection('security')).sort((a, b) => b.data.date.localeCompare(a.data.date));
+---
+
+<BaseLayout title="毎日のセキュリティニュース" description="その日のセキュリティニュースと、すぐできる対策・用語を、出典付きでまとめます">
+  <h1 class="font-display text-2xl font-medium text-ink mb-2">
+    毎日のセキュリティニュース（全{posts.length}件）
+  </h1>
+  <p class="text-ink-soft mb-3">
+    その日のセキュリティ上の出来事と、出典に書かれた「すぐできる対策」、知っておきたい用語を、出典付きでまとめます。
+    専門知識のない方・小規模事業者の方向けです。
+  </p>
+  <p class="mb-8">
+    <a href={url('security/glossary/')} class="text-security font-semibold">用語集を見る →</a>
+  </p>
+
+  <ul>
+    {posts.map((post) => (
+      <li>
+        <a href={url(`security/${post.data.date}/`)} class="list-link">
+          <div class="list-link-meta mb-1">
+            <span class="font-mono tabular-nums">{post.data.date}</span>
+          </div>
+          <div class="list-link-title">{post.data.title}</div>
+          <div class="text-sm text-ink-soft mt-1">{post.data.description}</div>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  {posts.length === 0 && <p class="text-ink-soft">まだ記事がありません。</p>}
+</BaseLayout>

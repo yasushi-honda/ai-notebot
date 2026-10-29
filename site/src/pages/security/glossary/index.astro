@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { url } from '../../../lib/url';
+import { buildGlossary, groupByRow } from '../../../lib/glossary.mjs';
+
+const posts = await getCollection('security');
+const entries = buildGlossary(posts.map((p) => ({ date: p.data.date, glossary: p.data.glossary })));
+const groups = groupByRow(entries);
+---
+
+<BaseLayout title="セキュリティ用語集" description="毎日のセキュリティニュースに出てきた用語を、出典付きで五十音順にまとめた用語集">
+  <nav class="text-xs text-ink-soft mb-4">
+    <a href={url('')} class="hover:text-verify">ホーム</a> /
+    <a href={url('security/')} class="hover:text-security">セキュリティ</a> /
+    <span>用語集</span>
+  </nav>
+
+  <h1 class="font-display text-2xl font-medium text-ink mb-2">セキュリティ用語集（{entries.length}語）</h1>
+  <p class="text-ink-soft mb-8">
+    毎日のセキュリティニュースの記事に出てきた用語を、五十音順に自動でまとめています。
+    定義は各記事が引用した出典に書かれた内容に基づき、同じ用語は最新の記事の説明を載せています。
+  </p>
+
+  {groups.map((group) => (
+    <section class="mb-8">
+      <h2 class="font-display text-lg font-medium text-security border-b border-security-soft pb-1 mb-3">
+        {group.row}{group.row === 'その他' ? '' : '行'}
+      </h2>
+      <dl>
+        {group.entries.map((entry) => (
+          <div class="mb-4">
+            <dt class="font-semibold text-ink">
+              {entry.term}<span class="font-normal text-ink-soft text-sm ml-1">（{entry.reading}）</span>
+            </dt>
+            <dd class="text-[15px] text-ink-soft m-0">
+              {entry.definition}
+              <a
+                href={`${url(`security/${entry.date}/`)}#user-content-fn-${entry.sourceIds[0]}`}
+                class="ml-1 text-xs text-security"
+              >
+                出典（{entry.date} の記事）
+              </a>
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  ))}
+
+  {entries.length === 0 && <p class="text-ink-soft">まだ用語がありません。</p>}
+</BaseLayout>

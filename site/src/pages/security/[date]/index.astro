@@ -1,0 +1,55 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticleBreadcrumb from '../../../components/ArticleBreadcrumb.astro';
+import VerifyLabel from '../../../components/VerifyLabel.astro';
+import { url } from '../../../lib/url';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('security');
+  return posts.map((post) => ({
+    params: { date: post.data.date },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <ArticleBreadcrumb
+    section={{ label: 'セキュリティ', href: 'security/', hoverClass: 'hover:text-security' }}
+    current={post.data.date}
+  />
+
+  <div class="text-xs text-security font-semibold mb-2">
+    <span class="font-mono tabular-nums">{post.data.date}</span> · 毎日のセキュリティニュース
+  </div>
+  <h1 class="font-display text-2xl font-medium text-ink mb-2">{post.data.title}</h1>
+  <p class="text-ink-soft mb-6">{post.data.description}</p>
+
+  <article class="prose-post prose-security">
+    <Content />
+  </article>
+
+  {/*
+    固定の注意書き（毎回必ず表示）。LLM が生成した文ではなく人間が書いた、事実の主張を含まない一般的な
+    注意喚起なので、AGENTS.md の「本文の全主張は脚注に紐付く」invariant の例外として脚注検証の対象にしない
+    （介護版の個人情報の注意書きと同じ扱い。docs/adr/adr-2026-10-29-security-digest.md に記載）。
+    記事ごとに出典があるとは限らない「公式情報で確認」という行動の案内を、毎回出すための安全装置。
+  */}
+  <div class="mt-8 border border-rule border-l-[3px] border-l-security bg-paper-deep px-5 py-4 text-[13px] text-ink-soft">
+    <strong class="text-ink">ご利用にあたって:</strong>
+    この記事は公開されている情報を要約したものです。対応が必要かどうかは、お使いの製品・サービスの提供元の
+    公式情報や、各出典のページで確認してください。
+  </div>
+
+  <p class="mt-6 text-sm">
+    <a href={url('security/glossary/')} class="text-security font-semibold">用語集を見る →</a>
+  </p>
+
+  <VerifyLabel class="mt-6">
+    この記事の出典 {post.data.sourceIds.length} 件はすべて、収集日のアーカイブに実在するエントリに解決することを機械検証済みです。
+  </VerifyLabel>
+</BaseLayout>
