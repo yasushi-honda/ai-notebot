@@ -10,13 +10,17 @@ export const MAX_ACTIONS_PER_THEME = 3;
 export const MAX_TERMS_PER_THEME = 2;
 export const MAX_TERMS_PER_DAY = 6;
 
-const FIELD_LIMITS = { who: 40, what: 90, condition: 80, term: 30, reading: 40, definition: 120 };
+const FIELD_LIMITS = { who: 60, what: 90, condition: 80, term: 30, reading: 40, definition: 120 };
 // Markdown・HTML・脚注の構造を壊しうる文字は、LLM 由来のフィールドに入れさせない
-const FORBIDDEN_CHARS = /[\[\]<>|`*\r\n]/;
-const READING_PATTERN = /^[ぁ-んァ-ヶー・ ]+$/;
+const FORBIDDEN_CHARS = /[\[\]<>|`*\\\r\n]/;
+// 句点・感嘆符・疑問符（英文の「. 」も）を含むと、出典ゲートが文を途中で分割し、脚注のない断片が生まれて記事全体が失敗する
+const SENTENCE_BREAK = /[。！？]|[.!?](?:\s|$)/;
+// 用語集は読みで五十音順に並べる。表記を揃えるためひらがなだけを許可する（カタカナの読みは除外）
+const READING_PATTERN = /^[ぁ-んー・ ]+$/;
 // 「すぐできる対策」は読者が取れる行動だけ。運営会社・提供元自身の対応（修正版の公開、再発防止策など）は対策ではない
-const PROVIDER_SIDE_WHO = /(株式会社|有限会社|運営会社|運営元|提供元|提供会社|開発元|開発者|ベンダー|同社|当社|各社|運営)/;
-const ACTION_ENDING = /(してください|ください|しましょう|しておく|しておきましょう|する|ます)$/;
+// 「サイトの運営者」「アプリの開発者」のように読者側にもなりうる語は含めず、会社・提供元を示す語に絞る
+const PROVIDER_SIDE_WHO = /(株式会社|有限会社|運営会社|運営元|提供元|提供会社|開発元|ベンダー|同社|当社|各社)/;
+const ACTION_ENDING = /(してください|ください|しましょう|しておく|しておきましょう|する|行う|ます)$/;
 
 /** 前後の空白と末尾の句点を落とす（文の組み立て時に自前で句点を付けるため） */
 function clean(value) {
@@ -30,6 +34,7 @@ function checkField(name, value, { required }) {
   if (value === '') return required ? `${name} が空です` : null;
   if (value.length > FIELD_LIMITS[name]) return `${name} が長すぎます（${value.length}字 > ${FIELD_LIMITS[name]}字）`;
   if (FORBIDDEN_CHARS.test(value)) return `${name} に使えない文字が含まれています`;
+  if (SENTENCE_BREAK.test(value)) return `${name} に文の区切り（句点等）が含まれています`;
   return null;
 }
 
@@ -99,7 +104,7 @@ export function validateTerms(terms, validIds, itemsById, bodyText) {
       checkField('reading', term.reading, { required: true }) ??
       checkField('definition', term.definition, { required: true }) ??
       checkSourceIds(term.sourceIds, validIds);
-    if (!reason && !READING_PATTERN.test(term.reading)) reason = 'reading がひらがな・カタカナ以外を含みます';
+    if (!reason && !READING_PATTERN.test(term.reading)) reason = 'reading がひらがな以外を含みます';
     if (!reason) {
       const needle = normalizeForMatch(term.term);
       const found = term.sourceIds.some((id) => {
@@ -203,4 +208,31 @@ export function validateSecurityFrontmatter(fm) {
     problems.push('glossary が {term, reading, definition, sourceIds} の配列ではありません');
   }
   return problems;
+}
+
+/**
+ * LLM が書いた本文に含めてはいけないマークアップを検出する。本文は外部フィード・外部ページの文章に
+ * 影響を受けるため（プロンプトインジェクション）、悪意のある記述が生 HTML・リンク・画像としてサイトに
+ * 出ないよう、生成直後に弾く（検出したら再生成。使い切ればそのテーマは除外）。
+ * 許可するのは、太字の変換で機械的に作る <strong> だけ。本文に URL は不要なので URL も拒否する。
+ * @param {string} markdown
+ * @returns {string[]} 問題点（空なら安全）
+ */
+export function findUnsafeMarkup(markdown) {
+  const problems = [];
+  if (/<(?!\/?strong>)/i.test(markdown)) problems.push('<strong> 以外の HTML タグ（または < 記号）が含まれています');
+  if (/!\[/.test(markdown)) problems.push('画像の記法が含まれています');
+  if (/\]\(/.test(markdown)) problems.push('リンクの記法 [文](URL) が含まれています');
+  if (/^\s*\[[^\]^\n]+\]:\s*\S/m.test(markdown)) problems.push('リンク参照の定義行が含まれています');
+  if (/(https?:\/\/|www\.)/i.test(markdown)) problems.push('本文に URL が含まれています（出典は脚注で示すため不要）');
+  return problems;
+}
+
+/** テーマ見出し（Stage A の LLM 出力）を、見出し行・表のセル・HTML を壊さない形にする。 */
+export function sanitizeThemeTitle(title) {
+  return String(title)
+    .replace(/[<>]/g, (c) => (c === '<' ? '＜' : '＞'))
+    .replace(/[|\r\n]+/g, ' ')
+    .replace(/^#+\s*/, '')
+    .trim();
 }

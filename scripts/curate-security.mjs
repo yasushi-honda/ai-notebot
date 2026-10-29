@@ -43,6 +43,8 @@ import {
   assembleGlossarySection,
   collectDailyTerms,
   validateSecurityFrontmatter,
+  findUnsafeMarkup,
+  sanitizeThemeTitle,
 } from './lib/security-article.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -70,7 +72,7 @@ const STAGE_B_SCHEMA = {
       items: {
         type: 'object',
         properties: {
-          who: { type: 'string', description: '対策を行う読者側の人（例: Brotli を使うサーバーの管理者、該当製品の利用者）。運営会社・提供元は入れない。40字以内' },
+          who: { type: 'string', description: '対策を行う読者側の人（例: Brotli を使うサーバーの管理者、該当製品の利用者）。運営会社・提供元は入れない。60字以内' },
           what: { type: 'string', description: '読者が取れる行動。「〜してください」「〜する」の形で終える（例: 修正済みのバージョンへ更新してください）。90字以内。句点は付けない' },
           condition: { type: 'string', description: '行う条件（例: 旧バージョンを使っている場合）。無ければ空文字。80字以内' },
           sourceIds: { type: 'array', items: { type: 'string' }, description: 'その対策が書かれている出典の id' },
@@ -85,7 +87,7 @@ const STAGE_B_SCHEMA = {
         type: 'object',
         properties: {
           term: { type: 'string', description: '出典に書かれた表記のままの用語。30字以内' },
-          reading: { type: 'string', description: '読み（ひらがなまたはカタカナのみ）' },
+          reading: { type: 'string', description: '読み（ひらがなのみ。カタカナや英字は使わない）' },
           definition: { type: 'string', description: '出典の説明の範囲で、一般の方に伝わる1文。120字以内。句点は付けない' },
           sourceIds: { type: 'array', items: { type: 'string' }, description: '説明が書かれている出典の id' },
         },
@@ -113,6 +115,9 @@ export function buildStageBPrompt(theme, themeItems, extraInstructions) {
     '- 2〜3個の短い段落に分け、段落と段落の間は空行を1行入れて区切る',
     '- 何が起きたか、誰に影響しうるか、何が分かっていて何が分かっていないかを、出典どおりに書く',
     '- 攻撃の具体的な手順・コード・悪用の方法は書かない',
+    '- HTML タグ・リンク・画像・URL は書かない（出典は脚注で示す）',
+    '- 複数の組織・製品の出来事を1文に並べない。文ごとに「誰の（どの製品の）事案か」を主語として明記し、',
+    '  確認済みの事実と「可能性」「おそれ」を混ぜない。件数・規模は出典ごとに書き、「多数」のようにまとめない',
     ...CITATION_RULES,
     ...FAITHFULNESS_RULES,
     '- 専門知識のない方にも伝わる平易な日本語。専門用語は、出典に書かれた説明の範囲で短く補う',
@@ -120,6 +125,7 @@ export function buildStageBPrompt(theme, themeItems, extraInstructions) {
     '',
     '## すぐできる対策（actions）のルール',
     '- 出典に書かれている対策だけを、最大3件。出典に対策が書かれていなければ空配列にする（推測で作らない）',
+    '- 出典に修正版のバージョンや更新先、回避策、確認すべき点が書かれていれば、優先して対策に入れる（対象のバージョン・系統の条件も含める）',
     '- 対策は、読者（利用者・管理者）が自分で取れる行動だけ。運営会社・提供元・開発元が行った対応（修正版の公開、再発防止策、攻撃の遮断、',
     '  システムの改善など）は対策に入れない。それらは本文に事実として書く',
     '- who は「誰が」（読者側の人）、what は「何をするか」（「〜してください」「〜する」で終える）、condition は「どんな場合か」。出典で対象や条件が特定できない対策は入れない',
@@ -128,7 +134,8 @@ export function buildStageBPrompt(theme, themeItems, extraInstructions) {
     '## 用語（terms）のルール',
     '- 出典の中で意味が説明されている専門用語だけを、最大2件。出典に説明が無ければ空配列にする（自分の知識で定義しない）',
     '- 用語は、あなたが書いた本文（bodyMarkdown）にも出てくる語だけにする。本文に出てこない語は入れない',
-    '- term は出典に書かれた表記のまま。reading はひらがなまたはカタカナ。definition は出典の説明の範囲で1文',
+    '- term は出典に書かれた表記のまま。reading はひらがなのみ。definition は出典の説明の範囲で1文（句点・感嘆符・疑問符は入れない）',
+    '- 製品名・サービス名・組織名・事案名は用語に入れない。用語集に載せるのは「脆弱性」「ランサムウェア」のような、他の記事でも使える一般的なセキュリティ用語だけ',
     extraNote,
     '',
     '## 参照可能な一次情報',
@@ -153,17 +160,17 @@ async function runStageB(theme, itemsById) {
       const body = normalizeBoldEmphasis(normalizeLiteralNewlines(result.bodyMarkdown ?? ''));
       const actions = validateActions(result.actions, validIds);
       const terms = validateTerms(result.terms, validIds, itemsById, body);
-      for (const r of [...actions.rejected, ...terms.rejected]) {
-        console.warn(`  ⚠ 対策・用語を除外（${theme.title}）: ${r.reason}`);
-      }
       return {
         assembled: assembleThemeMarkdown(body, actions.accepted),
         terms: terms.accepted,
         actionCount: actions.accepted.length,
+        // 除外した項目は、最終的に採用された生成結果のぶんだけを main で報告する（再生成で捨てた試行は含めない）
+        rejected: [...actions.rejected, ...terms.rejected],
       };
     },
     evaluate: (result) => {
       const problems = evaluateStageBCitations(result.assembled, validIds);
+      problems.push(...findUnsafeMarkup(result.assembled));
       const uncited = findUncitedListItems(result.assembled);
       if (uncited.length > 0) {
         problems.push(`脚注のない箇条書きの行があります。各行の句点の手前に[^s-<id>]を付けてください: ${uncited.join(' | ')}`);
@@ -189,16 +196,32 @@ async function main() {
   const itemsById = new Map(items.map((i) => [i.id, i]));
 
   console.log(`Stage A: ${items.length}件からテーマをクラスタリング中...`);
-  const candidateThemes = await runStageA({ items, personaLine: STAGE_A_PERSONA, candidateKind: STAGE_A_CANDIDATE_KIND });
+  const stageAThemes = await runStageA({ items, personaLine: STAGE_A_PERSONA, candidateKind: STAGE_A_CANDIDATE_KIND });
+  // テーマ見出しは LLM 出力（外部テキストの影響を受ける）。見出し行・表・HTML を壊さない形にしてから使う
+  const candidateThemes = stageAThemes.map((t) => ({ ...t, title: sanitizeThemeTitle(t.title) }));
   console.log(`Stage A 完了: ${candidateThemes.length}テーマ`);
   candidateThemes.forEach((t) => console.log(`  - ${t.title} (${t.sourceIds.length}件の出典)`));
 
   console.log('Stage B: テーマごとに本文生成中...');
-  const { sections, themes } = await generateThemesWithDrop({
+  const { sections, themes, droppedTitles } = await generateThemesWithDrop({
     candidateThemes,
     runTheme: (theme) => runStageB(theme, itemsById),
     minThemes: MIN_THEMES,
   });
+
+  // 通知経路のない劣化（テーマの除外・対策や用語の除外・対策が全て空）を、Actions のアノテーションで見えるようにする
+  const warn = (message) => console.warn(`::warning::[curate-security] ${message}`);
+  if (droppedTitles.length > 0) {
+    warn(`出典チェックを満たせず除外したテーマが${droppedTitles.length}件あります: ${droppedTitles.join(' / ')}（その出典は7日間、収集の既出扱いになります）`);
+  }
+  for (const s of sections) {
+    if (s.rejected.length === 0) continue;
+    const detail = s.rejected.slice(0, 3).map((r) => `${r.reason}［${JSON.stringify(r.item).slice(0, 80)}］`).join(' / ');
+    warn(`「${s.title}」で対策・用語を${s.rejected.length}件除外しました: ${detail}`);
+  }
+  if (sections.every((s) => s.actionCount === 0)) {
+    warn('すべてのテーマで「すぐできる対策」が0件でした。出典に対策が書かれていないか、検証で除外されています。');
+  }
 
   const glossary = collectDailyTerms(sections.map((s) => s.terms));
   const glossarySection = assembleGlossarySection(glossary);

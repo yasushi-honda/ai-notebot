@@ -42,20 +42,31 @@ function removeNoise(html) {
 }
 
 function collectBlocks(cleaned) {
-  const blocks = [...cleaned.matchAll(new RegExp(`<(${BLOCK_TAGS})\\b[^>]*>([\\s\\S]*?)</\\1>`, 'gi'))];
   const seen = new Set();
   const parts = [];
-  for (const m of blocks) {
-    const inner = m[2];
-    // 入れ子（li の中の p 等）で同じ文を二重に拾わないよう、子ブロックを含む要素は子に任せる
-    if (new RegExp(`<(${BLOCK_TAGS})\\b`, 'i').test(inner)) continue;
-    const nonLink = toPlainText(inner.replace(/<a\b[\s\S]*?<\/a>/gi, ' '));
-    if (nonLink.length < MIN_NON_LINK_CHARS) continue; // メニュー・パンくず等のリンクだけの項目
-    const text = toPlainText(inner);
-    if (seen.has(text)) continue;
-    seen.add(text);
-    parts.push(text);
+  const blockPattern = () => new RegExp(`<(${BLOCK_TAGS})\\b[^>]*>([\\s\\S]*?)</\\1>`, 'gi');
+
+  function visit(fragment) {
+    for (const m of fragment.matchAll(blockPattern())) {
+      const tag = m[1].toLowerCase();
+      const inner = m[2];
+      // 入れ子（li の中の p 等）は子ブロックを再帰して拾う（外側を捨てると中身まで失う）
+      if (new RegExp(`<(${BLOCK_TAGS})\\b`, 'i').test(inner)) {
+        visit(inner);
+        continue;
+      }
+      const nonLink = toPlainText(inner.replace(/<a\b[\s\S]*?<\/a>/gi, ' '));
+      // メニュー・パンくず等のリンクだけの項目は落とす。ただし見出しは短くても残す
+      // （「対策」「Mitigations」のような短い見出しが、対策節の選択（pickExcerpt）の手がかりになる）
+      const isHeading = /^h[1-6]$/.test(tag);
+      if (nonLink.length < (isHeading ? 2 : MIN_NON_LINK_CHARS)) continue;
+      const text = toPlainText(inner);
+      if (seen.has(text)) continue;
+      seen.add(text);
+      parts.push(text);
+    }
   }
+  visit(cleaned);
   return parts.join(' ');
 }
 

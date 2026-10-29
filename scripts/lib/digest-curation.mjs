@@ -385,13 +385,33 @@ export function slugifyTags(themes) {
   return themes.map((t) => t.title.replace(/[「」『』\s]/g, '').slice(0, 20));
 }
 
+/**
+ * 出典タイトル・URL は外部フィード由来で、攻撃者が書きうる文字列。Astro は Markdown 内の生 HTML をそのまま
+ * 通すため、タイトルの `<img onerror=…>` や、URL に仕込んだ `)` による Markdown リンクの打ち切りが
+ * そのままサイトに出る（RSS の CDATA・実体参照で実際に生の `<script>` がタイトルに残ることを確認済み）。
+ * タイトルは < > [ ] を全角に、URL は構造を壊す文字をパーセントエンコードする。
+ */
+export function sanitizeFootnoteTitle(title) {
+  return String(title)
+    .replace(/</g, '＜')
+    .replace(/>/g, '＞')
+    .replace(/\[/g, '［')
+    .replace(/\]/g, '］')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function sanitizeFootnoteUrl(url) {
+  return String(url).replace(/[()<>\s"'`]/g, (c) => `%${c.charCodeAt(0).toString(16).toUpperCase().padStart(2, '0')}`);
+}
+
 export function buildFootnoteDefs(usedIds, itemsById) {
   return [...usedIds]
     .sort()
     .map((id) => {
       const item = itemsById.get(id);
       if (!item) return null;
-      return `[^${id}]: [${item.title}](${item.url}) — ${item.source}（${item.publishedAt.slice(0, 10)}）`;
+      return `[^${id}]: [${sanitizeFootnoteTitle(item.title)}](${sanitizeFootnoteUrl(item.url)}) — ${item.source}（${item.publishedAt.slice(0, 10)}）`;
     })
     .filter(Boolean)
     .join('\n');

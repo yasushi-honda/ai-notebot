@@ -32,6 +32,7 @@ test('validateActions: 空・長すぎ・禁止文字・存在しない id・id 
   const cases = [
     [action({ who: '' }), /who が空/],
     [action({ what: 'あ'.repeat(91) }), /what が長すぎ/],
+    [action({ who: 'あ'.repeat(61) }), /who が長すぎ/],
     [action({ what: '[^s-aaaaaaaaaa] を見る' }), /使えない文字/],
     [action({ condition: '改行\nあり' }), /使えない文字/],
     [action({ what: '<script>を実行' }), /使えない文字/],
@@ -40,12 +41,31 @@ test('validateActions: 空・長すぎ・禁止文字・存在しない id・id 
     [action({ who: '株式会社Eストアー' }), /提供元・運営会社側/],
     [action({ who: '運営会社' }), /提供元・運営会社側/],
     [action({ what: '悪用された脆弱性の修正および攻撃経路の遮断' }), /行動の形/],
+    [action({ what: '更新してください。その後に確認する' }), /文の区切り/],
+    [action({ what: 'Update now. Then reboot してください' }), /文の区切り/],
+    [action({ what: '更新してください\\' }), /使えない文字/],
   ];
   for (const [input, pattern] of cases) {
     const { accepted, rejected } = validateActions([input], valid);
     assert.equal(accepted.length, 0, JSON.stringify(input));
     assert.match(rejected[0].reason, pattern);
   }
+});
+
+test('validateActions: 「〜を行う」で終わる行動も通る', () => {
+  assert.equal(validateActions([action({ what: '認証の追加強化を行う' })], valid).accepted.length, 1);
+});
+
+test('validateActions: 読者側にもなりうる「運営者」「開発者」は提供元扱いにしない', () => {
+  for (const who of ['PHP を使うウェブサイトの運営者', 'アプリの開発者']) {
+    assert.equal(validateActions([action({ who })], valid).accepted.length, 1, who);
+  }
+});
+
+test('validateTerms: 定義の途中に句点があると除外される（出典ゲートが文を分割して記事全体が失敗するのを防ぐ）', () => {
+  const out = validateTerms([term({ definition: 'システムの弱点のこと。悪用されると情報が漏れる' })], valid, items);
+  assert.equal(out.accepted.length, 0);
+  assert.match(out.rejected[0].reason, /文の区切り/);
 });
 
 test('validateActions: 上限件数で切り、配列でない入力は空として扱う', () => {
@@ -72,7 +92,8 @@ test('validateTerms: 本文を渡したときは、本文に出てこない用�
 test('validateTerms: 出典に無い用語・読みの形式違反・存在しない id は除外される', () => {
   const cases = [
     [term({ term: 'ゼロデイ' }), /出典の本文に見当たりません/],
-    [term({ reading: 'Brotli' }), /ひらがな・カタカナ以外/],
+    [term({ reading: 'Brotli' }), /ひらがな以外/],
+    [term({ reading: 'ブロトリ' }), /ひらがな以外/],
     [term({ reading: '' }), /reading が空/],
     [term({ sourceIds: ['s-ffffffffff'] }), /与えられていない id/],
     [term({ definition: 'あ'.repeat(121) }), /definition が長すぎ/],
@@ -121,4 +142,46 @@ test('collectDailyTerms / assembleGlossarySection: 重複を除いて上限ま�
   const section = assembleGlossarySection([term()]);
   assert.match(section, /^## 今日の用語\n\n- <strong>Brotli<\/strong>（ぶろとり）：データを圧縮する方式\[\^s-aaaaaaaaaa\]。$/);
   assert.equal(checkCitations({ markdown: section, validIds: valid, bodyOnly: true }).ok, true);
+});
+
+import { findUnsafeMarkup, sanitizeThemeTitle } from '../lib/security-article.mjs';
+import { buildFootnoteDefs, sanitizeFootnoteTitle, sanitizeFootnoteUrl } from '../lib/digest-curation.mjs';
+
+test('findUnsafeMarkup: <strong> 以外の HTML・画像・リンク・参照定義・URL を検出し、通常の本文と <strong> は通す', () => {
+  const safe = '<strong>Cisco</strong> の脆弱性です[^s-aaaaaaaaaa]。\n\n- 更新してください[^s-aaaaaaaaaa]。';
+  assert.deepEqual(findUnsafeMarkup(safe), []);
+  const cases = [
+    ['<img src=x onerror=alert(1)>', /HTML タグ/],
+    ['<script>alert(1)</script>', /HTML タグ/],
+    ['<a href="https://evil.test">x</a>', /HTML タグ/],
+    ['3 < 5 です', /HTML タグ/],
+    ['![](https://evil.test/x.png)', /画像/],
+    ['[ここ](javascript:alert(1))', /リンクの記法/],
+    ['[ref]: https://evil.test', /リンク参照/],
+    ['詳しくは https://evil.test を見てください', /URL/],
+    ['www.evil.test', /URL/],
+  ];
+  for (const [input, pattern] of cases) {
+    const problems = findUnsafeMarkup(input);
+    assert.ok(problems.some((p) => pattern.test(p)), `${input} → ${problems.join(' / ')}`);
+  }
+  // 脚注参照 [^s-xxx] はリンク・参照定義として誤検出しない
+  assert.deepEqual(findUnsafeMarkup('本文です[^s-aaaaaaaaaa][^s-bbbbbbbbbb]。'), []);
+});
+
+test('sanitizeThemeTitle: HTML・表の区切り・改行・見出し記号を無害化する', () => {
+  assert.equal(sanitizeThemeTitle('<img src=x onerror=1>脆弱性'), '＜img src=x onerror=1＞脆弱性');
+  assert.equal(sanitizeThemeTitle('A|B\nC'), 'A B C');
+  assert.equal(sanitizeThemeTitle('## 見出し'), '見出し');
+});
+
+test('buildFootnoteDefs: 出典タイトルの HTML・リンク記法と、URL の括弧・空白は無害化される（RSS の CDATA で生の <script> が残る）', () => {
+  assert.equal(sanitizeFootnoteTitle('A <script>alert(1)</script> [x](javascript:1)'), 'A ＜script＞alert(1)＜/script＞ ［x］(javascript:1)');
+  assert.equal(sanitizeFootnoteUrl('https://e.test/a) [x](javascript:alert(1)'), 'https://e.test/a%29%20[x]%28javascript:alert%281%29');
+  const defs = buildFootnoteDefs(new Set(['s-aaaaaaaaaa']), new Map([['s-aaaaaaaaaa', {
+    title: '<img src=x onerror=alert(1)>', url: 'https://e.test/a) [x](javascript:alert(1)', source: 'S', publishedAt: '2026-10-29T00:00:00Z',
+  }]]));
+  assert.ok(!/<img|onerror=alert\(1\)>/.test(defs), defs);
+  assert.ok(!defs.includes('](javascript:'), defs);
+  assert.match(defs, /^\[\^s-aaaaaaaaaa\]: \[＜img src=x onerror=alert\(1\)＞\]\(https:\/\/e\.test\/a%29%20/);
 });

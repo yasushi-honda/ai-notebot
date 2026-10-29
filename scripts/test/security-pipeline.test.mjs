@@ -54,8 +54,13 @@ test('build-security: 収集→生成→出典検証が通り、記事・アー�
     const post = await readFile(postPath, 'utf8');
 
     // 存在しない id を引用した対策と、出典に無い用語は検証で除外される（警告ログが出る）
-    assert.match(r.stderr, /対策・用語を除外（テーマ乙不正）: このテーマに与えられていない id/);
+    // 劣化は Actions のアノテーション（::warning::）で見える（通知経路が無いため）
+    assert.match(r.stderr, /::warning::\[curate-security\] 「テーマ乙不正」で対策・用語を2件除外しました/);
+    assert.match(r.stderr, /このテーマに与えられていない id/);
     assert.match(r.stderr, /用語が引用した出典の本文に見当たりません/);
+    // スタブ環境では本文取得ができないため、要約の補強の失敗も警告される（理由は URL を除いてまとめられる）
+    assert.match(r.stderr, /::warning::\[collect-security\] 要約の補強が\d+件中0件しか成功しませんでした（失敗の内訳: [^×]+×\d+）/);
+    assert.ok(!/DNS解決先が許可されないアドレスです: https/.test(r.stderr), '集計キーに URL が混ざらない');
     assert.ok(!post.includes('s-ffffffffff'));
     assert.ok(!post.includes('出典に無い語'));
     // 通った対策・用語は本文と frontmatter の両方に出る

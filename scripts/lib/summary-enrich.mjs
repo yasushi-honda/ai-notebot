@@ -16,7 +16,8 @@
  * @param {number} [opts.minSummaryLength] これ未満の要約を補う
  * @param {number} [opts.maxFetches] 取得する件数の上限
  * @param {number} [opts.concurrency] 同時取得数
- * @returns {Promise<{items: Array, attempted: number, enriched: number}>}
+ * @returns {Promise<{items: Array, attempted: number, enriched: number, failures: Record<string, number>}>}
+ *   failures は失敗の理由ごとの件数（HTTP ステータス・本文なし・例外など）。運用者が原因を見分けられるようにする
  */
 export async function enrichSummaries(
   items,
@@ -31,6 +32,12 @@ export async function enrichSummaries(
   const result = items.map((item) => ({ ...item }));
   let enriched = 0;
   let cursor = 0;
+  const failures = {};
+  // 理由に URL や詳細が混ざると集計がばらけるため、URL と括弧書きを落として種類ごとにまとめる
+  const fail = (reason) => {
+    const key = String(reason).replace(/https?:\/\/\S+/g, '').split('（')[0].replace(/[:：\s]+$/, '').trim() || '取得失敗';
+    failures[key] = (failures[key] ?? 0) + 1;
+  };
 
   async function worker() {
     while (cursor < targets.length) {
@@ -38,17 +45,24 @@ export async function enrichSummaries(
       let resolved;
       try {
         resolved = await resolve(item.url);
-      } catch {
-        continue; // 取得失敗は元の要約のまま
+      } catch (err) {
+        fail(`例外: ${err?.name ?? 'Error'}`); // 取得失敗は元の要約のまま。原因は集計して見せる
+        continue;
       }
-      const excerpt = resolved?.ok ? (resolved.excerpt ?? '').trim() : '';
+      if (!resolved?.ok) {
+        fail(resolved?.httpStatus ? `HTTP ${resolved.httpStatus}` : (resolved?.reason ?? resolved?.error ?? '取得失敗'));
+        continue;
+      }
+      const excerpt = (resolved.excerpt ?? '').trim();
       if (excerpt.length > (item.summary ?? '').length) {
         result[index].summary = excerpt;
         enriched++;
+      } else {
+        fail('抜粋が元の要約より短い');
       }
     }
   }
   await Promise.all(Array.from({ length: Math.min(concurrency, targets.length) }, worker));
 
-  return { items: result, attempted: targets.length, enriched };
+  return { items: result, attempted: targets.length, enriched, failures };
 }
