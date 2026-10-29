@@ -1,6 +1,6 @@
 # ハンドオフ（最新）
 
-- セッション: 2026-10-29（PR #67 の再監査、セキュリティ版「毎日のセキュリティニュース」の追加。PR #69・#70・#71 マージ、本番反映済み）
+- セッション: 2026-10-29（PR #67 の再監査、セキュリティ版「毎日のセキュリティニュース」の追加、同ページのデザイン改善。PR #69・#70・#71・#73 マージ、本番反映済み）
 - 更新日: 2026-10-29
 
 ## セッション概要
@@ -14,6 +14,14 @@ decision-maker の依頼（毎日のセキュリティニュースと、すぐ�
 - **PR #70（挙動を変えない共通化）**: `lib/collect-core.mjs`（収集をプロファイルで差し替え可能に）、`lib/digest-curation.mjs`（Stage A・引用付き再生成・テーマ除外・脚注定義・共通の執筆ルール）、`lib/orchestrate.mjs`（失敗しても本体を止めない・復元する仕組み。合計時間予算を追加）、`validate-citations` の type 表、サイトのパンくず・検証ラベル・ナビ・`content.config.ts`。意図した挙動変更は 2 点のみ（不明な `--type` は exit 1、復元失敗時は exit 1）
 - **PR #71（セキュリティ版）**: 収集 9 ソース（JPCERT/CC・IPA・JVN・CISA・Security NEXT・ScanNetSecurity・piyolog・BleepingComputer・The Hacker News）、要約が短い項目は元ページ本文（`article`/`main` 優先・対策節優先、最大 1500 字）で補強、Stage B が本文＋対策＋用語を構造化して返し検証してから組み立てる、`/security/`・`/security/YYYY-MM-DD/`・`/security/glossary/`、`daily.yml` に `security_exists` 判定・失敗通知・存在するパスだけの `git add`、ADR、初回記事（10/29）
 - **本番反映**: `gh workflow run daily.yml -f skip_if_exists=true` を実行（生成はスキップ、ビルドとデプロイのみ）。本番の `/security/`・`/security/2026-10-29/`・`/security/glossary/` が 200 であることを curl で確認
+
+### セキュリティ版ページのデザイン改善（PR #73）
+decision-maker の依頼（各セクションを目立たせる、最上部に「今日のポイント」を置く）。Web デザイナー視点の所見を出し、パネルは「ダークパネル型」、内容は「テーマ見出し1文＋今日まずやること」に確定。詳細: ADR §8。
+
+- **今日のポイント**: Stage B が `headline`（1文・60字以内）を返し、対策と同様に個別検証（長さ・禁止文字・文区切り・テーマ内の id・生 HTML 拒否）してから `## 今日のポイント` として先頭に組み立てる。「今日まずやること」は検証済み対策の各テーマ先頭1件（最大4件）の再掲で、新しい主張は含まない。見出しが全滅でも対策があれば「今日まずやること」だけで出す。Stage A に「影響が大きく緊急性の高い順」を足した（`orderingNote`、AI 版のプロンプトは不変）
+- **カード化**: 本文 Markdown に HTML は書かない（出典ゲートが落とすため）。描画時に `site/src/lib/rehype-security-sections.mjs` が h2 ごとに `<section class="sec sec-point|sec-theme|sec-glossary">` で包む。CSS はダークパネル・番号付きテーマカード・対策の琥珀囲み
+- **品質ゲート**: codex review 1 回（P2×1＝テーマ名の「。！？」「Inc. 」が本文の行に入ると出典ゲートで公開が止まる→区切りを除去、code-reviewer の High と一致）。silent-failure-hunter（見出し除外の警告を対策・用語と分離、N/M テーマ分の縮小通知、CI でカード化の検知）。Low は用語見出しのドット色・脚注バッジのコントラスト・グリッドの `minmax(0,1fr)` を修正。未対応の限界: 見出し1文の内容が出典に書かれているかは機械検証できない
+- **検証**: テスト 400 件 PASS、`npm run check` 0 errors、ビルド 343 ページ、既存 339 ページは変更前後で同一（CSS ハッシュ正規化）、Playwright で 1280px/375px 確認（横スクロールなし）。本番は curl で `/security/2026-10-29/` 200 と `sec-point` 1 件を確認（見た目の最終確認は decision-maker の目視）
 
 ### 実データでの確認（10/29）
 - 収集: 9 ソース全て取得、51 件（要約が短い 27 件を本文の抜粋で補強）。生成は約 10 秒、出典検証は裏取り率 100%
@@ -32,8 +40,8 @@ decision-maker の依頼（毎日のセキュリティニュースと、すぐ�
 | 項目 | 状態 | 備考 |
 |------|------|------|
 | AGENTS.md（CLAUDE.md の実体）↔ 実装 | ✅ | セキュリティ版のアーキテクチャとコマンドを追記済み |
-| ADR | ✅ | `adr-2026-10-29-security-digest.md` を新規作成、実データでの確認と限界を追記 |
-| 完了ステータス一致 | ✅ | PR #69・#70・#71 マージ済み、本番反映済み |
+| ADR | ✅ | `adr-2026-10-29-security-digest.md` を新規作成、実データでの確認と限界、§8 ページのデザインと今日のポイントを追記 |
+| 完了ステータス一致 | ✅ | PR #69・#70・#71・#73 マージ済み、本番反映済み |
 | 記載の誤りの訂正 | ✅ | 計画段階で「`gh workflow run daily.yml` で既存の版はスキップされる」と書いたのは誤り（入力なしの手動実行は全再生成）。`skip_if_exists=true` が必要で、`daily.yml` の失敗通知 Issue の文面と PR #71 の本文には正しい手順を記載した |
 
 ## Git状態
@@ -41,16 +49,16 @@ decision-maker の依頼（毎日のセキュリティニュースと、すぐ�
 | 項目 | 状態 |
 |------|------|
 | 未コミット変更 | なし（本ハンドオフ更新を除く） |
-| 未プッシュコミット | なし（`main` = `origin/main` = `70a117c`、本ハンドオフ PR を除く） |
-| CI/CD | ✅ PR #69〜#71 とも test・GitGuardian・CodeRabbit が PASS。本番反映の daily.yml 手動実行（run 40795085235）も success |
+| 未プッシュコミット | なし（`main` = `origin/main` = `6866d07`、本ハンドオフ PR を除く） |
+| CI/CD | ✅ PR #69〜#71・#73 とも test・GitGuardian・CodeRabbit が PASS。本番反映の daily.yml 手動実行（run 40795085235、PR #73 後は run 40800131479）も success |
 
 ## 品質ゲート
 
 | 項目 | 状態 |
 |------|------|
-| codex review | PR #70: 2 回（medium、high とも指摘 0 件）。PR #71: 3 回（1 回目 P2×3、2 回目 P1×2＋P2×1、3 回目はセキュリティ指摘 0 件・P2×2 を反映）。**3 回目は上限（2 回）超過のため AskUserQuestion で承認を得て `CODEX_REVIEW_APPROVED=1` を付けて実行** |
+| codex review | PR #70: 2 回（medium、high とも指摘 0 件）。PR #73: 1 回（P2×1 を反映）。PR #71: 3 回（1 回目 P2×3、2 回目 P1×2＋P2×1、3 回目はセキュリティ指摘 0 件・P2×2 を反映）。**3 回目は上限（2 回）超過のため AskUserQuestion で承認を得て `CODEX_REVIEW_APPROVED=1` を付けて実行** |
 | 専門レビュー（pr-review-toolkit、sonnet、read-only） | PR #70: code-reviewer（High/Medium 0）、silent-failure-hunter（HIGH 1＝復元の二重実行→修正）、pr-test-analyzer（Critical 2＝既出 URL の窓の境界・しきい値未満で書かない→テスト追加）。PR #71: code-reviewer（Medium 1＝定義の句点で記事全体が失敗→修正）、silent-failure-hunter（Medium 4＝除外・補強失敗・公的機関全滅が無通知→`::warning::` 化）、自動セキュリティレビュー（stored XSS→修正） |
-| テスト | ✅ 386 件全 PASS（PR #70 時点 350 ＋ セキュリティ版 36）、`npm run check` エラー 0、ビルド 343 ページ（既存 340＋セキュリティ 3）。既存 340 ページの `dist` は PR #70 の前後で `diff -r` 差分 0 |
+| テスト | ✅ 400 件全 PASS（PR #70 時点 350 ＋ セキュリティ版 36 ＋ PR #73 で 14）、`npm run check` エラー 0、ビルド 343 ページ（既存 340＋セキュリティ 3）。既存 340 ページの `dist` は PR #70 の前後で `diff -r` 差分 0 |
 | 実機動作確認 | ✅ 本番 URL を curl で確認（Playwright は使っていない）。ローカルでは Playwright で記事・用語集の表示を確認。実データでの生成・出典検証・出典忠実性の監査は上記 |
 
 ## 同根再発スキャン（§4.6）と対症療法判定（§4.7）
@@ -125,7 +133,7 @@ decision-maker の依頼（毎日のセキュリティニュースと、すぐ�
 
 ## 最終結論
 
-✅ **セッション終了可** — PR #67 の再監査を完了し、セキュリティ版を追加して本番に反映した（PR #69・#70・#71 マージ、本番 URL 200 確認）。残りは日時・decision-maker の確認待ちのみ。
+✅ **セッション終了可** — PR #67 の再監査を完了し、セキュリティ版を追加して本番に反映した（PR #69・#70・#71・#73 マージ、本番 URL 200 確認）。ページのデザイン改善（今日のポイントパネル・カード化）も本番反映済み。残りは日時・decision-maker の確認待ちのみ。
 
 - OPEN PR: 本ハンドオフ PR のみ / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 12
 - 次回の起点: 条件待ち 1（2026-10-30 07:00 JST の自動実行でのセキュリティ版の初回自動生成の確認）。セッション内の予約は閉じると消えるため、手動で「セキュリティ版の初回自動生成を確認して」と指示する
