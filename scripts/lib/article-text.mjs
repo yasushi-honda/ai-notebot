@@ -46,24 +46,31 @@ function collectBlocks(cleaned) {
   const parts = [];
   const blockPattern = () => new RegExp(`<(${BLOCK_TAGS})\\b[^>]*>([\\s\\S]*?)</\\1>`, 'gi');
 
+  const isHeading = (tag) => /^h[1-6]$/.test(tag);
+
+  function push(fragment, heading) {
+    const nonLink = toPlainText(fragment.replace(/<a\b[\s\S]*?<\/a>/gi, ' '));
+    // メニュー・パンくず等のリンクだけの項目は落とす。ただし見出しは短くても残す
+    // （「対策」「Mitigations」のような短い見出しが、対策節の選択（pickExcerpt）の手がかりになる）
+    if (nonLink.length < (heading ? 2 : MIN_NON_LINK_CHARS)) return;
+    const text = toPlainText(fragment);
+    if (seen.has(text)) return;
+    seen.add(text);
+    parts.push(text);
+  }
+
   function visit(fragment) {
     for (const m of fragment.matchAll(blockPattern())) {
       const tag = m[1].toLowerCase();
       const inner = m[2];
       // 入れ子（li の中の p 等）は子ブロックを再帰して拾う（外側を捨てると中身まで失う）
       if (new RegExp(`<(${BLOCK_TAGS})\\b`, 'i').test(inner)) {
+        // 親の直下のテキスト（子ブロックの外側）も残す。<li>更新してください<p>手順を確認</p></li> の前者を失わない
+        push(inner.replace(blockPattern(), ' '), isHeading(tag));
         visit(inner);
         continue;
       }
-      const nonLink = toPlainText(inner.replace(/<a\b[\s\S]*?<\/a>/gi, ' '));
-      // メニュー・パンくず等のリンクだけの項目は落とす。ただし見出しは短くても残す
-      // （「対策」「Mitigations」のような短い見出しが、対策節の選択（pickExcerpt）の手がかりになる）
-      const isHeading = /^h[1-6]$/.test(tag);
-      if (nonLink.length < (isHeading ? 2 : MIN_NON_LINK_CHARS)) continue;
-      const text = toPlainText(inner);
-      if (seen.has(text)) continue;
-      seen.add(text);
-      parts.push(text);
+      push(inner, isHeading(tag));
     }
   }
   visit(cleaned);

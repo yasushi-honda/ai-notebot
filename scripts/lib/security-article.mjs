@@ -223,15 +223,24 @@ export function findUnsafeMarkup(markdown) {
   if (/<(?!\/?strong>)/i.test(markdown)) problems.push('<strong> 以外の HTML タグ（または < 記号）が含まれています');
   if (/!\[/.test(markdown)) problems.push('画像の記法が含まれています');
   if (/\]\(/.test(markdown)) problems.push('リンクの記法 [文](URL) が含まれています');
-  if (/^\s*\[[^\]^\n]+\]:\s*\S/m.test(markdown)) problems.push('リンク参照の定義行が含まれています');
+  // 参照リンクの定義は、行頭でなくても（引用・リスト内）、ラベルに ^ を含んでも成立する。本文に定義は不要なので、
+  // 「]: 」の後に何かが続く形をすべて拒否する（脚注定義は本文ではなく buildFootnoteDefs が別に付ける）
+  if (/\]:\s*\S/.test(markdown)) problems.push('リンク参照の定義（]: …）が含まれています');
+  if (/\]\s*\[(?!\^)/.test(markdown)) problems.push('参照リンクの記法 [文][ラベル] が含まれています');
   if (/(https?:\/\/|www\.)/i.test(markdown)) problems.push('本文に URL が含まれています（出典は脚注で示すため不要）');
   return problems;
 }
 
-/** テーマ見出し（Stage A の LLM 出力）を、見出し行・表のセル・HTML を壊さない形にする。 */
+/**
+ * テーマ見出し（Stage A の LLM 出力）を、見出し行・表のセル・HTML・Markdown リンクを壊さない形にする。
+ * 見出しは本文の検査（findUnsafeMarkup）の外で組み立てられるため、ここで Markdown 構文も無害化する
+ * （`[注意](javascript:…)` のような見出しがそのままリンクとして描画されるのを防ぐ）。
+ */
 export function sanitizeThemeTitle(title) {
+  const fullWidth = { '<': '＜', '>': '＞', '[': '［', ']': '］', '(': '（', ')': '）', '`': '｀', '*': '＊', '_': '＿', '!': '！', '\\': '＼' };
   return String(title)
-    .replace(/[<>]/g, (c) => (c === '<' ? '＜' : '＞'))
+    .replace(/(https?:\/\/|www\.)\S*/gi, '') // 見出しに URL は不要（自動リンクにもなる）
+    .replace(/[<>\[\]()`*_!\\]/g, (c) => fullWidth[c])
     .replace(/[|\r\n]+/g, ' ')
     .replace(/^#+\s*/, '')
     .trim();

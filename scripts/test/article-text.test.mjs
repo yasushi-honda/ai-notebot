@@ -49,3 +49,10 @@ test('pickExcerpt: 短ければそのまま、長くて対策節が無ければ�
   assert.ok(out.startsWith(filler(700)));
   assert.match(out, /III\. 対策 更新してください/);
 });
+
+test('extractMainText: 子ブロックを含む親要素の直下のテキストも残す（<li>更新してください<p>手順を確認</p></li>）', () => {
+  const html = `<body><ul><li>バージョン7.0.11へ更新してください。<p>更新時は提供元の手順を確認してください。</p></li></ul></body>`;
+  const text = extractMainText(html, 1500);
+  assert.match(text, /バージョン7\.0\.11へ更新してください/);
+  assert.match(text, /更新時は提供元の手順を確認してください/);
+});

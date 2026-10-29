@@ -160,6 +160,11 @@ test('findUnsafeMarkup: <strong> 以外の HTML・画像・リンク・参照定
     ['[ref]: https://evil.test', /リンク参照/],
     ['詳しくは https://evil.test を見てください', /URL/],
     ['www.evil.test', /URL/],
+    // codex の再現: ラベルに ^ を含む参照リンク定義、引用・リスト内の定義、参照リンクの使用
+    ['[注意][a^b][^s-aaaaaaaaaa]。\n\n[a^b]: javascript:alert(1) "[^s-aaaaaaaaaa]"', /リンク参照の定義/],
+    ['> [a]: javascript:alert(1)', /リンク参照の定義/],
+    ['- [a]: javascript:alert(1)', /リンク参照の定義/],
+    ['[ここ][a]', /参照リンクの記法/],
   ];
   for (const [input, pattern] of cases) {
     const problems = findUnsafeMarkup(input);
@@ -167,6 +172,13 @@ test('findUnsafeMarkup: <strong> 以外の HTML・画像・リンク・参照定
   }
   // 脚注参照 [^s-xxx] はリンク・参照定義として誤検出しない
   assert.deepEqual(findUnsafeMarkup('本文です[^s-aaaaaaaaaa][^s-bbbbbbbbbb]。'), []);
+});
+
+test('sanitizeThemeTitle: Markdown のリンク・画像・強調・コードと URL も無害化する（見出しは本文の検査の外で組み立てられる）', () => {
+  const evil = sanitizeThemeTitle('[注意](javascript:alert(1)) ![x](https://evil.test/a.png) `code` **強調** https://evil.test/x');
+  assert.ok(!/[\[\]()`*<>]/.test(evil), evil);
+  assert.ok(!/https?:|evil\.test/.test(evil), evil);
+  assert.equal(sanitizeThemeTitle('PHP（8.4）の脆弱性'), 'PHP（8.4）の脆弱性');
 });
 
 test('sanitizeThemeTitle: HTML・表の区切り・改行・見出し記号を無害化する', () => {
