@@ -203,9 +203,10 @@ export function formatCandidateList(items) {
  * @param {Array} opts.items 候補（アーカイブの items）
  * @param {string} opts.personaLine 編集者のペルソナ文（1行）
  * @param {string} opts.candidateKind 「本日収集した○○の候補一覧」の○○
+ * @param {string} [opts.orderingNote] テーマの並び順への追加指示（例: 重要度順）。未指定ならプロンプトは従来どおり
  * @param {Function} [opts.generate] テキスト生成関数（既定は Vertex AI）
  */
-export async function runStageA({ items, personaLine, candidateKind, generate = generateText }) {
+export async function runStageA({ items, personaLine, candidateKind, orderingNote, generate = generateText }) {
   const pool = items.slice(0, MAX_CANDIDATES_FOR_STAGE_A);
   const prompt = [
     personaLine,
@@ -214,6 +215,7 @@ export async function runStageA({ items, personaLine, candidateKind, generate = 
     `候補から重複や瑣末な話題を避けつつ ${MIN_THEMES}〜${MAX_THEMES} 個のテーマにクラスタリングしてください。`,
     '各テーマには、関連する候補の id を2〜6件、必ず下のリストに実在する id だけを使って sourceIds に入れてください。',
     '同じ id を複数テーマにまたがって使っても構いません。',
+    ...(orderingNote ? [orderingNote] : []),
     '',
     '## 候補一覧',
     formatCandidateList(pool),

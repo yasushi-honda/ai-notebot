@@ -197,3 +197,84 @@ test('buildFootnoteDefs: 出典タイトルの HTML・リンク記法と、URL �
   assert.ok(!defs.includes('](javascript:'), defs);
   assert.match(defs, /^\[\^s-aaaaaaaaaa\]: \[＜img src=x onerror=alert\(1\)＞\]\(https:\/\/e\.test\/a%29%20/);
 });
+
+import { validateHeadline, assembleHighlightsSection, MAX_HIGHLIGHT_ACTIONS } from '../lib/security-article.mjs';
+
+const headline = (over = {}) => ({ text: 'Brotli の脆弱性が見つかり、更新が必要', sourceIds: ['s-aaaaaaaaaa'], ...over });
+
+test('validateHeadline: 正常な見出し1文は通り、末尾の句点は落とす', () => {
+  const r = validateHeadline('Brotli の脆弱性が見つかりました。', ['s-aaaaaaaaaa'], valid);
+  assert.equal(r.rejected, null);
+  assert.deepEqual(r.accepted, { text: 'Brotli の脆弱性が見つかりました', sourceIds: ['s-aaaaaaaaaa'] });
+});
+
+test('validateHeadline: 空・長すぎ・禁止文字・文の区切り・URL・HTML・存在しない id・id なしは理由つきで除外される', () => {
+  const cases = [
+    ['', ['s-aaaaaaaaaa'], /headline が空/],
+    ['あ'.repeat(61), ['s-aaaaaaaaaa'], /headline が長すぎ/],
+    ['脚注 [^s-aaaaaaaaaa] を含む', ['s-aaaaaaaaaa'], /使えない文字/],
+    ['一文目です。二文目です', ['s-aaaaaaaaaa'], /文の区切り/],
+    ['詳細は https://evil.test へ', ['s-aaaaaaaaaa'], /URL/],
+    ['<b>強調</b>の見出し', ['s-aaaaaaaaaa'], /使えない文字/],
+    ['見出しです', ['s-ffffffffff'], /与えられていない id/],
+    ['見出しです', [], /sourceIds が空/],
+    [undefined, ['s-aaaaaaaaaa'], /headline が空/],
+  ];
+  for (const [text, ids, pattern] of cases) {
+    const r = validateHeadline(text, ids, valid);
+    assert.equal(r.accepted, null, String(text));
+    assert.match(r.rejected, pattern);
+  }
+});
+
+const entry = (title, over = {}) => ({ title, headline: headline(), actions: [], ...over });
+
+test('assembleHighlightsSection: テーマ見出し1文を並べ、検証済みの対策があれば「今日まずやること」を足す。全行が出典ゲートを通る', () => {
+  const md = assembleHighlightsSection([
+    entry('テーマ甲', { actions: [action(), action({ what: '設定を見直してください' })] }),
+    entry('テーマ乙', { headline: headline({ text: '別の出来事', sourceIds: ['s-bbbbbbbbbb'] }), actions: [action({ sourceIds: ['s-bbbbbbbbbb'] })] }),
+  ]);
+  assert.match(md, /^## 今日のポイント\n\n- <strong>テーマ甲<\/strong>：Brotli の脆弱性が見つかり、更新が必要\[\^s-aaaaaaaaaa\]。\n- <strong>テーマ乙<\/strong>：別の出来事\[\^s-bbbbbbbbbb\]。\n\n### 今日まずやること\n\n- /);
+  // 各テーマの先頭1件だけを集める（テーマ甲の2件目は載らない）
+  assert.equal((md.match(/\n- (?!<strong>)/g) ?? []).length, 2);
+  assert.ok(!md.includes('設定を見直してください'));
+  const check = checkCitations({ markdown: md, validIds: valid, bodyOnly: true });
+  assert.equal(check.ok, true, JSON.stringify(check.uncited));
+  assert.deepEqual(findUncitedListItems(md), []);
+});
+
+test('assembleHighlightsSection: 対策が0件なら「今日まずやること」を出さず、見出し1文が1件も無ければパネル自体を出さない', () => {
+  const noActions = assembleHighlightsSection([entry('テーマ甲')]);
+  assert.ok(noActions.startsWith('## 今日のポイント'));
+  assert.ok(!noActions.includes('今日まずやること'));
+  assert.equal(assembleHighlightsSection([entry('テーマ甲', { headline: null })]), null);
+  assert.equal(assembleHighlightsSection([]), null);
+});
+
+test('assembleHighlightsSection: 見出し1文が1件も無くても、検証済みの対策があれば「今日まずやること」だけでパネルを出す', () => {
+  const md = assembleHighlightsSection([entry('テーマ甲', { headline: null, actions: [action()] })]);
+  assert.match(md, /^## 今日のポイント\n\n### 今日まずやること\n\n- /);
+  assert.ok(!md.includes('<strong>'));
+  assert.equal(checkCitations({ markdown: md, validIds: valid, bodyOnly: true }).ok, true);
+});
+
+test('assembleHighlightsSection: 見出し1文のないテーマはポイントに載せないが、そのテーマの対策は「今日まずやること」に載る', () => {
+  const md = assembleHighlightsSection([entry('テーマ甲', { headline: null, actions: [action()] }), entry('テーマ乙')]);
+  assert.ok(!md.includes('テーマ甲'));
+  assert.match(md, /<strong>テーマ乙<\/strong>/);
+  assert.match(md, /### 今日まずやること\n\n- /);
+});
+
+test('assembleHighlightsSection: 「今日まずやること」は上限件数まで', () => {
+  const many = Array.from({ length: MAX_HIGHLIGHT_ACTIONS + 3 }, (_, i) => entry(`テーマ${i}`, { actions: [action({ what: `対策${i}を行う` })] }));
+  const md = assembleHighlightsSection(many);
+  assert.equal((md.split('### 今日まずやること')[1].match(/\n- /g) ?? []).length, MAX_HIGHLIGHT_ACTIONS);
+});
+
+test('assembleHighlightsSection: テーマ名に句点・感嘆符・ピリオドがあっても出典ゲートを通る', () => {
+  for (const title of ['被害が拡大。今すぐ確認！', 'Acme Inc. の不正アクセス', 'OpenSSL 3.5. 修正']) {
+    const md = assembleHighlightsSection([entry(title)]);
+    const r = checkCitations({ markdown: md, validIds: valid, bodyOnly: true });
+    assert.equal(r.ok, true, `${title}: ${JSON.stringify(r.uncited)}`);
+  }
+});

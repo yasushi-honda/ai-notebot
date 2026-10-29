@@ -14,9 +14,20 @@ themes:
     sourceCount: 3
   - title: "テーマ丙"
     sourceCount: 3
-sourceIds: ["s-0d1bb73bcc", "s-4ef7a559ae", "s-81306766a5", "s-9f40e8f9a1", "s-845cfdd10c", "s-146c5f06a0", "s-5291a4f30e"]
+sourceIds: ["s-0d1bb73bcc", "s-845cfdd10c", "s-81306766a5", "s-4ef7a559ae", "s-9f40e8f9a1", "s-146c5f06a0", "s-5291a4f30e"]
 glossary: [{"term":"脆弱性","reading":"ぜいじゃくせい","definition":"システムの弱点のこと","sourceIds":["s-0d1bb73bcc"]}]
 ---
+## 今日のポイント
+
+- <strong>テーマ甲</strong>：テーマ甲で脆弱性が報告された[^s-0d1bb73bcc]。
+- <strong>テーマ丙</strong>：テーマ丙で脆弱性が報告された[^s-845cfdd10c]。
+
+### 今日まずやること
+
+- 旧版を使っている場合、該当製品の利用者は、最新版へ更新してください[^s-0d1bb73bcc]。
+- 旧版を使っている場合、該当製品の利用者は、最新版へ更新してください[^s-81306766a5]。
+- 旧版を使っている場合、該当製品の利用者は、最新版へ更新してください[^s-845cfdd10c]。
+
 ## 今日のトピック
 
 | # | テーマ | 出典数 | 主な情報源 |

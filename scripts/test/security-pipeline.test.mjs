@@ -67,6 +67,15 @@ test('build-security: 収集→生成→出典検証が通り、記事・アー�
     assert.match(post, /### すぐできる対策\n\n- 旧版を使っている場合、該当製品の利用者は、最新版へ更新してください\[\^s-[0-9a-f]+\]。/);
     assert.match(post, /## 今日の用語\n\n- <strong>脆弱性<\/strong>（ぜいじゃくせい）：システムの弱点のこと\[\^s-[0-9a-f]+\]。/);
     assert.match(post, /^glossary: \[\{"term":"脆弱性","reading":"ぜいじゃくせい"/m);
+    // 記事冒頭の「今日のポイント」: 検証済みの見出し1文と対策だけ。存在しない id を引用した見出し（乙不正）は載らない
+    assert.match(post, /^---\n[\s\S]*?\n---\n## 今日のポイント\n\n- <strong>テーマ甲<\/strong>：テーマ甲で脆弱性が報告された\[\^s-[0-9a-f]+\]。\n- <strong>テーマ丙<\/strong>：/);
+    assert.ok(!post.includes('テーマ乙不正の要点'));
+    assert.match(post, /### 今日まずやること\n\n- 旧版を使っている場合、該当製品の利用者は、最新版へ更新してください/);
+    assert.match(r.stderr, /::warning::\[curate-security\] 「テーマ乙不正」で対策・用語を2件除外しました/);
+    // 見出し1文の除外は、対策・用語の除外とは別の警告で、ポイントから外れることと縮小を伝える
+    assert.match(r.stderr, /::warning::\[curate-security\] 「テーマ乙不正」の見出し1文を除外しました（記事冒頭の「今日のポイント」から外れます）/);
+    assert.match(r.stderr, /::warning::\[curate-security\] 「今日のポイント」は2\/3テーマ分です/);
+    assert.ok(post.indexOf('## 今日のポイント') < post.indexOf('## 今日のトピック'), 'ポイントが先頭');
     assert.match(r.stdout, /出典検証|unresolved: 0/);
 
     if (UPDATE) {
