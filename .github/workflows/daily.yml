@@ -124,10 +124,16 @@ jobs:
           else
             echo "care_exists=false" >> "$GITHUB_OUTPUT"
           fi
+          if [ -f "site/src/content/security/${TODAY}.md" ]; then
+            echo "セキュリティ版（${TODAY}）は生成済みのためスキップします。"
+            echo "security_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "security_exists=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Authenticate to Google Cloud (WIF)
         id: auth
-        if: steps.check_existing.outputs.posts_exists != 'true' || steps.check_existing.outputs.care_exists != 'true'
+        if: steps.check_existing.outputs.posts_exists != 'true' || steps.check_existing.outputs.care_exists != 'true' || steps.check_existing.outputs.security_exists != 'true'
         uses: google-github-actions/auth@v3
         with:
           workload_identity_provider: projects/297750025000/locations/global/workloadIdentityPools/github/providers/github-actions
@@ -196,6 +202,40 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Build security digest article（失敗しても本体の生成・公開は止めない）
+        # 介護版と同じ設計: build-security.mjs は失敗・時間超過しても既定で exit 0 を返し（復元に失敗したときだけ exit 1）、
+        # 公開済みの記事・アーカイブは実行前の状態に復元する。判定は posts / care と別（security_exists）にし、
+        # 1回目で posts 成功・security 失敗でも2回目で再試行できるようにする。
+        # timeout-minutes は build-security.mjs 自身の時間予算（8分）の外側の保険（共有の concurrency グループを塞がないため）。
+        if: steps.check_existing.outputs.security_exists != 'true'
+        timeout-minutes: 12
+        run: node scripts/build-security.mjs
+        env:
+          GEMINI_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          GCP_PROJECT: ai-notebot-yh
+
+      - name: Track security digest generation failure
+        # 介護版の失敗通知と同じ。build-security.mjs は常に exit 0 のためジョブの成否では検知できない。
+        # 同日タイトルのopen issueがあれば再作成しない。continue-on-error で本体のビルド・デプロイを巻き込まない。
+        # 手動復旧は skip_if_exists=true を付ける（付けないと AI版・介護版も全再生成される）。
+        continue-on-error: true
+        run: |
+          TODAY=$(TZ=Asia/Tokyo date +%F)
+          TITLE="セキュリティ版生成失敗: ${TODAY}"
+          EXISTING=$(gh issue list --search "\"$TITLE\" in:title" --state open --json number -q '.[0].number // empty')
+          if [ -f "site/src/content/security/${TODAY}.md" ]; then
+            if [ -n "$EXISTING" ]; then
+              gh issue comment "$EXISTING" --body "セキュリティ版記事（${TODAY}）が生成されました。自動クローズします。"
+              gh issue close "$EXISTING"
+            fi
+          elif [ -z "$EXISTING" ]; then
+            # shellcheck disable=SC2016 # printfの書式文字列はバックティックを bash のコマンド置換にさせないため意図的にシングルクオート
+            BODY=$(printf '本日（%s）分のセキュリティ版「毎日のセキュリティニュース」が、この時点のスケジュール実行では生成できませんでした。残りの実行枠で自動リカバリされる可能性があります。\n\nすべて失敗した場合の手動復旧コマンド（生成済みの AI版・介護版はスキップされ、セキュリティ版だけが作られる）:\n```\ngh workflow run daily.yml -f skip_if_exists=true\n```\n\nこのワークフロー実行: %s/%s/actions/runs/%s\n' "$TODAY" "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID")
+            gh issue create --title "$TITLE" --label "bug" --body "$BODY"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Install site dependencies
         run: npm ci
         working-directory: site
@@ -210,6 +250,11 @@ jobs:
           git config user.name "ai-notebot-bot"
           git config user.email "actions@github.com"
           git add data/raw data/raw-care site/src/content/posts site/src/content/care site/public/images
+          # セキュリティ版は失敗時に復元されて、新規ディレクトリが存在しないことがある。存在しないパスを渡すと
+          # git add が失敗し、本体（AI版）のコミット・公開まで止まるため、存在するものだけを add する
+          for p in data/raw-security site/src/content/security; do
+            if [ -e "$p" ]; then git add "$p"; fi
+          done
           if git diff --cached --quiet; then
             echo "変更なし。コミットをスキップします。"
           else

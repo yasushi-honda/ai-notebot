@@ -217,7 +217,7 @@ async function fetchFollowingSafeRedirects(initialUrl, options) {
  * なっていた。codex reviewで指摘・修正）。script/style/nav/header/footerをブロックごと除去し、
  * `<p>`タグから本文らしきテキストを優先的に集める。
  */
-export function extractArticleText(html) {
+export function extractArticleText(html, maxLength = 400) {
   const withoutNoise = html
     .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, ' ')
@@ -234,7 +234,7 @@ export function extractArticleText(html) {
     .map((m) => stripTags(m[1]))
     .filter((t) => t.trim().length > 0);
   const fromParagraphs = paragraphs.join(' ').trim();
-  if (fromParagraphs.length >= MIN_PARAGRAPH_TEXT_LENGTH) return fromParagraphs.slice(0, 400);
+  if (fromParagraphs.length >= MIN_PARAGRAPH_TEXT_LENGTH) return fromParagraphs.slice(0, maxLength);
 
   // <p>から十分な量が取れないページ（マークアップが特殊なページ等）は、
   // ノイズ除去済みHTML全体のフォールバックにする（何も取れないよりはまし）。
@@ -354,9 +354,13 @@ async function resolvePdfSource(res, finalUrl) {
 
 /**
  * @param {string} redirectUrl groundingChunks[].web.uri
+ * @param {object} [options]
+ * @param {number} [options.maxExcerptLength] 渡すと、HTML 本文の抜粋をその長さまでに揃える
+ * @param {(html: string) => string} [options.extractText] HTML からの本文抽出を差し替える（セキュリティ版は
+ *   article/main 優先・対策節優先の extractMainText を使う）。既定は従来どおり extractArticleText
  * @returns {Promise<{ok: boolean, url: string, httpStatus: number, title: string, excerpt: string} | {ok: false, url: string, httpStatus: number | null, reason?: string}>}
  */
-export async function resolveSource(redirectUrl) {
+export async function resolveSource(redirectUrl, options = {}) {
   try {
     const { res, finalUrl } = await fetchFollowingSafeRedirects(redirectUrl, {
       headers: { 'user-agent': USER_AGENT },
@@ -392,7 +396,11 @@ export async function resolveSource(redirectUrl) {
     const html = await readBoundedText(res);
     const titleMatch = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
     const title = titleMatch ? sanitizeTitle(decodeEntities(titleMatch[1])) : '';
-    const excerpt = extractArticleText(html);
+    const excerpt = options.extractText
+      ? options.extractText(html)
+      : options.maxExcerptLength
+        ? extractArticleText(html, options.maxExcerptLength).slice(0, options.maxExcerptLength)
+        : extractArticleText(html);
 
     // res.text() はContent-Typeヘッダのcharsetを見てデコードするが、charsetをHTTPヘッダではなく
     // HTML内の<meta charset>だけで宣言しているページ（Shift_JIS運用の官公庁サイト等に多い）は

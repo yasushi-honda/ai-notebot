@@ -118,6 +118,8 @@ export function selectCandidates({ all, targetDate, recentUrls, maxAgeDays, maxP
  * @param {number} profile.maxPerSource 1ソースが候補を占拠しないための上限
  * @param {number} profile.minSuccessSources 成功ソース数の下限
  * @param {number} profile.minTotalItems 候補件数の下限
+ * @param {(candidates: Array) => Promise<Array>} [profile.enrich] しきい値を満たした候補に対する補強（要約の取得等）。
+ *   書き出し直前に1回だけ呼ぶ。失敗しても候補を返す責任は enrich 側が持つ
  * @param {string} [dateArg] YYYY-MM-DD（省略時は今日・JST）
  */
 export async function runCollection(profile, dateArg) {
@@ -141,7 +143,7 @@ export async function runCollection(profile, dateArg) {
     targetDate,
     lookbackDays: profile.dedupLookbackDays,
   });
-  const candidates = selectCandidates({
+  let candidates = selectCandidates({
     all,
     targetDate,
     recentUrls,
@@ -155,6 +157,8 @@ export async function runCollection(profile, dateArg) {
     console.error(`候補件数が閾値(${profile.minTotalItems})未満です（${candidates.length}件）。${profile.rawLabel} は更新しません。`);
     return { ok: false };
   }
+
+  if (profile.enrich) candidates = await profile.enrich(candidates);
 
   await mkdir(profile.rawDir, { recursive: true });
   const payload = {

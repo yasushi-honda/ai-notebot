@@ -45,6 +45,9 @@
   /* 介護版アクセント: 深緑。AIトレンド版と系統を見分けるための差し色 */
   --color-care: #3f6b52;
   --color-care-soft: #e4ece6;
+  /* セキュリティ版アクセント: 琥珀。注意・警戒を連想させつつ、検証レッド・介護グリーンと見分けられる差し色 */
+  --color-security: #a85a00;
+  --color-security-soft: #f5e8d3;
 }
 
 body {
@@ -187,6 +190,15 @@ li:last-child > .list-link {
 .callout-care:hover h3 {
   @apply text-care decoration-current;
 }
+.callout-security {
+  border-left-color: var(--color-security);
+}
+.callout-security .kicker {
+  @apply text-security;
+}
+.callout-security:hover h3 {
+  @apply text-security decoration-current;
+}
 .callout-weekly {
   border-left-color: var(--color-verify);
 }
@@ -255,6 +267,21 @@ li:last-child > .list-link {
 }
 .prose-care :where(h2)::before {
   @apply bg-care;
+}
+
+/*
+ * セキュリティ版は本文の組版を .prose-post と共有し（<article class="prose-post prose-security">）、
+ * 差し色と、各テーマ内の小見出し「すぐできる対策」（h3）だけをここで足す。
+ */
+.prose-security :where(h2) {
+  @apply border-security-soft;
+}
+.prose-security :where(h2)::before {
+  @apply bg-security;
+}
+.prose-security :where(h3) {
+  font-family: var(--font-display);
+  @apply text-base font-medium mt-6 mb-2 text-security;
 }
 
 /*

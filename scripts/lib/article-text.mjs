@@ -1,0 +1,113 @@
+/**
+ * セキュリティ系サイト（JPCERT/CC・IPA・JVN 等）の記事ページから、本文に近いテキストを抜き出す。
+ * source-resolver.mjs の extractArticleText は <p> だけを集めるため、本文を <br> 区切りの素のテキストや
+ * <li>・表で組むサイトでは、ナビゲーションやフッターの文言を拾ってしまう（JPCERT の注意喚起で確認）。
+ *
+ * 1. <article> / <main> があればその中身全体を本文とする（<br>・ブロック境界は空白に）
+ * 2. 無ければ p/li/dt/dd/td/th/見出し/pre を文書順に集め、リンクだけの項目（メニュー）を落とす
+ * 3. 長い場合は、冒頭に加えて「対策」節を優先して残す（対策を書く節は文書の後半にあることが多いため）
+ */
+
+const BLOCK_TAGS = 'p|li|dt|dd|td|th|h[1-6]|pre';
+// リンクだけの項目（メニュー等）は、リンク部分を除くと空になって落ちる。ここは「リンク以外の文字」の下限で、
+// 表のセル（PHP 8.2 / 8.2.35 のような修正版の記載）を落とさないよう小さくしておく
+const MIN_NON_LINK_CHARS = 2;
+const MIN_MAIN_CHARS = 200;
+const HEAD_CHARS = 700;
+const REMEDIATION_PATTERN =
+  /(?:^|\s)(?:[IVX]+\.\s*|\d+[.．]\s*)?(?:対策|対処|対応策|回避策|緩和策|推奨事項|推奨される|ワークアラウンド|Mitigations?|Recommendations?|Workarounds?|Remediation|Solutions?)/;
+
+function decodeBasicEntities(s) {
+  return s
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+}
+
+function toPlainText(fragment) {
+  // rss.mjs の stripTags は要約用に400字で切るため使わない
+  const noTags = fragment
+    .replace(/<br\s*\/?>/gi, ' ')
+    .replace(/<\/(p|li|h[1-6]|div|tr|td|th|dt|dd|pre)>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ');
+  return decodeBasicEntities(noTags).replace(/\s+/g, ' ').trim();
+}
+
+function removeNoise(html) {
+  return html
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<(script|style|nav|header|footer|aside|form|noscript|select|button)\b[\s\S]*?<\/\1>/gi, ' ')
+    .replace(/<head\b[\s\S]*?<\/head>/gi, ' ');
+}
+
+function collectBlocks(cleaned) {
+  const seen = new Set();
+  const parts = [];
+  const blockPattern = () => new RegExp(`<(${BLOCK_TAGS})\\b[^>]*>([\\s\\S]*?)</\\1>`, 'gi');
+
+  const isHeading = (tag) => /^h[1-6]$/.test(tag);
+
+  function push(fragment, heading) {
+    const nonLink = toPlainText(fragment.replace(/<a\b[\s\S]*?<\/a>/gi, ' '));
+    // メニュー・パンくず等のリンクだけの項目は落とす。ただし見出しは短くても残す
+    // （「対策」「Mitigations」のような短い見出しが、対策節の選択（pickExcerpt）の手がかりになる）
+    if (nonLink.length < (heading ? 2 : MIN_NON_LINK_CHARS)) return;
+    const text = toPlainText(fragment);
+    if (seen.has(text)) return;
+    seen.add(text);
+    parts.push(text);
+  }
+
+  function visit(fragment) {
+    for (const m of fragment.matchAll(blockPattern())) {
+      const tag = m[1].toLowerCase();
+      const inner = m[2];
+      // 入れ子（li の中の p 等）は子ブロックを再帰して拾う（外側を捨てると中身まで失う）
+      if (new RegExp(`<(${BLOCK_TAGS})\\b`, 'i').test(inner)) {
+        // 親の直下のテキスト（子ブロックの外側）も残す。<li>更新してください<p>手順を確認</p></li> の前者を失わない
+        push(inner.replace(blockPattern(), ' '), isHeading(tag));
+        visit(inner);
+        continue;
+      }
+      push(inner, isHeading(tag));
+    }
+  }
+  visit(cleaned);
+  return parts.join(' ');
+}
+
+/**
+ * 長い本文から、冒頭＋対策節を maxLength 以内で選ぶ。対策節が見つからなければ冒頭のみ。
+ * @param {string} text 空白を畳んだ本文
+ * @param {number} maxLength
+ */
+export function pickExcerpt(text, maxLength) {
+  if (text.length <= maxLength) return text;
+  const head = text.slice(0, HEAD_CHARS);
+  const rest = text.slice(HEAD_CHARS);
+  const m = rest.match(REMEDIATION_PATTERN);
+  if (!m) return text.slice(0, maxLength);
+  const start = HEAD_CHARS + m.index + (m[0].startsWith(' ') ? 1 : 0);
+  const room = maxLength - HEAD_CHARS - 3;
+  return `${head} … ${text.slice(start, start + room)}`;
+}
+
+/**
+ * @param {string} html
+ * @param {number} [maxLength]
+ * @returns {string} 空白を畳んだ本文テキスト。取れなければ空文字
+ */
+export function extractMainText(html, maxLength = 1500) {
+  const cleaned = removeNoise(html);
+  const container = cleaned.match(/<(article|main)\b[\s\S]*?<\/\1>/i)?.[0];
+  let text = container ? toPlainText(container) : '';
+  if (text.length < MIN_MAIN_CHARS) {
+    // 短い本文（<br> 区切りの短い注意喚起など）は、ブロック抽出が空になりうる。より多く取れたほうを採る
+    const fromBlocks = collectBlocks(cleaned);
+    if (fromBlocks.length > text.length) text = fromBlocks;
+  }
+  return pickExcerpt(text, maxLength);
+}

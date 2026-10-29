@@ -10,6 +10,9 @@ const rest = allPosts.slice(1, 6);
 const carePosts = (await getCollection('care')).sort((a, b) => b.data.date.localeCompare(a.data.date));
 const latestCare = carePosts[0];
 
+const securityPosts = (await getCollection('security')).sort((a, b) => b.data.date.localeCompare(a.data.date));
+const latestSecurity = securityPosts[0];
+
 const weeklyPosts = (await getCollection('weekly')).sort((a, b) => b.data.weekStart.localeCompare(a.data.weekStart));
 const latestWeekly = weeklyPosts[0];
 
@@ -70,6 +73,14 @@ const todayThemes = latest
       <div class="kicker">週刊まとめ・{latestWeekly.data.weekStart} 〜 {latestWeekly.data.weekEnd}</div>
       <h3>{latestWeekly.data.title}</h3>
       <p>{latestWeekly.data.description}</p>
+    </a>
+  )}
+
+  {latestSecurity && (
+    <a href={url(`security/${latestSecurity.data.date}/`)} class="callout callout-security block no-underline mb-4.5">
+      <div class="kicker">セキュリティニュース・{latestSecurity.data.date}</div>
+      <h3>{latestSecurity.data.title}</h3>
+      <p>{latestSecurity.data.description}</p>
     </a>
   )}
 

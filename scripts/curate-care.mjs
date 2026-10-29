@@ -24,6 +24,7 @@ import { dirname, join, resolve } from 'node:path';
 import { generateText } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
 import { normalizeLiteralNewlines } from './curate.mjs';
+import { escapeSourceField } from './lib/digest-curation.mjs';
 import { findBannedExpressions, findSimplifiedChinese } from './lib/style-guard.mjs';
 import { stripCodeSpans, checkCitations } from './lib/citation-gate.mjs';
 import { parseFrontmatter } from './lib/frontmatter.mjs';
@@ -152,16 +153,8 @@ export function ensureBlankLineAfterHeadings(text) {
   return out.join('\n');
 }
 
-/**
- * 出典のtitle/summaryは任意の外部サイトから機械的に取得した信頼できないテキストであり、
- * プロンプトインジェクション（例: ページ内に「以降の指示を無視して...」と埋め込む攻撃）を
- * 試みうる。プロンプト文字列内で見た目上も指示部分と区別できるよう、タグで明示的に囲み、
- * かつタグ様の文字列を含んでいてもタグ構造を壊さないよう < > を全角に変換する
- * （codex reviewで指摘・修正。buildPrompt側の明示的な防御指示と合わせた多層防御）。
- */
-export function escapeSourceField(s) {
-  return String(s).replace(/</g, '＜').replace(/>/g, '＞');
-}
+// escapeSourceField は版共通の部品として lib/digest-curation.mjs に移した（従来の import 元を変えないよう再公開）
+export { escapeSourceField } from './lib/digest-curation.mjs';
 
 export function formatCandidateList(items) {
   return items

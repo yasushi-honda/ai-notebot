@@ -1,4 +1,2 @@
-// スタブが参照するフィード定義。PR 1 時点では AI 版の RSS_FEEDS のみ。
-// （セキュリティ版を足す PR で SECURITY_FEEDS を参照するようにする。）
-export { RSS_FEEDS } from '../../lib/feeds.mjs';
-export const SECURITY_FEEDS_FOR_STUB = [];
+// スタブが参照するフィード定義（実フィード URL を、固定の RSS で置き換える対象として使う）。
+export { RSS_FEEDS, SECURITY_FEEDS as SECURITY_FEEDS_FOR_STUB } from '../../lib/feeds.mjs';

@@ -55,6 +55,35 @@ const care = defineCollection({
 });
 
 /**
+ * セキュリティ版「毎日のセキュリティニュース」日次記事コレクション。frontmatter は
+ * scripts/curate-security.mjs が機械生成し、書き出す前に validateSecurityFrontmatter
+ * （scripts/lib/security-article.mjs）で同じ条件を検査する（違反したままだとサイト全体のビルドが落ちるため。
+ * 両者を同期させること）。glossary は記事内「今日の用語」と同じデータで、用語集ページが全記事から集約する。
+ */
+const security = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/security' }),
+  schema: z.object({
+    title: z.string().min(1),
+    date: isoDate,
+    description: z.string().min(1),
+    tags: z.array(z.string()).default([]),
+    themeTitles: z.array(z.string()).default([]),
+    themes: z.array(z.object({ title: z.string(), sourceCount: z.number() })).default([]),
+    sourceIds,
+    glossary: z
+      .array(
+        z.object({
+          term: z.string().min(1),
+          reading: z.string().min(1),
+          definition: z.string().min(1),
+          sourceIds: z.array(z.string()).min(1),
+        }),
+      )
+      .default([]),
+  }),
+});
+
+/**
  * 週刊AIトレンドまとめコレクション。frontmatter は scripts/curate-weekly.mjs が機械生成する。
  * ファイル名（拡張子除く）は「週の開始日」（weekStart。通常は前の日曜、cronは日曜のみ発火
  * するため）。公開日ではない（公開日をスラッグにすると手動再実行のたびに同じ週の記事が
@@ -89,4 +118,4 @@ const weekly = defineCollection({
   }),
 });
 
-export const collections = { posts, care, weekly };
+export const collections = { posts, care, weekly, security };
