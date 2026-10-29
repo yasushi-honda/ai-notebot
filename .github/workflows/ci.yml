@@ -35,3 +35,13 @@ jobs:
       - name: Build site
         run: npm run build
         working-directory: site
+
+      - name: Check security articles are rendered as cards
+        # rehype-security-sections が効かないと、ダークパネルやカードのない素の記事になる（例外も警告も出ない）。
+        # ビルド成果物にセクションの包み（sec-theme）があることを確認する
+        run: |
+          shopt -s nullglob
+          for f in dist/security/20*/index.html; do
+            grep -q 'class="sec sec-theme"' "$f" || { echo "::error::$f にセクションの包み（sec-theme）がありません。rehype-security-sections が効いていない可能性があります"; exit 1; }
+          done
+        working-directory: site

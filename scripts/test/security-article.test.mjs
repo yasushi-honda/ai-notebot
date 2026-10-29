@@ -251,6 +251,13 @@ test('assembleHighlightsSection: 対策が0件なら「今日まずやること�
   assert.equal(assembleHighlightsSection([]), null);
 });
 
+test('assembleHighlightsSection: 見出し1文が1件も無くても、検証済みの対策があれば「今日まずやること」だけでパネルを出す', () => {
+  const md = assembleHighlightsSection([entry('テーマ甲', { headline: null, actions: [action()] })]);
+  assert.match(md, /^## 今日のポイント\n\n### 今日まずやること\n\n- /);
+  assert.ok(!md.includes('<strong>'));
+  assert.equal(checkCitations({ markdown: md, validIds: valid, bodyOnly: true }).ok, true);
+});
+
 test('assembleHighlightsSection: 見出し1文のないテーマはポイントに載せないが、そのテーマの対策は「今日まずやること」に載る', () => {
   const md = assembleHighlightsSection([entry('テーマ甲', { headline: null, actions: [action()] }), entry('テーマ乙')]);
   assert.ok(!md.includes('テーマ甲'));
@@ -262,4 +269,12 @@ test('assembleHighlightsSection: 「今日まずやること」は上限件数�
   const many = Array.from({ length: MAX_HIGHLIGHT_ACTIONS + 3 }, (_, i) => entry(`テーマ${i}`, { actions: [action({ what: `対策${i}を行う` })] }));
   const md = assembleHighlightsSection(many);
   assert.equal((md.split('### 今日まずやること')[1].match(/\n- /g) ?? []).length, MAX_HIGHLIGHT_ACTIONS);
+});
+
+test('assembleHighlightsSection: テーマ名に句点・感嘆符・ピリオドがあっても出典ゲートを通る', () => {
+  for (const title of ['被害が拡大。今すぐ確認！', 'Acme Inc. の不正アクセス', 'OpenSSL 3.5. 修正']) {
+    const md = assembleHighlightsSection([entry(title)]);
+    const r = checkCitations({ markdown: md, validIds: valid, bodyOnly: true });
+    assert.equal(r.ok, true, `${title}: ${JSON.stringify(r.uncited)}`);
+  }
 });

@@ -657,7 +657,7 @@ li:last-child > .list-link {
  *
  * 強弱は3段: 1) 今日のポイント = ページで唯一の塗りつぶし（ダーク）パネル、2) 各テーマ = 番号付きカード、
  * 3) すぐできる対策 = カード内の琥珀の囲み。全部を派手にせず、重さに差をつけて読む順序を作る。
- * 色: ダーク面の琥珀は --sec-amber-light（インク色の上で約9:1）、白地の琥珀は --color-security（約5.3:1）。
+ * 色: ダーク面の琥珀は --sec-amber-light（インク色の上で約9:1）、白地の琥珀は --color-security（約5.1:1）。
  * チェックボックスは装飾で、意味は文字（「今日まずやること」「すぐできる対策」）で伝える。
  */
 .prose-security {
@@ -708,6 +708,9 @@ li:last-child > .list-link {
 .prose-security .sec-point > h2::before {
   background: var(--sec-amber-light);
 }
+.prose-security .sec-glossary > h2::before {
+  background: var(--color-security);
+}
 .prose-security .sec-point ul {
   list-style: none;
   padding: 0;
@@ -752,6 +755,12 @@ li:last-child > .list-link {
   letter-spacing: 0.16em;
   color: var(--sec-amber-light);
 }
+/* 見出し1文が無く「今日まずやること」だけのパネルでは、区切りの破線と余白を省く */
+.prose-security .sec-point > h2 + h3 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
 /* 「今日まずやること」のチェックボックス（番号の丸を、枠＋チェックに置き換える） */
 .prose-security .sec-point > h3 + ul li {
   padding-left: 2.25rem;
@@ -790,7 +799,7 @@ li:last-child > .list-link {
 /* 白地側の脚注参照・出典一覧は、AI版の赤ではなく琥珀に揃える（本文中のバッジ、出典台帳の見出しと番号） */
 .prose-post.prose-security sup a[data-footnote-ref] {
   background: var(--color-security-soft);
-  color: var(--color-security);
+  color: #7a4100; /* #a85a00 は淡い琥珀の上で 4.2:1 のため、小さい文字は濃い琥珀で AA を確保 */
 }
 .prose-post.prose-security sup a[data-footnote-ref]:hover {
   background: var(--color-security);
@@ -825,7 +834,7 @@ li:last-child > .list-link {
 }
 .prose-security .sec-theme > h2 {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: baseline;
   column-gap: 0.875rem;
   margin: 0 0 1.25rem;

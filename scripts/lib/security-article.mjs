@@ -185,22 +185,32 @@ export function validateHeadline(text, sourceIds, validIds) {
 }
 
 /**
+ * テーマ名を本文の行（出典ゲートの対象）に入れるための表記に直す。見出し行ではゲート対象外だった「。！？」や
+ * 「Inc. 」のような文の区切りは、行を途中で分断して未引用の断片にしてしまうため取り除く。
+ */
+function pointLabel(title) {
+  return title.replace(/[。！？]/g, '').replace(/[.!?](?=\s|$)/g, '').trim();
+}
+
+/**
  * 記事冒頭の「今日のポイント」節の Markdown を組み立てる。内容はすべて、検証済みの見出し1文と、検証済みの対策
- * （各テーマの先頭1件、最大 MAX_HIGHLIGHT_ACTIONS 件）の再掲で、新しい主張は含まない。見出し1文が1件も無ければ null。
+ * （各テーマの先頭1件、最大 MAX_HIGHLIGHT_ACTIONS 件）の再掲で、新しい主張は含まない。見出し1文も対策も無ければ null。
  * 見出し行（## / ###）は出典ゲートの検証対象外、各行は句点の手前に脚注を持つ。
  * @param {Array<{title: string, headline: {text: string, sourceIds: string[]} | null, actions: Array}>} themes 重要度順
  */
 export function assembleHighlightsSection(themes) {
   const points = themes
     .filter((t) => t.headline)
-    .map((t) => `- <strong>${t.title}</strong>：${t.headline.text}${footnotes(t.headline.sourceIds)}。`);
-  if (points.length === 0) return null;
+    .map((t) => `- <strong>${pointLabel(t.title)}</strong>：${t.headline.text}${footnotes(t.headline.sourceIds)}。`);
   const todo = themes
     .filter((t) => t.actions.length > 0)
     .slice(0, MAX_HIGHLIGHT_ACTIONS)
     .map((t) => actionLine(t.actions[0]));
-  const parts = ['## 今日のポイント', '', ...points];
-  if (todo.length > 0) parts.push('', '### 今日まずやること', '', ...todo);
+  // 見出し1文が1件も通らない日でも、検証済みの対策があれば「今日まずやること」だけでパネルを出す（読者に最も役立つ部分を落とさない）
+  if (points.length === 0 && todo.length === 0) return null;
+  const parts = ['## 今日のポイント', ''];
+  if (points.length > 0) parts.push(...points);
+  if (todo.length > 0) parts.push(...(points.length > 0 ? [''] : []), '### 今日まずやること', '', ...todo);
   return parts.join('\n');
 }
 

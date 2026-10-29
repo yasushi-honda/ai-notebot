@@ -183,15 +183,15 @@ async function runStageB(theme, itemsById) {
       const terms = validateTerms(result.terms, validIds, itemsById, body);
       // 記事冒頭「今日のポイント」用の見出し1文。通らなければポイントに載せないだけ（再生成はしない）
       const headline = validateHeadline(result.headline, result.headlineSourceIds, validIds);
-      const headlineRejected = headline.rejected ? [{ item: { headline: result.headline }, reason: `headline: ${headline.rejected}` }] : [];
       return {
         assembled: assembleThemeMarkdown(body, actions.accepted),
         terms: terms.accepted,
         actions: actions.accepted,
         headline: headline.accepted,
+        headlineRejected: headline.rejected, // 除外した理由（無ければ null）。対策・用語とは別の警告で報告する
         actionCount: actions.accepted.length,
         // 除外した項目は、最終的に採用された生成結果のぶんだけを main で報告する（再生成で捨てた試行は含めない）
-        rejected: [...actions.rejected, ...terms.rejected, ...headlineRejected],
+        rejected: [...actions.rejected, ...terms.rejected],
       };
     },
     evaluate: (result) => {
@@ -246,6 +246,13 @@ async function main() {
     warn(`出典チェックを満たせず除外したテーマが${droppedTitles.length}件あります: ${droppedTitles.join(' / ')}（その出典は7日間、収集の既出扱いになります）`);
   }
   for (const s of sections) {
+    if (s.headlineRejected) warn(`「${s.title}」の見出し1文を除外しました（記事冒頭の「今日のポイント」から外れます）: ${s.headlineRejected}`);
+  }
+  const headlineCount = sections.filter((s) => s.headline).length;
+  if (headlineCount > 0 && headlineCount < sections.length) {
+    warn(`「今日のポイント」は${headlineCount}/${sections.length}テーマ分です（見出し1文の検証を通らなかったテーマは載りません）。`);
+  }
+  for (const s of sections) {
     if (s.rejected.length === 0) continue;
     const detail = s.rejected.slice(0, 3).map((r) => `${r.reason}［${JSON.stringify(r.item).slice(0, 80)}］`).join(' / ');
     warn(`「${s.title}」で対策・用語を${s.rejected.length}件除外しました: ${detail}`);
@@ -259,7 +266,7 @@ async function main() {
 
   // 記事冒頭の「今日のポイント」: 検証済みの見出し1文と対策の再掲だけで組み立てる。作れなければ警告して出さない
   const highlights = assembleHighlightsSection(sections.map((s) => ({ title: s.title, headline: s.headline, actions: s.actions })));
-  if (!highlights) warn('「今日のポイント」を作れませんでした（どのテーマも見出し1文の検証を通りませんでした）。');
+  if (!highlights) warn('「今日のポイント」を作れませんでした（どのテーマも見出し1文の検証を通らず、検証済みの対策もありませんでした）。');
 
   const bodyParts = [
     ...(highlights ? [highlights] : []),
