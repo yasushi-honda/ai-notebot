@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import pagefind from 'astro-pagefind';
 import sitemap from '@astrojs/sitemap';
+import rehypeSecuritySections from './src/lib/rehype-security-sections.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,6 +21,8 @@ export default defineConfig({
   // 正規の経路。
   integrations: [pagefind(), sitemap()],
   markdown: {
+    // セキュリティ版の記事だけ、h2 ごとにセクションを包む（ダークパネル・番号付きカード用。対象外の記事は無変更）
+    rehypePlugins: [rehypeSecuritySections],
     // GFM footnotes（[^id] / [^id]: ...）の自動生成セクションを日本語化する
     remarkRehype: {
       footnoteLabel: 'この記事の出典',

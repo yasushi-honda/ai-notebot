@@ -65,7 +65,11 @@ function securityStageBResponse(prompt) {
     actions.push({ who: '管理者', what: '設定を見直してください', condition: '', sourceIds: ['s-ffffffffff'] });
     terms.push({ term: '出典に無い語', reading: 'しゅってんにないご', definition: '作り話', sourceIds: [ids[0]] });
   }
-  return { bodyMarkdown: body, actions, terms };
+  // 要点の見出し1文。「不正」のテーマは存在しない id を引用させ、ポイントから除外される経路を通す
+  const headline = title.includes('不正')
+    ? { headline: `${title}の要点`, headlineSourceIds: ['s-ffffffffff'] }
+    : { headline: `${title}で脆弱性が報告された`, headlineSourceIds: [ids[0]] };
+  return { bodyMarkdown: body, ...headline, actions, terms };
 }
 
 function stageBResponse(prompt) {

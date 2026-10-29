@@ -9,8 +9,10 @@
 export const MAX_ACTIONS_PER_THEME = 3;
 export const MAX_TERMS_PER_THEME = 2;
 export const MAX_TERMS_PER_DAY = 6;
+// 記事冒頭の「今日のポイント」パネルに載せる「今日まずやること」の上限（各テーマの先頭1件を集める）
+export const MAX_HIGHLIGHT_ACTIONS = 4;
 
-const FIELD_LIMITS = { who: 60, what: 90, condition: 80, term: 30, reading: 40, definition: 120 };
+const FIELD_LIMITS = { headline: 60, who: 60, what: 90, condition: 80, term: 30, reading: 40, definition: 120 };
 // Markdown・HTML・脚注の構造を壊しうる文字は、LLM 由来のフィールドに入れさせない
 const FORBIDDEN_CHARS = /[\[\]<>|`*\\\r\n]/;
 // 句点・感嘆符・疑問符（英文の「. 」も）を含むと、出典ゲートが文を途中で分割し、脚注のない断片が生まれて記事全体が失敗する
@@ -163,6 +165,43 @@ export function collectDailyTerms(termsPerTheme) {
 export function assembleGlossarySection(terms) {
   if (terms.length === 0) return null;
   return ['## 今日の用語', '', ...terms.map(termLine)].join('\n');
+}
+
+/**
+ * テーマの「見出し1文」（記事冒頭の「今日のポイント」に載せる、そのテーマの要点）を検証する。
+ * LLM に自由な要約を書かせず、対策と同じく、長さ・禁止文字・文の区切り・URL/HTML・引用 id を個別に検査し、
+ * 通ったものだけを脚注つきで組み立てる（脚注は句点の手前）。通らなければ accepted は null（ポイントに載せないだけで、
+ * 再生成はしない。本文は別に検証される）。
+ * @returns {{accepted: {text: string, sourceIds: string[]} | null, rejected: string | null}}
+ */
+export function validateHeadline(text, sourceIds, validIds) {
+  const cleaned = clean(text);
+  const ids = [...new Set(Array.isArray(sourceIds) ? sourceIds : [])];
+  const reason =
+    checkField('headline', cleaned, { required: true }) ??
+    (findUnsafeMarkup(cleaned)[0] ?? null) ??
+    checkSourceIds(ids, validIds);
+  return reason ? { accepted: null, rejected: reason } : { accepted: { text: cleaned, sourceIds: ids }, rejected: null };
+}
+
+/**
+ * 記事冒頭の「今日のポイント」節の Markdown を組み立てる。内容はすべて、検証済みの見出し1文と、検証済みの対策
+ * （各テーマの先頭1件、最大 MAX_HIGHLIGHT_ACTIONS 件）の再掲で、新しい主張は含まない。見出し1文が1件も無ければ null。
+ * 見出し行（## / ###）は出典ゲートの検証対象外、各行は句点の手前に脚注を持つ。
+ * @param {Array<{title: string, headline: {text: string, sourceIds: string[]} | null, actions: Array}>} themes 重要度順
+ */
+export function assembleHighlightsSection(themes) {
+  const points = themes
+    .filter((t) => t.headline)
+    .map((t) => `- <strong>${t.title}</strong>：${t.headline.text}${footnotes(t.headline.sourceIds)}。`);
+  if (points.length === 0) return null;
+  const todo = themes
+    .filter((t) => t.actions.length > 0)
+    .slice(0, MAX_HIGHLIGHT_ACTIONS)
+    .map((t) => actionLine(t.actions[0]));
+  const parts = ['## 今日のポイント', '', ...points];
+  if (todo.length > 0) parts.push('', '### 今日まずやること', '', ...todo);
+  return parts.join('\n');
 }
 
 const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;

@@ -270,21 +270,6 @@ li:last-child > .list-link {
 }
 
 /*
- * セキュリティ版は本文の組版を .prose-post と共有し（<article class="prose-post prose-security">）、
- * 差し色と、各テーマ内の小見出し「すぐできる対策」（h3）だけをここで足す。
- */
-.prose-security :where(h2) {
-  @apply border-security-soft;
-}
-.prose-security :where(h2)::before {
-  @apply bg-security;
-}
-.prose-security :where(h3) {
-  font-family: var(--font-display);
-  @apply text-base font-medium mt-6 mb-2 text-security;
-}
-
-/*
  * 「今日のトピック」など、直後にテーブルが続く見出しはサマリーの前置きラベルであり、
  * 本文の実質的なセクションではない。同じ色ドット・下線を使うと目次と本文セクションが
  * 同列に見えてしまうため、h2:has(+ table)で構造的に判定し、ホームの.ledger-heading
@@ -663,4 +648,284 @@ li:last-child > .list-link {
 }
 .archive-month > summary:hover {
   @apply text-verify;
+}
+
+/*
+ * セキュリティ版の記事ページ（<article class="prose-post prose-security">）。本文の組版は .prose-post と共有し、
+ * ここでは「見せ場」の強弱だけを足す。描画時に rehype-security-sections が h2 ごとに
+ * <section class="sec sec-point|sec-theme|sec-glossary"> で包む（site/src/lib/rehype-security-sections.mjs）。
+ *
+ * 強弱は3段: 1) 今日のポイント = ページで唯一の塗りつぶし（ダーク）パネル、2) 各テーマ = 番号付きカード、
+ * 3) すぐできる対策 = カード内の琥珀の囲み。全部を派手にせず、重さに差をつけて読む順序を作る。
+ * 色: ダーク面の琥珀は --sec-amber-light（インク色の上で約9:1）、白地の琥珀は --color-security（約5.3:1）。
+ * チェックボックスは装飾で、意味は文字（「今日まずやること」「すぐできる対策」）で伝える。
+ */
+.prose-security {
+  --sec-amber-light: #f2b866;
+  --sec-on-dark: #f6f7f5;
+  --sec-on-dark-rule: rgb(246 247 245 / 0.18);
+  counter-reset: sec-theme;
+}
+.prose-security .sec {
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+}
+
+/* --- 1) 今日のポイント: ダークパネル --- */
+.prose-security .sec-point {
+  background: var(--color-ink);
+  color: var(--sec-on-dark);
+  border-top: 4px solid var(--color-security);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  margin-bottom: clamp(2rem, 5vw, 3rem);
+  box-shadow: 0 18px 40px -26px rgb(26 31 38 / 0.6);
+}
+@keyframes sec-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .prose-security .sec-point {
+    animation: sec-rise 0.5s ease-out both;
+  }
+}
+.prose-security .sec-point > h2 {
+  margin: 0 0 1.25rem;
+  padding: 0 0 0.75rem;
+  border: 0;
+  border-bottom: 1px solid var(--sec-on-dark-rule);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--sec-amber-light);
+}
+.prose-security .sec-point > h2::before {
+  background: var(--sec-amber-light);
+}
+.prose-security .sec-point ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: sec-point;
+}
+.prose-security .sec-point li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin: 0 0 1rem;
+  font-size: clamp(1.0625rem, 0.9rem + 0.6vw, 1.25rem);
+  line-height: 1.65;
+  counter-increment: sec-point;
+}
+.prose-security .sec-point li::before {
+  content: counter(sec-point);
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  display: grid;
+  place-items: center;
+  width: 1.625rem;
+  height: 1.625rem;
+  border-radius: 999px;
+  background: var(--sec-amber-light);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.prose-security .sec-point strong {
+  color: var(--sec-amber-light);
+}
+.prose-security .sec-point > h3 {
+  margin: 1.75rem 0 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--sec-on-dark-rule);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--sec-amber-light);
+}
+/* 「今日まずやること」のチェックボックス（番号の丸を、枠＋チェックに置き換える） */
+.prose-security .sec-point > h3 + ul li {
+  padding-left: 2.25rem;
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);
+}
+.prose-security .sec-point > h3 + ul li::before {
+  content: '';
+  top: 0.3em;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 4px;
+  border: 2px solid var(--sec-amber-light);
+  background: transparent;
+}
+.prose-security .sec-point > h3 + ul li::after {
+  content: '';
+  position: absolute;
+  left: 0.45rem;
+  top: 0.45em;
+  width: 0.35rem;
+  height: 0.65rem;
+  border: solid var(--sec-amber-light);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+/* ダーク面では、リンクと脚注参照の色を明るい琥珀にする（既定は白地向けの赤・琥珀） */
+.prose-post.prose-security .sec-point a {
+  color: var(--sec-amber-light);
+  text-decoration-color: rgb(242 184 102 / 0.5);
+}
+.prose-post.prose-security .sec-point sup a[data-footnote-ref]:hover {
+  background: var(--sec-amber-light);
+  color: var(--color-ink);
+}
+
+/* 白地側の脚注参照・出典一覧は、AI版の赤ではなく琥珀に揃える（本文中のバッジ、出典台帳の見出しと番号） */
+.prose-post.prose-security sup a[data-footnote-ref] {
+  background: var(--color-security-soft);
+  color: var(--color-security);
+}
+.prose-post.prose-security sup a[data-footnote-ref]:hover {
+  background: var(--color-security);
+  color: #fff;
+}
+.prose-post.prose-security :where(section[data-footnotes] > h2) {
+  color: var(--color-security);
+}
+.prose-post.prose-security :where(section[data-footnotes] li)::before {
+  background: var(--color-security-soft);
+  color: var(--color-security);
+}
+.prose-post.prose-security :where(section[data-footnotes] a) {
+  color: var(--color-security);
+  text-decoration-color: var(--color-security-soft);
+}
+/* ダーク面の脚注参照は、背景を少し濃くして番号を読みやすくする（上の白地向けの指定より後ろに置く） */
+.prose-post.prose-security .sec-point sup a[data-footnote-ref] {
+  background: rgb(242 184 102 / 0.28);
+  color: var(--sec-amber-light);
+  font-size: 0.75em;
+}
+
+/* --- 2) 各テーマ: 番号付きカード --- */
+.prose-security .sec-theme {
+  counter-increment: sec-theme;
+  background: #fff;
+  border: 1px solid var(--color-rule);
+  border-top: 4px solid var(--color-security);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  box-shadow: 0 1px 2px rgb(26 31 38 / 0.05);
+}
+.prose-security .sec-theme > h2 {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  column-gap: 0.875rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  border: 0;
+  font-size: clamp(1.25rem, 1.1rem + 0.8vw, 1.5rem);
+  line-height: 1.4;
+}
+.prose-security .sec-theme > h2::before {
+  content: counter(sec-theme, decimal-leading-zero);
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: none;
+  font-family: var(--font-mono);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-security);
+  opacity: 0.4;
+}
+
+/* --- 3) すぐできる対策: カード内の琥珀の囲み（タブ見出し＋チェックリスト） --- */
+.prose-security .sec-theme > h3 {
+  display: inline-block;
+  margin: 1.5rem 0 0;
+  padding: 0.3rem 0.875rem;
+  background: var(--color-security);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.prose-security .sec-theme > h3 + ul {
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 1rem 1.125rem;
+  background: var(--color-security-soft);
+  border: 1px solid var(--color-security);
+}
+.prose-security .sec-theme > h3 + ul li {
+  position: relative;
+  padding-left: 1.875rem;
+  margin: 0 0 0.625rem;
+}
+.prose-security .sec-theme > h3 + ul li:last-child {
+  margin-bottom: 0;
+}
+.prose-security .sec-theme > h3 + ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 3px;
+  border: 2px solid var(--color-security);
+  background: #fff;
+}
+.prose-security .sec-theme > h3 + ul li::after {
+  content: '';
+  position: absolute;
+  left: 0.4rem;
+  top: 0.5em;
+  width: 0.3rem;
+  height: 0.6rem;
+  border: solid var(--color-security);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+
+/* 「今日のトピック」の表: 英単語の長いセル（ScanNetSecurity 等）で幅が広がり、モバイルで横にはみ出すため、セル内で折り返す */
+.prose-security :where(td, th) {
+  overflow-wrap: anywhere;
+}
+
+/* --- 今日の用語: 破線の小カード --- */
+.prose-security .sec-glossary {
+  background: var(--color-paper-deep);
+  border: 1px dashed var(--color-rule-strong);
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+.prose-security .sec-glossary > h2 {
+  margin: 0 0 0.75rem;
+  padding: 0;
+  border: 0;
+  font-size: 1rem;
+}
+.prose-security .sec-glossary ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+.prose-security .sec-glossary li {
+  margin: 0 0 0.5rem;
+}
+.prose-security .sec-glossary li:last-child {
+  margin-bottom: 0;
 }

@@ -39,6 +39,8 @@ import {
 import {
   validateActions,
   validateTerms,
+  validateHeadline,
+  assembleHighlightsSection,
   assembleThemeMarkdown,
   assembleGlossarySection,
   collectDailyTerms,
@@ -54,6 +56,9 @@ const POSTS_DIR = join(ROOT, 'site', 'src', 'content', 'security');
 const STAGE_A_PERSONA =
   'あなたは一般の利用者や小規模事業者に、その日のセキュリティ上の出来事を伝える日本語ニュースサイトの編集者です。';
 const STAGE_A_CANDIDATE_KIND = 'セキュリティ関連のニュース・脆弱性情報・注意喚起';
+// 記事冒頭の「今日のポイント」は先頭のテーマから並ぶ。読者がまず目にすべきものから並べさせる
+const STAGE_A_ORDERING_NOTE =
+  'テーマは、読者への影響が大きく緊急性の高いもの（すでに悪用されている脆弱性、大規模な情報漏えいなど）から順に並べてください。';
 
 const STAGE_B_SCHEMA = {
   type: 'object',
@@ -65,6 +70,17 @@ const STAGE_B_SCHEMA = {
         '（文字列としてバックスラッシュエヌを書くのではなく、本物の改行を2つ連続で入れる）。' +
         '事実を述べる文には必ず文末（句点の手前）に [^s-<id>] 形式の脚注を付け、与えられたid以外は絶対に使わないこと。' +
         '見出し(#)・箇条書きは含めず、本文の段落のみ。',
+    },
+    headline: {
+      type: 'string',
+      description:
+        'このテーマの要点を、読者が一目で分かる1文で。60字以内・句点は付けない・脚注や記号は入れない。' +
+        '「誰の・何が・どうなった」を、具体的な名称・数字とともに出典どおりに書く（例: ショップサーブで約2,335万人分の購入者情報が流出）。テーマ名の言い換えにしない。',
+    },
+    headlineSourceIds: {
+      type: 'array',
+      items: { type: 'string' },
+      description: 'headline の根拠になる出典の id（与えられた id だけ）',
     },
     actions: {
       type: 'array',
@@ -95,7 +111,7 @@ const STAGE_B_SCHEMA = {
       },
     },
   },
-  required: ['bodyMarkdown', 'actions', 'terms'],
+  required: ['bodyMarkdown', 'headline', 'headlineSourceIds', 'actions', 'terms'],
 };
 
 export function buildStageBPrompt(theme, themeItems, extraInstructions) {
@@ -122,6 +138,11 @@ export function buildStageBPrompt(theme, themeItems, extraInstructions) {
     ...FAITHFULNESS_RULES,
     '- 専門知識のない方にも伝わる平易な日本語。専門用語は、出典に書かれた説明の範囲で短く補う',
     ...FORMAT_RULES,
+    '',
+    '## 要点（headline）のルール',
+    '- そのテーマの最も重要な事実を、60字以内の1文で。句点・脚注・記号・URL は入れない',
+    '- テーマ名を言い換えるだけにしない。出典に書かれた具体的な名称・数字・影響（例: 約2,335万人分の購入者情報が流出、すでに悪用が確認）を入れる',
+    '- 本文と同じく、出典に書かれた事実だけ（推測・評価・一般論を足さない）。headlineSourceIds には、その事実が書かれた出典の id だけを入れる',
     '',
     '## すぐできる対策（actions）のルール',
     '- 出典に書かれている対策だけを、最大3件。出典に対策が書かれていなければ空配列にする（推測で作らない）',
@@ -160,12 +181,17 @@ async function runStageB(theme, itemsById) {
       const body = normalizeBoldEmphasis(normalizeLiteralNewlines(result.bodyMarkdown ?? ''));
       const actions = validateActions(result.actions, validIds);
       const terms = validateTerms(result.terms, validIds, itemsById, body);
+      // 記事冒頭「今日のポイント」用の見出し1文。通らなければポイントに載せないだけ（再生成はしない）
+      const headline = validateHeadline(result.headline, result.headlineSourceIds, validIds);
+      const headlineRejected = headline.rejected ? [{ item: { headline: result.headline }, reason: `headline: ${headline.rejected}` }] : [];
       return {
         assembled: assembleThemeMarkdown(body, actions.accepted),
         terms: terms.accepted,
+        actions: actions.accepted,
+        headline: headline.accepted,
         actionCount: actions.accepted.length,
         // 除外した項目は、最終的に採用された生成結果のぶんだけを main で報告する（再生成で捨てた試行は含めない）
-        rejected: [...actions.rejected, ...terms.rejected],
+        rejected: [...actions.rejected, ...terms.rejected, ...headlineRejected],
       };
     },
     evaluate: (result) => {
@@ -196,7 +222,12 @@ async function main() {
   const itemsById = new Map(items.map((i) => [i.id, i]));
 
   console.log(`Stage A: ${items.length}件からテーマをクラスタリング中...`);
-  const stageAThemes = await runStageA({ items, personaLine: STAGE_A_PERSONA, candidateKind: STAGE_A_CANDIDATE_KIND });
+  const stageAThemes = await runStageA({
+    items,
+    personaLine: STAGE_A_PERSONA,
+    candidateKind: STAGE_A_CANDIDATE_KIND,
+    orderingNote: STAGE_A_ORDERING_NOTE,
+  });
   // テーマ見出しは LLM 出力（外部テキストの影響を受ける）。見出し行・表・HTML を壊さない形にしてから使う
   const candidateThemes = stageAThemes.map((t) => ({ ...t, title: sanitizeThemeTitle(t.title) }));
   console.log(`Stage A 完了: ${candidateThemes.length}テーマ`);
@@ -226,7 +257,12 @@ async function main() {
   const glossary = collectDailyTerms(sections.map((s) => s.terms));
   const glossarySection = assembleGlossarySection(glossary);
 
+  // 記事冒頭の「今日のポイント」: 検証済みの見出し1文と対策の再掲だけで組み立てる。作れなければ警告して出さない
+  const highlights = assembleHighlightsSection(sections.map((s) => ({ title: s.title, headline: s.headline, actions: s.actions })));
+  if (!highlights) warn('「今日のポイント」を作れませんでした（どのテーマも見出し1文の検証を通りませんでした）。');
+
   const bodyParts = [
+    ...(highlights ? [highlights] : []),
     buildOverviewTable(sections, itemsById),
     ...sections.map((s) => `## ${s.title}\n\n${s.assembled}`),
     ...(glossarySection ? [glossarySection] : []),

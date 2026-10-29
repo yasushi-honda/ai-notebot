@@ -55,7 +55,7 @@ test('build-security: 収集→生成→出典検証が通り、記事・アー�
 
     // 存在しない id を引用した対策と、出典に無い用語は検証で除外される（警告ログが出る）
     // 劣化は Actions のアノテーション（::warning::）で見える（通知経路が無いため）
-    assert.match(r.stderr, /::warning::\[curate-security\] 「テーマ乙不正」で対策・用語を2件除外しました/);
+    assert.match(r.stderr, /::warning::\[curate-security\] 「テーマ乙不正」で対策・用語を3件除外しました/);
     assert.match(r.stderr, /このテーマに与えられていない id/);
     assert.match(r.stderr, /用語が引用した出典の本文に見当たりません/);
     // スタブ環境では本文取得ができないため、要約の補強の失敗も警告される（理由は URL を除いてまとめられる）
@@ -67,6 +67,12 @@ test('build-security: 収集→生成→出典検証が通り、記事・アー�
     assert.match(post, /### すぐできる対策\n\n- 旧版を使っている場合、該当製品の利用者は、最新版へ更新してください\[\^s-[0-9a-f]+\]。/);
     assert.match(post, /## 今日の用語\n\n- <strong>脆弱性<\/strong>（ぜいじゃくせい）：システムの弱点のこと\[\^s-[0-9a-f]+\]。/);
     assert.match(post, /^glossary: \[\{"term":"脆弱性","reading":"ぜいじゃくせい"/m);
+    // 記事冒頭の「今日のポイント」: 検証済みの見出し1文と対策だけ。存在しない id を引用した見出し（乙不正）は載らない
+    assert.match(post, /^---\n[\s\S]*?\n---\n## 今日のポイント\n\n- <strong>テーマ甲<\/strong>：テーマ甲で脆弱性が報告された\[\^s-[0-9a-f]+\]。\n- <strong>テーマ丙<\/strong>：/);
+    assert.ok(!post.includes('テーマ乙不正の要点'));
+    assert.match(post, /### 今日まずやること\n\n- 旧版を使っている場合、該当製品の利用者は、最新版へ更新してください/);
+    assert.match(r.stderr, /::warning::\[curate-security\] 「テーマ乙不正」で対策・用語を3件除外しました/);
+    assert.ok(post.indexOf('## 今日のポイント') < post.indexOf('## 今日のトピック'), 'ポイントが先頭');
     assert.match(r.stdout, /出典検証|unresolved: 0/);
 
     if (UPDATE) {
