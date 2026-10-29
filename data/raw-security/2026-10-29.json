@@ -1,0 +1,466 @@
+{
+  "date": "2026-10-29",
+  "collectedAt": "2026-10-28T23:50:47.841Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-b6d78e3042",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "Ciscoの「ASA」「FTD」にDoS脆弱性 - すでに悪用も",
+      "url": "https://www.security-next.com/192131",
+      "publishedAt": "2026-10-28T23:26:12.000Z",
+      "summary": "Ciscoの「ASA」「FTD」にDoS脆弱性 - すでに悪用も Cisco Systemsのファイアウォール製品「Cisco Secure Firewall ASA」「Cisco Secure Firewall FTD」にサービス拒否の脆弱性が判明した。すでに悪用が確認されている。 同社は現地時間2026年10月28日、セキュリティアドバイザリを公開し、これら製品の「SSL VPN機能」に確認された脆弱性「CVE-2026-76418」について明らかにした。 SSLリモートアクセスVPNのログインサービスでトンネルグループに二次認証を設定している場合に影響。「SSL VPN」の接続時に細工したリクエストを送信することで、認証を必要とすることなく機器を再起動させ、サービス拒否の状態を引き起こすことが可能としている。 共通脆弱性評価システム「CVSSv3.1」のベーススコアは「8.6」、重要度は4段階中2番目に高い「高（High）」。同社では、2026年10月に同脆弱性が悪用されていることを確認したという。 同社は両製品に向けて脆弱性を修正するアップデートを用意。利用者に更新を呼びかけている。 （Security NEXT - 2026/10/29 ） ツイート"
+    },
+    {
+      "id": "s-7ad908a2d5",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "AI の「ハッカー」が広く使われる産業制御ソフトの深刻な脆弱性 4 件を 4 時間足らずで発見",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56622.html",
+      "publishedAt": "2026-10-28T23:10:03.000Z",
+      "summary": "views 自律型 AI エージェントが、数十年の歴史を持つ広く使われているオープンソースのツールキット EPICS（Experimental Physics and Industrial Control System）から、4 件の脆弱性を発見した。うち 1 件は、粒子加速器や核融合実験の制御に使われるシステム上で、リモートの攻撃者がコードを実行できる可能性のある重大な欠陥だ。 脆弱性の内訳は次のとおり。 ・CVE-2026-114595：CVSS v3.1 で 9.8 と評価される、深刻度「重大」（Critical）の整数オーバーフローの脆弱性。攻撃者が制御できる形でヒープ領域の範囲外に書き込みが行われ、リモートコード実行（RCE）につながる可能性がある ・CVE-2026-114596：8.2 と評価される、深刻度「高」（High）の、メッセージ長の検証不備。メモリの範囲外書き込みを招き、コントローラのプロセスをクラッシュさせる ・CVE-2026-114597：7.5 と評価される、深刻度「高」の、境界チェックの不備。メモリの範囲外読み取りとプロセスのクラッシュを許す ・CVE-2026-114598：7.5 と評価される、深刻度「高」の、型の取り違え（type confusion）。サービス拒否（DoS）を招き、隣接するメモリの内容が漏えいする恐れもある 4 件はいずれも EPICS の中核となる基盤ソフトウェア EPICS Base に影響する。EPICS Base は、世界最大級の科学研究プロジェクトや施設の運用に使われており、各組織は、修正を含むバージョン 7.0.11 に更新すべきだ。 「これらの脆弱性の悪用に成功すると、攻撃者がサービス拒否状態を引き起こしたり、メモリを破壊したり、機微情報を開示させたり、場合によっては任意のコードを実行したりする可能性がある」と、米サイバーセキュリティ・インフラストラクチャセキュリティ庁（CISA）は火曜日の注意喚起で警告した。 AI エージェント「Cipher」を手がけるセキュリティ企業 Causal Security 社の共同創業者シュバム・ラージ（Shubham Raj）氏は本誌 The Register に対し、前述の 4 件の脆弱性は、それまで知られていなかったもので、 Cipher が自律的に発見したと語った。初めて扱う EPICS システムの調査とテスト、4 件の攻撃手法の有効性の確認まで含め、所要時間は 3 時間 49 分だったという。 「最初の調査に人間の介入は必要なかった。その後、安全な環境でより踏み込んだ悪用可能性のテストを行うことを許可する指示を、1 回出しただけだ」とラージ氏は述べた。 《The Register誌特約記事》 関連記事 AI がランサムウェア攻撃全工程を実行、被害企業に 80 ページにわたる“セキュリティ監査報告書”まで提出 2026.9.8 Tue 8:20 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-1f10bb2dcc",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "三井住友DS投信直販ネットのマイページにログインできない状況に、取引委託業者のシステムで不正アクセスを検知",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56621.html",
+      "publishedAt": "2026-10-28T23:05:25.000Z",
+      "summary": "views 三井住友DSアセットマネジメント株式会社は10月16日、三井住友DS投信直販ネットのマイページ一時利用停止について発表した。 これは同サービスの取引委託業者のシステムで第三者からの不正アクセスを検知し、一時的な予防的措置としてシステムを停止したため、10月15日午後7時50分頃から10月16日午前6時頃の間、マイページにログインできない状況が発生したというもの。 同社によると、現時点で顧客の口座情報や取引への影響は確認されていない。 なお、三井住友DS投信直販ネットは現在は復旧しており、通常通り利用可能となっているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 三井住友DS投信直販ネットのマイページ一時利用停止のお詫びと復旧のお知らせ 関連記事 佐川急便「お荷物問い合わせサービス」に不正アクセス 第4報 2026.10.19 Mon 8:05 バーガーキング公式アプリに不正アクセス、約1,118万件の会員情報が漏えい 2026.10.19 Mon 8:05 GMOリサーチ&AI 運営のアンケートサイト「infoQ」に不正アクセス、89万4,082件の個人情報外部持ち出しを確認 2026.10.19 Mon 8:05 えきねっと会員・大人の休日倶楽部会員の漏えいはなかったと判断 ～ IDCフロンティアへの不正アクセス 2026.10.19 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a40af6be45",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「ショップサーブ」に不正アクセス、漏えい対象者数は約2,335万6,000人",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56620.html",
+      "publishedAt": "2026-10-28T23:05:22.000Z",
+      "summary": "views 株式会社Eストアーは10月16日、8月1日に公表した同社が運営するECサイト構築・運営支援サービス「ショップサーブ」への不正アクセスによる情報漏えいについて、最終報を発表した。 「ショップサーブ」では2026年5月21日から8月1日に、外部の第三者が同社サーバ上で不正なプログラムを実行し、購入者情報を外部へ送信したことで、購入者情報が漏えいしており、外部の専門機関によるフォレンジック調査も含め、必要な調査と確認を継続していた。 調査結果によると、2026年5月21日から8月1日までの期間に外部の第三者が、同社サーバ上で稼働するアプリケーションの脆弱性を悪用して不正なプログラムを実行し、データベースに格納された情報を外部に送信していたことが判明している。 同社では本件を認知した8月1日に、攻撃元からの通信を遮断しており、それ以降は攻撃が成立しておらず、バックドア等の不正なプログラムの設置も認められなかった。また、悪用された脆弱性の修正、影響範囲の点検、認証情報のリセット等の是正対応を実施している。 漏えい対象者数は約23,356,000人で、このうちクレジットカード情報の一部（カード名義、カード番号の一部（先頭6桁および下4桁）、有効期限）を含むのは約2,096,900人。対象店舗は7,858店で、対象店舗には現在ショップサーブを利用中の店舗および過去に利用していた店舗が含まれる。漏えい対象情報は下記の通り。 ・顧客（購入者・会員）関連情報 購入者情報（配送先情報を含む）：氏名、住所、電話番号、FAX番号、メールアドレス、勤務先、その他顧客が任意に入力した情報 会員情報（メールマガジン会員を含む）：会員ID、暗号化されたパスワード クレジットカード情報の一部：カード名義、カード番号の一部（先頭6桁および下4桁）、有効期限 ・店舗・アフィリエイター関連情報 ショップサーブの管理画面に関するログイン情報：ログインID・パスワード コンビニ払込票に記載された店舗情報：販売責任者の氏名、店舗名、郵便番号、住所、電話番号、FAX番号 アフィリエイトプログラム登録者の登録情報：メールアドレス、パスワード 同社では、漏えいの対象となった顧客、店舗およびアフィリエイターへの個別の連絡を完了している。 同社では下記の再発防止策を実施しており、今後も引き続きセキュリティ体制の強化に努めるとのこと。 ・悪用された脆弱性の修正および攻撃経路の遮断 ・残存脅威の調査 ・アプリケーションおよびサーバに対する脆弱性診断の実施と検出事項の是正 ・管理画面等の認証の追加強化（二要素認証または二段階認証を含む） 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる個人情報漏えいに関するお知らせ（最終報） 関連記事 今日もどこかで情報漏えい 第52回「2026年8月の情報漏えい」約一割で逮捕・懲戒・行政指導 2026.9.25 Fri 8:10 「ショップサーブ」に不正アクセス、不正なプログラムを実行し購入者情報を外部に送信 2026.8.28 Fri 8:05 佐川急便「お荷物問い合わせサービス」に不正アクセス 第4報 2026.10.19 Mon 8:05 バーガーキング公式アプリに不正アクセス、約1,118万件の会員情報が漏えい 2026.10.19 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で"
+    },
+    {
+      "id": "s-8550c8108c",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "フジテレビの番組宣伝システムに不正アクセス、メディア関係者の個人情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56619.html",
+      "publishedAt": "2026-10-28T23:05:19.000Z",
+      "summary": "1 views 株式会社フジテレビジョンは10月20日、同社の番組宣伝システムへの不正アクセスについて発表した。 これは10月19日夜に、同社の番組宣伝システムへの第三者からの不正アクセスが発生したというもので、当該システムに登録されていたメディア関係者の個人情報が外部に漏えいした可能性がある。 漏えいした可能性があるのは、メディア関係者の氏名、会社名、メールアドレス等を含む最大 730件の個人情報。 同社では不正アクセスの確認後に当該システムの利用を停止し、被害拡大防止のための措置を講じている。 同社では引き続き、原因究明と安全性の確認を進めるとともに、再発防止策を検討するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 番組宣伝システムへの不正アクセスについて 関連記事 懲戒解雇処分 フジテレビ元社員が取材情報や内部情報を競合他社に漏えい 2026.2.17 Tue 8:05 意図的に削除した電子データを復元してレビュー対象に ～ フジテレビが第三者委員会 調査報告書 公開 2025.4.10 Thu 8:00 「フジテレビダイレクト」がリスト型攻撃による不正ログイン被害(フジテレビ) 2017.11.12 Sun 21:27 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-aaad96d2e6",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "医療機関業務支援システム「@link（アットリンク）」に不正アクセス、サービスの提供を一時停止",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56618.html",
+      "publishedAt": "2026-10-28T23:05:17.000Z",
+      "summary": "views 株式会社メドレーは10月20日、同社が提供する医療機関業務支援システム「@link（アットリンク）」への不正アクセスについて発表した。 これはアットリンクで第三者からの不正アクセスを確認したことを受け、原因および影響範囲の調査と被害の拡大防止のため、10月14日深夜から「@link」、患者向けの「アットリンクアプリ」および周辺サービスの提供を一時停止したというもの。 同社では、第三者からの不正アクセスの原因と影響範囲について、外部の専門機関と連携して個人情報への影響について調査を継続している。 同社では、サービスに関する安全性を確保したうえで、10月22日午前7時以降、順次、院内業務への影響が大きい機能から段階的に提供を順次再開する。 同社では、停止期間中の利用料金については、後日返金の対応を行うとのこと。 《ScanNetSecurity》 一次情報または関連リンク アットリンクへの不正アクセスおよびサービスの一時停止に関する最新情報 関連記事 社内調査で発覚 ～ ライツフォル、外部 Q&A サイトにおける過去の「広告明示なし投稿」を公表 2026.9.25 Fri 8:05 学生による不適切な行い「患者様を特定できる情報が映ってはいなかったものの SNS に投稿する行為は医療従事者として極めて不適切」京都府立医科大学 2026.9.4 Fri 8:05 独立行政法人医薬品医療機器総合機構で使用していたUSBメモリが紛失、今後は使用禁止に 2026.9.1 Tue 8:05 国立国際医療センターで心機能の検査機器付属のハードディスク紛失 2026.8.21 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-66b32171c9",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ルールに違反し外部生成AIサービスにパナソニックグループ従業員の個人情報をアップロード",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56617.html",
+      "publishedAt": "2026-10-28T23:05:13.000Z",
+      "summary": "views パナソニック オペレーショナルエクセレンス株式会社は10月23日、外部生成AIサービスへの個人情報のアップロードについて発表した。 これはパナソニック オペレーショナルエクセレンスと子会社のパナソニック デジタル株式会社が進める人事情報システム導入プロジェクトにて、プロジェクトメンバーがパナソニックグループ従業員、元従業員および家族の個人情報を含むデータを外部の生成AIサービスにアップロードしたというもの。 パナソニック オペレーショナルエクセレンスでは、外部の生成AIサービスの利用を禁止していたが、プロジェクトメンバーがルールに違反し、データをアップロードしたという。 対象データは2026年4月時点の人事情報システムに登録されていたデータの一部で、その詳細は下記の通り。 ・対象者 パナソニックグループ（日本地域のパナソニックグループにおけるグループ共通人事情報システム利用会社）に在籍している従業員 パナソニックグループ（同上）に在籍していた元従業員（事業譲渡先への転籍者も含む） 上記の従業員、元従業員の家族 ・対象となる人数および個人情報 従業員：約7万5千人、元従業員：約17万8千人（1978年～2026年度退職者） 項目：社員番号、住所、電話番号、メールアドレス（氏名は含まれない） 従業員家族：約5万5千人、元従業員家族：約2万6千人（2016年以降退職者のみ） 項目：従業員に代わる緊急連絡先の家族の氏名、住所、電話番号、メールアドレス（人事情報システムに従業員自身が登録していた人のみ） 当該メンバーは本事案発覚直後に、生成AIのチャット履歴および業務に使用したPC内の対象データを削除している。 パナソニック オペレーショナルエクセレンスでは、アップロードデータについて、生成AIサービスの運営事業者に照会を行い、下記の回答を得ている。 ・当該メンバーが、データを生成AIサービスにアップロードした際、データをAI学習に利用する機能が無効になっていたため、他の利用者が関連する質問をした場合でも当該データが回答に使用されることはない。 ・アップロードされたデータは、利用者がデータを削除した場合でも、事業者がセキュリティおよび法令順守のため、データ削除日から30日間保持されるが、これらのデータは事業者内で厳格にアクセス管理され、監査等の要請以外ではアクセスされることはない。発覚直後に削除したデータは、保持期間30日経過後の10月25日以降は事業者内でも保持されない。 パナソニック オペレーショナルエクセレンスでは、個人情報の取り扱いルールおよび生成AIサービス利用管理の見直しを進めるとともに、関係者への教育・啓発を強化し、再発防止を徹底するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 外部生成AIサービスへの個人情報アップロードに関するお詫びとお知らせ 関連記事 「松愛会ホームページ」へのサイバー攻撃、中部支部では不審なメールの配信も 2025.2.26 Wed 17:30 「松愛会ホームページ」にサイバー攻撃、滋賀支部ではメールアドレスが漏えいした可能性 2025.2.19 Wed 8:05 不正アクセスでパナソニック コネクト アビオニクスビジネスユニットの従業員の個人情報に影響 2023.12.28 Thu 8:05 パナソニックへの不正アクセス、該当のファイルサーバにインターンシップ応募者の個人情報を確認 2022.6.8 Wed 8:05 ScanNetSecurityをフォローしよう！ @scan"
+    },
+    {
+      "id": "s-25126e47b5",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "BtoC通販向け決済「NP後払い」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56616.html",
+      "publishedAt": "2026-10-28T23:05:10.000Z",
+      "summary": "views 株式会社ネットプロテクションズは10月22日、同社が運営するBtoC通販向け決済「NP後払い」への不正アクセスについて発表した。 これは「NP後払い」サービスの請求書再発行システムに対し第三者から通常想定されない方法で機械的かつ連続的なリクエストが行われたことで、顧客の個人情報の一部へのアクセスが10月14日に判明したというもの。 アクセスが確認されたのは、 「NP後払い」を利用した一部の取引28,884件の個人情報（氏名、住所）。なお、法人利用の場合は、会社名、部署名も含まれる。 同社では対象となる顧客に対し、メール等で個別の案内を進める。 同社では本件の判明後に、原因および影響範囲の調査を進めるとともに、必要なセキュリティ対策を実施している。 同社では今後、セキュリティを強化し、安全が確認でき次第、当該システムの再開を予定しているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 「NP後払い」への不正アクセスについて 関連記事 中古車情報サイト「カーセンサーnet」と中古車販売店向け業務支援サービス「C-MATCH」への不正アクセス、最大370万9,551件の個人情報が漏えいした可能性 2026.10.23 Fri 8:05 ふるさと納税ポータルサイト「ふるさとチョイス」に不正アクセス、泉大津市で寄附の受付ができない状況に 2026.10.23 Fri 8:05 メール配信システム「ブラストメール」に不正アクセス、データ持ち出しを確認 2026.10.23 Fri 8:05 アバハウスインターナショナルに不正アクセス、複数の顧客からの問い合わせで発覚 2026.10.23 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-0e79500125",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "石油資源開発が利用するラクスライトクラウドのASPサービス「blastmail」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56615.html",
+      "publishedAt": "2026-10-28T23:05:06.000Z",
+      "summary": "views 石油資源開発株式会社（JAPEX）は10月21日、同社が情報発信で利用している株式会社ラクスライトクラウドのサービスへの不正アクセスについて発表した。 これは同社が「JAPEX メールマガジン」および機関投資家、証券アナリストに向けたイベント案内の配信ツールとして利用するラクスライトクラウド提供のASPサービス「blastmail」に第三者から不正アクセスがあり、同社が管理する個人情報が漏えいした可能性が判明したというもの。 10月21日に、ラクスライトクラウドから報告があり、発覚した。 漏えいした可能性のある個人情報は下記の通り。 ・JAPEX メールマガジン登録の情報（漏えい件数は調査中） 項目：メールアドレス ・機関投資家・証券アナリスト向けイベント案内配信対象者の情報（漏えい件数は調査中） 項目：氏名、会社名、所属部署、役職、メールアドレス、郵便番号、住所、電話番号 同社では、個人情報漏えいが確認された場合、該当者に個別に連絡を行うとのこと。 《ScanNetSecurity》 一次情報または関連リンク 株式会社ラクスライトクラウドで発生した不正アクセスに伴う個人情報漏えいの可能性について 関連記事 メール配信システム「ブラストメール」に不正アクセス、データ持ち出しを確認 2026.10.23 Fri 8:05 ユミルリンクのメール配信サービスの一部サーバシステムに不正アクセス、メールアドレスを含む延べ約900万件の情報が出力されたと試算 2026.10.22 Thu 8:05 唐津市情報メール配信サービスを業務委託しているアルカディアに不正アクセス 2026.10.19 Mon 8:05 加古川市の職員メール配信システムを運用する事業者に不正アクセス、「防災ネットかこがわ」への影響はない 2026.10.19 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-218525b586",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Police seize Virtualine bulletproof service tied to ransowmare, cybercrime",
+      "url": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
+      "publishedAt": "2026-10-28T20:47:22.000Z",
+      "summary": "U.S. law enforcement has seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. [...]"
+    },
+    {
+      "id": "s-d2cd653579",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Discord to let search engines index public server messages",
+      "url": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
+      "publishedAt": "2026-10-28T18:44:16.000Z",
+      "summary": "Discord will allow search engines to index discussions in Discoverable Servers and make them accessible on the web to users outside the platform without an account or invitation. [...]"
+    },
+    {
+      "id": "s-10e92bd498",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
+      "url": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+      "publishedAt": "2026-10-28T18:08:33.000Z",
+      "summary": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access. \"First identified in late 2023, Silent Train uses rotating chains of compromised SOHO, IoT, and enterprise infrastructure,\" Lumen Technologies Black Lotus Labs said in a report shared"
+    },
+    {
+      "id": "s-b057f3381d",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.",
+      "url": "https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html",
+      "publishedAt": "2026-10-28T17:08:09.000Z",
+      "summary": "Third-party Android app stores can now apply to Google for permission to install apps with one tap, without Android's usual confirmation screens, and to update them in the background. To qualify, a store must pass identity checks and send Google&nbsp;its full catalog, along with every new app and update, for ongoing malware scanning. Approved stores get the features from December 1, but only on"
+    },
+    {
+      "id": "s-84b5e5f268",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Sony ISP subsidiary data breach exposes 2.5 million customer records",
+      "url": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
+      "publishedAt": "2026-10-28T16:45:47.000Z",
+      "summary": "Sony Network Communications has confirmed a data breach that compromised approximately 2.5 million records containing current and former customers' personal information. [...]"
+    },
+    {
+      "id": "s-bce30872ee",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",
+      "url": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
+      "publishedAt": "2026-10-28T16:23:34.000Z",
+      "summary": "A chain of logic flaws, with no memory corruption, can turn a malicious web page into code running on a Windows computer outside Microsoft Edge's sandbox, a security researcher has shown. Orange Tsai of DEVCORE published the full method on October 28, five months after the chain won $175,000 at the&nbsp;Pwn2Own Berlin contest&nbsp;in May. Microsoft fixed the Edge bugs the day after the contest,"
+    },
+    {
+      "id": "s-eb73651e36",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+      "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+      "publishedAt": "2026-10-28T16:02:45.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25, 2026, involved an attacker combining PHP2Shell with a kernel privilege escalation exploit to root"
+    },
+    {
+      "id": "s-b04e18da36",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Volt Typhoon hides zero-day attacks using 'Silent Train' framework",
+      "url": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
+      "publishedAt": "2026-10-28T16:00:00.000Z",
+      "summary": "Chinese state-sponsored hacking group Volt Typhoon has been using a framework that relies on rotating chains of connected devices compromised on demand, including for zero-day attacks targeting high-value systems. [...]"
+    },
+    {
+      "id": "s-95f24b8f8f",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft urges Entra ID admins to migrate users to passkeys",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/",
+      "publishedAt": "2026-10-28T14:48:32.000Z",
+      "summary": "Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authentication in February 2027. [...]"
+    },
+    {
+      "id": "s-cf3bc05aa6",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "複数予約サイトで侵害、顧客情報が流出か - 楽天トラベル",
+      "url": "https://www.security-next.com/191989",
+      "publishedAt": "2026-10-28T14:40:59.000Z",
+      "summary": "複数予約サイトで侵害、顧客情報が流出か - 楽天トラベル 楽天グループが運営する旅行予約サービス「楽天トラベル」の複数関連サイトで個人情報が流出した可能性があることがわかった。 同社によれば、子会社であるRakuten Travel Xchangeにおいて海外ホテル予約サイトが侵害されたもの。2026年9月10日に一部ページで異常を検知し、調査を行ったところ判明した。 対象は、Rakuten Travel Xchangeが運営する一部ページから予約した顧客に関する個人情報で最大約4万件。氏名、居住国、電話番号、メールアドレス、社内識別番号、予約情報、同伴者の氏名、居住国がアクセスの対象となったという。 そのうち最大約3万6000件については、クレジットカードの下4桁、名義、有効期限なども含まれる。同ページにログインした最大約260万件の氏名、電話番号、メールアドレス、社内識別番号も対象としている。 Rakuten Travel Xchangeでは同月15日に原因を特定。翌16日にシステムの改修を終えたが、10月20日、今度は楽天トラベルの多言語予約サイトで侵害の疑いを検知した。"
+    },
+    {
+      "id": "s-e022b21089",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "婚活情報ポータルサイトに無関係の個人情報 - 愛知県",
+      "url": "https://www.security-next.com/191655",
+      "publishedAt": "2026-10-28T14:38:54.000Z",
+      "summary": "婚活情報ポータルサイトに無関係の個人情報 - 愛知県 愛知県が運営する婚活情報のポータルサイト「あいこんナビ」において、無関係の個人情報が公開されていたことが判明した。 同県によれば、無関係の個人情報が同サイト上で公開されており、第三者から閲覧可能になっていたもの。2026年9月20日、外部から指摘があり判明した。 同サイトに掲載されているイベント情報において、イベント主催団体が保有するイベントに無関係の非公開情報が誤って掲載されていた。 対象となるのは、イベント主催団体が2018年に保有していた599人分の個人情報。氏名、年齢、最終学歴、職業、在勤市町村、身長、趣味、特技、続柄などが含まれる。 イベント主催団体が、2018年に同サイトへイベント情報の掲載を申請した際、イベント情報とともに非公開情報を申込用ファイルに誤って添付。それに気が付かず、同県が承認し、掲載されていたものと見られる。 同県では、9月20日に非公開情報を削除した。対象となる関係者には、書面を通じて謝罪を行っている。 （Security NEXT - 2026/10/28 ） ツイート"
+    },
+    {
+      "id": "s-3bc8c2dc80",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
+      "url": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/",
+      "publishedAt": "2026-10-28T14:00:00.000Z",
+      "summary": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk. [...]"
+    },
+    {
+      "id": "s-25376ff719",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「So-net」の会員DB侵害、個人情報流出を確認",
+      "url": "https://www.security-next.com/192075",
+      "publishedAt": "2026-10-28T13:53:42.000Z",
+      "summary": "「So-net」の会員DB侵害、個人情報流出を確認 ソニーネットワークコミュニケーションズは、インターネット接続サービス「So-net」の会員データベースが侵害され、個人情報が流出したことを明らかにした。 同社によれば、2026年10月19日に外部から「So-net」の会員データベースが侵害されたという。同月23日に確認した。 アクセス元からの通信を遮断し、調査を行ったところ、個人情報が流出していることが判明。 退会者情報27万2215件を含む会員の個人情報214万1986件で、氏名や電話番号、生年月日、性別、メールアドレス、ユーザーID、ネット接続用IDが対象だとしている。 またメール関連の4サービスにおいて、5万4401件のメールアドレスやパスワードが流出した。"
+    },
+    {
+      "id": "s-53e7060b24",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
+      "url": "https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/",
+      "publishedAt": "2026-10-28T13:50:59.000Z",
+      "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the access of service accounts, API keys, and AI agents is just as important as fixing vulnerabilities to reduce the damage from a breach. [...]"
+    },
+    {
+      "id": "s-a95fdeb5a4",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "Amadeus の旅客サービスシステムへの不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/28/214917",
+      "publishedAt": "2026-10-28T12:49:17.000Z",
+      "summary": "2026年10月28日、日本航空と日本トランスオーシャン航空は、旅客サービスシステムの委託先であるAmadeusのシステムへの不正アクセスにより、顧客の予約情報の一部が外部から参照された形跡があったと公表しました。ここでは関連する情報をまとめます。 アマデウス経由で日韓の航空会社に影響 日本航空と日本トランスオーシャン航空は、予約、発券、搭乗手続きなどを統合的に処理する旅客サービスシステムの委託先であるアマデウス(Amadeus IT Group, S.A.)から、同社システムへの不正アクセスで予約情報の一部が外部から参照された形跡があったとの報告を受けた(出典: 1)。韓国の大韓航空はアマデウスを委託先のグローバル航空ITシステム運営会社、アシアナ航空は予約と発券のサービスのために利用するグローバル航空予約システムの運営会社としている(出典: 2, 3)。 *1 アマデウス経由の影響を受"
+    },
+    {
+      "id": "s-29d08fa787",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+      "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+      "publishedAt": "2026-10-28T12:48:03.000Z",
+      "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application Object Library of Oracle E-Business Suite. It was patched by Oracle last week as part of its Critical"
+    },
+    {
+      "id": "s-47dc87ef8b",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers now scanning systems for recently-patched Oracle flaw",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
+      "publishedAt": "2026-10-28T12:19:57.000Z",
+      "summary": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability. [...]"
+    },
+    {
+      "id": "s-f28c390e8f",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-10-28T12:00:00.000Z",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-41709 Broadcom VMWare ESX Insufficient Logging Vulnerability CVE-2026-46300 Linux Kernel Missing Initialization of a Variable Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks t"
+    },
+    {
+      "id": "s-eb93de238d",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
+      "url": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+      "publishedAt": "2026-10-28T11:50:00.000Z",
+      "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network. UEFI firmware is the software that runs first when a computer is switched on, before the operating system. An attacker who can reach the machine"
+    },
+    {
+      "id": "s-ce5fe177d9",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Wazuh and AI for Enhanced SOC Workflows",
+      "url": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
+      "publishedAt": "2026-10-28T11:30:00.000Z",
+      "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cybersecurity has experienced a similar transformation. While attackers employ AI to automate"
+    },
+    {
+      "id": "s-42a9e60af1",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
+      "url": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+      "publishedAt": "2026-10-28T11:15:51.000Z",
+      "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation. The list of eight vulnerabilities is as follows - CVE-2026-104351 (CVSS score: 9.9) - A code injection vulnerability that could lead to arbitrary code execution."
+    },
+    {
+      "id": "s-6f9d64c0e7",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ブラウザ最新版「Firefox 159」が公開 - 脆弱性167件を修正",
+      "url": "https://www.security-next.com/192099",
+      "publishedAt": "2026-10-28T08:45:23.000Z",
+      "summary": "ブラウザ最新版「Firefox 159」が公開 - 脆弱性167件を修正 Mozilla Foundationは現地時間2026年10月27日、ウェブブラウザの最新版「Firefox 159」を公開した。CVEベースで167件に対処したという。 重要度を見ると、もっとも高い「クリティカル（Critical）」とされる脆弱性はなかった。 4段階中、2番目に高い「高（High）」とされる脆弱性が108件にのぼる。「中（Moderate）」が52件、「低（Low）」が7件だった。 重要度が「高」とされる脆弱性を見ると、「CVE-2026-117861」は、ウェブページの遷移を処理するコンポーネントに存在するサンドボックス脱出の脆弱性。 「CVE-2026-117864」「CVE-2026-117868」についても、フォーム管理やネットワーク処理においてサンドボックスの制限が回避されるおそれがあるという。"
+    },
+    {
+      "id": "s-ff77009604",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "PHP2Shellの賞金付き公開競技「Steal My Bitcoin」についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/28/172044",
+      "publishedAt": "2026-10-28T08:20:44.000Z",
+      "summary": "2026年10月26日(日本時間)、PHPの脆弱性PHP2Shellを題材にした賞金付きの公開競技「Steal My Bitcoin」が突破されました。ここでは関連する情報をまとめます。 賞金付き公開競技開催 「Steal My Bitcoin」は、個人が日本時間の2026年10月25日5時30分に Hacker News へ投稿して公開した、賞金付きの公開競技。サーバー内に置かれたフラグ(ビットコインの鍵)を取得した参加者に、賞金のビットコインが渡される。(出典: 2) 競技は、修正前の PHP を動かすサーバーに対して PHP2Shell によるリモートでのコード実行(RCE)を試すもので、主催者は、フラグを読み出すプログラムの実行と持ち出しが成功したことをサーバーのログが裏付けるとしている。PHP2Shell を修正した PHP 8.4.27 は10月21日に公開されており、競技のサ"
+    },
+    {
+      "id": "s-26a1927de2",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
+      "url": "https://jvn.jp/vu/JVNVU99905564/",
+      "publishedAt": "2026-10-28T07:30:00.000Z",
+      "summary": "JVNVU#99905564 PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619） The PHP Groupから、PHPの2件の脆弱性（CVE-2026-109618、CVE-2026-109619）に対してアドバイザリが公開されました。 サーバ上で任意のコード実行が行われる可能性があります。 パッチを適用する 開発者が提供するパッチを適用してください。 株式会社ソリトンシステムズ 株式会社ＦＦＲＩセキュリティ The PHP Group ［影響を受けるシステム］、［関連文書］を更新しました 株式会社ソリトンシステムズのベンダステータスが更新されました ［参考情報］を更新しました テルモBCT株式会社のベンダステータスが更新されました 株式会社ＦＦＲＩセキュリティのベンダステータスが更新されました"
+    },
+    {
+      "id": "s-2a55cef7d3",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Adobe Campaign Classic」など4製品に脆弱性 - 「クリティカル」脆弱性も",
+      "url": "https://www.security-next.com/192042",
+      "publishedAt": "2026-10-28T06:09:08.000Z",
+      "summary": "「Adobe Campaign Classic」など4製品に脆弱性 - 「クリティカル」脆弱性も Adobeは、「Adobe Campaign Classic」「Adobe Connect」など複数製品のセキュリティアップデートを公開した。「クリティカル」とされる脆弱性の修正も含まれる。 同社は現地時間2026年10月27日、あらたに4件のセキュリティアドバイザリを公開。「Adobe Campaign Classic」「Adobe Connect」「Creative Cloud Desktop Application」「Adobe Substance 3D Painter」において脆弱性へ対処した。いずれもアドバイザリの公開時点で脆弱性の悪用は確認されていない。 「Adobe Campaign Classic」では、コードインジェクションやOSコマンドインジェクション、認可処理の不備、SQLインジェクションなど8件の脆弱性に対応した。 任意のコード実行やセキュリティ機能の回避、権限昇格につながるおそれがあり、いずれも重要度は「クリティカル（Critical）」とされる。 共通脆弱性評価システム「CVSSv3.1」のベーススコアを見ると「CVE-2026-104351」「CVE-2026-104353」「CVE-2026-105489」「CVE-2026-105780」の4件が「9.9」、「CVE-2026-105781」が「9.8」で続く。のこる3件も「9.0」以上と評価されている。"
+    },
+    {
+      "id": "s-9de79dae9e",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: ヤマハ製NWR100における複数の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU91027179/",
+      "publishedAt": "2026-10-28T05:15:00.000Z",
+      "summary": "JVNVU#91027179 ヤマハ製NWR100における複数の脆弱性 ヤマハ株式会社が提供する無線LANルーターNWR100には、複数の脆弱性が存在します。 この脆弱性情報は、下記の方がJPCERT/CCに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：株式会社ゼロゼロワン 早川 宙也 氏"
+    },
+    {
+      "id": "s-1887576d32",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Yamaha LAN Monitor for WindowsのインストーラにおけるDLL読み込みに関する脆弱性",
+      "url": "https://jvn.jp/jp/JVN23695234/",
+      "publishedAt": "2026-10-28T05:00:15.000Z",
+      "summary": "JVN#23695234 Yamaha LAN Monitor for WindowsのインストーラにおけるDLL読み込みに関する脆弱性 ヤマハ株式会社が提供するYamaha LAN Monitor for Windowsのインストーラには、DLL読み込みに関する脆弱性が存在します。 細工されたDLLファイルを同じディレクトリに置いた状態でインストーラを起動すると、管理者権限で任意のコードが実行される可能性があります。 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：GMOサイバーセキュリティ byイエラエ株式会社 松本一真 氏"
+    },
+    {
+      "id": "s-9b34a7eb7a",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: ヤマハ製YMS-VPN8およびYMS-VPN8-CPにおける引用符で囲まれていないファイルパスの脆弱性",
+      "url": "https://jvn.jp/jp/JVN30675482/",
+      "publishedAt": "2026-10-28T05:00:00.000Z",
+      "summary": "JVN#30675482 ヤマハ製YMS-VPN8およびYMS-VPN8-CPにおける引用符で囲まれていないファイルパスの脆弱性 ヤマハ株式会社が提供するYMS-VPN8およびYMS-VPN8-CPには、登録されるWindowsサービスプログラムのファイルパスが引用符で囲まれていない問題が存在します。 システムドライブへの書き込み権限を有するユーザによって、 SYSTEM 権限で任意のコードが実行される可能性があります。 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：GMOサイバーセキュリティ byイエラエ株式会社 松本一真 氏"
+    },
+    {
+      "id": "s-c529c59f26",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "Kubernetes向けツール「consul-k8s」に脆弱性 - 修正版が公開",
+      "url": "https://www.security-next.com/192027",
+      "publishedAt": "2026-10-28T04:16:08.000Z",
+      "summary": "Kubernetes向けツール「consul-k8s」に脆弱性 - 修正版が公開 「Kubernetes」と「Consul」を連携させるツール「consul-k8s」に深刻な脆弱性が明らかとなった。アップデートが提供されている。 HashiCorpは2026年10月26日、セキュリティアドバイザリを公開し、認可処理に関する脆弱性「CVE-2026-110720」について明らかにした。 コンポーネント用のアクセス制御ルールに不備があり、「Consul」を導入した「Kubernetes」の名前空間内に認証対象が適切に制限されていないことに起因。「Kubernetes」の異なる名前空間にある同名のサービスアカウントを利用して「Consul」のコンポーネントとして認証され、関連する権限を取得できるおそれがあるという。 「Consul」のAPIへアクセスでき、別の名前空間でサービスアカウントを作成してトークンを取得できる権限が必要。システムACL管理を無効化した環境では影響を受けない。 共通脆弱性評価システム「CVSSv3.1」のベーススコアは「9.9」、重要度は4段階中もっとも高い「クリティカル（Critical）」と評価されている。 HashiCorpでは修正版となる「consul-k8s 2.1.0」「同1.8.18」を提供。リスクを評価した上でアップデートを検討するよう求めている。 （Security NEXT - 2026/10/28 ） ツイート"
+    },
+    {
+      "id": "s-1612ad56da",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "Weekly Report: VeloCloud OrchestratorにSQLインジェクションの脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261028.html#1",
+      "publishedAt": "2026-10-28T00:07:00.000Z",
+      "summary": "Aristaが提供するVeloCloud Orchestratorには、SQLインジェクションの脆弱性があります。Aristaは、今回修正された脆弱性を悪用した攻撃を確認しているとのことです。ホスト型はすでに修正済みです。オンプレミス版の利用者は、当該製品を修正済みのバージョンに更新してください。詳細は、開発者が提供する情報を参照してください。"
+    },
+    {
+      "id": "s-d661966f17",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: CISA ICS Advisory / ICS Medical Advisory（2026年10月27日）",
+      "url": "https://jvn.jp/vu/JVNVU96093239/",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "JVNVU#96093239 CISA ICS Advisory / ICS Medical Advisory（2026年10月27日） 米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。 ICS Advisory / ICS Medical Advisoryを参照してください。"
+    },
+    {
+      "id": "s-f4cd9fd378",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Chrome」で脆弱性52件を修正 - 4件が「クリティカル」",
+      "url": "https://www.security-next.com/192058",
+      "publishedAt": "2026-10-27T23:54:37.000Z",
+      "summary": "「Chrome」で脆弱性52件を修正 - 4件が「クリティカル」 Googleは、ウェブブラウザ「Chrome」のセキュリティアップデートを公開した。4件については、重要度が「クリティカル（Critical）」と評価されている。 同社は現地時間2026年10月27日、WindowsおよびmacOS向けに「Chrome 156.0.8078.74」「同156.0.8078.73」、Linux向けに「同156.0.8078.73」をリリースした。 今回修正した脆弱性のうち、4件については重要度を4段階中もっとも高い「クリティカル（Critical）」とした。 具体的に見ると、ファイルシステムにおけるメモリ破損の脆弱性「CVE-2026-118306」や、ファイルAPIの入力検証に関する脆弱性「CVE-2026-118331」を修正した。 さらに「Skia」における入力検証の不備「CVE-2026-118348」、「Layout」に見つかった解放後のメモリを使用する「Use After Free」の脆弱性「CVE-2026-118344」を解消している。"
+    },
+    {
+      "id": "s-9cfdf1956a",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+      "publishedAt": "2026-10-27T12:00:00.000Z",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system. The foll"
+    },
+    {
+      "id": "s-531d14aa47",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "EPICS Base",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+      "publishedAt": "2026-10-27T12:00:00.000Z",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected: EPICS Base release &lt;=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598) CVSS Vendor Equipment v3 9.8 Th"
+    },
+    {
+      "id": "s-9de4c840c9",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-10-27T12:00:00.000Z",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and po"
+    },
+    {
+      "id": "s-f0937598a6",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: GROWIにおける複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN51223238/",
+      "publishedAt": "2026-10-27T06:00:00.000Z",
+      "summary": "JVN#51223238 GROWIにおける複数の脆弱性 株式会社GROWIが提供するGROWIには、複数の脆弱性が存在します。 この脆弱性情報は、製品利用者への周知を目的に、開発者がJPCERT/CCに報告し、JPCERT/CCが開発者との調整を行いました。"
+    },
+    {
+      "id": "s-79bc1d5f5f",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "メール配信サービス「ブラストメール」への不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/10/27/133851",
+      "publishedAt": "2026-10-27T04:38:51.000Z",
+      "summary": "2026年10月21日、ラクスは、子会社のラクスライトクラウドが提供するメール配信サービス「ブラストメール」で外部の第三者による不正アクセスがあり、契約者の情報などが持ち出されたと公表しました。ここでは関連する情報をまとめます。 持ち出された情報 ラクスライトクラウドは不審なアクセスを検知し、10月21日0時30分からブラストメールを緊急停止した。管理画面とAPIは利用できない状態で、メールの配信も1時頃から停止した(出典: 1, 6)。ラクスは同日、不審なアクセスの検知とサービス停止、続いて個人情報を含むデータの持ち出しの確認を公表(出典: 1, 2)。 持ち出された情報は次の2層に分かれる(出典: 2)。 契約者情報 全契約者が対象。販売管理システムから持ち出され、会社名、担当者名、電話番号、メールアドレス、請求先のメールアドレス、契約および支払の履歴などを含む 配信先リストなど: 一"
+    },
+    {
+      "id": "s-2e03c3696e",
+      "source": "JVN",
+      "sourceType": "official",
+      "title": "Sleipnir Mobile for Androidのユーザーインターフェースにおいて偽のアドレスバーなどを表示される脆弱性",
+      "url": "https://jvn.jp/jp/JVN90463048/",
+      "publishedAt": "2026-10-27T03:00:00.000Z",
+      "summary": "JVN#90463048 Sleipnir Mobile for Androidのユーザーインターフェースにおいて偽のアドレスバーなどを表示される脆弱性 フェンリル株式会社が提供するSleipnir Mobile for Androidには、ユーザーインターフェースにおいて偽のアドレスバーなどを表示される脆弱性が存在します。 当該アプリ上で細工されたWebページにアクセスすると、フィッシングの被害にあう可能性があります。 アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 この脆弱性情報は、下記の方が製品開発者に直接報告し、製品開発者との調整を経て、製品利用者への周知を目的にJVNでの公表に至りました。 報告者：Fanda Dwi Aprilianto 氏"
+    },
+    {
+      "id": "s-235220c1a8",
+      "source": "JVN",
+      "sourceType": "official",
+      "title": "Fireblocks製mpc-libの強化導出（Hardened Derivation）処理における脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU90547696/",
+      "publishedAt": "2026-10-27T01:30:15.000Z",
+      "summary": "JVNVU#90547696 Fireblocks製mpc-libの強化導出（Hardened Derivation）処理における脆弱性 CERT/CCから本件に関するアドバイザリが公表されました。 CERT/CCのアドバイザリを参照してください。"
+    },
+    {
+      "id": "s-1682e3ac83",
+      "source": "JVN",
+      "sourceType": "official",
+      "title": "COVESA vsomeipにおける過剰なメモリ割り当ての脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU90363302/",
+      "publishedAt": "2026-10-27T01:30:00.000Z",
+      "summary": "JVNVU#90363302 COVESA vsomeipにおける過剰なメモリ割り当ての脆弱性 CERT/CCから本件に関するアドバイザリが公表されました。 CERT/CCのアドバイザリを参照してください。"
+    },
+    {
+      "id": "s-3896309ee5",
+      "source": "JVN",
+      "sourceType": "official",
+      "title": "Siemens製品に対するアップデート（2026年10月）",
+      "url": "https://jvn.jp/vu/JVNVU90141693/",
+      "publishedAt": "2026-10-27T01:15:00.000Z",
+      "summary": "JVNVU#90141693 Siemens製品に対するアップデート（2026年10月） Siemensから各製品向けのアドバイザリが公表されました。 Siemensのアドバイザリを参照してください。 ［詳細情報］を更新しました"
+    },
+    {
+      "id": "s-d060a03f2b",
+      "source": "IPA 重要なセキュリティ情報",
+      "sourceType": "official",
+      "title": "更新：PHPの脆弱性対策について(CVE-2026-109618、CVE-2026-109619：PHP2shell)",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html",
+      "publishedAt": "2026-10-26T15:00:00.000Z",
+      "summary": "PHPの脆弱性対策について(CVE-2026-109618、CVE-2026-109619：PHP2shell) 公開日：2026年10月22日 最終更新日：2026年10月27日 注釈：追記すべき情報がある場合には、その都度このページを更新する予定です。 2026年10月21日にIPAから公表した「【事前準備のお願い】PHPのセキュリティリリース公開予定について」（ 脚注1 ）の続報です。 セキュリティリリースが公表されましたので、対策の実施をご検討ください。 概要 The PHP Groupが提供するPHPについて、メモリ不足(OOM)のエラー処理に起因する脆弱性（CVE-2026-109618）とリクエスト処理に関連する脆弱性（CVE-2026-109619）が報告されています。 これらの脆弱性を悪用された場合、遠隔の第三者によって、任意のコード実行が実行される可能性があります。 これらの脆弱性の組み合わせは「PHP2shell」と呼ばれています。 PHPは、様々なウェブアプリケーションやソフトウェア製品で利用されています。自組織で開発・利用している製品等の影響については、その製品等の開発者やサービス提供元からの情報をご確認ください。 ---2026年10月27日更新--- CVE-2026-109618とCVE-2026-109619について、2026年10月26日（現地時間）、CISA（ 脚注2 ）のKEVカタログ（Known Exploited Vulnerabilities Catalog 脚注3 ）に、悪用された脆弱性として掲載されました。 IPAでは国内での攻 … 対策 1.脆弱性の解消 - 修正プログラムの適用 開発者が提供する情報をもとに、最新版へアップデートしてください。開発者は、本脆弱性を修正した次のバージョンをリリースしています。 PHP 8.2.35 PHP 8.3.36 PHP 8.4.27 PHP 8.5.12 詳しくは以下のページをご確認ください。 Security advisory: Critical remote code execution vulnerabilities, update now 2.推奨対応 公表された脆弱性対策情報（アドバイザリ）において、脆弱性の影響を受けやすい構成例や緩和的な対処方法などについて案内されています。 セキュリティリリースの対応が困難である場合には、これらの情報を踏まえつつ、対応方法について検討を実施してください。 RCE via OOM corruption (GHSA-w8hw-w9fx-j79w) RCE via stale global state (GHSA-6wmf-4rv5-p3rp) 修正対応が難しい場合について 1.利用中のPHPのサポート状況を確認する PHP 8.1以前のバージョンは「End of life（サポート終了）」を迎えています。今回の脆弱性に対する修正プログラムが提供されないバージョンを利用している場合は、サポートが提供されているPHPへの更新や、対策済みの製品・サービスへの移行を検討してください。 2.更新・移行までの暫定対策を講じる 更新や移行が完了するまで、脆弱な状態での運用を放置せず、利用環境に応じた暫定対策やアクセス制限を検討してください。有効な暫定対策を講じることが難しい場合は、攻撃を受けた際の被害や業務への影響を踏まえ、外部からのアクセス遮断やサービスの一時停止が必要か判断してください。 3.システムの状況と更新・移行の難"
+    }
+  ]
+}
