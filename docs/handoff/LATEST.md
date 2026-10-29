@@ -1,92 +1,62 @@
 # ハンドオフ（最新）
 
-- セッション: 2026-10-20〜10-21（記事本文への中国語混入の修正と再発防止、海外ソース 6 本の追加、出典忠実性の監査とプロンプト修正。PR #64〜#67 マージ）
-- 更新日: 2026-10-29（PR #67 の再監査結果を追記。条件待ち 1 を完了に変更）
+- セッション: 2026-10-29（PR #67 の再監査、セキュリティ版「毎日のセキュリティニュース」の追加。PR #69・#70・#71 マージ、本番反映済み）
+- 更新日: 2026-10-29
 
 ## セッション概要
 
-### 10/20 記事への中国語混入の修正と再発防止（PR #64・#66）
-decision-maker から「10/20 の記事に日本語になっていない箇所がある」と指摘があった。VCPToolBox の出典（GitHub Trending の中国語 README）の文を、モデルが訳さず本文へ写していた（「前端应用」「多層級持久化记忆」など）。出典検証ゲートは脚注が解決するかしか見ないため素通りしていた。
+### PR #67 の再監査（条件待ち 1、完了）
+10/22〜10/26 の脚注付き 185 文から無作為 30 文＋新ソース由来 10 文を別モデル（Sonnet、読み取り専用）で監査した。拡張率は 50%（10/20 以前）→ 23%（10/21）→ **7.5%（3/40、すべて軽微な総括文）**、ずれは 0。#67 は効果ありと判断し監視を終了、「全文脚注必須」ゲートの見直しは行わない（PR #69）。判定は別モデルの見立てで人の目の監査ではない。
 
-- `scripts/lib/style-guard.mjs` に `findSimplifiedChinese`（簡体字にしかない約 240 字。`机`・`据`・`点`・`号` など日本語でも使う字は誤検出になるため除外）を追加。
-- 日次・週刊は `evaluateStageBCitations`（Stage B の再生成条件）に、care 版は `validateGenerated` に組み込み、検出時は既存の再生成ループに乗せる。脚注定義（出典タイトル）は対象外。
-- 10/20 記事の該当段落と、care 2026-10-06 に混入していた `变化`→`変化` を修正。本番へは `care-rebuild.yml -f regenerate=false`（run 39362825510）で再デプロイし、curl で日本語化を確認した。
-- 過去の全記事の本文を走査し、混入は上記 2 件のみ（care 2026-09-20 の `统` は frontmatter の HTML 内で誤検出）。
+### セキュリティ版「毎日のセキュリティニュース」の追加（PR #70・#71）
+decision-maker の依頼（毎日のセキュリティニュースと、すぐできる対策・知っておくこと・用語集を、これまでと同じ出典紐付けで、DRY に）。確定した要件: 読者は一般の利用者・小規模事業者、範囲はセキュリティ全般、用語集は「記事内＋累積ページ」。plan mode で計画 → `plan-crossreview`（grip＋codex 2 パス）→ 承認 → 2 PR に分けて実装した。詳細・判断根拠: `docs/adr/adr-2026-10-29-security-digest.md`。
 
-### PR #65: 海外の独立系ブログ・企業技術ブログ 6 本を収集ソースに追加
-`scripts/lib/feeds.mjs` のみ。Simon Willison / Latent Space / Interconnects / Import AI / Meta Engineering / AWS ML Blog。`fetchFeed` 経由で取得と直近 3 日の新着を確認済み。除外した候補と理由は `feeds.mjs` の冒頭コメントに記載（The Batch 404、Ahead of AI 接続不可、Microsoft Research 403、Qwen Blog・Chip Huyen 更新停止、heise はドイツ語混入リスク）。**NVIDIA Developer Blog は、curl で 200・100 件取得できたが、その後 `developer.nvidia.com` の名前解決に失敗して `fetchFeed` 経由を検証できず見送った**（収集上限 `MAX_PER_SOURCE`=8 件で量は抑えられる想定）。
+- **PR #70（挙動を変えない共通化）**: `lib/collect-core.mjs`（収集をプロファイルで差し替え可能に）、`lib/digest-curation.mjs`（Stage A・引用付き再生成・テーマ除外・脚注定義・共通の執筆ルール）、`lib/orchestrate.mjs`（失敗しても本体を止めない・復元する仕組み。合計時間予算を追加）、`validate-citations` の type 表、サイトのパンくず・検証ラベル・ナビ・`content.config.ts`。意図した挙動変更は 2 点のみ（不明な `--type` は exit 1、復元失敗時は exit 1）
+- **PR #71（セキュリティ版）**: 収集 9 ソース（JPCERT/CC・IPA・JVN・CISA・Security NEXT・ScanNetSecurity・piyolog・BleepingComputer・The Hacker News）、要約が短い項目は元ページ本文（`article`/`main` 優先・対策節優先、最大 1500 字）で補強、Stage B が本文＋対策＋用語を構造化して返し検証してから組み立てる、`/security/`・`/security/YYYY-MM-DD/`・`/security/glossary/`、`daily.yml` に `security_exists` 判定・失敗通知・存在するパスだけの `git add`、ADR、初回記事（10/29）
+- **本番反映**: `gh workflow run daily.yml -f skip_if_exists=true` を実行（生成はスキップ、ビルドとデプロイのみ）。本番の `/security/`・`/security/2026-10-29/`・`/security/glossary/` が 200 であることを curl で確認
 
-### 出典忠実性の監査と PR #67
-「翻訳ミスのチェックは十分か」という問いを受け、実測した。
+### 実データでの確認（10/29）
+- 収集: 9 ソース全て取得、51 件（要約が短い 27 件を本文の抜粋で補強）。生成は約 10 秒、出典検証は裏取り率 100%
+- 記事: 4 テーマ・対策 4 件・用語 2 件（脆弱性・サービス拒否）。1 回目の生成は対策 1 件だった（運営会社側の対応を除外、製品名の用語を除外など検証が実際に効いた）
+- 別モデル（Sonnet）による出典忠実性の監査（18 文）: OK 11 / 拡張 4（軽微）/ ずれ 3（軽微）。数値・固有名詞の誤りや捏造は 0。ずれは「複数の事案を 1 文に並べて主語・確度が混ざる」「件数を『多数』とまとめる」で、プロンプトに対策を追加済み（再生成後の記事での再監査はしていない）
 
-| 検証 | 結果 |
-|---|---|
-| 数値の機械照合（過去 42 日、数値を含む 235 文） | 本文の数字が出典に見当たらない 27 件はすべて単位換算（`$3.9B`→39億ドル、`3K`→3,000）・英語数詞（three→3社）・月名による誤検出。**実質の数値誤りは 0 件**。案 A（数値照合ゲート）は誤検出ばかりで作らない判断 |
-| 別モデルによる意味の忠実性の監査（無作為 30 文、読み取り専用） | OK 12（実質 14）/ 拡張 15（50%）/ ずれ 1 / 判定不能 0 |
-
-- 実質の「ずれ」は 1 件。出典は「キルスイッチを義務化する**可能性**を含め、専門家グループが 2 か月以内に勧告」だが、本文は「義務化を含む強力な監督体制の構築を推進」と断定していた（原データで確認済み）。
-- 拡張の大半は、導入・まとめの一般論（「〜が広がっています」「注目を集めています」）。「全文脚注必須」ルールが、一般論にも脚注を付けさせて水増しを誘発していると見ている（仮説。未検証）。
-- **PR #67**: `curate.mjs`・`curate-weekly.mjs` の Stage B プロンプトに、「出典にない傾向・効果・評価・因果は足さない」「慎重表現（可能性・検討中）を断定にしない」「製品名を短縮しない（Qwen3.8 Flash Next）」「released を『開発された』と訳さない」を追加。出典検証ゲートは変更していない。
-
-### 10/21 の効果確認（#67 マージ後の初回 run）
-run 39504804973（07:00 JST、Scheduler 経由、#67 のコミット faee64b で実行）の記事 22 文を、同じ手順で監査した。
-
-| 指標 | 10/20 以前（30 文） | 10/21（22 文） |
-|---|---|---|
-| OK | 12（実質 14） | 17 |
-| 拡張 | 15（50%） | 5（23%。うち 4 件は監査側が「軽微」と記述） |
-| ずれ | 1 | 0 |
-| 一般論・評価の文 | 拡張の大半 | 1 文（「続々と登場」「選択肢が広がっています」） |
-
-- 再生成の警告（「出典チェックNG」「中国語」「除外したテーマ」）は 0 件。収集は 127 件（10/20 は 77 件）で、テーマは 4 つ。1 セクション平均 504 字（直近 7 日の平均は 459 字）で薄くなっていない。
-- **交絡**: 10/21 は #65 の新ソース（summary が長く具体的）が初めて入った日で、拡張の減少がプロンプトの効果か、出典の質の向上かは切り分けられていない。標本は 1 日分 22 文。判定は別モデル（Sonnet）の見立てで、人の目の監査ではない。
-- 日本語面の観察: 主語の省略で文単体では何の話か分かりにくい箇所がある（「このモデル」「推論スタック」）。誤訳ではない。
-
-### 10/29 の再監査（PR #67、条件待ち 1 の実施結果）
-10/22〜10/26 の脚注付き 185 文から、無作為 30 文＋新ソース由来 10 文（補助標本）を、別モデル（Sonnet、読み取り専用）に 10/21 と同じ基準で監査させた。
-
-| 指標 | 10/20 以前（30 文） | 10/21（22 文） | 10/22〜10/26（40 文） |
-|---|---|---|---|
-| 拡張 | 15（50%） | 5（23%） | **3（7.5%）**。3 件とも軽微な総括文 |
-| ずれ | 1 | 0 | **0** |
-
-- 拡張 3 件はすべて、複数リポジトリの列挙に付いた「〜の動きが見られます」「整備が進められています」型の総括文。
-- 新ソース（標本に出たのは Simon Willison と AWS ML Blog のみ）を含む文は 13 文中 2 件（15%）、旧ソースは 27 文中 1 件（3.7%）が拡張。標本が小さく差は有意でない。新ソースの記事単体を扱う文は全て OK で、新ソース追加による品質低下は見られない。Latent Space・Interconnects・Import AI・Meta Engineering は標本に出ていない。
-- 判定は別モデルの見立てで、人の目の監査ではない。
-- 日次ログ（5 run）: 10/24 の run で脚注欠落の再生成が 3 試行連続（試行 3/3 まで NG）、10/25 の run で脚注欠落 1 回と簡体字混入（「协」）1 回。**最終的に通ったかは未確認**（条件待ち 3 に引き継ぐ）。
-- 結論: #67 の効果ありと判断し、PR #67 の監視は終了。「全文脚注必須」ゲートの見直しは行わない。
+### 品質ゲートで見つかり、反映したもの（セッションの学び）
+- **箇条書きの脚注すり抜け**: `citation-gate` は句点の無い箇条書きを 1 文扱いするため、1 行にでも脚注があれば全行が通る（codex が再現）。ゲートは変えず、生成側で `findUncitedListItems` により行単位で塞いだ
+- **stored XSS**: RSS のタイトルに生の `<script>`・`<img onerror>` が残る（CDATA・実体参照）。Astro は Markdown 内の生 HTML を通す。本文の生 HTML・リンク・URL・参照リンク定義を拒否して再生成、テーマ見出しと脚注の出典タイトル・URL を無害化（`buildFootnoteDefs` は共通部品なので AI 版・介護版にも効く）。`rehype-sanitize` は既存の版の表示への影響を懸念して見送り
+- **復元の二重実行**: `runPipeline` で、復元が失敗すると catch で再度復元して原因が隠れていた。復元は 1 回、失敗したら `restoreFailed` と退避先をログに出し、build-care は strict でなくても exit 1
+- **CI だけ失敗**: テスト中の `console.log` がテストランナーの通信と混線し `Unable to deserialize cloned data`。ロギングを伴うテストファイルでは `console` を黙らせる（`node:test` の `mock.method`）
+- 本文抽出（`lib/article-text.mjs`）: JPCERT は本文が `<article>` 内の `<br>` 区切りで、`<p>` だけ集める既存の `extractArticleText` ではフッターを拾う。入れ子ブロック・短い表のセル（修正版のバージョン）・短い見出しを残す形に修正（codex 指摘 5 件）
 
 ## ドキュメント整合性
 
 | 項目 | 状態 | 備考 |
 |------|------|------|
-| AGENTS.md（CLAUDE.md の実体）↔ 実装 | ✅ | 収集ソースの個別列挙は無く、変更不要 |
-| `feeds.mjs` のコメント ↔ 実装 | ✅ | 追加 6 本と除外理由（NVIDIA 含む）を冒頭コメントに記載 |
-| ADR | ⏭ | 新規なし。PR #64〜#67 本文とコードコメントに記録（小規模のため） |
-| 完了ステータス一致 | ✅ | PR #64〜#67 マージ済み、care 再デプロイ済み |
+| AGENTS.md（CLAUDE.md の実体）↔ 実装 | ✅ | セキュリティ版のアーキテクチャとコマンドを追記済み |
+| ADR | ✅ | `adr-2026-10-29-security-digest.md` を新規作成、実データでの確認と限界を追記 |
+| 完了ステータス一致 | ✅ | PR #69・#70・#71 マージ済み、本番反映済み |
+| 記載の誤りの訂正 | ✅ | 計画段階で「`gh workflow run daily.yml` で既存の版はスキップされる」と書いたのは誤り（入力なしの手動実行は全再生成）。`skip_if_exists=true` が必要で、`daily.yml` の失敗通知 Issue の文面と PR #71 の本文には正しい手順を記載した |
 
 ## Git状態
 
 | 項目 | 状態 |
 |------|------|
 | 未コミット変更 | なし（本ハンドオフ更新を除く） |
-| 未プッシュコミット | なし（`main` = `origin/main` = `42c5b17`、本ハンドオフ PR を除く） |
-| CI/CD | ✅ PR #64〜#67 とも test・GitGuardian・CodeRabbit が PASS（#65 は `test` の完了を待ってマージ） |
+| 未プッシュコミット | なし（`main` = `origin/main` = `70a117c`、本ハンドオフ PR を除く） |
+| CI/CD | ✅ PR #69〜#71 とも test・GitGuardian・CodeRabbit が PASS。本番反映の daily.yml 手動実行（run 40795085235）も success |
 
 ## 品質ゲート
 
 | 項目 | 状態 |
 |------|------|
-| codex review | PR #64 のみ実施（medium tier）。1 回目に P2 が 1 件（簡体字リストの不足、`机器学习` 等の見逃し）→ 拡充して対応、2 回目（最終確認）は指摘 0 件。#65〜#67 は small tier（1〜2 ファイル・14 行以下）で手動チェックリスト |
-| テスト | ✅ 318 件全 PASS（簡体字検出のテストを日次 2 件＋拡充 1 件、care 2 件追加） |
-| 実機動作確認 | ⚠️ #64 は本番ページの curl で日本語化を確認。#65 は `fetchFeed` で 6 本の取得を確認。#67 のプロンプト変更は単体テストの対象外で、10/21 の 1 日分の生成でのみ確認（上記）。簡体字ガードが過剰に再生成を起こしていないかは、care 版は次回の care 生成ログで未確認 |
+| codex review | PR #70: 2 回（medium、high とも指摘 0 件）。PR #71: 3 回（1 回目 P2×3、2 回目 P1×2＋P2×1、3 回目はセキュリティ指摘 0 件・P2×2 を反映）。**3 回目は上限（2 回）超過のため AskUserQuestion で承認を得て `CODEX_REVIEW_APPROVED=1` を付けて実行** |
+| 専門レビュー（pr-review-toolkit、sonnet、read-only） | PR #70: code-reviewer（High/Medium 0）、silent-failure-hunter（HIGH 1＝復元の二重実行→修正）、pr-test-analyzer（Critical 2＝既出 URL の窓の境界・しきい値未満で書かない→テスト追加）。PR #71: code-reviewer（Medium 1＝定義の句点で記事全体が失敗→修正）、silent-failure-hunter（Medium 4＝除外・補強失敗・公的機関全滅が無通知→`::warning::` 化）、自動セキュリティレビュー（stored XSS→修正） |
+| テスト | ✅ 386 件全 PASS（PR #70 時点 350 ＋ セキュリティ版 36）、`npm run check` エラー 0、ビルド 343 ページ（既存 340＋セキュリティ 3）。既存 340 ページの `dist` は PR #70 の前後で `diff -r` 差分 0 |
+| 実機動作確認 | ✅ 本番 URL を curl で確認（Playwright は使っていない）。ローカルでは Playwright で記事・用語集の表示を確認。実データでの生成・出典検証・出典忠実性の監査は上記 |
 
 ## 同根再発スキャン（§4.6）と対症療法判定（§4.7）
 
-- **同根候補 1 件**: 「全文脚注必須」ルールと LLM の相性。10/9 の Stage B 脚注欠落（PR #62）は脚注を付けきれない失敗、今回の拡張 15 件は一般論にも脚注を付けて埋める失敗で、どちらも同じルールが一因の可能性がある。
-  - 仮説: (1) 「全文脚注必須」が一般論の水増しを誘発している（今回の監査で示唆、未検証）、(2) 軽量モデル（`gemini-3.5-flash-lite`）の指示追従の限界、(3) 出典の summary が薄い（HN は `points=33 comments=15` のみ）と、材料のない文を創作で埋める。
-  - 次に出る経路: 出典が薄い日・新ソースの割合が低い日に、拡張の割合がベースライン（50%）へ戻る。
-- **対症療法判定**: #64 は検出＋再生成で、原因（出典の原文を訳さず写す）にはプロンプトでも対処した。#67 は原因側（水増し・断定化）への対処。外部要因の調査は不要と判断（Gemini の仕様変更ではなく、出典が中国語だったことが直接原因）。基準 3（過去 30 日以内の同症状 PR）は #62 が関連するが、症状は別（脚注欠落 ↔ 中国語混入・水増し）。**#67 の効果は 10/29 の再監査（40 文、拡張 7.5%・ずれ 0）で確認済み**。
+- 本セッションの PR は `docs:`（#69）・`refactor:`（#70）・`feat:`（#71）で、`fix:` の独立した修正 PR は無い。**同根候補 0 件、対症療法判定の対象外**
+- 参考: 同じ症状群「全文脚注必須と LLM の相性」（PR #62 脚注欠落、#64 中国語混入、#67 水増し）は再監査で収束。セキュリティ版の箇条書きすり抜け・提供元側の対策・用語の創作も、生成側の検証で塞いだ
 
 ## 次のアクション（3分割・SKILL.md §2.5）
 
@@ -97,43 +67,52 @@ run 39504804973（07:00 JST、Scheduler 経由、#67 のコミット faee64b で
 
 | # | 項目 | trigger（充足条件） | 充足時のタスク | 充足確認方法 |
 |---|------|------------------|--------------|------------|
-| 1 | ~~PR #67 の再監査~~ **完了（2026-10-29）** | — | 結果は上記「10/29 の再監査」。拡張 7.5%・ずれ 0 で効果ありと判断、監視終了 | — |
-| 2 | **Stage B のテーマ除外の実環境確認**（前回から継続） | daily の run ログに「除外したテーマ」が出た時 | 除外されたテーマと記事の整合を確認。頻発するなら脚注指示の見直し（条件待ち 1 の結果と合わせて判断） | `gh run view <id> --log \| grep '除外したテーマ'`（リポジトリ内で実行） |
-| 3 | 簡体字ガードの過剰発動の確認 | 次回の care 生成後、または daily の run で「中国語」の警告が出た時 | 再生成が最大回数まで空回りしていないか、誤検出の字が無いかを確認し、字の追加・除外を検討 | `gh run view <id> --log \| grep '中国語'` |
-| 4 | NVIDIA Developer Blog の追加（本セッションで見送り） | `developer.nvidia.com` の名前解決が安定して通ること | `fetchFeed` 経由で取得・直近 3 日の新着を確認し、問題なければ `feeds.mjs` に 1 行追加（`MAX_PER_SOURCE`=8 件で量は抑えられる） | `node -e` で `fetchFeed` を呼ぶ（`scripts/lib/rss.mjs`） |
-| 5 | Reddit 429 の再発（前回から継続） | 同様の収集失敗が再発した時 | `scripts/collect.mjs` の Reddit 取得のリトライ・バックオフを read-only で調査 | `gh run list --workflow=daily.yml` の失敗 run のログ |
-| 6 | アラートメールの受信確認（前回から継続） | decision-maker が `hy.unimail.11@gmail.com` の受信箱を確認（AI 代行不可） | 届いていなければ通知チャネルを調査 | decision-maker 本人が確認 |
-| 7 | GA4 データ反映の再確認（前回から継続） | decision-maker 本人の Google ログインでの確認（AI 代行不可） | analytics.google.com で DebugView / リアルタイムレポートを確認 | decision-maker 本人が確認 |
-| 8 | 「福祉用具」targetServices が生成記事で選ばれるか（前回から継続） | 次回以降の daily.yml / care-rebuild.yml の自然な実行（確率的） | `site/src/content/care/` の新規記事に出現するか確認。長期間出現しなければ `collect-care.mjs` のテーマ指示を見直す | `grep -l '福祉用具' site/src/content/care/*.md` |
-| 9 | `content.config.ts` の themes フィールド影響分析（前回から継続） | decision-maker からの実行指示 | `/impact-analysis` 実行（read-only） | 明示指示の有無 |
-| 10 | care-rebuild.yml の FETCH_HEAD 方式への統一（前回から継続） | 次に care-rebuild.yml の YAML 自体を編集する用事、または明示指示 | Sync ステップを `git fetch origin main && git reset --hard FETCH_HEAD` に統一 | `grep -n "git reset" .github/workflows/care-rebuild.yml` |
+| 1 | **セキュリティ版の初回自動生成の確認** | 2026-10-30（金）07:00 JST の daily 実行の後 | read-only で、10/30 分の記事が自動生成・公開されたかを確認する。`::warning::[collect-security]`・`[curate-security]` の有無（要約補強の成功率、除外したテーマ、対策が全て空）、`security_exists` の判定、失敗 Issue（「セキュリティ版生成失敗: <日付>」）の有無を見る | `gh run list --workflow=daily.yml --limit 5`、`gh run view <id> --log \| grep -E "security\|::warning::"`（リポジトリ内で実行）、`curl -s -o /dev/null -w "%{http_code}" https://yasushi-honda.github.io/ai-notebot/security/2026-10-30/` |
+| 2 | **対策・用語の空率の測定と、公式補助取得の要否判断** | セキュリティ版の記事が 5 日分以上そろう（目安 2026-11-03 以降） | read-only で、記事ごとの対策件数・用語件数・`::warning::` の頻度・要約補強の成功率・除外テーマ数を集計し、別モデル（Sonnet）で出典忠実性を再監査する（今回は 18 文。再生成後の記事は未監査）。空率が高ければ「公式の対策節・用語解説を補助資料として別途収集する工程」を plan mode で設計する提案を AskUserQuestion で行う。十分なら監視終了 | `site/src/content/security/*.md` の `### すぐできる対策` と `glossary:` を集計。監査の抽出・入力形式は前回（`{n,date,sentence,sources[{title,summary,source}]}`）と同じ |
+| 3 | セキュリティ版のしきい値の見直し | 土日を含む 7 日分の収集結果がそろう | `minSuccessSources: 5`・`minTotalItems: 20`・時間予算 8 分（`build-security.mjs`）が実測に合うかを見る。休日に収集失敗が続くなら緩める提案をする | `data/raw-security/*.json` の件数、daily のログの収集件数・所要時間 |
+| 4 | AI 版 `curate.mjs` の本文に生 HTML・リンクの拒否を入れる | decision-maker からの修正指示 | セキュリティ版の `findUnsafeMarkup` を AI 版の Stage B の `evaluate` にも適用する（介護版には既にある）。本文は外部フィードに影響されるため同じ経路で露出している。修正（write）なので起点は decision-maker | `grep -n findUnsafeMarkup scripts/curate.mjs`（現状ヒットなし） |
+| 5 | Stage B のテーマ除外の実環境確認（前回から継続） | daily の run ログに「除外したテーマ」が頻発した時 | 10/24 の run で 1 件（脚注欠落 3 試行連続 NG）を確認済み。頻発するなら脚注指示の見直し | `gh run view <id> --log \| grep '除外したテーマ'`（リポジトリ内で実行） |
+| 6 | NVIDIA Developer Blog の追加（前回から継続） | `developer.nvidia.com` の名前解決が安定して通ること | `fetchFeed` 経由で取得・直近 3 日の新着を確認し、問題なければ `feeds.mjs` に 1 行追加 | `node -e` で `fetchFeed` を呼ぶ（`scripts/lib/rss.mjs`） |
+| 7 | Reddit 429 の再発（前回から継続） | 収集失敗が収集成功しきい値に影響した時 | 10/24・10/25 の run でも `Reddit r/MachineLearning`・`r/artificial` が HTTP 429（他ソースは生きており記事は生成された）。`collect.mjs` の Reddit 取得のリトライ・バックオフを read-only で調査 | `gh run list --workflow=daily.yml` の失敗 run のログ |
+| 8 | アラートメールの受信確認（前回から継続） | decision-maker が `hy.unimail.11@gmail.com` の受信箱を確認（AI 代行不可） | 届いていなければ通知チャネルを調査 | decision-maker 本人が確認 |
+| 9 | GA4 データ反映の再確認（前回から継続） | decision-maker 本人の Google ログインでの確認（AI 代行不可） | analytics.google.com で DebugView / リアルタイムレポートを確認 | decision-maker 本人が確認 |
+| 10 | 「福祉用具」targetServices が生成記事で選ばれるか（前回から継続） | 次回以降の daily.yml / care-rebuild.yml の自然な実行（確率的） | `site/src/content/care/` の新規記事に出現するか確認。長期間出現しなければ `collect-care.mjs` のテーマ指示を見直す | `grep -l '福祉用具' site/src/content/care/*.md` |
+| 11 | `content.config.ts` の themes フィールド影響分析（前回から継続） | decision-maker からの実行指示 | `/impact-analysis` 実行（read-only） | 明示指示の有無 |
+| 12 | care-rebuild.yml の FETCH_HEAD 方式への統一（前回から継続） | 次に care-rebuild.yml の YAML 自体を編集する用事、または明示指示 | Sync ステップを `git fetch origin main && git reset --hard FETCH_HEAD` に統一 | `grep -n "git reset" .github/workflows/care-rebuild.yml` |
 
-（前回の条件待ち 1「Scheduler 07:00 と cron 3 枠の初回確認」と 5「weekly の Scheduler 初回発火」は、10/10 以降の daily と 10/11・10/18 の weekly が連続して成功し、10/21 も 07:00 JST の Scheduler 経由 run（39504804973）が記事を生成したことで充足済み。Scheduler 経由か cron 経由かの内訳の確認は `gcloud` 再認証が必要で、実害がないため以後は追わない。）
+（前回の条件待ち 1「PR #67 の再監査」は完了、3「簡体字ガードの過剰発動の確認」は 10/25 の run で簡体字混入 1 回が再生成で解消され（過剰発動・空回りなし）、care 版も問題なく完了したため充足済み。前回の 2「Stage B のテーマ除外」は上表 5 に継続。）
 
 ### 却下候補（記録のみ）
 
 | # | 項目 | 検討経緯 | 着手しない理由 | 参照条件 |
 |---|------|---------|--------------|---------|
-| 1 | 数値・バージョン・日付の機械照合ゲート（案 A） | 過去 42 日・数値を含む 235 文で試算 | 不一致 27 件はすべて誤検出（単位換算・英語数詞・月名）で、実質の数値誤りは 0 件。換算まで賢く照合しても守る対象が発生していない | decision-maker からの明示指示、または別モデル監査で数値誤りが実際に出た時 |
-| 2 | 別モデルによる裏付け判定を生成時のゲートに組み込む（案 B） | 意味の忠実性の監査で有効性は示唆された | 判定モデルも同じ Gemini 系で誤訳に気づけない場合がある。コストと再生成の増加を伴う。#67 の効果は確認済みで必要性は下がった | decision-maker が指示した時（条件待ち 1 の再監査で #67 は効果ありと判断済み） |
+| 1 | 数値・バージョン・日付の機械照合ゲート（案 A） | 過去 42 日・数値を含む 235 文で試算 | 不一致 27 件はすべて誤検出で、実質の数値誤りは 0 件。10/29 のセキュリティ記事の監査でも数値は全て一致 | decision-maker からの明示指示、または別モデル監査で数値誤りが実際に出た時 |
+| 2 | 別モデルによる裏付け判定を生成時のゲートに組み込む（案 B） | 意味の忠実性の監査で有効性は示唆された | #67 の効果は確認済みで必要性は下がった。コストと再生成の増加を伴う | decision-maker が指示した時 |
 | 3 | 英語・欧州言語の語句の写し込み検出（案 C） | 簡体字検出の延長で検討 | 製品名・固有名詞の例外が多く誤検出が見込まれる。実害の報告がない | decision-maker からの明示指示時のみ |
-| 4 | 追加ソース候補: Wired AI、Hamel Husain、One Useful Thing、Google DeepMind、Mistral、heise（ドイツ語） | 海外ソース拡充の候補調査 | 更新が少ない、または AI 専用でない、またはドイツ語混入のリスク。まず採用した 6 本の効果を見る | decision-maker からの明示指示時のみ |
-| 5 | Anthropic 公式ブログの RSS | 2026-10-20 に再確認（`/rss.xml`、`/engineering/rss.xml` とも 404） | 公式提供なし。Claude Code のリリースノートで代替済み | 公式が RSS を提供した時 |
-| 6 | Stage B の試行回数の増加（3 → 5 回）、`setup.sh deploy` の全体再適用、「当日記事が無い」ことの外部検知監視（前回から継続） | 前回までの検討 | ROI 低、または新規価値創出で起点は decision-maker 領分 | decision-maker からの明示指示時のみ |
-| 7 | インストールトークンの明示的な revoke、curate-care の品質ゲート再設計、福祉用具の貸与・販売の分離分類、workArea フィルタ / 関連記事リンク / 介護版カテゴリ偏り是正 / GA4 Data API 自動取得 / GA4 プロパティ再作成 / YouTube 動画コーナー / `source-tier.mjs` official ホワイトリスト拡張 / `/posts/[date]/` 詳細ページ h1 定型文（前回から継続） | 前回までの検討 | いずれも decision-maker 起点の指示がない | decision-maker からの明示指示時のみ |
+| 4 | 公式の対策節・用語解説を補助資料として別途収集する工程（codex 提案） | セキュリティ版で対策・用語が空になりやすい対策として検討 | 初版では軽量版（抜粋を 1500 字に拡大し対策節優先）で始め、実データで空率を測る判断（decision-maker 確認済み）。条件待ち 2 の結果で判断 | 条件待ち 2 で空率が高いと分かり、decision-maker が指示した時 |
+| 5 | 更新された注意喚起（同一 URL）の再採用 | JPCERT の注意喚起は同じ URL に追記される（codex 指摘） | 既存の既出 URL 除外をそのまま使う。更新の取りこぼしが実際に分かった時点で追加する | 取りこぼしが確認された時、または decision-maker の指示 |
+| 6 | 除外したテーマの出典を、翌日以降の既出 URL 扱いから外す | silent-failure-hunter 指摘（AI 版と同じ設計だがセキュリティ版は影響が大きい） | `::warning::` で見える。重要情報の取りこぼしが実際に起きてから | 取りこぼしが確認された時 |
+| 7 | 週刊まとめへのセキュリティ版の組み込み、`curate-weekly.mjs` の Stage A/B 重複の解消、Cloud Scheduler の変更 | セキュリティ版の範囲検討 | 要望は「毎日」で週刊は別パイプライン。重複の解消は週刊の挙動変更リスク。Scheduler は `daily.yml` 内のステップ追加で足りた | decision-maker からの明示指示時のみ |
+| 8 | `rehype-sanitize` の導入 | stored XSS の対策案として提示された | 既存の版の表示（`<strong>`・介護版の要素）に影響しうる。入力側の拒否・無害化で塞いだ | 入力側の対策で漏れが見つかった時 |
+| 9 | 追加ソース候補: Krebs on Security（直近 3 日新着なし）、Wired AI、Hamel Husain、One Useful Thing、Google DeepMind、Mistral、heise（ドイツ語） | 海外ソース・セキュリティソースの拡充検討 | 更新が少ない、AI 専用でない、ドイツ語混入のリスク | decision-maker からの明示指示時のみ |
+| 10 | Anthropic 公式ブログの RSS | 2026-10-20 に再確認（404） | 公式提供なし。Claude Code のリリースノートで代替済み | 公式が RSS を提供した時 |
+| 11 | Stage B の試行回数の増加（3 → 5 回）、`setup.sh deploy` の全体再適用、「当日記事が無い」ことの外部検知監視、インストールトークンの明示的な revoke、curate-care の品質ゲート再設計、福祉用具の貸与・販売の分離分類、workArea フィルタ / 関連記事リンク / 介護版カテゴリ偏り是正 / GA4 Data API 自動取得 / GA4 プロパティ再作成 / YouTube 動画コーナー / `source-tier.mjs` official ホワイトリスト拡張 / `/posts/[date]/` 詳細ページ h1 定型文（前回から継続） | 前回までの検討 | いずれも ROI 低、または decision-maker 起点の指示がない | decision-maker からの明示指示時のみ |
 
 > ⚠️ 「優先順にすすめて」等の包括指示では上記却下候補は一切参照しない。条件待ちは trigger 充足を確認してから昇格する。
 
 ### 再開可能性判定
-✅ **再開可能** - ドキュメントから開発再開できます。次回は条件待ち 3（10/24・10/25 の再生成が最終的に通ったかの確認を含む）から始める。
+✅ **再開可能** - ドキュメントから開発再開できます。次回は条件待ち 1（10/30 以降のセキュリティ版の初回自動生成の確認）から始める。
 
 ## 申し送り
 
-- gcloud の認証トークン更新が WIF 用のネットワーク名前解決エラーで失敗していた（10/20 の `/catchup` 時点）。CI と Scheduler は GitHub 側で動いており、記事生成には影響しない。GCP を触る作業の前に `gcloud auth login`、または `--account hy.unimail.11@gmail.com` の明示が必要。named configuration `ai-notebot` の account が別プロジェクトの SA に書き換わっている汚染も前回から続いている。
-- 10/20 の作業中、ネットワークが不安定だった（`gh pr create` の接続エラー、`developer.nvidia.com` の名前解決失敗、`gh-gcloud-account-guard` hook の 1 回のタイムアウト）。迂回はせず、分割して再実行した。
-- `gh pr merge` は単独コマンドでないと `pr-merge-gate` が拒否する（`cd … &&` やパイプを付けない）。CI が `pending` の間は `mergeStateStatus` が UNSTABLE になりゲートが止める。CI 完了を待ってから再実行する。
-- `gh run view --log` はリポジトリ内で実行しないと `failed to determine base repo` になる（スクラッチパッドからは不可）。
-- 非日曜に weekly.yml を日付なしで手動実行すると全文生成になる。検証時は既存の週を指す公開日（例 2026-10-18）を渡す。
+- `gh pr merge` は単独コマンドでないと `pr-merge-gate` が拒否する（`cd … &&` やパイプを付けない）。CI が `pending` の間は `mergeStateStatus` が UNSTABLE でゲートが止まる。CI 完了を待ってから再実行する。`gh pr checks --watch` は前回の失敗結果を拾って早く終わることがあるので、最新コミットの run を `gh run watch <id>` で待つ
+- `codex review` の 1 ブランチ上限 2 回を超える場合は、AskUserQuestion で承認を得た後に限り、コマンド先頭に `CODEX_REVIEW_APPROVED=1` を付けて再実行できる（hook の案内どおり。自己判断での付与は不可）。今回 PR #71 の 3 回目で使用
+- `pre-destructive-git-guard` hook が、状態確認のタイムアウトで「判定不能」と警告を出すことがある（Python のヒアドキュメントを含むコマンドで発生）。実際の破壊的 git 操作ではなかったが、警告は停止合図として扱い、`git status` で状態を確認してから続けた
+- `gh run view --log` はリポジトリ内で実行しないと `failed to determine base repo` になる
+- gcloud のトークン取得（`CLOUDSDK_ACTIVE_CONFIG_NAME=ai-notebot gcloud auth print-access-token --account=hy.unimail.11@gmail.com`）は今回正常に動いた（前回報告の WIF 用名前解決エラーは再現せず）。生成の手動実行はこのトークンを `GEMINI_ACCESS_TOKEN` に渡す
+- Playwright のスクリーンショットは `filename` を相対指定するとリポジトリ直下に保存される。`.playwright-mcp/` 配下（gitignore 済み）を指定する
+- `daily.yml` の `queue: max`（concurrency）は actionlint が unknown key と報告するが、既存の行（今回の変更前から）で、GitHub 側の新機能のため放置
+- 非日曜に weekly.yml を日付なしで手動実行すると全文生成になる。検証時は既存の週を指す公開日（例 2026-10-18）を渡す
 
 ## 残留プロセス
 
@@ -142,13 +121,13 @@ run 39504804973（07:00 JST、Scheduler 経由、#67 のコミット faee64b で
 ## Issue Net 変化
 - Close 数: 0 件
 - 起票数: 0 件
-- Net: 0 件（open Issue なし。10/20 の混入は Issue を起票せず、PR #64・#66 で対応）
+- Net: 0 件（open Issue なし）
 
 ## 最終結論
 
-✅ **セッション終了可** — 10/20 記事の中国語混入を修正して本番へ再デプロイし、日次・週刊・care に検出を入れ、海外ソース 6 本を追加し、出典忠実性の監査に基づくプロンプト修正（#67）までマージした。残りは日時・decision-maker の確認待ちのみ。
+✅ **セッション終了可** — PR #67 の再監査を完了し、セキュリティ版を追加して本番に反映した（PR #69・#70・#71 マージ、本番 URL 200 確認）。残りは日時・decision-maker の確認待ちのみ。
 
-- OPEN PR: 本ハンドオフ PR のみ / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 9
-- PR #67 の再監査は 2026-10-29 に完了（効果あり、監視終了）
-- 同根再発スキャン: 候補 1 件（「全文脚注必須」ルールと LLM の相性、10/9 の脚注欠落と今回の水増し）。対症療法判定: #64 は原因にもプロンプトで対処、#67 は原因側の対処で、10/29 の再監査（拡張 7.5%・ずれ 0）で効果を確認済み
+- OPEN PR: 本ハンドオフ PR のみ / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 12
+- 次回の起点: 条件待ち 1（2026-10-30 07:00 JST の自動実行でのセキュリティ版の初回自動生成の確認）。セッション内の予約は閉じると消えるため、手動で「セキュリティ版の初回自動生成を確認して」と指示する
+- 同根再発スキャン: 候補 0 件（修正 PR なし）。対症療法判定: 対象外
 - 既知の blocker: なし
