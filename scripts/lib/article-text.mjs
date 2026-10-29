@@ -9,7 +9,9 @@
  */
 
 const BLOCK_TAGS = 'p|li|dt|dd|td|th|h[1-6]|pre';
-const MIN_NON_LINK_CHARS = 12;
+// リンクだけの項目（メニュー等）は、リンク部分を除くと空になって落ちる。ここは「リンク以外の文字」の下限で、
+// 表のセル（PHP 8.2 / 8.2.35 のような修正版の記載）を落とさないよう小さくしておく
+const MIN_NON_LINK_CHARS = 2;
 const MIN_MAIN_CHARS = 200;
 const HEAD_CHARS = 700;
 const REMEDIATION_PATTERN =
@@ -102,6 +104,10 @@ export function extractMainText(html, maxLength = 1500) {
   const cleaned = removeNoise(html);
   const container = cleaned.match(/<(article|main)\b[\s\S]*?<\/\1>/i)?.[0];
   let text = container ? toPlainText(container) : '';
-  if (text.length < MIN_MAIN_CHARS) text = collectBlocks(cleaned);
+  if (text.length < MIN_MAIN_CHARS) {
+    // 短い本文（<br> 区切りの短い注意喚起など）は、ブロック抽出が空になりうる。より多く取れたほうを採る
+    const fromBlocks = collectBlocks(cleaned);
+    if (fromBlocks.length > text.length) text = fromBlocks;
+  }
   return pickExcerpt(text, maxLength);
 }

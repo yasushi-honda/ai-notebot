@@ -56,3 +56,17 @@ test('extractMainText: 子ブロックを含む親要素の直下のテキスト
   assert.match(text, /バージョン7\.0\.11へ更新してください/);
   assert.match(text, /更新時は提供元の手順を確認してください/);
 });
+
+test('extractMainText: 表の短いセル（修正版のバージョン）を残し、リンクだけのメニューは落とす', () => {
+  const html = `<body><ul><li><a href="/top">TOP</a></li></ul>
+    <p>${filler(60)}の更新を推奨します。</p>
+    <table><tr><th>系統</th><th>修正版</th></tr><tr><td>PHP 8.2</td><td>8.2.35</td></tr><tr><td>PHP 8.3</td><td>8.3.36</td></tr></table></body>`;
+  const text = extractMainText(html, 1500);
+  assert.match(text, /PHP 8\.2 8\.2\.35 PHP 8\.3 8\.3\.36/);
+  assert.ok(!text.includes('TOP'));
+});
+
+test('extractMainText: 短い <article>（ブロックを含まない <br> 区切り）でも本文を捨てない', () => {
+  const html = `<body><article>脆弱性が見つかりました。<br />バージョン2.1.0へ更新してください。</article></body>`;
+  assert.equal(extractMainText(html, 1500), '脆弱性が見つかりました。 バージョン2.1.0へ更新してください。');
+});
