@@ -65,7 +65,7 @@ test('build-security: 収集→生成→出典検証が通り、記事・アー�
     assert.ok(!post.includes('出典に無い語'));
     // 通った対策・用語は本文と frontmatter の両方に出る
     assert.match(post, /### すぐできる対策\n\n- 旧版を使っている場合、該当製品の利用者は、最新版へ更新してください\[\^s-[0-9a-f]+\]。/);
-    assert.match(post, /## 今日の用語\n\n- <strong>脆弱性<\/strong>（ぜいじゃくせい）：システムの弱点のこと\[\^s-[0-9a-f]+\]。/);
+    assert.match(post, /## 今日の用語\n\n- <strong>脆弱性<\/strong>（ぜいじゃくせい）：プログラムの不具合や設計上のミスで生じる、攻撃に悪用されうる弱点のこと(?:\[\^s-[0-9a-f]+\])+。/);
     assert.match(post, /^glossary: \[\{"term":"脆弱性","reading":"ぜいじゃくせい"/m);
     // 記事冒頭の「今日のポイント」: 検証済みの見出し1文と対策だけ。存在しない id を引用した見出し（乙不正）は載らない
     assert.match(post, /^---\n[\s\S]*?\n---\n## 今日のポイント\n\n- <strong>テーマ甲<\/strong>：テーマ甲で脆弱性が報告された\[\^s-[0-9a-f]+\]。\n- <strong>テーマ丙<\/strong>：/);
