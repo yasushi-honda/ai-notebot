@@ -7,8 +7,8 @@
  */
 
 export const MAX_ACTIONS_PER_THEME = 3;
-export const MAX_TERMS_PER_THEME = 2;
-export const MAX_TERMS_PER_DAY = 6;
+export const MAX_TERMS_PER_THEME = 3;
+export const MAX_TERMS_PER_DAY = 8;
 // 記事冒頭の「今日のポイント」パネルに載せる「今日まずやること」の上限（各テーマの先頭1件を集める）
 export const MAX_HIGHLIGHT_ACTIONS = 4;
 

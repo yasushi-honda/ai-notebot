@@ -15,7 +15,7 @@ themes:
   - title: "テーマ丙"
     sourceCount: 3
 sourceIds: ["s-0d1bb73bcc", "s-845cfdd10c", "s-81306766a5", "s-4ef7a559ae", "s-9f40e8f9a1", "s-146c5f06a0", "s-5291a4f30e"]
-glossary: [{"term":"脆弱性","reading":"ぜいじゃくせい","definition":"システムの弱点のこと","sourceIds":["s-0d1bb73bcc"]}]
+glossary: [{"term":"脆弱性","reading":"ぜいじゃくせい","definition":"プログラムの不具合や設計上のミスで生じる、攻撃に悪用されうる弱点のこと","sourceIds":["s-0d1bb73bcc","s-4ef7a559ae","s-81306766a5"]}]
 ---
 ## 今日のポイント
 
@@ -68,7 +68,7 @@ glossary: [{"term":"脆弱性","reading":"ぜいじゃくせい","definition":"�
 
 ## 今日の用語
 
-- <strong>脆弱性</strong>（ぜいじゃくせい）：システムの弱点のこと[^s-0d1bb73bcc]。
+- <strong>脆弱性</strong>（ぜいじゃくせい）：プログラムの不具合や設計上のミスで生じる、攻撃に悪用されうる弱点のこと[^s-0d1bb73bcc][^s-4ef7a559ae][^s-81306766a5]。
 
 [^s-0d1bb73bcc]: [feed100 item0](https://example.test/f100/i0) — JPCERT/CC（2097-07-12）
 [^s-146c5f06a0]: [feed105 item0](https://example.test/f105/i0) — ScanNetSecurity（2097-07-12）

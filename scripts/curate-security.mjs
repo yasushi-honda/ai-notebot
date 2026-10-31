@@ -44,10 +44,12 @@ import {
   assembleThemeMarkdown,
   assembleGlossarySection,
   collectDailyTerms,
+  MAX_TERMS_PER_THEME,
   validateSecurityFrontmatter,
   findUnsafeMarkup,
   sanitizeThemeTitle,
 } from './lib/security-article.mjs';
+import { findGlossaryTerms } from './lib/security-glossary.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_DIR = join(ROOT, 'data', 'raw-security');
@@ -185,7 +187,8 @@ async function runStageB(theme, itemsById) {
       const headline = validateHeadline(result.headline, result.headlineSourceIds, validIds);
       return {
         assembled: assembleThemeMarkdown(body, actions.accepted),
-        terms: terms.accepted,
+        // 固定辞書の一般用語（本文に出てきたもの）を優先し、LLM 由来の検証済み用語で補う
+        terms: [...findGlossaryTerms(body, validIds), ...terms.accepted].slice(0, MAX_TERMS_PER_THEME),
         actions: actions.accepted,
         headline: headline.accepted,
         headlineRejected: headline.rejected, // 除外した理由（無ければ null）。対策・用語とは別の警告で報告する
