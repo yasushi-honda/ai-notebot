@@ -64,7 +64,7 @@ decision-maker の依頼:「今後どんどん増えるので、頭文字で抽�
 |---|------|------------------|--------------|------------|
 | 1 | **11/01 以降の自動生成で用語が増えているかの確認** | 2026-11-01（日）07:00 JST の daily 実行の後 | read-only で、`/security/2026-11-01/` の「今日の用語」が複数語か、`/security/glossary/` の語数が増えているか、`::warning::[curate-security]` の有無を確認する。あわせて本番で検索窓・行ナビが動くか（本番での操作は未確認）を見る | `curl -s https://yasushi-honda.github.io/ai-notebot/security/glossary/ \| grep -o 'data-entry' \| wc -l`、`gh run view <id> --log \| grep -E "用語\|::warning::"`（リポジトリ内で実行） |
 | 2 | **対策の空率の測定と、公式補助取得の要否判断**（旧 2 を更新。用語は §9 で解消済み） | セキュリティ版の記事が 5 日分以上そろう（目安 2026-11-03 以降） | read-only で、記事ごとの対策件数・`::warning::` の頻度・要約補強の成功率・除外テーマ数を集計し、別モデル（Sonnet）で出典忠実性を再監査する（再生成後の記事と固定辞書の定義は未監査）。対策の空率が高ければ「公式の対策節を補助資料として別途収集する工程」を plan mode で設計する提案を AskUserQuestion で行う | `site/src/content/security/*.md` の `### すぐできる対策` を集計。監査の入力形式は前回（`{n,date,sentence,sources[{title,summary,source}]}`）と同じ |
-| 3 | **用語辞書の定義文の事実確認** | decision-maker が辞書（約45語）の定義を確認する、または確認を依頼する | 定義は AI が起草し人の確認は未了。誤りや言い過ぎがあれば `security-glossary.mjs` を修正（write なので指示後）。確認の補助として、辞書を一覧にした確認用資料の生成は依頼があれば実施 | `scripts/lib/security-glossary.mjs` の `SECURITY_TERMS` |
+| 3 | **用語辞書の定義文の人による確認** | decision-maker が辞書（46語）の定義を確認する、または確認を依頼する | 定義は AI が起草し、別系統モデル（Codex）の事実確認で 18 語の指摘を反映済み（10/31）。人の確認は未了。誤りや言い過ぎがあれば `security-glossary.mjs` を修正（write なので指示後）。確認用に辞書を一覧にした資料の生成は依頼があれば実施 | `scripts/lib/security-glossary.mjs` の `SECURITY_TERMS` |
 | 4 | セキュリティ版のしきい値の見直し | 土日を含む 7 日分の収集結果がそろう | `minSuccessSources: 5`・`minTotalItems: 20`・時間予算 8 分（`build-security.mjs`）が実測に合うかを見る。休日に収集失敗が続くなら緩める提案をする | `data/raw-security/*.json` の件数、daily のログの収集件数・所要時間 |
 | 5 | AI 版 `curate.mjs` の本文に生 HTML・リンクの拒否を入れる | decision-maker からの修正指示 | セキュリティ版の `findUnsafeMarkup` を AI 版の Stage B の `evaluate` にも適用する（介護版には既にある）。本文は外部フィードに影響されるため同じ経路で露出している。修正（write）なので起点は decision-maker | `grep -n findUnsafeMarkup scripts/curate.mjs`（現状ヒットなし） |
 | 6 | Stage B のテーマ除外の実環境確認（前回から継続） | daily の run ログに「除外したテーマ」が頻発した時 | 10/24 の run で 1 件（脚注欠落 3 試行連続 NG）を確認済み。頻発するなら脚注指示の見直し | `gh run view <id> --log \| grep '除外したテーマ'`（リポジトリ内で実行） |
@@ -125,4 +125,4 @@ decision-maker の依頼:「今後どんどん増えるので、頭文字で抽�
 
 - OPEN PR: 本ハンドオフ PR のみ / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 13
 - §4.6 同根再発スキャン: 候補 0 件 / §4.7 対症療法判定: 該当なし
-- 未確認: 本番での検索窓の操作、辞書の定義文の事実確認（条件待ち 1・3）
+- 未確認: 本番での検索窓の操作、辞書の定義文の人による確認（条件待ち 1・3）。過去記事（10/29〜31）の用語欄は旧定義のまま（次回の生成から新定義）
