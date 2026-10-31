@@ -68,8 +68,8 @@ Astro build → /security/YYYY-MM-DD/ と /security/glossary/（全記事の用�
 ```
 
 収集・記事生成・オーケストレーションは AI版・介護版と共通部品（`scripts/lib/collect-core.mjs` / `digest-curation.mjs` /
-`orchestrate.mjs`）を使い、版ごとにプロファイルだけを持つ。対策は出典に書かれた読者向けの行動だけ、用語は出典と本文に
-実在する語だけを載せる（無ければ空）。詳細: `docs/adr/adr-2026-10-29-security-digest.md`。
+`orchestrate.mjs`）を使い、版ごとにプロファイルだけを持つ。対策は出典に書かれた読者向けの行動だけ。用語は固定辞書（`lib/security-glossary.mjs`）の語のうち記事本文に
+出てきたものを、その文の脚注つきで載せる（LLM に定義を書かせない）。詳細: `docs/adr/adr-2026-10-29-security-digest.md`。
 
 ## GCP / GitHub
 
