@@ -39,3 +39,8 @@ test('異常系: 脚注のない行・対象外の id・空の本文は拾わな
 test('AI の「トークン」など、セキュリティ以外の意味がありうる語は辞書に入れない', () => {
   assert.deepEqual(findGlossaryTerms('1Mトークンの入力[^s-aaaaaaaaaa]。', valid), []);
 });
+
+test('非同義の語は拾わない（DoS≠DDoS、サプライチェーンの可視化≠サプライチェーン攻撃）', () => {
+  assert.deepEqual(findGlossaryTerms('単一の要求でDoS攻撃が可能[^s-aaaaaaaaaa]。', valid), []);
+  assert.deepEqual(findGlossaryTerms('サプライチェーンの可視化を改善[^s-aaaaaaaaaa]。', valid), []);
+});
