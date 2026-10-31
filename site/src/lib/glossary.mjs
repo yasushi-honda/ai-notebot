@@ -88,3 +88,42 @@ export function groupByRow(entries) {
   const order = [...ROWS, OTHER_ROW];
   return order.filter((row) => groups.has(row)).map((row) => ({ row, entries: groups.get(row) }));
 }
+
+/**
+ * 検索用の正規化。全角半角・大文字小文字・カタカナ/ひらがなの違いを吸収する
+ * （「ランサムウェア」「らんさむうぇあ」「ransomware」のどれで探しても同じ照合になるように）。
+ * ページ内の絞り込み（クライアント側）とビルド時の検索キー作成の両方で使うので、ここ1か所に置く。
+ * @param {string} text
+ */
+export function normalizeQuery(text) {
+  return String(text ?? '')
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60))
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/** 1語ぶんの検索キー（用語・読み・定義を連結して正規化したもの）。 */
+export function searchKey(entry) {
+  return normalizeQuery(`${entry.term} ${entry.reading} ${entry.definition}`);
+}
+
+/**
+ * 検索語（空白区切りは AND）が検索キーに含まれるか。空の検索語は常に一致。
+ * @param {string} key searchKey の結果
+ * @param {string} query 利用者の入力（未正規化でよい）
+ */
+export function matchesQuery(key, query) {
+  const words = normalizeQuery(query).split(' ').filter(Boolean);
+  return words.every((w) => key.includes(w));
+}
+
+/**
+ * 行ごとの語数（ナビのチップ用）。語が無い行も 0 として含め、並びは五十音順。
+ * @param {GlossaryEntry[]} entries
+ * @returns {Array<{row: string, count: number}>}
+ */
+export function rowCounts(entries) {
+  return [...ROWS, OTHER_ROW].map((row) => ({ row, count: entries.filter((e) => e.row === row).length }));
+}

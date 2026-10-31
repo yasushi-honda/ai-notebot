@@ -2,11 +2,13 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { url } from '../../../lib/url';
-import { buildGlossary, groupByRow } from '../../../lib/glossary.mjs';
+import { buildGlossary, groupByRow, rowCounts, searchKey } from '../../../lib/glossary.mjs';
 
 const posts = await getCollection('security');
 const entries = buildGlossary(posts.map((p) => ({ date: p.data.date, glossary: p.data.glossary })));
 const groups = groupByRow(entries);
+const counts = rowCounts(entries);
+const rowId = (row: string) => `row-${row === 'その他' ? 'other' : row}`;
 ---
 
 <BaseLayout title="セキュリティ用語集" description="毎日のセキュリティニュースに出てきた用語を、出典付きで五十音順にまとめた用語集">
@@ -22,14 +24,38 @@ const groups = groupByRow(entries);
     定義は各記事が引用した出典に書かれた内容に基づき、同じ用語は最新の記事の説明を載せています。
   </p>
 
+  {entries.length > 0 && (
+    <div id="glossary-controls" class="hidden sticky top-0 z-10 -mx-4 px-4 py-3 mb-6 bg-paper/95 backdrop-blur border-b border-security-soft">
+      <div class="flex items-center gap-2">
+        <input
+          id="glossary-q"
+          type="search"
+          autocomplete="off"
+          placeholder="用語・読み・説明で絞り込み（例: ふぃっしんぐ / ランサム）"
+          aria-label="用語集の絞り込み"
+          class="flex-1 min-w-0 rounded border border-security-soft bg-white px-3 py-2 text-[15px] text-ink focus:outline-none focus:ring-2 focus:ring-security"
+        />
+        <kbd class="hidden sm:inline text-xs text-ink-soft border border-security-soft rounded px-1.5 py-0.5" title="「/」キーで検索窓へ移動">/</kbd>
+      </div>
+      <p id="glossary-status" class="text-xs text-ink-soft mt-2" aria-live="polite">{entries.length}語</p>
+      <nav aria-label="五十音の行" class="flex flex-wrap gap-1.5 mt-2">
+        {counts.map(({ row, count }) => (
+          count > 0
+            ? <a href={`#${rowId(row)}`} data-row-chip={row} class="inline-flex items-center gap-1 rounded-full border border-security-soft px-2.5 py-0.5 text-sm text-security hover:bg-security-soft">{row}<span class="text-[11px] text-ink-soft" data-chip-count>{count}</span></a>
+            : <span data-row-chip={row} class="inline-flex items-center gap-1 rounded-full border border-transparent px-2.5 py-0.5 text-sm text-ink-soft/40" aria-disabled="true">{row}</span>
+        ))}
+      </nav>
+    </div>
+  )}
+
   {groups.map((group) => (
-    <section class="mb-8">
+    <section class="mb-8 scroll-mt-40" id={rowId(group.row)} data-row-section={group.row}>
       <h2 class="font-display text-lg font-medium text-security border-b border-security-soft pb-1 mb-3">
         {group.row}{group.row === 'その他' ? '' : '行'}
       </h2>
       <dl>
         {group.entries.map((entry) => (
-          <div class="mb-4">
+          <div class="mb-4" data-entry data-key={searchKey(entry)}>
             <dt class="font-semibold text-ink">
               {entry.term}<span class="font-normal text-ink-soft text-sm ml-1">（{entry.reading}）</span>
             </dt>
@@ -49,4 +75,66 @@ const groups = groupByRow(entries);
   ))}
 
   {entries.length === 0 && <p class="text-ink-soft">まだ用語がありません。</p>}
+  <p id="glossary-empty" class="hidden text-ink-soft">該当する用語がありません。別の言葉（読みや英字でも）でお試しください。</p>
 </BaseLayout>
+
+<script>
+  import { matchesQuery } from '../../../lib/glossary.mjs';
+
+  const controls = document.getElementById('glossary-controls');
+  const input = document.getElementById('glossary-q') as HTMLInputElement | null;
+  const status = document.getElementById('glossary-status');
+  const emptyMsg = document.getElementById('glossary-empty');
+
+  if (controls && input && status) {
+    controls.classList.remove('hidden'); // JS が使えるときだけコントローラーを出す（無効でも全件が読める）
+    const items = [...document.querySelectorAll<HTMLElement>('[data-entry]')];
+    const sections = [...document.querySelectorAll<HTMLElement>('[data-row-section]')];
+    const chips = [...document.querySelectorAll<HTMLElement>('a[data-row-chip]')];
+
+    const apply = () => {
+      const q = input.value;
+      let shown = 0;
+      for (const el of items) {
+        const hit = matchesQuery(el.dataset.key ?? '', q);
+        el.classList.toggle('hidden', !hit);
+        if (hit) shown++;
+      }
+      for (const sec of sections) {
+        const n = sec.querySelectorAll('[data-entry]:not(.hidden)').length;
+        sec.classList.toggle('hidden', n === 0);
+        const chip = chips.find((c) => c.dataset.rowChip === sec.dataset.rowSection);
+        if (chip) {
+          chip.classList.toggle('opacity-30', n === 0);
+          chip.classList.toggle('pointer-events-none', n === 0);
+          const count = chip.querySelector('[data-chip-count]');
+          if (count) count.textContent = String(n);
+        }
+      }
+      status.textContent = q.trim() ? `${shown} / ${items.length}語に一致` : `${items.length}語`;
+      emptyMsg?.classList.toggle('hidden', shown > 0);
+      const url = new URL(location.href);
+      if (q.trim()) url.searchParams.set('q', q.trim());
+      else url.searchParams.delete('q');
+      history.replaceState(null, '', url);
+    };
+
+    input.value = new URL(location.href).searchParams.get('q') ?? '';
+    input.addEventListener('input', apply);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        input.value = '';
+        apply();
+      }
+    });
+    // 「/」で検索窓へ（入力欄にいるときは邪魔しない）
+    document.addEventListener('keydown', (e) => {
+      const t = e.target as HTMLElement;
+      if (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(t.tagName) && !e.metaKey && !e.ctrlKey) {
+        e.preventDefault();
+        input.focus();
+      }
+    });
+    apply();
+  }
+</script>
