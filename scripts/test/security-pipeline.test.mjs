@@ -3,6 +3,7 @@
  * fetch スタブで end-to-end 実行する。実ネットワーク・実 Vertex AI は使わない。
  * golden の更新: UPDATE_GOLDEN=1 node --test scripts/test/security-pipeline.test.mjs
  */
+import { SECURITY_TERMS } from '../lib/security-glossary.mjs';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { execFile } from 'node:child_process';
@@ -65,7 +66,10 @@ test('build-security: 収集→生成→出典検証が通り、記事・アー�
     assert.ok(!post.includes('出典に無い語'));
     // 通った対策・用語は本文と frontmatter の両方に出る
     assert.match(post, /### すぐできる対策\n\n- 旧版を使っている場合、該当製品の利用者は、最新版へ更新してください\[\^s-[0-9a-f]+\]。/);
-    assert.match(post, /## 今日の用語\n\n- <strong>脆弱性<\/strong>（ぜいじゃくせい）：プログラムの不具合や設計上のミスで生じる、攻撃に悪用されうる弱点のこと(?:\[\^s-[0-9a-f]+\])+。/);
+    // 定義文は辞書（SECURITY_TERMS）から引く。文言を直すたびにテストを書き換えなくて済むように
+    const vuln = SECURITY_TERMS.find((e) => e.term === '脆弱性');
+    const esc = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    assert.match(post, new RegExp(`## 今日の用語\\n\\n- <strong>脆弱性</strong>（ぜいじゃくせい）：${esc(vuln.definition)}(?:\\[\\^s-[0-9a-f]+\\])+。`));
     assert.match(post, /^glossary: \[\{"term":"脆弱性","reading":"ぜいじゃくせい"/m);
     // 記事冒頭の「今日のポイント」: 検証済みの見出し1文と対策だけ。存在しない id を引用した見出し（乙不正）は載らない
     assert.match(post, /^---\n[\s\S]*?\n---\n## 今日のポイント\n\n- <strong>テーマ甲<\/strong>：テーマ甲で脆弱性が報告された\[\^s-[0-9a-f]+\]。\n- <strong>テーマ丙<\/strong>：/);

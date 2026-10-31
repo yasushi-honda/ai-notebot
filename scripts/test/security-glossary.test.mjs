@@ -93,3 +93,22 @@ test('他の用語の一部になっている語は長い方だけ（ボイス�
 test('読み: プロンプトインジェクション', () => {
   assert.equal(SECURITY_TERMS.find((e) => e.term === 'プロンプトインジェクション').reading, 'ぷろんぷといんじぇくしょん');
 });
+
+test('多義の語は文脈があるときだけ拾う（ジェイルブレイクは AI の文脈が必要、端末の脱獄記事には付けない）', () => {
+  assert.deepEqual(termsOf('iPhone のジェイルブレイクツールが公開された[^s-aaaaaaaaaa]。'), []);
+  assert.ok(termsOf('生成AIのジェイルブレイクが報告された[^s-aaaaaaaaaa]。').includes('ジェイルブレイク'));
+});
+
+test('二要素認証と多要素認証は別の語（MFA は多要素認証、2FA は二要素認証）', () => {
+  const m = termsOf('MFA を必須にした[^s-aaaaaaaaaa]。');
+  assert.ok(m.includes('多要素認証'));
+  assert.ok(!m.includes('二要素認証'));
+  assert.ok(termsOf('2FA を設定した[^s-aaaaaaaaaa]。').includes('二要素認証'));
+});
+
+test('広すぎる別表記は拾わない（一般のパッチ、data breach、スキマー、endpoint detection のみ）', () => {
+  assert.ok(!termsOf('不具合のパッチを配布した[^s-aaaaaaaaaa]。').includes('セキュリティパッチ'));
+  assert.ok(!termsOf('data breach を公表[^s-aaaaaaaaaa]。').includes('情報漏えい'));
+  assert.ok(!termsOf('スキマーが見つかった[^s-aaaaaaaaaa]。').includes('スキミング'));
+  assert.ok(!termsOf('endpoint detection の機能[^s-aaaaaaaaaa]。').includes('EDR'));
+});
