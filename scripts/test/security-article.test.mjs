@@ -135,7 +135,7 @@ test('findUncitedListItems: 脚注のない箇条書き行を検出する（ゲ�
 
 test('collectDailyTerms / assembleGlossarySection: 重複を除いて上限まで集め、0件なら節を出さない', () => {
   const t = (name) => term({ term: name });
-  const out = collectDailyTerms([[t('Brotli'), t('ＢＲＯＴＬＩ')], [t('brotli'), t('A'), t('B')], [t('C'), t('D'), t('E'), t('F'), t('G')]]);
+  const out = collectDailyTerms([[t('Brotli'), t('ＢＲＯＴＬＩ')], [t('brotli'), t('A'), t('B')], [t('C'), t('D'), t('E')], [t('F'), t('G'), t('H')]]);
   assert.equal(out.length, MAX_TERMS_PER_DAY);
   assert.equal(out.filter((x) => x.term.toLowerCase() === 'brotli').length, 1);
   assert.equal(assembleGlossarySection([]), null);
@@ -277,4 +277,21 @@ test('assembleHighlightsSection: テーマ名に句点・感嘆符・ピリオ�
     const r = checkCitations({ markdown: md, validIds: valid, bodyOnly: true });
     assert.equal(r.ok, true, `${title}: ${JSON.stringify(r.uncited)}`);
   }
+});
+
+test('上限の値: 1テーマ3語・1日8語', () => {
+  assert.equal(MAX_TERMS_PER_THEME, 3);
+  assert.equal(MAX_TERMS_PER_DAY, 8);
+});
+
+test('collectDailyTerms: 重複排除の後に1テーマの上限を数える（先行テーマの語が後続の枠を食わない）', () => {
+  const t = (name) => term({ term: name });
+  const out = collectDailyTerms([[t('脆弱性'), t('A')], [t('脆弱性'), t('B'), t('C'), t('D'), t('E')]]);
+  assert.deepEqual(out.map((x) => x.term), ['脆弱性', 'A', 'B', 'C', 'D']);
+});
+
+test('collectDailyTerms: 1日の上限で打ち切る', () => {
+  const t = (name) => term({ term: name });
+  const themes = [0, 1, 2, 3].map((i) => [t(`a${i}`), t(`b${i}`), t(`c${i}`)]);
+  assert.equal(collectDailyTerms(themes).length, MAX_TERMS_PER_DAY);
 });

@@ -44,7 +44,6 @@ import {
   assembleThemeMarkdown,
   assembleGlossarySection,
   collectDailyTerms,
-  MAX_TERMS_PER_THEME,
   validateSecurityFrontmatter,
   findUnsafeMarkup,
   sanitizeThemeTitle,
@@ -188,7 +187,7 @@ async function runStageB(theme, itemsById) {
       return {
         assembled: assembleThemeMarkdown(body, actions.accepted),
         // 固定辞書の一般用語（本文に出てきたもの）を優先し、LLM 由来の検証済み用語で補う
-        terms: collectDailyTerms([[...findGlossaryTerms(body, validIds), ...terms.accepted]]).slice(0, MAX_TERMS_PER_THEME),
+        terms: [...findGlossaryTerms(body, validIds), ...terms.accepted],
         actions: actions.accepted,
         headline: headline.accepted,
         headlineRejected: headline.rejected, // 除外した理由（無ければ null）。対策・用語とは別の警告で報告する

@@ -144,21 +144,26 @@ export function assembleThemeMarkdown(bodyMarkdown, actions) {
 }
 
 /**
- * 全テーマの terms を、同じ用語（大文字小文字・全半角を無視）は最初のものだけ残して1日の上限まで集める。
+ * 全テーマの terms を、同じ用語（大文字小文字・全半角を無視）は最初のものだけ残して集める。
+ * 上限は「各テーマから新規に採る語は MAX_TERMS_PER_THEME まで、1日 MAX_TERMS_PER_DAY まで」。
+ * 重複排除の後に上限を数えるので、複数テーマに出る語（脆弱性など）が後続テーマの枠を食わない。
  * @param {Array<Array>} termsPerTheme
  */
 export function collectDailyTerms(termsPerTheme) {
   const seen = new Set();
   const out = [];
   for (const terms of termsPerTheme) {
+    let fromTheme = 0;
     for (const t of terms) {
       const key = normalizeForMatch(t.term);
       if (seen.has(key)) continue;
+      if (fromTheme >= MAX_TERMS_PER_THEME || out.length >= MAX_TERMS_PER_DAY) break;
       seen.add(key);
       out.push(t);
+      fromTheme++;
     }
   }
-  return out.slice(0, MAX_TERMS_PER_DAY);
+  return out;
 }
 
 /** 「今日の用語」節。用語が無ければ null（空の見出しを出さない）。 */
