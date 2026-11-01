@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, writeFile, readFile, rm, access } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { loadRecentUrls, selectCandidates, runCollection } from '../lib/collect-core.mjs';
+import { loadRecentUrls, selectCandidates, runCollection, effectiveMaxAgeDays } from '../lib/collect-core.mjs';
 
 // テスト対象が進捗を console に出す。出力がテストランナーの通信と混ざると CI で
 // 「Unable to deserialize cloned data」になることがあるため、このファイルでは黙らせる。
@@ -136,6 +136,33 @@ test('runCollection: 成功ソース数がしきい値未満なら ok:false で�
     const r = await runCollection(profileWith(rawDir, [item(1), item(2), item(3)], { minSuccessSources: 2 }), '2099-03-10');
     assert.equal(r.ok, false);
     assert.equal(await exists(join(rawDir, '2099-03-10.json')), false);
+  } finally {
+    await rm(rawDir, { recursive: true, force: true });
+  }
+});
+
+test('effectiveMaxAgeDays: weekendMaxAgeDays 未指定なら曜日によらず maxAgeDays', () => {
+  const p = { maxAgeDays: 3 };
+  assert.equal(effectiveMaxAgeDays(p, new Date('2026-11-01T00:00:00Z')), 3); // 日
+});
+
+test('effectiveMaxAgeDays: 土日(JST日付)だけ weekendMaxAgeDays、平日は maxAgeDays', () => {
+  const p = { maxAgeDays: 3, weekendMaxAgeDays: 5 };
+  assert.equal(effectiveMaxAgeDays(p, new Date('2026-10-31T00:00:00Z')), 5); // 土
+  assert.equal(effectiveMaxAgeDays(p, new Date('2026-11-01T00:00:00Z')), 5); // 日
+  assert.equal(effectiveMaxAgeDays(p, new Date('2026-11-02T00:00:00Z')), 3); // 月
+  assert.equal(effectiveMaxAgeDays(p, new Date('2026-10-30T00:00:00Z')), 3); // 金
+});
+
+test('runCollection: 週末は weekendMaxAgeDays まで遡って候補に入れる', async () => {
+  const rawDir = await tmpRaw();
+  try {
+    // 10-28(水)の項目は、月曜11-02の窓(3日)では落ち、日曜11-01の週末窓(5日)では入る
+    const old = { ...item(1), date: new Date('2026-10-28T10:00:00Z') };
+    const weekday = await runCollection(profileWith(rawDir, [old], { minTotalItems: 1, weekendMaxAgeDays: 5 }), '2026-11-02');
+    assert.equal(weekday.ok, false);
+    const r = await runCollection(profileWith(rawDir, [old], { minTotalItems: 1, weekendMaxAgeDays: 5 }), '2026-11-01');
+    assert.equal(r.ok, true);
   } finally {
     await rm(rawDir, { recursive: true, force: true });
   }

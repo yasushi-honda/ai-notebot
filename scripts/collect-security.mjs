@@ -48,6 +48,8 @@ export const PROFILE = {
   feeds: SECURITY_FEEDS,
   enrich,
   maxAgeDays: 3,
+  // 土日は JPCERT/CC・CISA の更新が止まり一次情報が空になるため、5日(金曜分まで)遡る（2026-11-01 に判明）
+  weekendMaxAgeDays: 5,
   dedupLookbackDays: 7,
   maxPerSource: 8,
   minSuccessSources: 5,
