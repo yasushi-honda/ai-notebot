@@ -40,7 +40,8 @@ async function enrich(candidates) {
 }
 
 // しきい値（minSuccessSources / minTotalItems）は 2026-10-29 の初回確認（9ソース全て取得・直近3日で約166件）を
-// 踏まえた暫定値。数日分の実データ（休日を含む）で見直す。
+// 踏まえた暫定値。2026-11-01（日）に候補19件で下限20件に1件足りず生成が止まったため、
+// minTotalItems を 10 へ緩めた（休日は件数が減る）。品質は出典検証ゲートで担保する。
 export const PROFILE = {
   rawDir: join(ROOT, 'data', 'raw-security'),
   rawLabel: 'data/raw-security',
@@ -50,7 +51,7 @@ export const PROFILE = {
   dedupLookbackDays: 7,
   maxPerSource: 8,
   minSuccessSources: 5,
-  minTotalItems: 20,
+  minTotalItems: 10,
 };
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === resolve(process.argv[1])) {
