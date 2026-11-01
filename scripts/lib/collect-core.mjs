@@ -61,6 +61,17 @@ export async function collectRssFeeds(feeds) {
 }
 
 /**
+ * 実効の鮮度窓（日数）。土日(JST日付)だけ weekendMaxAgeDays を使う（未指定なら maxAgeDays）。
+ * 公的機関のフィードは週末に更新が止まるため、週末は窓を広げて一次情報を拾う。
+ * targetDate は JST 日付を UTC 0時として持っているので getUTCDay() がそのまま JST の曜日になる。
+ */
+export function effectiveMaxAgeDays(profile, targetDate) {
+  const day = targetDate.getUTCDay();
+  const weekend = day === 0 || day === 6;
+  return weekend && profile.weekendMaxAgeDays ? profile.weekendMaxAgeDays : profile.maxAgeDays;
+}
+
+/**
  * 鮮度フィルタ・既出 URL 除外・当日内の重複除外・1ソース上限をかけ、アーカイブ項目の形に整える。
  *
  * targetDate は JST 基準の日付文字列を `${dateStr}T00:00:00Z` として UTC 解釈しているため、
@@ -114,6 +125,7 @@ export function selectCandidates({ all, targetDate, recentUrls, maxAgeDays, maxP
  * @param {Array} profile.feeds RSS/Atom ソース定義（feeds.mjs の形）
  * @param {() => Promise<{items: Array, successCount: number}>} [profile.collectExtra] RSS 以外のソース（API 等）
  * @param {number} profile.maxAgeDays 新着とみなす日数
+ * @param {number} [profile.weekendMaxAgeDays] 土日(JST)だけ使う新着の日数（未指定なら maxAgeDays）
  * @param {number} profile.dedupLookbackDays 直近何日の既出 URL を除外するか
  * @param {number} profile.maxPerSource 1ソースが候補を占拠しないための上限
  * @param {number} profile.minSuccessSources 成功ソース数の下限
@@ -147,7 +159,7 @@ export async function runCollection(profile, dateArg) {
     all,
     targetDate,
     recentUrls,
-    maxAgeDays: profile.maxAgeDays,
+    maxAgeDays: effectiveMaxAgeDays(profile, targetDate),
     maxPerSource: profile.maxPerSource,
   });
 
