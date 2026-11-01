@@ -1,0 +1,178 @@
+{
+  "date": "2026-11-01",
+  "collectedAt": "2026-11-01T03:12:04.856Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-d5a1ee8ada",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Northflank security breach leads to abuse of customers' AI API keys",
+      "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+      "publishedAt": "2026-10-31T18:01:12.000Z",
+      "summary": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]"
+    },
+    {
+      "id": "s-9143f05492",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+      "url": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+      "publishedAt": "2026-10-31T15:35:11.000Z",
+      "summary": "A security researcher has released a proof-of-concept exploit for a recently patched Android vulnerability, dubbed \"SMS of Death\" and tracked as CVE-2026-58882, that lets attackers remotely disrupt cellular service or crash phones by sending a specially crafted text message. [...]"
+    },
+    {
+      "id": "s-89624d6883",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Reddit to lock content behind logins to fight scrapers",
+      "url": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+      "publishedAt": "2026-10-31T14:05:15.000Z",
+      "summary": "Reddit announced in a post by co-founder Steve Huffman that the site will gradually become a \"logged-in service,\" offering limited access to visitors without accounts. [...]"
+    },
+    {
+      "id": "s-379a9e93eb",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+      "url": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+      "publishedAt": "2026-10-31T13:10:19.000Z",
+      "summary": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can build practical cybersecurity skills, use AI responsibly, and produce reproducible findings that stand up to scrutiny. [...]"
+    },
+    {
+      "id": "s-cec7313261",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+      "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+      "publishedAt": "2026-10-31T12:50:09.000Z",
+      "summary": "Blockchain analytics firm Chainalysis disclosed a data breach after attackers used \"offensive agentic techniques\" to access internal systems and tools, exposing customer names, email addresses, user IDs, and organizational roles. [...]"
+    },
+    {
+      "id": "s-1f2870fb86",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+      "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+      "publishedAt": "2026-10-31T12:01:56.000Z",
+      "summary": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens. \"This month, Chainalysis detected an external actor using offensive agentic"
+    },
+    {
+      "id": "s-4a3beb5aa5",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+      "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+      "publishedAt": "2026-10-31T08:27:43.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS score: 8.8) - A missing authentication for a critical function vulnerability that could allow a"
+    },
+    {
+      "id": "s-e8eb82345a",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
+      "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+      "publishedAt": "2026-10-31T05:33:41.000Z",
+      "summary": "A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at&nbsp;the security firm Parameter&nbsp;showed. The researchers reported the flaw through&nbsp;OpenAI's bug bounty program&nbsp;on October 18, and OpenAI fixed it eight days later and rated it P1, its most serious category."
+    },
+    {
+      "id": "s-21ad2182a1",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+      "url": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+      "publishedAt": "2026-10-31T04:56:12.000Z",
+      "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026. That amounts to 197,400 attacks per day, or one attack every 0.44"
+    },
+    {
+      "id": "s-5100bc6323",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "publishedAt": "2026-10-30T07:27:05.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise"
+    },
+    {
+      "id": "s-1dad8889ea",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+      "publishedAt": "2026-10-30T04:14:59.000Z",
+      "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far.&nbsp; Tether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The"
+    },
+    {
+      "id": "s-a84a34c6f6",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
+      "publishedAt": "2026-10-29T23:35:52.000Z",
+      "summary": "OpenAI says it won't reduce usage limits for the $100, $200, and $500 ChatGPT Pro plans, as well as Business Premium, and it also promised to keep Dots usage independent. [...]"
+    },
+    {
+      "id": "s-a89cedd8f0",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "米当局、Ciscoセキュリティ製品と「GitLab」の脆弱性悪用に警鐘",
+      "url": "https://www.security-next.com/192196",
+      "publishedAt": "2026-10-29T23:23:32.000Z",
+      "summary": "米当局、Ciscoセキュリティ製品と「GitLab」の脆弱性悪用に警鐘 Cisco Systemsのファイアウォール製品や開発プラットフォーム「GitLab」に存在する脆弱性が悪用されているとし、米当局は早急な対応を呼びかけた。 米サイバーセキュリティインフラストラクチャセキュリティ庁（CISA）は現地時間2026年10月29日、2件の脆弱性「CVE-2026-76418」「CVE-2026-97229」を「悪用が確認された脆弱性カタログ（KEV）」に追加した。 「CVE-2026-76418」は、Cisco Systemsの 「Cisco Secure Firewall ASA Software」「Cisco Secure FTD Software」で確認された脆弱性 。認証を必要とすることなく機器を再起動させ、サービス拒否の状態を引き起こすことが可能だとしている。 一方「CVE-2026-97229」は、 「GitLab」に明らかとなった整数オーバーフローの脆弱性 。CI/CDの設定に含まれる正規表現の検証が不十分で、細工された正規表現を通じて、認証を必要とせず「GitLab」のサーバ上で任意のコードを実行されるおそれがある。 「GitLab」の脆弱性についてCISAは、依存関係にある 「Ruby」の「Onigmo」における整数オーバーフローの問題 であるとし、「GitLab」以外の製品にも影響する可能性があるとしてあわせて注意を呼びかけている。 （Security NEXT - 2026/10/30 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-cab1c14b23",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "エンタッチにランサムウェア攻撃、データベース内の情報が流出",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56627.html",
+      "publishedAt": "2026-10-29T23:05:08.000Z",
+      "summary": "169 views エンタッチ株式会社は10月19日、同社が管理するデータベースへの不正アクセスについて発表した。 これは10月9日に、ランサムウェア攻撃グループを名乗る第三者の不正アクセスで同社が保有するデータベース内の情報が流出したというもので、10月13日午後4時頃に発覚した。 現時点で判明している漏えいが確認された情報は下記の通り。なお、対象となる可能性のある件数・範囲については調査中となっている。 《ScanNetSecurity》 一次情報または関連リンク 【重要】弊社データベースへの不正アクセスによる情報流出に関するお知らせ（第一報） 関連記事 自宅玄関にマトリョーシカ ～ ランサムウェア攻撃の 37 ％で関係者個人に心理的・身体的脅迫 [グローバル調査] 2026.10.20 Tue 8:15 今後は侵入経路と考えられるリモートデスクトップ接続を遮断 ～ 八王子学園 ランサムウェア攻撃 2報 2026.10.15 Thu 8:05 両毛システムズにランサムウェア攻撃 2026.10.15 Thu 8:05 「IDCFクラウド」にランサムウェア攻撃 2026.10.9 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-2c72fe8f0f",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "メディアサーバにディレクトリパストラバーサルが存在 ～ アルカディア運営の「SpeeCAN RAIDEN」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56626.html",
+      "publishedAt": "2026-10-29T23:05:05.000Z",
+      "summary": "150 views 株式会社アルカディアは10月19日、10月13日に公表した同社が運営する「SpeeCAN RAIDEN」への不正アクセスについて、現時点で判明している事実、影響範囲、対応状況、今後の対応方針について発表した。 同社では10月11日に、「SpeeCAN RAIDEN」への不正アクセスが疑われる不審な挙動を確認しており、10月12日午前3時頃に侵入経路を塞ぐ応急措置を講じるとともに、影響範囲を特定するための調査を開始していた。 同社では、添付ファイルを公開しているメディアサーバに内部のURLにアクセスできるディレクトリパストラバーサルが存在しており、内部ソースファイルが取得されたことで、設定ファイル内のサービス間ログイン用シークレットキーが取得され、第三者からシークレットキーを利用した、アカウントIDへの総当たり攻撃が実施され、ログインされたセッションから内部情報が取得されたという。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスの経過と当社の対処について 関連記事 唐津市情報メール配信サービスを業務委託しているアルカディアに不正アクセス 2026.10.19 Mon 8:05 アルカディア運営の「SpeeCAN RAIDEN」に不正アクセス 2026.10.16 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-9414fc7609",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「阪急百貨店・阪神百貨店予約サイト」に不正アクセス、約126万件の「H2O ID」個人情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56625.html",
+      "publishedAt": "2026-10-29T23:05:03.000Z",
+      "summary": "459 views エイチ・ツー・オー リテイリング株式会社は10月19日、同社子会社の株式会社阪急阪神百貨店が運営する「阪急百貨店・阪神百貨店予約サイト」、「HANKYU HANSHIN E-STORES」および「Remo Order」への不正アクセスについて発表した。 これは10月16日に、「阪急百貨店・阪神百貨店予約サイト」を経由した顧客管理システムへの第三者からの不正アクセスを確認したというもので、同日中に外部からの不正な通信を遮断するなどの緊急措置を講じるとともに、被害拡大防止を目的として、同サイトのシステム全体を停止している。また同社では翌10月17日に、「HANKYU HANSHIN E-STORES」および「Remo Order」でも不正アクセスを確認したため、同日に両サイトのシステム全体を停止している。 同社ではその後の調査で、当該顧客管理システムで管理している「H2O ID」のうち約126万件の個人情報の一部が漏えいしたことが10月19日に判明している。漏えいした可能性がある顧客情報は下記の通り。 《ScanNetSecurity》 一次情報または関連リンク 第三者による不正アクセス発生と個人情報漏えいに関するお詫びとお知らせ 関連記事 ソースネクストに不正アクセス、2,251万9,960件の会員情報が流出した可能性 2026.10.20 Tue 8:05 ゴルフダイジェスト・オンラインに不正アクセス、攻撃者にファイルがダウンロードされたことを確認 2026.10.20 Tue 8:05 日本経済新聞社がシステム開発に利用するクラウドサービスに不正アクセス、約183万件の個人情報が漏えい 2026.10.20 Tue 8:05 NTTソルマーレの電子書籍ストア「コミックシーモア」に不正アクセス、会員情報が流出 2026.10.20 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-146cc9d8a0",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "経済産業省が中小企業・小規模事業者向け「サイバーセキュリティ特別相談窓口」を設置",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56624.html",
+      "publishedAt": "2026-10-29T23:00:07.000Z",
+      "summary": "104 views 経済産業省は10月27日、相次ぐサイバー攻撃によって大規模な情報漏えい被害等が多数生じていることを踏まえ、中小企業・小規模事業者向けの「サイバーセキュリティ特別相談窓口」を同日、設置すると発表した。 同省では、各都道府県に設置されている「よろず支援拠点」と、独立行政法人中小企業基盤整備機構の「IT経営サポートセンター」に、無料の「サイバーセキュリティ特別相談窓口」を10月27日付で設置し、中小企業からの相談を受け付ける。 また同省では、全国の商工団体や金融機関、税理士といった支援機関を通じて、中小企業・小規模事業者に対し、これらの取組をプッシュ型で情報提供する。 《ScanNetSecurity》 一次情報または関連リンク 経済産業省 関連記事 電話とメールで受付 ～ IPAが不正アクセス特別相談窓口を開設 2026.10.21 Wed 8:00 「偽警告」相談が再び急増 容疑者検挙後も増加傾向が続く ～ 2026年第2四半期 IPA 情報セキュリティ安心相談窓口の相談状況 2026.7.30 Thu 8:00 同僚名で会社のメルアドに「LINEグループを作ってQRコードを送ってほしい」と連絡、出先だったので指示に従ってしまった 2026.2.10 Tue 8:05 日米韓など同盟国、北朝鮮IT労働者の手口や特徴まとめた注意喚起を公表 2026.8.12 Wed 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a0f004c670",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "徳丸浩氏 登壇 ～ 日銀金融研究所、オンラインセミナー「AIエージェント時代に求められるセキュリティ戦略と課題」を 11/30 開催",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56623.html",
+      "publishedAt": "2026-10-29T23:00:03.000Z",
+      "summary": "76 views 日本銀行金融研究所情報技術研究センターは10月27日、「AIエージェント時代に求められるセキュリティ戦略と課題」をテーマとした情報セキュリティ・セミナーを11月30日に開催すると発表した。 同セミナーでは、大塚玲氏と徳丸浩氏が「AIエージェント時代に求められるセキュリティ戦略と課題」をテーマに、AIエージェントが相互に連携するシステムのセキュリティに関する最新の研究動向や実務的な対応の方向性について解説する。 ・概要 日時：11月30日14:00-15:30 開催形態：オンライン開催（Cisco Webex Webinars） 申込： https://imes-seminar.rsvsys.jp/reservations/event/17 申込締切：11月20日 ・プログラム 講演1「AIエージェント時代のセキュリティ課題～多様な脅威に対応する戦略的アプローチ～」 14:00～14:45 大塚玲氏（情報セキュリティ大学院大学 教授） 内容：AIエージェントの特性や構造上の課題を踏まえ、セキュリティに関する最新の研究動向を学術的な視点から解説する他、AIエージェントの活用事例を通じて、その可能性と潜在的なリスクについても紹介。 講演2「Webセキュリティの現在地と未来展望～AI エージェント時代のリスクと対応～」 14:45-15:30 徳丸浩氏（EGセキュアソリューションズ株式会社 取締役CTO） 内容：AIエージェントを活用したWebシステムにおいて注意すべきセキュリティ上のリスクを整理し、システム設計・運用において留意すべきポイントについて解説する他、Webセキュリティの現場で観測されている攻撃事例を踏まえ、AIエージェント時代に対応したセキュリティ設計の方向性について紹介。 《ScanNetSecurity》 一次情報または関連リンク 日本銀行 関連記事 「ポスト量子時代の暗号技術」をテーマとしたシンポジウムを 2/27 オンライン開催 2026.2.10 Tue 8:00 日本銀行金融研究所「地図で見るサイバーセキュリティ」10 / 1 オンライン開催 2025.9.22 Mon 8:00 徳丸氏「ASPM 着目に先見の明」～ EGセキュアソリューションズと IssueHunt が DevSecOps 支援で業務連携 2025.1.31 Fri 8:00 徳丸 浩 氏「サイバーセキュリティ 2024年ふりかえりと2025年展望」 2024.12.20 Fri 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-5e7d8cb43d",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Binance probes potential $5.8 billion crypto-theft hack",
+      "url": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+      "publishedAt": "2026-10-29T22:45:23.000Z",
+      "summary": "Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history. [...]"
+    }
+  ]
+}
