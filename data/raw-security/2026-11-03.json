@@ -1,0 +1,277 @@
+{
+  "date": "2026-11-03",
+  "collectedAt": "2026-11-02T22:01:24.259Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-29960679f7",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
+      "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+      "publishedAt": "2026-11-02T21:40:14.000Z",
+      "summary": "Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries. [...]"
+    },
+    {
+      "id": "s-c67a1f34b8",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
+      "url": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+      "publishedAt": "2026-11-02T19:00:45.000Z",
+      "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]"
+    },
+    {
+      "id": "s-eee7033c0c",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Google disrupts million-device XCPE Android malware botnet, bans TV box maker",
+      "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
+      "publishedAt": "2026-11-02T18:16:34.000Z",
+      "summary": "Google and industry partners have dismantled the XCPE malware botnet consisting of more than 1.3 million Android TV streaming TV boxes that Google says its manufacturer intentionally infected with malware to generate revenue through cybercrime activities. [...]"
+    },
+    {
+      "id": "s-65afadf0cb",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+      "publishedAt": "2026-11-02T16:57:56.000Z",
+      "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against"
+    },
+    {
+      "id": "s-948be6f589",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
+      "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+      "publishedAt": "2026-11-02T15:50:26.000Z",
+      "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google. Google says&nbsp;it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals. They used the boxes for ad fraud and to pass other people's internet traffic through owners' home"
+    },
+    {
+      "id": "s-00a811dcbf",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+      "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+      "publishedAt": "2026-11-02T15:03:07.000Z",
+      "summary": "The maintainer of BTCPay Server, an open-source cryptocurrency payment processor, has urged users to install the latest version as hackers have been draining \"hot wallets\" on instances running older versions. [...]"
+    },
+    {
+      "id": "s-355e0f25d1",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Your Mobile Carrier Stores Your Call Logs for Years",
+      "url": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
+      "publishedAt": "2026-11-02T15:01:11.000Z",
+      "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically deleting call records. [...]"
+    },
+    {
+      "id": "s-39749d757e",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+      "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+      "publishedAt": "2026-11-02T14:46:05.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud"
+    },
+    {
+      "id": "s-65b5d99c37",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers disrupt refrigeration systems at European supermarkets",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+      "publishedAt": "2026-11-02T14:28:39.000Z",
+      "summary": "A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems. [...]"
+    },
+    {
+      "id": "s-f131dc564d",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft fixes Smart App Control broken by October Windows update",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
+      "publishedAt": "2026-11-02T13:57:29.000Z",
+      "summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...]"
+    },
+    {
+      "id": "s-ece7545e16",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "外務省のネットワークで侵害 - 個人情報流出の可能性",
+      "url": "https://www.security-next.com/192256",
+      "publishedAt": "2026-11-02T13:55:46.000Z",
+      "summary": "外務省のネットワークで侵害 - 個人情報流出の可能性 外務省は、ネットワークが侵害され、同ネットワーク上で扱っていた個人情報が流出した可能性があることを明らかにした。 同省によれば、2026年7月27日、外部とのやり取りが可能なネットワークにおいて侵害を検知したもの。 アクセスを遮断するとともに、認証情報の無効化などを実施。外部協力のもと調査を進めたところ、個人情報が流出した可能性があることがわかった。 対象となるのは、氏名やメールアドレスなど約3600件。そのうち約900件は同省以外の関係者の情報としている。 内容について確認したが、漏洩の可能性がある情報に機密性の高い情報などは確認されておらず、個人情報の悪用など二次被害についても確認されていないという。 （Security NEXT - 2026/11/02 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-ef7066baf5",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "アイリスオーヤマ通販サイトで侵害 - 詳細を調査",
+      "url": "https://www.security-next.com/192208",
+      "publishedAt": "2026-11-02T13:13:36.000Z",
+      "summary": "アイリスオーヤマ通販サイトで侵害 - 詳細を調査 アイリスオーヤマの通信販売サイト「アイリスプラザ」がサイバー攻撃を受けたことがわかった。 同サイトを運営するアイリスプラザによれば、通販サイトで侵害を確認したもので、安全確保のため、サイトを一時停止した。 2026年10月29日の時点ではクレジットカード情報の流出などは確認されていないが、情報流出の可能性も含めて調べている。 引き続き調査を進めるとし、詳細や今後の対応については、ウェブサイトでアナウンスする予定。 （Security NEXT - 2026/11/02 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-acc7fc828a",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+      "publishedAt": "2026-11-02T12:47:00.000Z",
+      "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]"
+    },
+    {
+      "id": "s-fb8a30dd86",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "個人情報漏洩の個人向け被害者相談窓口を強化 - IPA",
+      "url": "https://www.security-next.com/192287",
+      "publishedAt": "2026-11-02T12:25:29.000Z",
+      "summary": "個人情報漏洩の個人向け被害者相談窓口を強化 - IPA 情報処理推進機構（IPA）は、サイバー攻撃にともなう個人情報の流出が相次いでいることを受け、個人ユーザー向けの相談窓口における対応を強化した。 ウェブシステムにおける脆弱性の悪用やサプライチェーンを通じた侵害など、情報流出が相次いで発生していることを受け、従来より提供している「情報セキュリティ安心相談窓口」の対応を強化したもの。 同窓口では全国の個人ユーザーを対象に、電話やメールで対応。マルウェア感染や不正アクセスをはじめ、フィッシングといったネット詐欺など、個人情報の漏洩にともなう二次被害に遭うリスクを低減するため、アドバイスなども提供する。 さらに不正アクセスの被害の有無にかかわらず、日ごろから実施すべきセキュリティ対策などについても情報を提供する。 また、消費生活センターなど関係行政機関の相談窓口との連携も強化する方針。 なお、同窓口における対応は一般的な技術的助言に限られ、機器やログなどの個別調査、犯罪者の検挙、事件捜査の要望などは対象とならない。 （Security NEXT - 2026/11/02 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-ad2df65419",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
+      "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+      "publishedAt": "2026-11-02T11:50:00.000Z",
+      "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code,&nbsp;IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and&nbsp;its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the flaws, and the only fix is version 1.13.0. Neither flaw is in CISA's&nbsp;Known"
+    },
+    {
+      "id": "s-c477f18125",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
+      "url": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+      "publishedAt": "2026-11-02T11:30:00.000Z",
+      "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decision is whether their own SOC is ready. AI SOC readiness has two parts: whether a SOC has the"
+    },
+    {
+      "id": "s-d596e3f2ba",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
+      "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
+      "publishedAt": "2026-11-02T11:08:45.000Z",
+      "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said in&nbsp;a report&nbsp;that it investigated two such intrusions, one of which resulted in company"
+    },
+    {
+      "id": "s-87a25e1b55",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
+      "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
+      "publishedAt": "2026-11-02T10:49:59.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been tracked under the moniker CL-UNK-1211, where \"CL\" refers to cluster and \"UNK\" stands for unknown"
+    },
+    {
+      "id": "s-c92d2ae9e3",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "QNAP、脆弱性「PHP2Shell」へ順次対応 - 「NDR」向け更新は準備中",
+      "url": "https://www.security-next.com/192277",
+      "publishedAt": "2026-11-02T06:19:13.000Z",
+      "summary": "QNAP、脆弱性「PHP2Shell」へ順次対応 - 「NDR」向け更新は準備中 ファイルストレージサーバなどを提供するQNAPは、PHPに深刻な脆弱性「PHP2Shell」が判明した問題で、同社のOSやアプリケーション向けに修正版を順次提供している。 「PHP2Shell」は、プログラミング言語である「PHP」に判明した2件の脆弱性「CVE-2026-109618」「CVE-2026-109619」。メモリ破壊や解放後のメモリを使用する「Use After Free」の脆弱性で、コードの実行や情報漏洩につながるおそれがある。 同社はセキュリティアドバイザリを公開し、「QTS」「QuTS hero」「QuTScloud」「TVR OS」などのOSや、「Notes Station 3」「QVR Surveillance」向けにセキュリティアップデートを用意。 一方、内部ネットワークにおける脅威の検出や対応など、「NDR」機能を提供する「ADRA」デバイス向けOS「QNE ADRA」についても「同1.0.7」および以前のバージョンが脆弱性の影響を受けるとし、修正版の提供に向けて準備を進めている。 同社は、脆弱性が修正されていない場合、対象機器をインターネット上へ公開することを避け、信頼できるネットワークからのアクセスのみに制限するなど対策を求めた。 くわえて「Container Station」で動作するコンテナやサードパーティ製アプリに含まれる「PHP」環境については、これらアップデートの対象とはならないため、注意が必要となる。 （Security NEXT - 2026/11/02 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-9068a344a0",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+      "url": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+      "publishedAt": "2026-11-02T05:51:07.000Z",
+      "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and cookies from Chromium-based web browsers; data from Outlook profiles and Slack workspaces;"
+    },
+    {
+      "id": "s-e399a70249",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "DB管理ツール「pgAdmin 4」に複数脆弱性 - 2件は「クリティカル」",
+      "url": "https://www.security-next.com/192279",
+      "publishedAt": "2026-11-02T03:52:54.000Z",
+      "summary": "DB管理ツール「pgAdmin 4」に複数脆弱性 - 2件は「クリティカル」 「PostgreSQL」向けのデータベース管理ツール「pgAdmin 4」に複数の脆弱性が判明した。修正版を提供しており、利用者にアップデートを呼びかけている。 「pgAdmin」の開発チームは現地時間2026年10月29日、セキュリティアップデートとなる「pgAdmin 4 9.19」をリリースした。136件のバグへ対応するとともに、CVEベースで15件の脆弱性を修正した。 今回修正された脆弱性の重要度を見ると、2件が4段階中もっとも高い「クリティカル（Critical）」と評価されている。 「CVE-2026-116241」は、データのインポートやエクスポートを行う機能に確認されたOSコマンドインジェクションの脆弱性。以前に修正した「CVE-2026-17566」に対する対策が不十分だったという。 入力内容の検証とコマンドラインツール「psql」による構文解釈の違いに起因。悪用には「pgAdmin」の認証とデータのエクスポート機能の利用権限が必要だが、「pgAdmin」が動作するホスト上で任意のOSコマンドを実行できる。 （Security NEXT - 2026/11/02 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-3474c1431b",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Core TempのカーネルドライバにおけるIOCTLインタフェースに対するアクセス制御が不十分な脆弱性",
+      "url": "https://jvn.jp/jp/JVN23328936/",
+      "publishedAt": "2026-11-02T03:00:00.000Z",
+      "summary": "JVN#23328936 Core TempのカーネルドライバにおけるIOCTLインタフェースに対するアクセス制御が不十分な脆弱性 ALCPUが提供するCore Tempのカーネルドライバには、IOCTLインタフェースに対するアクセス制御が不十分な脆弱性が存在します。 Core Temp v1.21より前 ALCPUが提供するCore Tempのカーネルドライバには、次の脆弱性が存在します。 IOCTLに対する不十分なアクセス制御（ CWE-782 ） CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N 基本値 8.4 CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H 基本値 6.7 CVE-2026-109836 物理メモリが読み込まれたり、書き込まれたりする可能性があります。 アップデートする 開発者が提供する情報をもとに、最新版にアップデートしてください。 ベンダ リンク ALCPU この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：柳川珠樹 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-63c05a8b22",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ECサイトに不正アクセス、会員情報流出 - フィギュアメーカー",
+      "url": "https://www.security-next.com/191996",
+      "publishedAt": "2026-11-02T02:43:41.000Z",
+      "summary": "ECサイトに不正アクセス、会員情報流出 - フィギュアメーカー フィギュアやホビー商品の製造、販売を手がけるグッドスマイルカンパニーは、eコマースサイトにおいて会員の個人情報が流出したことを明らかにした。 同社によれば、「グッドスマイルカンパニー公式ショップ」が不正アクセスを受けたもの。2026年10月23日6時に同サイトの保守委託事業者から連絡があり、問題が発覚。サイトを閉鎖した。 ログを解析したところ、10月19日15時過ぎから同月22日23時ごろにかけて、同サイトの管理情報に対して複数回にわたりアクセスされていたことがわかった。さらに不正なプログラムが設置されていたことも10月28日18時半過ぎに判明した。 システムの一部に存在した脆弱性が悪用され、管理者権限が不正に取得されたという。 2026年10月21日13時55分から同月23日7時にかけて、同サイトのクレジットカード決済ページで入力されたクレジットカード情報が窃取されたおそれがある。対象は2800人で、クレジットカードの名義、番号、有効期限、セキュリティコードが含まれる。 （Security NEXT - 2026/11/02 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-b89019e82d",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "新菱冷熱工業にサイバー攻撃、システム障害で一部サービスにも影響",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56642.html",
+      "publishedAt": "2026-11-01T23:05:12.000Z",
+      "summary": "218 views 新菱冷熱工業株式会社は10月21日、サイバー攻撃によるシステム障害の発生について発表した。 これは10月17日に、第三者からのサイバー攻撃でシステム障害が発生したというもの。システム障害に伴い、同社提供の一部サービスにも影響が発生している。 同社によると、現時点で個人情報や顧客データが外部流出した事実は確認されていないが、継続して調査を行っている。 同社では引き続き、外部専門機関及び関係機関と連携しながら、当該サービスの復旧、事実関係の確認、影響範囲の特定と再発防止策の実施に向けて取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク サイバー攻撃によるシステム障害発生について 関連記事 自宅玄関にマトリョーシカ ～ ランサムウェア攻撃の 37 ％で関係者個人に心理的・身体的脅迫 [グローバル調査] 2026.10.20 Tue 8:15 NECがシステム開発・保守業務を委託している企業にサイバー攻撃 2026.10.22 Thu 8:05 日本経済新聞社社員の「マイクロソフト365」のアカウントにサイバー攻撃、悪性サイトに誘導するメールを送信 2026.10.7 Wed 8:05 今後は侵入経路と考えられるリモートデスクトップ接続を遮断 ～ 八王子学園 ランサムウェア攻撃 2報 2026.10.15 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-2da211b103",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Sallyに2件の不正アクセス、問い合わせ情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56641.html",
+      "publishedAt": "2026-11-01T23:05:10.000Z",
+      "summary": "112 views 株式会社Sallyは10月21日、不正アクセスによる問い合わせ情報漏えいの可能性について発表した。 これは同社が問い合わせ対応のために預かっている情報の一部が、2件の不正アクセスにより外部に漏えいした可能性が判明したというもの。 漏えいの可能性がある情報は下記の通り。 1.ウズへの問い合わせ 対象者：2026年3月30日から10月14日までにウズに問い合わせした544名 項目：メールアドレス、電話番号、問い合わせ内容（ユーザーID、添付ファイル含む） 原因：2026年10月14日に、同社のメールアカウントが第三者に不正に利用され、問い合わせの管理システムに社員になりすましてログインされたことが原因。 2.同社Webサイトの問い合わせフォーム 対象者：2026年4月までに同社Web サイト（sally-inc.jp）のフォームから送信した404名 項目：氏名、メールアドレス、問い合わせ内容（フォームによっては会社名、部署名、役職、電話番号を含む） 原因：同社が以前Webサイトの制作に利用していたサービス「Studio」を運営するStudio株式会社のクラウド環境に、2026年9月30日から10月1日にかけて不正アクセスが発生したことが原因。 同社では対象者に、メールで個別に連絡を行う。 同社では社員アカウントの保護とシステムの修正を行っている。また、現在の同社Webサイトは Studioを利用していない。 同社では今後、社員アカウントの多要素認証の徹底や監視の強化など、再発防止に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 【重要】お問い合わせ情報の漏えいのおそれに関するお詫びとお知らせ 関連記事 中古車情報サイト「カーセンサーnet」と中古車販売店向け業務支援サービス「C-MATCH」への不正アクセス、最大370万9,551件の個人情報が漏えいした可能性 2026.10.23 Fri 8:05 ふるさと納税ポータルサイト「ふるさとチョイス」に不正アクセス、泉大津市で寄附の受付ができない状況に 2026.10.23 Fri 8:05 メール配信システム「ブラストメール」に不正アクセス、データ持ち出しを確認 2026.10.23 Fri 8:05 アバハウスインターナショナルに不正アクセス、複数の顧客からの問い合わせで発覚 2026.10.23 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-77b795e675",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "PingCAPに不正アクセス、日本国内で最大約5万件の個人情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56640.html",
+      "publishedAt": "2026-11-01T23:05:07.000Z",
+      "summary": "334 views PingCAP株式会社は10月、不正アクセスによる情報漏えいについて発表した。 これは米国時間9月9日から10月7日にかけて、第三者が不正取得したアカウントの認証情報を使用し、PingCAPの社内システムにアクセスし、データの複製を取得したというもの。日本国内で最大約5万件の個人情報漏えいが判明している。 PingCAPでは米国時間10月7日に本インシデントを認識し、同日中に影響を受けた認証情報の無効化を開始している。 PingCAPで外部調査機関と共同調査を行い、エクスポートされた記録も含めて検証した結果、現時点で影響が確認されている顧客データの種類は下記の通り。 ・TiDB Cloudアカウント情報 ユーザー名、メールアドレス、組織・プロジェクトの関連付け、SQLエディタの実行履歴およびエラー情報（組織、プロジェクト、クラスタID含む）、問い合せ情報（サポートチケット情報） ・取引関連情報 顧客の連絡先（氏名、メールアドレス、企業名、電話番号）、契約条件（注文内容、支払い条件、請求設定） ・認証情報 TiDB Cloud APIキーのPublic Key部分 PingCAPでは現在も外部調査機関とともに調査を継続しているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる情報漏洩に関するお詫びとご報告 関連記事 「ふるさとチョイス」に不正アクセス、4,454,097件の会員情報が流出 2026.10.22 Thu 8:05 ユミルリンクのメール配信サービスの一部サーバシステムに不正アクセス、メールアドレスを含む延べ約900万件の情報が出力されたと試算 2026.10.22 Thu 8:05 ファンケルとアテニアのECサイトに不正アクセス、会員情報が漏えい 2026.10.22 Thu 8:05 ジャパンタイムズグループ会社に不正アクセス、「The Japan Times Online」には影響なし 2026.10.22 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-93b8587687",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "会員名簿とされるデータがアップロードされていると警察から報告 ～ 在宅ワーク求人サイト「ママワークス」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56639.html",
+      "publishedAt": "2026-11-01T23:05:05.000Z",
+      "summary": "188 views 株式会社アイドマ・ホールディングスは10月20日、在宅ワーク求人サイト「ママワークス」への不正アクセスについて発表した。 これは「ママワークス」の運営に用いられるシステムの設定に脆弱性があり、第三者から不正アクセスが行われ、会員の個人情報の一部が漏えいした可能性が判明したというもの。 同社では、「ママワークス」の会員名簿とされるデータがインターネット上にアップロードされている旨の報告が警察からあり、同データが実際の会員名簿の可能性があるか等、外部の専門調査会社に調査を依頼した結果、システム設定の脆弱性による不正アクセスが確認されたことから、同データが実際の会員名簿である可能性が判明している。 漏えいした可能性があるのは、会員が「ママワークス」に登録した氏名（漢字・フリガナ）、生年月日、性別、電話番号、郵便番号・住所、メールアドレス、職務経歴等の登録情報、パスワードのハッシュ値を含む個人情報。 同社では、不正アクセスの原因となった脆弱性への対応は完了している。 同社ではシステムのセキュリティ強化、監視体制及び社内管理体制の見直し等、再発防止に向けた対策を進めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 「ママワークス」における個人情報漏えいに関するご報告とお詫び 関連記事 「バイトル」「バイトルNEXT」に不正アクセス、最大3,885,771件のメールアドレスが漏えい 2026.10.15 Thu 8:05 求人サービス「CINRA JOB」に不正アクセス、閲覧取得がなかったことを確認するに足る記録が存在しないため漏えいのおそれがあるものと判断 2026.9.17 Thu 8:05 「doda」販売代理店向けシステムに不備、549,195 名の個人情報が閲覧された可能性 2024.10.1 Tue 8:05 求人情報サイト「バイトル」へ不正ログイン、新たにアローズコーポレーションでも判明 2024.5.23 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-6702c0209a",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "越境ECサービス「WorldShopping」に不正アクセス、海外顧客301名の個人情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56638.html",
+      "publishedAt": "2026-11-01T23:05:02.000Z",
+      "summary": "104 views 株式会社ジグザグは10月19日、同社が運営する越境ECサービス「WorldShopping」への不正アクセスについて発表した。 これは10月16日に、「WorldShopping」への外部からの不審なアクセスを検知し、調査した結果、10月15日から16日にかけて第三者から不正アクセスがあり、同社が保有する顧客の個人情報の漏えいが判明したというもの。 漏えいしたのは、海外（台湾、香港、米国、韓国、中国ほか）の顧客301名のメールアドレス、氏名、住所、電話番号、注文に関する情報を含む個人情報。なお、「WorldShopping BIZ」を導入しているEC事業者から預かっている情報は、現時点の調査では本件の対象に含まれていない。 同社では対象の顧客に、メールにて個別に連絡する。 また同社では、個人情報保護委員会および法令に基づき報告が必要な国・地域の関係当局に順次報告を行っている。 同社では、不正アクセスに利用された経路を遮断し、メール配信システムおよび入力フォームの不備を修正するとともに、攻撃者が使用した認証情報を無効化し、再発行している。 同社では外部の専門家の助言を受けながら、セキュリティ診断の実施を含む再発防止策の策定を進めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる海外のお客様の個人情報漏えいに関するお詫びとお知らせ 関連記事 日本経済新聞社がシステム開発に利用するクラウドサービスに不正アクセス、約183万件の個人情報が漏えい 2026.10.20 Tue 8:05 ソースネクストに不正アクセス、2,251万9,960件の会員情報が流出した可能性 2026.10.20 Tue 8:05 ゴルフダイジェスト・オンラインに不正アクセス、攻撃者にファイルがダウンロードされたことを確認 2026.10.20 Tue 8:05 NTTソルマーレの電子書籍ストア「コミックシーモア」に不正アクセス、会員情報が流出 2026.10.20 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-62f2a257df",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "HENNGE、東証プライム市場に市場区分変更",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56637.html",
+      "publishedAt": "2026-11-01T23:00:07.000Z",
+      "summary": "59 views HENNGE株式会社は10月20日、同日付で東京証券取引所グロース市場から同プライム市場へ市場区分を変更したと発表した。 同社では、東証プライム市場への変更を新たな成長ステージへの第一歩と位置付け、中長期的な企業価値の向上に努めるという。 同社では今後もクラウドセキュリティサービス「HENNGE One」などへの継続的な新機能・新サービスの開発を通して、提供価値の向上に取り組むとともに、国内外における事業拡大を推進するとのこと。 《ScanNetSecurity》 一次情報または関連リンク HENNGE 関連記事 HENNGE One、物件情報管理サービス「ZISEDAI LAND」と SSO 連携 2026.10.27 Tue 8:00 自社ドメインのなりすまし対策を5ステップで支援、HENNGEが新サービス「HENNGE Domain Protection」提供 2026.10.15 Thu 8:00 「HENNGE One」が AI 活用型プラットフォーム「Extreme Platform ONE」と API 連携 2026.10.15 Thu 8:00 ウルトラヒーローが怪獣と対決、HENNGE のセキュリティ CM 第二弾 2026.10.13 Tue 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-41b2d396c4",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Vex、php2shell に対応する検査シグネチャの正式版を追加",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56636.html",
+      "publishedAt": "2026-11-01T23:00:03.000Z",
+      "summary": "58 views 株式会社ユービーセキュアは10月27日、Webアプリケーション脆弱性検査ツール「Vex」のオートスキャナーに、PHPの重大な脆弱性（CVE-2026-109618、CVE-2026-109619、 php2shell）に対応する検査シグネチャの正式版を追加したと発表した。オートスキャナーを利用する顧客は、追加の作業なしで本シグネチャを利用できる。 PHPの開発元は10月22日に、重大な脆弱性2件を修正したPHP 8.5.12、8.4.27、8.3.36、8.2.35を公開している。開発元によると、いずれの脆弱性も認証を経ずに外部から任意のコードを実行されるおそれがあるもので、深刻度の評価（CVSS v4.0）はともに9.2となっている。 同社が10月22日にオートスキャナーで提供した暫定版は、PHPのバージョン情報にもとづいて判定するものだったが、今回の正式版では、検査対象のWebサイトに検査用のリクエストを送り、その応答から脆弱性の有無を確認することで、バージョン情報を表示していないWebサイトについても、より正確な判定が可能となる。 《ScanNetSecurity》 一次情報または関連リンク ユービーセキュア 関連記事 PHP に複数の任意のコードが実行可能な脆弱性 2026.10.26 Mon 8:00 ブランドを「Vex」に統合し、Vex Team・Vex Enterprise・Vex Auditor の 3 プラン構成に刷新 2026.5.13 Wed 8:00 Vex および VexCloud、Next.js に関する脆弱性に対応 2025.4.14 Mon 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    }
+  ]
+}
