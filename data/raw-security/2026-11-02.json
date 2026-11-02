@@ -1,0 +1,169 @@
+{
+  "date": "2026-11-02",
+  "collectedAt": "2026-11-02T01:28:44.690Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-b7b8ff1a47",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「WordPress 7.1.4」で更新時RCEや複数XSSなど脆弱性を修正",
+      "url": "https://www.security-next.com/192262",
+      "publishedAt": "2026-11-02T01:15:56.000Z",
+      "summary": "「WordPress 7.1.4」で更新時RCEや複数XSSなど脆弱性を修正 コンテンツマネジメントシステムである「WordPress」に複数の脆弱性が判明した。セキュリティアップデートを提供しており、利用者に更新を呼びかけている。 開発チームは現地時間2026年10月28日、セキュリティリリースとなる「WordPress 7.1.4」を公開した。早急に対応するよう利用者に求めている。 アップデートのアナウンスにおいて、CVE番号などは示されていないが、複数のセキュリティ上の問題を修正した。 「WordPress」のアップグレード処理に脆弱性が存在。更新処理中にリモートからコードを実行されるおそれがある。 複数の格納型クロスサイトスクリプティング（XSS）の脆弱性が判明した。特別に細工したブロックのマークアップや、プライバシーデータの削除リクエストを特定の方法で作成することで悪用が可能だという。 （Security NEXT - 2026/11/02 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-8b9a6bf183",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "先週注目された記事（2026年10月25日〜2026年10月31日）",
+      "url": "https://www.security-next.com/192264",
+      "publishedAt": "2026-11-02T00:03:36.000Z",
+      "summary": "先週注目された記事（2026年10月25日〜2026年10月31日） 2026年10月25日から2026年10月31日までの1週間にSecurity NEXTにおいて注目度が高かった上位10記事は以下のとおり。 1位： MSが定例外パッチ、「.NET」脆弱性を修正 - Brotli問題などに対応 2位： 「Chrome」で脆弱性52件を修正 - 4件が「クリティカル」 3位： LinuxカーネルやVMware ESXの脆弱性、悪用を確認 - 米当局 4位： 「PHP」にあらたな脆弱性、対象環境は限定的 - 次回更新時に修正 5位： Apple、「iOS 27.2」を公開 - 旧OSの更新では悪用脆弱性を修正 6位： 「Node.js」に脆弱性10件 - Brotli圧縮データの処理でRCEのおそれ 7位： 脆弱性「PHP2Shell」の悪用を確認 - 米当局が注意喚起 8位： 「Apache Tomcat」に脆弱性8件 - 「クリティカル」評価の脆弱性も 9位： Windows版「PHP」にアップデート - 同梱「Brotli」を更新 10位： Google製「Brotliデコーダ」の脆弱性、幅広い環境に影響か （Security NEXT - 2026/11/02 ） ツイート PR 関連記事"
+    },
+    {
+      "id": "s-1d3057f40a",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Ivanti Connect Secure」の脆弱性悪用で注意喚起 - 米当局",
+      "url": "https://www.security-next.com/192266",
+      "publishedAt": "2026-11-02T00:03:11.000Z",
+      "summary": "「Ivanti Connect Secure」の脆弱性悪用で注意喚起 - 米当局 Ivantiのリモートアクセス製品「Ivanti Connect Secure（ICS）」に存在する2件の脆弱性に関し、悪用が確認されたことを受けて米当局が注意喚起を行った。3件の脆弱性を組み合わせた攻撃も確認されている。 米サイバーセキュリティインフラストラクチャセキュリティ庁（CISA）は現地時間2026年10月30日、「悪用が確認された脆弱性カタログ（KEV）」に2件の脆弱性「CVE-2026-111357」「CVE-2026-118527」を追加した。 いずれも「Ivanti Connect Secure（ICS）」に関する脆弱性。「CVE-2026-111357」は、重要な機能における認証の欠如に起因。ローカルで認証済みの場合に権限の昇格が可能となる。 一方「CVE-2026-118527」は、予測可能な数値や識別子が生成される脆弱性。認証は必要とされるが、任意のコンテンツを含むファイルをリモートからディスクにアップロードできるという。 「CVE-2026-111357」に関しては、現地時間2026年10月29日に「悪用が確認された脆弱性カタログ（KEV）」への追加が発表されたが、その後一度登録を取り消された。しかし、翌30日にあらためて登録となるなど、混乱も見られる。 （Security NEXT - 2026/11/02 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-b3770553ff",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "AIの進化がもたらす脆弱性対応の新たな波 ～ Internet Week 2026",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56650.html",
+      "publishedAt": "2026-11-01T23:10:03.000Z",
+      "summary": "100 views インターネットの技術と運用に関わるエンジニアが一堂に会するイベント「Internet Week（IW）」。1990 年代から続く歴史あるインターネットの技術カンファレンスであり、今年 2026 年は 30 回目の開催。ネットワーク運用、セキュリティ、ガバナンス、教育など多岐にわたる分野の専門家が登壇する。 2026 年開催は、オンラインが 11 月 19 日（木）から 11 月 24 日（火）まで（土日除く）、オンサイトが 11 月 25 日（水）から 11 月 27 日（金）まで東京・両国 KFC Hall ＆ Roomsで「AI 時代を生き抜く術（すべ）を学べ」をテーマに開催される。 今回取り上げるのは、AI時代の脆弱性対応をテーマにしたプログラムだ。 企画担当の岩田琴乃氏（所属：一般社団法人 ICT-ISAC）、石橋拓己氏（所属：日本セキュリティオペレーション事業者協議会（ISOG-J））に、企画の背景や見どころを聞いた。 ●「従来と同じ方法」でよいのか、見直しが求められている ―このプログラムを企画した背景や狙いを教えてください。 AIの急速な進化によって、サイバー攻撃のスピードや規模は大きく変わりつつあります。今後は脆弱性の発見数が増えるだけでなく、発見から悪用までの時間が短くなる可能性も指摘されています。こうした変化に対して、従来と同じ方法で脆弱性対応を続けていてよいのか、現場ではあらためて見直しが求められています。本プログラムでは、脆弱性対応の基礎を振り返りつつ、AIによって何が変わるのかを考えます。参加者の皆さんが自組織の脆弱性対応を見直し、これからの対応に活かせるヒントを得ていただくことが狙いです。 ●「ベーシック」カテゴリ。用語を知っていれば十分 ―今年のIWは「ベーシック」「実践」「最新動向」に分類されています。このプログラムはどれに当たりますか？ 「ベーシック」に該当します。脆弱性対応の全体の考え方と計画から始め、アセスメント、対処へと、実際の対応の流れに沿って順を追ってお話しします。これから脆弱性対応に関わる方や、まだ全体像をつかみきれていない方にも理解していただける構成です。脆弱性やパッチといった基本的な用語をご存じであれば、十分に聴いていただけます。一方で、AIの進化によって脆弱性対応がどう変わりつつあるのか、変化の中でも押さえておくべき原理原則は何かを、現場の実践知をもとにお伝えします。すでに実務に携わっている方にとっても、自組織の取り組みを振り返り、次の一手を考えるきっかけになると考えています。 ● 理想と現実のギャップに向き合っている方に登壇を依頼 ―講演者を選ぶ際に何を重視しましたか？ お願いするテーマの専門知識はもちろんですが、サイバーセキュリティに対する日頃の考え方や、現場での試行錯誤の経験を重視しました。サイバーセキュリティはとても重要ですが、それ自体が目的ではなく、組織の活動を円滑に進めるための手段です。実際の現場では、予算や人員、業務への影響など、多くの制約の中でやりくりしながら対策を進めることになります。こうした理想と現実のギャップに向き合った経験があってこそ、現場で活きる知見が生まれると考えています。今回は、そのような ギャップやジレンマに日頃から向き合っている方々 にご登壇いただきます。AI時代の変化に不安を感じている現場の方々の悩みに寄り添い、「自分の組織でもできそうだ」と思えるヒントを届けるセッションを目指しています。 ● 見どころは3パート構成。専門家が順に登壇 ―特"
+    },
+    {
+      "id": "s-9fafee2c2d",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "AI を活用した総点検で発見 ～ デジタルアーツのクラウドサービス運用環境に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56649.html",
+      "publishedAt": "2026-11-01T23:05:36.000Z",
+      "summary": "49 views デジタルアーツ株式会社は 10 月 21 日、同社クラウドサービスの運用環境および社内環境への不正アクセスについて発表した。 同社は、昨今のサイバー攻撃の増加を受け、10 月 9 日に AI を活用してシステム・製品および社内環境の総点検を実施した。その結果、従来の点検では発見に至らなかった不正アクセスの痕跡を発見したという。発見した痕跡には、2025 年 7 月頃にさかのぼるものが含まれている。 同社によると、クラウドサービスの運用に用いる認証情報が第三者に不正に取得され、これを用いてサービス運用環境に侵入されていたことが判明した。この侵入により、以下のクラウドサービスを利用する一部顧客の情報が第三者に閲覧された可能性がある。 ・i-FILTER@Cloud ・m-FILTER@Cloud（Modern Edition） ・m-FILTER MailAdviser Microsoft 365 対応版 ・FINAL CODE@Cloud ・z-FILTER ・Desk なお、10 月 21 日正午時点で、顧客情報の外部への持ち出しは確認されて おらず 、本件に起因する情報の悪用や二次被害の報告も受けていないとしている。 同社は二次被害を防ぐため、上記クラウドサービスを利用するすべての顧客に対し、管理者用および利用者用パスワードの変更を求めている。追加の対応が必要となる一部の顧客には個別に連絡する。なお、顧客が自社環境に導入しているソフトウェア版は本件の対象外である。 同社は発覚後の対応として、不正アクセスに使用された認証情報の無効化、運用に用いる認証情報の交換、不審なプログラムの停止、サーバー認証鍵の交換を実施した。10 月 21 日正午時点で新たな不正アクセスは確認されておらず、監視を継続している。あわせて、今後のサイバー脅威の変化を見据えたサービスとネットワークの再構築にも取り組んでいるという。 今後は関係機関への報告と必要な協力を行うとともに、認証情報の管理、アクセス管理、監視体制を強化し、再発防止に取り組むとしている。 最も古い痕跡は約 1 年 3 か月前のものであり、従来の点検方法ではこれを見抜けていなかったことになる。一方で、同社は自ら実施した総点検によって侵入を発見し、公表に至った。同社は「情報セキュリティ製品を提供する企業として本件を重く受け止め」、再発防止と信頼回復に全社を挙げて取り組むとしている。 《ScanNetSecurity》 関連記事 範を示す ～ MITRE がサイバー攻撃被害公表 2024.5.14 Tue 8:10 インタビュー：サイバー攻撃被害を受けたサイバーセキュリティ企業 ～ なぜ隠さず積極的に社会に情報共有したのか？ 2021.5.20 Thu 8:10 狙われたのは忘れられたシステム ～ サイバー攻撃被害企業が語ったインシデント対応の現実 2026.6.26 Fri 8:10 「公表に敬意を表したい」北朝鮮 IT 技術者をうっかり雇った KnowBe4 をブライアン・クレブスが称賛 2024.8.13 Tue 8:10 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-8663259808",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "WPプラグインの脆弱性悪用 ～ ティエスエスリンクのウェブサイトに不正アクセス、製品にはセキュリティ上の問題 確認されておらず",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56648.html",
+      "publishedAt": "2026-11-01T23:05:33.000Z",
+      "summary": "83 views 株式会社ティエスエスリンクは10月21日、同社ウェブサイトへの不正アクセスについて発表した。 これは6月12日から10月13日にかけて、同社が外部委託で運用しているウェブサイトの管理・運用に使用していたWordPressプラグインの脆弱性が第三者に悪用されたことで、不正アクセスが発生したというもので、10月13日に判明した。 対象サイトは下記の通り。 ティエスエスリンク企業サイト 製品サポートサイト 評価版ダウンロードサイト 製品ヘルプサイト 漏えいが発生した可能性がある情報は下記の通り。 ・問い合わせ/評価版申し込みフォーム内の入力内容：約160件 項目：氏名、メールアドレス、電話番号、会社名/部署名、保守ユーザーID、評価版申し込み製品、問い合わせ内容、添付ファイル ・製品サポートサイト認証情報：約250件 項目：ユーザーID、ログイン用パスワード 同社では、不正な管理者アカウント、不正ファイル、不正利用されたプラグイン等を削除し、既知の侵入経路の封じ込めを実施している。 同社によると、現在公開中のWebページおよび配布モジュールについて照合を行っており、現時点で改ざんは確認されていない。また、確認可能な通信量およびメール送信記録の範囲では、不審なメール送信は確認されていない。 同社では、ウェブサイトの管理・運用体制を見直し、外部委託先への指揮・監督およびセキュリティ管理状況の確認を強化するとともに、脆弱性対応、認証やログの管理、インシデント発生時の報告・対応体制についても見直しを行い、再発防止を徹底するとのこと。 また、今回の不正アクセスは、製品自体に起因するものではなく、製品に本件に起因するセキュリティ上の問題は確認されておらず、現在利用中の製品を引き続きご利用いただけるとしている。 《高橋 潤哉（ Junya Takahashi ）》 一次情報または関連リンク 当社ウェブサイトへの不正アクセスに関するお詫びとお知らせ 関連記事 範を示す ～ MITRE がサイバー攻撃被害公表 2024.5.14 Tue 8:10 「公表に敬意を表したい」北朝鮮 IT 技術者をうっかり雇った KnowBe4 をブライアン・クレブスが称賛 2024.8.13 Tue 8:10 インタビュー：サイバー攻撃被害を受けたサイバーセキュリティ企業 ～ なぜ隠さず積極的に社会に情報共有したのか？ 2021.5.20 Thu 8:10 狙われたのは忘れられたシステム ～ サイバー攻撃被害企業が語ったインシデント対応の現実 2026.6.26 Fri 8:10 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-7bd1ec7412",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "他の職員のIDとパスワードを使用し複数回にわたり庁内共有フォルダに不正アクセス、上司の印影の偽造も",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56647.html",
+      "publishedAt": "2026-11-01T23:05:29.000Z",
+      "summary": "116 views 宮城県山元町は10月20日、同町職員の懲戒処分について発表した。 町長事務部局に所属する男性主事（26歳・男性）は6月から7月にかけて、勤務時間外に自身の職員用端末から他の職員のIDとパスワードを使用し、複数回にわたり庁内共有フォルダに不正にアクセスし、データを閲覧・操作したほか、他の職員の職員用端末を無断で使用し、他の職員や自身のIDとパスワードを用い、複数回にわたり、庁内共有フォルダや職員個人専用のフォルダに不正にアクセスし、データを閲覧・削除等している。 なお、7月に他の職員用端末を無断で使用し不正アクセスした事案については、予め開錠していた庁舎1階の扉から、深夜に不法に侵入しており、休日は休日勤務中の他の職員に庁舎1階の扉を開錠させ、当該職員が退庁した後に不法に侵入している。 また当該職員は、事務手続きを怠り無断で公印（町長印）を使用し、工事及び業務委託の請負業者2社に対し、当該公印を押印した契約書を交付したほか、上司2名の印影を偽造し、このうち1名の偽造印影を用い、未決裁の文書を決裁済文書として使用している。 当該職員は更に、印紙が貼られた書類から印紙部分を読み取り、加工を施すなどの偽造を行った印紙を用い、関係業者から提出された書類を偽造し使用している。 同町では当該職員の行為について、地方公務員法第29条第1項第1号（法令等に従う義務に違反した場合）、第2号（職務上の義務に違反し、又は職務を怠った場合）及び第3号（全体の奉仕者たるにふさわしくない非行のあった場合）に抵触するものであるとし、10月16日付で免職の懲戒処分を行っている。 同町では併せて、当該職員の行為に関し管理監督責任を問うため、関係職員に対しても戒告の処分を行っている。 《ScanNetSecurity》 一次情報または関連リンク 山元町職員の懲戒処分等の公表（２件目） 関連記事 今日もどこかで情報漏えい 第52回「2026年8月の情報漏えい」約一割で逮捕・懲戒・行政指導 2026.9.25 Fri 8:10 停職3月の懲戒処分 ～ 市職員が複数のアカウントに約2年間不正アクセス 2026.10.21 Wed 8:05 町職員（57歳・女性）が廃棄対象の公文書等を持ち帰り保管、裏面に大量の小説のコピー 2026.9.15 Tue 8:05 税務事務システムへの入力権限を悪用し不正に還付金 ～ 市税事務所職員 懲戒免職 2026.9.14 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-342bfb9740",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「楽天トラベル」海外ホテル予約サイトの一部ページと多言語予約サイトに不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56646.html",
+      "publishedAt": "2026-11-01T23:05:26.000Z",
+      "summary": "54 views 楽天グループ株式会社は10月26日、海外ホテル予約サイトの一部ページと多言語予約サイトへの不正アクセスについて発表した。 これは同社が運営する旅行予約サービス「楽天トラベル」の海外ホテル予約サイトのうち、同社の子会社であるRakuten Travel Xchangeが管理・運営する一部のページと同社が管理・運営する多言語予約サイトに対し、社外の第三者からの不正アクセスを確認したというもの。 同社では9月10日に、同社の海外ホテル予約サイトのうちRakuten Travel Xchangeが管理・運営する一部のページで異常を検知している。同社では9月15日に原因を特定し、9月16日にシステム改修を完了している。 同社ではその後の社内調査で、下記の顧客情報が不正アクセスの対象となったことを確認している。 ・海外ホテル予約ページのうちRakuten Travel Xchangeが管理・運営する一部のページから予約のあった最大約4万件の顧客の氏名、メールアドレス、電話番号、居住国、社内用の識別番号、予約情報（施設名、予約金額等）、同伴者の氏名、居住国。そのうち最大約3万6千件には支払情報（クレジットカードの発行者識別番号と下4桁、名義、有効期限、国際ブランド区分）が含まれる。 ・海外ホテル予約ページのうち、Rakuten Travel Xchangeが管理・運営する一部のページでログインした最大約260万件の顧客の氏名、メールアドレス、電話番号、社内用の識別番号。 また、同社では10月20日に、「楽天トラベル」の多言語予約サイトに対し、第三者からの不正アクセスの可能性を検知したため、同日中に原因を特定し、翌10月21日にシステム改修を完了している。 同社で調査した結果、下記の顧客情報が不正アクセスの対象となったことを確認している。 ・「楽天トラベル」の多言語予約サイトにログインした最大約86万件の顧客のメールアドレス、社内用の識別番号。 ・「楽天トラベル」の多言語予約サイトの管理画面に入力のあった最大約4万件の宿泊施設従業員のアカウント名、メールアドレス、社内用の識別番号。 同社では顧客への個別通知を行っている。 同社では引き続き、セキュリティ対策の強化など再発防止に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 海外ホテル予約サイトの一部ページならびに多言語予約サイトに関するお詫びとお知らせ 関連記事 楽天モバイルで支払い証明書が第三者に閲覧される可能性、脆弱性診断テストで判明 2026.10.27 Tue 8:05 楽天ドライブに不正アクセス、管理アカウント乗っ取りでデータ閲覧 2026.10.8 Thu 8:05 楽天ブックスネットワークのPC端末に不正アクセス、「楽天ブックス」利用者33,333件の個人情報等を保存 2026.8.25 Tue 8:05 ユーザの通信の秘密が閲覧可能な状態にあったことに対し、総務省が楽天モバイルに指導 2025.9.4 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-531f7f24a0",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ユミルリンクのメール配信サービスの一部サーバシステムに不正アクセス、延べ51,628,280件の情報が流出",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56645.html",
+      "publishedAt": "2026-11-01T23:05:23.000Z",
+      "summary": "83 views ユミルリンク株式会社は10月27日、10月19日に公表した同社システムへの不正アクセスについて、第二報を発表した。 同社では10月16日未明に、同社担当者が一部システムへの不正アクセスを確認したため、当該システムのアクセス記録を確認したところ、プログラムの脆弱性により同社サポート・品質管理担当者のサービスへの認証情報を取得していること、不正プログラムを設置しデータベースからデータを出力していること、同社サポート・品質管理担当者の認証情報を用い、他のシステムへの認証を試みていることを確認しており、外部専門家の協力のもと詳細調査を進めていた。 同社ではその後、不正プログラム、システムログの解析で、新たに45システム（第1報以降に流出を確認したCuenote FC 44システム、Cunoete Base1システム）で、不正プログラムを介して他のシステムのデータを参照していること、システムログイン時のセッション情報を取得し不正ログインしていることを確認している。 同社サービスで不正アクセスがあったのは、下記の通り。 サービス名：Cuenote FC サービス概要：メール配信サービス（一斉送信） 不正アクセス、情報漏えいの状況：ライブラリの脆弱性により49システムで情報漏えいが発生 流出件数・内容：51,628,280件（延べ件数） サービス名：Cuenote BASE サービス概要：ユミルリンクの顧客管理システム 不正アクセス、情報漏えいの状況：プログラム脆弱性により契約者情報が閲覧可能な状態であった 流出件数・内容：190件（企業名、氏名、電話、メールアドレス） Cuenote FC の一部サーバに対する不正アクセスの状況は下記の通り。 不正アクセスが試行されたシステム数：3システム システムの種別：複数企業で利用するシステム うち情報漏えいの痕跡を確認したシステム数：0システム 漏えいの恐れがある件数（延べ件数）：0件 不正アクセスが試行されたシステム数：78システム システムの種別：単一の企業で利用するシステム うち情報漏えいの痕跡を確認したシステム数：49システム 漏えいの恐れがある件数（延べ件数）：51,628,280件 Cuenote FCには、下記のような情報が登録、記録されている。 ・アドレス帳 配信先メールアドレスおよびメールへの差込みや抽出のための氏名や都道府県、生年月日などの付属情報等 ・配信記録 一斉送信単位で記録される通信先サーバとの通信記録、メールアドレスが含まれる ・Webアクセス記録 メールマガジンなどの申し込みページからの登録記録やマイページ機能を活用したユーザーの更新記録 ・サービス利用者情報 本サービスを利用する企業担当者の情報（氏名、メールアドレス、住所、電話番号） 同社によると、現時点で漏えい件数の調査中であるシステムが16システム存在しており、今後の調査によって延べ件数が増加する可能性がある。 同社では10月19日以降、対象の顧客に担当者から直接、連絡を行っており、19日以降新たに確認した情報漏えいの対象となる顧客に対しても、10月26日午前12時30分までに連絡を行っている。 同社では今後、外部専門家の協力のもと詳細調査を進め、情報セキュリティ体制のさらなる強化に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社システムへの不正なアクセスに関するご報告（第二報） 関連記事 ユミルリンクのメール配信サービスの一部サーバシステムに不正アクセス、メールアドレスを含"
+    },
+    {
+      "id": "s-68f77cc5f8",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "フジッコのキャンペーンの応募受付業務の委託先に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56644.html",
+      "publishedAt": "2026-11-01T23:05:21.000Z",
+      "summary": "52 views フジッコ株式会社は10月22日、同社キャンペーンの応募受付業務の委託先への不正アクセスについて発表した。 これは同社が2026年5月以降に実施した「カスピ海ヨーグルトシリーズ『もっと！とろぉ～もっちキャンペーン第2弾』」並びに「フジッコ大感謝祭キャンペーン」について、非会員向け応募フォームの受付業務を委託している会社のサーバに第三者から不正アクセスがあり、同フォームの個人情報が漏えいした可能性が10月21日に判明したというもの。 漏えいした可能性があるのは「カスピ海ヨーグルトシリーズ『もっと！とろぉ～もっちキャンペーン第2弾』」「フジッコ大感謝祭キャンペーン」の非会員向け応募フォームに入力のあった延べ約15,500件の個人情報（氏名、年齢、性別、職業、婚姻状況、家族構成、電話番号、メールアドレス、住所、アンケート情報）。なお同社では、情報が第三者に取得されたものとみなして対応している。 同社では対象となる顧客に対し、準備が整い次第、順次、謝罪と本件の経緯、注意点を連絡する。 同社では現在、該当する応募受付を一時停止している。 同社では今後、安全性が確認された環境にシステムを集約するとともに、監視体制とセキュリティ対策の強化と見直しを進め、再発防止に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる個人情報漏えいの可能性に関するお詫び 関連記事 中古車情報サイト「カーセンサーnet」と中古車販売店向け業務支援サービス「C-MATCH」への不正アクセス、最大370万9,551件の個人情報が漏えいした可能性 2026.10.23 Fri 8:05 ふるさと納税ポータルサイト「ふるさとチョイス」に不正アクセス、泉大津市で寄附の受付ができない状況に 2026.10.23 Fri 8:05 メール配信システム「ブラストメール」に不正アクセス、データ持ち出しを確認 2026.10.23 Fri 8:05 アバハウスインターナショナルに不正アクセス、複数の顧客からの問い合わせで発覚 2026.10.23 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-573581006b",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「SHIPS CYCLE MARKET」で利用している外部アプリケーション「Swym Wishlist Plus」に不正アクセス、外部の疑似サイトに誘導",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56643.html",
+      "publishedAt": "2026-11-01T23:05:17.000Z",
+      "summary": "42 views Free Standard株式会社は10月22日、同社が運営する「SHIPS CYCLE MARKET」で「お気に入り機能」として利用している外部アプリケーション「Swym Wishlist Plus」開発元への不正アクセスについて発表した。 これは「Swym Wishlist Plus」開発元のSwym Corporationのシステムに対し、第三者からの不正アクセスが発生したというもの。 開発元によると、日本時間2026年10月14日午後7時6分から10月15日午前1時32分頃に同アプリを利用している一部のショップで購入手続きボタンを押した際、正規の購入手続き画面を模した外部の疑似サイト（偽サイト）へ誘導される不正なプログラムが読み込まれた可能性があるという。同店データベース等から保存済みの情報の流出はないが、改ざんされたプログラムにより誘導された外部の疑似サイト上で、顧客がクレジットカード情報を入力した可能性がある。 同社では現在、開発元に対し同店の顧客への影響の有無について正式な調査・確認を行っている。 同社では、日本時間2026年10月14日午後7時6分から10月15日午前1時32分頃に同店で購入手続きを行った際、誘導された画面でクレジットカード番号を直接入力した可能性のある顧客に対し、カードのご利用明細を確認するよう呼びかけている。 開発元では現在、予防措置として全ショップで同アプリの機能を一時停止しており、同店でも「お気に入り機能」を利用できない状態となっているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 【重要】外部アプリ「Swym Wishlist Plus」におけるセキュリティ事象についてのお知らせとお詫び 関連記事 「お名前.com デスクトップクラウド」に不正アクセス、取引口座のログイン情報等が取得され不正利用された可能性 2026.10.26 Mon 8:05 「焼肉きんぐ」公式アプリ会員管理システムに不正アクセス、1,078万8,963件の個人情報が漏えい 2026.10.26 Mon 8:05 「大起水産公式アプリ」に不正アクセス、顧客17万4,933人の個人情報が漏えいした可能性 2026.10.26 Mon 8:05 エスケーロジにランサムウェア攻撃、一部の社内情報の漏えいを確認 2026.10.26 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-68d4e89faf",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+      "publishedAt": "2026-11-01T19:57:53.000Z",
+      "summary": "The FBI has confirmed that North Korean state-sponsored hackers known as TraderTraitor were behind the $6.3 billion crypto-theft attack on Binance, making it the largest cryptocurrency heist on record. [...]"
+    },
+    {
+      "id": "s-bd4d7c8542",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+      "url": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+      "publishedAt": "2026-11-01T15:11:21.000Z",
+      "summary": "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise. [...]"
+    },
+    {
+      "id": "s-97d0ab3ff4",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/",
+      "publishedAt": "2026-11-01T13:53:11.000Z",
+      "summary": "OpenAI has just confirmed that it's rolling out ChatGPT Work capabilities directly into regular Chat, while also combining usage allowances across ChatGPT and Codex. [...]"
+    },
+    {
+      "id": "s-c1c2013197",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+      "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+      "publishedAt": "2026-11-01T08:51:31.000Z",
+      "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate. Once in, the attacker would act as that client, with access to the cluster and its virtual machines. If the impersonated account is"
+    },
+    {
+      "id": "s-2a3e4a8e19",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+      "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+      "publishedAt": "2026-11-01T07:25:40.000Z",
+      "summary": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says&nbsp;it is refunding about $2.7 million to 726 affected wallets.&nbsp;Blockchain records&nbsp;show crypto worth about $2.64 million reached"
+    },
+    {
+      "id": "s-6e20a97983",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+      "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+      "publishedAt": "2026-11-01T07:03:00.000Z",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899. The FBI, along with the U.S. Secret Service (USSS) and the Internal Revenue Service Criminal Investigation (IRS-CI), said it"
+    },
+    {
+      "id": "s-be08e34bf9",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+      "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+      "publishedAt": "2026-11-01T07:02:58.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and involves the deployment of a previously undocumented .NET assembly-loading framework codenamed"
+    }
+  ]
+}
