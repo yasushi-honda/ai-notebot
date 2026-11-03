@@ -1,0 +1,169 @@
+{
+  "date": "2026-11-04",
+  "collectedAt": "2026-11-03T22:01:31.563Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-53feb8d41a",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
+      "url": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+      "publishedAt": "2026-11-03T21:28:44.000Z",
+      "summary": "Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [...]"
+    },
+    {
+      "id": "s-64ab2d4223",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+      "url": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+      "publishedAt": "2026-11-03T20:05:50.000Z",
+      "summary": "Cryptocurrency exchange Binance says North Korean hackers used a fake job interview to trick an employee into installing malware that ultimately let them compromise the company's wallet infrastructure and steal about $6.34 billion in digital assets. [...]"
+    },
+    {
+      "id": "s-7fb03e8248",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Google: LLMjacking attacks rack up $1 million in cloud AI charges",
+      "url": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
+      "publishedAt": "2026-11-03T18:51:04.000Z",
+      "summary": "Large language model hijacking attacks, also known as LLMjacking, are generating large fraudulent cloud charges, with some organizations losing more than $100,000 per day. [...]"
+    },
+    {
+      "id": "s-9ca07b4684",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+      "publishedAt": "2026-11-03T18:46:38.000Z",
+      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but"
+    },
+    {
+      "id": "s-8afc2fab59",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+      "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+      "publishedAt": "2026-11-03T18:16:19.000Z",
+      "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week. \"An external attacker gained unauthorized access to part of"
+    },
+    {
+      "id": "s-19a35a6714",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+      "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+      "publishedAt": "2026-11-03T16:55:58.000Z",
+      "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its engineers. \"It was not a single isolated breach or a simple phishing incident,\""
+    },
+    {
+      "id": "s-bc96c130a1",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
+      "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+      "publishedAt": "2026-11-03T15:59:19.000Z",
+      "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device. The vulnerabilities, a pre-authentication authorization bypass vulnerability and a command injection vulnerability, have been assigned the CVE identifiers CVE-2026-116606 (CVSS score: 9.3)"
+    },
+    {
+      "id": "s-310fe7a6e4",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
+      "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+      "publishedAt": "2026-11-03T15:41:53.000Z",
+      "summary": "Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API key through phishing, source code leaks, misconfigured environments, or exposed client-side code"
+    },
+    {
+      "id": "s-63d055e30b",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
+      "url": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
+      "publishedAt": "2026-11-03T15:16:32.000Z",
+      "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in an advisory. The attacker has since taken some of that data. cPGuard 5.88.25 and later versions"
+    },
+    {
+      "id": "s-4214f69f71",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Barracuda warns of critical flaws allowing root access to devices",
+      "url": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
+      "publishedAt": "2026-11-03T15:06:16.000Z",
+      "summary": "Cybersecurity company Barracuda Networks warned customers to patch two vulnerabilities that can let attackers run commands with root privileges. [...]"
+    },
+    {
+      "id": "s-b661b79609",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Gartner Predicts SOCs Will Have 50% More Engineers Than Analysts by 2028",
+      "url": "https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/",
+      "publishedAt": "2026-11-03T15:00:10.000Z",
+      "summary": "Gartner predicts that security operations centers will have 50% more engineers than analysts by 2028 as AI agents take over routine alert handling. Prophet Security examines how AI is reshaping SOC roles, from analyst responsibilities and detection engineering to threat hunting and exposure management. [...]"
+    },
+    {
+      "id": "s-1a0635dce5",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "UK school estate hit by 3AM ransomware in suspected AI-assisted attack",
+      "url": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/",
+      "publishedAt": "2026-11-03T14:00:00.000Z",
+      "summary": "A 3AM ransomware affiliate targeted a school estate in the UK and successfully encrypted around 37 of nearly 50 machines reached from an unmanaged host. [...]"
+    },
+    {
+      "id": "s-3d1337d272",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Police seizes over 100 servers in investment scam crackdown",
+      "url": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
+      "publishedAt": "2026-11-03T13:33:49.000Z",
+      "summary": "European law enforcement authorities arrested seven suspects and seized more than 100 servers in a joint action targeting an unnamed company suspected of providing fraudulent trading websites to criminal gangs. [...]"
+    },
+    {
+      "id": "s-375c9083b6",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Google adds new $250,000 Cloud VRP reward for Root-in-Cloud bugs",
+      "url": "https://www.bleepingcomputer.com/news/google/google-adds-new-250-000-cloud-vrp-reward-for-root-in-cloud-bugs/",
+      "publishedAt": "2026-11-03T12:05:52.000Z",
+      "summary": "Google adds new $250,000 Cloud VRP reward for Root-in-Cloud bugs By Sergiu Gatlan November 3, 2026 07:05 AM 0 Google has expanded its Cloud Vulnerability Reward Program (VRP) with a new top-tier reward for high-impact architectural security flaws. Starting this month, researchers can earn $250,000 for Root-in-Cloud bugs, including tenant-isolation bypasses and complex cross-service logic flaws that let attackers gain full administrative control over arbitrary Google Cloud organizations. \"To earn this premier reward, you must demonstrate full administrative control, the equivalent of 'roles/owner' or complete IAM control, over arbitrary Google Cloud organizations or projects with no prior access or special project setup,\" said Chris Betz , Google Cloud's Chief Information Security Officer (CISO). \"Additionally, valid vulnerability reports demonstrating remote code execution (RCE) in underlying Google production infrastructure (Borg) or achieving root-in-prod will automatically be evaluated by the Google Cloud VRP panel for root-in-cloud eligibility.\" However, to qualify for this reward, the exploits cannot depend on prior access to the victim project, compromised credentials, social engineering, or user interaction. Additionally, security researchers who achieve execution on Google's production infrastructure must stop probing since escalating, obtaining production credentials, or lateral movement are not allowed and will result in disqualification. \"High incentives require cl"
+    },
+    {
+      "id": "s-4ee243d9c3",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Subnet Solutions PowerSYSTEM Center",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute unauthorized SQL commands and gain access to unauthorized resources. The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 &lt;=5.29.x (CVE-2026-63017) PowerSYSTEM Center 2024 &gt;=6.0.x|&lt;=6.2.x (CVE-2026-63017, CVE-2026-63774) PowerSYSTEM Center 20"
+    },
+    {
+      "id": "s-496fbffc6e",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
+      "summary": "CISA has added one new vulnerability to its&nbsp; Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directiv"
+    },
+    {
+      "id": "s-77f64f32fa",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
+      "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+      "publishedAt": "2026-11-03T11:23:53.000Z",
+      "summary": "Fixed kernels for a&nbsp;use-after-free vulnerability in the Linux kernel's IPv4 TCP code&nbsp;are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update. The flaw, tracked as CVE-2026-98432, can be reached by a remote, unauthenticated attacker and can"
+    },
+    {
+      "id": "s-20c9c9965d",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
+      "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
+      "publishedAt": "2026-11-03T11:18:20.000Z",
+      "summary": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer than 10% of vulnerabilities are exploited, yet most are treated as urgent. The report also argues"
+    }
+  ]
+}
