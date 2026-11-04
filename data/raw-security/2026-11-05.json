@@ -1,0 +1,376 @@
+{
+  "date": "2026-11-05",
+  "collectedAt": "2026-11-04T22:01:27.220Z",
+  "sourceSuccessCount": 8,
+  "items": [
+    {
+      "id": "s-f0f2f45986",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Vercel rolls out new protection against stolen session cookie attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
+      "publishedAt": "2026-11-04T21:31:18.000Z",
+      "summary": "Vercel rolls out new protection against stolen session cookie attacks By Bill Toulas November 4, 2026 04:31 PM 0 Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware. The new feature, announced by Vercel's CTO Malte Ubl on X, binds a login session to the user's device with a private key stored in a TPM, so even if the session cookie is stolen, it can't be reused on another device. Vercel is a cloud platform developers use to deploy and host websites, web applications, and AI agents. The company also develops the popular Next.js web framework. Its latest announcement concerns logins to Vercel's platform at vercel.com, where developers manage their projects and deployments. \"DBSC works by storing a private key in your device's TPM (the same device that the fingerprint sensor or similar biometric devices on your laptop or phone uses) and using that key to sign your cookie,\" explained Ubl . \"The private key can never be retrieved ever again. Not by us, not by you, not by the malware.\" Vercel's DBSC rollout also complements Chrome's App-Bound Encryption , which makes it harder for infostealer malware to extract browser cookies. DBSC adds another layer of protection by preventing stolen session cookies from being reused on other devices. DBSC currently works in Chrome on macOS and Windows, but the rollout is gradual to ensure edge cases involving OAuth apps are handled appropriately. Separately,"
+    },
+    {
+      "id": "s-8d92a23408",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
+      "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+      "publishedAt": "2026-11-04T20:58:19.000Z",
+      "summary": "Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials. [...]"
+    },
+    {
+      "id": "s-42f5f26376",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
+      "url": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
+      "publishedAt": "2026-11-04T19:05:19.000Z",
+      "summary": "DreamHost is warning of a data breach after attackers gained access to its File Manager platform for two months and stole customers' FTP/SFTP usernames and passwords. [...]"
+    },
+    {
+      "id": "s-32650d2d4d",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Cyberattack disrupts blood storage refrigeration systems in France",
+      "url": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
+      "publishedAt": "2026-11-04T18:02:56.000Z",
+      "summary": "France's national blood service has confirmed that a cyberattack targeting a refrigeration equipment provider raised temperature and defrost settings at three of its facilities, threatening stored blood products. [...]"
+    },
+    {
+      "id": "s-3632eace05",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+      "url": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+      "publishedAt": "2026-11-04T17:00:46.000Z",
+      "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that&nbsp;Debian,&nbsp;Ubuntu, and&nbsp;APT's developers&nbsp;published on November 4. The attack needs APT to retry failed downloads, which it does by default from Debian 12 and"
+    },
+    {
+      "id": "s-1b9b96d402",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+      "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+      "publishedAt": "2026-11-04T17:00:38.000Z",
+      "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-2026-109593 (CVSS score: 9.1) - An unauthenticated file read vulnerability that could allow an attacker with network access to read internal GMS files,"
+    },
+    {
+      "id": "s-186403d82b",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "NIKKE PC game launcher hacked to spread remote access, data-stealing malware",
+      "url": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
+      "publishedAt": "2026-11-04T16:58:46.000Z",
+      "summary": "The developers of Goddess of Victory: NIKKE have confirmed that hackers tampered with the game's PC launcher scripts in a supply-chain attack, distributing malware capable of stealing credentials and cryptocurrency wallet data. [...]"
+    },
+    {
+      "id": "s-535e5969ab",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "アララのメール配信サービス「アララ メッセージ」への不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/05/015717",
+      "publishedAt": "2026-11-04T16:57:17.000Z",
+      "summary": "2026年10月28日、アララは、同社が提供するメール配信サービス「アララ メッセージ」で不正アクセスがあり、メールアドレスが外部へ流出したと公表しました。ここでは関連する情報をまとめます。 Webサーバーの脆弱性悪用 アララは10月28日に不正アクセスを確認し、11月2日の第2報で被害を3つの区分に整理した。区分の間で同じメールアドレスが重複している可能性があるため、アララは件数を合算していない(出典: 4)。 10月27日8時36分には第三者による偵察とみられるアクセスがあった。アララは、攻撃元の共通性などから、一連の不正アクセスを、10月29日の第1報で公表した不正アクセス(共用環境)を行った第三者によるものとみている(出典: 4)。 原因について、アララは第1報でシステムの一部の環境におけるWebサーバーの脆弱性を第三者に悪用されたものとし(出典: 3)、第2報で当該脆弱性に加えて"
+    },
+    {
+      "id": "s-78de6ffe4e",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+      "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+      "publishedAt": "2026-11-04T16:06:43.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway. The phenomenon has been codenamed prompt adware by Check Point Research. Called Haiou (meaning Seagull in Chinese), the jailbreak modifies OpenAI Codex's configuration"
+    },
+    {
+      "id": "s-4385ef3a2c",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "mSecure password manager hack prompts password reset warnings",
+      "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
+      "publishedAt": "2026-11-04T16:00:18.000Z",
+      "summary": "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack that reportedly exposed an encrypted customer database. [...]"
+    },
+    {
+      "id": "s-2f88c5be95",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
+      "url": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
+      "publishedAt": "2026-11-04T15:00:10.000Z",
+      "summary": "A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used by the attackers. [...]"
+    },
+    {
+      "id": "s-2ea21575ce",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "SonicWall warns of unpatched flaws in end-of-life GMS software",
+      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
+      "publishedAt": "2026-11-04T14:42:25.000Z",
+      "summary": "SonicWall warns of unpatched flaws in end-of-life GMS software By Sergiu Gatlan November 4, 2026 09:42 AM 0 SonicWall warned customers of two security flaws affecting end-of-life Global Management System (GMS) systems that will not be patched. Global Management System (GMS) helps IT admins deploy and manage thousands of SonicWall security appliances from a single interface, but SonicWall has officially replaced it with the Network Security Manager (NSM) management platform. The two vulnerabilities were found and reported by Pentest-Tools security researchers and affect systems running SonicWall GMS 9.5.2 and earlier. The first GMS flaw disclosed this week is tracked as CVE-2026-109593 , and it enables unauthenticated attackers with network access to vulnerable instances (running GMS 9.5.2 and earlier versions) to steal sensitive information by reading internal files. SonicWall also flagged a second security issue ( CVE-2026-109594 ) that can let threat actors with high privileges access or modify information stored in the GMS database through low-complexity SQL Injection attacks. On Tuesday, SonicWall also urged customers to upgrade to NMS, as it will not release security patches because the vulnerable systems have now reached end of life. \"The affected product has reached End-of-Life (EOL). As a result, no remediation or security update will be released for these vulnerabilities,\" SonicWall warned on Tuesday. \"Organizations using the product should be aware of the associated"
+    },
+    {
+      "id": "s-1a3d4856cb",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "県立学校6校で生徒指導要録が所在不明 - 静岡県",
+      "url": "https://www.security-next.com/192171",
+      "publishedAt": "2026-11-04T14:30:09.000Z",
+      "summary": "県立学校6校で生徒指導要録が所在不明 - 静岡県 静岡県の県内6校において、生徒指導要録の「学籍に関する記録」を紛失したことがわかった。 同県によれば、2026年6月30日、高校の卒業生から単位修得証明書の発行申請があったため、生徒指導要録を確認したところ、卒業生55人分の生徒指導要録を紛失していることが明らかとなった。 職員への聞き取り調査や校内の捜索を行ったが発見できなかった。同問題を受け、全県立学校を対象に生徒指導要録の保存状況を調査したところ、さらに5校で卒業生566人分の生徒指導要録が所在不明になっていることがわかった。 紛失が判明した学校では、ウェブサイトに謝罪文を掲載するなど、卒業生への情報提供を行っている。 （Security NEXT - 2026/11/04 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-5e99d13bfb",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
+      "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+      "publishedAt": "2026-11-04T14:27:52.000Z",
+      "summary": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and"
+    },
+    {
+      "id": "s-d013e25bf4",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
+      "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
+      "publishedAt": "2026-11-04T12:07:04.000Z",
+      "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in&nbsp;an advisory&nbsp;and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active Storage, the part of Rails that handles file uploads. Some apps store"
+    },
+    {
+      "id": "s-de8bbdd0e3",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
+      "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
+      "publishedAt": "2026-11-04T11:46:27.000Z",
+      "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project said in an&nbsp;advisory&nbsp;on November 3. All Xen versions from 4.6 onward are vulnerable,"
+    },
+    {
+      "id": "s-ecf2013fdf",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
+      "url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
+      "publishedAt": "2026-11-04T11:34:20.000Z",
+      "summary": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One recent case shows what that gap looks like in practice. An employee asked an AI assistant to trigger a mass-email automation. The automation"
+    },
+    {
+      "id": "s-8384c224e8",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
+      "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
+      "publishedAt": "2026-11-04T11:24:31.000Z",
+      "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign, observed starting July 1, 2026, is assessed to have targeted organizations and"
+    },
+    {
+      "id": "s-187918b6e9",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ネット登録会員の個人情報が流出した可能性 - クラブツーリズム",
+      "url": "https://www.security-next.com/192254",
+      "publishedAt": "2026-11-04T10:46:55.000Z",
+      "summary": "ネット登録会員の個人情報が流出した可能性 - クラブツーリズム クラブツーリズムは、サイバー攻撃により顧客の個人情報が流出した可能性があることを明らかにした。 同社によれば、2026年10月30日にサーバに対する第三者のアクセスを検知。調査を進めたところ、侵入経路と手段を特定し、保有する個人情報の一部が外部に流出した可能性があることがわかった。 流出の可能性があるのは、インターネット予約システムに会員登録した顧客の氏名、住所、電話番号、生年月日、性別、国籍、メールアドレス、会員ID、緊急連絡先など約432万件。 アクセスを受けたサーバを隔離し、攻撃元からの通信を遮断。同社では被害拡大を防ぐため、ウェブサイトを停止している。警察へ相談するとともに、個人情報保護委員会や監督官庁へ報告。対象となる顧客には、順次連絡する。 問題点の修正と点検を実施したとしており、安全性を確認次第、再開する予定。 （Security NEXT - 2026/11/04 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-90fcb9f590",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "ユミルリンクのメール配信サービス「Cuenote」への不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/04/191450",
+      "publishedAt": "2026-11-04T10:14:50.000Z",
+      "summary": "2026年10月19日、ユミルリンクは、同社が運営するメール配信サービスの一部システムが外部から不正アクセスを受け、個人情報が外部に持ち出されたことを確認したと公表しました。ここでは関連する情報をまとめます。 担当者の認証情報取得から他システムへ拡大 Cuenote FCは、企業がメールの一斉配信に使うサービスで、利用企業は配信先のメールアドレスと付属情報(氏名、都道府県、生年月日など)をアドレス帳として登録する(出典: 3)。 ユミルリンクは10月16日6時49分、担当者が「システム01」上の自身のアカウントの異常に気付いて調査を始め、10時10分にライブラリの脆弱性による攻撃と特定して不審なIPからのアクセスを遮断した(出典: 3)。対象はメール配信サービス「Cuenote FC」の一部のシステムで、顧客管理システム「Cuenote BASE」でも同日20時10分に、脆弱性により他のユ"
+    },
+    {
+      "id": "s-448c45b26f",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Hinemosにおける不適切な権限の割り当ての脆弱性",
+      "url": "https://jvn.jp/jp/JVN46901199/",
+      "publishedAt": "2026-11-04T07:00:00.000Z",
+      "summary": "JVN#46901199 Hinemosにおける不適切な権限の割り当ての脆弱性 株式会社NTTデータ先端技術が提供するHinemosには、不適切な権限の割り当ての脆弱性が存在します。 開発者によると、すでにサポート終了をしたHinemos ver.6.0以前のバージョンも本脆弱性の影響を受ける可能性があるとのことです。 Hinemos ver.7.2.0 Hinemos ver.7.1.0から7.1.2まで Hinemos ver.7.0.0から7.0.4まで Hinemos ver.6.2.0から6.2.2まで（通常保守サポート終了済み） Hinemos ver.6.1.0から6.1.2まで（通常保守サポート終了済み） Hinemos ver.6.0.0から6.0.3まで（通常保守サポート終了済み） 株式会社NTTデータ先端技術が提供するHinemosには、次の脆弱性が存在します。 パスワード変更APIにおける不適切な権限の割り当て（ CWE-266 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N 基本値 7.1 CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N 基本値 6.5 CVE-2026-109849 一般ユーザに割り当て可能な特定の権限でパスワード変更APIにアクセス可能な攻撃者によって、管理者ユーザのパスワードを変更される可能性があります。 有償版契約者向け対策： パッチを適用する 開発者が提供する情報をもとにパッチを適用してください。 OSS版ユーザ向け対策： 最新のインストーラでアップデートインストールする 開発者が提供する情報をもとに最新版のインストーラを実行し、アップデートインストールしてください。 通常保守サポート終了済みバージョンユーザ向け対策： ワークアラウンドを実施する 開発者が提供する回避策を適用することで、本脆弱性の影響を軽減することが可能です。 ベンダ ステータス ステータス 最終更新日 ベンダの告知ページ 株式会社NTTデータ先端技術 2026/11/04 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：三井物産セキュアディレクション株式会社 野口晋義 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-4414cdc81a",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "化粧品口コミ情報サイトで侵害 - 会員情報が流出",
+      "url": "https://www.security-next.com/192337",
+      "publishedAt": "2026-11-04T05:34:45.000Z",
+      "summary": "化粧品口コミ情報サイトで侵害 - 会員情報が流出 化粧品の口コミ情報サイト「＠cosme」がサイバー攻撃を受け、会員の個人情報が流出したことがわかった。 同サービスを運営するアイスタイルによれば、同サイトが侵害されたことにより「＠cosme共通ID」に登録されている会員情報の一部が流出したことを2026年10月28日に確認したという。 対象者は会員や一部退会者など約300万人。氏名、住所、電話番号、性別、生年月日、メールアドレス、ユーザーID、ニックネーム、肌質、髪質などの項目が含まれる。 2026年11月2日の時点で個人情報の不正利用や二次被害は確認されていない。同社では個人情報保護委員会へ報告した。 また対象となる会員に順次連絡するとともに、引き続き外部協力のもと、原因や影響範囲について調査を進めていく。 同社では、一部メールの配信にユミルリンクの「Cuenote FC」を利用しており、同環境において侵害の形跡が検知されたとの報告をユミルリンクより受けたと説明。同問題についてもユミルリンクにおいて調査が継続されている。 （Security NEXT - 2026/11/04 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-9503de309d",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "Linuxカーネル、IPv4のTCP接続処理に深刻な脆弱性 - 実証報告も",
+      "url": "https://www.security-next.com/192332",
+      "publishedAt": "2026-11-04T04:55:32.000Z",
+      "summary": "Linuxカーネル、IPv4のTCP接続処理に深刻な脆弱性 - 実証報告も 「Linuxカーネル」のTCP接続処理に深刻な脆弱性が判明した。ディストリビューターが修正に向けた対応を順次進めている。特定環境における実証なども報告されている。 「CVE-2026-98432」は、IPv4のTCP接続処理に確認された解放後のメモリを使用するいわゆる「Use After Free」の脆弱性。 TCP接続の確立処理で競合状態が生じ、ほかの処理が参照しているメモリ領域が解放されるという。 IPオプションを含む細工したIPv4パケットによって悪用される可能性があり、カーネルのクラッシュやメモリ情報の漏洩、破損などが生じるおそれがある。 The Linux Kernel Organizationでは、共通脆弱性評価システム「CVSSv3.1」のベーススコアを「9.8」、重要度を4段階中もっとも高い「クリティカル（Critical）」と評価している。 （Security NEXT - 2026/11/04 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-18135fbfdb",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "外務省の外部接続ネットワークへの不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/04/132901",
+      "publishedAt": "2026-11-04T04:29:01.000Z",
+      "summary": "2026年10月30日、外務省は外部とのやり取りが可能なネットワークへの不正アクセスにより、個人情報を含むメール等の一部が漏えいした可能性があると公表しました。ここでは関連する情報をまとめます。 外部接続ネットワークに不正アクセス 漏えいした可能性がある個人情報は、メールアドレスや氏名など約3,600件。うち外務省員以外のものが約900件で(出典: 1)、主に職員とメールで業務上のやりとりをした人の情報とみられる(出典: 5)。残りの約2,700件は外務省の職員のもの(出典: 5)。 外務省には、機密性の高い情報のやり取りを省員間でのみ行う閉域ネットワークと、外部とのやり取りが可能なネットワークの2系統がある。不正アクセスが確認されたのは後者。旅券、たびレジ(メールで海外安全情報が届くサービス)等の情報を扱う領事システムも、不正アクセスを受けたネットワークとは別に構築されており、対象になっ"
+    },
+    {
+      "id": "s-4ada7c29d9",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Airbyteにおける任意のコードが実行可能な脆弱性",
+      "url": "https://jvn.jp/jp/JVN12040144/",
+      "publishedAt": "2026-11-04T03:00:15.000Z",
+      "summary": "JVN#12040144 Airbyteにおける任意のコードが実行可能な脆弱性 緊急 Airbyteには、不適切なクラスロードにより想定外のコンポーネントを読み込むことができるため、任意のコード実行が可能となる脆弱性が存在します。 Airbyte 1.7.0から2.1.0までのバージョン Airbyteには次の脆弱性が存在します。 なお、本脆弱性の悪用が確認されています。 安全ではないリフレクション（ CWE-470 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N 基本値 8.7 CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H 基本値 8.8 Connector BuilderまたはManifestServerコンテナ内において、Airbyteユーザとして任意のコードが実行される可能性があります。 アップデートする 開発者が提供する情報をもとに、最新バージョンにアップデートしてください。 ベンダ リンク Airbyte この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方が開発者とIPAに報告し、JPCERT/CCが開発者と公表の調整を行いました。 報告者：株式会社ZOZO 兵藤壮泰 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-471718dec9",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: 複数のAkeeba製品におけるクロスサイトリクエストフォージェリの脆弱性",
+      "url": "https://jvn.jp/jp/JVN44272550/",
+      "publishedAt": "2026-11-04T03:00:00.000Z",
+      "summary": "JVN#44272550 複数のAkeeba製品におけるクロスサイトリクエストフォージェリの脆弱性 Akeeba Ltd.が提供する複数の製品には、クロスサイトリクエストフォージェリの脆弱性が存在します。 Akeeba Backup for Joomla! 10.3.7より前のバージョン Akeeba Backup for WordPress 9.1.8より前のバージョン Akeeba Solo 9.1.8より前のバージョン Admin Tools for Joomla! 7.9.0より前のバージョン Akeeba Ltd.が提供する複数の製品では、いくつかの操作においてCSRF対策が適切に実装されていません。 クロスサイトリクエストフォージェリ（ CWE-352 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N 基本値 5.1 CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N 基本値 5.4 CVE-2026-105296 当該製品にログインした状態のユーザが細工されたページにアクセスした場合、意図しない操作をさせられる可能性があります。 アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 ベンダ リンク Akeeba Ltd. Akeeba Backup for Joomla!の脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：野口晋義 氏 また、本製品の開発者は、この報告とは独立して、脆弱性を発見しており、対策済みの各バージョンのリリース作業を進めていました。 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-58e75103ed",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: INFINITT Healthcare製INFINITT PACS System Managerにおける複数の任意コード実行の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU99859918/",
+      "publishedAt": "2026-11-04T01:15:30.000Z",
+      "summary": "JVNVU#99859918 INFINITT Healthcare製INFINITT PACS System Managerにおける複数の任意コード実行の脆弱性 CERT/CCから本件に関するアドバイザリが公表されました。 CERT/CCのアドバイザリを参照してください。 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-8d5f9e76cf",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Androidアプリ「BaseChat - Audio Dating App」における複数の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU92281274/",
+      "publishedAt": "2026-11-04T01:15:15.000Z",
+      "summary": "JVNVU#92281274 Androidアプリ「BaseChat - Audio Dating App」における複数の脆弱性 CERT/CCから本件に関するアドバイザリが公表されました。 CERT/CCのアドバイザリを参照してください。 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-ed96df7e7e",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: CISA ICS Advisory / ICS Medical Advisory（2026年11月03日）",
+      "url": "https://jvn.jp/vu/JVNVU91151184/",
+      "publishedAt": "2026-11-04T01:15:00.000Z",
+      "summary": "JVNVU#91151184 CISA ICS Advisory / ICS Medical Advisory（2026年11月03日） 米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。 ICS Advisory / ICS Medical Advisoryを参照してください。 新規：1件 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-e34f85152c",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "管理製品「SonicWall GMS」に深刻な脆弱性 - 修正版提供なし",
+      "url": "https://www.security-next.com/192328",
+      "publishedAt": "2026-11-04T00:15:58.000Z",
+      "summary": "管理製品「SonicWall GMS」に深刻な脆弱性 - 修正版提供なし SonicWallの管理製品「SonicWall Global Management System（GMS）」に深刻な脆弱性が明らかとなった。すでにサポートが終了しており修正版の提供は行わないとして、別製品への移行を求めている。 同製品は、同社製のファイアウォールなど、複数のセキュリティ機器を一元管理するためのソフトウェア。同社は現地時間2026年11月3日、セキュリティアドバイザリを公開し、2件の脆弱性「CVE-2026-109593」「CVE-2026-109594」について明らかにした。 「CVE-2026-109593」は、認証を必要とすることなく、ネットワーク経由で機器内部のファイルを読み取ることができる脆弱性。機密情報が外部へ漏洩するおそれがある。 一方「CVE-2026-109594」は、SQLインジェクションの脆弱性。悪用には認証が必要とされるが、特定の条件下でデータベースに格納された情報の参照や改ざんが可能。 同社は共通脆弱性評価システム「CVSSv3.1」におけるベーススコアを、「CVE-2026-109593」について「9.1」、「CVE-2026-109594」について「6.8」と評価している。 （Security NEXT - 2026/11/04 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-02a9fda12d",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Barracuda ESG」に深刻な脆弱性 - 連鎖でroot取得のおそれ",
+      "url": "https://www.security-next.com/192322",
+      "publishedAt": "2026-11-03T23:50:44.000Z",
+      "summary": "「Barracuda ESG」に深刻な脆弱性 - 連鎖でroot取得のおそれ Barracuda Networksは、同社6製品に脆弱性が判明したことを受け、修正パッチをリリースした。なかでもメールセキュリティ製品「Barracuda Email Security Gateway（ESG）」については、脆弱性を組み合わせることで大きな影響を受けるおそれがある。 同社は現地時間2026年11月2日、セキュリティアドバイザリを公開し、「CVE-2026-116606」「CVE-2026-111560」について明らかにした。これら脆弱性の重要度をともに「高（High）」と評価している。 「CVE-2026-116606」は、「ESG」に確認された認証回避の脆弱性。管理インタフェースへアクセス可能な場合、認証なしにインポート機能を呼び出して細工したバックアップデータを読み込ませ、機器全体の設定を不正に変更できる。 一方「CVE-2026-111560」は、タイムゾーンの設定処理に確認されたOSコマンドインジェクションの脆弱性。管理者としてログインする必要があるが、root権限でOSコマンドを実行できる。 「CVE-2026-111560」は、「ESG」にくわえて「Load Balancer Application Delivery Controller（ADC）」「Message Archiver（BMA）」「WAF Control Center（WCC）」「Web Application Firewall（WAF）」「Web Security Gateway（WSG）」など、同社複数製品が影響を受ける。 （Security NEXT - 2026/11/04 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-5bf977f870",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "創刊 28 周年記念キャンペーンのおしらせ（3）特別企画『When I'm 28』寄稿者決定のおしらせ",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56668.html",
+      "publishedAt": "2026-11-03T23:25:02.000Z",
+      "summary": "83 views 取材に行く行かないは別として主要な国際セキュリティカンファレンスの日本からの登壇者の有無は職業柄毎回確認しているのだが日本人の名を目にすることはあまりない。 だから 2026 年の春に Black Hat Asia 2026 Briefings の登壇者リストをチェックしていて「Asuka Nakajima」という名を見つけて少なからず驚いた。ふたつの意味で。日本人研究者の名がそこにあったことだけに驚いたのではなく「この人まだやってるんだ」という目の覚めるような感覚があったからだ。Asuka Nakajima は日本で女性技術者のコミュニティを設立したことなどで知られると同時に、サイバーセキュリティに関する研究成果を国際カンファレンスなどで発表してきた実績を持つセキュリティ研究者だ。 国際カンファレンスの登壇といってもいろいろあり、所属する会社がお金を払って講演を枠として買うタイプも含まれるわけだが、Asuka Nakajima が提案した Black Hat Asia の Briefings は、多数の専門家で構成されるレビューボードによる審査が行われ、その研究に新規性や独自性があるのかどうか、研究内容そのものが審査される。 Asuka Nakajima は確かすでに Black Hat Europe の CFP に採択されて登壇しているはずで、数年前からは Black Hat USA のレビューボードの一員 にもなっていたはずだ。さらに 2026 年 4 月には CODE BLUE Review Board Leader に就任 している。 大雑把なたとえだが、陸上部のコーチや顧問あるいは大会委員のような立場の人が、自身も競技者として自分の脚でトラックを疾走する姿（しかも入賞できるタイムで）を見たような気がして「まだやってるんだ この人」と驚いたのだった。 前回の記事 で、本誌 ScanNetSecurity の創刊からの年数にちなんで（今年 2026 年は本誌創刊 28 年）、特にその年代の若い方、あるいはその年齢にまだなっていない若い有為の読者に向けて、キャリアの参考や展望に資することを目的として、今年から『 When I&#039;m 28 』という企画を始めることをお知らせしましたが、その第一回の寄稿者として Elasticsearch株式会社の中島明日香さんに原稿を依頼して快諾いただきました。 英語で When I&#039;m 28 とは「わたしが 28 歳になったら」といった意味ですが、本稿は 28 歳の時に中島さんが考えて「いた」ことや挑戦して「いた」ことについて書いていただき、『 When I&#039;m 28 』第一回の原稿として配信します。どうぞご期待ください。配信日は調整中です。 ところで「競技のコーチや顧問でもありアスリートでもある」というたとえで先程書いたものの、ここまで書いてきてまだ言い足りない気がして、最後にちょっと再考してみます。セキュリティ業界には、優秀な研究者もいれば、コミュニティの運営に尽力する人もいます。 前者は自らの技術を磨いて世界に通用する研究成果を生み出すことが求められ、後者は参加者を集めて機会を提供し、人と人をつなぎ、活動を継続させることが求められる。両者は必要とされる能力も、費やす時間も、評価される基準も異なる。もちろんどちらか一方だけでも大変に難しい。 中島明日香は 2014 年に CTF for GIRLS を設立し 2023 年まで代表を務めている。その一方で 20"
+    },
+    {
+      "id": "s-01b6076053",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "WordPress バージョン 6 系および 7 系における遠隔からの任意のコード実行が可能となる複数の脆弱性（Scan Tech Report）",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56667.html",
+      "publishedAt": "2026-11-03T23:20:02.000Z",
+      "summary": "1248 views ◆概要 2026 年 7 月に修正された WordPress の脆弱性を悪用するエクスプロイトコードが公開されています。攻撃者は、脆弱性の悪用により対象ホストへの遠隔コード実行が可能となります。ソフトウェアのアップデートにより対策してください。 ◆分析者コメント プラグインの脆弱性が目立つ WordPress ですが、当該脆弱性は WordPress 本体に存在する遠隔コード実行が可能となるものであるため、「wp2shell」という名称で世界的に注目されています。特別な設定の必要がなく、管理用コンソール認証していない状態で悪用可能な脆弱性であるため、WordPress に対して真っ先に悪用を試行される可能性が高いと考えられます。ソフトウェアの更新による早急な対策が求められます。 ◆深刻度(CVSS) * CVE-2026-60137（WP_Query における SQL Injection の脆弱性） [CVSS v3.1] 5.9 https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?cveId=CVE-2026-60137&vector=CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1&sourceName=WPScan * CVE-2026-60137（REST API のバッチ処理におけるルートの混同） [CVSS v3.1] 9.8 https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?cveId=CVE-2026-63030&vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H&version=3.1&sourceName=WPScan ◆影響を受けるソフトウェア WordPress のバージョン 6.9 以上 6.9.5 未満、7.0 以上 7.0.2 未満が、本記事で取り上げているすべての脆弱性の影響を受けると報告されています。SQL Injection の脆弱性のみ、バージョン 6.8 以上 6.8.6 未満も含めて影響を受けます。 ◆解説 WordPress の本体に、遠隔からの任意のコード実行につながる複数の脆弱性が報告されています。 遠隔コード実行の実現には 2 つの脆弱性が用いられます。1 つは WP_Query という内部クラスの author__not_in パラメーターにおける SQL Injection の脆弱性です。脆弱なバージョンの WordPress では、当該パラメーターの検証処理に不備があるため、任意の SQL クエリが挿入可能です。もう 1 つの脆弱性は、複数の REST API 呼び出しを一括で実行するためのバッチ処理に起因する問題です。バッチ処理の実装に不備があるため、REST API 呼び出しの混同を引き起こして、SQL Injection の脆弱性が存在する内部クラス WP_Query の呼び出しが可能となります。攻撃者はこれらの脆弱性を悪用すれば、認証していない状態でも SQL Injection により管理者権限アカウントの作成が可能となるため、悪性プラグインのインストールにより任意のコード実行が可能となります。 ◆対策 WordPress のバージョンを 6.9.5 または 7.0.2 以上にアップデートしてください。 ◆関連情報 [1] WordPre"
+    },
+    {
+      "id": "s-c339b7e214",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Proofpoint Blog 第60回 日本のランサムウェア感染率が 2 年で約 2 倍に急増 ～ ランサムウェア感染率/身代金支払率 12 か国調査 2026",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56666.html",
+      "publishedAt": "2026-11-03T23:15:02.000Z",
+      "summary": "248 views 日本企業を取り巻くサイバー攻撃の脅威が、激変しています。弊社プルーフポイントの調査によると2024年12月から日本を狙うフィッシング攻撃が増加し、 2025年の新種メール攻撃のうち82.8%は日本をターゲット にしたものでした。また2025年はランサムウェア攻撃によって企業の基幹システムが停止し、製品の生産や出荷、物流、顧客サービスなど、事業活動そのものに深刻な影響が及ぶ事例が相次ぎました。また2026年の9月末からは、多くの企業が不正アクセスの絨毯爆撃に見舞われています。もはやサイバー攻撃は一部の企業だけが警戒すべき特殊な脅威ではなく、企業規模や業種を問わず、事業継続を脅かす経営リスクとなっています。 こうした状況の中、プルーフポイントは世界12か国のセキュリティ担当者953名を対象に実施した調査をもとに、「AI Ransomware Landscape Report 2026」を発表しました。今回の調査では、日本企業のランサムウェア感染状況に関して、重要な変化が明らかになりました。 ● 日本の感染率は38%から73%へ。比較対象11か国で最大の伸び率を記録 ランサムウェア感染率の推移と伸び率（2023 vs 2025年の比較、共通11か国） 今回の調査によると、2025年のランサムウェア感染率は、世界12か国平均で84%でした。国別では、米国が96%と最も高く、アラブ首長国連邦（UAE）が94%、スペインが92%、英国とインドが90%と続いています。 一方、 日本の感染率は73%で、調査対象12か国の中では比較的低い水準であるものの、2023年の38%か … 対策１：セキュリティチームの疲弊を防ぐ 今回の調査資料はランサムウェアの感染状況や被害対応を中心にまとめたものであり、感染率の増加が AI の利用によって引き起こされたことを直接示すものではありません。しかし、AI の進化がサイバー攻撃の環境を大きく変えつつあることも事実です。 生成 AI によるフィッシングメールの高度化や、AI を活用した自律型のサイバー攻撃など、企業が対処すべき脅威は今後さらに激化するでしょう。 2026年９月末から、従来であれば年に一度あるかないかというような重大な脆弱性の発見やサイバーセキュリティ事象が、毎週のように発生しています。一方で、DX の推進によって日本企業は数多くのデジタル資産を抱えるようになりました。デジタル化が事業の効率化や競争力向上をもたらした半面、利用されなくなったシステムや老朽化したシステムが十分に整理されず、攻撃表面積が拡大している企業も少なくありません。 その結果、セキュリティ担当者やエンジニアは、次々と発見される脆弱性への対応やインシデント対応に日夜追われ、疲労が蓄積しています。この状況が続けば、慢性的な過重労働やストレスにより人材の流出を招き、組織のセキュリティ体制そのものが弱体化する恐れがあります。 サイバー攻撃から組織を守るためには、組織を守っている「人」を守ることも重要です。経営者のみなさまには、まず、日々対応にあたっているエンジニアの方々が十分な休息が取れているか、過度な負担が一部の担当者に集中しないかを確認していただきたいと思います。そして、必要な人員やリソースの追加や、体制への投資、業務の優先順位の見直しを検討していただきたいと思います。 対策２：デジタル資産を整理し、攻撃表面積を縮小する AI による脆弱性の波に対処するために必要な経営判断 セキュリティチームの疲弊を防ぐことと同様に重要なのは、「守"
+    },
+    {
+      "id": "s-8f4906a0df",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "PQC 移行の現在地とこれから TLS 1.3 から学ぶ移行戦略 ～ Internet Week 2026",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56665.html",
+      "publishedAt": "2026-11-03T23:10:02.000Z",
+      "summary": "219 views インターネットの技術と運用に関わるエンジニアが一堂に会するイベント「Internet Week（IW）」。1990 年代から続く歴史あるインターネットの技術カンファレンスであり、今年 2026 年は 30 回目の開催。ネットワーク運用、セキュリティ、ガバナンス、教育など多岐にわたる分野の専門家が登壇する。 2026 年開催は、オンラインが 11 月 19 日（木）から 11 月 24 日（火）まで（土日除く）、オンサイトが 11 月 25 日（水）から 11 月 27 日（金）まで東京・両国 KFC Hall ＆ Rooms で「AI 時代を生き抜く術（すべ）を学べ」をテーマに開催される。 今回取り上げるのは、PQC（耐量子計算機暗号）への移行をテーマにしたプログラムだ。企画担当の吉川知輝氏（一般社団法人 Home NOC Operators&#039; Group、写真）に、企画の背景や見どころを聞いた。 ●「動向を追う」段階から、「どう移行するか」を考える段階へ ― このプログラムを企画した背景や狙いを教えてください PQC については以前から、「量子計算機の実用化に備えて移行が必要」と言われてきました。最近では標準化や政府の移行方針に加え、TLS など実際のソフトウェアやサービスでの実装も進んでいます。将来に備えて動向を追う段階から、実際にどう移行していくのかを考える段階に入ってきたと感じています。 一方で、インターネット運用者や企業のシステム担当者から見ると、最新動向は聞こえてくるものの、「では自分たちは今何をすればよいのか」が見えにくい状況です。PQC は昨年の DNS DAY でも取り上げられましたが、今回は DNS に限定せず、まず PQC 移行の全体像を整理します。そのうえで、標準化や実装が比較的具体化している TLS 1.3 を題材に、移行は実際にどう進んでいるのか、対応製品が出揃っていない中で何から準備できるのかまで考えます。単なる動向紹介ではなく、「自分たちが何から動き出せるのか」を持ち帰っていただける内容にしたいと考えています。 ●「最新動向」カテゴリ。数学的な詳細の理解は不要 ― 今年の IW は「ベーシック」「実践」「最新動向」に分類されています。このプログラムはどれに当たりますか？ 「最新動向」の位置づけです。ただ、いきなり最新の標準やアルゴリズムの話から始めるわけではありません。まず PQC 移行の背景と全体像を整理し、次に TLS 1.3 を具体例として移行の現在地を見て、最後に各組織が今からできる準備へ進む流れを想定しています。暗号アルゴリズムの数学的な詳細よりも、「なぜ移行が必要なのか」「実際のシステムではどう変わるのか」「自分たちは何を考えておくべきか」を理解していただくことを重視しています。基本から最新動向へ、段階的に理解できる構成です。 ● 標準化から実システムへの移行まで、俯瞰して語れる登壇者 ― どのような点を重視して講演者をアサインしましたか？ 企画当初から、PQC のアルゴリズムそのものだけでなく、標準化やロードマップ、実際のシステムへの移行までを俯瞰してお話しいただける方にお願いしたいと考えていました。伊藤氏は CRYPTREC の活動に加え、TLS をはじめとするインターネットセキュリティ技術の標準化にも携わっています。暗号技術の最新動向だけでなく、それをシステムにどう適用・移行していくのかという観点からも話していただけると思い、ご登壇をお願いしました。 PQC では、T"
+    },
+    {
+      "id": "s-e7ace6ea0b",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "再開を断念 PHPの重大脆弱性受け「くみあいアプリ」がサービス終了",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56664.html",
+      "publishedAt": "2026-11-03T23:05:34.000Z",
+      "summary": "391 views j.union株式会社は10月30日、同社が提供する「くみあいアプリ」のサービス終了について発表した。 同社では10月21日に公表されたPHPの重大な脆弱性への対応として「くみあいアプリ」のサービスを停止し、サービス再開に向けた対応について検討していたが、サービス中断期間が2ヶ月以上となることが判明したため「くみあいアプリ」のサービス提供を断念するという。 同社では、代替サービスとして「組合活動プラス UNION TALK」「ユニオンキャンパス」の案内を行うとともに、代替サービスの利用を希望しない場合は解約を受け付けるとのこと。 《ScanNetSecurity》 一次情報または関連リンク j.union 関連記事 Vex、php2shell に対応する検査シグネチャの正式版を追加 2026.11.2 Mon 8:00 PHP に複数の任意のコードが実行可能な脆弱性 2026.10.26 Mon 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-3cd90e1c94",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "外務省のネットワークに不正アクセス、7月27日に検知",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56663.html",
+      "publishedAt": "2026-11-03T23:05:31.000Z",
+      "summary": "544 views 外務省は10月30日、同省が運用する、外部とのやり取りが可能なネットワークへの不正アクセスについて発表した。 これは7月27日に、外部とのやり取りが可能なネットワークへの不正アクセスを検知したというもので、同ネットワーク上で取り扱っていた個人情報を含むメール等の一部が漏えいした可能性が判明している。 なお、同省では機密性の高い情報のやり取りを外務省員間でのみ行う閉域ネットワークと、外部とのやり取りが可能なネットワークの2系統があり、閉域ネットワークは影響を受けていない。 漏えいした可能性があるのは、メールアドレスや氏名など約3,600件で、うち外務省員以外の個人情報は約900件。 同省では今後、対象者を特定の上で個別に連絡を行う。 同省では不正アクセス検知後に、不正アクセスの遮断や認証情報の無効化等の措置を実施している。 同省では今後、アクセス制御や認証方法の見直し、監視の強化、情報セキュリティ教育の再徹底を含むセキュリティ対策の更なる強化に努め、再発防止に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる個人情報の漏えいの可能性について 関連記事 富士通のプロジェクト情報共有ツールへの不正アクセス、外務省でも被害確認 2021.6.1 Tue 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-86cf3676cf",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「MUJIアプリ」で最大 約2,726万件の顧客情報が流出した可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56662.html",
+      "publishedAt": "2026-11-03T23:05:28.000Z",
+      "summary": "560 views 株式会社良品計画は10月30日、無印良品の公式アプリ「MUJIアプリ」での顧客情報の流出について発表した。 これは「MUJIアプリ」にて、同社が保有する顧客情報の一部が外部流出した可能性を確認したというもの。同社では外部からの不正なアクセスを検知した後、該当箇所へのアクセスの遮断と修正の適用を行っている。 外部に流出した可能性があるのは退会した顧客の情報を含む最大 約2,726万件のメールアドレス、生年月日、性別。 同社では対象の顧客に順次、連絡を行う。 同社では今後、開発会社・関係会社の協力のもとでセキュリティ対策と監視体制のさらなる強化を実施するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 無印良品の公式アプリ「MUJIアプリ」におけるお客さま情報流出の可能性について 関連記事 良品計画サイトで不審な認証画面が表示される事象 2026.6.10 Wed 8:05 アスクルのランサムウェア感染、「無印良品ネットストア」利用者の個人情報が流出した可能性 2025.11.21 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-c5420f479a",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "松屋公式アプリに不正アクセス 会員情報等が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56661.html",
+      "publishedAt": "2026-11-03T23:05:25.000Z",
+      "summary": "2482 views 株式会社松屋フーズと株式会社松屋フーズホールディングスは10月30日、松屋公式アプリへの不正アクセスについて発表した。 これは10月28日に、松屋公式アプリ（松弁ネット・モバイルオーダー・松弁デリバリー）の管理システムに第三者から不正アクセスがあり、同アプリに登録されている会員情報等が漏えいしたというもの。 漏えいが確認された情報と件数は下記の通り。 ・松屋公式アプリに登録のあった顧客の会員ID、都道府県、氏名、電話番号、生年月日、メ ールアドレス、暗号化されたパスワード、松屋ポイント 件数：2,000件（最大3,000件となる可能性がある） ・松弁ネット・モバイルオーダー・松弁デリバリーを利用した顧客の会員ID、届け先住所、氏名、電話番号、松屋ポイント 件数：2,377,127件 同社では、情報が漏えいした顧客に順次、連絡を行う予定。 同社では現在、松屋公式アプリのサービスを停止しており、注文やポイント、各種特典を利用できない状況となっている。 同社では現在、関係各社等の協力のもと、システムの早期復旧に向けて取り組んでいる。なお、アプリ会員には利用停止期間中の補償を行う予定とのこと。 《ScanNetSecurity》 一次情報または関連リンク 松屋公式アプリ（松弁ネット・モバイルオーダー・松弁デリバリー）管理システムに対する第三者からの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ 松屋公式アプリのサービス停止に関するお詫びと今後の対応について 関連記事 「大起水産公式アプリ」に不正アクセス、顧客17万4,933人の個人情報が漏えいした可能性 2026.10.26 Mon 8:05 「焼肉きんぐ」公式アプリ会員管理システムに不正アクセス、1,078万8,963件の個人情報が漏えい 2026.10.26 Mon 8:05 行動データプラットフォーム「トイポアプリ」に不正アクセス、69万7,209名のユーザーの登録情報が漏えいした可能性 2026.10.28 Wed 8:05 アエナ運営の「ECアプリ」に不正アクセス、最大81万7,215人の会員情報が閲覧された可能性 2026.10.28 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-dcd24ff463",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Chrome 157」で脆弱性213件を修正 - 「クリティカル」は7件",
+      "url": "https://www.security-next.com/192316",
+      "publishedAt": "2026-11-03T22:51:41.000Z",
+      "summary": "「Chrome 157」で脆弱性213件を修正 - 「クリティカル」は7件 Googleは、ウェブブラウザ「Chrome」の最新版となる「Chrome 157」をリリースした。「クリティカル」とされる脆弱性も複数修正している。 同社は現地時間2026年11月3日、WindowsとmacOS向けに「Chrome 157.0.8103.39」「同157.0.8103.38」、Linux向けに「同157.0.8103.38」をリリースしたもの。今回のアップデートでは、CVEベースで213件の脆弱性に対処した。 重要度を見ると4段階中もっとも高い「クリティカル（Critical）」とされる脆弱性が7件。「Dawn」におけるバッファオーバーフローの脆弱性「CVE-2026-121156」「CVE-2026-121247」や、「ANGLE」においてメモリが破損する「CVE-2026-121229」へ対応した。 さらに「WebGL」の「CVE-2026-121246」、「Prerender」の「CVE-2026-121035」、「Geometry」の「CVE-2026-121203」、「Core」の「CVE-2026-121126」など解放済みメモリを使用する「Use After Free」の脆弱性に対応している。 重要度が2番目に高い「高（High）」とされる脆弱性は77件。スクリプトエンジン「V8」における型の取り違えの脆弱性「CVE-2026-121082」や、「PDFium」のバッファオーバーフロー「CVE-2026-121113」、「WebRTC」における「Use After Free」などが含まれる。 あわせて重要度が「中（Medium）」の75件、「低（Low）」の54件についても対応。今後数日から数週間にかけてアップデートを順次展開していく予定。今回のアップデートで修正された脆弱性は以下のとおり。 CVE-2026-121035（Critical） CVE-2026-121126（Critical） CVE-2026-121156（Critical） CVE-2026-121203（Critical） CVE-2026-121229（Critical） CVE-2026-121246（Critical） CVE-2026-121247（Critical） CVE-2026-121032（High） CVE-2026-121034（High） CVE-2026-121036（High） CVE-2026-121037（High） CVE-2026-121038（High） CVE-2026-121044（High） CVE-2026-121047（High） CVE-2026-121051（High） CVE-2026-121052（High） CVE-2026-121057（High） CVE-2026-121060（High） CVE-2026-121061（High） CVE-2026-121068（High） CVE-2026-121071（High） CVE-2026-121074（High） CVE-2026-121076（High） CVE-2026-121078（High） CVE-2026-121079（High） CVE-2026-121080（High） CVE-2026-121082（High） CVE-2026-121083（High） CVE-2026-121084（High） CVE-2026-121086（High"
+    },
+    {
+      "id": "s-e1b19180f5",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「WordPress」更新機能のRCE脆弱性 - 悪用に米当局が注意喚起",
+      "url": "https://www.security-next.com/192310",
+      "publishedAt": "2026-11-03T22:26:27.000Z",
+      "summary": "「WordPress」更新機能のRCE脆弱性 - 悪用に米当局が注意喚起 コンテンツマネジメントシステムである「WordPress」の脆弱性が、実際の攻撃に悪用されていることがわかった。米当局が注意を呼びかけている。 米サイバーセキュリティインフラストラクチャセキュリティ庁（CISA）は現地時間2026年11月3日、「WordPress」の脆弱性「CVE-2026-119977」を「悪用が確認された脆弱性カタログ（KEV）」に追加した。 同脆弱性は、「WordPress」のコアプログラムにおいてアップデート時にコードを実行されるおそれがある脆弱性。パッケージ更新時、一時的に展開されるファイルの保存先を予測し、外部からアクセスして脆弱性を悪用できるという。 同脆弱性は現地時間2026年10月28日にリリースされた「WordPress 7.1.4」で修正されており、「WordPress 4.7」以降のブランチに対してもバックポートが順次実施されている。 CVE番号を採番したWordfenceは、共通脆弱性評価システム「CVSSv3.1」のベーススコアを「8.1」、重要度を「High」と評価。また過去24時間に同社製品で同脆弱性の悪用を試みる1万3000件超の攻撃をブロックしたとしている。 同脆弱性について、CISAは米行政機関における対応期限を3日後にあたる2026年11月6日に指定。侵害状況についても調査を行うよう求めている。 （Security NEXT - 2026/11/04 ） ツイート 関連リンク PR 関連記事"
+    }
+  ]
+}
