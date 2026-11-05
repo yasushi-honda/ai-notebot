@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-06",
+  "collectedAt": "2026-11-05T22:00:51.733Z",
+  "researchSummary": "## 調査メモ：汎用生成AIを活用した「通所介護（デイサービス）等の送迎ルート・配車表作成の効率化」\n\n### 1. 概要・対象業務\n* **対象サービス：** 通所介護（デイサービス）、小規模多機能型、短期入所等（送迎業務が発生するサービス全般）\n* **対象業務：** 送迎の車両割り当て、乗車順・ルートの検討、配車表の作成業務\n\n### 2. 具体的な効率化の方法（汎用AIツールの活用）\n* **使用ツール：** ChatGPT、Claude、Google Workspace（スプレッドシート）など\n* **実践手順：**\n  1. 当日の利用者リスト（氏名、送迎場所の住所、特記事項・車椅子利用などの配慮事項）、使用可能な車両台数と定員、ドライバー・添乗員の情報を整理する。\n  2. 汎用AI（ChatGPTやClaude等）にプロンプト（指示文）として、条件（例：「車椅子対応車は〇号車のみ」「AさんとBさんは同乗不可」「極力片道の乗車時間を30分以内にする」など）を添えてデータを入力、またはスプレッドシート上でAI連携機能を用いる。\n  3. AIに効率的な「配車グループ案」や「大まかな巡回順序のシミュレーション」を出力させ、その案をベースに職員が最終微調整を行って配車表を完成させる。\n\n### 3. 背景・公的機関の裏付け\n* 厚生労働省やデジタル庁が推進する「介護現場の生産性向上・DX化」の文脈において、送迎業務は計画策定や調整に多くの手間がかかるアナログ業務の一つとして挙げられている。\n* デジタル庁のガイドライン等でも示されている通り、AIの提案はあくまで「参考情報（ドラフト作成）」とし、道路事情や利用者の直近の体調変化を踏まえた最終的な安全確認・決定は必ず人間（職員）が行うという役割分担のもとで、今日から手軽に汎用ツールで検討できる。",
+  "webSearchQueries": [
+    "厚生労働省 介護現場 生成AI ガイドライン 活用 事例",
+    "デジタル庁 生成AIガイドライン 介護 業務効率化"
+  ],
+  "searchEntryPointHtml": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1NkLHyV122Rxgu8fgLKPAb5EuOruEewSTPz3xQ7FFJKLo9iwOzCpif5izNzpysrz3DfGtGyPruiJofGUqNPCconfOdyVWh9rAxELd2GYQ3qUp7ZxOoKjd1gL_5oCEA9YLwf_PaqVeFw1rJtj_R-LkPp7QHoqq6XoMWkAu1kHNqHBk1UHm50eEHBY1qsMxKo1AvJAUf9jzf-khTR7GnT3ek_paJNVGF4s0xrxcU26yf0QfL1TVgR0AbiqpHw1uV-72X_uPjaNt2Moq_zo3wgiUK9FVqhtjjh1jGos-SxJtLAkBPWqOvR48j8m7lisqWrPgePEvPmUnrtCf0mfkag-H1mgmFwPAx9lvn_Hmm0Yahc-8qKWYCsvncQ4jNaPZz78A-10HFHknAWALyzObJZo3K38ERHZDo_l7CVgASQ==\">デジタル庁 生成AIガイドライン 介護 業務効率化</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcShg8DTu6Aq-9edxdFtzDq8eJvdty4m9WqMyZt_GPZ1tgsANstNyB6YbqTCdE5o02l4gV52BwJs_Gf5NU19R2pM3USH1yDYHcMZM8Kz8ztEgkgqn7jG5lqaTv-aL_BysTpVaRmDP8YIo5ebImVBFLnOyTcfRYr4FkiOdSMzRRbrazi8HQc5neVLbIYrtjuG_uppjJ14Ivthdl6Pc6-9yAVPawZFljBunP_vg9G6jr6hMgm8gxT2YP65rnDXGRIK4diVGd_dCKivOR_JQx7WZOH6F8qdnF9Wx-hB5bwRWn0TR93sqFT5HbBcwvRlIQnPkG0-GY5hJ4_8n45r5F62xxvhAvJ6eSWryhrRcPCzp5DBbzTXdWAHytmWdOvw3H0jHnTR5cmA7RNlxdhq1IcoNVRWDfy3qg6ZSthOivSsTDQ7Ml6jnyNE0I\">厚生労働省 介護現場 生成AI ガイドライン 活用 事例</a>\n  </div>\n</div>\n",
+  "items": [
+    {
+      "id": "s-f915eb7565",
+      "source": "jaic.pro",
+      "sourceType": "web",
+      "title": "介護事業所向け生成AI利用ガイドラインの作り方｜禁止事項・入力ルール・実践雛形 | 日本AIイノベーションセンター",
+      "url": "https://jaic.pro/2026/07/29/care-generative-ai-guideline-template/",
+      "publishedAt": "2026-11-05T22:00:51.223Z",
+      "summary": "介護現場では、記録作成、申し送り、家族向け文書、研修資料、ケアプラン作成支援など、生成AIを活用できる場面が広がっています。一方で、介護事業所が扱う情報は、利用者の心身状態、病歴、家族関係、生活状況など、極めて慎重に扱うべき情報です。 生成AIは、使い方を間違えれば個人情報漏えい、虚偽情報の利用、著作権侵害、誤ったケア判断につながる可能性があります。そのため、介護事業所では「便利だから使う」のではなく、「何に使ってよいか」「何を入力してはいけないか」「誰が確認するか」を明文化した利用ガイドラインが必要です。 本稿では、介護事業所向け生成AI利用ガイドラインの策定と実践的雛形を整理した調査報告をもとに、現場で導入しやすい形に再構成します。 介護現場で生成AIが注目される背景には、慢性的な人材不足と記録業務の負担があります。介護職員は、利用者対応だけでなく、日々の記録、計画書、報告書、家族連絡",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-05T22:00:51.223Z"
+    },
+    {
+      "id": "s-6a72f49679",
+      "source": "www.digital.go.jp",
+      "sourceType": "web",
+      "title": "介護現場の生産性向上に関するダッシュボード｜デジタル庁",
+      "url": "https://www.digital.go.jp/resources/govdashboard/nursing-care-productivity",
+      "publishedAt": "2026-11-05T22:00:51.353Z",
+      "summary": "今後、介護サービスの需要が更に高まる一方、生産年齢人口が急速に減少していくことが見込まれており、2040年には約57万人の介護人材が新たに必要になると試算しています。 厚生労働省は、こうした課題に対応するために、賃上げ等の介護職員の処遇の改善や、生産性向上による業務負担軽減等の職場環境の改善、外国人介護人材の活躍できる環境の整備を進めるなど、様々な取組を総合的に実施しています。 このうち、介護現場における生産性向上の取組は、「介護の価値を高めること」と定義され、人材育成や効率化等により介護サービスの質の向上や人材の定着・確保を目指しています。 1.2. 介護現場の生産性向上のためのロジックモデル 全国や地域の介護事業者全体の生産性向上を実現していくためには、国が必要な支援を実施し、各地方公共団体が地域の介護現場の生産性向上のための取組をリードし、その取組が効果を発揮していくという流れが重要",
+      "tier": "official",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-05T22:00:51.353Z"
+    },
+    {
+      "id": "s-b8ecf7fb4c",
+      "source": "www.mitsubishielectric.co.jp",
+      "sourceType": "web",
+      "title": "介護現場におけるAI活用の可能性を専門家が解説！導入時のポイントや事例も紹介 | 三菱電機デジタルイノベーション株式会社",
+      "url": "https://www.mitsubishielectric.co.jp/medigital/column/biz/063/",
+      "publishedAt": "2026-11-05T22:00:51.733Z",
+      "summary": "Skip to main content 2025年11月5日 AI（人工知能：Artificial Intelligence）とは、人間の知的機能をコンピューターにより再現し、思考・学習・判断などを行う技術の総称です。 例えば、推論、言語理解、創造性といった、従来は人間にしかできないとされてきた認知機能を機械が実行できるようにすることを目指しています。 身近な例としては、画像認識、音声認識、自動翻訳などが挙げられます。 急速に高齢化が進む日本では、介護サービスの需要増加と介護人材の不足が深刻な問題となっています。経営の観点からも、生産性の向上がますます重要になっています。 こうした状況において、AI技術はその解決策として注目されており、単なる人手不足の解消だけでなく、業務の効率化や介護の質の向上など、さまざまな側面での活用が期待されています。 厚生労働省は「 2040年に向けたサービス提",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-05T22:00:51.733Z"
+    }
+  ]
+}

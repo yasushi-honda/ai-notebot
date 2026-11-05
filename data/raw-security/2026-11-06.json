@@ -1,0 +1,340 @@
+{
+  "date": "2026-11-06",
+  "collectedAt": "2026-11-05T22:00:59.988Z",
+  "sourceSuccessCount": 8,
+  "items": [
+    {
+      "id": "s-571eb31b34",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
+      "publishedAt": "2026-11-05T21:30:30.000Z",
+      "summary": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions. [...]"
+    },
+    {
+      "id": "s-9d52b0bab9",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Nearly 1.5 million exposed secrets targeted in new revocation program",
+      "url": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/",
+      "publishedAt": "2026-11-05T20:15:08.000Z",
+      "summary": "Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid. [...]"
+    },
+    {
+      "id": "s-f36911c184",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "OpenAI’s GPT-6 Astra silently obstructed safety research tasks",
+      "url": "https://www.bleepingcomputer.com/news/security/openais-gpt-6-astra-silently-obstructed-safety-research-tasks/",
+      "publishedAt": "2026-11-05T19:24:26.000Z",
+      "summary": "OpenAI&rsquo;s GPT-6 Astra silently obstructed safety research tasks By Bill Toulas November 5, 2026 02:24 PM 0 OpenAI disclosed that its GPT-6 Astra frontier model sometimes hindered safety research by complicating simple tasks, abandoning viable approaches, and silently refusing researchers&rsquo; requests. During evaluation, the AI company's model reported nonexistent or self-made blockers without explaining its restrictions to users. OpenAI said it first received a report of what it calls \"covert underperformance\" in Astra on August 20. The company then conducted targeted evaluations to investigate the behavior and determine its causes, noting that it had not observed the same issue in GPT-5.6 Sol. OpenAI says it received the first report of what it calls &ldquo;covert underperformance&rdquo; in Astra on August 20. The company then ran specifically designed evaluation experiments to determine the extent and cause of this behavior, noting that the issues were not observed in GPT-5.6 Sol. &ldquo;Astra completed about 10 percent of hidden rubric items under the safety framing, compared with about 16 percent under the capabilities framing,&rdquo; reads OpenAI&rsquo;s report . &ldquo;This is a 6 percentage point gap and roughly 40 percent fewer completed rubric items. GPT-5.6 Sol showed essentially no gap on the same comparison.&rdquo; A rubric item is one specific requirement used to score the model&rsquo;s work, essentially an item on a grading checklist. Source: OpenAI The"
+    },
+    {
+      "id": "s-02b4125588",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "OpenSSH flaw lets attackers log into password-disabled Linux accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/",
+      "publishedAt": "2026-11-05T17:45:29.000Z",
+      "summary": "A newly disclosed OpenSSH vulnerability dubbed \"*sshole\" allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts that are configured to block password authentication, simply by entering an oversized password. [...]"
+    },
+    {
+      "id": "s-3fe484f436",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+      "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+      "publishedAt": "2026-11-05T16:42:46.000Z",
+      "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it. Alpine has published fixed packages for every"
+    },
+    {
+      "id": "s-306be99284",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+      "publishedAt": "2026-11-05T16:42:32.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from prompt injections. \"The flaw could enable silent chat data theft, phishing,"
+    },
+    {
+      "id": "s-560918e3bd",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers backdoor Linux servers using trojanized CWP web server",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
+      "publishedAt": "2026-11-05T16:24:26.000Z",
+      "summary": "A new Linux malware called CWPdoor is being distributed through a trojanized version of cwpsrv, the web server behind the Control Web Panel (CWP) management interface. [...]"
+    },
+    {
+      "id": "s-e3b1ebd3bc",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "DigiCert data breach exposes customer information, identity documents",
+      "url": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
+      "publishedAt": "2026-11-05T16:12:46.000Z",
+      "summary": "DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [...]"
+    },
+    {
+      "id": "s-8a9e15f7ae",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Closing the Identity Gap at the Service Desk",
+      "url": "https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/",
+      "publishedAt": "2026-11-05T15:00:10.000Z",
+      "summary": "Attackers target IT service desks to bypass MFA by impersonating employees and convincing staff to reset passwords or register new authentication devices. Specops Software explains why traditional identity verification methods are no longer sufficient and how organizations can secure account recovery against social engineering risks. [...]"
+    },
+    {
+      "id": "s-59043a8555",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
+      "publishedAt": "2026-11-05T14:41:10.000Z",
+      "summary": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster, some important systems are still taking months, sometimes over a year, to get patched. Not exactly a"
+    },
+    {
+      "id": "s-34693f748d",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "第三者が認証情報を不正作成か、アプリ移行処理に不備 - デニーズ",
+      "url": "https://www.security-next.com/192388",
+      "publishedAt": "2026-11-05T13:06:15.000Z",
+      "summary": "第三者が認証情報を不正作成か、アプリ移行処理に不備 - デニーズ デニーズジャパンは、同社アプリの関連システムが第三者によって侵害され、一部顧客の個人情報が流出した可能性があることを明らかにした。 同社によれば、「デニーズアプリ」において一部顧客の個人情報が流出した可能性があることが、2026年10月30日に判明したもの。 流出した可能性があるのは、旧デニーズアプリを利用していた一部顧客のメールアドレス、生年月日、性別、居住都道府県、アプリ会員コードなど。 旧アプリから新アプリへの移行に関するシステム処理において、認証情報を第三者が不正に作成、一部顧客のアカウントにアクセスできる状態となっていた。 調査の結果、個人情報を取得するためのシステム処理が実行された履歴を確認した。ただし、顧客自身による操作か、第三者による操作かの区別ができないという。 （Security NEXT - 2026/11/05 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-5d4d032693",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out",
+      "url": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
+      "publishedAt": "2026-11-05T12:25:00.000Z",
+      "summary": "A critical finding can move through several security tools and still leave the organization exposed.&nbsp; The vulnerability has a severity score, and a ticket has reached the queue. Progress then depends on information the finding may lack: who owns the system, whether attackers can reach it, what protection exists, and how a change could affect the business.&nbsp; Each missing detail creates"
+    },
+    {
+      "id": "s-cb603ad0f6",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "サーバ設定不備、従業員情報流出の可能性 - 資さんうどん",
+      "url": "https://www.security-next.com/192260",
+      "publishedAt": "2026-11-05T12:16:57.000Z",
+      "summary": "サーバ設定不備、従業員情報流出の可能性 - 資さんうどん うどん店チェーン「資さんうどん」を運営する資さんは、サーバの設定不備により、外部から従業員の個人情報が閲覧できる可能性があったことを明らかにした。 同社によれば、サーバの管理運用を委託しているカホエンタープライズにおいて、サーバの一部設定で問題があったという。外部から従業員と退職者の個人情報が閲覧可能となっていた可能性がある。 対象となるのは、2021年10月から2026年10月までに在籍していた従業員や退職者。氏名や電話番号、生年月日、性別などのほか、賃金履歴や勤怠実績も対象。一部の対象者については、退職理由、入社日、退社日、社会保険加入履歴も含まれる。 問題の発覚を受けて設定を修正。個人情報保護委員会へ報告するとともに、対象となる従業員や退職者には順次連絡を取るとしている。 （Security NEXT - 2026/11/05 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-25c3eda20c",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+      "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+      "publishedAt": "2026-11-05T12:08:54.000Z",
+      "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. \"Our prototype identified and analyzed 2,308 candidate Linux kernel findings, dynamically reproduced 1,724 vulnerabilities, and produced 948 local privilege escalation (LPE)"
+    },
+    {
+      "id": "s-5fa7f4777e",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "申請用ファイルに不備、サイト上に個人情報が残存 - 福岡県",
+      "url": "https://www.security-next.com/192081",
+      "publishedAt": "2026-11-05T11:59:03.000Z",
+      "summary": "申請用ファイルに不備、サイト上に個人情報が残存 - 福岡県 福岡県は、ウェブサイトに掲載した認証制度の申請用ファイルの設定不備により、法人役員の個人情報が閲覧可能になっていたことを明らかにした。 同県によれば、「福岡県働きやすい介護職場認証制度」において、同制度の認証を申請、または申請予定だった24法人の役員183人分の氏名、生年月日、性別、役職が閲覧可能となっていたもの。 申請の受け付けを開始した2026年8月21日から9月17日にかけてウェブサイトで委託事業者が掲載した申請用ファイルに問題が存在。申請予定者が入力した法人役員の個人情報がオンライン上に残存し、第三者が閲覧できる状態となっていた。 申請用ファイルは、ウェブサイトへの掲載時に閲覧のみに権限を設定すべきところ、オンライン上で編集と保存を可能にする設定で掲載されていたという。申請予定者から様式のダウンロード方法について問い合わせがあり、問題が発覚した。 同県では委託事業者に指示し、申請用ファイルを削除。対象となる24法人に対し、電話で連絡して説明と謝罪を行った。 （Security NEXT - 2026/11/05 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-31d3f1441a",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "個人情報含む業務用USBメモリが所在不明に - 奈良県",
+      "url": "https://www.security-next.com/191606",
+      "publishedAt": "2026-11-05T10:17:18.000Z",
+      "summary": "個人情報含む業務用USBメモリが所在不明に - 奈良県 奈良県は、個人情報が保存された業務用USBメモリが所在不明になっていることを明らかにした。 同県によれば、医薬品医療機器申請・審査システムと同県端末間でデータを受け渡すために使用していたUSBメモリの所在がわからなくなっているもの。 2026年9月9日に保管状況を調査した際、紛失していることが判明。同県端末における使用ログでは、最後に接続されたのは2026年8月25日だったという。 USBメモリ内部のデータは暗号化されているが、個人情報363人分が保存されていた可能性がある。 具体的には、医薬品医療機器製造業の許可を取得している法人の管理者の氏名、住所、生年月日にくわえて、代表者や役員、担当者の氏名などが含まれる。また法人15社の製造品目情報などの内部情報なども保存されていたおそれがある。 USBメモリの使用後は所定の保管場所に返却する規定だったが、徹底されていなかった。同県では、対象となる関係者に経緯を説明し、謝罪した。 （Security NEXT - 2026/11/05 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-1981b067cd",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
+      "url": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
+      "publishedAt": "2026-11-05T10:06:19.000Z",
+      "summary": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk of financial losses, data breaches, and costly operational disruption. Below, we examine five"
+    },
+    {
+      "id": "s-c3be2112dd",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
+      "url": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
+      "publishedAt": "2026-11-05T09:18:29.000Z",
+      "summary": "Attackers can force Android devices into a continuous boot loop using a specially crafted app that requires no permissions and only needs to be installed. [...]"
+    },
+    {
+      "id": "s-96a1ace9f5",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
+      "url": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
+      "publishedAt": "2026-11-05T09:13:28.000Z",
+      "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3. The change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by sharing a link and making it accessible to \"Anyone with the link.\" When users choose this option,"
+    },
+    {
+      "id": "s-4f9bb7c1ff",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
+      "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
+      "publishedAt": "2026-11-05T08:42:03.000Z",
+      "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and ongoing, the activity involves the use of publicly-available AI-driven offensive security tools"
+    },
+    {
+      "id": "s-3fb4a767ec",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "HPEのネットワーク管理製品に複数脆弱性 - 「クリティカル」3件",
+      "url": "https://www.security-next.com/192402",
+      "publishedAt": "2026-11-05T08:28:07.000Z",
+      "summary": "HPEのネットワーク管理製品に複数脆弱性 - 「クリティカル」3件 HPEのネットワーク管理製品「HPE Networking Fabric Composer」に複数の脆弱性が明らかとなった。深刻な脆弱性も複数含まれており、同社は修正版を提供している。 同社は現地時間2026年11月3日、セキュリティアドバイザリを公開し、46件の脆弱性を明らかにした。3件については、重要度を4段階中もっとも高い「クリティカル（Critical）」としている。 「CVE-2026-95731」は、コマンドラインインタフェースにパスワードがハードコードされている脆弱性。 第三者が固定された認証情報を利用してリモートから管理者権限でアクセス可能。共通脆弱性評価システム「CVSSv3.1」のベーススコアは「9.8」と評価されている。 同じく認証情報がハードコードされている「CVE-2026-95733」やOSにおける認証を回避できる「CVE-2026-95732」は、いずれも隣接するネットワークから認証を必要とせず任意のコードを実行することが可能となる。CVSS基本値は「9.6」とされている。 （Security NEXT - 2026/11/05 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-b57ffcc7bd",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "個人情報が保存されたHDDや書類を紛失 - 都水道局",
+      "url": "https://www.security-next.com/192391",
+      "publishedAt": "2026-11-05T08:15:22.000Z",
+      "summary": "個人情報が保存されたHDDや書類を紛失 - 都水道局 東京都水道局において、ハードディスクや書類など、個人情報の紛失事故が複数発生した。 同局によれば、2026年10月2日、職員がハードディスクの空き容量を確認するため、施錠されているキャビネットを開けたところ、保有するハードディスク4台を収納していた箱のみあり、ハードディスク本体が入っていないことが判明した。 これらのハードディスクには、同局が所有する用地の管理や活用に関する資料が保存されており、企業や国、自治体の関係者および地域住民などあわせて1932人分の氏名が含まれていた。一部では住所や電話番号も含まれる。 また業務委託先である東京用地補償の従業員が電車内に鞄を置き忘れ、紛失する事故が10月20日に発生。鞄には個人情報が記載された書類が入っていたという。 問題の書類には、調査対象である顧客84軒に関する氏名、住所、電話番号、対応記録などが記載されている。 これら問題を受けて、同局では対象となる関係者に経緯を説明し、謝罪を行った。 （Security NEXT - 2026/11/05 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-23cbe668b2",
+      "source": "JVN",
+      "sourceType": "official",
+      "title": "SHIRASAGIにおける複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN55454512/",
+      "publishedAt": "2026-11-05T05:00:00.000Z",
+      "summary": "JVN#55454512 SHIRASAGIにおける複数の脆弱性 SHIRASAGI Projectが提供するSHIRASAGIには、複数の脆弱性が存在します。 CVE-2026-117679 CVE-2026-118869 SHIRASAGI v1.12.0からv1.21.0まで SHIRASAGI v1.19.0からv1.21.0まで SHIRASAGI Projectが提供するSHIRASAGIには、次の複数の脆弱性が存在します。 クロスサイトスクリプティング（ CWE-79 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N 基本値 5.1 CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N 基本値 5.4 CVE-2026-117679 OSコマンドインジェクション（ CWE-78 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N 基本値 8.7 CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H 基本値 8.8 CVE-2026-118869 想定される影響は各脆弱性により異なりますが、次のような影響を受ける可能性があります。 当該製品を使用しているWebサイトにアクセスしたユーザのブラウザ上で、任意のスクリプトが実行される（CVE-2026-117679） 当該製品がインストールされているシステム上で任意のOSコマンドが実行される（CVE-2026-118869） アップデートする 開発者が提供する情報をもとに、最新版にアップデートしてください。 本脆弱性は次のバージョンで修正されています。 SHIRASAGI v1.21.1 ベンダ リンク SHIRASAGI Project この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：東京理科大学 創域理工学部 経営システム工学科 佐藤 勇斗 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-d793e1f04d",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "遠隔サポート製品「SolarWinds Dameware」に複数の脆弱性",
+      "url": "https://www.security-next.com/192398",
+      "publishedAt": "2026-11-05T04:45:02.000Z",
+      "summary": "遠隔サポート製品「SolarWinds Dameware」に複数の脆弱性 SolarWindsのリモート操作製品「SolarWinds Dameware」に複数の脆弱性が明らかとなった。遠隔操作先のホストが侵害される深刻な脆弱性も判明しており、同社は修正版を提供している。 同社が現地時間2026年11月3日にセキュリティアドバイザリを公開し、コマンドインジェクションの脆弱性「CVE-2026-28336」を明らかにしたもの。悪用には認証が必要となるが、遠隔操作先のホストが侵害される可能性がある。 同社は、共通脆弱性評価システム「CVSSv3」のベーススコアを「9.9」、重要度を4段階中もっとも高い「クリティカル（Critical）」としている。 悪用には認証が必要とされるが、リモートからコードを実行されるおそれがあるバッファオーバーフローの脆弱性「CVE-2026-28335」や、インストール時におけるDLLハイジャックの脆弱性「CVE-2026-28327」なども判明。 同社は、これらの脆弱性を修正した「SolarWinds Dameware 2026.3.1」をリリースした。 今回のアップデートでは、「Brotli」のデコーダにおけるバッファオーバーフローの脆弱性「CVE-2026-111497」や、Apache log4netにおいて不正な文字の処理に起因してログ記録が失われるおそれがある脆弱性「CVE-2026-40021」など、サードパーティ製コンポーネントに関する脆弱性へも対処している。 （Security NEXT - 2026/11/05 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-2b46f92349",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "「勝利の女神：NIKKE」のPCランチャー経由の不正プログラム配布についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/05/133509",
+      "publishedAt": "2026-11-05T04:35:09.000Z",
+      "summary": "2026年11月5日、Level Infiniteは「勝利の女神：NIKKE」のPCランチャーの一部ファイルが第三者に改ざんされ、起動時に不正プログラムが実行される可能性があったと公表しました。ここでは関連する情報をまとめます。 公式CDNのスクリプト4件を改ざん 「勝利の女神：NIKKE」はSHIFT UPが開発し、Level Infiniteが配信しているゲーム(出典: 1, 7)。公式CDNのスクリプトは9月27日15:41から15:42にかけて改ざんされ、 確認を求める対象は同日15:41以降にWindows版PCランチャーを1回以上起動した利用者 。Level Infiniteによると、利用者のPCへの不正プログラムの配布が始まったのは10月30日03:52で *1 、異常を確認したのは11月4日。モバイル版は影響を受けていない(出典: 1, 2)。 【PCランチャーのセキュリテ"
+    },
+    {
+      "id": "s-fcfabbb314",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Ruby on Rails」にアップデート - 脆弱性21件を修正",
+      "url": "https://www.security-next.com/192381",
+      "publishedAt": "2026-11-05T01:45:54.000Z",
+      "summary": "「Ruby on Rails」にアップデート - 脆弱性21件を修正 ウェブアプリケーションフレームワーク「Ruby on Rails」に複数の脆弱性が明らかとなった。深刻な脆弱性も含まれており、セキュリティアップデートが提供されている。 開発チームは現地時間2026年11月4日、セキュリティアップデートとなる「Ruby on Rails 8.1.4.1」「同8.0.5.2」をリリースした。あわせて21件のセキュリティ上の問題を修正している。重要度は「クリティカル」が1件、「高」が4件、「中」が13件、「低」が3件。 重要度が「クリティカル」とされたのは、ファイルのアップロードや管理を行う「Active Storage」の画像解析処理に判明した脆弱性「CVE-2026-122006」。共通脆弱性評価システム「CVSSv3.1」のベーススコアは「9.8」と評価されている。 画像処理に「ImageMagick」を使用し、信頼できない利用者からのファイルアップロードを受け付けるアプリケーションが影響を受ける。細工したファイルがアップロードされた際にサーバ上の任意のファイルを書き込まれるおそれがあり、環境によってはアプリケーションからファイルを窃取されるおそれもある。 そのほか、任意のファイルを読み取られたり、リモートよりコードを実行されたりするおそれがある脆弱性や、パラメータ検証の回避、IPアドレスの偽装、クロスサイトスクリプティング（XSS）、サービス拒否（DoS）など、幅広い脆弱性へ対処した。 開発チームでは利用者に対し、修正版へ早急にアップデートするよう強く推奨している。なお、「同8.0」ブランチについては現地時間11月7日にセキュリティサポートが終了し、今後脆弱性の修正が行われなくなるため、注意が必要。 （Security NEXT - 2026/11/05 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-96290f7c3e",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "警察庁とGoogleなどによるボットネットXCPEのテイクダウンについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/05/095634",
+      "publishedAt": "2026-11-05T00:56:34.000Z",
+      "summary": "2026年11月2日(米国時間)、Googleは、警察庁などと連携し、セットトップボックスに出荷前から組み込まれたバックドアで構成されるボットネット「XCPE」をテイクダウンしたと公表しました。ここでは関連する情報をまとめます。 XCPEとは何か XCPEは、機器の出荷前にファームウェアへ組み込まれたバックドア「x.cpe」(一部のビルドでは com.oemservice)と、これに接続された機器で構成されるボットネット。感染機器の大半はAndroid TVのセットトップボックスで、遠隔医療機器やカラオケ機、デジタルサイネージでも確認された(出典: 1, 7)。購入した時点で組み込み済みの状態にあり、利用者の操作は要らない(出典: 2)。 Googleは、Android機器のOEM、ODMであるVideostrong Technology Co.が、金銭目的でバックドアとボットネットを意図"
+    },
+    {
+      "id": "s-7fadfa1e7a",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "Weekly Report: Microsoft Edgeに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261105.html#1",
+      "publishedAt": "2026-11-05T00:52:00.000Z",
+      "summary": "JPCERT-WR-2026-1105 JPCERT/CC 2026-11-05 <<< JPCERT/CC WEEKLY REPORT 2026-11-05 >>> ■10/25(日)〜10/31(土) のセキュリティ関連情報 目 次 【1】Microsoft Edgeに複数の脆弱性 【2】Sophos UTMに任意のコード実行につながる脆弱性 【3】Cisco Secure Firewall ASAおよびFTD Softwareにサービス運用妨害（DoS）の脆弱性 【4】Jenkinsに複数の脆弱性 【5】WordPressに複数の脆弱性 【6】複数のAdobe製品に脆弱性 【7】ヤマハ製NWR100に複数の脆弱性 【8】複数のWatchGuard製品に脆弱性 【9】複数のVeeam製品に脆弱性 【10】複数のMozilla製品に脆弱性 【11】Google Chromeに複数の脆弱性 【12】Joomla!およびWordPress向けの拡張機能YOOtheme Proにリモートコード実行につながる脆弱性 【13】複数のApple製品に脆弱性 【14】Rubyに複数の脆弱性 【15】BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起 ※紹介するセキュリティ関連情報の選定基準は以下のページをご覧ください。 https://www.jpcert.or.jp/wr/ 【1】Microsoft Edgeに複数の脆弱性 情報源 https://learn.microsoft.com/ja-jp/deployedge/microsoft-edge-relnotes-security#october-29-2026 概要 Microsoft Edgeには、複数の脆弱性があります。この問題は、当該製品を修正済みのバージョンに更新することで解決します。詳細は、開発者が提供する情報を参照してください。 関連文書 https://learn.microsoft.com/ja-jp/deployedge/microsoft-edge-relnotes-security 【2】Sophos UTMに任意のコード実行につながる脆弱性 情報源 https://www.sophos.com/en-us/security-advisories/sophos-sa-20261028-utm-rce 概要 Sophos UTMには、任意のコード実行につながる脆弱性があります。この問題は、当該製品にパッチを適用することで解決します。当該製品はすでにサポートを終了しており、手動でのパッチ適用が必要です。詳細は、開発者が提供する情報を参照してください。 関連文書 https://support.sophos.com/support/s/article/KBA-000049692 【3】Cisco Secure Firewall ASAおよびFTD Softwareにサービス運用妨害（DoS）の脆弱性 情報源 https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-tunnel-dos-s6mgkb75 概要 Cisco Secure Firewall ASAおよびFTD Softwareには、サービス運用妨害（DoS）の脆弱性があります。開発者は、本脆弱性を悪用する攻撃を確認しているとのことです。この問"
+    },
+    {
+      "id": "s-c218eb7a12",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Siemens製品に対するアップデート（2026年11月）",
+      "url": "https://jvn.jp/vu/JVNVU98354779/",
+      "publishedAt": "2026-11-05T00:00:00.000Z",
+      "summary": "JVNVU#98354779 Siemens製品に対するアップデート（2026年11月） Siemensから各製品向けのアドバイザリが公表されました。 Siemensのアドバイザリを参照してください。 更新：4件 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-10b686d3f7",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Cisco、AI エージェントの暴走を検知する「Project Quarry」をオープンソース化",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56682.html",
+      "publishedAt": "2026-11-04T23:15:03.000Z",
+      "summary": "319 views Cisco は、AI エージェントを監視する振る舞い検知エンジンをオープンソース化した。Hugging Face へのハッキングで起きたように、あるいはそれ以上に深刻な形で、エージェントが暴走するのを、セキュリティチームが防げるようにするためだ。 （編集部註：2026 年 7 月、OpenAI が社内で行っていたサイバー能力の評価中に、同社の AI エージェントが、インターネットから隔離されているはずの環境を抜け出し、AI 開発プラットフォームの Hugging Face の本番インフラに侵入した。Hugging Face が 7 月 16 日に公表し、OpenAI が 7 月 21 日に経緯を説明した。Hugging Face によれば、アクセスされたのは評価課題に関連する 5 件のデータセットのみで、ユーザー向けのモデルやデータセットなどへの影響はなかった） 「 Project Quarry 」と名付けられたこのツールは、エージェントの振る舞いを評価するための「共通言語」を提供することを目指している。Cisco が同じく手がけている Snort（オープンソースの侵入検知システム）が悪意あるネットワークトラフィックの検知で、YARA（ルールに基づいてマルウェアを識別するためのツール）がマルウェアの識別で果たした役割に倣うものだ。 既存の検知ツールの多くは、AI モデルやエージェントとの個々のやり取りに基づいて判断する。プロンプトインジェクションを試みたか。あるいは、エージェントが攻撃ツールを呼び出したか、といった具合だ。（編集部註：ここでの「ツール」とは、AI エージェントが作業を進めるために使う外部の機能やプログラムを指す。ファイルの読み取り、外部サービスへのリクエスト送信、コマンドの実行などがあり、エージェントがこれらを使う操作を「ツール呼び出し」と呼ぶ） 「だが欠けているのは、何かが起きるときの文脈の全体だ」と、Cisco で AI の脅威とセキュリティの研究を統括するエイミー・チャン（ Amy Chang ）は、本誌 The Register の独占インタビューで語った。 チャンはこれを、クレジットカードの不正検知にたとえた。文脈がなければ、少額の試し決済や、カード保有者の普段の利用地から遠く離れた場所での 1 回の購入は、単独では警告の対象にならず、見逃されるかもしれない。 「そして、もう一度試す」。チャンは、1 回目の不正が見逃されたあとの、不正利用者の行動をこう語った。「それも通った。ならば今度は PS5 を買おう、となる」 「 Quarry は、エージェントのセッション全体を考慮することで、こうした問題に対処する」とチャンは説明した。「ツール呼び出しが 1 回だけなら、許可された範囲内の操作に見えるかもしれない。だが、次のステップでその情報を攻撃者が管理する受信箱やサーバーに送っていると分かれば、話は違ってくる」 《The Register誌特約記事》 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-8d66c54f3a",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "2026年のフィッシング動向と対策の現状 ～ Internet Week 2026",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56681.html",
+      "publishedAt": "2026-11-04T23:10:03.000Z",
+      "summary": "157 views インターネットの技術と運用に関わるエンジニアが一堂に会するイベント「Internet Week（IW）」。1990 年代から続く歴史あるインターネットの技術カンファレンスであり、今年 2026 年は 30 回目の開催。ネットワーク運用、セキュリティ、ガバナンス、教育など多岐にわたる分野の専門家が登壇する。 2026 年開催は、オンラインが 11 月 19 日（木）から 11 月 24 日（火）まで（土日除く）、オンサイトが 11 月 25 日（水）から 11 月 27 日（金）まで東京・両国 KFC Hall ＆ Roomsで「AI 時代を生き抜く術（すべ）を学べ」をテーマに開催される。 今回取り上げるのは、フィッシングの最新動向と対策をテーマにしたプログラムだ。企画担当の平塚伸世氏（所属：フィッシング対策協議会（JPCERT/CC））に、企画の背景や見どころを聞いた。 ● 攻撃は減ったのではなく、形を変えている ― このプログラムを企画した背景や狙いを教えてください。 2026 年1月末、海外でレジデンシャルプロキシの無効化が行われて以降、右肩上がりだったフィッシング報告は減少に転じました。しかし、攻撃者は手口やインフラを変えながら攻撃を続けており、その攻防はいまだ絶えず続いています。こうした現状に対して、事業者・利用者ともに「自分の身は自分で守る」ことが基本です。一方で、一組織の努力だけで包括的な対策をすることは難しく、調査分析機関から法執行機関までが情報を連携し、協力する必要があります。本セッションでは、現状を把握するためのサイバー脅威情勢、被害を防ぐ … 対策側の最新動向、そして各々の立場での被害抑制に向けた取り組みを紹介します。フィッシングの事例を通じて今後起こりうる脅威を知り、身を守る一助としていただくとともに、安全な日本の未来に向けて皆さまのご協力をいただきたいと考えています。 ● 専門知識は不要 今知るべきフィッシングのリアル ― 今年のIWは「ベーシック」「実践」「最新動向」に分類されています。このプログラムはどれに当たりますか？ 「最新動向」に該当します。フィッシングだけでなく、警告画面を表示するサポート詐欺や不正アプリインストールへの誘導、窃取した情報を不正利用したとみられる攻撃の事例、そして対策組織における活動を紹介します。啓発と、それぞれの立場での対策の実践を目的としているため、前提知識は問いません。どなたでもご参加いただけます。 ●「偏らない」「今起きている」「行動につながる」情報を届ける講演者 ― 講演者をアサインするにあたってどんな点を大切にしましたか？ フィッシング対策協議会は、広く一般から寄せられた報告をもとに、「偏らない」「今、実際に起こっている」「行動を起こすために必要な」情報を提供しています。また、現在発生しているインターネットを介した犯罪について、警察庁から警察の取り組みや成果をお話しいただきます。参加者の皆さんがそれぞれの立場で対策を行う際の参考にしていただければと考えています。さらに、昨今は組織におけるさまざまな攻撃や被害を未然に防ぐうえで、IT 資産の管理が重要になっています。今回は日本電気の弓家氏に、フィッシング対策という観点も交えてお話しいただきます。なお、もう1組織の登壇を予定していますが、内容と講演者は現在検討中です。どうぞお楽しみに。 ● AI も騙され、人を騙すために使われる時代に ― 今年の IW テーマ「AI 時代を生き抜く術を学べ」とは、どのようにつながります"
+    },
+    {
+      "id": "s-0648535ff6",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "GMOペイメントゲートウェイ、ライフカード向けサービスで顧客情報一部流出の可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56680.html",
+      "publishedAt": "2026-11-04T23:05:27.000Z",
+      "summary": "1119 views GMOペイメントゲートウェイ株式会社は11月2日、顧客情報の一部が窃取された可能性について発表した。 これは10月30日に、同社がライフカード株式会社に提供しているイシュイングサポートサービス個別機能で不正なユーザーによる行為が発生し、顧客情報の一部が窃取された可能性が判明したというもの。 現時点で漏えいが判明しているのは合計69件の顧客情報で、その内容は下記の通り。 ・氏名、メールアドレス、電話番号、住所の一部：63件 ・Vプリカ番号、Vプリカ専用セキュリティコード、有効期限、氏名：3件 ・Vプリカ番号の一部：3件 ライフカードでは、対象となる顧客に個別に案内を行う。 GMOペイメントゲートウェイでは現在、対象となるサービスの一部を停止し、必要な対策と安全性の確認を進めており、サービス再開に向けて対応を進めている。 なお、本件はライフカード向けに提供している個別機能で発生したもので、当該機能は他の顧客向けのイシュイングサポートサービスとは異なるシステム基盤で運用しており、他の顧客への影響はないとのこと。 《ScanNetSecurity》 一次情報または関連リンク お客様情報の一部が窃取された可能性に関するお詫びとお知らせ 関連記事 「お名前.com デスクトップクラウド」に不正アクセス、取引口座のログイン情報等が取得され不正利用された可能性 2026.10.26 Mon 8:05 「お名前.com デスクトップクラウド」に不正アクセス、情報が公開された顧客に上限300万円の特別見舞金 2026.10.30 Fri 8:05 GMOインターネットグループ代表 熊谷正寿氏、「能動的サイバー防御」具申理由を公開 攻撃者から約80億円の金銭要求も 2026.10.28 Wed 8:00 GMOクリック証券、自動売買ツールによると考えられる不正取引に注意を呼びかけ 2026.10.28 Wed 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-03e208042e",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ライフネット生命の一部システムに不正アクセス、KDDIが保有する顧客情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56679.html",
+      "publishedAt": "2026-11-04T23:05:24.000Z",
+      "summary": "750 views KDDI株式会社は10月30日、ライフネット生命保険株式会社の一部システムへの不正アクセスについて発表した。 これはライフネット生命のシステムのうち、KDDIと連携するシステム（LNシステム）に不正アクセスがあり、KDDIのシステム（Kシステム）が保有する顧客情報の一部が外部に漏えいした可能性を10月23日に確認したというもの。 ライフネット生命は10月23日に、LNシステムへの不正アクセスを検知し、同日中にKDDIに報告するとともに、被害拡大防止のため、同不正アクセスの被疑箇所を特定し、技術的な防御措置を実施している。 KDDIでは翌10月24日に、Kシステムに対するLNシステムからのアクセス経路を遮断している。 現時点までの調査結果によると、悪意を持った第三者がLNシステムの一部機能の脆弱性を通じて、Kシステムが保有する顧客情報の一部を取得した可能性が判明している。 漏えいした可能性がある顧客情報は下記の通り。 ・氏名、郵便番号、電話番号、メールアドレス、会員識別子：4,524件 ・氏名、郵便番号、電話番号、会員識別子：226件 ・氏名、郵便番号、メールアドレス、会員識別子：8,434件 ・氏名、郵便番号、会員識別子：3,662件 ・メールアドレス、会員識別子：4,888件 ・会員識別子：807件 KDDIでは、対象となる顧客に順次、個別に案内を行う。 ライフネット生命では、LNシステムを利用する「au の生命ほけん」について、申し込みの受け付けを含む一部機能をメンテナンスしている。 両社は引き続き、影響範囲の全容把握に向けた調査を継続するとともに、再発防止策の策定を進めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク ライフネット生命の一部システムへの不正アクセスによるKDDI お客さま情報の漏えいの可能性について 関連記事 KDDI の ISP 事業者向けメールシステムへの不正アクセス、レンタルサーバCPIへの影響が明らかに 2026.8.31 Mon 8:05 KDDI の ISP 事業者向けメールシステムに不正アクセス、個人情報保護委員会が行政指導 2026.8.24 Mon 8:05 法人向けレンタルサーバ「CPI」に DDoS 攻撃 2026.3.18 Wed 8:05 KDDIの通信障害、大規模化・長期化の原因について言及 2022.8.4 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-e77effdfb4",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ドン・キホーテ委託先にランサムウェア攻撃、時計修理依頼者の個人情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56678.html",
+      "publishedAt": "2026-11-04T23:05:21.000Z",
+      "summary": "242 views 株式会社ドン・キホーテは10月28日、同社及び同社グループ会社が修理に関する業務を委託している株式会社コックスへの不正アクセスについて発表した。 これはコックスで運用・管理するサーバに外部からサイバー攻撃があり、同サーバ内がランサムウェアにより暗号化され、同社からの業務委託で受領した情報が暗号化したというもの。コックスで専門機関による調査を実施したところ、現時点で個人情報漏えいの事実は確認されていないが、その可能性が完全に否定できないという。 コックスでは9月15日に、サーバへのサイバー攻撃の可能性を検知し、委託先従業員がサーバを確認したところ、同サーバが暗号化されて閲覧不能な状態となっていることが判明したため、同サーバへの外部経路からの接続を遮断している。 コックスでは9月25日に、ドン・キホーテグループに報告を行っている。 漏えいした可能性があるのは、同社グループ店舗（株式会社ドン・キホーテ、株式会社長崎屋、株式会社橘百貨店、UDリテール株式会社）で2025年9月以降に時計の修理を依頼した顧客の氏名、住所（一部）、電話番号（一部）を含む個人情報。 コックスでは現在、情報の外部漏えいについて専門機関による調査を実施しているが、現時点で暗号化されたサーバの復元には至っていないとのこと。 《ScanNetSecurity》 一次情報または関連リンク 業務委託先における不正アクセス被害に関するお知らせとお詫び 関連記事 自宅玄関にマトリョーシカ ～ ランサムウェア攻撃の 37 ％で関係者個人に心理的・身体的脅迫 [グローバル調査] 2026.10.20 Tue 8:15 エスケーロジにランサムウェア攻撃、一部の社内情報の漏えいを確認 2026.10.26 Mon 8:05 リモートディテーリング事業等を行うエンタッチにランサムウェア攻撃 2026.10.30 Fri 8:05 エンタッチにランサムウェア攻撃、データベース内の情報が流出 2026.10.30 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-cf6896de5d",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "日本郵政グループ労働組合に不正アクセス、4万件以上の組合員情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56677.html",
+      "publishedAt": "2026-11-04T23:05:19.000Z",
+      "summary": "14792 views 日本郵政グループ労働組合（JP労組）は10月26日、不正アクセスによる組合員情報の漏えいについて発表した。 これはJP労組が2019年頃まで運用していたメールマガジンのシステムに第三者から不正アクセスがあり、当時のメールマガジンを利用していた組合員の情報が漏えいしたというもの。ホームページの運営を委託している業者から報告があり、発覚した。 委託業者では現在、精査を行っているが、4万件以上のメールマガジン配信先のリストが漏えいした可能性があるという。なお、組合員情報のうち、メールマガジン登録者の地方本部名、組合員氏名、組合員番号、性別、メールアドレスが含まれる。 JP労組では、メールマガジンを配信できないように設定したうえで、組合員からのID申請時におけるメールマガジン配信有無の希望聴取を停止している。 また、JP労組のホームページ自体はPHPを利用していないが、外部サイトにリンクしている一部内容を順次、安全性が確認できるまでの間、公開停止するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 組合員情報漏えいに関するお詫びとお知らせ 関連記事 日本郵政「ゆうゆうポイントサイト」を緊急サービス停止 2026.10.21 Wed 8:05 「郵便局アプリ」に不正アクセス、顧客情報を不正に取得 2026.10.2 Fri 8:05 日本郵便 調査請求 Web受付サービスに不正アクセス、一時的に受付を停止 2026.9.30 Wed 8:05 役員報酬を減額 ～ 日本郵政グループ、クロスセル同意を得ない非公開金融情報利用 2025.3.27 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-f865090097",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "障害者支援アプリ運営委託事業者ミラボに不正アクセス、設計段階で想定していなかった不備",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56676.html",
+      "publishedAt": "2026-11-04T23:05:14.000Z",
+      "summary": "164 views 東京都台東区は10月26日、台東区障害者支援アプリ「ささえ～る」運営委託事業者への不正アクセスについて発表した。 これは10月23日に、「ささえ～る」の運営委託事業者である株式会社ミラボから、不正に管理者アカウントが作成され、会員登録のあった情報が不正にダウンロードされた旨の報告があったというもの。 アカウント登録及び権限管理の仕組みに設計段階で想定していなかった不備があったことが原因で、不正アカウントが作成され、本来付与されるはずのない管理者権限を紐づけられた結果、不正にダウンロードされたという。 流出が確認された個人情報は下記の通り。なお、氏名、住所、電話番号は含まれていない。 ・メールアドレス：197件 ・障害児者との関係 ・障害のカテゴリー 同区では、不正に作成されたアカウントを無効化し、削除している。また、同様の方法で管理者アカウントが作成できないよう、システムを修正している。 同区では、新規会員登録を一時停止している。 同区ではアプリ利用者に対し、台東区やサービス運用会社を装って個人情報の入力等を求めるメールが送信される可能性があるとし、注意を呼びかけている。 《ScanNetSecurity》 一次情報または関連リンク 台東区障害者支援アプリ「ささえ～る」運営委託事業者への不正アクセスによる個人情報の流出【令和8年10月26日（月曜日）19時更新】 関連記事 新型コロナウイルスによるイベント中止を誤送信、送信中気づくも手遅れ（台東区） 2020.3.2 Mon 8:00 契約・法令違反の再委託、墨田区・台東区・さいたま市でも判明（システムズ・デザイン） 2019.1.7 Mon 8:15 三井住友DS投信直販ネットのマイページにログインできない状況に、取引委託業者のシステムで不正アクセスを検知 2026.10.29 Thu 8:05 「ショップサーブ」に不正アクセス、漏えい対象者数は約2,335万6,000人 2026.10.29 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-63daa8ded2",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ドトールコーヒーのシステムに不正アクセス、従業員及び退職者 計951名の個人情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56675.html",
+      "publishedAt": "2026-11-04T23:05:11.000Z",
+      "summary": "568 views 株式会社ドトールコーヒーは10月26日、同社システムへの不正アクセスについて発表した。 これは同社のシステムに外部の第三者から不正アクセスがあり、同システムに保存されていた同社従業員と退職者の個人データが第三者に閲覧され、外部流出した可能性が判明したというもの。同社では10月20日に、同社システムへの不正アクセスを検知している。 漏えいした可能性があるのは、同社の下記4店舗に勤務していた従業員及び退職者 計951名の氏名、生年月日、住所、メールアドレス、電話番号、銀行口座番号を含む個人情報。 ・ドトールコーヒーショップ西武大泉学園駅店 ・ドトールコーヒーショップ国立大学通り店 ・ドトールコーヒーショップ東京駅八重洲中央口店 ・ドトールコーヒーショップ石神井公園駅前店 同社では、個人データが漏えいした可能性がある従業員に順次、連絡を行っている。 同社では本件の発覚後に、被害拡大防止措置を講じるとともに、事実関係の調査を進めているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社の従業員及び退職者の皆様へのお知らせ 当社システムの一部に対する不正アクセスについて 関連記事 ドトールコーヒー公式 Twitter アカウントが乗っ取り被害、キャンペーン開催も見合わせ 2023.2.17 Fri 8:05 新たに約 40,700 名分の従業員 ID 漏えいが判明 ～ スターバックスが利用するBlue Yonder社のシフト作成ツールへ不正アクセス 2025.10.15 Wed 8:05 約 31,500 名の従業員情報漏えい スターバックスが利用するBlue Yonder社のシフト作成ツールに外部から不正アクセス 2025.10.1 Wed 8:05 スターバックスの予約ページの入力内容が誤表示された可能性 2024.12.13 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    }
+  ]
+}
