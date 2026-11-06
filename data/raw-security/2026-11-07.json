@@ -1,0 +1,349 @@
+{
+  "date": "2026-11-07",
+  "collectedAt": "2026-11-06T22:01:35.724Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-2ecaec703e",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
+      "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+      "publishedAt": "2026-11-06T20:24:19.000Z",
+      "summary": "OpenAI has revealed GPT-6 Cyber, a new artificial intelligence model that has discovered 81 previously unknown high-severity Firefox vulnerabilities and developed working exploits for 948 distinct Linux kernel flaws. [...]"
+    },
+    {
+      "id": "s-f2bfb34b69",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Fake security tools on GitHub push backdoors and infostealers",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+      "publishedAt": "2026-11-06T18:46:52.000Z",
+      "summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]"
+    },
+    {
+      "id": "s-9f4a53a12c",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+      "publishedAt": "2026-11-06T17:04:23.000Z",
+      "summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain. [...]"
+    },
+    {
+      "id": "s-9fe769e3c9",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+      "url": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+      "publishedAt": "2026-11-06T16:08:38.000Z",
+      "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The researcher advises blocking web access to the"
+    },
+    {
+      "id": "s-2007bea389",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts",
+      "url": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
+      "publishedAt": "2026-11-06T15:25:31.000Z",
+      "summary": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts By Sergiu Gatlan November 6, 2026 10:25 AM 0 &#8203;Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors. The company's Software Appliance VMs are pre-configured, Linux-based virtual machines that let admins run the Veeam Backup & Replication backup software suite on Linux devices without manually installing dependencies or configuring the software. To comply with corporate and government security frameworks, the underlying Linux kernel runs integrated health and cryptographic checks (such as jitterentropy health tests) in FIPS mode during early boot.  … Mitigation available To mitigate this issue, Veeam told IT administrators to redeploy the appliance to a Linux host with a different processor. If the appliance cannot be redeployed on a system with an unaffected processor, IT admins are advised to disable automatic updates for the appliance and install updates manually (while monitoring the VM as it reboots). \"If the kernel panic occurs, power off the virtual machine and power it on again. A restart of the guest operating system does not recover the virtual machine,\" Veeam added. \"After the appliance has booted successfully, no further errors are expected, and the operation of Veeam Backup & Replication is not affected.\" Earlier today, Veeam also said that some of its products are affected by a critical Linux kernel vulnerability (CVE-"
+    },
+    {
+      "id": "s-a40dff3d74",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+      "publishedAt": "2026-11-06T15:21:49.000Z",
+      "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux systems that run OpenSSH on the musl C library with Pluggable Authentication Modules (PAM) disabled,"
+    },
+    {
+      "id": "s-a42f7cc460",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "IMSI vs IMEI: What Your Phone Broadcasts and Who Can Read It",
+      "url": "https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/",
+      "publishedAt": "2026-11-06T15:00:10.000Z",
+      "summary": "IMSI and IMEI are IDs your phone shares with networks. Learn how they differ, how attackers get them, and why rotating your IMSI blunts tracking. [...]"
+    },
+    {
+      "id": "s-17e04fbcf2",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
+      "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
+      "publishedAt": "2026-11-06T14:58:32.000Z",
+      "summary": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment. The new model is \"more capable at finding and fixing vulnerabilities, and far more reliable staying within the boundaries researchers set,\" OpenAI said. It has classified the model as"
+    },
+    {
+      "id": "s-ea112a279e",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ECサイトの会員管理システムで個人情報が流出 - ノジマ",
+      "url": "https://www.security-next.com/192339",
+      "publishedAt": "2026-11-06T14:21:17.000Z",
+      "summary": "ECサイトの会員管理システムで個人情報が流出 - ノジマ 家電量販大手のノジマは、オンラインショッピングサイト「ノジマオンライン」の会員管理システムにおいて、会員の個人情報が流出したことを明らかにした。 同社によれば、2026年11月1日に同サイトの会員管理システムが攻撃を受けたことを検知。調査を行ったところ、同サイトや中古スマホの買取サイトにおいて、会員情報が流出したことがわかった。 流出が明らかとなったのは、両サイトの会員情報約700万件。氏名、住所、電話番号、性別、生年月日、メールアドレス、ログインID、暗号化されたパスワードなどが流出した。 同社では被害の拡大を防ぐため、両サイトのサービスを一時停止。外部アクセスを遮断し、監視体制を強化している。 同社では、警察へ相談するとともに、個人情報保護委員会への報告などの対応を進めている。停止しているサイトの再開時期については、安全性の確認が取れ次第、アナウンスする予定。 （Security NEXT - 2026/11/06 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-847572bc5b",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Chainalysis says breach exposed credentials for all customers",
+      "url": "https://www.bleepingcomputer.com/news/security/chainalysis-says-breach-exposed-credentials-for-all-customers/",
+      "publishedAt": "2026-11-06T14:17:07.000Z",
+      "summary": "Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers. [...]"
+    },
+    {
+      "id": "s-803a1f71a4",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
+      "url": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches/",
+      "publishedAt": "2026-11-06T12:37:22.000Z",
+      "summary": "D-Link warns of multiple zero-days in DGS-3130 Series switches By Sergiu Gatlan November 6, 2026 07:37 AM 0 D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches. These switch models provide multi-gigabit uplinks, allowing enterprise network administrators to eliminate data bottlenecks, and are designed primarily for small-to-medium businesses (SMBs) and metro Ethernet deployments. While D-Link didn't share details on these flaws and has yet to publicly disclose the CVE IDs for easier tracking, it said Spectrum Community Solutions network engineer Giresh Kumar Enugu found the bugs in the D-Link Discovery Protocol (DDP) authentication, access control, and information handling. Successful exploitation could allow attackers to obtain sensitive device data, make unauthorized credential/configuration changes, leak SNMP communities, or cause service disruptions and device resets. The zero-days affect multiple DGS-3130-30TS firmware versions, and the company is still investigating the impact on other D-Link switching platforms and firmware security mechanisms (including SSH service security configuration, safeguards underlying operating-system credentials, and handles firmware encryption/embedded cryptographic keys). \"The reported vulnerabilities involve the D-Link Discovery Protocol (DDP) and certain components of the device's firmware security architecture,\" D-Link said . \"According to the security rese"
+    },
+    {
+      "id": "s-649e0d8b07",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+      "publishedAt": "2026-11-06T12:06:43.000Z",
+      "summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates. The fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today. The flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates"
+    },
+    {
+      "id": "s-cea41b0360",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+      "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+      "publishedAt": "2026-11-06T12:06:35.000Z",
+      "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test. The attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that makes this possible can still be exploited, the researchers said earlier this"
+    },
+    {
+      "id": "s-c776d35c06",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "publishedAt": "2026-11-06T12:00:00.000Z",
+      "summary": "CISA has added one new vulnerability to its&nbsp; Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BO"
+    },
+    {
+      "id": "s-6625b8a777",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "The Flood is Coming And The Pipes Were Already Full",
+      "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+      "publishedAt": "2026-11-06T11:30:00.000Z",
+      "summary": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been staring at since May. The hardest piece of his"
+    },
+    {
+      "id": "s-8ee91e9026",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "問い合わせフォーム利用者などの個人情報が流出 - ヤクルト",
+      "url": "https://www.security-next.com/192342",
+      "publishedAt": "2026-11-06T11:11:33.000Z",
+      "summary": "問い合わせフォーム利用者などの個人情報が流出 - ヤクルト ヤクルトは、ウェブサイトが第三者によって侵害され、個人情報が流出したことを明らかにした。 同社によれば、2026年10月26日にウェブサイトが侵害されたことを把握。調査を行ったところ、個人情報の流出が確認され、2026年11月4日時点で3万9505件としている。 対象となるのは、ウェブサイトの問い合わせフォームを利用した人の氏名や住所、電話番号、性別、メールアドレス、問い合わせ内容など3万1781件。 さらに給食サイト「たのしい給食」の登録会員に関する氏名、勤務先、勤務先の住所と電話番号、メールアドレス、暗号化されたパスワードのほか、任意の回答情報など5698件。 くわえて報道関係者向け問い合わせフォームの利用者の情報1613件のほか、化粧品のキャンペーン応募者、問い合わせに対応した同社従業員の情報なども対象となっている。 同社では、個人情報保護委員会へ報告し、警察へ相談を行っている。また引き続き外部協力のもと調査を進めるとともに、関係者に順次連絡するとしている。 （Security NEXT - 2026/11/06 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-87b9e5c9b2",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "手術画像を保存した記録媒体を紛失 - さいたま市民医療センター",
+      "url": "https://www.security-next.com/192393",
+      "publishedAt": "2026-11-06T10:59:34.000Z",
+      "summary": "手術画像を保存した記録媒体を紛失 - さいたま市民医療センター さいたま市民医療センターは、手術中および手術後の手術部位や採取した検体の画像を保存した記録媒体を紛失したことを明らかにした。 同法人によれば、同センターで実施した外科手術における手術部位と検体の画像が保存されている記録媒体を紛失したもの。 紛失した記録媒体には、外科手術の手術部位と検体の画像約200枚が保存されている。検体の画像には、患者IDを記載した紙片が写り込んでいるという。 パスワードによる保護は行っていなかった。院外への持ち出しは確認されていないが、可能性は否定できないとした。同法人では、対象となる患者に説明と謝罪を行っている。 また同法人では、ウェブサイトの職員専用ページにおいて、過去に保存された一部ファイルが、アクセス権限を持たない第三者が直接アクセスできる状態だったことも判明。 2018年7月20日にアップロードした「センターマニュアル」で、患者の写真2枚や職員2人の氏名、電話番号が含まれていた。 （Security NEXT - 2026/11/06 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-660b55341a",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "MetaMask says recent attack didn't affect wallet infrastructure",
+      "url": "https://www.bleepingcomputer.com/news/security/metamask-says-recent-attack-didnt-affect-wallet-infrastructure/",
+      "publishedAt": "2026-11-06T09:22:28.000Z",
+      "summary": "MetaMask says recent attack didn't affect wallet infrastructure By Sergiu Gatlan November 6, 2026 04:22 AM 0 Cryptocurrency wallet provider MetaMask said a recent security incident has not affected MetaMask wallets or its wallet infrastructure. The MetaMask non-custodial crypto wallet (developed by blockchain software company Consensys) lets users store and manage assets on the Ethereum network and compatible blockchains. MetaMask revealed on September 30 that it was investigating an \"ongoing infrastructure security incident\" and exited affected validators (Ethereum network nodes responsible for proposing blocks, verifying crypto transactions, and maintaining Ethereum blockchain security) within non-custodial staking operations. While the company shared almost no details at the time and redirected BleepingComputer to the public statement when asked what part of its infrastructure was affected, in a Thursday update it said that a threat actor gained access to systems used to store recipient addresses and diverted some execution-layer staking rewards. \"The issue was identified and addressed on the same day, and approximately 0.385 ETH in rewards was diverted. These rewards are separate from customers' staked ETH,\" MetaMask said . \"We have found no evidence that customers' staked principal or withdrawal keys were compromised, and the affected systems have been secured.\" It also added that the attack did not compromise MetaMask users' Secret Recovery Phrases or private keys and t"
+    },
+    {
+      "id": "s-6facdf5f94",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+      "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+      "publishedAt": "2026-11-06T08:04:49.000Z",
+      "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. \"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence that any investigations data has been accessed"
+    },
+    {
+      "id": "s-ed60ea7fa4",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
+      "url": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
+      "publishedAt": "2026-11-06T05:58:54.000Z",
+      "summary": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in its access logs. Installing it takes root access, so the attackers must already control the server."
+    },
+    {
+      "id": "s-bc3816c400",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "NVIDIAのAIエージェント開発支援ツールに深刻な脆弱性",
+      "url": "https://www.security-next.com/192469",
+      "publishedAt": "2026-11-06T05:08:05.000Z",
+      "summary": "NVIDIAのAIエージェント開発支援ツールに深刻な脆弱性 NVIDIAが提供するAIエージェント開発支援ツール「NeMo Agent Toolkit」に複数の脆弱性が明らかとなった。深刻な脆弱性も含まれており、同社は修正版を公開している。 同社は現地時間2026年10月27日、セキュリティアドバイザリを公開し、2件の脆弱性「CVE-2026-65145」「CVE-2026-65151」について明らかにした。 「CVE-2026-65145」は、認証の欠如に起因する脆弱性。コードの実行や権限の昇格、データの改ざん、サービス拒否、情報漏洩につながるおそれがある。 共通脆弱性評価システム「CVSSv3.1」のベーススコアは最高値となる「10.0」、重要度を4段階中もっとも高い「クリティカル（Critical）」と評価している。 一方、「CVE-2026-65151」はSQLインジェクションの脆弱性。データの改ざんやサービス拒否、情報漏洩などにつながる可能性がある。CVSS基本値は「8.4」、重要度は「高（High）」としている。 同社は「同1.7.0」にて脆弱性「CVE-2026-65151」を修正。「CVE-2026-65145」については「同1.9.0」にて対処しており、同バージョン以降に更新するよう呼びかけている。 （Security NEXT - 2026/11/06 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-8819f1a6c2",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "OpenSSHのパスワード認証回避の脆弱性 CVE-2026-123158 についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/06/120149",
+      "publishedAt": "2026-11-06T03:01:49.000Z",
+      "summary": "2026年11月5日、OpenSSHは、Linux上でmusl libcを使いPAMなしで動くsshdにパスワード認証を回避される脆弱性があるとして修正版を公開しました。ここでは関連する情報をまとめます。 どんな脆弱性が確認されたの? Linux上でmusl libcを使いPAMなしで動くOpenSSHのsshdが対象。 パスワード欄が「*」のアカウントに257〜1024バイトの長いパスワードでログインできる。 正しいパスワードは要らず、SSHポートに到達できる相手が対象になる。(出典: 4, 7)ただし成立するのは一部の構成に限られる。(出典: 10) OpenSSHは10.6p2のリリースノートで「critical」な回避策としている。（NVDは公開時点で分析未了）(出典: 4, 10) OpenSSHは11月4日に脆弱性を把握。AIエージェントによる急速な再発見が起きており、長い非公"
+    },
+    {
+      "id": "s-9f7e6ec03d",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "IBMの音声処理製品に深刻な脆弱性 - 任意コード実行のおそれ",
+      "url": "https://www.security-next.com/192451",
+      "publishedAt": "2026-11-06T02:02:00.000Z",
+      "summary": "IBMの音声処理製品に深刻な脆弱性 - 任意コード実行のおそれ IBMの音声処理関連製品「IBM Watson Speech Services Cartridge」に深刻な脆弱性が明らかとなった。修正パッチを提供している。 同社は現地時間2026年10月22日にセキュリティアドバイザリを公開し、「CVE-2026-82418」について明らかにしたもの。 暗号処理に関連する「OpenSSL」において、解放済みメモリを使用する「Use After Free」の脆弱性で、細工された署名メッセージを処理すると、リモートの第三者に任意のコードを実行される可能性がある。 同社は重要度を「クリティカル（Critical）」と評価。共通脆弱性評価システム「CVSSv3.1」のベーススコアは「9.8」としている。 「同4.0.0」から「同5.4.0」まで影響があるとしており、同社は脆弱性の修正パッチとして「同5.4.0 Patch 8」をリリース。早急に脆弱性へ対処することを強く推奨している。 （Security NEXT - 2026/11/06 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-26d59d4b65",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「ドコモオンラインショップ」と「My docomo」で個人情報が流出",
+      "url": "https://www.security-next.com/192453",
+      "publishedAt": "2026-11-06T01:46:20.000Z",
+      "summary": "「ドコモオンラインショップ」と「My docomo」で個人情報が流出 NTTドコモは、「ドコモオンラインショップ」と「My docomo」が外部から侵害され、一部顧客の個人情報が流出したことを明らかにした。 同社によれば、2026年11月4日にこれらサービスにおいて外部からのアクセスを検知したもの。翌5日1時ごろより両サービスでの手続きを停止し、メンテナンスを実施している。 その後の調査で一部個人情報の流出を確認した。侵入経路や原因、流出した情報の詳細については調査中としている。 対象件数は最大約30万件としており、氏名や住所、携帯電話番号、連絡先電話番号、生年月日などが含まれる。 詳細がわかり次第、顧客に通知する予定。サービスの復旧時期については未定としている。 （Security NEXT - 2026/11/06 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-0115513f09",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Apache OFBiz」にRCE脆弱性 - 修正版がリリース",
+      "url": "https://www.security-next.com/192441",
+      "publishedAt": "2026-11-06T00:52:42.000Z",
+      "summary": "「Apache OFBiz」にRCE脆弱性 - 修正版がリリース オープンソースのビジネスアプリケーションスイート「Apache OFBiz」に深刻な脆弱性が明らかとなった。開発チームは修正版を提供している。 Apache Software Foundationは現地時間2026年11月5日にセキュリティアドバイザリを公開し、「ログインページウィジェット」におけるコードインジェクションの脆弱性「CVE-2026-83542」について明らかにした。 細工した画面定義用の「XMLファイル」をアップロードし、外部から画面の構成を指定する内部設定を操作することで、不正な「XML」を読み込ませることが可能。「XML」に含まれるスクリプト言語「Groovy」の式がサンドボックス外で評価され、サーバ上で任意のコードが実行されるおそれがある。 サーバ上にファイルを保存する必要はなく、データの送信処理中に悪用が可能で、ログイン時の認証失敗画面を生成する処理などが悪用されるという。またログイン画面経由以外も同様に悪用できることが確認されており、実行したコマンドの結果がHTTPレスポンスとして返されるという。 米サイバーセキュリティインフラストラクチャセキュリティ庁（CISA）は、共通脆弱性評価システム「CVSSv3.1」のベーススコアを「9.8」、重要度を4段階中もっとも高い「クリティカル（Critical）」と評価している。 「同24.09.08」において脆弱性を修正した。同バージョンでは「CVE-2026-83542」のほか、45件の脆弱性にも対処している。今回のアップデートで修正された脆弱性は以下のとおり。 CVE-2026-66903 CVE-2026-68524 CVE-2026-71901 CVE-2026-73577 CVE-2026-73578 CVE-2026-73580 CVE-2026-74841 CVE-2026-76150 CVE-2026-76152 CVE-2026-81734 CVE-2026-81744 CVE-2026-81808 CVE-2026-81815 CVE-2026-81816 CVE-2026-81828 CVE-2026-82894 CVE-2026-82902 CVE-2026-82904 CVE-2026-82907 CVE-2026-82910 CVE-2026-82912 CVE-2026-82916 CVE-2026-82960 CVE-2026-83538 CVE-2026-83542 CVE-2026-84183 CVE-2026-84728 CVE-2026-85627 CVE-2026-92887 CVE-2026-97355 CVE-2026-97356 CVE-2026-100168 CVE-2026-100228 CVE-2026-105325 CVE-2026-105330 CVE-2026-105461 CVE-2026-109129 CVE-2026-109837 CVE-2026-109856 CVE-2026-109928 CVE-2026-114229 CVE-2026-114233 CVE-2026-114235 CVE-2026-114271 CVE-2026-114272 CVE-2026-114277 （Security NEXT - 2026/11/06 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-4ea5266cff",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: CISA ICS Advisory / ICS Medical Advisory（2026年11月05日）",
+      "url": "https://jvn.jp/vu/JVNVU90841469/",
+      "publishedAt": "2026-11-06T00:30:00.000Z",
+      "summary": "JVNVU#90841469 CISA ICS Advisory / ICS Medical Advisory（2026年11月05日） 米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。 ICS Advisory / ICS Medical Advisoryを参照してください。 更新：1件 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-47d6d9bb73",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "WatchGuardの多要素認証製品に脆弱性 - 「クリティカル」も",
+      "url": "https://www.security-next.com/192434",
+      "publishedAt": "2026-11-06T00:17:19.000Z",
+      "summary": "WatchGuardの多要素認証製品に脆弱性 - 「クリティカル」も WatchGuardの多要素認証ソリューション「WatchGuard AuthPoint」で利用する一部コンポーネントに複数の脆弱性が明らかとなった。同社は修正版を提供している。 同社は現地時間2026年11月4日、同製品の認証ゲートウェイ「AuthPoint Authentication Gateway」に関する4件のセキュリティアドバイザリを公開した。 このうち3件について、重要度を4段階中もっとも高い「クリティカル（Critical）」、のこる1件を「高（High）」とレーティングしている。いずれも実際の攻撃に悪用された事例は確認されていない。 「CVE-2026-121639」は、重要な機能に対する認証処理が欠落している脆弱性。共通脆弱性評価システム「CVSSv4.0」のベーススコアを「9.2」と評価している。 「LDAP」や「Active Directory」と連携している環境において、ネットワーク経由でアクセスした場合に認証を必要とすることなく、認証サービスの妨害やディレクトリ同期に関する設定の削除を行うことができる。 （Security NEXT - 2026/11/06 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-3487aa1b03",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「MUJIアプリ」への不正アクセス、新たにカード情報が外部からアクセスされた可能性も",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56697.html",
+      "publishedAt": "2026-11-05T23:05:32.000Z",
+      "summary": "2183 views 株式会社良品計画は11月4日、10月30日に公表した無印良品の公式アプリ「MUJIアプリ」での顧客情報の流出について、第二報を発表した。 同社の公式アプリ「MUJIアプリ」では、外部からの不正アクセスで顧客情報の一部が外部流出した可能性を確認しており、調査を進めていた。 同社では第一報で、メールアドレス、生年月日、性別が漏えいした可能性があるのは、MUJIアプリを利用する顧客と公表していたが、無印良品ネットストア（MUJIアプリを利用しない人も含む）を利用する顧客も含まれること、および一部顧客は、氏名、住所、電話番号が含まれていることが判明したとのこと。 また、株式会社クレディセゾンが発行する「MUJI Card」、およびMUJIアプリ、または無印良品ネットストアでクレジットカード情報を登録した顧客の一部のクレジットカード情報についても、外部からアクセスされた可能性が判明している。同社によると、2021年7月以前は、同社独自の特典を付与するために、クレディセゾンが発行する「MUJI Card」に入会した顧客のカード番号とMUJI Card ID、生年月日を取得しており、その情報が同社のシステム上に残っていたという。 外部からアクセスされた可能性のある対象者と情報は下記の通り。 1.MUJIアプリおよび無印良品ネットストアを利用する顧客 メールアドレス、生年月日、性別、会員ID：最大約2,726万件 メールアドレス、生年月日、性別、会員ID、氏名、住所、電話番号：約2,726万件のうち約52万件 2.クレジットカード「MUJI Card」会員（クレディセゾン発行）の顧客（2021年7月までに入会） クレジットカード番号（全桁）、MUJI Card ID、生年月日：約109万件（うち現時点で有効な のは約34.5万件） 3.MUJIアプリまたは無印良品ネットストアでクレジットカード情報を登録した顧客 クレジットカード番号の先頭6桁+下2桁、カード名義：約120件 同社では、対象となる顧客にメールもしくは郵送で個別に連絡を行う。 同社では現在、外部からの不正なアクセスを遮断し、当該システム以外も影響がないか等、モニタリングを強化・継続しており、現時点でMUJIアプリおよび無印良品ネットストアは正常に利用できるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 無印良品の公式アプリ「MUJI アプリ」におけるお客さま情報流出の可能性について（第二報） 関連記事 「MUJIアプリ」で最大 約2,726万件の顧客情報が流出した可能性 2026.11.4 Wed 8:05 良品計画サイトで不審な認証画面が表示される事象 2026.6.10 Wed 8:05 アスクルのランサムウェア感染、「無印良品ネットストア」利用者の個人情報が流出した可能性 2025.11.21 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-52bc71cafe",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「@cosme」に不正アクセス、約300万人の会員情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56696.html",
+      "publishedAt": "2026-11-05T23:05:29.000Z",
+      "summary": "195 views 株式会社アイスタイルは11月2日、同社が運営する「@cosme」への不正アクセスについて発表した。 これは「@cosme」に第三者から不正アクセスがあり、@cosme共通IDに登録のあった顧客の会員情報の一部が外部に漏えいしたことを10月28日に確認したというもの。 漏えいしたのは、@cosme共通IDに登録のあった約300万人の会員情報の一部（ユーザーID、ニックネーム、名前（漢字・カナ）、郵便番号、住所、電話番号、メールアドレス、性別、生年月日、肌質、髪質）。 同社では対象となる顧客に対し、同社が把握している連絡先を通じて順次個別に連絡を行うが、対象となる顧客の数が多数に及ぶため、全ての連絡が完了するまでに一定程度期間を要する見込み。なお、完了は11月6日を予定している。 同社では不正アクセスの事実を確認後に、被害の拡大防止に向けた対応を進めるとともに、現在は第三者のセキュリティ専門会社と原因および影響範囲の調査を進めている。 同社では第三者機関の調査結果を踏まえた再発防止策を検討・実施するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる個人情報漏えいに関するお詫びとお知らせについて 不正アクセスによる個人情報漏えいに関するお詫びとお知らせについて 関連記事 「@cosme」に登録した個人情報が20分間閲覧可能に、社内でのファイル受け渡し時に外部ファイル転送サービスを利用 2026.9.28 Mon 8:05 スマートフォンアプリ「@cosme化粧品・コスメランキング&お買物」にアクセス制限不備の脆弱性 2024.9.12 Thu 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a25251732a",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "クラブツーリズムに不正アクセス、約432万件の会員情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56695.html",
+      "publishedAt": "2026-11-05T23:05:27.000Z",
+      "summary": "461 views クラブツーリズム株式会社は10月31日、同社サーバへの不正アクセスについて発表した。 これは同社サーバの一部に外部から不正アクセスがあり、同社が保有する顧客情報の一部が外部流出した可能性を確認したというもの。 同社では10月30日午前5時45分に外部からの不正なアクセスを検知したため、調査を開始し、不正アクセスのあった箇所の通信遮断と必要なセキュリティ対策を実施したが、その後の調査で、同社が保有する顧客情報の一部について、外部に漏えいした可能性を確認している。 漏えいした可能性があるのは、同社インターネット予約システムでインターネット会員として登録のあった約432万件の顧客情報（氏名（漢字・カナ）、国籍、性別、生年月日・年齢、住所、電話番号、メールアドレス、会員ID、緊急連絡先）。 同社では対象の顧客に順次、連絡を行う。 同社では、不正アクセスのあったサーバを隔離し、攻撃元からの通信を遮断する対策を実施するとともに、侵入経路および手段を特定し、問題点の修正、影響範囲および同様の事象の点検等の是正対応を実施している。また同社では、本件の被害拡大防止と調査のために、同社のホームページを現在停止している。 同社では調査機関や関係機関の協力を受けながら調査を継続し、被害拡大の防止と再発防止に向けて鋭意対応するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる個人情報漏えいに関するお詫びとお知らせについて（第１信） 関連記事 クラブツーリズムのサーバに不正アクセス、海外ツアー参加者の個人情報が漏えいした可能性 2024.11.15 Fri 8:05 ライフネット生命の一部システムに不正アクセス、KDDIが保有する顧客情報が漏えいした可能性 2026.11.5 Thu 8:05 ドン・キホーテ委託先にランサムウェア攻撃、時計修理依頼者の個人情報が漏えいした可能性 2026.11.5 Thu 8:05 日本郵政グループ労働組合に不正アクセス、4万件以上の組合員情報が漏えい 2026.11.5 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-421c645925",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "日本郵便がメールマガジンの配信業務を委託している事業者に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56694.html",
+      "publishedAt": "2026-11-05T23:05:25.000Z",
+      "summary": "682 views 日本郵便株式会社は10月29日、同社がメールマガジンの配信業務を委託している事業者への不正アクセスについて発表した。 これは同社がメールマガジンの配信業務を委託している事業者の一部サーバシステムに、第三者から不正アクセスがあったというもの。 同社では当該事業者に、メールマガジン配信のために国際郵便マイページサービス会員のメールアドレスのみを提供していたが、同会員のうち各種案内メールの配信を希望している一部顧客のメールアドレスが漏えいした可能性がある。 同社によると現在、委託先が提供するメール配信サービスは停止しており、同社でも委託先と連携のうえ、影響範囲と発生原因等の詳細な事実関係を確認しているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社委託先のメール配信サービスにおける情報漏えいのおそれについて 関連記事 「郵便局アプリ」に不正アクセス、顧客情報を不正に取得 2026.10.2 Fri 8:05 日本郵便 調査請求 Web受付サービスに不正アクセス、一時的に受付を停止 2026.9.30 Wed 8:05 「誤った配達をしないように」 ～ 同姓の顧客居住地域の配達資料を撮影 2025.1.28 Tue 8:05 ユミルリンクのメール配信サービスの一部サーバシステムに不正アクセス、延べ5,162万8,280件の情報が流出 2026.11.2 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-b73cca1320",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "マーケティングプラットフォーム「ferret One」への不正アクセス、内部管理機能に不備",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56693.html",
+      "publishedAt": "2026-11-05T23:05:23.000Z",
+      "summary": "140 views 株式会社ベーシックは10月27日、同社が提供するマーケティングプラットフォーム「ferret One」への不正アクセスについて発表した。 これは「ferret One」の内部管理機能に不備があり、10月14日に第三者により不正にアカウントが作成されたというもの。同社では10月26日に当該アカウントを確認し、削除と不正アクセス経路の遮断、不備の修正を実施している。 同社によると、ferret Oneを導入している顧客のログイン用メールアドレスが閲覧または取得された可能性がある。なお、メールアドレス以外の登録情報（氏名等）は含まれない。 また、同社および顧客のアカウントの一部（計6件）で、不正ログインを確認している。当該アカウントを通じて閲覧または取得された情報の有無と範囲については、現在調査中となっている。 同社では、不正ログインが確認されたアカウントについてパスワードの初期化を実施し、対象の顧客に個別に連絡を行っている。 同社では引き続き、影響範囲の特定と原因の詳細な調査を進めており、判明した事実を踏まえて再発防止策を講じ、情報セキュリティ体制のさらなる強化に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 【重要】当社サービス「ferret One」への不正アクセスに関するお詫びとお知らせ（第一報） 関連記事 Gunosy の社内業務用アカウントの認証情報を用いた不正ログイン、取引先や役員・従業員等の情報が流出 2026.10.30 Fri 8:05 So-net 会員データベースに不正アクセス、会員情報214万1,986件が漏えい 2026.10.30 Fri 8:05 「お名前.com デスクトップクラウド」に不正アクセス、情報が公開された顧客に上限300万円の特別見舞金 2026.10.30 Fri 8:05 不正アクセスでチケット購入サービス「GETTIIS」会員情報が外部流出 2026.10.30 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a7fa88ffd8",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ブシロード「バンドリ！アワーノーツ」開発業務委託先に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56692.html",
+      "publishedAt": "2026-11-05T23:05:21.000Z",
+      "summary": "762 views 株式会社ブシロードは10月27日、同社が運営するスマートフォン向けゲームアプリ「バンドリ！アワーノーツ」の開発業務の委託先への不正アクセスについて発表した。 これは「バンドリ！アワーノーツ」の開発業務の委託先のシステムに第三者から不正アクセスがあり、6月25日午後5時から6月29日午後2時59分にかけて実施した同ゲームのクローズドβテストに応募した顧客、および9月24日午後2時3分から10月14日午後11時46分まで同ゲームのカスタマーサポートへ問い合わせのあった顧客の個人情報が漏えいしたというもの。 同社によると、開発業務委託先における管理上の不備に起因して、開発業務委託先のクローズドβテストのデータおよびカスタマーサポートの問い合わせデータ保管環境に外部の第三者から不正アクセスがあり、該当する個人情報が取得されたみられるという。 漏えいした情報は下記の通り。 ・クローズドβテストに関わる個人情報 1.クローズドβテストに応募した顧客の情報：10,194名 メールアドレス（応募時に登録のあったメールアドレス） IPアドレス（応募時の顧客のIPアドレス） 応募日時 端末情報（iOS または Android） 2.クローズドβテストの運営・開発に関わった関係者の情報：71名 ブシロード従業員および関係会社の従業員：上記1.の情報に加え氏名 開発業務委託先の従業員：電話番号 3.クローズドβテストアンケートに回答のあった情報：5名 アンケート回答内容 メールアドレス：4件 X（旧Twitter）アカウント：1件 ・カスタマーサポートに関わる個人情報：3,034名 問い合わせ本文内容 端末情報：2,832件 プレイヤーID：2,820件 メールアドレス：311件 氏名：257件 電話番号：11件 住所・郵便番号：6件 同社では、対象となる顧客に個別に連絡を行う。 なお、開発業務委託先では既に当該不備の是正を完了しており、現時点で本件に関連する環境以外への不正アクセスや二次被害は確認されていない。 同社では今後、委託先に対してセキュリティ管理体制の総点検と対策の徹底を行うとともに、同社グループ全体における情報セキュリティの強化と個人情報の厳格な管理を徹底するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 『バンドリ！アワーノーツ』クローズドβテスト応募者様およびカスタマーサポートご利用者様の個人情報漏えいに関するお詫びとお知らせ 関連記事 Gunosy の社内業務用アカウントの認証情報を用いた不正ログイン、取引先や役員・従業員等の情報が流出 2026.10.30 Fri 8:05 So-net 会員データベースに不正アクセス、会員情報214万1,986件が漏えい 2026.10.30 Fri 8:05 「お名前.com デスクトップクラウド」に不正アクセス、情報が公開された顧客に上限300万円の特別見舞金 2026.10.30 Fri 8:05 不正アクセスでチケット購入サービス「GETTIIS」会員情報が外部流出 2026.10.30 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-ca0b861339",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "オンライン診療サービス「クロンオンライン診療」にリスト型攻撃",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56691.html",
+      "publishedAt": "2026-11-05T23:05:18.000Z",
+      "summary": "126 views 株式会社MICINは10月27日、同社が提供するオンライン診療サービス「クロンオンライン診療」への不正ログインについて発表した。 これは10月23日に、「クロンオンライン診療」の一部の医療機関および患者のアカウントに対し、「リスト型攻撃」によるものとみられる第三者からの不正ログインを確認したというもの。 同社によると、現時点の調査では同社のサーバやデータベースへの侵入の形跡は確認されていない。 不正ログインの状況は下記の通り。 ・不正ログインされた医療機関のアカウント：5医療機関6アカウント ・不正ログインされた医療機関のうち、患者情報が閲覧された医療機関：3医療機関（患者様73名分） ・不正ログインされた患者アカウント：14アカウント また、第三者に閲覧された可能性のある情報は下記の通り。 ・医療機関アカウントを通じて閲覧された医療従事者：氏名、メールアドレス ・医療機関のアカウントを通じて閲覧された患者：氏名、メールアドレス、電話番号、生年月日、住所、性別、カルテ番号、診察券番号、受診状況、医師によるメモ ・患者アカウントを通じて閲覧された患者：氏名、メールアドレス、電話番号、生年月日、住所、性別、受診者コード 同社では、対象となる医療機関と患者に個別に連絡を行っている。 同社では発覚当日に、不正なアクセス元からの通信を遮断し、不正ログインが確認されたアカウントでの被害拡大防止と不正ログインのリスクの高いアカウントで同様の事象が発生することを防止するため、不正ログインが確認されたアカウントおよび二要素認証を設定していないアカウントのパスワードの初期化と全医療機関アカウントのログアウト処理を行っている。 同社では、「クロンオンライン診療」を含む同社サービスの停止は予定しておらず、引き続き利用可能となっている。 同社では、不審なログインの監視を強化しており、今後はサービスログイン時のセキュリティ強化を予定しているとのこと。 《ScanNetSecurity》 一次情報または関連リンク オンライン診療サービス「クロンオンライン診療」への不正ログインに関するご報告 関連記事 富士急ハイランド公式アプリ・会員サイト「CLUB フジQ」にリスト型攻撃、159名の会員情報が閲覧された可能性 2026.10.23 Fri 8:05 「ファンくる」にリスト型攻撃、2 アカウントで不正なポイント交換を確認 2026.9.14 Mon 8:05 「ヨネックス公式オンラインショップ」にリスト型攻撃、3 件の不正ログイン確認 2026.9.1 Tue 8:05 「女の転職 type」にリスト型アカウントハッキング、フォレンジック調査と社内調査に内容の相違なし 2026.7.2 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-53dd637bb7",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "SNSキャンペーンツール「OWNLY」に不正アクセス、合計1万4,034 件の参加者情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56690.html",
+      "publishedAt": "2026-11-05T23:05:16.000Z",
+      "summary": "155 views スマートシェア株式会社は10月27日、同社が提供するSNSキャンペーンツール「OWNLY」への不正アクセスについて発表した。 これは「OWNLY」に第三者から不正アクセスがあり、OWNLYサーバ上に保存されてい同サービスを利用したキャンペーン参加者の情報の一部が、閲覧・ダウンロードされた形跡を確認したというもの。 同社によると、10月16日未明にOWNLYのファイルアップロード機能の不備を侵入経路とした不正アクセスを監視システムが検知したが、通知設定の不備で同社開発担当者による把握が検知から遅れたものの、同日中に侵入経路を遮断している。 漏えいしたのは合計14,034 件のキャンペーン参加者のXまたはLINEのユーザー名・ユーザーID、エントリー日時、抽選・クーポンの取得状況などで、対象キャンペーンと対象件数は下記の通り。 ・モスのレシートチャレンジ：2,995件 実施期間：2026/8/3~8/31 参加方法：LINE ・モスでハロウィン プレゼントキャンペーン：11,001件 実施期間：2026/10/15~10/17 参加方法：X ・VALX×モスバーガーコラボ！ レシートキャンペーン：38件 実施期間：2026/10/1~10/21 参加方法：X 同社では下記の対策を実施している。 ・ファイルアップロード機能の修正（受け付けるファイル形式の限定等） ・OWNLYにおける類似の不備の有無の社内点検（現時点で未検出） ・全てのOWNLYアカウントへの不正アクセス有無の点検（現時点で未検出） ・OWNLYを利用する全ての企業へ、アカウント管理画面のログインパスワードの変更、多要素認証・IPアドレスの制限等の設定依頼の通知 ・監視システムが異常を検知した際の通知設定の見直し 同社で今後、年内に下記の実施要否の検討・対応方針の整理を行う予定とのこと。 ・アカウント管理画面へのログインに係るセキュリティ向上策の追加（多要素認証の種類の追加等） ・参加者情報のダウンロード手順の見直し ・外部調査機関を起用したOWNLYの不備を総点検することの要否・実行 《ScanNetSecurity》 一次情報または関連リンク 当社サービス「OWNLY」への不正アクセスに伴うお客様情報漏洩に関するお詫びとお知らせ 関連記事 Gunosy の社内業務用アカウントの認証情報を用いた不正ログイン、取引先や役員・従業員等の情報が流出 2026.10.30 Fri 8:05 So-net 会員データベースに不正アクセス、会員情報214万1,986件が漏えい 2026.10.30 Fri 8:05 「お名前.com デスクトップクラウド」に不正アクセス、情報が公開された顧客に上限300万円の特別見舞金 2026.10.30 Fri 8:05 不正アクセスでチケット購入サービス「GETTIIS」会員情報が外部流出 2026.10.30 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-09b5181627",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems",
+      "url": "https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems",
+      "publishedAt": "2026-11-05T12:00:00.000Z",
+      "summary": "Overview The Cybersecurity and Infrastructure Security Agency (CISA), Federal Bureau of Investigation (FBI), Health and Human Services (HHS), U.S. Department of Agriculture (USDA), and the Department of Transportation (DoT)—hereafter referred to as “the authoring organizations”—are aware of malicious cyber activity targeting industrial refrigeration and cold chain monitoring systems globally. Orga"
+    },
+    {
+      "id": "s-780955fd1e",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Post-Quantum Questions to Ask Your Vendors",
+      "url": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+      "publishedAt": "2026-11-05T12:00:00.000Z",
+      "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quantum computing advances, widely used public-key cryptography will become vulnerable to compromise fro"
+    },
+    {
+      "id": "s-eb87294c09",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "publishedAt": "2026-11-04T12:00:00.000Z",
+      "summary": "CISA has added one new vulnerability to its&nbsp; Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2024-27834 Apple Multiple Products Improper Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Pri"
+    }
+  ]
+}
