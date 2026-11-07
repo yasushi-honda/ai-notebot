@@ -1,0 +1,205 @@
+{
+  "date": "2026-11-08",
+  "collectedAt": "2026-11-07T22:01:36.804Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-6b876040a4",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers pull off $133 million French bank heist via service provider",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
+      "publishedAt": "2026-11-07T15:25:35.000Z",
+      "summary": "French cooperative bank Crédit Mutuel Arkéa was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v [...]"
+    },
+    {
+      "id": "s-bfe7b7e873",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
+      "url": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+      "publishedAt": "2026-11-07T14:10:19.000Z",
+      "summary": "Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate networks to generate revenue without delivering the promised rewards. [...]"
+    },
+    {
+      "id": "s-804a43c336",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+      "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+      "publishedAt": "2026-11-07T06:44:17.000Z",
+      "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them. When a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, in a project settings file. Software security company Apiiro said yesterday that 1,122 public"
+    },
+    {
+      "id": "s-bc17b8a3d8",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+      "publishedAt": "2026-11-07T00:00:55.000Z",
+      "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]"
+    },
+    {
+      "id": "s-6c1eeb1c6e",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+      "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
+      "publishedAt": "2026-11-06T22:27:25.000Z",
+      "summary": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]"
+    },
+    {
+      "id": "s-a382c3d13c",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+      "url": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+      "publishedAt": "2026-11-06T05:39:10.000Z",
+      "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw, CVE-2026-116606, is an authorization bypass. An unauthenticated attacker can use it to restore a"
+    },
+    {
+      "id": "s-66fcad3f7d",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "FBI, CISA warn of cyberattacks targeting refrigeration systems",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/",
+      "publishedAt": "2026-11-06T00:56:44.000Z",
+      "summary": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards. [...]"
+    },
+    {
+      "id": "s-c1e53ee53b",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Firefox」のレイアウト処理に脆弱性 - 「同159.0.1」で修正",
+      "url": "https://www.security-next.com/192437",
+      "publishedAt": "2026-11-06T00:11:14.000Z",
+      "summary": "「Firefox」のレイアウト処理に脆弱性 - 「同159.0.1」で修正 Mozilla Foundationは現地時間2026年11月3日、ウェブブラウザのセキュリティアップデートとなる「Firefox 159.0.1」を公開した。 今回のアップデートは、脆弱性「CVE-2026-120572」に対応したもの。開発チームでは重要度を4段階中、上から2番目にあたる「高（High）」としている。 「CVE-2026-120572」は、ウェブページのレイアウト処理を担う「Layout: Block and Inline」コンポーネントに判明した脆弱性。境界条件の取り扱いに不備があるという。 米サイバーセキュリティインフラストラクチャセキュリティ庁（CISA）は、共通脆弱性評価システム「CVSSv3.1」のベーススコアを「8.8」、重要度を4段階中、2番目に高い「高（High）」とレーティングしている。 （Security NEXT - 2026/11/06 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-66028a7cd4",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "JETROが利用する国際ビジネスマッチングサイトに不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56689.html",
+      "publishedAt": "2026-11-05T23:05:13.000Z",
+      "summary": "154 views 独立行政法人日本貿易振興機構（JETRO）は10月27日、ビジネスマッチングサービスで利用しているシステム「e-Venue」への不正アクセスについて発表した。 これは9月24日、9月25日および10月14日に、「e-Venue」に不正アクセスがあり、最大133件の個人情報が漏えいした可能性が判明したというもの。なお、「e-Venue」は外部のシステム環境上を利用し、委託先会社が構築・運用・保守を行っていた。 JETROの調査によると、外部からの「e-Venue」への不正アクセスで、本来公開を想定していない情報が取得されたと考えられるという。 《ScanNetSecurity》 一次情報または関連リンク e-Venueへの不正アクセスによる個人情報漏えいの可能性について 関連記事 Gunosy の社内業務用アカウントの認証情報を用いた不正ログイン、取引先や役員・従業員等の情報が流出 2026.10.30 Fri 8:05 So-net 会員データベースに不正アクセス、会員情報214万1,986件が漏えい 2026.10.30 Fri 8:05 「お名前.com デスクトップクラウド」に不正アクセス、情報が公開された顧客に上限300万円の特別見舞金 2026.10.30 Fri 8:05 不正アクセスでチケット購入サービス「GETTIIS」会員情報が外部流出 2026.10.30 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-4bcc468f93",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "2026年は438万件のカード情報が漏えい ～ MM総研",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56688.html",
+      "publishedAt": "2026-11-05T23:05:11.000Z",
+      "summary": "200 views 株式会社MM総研は11月4日、「国内サイバー攻撃による情報漏えい動向調査」を発表した。 同調査は、2022年1月から2026年10月31日までに国内の組織（海外子会社含む）が公表した不正アクセス、ランサムウェア、マルウェア感染、アカウント乗っ取り、フィッシング、Webサイト改ざんなどのサイバー攻撃を起因とする情報漏えい事案について、動向を調査した結果をまとめたもの。 同調査で、漏えい（可能性を含む）件数がわかる事案について集計したところ、2026年は10月31日までで約3億7,600万件と、2025年1年間（4,953万件）の約7.6倍に達していた。2022年の890万件から2025年までの3年間で約5.6倍に増加したが、2026年は増え方が一段と大きくなったことが判明している。同じ期間の事案数は661件、2025年1年間（428件）の約1.5倍で、漏えい情報件数の伸びは事案数の伸びを大きく上回り、1件あたりの規模が大型化していた。 2026年は漏えい情報件数の上位10事案で全体の約6割を占め、10万件以上の事案も35件から84件と増加し、特定の巨大事案だけでなく、全体として大型化していた。また、2026年の漏えい情報件数の約94％は7月以降に公表された事案によるもので、夏以降に急拡大していた。 2026年の漏えい情報件数は10月だけでみても約1億8,500万件で、1ヶ月で2025年（4,953万件）の約3.7倍に達している。100万件以上の情報が漏えいした大規模事案は2026年10月末までに45件（2025年は12件）と過去5年で最多で、10月だけで30件にのぼっている。漏えい情報件数の中央値も9月の1,500件から10月は約2.9万件に跳ね上がっている。 2026年はパスワードやログインIDなどの認証情報の漏えいも急増しており、10月末時点で延べ約1億6,100万件と2025年（514万件）の約31倍となっている。漏えいした認証情報は、別のサービスでの使い回しを狙うリスト型攻撃に悪用されやすく、不正ログイン・アカウント乗っ取りの被害を広げる要因となるという。クレジットカード情報漏えいの延べ件数は2022年の88万件から2025年は12万件まで減っていたが、2026年は438万件に増加している。 《ScanNetSecurity》 一次情報または関連リンク MM総研 関連記事 日本企業はセキュリティの「意思決定」を外部委託 ～ MM総研調査 2026.9.15 Tue 8:00 被害額 100万円 ～ 5,000万円未満が約半数 ～ JIPDEC ランサムウェア調査 2026.4.14 Tue 8:00 今日もどこかで情報漏えい 第53回「2026年9月の情報漏えい」カメラが情報漏えいの瞬間を捉えた世紀の映像 2026.10.30 Fri 8:10 今日もどこかで情報漏えい 第52回「2026年8月の情報漏えい」約一割で逮捕・懲戒・行政指導 2026.9.25 Fri 8:10 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-f22da1d1ee",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "サントリーグループが利用する外部クラウドサービスに不正アクセス、個人情報が含まれるファイルのダウンロードを確認",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56687.html",
+      "publishedAt": "2026-11-05T23:05:08.000Z",
+      "summary": "278 views サントリーホールディングス株式会社は11月2日、サントリーグループが利用する外部クラウドサービスへの不正アクセスについて発表した。 これはサントリーグループが利用する外部クラウドサービスに第三者から不正アクセスがあり、調査の結果、第三者により個人情報が含まれるファイルがダウンロードされたというもの。 同社では10月28日に外部クラウドサービスで異常を検知したため不正アクセスを遮断し、調査の結果、漏えいしたファイル名を特定し、10月29日には漏えいしたファイルの一部に個人情報が含まれることを確認している。 同社で11月1日までに第三者への漏えいを確認した個人情報は下記の通り。 1.サントリーグループ従業員およびパートナー企業等の従業員情報：約90,000名 項目：氏名、メールアドレス 2.サントリー企業活動体験プログラム「マル・デ・シャイン」に2023年末時点で登録のあった顧客様情報：7,323名 項目：メールアドレス 3.サントリーホールディングス 2026年新卒採用 ビジネス部門オープン選考（早期および通常）への応募者情報：7,173名 項目：応募者マイページ登録情報等（氏名、メールアドレス、電話番号等） 4.サントリービバレッジソリューション株式会社の社用携帯電話（2台）に登録されていたサントリーグループおよび取引先の従業員等の情報：1,097名 項目：氏名、電話番号 5.モンテ物産株式会社の従業員およびパートナー企業の従業員情報：324名 項目：氏名、メールアドレス、電話番号 6.井筒まい泉株式会社の宅配を注文した顧客および配送した従業員情報：96名 項目：氏名、届け先の位置情報 7.サントリー株式会社の取引先の従業員情報：25名 項目：氏名、役職 同社では今後、対象者への個別連絡を進める。 同社では現在、不正アクセスを遮断しており、被害拡大を防止するために必要な対策を講じている。 同社では再発防止に取り組むとともに、セキュリティ対策の一層の強化に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 外部クラウドサービスへの不正アクセスによる個人情報漏えいに関するお詫び 関連記事 「＆Green」利用のメール配信システムでエラー、複数のメールが誤送信 2026.3.17 Tue 8:05 外務省のネットワークに不正アクセス、7月27日に検知 2026.11.4 Wed 8:05 松屋公式アプリに不正アクセス 会員情報等が漏えい 2026.11.4 Wed 8:05 「アイリスプラザ」に不正アクセス、安全確保のため一時停止 2026.11.4 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-1f5e6ed724",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "徳間書店のニュースサイト「GoodsPress Web」のテスト環境に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56686.html",
+      "publishedAt": "2026-11-05T23:05:06.000Z",
+      "summary": "133 views 株式会社徳間書店は10月26日、同社運営のニュースサイト「GoodsPress Web」のテスト環境への不正アクセスについて発表した。 これは「GoodsPress Web」のテスト環境への第三者からの不正アクセスを確認したというもので、保守・運用を委託している会社から10月22日に報告があり、調査した結果、第三者による管理者アカウントの不正作成と、ページの改ざんが判明している。 同社によると、テスト環境にアカウント登録している、記事執筆等で協力している個人事業者・取引先のユーザ情報（氏名、ニックネーム、メールアドレス）計103件が、不正アクセスにより閲覧された可能性がある。 同社では10月22日に、暫定対応として攻撃経路の遮断、不正アカウントの停止、改ざんされたページの非公開化を行い、同日午後7時50分にテスト環境のサーバを遮断している。 同社では今後、個人情報の適切な管理と情報セキュリティ対策の徹底に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる個人情報漏えいのおそれに関するお知らせ 関連記事 松沢書店にランサムウェア攻撃、「楽譜ナビ」「注文くん」ほか各種サービスに影響 2026.5.27 Wed 8:05 紀伊國屋書店に不正アクセス、委託元の富士山マガジンサービスにも影響 2023.12.26 Tue 8:05 秋田書店のWebサーバに不正アクセス、フィッシング詐欺メールに利用された可能性 2023.10.16 Mon 8:05 朝倉書店へ不正アクセス、年末年始の休業期間中で復旧に遅れ 2023.1.26 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-3d596c1762",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "バンダイロジパルに不正アクセス、「一番くじONLINE」の配送情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56685.html",
+      "publishedAt": "2026-11-05T23:05:02.000Z",
+      "summary": "153 views 株式会社バンダイナムコホールディングスは10月26日、同社の物流子会社である株式会社バンダイロジパルへの不正アクセスについて発表した。 これは10月21日に、バンダイロジパルが管理する物流システム内サーバで不正アクセスの疑いのある痕跡を発見したため、当該サーバのシャットダウンおよび原因と影響範囲の調査に着手したところ、同日、バンダイロジパルのアカウントの不正利用による操作を確認したというもの。 バンダイロジパルでは10月22日に対策本部を設置し、物流システム全体の調査を実施した結果、株式会社BANDAI SPIRITSがバンダイロジパルに配送業務を委託する「一番くじONLINE」の配送情報が格納されるサーバで不正アクセスの疑いのある痕跡が確認されたことから、登録されている顧客情報の一部に漏えいの疑いが判明している。 漏えいの可能性があるのは、BANDAI SPIRITSがバンダイロジパルに商品配送業務を委託している「一番くじONLINE」の配送情報（氏名、住所、電話番号）で、件数など詳細については調査中となっている。 バンダイロジパルではシステム全体の点検と安全確認を行い、安全性が確認できるまで10月26日から当該出荷システムを一時停止するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 株式会社バンダイロジパルへの不正アクセスに ついてのお知らせ （第 1 報） 関連記事 バンダイチャンネルへの不正アクセス、最大 136.6 万件の会員情報漏えいの可能性 2025.12.23 Tue 8:10 バンダイチャンネルで意図せず退会となる障害 2025.11.27 Thu 8:00 バンダイチャンネル「ランサムウェアによる被害でないことも確認できております」 2025.11.25 Tue 8:05 取引先等と共謀し約 5 億円の金員を不正に詐取 ～ バンダイナムコ 海外子会社元従業員 2024年1月16日に逮捕 2025.8.7 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-100be6e7ce",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "能動的サイバー防御へ本格始動、基幹インフラ 15 分野 258 事業者に資産届出とインシデント報告を要請",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56684.html",
+      "publishedAt": "2026-11-05T23:00:06.000Z",
+      "summary": "408 views 内閣官房国家サイバー統括室（NCO）と内閣府政策統括官（サイバー安全保障担当）は 9 月 30 日、関係省庁会議の説明資料「 サイバー対処能力強化法等の施行について 」を公開した。 10 月 1 日からの組織体制整備に伴い、基幹インフラ事業者との官民連携（協議会の設置、資産届出、インシデント報告）に向けた運用が開始された。なお、能動的サイバー防御の中核となる通信情報の活用については、来年秋以降の運用開始とされている。 対象となるのは、金融、航空、電力、通信、港湾、クレジットカードなど 15 分野 258 の基幹インフラ事業者である。官民の情報共有基盤として基幹インフラ事業者を中心に約 100 組織が参画する協議会を設置する。 国側が入手した脅威情報は、出所や機密を保護するためのサニタイズ（情報源や特定個社が識別されないよう機密情報を除去・匿名化）処理を迅速に行った上で事業者に提供される。さらに秘匿度の高い情報については、秘密指定を行った上で個社間や「Trusted Group（TG）」を通じて共有する方針。 事業者は、導入済みの特定重要電子計算機（基幹システム）の製品名等を来年 3 月までに事業所管大臣へ届け出る（新規導入分は 4 か月以内）。国はこの資産情報と未公表脆弱性データを突き合わせ、該当事業者にピンポイントで注意喚起を行う。 また 10 月 1 日以降、経済安全保障推進法上の「特定社会基盤事業者」のうち、サイバー対処能力強化法で定める「特別社会基盤事業者（ 15 分野・258 事業者）」は、特定重要電子計算機においてマルウェア実行や不正アクセス等の重大なサイバーインシデントを認知した際、事業所管大臣および内閣総理大臣への報告が義務付けられる。収集された技術情報は被害組織のプライバシーに配慮した上で他事業者へ横展開され、防御力の底上げに活用される。 《ScanNetSecurity》 一次情報または関連リンク サイバー対処能力強化法等の施行について（NCO） サイバー安全保障に関する取組（能動的サイバー防御の実現に向けた検討など）（内閣官房ホームページ） 関連記事 GMOインターネットグループ代表 熊谷正寿氏、「能動的サイバー防御」具申理由を公開 攻撃者から約80億円の金銭要求も 2026.10.28 Wed 8:00 能動的サイバー防御法制で民間 ICT 事業者に求められる実務対応とは？ ICT-ISAC がレポート公開 2026.7.8 Wed 8:00 10月1日 能動的サイバー防御関連法施行 2026.10.14 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-4f7e04dd4c",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Core TempのカーネルドライバにIOCTLインタフェースに対するアクセス制御が不十分な脆弱性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/06/56683.html",
+      "publishedAt": "2026-11-05T23:00:03.000Z",
+      "summary": "75 views 独立行政法人情報処理推進機構（IPA）および一般社団法人JPCERT コーディネーションセンター（JPCERT/CC）は11月2日、Core TempのカーネルドライバにおけるIOCTLインタフェースに対するアクセス制御が不十分な脆弱性について「Japan Vulnerability Notes（JVN）」で発表した。柳川珠樹氏が報告を行っている。影響を受けるシステムは以下の通り。 Core Temp v1.21より前 ALCPUが提供するCore Tempのカーネルドライバには、IOCTLインタフェースに対するアクセス制御が不十分な脆弱性（CVE-2026-109836）が存在し、物理メモリが読み込まれたり、書き込まれたりする可能性がある。 JVNでは、開発者が提供する情報をもとに最新版にアップデートするよう呼びかけている。 《ScanNetSecurity》 一次情報または関連リンク JVN 関連記事 PALLET CONTROL 製品にアクセス制御不備の脆弱性 2026.9.7 Mon 8:00 ExpressUpdate Agent for Windows に名前付きパイプに対するアクセス制御不備の脆弱性 2026.7.1 Wed 8:00 Windowsカーネルドライバ「PCTCore64.sys」に不適切なアクセス制御 2026.6.5 Fri 8:00 WPS Office で使用される名前付きパイプにアクセス制御不備の脆弱性 2026.5.19 Tue 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a665869d02",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
+      "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
+      "publishedAt": "2026-11-05T07:06:33.000Z",
+      "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found. The exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has released new firmware for 10 GS1900 models that closes the hole. The earlier fix is the 2.90"
+    },
+    {
+      "id": "s-2a5b7d5a68",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+      "publishedAt": "2026-11-05T05:17:04.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is CVE-2024-27834 (CVSS score: 5.5), a case of improper authentication that could allow an attacker with"
+    },
+    {
+      "id": "s-f7d6503de1",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "Apple製品の脆弱性悪用を確認 - 米当局が注意喚起",
+      "url": "https://www.security-next.com/192378",
+      "publishedAt": "2026-11-04T23:25:30.000Z",
+      "summary": "Apple製品の脆弱性悪用を確認 - 米当局が注意喚起 複数のApple製品が影響を受ける脆弱性「CVE-2024-27834」の悪用が確認されているとして米当局が注意喚起を行った。 米サイバーセキュリティ・インフラセキュリティ庁（CISA）は現地時間2026年11月4日、「悪用が確認された脆弱性カタログ（KEV）」に同脆弱性を登録したもの。 同脆弱性は、スマートデバイスが搭載する「iOS」「iPadOS」や、Macの「macOS」をはじめ、「Safari」「tvOS」「watchOS」などに確認された認証不備の脆弱性。任意の読み取りや書き込み権限を持つ場合に悪用が可能となる。2024年に判明し、当時リリースされたアップデートにて修正が実施された。 米国立標準技術研究所（NIST）による脆弱性データベース「NVD」において共通脆弱性評価システム「CVSSv3.1」のベーススコアは「5.5」、重要度は「中（Medium）」と評価されている。 米行政機関では、指定された期間内に脆弱性へ対応する必要があり、期限は同月18日と設定されている。脆弱性に関しては、広く悪用されるおそれもあり、注意が必要となる。 （Security NEXT - 2026/11/05 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-068055e37b",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ギフティへの不正アクセスによるeギフトの不正発行、約5.5億円の損失見込み",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56674.html",
+      "publishedAt": "2026-11-04T23:05:07.000Z",
+      "summary": "395 views ギフティグループ株式会社は10月26日、同社連結子会社の株式会社ギフティへの不正アクセスについて発表した。 これは10月25日に、ギフティが運用するシステムの一部の脆弱性を悪用した第三者からの不正アクセスが発生し、当該システムを経由してeギフトが不正に発行されたというもの。 同社によると、本件は第三者がギフティが運用する当該システムを介してeギフトを新たに不正発行したもので、ギフティのサービスを利用する顧客が保有するeギフト等が不正に使用されたものではなく、本件による顧客の保有資産の減少・毀損は確認されていない。不正発行に起因する金銭的な損失は同社グループに発生するとのこと。 なお、本件による個人情報の漏えいは確認されていない。 ギフティでは本件発覚後に、不正アクセスの原因となった脆弱性を特定し、10月25日に当該システムを停止し、当該経路を通じた不正発行を遮断している。当該システムについては、今後も利用を再開しない方針という。 本件への対応に伴い、一部のeギフト交換サービスに一時的な利用上の支障が生じていたが、現在は順次解消している。 同社によると、本件に起因する損失は現時点で約5.5億円と見込んでおり、2026年12月期第4四半期に特別損失を計上する見込み。 同社では引き続き、本件の影響範囲の確認を進めるとともに、eギフト発行に係る管理体制と監視体制の強化等、再発防止に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社連結子会社の一部システムへの不正アクセスに伴う e ギフトの不正発行および特別損失計上見込みに関するお知らせ 関連記事 不正アクセス関連損失として 1 億 8,100 万円を「その他の費用」に計上 2026.9.2 Wed 8:05 はてな資金流出、11 億 7,900 万円を特別損失として計上 2026.6.25 Thu 8:00 Booking.comへの不正アクセス、売上金受領口座情報が改ざん 約 900 万円の損失が発生 2026.6.2 Tue 8:05 保険金と対応費用を特別利益・特別損失として計上 ～ ケイ・ウノへの不正アクセス 2026.5.28 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-40a5a2749a",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
+      "url": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
+      "publishedAt": "2026-11-04T08:17:11.000Z",
+      "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016. The Ministry of Internal Affairs of the Russian Federation (MVD) said members of the group are \"suspected of embezzling funds from the"
+    },
+    {
+      "id": "s-32c90d2f09",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+      "publishedAt": "2026-11-04T07:46:15.000Z",
+      "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its&nbsp;November security bulletin. The flaw, CVE-2026-58868, affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and carriers send on their own schedules. As of November 4, Google's bulletin did not report"
+    },
+    {
+      "id": "s-349817163a",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+      "url": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
+      "publishedAt": "2026-11-04T05:43:11.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as CVE-2026-119977 (CVSS score: 8.1), is a case of Time-of-check Time-of-use (TOCTOU) race condition that could be exploited to achieve arbitrary code"
+    }
+  ]
+}

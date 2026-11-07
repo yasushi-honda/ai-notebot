@@ -1,0 +1,646 @@
+{
+  "date": "2026-11-08",
+  "collectedAt": "2026-11-07T22:00:32.427Z",
+  "sourceSuccessCount": 24,
+  "items": [
+    {
+      "id": "s-391052e478",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Th0rgal/orb: All your AI providers, machines, and agent harnesses in one place. Free & native",
+      "url": "https://github.com/Th0rgal/orb",
+      "publishedAt": "2026-11-07T22:00:18.000Z",
+      "summary": "★708 All your AI providers, machines, and agent harnesses in one place. Free & native"
+    },
+    {
+      "id": "s-417107d9be",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Sidiora-Labs/paxeer-monorepo: Paxeer X is a Distributed HyperState Machine for payments, code execution and intent routing. Designed for Machines and the Users operating them. ",
+      "url": "https://github.com/Sidiora-Labs/paxeer-monorepo",
+      "publishedAt": "2026-11-07T22:00:17.000Z",
+      "summary": "★541 Paxeer X is a Distributed HyperState Machine for payments, code execution and intent routing. Designed for Machines and the Users operating them."
+    },
+    {
+      "id": "s-24aba78664",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "prime-radiant-inc/evener: A coding agent: give it a prompt and it reads, writes, runs commands, and searches code in a loop until the work is done, using native tool-calling across OpenAI, Anthropic, and Google models.",
+      "url": "https://github.com/prime-radiant-inc/evener",
+      "publishedAt": "2026-11-07T21:59:43.000Z",
+      "summary": "★191 A coding agent: give it a prompt and it reads, writes, runs commands, and searches code in a loop until the work is done, using native tool-calling across OpenAI, Anthropic, and Google models."
+    },
+    {
+      "id": "s-0b439be154",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "jonwiggins/optio: Workflow orchestration for AI agent swarms.",
+      "url": "https://github.com/jonwiggins/optio",
+      "publishedAt": "2026-11-07T21:59:33.000Z",
+      "summary": "★1094 Workflow orchestration for AI agent swarms."
+    },
+    {
+      "id": "s-be3302bbd7",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "WizisCool/oh-my-cpa: Self-hosted control plane & usage observability console for CLIProxyAPI (CPA) — AI providers, client keys, streaming telemetry, and model cost snapshots.",
+      "url": "https://github.com/WizisCool/oh-my-cpa",
+      "publishedAt": "2026-11-07T21:59:30.000Z",
+      "summary": "★346 Self-hosted control plane & usage observability console for CLIProxyAPI (CPA) — AI providers, client keys, streaming telemetry, and model cost snapshots."
+    },
+    {
+      "id": "s-f0a1caf9bd",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "khromov/svelte-bench: An LLM benchmark for Svelte 5 based on the OpenAI methodology from OpenAIs paper \"Evaluating Large Language Models Trained on Code\".",
+      "url": "https://github.com/khromov/svelte-bench",
+      "publishedAt": "2026-11-07T21:59:18.000Z",
+      "summary": "★190 An LLM benchmark for Svelte 5 based on the OpenAI methodology from OpenAIs paper \"Evaluating Large Language Models Trained on Code\"."
+    },
+    {
+      "id": "s-d57f5c9bdb",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "tangosdev/sm64ds-decomp: From-scratch, byte-matching decompilation of Super Mario 64 DS into C/C++, with a live progress atlas and matching tools.",
+      "url": "https://github.com/tangosdev/sm64ds-decomp",
+      "publishedAt": "2026-11-07T21:59:12.000Z",
+      "summary": "★238 From-scratch, byte-matching decompilation of Super Mario 64 DS into C/C++, with a live progress atlas and matching tools."
+    },
+    {
+      "id": "s-42cd1f5ed2",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "axolotl-ai-cloud/axolotl: Go ahead and axolotl questions",
+      "url": "https://github.com/axolotl-ai-cloud/axolotl",
+      "publishedAt": "2026-11-07T21:58:55.000Z",
+      "summary": "★12672 Go ahead and axolotl questions"
+    },
+    {
+      "id": "s-ab9a1738ed",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "crewAIInc/crewAI: Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "publishedAt": "2026-11-07T21:58:44.000Z",
+      "summary": "★60612 Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks."
+    },
+    {
+      "id": "s-d2e193ea96",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "8b-is/smart-tree: Smart Tree: not just a tree, a philosophy. A context-aware, AI-crafted replacement for 20+ tools with MEM8 quantum compression, semantic search, AST-smart editing, and partnership memory. Crafted with care by human + AI—accept no knock-offs.",
+      "url": "https://github.com/8b-is/smart-tree",
+      "publishedAt": "2026-11-07T21:58:40.000Z",
+      "summary": "★272 Smart Tree: not just a tree, a philosophy. A context-aware, AI-crafted replacement for 20+ tools with MEM8 quantum compression, semantic search, AST-smart editing, and partnership memory. Crafted with care by human + AI—accept no knock-offs."
+    },
+    {
+      "id": "s-ebbcb38584",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "beam-cloud/beta9: Ultrafast serverless GPU inference, sandboxes, and background jobs",
+      "url": "https://github.com/beam-cloud/beta9",
+      "publishedAt": "2026-11-07T21:58:38.000Z",
+      "summary": "★1847 Ultrafast serverless GPU inference, sandboxes, and background jobs"
+    },
+    {
+      "id": "s-a9134ee91e",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "simoncirstoiu/alice: Analyse · Learn · Ingest · Curate · Export — AI-powered YOLO dataset management toolkit",
+      "url": "https://github.com/simoncirstoiu/alice",
+      "publishedAt": "2026-11-07T21:58:36.000Z",
+      "summary": "★411 Analyse · Learn · Ingest · Curate · Export — AI-powered YOLO dataset management toolkit"
+    },
+    {
+      "id": "s-9103c04f52",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "squirrelscan/squirrelscan: The website QA tool for your coding agent. 310+ audit rules across SEO, performance, security, accessibility and agent experience.",
+      "url": "https://github.com/squirrelscan/squirrelscan",
+      "publishedAt": "2026-11-07T21:58:29.000Z",
+      "summary": "★308 The website QA tool for your coding agent. 310+ audit rules across SEO, performance, security, accessibility and agent experience."
+    },
+    {
+      "id": "s-9a1c7ae8d3",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Sma1lboy/rove: Rove — the agent multiplexer for your terminal. Run coding agents on parallel tasks with isolated worktrees and persistent sessions.",
+      "url": "https://github.com/Sma1lboy/rove",
+      "publishedAt": "2026-11-07T21:58:14.000Z",
+      "summary": "★184 Rove — the agent multiplexer for your terminal. Run coding agents on parallel tasks with isolated worktrees and persistent sessions."
+    },
+    {
+      "id": "s-e7d72b665a",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "clawboo/clawboo: An open-source studio for teams of AI agents, from marketing squads to dev teams to research crews. Deploy a team, then watch them delegate and collaborate live. Self-hosted, one command.",
+      "url": "https://github.com/clawboo/clawboo",
+      "publishedAt": "2026-11-07T21:57:53.000Z",
+      "summary": "★168 An open-source studio for teams of AI agents, from marketing squads to dev teams to research crews. Deploy a team, then watch them delegate and collaborate live. Self-hosted, one command."
+    },
+    {
+      "id": "s-477682d0eb",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Crowd-v1 - The collaborative LLM",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqh8hk/crowdv1_the_collaborative_llm/",
+      "publishedAt": "2026-11-07T21:19:40.000Z",
+      "summary": "Processing img 0ybf7gn4c90i1... Hello r/LocalLLaMA :D This is yet another follow-up post on the project CrowdGPT , which aims at creating the first collaboratively trained 1 billion parameters transformer, Crowd-v1 , without any datacenters, and for 0$. The project&#39;s goal is to show we don&#39;t need huge Nvidia GPU clusters nor millions of dollars to train a competitive Large Language Model. "
+    },
+    {
+      "id": "s-2c93e9013a",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+      "publishedAt": "2026-11-07T21:17:08.000Z",
+      "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO."
+    },
+    {
+      "id": "s-449de96fe4",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "やりたいことを話すと、自分専用の画面ができる。MetaがAIエージェント「Muse」に「スペース」を追加",
+      "url": "https://qiita.com/quotidia/items/a4c102125e4c941e3e52",
+      "publishedAt": "2026-11-07T21:00:51.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 Metaは2026年11月6日(金) (米国時間)、AIエージェント (利用者に代わって、いくつもの作業を自分で進めるAI) の「Muse」に「スペース」という機能を加え、即日、提供を始めまし..."
+    },
+    {
+      "id": "s-0b831ea8e1",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "API キーをコマンド引数に書くと別ユーザーの ps から丸見え：curl -H は隠れず -u だけ隠れる（実機確認）",
+      "url": "https://qiita.com/supportapp3/items/cd1f04df4b681507e3e1",
+      "publishedAt": "2026-11-07T20:12:25.000Z",
+      "summary": "結論 API キーを コマンドの引数に直接書くと、同じマシンの別ユーザーからも ps で丸見えになります（2026-11-08、Debian 13・procps-ng 4.0.4・ダミー値で実機確認）。curl -H \"Authorization: Bearer ......"
+    },
+    {
+      "id": "s-6802eba748",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIの進化を止めるべきなのか——開発競争、安全性、規制の間でIT技術者が考えるべきこと",
+      "url": "https://qiita.com/mhamadajp/items/9570fa3175f1eebbe0b2",
+      "publishedAt": "2026-11-07T19:49:04.000Z",
+      "summary": "設計レビューで「導入を止めるべきか」と聞かれたとき たとえば、社内の問い合わせ対応にAIエージェントを導入する設計レビューです。文書を検索し、回答の下書きを作るところまでは、参加者が同意しやすいです。意見が分かれるのは、その先です。データベースの更新、顧客へのメール送信、..."
+    },
+    {
+      "id": "s-ecd46d87e1",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Diplomat retracts article, admits Newtype interview was faked",
+      "url": "https://thediplomat.com/2026/11/how-a-diplomatic-row-ended-a-korean-startups-ai-war-test-in-ukraine/",
+      "publishedAt": "2026-11-07T19:38:55.000Z",
+      "summary": "points=6 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-83d54a23e8",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "Catching prompt injections hidden in PDFs",
+      "url": "https://tomclancy.info/joshua-judges-ruth.html",
+      "publishedAt": "2026-11-07T19:34:01.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-75cb2142c4",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "GPT-6のIntelligent UIでRedditとXのブランドレポートを作る：MCPの設定例とデータ検証",
+      "url": "https://qiita.com/everyinfra/items/958e65092246086cb469",
+      "publishedAt": "2026-11-07T19:24:48.000Z",
+      "summary": "この記事は EveryInfra ブログ からの転載です（原文が正本です）。 GPT-6は2026年10月7日、Intelligent UIとともにChatGPTのChatタブに登場しました。Intelligent UIでは、回答にテキスト、グラフ、ボタン、フォーム..."
+    },
+    {
+      "id": "s-00abf59452",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Use your phone to monitor anything with local models! Demo of my Open Source and 100% local agent (iOS and Android!)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqd058/use_your_phone_to_monitor_anything_with_local/",
+      "publishedAt": "2026-11-07T18:16:41.000Z",
+      "summary": "Hey r/LocalLLaMA ! I made this quick demo of how Observer can run local models to monitor anything with your phone! These are some crazy things I&#39;ve monitored: When someone that&#39;s not me, approaches my car, send me a picture. When a bird is on the bird&#39;s nest, send me a telegram with the picture. When my washing machine is on the rinse cycle, call me. When my dog finishes eating their "
+    },
+    {
+      "id": "s-ef7df344eb",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "The End of AI Frontiers",
+      "url": "https://hunch.net/?p=13764006",
+      "publishedAt": "2026-11-07T18:04:07.000Z",
+      "summary": "points=81 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-e8f9ccac36",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AlienPentest 徹底解説 — AIが自律的にペネトレーションテストを実行するツール",
+      "url": "https://zenn.dev/zer0m0hum0hu/articles/5445a3f4cbd019",
+      "publishedAt": "2026-11-07T18:03:51.000Z",
+      "summary": "こんにちはzer0です。 AlienPentestは、AI（Claude）が偵察・スキャン・エクスプロイト・レポートを自律的に判断・実行するKali Linux向けペネトレーションテスト自動化ツールです。ターゲットのIPアドレスを入力してLAUNCHするだけで、AIが全フェーズを通して判断・実行します。 AlienPentestとは ペネトレーションテスト（侵入テスト）は、実際の攻撃者と同じ手法を使ってシステムの弱点を見つける作業です。従来はnmap・nikto・gobusterといった専門ツールをひとつひとつ実行し、その出力を読み解いて次の手を考える必要がありました。これには深い専..."
+    },
+    {
+      "id": "s-b3fc043c0a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "git を知らなくても houritsu で法改正の差分を見る方法",
+      "url": "https://zenn.dev/koheiwada/articles/houritsu-guide-without-git",
+      "publishedAt": "2026-11-07T18:00:05.000Z",
+      "summary": "houritsu は日本の全法令を「改正法 1 本 = 1 コミット」の git リポジトリにしたものです（作った話）。この記事は、git を使わない人がこれを GitHub の画面だけで読むための手引きです。インストールもログインも要りません。 自分の興味だけで作ったので、誰が使うかは考えていませんでした。でも思ったより見られて、公認会計士の人や元裁判官の方にも見てもらえたようです。そういう人はたぶん git を使わないだろうな、と思ったので、使い方を書いておくほうが助けになると考えました。 画面は 2026-11-05 時点の GitHub のものです。例には個人情報保護法を使います..."
+    },
+    {
+      "id": "s-eb20fdeaf7",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "US intelligence: Jensen Huang had affair with Chinese spy; linked to smuggling",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-intelligence-believes-jensen-huang-had-romantic-relationship-with-chinese-spy-in-honeypot-operation-spy-suspect-linked-to-company-accused-of-smuggling-usd2-billion-in-ai-chips",
+      "publishedAt": "2026-11-07T18:00:02.000Z",
+      "summary": "points=19 comments=4 (Hacker News)"
+    },
+    {
+      "id": "s-f7fffb994d",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
+      "publishedAt": "2026-11-07T17:19:00.000Z",
+      "summary": "points=127 comments=33 (Hacker News)"
+    },
+    {
+      "id": "s-e33dc641ce",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Also experienced the Qwen3.8-Flash-Next URL issue",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqbjbf/also_experienced_the_qwen38flashnext_url_issue/",
+      "publishedAt": "2026-11-07T17:15:04.000Z",
+      "summary": "I was asking QFN (4.18bpw EXL3 quant via Pi) to help refactor a neovim configuration, and saw that it tried to find API keys and fetch an aliyuncs URL before I stopped it. I&#39;m not trying to start any arguments, nor am I assuming any malicious intent, but I found this a bit concerning after reading other&#39;s stories. &#32; submitted by &#32; /u/tacticaltweaker [link] &#32; [comments]"
+    },
+    {
+      "id": "s-04001b2fd0",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Effects of KV Cache Quantization on Qwen3.8 27B",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqbesv/effects_of_kv_cache_quantization_on_qwen38_27b/",
+      "publishedAt": "2026-11-07T17:09:51.000Z",
+      "summary": "KV cache quantization has been a hotly-debated topic for this community for some time, with opinions ranging from &quot;never quantize&quot; to &quot;4 bit is fine&quot;. Since the anecdotal evidence is rather inconsistent, I decided to quantify how much KV cache quantization affects the model through KLD, which is a good measure of how the model&#39;s output distribution is changed. I tested 35 w"
+    },
+    {
+      "id": "s-c2bbce9ae2",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "機能制限のつもりが「試乗禁止」になっていた話 —— バックアップツールのB2B試用設計を14日間フル開放に変えた理由",
+      "url": "https://zenn.dev/chililikobo/articles/c75512a76486f8",
+      "publishedAt": "2026-11-07T17:03:48.000Z",
+      "summary": "先日、自作のキャプチャ自動化ツール『ClickCapture』のB2B向け制限を見直し、「起動即ロック」から「20枚トライアル＋再起動でリセット」へ改修した知見をまとめました。 前回の記事はこちら： https://zenn.dev/chililikobo/articles/b897e4a56c769a その流れで、もう1つ個人開発しているWindows向けの定期バックアップツール 『Robocopy Scheduler』 のライセンス設計もAIにレビューしてもらったところ、形を変えた 「別の罠」 にハマっていることが判明しました。 今回は、常駐・定期実行型ツールにおけるトライアル設計の..."
+    },
+    {
+      "id": "s-9c1b016b92",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIやバイブコーディングで作ったゲームを、スマホで遊べるように公開する方法とハマりどころ",
+      "url": "https://zenn.dev/plumvery/articles/dd5babd0791704",
+      "publishedAt": "2026-11-07T16:57:49.000Z",
+      "summary": "はじめに Claude CodeやCodexなどの生成AIツールにより、バイブコーディングで手軽にブラウザゲームが制作できる時代になりました。 ただ、実際にゲームが1本できたあと、次に迷いやすいのが「どこに置けば人に遊んでもらえるか」だと思います。 この記事では、その置き場所を決める参考に、公開先の候補になるサイトを並べて比べてみました。 今回は 2026年11月7日 に各サイトの公式ページ（ヘルプ・投稿ガイド・FAQ）を読んで調べました。 公式ページに記載が見つからなかったことは「記載なし」「見当たらない」と書き、推測では埋めていません。こうした条件は変わることがあるため、実際に出..."
+    },
+    {
+      "id": "s-15b0ed82c5",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "大学生のための「課題が終わる」AIプロンプト集15選",
+      "url": "https://zenn.dev/shinai/books/university-ai-assignment-prompts",
+      "publishedAt": "2026-11-07T16:48:58.000Z",
+      "summary": "ChatGPT・Claude・Geminiにコピペで使える、課題管理・レポート・試験対策のプロンプト15本。丸写しではなく「自分で考えて終わらせる」ための使い方に絞りました。最初の2章（はじめに・課題管理の4本）は無料で読めます。"
+    },
+    {
+      "id": "s-61627586a1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "DeepSeek Harnessを使ってみた：モード選び・テスト環境・プラグイン",
+      "url": "https://zenn.dev/algia/articles/deepseek-harness-intro",
+      "publishedAt": "2026-11-07T16:40:23.000Z",
+      "summary": "DeepSeek Harnessを使ってみた TL;DR インストールは npm 版がおすすめ（テスト環境を作りやすい） モードは基本的に標準モード。dsh 自身をいじるときはクリエイターモード 公式の実験的プラグインは、機能を見ながら有効化する サブスクリプションの OAuth ログインは、コーディングエージェントに頼めば使えるようになる 最初にクリエイターモードでテスト環境を作り、設定やプラグインはそこで試す コミュニティプラグインは AI にソースをチェックさせてから入れる。個人的にdsh-context、Better Sidebar、dsh-genui がおすすめ 欲し..."
+    },
+    {
+      "id": "s-3920c86ed3",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Godot のゲーム用 3D モデルを AI で作る方法（Meshy・Tripo・Rodin などとの比較つき）",
+      "url": "https://zenn.dev/zivaengine/articles/cb4edadb0c53ce",
+      "publishedAt": "2026-11-07T16:35:25.000Z",
+      "summary": "この記事は https://ziva.sh/blogs/godot-ai-3d-models の日本語版です（英語の原文は Ziva.sh が 2026年11月4日に公開）。 Godot エディタを離れずに 3D モデルを作るには、Godot の中で動く AI エージェント Ziva に頼みます。「金属の角補強が付いたローポリの木製宝箱を作って、テストシーンに置いて」のように入力すると、Ziva Pro または Ultra なら、Ziva が Blender の Python スクリプトを書き、PC にダウンロードした Blender でそれを実行し、レンダリングしたプレビューをチャット..."
+    },
+    {
+      "id": "s-53a2e419e2",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "画像・動画生成スキルは「どのキーで、どこに課金されるか」で選ぶ: Claude Code 向け SKILL.md を読み比べた",
+      "url": "https://zenn.dev/skillselion/articles/f9e8735f6b4f1c",
+      "publishedAt": "2026-11-07T16:31:51.000Z",
+      "summary": "Claude Code に画像生成スキルを入れて「ヒーロー画像を作って」と頼むと、最初に聞かれるのはプロンプトではなく、たいていログインかAPIキーです。Claude Code 自身はピクセルを描けません。画像・動画生成スキルの正体は、どこか1社のCLIやAPIを正しく呼ぶための手順書です。 そのため、選ぶときの軸は「どのモデルが一番きれいか」より先に「どのプロバイダのアカウントを作り、どの環境変数にキーを置き、どこから請求が来るか」になります。この記事では、インストール数の多い画像・動画生成スキルの SKILL.md を GitHub の最新版で読み直し、プロバイダ・認証・モデルの振り..."
+    },
+    {
+      "id": "s-fce077bd30",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "testing Qoduck (Maybe qwen4) on Qoder",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqafp1/testing_qoduck_maybe_qwen4_on_qoder/",
+      "publishedAt": "2026-11-07T16:28:52.000Z",
+      "summary": "I noticed that it has native image and video generation. &#32; submitted by &#32; /u/Consistent_Berry_324 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-caef732d51",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "llama_moe_cache: run missed experts on CPU, add tuning script by am17an · Pull Request #30966 · ggml-org/llama.cpp",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xqacka/llama_moe_cache_run_missed_experts_on_cpu_add/",
+      "publishedAt": "2026-11-07T16:25:06.000Z",
+      "summary": "This is a significant speedup for MoE offloading (low VRAM people). I tried Strata once, and it had some tuning mechanism, so probably this is a similar idea. &#32; submitted by &#32; /u/jacek2023 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-fa06ff8fdc",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
+      "url": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+      "publishedAt": "2026-11-07T15:50:00.000Z",
+      "summary": "Around 7PM each weeknight, I find myself standing in front of the fridge, trying to decide on something for dinner that won't make my husband complain, \"Chicken again?\" Yes, I should meal plan more, but I don't, so this is where I'm at. A nightly battle in which the chicken usually wins. Recently, my best […]"
+    },
+    {
+      "id": "s-5e8d8d4e4e",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "[Paper] DSpine - Draft in Parallel, Condition Through Depth: Adjacent Causal Injection for Speculative Decoding - tencent",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xq9hf6/paper_dspine_draft_in_parallel_condition_through/",
+      "publishedAt": "2026-11-07T15:48:50.000Z",
+      "summary": "Parallel speculative drafting generates multiple candidates in one backbone pass, but independent token selection can produce inconsistent continuations that shorten the accepted prefix. Existing methods mostly leave conditional decoding to a lightweight module after the backbone, which limits the flow of predecessor information to successors. Our analysis of DFlash shows that early positions alre"
+    },
+    {
+      "id": "s-73be1ddc7f",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "The US let Nvidia sell chips to an empty office in China",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "publishedAt": "2026-11-07T15:43:45.000Z",
+      "summary": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According to The New York Times, New Matrix is on the list of approved firms, yet its offices are empty, \"a hollow gray shell […]"
+    },
+    {
+      "id": "s-b6fa92626f",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Qwen3.8-Flash-Next Gyro S on a Valve Steam Machine (8 GB AMD GPU, 32 GB RAM): about 18 t/s decode, about 235 t/s prefill, stock SteamOS",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xq8s2n/qwen38flashnext_gyro_s_on_a_valve_steam_machine_8/",
+      "publishedAt": "2026-11-07T15:18:29.000Z",
+      "summary": "I followed up on the post about running Qwen 3.8 Flash Next with 8 GB VRAM and 32 GB RAM. I wanted to see how it does on my Steam Machine. Setup Valve Steam Machine, stock SteamOS 3.9.5, AMD Navi 33 with 8 GB, 32 GB RAM, NVMe Stock Strata terminal 0.2.9 (engine 0.1.55, HIP package), Gyro S TQ1_0 128K context, q4_0 KV, no vision, MTP off, served on the LAN Results (Strata&#39;s own timing line from"
+    },
+    {
+      "id": "s-055e03fe8f",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "AI broke the cybersecurity world. What’s next?",
+      "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+      "publishedAt": "2026-11-07T15:00:00.000Z",
+      "summary": "Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series looking at AI in real life. I’ve always enjoyed talking to Alex because he’s so direct, and you’re going to hear him say […]"
+    },
+    {
+      "id": "s-8879475e62",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Why a new report on Anthropic automating AI development is alarming researchers",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+      "publishedAt": "2026-11-07T12:30:00.000Z",
+      "summary": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety research organization METR, following an 11-week investigation […]"
+    },
+    {
+      "id": "s-aece560f5c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "シーリングライトの様子がおかしいので蓋開けて中を見てみたらこの有様「みたらし団子かと」「何がどうしてそうなった？」",
+      "url": "https://togetter.com/li/2767778",
+      "publishedAt": "2026-11-07T12:12:25.000Z",
+      "summary": "綺羅星ここな @hotocona_zero 明るさと色味の変化可能なLED灯が全く白くならなくなったから掃除+電気の替え時かと思ってたらなんだこれは…… え、何がどうしてそうなったの？？ pic.x.com/eoF1wL8XtG 2026-11-07 12:27:11"
+    },
+    {
+      "id": "s-635097de1f",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AI時代に求められる優秀なTechLeadの振る舞い",
+      "url": "https://speakerdeck.com/pospome/ai-jidai-ni-motomerareru-yuushuuna-techlead-no-furumai-2",
+      "publishedAt": "2026-11-07T11:25:01.000Z",
+      "summary": "\"TechLead Conference 2026 Autumn powered by connpass\" の登壇資料です。"
+    },
+    {
+      "id": "s-68be897c8b",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Libghostty 1.0",
+      "url": "https://mitchellh.com/writing/libghostty-1-0",
+      "publishedAt": "2026-11-07T11:09:17.000Z",
+      "summary": "libghostty-vt 1.0 is here. libghostty is a portable, high-performance C library for terminal emulation, extracted directly from the core of Ghostty. The 1.0 release means both the library itself and the C ABI are now stable. A little over a year ago, I wrote that libghostty is coming. At the time..."
+    },
+    {
+      "id": "s-ca6143d1ab",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AI時代に求められる優秀なTechLeadの振る舞い - pospomeのプログラミング日記",
+      "url": "https://www.pospome.work/entry/2026/11/07/192125",
+      "publishedAt": "2026-11-07T10:23:56.000Z",
+      "summary": "\"TechLead Conference 2026 Autumn powered by connpass\" の登壇資料です。 概要： 生成AIの進化によって、ソフトウェア開発のあり方は大きく変化しています。AIがコードを書く時代になり、技術的な知識や経験だけでなく、TechLeadとしてどのような価値を生み出すべきなのか、改めて考える必要があるのではないでしょう..."
+    },
+    {
+      "id": "s-c5e295e32d",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ISUCON2026をClaude Codeが優勝したらしい｜laiso",
+      "url": "https://sizu.me/laiso/posts/k59is4cnd77f",
+      "publishedAt": "2026-11-07T10:00:45.000Z",
+      "summary": "タイトルは釣りです（懐かしいブログ仕草） 正確には、元Wantedly CTOのkawasyさんが、ISUCON参加に向けて3ヶ月以上の試行錯誤をしたハーネスを、本番では無停止で自律的に8時間動作させて1位のスコアを叩き出したらしい。 もちろん他のチームも競技にClaude CodeやCodexなどを大活用して挑んだようだけど、完全自律実行..."
+    },
+    {
+      "id": "s-611fb402e8",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "桜井政博氏、生成AIへの考えかたを示す。「いまのところは使っていない」し、「どこかへの搾取になってはいけない」。一方で現在の“大変すぎるゲーム開発”への懸念も【ファミ通40周年フェス】 | ゲーム・エンタメ最新情報のファミ通.com",
+      "url": "https://www.famitsu.com/article/202611/93352",
+      "publishedAt": "2026-11-07T09:49:08.000Z",
+      "summary": "グラフィック方面での生成AIの活用については、「未だに信用を得られていない」し、「どこかへの搾取になってはいけない」。また、「自分たちで考えたほうがいまのところはよいものができる」と考えているという。 ただ、ゲーム業界全般に視野を広げると、「いまのゲームを作るのは大変すぎる」とし、「何百万本も売れて..."
+    },
+    {
+      "id": "s-e44aef755d",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ハーネスエンジニアリングを有名OSSはどう組んでいるのか？AIへの信頼で比べる5事例",
+      "url": "https://gibberishlab.com/blog/oss-ai-agent-harness-philosophy",
+      "publishedAt": "2026-11-07T09:20:09.000Z",
+      "summary": "信頼の厚さの評価はハーネスの設計から読み取った筆者の解釈で、プロジェクトの規模や開発文化の違いも影響しているはずです。各行の根拠はそれぞれの節で引用しています。 信頼が厚いZedとSentryは、ハーネスに書く量を最小限にして、残りをAIの判断に任せています。中間のOpenClawはAIを自走させる一方で、判断の仕方..."
+    },
+    {
+      "id": "s-39c140690d",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "パブリックサブネットを持たない Web配信基盤の現在地 | ドクセル",
+      "url": "https://www.docswell.com/s/suzryo/KDMX88-2026-11-07-160134",
+      "publishedAt": "2026-11-07T07:55:03.000Z",
+      "summary": "パブリックサブネットを持たない Web配信基盤の現在地 — CloudFront VPCオリジンの仕組みと2026/7/16障害を解説します クラスメソッド株式会社 鈴木 亮（@suzryo） SHIFT トラック ｜ 2026/11/07 15:05〜15:20 #jawsug #jawsfesta2026"
+    },
+    {
+      "id": "s-d62fbfe2fc",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "[AINews] Anthropic IPO: Whither Now?",
+      "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/",
+      "publishedAt": "2026-11-07T03:04:53.000Z",
+      "summary": "November 6, 2026 — ARC Prize tests Inkling 2 Small, and Thinking Machines explains how it caught early checkpoints bypassing guardrails."
+    },
+    {
+      "id": "s-c2107a5a7c",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Crusoe sells troubled Wyoming data center project to Google",
+      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "publishedAt": "2026-11-07T01:40:28.000Z",
+      "summary": "The deal highlights the challenges of developing massive AI data centers."
+    },
+    {
+      "id": "s-6813d62fd9",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+      "publishedAt": "2026-11-06T23:46:18.000Z",
+      "summary": "OpenAI is now valued at $1.25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the world's most valuable companies, not long after raising $122 billion from investors in March at a valuation of $852 billion. Echoing FT and Wall Street Journal […]"
+    },
+    {
+      "id": "s-1bc7ba2a28",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "China reportedly recruited AI exec to spy on Jensen Huang",
+      "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+      "publishedAt": "2026-11-06T23:00:44.000Z",
+      "summary": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and \"potentially influence the company to push for its most advanced chips to be made available to China.\" Megaspeed […]"
+    },
+    {
+      "id": "s-118369de89",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "publishedAt": "2026-11-06T22:53:46.000Z",
+      "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks."
+    },
+    {
+      "id": "s-f0ab78f352",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AI面接を導入したのに、応募者情報は手入力？　採用現場の「二度手間」を解消へ",
+      "url": "https://kn.itmedia.co.jp/kn/article/2611/07/2000002951/",
+      "publishedAt": "2026-11-06T22:00:00.000Z",
+      "summary": "AI面接の導入で面接業務を効率化できても、応募者情報の登録や選考結果の転記など、採用担当者の手作業は残りがちだ。"
+    },
+    {
+      "id": "s-718d10c109",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「ChatGPTの回答にリンクがない＝見られていない」　実は違うAIの情報収集",
+      "url": "https://kn.itmedia.co.jp/kn/article/2611/07/2000002948/",
+      "publishedAt": "2026-11-06T22:00:00.000Z",
+      "summary": "ChatGPTやClaudeなどの生成AIに自社サイトが引用されていない場合、AIに情報を参照されていないと考えがちだ。だが、回答に表示されるリンクだけでは、AIがどのWebサイトを参考にしたのか分からない。"
+    },
+    {
+      "id": "s-19abb401f6",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AIで営業は効率化した、でもなぜ売れない？　成果を出す人が大切にしていること",
+      "url": "https://kn.itmedia.co.jp/kn/article/2611/07/2000002945/",
+      "publishedAt": "2026-11-06T22:00:00.000Z",
+      "summary": "AIで提案書の作成や情報収集は効率化できても、それだけで営業成績は上がるのか。AIを導入した営業現場で今、問われているのは、ツールを使いこなす力だけではない。"
+    },
+    {
+      "id": "s-6d7526357c",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "What’s new with Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/",
+      "publishedAt": "2026-11-06T17:00:00.000Z",
+      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start here: Google Cloud blog 101: Full list of topics, links, and resources . aside_block &lt;ListValue: []&gt; Nov 2 - Nov 6 Se"
+    },
+    {
+      "id": "s-904574e3ce",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+      "publishedAt": "2026-11-06T06:28:32.000Z",
+      "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source."
+    },
+    {
+      "id": "s-418da0ac28",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Anthropic、「Claude」に家計管理機能「Personal Finance」　銀行口座と連携、米国でβ提供",
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002935/",
+      "publishedAt": "2026-11-05T23:49:28.000Z",
+      "summary": "Anthropicは、AI「Claude」に個人の財務状況を把握できる新機能「Personal Finance」β版を追加した。Plaid経由で銀行やカード口座を連携し、支出のカテゴリ分けや家計分析を自然言語で行える。データは読み取り専用で資金移動はできず、学習にも使われない。米国の有料プラン向けに順次提供される。"
+    },
+    {
+      "id": "s-5b19e316eb",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「給与維持の週休3日制」AI効率化で実現　しかし社員が喜ばず……なぜ？　「ライザAI」提供企業で起きたこと",
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002867/",
+      "publishedAt": "2026-11-05T23:30:00.000Z",
+      "summary": "「給与維持の週休3日制」をAI効率化で実現した国内のAIスタートアップ。喜ばれると思ったものの、実際には社員は不安げだったという。いったいなぜ？"
+    },
+    {
+      "id": "s-6843abc901",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "OpenAI、サイバーセキュリティ特化型「GPT-6 Cyber」発表　Firefoxの未知の脆弱性81件を発見",
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002931/",
+      "publishedAt": "2026-11-05T22:57:34.000Z",
+      "summary": "OpenAIは、サイバーセキュリティ特化型AI「GPT-6 Cyber」を発表した。汎用モデル「Astra」をベースに脆弱性発見や攻撃コード開発能力を大幅に強化。提供先は厳格な審査を通過した防御者に限定され、高度なAIによる攻撃が普及する前に、防御側が重要インフラの保護やシステム修正を迅速に行えるよう支援する狙いだ。"
+    },
+    {
+      "id": "s-1eac7fe42e",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
+      "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+      "publishedAt": "2026-11-05T22:40:55.000Z",
+      "summary": "Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay."
+    },
+    {
+      "id": "s-2c07de9fe1",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "OpenAI、データセンター立地地域への約束と政策提言を発表　電力費の全額負担や公職者とのNDA不使用など",
+      "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002928/",
+      "publishedAt": "2026-11-05T22:03:55.000Z",
+      "summary": "OpenAIは、AI向けデータセンター（Compute Campusと呼び方を変更）の建設・運営に関する地域社会への約束と、政府向けの政策提言を発表した。電力や関連インフラ費用の全額負担、公職者との原則的なNDA不使用を盛り込むとともに、大口電力利用者への追加負担など、業界共通のルール作りを政府に求めている。"
+    },
+    {
+      "id": "s-c04401b650",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "SaaSの「ツギハギ管理」に悩んだクラシル、管理費24％を削減したAI時代のツール集約",
+      "url": "https://kn.itmedia.co.jp/kn/article/2611/06/2000002909/",
+      "publishedAt": "2026-11-05T22:00:00.000Z",
+      "summary": "SaaSの増加に伴い、台帳の突合や手動管理に追われる情シスは多い。クラシルはSaaS管理台帳を「zooba」へ集約し、ツール費用を24％削減した。しかし同社の真の目的はコスト削減ではなかった。クラシルの情シスが考える、AI時代のIT資産管理戦略とは。"
+    },
+    {
+      "id": "s-959d4470ae",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue",
+      "url": "https://arxiv.org/abs/2611.08433v1",
+      "publishedAt": "2026-11-05T18:27:20.000Z",
+      "summary": "LLM-based medical assistants that follow a patient across visits need a memory that keeps the patient's clinical state correct as it changes. We examine the errors of five memory systems on longitudinal medical dialogue and find three recurring causes: the retrieved evidence gives an outdated state, includes another person's health facts, or lacks a safety fact the answer depends on. We present Me"
+    },
+    {
+      "id": "s-d9642532b6",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+      "url": "https://arxiv.org/abs/2611.08428v1",
+      "publishedAt": "2026-11-05T18:22:24.000Z",
+      "summary": "Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of the interface itself and propose a ladder of levels: feature tutoring; metadata, settings, and pref"
+    }
+  ]
+}
