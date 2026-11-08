@@ -1,0 +1,520 @@
+{
+  "date": "2026-11-09",
+  "collectedAt": "2026-11-08T22:00:30.413Z",
+  "sourceSuccessCount": 23,
+  "items": [
+    {
+      "id": "s-88a615e857",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "langchain-ai/deepagents: The batteries-included agent harness.",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "publishedAt": "2026-11-08T22:00:05.000Z",
+      "summary": "★31107 The batteries-included agent harness."
+    },
+    {
+      "id": "s-21eb099d4d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "ashhart/TensorFold: LLM Inference Engine for Metal, CUDA and Vulkan.",
+      "url": "https://github.com/ashhart/TensorFold",
+      "publishedAt": "2026-11-08T21:58:50.000Z",
+      "summary": "★1700 LLM Inference Engine for Metal, CUDA and Vulkan."
+    },
+    {
+      "id": "s-6d8d9bad07",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "smithersai/smithers: Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably",
+      "url": "https://github.com/smithersai/smithers",
+      "publishedAt": "2026-11-08T21:58:46.000Z",
+      "summary": "★446 Smithers is an agentic workflow framework for defining workflows in simple TypeScript configuration files and executing them quickly, durably, and reliably"
+    },
+    {
+      "id": "s-da26989850",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "kirodotdev/KiroCrew: A persistent workspace for development work that self-improves and continues beyond one session.",
+      "url": "https://github.com/kirodotdev/KiroCrew",
+      "publishedAt": "2026-11-08T21:58:38.000Z",
+      "summary": "★4835 A persistent workspace for development work that self-improves and continues beyond one session."
+    },
+    {
+      "id": "s-8aebe16199",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "intuitem/ciso-assistant-community: CISO Assistant is a one-stop-shop GRC platform for Risk Management, AppSec, Compliance & Audit, TPRM, BIA, Privacy, and Reporting. It supports 200+ global frameworks with automatic control mapping, including ISO 27001, NIST CSF, SOC 2, CIS, PCI DSS, NIS2, DORA, GDPR, HIPAA, CMMC, and more.",
+      "url": "https://github.com/intuitem/ciso-assistant-community",
+      "publishedAt": "2026-11-08T21:58:25.000Z",
+      "summary": "★4601 CISO Assistant is a one-stop-shop GRC platform for Risk Management, AppSec, Compliance & Audit, TPRM, BIA, Privacy, and Reporting. It supports 200+ global frameworks with automatic control mapping, including ISO 27001, NIST CSF, SOC 2, CIS, PCI DSS, NIS2, DORA, GDPR, HIPAA, CMMC, and more."
+    },
+    {
+      "id": "s-930dd1342c",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "NousResearch/hermes-agent: The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "publishedAt": "2026-11-08T21:58:19.000Z",
+      "summary": "★261739 The agent that grows with you"
+    },
+    {
+      "id": "s-dbc443423e",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "The-PR-Agent/pr-agent: 🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
+      "url": "https://github.com/The-PR-Agent/pr-agent",
+      "publishedAt": "2026-11-08T21:58:06.000Z",
+      "summary": "★15587 🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier."
+    },
+    {
+      "id": "s-af2a47ae85",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Gentleman-Programming/gentle-ai: Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, OpenCode, Codex, Pi, and more. Choose persistent memory, Organic-Driven Development, curated skills, MCP servers, personas, and optional bounded review. Open source, no agent lock-in.",
+      "url": "https://github.com/Gentleman-Programming/gentle-ai",
+      "publishedAt": "2026-11-08T21:57:39.000Z",
+      "summary": "★8616 Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, OpenCode, Codex, Pi, and more. Choose persistent memory, Organic-Driven Development, curated skills, MCP servers, personas, and optional bounded review. Open source, no agent lock-in."
+    },
+    {
+      "id": "s-27bd3a417f",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "michaelfeil/infinity: Infinity is a high-throughput, low-latency serving engine for text-embeddings, reranking models, clip, clap and colpali",
+      "url": "https://github.com/michaelfeil/infinity",
+      "publishedAt": "2026-11-08T21:57:21.000Z",
+      "summary": "★2984 Infinity is a high-throughput, low-latency serving engine for text-embeddings, reranking models, clip, clap and colpali"
+    },
+    {
+      "id": "s-0a88cdac1d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "BasedHardware/omi: AI that sees your screen, listens to your conversations and tells you what to do",
+      "url": "https://github.com/BasedHardware/omi",
+      "publishedAt": "2026-11-08T21:56:59.000Z",
+      "summary": "★13925 AI that sees your screen, listens to your conversations and tells you what to do"
+    },
+    {
+      "id": "s-ce45241cef",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "cyberlife-coder/VelesDB: The explainable, local-first memory engine for AI agents. One ~9 MB binary fuses vector + graph + columnar under VelesQL; why() returns the evidence path behind every recall. No cloud, no glue code — runs on server, browser, mobile and desktop.",
+      "url": "https://github.com/cyberlife-coder/VelesDB",
+      "publishedAt": "2026-11-08T21:56:38.000Z",
+      "summary": "★102 The explainable, local-first memory engine for AI agents. One ~9 MB binary fuses vector + graph + columnar under VelesQL; why() returns the evidence path behind every recall. No cloud, no glue code — runs on server, browser, mobile and desktop."
+    },
+    {
+      "id": "s-6e5ec8cd9b",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "lidge-jun/opencodex: Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+      "url": "https://github.com/lidge-jun/opencodex",
+      "publishedAt": "2026-11-08T21:55:44.000Z",
+      "summary": "★18300 Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code"
+    },
+    {
+      "id": "s-25be5e9d5b",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "プログラミング雑記 2026年11月9日",
+      "url": "https://qiita.com/ishisaka/items/f2c07aaf4e678e1c36c3",
+      "publishedAt": "2026-11-08T21:55:31.000Z",
+      "summary": "今日もネットで見つけた技術ニュースや記事の中から、個人的に気になったものを厳選して紹介します。ご意見や補足があればコメントで教えていただけると嬉しいです。 セキュリティ muslベースのLinux環境（Alpineなど）のOpenSSHにおいて、パスワード認証を回..."
+    },
+    {
+      "id": "s-9c7e75a27e",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+      "url": "https://latent.space/p/cs146s/",
+      "publishedAt": "2026-11-08T21:41:44.000Z",
+      "summary": "What happens when students can one-shot last year’s homework? Inside CS146S and the engineering team at Monaco."
+    },
+    {
+      "id": "s-6b30b33472",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+      "url": "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/",
+      "publishedAt": "2026-11-08T21:23:29.000Z",
+      "summary": "What do you assign when a coding agent can finish last year’s homework in one prompt? In the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have to learn an unfamiliar repo, propose a change, and ..."
+    },
+    {
+      "id": "s-5215fe0edd",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Resurrecting 2013 E-Waste: Native CUDA Mamba-1 & PyTorch 2.7.1 on Windows (Kepler–Turing, SM 3.5–7.5)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr97iz/resurrecting_2013_ewaste_native_cuda_mamba1/",
+      "publishedAt": "2026-11-08T21:09:11.000Z",
+      "summary": "Hello! I want to share an active development project. If you have a drawer full of old NVIDIA GPU&#39;s collecting dust because modern AI stacks refuse to compile for them, this is for you. I have ported the modern LLM training stack on Windows to legacy CUDA GPUs (sm_35 through sm_75): PyTorch (v2.7.1) (custom build compiled with CUDA 11.8, keeping the legacy SASS) ([ https://github.com/theIvanR/"
+    },
+    {
+      "id": "s-2f7eaa042f",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIに映像を任せきりにしない。助監督役のAIと相談し、実写と同じ順番で作る「MaiStory」が公開",
+      "url": "https://qiita.com/quotidia/items/93a94b12bd86767e5f75",
+      "publishedAt": "2026-11-08T21:00:54.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 東京・中野のFlowersKnivesは2026年11月7日(土)、AIの助監督「Mai AD」と相談しながら、企画から動画の生成までを一人で進める映像制作のサービス「MaiStory」のVe..."
+    },
+    {
+      "id": "s-45da799466",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Nvidia will investigate CEO Jensen Huang’s relationship with possible Chinese spy",
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "publishedAt": "2026-11-08T21:00:11.000Z",
+      "summary": "In a memo to the company, Huang admitted that he had an affair."
+    },
+    {
+      "id": "s-e9aa4306ae",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "コクヨが開発部門の「資料散乱」をAIでゼロに　「Notion」をどう使ったか？",
+      "url": "https://kn.itmedia.co.jp/kn/article/2611/09/2000002973/",
+      "publishedAt": "2026-11-08T21:00:00.000Z",
+      "summary": "社内に情報は蓄積されているのに、必要な資料が見つからない、十分に活用できない。こうした課題は開発組織でも起こりがちだ。コクヨはNotionとAIエージェントを組み合わせ、情報管理から文書レビューまでを効率化する仕組みづくりに取り組んだ。"
+    },
+    {
+      "id": "s-18368261da",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Python requests のデバッグで API キーがそのまま出る：logging DEBUG では出ず debuglevel=1 で Authorization が丸見え（実機確認）",
+      "url": "https://qiita.com/supportapp3/items/648fc00169c38050f031",
+      "publishedAt": "2026-11-08T20:15:54.000Z",
+      "summary": "結論 Python の requests で通信をデバッグするとき、logging を DEBUG にしただけなら Authorization ヘッダーの値は出ませんでした。出たのは \"GET / HTTP/1.1\" 200 のような1行だけです（2026-11-09、..."
+    },
+    {
+      "id": "s-302900397f",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Intel Arc Pro B70 32GB ($1,299) vs NVIDIA RTX 5090 ($6,500+) on Qwen3.8-27B: about 1/2 speed gen (1/3 speed prefill) for 1/5 price, after best setup",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr78s5/intel_arc_pro_b70_32gb_1299_vs_nvidia_rtx_5090/",
+      "publishedAt": "2026-11-08T19:46:49.000Z",
+      "summary": "I got an Arc Pro B70 (32GB) last week for $1,299 direct from ASRock official store on Amazon (B65 is also 32GB but slower, and was only $100 cheaper at $1,199, so I &quot;splurged&quot;). Obviously I&#39;d have wanted a 5090 for the same VRAM and best speeds, but 5090s are going for $6,500+ on Newegg right now (and I personally have too much fear to buy used hardware), so I wanted to see how close"
+    },
+    {
+      "id": "s-0b912bf847",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Kimi-K3.1-Pro-Coder (2.8T) | 1.77 TB -> 775 GB (-56%) | 36.8 TPS (Batch) / 10.8 TPS on 1x Blackwell | 96.7% on both AIME 2025 and LiveCodeBench",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr777l/kimik31procoder_28t_177_tb_775_gb_56_368_tps/",
+      "publishedAt": "2026-11-08T19:45:03.000Z",
+      "summary": "Up front: I know a 775 GB quant is not for everyone , and this is definitely a more experimental setup and quant than I usually do, but I think it was a great stress-test of what&#39;s possible and I believe there is more improvement possible in the future. That said, the base Kimi-K3.1-Pro is a 2.8T parameter monster (~1.77 TB even in native MXFP4/BF16), which normally means you&#39;re looking at"
+    },
+    {
+      "id": "s-45fb196cb1",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "How I Fight AI Brain Fry",
+      "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+      "publishedAt": "2026-11-08T19:37:42.000Z",
+      "summary": "points=92 comments=79 (Hacker News)"
+    },
+    {
+      "id": "s-ad0d675b6c",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "自作MCPサーバー その3",
+      "url": "https://qiita.com/ohisama@github/items/01be914e184f847f4106",
+      "publishedAt": "2026-11-08T19:36:04.000Z",
+      "summary": "概要 MCPサーバーが気になったので、調べてみた。 AIに聞いた。 MCPサーバーの自作は、alexaのスキル開発に似てる。 その感覚は非常に鋭く、本質を突いています。 MCP（Model Context Protocol）サーバーの自作と、Alexaスキル開発は、どち..."
+    },
+    {
+      "id": "s-004b2c689f",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation: This will completely change everything!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr6krp/nextconcept_modeling_fast_parallel_coarsetofine/",
+      "publishedAt": "2026-11-08T19:19:39.000Z",
+      "summary": "Essentially we could very soon run opus 5.5 level of intelligence on 32gb Vram. Its many folds more efficient in terms of memory bandwidth making compute the real bottleneck. What do you think? &#32; submitted by &#32; /u/Lorian0x7 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-53044e44b3",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Apple is racing to make Siri more agentic",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+      "publishedAt": "2026-11-08T19:18:19.000Z",
+      "summary": "Bloomberg's Mark Gurman says CEO John Ternus is pressuring AI czar Craig Federighi to accelerate the Siri roadmap and deliver a powerful AI agent that can compete with OpenAI's Dots or Meta's Muse. While Federighi has delivered a functional version of Siri AI on an incredibly short timeline, the company has no illusions that it's […]"
+    },
+    {
+      "id": "s-a5be5200e0",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Canada's AI translation tool keeps making hilarious mistakes",
+      "url": "https://www.blogto.com/tech/2026/11/canada-ai-translation-tool-making-mistakes/",
+      "publishedAt": "2026-11-08T18:52:42.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-d8ba3532e1",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Silicon Valley Promises AI Will Cure Disease. Drugmaker CEOs Aren't Buying It",
+      "url": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+      "publishedAt": "2026-11-08T18:43:07.000Z",
+      "summary": "points=79 comments=88 (Hacker News)"
+    },
+    {
+      "id": "s-9eb9b6b22e",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Anyone tried this yet?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr4ue4/anyone_tried_this_yet/",
+      "publishedAt": "2026-11-08T18:09:03.000Z",
+      "summary": "Terminal-RSI-27B is a Qwen3.8-27B-based terminal-agent model released by the Terminal-RSI project. It is intended for repository inspection, code editing, dependency repair, scientific workflow reconstruction, and other multi-step tasks that require interaction with an executable environment and verification of the resulting state. Terminal-RSI alternates Recursive Self-Rewrite (RSR) of verified e"
+    },
+    {
+      "id": "s-3c75822e3e",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Show HN: Email-like interface to review, decide, and annotate agent work",
+      "url": "https://plannotator.ai/inbox/",
+      "publishedAt": "2026-11-08T17:57:01.000Z",
+      "summary": "points=6 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-09e883c2e8",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "What are people finding local models actually useful for?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr4iv0/what_are_people_finding_local_models_actually/",
+      "publishedAt": "2026-11-08T17:56:13.000Z",
+      "summary": "I think that a lot of people get into local models because they get a sense of potential with this stuff, but it can be hard to make local models concretely useful sometimes, compared to frontier models. I think it would help people a lot if we had a place where people shared concretely what they find them most useful for, in the form of what model they&#39;re running. I&#39;ll start. I&#39;m runn"
+    },
+    {
+      "id": "s-1b455684ad",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "GPT-5.5 dataset across my used 25 billion tokens!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr3ymf/gpt55_dataset_across_my_used_25_billion_tokens/",
+      "publishedAt": "2026-11-08T17:32:48.000Z",
+      "summary": "Cheers for u/New_Comfortable7240 for santitisation! 12,121 tool calls here! &#32; submitted by &#32; /u/-MaskNinja- [link] &#32; [comments]"
+    },
+    {
+      "id": "s-14e604842b",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Motion graphics video made with Qwen3.8 Flash Next GSQ RCO IQ3_XXS on strata",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xr3qes/motion_graphics_video_made_with_qwen38_flash_next/",
+      "publishedAt": "2026-11-08T17:23:29.000Z",
+      "summary": "I&#39;ve seen the insane motion graphics videos people made when opus 5.5 first came out and wondered how good QFN would do with the same recipe. Decided to make a short video for my nephew who loves trains This is Qwen3.8 Flash Next GSQ RCO IQ3_XXS on 16GB VRAM RTX 4080 + 64GB DDR5 5600 with strata and opencode at about 95 tps decode and 3000 tps prefill. It took ~40 minutes for the first render,"
+    },
+    {
+      "id": "s-ae06ecf718",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Elvis and Eminem rights holders are suing Suno",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "publishedAt": "2026-11-08T17:23:19.000Z",
+      "summary": "Suno is facing yet another pair of lawsuits. A group of rights holders of Elvis Presley's music and the publisher of some of Eminem's biggest records are suing the AI music company, claiming it illegally generates music and lyrics that mimic those artists. The lawyers in the Presley suit claim that Suno has violated Tennessee's […]"
+    },
+    {
+      "id": "s-7f83204997",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "What can I realistically do with local AI on a Mac mini M5 Pro (48GB)?",
+      "url": "https://lobste.rs/s/umsitb/what_can_i_realistically_do_with_local_ai",
+      "publishedAt": "2026-11-08T17:07:51.000Z",
+      "summary": "I just got a Mac mini with an M5 Pro (base CPU config) and 48GB of unified memory. I want to run as much AI locally as makes sense, but it's hard to separate what actually works day to day from benchmark hype. What I'd like to do: Coding: autocomplete and agentic workflows with local models Image generation Anything else genuinely useful: transcription, RAG over my notes, etc. Questions: Which mod"
+    },
+    {
+      "id": "s-ec5810c516",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude × サスケWorks で、目標設定から評価までの自動化を試してみた ― promptfoo を添えて",
+      "url": "https://zenn.dev/interpark/articles/315a520d9590b3",
+      "publishedAt": "2026-11-08T16:53:20.000Z",
+      "summary": "人事の眞鍋さんと、目標管理をテーマにそれぞれツールを作りました。 目指しているのは、会社の成長と、一人ひとりが納得して働けること。そのために何ができるかを、人事とエンジニア、それぞれの立場から考える企画です。 眞鍋さんは、「本人がどうなりたいか」から目標を考えるツールを。私は、「やった仕事をどう評価するか」から逆算して、目標設定と評価をつなぐツールを作りました。 使ったのは、どちらも Claude とサスケWorks です。 同じ課題に、同じ道具で、逆方向から答えてみる。この記事では、エンジニア側の考え方と、作ってみて分かったことを紹介します。 ! なお、今回紹介するのは、私自身のデータ..."
+    },
+    {
+      "id": "s-a857eddbc8",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIとの共同作業が楽しくなってきた — 分かってきたことと、まだ見えない深淵",
+      "url": "https://zenn.dev/sugitakenji/articles/a248cfd0475e29",
+      "publishedAt": "2026-11-08T16:38:14.000Z",
+      "summary": "最近、楽しくなってきた 最近、AIとの共同作業が楽しくなってきました。 文章を書き、技術資料を読み直し、プログラムを直し、出来上がったものを確かめる。そうした仕事を一緒に進める中で、「ここをもう少し変えてみよう」「それなら、次はこれもできるのではないか」と思う場面が増えています。 一つの仕事が片付くとうれしい。その過程で、最初には考えていなかったことが見えてくるのも面白い。完成したものを見る楽しさと、考えながら作っている時間の楽しさがあります。 AIがどのようなものなのか、少し分かってきた気がします。 どのような材料を渡せば仕事が進むのか。どこで意図がずれやすいのか。何を任せ、何を自..."
+    },
+    {
+      "id": "s-818e63807e",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "One of Classical Music's Biggest Stars Says AI Is Degrading Our Taste",
+      "url": "https://www.bloomberg.com/features/2026-max-richter-weekend-interview/",
+      "publishedAt": "2026-11-08T16:32:55.000Z",
+      "summary": "points=6 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-d3228935ad",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "人生タイムライン",
+      "url": "https://ltimeline.com/ja/",
+      "publishedAt": "2026-11-08T15:27:37.000Z",
+      "summary": "あなた 生年月日を入れるだけで描けます。ほかの項目は任意です。"
+    },
+    {
+      "id": "s-34520e7f74",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
+      "publishedAt": "2026-11-08T15:19:51.000Z",
+      "summary": "points=34 comments=56 (Hacker News)"
+    },
+    {
+      "id": "s-e8f4b82a2a",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Drones built to look like birds evaded detection at Air Force tech exercise",
+      "url": "https://taskandpurpose.com/news/drone-mimicking-bird-test/",
+      "publishedAt": "2026-11-08T15:00:42.000Z",
+      "summary": "points=53 comments=41 (Hacker News)"
+    },
+    {
+      "id": "s-f4cf052a9b",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "できるだけ無料でHuman-out-of-the-loop（HOOTL）を作ってみた",
+      "url": "https://zenn.dev/ts/articles/ee4686f0ad0309",
+      "publishedAt": "2026-11-08T14:43:23.000Z",
+      "summary": "はじめに 自宅のWindows PCで、GitHubのIssueをトリガーとして、調査・作成・別のAIによる検証・修正までを人の手を離れて進めるHuman-out-of-the-loop（HOOTL）なエージェントの仕組みを、実験しています。人が関わるのは、最初にIssueでゴールを決めるときと、最後に結果を確認するときだけです。本記事には、その過程で得た知識を記載しました。実験用の構成なので、本番運用には向かないサービスも利用しています。 また、この記事は、作りながら自分の理解を整理するためのメモでもあります。仕組みの説明に加えて、設計で迷ったところと、実際にハマったところをなるべ..."
+    },
+    {
+      "id": "s-2be8aaa8f5",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "AI stance is not binary",
+      "url": "https://carette.xyz/posts/ai-stance-is-not-binary/",
+      "publishedAt": "2026-11-08T14:24:58.000Z",
+      "summary": "points=9 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-461ba1a1d5",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "NVIDIA/auto-ontologyを動かしたら、素朴なtext-to-SQLより遅く間違えた",
+      "url": "https://zenn.dev/matsushima_a/articles/day-040-auto-ontology-sql-hallucination",
+      "publishedAt": "2026-11-08T14:22:50.000Z",
+      "summary": "これは何を試した記事か NVIDIAが公開しているauto-ontology(Apache-2.0)は、データベースのメタデータから「オントロジー」(ビジネス用語・テーブル関係・SQL属性の集合)を自動生成し、AIエージェントが自然言語の質問を正確なSQLに変換できるようにするフレームワークである。 README・モデルカードが掲げる価値は明快で、「エージェントが誤ったテーブル/カラムを参照してSQLを生成してしまう問題」を、事前に構築したオントロジーの知識で防ぐ、というものだ。 筆者はこれを実際にDocker Composeで自分のPCに構築し、2テーブルだけの小さなサンプルDuc..."
+    },
+    {
+      "id": "s-791860cf01",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI に授業ノートを作らせているけれど、理解したことにはならない",
+      "url": "https://zenn.dev/tomnotelog/articles/ai-notes-reduce-friction-before-understanding",
+      "publishedAt": "2026-11-08T14:22:38.000Z",
+      "summary": "はじめに 授業のメモと文字起こしを使って、Claude Code に整形ノートを作ってもらっています。 楽になったのは、情報を補って、読み返せる形にする作業。 ノートが出来上がったことと、私が内容を理解したことは分けています。 自分なりに作った「ノートを書く UI」。この捉え方が一番近いです。 授業中の変化 AI に後から補ってもらえることで、授業中の気持ちは少し変わりました。 聞き漏らしても、書き漏らしても、録音から拾い直せる。 全部をその場でメモしなければ、という焦りが減ったのは嬉しいところです。 私の感覚では、タイプミスも減り、先生の話を聞くことに集中しやすくなりました。 ..."
+    },
+    {
+      "id": "s-939fe64247",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "週刊 ローカルLLM＆AIコーディングツール更新まとめ（10/31〜11/6）",
+      "url": "https://zenn.dev/girigiri_se/articles/8dedadbc54a425",
+      "publishedAt": "2026-11-08T14:00:44.000Z",
+      "summary": "はじめに 今回から、ローカルLLMとAIコーディングツールの更新を、毎週まとめていくことにしました。 自分はこれまで、Qiita でローカルLLMや自宅サーバー、AIを使った個人開発の記事を書いてきました。 ただ、Ollama や Open WebUI、Claude Code などは更新がとても速く、追いかけるだけでも手間がかかります。 しかも一次情報の多くは英語の GitHub に散らばっています。 そこで、自分の確認も兼ねて、週に一度まとめて残していくことにしました。 まとめ方は次のとおりです。 各ツールの GitHub のリリースノートや変更履歴をもとに、要点を日本語で整理し..."
+    },
+    {
+      "id": "s-7fb5827e3d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "変異は生成できても、テストの穴はそれだけでは見つからない",
+      "url": "https://zenn.dev/miyakona/articles/mutation-generator-needs-structural-review",
+      "publishedAt": "2026-11-08T13:55:46.000Z",
+      "summary": "AIエージェントにコードの修正を任せるとき、テストが通ったという報告だけでは、テストが変更を守れているかまでは分かりません。そこで、push前のセルフレビューに「わざとコードを壊し、それでもテストが通るか」を確かめる担当を置いていました。 この担当もAIエージェントです。実装を読み、壊した版の一覧をJSONで作り、実行用のハーネスへ渡します。ハーネスは、変異を1件ずつ当ててテストを実行する仕組みです。コードの一部を意図的に変えたものを変異、その変異でテストの効きを確かめる技法をミューテーションテストと呼びます。 ただ、1回のレビューで数百件の変異を書くようになると、比較演算子や定数を1つ..."
+    },
+    {
+      "id": "s-e3fd6cf566",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude の新モデルが $0 で集計されていたら、翌朝のバッチで気づけるようにした",
+      "url": "https://zenn.dev/kazusa_nakagawa/articles/202610-model-rate-check",
+      "publishedAt": "2026-11-08T13:48:35.000Z",
+      "summary": "要点 Claude Code のトークン使用量を API 料金換算で表示するモニターを自作しています。料金は手で書いた料金表から計算しているので、新しいモデルが出ると、そのモデルの分だけ $0 になります。 実際に一度、新モデルを 1 週間で 1 億 2,600 万トークン使っていたのに、その分が $0 として集計され、3 週間気づきませんでした。画面には注意書きが出ていましたが、読んでいませんでした。 そこで、料金表にないモデルが使われたら翌朝のバッチを失敗させるチェックを入れました。この記事の内容は次の 4 点です。 ! 料金を返す API が見つからなかったので、料金表は自動..."
+    },
+    {
+      "id": "s-c8e90bd315",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "日本で言う「活け締め」をAIロボで自動化したらしいんだが、ビジネスの組み方賢すぎる.",
+      "url": "https://posfie.com/@su_damari/p/xvcxjNy",
+      "publishedAt": "2026-11-08T10:45:23.000Z",
+      "summary": "Ole Lehmann @itsolelehmann we have a winner for the most absurd AI startup ever this Peter Thiel backed company uses AI robots to stab fish in the brain so they taste better and last up to 3x longer it's called Shinkei and it modernizes a centuries-old Japanese technique dozens of Michelin-star r..."
+    },
+    {
+      "id": "s-79d44940a5",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Claude Codeの「今後確認しない」が秘密情報をGitHubに漏らす — 1,122件の公開ファイルに1,379件の秘密情報 - Dev & Gadget Note",
+      "url": "https://dev.ponkotsu.dev/entry/claude-code-settings-local-secrets",
+      "publishedAt": "2026-11-08T10:31:52.000Z",
+      "summary": "Claude Codeで「Yes, and don't ask again（今後確認しない）」を選ぶと、承認したコマンドがそのままプロジェクト内の.claude/settings.local.jsonに保存されます。コマンドにパスワードやAPIキーが含まれていると、平文のまま残ります。セキュリティ企業Apiiroの調査（11月7日公表）では、公開GitHubリポジトリにある..."
+    },
+    {
+      "id": "s-d180deb504",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "警告:ジャンプルーキーはそのうちAI漫画で埋まる",
+      "url": "https://anond.hatelabo.jp/20261108174809",
+      "publishedAt": "2026-11-08T08:51:31.000Z",
+      "summary": "ジャンプ＋ならともかく、ジャンプルーキーを読んでいるのはよほどの漫画好き、もしくは漫画家志望者だろう。 ジャンプルーキーは投稿に制限や審査がほぼなく、下手だろうが未完成だろうが好きに投稿できる。 はっきり言えば玉石石石石石…混淆なのだが、その中からルーキー賞などを経て、ジャンプ＋の読み切りなどに頭角..."
+    },
+    {
+      "id": "s-4302af2a92",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "GitHub - DIYgod/pinky: Let AI agents use your phone, with you in the loop.",
+      "url": "https://github.com/DIYgod/pinky",
+      "publishedAt": "2026-11-08T07:40:07.000Z",
+      "summary": "Let any AI agent use your iPhone or Android phone, from macOS, Windows or Linux, with you in the loop. Download · Get started · FAQ · Discord English · 简体中文 A real Claude Code run on an Android 16 emulator. Pinky asks before payments by default; this run also asks before messages. Pinky lets ..."
+    },
+    {
+      "id": "s-accdd214e8",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "【重要】不正アクセスによる情報流出に関するお詫びとお知らせ（第一報）",
+      "url": "https://corporate.teket.jp/news/privacy_261108",
+      "publishedAt": "2026-11-08T06:56:13.000Z",
+      "summary": "【重要】不正アクセスによる情報流出に関するお詫びとお知らせ（第一報）"
+    },
+    {
+      "id": "s-14a7e06e7f",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "個人情報“手放す”企業続々 「持たないことが抜本的な解決に」 漏えいなくても運用変更も【#みんなのギモン】（2026年11月8日掲載）｜日テレNEWS NNN",
+      "url": "https://news.ntv.co.jp/category/economy/4524fbcdecaf445bac0d956439508aca",
+      "publishedAt": "2026-11-08T06:29:39.000Z",
+      "summary": "企業への不正アクセスにより顧客の個人情報が漏えいする事態が相次いでいるなか、そもそも個人情報を持たないという選択をする企業も出てきています。そこで、今回の#みんなのギモンでは、「個人情報の登録なくなる？」をテーマに解説します。 NTTドコモは「オンラインショップ」と、契約条件の変更などができる「マイド..."
+    },
+    {
+      "id": "s-a81f960ca3",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "【図解あり】マルチエージェント設計「15のパターン」　GitHub、Google、Siemensの知見を一気に整理",
+      "url": "https://atmarkit.itmedia.co.jp/ait/articles/2611/08/news001.html",
+      "publishedAt": "2026-11-08T06:14:17.000Z",
+      "summary": "【図解あり】マルチエージェント設計「15のパターン」 GitHub、Google、Siemensの知見を一気に整理：AIエージェントの「暴走」を防ぐ6つの基本原則も AIエージェントの一般化に伴い、複数のAIエージェントを連携させるマルチエージェントシステムが注目されています。GitHub、Google、Siemensが紹介した15のデザインパ..."
+    },
+    {
+      "id": "s-f5913b3779",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
+      "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
+      "publishedAt": "2026-11-07T23:57:46.000Z",
+      "summary": "datasette #3046: Don&#x27;t serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: &lt;https://latest.datasette.io/fixtures/compound"
+    },
+    {
+      "id": "s-d44fec61cc",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+      "publishedAt": "2026-11-07T22:07:22.000Z",
+      "summary": "On Equity, we unpacked what the midterms mean for the tech industry."
+    }
+  ]
+}
