@@ -48,6 +48,7 @@ export const PROFILE = {
   feeds: SECURITY_FEEDS,
   enrich,
   maxAgeDays: 3,
+  // 月曜も同じ窓: 土日が週末の新着を使い切り、3日窓だと候補1件で止まった（2026-11-09）
   // 土日は JPCERT/CC・CISA の更新が止まり一次情報が空になるため、5日(金曜分まで)遡る（2026-11-01 に判明）
   weekendMaxAgeDays: 5,
   dedupLookbackDays: 7,

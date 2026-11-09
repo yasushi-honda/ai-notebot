@@ -61,13 +61,14 @@ export async function collectRssFeeds(feeds) {
 }
 
 /**
- * 実効の鮮度窓（日数）。土日(JST日付)だけ weekendMaxAgeDays を使う（未指定なら maxAgeDays）。
- * 公的機関のフィードは週末に更新が止まるため、週末は窓を広げて一次情報を拾う。
+ * 実効の鮮度窓（日数）。土日月(JST日付)だけ weekendMaxAgeDays を使う（未指定なら maxAgeDays）。
+ * 公的機関のフィードは週末に更新が止まるため、週末は窓を広げて一次情報を拾う。月曜も広げるのは、
+ * 土日の記事が週末の新着を使い切り、3日窓のままだと未使用分が残らず候補が閾値未満になるため（2026-11-09 に判明）。
  * targetDate は JST 日付を UTC 0時として持っているので getUTCDay() がそのまま JST の曜日になる。
  */
 export function effectiveMaxAgeDays(profile, targetDate) {
   const day = targetDate.getUTCDay();
-  const weekend = day === 0 || day === 6;
+  const weekend = day === 0 || day === 1 || day === 6;
   return weekend && profile.weekendMaxAgeDays ? profile.weekendMaxAgeDays : profile.maxAgeDays;
 }
 
@@ -125,7 +126,7 @@ export function selectCandidates({ all, targetDate, recentUrls, maxAgeDays, maxP
  * @param {Array} profile.feeds RSS/Atom ソース定義（feeds.mjs の形）
  * @param {() => Promise<{items: Array, successCount: number}>} [profile.collectExtra] RSS 以外のソース（API 等）
  * @param {number} profile.maxAgeDays 新着とみなす日数
- * @param {number} [profile.weekendMaxAgeDays] 土日(JST)だけ使う新着の日数（未指定なら maxAgeDays）
+ * @param {number} [profile.weekendMaxAgeDays] 土日月(JST)だけ使う新着の日数（未指定なら maxAgeDays）
  * @param {number} profile.dedupLookbackDays 直近何日の既出 URL を除外するか
  * @param {number} profile.maxPerSource 1ソースが候補を占拠しないための上限
  * @param {number} profile.minSuccessSources 成功ソース数の下限
