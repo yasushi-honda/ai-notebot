@@ -1,0 +1,367 @@
+{
+  "date": "2026-11-10",
+  "collectedAt": "2026-11-09T22:01:42.475Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-564f65582e",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+      "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+      "publishedAt": "2026-11-09T21:26:25.000Z",
+      "summary": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers take over vulnerable systems. [...]"
+    },
+    {
+      "id": "s-a392e819b8",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "York University breach exposed personal information dating to 2007",
+      "url": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+      "publishedAt": "2026-11-09T21:22:31.000Z",
+      "summary": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms. [...]"
+    },
+    {
+      "id": "s-845eca28b4",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "France blames Iranian hackers for supermarket attacks that sparked fires",
+      "url": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
+      "publishedAt": "2026-11-09T18:32:42.000Z",
+      "summary": "France has linked October cyberattacks that disrupted refrigeration systems at more than 700 supermarkets and other retail locations to Iranian state-backed hackers, saying the attacks caused food losses and sparked at least 15 fires. [...]"
+    },
+    {
+      "id": "s-bd73ebc7b8",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+      "publishedAt": "2026-11-09T17:51:21.000Z",
+      "summary": "An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security company Wiz said today. The attacker used credentials for an AWS account that Qubole's platform uses to reach those customers. How the attacker got those credentials has not been disclosed. Qubole, a data lake platform owned by Idera,"
+    },
+    {
+      "id": "s-d00462f13e",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
+      "url": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
+      "publishedAt": "2026-11-09T17:50:32.000Z",
+      "summary": "A data-wiping malware attack has forced Russian cloud services provider Beget to rebuild its cloud infrastructure from scratch, the company said. [...]"
+    },
+    {
+      "id": "s-7cd796fba4",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+      "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+      "publishedAt": "2026-11-09T17:36:28.000Z",
+      "summary": "Attackers used the Ethersphere project's own release automation to publish malicious versions of two of its tools for the Swarm decentralized storage network: bee-js 13.3.0 and Swarm Desktop 0.56.2. Both releases download and run code built to steal the wallet key that Swarm Desktop keeps for its node, along with the stored password that unlocks it. The code is also built to install a backdoor"
+    },
+    {
+      "id": "s-ecefc37242",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Binance denies data breach after alleged ShinyHunters claims",
+      "url": "https://www.bleepingcomputer.com/news/security/binance-denies-data-breach-after-alleged-shinyhunters-claims/",
+      "publishedAt": "2026-11-09T16:12:39.000Z",
+      "summary": "Binance, the world's largest crypto exchange, has denied claims of a new security breach made by a threat actor using the 'ShinyHunters' handle on a newly emerged underground cybercrime forum. [...]"
+    },
+    {
+      "id": "s-87da3ee935",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/",
+      "publishedAt": "2026-11-09T16:04:57.000Z",
+      "summary": "Hackers are actively exploiting the \"SSHole\" vulnerability (CVE-2026-123158) in OpenSSH to execute commands, steal credentials, and establish persistent access. [...]"
+    },
+    {
+      "id": "s-9807a825bd",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "偽基地局を使った詐欺SMSの送信についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/10/004128",
+      "publishedAt": "2026-11-09T15:41:28.000Z",
+      "summary": "2026年11月9日、警視庁は、東京都中央区の銀座で偽基地局を運用したとして中国籍の男を電波法違反の疑いで現行犯逮捕したと発表しました。ここでは関連する情報をまとめます。 銀座の路上で偽基地局を運用した疑い 警視庁は中国籍で東京都北区に住む無職の男(31)が2026年11月7日午後3時半ごろ、東京都中央区銀座の路上で免許を受けずに車へ無線機を設置して電波を発信し、無線局を運用した疑いで現行犯逮捕し9日に発表(出典: 4, 5, 8)。 男は調べに対し容疑を否認し、「車両に無線機を積んでいないし、知らない」と供述している(出典: 5, 7)。 罪名は手続きごとに異なる。 逮捕(11月7日): 電波法違反(無線局の不法運用)(出典: 5, 8) 送検(11月9日): 逮捕容疑の電波法違反に加え、NTTドコモの無線設備の機能に障害を与えて携帯電話事業者の無線通信を妨害した疑いによる電波法違反(重"
+    },
+    {
+      "id": "s-06ceb15307",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "The Biggest Threat to Your GRC Job Isn’t AI. It’s Ignoring AI.",
+      "url": "https://www.bleepingcomputer.com/news/security/the-biggest-threat-to-your-grc-job-isnt-ai-its-ignoring-ai/",
+      "publishedAt": "2026-11-09T15:05:15.000Z",
+      "summary": "AI agents are taking over routine governance, risk, and compliance tasks, forcing GRC professionals to rethink the skills needed to stay relevant. Anecdotes examines three essential skills for the AI-driven GRC workplace: data literacy, agent governance, and communication. [...]"
+    },
+    {
+      "id": "s-205cc82458",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "FBI agent stole $2.5 million in crypto from hackers under investigation",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-agent-stole-25-million-in-crypto-from-hackers-fraud-victims/",
+      "publishedAt": "2026-11-09T14:34:03.000Z",
+      "summary": "A former FBI agent has pleaded guilty to stealing nearly $2.5 million from the wallets of fraud victims and nation-state hackers under investigation. [...]"
+    },
+    {
+      "id": "s-7bdf0c6dc5",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Bitter Hackers Deploy New PapRAT Backdoor in Cyberespionage Campaign Targeting South Asia",
+      "url": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+      "publishedAt": "2026-11-09T14:31:29.000Z",
+      "summary": "The South Asian cyber espionage group known as Bitter (aka APT-C-08, APT-Q-37, Hazy Tiger, Orange Yali, T-APT-17, and TA397) has been observed targeting South Asian organizations with a previously unreported remote access trojan called PapRAT. \"PapRAT has both C++ and Rust implementations,\" Fortinet FortiGuard Labs researcher Cara Lin said. \"Its capabilities include command execution, file"
+    },
+    {
+      "id": "s-594c4d0d43",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "相次ぐメール配信サービスへの不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/09/230435",
+      "publishedAt": "2026-11-09T14:04:35.000Z",
+      "summary": "2026年10月13日から、メール配信などのサービスを提供する5つの事業者が、不正アクセスによる情報漏えいなどを相次いで公表しました。ここでは関連する情報をまとめます。 5つの配信サービスで相次いだ不正アクセス 各社の公表にある最初の動きは10月11日から10月27日。SpeeCAN RAIDENは災害情報などを扱い、メールのほかXやLINEなどの外部サービスとも連携する(出典: 10, 11)。 サービス 事業者 確認された最初の動き ブラストメール ラクスライトクラウド(ラクスの子会社) 10月20日21時52分にシステム監視のアラートを検知(出典: 1) Cuenote ユミルリンク 10月16日6時49分に担当者が自身のアカウントの異常に気付いた(出典: 4) アララ メッセージ アララ 10月27日8時36分に偵察とみられるアクセス(後の調査で判明)、10月28日に不正利用を確認"
+    },
+    {
+      "id": "s-2c42fb6170",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "⚡ Weekly Recap: SSHole Exploited, APT Root RCE, Robot Takeovers, 15K Hacked Sites, and More",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-sshole-exploited-apt-root.html",
+      "publishedAt": "2026-11-09T13:28:25.000Z",
+      "summary": "A system doesn't always need a complicated bug to let someone in. Sometimes, a blank password is enough. That's one of the bigger stories this week. And it gets worse when the tools meant to keep systems updated or running safely become part of the attack. Elsewhere, attackers are hiding inside normal web traffic, stealing credentials from network devices, and finding new uses for exposed"
+    },
+    {
+      "id": "s-1b473725b2",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "中学校で生徒の個人情報含む学習記録ファイルを紛失 - 伊万里市",
+      "url": "https://www.security-next.com/192347",
+      "publishedAt": "2026-11-09T12:27:52.000Z",
+      "summary": "中学校で生徒の個人情報含む学習記録ファイルを紛失 - 伊万里市 佐賀県伊万里市は、市内中学校において、生徒の個人情報が記載された学習記録ファイルが所在不明となっていることを明らかにした。 同市によれば、生徒1学年分の学習記録と評価に関する資料が含まれる学習記録ファイルを紛失したもの。 教員が2026年9月30日に見当たらないことに気づき、校内を捜索したが見つからず、教頭に報告した。その後、複数の職員で校内を捜索したが発見できなかったという。 同校では、対象となる生徒に説明するとともに、保護者に説明と謝罪の書面を配付した。 （Security NEXT - 2026/11/09 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-8f6133c5e5",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-09T12:00:00.000Z",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.&nbsp; CVE-2026-102895 GPUStack Improper Authentication Vulnerability&nbsp; CVE-2026-116779 SignalWire FreeSwitch Code Injection Vulnerability&nbsp; CVE-2026-123158 OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability&nbsp; CVE-2026-123218 IBM Aspe"
+    },
+    {
+      "id": "s-c5154d08fa",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Default 'admin:admin' Server Password Helps Researchers Hack Two Automakers, Unlock and Start Cars",
+      "url": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+      "publishedAt": "2026-11-09T11:27:53.000Z",
+      "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an identity platform now part of Ping Identity, and on those servers the researchers reached an"
+    },
+    {
+      "id": "s-10e2c30b24",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「ネットマイル」で会員情報流出の可能性 - 影響など調査",
+      "url": "https://www.security-next.com/192460",
+      "publishedAt": "2026-11-09T11:13:30.000Z",
+      "summary": "「ネットマイル」で会員情報流出の可能性 - 影響など調査 貯めたポイントを電子マネーやギフト券に交換できるサービス「ネットマイル」が第三者によって侵害され、会員の個人情報が流出した可能性があることがわかった。 同サービスを運営するウィルズによれば、同サービスのシステム環境が第三者によってアクセスされ、同社が保有する会員の個人情報の一部が流出した可能性があることが判明したもの。 流出した可能性があるのは、退会者を含む最大約549万人分の会員情報で、氏名やメールアドレスのほか、特典の交換に関する情報が含まれる。インターネットにおける情報の公開や拡散、二次被害などは確認されていない。 同社では、被害拡大を防ぐため、「ネットマイル」や「すぐたま」といったサイトを停止した。侵害の原因や影響範囲の調査を進めている。 対象となる会員に通知を行い、同社や金融機関、ポイント交換先などを装ったメールなどに注意するよう求めるとしている。 （Security NEXT - 2026/11/09 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-a02fb0af29",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+      "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+      "publishedAt": "2026-11-09T10:56:25.000Z",
+      "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week. Web3Auth then used the attacker's own route to empty other at-risk wallets before the attacker"
+    },
+    {
+      "id": "s-62af4291e1",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
+      "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
+      "publishedAt": "2026-11-09T10:01:21.000Z",
+      "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts used an exploit to withdraw 2,285,545 satoshis, about 0.023 bitcoin, from his server before he could"
+    },
+    {
+      "id": "s-e8082cc54d",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
+      "url": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
+      "publishedAt": "2026-11-09T09:01:50.000Z",
+      "summary": "A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week. The agents also found a Taipei fire department platform exposing patient data from 2018, including ECG readings and ambulance video footage, without a login. The researchers are highly confident that the attacker is a single person"
+    },
+    {
+      "id": "s-cb833e99d0",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "特定環境の「OpenSSH」に認証回避のおそれ - 「Alpine Linux」など影響",
+      "url": "https://www.security-next.com/192523",
+      "publishedAt": "2026-11-09T08:49:17.000Z",
+      "summary": "特定環境の「OpenSSH」に認証回避のおそれ - 「Alpine Linux」など影響 「OpenSSH」に特定環境でパスワード認証なしにアクセスが可能となる深刻な脆弱性「sshole」が明らかとなった。一部ディストリビューションなどに影響が確認されている。 Linux環境でC標準ライブラリ「musl libc」を使用し、「PAM」を使用しない「OpenSSH」において、認証のバイパスが可能となる脆弱性「CVE-2026-123158」が明らかとなったもの。脆弱性は別名「sshole」とも呼ばれている。 パスワード照合におけるエラー処理に不備が存在。パスワードを利用できないアカウントの設定値と、長いパスワードの処理に失敗した際に「musl libc」が戻すエラー値が同じため、認証に成功したと誤って判定され、認証の突破が可能になるという。 コンテナ環境などで広く利用されている「Alpine Linux」では、C標準ライブラリに「musl libc」を使用しており、SSHサーバを稼働させている場合などに同脆弱性の影響を受ける。 共通脆弱性評価システム「CVSSv3.1」のベーススコアは「8.1」、重要度は4段階中、2番目に高い「高（High）」と評価されている。「glibc」を利用するLinuxディストリビューションや「PAM」を使用する環境は影響を受けない。 （Security NEXT - 2026/11/09 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-5c767608af",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "お知らせ：CyberNewsFlash「OpenSSHにおける認証回避の脆弱性（CVE-2026-123158）について」",
+      "url": "https://www.jpcert.or.jp/newsflash/2026110901.html",
+      "publishedAt": "2026-11-09T07:55:00.000Z",
+      "summary": "CyberNewsFlash一覧 I. 概要 OpenSSHは2026年11月5日、OpenSSHにおける認証回避の脆弱性（CVE-2026-123158）に関する修正バージョン[ 1 ]を公開しました。同日、Alpine Linuxは、同ディストリビューションのopenssh-serverパッケージに関するアドバイザリ[ 2 ]を公表しました。 本脆弱性は標準Cライブラリとしてmusl libcを使用し、LinuxなどのUnix系OSでユーザー認証を管理する仕組みであるPAMを使用しない構成で動作するOpenSSHにおいて、特定の条件下で認証処理に誤りが生じる問題です。悪用された場合、認証されていないリモートの攻撃者が、パスワードによるログインを無効にするための特殊な値（「*」）が設定されたアカウントに、正規のパスワードを用いずに不正にログインできる可能性があります。 JPCERT/CCでは、国内においてAlpine Linuxをベースとした商用製品が利用されていることを確認しています。また、本脆弱性に関しては、すでに概念実証コードが公開されています。海外セキュリティ企業のGreyNoise[ 3 ]は、2026年11月5日以降、本脆弱性の悪用を試みる攻撃を観測したと報告しています。加えて、2026年11月7日には、本脆弱性の悪用の成功を観測しており、同社の観測用環境において、認証回避による侵入の成功や、侵入後のコマンド実行、C2エージェントの設置などを確認したと報告しています。なお、現時点で組織における侵害事例は確認できていません。本脆弱性の悪用試行が確認されていることから … III. 対策 OpenSSHは、本脆弱性を修正したバージョン10.6p2を公開しています。また、Alpine Linuxは、各リリース向けに修正済みパッケージを提供しています。 なお、Linuxディストリビューションによっては、OpenSSHの旧バージョンに修正をバックポートしているため、各製品における対策情報の詳細は各開発者が提供する情報を確認してください。 IV. 侵害有無の調査方法 Alpine Linuxは、SSH認証ログにおいて、本来パスワードによるログインが禁止されているアカウントへのログイン成功記録がないか確認することを推奨しています[ 2 ]。 /var/log/messagesなどに記録されたSSH認証ログに、本来パスワードログインできないアカウントに対するAccepted password forの記録がないか doasの使用履歴、不審なユーザーアカウントの追加やSSH公開鍵の変更がないか 不審なファイルやプロセスの作成、外部サーバーへの通信がないか 詳細は、開発者が提供する最新の情報を確認してください。 V. 関連情報 [1] OpenSSH OpenSSH 10.6p2 (2026-11-05) https://www.openssh.org/releasenotes.html#10.6p2 [2] Alpine Linux Development Team Security advisory: openssh-server password authentication bypass https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/ [3] GreyNoise SSHole (CVE-2026-123158) Activity 2"
+    },
+    {
+      "id": "s-01ce08f1df",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: SS1／SS1クラウドおよびそのODM製品rocoeyesにおける複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN76179675/",
+      "publishedAt": "2026-11-09T06:00:00.000Z",
+      "summary": "JVN#76179675 SS1／SS1クラウドおよびそのODM製品rocoeyesにおける複数の脆弱性 株式会社ディー・オー・エスが提供するSS1／SS1クラウドおよび、株式会社ロココが提供するrocoeyesには複数の脆弱性が存在します。 株式会社ディー・オー・エス CVE-2026-109582 CVE-2026-113437 株式会社ロココ CVE-2026-113437 SS1 エージェントバージョン 17.0.0.50およびそれ以前（メディアバージョン 17.0.0eおよびそれ以前） SS1クラウド エージェントバージョン 3.2.0およびそれ以前 rocoeyes エージェントバージョン 3.1.1およびそれ以前 株式会社ディー・オー・エスが提供するIT資産管理ツールSS1／SS1クラウドおよび株式会社ロココが提供するrocoeyesには、次の複数の脆弱性が存在します。 重要な情報のセキュアでない格納（ CWE-922 ） CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N 基本値 5.1 CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N 基本値 4.0 CVE-2026-109582 パストラバーサル（ CWE-22 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N 基本値 6.9 CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N 基本値 5.3 CVE-2026-113437 想定される影響は各脆弱性により異なりますが、次のような影響を受ける可能性があります。 当該製品が使用する機微な情報が取得される（CVE-2026-109582） 任意のファイルを削除される（CVE-2026-113437） アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 本脆弱性は以下のバージョンで修正されています。 株式会社ディー・オー・エス 株式会社ロココ SS1 Ver.17.1.0.10（メディアバージョン：17.1.0a） Ver.17.0.0.60（メディアバージョン：17.0.0f） Ver.16.1.0.100（メディアバージョン：16.1.0j） Ver.16.0.0.60（メディアバージョン：16.0.0f） Ver.15.1.0.70（メディアバージョン：15.1.0g） Ver.15.0.0.80（メディアバージョン：15.0.0h） Ver.14.1.0.90（メディアバージョン：14.1.0i） Ver.14.0.0.90（メディアバージョン：14.0.0i） Ver.13.1.0.100（メディアバージョン：13.1.0j） Ver.13.0.0.90（メディアバージョン：13.0.0i） SS1クラウド ver.3.1系:エージェントバージョン：3.1.1a ver.3.2系:エージェントバージョン：3.2.0a rocoeyes エージェントバージョン：3.1.1a ベンダ リンク 株式会社ディー・オー・エス 株式会社ロココ CVE-2026-109582 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：GMOサイバーセキュリティ byイエラエ株式会社"
+    },
+    {
+      "id": "s-06fcb46ec3",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "盗んだ情報をAIに査定させるインフォスティーラー「VOLTA」についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/09/144357",
+      "publishedAt": "2026-11-09T05:43:57.000Z",
+      "summary": "2026年10月31日、Cisco Talosは、盗んだ情報をLLMに査定させるフェーズを持つWindows向けインフォスティーラー「VOLTA」の解析結果を公表しました。ここでは関連する情報をまとめます。 VOLTAとは何か VOLTAは、Windows(x86-64)向けのインフォスティーラー。窃取のあとに被害者をLLMに評価させるフェーズが備わっている。TalosはVOLTAを「成熟したスティーラー」と評価している。バイナリから復元された名前は「VOLTA-AUTODOXER」(出典: 1, 2)。 VOLTAの動作は次のフェーズで進む(出典: 1, 2)。 端末から認証情報、セッション、暗号資産ウォレットなどを窃取する 盗んだトークンやセッションで外部のサービスに問い合わせ、住所などを補強する 束ねた情報をOpenRouter経由でLLMに送り、被害者の換金価値の査定を作らせる L"
+    },
+    {
+      "id": "s-878ad3a2c0",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: WebSAM WinShareにおける複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN89009783/",
+      "publishedAt": "2026-11-09T05:00:00.000Z",
+      "summary": "JVN#89009783 WebSAM WinShareにおける複数の脆弱性 日本電気株式会社が提供するWebSAM WinShareには、複数の脆弱性が存在します。 CVE-2026-113362 CVE-2026-113363 CVE-2026-113364 WebSAM WinShare Ver 7.5.0およびそれ以前（ただしVer 7.3.3を除く） WebSAM WinShare Ver 7.6.0 WebSAM WinShare Ver 7.7.0から7.7.1まで WebSAM WinShare Ver 7.2.0から7.5.0まで WebSAM WinShare Ver 7.7.0から7.7.2まで WebSAM WinShare Ver 7.5.0およびそれ以前 日本電気株式会社が提供するWebSAM WinShareには、次の複数の脆弱性が存在します。 プログラムフォルダにおけるインストール時の不適切なファイルアクセス権設定（ CWE-276 ） CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N 基本値 8.5 CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H 基本値 7.8 CVE-2026-113362 危険なメソッドや機能の意図しない公開（ CWE-749 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N 基本値 9.3 CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 基本値 9.8 CVE-2026-113363 ヒープベースのバッファオーバーフロー（ CWE-122 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N 基本値 9.3 CVE-2026-113364 想定される影響は各脆弱性により異なりますが、当該製品のリモート操作対象（リモートPC）が次のような影響を受ける可能性があります。 一般ユーザ権限でログインしている攻撃者によって、 SYSTEM 権限を取得される（CVE-2026-113362） 細工されたパケットを送信されると、 SYSTEM 権限で任意のコマンドを実行される（CVE-2026-113363） 細工されたパケットを送信されると、 SYSTEM 権限で任意のコードを実行される（CVE-2026-113364） アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 ベンダ ステータス ステータス 最終更新日 ベンダの告知ページ 日本電気株式会社 2026/11/09 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：川田 柾浩 氏 富士通株式会社 ルスラン サイフィエフ 氏、デニス ファウストヴ 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-d1c1a95628",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "不正アクセスで個人情報流出、通話音声にクレカ情報も - ロート製薬",
+      "url": "https://www.security-next.com/192493",
+      "publishedAt": "2026-11-09T04:56:53.000Z",
+      "summary": "不正アクセスで個人情報流出、通話音声にクレカ情報も - ロート製薬 ロート製薬は、通信販売で利用する電話システムが侵害され、顧客データが流出した可能性があるとされる問題で調査結果を取りまとめた。約280万人に影響があり、一部の顧客については、音声データにクレジットカード情報が含まれていたという。 同社では、2026年9月に通信販売の顧客対応で利用する電話システムと顧客管理システムが第三者による不正アクセスを受け、情報が流出した可能性があることが判明。 9月14日に警察へ被害を申告し、同月15日に個人情報保護委員会へ報告。事態を公表するとともに外部協力のもと、詳細を調べていた。 同社が通信販売の顧客対応に利用している電話システムのアカウント情報を第三者が使用し、不正アクセスを行ったという。 複数の顧客管理システムに保存されていたデータのうち、279万7545人分の個人情報が流出。顧客によって対象項目は異なるが、氏名、住所、電話番号などが含まれる。引き続き、影響の範囲や対象情報などについて調査を進めるとしている。 （Security NEXT - 2026/11/09 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-6ef49bfb4e",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "データ連携基盤「Airbyte」に脆弱性 - 悪用も確認",
+      "url": "https://www.security-next.com/192518",
+      "publishedAt": "2026-11-09T03:40:00.000Z",
+      "summary": "データ連携基盤「Airbyte」に脆弱性 - 悪用も確認 データベースやクラウドサービスなどのデータ連携を自動化するプラットフォーム「Airbyte」に脆弱性が明らかとなった。すでに悪用が確認されているという。 脆弱性情報のポータルサイトであるJVNによれば、外部サービスとのデータ接続用コネクタを作成するコンポーネント「Connector Builder」などに存在する脆弱性が明らかとなったもの。 GitHubにおいてセキュリティアドバイザリが公開されており、「GHSA-g35w-6r6v-h4r7」の識別子で追跡されている。CVE番号は不明。 同脆弱性は、接続設定に含まれるPythonクラスの読み込み処理に起因。細工した設定データにより、マニフェストサーバコンテナ内で想定外のプログラムが呼び出されるおそれがある。 「同2.x」では、悪用にはワークスペースや組織の閲覧権限が必要とされるが、任意のコードが実行されるおそれがある。さらに旧バージョンの「Helm Chart」でデプロイされた「Airbyte 1.x」については、ネットワーク経由でアクセスできる場合、認証なしに悪用されるおそれがある。 （Security NEXT - 2026/11/09 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-23f72bfdf5",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ID管理基盤「OpenAM」に複数の「クリティカル」脆弱性",
+      "url": "https://www.security-next.com/192510",
+      "publishedAt": "2026-11-09T03:26:28.000Z",
+      "summary": "ID管理基盤「OpenAM」に複数の「クリティカル」脆弱性 アイデンティティ管理基盤「OpenAM」に複数の脆弱性が明らかとなった。一部「クリティカル」と評価されており、いずれも10月のアップデートで修正済みとなっている。 Open Identity Platformは現地時間2026年10月22日、18件の脆弱性を明らかにし、修正版となる「OpenAM 16.1.4」を公開。その後、CVE番号が付与された。 このうち3件の脆弱性は重要度が4段階中もっとも高い「クリティカル（Critical）」とレーティングされている。 「CVE-2026-123551」は、セッションの開始や終了などを通知する「WebSocket」に認証チェックを回避して接続することで、利用者のセッショントークンが漏洩する脆弱性。 管理者を含む利用者のセッションを乗っ取ることが可能となる。CVE番号を採番したVulnCheckは、共通脆弱性評価システム「CVSS v4.0」のベーススコアを最高値となる「10.0」と評価している。 （Security NEXT - 2026/11/09 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-b9cd211957",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Effekseerにおける入力データ検証不備の脆弱性",
+      "url": "https://jvn.jp/jp/JVN56286875/",
+      "publishedAt": "2026-11-09T03:00:00.000Z",
+      "summary": "JVN#56286875 Effekseerにおける入力データ検証不備の脆弱性 パーティクルエフェクト編集ツールEffekseerには、入力データ検証不備の脆弱性が存在します。 Effekseer 1.80.7およびそれ以前のバージョン Effekseerには、​パーティクルエフェクトを編集するためのツールとエフェクトを再生するランタイムが含まれています。Effekseerランタイムは、ゲームクライアントや3DCGビューアなどに組み込んで使われることが想定されています。 Effekseerの入力データ（「エフェクトファイル」）検証処理には不備があります。 エフェクトファイルの取り扱い不備（ CWE-237 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N 基本値 5.1 CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L 基本値 4.3 CVE-2026-120386 細工されたエフェクトファイルを当該ランタイムを組み込んだアプリケーションで読み込んだ場合、アプリケーションが異常終了させられる可能性があります。 アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 本脆弱性は次のバージョンで修正されています。 Effekseer 1.80.8 ベンダ リンク Effekseer この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：姉歯幸村 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-a5f9211b0e",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "JNSAのセキュ理解度チェックサービスで侵害 - 影響など調査",
+      "url": "https://www.security-next.com/192491",
+      "publishedAt": "2026-11-09T02:42:49.000Z",
+      "summary": "JNSAのセキュ理解度チェックサービスで侵害 - 影響など調査 日本ネットワークセキュリティ協会（JNSA）は、同団体が運営するサービスにおいて個人情報が流出した可能性があることを明らかにした。 同団体によれば、2026年11月4日、情報セキュリティの知識やモラルをクイズ形式で測定できるサービス「情報セキュリティ理解度チェックサービス」が侵害されたことを確認した。 10月30日夜ごろからアクセスされていた可能性があり、侵入経路や影響範囲などの詳細について調査を進めている。 対象件数や範囲は変わる可能性があるが、同サービスの利用者に関する個人情報最大1万5128件が流出した可能性がある。管理者の氏名、メールアドレス、組織名、所在地、従業員数、業種、利用ユーザー数のほか、ID、ハッシュ化されたパスワードが含まれる。 同協会では、2026年11月6日に個人情報保護委員会へ報告。対象者と個別に連絡を取るとしている。 （Security NEXT - 2026/11/09 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-04818f0e08",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: KUSANAGIにおけるHTTPヘッダーインジェクションの脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU92635551/",
+      "publishedAt": "2026-11-09T02:30:00.000Z",
+      "summary": "JVNVU#92635551 KUSANAGIにおけるHTTPヘッダーインジェクションの脆弱性 GMOプライム・ストラテジー株式会社が提供するKUSANAGIには、HTTPヘッダーインジェクションの脆弱性が存在します。 KUSANAGI 7、KUSANAGI 8、KUSANAGI 9 の以下のエディションおよびバージョン なお、Apache httpdを使用している場合は対象外です。 Security / Enterprise Edition 10.7.2-1およびそれ以前 Free / Business / Premium Edition 9.12.2-1およびそれ以前 GMOプライム・ストラテジー株式会社が提供するKUSANAGIには、WordPress向けNginxの設定ファイルに含まれるリダイレクトルールに次の脆弱性が存在します。 HTTPヘッダーにおけるCRLF文字の不適切な無害化（ CWE-113 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N 基本値 5.1 CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N 基本値 6.1 CVE-2026-117477 攻撃者によって細工されたURLにアクセスすることで、HTTPレスポンスに任意のヘッダーが挿入される可能性があります。 アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 ワークアラウンドを実施する アップデートできない場合は、開発者が提供する情報をもとに緩和策を実施してください。 ベンダ ステータス ステータス 最終更新日 ベンダの告知ページ GMOプライム・ストラテジー株式会社 2026/11/09 この脆弱性情報は、製品利用者への周知を目的に、GMOプライム・ストラテジー株式会社がJPCERT/CCに報告し、JPCERT/CCがGMOプライム・ストラテジー株式会社との調整を行いました。 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-12bc38b831",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Webtop Media Transcoderにおける異なる領域間での不適切なリソースの移動の脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU93403064/",
+      "publishedAt": "2026-11-09T02:00:00.000Z",
+      "summary": "JVNVU#93403064 Webtop Media Transcoderにおける異なる領域間での不適切なリソースの移動の脆弱性 緊急 オープンウェーブメッセージング株式会社が提供するWebtop Media Transcoderには、異なる領域間での不適切なリソースの移動の脆弱性が存在します。 Webtop Media Transcoder 1.1.22.0より前のバージョン オープンウェーブメッセージング株式会社が提供するWebtop Media Transcoderには、次の脆弱性が存在します。 開発者によると、本脆弱性を悪用した攻撃が既に確認されているとのことです。 異なる領域間での不適切なリソースの移動（ CWE-669 ） CVE-2026-111793 当該製品にログイン可能な攻撃者が特定の手順で細工したファイルをアップロードした場合、機微な情報を取得される可能性があります。 パッチを適用する 開発者は本脆弱性に対応したパッチを提供しています。 詳細は開発者に問い合わせてください。 ベンダ リンク Openwave Messaging (Ireland) Limited この脆弱性情報は、製品利用者への周知を目的に、開発者がJPCERT/CCに報告し、JPCERT/CCが開発者との調整を行いました。 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-b6d17e9f9e",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Zabbix agentにおけるDLL読み込みに関する脆弱性",
+      "url": "https://jvn.jp/jp/JVN42011956/",
+      "publishedAt": "2026-11-09T01:15:00.000Z",
+      "summary": "JVN#42011956 Zabbix agentにおけるDLL読み込みに関する脆弱性 Zabbix LLCが提供するZabbix agentにはDLL読み込みに関する脆弱性が存在します。 Zabbix agent 6.0.48より前のバージョン Zabbix agent 7.0.29より前のバージョン Zabbix agent 7.4.13より前のバージョン Zabbix LLCが提供するZabbix agentは、次の脆弱性に起因して不正なDLLを読み込んでしまう可能性があります。 インストール時の不適切なファイルアクセス権設定（ CWE-276 ） CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N 基本値 5.4 CVSS:3.0/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H 基本値 6.7 管理者権限で任意のコードを実行される可能性があります。 アップデートする 開発者が提供する情報をもとに最新版へアップデートしてください。 ベンダ リンク Zabbix LLC この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：GMOサイバーセキュリティ byイエラエ株式会社 松本 一真 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia 2026/11/09 ［影響を受けるシステム］、［ベンダ情報］を更新しました JVN"
+    },
+    {
+      "id": "s-9844633a97",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "CNポイントのサテライトシステムに不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56703.html",
+      "publishedAt": "2026-11-08T23:05:08.000Z",
+      "summary": "158 views 株式会社クラブネッツは10月29日、CNポイントのサテライトシステムへの不正アクセスについて発表した。 これはCNポイントのサテライトシステムに外部から不正アクセスがあり、一部顧客の個人情報が流出した可能性が判明したというもの。 流出した可能性のある情報は下記の通り。 CN会員ID、氏名：16,936件（ユニーク件数） CN会員ID、氏名、メールアドレス、電話番号、住所：2,857件（ユニーク件数） 同社では、被害の拡大と二次被害の防止を最優先に、対象システムの運用を停止している。対象システムとサービス停止日時は下記の通り。 CNエクスチェンジ：10月29日10:40停止 CNコンテンツ：10月29日12:40停止 CNモニター：10月29日18:10停止 同社では現在、専門機関と連携のうえで詳細な原因究明と影響範囲の調査を進めており、確認された脆弱性の重大度と安全性の確保状況を見極めたうえで、サービスの再開可否を判断するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 【重要】CNポイント サテライトシステムへの不正アクセスによる一部サービス停止および個人情報流出の可能性に関するお知らせ＜第1報＞ 関連記事 メトロポイントクラブ会員向けサービスに不正アクセス、約5万9,000件のメールアドレスが漏えいした可能性 2026.10.2 Fri 8:05 日本郵政「ゆうゆうポイントサイト」を緊急サービス停止 2026.10.21 Wed 8:05 ジー・プラン提供の「Gポイント」システムに不正アクセス、最大約 7 万件の会員識別子が漏えいした可能性 2026.10.20 Tue 8:05 「ファンくる」にリスト型攻撃、2 アカウントで不正なポイント交換を確認 2026.9.14 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-f18396de72",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "電力・ガス取引監視等委員会ウェブサイトに不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56702.html",
+      "publishedAt": "2026-11-08T23:05:05.000Z",
+      "summary": "167 views 経済産業省は10月28日、電力・ガス取引監視等委員会ウェブサイトへの不正アクセスについて発表した。 これは10月27日未明に、電力・ガス取引監視等委員会のウェブサイトに対し不正アクセスが行われたことを、10月28日に同委員会で確認したというもの。 同委員会では当該ウェブサイトの運用を停止し、原因究明と再発防止策の検討を行っている。 同委員会では、「デントリネット」というウェブサイトを用いて小売電気事業者及びガス小売事業者等から、定期的に電力取引報及びガス取引報等の提出を受けているが、当該ウェブサイト復旧までの間、メールで報告を受け付けることとし、別途、各小売電気事業者及びガス小売事業者等に連絡する。 なお、本件による情報流出の有無については、現在確認中とのこと。 《ScanNetSecurity》 一次情報または関連リンク 電力・ガス取引監視等委員会ウェブサイトへの不正アクセスについて 関連記事 みずほリサーチ&テクノロジーズが経済産業省から受託したアンケート情報を混在して環境省に納品、ホームページで公開 2026.3.11 Wed 8:05 AI を活用した総点検で発見 ～ デジタルアーツのクラウドサービス運用環境に不正アクセス 2026.11.2 Mon 8:05 「MUJIアプリ」への不正アクセス、新たにカード情報が外部からアクセスされた可能性も 2026.11.6 Fri 8:05 「@cosme」に不正アクセス、約300万人の会員情報が漏えい 2026.11.6 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-2db27a0f67",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "花キューピットに不正アクセス、423万8,242件の会員情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56701.html",
+      "publishedAt": "2026-11-08T23:05:02.000Z",
+      "summary": "259 views 花キューピット株式会社は10月28日、同社が運営する「インターネット花キューピット」・「ビジネス花キューピット」への不正アクセスについて発表した。 これは10月14日から10月15日に、同社管理システムに第三者から不正アクセスがあり、調査の過程で、不正アクセスによる会員情報の漏えいを10月19日に確認したというもの。 漏えいしたのは「インターネット花キューピット」「ビジネス花キューピット」の会員4,238,242件のユーザーID（ログインID）、パスワード（ハッシュ値のもの）、PC用メールアドレス、携帯用メールアドレスを含む情報。 同社では10月28日から、対象の顧客にメールにて順次連絡を行っているが、対象となる会員数が多数に及ぶため、連絡が完了するまでに一定時間を要する見込み。 同社では、不正アクセスに利用された攻撃経路をすべて遮断し、ネットワークのアクセス制御および監視体制の強化を実施している。 なお同社では、本件に伴う金銭的な補填や返金等は予定していない。 同社では外部の専門機関と連携し、詳細な原因究明を進めるとともに、継続的なセキュリティ対策と恒久的な再発防止策を講じるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社運営サイト（インターネット花キューピット等）への不正アクセスによる会員情報漏えいに関するお詫びとお知らせ 関連記事 AI を活用した総点検で発見 ～ デジタルアーツのクラウドサービス運用環境に不正アクセス 2026.11.2 Mon 8:05 「MUJIアプリ」への不正アクセス、新たにカード情報が外部からアクセスされた可能性も 2026.11.6 Fri 8:05 「@cosme」に不正アクセス、約300万人の会員情報が漏えい 2026.11.6 Fri 8:05 クラブツーリズムに不正アクセス、約432万件の会員情報が漏えいした可能性 2026.11.6 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-3c978e2fa8",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "SHIRASAGI に複数の脆弱性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56700.html",
+      "publishedAt": "2026-11-08T23:00:12.000Z",
+      "summary": "107 views 独立行政法人情報処理推進機構（IPA）および一般社団法人JPCERT コーディネーションセンター（JPCERT/CC）は11月5日、SHIRASAGIにおける複数の脆弱性について「Japan Vulnerability Notes（JVN）」で発表した。東京理科大学 創域理工学部 経営システム工学科の佐藤勇斗氏が報告を行っている。影響を受けるシステムは以下の通り。 ・CVE-2026-117679 SHIRASAGI v1.12.0からv1.21.0まで ・CVE-2026-118869 SHIRASAGI v1.19.0からv1.21.0まで SHIRASAGI Projectが提供するSHIRASAGIには、下記の影響を受ける可能性がある複数の脆弱性が存在する。 ・クロスサイトスクリプティング（CVE-2026-117679） →当該製品を使用しているWebサイトにアクセスしたユーザのブラウザ上で、任意のスクリプトが実行される ・OSコマンドインジェクション（CVE-2026-118869） →当該製品がインストールされているシステム上で任意のOSコマンドが実行される JVNでは、開発者が提供する情報をもとに最新版にアップデートするよう呼びかけている。なお本脆弱性は、SHIRASAGI v1.21.1で修正されている。 《ScanNetSecurity》 一次情報または関連リンク JVN 関連記事 SHIRASAGI に複数の脆弱性 2026.9.14 Mon 8:00 SHIRASAGI にパストラバーサルの脆弱性 2024.10.18 Fri 8:00 SHIRASAGI に複数の脆弱性 2023.9.7 Thu 8:00 SHIRASAGI に複数のXSSの脆弱性 2023.2.28 Tue 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-54ecb449e7",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "対象は18歳以上の未就労学生 ～ NRIセキュアがCTF「SANS NetWars」開催 11月13日まで参加受付",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56699.html",
+      "publishedAt": "2026-11-08T23:00:10.000Z",
+      "summary": "182 views NRIセキュアテクノロジーズ株式会社は 11 月 6 日、学生向けの CTF 形式ハッキングトーナメント「 SANS NetWars トーナメント 2026 」を 11 月 21 日（土）にオンラインで開催すると発表し、参加申し込みの受付を開始した。対象はサイバーセキュリティに興味がある 18 歳以上の未就労の学生で、参加費は無料である。 NetWars は、米国のセキュリティ教育機関 SANS Institute が教育用に開発した CTF 形式のトーナメントである。教育に主眼を置いており、初学者でも「ヒント」機能を通じて挑戦できるほか、終了後には今後の学習に役立つ個人のスコアカードが作成される。今回は攻撃と防御にフォーカスした「Core NetWars」を個人戦で実施し、システム管理、スレットハンティング、ログ分析、パケット解析、暗号など、サイバー防御に必要な広範なスキルを試すことができる。 上位入賞者には SANS 公式トロフィー・記念コイン、iPad などが贈られる。開催時間は 9 時から 17 時まで。募集人数は 100 名で、応募者多数の場合は抽選となる。募集締切は 11 月 13 日（金）17 時。参加資格の詳細と申し込み方法は同社の Web サイトで確認できる。 《ScanNetSecurity》 一次情報または関連リンク NRIセキュアテクノロジーズ ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-8192dc9bcf",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "年一回の脆弱性診断から継続監視へ ～ エイチ・ツー・オー リテイリングが Tenable One 導入",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56698.html",
+      "publishedAt": "2026-11-08T23:00:02.000Z",
+      "summary": "95 views Tenable は 10 月 19 日、エイチ・ツー・オー リテイリング株式会社が、マルチクラウドインフラ全体に Tenable One サイバーエクスポージャー管理プラットフォームを導入したと発表した。 阪急阪神百貨店などを傘下に持つ関西地域の小売グループである同社は、従来、ポータルサイトなどの外部公開システムを中心に、年 1 回の外部委託による脆弱性診断を実施していた。しかし DX の推進に伴い IT インフラが複雑化し、リスクのリアルタイムでの把握と管理にかかる負担やコストが増大したことから、急速に変化する脅威環境に対応するため、グループ全体の資産を対象としたリスク管理が必要となっていた。 Tenable One の導入により同社は、一時点での脆弱性評価に依存するのではなく、環境変化を継続的に追跡するモニタリング体制を確立し、AI 機能を活用して現実世界で悪用されるリスクの高い脆弱性を客観的に評価しリスクに基づいて修復作業の優先順位付けを行えるようになった。また、外部に委託していた脆弱性診断費用の削減と、手作業によるデータ収集からの脱却でコスト最適化も実現したという。 《ScanNetSecurity》 関連記事 ガートナー、AI を活用した脆弱性評価分野のトップ企業として Tenable を選出 2026.2.24 Tue 8:00 Tenable Blog 第4回 Claude Mythos 5 が Tenable One に導入 2026.10.20 Tue 8:10 「レガシーで魅力を感じない領域。のはずだった」Tenable 阿部淳平が語るエクスポージャーマネジメント 2026.7.1 Wed 8:10 Tenable One が提案する “エクスポージャー管理” という大人な価値観 ～ カントリーマネージャー貴島直也氏に聞く 2026.4.13 Mon 8:10 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    }
+  ]
+}
