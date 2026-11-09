@@ -146,11 +146,12 @@ test('effectiveMaxAgeDays: weekendMaxAgeDays 未指定なら曜日によらず m
   assert.equal(effectiveMaxAgeDays(p, new Date('2026-11-01T00:00:00Z')), 3); // 日
 });
 
-test('effectiveMaxAgeDays: 土日(JST日付)だけ weekendMaxAgeDays、平日は maxAgeDays', () => {
+test('effectiveMaxAgeDays: 土日月(JST日付)だけ weekendMaxAgeDays、火〜金は maxAgeDays', () => {
   const p = { maxAgeDays: 3, weekendMaxAgeDays: 5 };
   assert.equal(effectiveMaxAgeDays(p, new Date('2026-10-31T00:00:00Z')), 5); // 土
   assert.equal(effectiveMaxAgeDays(p, new Date('2026-11-01T00:00:00Z')), 5); // 日
-  assert.equal(effectiveMaxAgeDays(p, new Date('2026-11-02T00:00:00Z')), 3); // 月
+  assert.equal(effectiveMaxAgeDays(p, new Date('2026-11-02T00:00:00Z')), 5); // 月（週末に窓を使い切った後の枯渇対策）
+  assert.equal(effectiveMaxAgeDays(p, new Date('2026-11-03T00:00:00Z')), 3); // 火
   assert.equal(effectiveMaxAgeDays(p, new Date('2026-10-30T00:00:00Z')), 3); // 金
 });
 
