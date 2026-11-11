@@ -25,7 +25,7 @@ import { generateText } from './lib/vertex.mjs';
 import { todayJst } from './lib/date.mjs';
 import { normalizeLiteralNewlines } from './curate.mjs';
 import { escapeSourceField } from './lib/digest-curation.mjs';
-import { findBannedExpressions, findSimplifiedChinese } from './lib/style-guard.mjs';
+import { findBannedExpressions, findSimplifiedChinese, findChineseOnlyTerms } from './lib/style-guard.mjs';
 import { stripCodeSpans, checkCitations } from './lib/citation-gate.mjs';
 import { parseFrontmatter } from './lib/frontmatter.mjs';
 
@@ -777,9 +777,10 @@ export function validateGenerated(result, itemsById, recentWorkAreas = []) {
   if (styleIssues.length > 0) problems.push(`NG表現を検出: ${styleIssues.join(', ')}`);
 
   // 出典が中国語でも本文は日本語で書く（2026-10-20に日次版で、care版も2026-10-06で混入実績あり）
-  const chinese = findSimplifiedChinese(`${result.title}\n${result.summary}\n${result.bodyMarkdown}`);
+  const careText = `${result.title}\n${result.summary}\n${result.bodyMarkdown}`;
+  const chinese = [...findSimplifiedChinese(careText), ...findChineseOnlyTerms(careText)];
   if (chinese.length > 0) {
-    problems.push(`本文に中国語（簡体字: ${chinese.join('')}）が混入しています。出典が中国語でも自然な日本語に訳して書いてください`);
+    problems.push(`本文に中国語（${chinese.join('、')}）が混入しています。出典が中国語でも自然な日本語に訳して書いてください`);
   }
 
   // 特定の介護専用商用SaaS製品だけを紹介する記事になっていないかの機械的ゲート
