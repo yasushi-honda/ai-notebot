@@ -68,3 +68,18 @@ const SIMPLIFIED_ONLY_CHARS = new Set(
 export function findSimplifiedChinese(text) {
   return [...new Set([...text].filter((ch) => SIMPLIFIED_ONLY_CHARS.has(ch)))];
 }
+
+// 日本語では使わない中国語の熟語。モデルが簡体字を日本語の字形（開箱 ← 开箱）へ直して写すと
+// findSimplifiedChinese（字単位）をすり抜けるため、語単位で検出する（2026-11-11 実績: 「開箱即用」）。
+// 日本語でも使う語（開発・開始・開封など）は含めない。誤検出は再生成が空回りするので保守的に足すこと。
+const CHINESE_ONLY_TERMS = ['開箱', '開源', '預設', '軟體', '硬體', '伺服器', '程式碼', '資料庫', '網路安全', '使用者介面'];
+
+/**
+ * 本文に、日本語字形に直されただけの中国語の熟語が混入していないか検出する純関数。
+ * 脚注定義の出典タイトルは対象外（呼び出し側は本文だけを渡すこと）。
+ * @param {string} text
+ * @returns {string[]} 検出された熟語（重複なし。空配列なら問題なし）
+ */
+export function findChineseOnlyTerms(text) {
+  return CHINESE_ONLY_TERMS.filter((term) => text.includes(term));
+}

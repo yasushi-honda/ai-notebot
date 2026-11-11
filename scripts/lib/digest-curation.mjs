@@ -8,7 +8,7 @@
 
 import { generateText } from './vertex.mjs';
 import { checkCitations } from './citation-gate.mjs';
-import { findSimplifiedChinese } from './style-guard.mjs';
+import { findSimplifiedChinese, findChineseOnlyTerms } from './style-guard.mjs';
 
 export const MIN_THEMES = 3;
 export const MAX_THEMES = 5;
@@ -263,10 +263,10 @@ export function evaluateStageBCitations(bodyMarkdown, validIds) {
         .join(' | ')}`,
     );
   }
-  const chinese = findSimplifiedChinese(bodyMarkdown);
+  const chinese = [...findSimplifiedChinese(bodyMarkdown), ...findChineseOnlyTerms(bodyMarkdown)];
   if (chinese.length > 0) {
     problems.push(
-      `本文に中国語（簡体字: ${chinese.join('')}）が混入しています。出典が中国語でも本文は必ず自然な日本語に訳して書き、原文の語句を写さないでください`,
+      `本文に中国語（${chinese.join('、')}）が混入しています。出典が中国語でも本文は必ず自然な日本語に訳して書き、原文の語句を写さないでください`,
     );
   }
   return problems;
