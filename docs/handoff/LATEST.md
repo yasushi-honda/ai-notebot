@@ -31,7 +31,7 @@
 | 項目 | 状態 |
 |------|------|
 | 未コミット変更 | なし（本ハンドオフ PR を除く） |
-| CI/CD | ✅ care-rebuild（11-13 復旧）success。PR #93 は CI のチェックなし（リポジトリの CI は PR に出なかった） |
+| CI/CD | ✅ care-rebuild（11-13 復旧）success。PR #93 の CI（`test`）も success |
 
 ## 品質ゲート
 
