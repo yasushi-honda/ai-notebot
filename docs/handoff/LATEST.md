@@ -1,46 +1,52 @@
 # ハンドオフ（最新）
 
-- セッション: 2026-11-11（記事本文の未翻訳中国語「開箱即用」の修正と、再発防止ガードの追加。PR #89・#90 マージ）
-- 更新日: 2026-11-11
+- セッション: 2026-11-13（介護版 11-13 の欠落を復旧し、介護版のAIツールに NotebookLM・Copilot・Perplexity を追加。PR #93 マージ）
+- 更新日: 2026-11-13
 
 ## セッション概要
 
-### 11-11 記事に未翻訳の中国語「開箱即用」（PR #89、#90）
-- **報告**: 11-11 記事の makecindy/cindy の段落に「開箱即用」が訳されずに残っていた（decision-maker の指摘）
-- **原因**: 収集データの原題に中国語（`开箱即用`）が含まれ、モデルが日本語の字形（開箱）に直して本文へ写した。既存の `findSimplifiedChinese` は簡体字の字単位の検出で、日本語と同じ字形になるとすり抜ける。同じ語は 10-25 記事にもあった
-- **本文の修正（PR #89）**: 11-11・10-25 の本文 2 行を日本語に直した。脚注の出典タイトルは原題のまま（変更なし）。マージ後に `care-rebuild.yml -f regenerate=false` で再デプロイし、公開ページで本文に「開箱即用」が無いことを確認した
-- **再発防止（PR #90）**: `style-guard.mjs` に語単位の `findChineseOnlyTerms`（開箱・開源・預設・軟體・硬體・伺服器・程式碼・資料庫・網路安全・使用者介面）を追加し、日次版（`digest-curation.mjs`）と介護版（`curate-care.mjs`）の既存の中国語混入チェックに合流させた。検出時は既存どおり再生成する。セキュリティ版は `digest-curation.mjs` を共有するため同じ経路で効く
-- **前回の条件待ち 1 は消化**: 火曜 11-10 の候補は 40 件、11-11 は 35 件で閾値 10 を大きく上回り、月曜に 5 日窓を使い切った後の枯渇は起きていない（`::warning::[collect-security]` の有無は run ログ未確認）
+### 介護版 11-13 の欠落と復旧（#92）
+- **報告**: decision-maker が `/care/` に 11-13 分が無いことを指摘
+- **原因**: 07:00 JST の収集で official（公的機関ドメイン）が 0 件。追加検索 2 回でも見つからず検証に落ち、`build-care.mjs` が設計どおり exit 0 で終わった（AI版・セキュリティ版は公開済み）。到達性検証済みの非公式ソースは 12 件あった
+- **復旧**: `care-rebuild.yml -f date=2026-11-13 -f regenerate=true`（run 43335251643）が success。`care/2026-11-13.md` が main に入り、公開ページは HTTP 200。#92 はクローズ済み
+- **頻度の集計（read-only）**: 介護版の生成失敗 Issue は #50（9-28）・#56（9-29）・#92（11-13）の 3 件。生成済みは 65 日分で、記事ごとの official 件数は 1 件が 26 日・2 件が 23 日・3 件以上が 16 日。1 件だけで通る日が約 4 割ある
+- **対策の判断**: decision-maker は「何もしない・明朝以降の結果を見る」を選択（追加検索の上限を 3 回にする案と許可リストを広げる案は未採用）
+
+### 介護版のAIツール拡張（PR #93）
+- **要望**: decision-maker から「NotebookLM をもっと使う、ほかのAIツールも入れていってよい」
+- **変更**: `collect-care.mjs` の調査プロンプトと `curate-care.mjs` の執筆プロンプトに NotebookLM・Copilot・Perplexity を追加。本文ゲートの系統判定（`GENERIC_TOOL_FAMILIES`）にも NotebookLM・Copilot・Perplexity を独立した系統として追加し、回帰テスト 1 件を足した
+- **反映**: コードの変更なので、本番には次回の介護版の収集（毎朝 07:00 JST）から効く。即時反映は `care-rebuild.yml -f regenerate=false`（未実施）
+- 補足: NotebookLM や Gemini の公式ヘルプは `support.google.com`（許可リストにある）なので、これらのテーマなら official を取りやすいはず（未検証）
 
 ## ドキュメント整合性
 
 | 項目 | 状態 | 備考 |
 |------|------|------|
-| ADR | ⏭ | 今回は設計判断なし（ガードの追加のみ） |
+| ADR | ⏭ | 今回は設計判断なし（プロンプトとゲートの語の追加のみ） |
 | CLAUDE.md ↔ 実装 | ✅ | 構成の記述に影響なし |
-| 完了ステータス一致 | ✅ | PR #89・#90 マージ済み |
+| 完了ステータス一致 | ✅ | PR #93 マージ済み。#92 クローズ済み |
 
 ## Git状態
 
 | 項目 | 状態 |
 |------|------|
 | 未コミット変更 | なし（本ハンドオフ PR を除く） |
-| CI/CD | ✅ PR #89・#90 とも `test` pass。care-rebuild.yml（regenerate=false）で再デプロイ済み |
+| CI/CD | ✅ care-rebuild（11-13 復旧）success。PR #93 は CI のチェックなし（リポジトリの CI は PR に出なかった） |
 
 ## 品質ゲート
 
 | 項目 | 状態 |
 |------|------|
-| codex review | PR #90: 1 回（medium、findings 0 件。「日次版・介護版の検証経路に一貫して組み込まれ、回帰なし」、165 テスト pass）。PR #89 は本文 2 行のみのため対象外 |
-| テスト | ✅ `node --test scripts/test/*.test.mjs` 430 件 pass（新規 3 件: 検出・複数重複なし・空/日本語は非検出） |
-| 実データ確認 | ✅ 既存 150 記事の本文（脚注除く）に適用して誤検出 0 件。公開ページで 11-11・10-25 の本文修正を確認 |
+| codex review | PR #93: 1 回（medium、findings 0 件。「プロンプトとツール判定の拡張に一貫性があり、実害のある回帰なし」、curate-care 125 件 pass） |
+| テスト | ✅ `node --test $(find scripts -name '*.test.mjs')` 430 件 pass（マージ前）。追加後の `curate-care.test.mjs` は 125 件 pass |
+| 実データ確認 | ✅ 11-13 の公開ページが HTTP 200。NotebookLM が実際の記事に出るかは未確認（次回の収集後） |
 
 ## 同根再発スキャン（§4.6）と対症療法判定（§4.7）
 
-- `fix:` は PR #89（本文修正）。同根候補: 2026-10-20 に日次版、2026-10-06 に介護版で「簡体字の混入」があり `findSimplifiedChinese` が入った（今回はその字単位検出のすり抜け）。**同根候補あり**
-  - 仮説: ①モデルは原題の中国語を日本語の字形へ直して写すことがあり、字単位の検出では取れない ②簡体字・日本語字形以外（繁体字そのままの語、英語）の写し込みは別経路で残る ③熟語リストは固定なので、未登録の語は再発しうる
-  - 次に出るとしたら: リスト外の中国語の熟語（例: 別の技術用語）が日本語の字形に直されて本文に残る経路
-- 対症療法判定: 原因（原題の中国語を写す）を実データで特定し、検出ゲートで再生成させる構造的対策のため**該当なし**。ただし熟語リストは固定で網羅ではない
+- 修正 PR（`fix:`）は無いが、復旧対象の「official 0 件で収集が落ちる」は **同根候補 3 件**（#50 9-28、#56 9-29、#92 11-13）
+  - 仮説: ①Google 検索グラウンディングが go.jp/lg.jp を返さない回がある（実行ごとに結果が変わる） ②公的機関に絞る追加検索のプロンプトが効いていない ③official の判定が `.go.jp`/`.lg.jp`/`.gov` と許可リストに限られ、ベンダー公式ドメインが web 扱いになる
+  - 次に出るとしたら: 1 件だけで通っていた日（約 4 割）が 0 件側に振れる経路
+- 対症療法判定: 修正 PR が無く発動条件外。復旧は再実行のみで、official が取れない原因そのものは未調査（頻度が約 2 か月で 3 回と低く、再実行で復旧するため様子見を選択）
 
 ## 次のアクション（3分割・SKILL.md §2.5）
 
@@ -51,21 +57,22 @@
 
 | # | 項目 | trigger（充足条件） | 充足時のタスク | 充足確認方法 |
 |---|------|------------------|--------------|------------|
-| 1 | **新ガード（中国語の熟語検出）の本番動作確認** | 2026-11-12 以降の daily 実行の後 | read-only で run ログに `本文に中国語` の再生成の記録があるか、新しい記事に未翻訳の中国語が残っていないかを確認。誤検出で再生成が空回りしていれば `CHINESE_ONLY_TERMS` を見直す提案（write は指示後） | `gh run view <id> --log \| grep '本文に中国語'`、`grep -rn '開箱' site/src/content` |
-| 2 | **対策の空率の測定と、公式補助取得の要否判断** | セキュリティ版の記事が 5 日分以上そろっている（満たした）。決裁者の指示または次の点検機会 | read-only で記事ごとの対策件数・`::warning::`・要約補強の成功率・除外テーマ数を集計し、別モデルで出典忠実性を再監査。空率が高ければ plan mode で設計提案 | `site/src/content/security/*.md` の `### すぐできる対策` を集計 |
-| 3 | **用語辞書の定義文の人による確認** | decision-maker が辞書（46語）を確認、または確認を依頼 | 誤りがあれば `security-glossary.mjs` を修正（write は指示後） | `scripts/lib/security-glossary.mjs` の `SECURITY_TERMS` |
-| 4 | **次の祝日（11-23 勤労感謝の日・月）の収集確認** | 2026-11-23 の daily 実行の後 | 月曜は 5 日窓になったので枯渇は緩和されるはずだが、公的機関の項目数と件数を read-only で確認 | `data/raw-security/2026-11-23.json` をソース別に集計 |
-| 5 | AI 版 `curate.mjs` の本文に生 HTML・リンクの拒否を入れる | decision-maker からの修正指示 | セキュリティ版の `findUnsafeMarkup` を AI 版の Stage B の `evaluate` にも適用する（介護版には既にある）。本文は外部フィードに影響されるため同じ経路で露出している。修正（write）なので起点は decision-maker | `grep -n findUnsafeMarkup scripts/curate.mjs`（現状ヒットなし） |
-| 6 | Stage B のテーマ除外の実環境確認（前回から継続） | daily の run ログに「除外したテーマ」が頻発した時 | 10/24 の run で 1 件（脚注欠落 3 試行連続 NG）を確認済み。頻発するなら脚注指示の見直し | `gh run view <id> --log \| grep '除外したテーマ'`（リポジトリ内で実行） |
-| 7 | NVIDIA Developer Blog の追加（前回から継続） | `developer.nvidia.com` の名前解決が安定して通ること | `fetchFeed` 経由で取得・直近 3 日の新着を確認し、問題なければ `feeds.mjs` に 1 行追加 | `node -e` で `fetchFeed` を呼ぶ（`scripts/lib/rss.mjs`） |
-| 8 | Reddit 429 の再発（前回から継続） | 収集失敗が収集成功しきい値に影響した時 | 10/24・10/25 の run でも `Reddit r/MachineLearning`・`r/artificial` が HTTP 429（他ソースは生きており記事は生成された）。`collect.mjs` の Reddit 取得のリトライ・バックオフを read-only で調査 | `gh run list --workflow=daily.yml` の失敗 run のログ |
-| 9 | アラートメールの受信確認（前回から継続） | decision-maker が `hy.unimail.11@gmail.com` の受信箱を確認（AI 代行不可） | 届いていなければ通知チャネルを調査 | decision-maker 本人が確認 |
-| 10 | GA4 データ反映の再確認（前回から継続） | decision-maker 本人の Google ログインでの確認（AI 代行不可） | analytics.google.com で DebugView / リアルタイムレポートを確認 | decision-maker 本人が確認 |
-| 11 | 「福祉用具」targetServices が生成記事で選ばれるか（前回から継続） | 次回以降の daily.yml / care-rebuild.yml の自然な実行（確率的） | `site/src/content/care/` の新規記事に出現するか確認。長期間出現しなければ `collect-care.mjs` のテーマ指示を見直す | `grep -l '福祉用具' site/src/content/care/*.md` |
-| 12 | `content.config.ts` の themes フィールド影響分析（前回から継続） | decision-maker からの実行指示 | `/impact-analysis` 実行（read-only） | 明示指示の有無 |
-| 13 | care-rebuild.yml の FETCH_HEAD 方式への統一（前回から継続） | 次に care-rebuild.yml の YAML 自体を編集する用事、または明示指示 | Sync ステップを `git fetch origin main && git reset --hard FETCH_HEAD` に統一 | `grep -n "git reset" .github/workflows/care-rebuild.yml` |
+| 1 | **介護版の明朝以降の確認（NotebookLM 拡張の効果と official 件数）** | 2026-11-14 以降の daily の後（数日分そろうと判断しやすい） | read-only で新しい介護版の記事に NotebookLM 等が出たか、`data/raw-care/` の official 件数が 1 件のままか、`generate` が失敗していないかを確認。1 件が続く・失敗が再発するなら、追加検索の上限を 3 回にする案か許可リストの拡張を decision-maker に提示 | `grep -l 'NotebookLM' site/src/content/care/*.md`、`grep -c '"tier": *"official"' data/raw-care/<date>.json` |
+| 2 | **新ガード（中国語の熟語検出）の本番動作確認**（前回の 1 を継続） | 2026-11-12 以降の daily の後（11-12・11-13 は実行済み） | read-only で run ログに `本文に中国語` の再生成の記録があるか、新しい記事に未翻訳の中国語が残っていないかを確認。誤検出で再生成が空回りしていれば `CHINESE_ONLY_TERMS` を見直す提案（write は指示後） | `gh run view <id> --log \| grep '本文に中国語'`、`grep -rn '開箱' site/src/content` |
+| 3 | **対策の空率の測定と、公式補助取得の要否判断** | セキュリティ版の記事が 5 日分以上そろっている（満たした）。決裁者の指示または次の点検機会 | read-only で記事ごとの対策件数・`::warning::`・要約補強の成功率・除外テーマ数を集計し、別モデルで出典忠実性を再監査。空率が高ければ plan mode で設計提案 | `site/src/content/security/*.md` の `### すぐできる対策` を集計 |
+| 4 | **用語辞書の定義文の人による確認** | decision-maker が辞書（46語）を確認、または確認を依頼 | 誤りがあれば `security-glossary.mjs` を修正（write は指示後） | `scripts/lib/security-glossary.mjs` の `SECURITY_TERMS` |
+| 5 | **次の祝日（11-23 勤労感謝の日・月）の収集確認** | 2026-11-23 の daily 実行の後 | 月曜は 5 日窓になったので枯渇は緩和されるはずだが、公的機関の項目数と件数を read-only で確認 | `data/raw-security/2026-11-23.json` をソース別に集計 |
+| 6 | AI 版 `curate.mjs` の本文に生 HTML・リンクの拒否を入れる | decision-maker からの修正指示 | セキュリティ版の `findUnsafeMarkup` を AI 版の Stage B の `evaluate` にも適用する（介護版には既にある）。本文は外部フィードに影響されるため同じ経路で露出している。修正（write）なので起点は decision-maker | `grep -n findUnsafeMarkup scripts/curate.mjs`（現状ヒットなし） |
+| 7 | Stage B のテーマ除外の実環境確認（前回から継続） | daily の run ログに「除外したテーマ」が頻発した時 | 10/24 の run で 1 件（脚注欠落 3 試行連続 NG）を確認済み。頻発するなら脚注指示の見直し | `gh run view <id> --log \| grep '除外したテーマ'`（リポジトリ内で実行） |
+| 8 | NVIDIA Developer Blog の追加（前回から継続） | `developer.nvidia.com` の名前解決が安定して通ること | `fetchFeed` 経由で取得・直近 3 日の新着を確認し、問題なければ `feeds.mjs` に 1 行追加 | `node -e` で `fetchFeed` を呼ぶ（`scripts/lib/rss.mjs`） |
+| 9 | Reddit 429 の再発（前回から継続） | 収集失敗が収集成功しきい値に影響した時 | 10/24・10/25 の run でも `Reddit r/MachineLearning`・`r/artificial` が HTTP 429（他ソースは生きており記事は生成された）。`collect.mjs` の Reddit 取得のリトライ・バックオフを read-only で調査 | `gh run list --workflow=daily.yml` の失敗 run のログ |
+| 10 | アラートメールの受信確認（前回から継続） | decision-maker が `hy.unimail.11@gmail.com` の受信箱を確認（AI 代行不可） | 届いていなければ通知チャネルを調査 | decision-maker 本人が確認 |
+| 11 | GA4 データ反映の再確認（前回から継続） | decision-maker 本人の Google ログインでの確認（AI 代行不可） | analytics.google.com で DebugView / リアルタイムレポートを確認 | decision-maker 本人が確認 |
+| 12 | 「福祉用具」targetServices が生成記事で選ばれるか（前回から継続） | 次回以降の daily.yml / care-rebuild.yml の自然な実行（確率的） | `site/src/content/care/` の新規記事に出現するか確認。長期間出現しなければ `collect-care.mjs` のテーマ指示を見直す | `grep -l '福祉用具' site/src/content/care/*.md` |
+| 13 | `content.config.ts` の themes フィールド影響分析（前回から継続） | decision-maker からの実行指示 | `/impact-analysis` 実行（read-only） | 明示指示の有無 |
+| 14 | care-rebuild.yml の FETCH_HEAD 方式への統一（前回から継続） | 次に care-rebuild.yml の YAML 自体を編集する用事、または明示指示 | Sync ステップを `git fetch origin main && git reset --hard FETCH_HEAD` に統一 | `grep -n "git reset" .github/workflows/care-rebuild.yml` |
 
-> 上表の 2〜13 は前回から継続（前回の 1＝11-10 の候補件数は 40 件で確認済みのため、新 1＝新ガードの本番確認に差し替え）。うち 5〜13 は前々回から継続（5＝AI 版 `curate.mjs` の生 HTML 拒否、6＝Stage B のテーマ除外、7＝NVIDIA ブログ、8＝Reddit 429、9＝アラートメール、10＝GA4、11＝福祉用具、12＝`content.config.ts` 影響分析、13＝care-rebuild の FETCH_HEAD）。前回の 1（11-02 以降の用語確認）・14（#84 の効果）・15（11-01 記事の再生成）は完了または陳腐化のため削除（14 は上記のとおり確認済み）。
+> 上表の 3〜14 は前回までの 2〜13 を番号だけ繰り下げた継続項目（内容は変更なし）。新 1 は今回追加、新 2 は前回の 1 の継続。
 
 ### 却下候補（記録のみ）
 
@@ -91,8 +98,9 @@
 | 13 | 重複排除の窓（7日）を縮めて公的機関の再掲を許す | 11-08・11-09 の公的機関 0 件の対策として検討（AI が発想） | 再掲が増え記事の新鮮さが落ちる。火曜以降に自然解消する見込み | 公的機関 0 件が火〜金にも繰り返された時、または decision-maker の指示 |
 | 14 | `CHINESE_ONLY_TERMS` を過去記事の原題から広げる（候補抽出＋誤検出チェック） | 再発防止の次の一手として選択肢に提示した（AI 発想）。decision-maker は選ばなかった | 起点は decision-maker 領分。実害が出ていない語を先回りで足すと誤検出で再生成が空回りするリスクがある | リスト外の中国語の熟語が実際に本文へ残った時、または decision-maker の指示 |
 
+
 ### 再開可能性判定
-✅ **再開可能** - 次回は条件待ち 1（新ガードの本番動作確認、11-12 以降の daily の後）から始める。
+✅ **再開可能** - 次回は条件待ち 1（介護版の NotebookLM 拡張と official 件数の確認、11-14 以降の daily の後）から始める。
 
 ## 申し送り
 
@@ -111,14 +119,14 @@
 ✅ 残留 Node プロセスなし（マシン全体チェック）。
 
 ## Issue Net 変化
-- Close 数: 0 件
+- Close 数: 1 件 (#92。care-rebuild 実行後に確認した時点で既にクローズ済み。自動クローズと思われる)
 - 起票数: 0 件
-- Net: 0 件（Issue 起票の triage 基準を満たす事象ではなく、PR #89・#90 で完結したため）
+- Net: +1 件（起票の triage 基準を満たす事象なし。PR #93 は Issue なしで実施）
 
 ## 最終結論
 
-✅ **セッション終了可** — 未翻訳の本文を修正して公開ページで確認し、検出ガードを追加した（PR #89・#90 マージ済み）。
+✅ **セッション終了可** — 介護版 11-13 を復旧して公開を確認し、AIツール拡張（PR #93）をマージした。
 
-- OPEN PR: 本ハンドオフ PR のみ / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 13
-- §4.6 同根再発スキャン: 候補 2 件（10-20 日次版・10-06 介護版の簡体字混入）。今回はその検出のすり抜けで、語単位の検出で補強済み
-- §4.7 対症療法判定: 該当なし（ただし熟語リストは固定で、未登録の語は再発しうる）
+- OPEN PR: 本ハンドオフ PR のみ / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 14
+- §4.6 同根再発スキャン: 候補 3 件（#50・#56・#92 の official 0 件）。原因の根治は未実施で、様子見を decision-maker が選択
+- §4.7 対症療法判定: 発動条件外（修正 PR なし）。復旧は再実行のみで、official が取れない原因は未調査
