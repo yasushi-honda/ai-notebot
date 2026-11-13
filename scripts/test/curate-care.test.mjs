@@ -859,3 +859,10 @@ test('buildFootnoteDefs: www.で始まるsourceはコードスパンで囲みaut
   // 生のwww.ホスト名がバッククォート無しで露出していないことも確認する
   assert.ok(!defs.includes('— www.mhlw.go.jp（公式）'));
 });
+
+test('mentionsMultipleGenericToolFamilies: NotebookLM は独立した1系統として数える', () => {
+  const body = '## 手順\n1. NotebookLMに通知文書を読み込ませる。\n2. Geminiで要点を整理する。\n\n## 使えるプロンプト例\n```\n要約して\n```\n';
+  assert.equal(mentionsMultipleGenericToolFamilies(body), true);
+  const only = '## 手順\n1. NotebookLMに読み込ませる。\n\n## 使えるプロンプト例\n```\n要約して\n```\n';
+  assert.equal(mentionsMultipleGenericToolFamilies(only), false);
+});
