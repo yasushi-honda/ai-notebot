@@ -105,9 +105,9 @@ const CARE_SCHEMA = {
         '詰め込むことは絶対にしない）。段落間には実際の改行を2つ連続で入れる（文字列としてのバックスラッシュエヌは書かない）。' +
         '絵文字・「いかがでしたか」「まとめると」「革命的」等の煽り文句・誇張表現は一切使わない。' +
         '実務マニュアルのような、簡潔で断定的な文体で書く。' +
-        'Google Workspace・Gemini・ChatGPT・Claude等、一般に広く使われている汎用AIツールの' +
+        'Google Workspace・Gemini・NotebookLM・ChatGPT・Claude・Copilot・Perplexity等、一般に広く使われている汎用AIツールの' +
         '具体的な使い方を中心に書き、特定の介護専用商用SaaS製品の宣伝にはしない。' +
-        '「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・ChatGPT・Claude・Google ' +
+        '「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・NotebookLM・ChatGPT・Claude・Google ' +
         'Workspaceのうち少なくとも2系統に触れること（特定の1ツールだけに偏らない）。' +
         '「## 手順」の中に、要配慮個人情報（利用者の氏名・心身の状況等）を扱う際の具体的な' +
         '注意点（匿名化・仮名化の具体的なやり方、確認すべき社内ルール等）を最低1ステップに含める。',
@@ -256,9 +256,9 @@ function buildPrompt(items, extraInstructions, researchSummary, recentWorkAreas)
     '',
     '## 執筆ルール',
     '- 手順で紹介する方法は、Google Workspace（スプレッドシート・ドキュメント・フォーム等）・',
-    '  Gemini・ChatGPT・Claude（Claude Codeを含む）など、一般に広く使われている汎用AIツールを',
+    '  Gemini・NotebookLM・ChatGPT・Claude（Claude Codeを含む）・Copilot・Perplexityなど、一般に広く使われている汎用AIツールを',
     '  使った具体的な操作を中心に構成すること。特定ベンダーの独自商用SaaS製品を勧める記事にはしない',
-    '- 「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・ChatGPT・Claude・Google',
+    '- 「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・NotebookLM・ChatGPT・Claude・Google',
     '  Workspaceのうち少なくとも2系統に触れること。特定の1ツールだけに偏った記事にしない',
     '- 「## 使えるプロンプト例」には、実際にコピペして使える具体的なプロンプト文を1つ、',
     '  フェンス付きコードブロック（```）で提示すること。「利用者名」「氏名」「お名前」',
@@ -396,6 +396,9 @@ const GENERIC_TOOL_KEYWORDS = [
   'Googleカレンダー',
   'Google カレンダー',
   'Gemini',
+  'NotebookLM',
+  'Copilot',
+  'Perplexity',
   'ChatGPT',
   'Claude',
 ];
@@ -429,8 +432,11 @@ const GENERIC_TOOL_FAMILIES = {
     'Google カレンダー',
   ],
   Gemini: ['Gemini'],
+  NotebookLM: ['NotebookLM'],
   ChatGPT: ['ChatGPT'],
   Claude: ['Claude'],
+  Copilot: ['Copilot'],
+  Perplexity: ['Perplexity'],
 };
 
 /**
