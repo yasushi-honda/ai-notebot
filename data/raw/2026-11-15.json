@@ -1,0 +1,655 @@
+{
+  "date": "2026-11-15",
+  "collectedAt": "2026-11-14T22:00:25.628Z",
+  "sourceSuccessCount": 23,
+  "items": [
+    {
+      "id": "s-fa43618461",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "pbakaus/impeccable: The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+      "url": "https://github.com/pbakaus/impeccable",
+      "publishedAt": "2026-11-14T22:00:10.000Z",
+      "summary": "★110172 The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships."
+    },
+    {
+      "id": "s-b5fd68028c",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "elie222/rakazo: Open-source Grok Bot alternative. Choose your own model and sandbox.",
+      "url": "https://github.com/elie222/rakazo",
+      "publishedAt": "2026-11-14T21:59:31.000Z",
+      "summary": "★8411 Open-source Grok Bot alternative. Choose your own model and sandbox."
+    },
+    {
+      "id": "s-9270533127",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "morluto/rea: Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "publishedAt": "2026-11-14T21:58:56.000Z",
+      "summary": "★459688 Reverse engineer anything with agents, from app behavior down to native binaries."
+    },
+    {
+      "id": "s-741a0197c9",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "cheaper-inference/OmniCopilot: 1200+ AI models in your GitHub Copilot Chat — free & forever free. VS Code extension powered by OmniRoute: 340+ providers (90+ free) — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, Qwen — with agent mode, tool calling, vision and quota-aware auto-fallback. MIT.",
+      "url": "https://github.com/cheaper-inference/OmniCopilot",
+      "publishedAt": "2026-11-14T21:57:32.000Z",
+      "summary": "★190 1200+ AI models in your GitHub Copilot Chat — free & forever free. VS Code extension powered by OmniRoute: 340+ providers (90+ free) — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, Qwen — with agent mode, tool calling, vision and quota-aware auto-fallback. MIT."
+    },
+    {
+      "id": "s-0e0e217c5c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Skyvern-AI/skyvern: Automate browser based workflows with AI",
+      "url": "https://github.com/Skyvern-AI/skyvern",
+      "publishedAt": "2026-11-14T21:56:31.000Z",
+      "summary": "★23419 Automate browser based workflows with AI"
+    },
+    {
+      "id": "s-eddc412e14",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "aws-samples/amazon-transcribe-live-meeting-assistant: Live Meeting Assistant (LMA) - AI-powered live meeting transcription, translation, summarization, and assistant using Amazon Transcribe, Amazon Bedrock, and other AWS AI services",
+      "url": "https://github.com/aws-samples/amazon-transcribe-live-meeting-assistant",
+      "publishedAt": "2026-11-14T21:55:36.000Z",
+      "summary": "★172 Live Meeting Assistant (LMA) - AI-powered live meeting transcription, translation, summarization, and assistant using Amazon Transcribe, Amazon Bedrock, and other AWS AI services"
+    },
+    {
+      "id": "s-cae0c65b85",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "coco-research/coco: Coco Super Intelligence: agent skills, slash commands and subagents for Claude Code, Cursor and Codex. One command installs them into the tool you already use.",
+      "url": "https://github.com/coco-research/coco",
+      "publishedAt": "2026-11-14T21:54:59.000Z",
+      "summary": "★632 Coco Super Intelligence: agent skills, slash commands and subagents for Claude Code, Cursor and Codex. One command installs them into the tool you already use."
+    },
+    {
+      "id": "s-5fd1665e31",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "wynx1123/ai-welfare-hub: Claude Code 免费 | 公益站 | New API | AI API 中转站导航 —— 自动探活 15+ 站点（Claude/Codex/Cursor/Gemini 免费额度、每日签到），GitHub Actions 每 6 小时更新存活状态，纯静态零依赖可 fork",
+      "url": "https://github.com/wynx1123/ai-welfare-hub",
+      "publishedAt": "2026-11-14T21:54:03.000Z",
+      "summary": "★104 Claude Code 免费 | 公益站 | New API | AI API 中转站导航 —— 自动探活 15+ 站点（Claude/Codex/Cursor/Gemini 免费额度、每日签到），GitHub Actions 每 6 小时更新存活状态，纯静态零依赖可 fork"
+    },
+    {
+      "id": "s-a58df8df53",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "run-llama/ParseBench: ParseBench - A Document Parsing Benchmark for AI Agents",
+      "url": "https://github.com/run-llama/ParseBench",
+      "publishedAt": "2026-11-14T21:53:51.000Z",
+      "summary": "★638 ParseBench - A Document Parsing Benchmark for AI Agents"
+    },
+    {
+      "id": "s-6a36938791",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "Tencent/LoopForge: Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "url": "https://github.com/Tencent/LoopForge",
+      "publishedAt": "2026-11-14T21:53:14.000Z",
+      "summary": "★860 Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants."
+    },
+    {
+      "id": "s-3136695d84",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "LayerNorm/overlay-web: The control plane for your AI employees",
+      "url": "https://github.com/LayerNorm/overlay-web",
+      "publishedAt": "2026-11-14T21:52:45.000Z",
+      "summary": "★196 The control plane for your AI employees"
+    },
+    {
+      "id": "s-da3220666e",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "langgenius/dify: Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+      "url": "https://github.com/langgenius/dify",
+      "publishedAt": "2026-11-14T21:52:39.000Z",
+      "summary": "★161163 Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack."
+    },
+    {
+      "id": "s-9a736294c4",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+      "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "publishedAt": "2026-11-14T21:41:22.000Z",
+      "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon."
+    },
+    {
+      "id": "s-78417bcdce",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIエージェント向けに、画面を番号付きテキストで渡して変化した行だけ返す MCP サーバー phonedriver",
+      "url": "https://qiita.com/hridayahoney/items/de710575152e6ec7dc16",
+      "publishedAt": "2026-11-14T21:36:48.000Z",
+      "summary": "phonedriver とは この記事では、Android と iPhone を AI エージェントから操作する MCP サーバー兼 CLI「phonedriver」（Rust 製、AGPL-3.0）を紹介します。筆者は日本語を話せず、この記事は機械翻訳です。 リポジトリ..."
+    },
+    {
+      "id": "s-38acf7f276",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "自作MCPサーバー その20",
+      "url": "https://qiita.com/ohisama@github/items/9ba6fdcd6bc5fa02cff9",
+      "publishedAt": "2026-11-14T21:17:28.000Z",
+      "summary": "概要 MCPサーバーが気になったので、調べてみた。 AIに聞いた。 ChatGPTで、アセンブラやってみた。 アセンブラは、知ってますか 5:52 はい、知っています。アセンブラは、CPUの命令に近い形でプログラムを書くための言語です。機械語との対応が分かりやすく、メモ..."
+    },
+    {
+      "id": "s-8c1d3a436a",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "自作MCPサーバー その19",
+      "url": "https://qiita.com/ohisama@github/items/a667137e63f0d0ab261d",
+      "publishedAt": "2026-11-14T21:10:43.000Z",
+      "summary": "概要 MCPサーバーが気になったので、調べてみた。 AIに聞いた。 ClaudeDesktopで、アセンブラやってみた。 C:\\Program Files (x86)\\fasmw17334\\fasm.exe は、使えますか はい、使えます。ただし私はお使いのPC上のファ..."
+    },
+    {
+      "id": "s-7c99e943a0",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "NTTモビリティのHDマップレス自動運転バス実証の要点：カメラで認識、AIと交通ルールの組み合わせ、レベル2から",
+      "url": "https://qiita.com/quotidia/items/f8387c2940aa6c197d9d",
+      "publishedAt": "2026-11-14T21:01:02.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 NTTグループの自動運転の会社NTTモビリティが、高精度3次元地図 (HDマップ) を前もって作ることを前提にしない「HDマップレス型」の自動運転バスを、2027年2月から公道で走らせて評価す..."
+    },
+    {
+      "id": "s-4ecfb44c1a",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "FAA expands AI advice to manage air traffic congestion across US airspace",
+      "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+      "publishedAt": "2026-11-14T20:58:43.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-da0d1eb9d4",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "FAA's Smart AI System Now Active at All 22 ARTCCs [Nov 10]",
+      "url": "https://www.flyingmag.com/faa-smart-ai-now-active-at-22-artccs-nationwide/",
+      "publishedAt": "2026-11-14T20:35:14.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-b1e5bfa350",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Ai Rig finally done and stable, perfect winter heater",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwc3m7/ai_rig_finally_done_and_stable_perfect_winter/",
+      "publishedAt": "2026-11-14T20:13:38.000Z",
+      "summary": "8x3090 my ocd wouldn&#39;t let me have different gpu models so ended up with 8 gigabyte gaming OC. I bought all the gpus by early 2026 before the prices went crazy. Avg maybe 600 to 700 gbp per gpu. Running on a Romed8-2t motherboard. All run at full pcie 4.0 x16 except the two rightmost who share one pcie slot and get 8x each. Cpu watercooling radiator sits nicely on top. Had to go the watercooli"
+    },
+    {
+      "id": "s-5539e4974b",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "AI Company Employees Should Unionize",
+      "url": "https://www.astralcodexten.com/p/ai-company-employees-should-unionize",
+      "publishedAt": "2026-11-14T19:47:33.000Z",
+      "summary": "points=6 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-6cced9df80",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Update: tandem.cpp — DeepSeek-V4.1 on a 64 GB PC with a 16 GB card, and AMD (ROCm) support",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwan2j/update_tandemcpp_deepseekv41_on_a_64_gb_pc_with_a/",
+      "publishedAt": "2026-11-14T19:12:45.000Z",
+      "summary": "Quick update on tandem.cpp, my patch set for llama.cpp that runs MoE models too big for your VRAM faster. It keeps the hot experts on the GPU and lets the CPU help with the rest. Repo: https://github.com/ewhacc/tandem.cpp DeepSeek-V4.1-Flash IQ2_XS (ISTA GSQ-RCO, 139 GiB of experts) on normal PCs Decode tok/s, one user, GSM8K questions, greedy, exact (no expert skipping on any engine), same quant "
+    },
+    {
+      "id": "s-9e86f995b8",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Another Linux kernel developer steps back from some duties due to overload",
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/13/another-linux-kernel-developer-steps-back-from-some-duties-due-to-overload/5309628",
+      "publishedAt": "2026-11-14T18:49:19.000Z",
+      "summary": "points=6 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-b8a30611a2",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Thousands turn out in Edinburgh to protest against AI data centres",
+      "url": "https://www.bbc.co.uk/news/articles/c8n50w445zgpo",
+      "publishedAt": "2026-11-14T18:47:10.000Z",
+      "summary": "points=7 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-9be07829e3",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "nex-agi/Nex-N2.6 · Hugging Face",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw9mpa/nexaginexn26_hugging_face/",
+      "publishedAt": "2026-11-14T18:31:49.000Z",
+      "summary": "Nex-N2.6 is a multimodal agentic model from Nex-AGI, built on GLM-5.3-Flash . It is designed for computer use, coding, and long-horizon tasks involving tools. This repository contains the FP8-quantized weights of Nex-N2.6, with approximately 321B parameters. Following Nex-N2.5-Pro , this release focuses on reducing repetitive reasoning and improving adherence to the tools available in the current "
+    },
+    {
+      "id": "s-0eb34265fe",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Christophe Pettus: Stop Using AI to Report PostgreSQL Bugs",
+      "url": "https://thebuild.com/blog/stop-using-ai-to-report-postgresql-bugs/",
+      "publishedAt": "2026-11-14T17:58:50.000Z",
+      "summary": "points=6 comments=1 (Hacker News)"
+    },
+    {
+      "id": "s-ec3388a4bd",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Claude asked to renumber pages deletes professor's syllabus, year of notes",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/rogue-claude-ai-tasked-with-renumbering-pages-accidentally-deletes-law-professors-entire-syllabus-one-year-of-lecture-notes-youre-right-to-be-angry-i-deleted-your-files-through-my-own-carelessness-humbled-agent-admits",
+      "publishedAt": "2026-11-14T17:51:13.000Z",
+      "summary": "points=37 comments=59 (Hacker News)"
+    },
+    {
+      "id": "s-cc0a455b51",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "FAA blames ground stop on equipment issue during telecoms network upgrade",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6040952/faa-ground-stop-airplane-travel",
+      "publishedAt": "2026-11-14T17:49:24.000Z",
+      "summary": "points=6 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-b08cefd999",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "publishedAt": "2026-11-14T17:30:00.000Z",
+      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations."
+    },
+    {
+      "id": "s-21e22efc0d",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "tiny-voca: a fully open 4.5M-parameter TTS (code, weights, dataset). Runs 70x real time on a CPU",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw7zrg/tinyvoca_a_fully_open_45mparameter_tts_code/",
+      "publishedAt": "2026-11-14T17:26:13.000Z",
+      "summary": "I made a small English text-to-speech model called tiny-voca. It has 4.5M parameters, two voices, and it runs in your browser. Try it here, nothing is sent to a server: https://tiny-voca.n4ze3m.com Some facts: - 4,537,291 parameters, 18 MB. This is the whole model, the waveform part is included. - Two voices, one female and one male. 24 kHz. - About 70x faster than real time on 4 CPU threads. - Ru"
+    },
+    {
+      "id": "s-2a2bfff112",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+      "publishedAt": "2026-11-14T16:34:15.000Z",
+      "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations."
+    },
+    {
+      "id": "s-565c5f4c5a",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "常時稼働エージェントの作り方（Claude公式ブログを資料化）",
+      "url": "https://speakerdeck.com/minorun365/jouji-kadou-ejento-no-tsukurikata",
+      "publishedAt": "2026-11-14T16:06:17.000Z",
+      "summary": "以下のURLを私のClaude Codeに渡して、スライドをポン出しする実験です。 https://claude.com/ja/resources/articles/building-always-on-agents"
+    },
+    {
+      "id": "s-52609353fa",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Why don’t we have national open AI models?",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw4ue3/why_dont_we_have_national_open_ai_models/",
+      "publishedAt": "2026-11-14T15:17:07.000Z",
+      "summary": "Deepseek spent about $6m on 4.1 apparently. Published all of their work. US gov says don’t trust China, blah blah… As a US citizen why are we not training national open source? The cost is nothing compared to the budget, solves security issues, and prevents monopolistic practices on token pricing &#32; submitted by &#32; /u/Strange_Test7665 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-d46b516a4c",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
+      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
+      "publishedAt": "2026-11-14T15:00:00.000Z",
+      "summary": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known figure in the AI safety and policy community, though she is perhaps best known for having served on […]"
+    },
+    {
+      "id": "s-ec4816d8d9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AI悪用の攻撃拠点、千台発見　サイトの弱点探索、不正侵入疑い",
+      "url": "https://www.47news.jp/15231027.html",
+      "publishedAt": "2026-11-14T14:55:47.000Z",
+      "summary": "高性能な人工知能（AI）を悪用したサイバー攻撃の拠点と疑われるサーバーが10月以降、世界のインターネット上に少なくとも千台前後存在していることが14日、分かった。日本の情報セキュリティー専門機関が海外企業と連携した国際的調査で判明した。国内外のウェブサイトを標的としてAIを使って弱点を探索し、不正侵入を..."
+    },
+    {
+      "id": "s-333b8391a0",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Qwen4 Flash wishlist",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw36op/qwen4_flash_wishlist/",
+      "publishedAt": "2026-11-14T14:04:38.000Z",
+      "summary": "After using 3.8QFN for some time I have to the conclusion that my wish list for QF4 now only consists of these points. The model can talk to you in a human understandable language See point 1 General improvement in reasoning/intelligence, but mostly see point 1 That&#39;s about it. If I could graft 3.8 27B Answer/Personality style onto QFN I would&#39;ve done it yesterday. &#32; submitted by &#32;"
+    },
+    {
+      "id": "s-2eb75751c2",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "実装が終わっているAI機能を、v1.0では出さないことにした",
+      "url": "https://zenn.dev/hello_jun_log/articles/ship-without-the-ai-feature",
+      "publishedAt": "2026-11-14T14:01:48.000Z",
+      "summary": "個人開発の英語学習アプリを初リリースしました。このアプリにはGeminiで英文を添削するモードが実装済みなのですが、v1.0では出していません。コードは消さずに、環境変数が入っていなければ画面に現れない形でゲートしてあります。 「せっかく作ったのに」という話ではなく、出さないことで消える問題が4つあったので削ったほうが得だという判断でした。そして同じ理由でOTA更新（EAS Update）も外しました。どちらも「後から足すほうが自然」という結論になった経緯を残します。 1. 出さない理由その1: Cloud Functionが無防備だった AI添削は、Gemini のAPIキーをクラ..."
+    },
+    {
+      "id": "s-f57464ef9a",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "The lawyer who posts here about his V100s got his story picked up by Tom’s Hardware",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw2ogq/the_lawyer_who_posts_here_about_his_v100s_got_his/",
+      "publishedAt": "2026-11-14T13:41:12.000Z",
+      "summary": "&#32; submitted by &#32; /u/General-Spite1222 [link] &#32; [comments]"
+    },
+    {
+      "id": "s-b43d7af2e6",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "ARC 1.0: A decision model for routing AI agents across cloud and local models (0.6B, Apache 2.0)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xw29ic/arc_10_a_decision_model_for_routing_ai_agents/",
+      "publishedAt": "2026-11-14T13:20:55.000Z",
+      "summary": "ARC—the Adaptive Routing Controller—reads an agent’s conversation and produces signals for choosing a model and its reasoning effort. Applications combine those signals with their available models, prices, and policies to decide how to handle the next request. If this works well, could be quite useful &#32; submitted by &#32; /u/Balance- [link] &#32; [comments]"
+    },
+    {
+      "id": "s-c006ed80ba",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「すげぇ！教科書とかで見たフロッピーや！！これで容量どれくらいあるんですか？」若者のほのぼのとした感想がぶっ刺さるネット民",
+      "url": "https://togetter.com/li/2770437",
+      "publishedAt": "2026-11-14T12:54:13.000Z",
+      "summary": "しー@園芸博NEXT！ @Sh_i0916 すげぇ！！！ フロッピーや！！ フロッピーや！！！ 教科書とかで見たフロッピーや！！ 初めて触ったかも！！ うっす！！！！ かるっ！！！！！ すげぇ！！ これで容量どれくらいあるんですか？ #フロッピー #富士通 pic.x.com/Ofx3uVhKaf 2026-11-14 09:04:15"
+    },
+    {
+      "id": "s-e7f160df4a",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Cognitoの自己サインアップが有効だと、誰でもAWSの一時認証情報を取得できる：AI攻撃ツールARTEXの事例と確認したい設定3点 | DevelopersIO",
+      "url": "https://dev.classmethod.jp/articles/cognito-self-signup-agentic-attack/",
+      "publishedAt": "2026-11-14T12:48:25.000Z",
+      "summary": "どうも！オペ部の西村祐二です！ S3 にフロントエンドを置き、Amazon Cognito のユーザープールでログインさせ、ID プールで AWS の一時認証情報を渡す。AWS で SPA を作るときによく見る構成です。この構成が攻撃用の AI エージェントにどう使われたかを、Datadog Security Labs が2026年11月9日の記事「On the hunt fo..."
+    },
+    {
+      "id": "s-3357bdf7a6",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "SAST の外側を探す AI：SonarQube Hunter Agent の仕組みと導入条件",
+      "url": "https://zenn.dev/r_goto/articles/sonarqube-hunter-agent",
+      "publishedAt": "2026-11-14T12:31:56.000Z",
+      "summary": "この記事は、クリエーションライン Tech Blog の記事「SonarQube Hunter Agent とは｜SAST では見つからない「ロジックの脆弱性」を AI が探す」の要約です。元の記事：SonarQube Hunter Agent とは｜SAST では見つからない「ロジックの脆弱性」を AI が探す SonarQube Hunter Agent は、SAST では見つけにくいロジックの脆弱性を、コード全体を読んで探す AI エージェントです。ロジックの脆弱性とは、コードは書かれたとおりに動くのに、守るべき決まりが抜けている欠陥です。例えば、URL の番号を変えると他人の..."
+    },
+    {
+      "id": "s-4e30ca8861",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI に Excel を読ませるなら、Python より3〜13倍速く、メモリ使用量は最大92%減",
+      "url": "https://zenn.dev/itoken_lab/articles/excel-read-fast-light",
+      "publishedAt": "2026-11-14T12:30:35.000Z",
+      "summary": "Claude Code などの AI エージェントに Excel を読ませると、Python のライブラリを入れ、スクリプトを書き、動かしては直す往復が始まります。表が大きいと、そのスクリプトも重くなります。excel-read は、Skill に同梱した実行ファイルで Excel を読み、表を CSV や JSON にして AI に渡します。同じ表を CSV にする作業で、Python（pandas）より3〜11倍速く、メモリ使用量は84〜92%減りました（Python の 81〜157MB に対し、excel-read は行数によらず 13MB）。AI に同じ頼みをさせた比較では、5..."
+    },
+    {
+      "id": "s-8479f47633",
+      "source": "Interconnects",
+      "sourceType": "media",
+      "title": "Open-source AI without Jensen",
+      "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+      "publishedAt": "2026-11-14T12:23:15.000Z",
+      "summary": "A decapitation. It’s time to rebuild."
+    },
+    {
+      "id": "s-42020f97d7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【簡単】Claude Code×HyperFramesで展示会・商談用のデモ動画を作成する方法（ナレーション・字幕付き）",
+      "url": "https://zenn.dev/hayato498/articles/claude-code-demo-video-hyperframes",
+      "publishedAt": "2026-11-14T12:10:44.000Z",
+      "summary": "この記事の要点 Claude Codeに、HyperFrames（HTMLから動画を書き出すOSS）、gpt-image-2.5、gpt-realtime-2.1を使わせて、日本語ナレーションと字幕付きのデモ動画（1920×1080のmp4）を作る 約30秒の動画1本のAPI費用は約0.31米ドル、生成APIの待ちは合計約1分、レンダは約1分 手順、スキル、スクリプト、完成例はGitHubで公開している。記事のURLを自分のコーディングエージェントに渡せば、同じ手順で再現できる 2026年11月4日時点の情報（HyperFrames 0.8.30、gpt-image-2.5-flare..."
+    },
+    {
+      "id": "s-567fa29889",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Jensen Huang and the decline of the visionary showman founder CEO",
+      "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
+      "publishedAt": "2026-11-14T12:00:00.000Z",
+      "summary": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers and fans, their faces awash in blue glow, as he made his entrance in a black leather jacket that […]"
+    },
+    {
+      "id": "s-f55a83e55c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIでMVを個人制作しようとして、盛大に躓いた話",
+      "url": "https://zenn.dev/tosh1000950/articles/521eb49923fb87",
+      "publishedAt": "2026-11-14T11:57:34.000Z",
+      "summary": "はじめに：また「さくっと作れるかも」で始めた MV作りの話を書く。これまでの流れは、まず「さくっとMV（PV）が作れるかも」と思って、安易な考えで始めた（これはゲームの時と同じ）。 でも、実際やってみないとどこで躓くかなんてわからないから、それでいいと思ってやっているので、それはそれでよし。学びになるので。 この記事で分かること 字コンテと絵コンテが揃っていても、「開始状態を設計していない動画はキーフレームの劣化コピーになる」という失敗の中身 AIエージェントに一晩任せる自律制作の進め方と、その結果（61件作って使えるのは6件だった） ChatGPT・Geminiの無料枠と、K..."
+    },
+    {
+      "id": "s-d20b37cc2c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "登壇資料作成スキルとは？みのるん式ノウハウの公開が話題に",
+      "url": "https://zenn.dev/sunsun_eng/articles/presentation-skill-claude-skills-guide",
+      "publishedAt": "2026-11-14T11:53:19.000Z",
+      "summary": "登壇資料作成スキルとは？みのるん式ノウハウの公開が話題に 登壇資料作成のノウハウをClaude Skillsとして公開する動きが、エンジニアコミュニティで注目されています。きっかけは、みのるんさんが自身の資料作りの手順をスキル化して公開したことです（参考: https://qiita.com/minorun365/items/ed4c760f616cf3c0a958 ）。この記事では、登壇資料作成スキルとは何か、なぜ話題になっているのか、自分でも作れるのかを整理します。 この記事の要点 登壇資料作成スキルとは、資料作りの手順やコツをClaude Skillsという形式でまとめ、..."
+    },
+    {
+      "id": "s-716147b4e1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "エージェント導入ウィザード5つの質問、業務Macではこう答えた",
+      "url": "https://zenn.dev/pythona/articles/agent-install-wizard-five-choices",
+      "publishedAt": "2026-11-14T11:52:44.000Z",
+      "summary": "はじめに オープンソースのAIエージェント(Hermes Agent)を業務用のMacにインストールしました。インストール自体は5分で終わるのですが、その5分の間にウィザードが5つの質問をしてきます。そしてこの5問への答えが、エージェントの賢さではなく安全性をほぼ決めてしまうことに、答えながら気づきました。 ウィザードが聞いてくるのは次の5つです。 どのモデルを使うか(無料5種から選択) コマンドをどこで実行するか(Local / Docker / SSH / クラウドサンドボックス) Dockerサンドボックスにegressファイアウォールをかけるか メッセンジャー(Telegr..."
+    },
+    {
+      "id": "s-530e3a69e4",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "日本語の仕事向けの Agent Skills を16本公開しました",
+      "url": "https://zenn.dev/itoken_lab/articles/itoken-lab-skills-intro",
+      "publishedAt": "2026-11-14T11:43:34.000Z",
+      "summary": "AI エージェントに日本語の仕事を任せるための Skill を16本、itoken-lab-jp/skills で公開しました。日本語の報告や手順書を書かせる、Excel や PDF の帳票と DB を読ませる、サブエージェントに仕事を任せさせる、といった場面の手順が入っています。Excel・PDF・DB を読む Skill には、そのための実行ファイルやスクリプトも同梱しています。ライセンスは MIT です。 Skill は、AI エージェントが作業に合わせて読み込む手順書です。中身は SKILL.md というファイルと、付属の資料・スクリプトを入れたフォルダーです。エージェントはふだ..."
+    },
+    {
+      "id": "s-e70ea68fc7",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AIについての追記",
+      "url": "https://www.ms.u-tokyo.ac.jp/~konno/grad_ai.html",
+      "publishedAt": "2026-11-14T10:13:39.000Z",
+      "summary": "Associate Professor, Graduate School of Mathematical Sciences 私のところで大学院入学を希望する方へ―AIについての追記 この文章は2026年11月に書いています．この年は，AIが数学にもたらした影響がある閾値を超えた年として記憶されるでしょう．大学院教育にも当然多大な影響があります．学生さんから，AIについて..."
+    },
+    {
+      "id": "s-720e9819e3",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Qwen3.8 Flash Nextに混ざる中国語を、出力層の書き換えで消した: 27%→0%、他の重みは1バイトも変えずに",
+      "url": "https://zenn.dev/caphtech/articles/qwen38-zh-ban",
+      "publishedAt": "2026-11-14T10:07:16.000Z",
+      "summary": "同じ問いに対する書き換えたモデルの答えでは、「誤って攻撃してしまう病気」「ビール: 最も注意」と書かれていました（サンプリングなので、文全体は元と同じではありません）。 測った条件 モデル: Qwen3.8-Flash-Next。mlx-serveの変換で作った4ビットのMLX版で、出力層だけ8ビットです。 問い: 医療の問い60問。JMML..."
+    },
+    {
+      "id": "s-be54405e42",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "[AINews] The No AI Slop Manifesto",
+      "url": "https://latent.space/p/ainews-the-no-ai-slop-manifesto/",
+      "publishedAt": "2026-11-14T08:31:02.000Z",
+      "summary": "November 13, 2026 — AIE speakers unite to lay out how to fight slop."
+    },
+    {
+      "id": "s-e60c14359e",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AIチームを率いるとは、どういうこと？ with プログラマー・起業家 amachang Part1 | The Update",
+      "url": "https://theupdate.coffee/episodes/0J7UP7922ZXV6NBTt7w9Jl/",
+      "publishedAt": "2026-11-14T07:45:30.000Z",
+      "summary": "2026年11月14日|21分 AIチームを率いるとは、どういうこと？ with プログラマー・起業家 amachang Part1 ゲスト: 天野仁史（多摩川機構エンジニアリング株式会社 代表） 一人の会社に、開発チームがいくつもある。 コードを書くAI、デザインするAI、それらを束ねるAI。スマートニュースでiOS・Android・Webの3チームを率..."
+    },
+    {
+      "id": "s-ff47fdb9b0",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "マイクロソフトの障害が全面復旧　メールやAI、ほぼ1日半経て - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUC141CH0U6A111C2000000/",
+      "publishedAt": "2026-11-14T06:07:53.000Z",
+      "summary": "米マイクロソフトは14日、業務ソフト「マイクロソフト365」で起きた大規模な障害についてサービスが全面復旧したと発表した。日本時間14日午後2時半すぎに接続状況ページで復旧を報告した。メールソフト「Outlook（アウトルック）」や人工知能（AI）支援機能「Copilot（コパイロット）」などが利用できない影響が出てい..."
+    },
+    {
+      "id": "s-edbf4ed1a9",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+      "url": "https://arxiv.org/abs/2605.29713",
+      "publishedAt": "2026-11-14T04:51:14.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-c19e7ef010",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "You could have invented transformers from memory",
+      "url": "https://alexwang.ai/posts/associative-memory/",
+      "publishedAt": "2026-11-14T04:49:47.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-04367a7d0b",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Amazon has a plan to index the world’s online shopping data",
+      "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+      "publishedAt": "2026-11-13T23:49:11.000Z",
+      "summary": "Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project, called the \"World Product Graph,\" is meant to make it less likely that shoppers leave Amazon to do their […]"
+    },
+    {
+      "id": "s-db2e460523",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "Production MLOps at GS Caltex with Amazon SageMaker Canvas, part 1",
+      "url": "https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1/",
+      "publishedAt": "2026-11-13T23:22:09.000Z",
+      "summary": "GS Caltex connects Amazon SageMaker Canvas to Amazon SageMaker Pipelines so process engineers' no-code models run in production. This post shows how ML engineers reuse validated preprocessing flows and models, cutting deployment from about a week to a few hours and running batch inference every 30 minutes."
+    },
+    {
+      "id": "s-fde4e161df",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "datasette-cluster-map 0.19",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+      "publishedAt": "2026-11-13T23:02:45.000Z",
+      "summary": "Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a map of power plants owned by California's PG&amp;E , also demonstrating Datasette's recently redesigned facets : Tags: datasette , geospatial "
+    },
+    {
+      "id": "s-673d8bd624",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "datasette-leaflet 0.3",
+      "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
+      "publishedAt": "2026-11-13T22:30:54.000Z",
+      "summary": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy. datasette-leaflet is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on it."
+    },
+    {
+      "id": "s-94d8e8d365",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard",
+      "url": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+      "publishedAt": "2026-11-13T22:30:12.000Z",
+      "summary": "Coding agents work in tasks, and the number that matters is cost per solved task, not price per token. In this post, you use the AWS CDK to deploy LiteLLM with the NVIDIA NeMo Switchyard routing plugin on Amazon Bedrock, then measure cost per solved task for a routed model group against single-model baselines."
+    },
+    {
+      "id": "s-360d40e704",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "NVIDIAをつくった男、ジェンスン・フアン　“デニーズの皿洗い“から“AI時代の主役“へ、激動の半生",
+      "url": "https://www.itmedia.co.jp/business/articles/2611/14/news008.html",
+      "publishedAt": "2026-11-13T22:30:00.000Z",
+      "summary": "ダイナーの一角から、AI時代の主役「NVIDIA」を生み出したジェンスン・フアン氏。“皿洗い”から億万長者へと至った半生を振り返る。"
+    },
+    {
+      "id": "s-99d40623cf",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "Architecture patterns for fast session startup on Amazon Bedrock AgentCore runtime",
+      "url": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+      "publishedAt": "2026-11-13T22:02:39.000Z",
+      "summary": "Amazon Bedrock AgentCore runtime V2 snapshots your initialized environment and restores it for each new session, so session start no longer grows with image size. This post explains how V2 starts a session, how to measure session start time, and four patterns to keep work off the first request."
+    },
+    {
+      "id": "s-d1318183fe",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "publishedAt": "2026-11-13T08:00:00.000Z",
+      "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment."
+    },
+    {
+      "id": "s-82d9be9587",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Muse can now place calls to US businesses — if you pay",
+      "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+      "publishedAt": "2026-11-12T22:22:28.000Z",
+      "summary": "Muse's AI can now place outbound calls to U.S. businesses — but it's not free."
+    },
+    {
+      "id": "s-7a3b01d2c4",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "JR九州の非IT部門がGeminiでPythonアプリを内製開発　2?3カ月で完成させた方法",
+      "url": "https://kn.itmedia.co.jp/kn/article/2611/13/2000003142/",
+      "publishedAt": "2026-11-12T22:00:00.000Z",
+      "summary": "JR九州は「Google Workspace with Gemini」を導入して非エンジニアによる業務アプリの内製化を進めている。IT人材不足や外部ベンダー依存といった課題の解決だけではない、同社が内製開発に取り組む理由とは。"
+    },
+    {
+      "id": "s-af19b0422f",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "なぜゾーホーは「広告を載せない」のか？　情報漏えいを防ぐ「独自の設計」、AI研究責任者に聞く",
+      "url": "https://www.itmedia.co.jp/business/articles/2611/13/news021.html",
+      "publishedAt": "2026-11-12T22:00:00.000Z",
+      "summary": "企業で機密情報の漏えいが相次いでいる。業務効率化とデータ保護の板挟みになる中、インドのゾーホーは、無料版でも広告を載せず「顧客データをAI学習に一切使わない」設計を敷く。自社データを競合へ流出させず、安全にAIを活用する防衛術を、同社AI研究責任者のラムプラカーシュ・ラーマムールティー氏に聞いた。"
+    },
+    {
+      "id": "s-153c224d22",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "NVIDIAのAIモデル「Nemotron」が日本語合成データセットを素早く投入できる理由",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2611/13/news055.html",
+      "publishedAt": "2026-11-12T21:45:00.000Z",
+      "summary": "NVIDIAは、東京都内で開催したAIエージェントの技術イベント「NVIDIA Agentic AI Day Japan 2026」において、日本語AIの開発を支援する2つの合成データセット「Nemotron-Personas-Finance-Japan」と「Nemotron-PII-Japan」について説明した。"
+    },
+    {
+      "id": "s-4f659257ca",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds",
+      "url": "https://arxiv.org/abs/2611.17267v1",
+      "publishedAt": "2026-11-12T18:45:58.000Z",
+      "summary": "We introduce GeoWorld, a controllable and continuously evolving geographic environment platform for LLM agents, and LiveGeo, a benchmark for evaluating reliable decision-making in real-world geographic environments using GeoWorld. Unlike existing evaluations that largely reason and plan over fixed geographic states, GeoWorld is grounded in real-world geographic structure and allows external world "
+    },
+    {
+      "id": "s-c31b767205",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Ballad: Bandit-Based LLM Routing for Automated Heuristic Discovery",
+      "url": "https://arxiv.org/abs/2611.17241v1",
+      "publishedAt": "2026-11-12T18:28:08.000Z",
+      "summary": "Modern automated heuristic discovery (AHD) systems increasingly rival hand-crafted heuristics by leveraging Large Language Models (LLMs) to iteratively mutate and refine solutions. A natural assumption is that more powerful and more expensive models consistently yield better heuristics. We challenge this empirically: across multiple NP-hard combinatorial optimization problems, we find no consisten"
+    },
+    {
+      "id": "s-3090d38083",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "What’s new with Google Data Cloud",
+      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-with-google-data-cloud/",
+      "publishedAt": "2026-11-12T17:00:00.000Z",
+      "summary": "November 9 - November 13 Bringing conversational analytics to Gemini with Data Cloud connectors : Data Cloud connectors in Gemini are now in preview, enabling knowledge workers to query live enterprise data using natural language directly within tools like Google Docs, Gmail, and Google Slides. The capability connects across BigQuery, Looker, Spanner, AlloyDB for PostgreSQL, and Cloud SQL without "
+    }
+  ]
+}

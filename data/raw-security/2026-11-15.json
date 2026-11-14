@@ -1,0 +1,205 @@
+{
+  "date": "2026-11-15",
+  "collectedAt": "2026-11-14T22:01:49.263Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-780db22f67",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Cursor confirms security breach led to malicious Claude Code extension",
+      "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+      "publishedAt": "2026-11-14T17:27:25.000Z",
+      "summary": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]"
+    },
+    {
+      "id": "s-4118a50de2",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "US disrupts North Korean campaign behind $400 million crypto theft",
+      "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+      "publishedAt": "2026-11-14T15:15:49.000Z",
+      "summary": "The U.S. government has disrupted a North Korean social engineering campaign called 'FaceStealer', responsible for stealing more than $400 million in cryptocurrency. [...]"
+    },
+    {
+      "id": "s-b58e8e6c37",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+      "publishedAt": "2026-11-14T12:38:35.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters"
+    },
+    {
+      "id": "s-9e0cc84d06",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+      "publishedAt": "2026-11-13T05:43:28.000Z",
+      "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we believe taking additional precautions while remediation is completed is the"
+    },
+    {
+      "id": "s-7ad5e2159a",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「NetScaler ADC/Gateway」に複数の「クリティカル」脆弱性",
+      "url": "https://www.security-next.com/192789",
+      "publishedAt": "2026-11-13T00:11:14.000Z",
+      "summary": "Cloud Software Groupは、「Citrix NetScaler ADC（旧Citrix ADC）」「Citrix NetScaler Gateway（旧Citrix Gateway）」のセキュリティアップデートを公開し、深刻な脆弱性に対処した。また「Citrix NetScaler Console（旧NetScaler ADM）」においても「クリティカル（Critical）」とされる脆弱性が判明している。"
+    },
+    {
+      "id": "s-f615c0b954",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「しまねのふるさと直送便」にAmazon Payプラグインの脆弱性を悪用した不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56772.html",
+      "publishedAt": "2026-11-12T23:05:07.000Z",
+      "summary": "197 views 島根県は11月2日、同県が物産観光館通信販売WEBサイト運営業務を委託している一般財団法人島根県物産協会が運営するECサイト「しまねのふるさと直送便」への不正アクセスについて発表した。 これは島根県物産協会が「しまねのふるさと直送便」構築に使用しているプラットフォーム「EC-CUBE」にて、決済のために導入しているAmazon Payプラグインの脆弱性を悪用した不正侵入で、当該サイト利用者の個人情報が一時閲覧可能な状況となったというもの。 同県によると8月13日午後3時30分頃、第三者からの不正アクセスが発生し、不正な管理者アカウントの作成と決済画面の入力内容を読み取ることができる不正なファイルの設置（既存の正常なファイルの改変）が行われている。 その後、8月14日午前12時30分頃に、プラットフォーム提供事業者からサイト制作・保守業者に対しAmazonPayプラグインの脆弱性について連絡があり、同日午後1時15分頃に当該サイトを確認したところ、不正な管理者アカウントの作成と管理画面への不正アクセスが判明したという。 流出した可能性があるのは、2026年8月13日午後3時30分頃から8月15日午前10時50分頃の間に「しまねのふるさと直送便」で決済された7人（うち購入に至った人数は6人）のクレジットカード情報（カード番号（全16桁）、カード有効期限、カード名義、セキュリティコード、支払い方法）。 島根県物産協会では10月23日に、該当の利用者に対しメールで謝罪とクレジットカード取引履歴の確認等を依頼する注意喚起の連絡を行っている。 同県によると、購入に至った6名と連絡が取れ、11月1日現在、クレジットカードの不正利用は確認されていないという。 同県では、再発防止に向けて下記の取り組みを行うとのこと。 ・島根県 島根県物産協会に、事柄の大小にかかわらず、問題が発生した場合には島根県に早急に報告することを徹底するよう指示 ・島根県物産協会 プラットフォーム提供事業者によるEC-CUBE本体の情報漏えいリスク低減策の実施に合わせた対応 セキュリティ対策強化の一環として「しまねのふるさと直送便」にWAFを導入 《ScanNetSecurity》 一次情報または関連リンク 一般財団法人 島根県物産協会 ＥＣサイトへの不正アクセスによる個人情報漏洩の可能性について 関連記事 今日もどこかで情報漏えい 第3回「クレジットカード情報漏えい顛末記」 2022.8.3 Wed 8:10 2026年は438万件のカード情報が漏えい ～ MM総研 2026.11.6 Fri 8:05 「MUJIアプリ」への不正アクセス、新たにカード情報が外部からアクセスされた可能性も 2026.11.6 Fri 8:05 「PhotoGoods」に不正アクセス、カード情報が漏えいした可能性 2026.10.6 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-8e4de8c0c3",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "東急不動産が管理するウェブサイトに不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56771.html",
+      "publishedAt": "2026-11-12T23:05:05.000Z",
+      "summary": "292 views 東急不動産株式会社は10月30日、同社管理ウェブサイトへの不正アクセスについて発表した。 これは同社が管理する一部ウェブサイトのAWS共同サーバ環境に第三者から不正アクセスがあり、該当ウェブサイトに登録・保存していた個人情報が外部流出した可能性が判明したというもの。 同社では、コンテンツ管理システム（WordPress等）のソフトウェア脆弱性およびサーバ内のアクセス権限設定の不備を突いた第三者からの攻撃が原因であることを確認している。 不正アクセスの影響を受けた可能性のある同社管理ウェブサイトと対象データは下記の通り。 1.「GREEN CROSS PARK 公式サイト」（tokyu-gxp.com） 件数：4,079件 会員登録情報：会社名、部署名、氏名、メールアドレス、電話番号、興味・関心あるプロジェクト、その他） 2.「GREENUP Cooldown Project 公式サイト」（greenup-cooldown.jp） 件数：3件 問い合わせフォームに入力のあった情報：会社名、氏名、フリガナ、メールアドレス、電話番号、問い合わせ内容 同社では対象の顧客に、個別に案内を進めている。 同社では10月19日に不正アクセス検知し、該当ウェブサイトの緊急停止とセキュリティ対策を実施するとともに、保守管理委託先と連携して原因の追究と影響範囲の特定調査を進めている。 同社では、システムログ等の調査を実施しているが、現時点で流出の有無を特定することは難しいため、流出の可能性を否定できないものとして検証と適切な対応を行うという。 同社では今後、ウェブサイト構築・管理ガイドラインの全面的な見直し、ソフトウェアの定期点検とセキュリティ監査の徹底を図り、再発防止に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社管理ウェブサイトにおける不正アクセスおよび 個人情報流出の可能性について 関連記事 キューズモールフレンズポイントカード会員の個人情報が外部からアクセス可能に 2025.3.5 Wed 8:05 東急リゾーツ&ステイで宛先誤り協力会社の従業員1名に顧客情報を含むCSVファイルを送信 2026.4.16 Thu 8:05 1,032 件の顧客情報 漏えいの可能性 ～ 東急ホテルズ&リゾーツ運営のホテル予約システムに不正アクセス 2025.5.16 Fri 8:05 東急リバブル元従業員が社内資料不正持ち出し、刑事告訴視野に警察に相談 2024.8.19 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-131e0fd68f",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「ARTPASS」「アソビュー!」の委託先に不正アクセス、京都市京セラ美術館と二条城で情報流出の可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56770.html",
+      "publishedAt": "2026-11-12T23:05:02.000Z",
+      "summary": "194 views 京都市は11 月 6 日 (金)、京都市京セラ美術館と元離宮二条城で利用しているチケット販売サービスの運営事業者から、メール配信サービスの委託先への不正アクセスにより個人情報が流出した可能性があるとの報告を受けたと発表した。 京都市京セラ美術館でチケット販売を委託しているWEBチケットサービス「ARTPASS」を運営するインヴェンティット株式会社から、同社がメールマガジン配信業務を委託しているアララ株式会社のシステムへの不正アクセスにより、同社が保有するメールアドレスのみが流出した可能性があるとの報告を11 月 4 日 (水) に受けた。 また、元離宮二条城事務所で利用しているWEBチケットサービス「アソビュー!」を運営するアソビュー株式会社からも同日、同社がチケット利用後のアンケート配信等で利用しているアララのシステムへの不正アクセスにより、同社が保有する利用者情報の一部が外部に流出したことが判明したとの報告を受けた。 《ScanNetSecurity》 一次情報または関連リンク 京都市：不正アクセスによる京都市京セラ美術館及び元離宮二条城に 係る個人情報流出の可能性 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-8edf74b0d3",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Effekseer に入力データ検証不備の脆弱性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56769.html",
+      "publishedAt": "2026-11-12T23:00:13.000Z",
+      "summary": "58 views 独立行政法人情報処理推進機構（IPA）および一般社団法人JPCERT コーディネーションセンター（JPCERT/CC）は11 月 9 日 (月)、Effekseerにおける入力データ検証不備の脆弱性について「Japan Vulnerability Notes（JVN）」で発表した。姉歯幸村氏が報告を行っている。影響を受けるシステムは以下の通り。 Effekseer 1.80.7およびそれ以前のバージョン パーティクルエフェクト編集ツールEffekseerには、入力データ（「エフェクトファイル」）検証処理に不備がある脆弱性（CVE-2026-120386）が存在し、細工されたエフェクトファイルを当該ランタイムを組み込んだアプリケーションで読み込んだ場合、アプリケーションが異常終了させられる可能性がある。 JVNでは、開発者が提供する情報をもとに最新版へアップデートするよう呼びかけている。なお、脆弱性はEffekseer 1.80.8で修正されている。 《ScanNetSecurity》 一次情報または関連リンク JVN ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-3c7f665521",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "日本のCISO、データ損失の原因の最多は悪意ある内部関係者 退職者が要因は98％ ～ プルーフポイント調査",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56768.html",
+      "publishedAt": "2026-11-12T23:00:11.000Z",
+      "summary": "137 views 日本プルーフポイント株式会社は 11 月 5 日、年次レポート「2026 Voice of the CISO」の日本語版を発表した。重大なデータ損失を経験した日本の組織の割合は、2025 年の 35％から 2026 年は 49％に上昇した。世界平均は 66％から 53％に減少しており、日本は逆の傾向を示した。 調査は 2026 年 5 月、日本を含む 16 か国・地域で、従業員数 1,000 人以上の組織の CISO 1,600 人超（各市場 100 人）を対象に実施した。 データ漏えいが発生した日本の組織では事業への影響も深刻化しており、金銭的損失を挙げた割合は 9％から 43％へ、攻撃後の復旧コストは 34％から 41％へ増加した。データ損失の原因としては、悪意のある、または犯罪目的の内部関係者が 53％（世界平均 46％）で最も多く、侵害された内部関係者 49％、不注意な内部関係者 45％が続いた。また、重大なデータ損失を経験した日本の組織の CISO の 98％（同 93％）が、退職する従業員が要因の一つだったと回答した。 生成 AI をセキュリティリスクと捉える日本の CISO は前年比 17 ポイント上昇の 62％（同 78％）となった。65％（同 79％）は、リソースや専門性が十分に拡充されないまま、AI 関連リスクの管理を担うことになると見込んでいる。 《ScanNetSecurity》 一次情報または関連リンク 日本プルーフポイント 関連記事 CISO の半数「組織が自分たちの業務を成功させようとしていると考えられない」プルーフポイント調査 2022.6.16 Thu 8:00 お客を「成功」させるのが自分の仕事 ～ 日本プルーフポイント 代表取締役社長 野村健インタビュー 2026.7.22 Wed 8:15 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-cc54c5ecd0",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "中国地方 50人未満の企業 約3分の1で「セキュリティ担当者はいない」～ HENNGE・中国新聞社調査",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56767.html",
+      "publishedAt": "2026-11-12T23:00:03.000Z",
+      "summary": "125 views HENNGE 株式会社は 11 月 6 日、株式会社中国新聞社と共同で実施した中国地方の情報セキュリティ実態調査の結果を公表した。企業規模が小さいほど情報セキュリティ担当者が不在の傾向にあり、最も多く経験されているメール攻撃への備えである標的型攻撃メール訓練も、規模が小さい企業ほど実施していない実態が明らかになった。 調査は中国地方 5 県（鳥取、島根、岡山、広島、山口）在住の情報システム部門の担当者を対象に、2026 年 8 月 13 日から 9 月 11 日まで実施した。有効回答数は 309。 情報セキュリティ担当者の有無を従業員規模別に見ると、「担当者はいない」との回答は 1,000 人以上の企業で 3.4％、200 人以上 1,000 人未満で 5.4％、50 人以上 200 人未満で 8.7％であったのに対し、50 人未満では約 3 分の 1 の 35.6％に達した。セキュリティスペシャリストの専任担当者がいるとの回答は、1,000 人以上の企業で 57.5％であったが、50 人未満では 6.8％にとどまった。 サイバー攻撃を経験した回答者に攻撃の種類を尋ねたところ（複数回答）、「フィッシング・標的型攻撃メール」が 47.3％、「ビジネスメール詐欺（BEC）」が 38.2％と、メールを悪用した攻撃が上位 2 つを占めた。これに「Web システムの脆弱性攻撃」24.5％、「認証突破攻撃」16.4％が続いた。 一方、メール攻撃への対策として一般的な標的型攻撃メール訓練を「実施なし」とする回答は、1,000 人以上の企業で 5.7％、200 人以上 1,000 人未満で 9.5％であったのに対し、50 人以上 200 人未満では 39.1％、50 人未満では 43.8％に上った。 HENNGE は、中小規模の企業を中心に人材・予算が十分でないために必要な施策を実現できていない可能性があると指摘し、対策の不十分な企業を侵入口として取引先へ侵害を広げるサプライチェーン攻撃への懸念を示している。 《ScanNetSecurity》 一次情報または関連リンク HENNGE 関連記事 東海地方の約 1 割の企業がサイバー攻撃経験 ～ HENNGE・中日新聞社調査 2025.5.7 Wed 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-e51397edcd",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+      "publishedAt": "2026-11-12T22:53:10.000Z",
+      "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks. [...]"
+    },
+    {
+      "id": "s-7186c47ecf",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+      "publishedAt": "2026-11-12T22:25:30.000Z",
+      "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]"
+    },
+    {
+      "id": "s-4fb3f4a554",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
+      "url": "https://thehackernews.com/2026/11/new-n-central-exploits-work-against.html",
+      "publishedAt": "2026-11-12T11:51:43.000Z",
+      "summary": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. \"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet,\" N-able said in a new advisory. \"Legacy API is"
+    },
+    {
+      "id": "s-f7cf57082e",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
+      "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
+      "publishedAt": "2026-11-12T11:51:31.000Z",
+      "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose. The Threat Research team at Material Security spotted the campaign and has since taken down hundreds of attacker domains in an effort the team calls Operation CloudFire."
+    },
+    {
+      "id": "s-988b46d175",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
+      "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
+      "publishedAt": "2026-11-12T11:33:15.000Z",
+      "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a case of improper input validation and deserialization of untrusted data that could result in"
+    },
+    {
+      "id": "s-26d811aac8",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
+      "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+      "publishedAt": "2026-11-12T09:25:00.000Z",
+      "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the database, released fixed versions earlier this week. The affected servers are members of a replica"
+    },
+    {
+      "id": "s-c2d283cd75",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
+      "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+      "publishedAt": "2026-11-12T08:20:37.000Z",
+      "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were released for all three supported lines: 22.23.5, 24.22.3, and 26.13.1. The crash"
+    },
+    {
+      "id": "s-417b99b824",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
+      "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+      "publishedAt": "2026-11-12T06:42:47.000Z",
+      "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach. It ran in at least 1,806 repositories, where the attacker has likely collected"
+    },
+    {
+      "id": "s-38e7ac3877",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Firefox 160」が公開 - 99件の脆弱性に対応",
+      "url": "https://www.security-next.com/192688",
+      "publishedAt": "2026-11-11T23:35:05.000Z",
+      "summary": "「Firefox 160」が公開 - 99件の脆弱性に対応 Mozilla Foundationは、ウェブブラウザ「Firefox」の最新版「Firefox 160」を公開した。延長サポート版とともに複数の脆弱性を解消している。 現地時間2026年11月10日に公開したもので、99件の脆弱性に対処した。重要度が4段階中もっとも高い「クリティカル（Critical）」とされる脆弱性は含まれていないが、次に高い「高（High）」とされる脆弱性は57件にのぼる。 グラフィックス処理の「CanvasWebGL」における「Use After Free」の脆弱性「CVE-2026-124907」は、権限の昇格やサンドボックスの回避につながる可能性がある。 またプロセス間通信に関連する「Use After Free」の脆弱性「CVE-2026-124903」なども、サンドボックスからの脱出が可能となるおそれがある。 そのほか、異なるオリジン間のアクセスを制限する「同一オリジンポリシー」を回避できる「CVE-2026-124874」「CVE-2026-124902」など、幅広い脆弱性に対応した。 （Security NEXT - 2026/11/12 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-fd80b8d9b1",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「MUJIアプリ」への不正アクセス、さらなる総合的セキュリティ対策が必要と判断しネットストア再開を延期",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56758.html",
+      "publishedAt": "2026-11-11T23:05:13.000Z",
+      "summary": "567 views 株式会社良品計画は11月9日、10月30日に公表した無印良品の公式アプリ「MUJIアプリ」での顧客情報の流出について、第四報を発表した。 同社の公式アプリ「MUJIアプリ」では、外部からの不正アクセスで顧客情報の一部が外部流出した可能性を確認しており、調査を進めていた。 同社によると、同社ネットストアに「リスト型攻撃」が行われ、第三者による不正ログインが行われた可能性が新たに判明したという。 《ScanNetSecurity》 一次情報または関連リンク 無印良品の公式アプリ「MUJI アプリ」におけるお客さま情報流出の可能性について（第四報） 関連記事 「MUJIアプリ」への不正アクセス、新たにカード情報が外部からアクセスされた可能性も 2026.11.6 Fri 8:05 「MUJIアプリ」で最大 約2,726万件の顧客情報が流出した可能性 2026.11.4 Wed 8:05 良品計画サイトで不審な認証画面が表示される事象 2026.6.10 Wed 8:05 アスクルのランサムウェア感染、「無印良品ネットストア」利用者の個人情報が流出した可能性 2025.11.21 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a34099989c",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "エムオーテックスに不正アクセス、LANSCOPE等の製品主要機能への影響は無い",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56757.html",
+      "publishedAt": "2026-11-11T23:05:10.000Z",
+      "summary": "945 views 京セラコミュニケーションシステム株式会社は11月6日、11月4日に公表した同社子会社のエムオーテックス株式会社への不正アクセスについて、第2報を発表した。 エムオーテックスでは11月2日に、エムオーテックスのWebサイトを運用するサーバへの不正アクセスを確認したため、対象サーバの外部通信を遮断するとともに、被害拡大の防止と安全確保のため、対象Webサイトを停止している。 エムオーテックスではその後、外部専門機関による調査を行った結果、顧客情報（会社名、氏名、メールアドレス、電話番号等）が外部に漏えいした可能性が判明している。 《ScanNetSecurity》 一次情報または関連リンク 【重要なお知らせ】当社子会社Webサイトへの不正アクセスについて（第2報） 【重要なお知らせ】当社子会社Webサイトへの不正アクセスについて 関連記事 NTTデータ委託先に不正アクセス、社債購入者に対する特典付与を支援する「STdirectServices」のサービス停止 2026.11.11 Wed 8:05 九州電力送配電に不正アクセス、電力量情報が漏えいした可能性 2026.11.11 Wed 8:05 電通総研「FACERE」に設定不備、第三者からの不正アクセス確認 2026.11.11 Wed 8:05 ISM CloudOne に不正アクセス 2026.11.11 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    }
+  ]
+}
