@@ -77,9 +77,9 @@ function buildPrompt(recentTopics) {
     '## 調査の条件',
     '- 一般論ではなく、実際に現場で今日から検討できる具体的な方法であること',
     '- 取り上げる方法は、Google Workspace（スプレッドシート・ドキュメント・フォーム等）・Gemini・',
-    '  NotebookLM（資料を読み込ませて要約・質問・音声概要にする使い方）・ChatGPT・Claude（Claude Codeを',
+    '  Gemini Notebook（2026年7月にNotebookLMから改称。資料を読み込ませて要約・質問・音声概要にする使い方）・ChatGPT・Claude（Claude Codeを',
     '  含む）・Microsoft Copilot・Perplexity など、一般に広く使われている汎用AIツール・サービスを',
-    '  使ったやり方を優先的に探すこと。特にNotebookLMは、マニュアル・通知・研修資料・ケース記録の',
+    '  使ったやり方を優先的に探すこと。特にGemini Notebook（旧NotebookLM）は、マニュアル・通知・研修資料・ケース記録の',
     '  整理など介護現場の「資料が多い業務」と相性がよいため、積極的に候補に入れること。特定の介護専用商用SaaS製品（見守りセンサー連携アプリ・',
     '  介護記録専用AIアプリ等）の紹介・宣伝になるテーマは避けること',
     '- 厚生労働省・自治体・介護保険関連の公的機関、デジタル庁等が公開している生成AI活用の',
@@ -112,7 +112,7 @@ function buildOfficialFollowupPrompt(researchSummary) {
     'この内容の裏付けとなる、厚生労働省・デジタル庁・自治体・介護保険関連の公的機関（ドメインが',
     'go.jp や lg.jp など）が公開している一次情報を、Google検索で探してください。ベンダーブログや',
     '商用メディアの記事ではなく、公的機関自身が発行している制度解説・通知・ガイドライン・統計等を',
-    '優先すること。特に、Google Workspace・Gemini・NotebookLM・ChatGPT・Claude等の生成AIツールの業務利用に',
+    '優先すること。特に、Google Workspace・Gemini・Gemini Notebook（旧NotebookLM）・ChatGPT・Claude等の生成AIツールの業務利用に',
     '関する公的機関のガイドライン・手引き・注意事項があれば、それも有力な候補として探すこと。',
   ].join('\n');
 }

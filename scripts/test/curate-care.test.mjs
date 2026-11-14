@@ -866,3 +866,10 @@ test('mentionsMultipleGenericToolFamilies: NotebookLM は独立した1系統と�
   const only = '## 手順\n1. NotebookLMに読み込ませる。\n\n## 使えるプロンプト例\n```\n要約して\n```\n';
   assert.equal(mentionsMultipleGenericToolFamilies(only), false);
 });
+
+test('mentionsMultipleGenericToolFamilies: Gemini Notebook（旧NotebookLM）は Gemini と別の1系統で、Gemini Notebook だけでは1系統扱い', () => {
+  const both = '## 手順\n1. Gemini Notebookに通知文書を読み込ませる。\n2. Geminiで要点を整理する。\n\n## 使えるプロンプト例\n```\n要約して\n```\n';
+  assert.equal(mentionsMultipleGenericToolFamilies(both), true);
+  const only = '## 手順\n1. Gemini Notebookに読み込ませる。\n\n## 使えるプロンプト例\n```\n要約して\n```\n';
+  assert.equal(mentionsMultipleGenericToolFamilies(only), false);
+});
