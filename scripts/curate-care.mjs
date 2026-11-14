@@ -105,9 +105,9 @@ const CARE_SCHEMA = {
         '詰め込むことは絶対にしない）。段落間には実際の改行を2つ連続で入れる（文字列としてのバックスラッシュエヌは書かない）。' +
         '絵文字・「いかがでしたか」「まとめると」「革命的」等の煽り文句・誇張表現は一切使わない。' +
         '実務マニュアルのような、簡潔で断定的な文体で書く。' +
-        'Google Workspace・Gemini・NotebookLM・ChatGPT・Claude・Copilot・Perplexity等、一般に広く使われている汎用AIツールの' +
+        'Google Workspace・Gemini・Gemini Notebook・ChatGPT・Claude・Copilot・Perplexity等、一般に広く使われている汎用AIツールの' +
         '具体的な使い方を中心に書き、特定の介護専用商用SaaS製品の宣伝にはしない。' +
-        '「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・NotebookLM・ChatGPT・Claude・Google ' +
+        '「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・Gemini Notebook・ChatGPT・Claude・Google ' +
         'Workspaceのうち少なくとも2系統に触れること（特定の1ツールだけに偏らない）。' +
         '「## 手順」の中に、要配慮個人情報（利用者の氏名・心身の状況等）を扱う際の具体的な' +
         '注意点（匿名化・仮名化の具体的なやり方、確認すべき社内ルール等）を最低1ステップに含める。',
@@ -256,10 +256,12 @@ function buildPrompt(items, extraInstructions, researchSummary, recentWorkAreas)
     '',
     '## 執筆ルール',
     '- 手順で紹介する方法は、Google Workspace（スプレッドシート・ドキュメント・フォーム等）・',
-    '  Gemini・NotebookLM・ChatGPT・Claude（Claude Codeを含む）・Copilot・Perplexityなど、一般に広く使われている汎用AIツールを',
+    '  Gemini・Gemini Notebook・ChatGPT・Claude（Claude Codeを含む）・Copilot・Perplexityなど、一般に広く使われている汎用AIツールを',
     '  使った具体的な操作を中心に構成すること。特定ベンダーの独自商用SaaS製品を勧める記事にはしない',
-    '- 「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・NotebookLM・ChatGPT・Claude・Google',
+    '- 「## 手順」と「## 使えるプロンプト例」を通じて、Gemini・Gemini Notebook・ChatGPT・Claude・Google',
     '  Workspaceのうち少なくとも2系統に触れること。特定の1ツールだけに偏った記事にしない',
+    '- NotebookLMは2026年7月に「Gemini Notebook」へ改称された。本文・見出し・要約では必ず「Gemini Notebook」と書き、',
+    '  出典が旧名NotebookLMのときだけ初出に「Gemini Notebook（旧NotebookLM）」と添える',
     '- 「## 使えるプロンプト例」には、実際にコピペして使える具体的なプロンプト文を1つ、',
     '  フェンス付きコードブロック（```）で提示すること。「利用者名」「氏名」「お名前」',
     '  「患者名」「施設名」「事業所名」「住所」「電話番号」「携帯電話」「メールアドレス」',
@@ -396,6 +398,7 @@ const GENERIC_TOOL_KEYWORDS = [
   'Googleカレンダー',
   'Google カレンダー',
   'Gemini',
+  'Gemini Notebook',
   'NotebookLM',
   'Copilot',
   'Perplexity',
@@ -432,7 +435,7 @@ const GENERIC_TOOL_FAMILIES = {
     'Google カレンダー',
   ],
   Gemini: ['Gemini'],
-  NotebookLM: ['NotebookLM'],
+  'Gemini Notebook': ['Gemini Notebook', 'NotebookLM'],
   ChatGPT: ['ChatGPT'],
   Claude: ['Claude'],
   Copilot: ['Copilot'],
@@ -451,8 +454,11 @@ export function mentionsMultipleGenericToolFamilies(bodyMarkdown) {
   const targetText = [extractSectionText(bodyMarkdown, '手順'), extractSectionText(bodyMarkdown, '使えるプロンプト例')]
     .filter((s) => s !== null)
     .join('\n');
-  const mentionedFamilies = Object.entries(GENERIC_TOOL_FAMILIES).filter(([, keywords]) =>
-    keywords.some((kw) => targetText.includes(kw)),
+  // 「Gemini Notebook」の「Gemini」だけで Gemini 系統も満たしたことにならないよう、
+  // 系統判定の前に Gemini Notebook を取り除いたテキストでも Gemini を見る。
+  const textWithoutNotebook = targetText.replaceAll('Gemini Notebook', '');
+  const mentionedFamilies = Object.entries(GENERIC_TOOL_FAMILIES).filter(([family, keywords]) =>
+    keywords.some((kw) => (family === 'Gemini' ? textWithoutNotebook : targetText).includes(kw)),
   );
   return mentionedFamilies.length >= 2;
 }
