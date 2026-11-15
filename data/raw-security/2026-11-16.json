@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-16",
+  "collectedAt": "2026-11-15T22:01:18.769Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-e3b72fc53a",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+      "publishedAt": "2026-11-15T18:29:53.000Z",
+      "summary": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]"
+    },
+    {
+      "id": "s-e6828aaf12",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "TSMC employee data breach linked to cloud provider",
+      "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+      "publishedAt": "2026-11-15T15:23:48.000Z",
+      "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]"
+    },
+    {
+      "id": "s-04c1c102f5",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+      "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+      "publishedAt": "2026-11-15T11:27:31.000Z",
+      "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent. The company has 60 days to"
+    },
+    {
+      "id": "s-960f41318e",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "publishedAt": "2026-11-15T08:22:04.000Z",
+      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only"
+    },
+    {
+      "id": "s-8b748363b7",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+      "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+      "publishedAt": "2026-11-12T05:12:26.000Z",
+      "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat Enterprise Linux. An attacker who can reach the"
+    },
+    {
+      "id": "s-f1a5b4bff7",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
+      "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
+      "publishedAt": "2026-11-12T04:39:48.000Z",
+      "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the ScreenConnect software. \"Our initial assessment suggests the activity may involve"
+    },
+    {
+      "id": "s-bf5e8ca46d",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ヤクルト本社ホームページに不正アクセス、約4万件の個人情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56756.html",
+      "publishedAt": "2026-11-11T23:05:08.000Z",
+      "summary": "279 views 株式会社ヤクルト本社は10月30日、同社ホームページへの不正アクセスについて発表した。 これは10月26日に、同社ホームページへの不正アクセスを確認したというもので、その後の調査で、同社が保有する顧客情報の一部が外部に漏えいしたことが判明している。 漏えいした個人情報は約4万件で、その内容は下記の通り。 《ScanNetSecurity》 一次情報または関連リンク 当社ホームページへの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ【第２報】 当社ホームページへの不正アクセスによる個人情報漏えいに関するお知らせ 関連記事 ユミルリンクのメール配信サービスの一部サーバシステムに不正アクセス、延べ5,162万8,280件の情報が流出 2026.11.2 Mon 8:05 AI を活用した総点検で発見 ～ デジタルアーツのクラウドサービス運用環境に不正アクセス 2026.11.2 Mon 8:05 WPプラグインの脆弱性悪用 ～ ティエスエスリンクのウェブサイトに不正アクセス、製品にはセキュリティ上の問題 確認されておらず 2026.11.2 Mon 8:05 他の職員のIDとパスワードを使用し複数回にわたり庁内共有フォルダに不正アクセス、上司の印影の偽造も 2026.11.2 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-397928e057",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "全日空商事「選べるe-GIFT」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56755.html",
+      "publishedAt": "2026-11-11T23:05:05.000Z",
+      "summary": "250 views 全日空商事株式会社は10月30日、「選べるe-GIFT」への不正アクセスについて発表した。 同社ではシステムメンテナンスのため、10月23日午前8時に「選べるe-GIFT」を停止し、より安全で確実な復旧を行うべく、範囲を拡大して不正アクセスの可能性も含めた詳細なセキュリティ調査を行った結果、同サービスへの外部からの不正アクセスを確認したという。 同社では、さらなる被害拡大の防止とシステムの安全確保を最優先とするため、現在も同サービスを停止している。 《ScanNetSecurity》 一次情報または関連リンク 「選べるe-GIFT」への不正アクセスの発生とサービス停止について（第1報） 関連記事 全日空商事「選べるe-GIFT」に不正アクセス、第三者に不正に交換された事象も確認 2026.8.27 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-ca79cc2cdf",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ロボット確認を装いコマンド実行を促す偽画面と旧 iOS を狙う仕掛け、明治学院大学のサイトが改ざん",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56754.html",
+      "publishedAt": "2026-11-11T23:05:02.000Z",
+      "summary": "267 views 明治学院大学は 11 月 5 日、同大学心理学部のオリジナル Web サイトが第三者による不正アクセスを受け、改ざんされていたと発表した。 管理者用アカウントが不正に使用され、サイトに不正なプログラムが設置されていた。これにより、10 月 16 日夜から 10 月 19 日昼頃まで、サイトを閲覧した利用者に次の画面や仕掛けが表示されていた可能性がある。 《ScanNetSecurity》 一次情報または関連リンク 明治学院大学 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-59398fd34a",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "KUSANAGI に HTTP ヘッダーインジェクションの脆弱性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56753.html",
+      "publishedAt": "2026-11-11T23:00:19.000Z",
+      "summary": "139 views 独立行政法人情報処理推進機構（IPA）および一般社団法人JPCERT コーディネーションセンター（JPCERT/CC）は11 月 9 日 (月)、KUSANAGIにおけるHTTPヘッダーインジェクションの脆弱性について「Japan Vulnerability Notes（JVN）」で発表した。製品利用者への周知を目的にGMOプライム・ストラテジー株式会社が報告を行っている。影響を受けるシステムは以下の通り。 KUSANAGI 7、KUSANAGI 8、KUSANAGI 9 の以下のエディションおよびバージョン Security / Enterprise Edition 10.7.2-1およびそれ以前 Free / Business / Premium Edition 9.12.2-1およびそれ以前 ※Apache httpdを使用している場合は対象外である GMOプライム・ストラテジー株式会社が提供するKUSANAGIには、WordPress向けNginxの設定ファイルに含まれるリダイレクトルールに、HTTPヘッダーにおけるCRLF文字の不適切な無害化の脆弱性（CVE-2026-117477）が存在し、攻撃者によって細工されたURLにアクセスすることで、HTTPレスポンスに任意のヘッダーが挿入される可能性がある。 JVNでは、開発者が提供する情報をもとに最新版へアップデートするよう、またアップデートできない場合は緩和策を実施するよう呼びかけている。 《ScanNetSecurity》 一次情報または関連リンク JVN ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-d9f5f777a6",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "WebSAM WinShare に複数の脆弱性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56752.html",
+      "publishedAt": "2026-11-11T23:00:16.000Z",
+      "summary": "88 views 独立行政法人情報処理推進機構（IPA）および一般社団法人JPCERT コーディネーションセンター（JPCERT/CC）は11 月 9 日 (月)、WebSAM WinShareにおける複数の脆弱性について「Japan Vulnerability Notes（JVN）」で発表した。川田柾浩氏、および富士通株式会社のルスラン・サイフィエフ氏、デニス・ファウストヴ氏が報告を行っている。影響を受けるシステムは以下の通り。 CVE-2026-113362 WebSAM WinShare Ver 7.5.0およびそれ以前（ただしVer 7.3.3を除く） WebSAM WinShare Ver 7.6.0 WebSAM WinShare Ver 7.7.0から7.7.1まで CVE-2026-113363 WebSAM WinShare Ver 7.2.0から7.5.0まで WebSAM WinShare Ver 7.6.0 WebSAM WinShare Ver 7.7.0から7.7.2まで CVE-2026-113364 WebSAM WinShare Ver 7.5.0およびそれ以前 WebSAM WinShare Ver 7.6.0 WebSAM WinShare Ver 7.7.0から7.7.2まで 日本電気株式会社が提供するWebSAM WinShareには、当該製品のリモート操作対象（リモートPC）が下記の影響を受ける可能性がある複数の脆弱性が存在する。 ・プログラムフォルダにおけるインストール時の不適切なファイルアクセス権設定（CVE-2026-113362） →一般ユーザ権限でログインしている攻撃者によって、SYSTEM権限を取得される ・危険なメソッドや機能の意図しない公開（CVE-2026-113363） →細工されたパケットを送信されると、SYSTEM権限で任意のコマンドを実行される ・ヒープベースのバッファオーバーフロー（CVE-2026-113364） →細工されたパケットを送信されると、SYSTEM権限で任意のコードを実行される JVNでは、開発者が提供する情報をもとに最新版へアップデートするよう呼びかけている。 《ScanNetSecurity》 一次情報または関連リンク JVN ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-68484eefc6",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "口コミ総得点で 1 位 ～ AeyeScan が BOXIL REVIEW AWARD Autumn 2026 脆弱性診断カテゴリで受賞",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56751.html",
+      "publishedAt": "2026-11-11T23:00:13.000Z",
+      "summary": "97 views 株式会社エーアイセキュリティラボは 11 月 2 日 (月)、同社のクラウド型 Web アプリケーション脆弱性診断ツール「AeyeScan」が、スマートキャンプ株式会社が主催する「BOXIL REVIEW AWARD Autumn 2026」の脆弱性（セキュリティ）診断カテゴリ別 No.1 に選出されたと発表した。 BOXIL REVIEW AWARD は、SaaS 比較サイト「BOXIL」を運営するスマートキャンプが、優れた SaaS を審査・選考・表彰するもので、対象期間内にユーザーから投稿された口コミをもとに、高評価を重点的にスコア化する独自の方法で集計し、カテゴリ別 No.1 およびグランプリを発表している。 今回の受賞は、2026 年 4 月 1 日 (水) から 2026 年 9 月 30 日 (水) までにユーザーから投稿された口コミの総得点が最も高かったサービスとして選出された。 《ScanNetSecurity》 一次情報または関連リンク エーアイセキュリティラボ 関連記事 AeyeScan「ITreview Grid Award 2026 Spring」脆弱性診断ツール/サービス部門で 7 期連続 Leader 選出 2026.4.23 Thu 8:00 「ITトレンド 年間ランキング2025 総合 セキュリティ診断部門」で AeyeScan が 1 位を獲得 2026.1.5 Mon 8:00 AeyeScan、ITreview の脆弱性診断部門で「1年間で最も評価された製品」に選出 ～ 品質と再現性等が評価 2026.6.10 Wed 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-b4c066ea12",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "タイミー、1,600名超の従業員アイデンティティ基盤に Okta Workforce Identity を採用",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56750.html",
+      "publishedAt": "2026-11-11T23:00:11.000Z",
+      "summary": "86 views Okta Japan 株式会社は 11 月 4 日、株式会社タイミーが、1,600 名を超える従業員のアイデンティティ管理基盤として「Okta Workforce Identity」を採用したと発表した。 スキマバイトサービスを展開するタイミーは、事業の急成長に伴い社内組織も急速に拡大しており、従業員への迅速なアクセス権限付与と高度なセキュリティ統制の両立が急務となっていた。導入前はシステムへのアクセス権を SaaS ごとに個別に管理しており、統合的な可視化ができていないことや、手動管理によるミスや遅延のリスク、2,000 台を超えるデバイス管理の複雑化といった課題を抱えていた。 導入により、Google Workspace を信頼できる情報源として Okta とリアルタイムで同期し、全従業員のプロファイルを単一基盤で管理できるようになった。シングルサインオンでは Google Workspace や CrowdStrike を含む主要なアプリケーションを統合し、パスワードレス認証「Okta FastPass」でフィッシング耐性を高めた。また、アクセス元の場所やデバイスの状態に基づいて認証レベルを動的に調整する適応型多要素認証を導入したほか、従業員と約 2,000 台のデバイスを紐付け、セキュリティ標準を満たさないデバイスのアクセスをブロックできるようにした。 タイミーは今後、「Okta Identity Governance」を活用してポリシーベースのアクセスへ移行する予定である。 《ScanNetSecurity》 一次情報または関連リンク Okta Japan 関連記事 入社時のパスワード発行のような「レガシーな習慣」がセキュリティの障害に ～ Yubico、Okta 共同調査 2026.10.19 Mon 8:00 AI エージェントの安全活用へ、Okta や AWS、Google Cloud ら「Blueprint Alliance」結成 2026.10.14 Wed 8:05 従業員から AI エージェント・NHI まで一元管理、Okta が目指す統合アイデンティティ基盤 2026.9.17 Thu 8:00 Okta「Auth0」が新機能を発表、AI エージェント活用や B2C / B2B アイデンティティを強化 2026.9.7 Mon 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-66d9d80294",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "セコム安否確認サービス、ITreview Grid Award 2026 Fall 安否確認システム部門で 27 期連続 Leader 受賞",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56749.html",
+      "publishedAt": "2026-11-11T23:00:07.000Z",
+      "summary": "93 views セコムトラストシステムズ株式会社は 10 月 21 日、同社の「セコム安否確認サービス」が、ITreview が認定する「ITreview Grid Award 2026 Fall」で安否確認システム部門の Leader を 27 期連続で受賞したと発表した。 ITreview Grid Award は、ビジネス向け IT 製品・クラウドサービスのレビュープラットフォーム「ITreview」に集まったユーザーレビューをもとに表彰するもので、10 月に発表された今回は約 16.4 万件のレビューをもとに、顧客満足度と認知度の双方が優れた製品を Leader として表彰した。 《ScanNetSecurity》 一次情報または関連リンク セコムトラストシステムズ 関連記事 セコム安否確認サービス、「ITreview Grid Award 2026 Summer」安否確認システム部門で26期連続「Leader」を受賞 2026.8.3 Mon 8:00 「セコム安否確認サービス」とクラウド人事労務ソフト「SmartHR」がサービス連携 2025.7.17 Thu 8:00 「セコム安否確認サービス」スマートフォン端末GPS機能活用、現在地判定による安否確認 2025.1.15 Wed 8:00 「セコム安否確認サービス」他が ISMAP に登録 2023.10.10 Tue 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    }
+  ]
+}

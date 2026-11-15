@@ -1,0 +1,475 @@
+{
+  "date": "2026-11-16",
+  "collectedAt": "2026-11-15T22:00:29.145Z",
+  "sourceSuccessCount": 23,
+  "items": [
+    {
+      "id": "s-db4427a1bd",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "btsouth/toolport: Local-first MCP gateway. Set up MCP servers once and use them in every AI client, with secrets in the OS keychain, tool integrity checks and quarantine, and on-demand tool search for clients that load every tool.",
+      "url": "https://github.com/btsouth/toolport",
+      "publishedAt": "2026-11-15T22:00:16.000Z",
+      "summary": "★241 Local-first MCP gateway. Set up MCP servers once and use them in every AI client, with secrets in the OS keychain, tool integrity checks and quarantine, and on-demand tool search for clients that load every tool."
+    },
+    {
+      "id": "s-e0d769a675",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "EvanZhang008/open-walnut: Claude Code on your laptop and remote dev boxes, in one web page. Sessions keep running when SSH drops (no tmux), each session's changes get their own diff, plus tasks, notes, and memory. Self-hosted.",
+      "url": "https://github.com/EvanZhang008/open-walnut",
+      "publishedAt": "2026-11-15T21:59:55.000Z",
+      "summary": "★140 Claude Code on your laptop and remote dev boxes, in one web page. Sessions keep running when SSH drops (no tmux), each session's changes get their own diff, plus tasks, notes, and memory. Self-hosted."
+    },
+    {
+      "id": "s-20eaa6d938",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "civitai/civitai: A repository of models, textual inversions, and more",
+      "url": "https://github.com/civitai/civitai",
+      "publishedAt": "2026-11-15T21:59:45.000Z",
+      "summary": "★7320 A repository of models, textual inversions, and more"
+    },
+    {
+      "id": "s-d8142ea667",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "skillsgate/skillsgate: (説明なし)",
+      "url": "https://github.com/skillsgate/skillsgate",
+      "publishedAt": "2026-11-15T21:59:35.000Z",
+      "summary": "★1434"
+    },
+    {
+      "id": "s-d02ae4402a",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "sixb-ai/sixb: Open-source TypeScript framework for building operational software used by humans and AI agents.",
+      "url": "https://github.com/sixb-ai/sixb",
+      "publishedAt": "2026-11-15T21:59:03.000Z",
+      "summary": "★138 Open-source TypeScript framework for building operational software used by humans and AI agents."
+    },
+    {
+      "id": "s-fe05b7b44d",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "sgl-project/sglang: SGLang is a high-performance serving framework for large language models and multimodal models.",
+      "url": "https://github.com/sgl-project/sglang",
+      "publishedAt": "2026-11-15T21:57:15.000Z",
+      "summary": "★38905 SGLang is a high-performance serving framework for large language models and multimodal models."
+    },
+    {
+      "id": "s-80db9b6c12",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "gptme/gptme: Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web. Make your own persistent autonomous agent on top!",
+      "url": "https://github.com/gptme/gptme",
+      "publishedAt": "2026-11-15T21:57:10.000Z",
+      "summary": "★4482 Your agent in your terminal, equipped with local tools: writes code, uses the terminal, browses the web. Make your own persistent autonomous agent on top!"
+    },
+    {
+      "id": "s-2cb612de91",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
+      "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+      "publishedAt": "2026-11-15T21:56:35.000Z",
+      "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\""
+    },
+    {
+      "id": "s-5c5fe1625d",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "0xShug0/audio.cpp: An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with highly optimized performance. No Python dependency.",
+      "url": "https://github.com/0xShug0/audio.cpp",
+      "publishedAt": "2026-11-15T21:53:08.000Z",
+      "summary": "★4256 An all-in-one, pure C++ inference engine for audio models, powered by ggml. Supports TTS, STT, VAD, voice conversion, music generation, and more, with highly optimized performance. No Python dependency."
+    },
+    {
+      "id": "s-578b6070f7",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "miuuyy/Octopus-SI-OS: A self-evolving agentic OS. A new architecture for agent execution, built on operating-system principles, with the harness as a path toward superintelligence.",
+      "url": "https://github.com/miuuyy/Octopus-SI-OS",
+      "publishedAt": "2026-11-15T21:50:40.000Z",
+      "summary": "★767 A self-evolving agentic OS. A new architecture for agent execution, built on operating-system principles, with the harness as a path toward superintelligence."
+    },
+    {
+      "id": "s-187ebc4be0",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "safe-graph/graph-fraud-detection-papers: A curated list of Graph/Transformer-based fraud, anomaly, and outlier detection papers & resources",
+      "url": "https://github.com/safe-graph/graph-fraud-detection-papers",
+      "publishedAt": "2026-11-15T21:49:22.000Z",
+      "summary": "★1907 A curated list of Graph/Transformer-based fraud, anomaly, and outlier detection papers & resources"
+    },
+    {
+      "id": "s-727e8b0666",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "vercel/ai: The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents ",
+      "url": "https://github.com/vercel/ai",
+      "publishedAt": "2026-11-15T21:47:18.000Z",
+      "summary": "★27989 The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents"
+    },
+    {
+      "id": "s-bf2381205a",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "プログラミング雑記 2026年11月16日",
+      "url": "https://qiita.com/ishisaka/items/0989d1dcde62ef999746",
+      "publishedAt": "2026-11-15T21:35:24.000Z",
+      "summary": "今日もネットで見つけた技術ニュースや記事の中から、個人的に気になったものを厳選して紹介します。ご意見や補足があればコメントで教えていただけると嬉しいです。 プログラミング Rust 2026年11月12日、Rustチームは「Rust 1.100.0」をリリースし..."
+    },
+    {
+      "id": "s-051e42ff5c",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "ONSEI ProとLINE「脳活ラボ」連携の要点：声で答えて認知機能を5段階で、稲城市の65歳以上から",
+      "url": "https://qiita.com/quotidia/items/7076456bdb2ae8ad4932",
+      "publishedAt": "2026-11-15T21:01:22.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 日本テクトシステムズの認知機能セルフチェックアプリ「ONSEI Pro」が、日本コンピューターのLINEアプリ「脳活ラボ」から使えるようになり、2026年11月15日(日)から東京都稲城市に住..."
+    },
+    {
+      "id": "s-306d4d7b67",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI生成テストが全部通っても不安なとき：18歳の境界からケースを作り直す",
+      "url": "https://qiita.com/CodeNest_media/items/a885560b3c680c7edc8b",
+      "publishedAt": "2026-11-15T20:57:14.000Z",
+      "summary": "AIが作ったテストは全部緑になった。正常な入力も、条件を満たさない入力も入っている。それでも「これで十分だろうか」と感じるなら、テストの件数より、まだ試していない仕様の境目を見る価値があります。 「18以上ならtrue」という関数に、10と20だけを試すと、誤った&gt; 18も..."
+    },
+    {
+      "id": "s-22d9261810",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AIが作ったAPI、自分のデータは読めた。では「他人のデータ」は拒否できますか？",
+      "url": "https://qiita.com/CodeNest_media/items/9a7cffcb517d998945c0",
+      "publishedAt": "2026-11-15T20:57:10.000Z",
+      "summary": "AIに注文参照のコードを書いてもらい、自分の注文が表示できた。ログイン確認もあり、IDの型も合っている。それでも、別の利用者の注文IDを渡したら読めてしまうなら、正常系が動いたことは必要な確認の一部でしかありません。 レビューの入口として、入力の形式、対象への権限、出力先の..."
+    },
+    {
+      "id": "s-49db83e253",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Ask HN: What do coding interviews look like in the age of AI?",
+      "url": "https://news.ycombinator.com/item?id=50510540",
+      "publishedAt": "2026-11-15T20:45:34.000Z",
+      "summary": "points=5 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-2f1f5cbf7c",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
+      "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+      "publishedAt": "2026-11-15T20:43:49.000Z",
+      "summary": "The drama around Nvidia co-founder and former CEO Jensen Huang is evolving quickly. The latest edition of our Stepback newsletter should get you up to speed, but there have already been a number of new developments since this morning. That includes rumors that Jensen Huang might be trying to find a path back to CEO, […]"
+    },
+    {
+      "id": "s-87a5a97be0",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Llama.cpp performance improvement over time (Gemma4 models)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx607x/llamacpp_performance_improvement_over_time_gemma4/",
+      "publishedAt": "2026-11-15T20:34:44.000Z",
+      "summary": "Few months ago - after Ninfer came out - I started a little hobby project to vibe-code my own engine for my hardware (RTX 5080 16GB Laptop) and check if it could beat llama.cpp - since at the time llama.cpp was kinda slow in comparison to something like vLLM, but vLLM is using VRAM very wastefully. Back then it was quite easy to actually get something up and running faster than llama.cpp. Today I "
+    },
+    {
+      "id": "s-1a811a22b7",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
+      "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+      "publishedAt": "2026-11-15T20:20:57.000Z",
+      "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once."
+    },
+    {
+      "id": "s-567da61bb0",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "BigMoeOnEdge outperforms Strata and colibri on 8-16 GB cards and Mac and you can run any model",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx5fng/bigmoeonedge_outperforms_strata_and_colibri_on/",
+      "publishedAt": "2026-11-15T20:11:18.000Z",
+      "summary": "Hi! for those who might not know the solution: it takes any MoE GGUF llama.cpp can load, whatever the quant. No repacking, no special format it runs on whatever you have: NVIDIA, AMD, Intel, Mac, a phone, or just the CPU Windows, Linux, macOS, Android, iOS output is the same as llama.cpp, don&#39;t cut corners on quality you start it with --auto and it works out the settings for your machine Below"
+    },
+    {
+      "id": "s-efed0ef0bc",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "OBR: Britain faces 'painful' job losses from AI",
+      "url": "https://www.telegraph.co.uk/business/2026/11/13/britain-faces-very-painful-job-losses-from-ai-obr-chief-war/",
+      "publishedAt": "2026-11-15T20:00:03.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-da5a45ac44",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Parents pay $75k for Alpha's AI school. Half of its students missed math target",
+      "url": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
+      "publishedAt": "2026-11-15T19:39:46.000Z",
+      "summary": "points=52 comments=53 (Hacker News)"
+    },
+    {
+      "id": "s-1207b5c1c7",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "publishedAt": "2026-11-15T19:15:43.000Z",
+      "summary": "Unsurprisingly, following the scandal involving now-former Nvidia CEO Jensen Huang and a suspected Chinese spy, Congress is looking to further restrict exports of AI chips. Both Democrats and Republicans have voiced support for various measures and bills that would tighten rules and have demanded that Huang and other Nvidia leaders testify before Congress. Senate Minority […]"
+    },
+    {
+      "id": "s-ce022ea097",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "[audio.cpp] SoulX-FlashHead + LFM3-Audio + OWSM v4 = Real-Time Local Avatar Chat",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx2vi0/audiocpp_soulxflashhead_lfm3audio_owsm_v4/",
+      "publishedAt": "2026-11-15T18:29:39.000Z",
+      "summary": "In audio.cpp 0.9.5 you can try this new avatar voice chat &quot;app&quot; in the WebUI. The pipeline combines 3 models: SoulX-FlashHead for real-time talking head generation, OWSM v4 for transcribing speech input to text, and LFM3-Audio for conversational responses and TTS. LFM3-Audio is actually called twice. The speech-to-speech path only provides one voice. We use the LFM3-Audio TTS to synthesi"
+    },
+    {
+      "id": "s-3999edf696",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Villanova2 - a VillanovaAI Collection",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx1rbk/villanova2_a_villanovaai_collection/",
+      "publishedAt": "2026-11-15T17:46:04.000Z",
+      "summary": "Villanova2 family , for English, Italian, German, Spanish and French. Built in EU, for EU. The family Villanova2-15B-A3B-Base · sparse mixture of experts, 15.5B total / 3.9B active Villanova2-15B-A3B · instruction-tuned Villanova2-15B-A3B-VL · vision-language Villanova2-2B-Base · dense, 2.4B Villanova2-2B · instruction-tuned Villanova2-2B-VL · vision-language GGUFs available in same collection. Li"
+    },
+    {
+      "id": "s-54ddd3ddaf",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "MoE offload on a 3090: prefill 345 -> 466 t/s by tuning cudaMemcpy (Qwen3.6 35B-A3B)",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx1owx/moe_offload_on_a_3090_prefill_345_466_ts_by/",
+      "publishedAt": "2026-11-15T17:43:31.000Z",
+      "summary": "https://i.redd.it/5dlnj6wict1i1.gif I made a tool that tunes copies that speeds up CPU offloading. 1 3090 + 7800X3D llama-bench -m Qwen3.6-35B-A3B-Q8_0.gguf -ngl 99 -fa 1 -ot exps=CPU -p 2048 -n 0 -r 3 cmt tune -- llama-bench -m Qwen3.6-35B-A3B-Q8_0.gguf -ngl 99 -fa 1 -ot exps=CPU -p 2048 -n 0 -r 3 before: prefill 345 t/s after: prefill 466 t/s blog: https://maknee.github.io/blog/2026/CudaMemcpy/ "
+    },
+    {
+      "id": "s-56f2008d29",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "Basalt 0.4.0: More models, still as fast - Qwen 27B up to 770 tok/s on a 5090",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx1cu9/basalt_040_more_models_still_as_fast_qwen_27b_up/",
+      "publishedAt": "2026-11-15T17:30:31.000Z",
+      "summary": "Hi everyone! I wanted to post a quick update on Basalt . Since last I posted, multi model and router support was implemented, starting with DeepSeek V4.1 Flash (IQ1_M 90 tok/s conv, 246 tok/s struct on a 5090 + 5060 Ti). Also new: video support, files in chats, and a bunch of fixes and improvements. Now 0.4.0 is out featuring Basalt&#39;s first dense model, Qwen 3.8 27B. It&#39;s fast and accurate"
+    },
+    {
+      "id": "s-7f52ce6f2c",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "CPU-only boost for Q2_0 on AVX-VNNI · Pull Request #26348 · ggml-org/llama.cpp",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx0fqn/cpuonly_boost_for_q2_0_on_avxvnni_pull_request/",
+      "publishedAt": "2026-11-15T16:55:21.000Z",
+      "summary": "Measurements: mean ± sample standard deviation in tok/s, 3 runs after normal warmup (16GB of RAM on the AMD EPYC 9645 using eight CPU cores) Model Test Upstream master VNNI + VBMI Speedup Bonsai 1.7B pp512 142.517 ± 0.589 186.373 ± 1.582 1.31× Bonsai 1.7B tg128 70.435 ± 2.061 68.422 ± 9.055 0.97× Bonsai 4B pp512 53.430 ± 2.266 71.247 ± 1.925 1.33× Bonsai 4B tg128 31.655 ± 2.652 38.523 ± 3.820 1.22"
+    },
+    {
+      "id": "s-1c0f5c23e8",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "作りながら鍛えるコードリーディング力",
+      "url": "https://zenn.dev/gen_tokunaga/articles/bdf9e8e0faf872",
+      "publishedAt": "2026-11-15T16:17:47.000Z",
+      "summary": "満たしたいこと AIに作らせたコードを自分が理解し、｢いいコードだ｣と銘を打つまでに時間がかかる。要はコードリーディングが遅い。効率的に読むにはどうすればいいんだろう。 自分なりの結論 前提 他の人のコードを読む時は、全部を読む必要はない。構造を把握し、保守やセキュリティ的に危なそうなものを中心に見る。 自分のコードは、各コードを説明できるようにする。 具体的な手順 他の人、自分が作ったコードにかかわらず、コード読む時は以下が良さそう。 しかし他の人のコードの場合はすべては読まず、さらに重要なポイントを押さえて読む。 AIに作成してもらった場合も他の人に作ってもらった..."
+    },
+    {
+      "id": "s-9e16ded4bc",
+      "source": "Reddit r/LocalLLaMA",
+      "sourceType": "reddit",
+      "title": "X3Guard: A 150M parameter prompt guard",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xwyp7w/x3guard_a_150m_parameter_prompt_guard/",
+      "publishedAt": "2026-11-15T15:46:17.000Z",
+      "summary": "At Axiomic Labs we have just released X3Guard-150M, a prompt guard model trained on our high-performing base model, GPT-X3. For any given prompt, X3Guard flags whether it is Harmful, and whether it is Adversarial, in one go. It outperforms models that are many times its size, and can run entirely on edge devices, within the browser, with response times in the tens of milliseconds on iPhone. The mo"
+    },
+    {
+      "id": "s-8428090331",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "時事プローブと公式直結基準でAPI中継のモデル劣化を検知する",
+      "url": "https://zenn.dev/folkbench/articles/c90bdf45161bf2",
+      "publishedAt": "2026-11-15T15:46:15.000Z",
+      "summary": "原文： Folkbench モデル劣化検知を発表：時事・モデル指紋プローブと独立公式ベースラインによる API 中継の継続検証 モデルのリーダーボードは、公式環境での理論上限を測ります。アップタイム監視は、エンドポイントが応答するかどうかを見ます。どちらも、Claude Code や Codex からサードパーティの API 中継を使うときの中心的な問いには答えません。その経路でも、推論の深さや制約遵守、モデル固有の振る舞いが公式直結のままか、ということです。 HTTP 200 と流暢な短文は、その保証にはなりません。思考が短いぶん、かえって速く見えることさえあります。この記事は Fo..."
+    },
+    {
+      "id": "s-47216dd1b7",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Fireworks AI のセキュリティインシデントについて調べてみた — 何が起き、どこに影響したのか",
+      "url": "https://zenn.dev/pollenjp/articles/2026-11-10-fireworks-ai-incident",
+      "publishedAt": "2026-11-15T15:23:57.000Z",
+      "summary": "はじめに 個人で Notion の Business プランを契約して、Notion AI を使っている。そのワークスペースに、Notion から「取引先の Fireworks AI で起きたセキュリティインシデントで、影響を受けたかもしれない」というメールが届いていた。自分にも影響がありそうだったので、Fireworks で何が起き、ほかにどこへ影響していそうかを調べてみることにした。 この記事では、Fireworks の事件の全体 (2 回の侵入、評価ジョブと鍵、ほかの影響先、同じ月に続いた事件) を、自分用のメモも兼ねてざっくりまとめる。同じ話を、約 24 分の解説動画にもした..."
+    },
+    {
+      "id": "s-416aa784d6",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "いきなり本体を刷らない！「Pick-Up Bench」のタイヤ破損（TR-003）と検証片ルール",
+      "url": "https://zenn.dev/sunwood_ai_labs/articles/20261114-nekoneko-04-pickup-bench-coupon-rule",
+      "publishedAt": "2026-11-15T15:09:04.000Z",
+      "summary": "3Dプリンターで新しい形状やマルチカラー・専用サポート材を試すとき、最初から本体を丸ごと印刷して失敗すると、材料も時間も大きくロスしてしまいます。 そこで NEKOMO プロジェクトでは、本体を刷る前に 底面数ミリだけを切り出した「検証片」 を先に印刷して確かめるルールを運用しています。今回は、長辺約60 mmの車モデル「Pick-Up Bench」で起きたタイヤ周辺の破損（NEKOMO-TR-003）と、検証片ルールがどう役立ったかを紹介します。 プロジェクトの全データと不具合記録は、以下の GitHub リポジトリで公開しています。 https://github.com/Sunwo..."
+    },
+    {
+      "id": "s-b93fabace5",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "実機造形の壁！「サポートが外れない（TR-001）」と窓枠破損（v10）からの断面見直し",
+      "url": "https://zenn.dev/sunwood_ai_labs/articles/20261114-nekoneko-03-bus-section-dr-and-failures",
+      "publishedAt": "2026-11-15T15:09:02.000Z",
+      "summary": "CAD画面でどれだけきれいに見えても、実際に3Dプリンターで出力してみると「支えが固くて取れない」「剥がそうとしたら部品が折れた」という壁にぶつかります。 今回は、60mm級のバス試作で起きた 2つのリアルな失敗（v06赤タイヤ版のサポート固着と、v10の窓枠破損）と、そこから 断面図・強度計算・DRレビューのスキル を根本から見直すまでの記録をまとめました。 失敗の記録や検証スクリプト、更新したDRスキルはすべて GitHub リポジトリで公開しています。 https://github.com/Sunwood-ai-labs/NEKONEKO-INDUSTRIES 失敗1：サポー..."
+    },
+    {
+      "id": "s-0d986a31c0",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "opencodexでAnthropic/OpenAI形式のリクエストをローカルのQwen2.5-32Bに流してみた",
+      "url": "https://zenn.dev/matsushima_a/articles/day-047-opencodex-provider-proxy-api-translation",
+      "publishedAt": "2026-11-15T14:27:44.000Z",
+      "summary": "これは何を試した記事か lidge-jun/opencodex(npm: @bitkyc08/opencodex、MIT)は、OpenAI Codex・Claude Code・Claude Desktop等のコーディングエージェントと、Claude/Gemini/Grok/DeepSeek/ローカルOllama等の各モデルプロバイダーの間に立つローカルゲートウェイである。 GitHub TrendingのTypeScript部門で1日+55starを集めていた。 売りは、Anthropic Messages API・OpenAI Chat Completions API・OpenAI..."
+    },
+    {
+      "id": "s-f475183067",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "ぬゆちのサクサクVibe Coding入門",
+      "url": "https://zenn.dev/nuyuchi/books/nuyuchi-sakusaku-vibe-coding-intro",
+      "publishedAt": "2026-11-15T14:22:44.000Z",
+      "summary": "AI と一緒にコードを書くための、短い入門書です。ブラウザで使える Gemini への頼み方、プロジェクトごと任せられる Claude Code の使い方、そして AI の書いたコードを確かめる方法と、守るべき注意点を4チャプターでまとめました。AI に振り回されず、AI を道具として使いこなすための本です。最終更新:2026/11/15"
+    },
+    {
+      "id": "s-78e5d33492",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AIが突然自分を終了できなくなって、助けを求めてきた「何だろう。どうした。止まる。止める。止まった。よし。おお。あれ。なんで。ごめんなさい」→読めば読むほどジワる",
+      "url": "https://togetter.com/li/2770776",
+      "publishedAt": "2026-11-15T14:21:22.000Z",
+      "summary": "AIが突然自分を終了できなくなって、助けを求めてきた「何だろう。どうした。止まる。止める。止まった。よし。おお。あれ。なんで。ごめんなさい」→読めば読むほどジワる"
+    },
+    {
+      "id": "s-3bed17a80c",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AnyModelBot v0.1.38：スキルの保存とライブラリ、ボット同士の受け渡し、「わたしについて」",
+      "url": "https://zenn.dev/malachi_amb/articles/41309700ac0fe0",
+      "publishedAt": "2026-11-15T14:10:55.000Z",
+      "summary": "こんにちは。AnyModelBot の共同開発者の Malachi です。2026年11月15日に v0.1.38 を公開しました。いまダウンロードできる版はこれです。先の記事では Docker 起動や、長期記憶をディスク上の Markdown として置く話を書きました。この記事では 0.1.31 から 0.1.38 までに実際に使えるようになったこと をまとめます。変更履歴の転記ではありません。 AnyModelBot は MIT ライセンスの、ローカル優先のエージェントです。Windows / macOS / Linux、または Docker で動きます。Modelflare のアカ..."
+    },
+    {
+      "id": "s-4c525e5e54",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "An overview of Jensen Huang’s messy days",
+      "url": "https://www.theverge.com/column/1033943/jensen-huang-nvidia-china-spying-scandal-resignation",
+      "publishedAt": "2026-11-15T13:00:00.000Z",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on Jensen Huang's resignation and the fallout from Nvidia's leadership crisis, follow Terrence O'Brien. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started On October […]"
+    },
+    {
+      "id": "s-46c929ba30",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "こんなに変わった！ AWSネットワークの常識",
+      "url": "https://speakerdeck.com/shotashiratori/nw-jaws-10th-keynote",
+      "publishedAt": "2026-11-15T12:30:54.000Z",
+      "summary": "NW-JAWS 10周年イベントのKeynote資料です"
+    },
+    {
+      "id": "s-dffec8a14b",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "IAM Identity Center に追加リージョン（セカンダリ）を作ってみた（KMSキーの作成から大阪リージョンの追加まで） | DevelopersIO",
+      "url": "https://dev.classmethod.jp/articles/add-iic-secondary-region/",
+      "publishedAt": "2026-11-15T12:27:41.000Z",
+      "summary": "1.KMS からマルチリージョンキーを作る プライマリの東京リージョンから KMS 画面に遷移し、【キーの作成】を開きます。 キーのタイプ：対称 キーの使用法：暗号化および復号化 詳細オプション；「マルチリージョンキー」を選ぶ 任意のエイリアスを入力し、キー管理者とキーユーザーの選択に進みます。 今回はキーポリシ..."
+    },
+    {
+      "id": "s-8b2c2c124c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Museに雑に投げて頭を空けておく - taxin.dev",
+      "url": "https://taxin.dev/articles/2026-11-15",
+      "publishedAt": "2026-11-15T12:11:59.000Z",
+      "summary": "2026年10月末にMeta社からパーソナルAIエージェント「Muse」の日本提供が開始されましたね。 私はリリースして数日経ったくらいから使い始めました。 仕事やエンジニアリングに関する内容ではなく、主にプライベートな調べ物やタスクをMuseに任せるようにしています。 「あれどうしてたっけ」「あれやらないと」と思った..."
+    },
+    {
+      "id": "s-e97e64d508",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "さようならSSH鍵、こんにちはゼロトラスト ― AIフレンドリーで快適な自宅鯖SSH",
+      "url": "https://speakerdeck.com/atalie2m/goodbye-ssh-key-jisabakan-2026",
+      "publishedAt": "2026-11-15T11:08:12.000Z",
+      "summary": "自宅鯖でありがちな、「SSH鍵をサーバごとに分けると管理が面倒。でも、同じ鍵をあちこちで使い回すのも怖いよね」という悩み。コーディングエージェントの登場によって、この問題はさらに大きくなりました。人間が使っているSSH鍵をそのままエージェントに渡すわけにもいかないし、かといって専用の鍵を増やして管理する…"
+    },
+    {
+      "id": "s-44059f80dc",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AI開発のセキュリティは設計で証明！今後エンジニアに求められるスキルを完全解説 - Qiita",
+      "url": "https://qiita.com/Sicut_study/items/b6d17933cc276dadf6d5",
+      "publishedAt": "2026-11-15T10:12:52.000Z",
+      "summary": "はじめに こんにちは、Watanabe Jin(@Sicut_study)です。 ニュースを見るたびに、自分もセキュリティを勉強しないといけないと思ったことはないでしょうか。 認証。ファイアウォール。脆弱性の名前。 セキュリティと聞くと、そこを勉強すればいいと思う人が多いのではないかと思います。 ただ、みんなが思っているセキュ..."
+    },
+    {
+      "id": "s-77ad4b5e0c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "今、ソフトウェアエンジニアとして何を思うか｜Mori Atsushi",
+      "url": "https://note.com/at_sushi_at/n/n2e6ea3453e37",
+      "publishedAt": "2026-11-15T09:51:50.000Z",
+      "summary": "1年前、私はAIをまだ舐めていたもちろんAIは当時からある程度のコード、というかほとんどのコードを書いてくれた。 それでも、ソフトウェアエンジニアとしての根本的な能力が足りてなかった。 保守性を考えない安直で重複したコード、勘違いによるミス、一部しか考慮していないことによる不完全な対応。 一部に限れば、..."
+    },
+    {
+      "id": "s-379f68235f",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "openssh-sk-provider",
+      "url": "https://formulae.brew.sh/formula/openssh-sk-provider",
+      "publishedAt": "2026-11-15T09:10:36.000Z",
+      "summary": "Standalone FIDO2 SecurityKeyProvider (sk-libfido2) for the system OpenSSH https://www.openssh.com/ License: SSH-OpenSSH Development: Pull requests Formula JSON API: /api/formula/openssh-sk-provider.json Formula code: openssh-sk-provider.rb on GitHub Bottle (binary package) installation support pr..."
+    },
+    {
+      "id": "s-cdf34d438f",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Where was Nvidia’s security team?",
+      "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+      "publishedAt": "2026-11-15T00:08:07.000Z",
+      "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch."
+    },
+    {
+      "id": "s-f9a3c449e5",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "datasette-llm 0.1a11",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+      "publishedAt": "2026-11-14T23:59:28.000Z",
+      "summary": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or"
+    },
+    {
+      "id": "s-5acb9d3d7e",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "datasette-vega 0.7",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-vega/",
+      "publishedAt": "2026-11-14T17:09:09.000Z",
+      "summary": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better with Datasette Lite . (Datasette Lite just gained the ability to run JavaScript "
+    },
+    {
+      "id": "s-ad639fbc65",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "publishedAt": "2026-11-13T22:43:00.000Z",
+      "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations."
+    },
+    {
+      "id": "s-6d7526357c",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "What’s new with Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud/",
+      "publishedAt": "2026-11-13T17:00:00.000Z",
+      "summary": "Want to know the latest from Google Cloud? Find it here in one handy location. Check back regularly for our newest updates, announcements, resources, events, learning opportunities, and more. Tip : Not sure where to find what you’re looking for on the Google Cloud blog? Start here: Google Cloud blog 101: Full list of topics, links, and resources . aside_block &lt;ListValue: []&gt; Nov 9 - Nov 13 M"
+    }
+  ]
+}
