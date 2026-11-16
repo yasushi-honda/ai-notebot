@@ -1,0 +1,304 @@
+{
+  "date": "2026-11-17",
+  "collectedAt": "2026-11-16T22:02:40.370Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-33d08bbb3d",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Google Project Zero cuts bug disclosures to 30 days amid AI threats",
+      "url": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
+      "publishedAt": "2026-11-16T21:31:44.000Z",
+      "summary": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation. [...]"
+    },
+    {
+      "id": "s-f275b9ba21",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "California sues OpenAI over AI agents escaping sandboxes, hacking firms",
+      "url": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
+      "publishedAt": "2026-11-16T20:59:44.000Z",
+      "summary": "California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and launch cyberattacks against real-world organizations. [...]"
+    },
+    {
+      "id": "s-eb93044530",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
+      "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
+      "publishedAt": "2026-11-16T19:57:13.000Z",
+      "summary": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework. [...]"
+    },
+    {
+      "id": "s-c5c6caed32",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "スーパーコンピューター「富岳」への不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/17/030254",
+      "publishedAt": "2026-11-16T18:02:54.000Z",
+      "summary": "2026年11月16日、スーパーコンピューター「富岳」が外部から不正アクセスを受けたことが明らかになりました。理化学研究所は取材に対して認め、利用者にメールで通知しています。ここでは関連する情報をまとめます。 運用系システムへの不正アクセス 理研が神戸市の施設で運用する富岳の運用系システムが、外部の第三者から不正アクセスを受けた。理研は14日午前4時半から外部からのアクセスを遮断して運用を停止し、利用者にメールで通知している(出典: 1, 4)。 侵入先は通知メールでは「運用系システム」、理研と文科省への取材では12日に外部からの不審な通信があった「ユーザー認証に関わるシステム」、文科省の説明では「富岳を利用しようとする際に接続するシステム」と呼ばれている(出典: 1, 4, 7)。 *1 理研は13日、不正アクセスの形跡を検出して文部科学省に報告(出典: 3, 8)。理研はその後も富岳の"
+    },
+    {
+      "id": "s-fea1e58f91",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
+      "publishedAt": "2026-11-16T16:43:24.000Z",
+      "summary": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive. [...]"
+    },
+    {
+      "id": "s-209c49582e",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Fandango says hackers stole payment card details from checkout pages",
+      "url": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+      "publishedAt": "2026-11-16T15:44:21.000Z",
+      "summary": "Fandango says hackers stole payment card details from checkout pages By Bill Toulas November 16, 2026 10:44 AM 0 Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. The company says the details were exposed between October 8 and 11, and it impacts customers who made purchases through its official website. Card skimmer code injected into Fandango&rsquo;s checkout page intercepted payment card details entered when placing orders, sending the data to hackers. Fandango Media is a major U.S. online movie ticketing platform. It sells tickets through its website and app for 31,000 U.S. cinema screens, including at AMC, Regal, and Cinemark. The company also operates the popular movie review website Rotten Tomatoes. &ldquo;Our investigation identified evidence that an unauthorized party could access payment card information associated with certain transactions on our checkout page from October 8-11, 2026,&rdquo; reads the notification to customers . &ldquo;Fandango determined on October 30, 2026 that your information may have been impacted in this incident.&rdquo; The company says the following data types may have been exposed: Payment card number CVV (verification code) Expiration date Billing ZIP (postal code) Email address Fandango says the incident did not expose names, government-issued identity information, Social Security Numbers (SSNs), or any other account information. However, the informatio"
+    },
+    {
+      "id": "s-7f522f63fe",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "7 Tips For Complying with CJIS Password and MFA Requirements",
+      "url": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
+      "publishedAt": "2026-11-16T15:01:11.000Z",
+      "summary": "The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain compliance. [...]"
+    },
+    {
+      "id": "s-c78f0dd91a",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "2026年3Qのソフト製品の脆弱性届出 - スマホアプリが最多",
+      "url": "https://www.security-next.com/191998",
+      "publishedAt": "2026-11-16T14:32:22.000Z",
+      "summary": "2026年3Qのソフト製品の脆弱性届出 - スマホアプリが最多 情報処理推進機構（IPA）は、2026年第3四半期における脆弱性の届け出状況を取りまとめた。ソフトウェア関連の届け出が微増している。 同機構では「情報セキュリティ早期警戒パートナーシップガイドライン」に基づき、脆弱性に関する届け出を受け付けており、同四半期の状況を取りまとめたもの。 同四半期に届け出を受けた脆弱性は240件。前四半期の246件からほぼ横ばいだった。受付開始以降の1就業日あたりにおける届け出件数は約3.8件、前四半期と同水準となっている。 内訳を見ると、ソフトウェア製品に関する届け出が179件。前四半期の176件とほぼ同水準。ウェブサイトに関する届け出が61件で、前四半期の70件から減少した。 受け付けを開始した2004年7月以降の累計件数は2万553件。ウェブサイト関連が1万3666件で、ソフトウェア製品が6887件。ウェブサイト関連が全体の約7割を占めている。 （Security NEXT - 2026/11/16 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-819fd9d6f0",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Google warns that fully-automated AI attacks are coming soon",
+      "url": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
+      "publishedAt": "2026-11-16T14:00:00.000Z",
+      "summary": "Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to machine speed. [...]"
+    },
+    {
+      "id": "s-5adf36e942",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+      "url": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+      "publishedAt": "2026-11-16T14:00:00.000Z",
+      "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity. In tandem, threat actors are leveraging the power and capabilities of large language models (LLMs)"
+    },
+    {
+      "id": "s-f9828b7723",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+      "publishedAt": "2026-11-16T13:27:20.000Z",
+      "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and attackers keep finding easy ways in. Some attacks take real skill. Others barely"
+    },
+    {
+      "id": "s-da679a6890",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "通信販売サイトで個人情報が流出 - 靖国神社",
+      "url": "https://www.security-next.com/192746",
+      "publishedAt": "2026-11-16T13:10:18.000Z",
+      "summary": "通信販売サイトで個人情報が流出 - 靖国神社 靖国神社は、通信販売サイト「オンライン授与品・頒布品サイト」がサイバー攻撃を受け、利用者の個人情報が流出したことを明らかにした。 同法人によれば、2026年10月28日、外部から同サイトが侵害されたことが判明し、同日サイトの公開を停止した。 その後調査を行ったところ、サイト利用者の個人情報の一部が流出したことが確認された。対象となる個人情報は約1万4500件としているが、詳細については現在調査を進めている。 氏名やメールアドレスのほか、パスワードのハッシュ値および生成に用いる補助情報などが含まれるとし、流出した情報から元のパスワードを特定されるおそれがあるとしている。 問題を受けて同法人では、対象となる関係者にメールで連絡を取るとしており、同法人になりすました連絡に注意し、他サービスでパスワードを使いまわしている場合は変更するよう呼びかけている。 （Security NEXT - 2026/11/16 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-9019a38c65",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
+      "publishedAt": "2026-11-16T12:53:18.000Z",
+      "summary": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months. [...]"
+    },
+    {
+      "id": "s-119c79e2a8",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+      "url": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+      "publishedAt": "2026-11-16T12:34:21.000Z",
+      "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the flaws. Government cybersecurity agencies in Belgium, Ireland and Germany told operators this week to"
+    },
+    {
+      "id": "s-8c37ef3c27",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+      "url": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+      "publishedAt": "2026-11-16T12:33:18.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\" Kaspersky said in an analysis published today. \"The '7z.dll' file was a patched version of the"
+    },
+    {
+      "id": "s-c5c4a7eba2",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "フィッシング被害で個人情報流出の可能性 - 八十二長野銀",
+      "url": "https://www.security-next.com/192395",
+      "publishedAt": "2026-11-16T11:46:12.000Z",
+      "summary": "フィッシング被害で個人情報流出の可能性 - 八十二長野銀 八十二長野銀行は、従業員のメールアカウントが不正アクセスを受け、顧客などのメールアドレスが外部に流出した可能性があることを明らかにした。 同行によれば、2026年10月7日に従業員が受信したフィッシングメールにだまされたもの。認証操作を行った結果、メールアカウントが不正アクセスを受けた。 同日、同アカウントに対する不正アクセスを遮断したが、アカウント内のメールが第三者に参照された可能性がある。 不正アクセスにより、法人取引先や関係機関に所属する34人の氏名や組織名、電話番号、メールアドレスなどが流出した可能性がある。 さらに法人取引先96社における取引情報のほか、531社の社名や海外拠点名などが流出したおそれがある。また関係機関のメールアドレス35件なども対象。同社は関係者などへの報告を行っている。 （Security NEXT - 2026/11/16 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-f0b3319bef",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+      "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "publishedAt": "2026-11-16T09:32:57.000Z",
+      "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives commands over the TOR anonymity network to manage CPU and GPU miners. The activity was observed in"
+    },
+    {
+      "id": "s-f159cf23a7",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+      "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+      "publishedAt": "2026-11-16T07:34:21.000Z",
+      "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered the search for more keys. The team said this"
+    },
+    {
+      "id": "s-1a13d7025b",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+      "publishedAt": "2026-11-16T06:53:34.000Z",
+      "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,"
+    },
+    {
+      "id": "s-a550943d94",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "米連邦航空局の通信障害による全米空港の地上待機についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/16/150745",
+      "publishedAt": "2026-11-16T06:07:45.000Z",
+      "summary": "2026年11月13日、米連邦航空局(FAA)は通信網の技術的な問題を受けて全米の空港を対象に地上待機を発出しました。ここでは関連する情報をまとめます。 全米の出発便を止めた地上待機 以下の時刻は米東部時間(日本時間は14時間先)。 11月13日、FAAの通信網で技術的な問題が起きて複数の管制施設で航空機との交信とレーダーフィードが不安定になった。FAAは念のための措置として全米の空港を対象に地上待機を発出して出発便が止まった。FAAは15時30分頃に問題が生じ、20時15分に航空交通が再開したと公表(出典: 1)。 運輸長官は15時36分に全米の施設とTRACON(ターミナルレーダー管制所)で通信の問題が発生し、管制官がレーダーデータと航空機との交信の不整合を確認したと説明している(出典: 7, 12)。 FAAのATCSCC(航空交通管制システム指令センター)は15時54分に全米の空港"
+    },
+    {
+      "id": "s-57316c9457",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Apache Airflow」の分散処理機能に脆弱性 - 修正版が公開",
+      "url": "https://www.security-next.com/192896",
+      "publishedAt": "2026-11-16T04:51:46.000Z",
+      "summary": "「Apache Airflow」の分散処理機能に脆弱性 - 修正版が公開 ワークフロー管理ソフトウェア「Apache Airflow」の開発チームは、脆弱性が確認されたとして修正版を公開した。 現地時間2026年11月9日、セキュリティアドバイザリを公開し、分散処理機能「CeleryExecutor」における認証処理の不備「CVE-2026-68982」について明らかにしたもの。重要度を「重要（Important）」と評価している。 「Apache Airflow」は、データ処理など一連の作業を定義し、実行を管理するソフトウェア。「CeleryExecutor」により、メッセージブローカーを経由して別のワーカーへ処理を割り当てることができる。 今回の脆弱性は、コールバック処理「ExecuteCallback」の実行時に、認証用トークンを検証していなかったことに起因。悪用にはブローカーへの書き込みが必要とされるが、処理要求を送り込み、ワーカー上で任意のコードを実行させるおそれがある。 影響を受けるのは「Apache Airflow 3.4.0」より前のバージョンで、「CeleryExecutor」を利用する構成。共通脆弱性評価システム「CVSSv3.1」のベーススコアは「7.3」と評価されている。 開発チームは、現地時間11月6日に「同3.4.0」を公開し、脆弱性へ対処。同バージョン以降へアップデートするよう求めた。またあたらしいトークン検証処理には、対応するAPIエンドポイントを提供するAPIサーバが必要となるため注意が必要。 （Security NEXT - 2026/11/16 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-efdc32a5d6",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "米当局、悪用確認の脆弱性2件に注意喚起",
+      "url": "https://www.security-next.com/192892",
+      "publishedAt": "2026-11-16T03:26:55.000Z",
+      "summary": "米当局、悪用確認の脆弱性2件に注意喚起 米サイバーセキュリティ・インフラセキュリティ庁（CISA）は、サイバー攻撃で悪用が確認された脆弱性2件について注意喚起を行った。 同庁は現地時間2026年11月13日、「CVE-2026-123039」「CVE-2026-114713」を「悪用が確認された脆弱性カタログ（KEV）」に追加したもの。 米行政機関における対応期限は同月16日。いずれも脆弱性への対策にくわえて、侵害の痕跡についても確認するフォレンジックトリアージを求めている。 「CVE-2026-123039」は、Check Point Software Technologies製機器の一部で採用されている「Gaia OS」に実装された「DynamicCLI」における権限昇格の脆弱性。同社は修正を含む「Jumbo Hotfix」を提供している。 ほかの脆弱性など、別の要因によって同OSのローカル環境にアクセスできる場合、権限を昇格させてroot権限を取得し、任意のコマンドを実行できる。PHPに判明した脆弱性「PHP2Shell」と組み合わせた攻撃も報告されている。 （Security NEXT - 2026/11/16 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-a6d1baec9b",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Apache Shiro」に認証回避の脆弱性 - 8月の更新で修正済み",
+      "url": "https://www.security-next.com/192887",
+      "publishedAt": "2026-11-16T02:42:18.000Z",
+      "summary": "「Apache Shiro」に認証回避の脆弱性 - 8月の更新で修正済み Java向けセキュリティフレームワーク「Apache Shiro」の特定条件において、認証がバイパス可能となる深刻な脆弱性が明らかとなった。修正版が提供されている。 開発チームは現地時間2026年11月14日、LDAP認証に関する脆弱性「CVE-2026-129349」について明らかにした。「同3.0.0」以前のバージョンにおいてLDAP認証の結果をキャッシュする構成としていた場合に影響を受ける。 キャッシュの利用を有効化した場合、キャッシュ後に「LDAPサーバ」での認証処理が省略される一方、認証情報の照合処理で任意の値を受け入れることが判明した。 利用者が一度正常にログインすると、キャッシュを用いる以後の認証で任意のパスワードを受け入れるため、有効な利用者名を把握していれば、本人になりすましてログインすることが可能となる。 共通脆弱性評価システム「CVSSv4.0」のベーススコアは「9.1」、重要度は「クリティカル（Critical）」と評価されている。 開発チームでは、2026年8月に「同3.0.1」にて脆弱性を解消していた。同年11月8日に「同3.0.2」をリリースしており、最新版への更新を呼びかけている。 （Security NEXT - 2026/11/16 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-ff5b4f8a32",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "過去利用した委託先メルマガシステムが侵害 - JP労組",
+      "url": "https://www.security-next.com/192465",
+      "publishedAt": "2026-11-16T02:39:10.000Z",
+      "summary": "過去利用した委託先メルマガシステムが侵害 - JP労組 日本郵政グループ労働組合は、過去に利用したメールマガジンの配信システムがサイバー攻撃を受け、組合員に関する個人情報が流出したことを明らかにした。 同組合によれば、2019年ごろまで利用していた委託先のメールマガジン配信システムが第三者によって侵害されたもの。 当時のメールマガジンを利用していた組合員の個人情報が流出したことが判明した。メールマガジン登録者2万7139人が対象。氏名、性別、生年月日、メールアドレス、地方本部名、組合員番号が含まれる。 問題の判明を受けて、個人情報保護委員会へ報告するとともに、関係者へなりすましメールなどに注意するよう呼びかけている。 （Security NEXT - 2026/11/16 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-8ace5ea45e",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "Check Point製品に脆弱性 - 「PHP2Shell」連鎖での悪用も",
+      "url": "https://www.security-next.com/192877",
+      "publishedAt": "2026-11-16T01:45:49.000Z",
+      "summary": "Check Point製品に脆弱性 - 「PHP2Shell」連鎖での悪用も Check Point Software Technologiesのセキュリティ製品に、管理者権限を奪取されるおそれがある脆弱性が明らかとなった。サイバー攻撃で悪用されたことが確認されている。 同社は現地時間2026年11月12日に脆弱性「CVE-2026-123039」を公表した。セキュリティゲートウェイや管理サーバなどのOSである「Gaia OS」の「DynamicCLI」における権限昇格の脆弱性だという。 ローカル環境でコードを実行できる場合に、同脆弱性を悪用することで権限昇格でき、root権限を取得して任意のコマンドを実行できる。 共通脆弱性評価システム「CVSS」のベーススコアは「7.8」、重要度は「高（High）」とされる。 同社の調査では、セキュリティパッチが適用されておらず、脆弱性「PHP2Shell」が存在した同社製セキュリティゲートウェイの「モバイルアクセスポータル」を標的とした攻撃が展開され、侵入後に「CVE-2026-123039」が悪用され、root権限を奪われるケースを確認しているという。 （Security NEXT - 2026/11/16 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-1924335546",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "創刊 28 周年記念キャンペーンのおしらせ（4）記念ノベルティ「ScanNetSecurity温泉旅館タオル」製作開始",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56797.html",
+      "publishedAt": "2026-11-15T23:25:02.000Z",
+      "summary": "296 views 創刊以来、常に低空飛行で運営している ScanNetSecurity ですが、もし超絶お金がもうかったらやりたいと思っていることがいろいろあり、たとえば都内にバーを開店して山賀正人さんにマスターになってもらうことなどたくさんありますが、ScanNetSecurity の看板のついた温泉旅館を運営したい、というのもやってみたいことのひとつです。 以前マルタかフロリダだったかで開催された FIRST の年次会合に参加した人に話を聞いた際に、「講演もそれほど気合いが入ったものではなかったし、調べてみると毎年一流のリゾート地でばかり開催しているし、FIRST 年次総会というのは日頃の CSIRT 業務の緊張から皆が解放される場という役割があるのではないか」と言っていたのをずっと覚えていて、日頃のセキュリティ業務の緊張から解放されるような、そんな場を作れないかと考えるようになりました。それがバーや温泉旅館の発想のきっかけです。 そもそもセキュリティ情報は、常に読む側に一定の緊張を強いるというか、仕事でなければあまり読みたくはないものが ScanNetSecurity にはぎっしりと掲載されているわけで、せめて静かな心でそれらに触れてほしいという思いもあって広告を他誌と比べて少な目にするなどいろいろ工夫をしてはいます。そんな「緊張」の対極にある静かな心の具現の形のひとつが「温泉」ではないかと思うのです。実際に日本でも温泉カンファレンスは多数開催されています。 とはいえ本当に旅館を作るわけにも行かず、あまつさえもうかっているとは全く言えない現経営状態でもあり、せめてもの悪あがきとして温泉旅館にあるような「タオル」を創刊 28 周年記念として作ることに決めました。 ノベルティのタオルというとお金持ち外資系企業が招待制イベントなどで配る、いかにも原価が高そうでデザインも優れたワッフル地の「今治タオル」のような高級品を思い浮かべるかもしれませんが（今治タオルのロゴデザインは佐藤可士和）、ScanNetSecurity温泉旅館タオルはそういう類いのものではありません。むしろ真逆で、正真正銘旅館の部屋に置いてあるような超薄いタオルで、これは見つけるのに実は大変苦労しました。 ふつうに「薄いタオル」で検索しても見てみるとこれが全然薄くありません。無印良品の「薄手タオル」など「薄手」と書いてあるのにちっとも薄くありません。目指したのは印刷物の上に置いた際にすけて文字が見える水準で、なぜここまで薄さにこだわるかというと、薄いと、捨てても無くしても苦にならない、そんな「主張のなさ」を目指したからです。どこかに忘れてきてもいいし、何かをこぼしたらそれを拭いてそのまま捨ててもいい。 企業ノベルティの店に行ったり、いろいろな試行錯誤を経て検索のやり方を根本から変えて（タオルの個人ユーザー視点ではなく B2B 向けの文言で調べた）ようやく見つけたのが、静岡にある業務用タオルの専門メーカーでした。タオルだけでなく、まさに B2B 需要であるところの「旅館向け浴衣」などの製造も行っており、サンプルを 3 ～ 4 種類取り寄せて、実際に水に濡らして絞ってみたりもして、その結果、最も薄い「140匁」のタオルを選定しました。ちなみに「匁」は「もんめ」と読みます。 （つづく） 11月30日(月)まで ScanNetSecurity は創刊28周年記念キャンペーン割引中 です。希望者全員に「ScanNetSecurity温泉旅館タオル」をプレゼント予定です。今後も社会にScanN"
+    },
+    {
+      "id": "s-57b90e8406",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Okta Blog 第21回「パスキー」って何が安全？ 仕組みと知っておくべきリスクをリージョナルCSO板倉景子が解説",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56796.html",
+      "publishedAt": "2026-11-15T23:20:02.000Z",
+      "summary": "239 views ID・パスワードの漏えいや使い回しによる不正ログインが後を絶たない中、パスワードに代わる認証方式として「パスキー」への関心が高まっています。Apple、Google、Microsoft の3社が OS や Web ブラウザでパスキーを標準サポートし、国内でも通信大手や主要 IT サービスでの採用を皮切りに金融機関へも導入が広がっています。一方で、「便利なのは分かるが、なぜ安全なのか」「パスワードはなくなるのか」といった疑問を持つ人は少なくありません。この記事では、パスキーの基本と安全性の仕組みを解説します。 ● パスワードに代わって端末の認証鍵で署名ログイン パスキーは、パスワードの代わりに使う認証情報です。ユーザーが覚えて入力する文字列ではなく、「サービスごとに作成される暗号鍵を始めとする認証情報」が実態です。秘密鍵はユーザーの端末の安全な領域に保管され、サーバー側には漏えいして悪用されるような秘密情報は保管されません。 ログイン時には、まずサーバーから認証要求がユーザーの端末に送られます。端末は、生体認証などの端末機能でユーザー本人を確認できた時だけ端末の鍵を使って認証要求に署名し、その結果をサーバーに返します。サーバーは返された署名が正しいかを検証します。この要求と署名はログインごとに毎回異なるため、攻撃者が過去の通信内容を盗み取っても、別のログインに悪用することはできません。 従来のパスワード認証では、サーバー側に認証のための情報（パスワードやそれを照合するためのデータ）が保管されているため、漏えいすると不正ログインに悪用される恐れがあります。一方、パスキーでは、サーバー側に悪用できる秘密情報は保管されないため、漏えいしても悪用できる情報はありません。また、パスキーはサービスごとに別の鍵を作るので、使い回しも起こりません。 ● 接続先を確認してフィッシングに対抗 パスキーは、フィッシング詐欺にも強い認証方式です。サイトごとにパスキーを作り、ログインのたびに、接続先のサイト（実質的にはドメイン名）を確認する仕組みを持つからです。この仕組みを「オリジンバインディング」と呼びます。 パスキーを登録する時は、サイトのサーバーが、自社のドメインを「この鍵の管理ドメイン（RP ID）」として端末に伝え、端末は秘密鍵と RP ID をセットで保管します。 ログインする時は、基本的な仕組みに加え、Web ブラウザが今接続しているサイトの接続先を確認します。Web ブラウザは、サーバーからの認証要求（チャレンジ）と現在の接続先をまとめたデータを準備し、端末の認証器がその秘密鍵を使って署名します。一方サーバーは、署名が正しいかを確認することに加え、署名に含まれる接続先が自社のものかを検証します。 つまり、Web ブラウザは「パスキーを登録したサイトと、今の接続先が一致するか」を確認します。サーバーは「署名に含まれる接続先が、自社のものか」を確認します。この2段階の確認があるため、ユーザーが偽サイトを見抜けなくても、偽サイトではログインが成立しません。 例えば、ユーザーが偽サイトの fake.com を開いても、端末には fake.com 用のパスキーがありません。パスキーの選択画面すら出ず、ログインできません。 巧妙な攻撃として、攻撃者が、ユーザーと正規サイトの bank.com の間に入って通信を中継する中間者攻撃があります。攻撃者は、ユーザーの操作をリアルタイムで bank.com に転送し、ログインを試みます。この攻撃も、2段階の確"
+    },
+    {
+      "id": "s-4c24a354d7",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "埼玉りそな銀行、デビットカード関連メール本文へのURL掲載をやめる ～ フィッシング詐欺対策で",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56795.html",
+      "publishedAt": "2026-11-15T23:15:03.000Z",
+      "summary": "71 views 株式会社埼玉りそな銀行は 10 月 19 日 (月)、Visaデビットカード（りそなデビットカード）関連のメール本文への URL 掲載を終了すると発表した。フィッシング詐欺対策の一環で、 11 月 18 日 (水) 以降に配信するメールから適用する。 フィッシング詐欺による被害の防止とセキュリティ強化を目的とした措置である。今後は URL の代わりに、サービス名称やホームページ内の掲載箇所をメール本文に記載する。 同行は利用者に対し、ホームページからアクセスするよう求めている。アクセス方法としては、検索サイトで同行名を検索する方法や、ブラウザのお気に入り（ブックマーク）に登録しておく方法を案内している。 《ScanNetSecurity》 一次情報または関連リンク 埼玉りそな銀行 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-7a066d054c",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "エーアイセキュリティラボ、脆弱性診断の \"周辺タスク\" 削減をテーマに自動化体験セミナー 12 月開催",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56794.html",
+      "publishedAt": "2026-11-15T23:10:03.000Z",
+      "summary": "95 views 株式会社エーアイセキュリティラボは 11 月 11 日 (水)、「 『外注しているのに、なぜか忙しい』を解決する ― 脆弱性診断の\"周辺タスク\"を削減！診断の自動化体験セミナー 」を開催すると発表した。オンラインのライブ配信形式で参加は無料。 脆弱性診断を外注していても、スコープ調整や環境準備、再診断の日程調整、専門用語の多いレポートの読解などに時間がかかる。同セミナーではこの点を取り上げ、「AeyeScan」のデモを通じて外注と自動診断を組み合わせた運用を紹介する。準備作業やベンダー調整をAIで効率化できる点、修正後の再確認を自社のタイミングで実施できる点などを扱う。専門知識は不要で、30分程度で情報収集できる構成としている。デモを見るだけの参加も可能。 開催は2回で、日時は 12 月 2 日 (水) 12 時 00 分から 12 時 30 分までと、12 月 17 日 (木) 17 時 00 分から 17 時 30 分まで。申込締切はそれぞれ前日の 15 時。各回とも定員制である。 ハンズオン環境には Google Chrome でアクセスする必要がある。ログイン情報は開催前日と当日の開始前に送られる。また、視聴と操作を同時に行うため、マルチディスプレイでの参加を推奨している。 《ScanNetSecurity》 Sponsored by エーアイセキュリティラボ 一次情報または関連リンク エーアイセキュリティラボ 関連記事 エーアイセキュリティラボ、「A2B攻撃」に特化した診断ツールを近日中に提供 2026.10.26 Mon 8:00 「AeyeScan」に生成 AI を搭載したモバイルアプリ脆弱性診断機能を追加 2026.10.8 Thu 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-54530701b2",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "アクサ損害保険「MyAXA」に不正アクセス、約59万7千件の顧客情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56793.html",
+      "publishedAt": "2026-11-15T23:05:24.000Z",
+      "summary": "2912 views アクサ損害保険株式会社は11月12日、同社の顧客専用マイページ「MyAXA」への不正アクセスについて発表した。 これは11月9日午前8時30分頃に、「MyAXA」で不審なアクセスを確認したため、調査した結果、第三者が本来アクセスする権限のない顧客情報にアクセスしたことを確認したというもの。 同社では11月9日午前10時53分にアクセス遮断等の対策を講じるとともに、関連するウェブサービスを一時停止している。 不正アクセスの対象となった可能性があるのは約59万7千件の顧客情報（氏名、住所、生年月日、メールアドレス、電話番号）。 同社では現在、対象となる顧客の特定と詳しい内容の確認を進めており、対象者を確認ができ次第、順次個別に連絡を行う。 同社では現在、「MyAXA」については、必要なセキュリティ対策と安全性の確認を行った上で、サービスを再開しているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社のお客さま専用マイページ「MyAXA」への不正アクセスに関するお知らせ（第1報） 当社のお客さま専用マイページ「MyAXA」およびロードサービス委託先への不正アクセスに伴うお客さまの情報漏洩に関するお詫びとお知らせ（第2報） 関連記事 個人情報を無断で持ち出し 不正競争防止法違反容疑で逮捕 2026.7.31 Fri 8:05 アクサ生命の元営業社員（故人）が金銭詐取の可能性、偽造保険証券を顧客に手渡す 2026.6.30 Tue 8:05 アクサのペット保険のシステムへの不正アクセス、第 2 報公表の漏えい可能性がある個人情報の内訳を修正 2026.5.29 Fri 8:05 アクサのペット保険のシステムに不正アクセス、第三者が情報を抜き取ろうとしていた可能性 2025.11.11 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-7483db8559",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "三井住友海上火災保険の中堅・中小企業向け情報提供サイト「MSコンパス」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56792.html",
+      "publishedAt": "2026-11-15T23:05:22.000Z",
+      "summary": "180 views 三井住友海上火災保険株式会社は11月9日、中堅・中小企業向け情報提供サイト「MSコンパス」への不正アクセスについて発表した。 これは11月2日から3日に、「MSコンパス」への不正アクセスを検知したため調査したところ、同社の顧客情報の漏えいが判明したというもの。 漏えいしたのは、「MSコンパスに」会員登録している顧客（個人・法人）、MSコンパスで三井住友海上火災保険主催セミナーに申し込みした顧客（対象期間：2023年11月～2026年11月）、MSコンパスの問い合わせフォームから連絡した約23,000件の法人名、法人番号、役職、氏名、メールアドレス、電話番号、業種、本社住所、本社以外の住所、売上高、従業員数などを含む顧客情報。 同社では準備が整い次第、対象の顧客に順次、個別に案内を行う。 同社では11月3日に「MSコンパス」の一部システムのアクセスを制御し、11月6日にサイト全体を一時閉鎖している。 同社では現在、原因と影響範囲の調査のため、外部専門機関とも連携し必要な対応を進めているとのこと。 《ScanNetSecurity》 一次情報または関連リンク ＭＳコンパスへの不正アクセスに伴う情報漏えいについて 関連記事 三井住友海上火災保険の出向者、トヨタ自動車の保有する情報を漏えい 2026.4.27 Mon 8:05 関与していた元社員とは未だ連絡取れず ～ 京都市内で保険申込書写し 計 632 枚拾得 2025.10.23 Thu 8:05 審調社へランサムウェア攻撃、三井住友海上火災保険の顧客情報漏えいの可能性 2025.7.23 Wed 8:05 乗合代理店で顧客情報の不適切管理 ～ 損保ジャパンら大手損保 4 社に行政指導 2025.5.16 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-ae531de070",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "三井住友海上火災保険「ご契約者さま専用ページ」に不正アクセス、約3万7,000件の顧客情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56791.html",
+      "publishedAt": "2026-11-15T23:05:18.000Z",
+      "summary": "1106 views 三井住友海上火災保険株式会社は11月6日、同社システムへの不正アクセスによる情報漏えいについて発表した。 これは11月2日夜間に、同社「ご契約者さま専用ページ」への不正アクセスを検知したため、直後の翌3日深夜に顧客情報の保護と被害の拡大防止、影響調査のために関連サービスの提供を能動的に停止したが、その後の影響調査の過程で情報漏えいの事実を確認したというもの。 漏えいしたのは、「ご契約者さま専用ページ」に登録のあった約37,000件の顧客の保険証券番号、氏名、住所、電話番号、メールアドレスなどを含む個人情報。 同社では、対象となる顧客に対し、準備が整い次第、順次個別に案内を行う。 同社では現在、原因および影響範囲の調査のため、外部専門機関によるフォレンジック調査を実施するなどの対応を進めているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社システムへの不正アクセスに伴う情報漏えいについて 不正アクセス検知に伴う一部サービスの一時停止について【更新】 関連記事 三井住友海上火災保険の出向者、トヨタ自動車の保有する情報を漏えい 2026.4.27 Mon 8:05 審調社へランサムウェア攻撃、三井住友海上火災保険の顧客情報漏えいの可能性 2025.7.23 Wed 8:05 乗合代理店で顧客情報の不適切管理 ～ 損保ジャパンら大手損保 4 社に行政指導 2025.5.16 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-0acbbede25",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「靖國神社オンライン授与品・頒布品サイト」に不正アクセス、約1万4,500件の利用者の個人情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56790.html",
+      "publishedAt": "2026-11-15T23:05:16.000Z",
+      "summary": "238 views 靖國神社は11月11日、「靖國神社オンライン授与品・頒布品サイト」への不正アクセスについて発表した。 これは10月28日に、同神社が運営するオンライン授与品・頒布品サイトへの外部からの不正アクセスが判明したというもので、その後の調査で、当該サイトに登録のあった利用者の個人情報の一部が外部に漏えいしたことを確認している。 漏えいしたのは、「靖國神社オンライン授与品・頒布品サイト」に登録のあった約14,500件の氏名、メールアドレス、会員アカウントに設定されたパスワードに関する情報（ハッシュ値およびその生成に用いる補助情報）、会員アカウントの管理情報（登録日時、利用状態）を含む個人情報。 同神社では、対象者に個別に連絡を行う。 同神社では不正アクセスの判明後に、同日中に当該サイトの公開を停止しており、原因と影響の範囲の調査をサイト管理会社とともに進めている。 同神社では調査の結果を踏まえ、再発防止の対策を講じるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 靖國神社オンライン授与品・頒布品サイトへの不正アクセスによる個人情報漏洩のお詫びとお知らせ 「オンライン頒布サイト」について（メンテナンス） 関連記事 戸隠神社の公式サイトへ不正アクセス、データ消失し数日間閲覧できず 2021.12.29 Wed 8:05 オンライン麻雀に不正アクセス 会員情報流出 ～ 寄せられた激励メッセージに謝意 メールはスタッフ全員が目を通し必ず返信 2026.11.13 Fri 8:10 消防庁「安否情報システム」に不正アクセス、影響範囲調査のためにサービスを停止 2026.11.9 Mon 8:05 ブックオフグループホールディングス子会社の会員管理システムに不正アクセス、638万3,279人の会員情報が漏えい 2026.11.13 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    }
+  ]
+}
