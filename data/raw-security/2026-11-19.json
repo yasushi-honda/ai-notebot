@@ -1,0 +1,457 @@
+{
+  "date": "2026-11-19",
+  "collectedAt": "2026-11-18T22:01:36.400Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-b174a57253",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "NGINXの脆弱性 CVE-2026-123633、CVE-2026-123007についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/19/065715",
+      "publishedAt": "2026-11-18T21:57:15.000Z",
+      "summary": "2026年11月19日、国家サイバー統括室はWebサーバーnginxにリモートから未認証で任意のコード実行等が可能となる脆弱性が公表されたとして、対象環境の運用管理者に速やかなアップデートの適用等を求める注意喚起を行いました。ここでは関連する情報をまとめます。 どんな脆弱性が確認されたの? nginx.orgとF5は11月18日、NGINXのHTTP/2の実装(ngx_http_v2_module)の脆弱性2件を公表。nginx 1.30.7(stable)と1.31.9(mainline)のリリースでこの2件を含む計10件の脆弱性を同時に修正した。(出典: 1, 2, 3, 4) 2件はWiz、Rapid7、Xint、Metnirなどの発見者がF5に報告した。(出典: 1, 2) 2件とも、認証不要でネットワークから細工した通信を送ることで、workerプロセスのクラッシュ(DoS)や、"
+    },
+    {
+      "id": "s-92b94ed921",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+      "url": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+      "publishedAt": "2026-11-18T20:49:32.000Z",
+      "summary": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]"
+    },
+    {
+      "id": "s-abe9285790",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
+      "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+      "publishedAt": "2026-11-18T19:39:33.000Z",
+      "summary": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland. [...]"
+    },
+    {
+      "id": "s-fb8b318a04",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+      "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+      "publishedAt": "2026-11-18T18:31:17.000Z",
+      "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today. F5, the company behind NGINX, says attackers can run code where"
+    },
+    {
+      "id": "s-11aa6bef2b",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+      "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+      "publishedAt": "2026-11-18T18:15:39.000Z",
+      "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes two particular kinds of agent. F5, which makes BIG-IP, disclosed the flaws today and says they"
+    },
+    {
+      "id": "s-9c40ff9a76",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+      "publishedAt": "2026-11-18T17:10:45.000Z",
+      "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution. \"Deserialization of Untrusted"
+    },
+    {
+      "id": "s-6535cd5104",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+      "publishedAt": "2026-11-18T16:58:42.000Z",
+      "summary": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]"
+    },
+    {
+      "id": "s-9a64950a8c",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "OpenJDK の脆弱性 CVE-2026-114938(Java4Shell)についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/19/001205",
+      "publishedAt": "2026-11-18T15:12:05.000Z",
+      "summary": "2026年11月17日、OpenJDK は Java の実行環境 HotSpot における Base64 デコード処理の脆弱性(CVE-2026-114938、通称 Java4Shell)の修正と脆弱性情報を公開しました。ここでは関連する情報をまとめます。 どんな脆弱性が確認されたの? HotSpot の Base64 デコード処理のうち、x86-64 向けの AVX-512 VBMI 組み込み実装にヒープバッファオーバーフロー(CWE-122)が確認された(出典: 7, 18)。OpenJDK のアドバイザリは影響を受けるコンポーネントを hotspot/compiler としている(出典: 1)。Oracle はネットワーク経由の認証なしの攻撃者による乗っ取り(takeover)に至りうると記述し、悪用は困難(Difficult to exploit)としている(出典: 2, 18)。"
+    },
+    {
+      "id": "s-1c74938f9d",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
+      "url": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
+      "publishedAt": "2026-11-18T15:00:10.000Z",
+      "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats. [...]"
+    },
+    {
+      "id": "s-eb5c61d8ab",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "2026年3Qのセキュ相談、12.1％減 - 「不正ログイン」は高水準",
+      "url": "https://www.security-next.com/192083",
+      "publishedAt": "2026-11-18T14:43:27.000Z",
+      "summary": "2026年3Qのセキュ相談、12.1％減 - 「不正ログイン」は高水準 2026年第3四半期にセキュリティに関する窓口に寄せられた個人からの相談は3369件だった。前四半期から約12.1％減少している。 情報処理推進機構（IPA）が設置する「情報セキュリティ安心相談窓口」での対応状況を取りまとめたもの。同四半期に個人から寄せられた相談は3369件。前四半期の3832件から約12.1％減となった。2025年第3四半期以降、増加傾向が続いていたが、今回減少に転じた。 具体的な相談内容を見ると、「マルウェアを検出した」などと偽の警告画面で不安を煽る「偽警告」に関する相談が1160件。前四半期の1428件から約18.8％減少した。 2025年5月に、サポート詐欺事件で逮捕者が出た際には、一時的に相談が四半期あたり1000件を下回ったが、その後再び増加。前四半期を下回ったものの1000件を超える水準で推移している。 「フィッシング」に関する相談は117件だった。前四半期の146件から約19.9％減少となった。国税庁をかたったケースなど、さまざまなサービスをかたる手口が確認されている。 （Security NEXT - 2026/11/18 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-1a3bc91bb4",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "年収や資産情報など個人情報流出の可能性 - 楽天証券",
+      "url": "https://www.security-next.com/193015",
+      "publishedAt": "2026-11-18T14:25:28.000Z",
+      "summary": "年収や資産情報など個人情報流出の可能性 - 楽天証券 楽天証券は、第三者によってシステムが侵害され、顧客の個人情報が流出した可能性があることを明らかにした。 同社によれば、2026年11月16日、同社システムに第三者がアクセスした可能性があることを把握。アクセスを遮断するとともにシステムの修正を実施した。 その後調査を行ったところ、同月11日に、テスト環境のシステム内で管理していた一部の情報が流出した可能性があることがわかった。 流出の可能性があるのは、退会者を含む会員の最大約447万口座に関する情報。氏名、住所、電話番号、生年月日、ログインID、顧客コード、メールアドレス、勤務先、出金先口座情報、年収、金融資産情報などが含まれる。また最大約1125万口座分の顧客コードやログインIDも対象だという。 パスワードや暗証番号など、取引に関連する情報の流出は確認されておらず、11月17日の時点で、今回の問題に関連したとみられる不正な取引についても確認されていない。 同社では、引き続き詳しい原因や経緯について調査を進める。対象となる顧客については特定を終えており、同社は対象者へ報告するとともに、同社や関係者を装った連絡などに注意するよう呼びかけている。 （Security NEXT - 2026/11/18 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-f6f1c1e5a4",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "理研「富岳」で侵害 - 窃取情報で他システムへの攻撃試行も",
+      "url": "https://www.security-next.com/192952",
+      "publishedAt": "2026-11-18T14:24:42.000Z",
+      "summary": "理研「富岳」で侵害 - 窃取情報で他システムへの攻撃試行も 理化学研究所は、計算科学研究センターのスーパーコンピュータ「富岳」の運用系システムが外部の第三者による不正アクセスを受けたことを明らかにした。利用者の個人情報が流出した可能性があるという。 同研究所によれば、2026年11月12日に不審な通信を検知。システムの保守管理を行う委託先と連携して調査を進めたところ、内部ネットワークに侵入されたことが判明した。 インターネット上に公開されていた「富岳」の稼働状況を表示するダッシュボードのウェブページを足がかりとして利用し、運用系の内部ネットワークに侵入したものと見ている。 また侵入後に内部の複数サーバを不正に操作しており、利用者のホームディレクトリに保存されていたファイルの一部と、利用者の認証システムに登録された情報が流出、または流出した可能性があることも判明した。 利用者が保存していた研究データや、同研究所以外のスーパーコンピュータやサービスに接続するための認証情報が含まれており、攻撃者が取得した認証情報の一部を使用し、他システムに対しても接続を試みていたことを確認したという。 （Security NEXT - 2026/11/18 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-55016e2da8",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+      "publishedAt": "2026-11-18T14:11:28.000Z",
+      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes with every recompile, a domain costs a few"
+    },
+    {
+      "id": "s-74d12e4423",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
+      "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+      "publishedAt": "2026-11-18T12:28:30.000Z",
+      "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit BitLocker PIN on an Intel laptop this way. Both PINs were set by the"
+    },
+    {
+      "id": "s-c9f8dc26d8",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+      "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+      "publishedAt": "2026-11-18T12:15:00.000Z",
+      "summary": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up in your logged-in flows, your coverage, and your production safety. Make"
+    },
+    {
+      "id": "s-122413bd84",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-18T12:00:00.000Z",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation.&nbsp; CVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability CVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability CVE-2026-90436 Apache Axis Unsafe Reflection Vulnerability CVE-2026-90817 Vand"
+    },
+    {
+      "id": "s-223101d573",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+      "publishedAt": "2026-11-18T11:55:49.000Z",
+      "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel and AMD chips that support the AVX-512 VBMI feature. Tracked as"
+    },
+    {
+      "id": "s-c427de9c7b",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Dizigom illegal streaming service with 21M monthly visits shuts down",
+      "url": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
+      "publishedAt": "2026-11-18T11:50:25.000Z",
+      "summary": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the site's operators. [...]"
+    },
+    {
+      "id": "s-5fa7a1b7cb",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "法人顧客向けサイトで顧客情報が閲覧可能に - 日本郵便",
+      "url": "https://www.security-next.com/192585",
+      "publishedAt": "2026-11-18T11:45:04.000Z",
+      "summary": "法人顧客向けサイトで顧客情報が閲覧可能に - 日本郵便 日本郵便は、送り状注文や集荷依頼などの各種サービスを提供する法人顧客向けサイト「JP Business Tool Box」において、顧客情報が流出した可能性があることを明らかにした。 同社によれば、送り状注文機能に登録された送り状ラベルの発注元情報を、操作を行った別の顧客が閲覧できる不具合が生じていたもの。 同サイトにおいて顧客情報が閲覧された可能性があることを検知したため、2026年10月8日19時過ぎにサービスを停止した。 調査の結果、最大4807件の発注元情報が閲覧された可能性があることが判明。法人名や担当者氏名、届け先住所、電話番号、メールアドレスなどが含まれる。対象となる顧客には、書面で個別に連絡している。 アプリケーションの不具合が原因としており、同社では、送り状注文機能を一時停止していたが、不具合の修正が完了したとして、一部機能を除いて10月27日に再開した。 （Security NEXT - 2026/11/18 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-63ab0fd187",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+      "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+      "publishedAt": "2026-11-18T11:03:57.000Z",
+      "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both. AI pentesting has emerged as a way to run in-depth tests whenever teams need them, instead of waiting for the"
+    },
+    {
+      "id": "s-da11730cfd",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
+      "publishedAt": "2026-11-18T10:35:05.000Z",
+      "summary": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]"
+    },
+    {
+      "id": "s-0d0aefb26e",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft announces Windows Server 2028 with hardened security",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
+      "publishedAt": "2026-11-18T09:24:31.000Z",
+      "summary": "Microsoft announces Windows Server 2028 with hardened security By Sergiu Gatlan November 18, 2026 04:24 AM 1 Microsoft has announced Windows Server 2028, the next major release of its server operating system, at the Ignite 2026 conference on Tuesday. This new Windows Server version ships with a hardened Server Core configuration by default and a new security baseline that allows admins to relax specific settings. \"A hardened Server Core configuration by default and a new security baseline help reduce the work of establishing a secure baseline from day 1,\" said Neil Hinnant , Director of Windows Server & I/O Fabrics PM. \"Trusted Launch extends protection to virtual machines, guaranteeing boot integrity across your VM fleet, and Confidential VM support begins a journey to support integrity-protected runtimes on supported CVM hardware.\" The list of hardened Server Core settings is extensive and includes: Identity and authentication : Credentials are hard to steal and hard to reuse: Kerberos over NTLM, LSASS protected, strong passwords and account lockout, no consumer accounts. Network exposure : The server talks only over signed, encrypted, authenticated channels: SMB signing and encryption, the firewall on in every profile, legacy name resolution and unauthenticated RPC off. Cryptography : TLS is limited to modern cipher suites, key exchange is hybrid post-quantum (ML-KEM), and stored keys are strongly protected. Privilege and admin access : Admins approve elevation, powerful r"
+    },
+    {
+      "id": "s-c9c994ba13",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "British Scattered Spider hacker sentenced to 6 years in prison",
+      "url": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
+      "publishedAt": "2026-11-18T08:24:18.000Z",
+      "summary": "A leader of the Scattered Spider cybercrime collective has been sentenced to six years in prison in the United States for stealing millions in cryptocurrency and conspiring to hack a dozen companies. [...]"
+    },
+    {
+      "id": "s-d013c95bd9",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "Oracle、のべ655件の修正パッチを公開 - 深刻な脆弱性も解消",
+      "url": "https://www.security-next.com/193031",
+      "publishedAt": "2026-11-18T05:59:00.000Z",
+      "summary": "Oracle、のべ655件の修正パッチを公開 - 深刻な脆弱性も解消 Oracleは、2026年11月のセキュリティ更新「Critical Security Patch Update（CSPU）」を公開し、幅広い製品の脆弱性に対処した。 現地時間2026年11月17日、四半期ごとに公開する累積セキュリティ更新「Critical Patch Update（CPU）」を補完するため、公開したもの。あらたに655件のパッチを提供。重複を除くとCVEベースで640件の脆弱性に対処している。 「Oracle Database Server」「Oracle Java SE」「MySQL Server」「Oracle WebLogic Server」「Oracle E-Business Suite」「Oracle VM VirtualBox」など、多岐にわたる製品が対象となる。 製品群ごとの対処件数を見ると「Oracle Hyperion」が267件で最多。「Oracle Supply Chain」が74件、「Oracle Fusion Middleware」「Oracle E-Business Suite」がそれぞれ71件と続く。製品が依存するサードパーティー製コンポーネントの脆弱性にも対応している。 655件のパッチで修正された脆弱性について、共通脆弱性評価システム「CVSSv3.1」のベーススコアを見ると、「7.0」以上とされる脆弱性は311件。このうち62件は「9.0」以上と評価されている。また303件についてはリモートから悪用が可能だという。 （Security NEXT - 2026/11/18 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-88c7102cce",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: OpenJDKにおけるヒープベースのバッファオーバーフローの脆弱性",
+      "url": "https://jvn.jp/vu/JVNVU99608534/",
+      "publishedAt": "2026-11-18T05:00:15.000Z",
+      "summary": "JVNVU#99608534 OpenJDKにおけるヒープベースのバッファオーバーフローの脆弱性 OpenJDKにはヒープベースのバッファオーバーフローの脆弱性（CVE-2026-114938）が存在します。 本脆弱性の発見者は本件を「Java4Shell」と呼称し、Base64デコード処理を高速化するための最適化処理に原因があると指摘しています。 なお、OpenJDKをもとに開発されたOracle Java以外の製品も本脆弱性の影響を受ける可能性があります。 詳細は各開発者が提供する情報を確認してください。 OpenJDK 27.0.1.0.3およびそれ以前 25.0.5.0.3およびそれ以前 21.0.13.0.3およびそれ以前 17.0.21.0.3およびそれ以前 Oracle Java SE 8u511b33-perf 17.0.21.0.3 21.0.13.0.3 25.0.5.0.3 27.0.1.0.3 Oracle GraalVM for JDK 17.0.21.0.3 Oracle GraalVM Enterprise Edition 21.3.20.0.3 OpenJDKには、次の脆弱性が存在します。 ヒープベースのバッファオーバーフローの脆弱性（ CWE-122 ） CVE-2026-114938 Base64デコード処理に細工したデータを入力されると、機微な情報が窃取されたり任意のコードが実行されたりする可能性があります。 アップデートする 開発者が提供する情報をもとに、最新バージョンにアップデートしてください。 ベンダ ステータス ステータス 最終更新日 ベンダの告知ページ テルモBCT株式会社 2026/11/18 リンク OpenJDK Oracle calif.io Java4Shell JPCERT/CC CyberNewsFlash 2026-11-18 OpenJDKにおけるリモートコード実行につながる脆弱性（CVE-2026-114938）について JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia [タイトル]、［概要］、［影響を受けるシステム］、［詳細情報］を更新しました テルモBCT株式会社のベンダステータスが更新されました ［参考情報］を追加しました JVN"
+    },
+    {
+      "id": "s-b8a299894c",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: ISC BINDにおける複数の脆弱性（2026年10月）",
+      "url": "https://jvn.jp/vu/JVNVU91196958/",
+      "publishedAt": "2026-11-18T05:00:00.000Z",
+      "summary": "JVNVU#91196958 ISC BINDにおける複数の脆弱性（2026年10月） ISC（Internet Systems Consortium）から、ISC BINDの複数の脆弱性が公開されました。 ISCのアドバイザリを参照してください。 ベンダ ステータス ステータス 最終更新日 ベンダの告知ページ テルモBCT株式会社 2026/11/18 株式会社日本レジストリサービス（JPRS） （緊急）BIND 9.xの脆弱性（CPU・メモリの過剰な消費）について（CVE-2026-19630） - バージョンアップを強く推奨 - 株式会社日本レジストリサービス（JPRS） （緊急）BIND 9.xの脆弱性（DNSサービスの停止・リモートコード実行）について（CVE-2026-94300） - バージョンアップを強く推奨 - 株式会社日本レジストリサービス（JPRS） （緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2026-96888） - バージョンアップを強く推奨 - 株式会社日本レジストリサービス（JPRS） （緊急）BIND 9.xの脆弱性（DNSサービスの停止）について（CVE-2026-97313） - RPZを該当する設定で利用している場合のみ対象、バージョンアップを強く推奨 - JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia 2026/10/23 ［参考情報］を更新しました テルモBCT株式会社のベンダステータスが更新されました JVN"
+    },
+    {
+      "id": "s-fa3db108e0",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "お知らせ：CyberNewsFlash「OpenJDKにおけるリモートコード実行につながる脆弱性（CVE-2026-114938）について」",
+      "url": "https://www.jpcert.or.jp/newsflash/2026111801.html",
+      "publishedAt": "2026-11-18T04:12:00.000Z",
+      "summary": "CyberNewsFlash一覧 I. 概要 セキュリティ研究組織Califは2026年11月17日、OpenJDKのBase64デコード高速化処理におけるメモリ破損の脆弱性（CVE-2026-114938、Java4Shellと同社は呼称）に関する情報[ 1 ]を公開しました。同日、OpenJDKおよびOracleは、本脆弱性に関連するセキュリティ情報や更新[ 2 ][ 3 ]を公開しました。本脆弱性は、Java仮想マシン（JVM）のBase64デコード処理において、特定のCPU命令を使用した高速化処理に不備が存在する問題です。悪用された場合、遠隔の第三者によって、メモリ内の機密情報が窃取されたり、任意のコードが実行されたりする可能性があります。 Califは、Keycloak、Atlassian Jira、Atlassian Confluence、Jenkinsなど、複数のJava製アプリケーションにおいて、認証を必要とせずにリモートコード実行が可能であることを実証したと報告しています。また、本脆弱性によるメモリ破損を再現するための概念実証コードも公開しています。本脆弱性の悪用には、特定のCPU命令に対応したJava実行環境や、細工されたBase64データが脆弱な処理に渡されることなど、特定の条件を満たす必要があります。 JPCERT/CCでは、2026年11月18日時点で、本脆弱性が実際の攻撃に悪用されたという情報を確認していません。しかし、発見者が複数のアプリケーションでリモートコード実行が可能と報告していることから、影響を受ける環境を確認し、速やかに対策を実施してくだ … III. 対策 OpenJDK[ 2 ]およびOracle[ 3 ]は、2026年11月17日に本脆弱性の影響や対策に関する情報を公開しています。 影響を受けるJava実行環境を使用している場合は、使用しているJavaディストリビューションの開発元が提供する情報を確認し、本脆弱性が修正されたバージョンへの更新を速やかに実施してください。また、Java実行環境を同梱する製品やアプリケーションについても、製品の開発元が提供する情報を確認し、必要な対策を実施してください。 修正版への更新が直ちに実施できない場合、Califは、JVMの起動オプションとして次のいずれかを指定することで、脆弱な処理の使用を回避できるとしています。 -XX:-UseBASE64Intrinsics ：Base64エンコードおよびデコードの高速化処理を無効化 -XX:UseAVX=2 ：AVX-512命令の使用を無効化（x86-64環境のみ） これらの設定はJava実行環境の動作や性能に影響する可能性があるため、適用に当たっては使用環境での対応状況を確認してください。 IV. 関連情報 [1] Calif Java4Shell: Write once, RCE everywhere https://calif.io/java4shell/ [2] OpenJDK Vulnerability Advisory https://openjdk.org/groups/vulnerability/advisories/2026-11-17 [3] Oracle Oracle Critical Security Patch Update Advisory - November 2026 https://www.oracle.com/security-alerts/cspunov2026.html#Append"
+    },
+    {
+      "id": "s-28254c2c26",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Puppet Enterprise」RCE脆弱性、悪用を確認 - 米当局が注意喚起",
+      "url": "https://www.security-next.com/193016",
+      "publishedAt": "2026-11-18T03:31:00.000Z",
+      "summary": "「Puppet Enterprise」RCE脆弱性、悪用を確認 - 米当局が注意喚起 Perforceが提供する「Puppet Enterprise」に任意のコード実行につながる脆弱性が確認された。米サイバーセキュリティ・インフラセキュリティ庁（CISA）は、実際の攻撃で悪用されているとして注意を呼びかけている。 「Puppet Enterprise」は、サーバやITインフラの設定、構成などを管理し、運用の自動化などを支援するソフトウェア。同庁は現地時間2026年11月17日、「悪用が確認された脆弱性カタログ（KEV）」に「CVE-2026-115731」を登録した。悪用が発生していることを受け、2026年12月1日までに対策を講じるよう米行政機関に求めている。 「CVE-2026-115731」は、同製品のレポート処理に存在。信頼できないデータのデシリアライズ処理に起因するという。共通脆弱性評価システム「CVSSv4.0」のベーススコアは「9.4」、重要度は4段階中もっとも高い「クリティカル（Critical）」と評価されている。 認証局が署名したエージェント証明書を持つクライアントから、細工したレポートを含むリクエストが送信されると、サーバ上で任意のコードが実行されるおそれがある。 認証局が証明書の署名要求を十分に検証せずに自動署名する構成で運用されている場合、攻撃者によって証明書が取得され、同脆弱性が悪用されることも想定される。 Perforceは、同脆弱性を解消した「Puppet Enterprise 2026.0.1」「同2025.12.1」「同2023.8.13」、「Puppet Core 9.1.3」「同8.22.2」を提供している。 （Security NEXT - 2026/11/18 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-e1781cdb1e",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Androidアプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」における複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN19906678/",
+      "publishedAt": "2026-11-18T03:00:00.000Z",
+      "summary": "JVN#19906678 Androidアプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」における複数の脆弱性 宮内庁が提供するAndroidアプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」には、複数の脆弱性が存在します。 Androidアプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」2.7より前のバージョン 宮内庁が提供するAndroidアプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」には、次の複数の脆弱性が存在します。 重要な情報の平文送信（ CWE-319 ） CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N 基本値 2.3 CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N 基本値 3.1 CVE-2026-117657 OSコマンドインジェクション（ CWE-78 ） CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:A/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N 基本値 8.4 CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H 基本値 7.8 CVE-2026-118900 想定される影響は各脆弱性により異なりますが、次のような影響を受ける可能性があります。 中間者攻撃が可能な第三者により、当該アプリケーション上の表示内容が改ざんされる（CVE-2026-117657） 当該アプリケーションの権限で、任意のOSコマンドが実行される（CVE-2026-118900） アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 ベンダ リンク 宮内庁 この脆弱性情報は、下記の方が製品開発者に直接報告し、製品開発者との調整を経て、情報セキュリティ早期警戒パートナーシップに基づき製品利用者への周知を目的にJVNでの公表に至りました。 報告者：GMO Flatt Security株式会社 RyotaK 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-fa2dd11617",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "お知らせ：JPCERT/CC Eyes「インシデント調査報告書受領時のチェックリスト」",
+      "url": "https://blogs.jpcert.or.jp/ja/2026/11/ir_report_checklist.html",
+      "publishedAt": "2026-11-18T02:06:00.000Z",
+      "summary": "朝長 秀誠 (Shusei Tomonaga) 2026/11/18 インシデント調査報告書受領時のチェックリスト 標準・ガイド メール 昨今、ランサムウェア攻撃や情報漏えいに関するインシデントの増加に伴い、インシデント調査を外部組織に委託することが一般的になってきました。しかし、被害組織にとって、重大なインシデントへの対応は初めての経験となることもあります。インシデント調査会社から調査結果の最終報告を受けた際、「調査内容は十分か」「封じ込めは完璧か」「追加で対応すべきことはないか」など、判断に迷ったことはないでしょうか。また、調査を担当する側にとっても、分析結果を整理し、依頼者の判断に役立つ形で伝えることは重要な課題です。 こうした課題に対応するため、JPCERT/CCでは、調査を依頼する組織と報告書を作成する担当者が、共通認識を持ってインシデント調査を円滑に進めるための「インシデント調査報告書チェックリスト」を公開しました。今回は、その概要と活用方法を紹介します。 インシデント調査報告書チェックリスト（GitHubページ） 公開したコンテンツ 「調査を依頼する組織（ユーザー）向け」と、「調査を担当する組織（レポーター）向け」の二つのチェックリストに加え、インシデント調査報告書のサンプルを公開しました。各コンテンツの主な用途は次のとおりです。 表1：公開コンテンツ一覧 コンテンツ 主な用途 ユーザー向けチェックリスト 調査を依頼する際の方針の合意と、受領した報告書の確認 レポーター向けチェックリスト 調査開始前の合意、証拠保全、調査結果の整理、報告書の作成・最終確認 インシデント調査報告書サンプル 報告書の構成や、調査結果・根拠の記載例の参照 チェックリストはHTMLとMarkdown、報告書サンプルはPDFで公開しています。 チェックリストの使い方 本コンテンツは、マルウェア感染などを伴うネットワーク侵害を想定しています。すべての項目を一律にチェック対象とするのではなく、事案の内容や調査目的、契約内容に応じて調整してご利用ください。 調査開始前からの活用 調査の目的や報告書に求める内容は、調査開始前に双方で共有・合意しておくことが大切です。例えば、侵入経路の特定と情報漏えいの有無の確認では、必要な証拠や調査範囲が変わることがあります。 依頼側は、ユーザー向けチェックリストの「調査方針の合意」を使い、調査目的、優先事項、対象範囲、報告形式、期限などを確認し、調査を担当する側と合意します。 作成側は、レポーター向けチェックリストを使い、調査開始前の合意事項を確認するとともに、証拠や分析過程を整理し、提出前に説明の不足や矛盾がないかを確認します。報告書サンプルも、具体的な構成や記載方法を検討する際の参考にしてください。 報告書で確認するポイント 報告書を受領した際は、ユーザー向けチェックリストの「調査結果のレビュー」を使い、合意した調査目的に対する回答や、その根拠を確認します。下記は、確認するポイントの例です。 調査範囲が明確か 調査したシステム、ログ、期間に加え、対象外とした範囲が説明されているか。 結論を証拠からたどれるか 調査結果から得られた結論について、根拠となるログやファイル、日時などを確認できるか。 判断できない事項が説明されているか ログ不足などによって調査・判断できなかった事項と、それらが調査結果に与える影響が示されているか。 調査結果が対策につながっているか 再発防止策が調査結果に対応し、優先順位や実施上の注意が示されているか。"
+    },
+    {
+      "id": "s-987ad8a237",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ジョブ管理製品「AutoSys Workload Automation」に深刻な脆弱性",
+      "url": "https://www.security-next.com/193007",
+      "publishedAt": "2026-11-18T01:22:01.000Z",
+      "summary": "ジョブ管理製品「AutoSys Workload Automation」に深刻な脆弱性 Broadcomは、ジョブの実行や運用を自動化する「AutoSys Workload Automation」に複数の脆弱性が確認されたことを明らかにした。2026年10月に公開したセキュリティアップデートで対策を講じたとしている。 同社は現地時間2026年11月17日、セキュリティアドバイザリを公開し、11件の脆弱性を明らかにした。ウェブ管理画面を提供する「Workload Control Center（WCC）」や、スケジューラエンジン「AutoSys Engine（AE）」のネイティブクライアントなどに影響する。 「CVE-2026-126551」は、「WCC」においてハードコードされた暗号鍵を使用している脆弱性。第三者が認証を必要とすることなくリモートから「System Agent」が動作する管理対象のホスト上でコードを実行することが可能になる。 認証なしに設定用のエンドポイントへアクセスできる「CVE-2026-126552」や、信頼できないデータをデシリアライズする脆弱性「CVE-2026-126553」は、「WCC」の旧版に判明した脆弱性。認証なしに、WCCサーバ上でOSコマンドを実行できる。 同社は、これら3件の脆弱性について、共通脆弱性評価システム「CVSSv4.0」のベーススコアをいずれも「9.3」とし、重要度を4段階中もっとも高い「クリティカル（Critical）」と評価している。 （Security NEXT - 2026/11/18 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-a11a730646",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "楽天証券への不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/18/100525",
+      "publishedAt": "2026-11-18T01:05:25.000Z",
+      "summary": "2026年11月17日、楽天証券は第三者による不正アクセスに伴い、保有する顧客情報の一部が漏えいした可能性があると公表しました。ここでは関連する情報をまとめます。 テスト環境から顧客情報漏えいのおそれ 楽天証券は11月16日に一部システムへの第三者による不正アクセスの可能性を検知し、該当箇所へのアクセスを遮断して修正などを実施。その後の調査で、テスト環境のシステム内で管理していた情報の一部が11月11日に外部へ漏えいしたおそれがあると判明した(出典: 1)。 *1 不正アクセスを受けたのはテスト用のサーバー(出典: 3)。 ログインに必要なパスワードや暗証番号など、取引に必要な情報の漏えいは確認していない。公表時点で、本件に起因すると考えられる不正アクセスや不正取引も確認されていない(出典: 1)。影響が確認された顧客はすでに特定済みで、該当する顧客には個別に報告するとしている(出典: 1"
+    },
+    {
+      "id": "s-f994b5e290",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "Weekly Report: N-able N-centralに複数の脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261118.html#1",
+      "publishedAt": "2026-11-18T00:15:00.000Z",
+      "summary": "N-able N-centralには、認証回避や任意のコード実行などにつながる複数の脆弱性があります。開発者は、これらの脆弱性に対処する修正版を順次公開しています。また、開発者はLegacy APIを無効化していない利用者に関連する攻撃の痕跡（IoC）に関する情報を公開しています。詳細は、開発者が提供する最新の情報を参照してください。"
+    },
+    {
+      "id": "s-684751e8fc",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Chrome 158」で脆弱性204件に対処 - 6件が「クリティカル」",
+      "url": "https://www.security-next.com/192998",
+      "publishedAt": "2026-11-18T00:04:47.000Z",
+      "summary": "「Chrome 158」で脆弱性204件に対処 - 6件が「クリティカル」 Googleは、ウェブブラウザ「Google Chrome 158」を公開した。200件以上の脆弱性に対応しており、「クリティカル」とされる脆弱性も含まれる。 同社は現地時間2026年11月17日、WindowsおよびmacOS向けに「Google Chrome 158.0.8127.37」「同158.0.8127.36」、Linux向けに「同158.0.8127.36」をリリースした。今後数日から数週間をかけて順次展開していく。 今回のアップデートでは、あわせて204件の脆弱性に対応した。重要度が4段階中もっとも高い「クリティカル（Critical）」とされる脆弱性は6件。 「WebView」の「CVE-2026-130963」、「GarbageCollection」の「CVE-2026-131008」、「WebAudio」の「CVE-2026-130975」の3件はいずれも解放後のメモリを使用するいわゆる「Use After Free」の脆弱性。 また「GPU」の「CVE-2026-131031」、グラフィックス関連コンポーネント「ANGLE」の「CVE-2026-131054」は、域外メモリへの書き込みが生じるという。あわせて「Media」におけるバッファオーバーフローの脆弱性「CVE-2026-131060」に対処している。 重要度が2番目に高い「高（High）」とされる脆弱性は62件。スクリプトエンジン「V8」やプロセス間通信基盤「Mojo」における「Use After Free」の脆弱性をはじめ、拡張機能における認可処理の不備など、多岐にわたる脆弱性を解消。 このほか、重要度が「中（Medium）」とされる82件、「低（Low）」とされる54件に対応している。 今回のアップデートで修正された脆弱性は以下のとおり。 CVE-2026-130963（Critical） CVE-2026-130975（Critical） CVE-2026-131008（Critical） CVE-2026-131031（Critical） CVE-2026-131054（Critical） CVE-2026-131060（Critical） CVE-2026-130907（High） CVE-2026-130909（High） CVE-2026-130910（High） CVE-2026-130914（High） CVE-2026-130915（High） CVE-2026-130926（High） CVE-2026-130932（High） CVE-2026-130934（High） CVE-2026-130940（High） CVE-2026-130941（High） CVE-2026-130943（High） CVE-2026-130944（High） CVE-2026-130945（High） CVE-2026-130946（High） CVE-2026-130951（High） CVE-2026-130952（High） CVE-2026-130954（High） CVE-2026-130957（High） CVE-2026-130961（High） CVE-2026-130968（High） CVE-2026-130970（High） CVE-2026-130977（High） CVE-2026-130979（High） CVE-2026-130980（High） CV"
+    },
+    {
+      "id": "s-df7c395e0f",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: OpenSSLにおける脆弱性に対するアップデート（2026年11月17日）",
+      "url": "https://jvn.jp/vu/JVNVU96847970/",
+      "publishedAt": "2026-11-18T00:00:15.000Z",
+      "summary": "JVNVU#96847970 OpenSSLにおける脆弱性に対するアップデート（2026年11月17日） OpenSSL ProjectからOpenSSL Security Advisory [17th November 2026]が公開されました。 OpenSSLのアドバイザリを参照してください。 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-1b02237f01",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: CISA ICS Advisory / ICS Medical Advisory（2026年11月17日）",
+      "url": "https://jvn.jp/vu/JVNVU99888632/",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "summary": "JVNVU#99888632 CISA ICS Advisory / ICS Medical Advisory（2026年11月17日） 米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。 ICS Advisory / ICS Medical Advisoryを参照してください。 新規：11件 更新：1件 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-753be82bfc",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Proofpoint Blog 第61回 AI時代に広がるサプライチェーンリスク：Shai-Huludが示した開発環境への攻撃 ～ 内田浩一の侍ハッキング",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56829.html",
+      "publishedAt": "2026-11-17T23:20:02.000Z",
+      "summary": "71 views （編集部註：温厚そうな紳士が、なぜエレキギターをかついでいるのかの理由は 侍ハッキング #01 をご一読ください） オープンソース パッケージや開発ツールは、現代のソフトウェア開発に欠かせない存在です。しかし、その「信頼された部品」が攻撃者に悪用された場合、影響は開発者端末や CI/CD 環境を超え、企業のシステム全体へ波及する可能性があります。生成 AI の活用によって開発が加速し、外部のライブラリやツールを取り込む機会も増えている中で、このような「信頼された部品」が攻撃者に悪用されるリスクを考慮したセキュリティ対策は今後さらに重要になってくると考えています。 今回は、Shai-Hulud、なかでも特に Mini Shai-Hulud と呼ばれるサプライチェーン攻撃を取り上げます。この手口がなぜ広範囲に影響を与えたのか、攻撃者にとってなぜ効率的なのか、そして企業やセキュリティ担当者は何を見直すべきなのかを整理します。 ● 便利な依存関係が、攻撃の入口になる時代 企業のシステムは、多くのオープンソース ソフトウェア（OSS）、ライブラリ、開発ツール、クラウドサービスの上に成り立っています。開発者が日々利用する npm や PyPI などのパッケージ管理サービス、つまり外部ライブラリを取得・管理する仕組みや、GitHub のワークフロー、CI/CD の仕組みは、開発の効率化に欠かせないものです。 しかし、攻撃者の視点で見ると、この便利さは同時に大きな攻撃機会でもあります。個別の企業を一社ずつ侵害するよりも、多くの企業が依存するパッケージや開発基盤に不正コードを混入させる方が、効率よく影響を広げられるためです。 図1．企業への主な侵入経路とサプライチェーン経由の攻撃 Shai-Hulud の厄介さは、単に不正なパッケージが配布されたことだけではありません。不正コードが開発者端末やビルド環境で実行されることで 認証情報を収集し、その認証情報を使って GitHub 上のリポジトリやパッケージへ影響 を広げる点にあります（図1）。 主な侵入経路は図の ①公開サービスの脆弱性 ②不正メール ③認証情報の悪用ですが、今回の Shai-Hulud は ④サプライチェーンの開発環境 を狙っています。防御側には、メールや Web アクセスの入口だけでなく、開発環境そのものを守る視点が求められます。 ● Shai-Hulud は何を狙ったのか Shai-Hulud は、npm 経由で感染を拡大し、多くのパッケージで不正コードが埋め込まれたことで注目されました。端末上で不正コードが実行されると、認証情報が収集され、GitHub 上に公開されたり、悪用されたりする動きが確認されています。 図2．TanStack関連パッケージの改ざんに関するSecurity Advisory（出典：GitHub Security Advisory） この攻撃で重要なのは、攻撃者が「信頼されているもの」を利用している点です。開発者は、普段から利用しているパッケージやリポジトリを常に疑いながら作業しているわけではありません。攻撃者は、その信頼関係の中に入り込みます。 TanStack のように広く利用されるパッケージが改ざん対象となると、影響は一部の開発者にとどまりません。TanStack は、GitHub 上で本件に関する Security Advisory を公開しており、複数の @tanstack/* パッケージに不正なバージョンが公開されたことを説明しています。そのパ"
+    },
+    {
+      "id": "s-9550a93f7a",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "セキュリティ水準の維持が困難と判断 フォームメーラー「FreePlus」提供終了",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56828.html",
+      "publishedAt": "2026-11-17T23:15:05.000Z",
+      "summary": "156 views 株式会社フューチャースピリッツは10月23日、フォームメーラー「FreePlus」の提供を同日付で終了したと発表した。なお 同サービスは、SATORI株式会社の「フォームメーラーサービス」とは別サービス 。 同サービスは提供開始から長期間が経過しており、近年のサイバー攻撃の高度化を踏まえると、必要なセキュリティ水準を継続して保つことが難しいと判断したという。サービス継続に伴うリスクを避け、顧客情報の保護を最優先にしたとしている。10月23日(金)時点で、不正アクセスや情報漏えいの事実は確認されていない。 サービス終了により、作成済みのフォームと管理画面は利用できなくなり、Webサイトにフォームが表示されていても、送信・受付とメール通知は正常に動作しない。同社は利用者に対し、自社Webサイトに設置したフォームを速やかに撤去するか、代替サービスに差し替えるよう求めている。 保存データは希望者にのみ個別に提供する。申込期限は2027年1月29日(金)で、期限後のデータは同社が削除する。 《ScanNetSecurity》 一次情報または関連リンク フューチャースピリッツ 関連記事 再開を断念 PHPの重大脆弱性受け「くみあいアプリ」がサービス終了 2026.11.4 Wed 8:05 9 月末でサービス終了 ～ 不正アクセス受けたデジタルギフトサービス 2026.7.29 Wed 8:05 不正アクセス後 会員制度及びメールマガジンサービス終了「国際平和拠点ひろしま」 2025.3.17 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-ee8ea993bf",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "古川デジタル大臣、総理指示でサイバー対処能力強化法の改正を検討 国内通信の扱いが論点に",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56827.html",
+      "publishedAt": "2026-11-17T23:15:02.000Z",
+      "summary": "241 views 古川俊治デジタル大臣（サイバー安全保障担当）は11月10日(火)の記者会見で、高市総理から情報収集能力強化の観点でサイバー対処能力強化法の改正も含めた検討の指示があったことを明らかにした。 与党から国内で完結する通信も監視・分析の対象とすべきとの意見が出ていることについて問われた古川大臣は、国内通信を対象とするかどうかは外内通信の段階から論点があったと説明した。そのうえで、官民協議会の参加事業者を増やす方策や、来年11月までに施行予定の外内通信部分の運用上の課題も含め、検討はこれから始まる段階だと述べた。 2025年に成立した能動的サイバー防御関連法（サイバー対処能力強化法など）では、政府が分析の対象とする通信を、国外から日本を経由して国外へ向かう「外外通信」と、国外と国内の間でやり取りされる「外内通信」「内外通信」としており、国内で完結する「内内通信」は、憲法21条2項が保障する「通信の秘密」への配慮から、同意によらない取得の対象から除外している。与党の意見は、この内内通信も分析の対象に加えるよう求めるものである。 また古川大臣は、日本企業へのサイバー攻撃が相次ぎ、不正アクセスによる個人情報漏えい等の被害が深刻化していることを受け、11月6日(金)の関係閣僚会議で取りまとめた「サイバーセキュリティ緊急対策パッケージ」を早期に具体化する考えを示した。同パッケージは「AIも活用した基本的な対策の徹底」「情報収集・集約と捜査・分析体制の強化」「サイバー攻撃への対処の戦略的な実施」「被害者支援・被害拡大防止策の強化」の4つを柱とする。制度面・体制面を含む中長期的な課題も検討するという。 《ScanNetSecurity》 一次情報または関連リンク デジタル庁 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-39fd36053d",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "エーアイセキュリティラボ関根鉄平氏がA2B攻撃の手口と対策を解説 ～ ウェビナー 12 / 3 開催",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56826.html",
+      "publishedAt": "2026-11-17T23:10:03.000Z",
+      "summary": "77 views 株式会社エーアイセキュリティラボは 11 月 9 日 (月)、ウェビナー「 相次ぐサイバー攻撃・A2B攻撃、その手口と対策を徹底解説―いま求められるWeb・APIの守り方― 」を開催すると発表した。講師は、同社 執行役員で 2026 年度から AeyeScan の開発責任者を務める関根鉄平氏。参加は無料。 同ウェビナーで関根氏は、直近のセキュリティインシデント、最新のサイバー脅威、攻撃手法の傾向を解説する。あわせて見落とされやすいリスクと対策のポイントも取り上げる。さらに AI を活用した Webアプリケーション・API・モバイルアプリの脆弱性診断の自動化と、A2B 攻撃に特化した対策を紹介し、最後に 2026 年の脅威総括、 2027 年に向けた対策のヒントを示すという。 A2B攻撃（App-to-Backend Attack）は、国立研究開発法人情報通信研究機構（NICT）の脅威情報分析チーム「LETTICE」が名付けた攻撃手法で、LETTICEは 10 月 13 日 (火) に公表した注意喚起で、この手法を日本国内で相次ぐ個人情報などの漏えい事案の原因の一つとしている。攻撃者は、一般に公開されているAndroidアプリを解析し、アプリが通信するバックエンドサーバの接続先、APIの構成、通信に使用するパラメータなどの情報を集める。そのうえで、個々のサーバの構成やAPIの仕様に応じた攻撃を組み立て、脆弱性を狙う。主に探索・悪用の対象となっている脆弱性として、LETTICEはSSRF、RCE、SQLインジェクション、IDORの 4 種を挙げている。 ライブ配信は 12 月 3 日 (木) 16 時 00 分から 16 時 30 分まで。アーカイブ配信は 12 月 10 日 (木) 8 時 00 分から 12 月 11 日 (金) 22 時 00 分まで行う。各回とも定員制である。 《ScanNetSecurity》 Sponsored by エーアイセキュリティラボ 一次情報または関連リンク エーアイセキュリティラボ 関連記事 エーアイセキュリティラボ、「A2B攻撃」に特化した診断ツールを近日中に提供 2026.10.26 Mon 8:00 「AeyeScan」に生成 AI を搭載したモバイルアプリ脆弱性診断機能を追加 2026.10.8 Thu 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-b0f01bda61",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "セブン銀行に不正アクセス、最大150件程度の在留カードの券面情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56825.html",
+      "publishedAt": "2026-11-17T23:05:26.000Z",
+      "summary": "1491 views 株式会社セブン銀行は11月11日、同行の在留外国人口座保有者向け在留カード提出サイト及び同行口座保有者向け口座解約受付サイトへの不正アクセスについて発表した。 これは11月9日に、同行の在留外国人口座保有者向け在留カード提出サイト及び同行口座保有者向け口座解約受付サイトへの第三者からの不正アクセスの形跡を確認したというもの。在留外国人の口座保有者向け在留カード提出サイトで保有していた顧客情報が外部流出した可能性があるという。 漏えいの可能性があるのは、在留カード提出サイトで保有していた最大150件程度の在留カードの券面情報で、対象範囲は下記の通り。 1.当該サイトで手続きした人の中で、書類不備の案内があった人 2.2026年10月16日から11月9日の間に当該サイトで手続きをした人 同行では事象覚知後に、対象システムの停止と攻撃元からのアクセス遮断などの被害拡大防止措置を講じるとともに、在留外国人の口座保有者向け在留カード提出サイト及び同行口座保有者向け口座解約受付サイトのサービス提供を停止している。 同行では引き続き原因と影響範囲の特定を進めるとともに、必要な再発防止策を講じるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社システムへの不正アクセスによるお客さま情報の漏洩について 関連記事 ソニー銀行のデジタル証券に関連する外部委託先Securitize Japanに不正アクセス 2026.11.9 Mon 8:05 オンラインカジノに関するコンテンツを表示 ～ 千葉銀行子会社のちばぎん商店のコーポレートサイトに不正アクセス 2026.10.8 Thu 8:05 01銀行のシステムに不正アクセス、最大100社の情報が漏えい 2026.9.7 Mon 8:05 阿波銀行への不正アクセス、原因はテスト環境の「管理不備」と発表 関係役員らの処分も 2026.6.8 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-d0cd10a6c2",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「マクロミル モニタサイト」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56824.html",
+      "publishedAt": "2026-11-17T23:05:23.000Z",
+      "summary": "529 views 株式会社マクロミルは11月12日、同社が運営するスキマ時間ポイ活「マクロミル モニタサイト」への不正アクセスについて発表した。 これは10月29日に、「マクロミル モニタサイト」の一部システムへの第三者からの不正アクセスを確認したというもので、被害の拡大を防止するため、ポイント交換機能の停止措置を講じている。 また、同社では10月31日に本不正アクセスとは別に、同社が通知・認証に利用している外部のメール配信委託先で不正アクセスによるサービス停止が発生し、同社からの一部メールが届かない状態が続いているという。なお、ポイント交換時に必須となる正常なメールの送受信が行えないことも、ポイント交換停止を継続している要因となっている。 同社では10月29日の不正アクセス検知以降、詳細な調査を継続したところ、モニタの情報が外部から閲覧された痕跡を確認している。閲覧されたのは、317名のモニタの基本情報および登録のあった属性情報で、うち82名についてはポイント交換先として登録された振込先口座情報が含まれている。 同社によると、対象となる一部のモニタのアカウントに対し、登録メールアドレスの書き換えやポイント交換操作が試みられた痕跡があるが、不正なポイント交換の完了や不正ログイン等の実害は発生していない。 同社では、対象となる317名のモニタに対し、該当アカウントの不正利用防止措置を講じた上で、個別に事実関係の報告と謝罪の連絡を進めている。 なお、メール配信委託先における調査の結果、現時点で当該障害に起因する同社に関連する個人情報の漏えいは発生していない。 同社では不正アクセスの検知後に、該当する管理機能への外部アクセス制限・遮断措置を講じており、不審なアクセスの遮断やセキュリティ監視レベルの引き上げなど、影響の封じ込め措置を継続しているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる個人情報の漏えいおよびマクロミルポイント交換機能の一時停止に関するお詫びとお知らせ カテゴリー: 不正アクセスによる個人情報の漏えいおよびマクロミルポイント交換機能の一時停止に関するFAQ（2026/11/12） 関連記事 「ポイントインカム」と「CoinTrade」で個人情報が流出 2026.11.9 Mon 8:05 CNポイントのサテライトシステムに不正アクセス 2026.11.9 Mon 8:05 メトロポイントクラブ会員向けサービスに不正アクセス、約5万9,000件のメールアドレスが漏えいした可能性 2026.10.2 Fri 8:05 日本郵政「ゆうゆうポイントサイト」を緊急サービス停止 2026.10.21 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-1b278aadbb",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "API接続設定不備が原因 不正アクセスでYenyの会員情報133万2,505件が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56823.html",
+      "publishedAt": "2026-11-17T23:05:21.000Z",
+      "summary": "546 views 株式会社Yenyは11月12日、同社が管理する会員情報への不正アクセスについて発表した。 これは10月31日に、同社が接続する特定の事業者から不審なAPIコールが発生したと連絡があり調査したところ、同社のAPI接続設定不備により、電話番号を含む会員情報の一部漏えいを確認したというもの。 対象サービスは下記の通り。 ・ultra pay カード ・アスルクラロ沼津Pay- by PayBlend ・巫神こんPay- by PayBlend ・東芝ブレイブルーパス東京Pay- by PayBlend 漏えいしたのは1,332,505件（退会者含む）の会員の電話番号、会員ID。 同社では対象となる顧客に、アプリ内のお知らせ欄で案内を行う。 同社では今後、本件の原因となった設定を是正するとともに、不審なアクセスの監視・検知体制を見直し、再発防止に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる会員情報の漏えいに関するお詫びとお知らせ 関連記事 BtoC通販向け決済「NP後払い」に不正アクセス 2026.10.29 Thu 8:05 決済代行会社から個人情報漏えい懸念の連絡 →フォレンジック調査 →侵害の事実は確認されず 2026.5.7 Thu 8:05 クレジット決済順次再開 ～ トキハインダストリーへのランサムウェア攻撃 2025.6.26 Thu 8:05 不正アクセスで決済サービス停止中のメタップスペイメント、1月31日より順次再開 2023.2.6 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-f8880ebbde",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "オープンロジのシステムに不正アクセス、出荷データの持ち出しを確認",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56822.html",
+      "publishedAt": "2026-11-17T23:05:20.000Z",
+      "summary": "259 views 株式会社オープンロジは11月11日、同社システムへの不正アクセスについて発表した。 これは11月8日から11月9日にかけて、同社システムに外部の第三者からの不正アクセスがあり、同社が保有する出荷データの一部が外部に持ち出されたというもの。 漏えいしたのは、2026年4月8日から11月8日までに依頼のあった出荷データに係る届け先情報（氏名、住所、電話番号、メールアドレス（登録されている場合）、商品情報（商品名、数量等））。 同社では11月9日に、現時点で把握している不正アクセスの経路を遮断している。また、緊急メンテナンスを実施し、システムの安全性の確認と必要な対策を進めている。 また同社では、外部のセキュリティ専門機関と連携し、不正アクセスの原因、侵入経路および影響範囲の調査を進めている。 なお同社では、緊急メンテナンスに伴う一部のシステム操作への影響を除き、倉庫での入荷・出荷業務は通常通り行っている。 同社では調査結果を踏まえ、システムのセキュリティ対策、アクセス管理、監視体制、運用管理の見直しを行い、再発防止策を策定・実施するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 【重要】当社システムへの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ 関連記事 Proofpoint Blog 第54回「トラック輸送・物流業界を狙うサイバー犯罪者」 2025.12.18 Thu 8:20 チャーム本店 1 号店及びチャーム本店 2 号店に不正アクセス、受注・出荷業務を停止 2026.9.2 Wed 8:05 大仙のシステムに不正アクセス、社内全システム遮断し受注出荷業務に影響 2026.8.31 Mon 8:05 ニチレイへの不正アクセスによるシステム障害、冷蔵倉庫の入出庫業務や冷凍食品出荷業務に影響 2026.7.16 Thu 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-20d4af441f",
+      "source": "IPA 重要なセキュリティ情報",
+      "sourceType": "official",
+      "title": "Oracle Java の脆弱性対策について(2026年11月)",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/1118-jre.html",
+      "publishedAt": "2026-11-17T15:00:00.000Z",
+      "summary": "Oracle Java の脆弱性対策について(2026年11月) 公開日：2026年11月18日 注釈：追記すべき情報がある場合には、その都度このページを更新する予定です。 概要 2026年11月18日（日本時間）に Oracle Java に関するセキュリティ更新プログラムが公表されています。 これらの脆弱性を悪用された場合、アプリケーションプログラムが異常終了する、攻撃者によってパソコンを制御される、といった様々な被害が発生するおそれがあります。 また、Oracle Java SEのソフトウェアについて、ネットワーク経由で攻撃を受ける可能性のある脆弱性（CVE-2026-114938）が報告されています。 攻撃が行われた場合の影響が大きいため、早急にセキュリティ更新プログラムを適用してください。 対象 サポートされている以下の Oracle 製品が対象です。 Oracle Java SE 27.0.1.0.3 Oracle Java SE 25.0.5.0.3 Oracle Java SE 21.0.13.0.3 Oracle Java SE 17.0.21.0.3 Oracle Java SE 11.0.33.0.3 Oracle Java SE 8 Update 511b33 Oracle Java SE 8 Update 511b33-perf 対策 脆弱性の解消 - セキュリティ更新プログラムの適用 Oracle 社から提供されている最新版のソフトウェアに更新します。 Java のアップデート方法 次のウェブサイトにアクセスし、Java の最新バージョンをインストールしてください。 Java Downloads Oracle 社より2019年4月16日以降の Java のリリースについて、ライセンスの変更が案内されております。特に商用利用を行う組織においては ライセンス をご確認の上、ベンダの有償サポートを受ける等の適切な対応をお取りください。なお、IPA ではライセンスの詳細やサポートの内容については把握しておりませんので、Oracle 社の公開している情報をご確認いただくか、もしくは直接 Oracle 社にお問合せください。 参考情報 Oracle Oracle Critical Security Patch Update Advisory - November 2026 (Oracle Java SE Risk Matrix) CISA Cybersecurity Alerts & Advisories Critical Java Vulnerability Requires Immediate Patching OpenJDK OpenJDK Vulnerability Advisory: 2026/11/17 お問い合わせ先 IPA セキュリティセンター E-mail 注釈 個別のシステムおよび環境に関するご質問を頂いても回答ができない場合があります。 詳しくは製品ベンダなどにお問合せください。 更新履歴 2026年11月18日 掲載"
+    },
+    {
+      "id": "s-a0f483dd42",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Siemens ROS#",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+      "publishedAt": "2026-11-17T12:00:00.000Z",
+      "summary": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version. The following versions of Siemens ROS# are affected: ROS# vers:intdot/&lt;2"
+    },
+    {
+      "id": "s-04fced3604",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Critical Java Vulnerability Requires Immediate Patching",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
+      "publishedAt": "2026-11-17T12:00:00.000Z",
+      "summary": "Purpose CISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability CVE-2026-114938 . This critical memory-corruption vulnerability, known as “Java4Shell,” affects the Base64 decoder of the x86-64 HotSpot Java Virtual Machine (JVM), which is part of the Java Development Kit (JDK). Specially crafted Base64 input could crash the JVM and allow for unauthent"
+    },
+    {
+      "id": "s-877e907402",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Siemens Industrial Software Products",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
+      "publishedAt": "2026-11-17T12:00:00.000Z",
+      "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers t"
+    },
+    {
+      "id": "s-51d812581a",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Siemens Simcenter Femap",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+      "publishedAt": "2026-11-17T12:00:00.000Z",
+      "summary": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version. The following versions of Siemens Simcenter Femap are affec"
+    },
+    {
+      "id": "s-9c3818e954",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Siemens SIMATIC",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
+      "publishedAt": "2026-11-17T12:00:00.000Z",
+      "summary": "View CSAF Summary The products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC"
+    }
+  ]
+}
