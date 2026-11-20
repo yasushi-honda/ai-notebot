@@ -1,11 +1,23 @@
 # ハンドオフ（最新）
 
-- セッション: 2026-11-14（介護版の NotebookLM を改称後の Gemini Notebook に更新。PR #95 マージ、11-14 を再生成）
-- 更新日: 2026-11-14
+- セッション: 2026-11-20（11-20 記事の誤字「露正」を修正。PR #98 マージ・本番反映。介護版 11-15〜11-20 を read-only 確認）
+- 更新日: 2026-11-20
 
 ## セッション概要
 
-### 介護版の NotebookLM → Gemini Notebook 改称対応（PR #95、2026-11-14）
+### 11-20 記事の誤字「露正」の修正（PR #98、2026-11-20）
+- **報告**: decision-maker が `/posts/2026-11-20/` に「露正」という変な語があると指摘
+- **原因**: 出典（TechCrunch、`exposing private data`）の要約に該当語はなく、記事生成 LLM の誤変換（正しくは「露出」）。`style-guard.mjs` の `CHINESE_ONLY_TERMS` は中国語の熟語だけを検出するため、この種の誤字は検査対象外
+- **対応**: `site/src/content/posts/2026-11-20.md:48` の 1 語を修正。`validate-citations.mjs 2026-11-20` は unresolved 0。`care-rebuild.yml -f regenerate=false`（run 44661464616）が success。公開 URL で「露正」0 件・「データの露出」1 件を確認
+- **見送り**: 誤字を機械検出する仕組みは decision-maker が「記事のみ修正」を選択し未実施。同種の誤字が再発したら検討
+
+### 介護版 11-15〜11-20 の read-only 確認（前回の条件待ち 1）
+- **Gemini Notebook**: 出たのは 11-15 のみ（本文は「Gemini Notebook（旧NotebookLM）」、旧名は出典タイトルのみ）。11-16〜11-20 は Notebook の言及なし。改称対応に壊れた兆候はない。新名が本文に出る別の日の確認は引き続き未了
+- **公的機関ドメイン（`.go.jp` 等で代用集計、収集→引用）**: 11-15 2→2 / 11-16 1→1 / 11-17 2→2 / 11-18 2→1 / 11-19 2→1 / 11-20 4→1。毎日 1 件以上あり 0 件の日はない。11-18 以降は引用が 1 件にとどまる（3 日続いたが傾向とは言えず様子見）
+
+### 前回セッション（2026-11-14）
+
+#### 介護版の NotebookLM → Gemini Notebook 改称対応（PR #95、2026-11-14）
 - **報告**: decision-maker が `/care/2026-11-14/` の表記が旧名 NotebookLM だと指摘。前日の PR #93 で旧名のまま追加していたのが原因
 - **事実確認**: NotebookLM は 2026-07-16 に「Gemini Notebook」へ改称（Google Workspace Updates ブログの記事 URL `notebooklm-now-gemini-notebook` と複数報道。公式ブログ本文は curl で取得できず、検索結果の要約で確認）。表示への反映は順次
 - **変更**: `collect-care.mjs`・`curate-care.mjs` のプロンプトを「Gemini Notebook（旧NotebookLM）」に更新し、執筆ルールに「本文は新名で書く・出典が旧名のときだけ初出に（旧NotebookLM）」を追加。`GENERIC_TOOL_FAMILIES` は `'Gemini Notebook': ['Gemini Notebook','NotebookLM']` に統合し、「Gemini Notebook」の「Gemini」だけで Gemini 系統を満たさないよう除去して判定。回帰テスト 1 件追加
@@ -65,7 +77,7 @@
 
 | # | 項目 | trigger（充足条件） | 充足時のタスク | 充足確認方法 |
 |---|------|------------------|--------------|------------|
-| 1 | **介護版の明朝以降の確認（NotebookLM 拡張の効果と official 件数）** | 2026-11-14 以降の daily の後（数日分そろうと判断しやすい） | read-only で新しい介護版の記事に Gemini Notebook 等が出たか（旧名が残っていないか）、`data/raw-care/` の official 件数が 1 件のままか、`generate` が失敗していないかを確認。1 件が続く・失敗が再発するなら、追加検索の上限を 3 回にする案か許可リストの拡張を decision-maker に提示 | `grep -l 'Gemini Notebook' site/src/content/care/*.md`（旧名 `NotebookLM` が本文に残っていないかも確認）、`grep -c '"tier": *"official"' data/raw-care/<date>.json` |
+| 1 | **介護版の確認の残り（新名が本文に出る日の確認、公的機関の引用が 1 件にとどまる傾向）**（11-15〜11-20 は確認済み: 上記） | Notebook 系を扱う記事が出た日、または 11-21 以降の daily で引用 1 件が続く時 | read-only で新しい介護版の記事に Gemini Notebook 等が出たか（旧名が残っていないか）、`data/raw-care/` の official 件数が 1 件のままか、`generate` が失敗していないかを確認。1 件が続く・失敗が再発するなら、追加検索の上限を 3 回にする案か許可リストの拡張を decision-maker に提示 | `grep -l 'Gemini Notebook' site/src/content/care/*.md`（旧名 `NotebookLM` が本文に残っていないかも確認）、`grep -c '"tier": *"official"' data/raw-care/<date>.json` |
 | 2 | **新ガード（中国語の熟語検出）の本番動作確認**（前回の 1 を継続） | 2026-11-12 以降の daily の後（11-12・11-13 は実行済み） | read-only で run ログに `本文に中国語` の再生成の記録があるか、新しい記事に未翻訳の中国語が残っていないかを確認。誤検出で再生成が空回りしていれば `CHINESE_ONLY_TERMS` を見直す提案（write は指示後） | `gh run view <id> --log \| grep '本文に中国語'`、`grep -rn '開箱' site/src/content` |
 | 3 | **対策の空率の測定と、公式補助取得の要否判断** | セキュリティ版の記事が 5 日分以上そろっている（満たした）。決裁者の指示または次の点検機会 | read-only で記事ごとの対策件数・`::warning::`・要約補強の成功率・除外テーマ数を集計し、別モデルで出典忠実性を再監査。空率が高ければ plan mode で設計提案 | `site/src/content/security/*.md` の `### すぐできる対策` を集計 |
 | 4 | **用語辞書の定義文の人による確認** | decision-maker が辞書（46語）を確認、または確認を依頼 | 誤りがあれば `security-glossary.mjs` を修正（write は指示後） | `scripts/lib/security-glossary.mjs` の `SECURITY_TERMS` |
@@ -108,7 +120,7 @@
 
 
 ### 再開可能性判定
-✅ **再開可能** - 次回は条件待ち 1（介護版の Gemini Notebook 拡張と official 件数の確認、11-14 以降の daily の後）から始める。
+✅ **再開可能** - 即着手なし。条件待ち 1（介護版の Gemini Notebook 出現日の確認・公的機関の引用件数）は trigger 待ち。
 
 ## 申し送り
 
@@ -129,12 +141,12 @@
 ## Issue Net 変化
 - Close 数: 0 件
 - 起票数: 0 件
-- Net: 0 件（Issue 起票の triage 基準を満たす事象なし。PR #95 は decision-maker の指摘による修正で Issue なし）
+- Net: 0 件（Issue 起票の triage 基準を満たす事象なし。PR #98 は decision-maker の指摘による修正で Issue なし）
 
 ## 最終結論
 
-✅ **セッション終了可** — 介護版の旧名 NotebookLM を Gemini Notebook に更新（PR #95）し、11-14 を再生成して公開を確認した。
+✅ **セッション終了可** — 11-20 記事の誤字「露正」を修正（PR #98）して本番反映を確認した。介護版 11-15〜11-20 の read-only 確認も完了。
 
-- OPEN PR: 本ハンドオフ PR のみ（PR #95 はマージ済み） / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 14
-- §4.6 同根再発スキャン: 候補 3 件（#50・#56・#92 の official 0 件）。原因の根治は未実施で、様子見を decision-maker が選択
-- §4.7 対症療法判定: 発動条件外（修正 PR なし）。復旧は再実行のみで、official が取れない原因は未調査
+- OPEN PR: 本ハンドオフ PR のみ（PR #98 はマージ済み） / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 14
+- §4.6 同根再発スキャン: 誤字は同種の過去事例なし（候補 0 件）。別件として official 0 件の候補 3 件（#50・#56・#92 の official 0 件）。原因の根治は未実施で、様子見を decision-maker が選択
+- §4.7 対症療法判定: 誤字修正は 1 語の直接修正で、再発防止の検査は未実施（decision-maker 選択、同種再発時に検討）。official 0 件側は発動条件外（修正 PR なし）。復旧は再実行のみで、official が取れない原因は未調査
