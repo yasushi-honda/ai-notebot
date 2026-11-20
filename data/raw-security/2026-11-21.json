@@ -1,0 +1,376 @@
+{
+  "date": "2026-11-21",
+  "collectedAt": "2026-11-20T22:01:44.410Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-ed218ddac5",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+      "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+      "publishedAt": "2026-11-20T18:51:43.000Z",
+      "summary": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]"
+    },
+    {
+      "id": "s-6cc616c5c6",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+      "publishedAt": "2026-11-20T17:57:20.000Z",
+      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4. The issue could"
+    },
+    {
+      "id": "s-dc09fdfd19",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+      "publishedAt": "2026-11-20T17:30:00.000Z",
+      "summary": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]"
+    },
+    {
+      "id": "s-9dbbebdeb6",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "publishedAt": "2026-11-20T16:58:16.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan. \"Bazuka is a full malware framework,"
+    },
+    {
+      "id": "s-45ca64a53a",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+      "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
+      "publishedAt": "2026-11-20T15:58:06.000Z",
+      "summary": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]"
+    },
+    {
+      "id": "s-1e1bba0e0e",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "デジタル庁が運用するGSSのファイル共有サービスからの情報漏えい可能性についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/21/002438",
+      "publishedAt": "2026-11-20T15:24:38.000Z",
+      "summary": "2026年11月20日、デジタル庁はガバメントソリューションサービス(GSS)で提供しているファイル共有サービス上のファイルの一部が外部に漏えいした可能性があると公表しました。ここでは関連する情報をまとめます。 会議資料などを組織外とも共有するサービス GSSはデジタル庁が運用する政府共通のネットワーク環境で、2021年から導入が始まった(出典: 1, 2)。デジタル庁をはじめ総務省、経済産業省、法務省、金融庁、原子力規制委員会など25の政府機関が利用し(出典: 2, 3)、利用者は約15万人にのぼる(出典: 2)。外務省や防衛省は使っていない(出典: 2)。GSSで扱える情報は政府が規定する3段階の機密性のうち機密性2までに限られる(出典: 2)。 ファイル共有サービスはGSSを利用する政府機関等向けに提供されており、利用者同士や事業者等の組織外の関係者との間で会議資料等の大容量のファイ"
+    },
+    {
+      "id": "s-bfe2cfa4a0",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "個人情報管理システムが侵害、脆弱性対応中に判明 - 早稲田大",
+      "url": "https://www.security-next.com/192578",
+      "publishedAt": "2026-11-20T15:01:45.000Z",
+      "summary": "個人情報管理システムが侵害、脆弱性対応中に判明 - 早稲田大 早稲田大学は、個人情報の管理システムが第三者によって侵害され、管理しているユーザー情報の一部が外部に流出したことを明らかにした。 同大によれば、メールサービスなどを利用できるポータルサイト「MyWaseda」のログインに使用するユーザー情報を管理しているシステムが侵害されたもの。ユーザー情報の一部が第三者に取得された。 「PHP」の脆弱性へ対応するためシステムの状況を確認していたところ、2026年8月31日に行われた侵害の痕跡を確認。さらに調査を進めたところ、システムに侵入され、一部情報を取得されていたことがわかった。 窃取されたのは、職員などの氏名やメールアドレス、教職員番号、所属部署名、資格名、暗号化されたパスワードなどのべ3261件。教職員や学生、卒業生に関する81件については、氏名のほか、資格名、メールアドレス、暗号化されたパスワードなどが含まれる。 同大では、外部協力のもと、侵入経路やさらなる情報取得の有無、影響範囲について詳細な調査を進めるとともに、関係機関への報告を行う。 （Security NEXT - 2026/11/21 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-5176e6469d",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Still tracking company passwords in spreadsheets? You’re flying blind.",
+      "url": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+      "publishedAt": "2026-11-20T15:00:10.000Z",
+      "summary": "Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems. NordPass explains how centralized password management can improve credential visibility, identify security risks, and simplify secure password sharing. [...]"
+    },
+    {
+      "id": "s-e2e53410b8",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "買い物アプリのシステムに侵害、内部に個人情報 - USMH",
+      "url": "https://www.security-next.com/192800",
+      "publishedAt": "2026-11-20T14:30:55.000Z",
+      "summary": "買い物アプリのシステムに侵害、内部に個人情報 - USMH 複数のスーパーマーケットチェーンを展開するユナイテッド・スーパーマーケット・ホールディングス（USMH）は、顧客の個人情報が流出した可能性があることを明らかにした。 同社によれば、スマートフォン向け買い物アプリ「Scan＆Go ignica」のシステムが第三者により侵害されたことが判明したもの。 調査を行ったところ、同システム内に一部顧客の個人情報を含むファイルが存在していたことが判明。不正利用や二次被害は確認されていないが、流出した可能性があることがわかった。 約240万の登録アカウントのうち、対象となるのは6万4003アカウント。同アプリの新規登録時に入力された氏名とメールアドレスが保存されていた。 同社は対象となる顧客にメールなどで案内を行っている。引き続き原因や影響について調査を進めるとともに、再発防止策を講じるとしている。 （Security NEXT - 2026/11/20 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-11c395dde6",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "受注管理システム「GoQSystem」への不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/20/225808",
+      "publishedAt": "2026-11-20T13:58:08.000Z",
+      "summary": "2026年11月12日、GoQSystemは同社のシステムが外部の第三者による不正アクセスを受け、預かっている注文データ(個人情報を含む)の一部が外部に持ち出されたと公表しました。ここでは関連する情報をまとめます。 注文データの一部を外部に持ち出し 受注管理システム「GoQSystem」を提供する株式会社GoQSystemは2026年11月12日、同社システムへの不正アクセスで、預かっている注文データ(個人情報を含む)の一部が外部に持ち出されたことを確認したと公表。不正アクセスの発生期間は11月10日から11日で、対象には期間より前の注文も含む(出典: 1)。 11月13日の第二報時点で、対象は店舗(企業)1,694社、注文4,984,595件、個人情報の人数(本人数)4,367,390名。いずれもGoQSystem全体の値(出典: 2, 8)。 漏えいした項目は注文者と届け先の次の情報な"
+    },
+    {
+      "id": "s-7aa51bb329",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "Ruby の脆弱性 CVE-2026-132825(Ruby2Shell)についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/20/224814",
+      "publishedAt": "2026-11-20T13:48:14.000Z",
+      "summary": "2026年11月18日、Ruby は文字列の大文字小文字変換に見つかった脆弱性(CVE-2026-132825、通称 Ruby2Shell)を修正した版を公開しました。ここでは関連する情報をまとめます。 どんな脆弱性が確認されたの? Ruby の文字列の大文字小文字変換に、1バイトのヒープバッファオーバーフローが確認された。ISO-8859-1 や Windows-1252 などの一部の1バイト文字コードで、細工した文字列の大文字小文字を変えるとバッファの末尾を1バイト越えて書き込まれる。Ruby は一部の状況で RCE に至る PoC を把握しているとしている(出典: 1, 2, 28)。 Rails と classic スタイルの Sinatra では既定の構成のまま認証前に攻撃者の文字列が脆弱な処理へ届く。解析ページ「Ruby2Shell」を公開した Veria Labs がそう公表"
+    },
+    {
+      "id": "s-8807ec75b5",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "通販サイト内に不正ファイル、個人情報流出の可能性 - ソフト99",
+      "url": "https://www.security-next.com/192805",
+      "publishedAt": "2026-11-20T13:38:06.000Z",
+      "summary": "通販サイト内に不正ファイル、個人情報流出の可能性 - ソフト99 カー用品などの製造、販売を展開するソフト99コーポレーションは、公式通販サイトが不正アクセスを受けたことを明らかにした。個人情報が流出した可能性がある。 同社によれば、2026年11月5日に委託先から連絡があり、第三者によって不正なファイルをウェブサイト内に設置されたことが判明したもの。 バックドアが設置され、サーバ内部の調査や設定ファイルの読み取りが行われたことが判明した。第三者が問い合わせフォームの画像添付機能からプログラムファイルをアップロードしたものと見られる。 ウェブサイトの侵害により、2026年11月5日までに同サイトで会員登録し買い物をした顧客最大13万6968人に関する個人情報が流出した可能性がある。 対象項目は氏名、住所、電話番号、生年月日、性別、メールアドレス、購買情報、届け先情報、クレジットカードの番号下4桁、名義、有効期限など。 同社では同サイトを停止し、11月9日に個人情報保護委員会へ報告した。委託先と協力して原因と影響範囲の調査を進めている。 （Security NEXT - 2026/11/20 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-d7ca3af070",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "N-able says recent security breach led to major service outage",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
+      "publishedAt": "2026-11-20T13:18:36.000Z",
+      "summary": "N-able says attackers who breached one of its servers have caused a major outage affecting Mail Assure and SpamExperts Hosted Cloud services worldwide. [...]"
+    },
+    {
+      "id": "s-f80afcc478",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+      "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+      "publishedAt": "2026-11-20T12:20:00.000Z",
+      "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean. On a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312, affects only hosts with AMD processors and nested virtualization enabled. Fixed kernels shipped"
+    },
+    {
+      "id": "s-89097e0b21",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-automatically-installs-windows-11-26h2-on-personal-and-unmanaged-pcs/",
+      "publishedAt": "2026-11-20T12:14:28.000Z",
+      "summary": "Microsoft now automatically installs Windows 11 26H2 on unmanaged devices By Sergiu Gatlan November 20, 2026 07:14 AM 0 Starting this week, Microsoft has begun automatically upgrading eligible devices that aren't managed by an IT department to Windows 11 26H2. As the rollout progresses, more Windows 11 devices will upgrade automatically, without users having to check for updates manually. The automatic upgrade depends on each device's Windows Update settings and is available for personal and non-managed business devices running Windows 11 24H2 and 25H2. \"Since late October 2026, all devices eligible to run Windows 11 have been able to get version 26H2 by manually checking for updates. Starting November 18, we are taking the next step in version 26H2's phased rollout to make it easier to get the update,\" Microsoft said in a release health dashboard update. \"We are gradually expanding automatic delivery, beginning with devices running Windows 11, versions 24H2 and 25H2, that are not managed by IT departments.\" You can also manually install Windows 11 26H2 after checking for the update by going to Settings > Windows Update and selecting \"Check for Windows updates,\" and you can ensure that it's installed as soon as possible by toggling the \"Get the latest updates as soon as they're available.\" option. Also known as the Windows 11 2026 Update, Windows 11 26H2 became generally available in September 2026 as an enablement package and will reach end of support in less than three year"
+    },
+    {
+      "id": "s-925f615d57",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-20T12:00:00.000Z",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability CVE-2026-123890 VMWare vCenter Authentication Bypass Using an Alternate P"
+    },
+    {
+      "id": "s-d9e0b261f4",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "The Path to AI Autonomy in the SOC",
+      "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+      "publishedAt": "2026-11-20T12:00:00.000Z",
+      "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027. The pressure"
+    },
+    {
+      "id": "s-fc79b14683",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "クラウド環境や業務ツールに不正アクセス、個人情報流出 - Gunosy",
+      "url": "https://www.security-next.com/193094",
+      "publishedAt": "2026-11-20T11:21:03.000Z",
+      "summary": "クラウド環境や業務ツールに不正アクセス、個人情報流出 - Gunosy 無料ニュースアプリ「グノシー」などを運営するGunosyは、不正アクセスを受け、関係者の個人情報が流出したことを明らかにした。 同社によれば、第三者が業務用アカウントの認証情報を何らかの方法で入手し、サービスの運営や社内業務に利用しているクラウド環境や業務ツールにアクセスしたもの。 2026年10月21日に同社の監視システムで検知した。調査を行ったところ、同アカウントのメールボックスに保管されていたメールの一部が第三者に閲覧されたことや、業務用ツールに登録された利用者の情報が取得されたことがわかった。 流出したのは、取引先担当者25人と同アカウント間でやり取りされたメールに記載された氏名やメールアドレス、会社名、所属、役職、連絡先など。同社の役員、従業員、退職者など107人の氏名やメールアドレスなども含まれる。 同社は同アカウントを停止し、10月23日に個人情報保護委員会へ報告。認証情報の入手経路などを調べている。対象となる関係者には、メールで連絡している。 （Security NEXT - 2026/11/20 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-8300ea792a",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
+      "url": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
+      "publishedAt": "2026-11-20T10:57:43.000Z",
+      "summary": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution. [...]"
+    },
+    {
+      "id": "s-b6dced9e8b",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+      "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+      "publishedAt": "2026-11-20T10:38:22.000Z",
+      "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks. \"Attackers now use automation and AI to find and exploit unsupported edge devices faster than ever,\" SonicWall said. \"We expect internet-facing Gen 6 firewalls to be actively"
+    },
+    {
+      "id": "s-c9ddefa65f",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+      "publishedAt": "2026-11-20T10:32:50.000Z",
+      "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway"
+    },
+    {
+      "id": "s-dc6901c8a6",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+      "publishedAt": "2026-11-20T09:38:15.000Z",
+      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized"
+    },
+    {
+      "id": "s-980ae92ebe",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Windows 11 KB5132057 update released with 28 changes and fixes",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
+      "publishedAt": "2026-11-20T09:25:35.000Z",
+      "summary": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog. [...]"
+    },
+    {
+      "id": "s-ba74506a96",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+      "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+      "publishedAt": "2026-11-20T07:11:39.000Z",
+      "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through separate chains while retaining ClickFix and signed binary sideloading techniques,\" Blackpoint"
+    },
+    {
+      "id": "s-9290f881f8",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Splunk SOAR」に複数のRCE脆弱性 - アップデートを提供",
+      "url": "https://www.security-next.com/193173",
+      "publishedAt": "2026-11-20T05:31:17.000Z",
+      "summary": "「Splunk SOAR」に複数のRCE脆弱性 - アップデートを提供 Cisco Systems傘下のSplunkが提供するセキュリティ運用の自動化基盤「Splunk SOAR」に深刻な脆弱性が明らかとなった。アップデートが提供されている。 同社は現地時間2026年11月18日、セキュリティアドバイザリを公開し、製品固有の脆弱性59件に対応したことを明らかにした。なかでも「CVE-2026-131253」と「CVE-2026-131287」の2件は、重要度を4段階中もっとも高い「クリティカル」と評価している。 「CVE-2026-131253」は、アプリ作成支援機能「App Wizard」に判明した脆弱性。悪用するにはアプリやコンテナの編集、およびプレイブックの実行権限が必要となるが、「Splunk SOAR」を実行するアカウントの権限で任意のコードを実行できる。 一方「CVE-2026-131287」は、複数のソースコード管理リポジトリを横断するプレイブックの参照処理に起因する脆弱性。悪用にはプレイブックの閲覧、編集、実行、削除の権限が必要となるが、削除されたリポジトリの名称を再利用することで、細工されたプレイブックのコードを実行させることが可能となる。 共通脆弱性評価システム「CVSSv3.1」のベーススコアは、「CVE-2026-131253」が「9.9」、「CVE-2026-131287」が「9.6」と評価されている。 （Security NEXT - 2026/11/20 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-31b8b3e9ba",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (更新)",
+      "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+      "publishedAt": "2026-11-20T04:40:00.000Z",
+      "summary": "JPCERT-AT-2026-0033 JPCERT/CC 2026-10-22（公開） 2026-11-20（更新） I. 概要 更新：2026年11月20日追記 2026年11月19日に公表されたPHPの複数の脆弱性に関する情報を追記し、影響を受けるバージョンや緩和策に関する情報を更新しました。 The PHP Groupは、2026年10月21日にPHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関するアドバイザリを公表しました。本脆弱性が悪用された場合、PHPの実行プロセスの権限で任意のコードを実行される可能性があります。 The PHP Group Security advisory: Critical remote code execution vulnerabilities, update now https://www.php.net/archive/2026.php#2026-10-21-5 JPCERT/CCでは、当該製品が国内で広く利用されていることを確認しています。本脆弱性の影響を受ける製品を利用している場合は、開発者が提供する情報などを参考に、速やかに対策の適用および侵害有無の調査を実施してください。 本脆弱性を悪用できると主張する実証コードが多数公開されているほか、本脆弱性の悪用を試みる通信を観測したとの報告も相次いでいます。一方、実証コードを用いて実際に任意のコードを実行できるかどうかは、PHPのバージョンや実行環境、メモリ配置などの条件に依存し、環境に応じた調整が必要となります。今後も実証コードや新たな … 緩和策」に示す設定への変更を推奨していました。 The PHP Group Informational advisory: Session upload progress https://www.php.net/archive/2026.php#2026-10-23-1 2026年10月29日までに、本脆弱性を悪用した攻撃活動の調査で、あるファイアウォール製品の特定バージョンに対する侵害の成功を示唆する痕跡を確認したと報告されています。報告によると、攻撃者が対象製品を解析してバージョン別に本脆弱性とLinuxカーネルの権限昇格の脆弱性を組み合わせたエクスプロイトコードを開発していたとのことです。また、侵害した機器を足掛かりとして、内部ネットワークへの横展開が試みられたことを示唆する痕跡も確認されたとしています。 Dream Chained PHP2Shell Exploit Roots 25 Servers, including US Government Servers https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers また、一部の製品ベンダーも、本脆弱性を悪用する攻撃を観測したとして、セキュリティアドバイザリを更新しています。今後も、PHPを組み込んださまざまな製品を標的とする実証コードの開発や、本脆弱性を悪用した攻撃が拡大する可能性があります。PHPを組み込んだ製品の管理者は、使用している製品が本脆弱性の影響を受けるか、当該製品を標的とする攻撃や侵害事例が報告されていないかを確認し、必要な対策および侵害調査を速やかに実施することを推奨します。 更新：2026年11月20日追記 The PHP Groupは2026年11月19日、リモートコード実行につながる複数の脆弱性など"
+    },
+    {
+      "id": "s-6bb24ef699",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "リフォーム管理システムに不正アクセス - ヤマダデンキ",
+      "url": "https://www.security-next.com/192867",
+      "publishedAt": "2026-11-20T04:23:33.000Z",
+      "summary": "リフォーム管理システムに不正アクセス - ヤマダデンキ ヤマダデンキは、リフォーム管理システムが第三者によって侵害されたことを明らかにした。顧客の個人情報が流出した可能性があるという。 同社によれば、2026年11月12日、リフォーム管理システムが侵害されたことが判明。外部からのアクセスを遮断した。 流出の可能性があるのは、同システムに登録されていた顧客の氏名や住所、電話番号、リフォーム実施履歴、見積もりデータなど最大350万件。 同社は原因や影響範囲など、詳細について引き続き調査を進めている。また顧客に対して同社を装った連絡に注意するよう呼びかけている。 （Security NEXT - 2026/11/20 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-f8c0f9da93",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "北海道3市町委託先のマルウェア感染についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/20/130214",
+      "publishedAt": "2026-11-20T04:02:14.000Z",
+      "summary": "2026年11月18日から19日にかけて、北海道の岩見沢市、新得町、留萌市が委託先の協力会社の端末がマルウェアに感染し、委託したデータが漏えいした可能性があると公表しました。ここでは関連する情報をまとめます。 3市町の委託データに漏えいのおそれ 岩見沢市と新得町は2026年11月18日、留萌市は19日に、GIS北海道に委託した業務のデータが漏えいしたおそれがあると公表。データはGIS北海道の協力会社である有限会社リムゲートの端末に保存されており、端末のマルウェア感染で漏えいした可能性がある。3市町とも現時点で外部への漏えいや不正利用は確認しておらず、対象データにマイナンバーは含まれない(出典: 1, 2, 3)。 市町 委託業務 漏えいのおそれがあるデータ 公表日 留萌市 統合型GIS導入事業(2020年8月委託) ・住民基本台帳データ 最大71,002件(2022年2月3日時点) ・要支"
+    },
+    {
+      "id": "s-54f42c0569",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「WatchGuard」のログ管理ソフトに脆弱性 - クリティカルも",
+      "url": "https://www.security-next.com/193154",
+      "publishedAt": "2026-11-20T02:38:19.000Z",
+      "summary": "「WatchGuard」のログ管理ソフトに脆弱性 - クリティカルも WatchGuard Technologiesのネットワーク機器向けログ管理ソフトウェア「WatchGuard Dimension」に脆弱性が明らかとなった。アップデートが提供されている。 同製品は、同社製ファイアウォール「Firebox」などのログ収集、トラフィックの可視化、レポート作成、機器の集中管理といった機能を備えたソフトウェア。現地時間2026年11月19日、セキュリティアドバイザリを公開し、15件の脆弱性について明らかにした。 今回公表された脆弱性のうち3件は、共通脆弱性評価システム「CVSSv4.0」のベーススコアが「9.3」、重要度は「クリティカル」と評価されている。 具体的に見ると、「CVE-2026-86130」は、ログ収集サービスにおける認証欠如の脆弱性。認証されていない第三者がリモートから細工したリクエストを送信することで、任意のSQLを実行することが可能。ウェブユーザーインタフェースのプロセスで任意のコードを実行できる。 同じく「クリティカル」とされる「CVE-2026-84322」「CVE-2026-86094」は、管理APIのレスポンスやウェブユーザーインタフェースの診断ログを通じ、ログイン中の管理者のセッション識別子を取得できる問題。権限の低い管理者が、上位権限を持つスーパー管理者のセッションを乗っ取り、アカウントを不正に操作できる。 （Security NEXT - 2026/11/20 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-8ab822fe6e",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: SoftBank製Airターミナル6におけるOSコマンドインジェクションの脆弱性",
+      "url": "https://jvn.jp/jp/JVN64740097/",
+      "publishedAt": "2026-11-20T01:00:00.000Z",
+      "summary": "JVN#64740097 SoftBank製Airターミナル6におけるOSコマンドインジェクションの脆弱性 ソフトバンク株式会社が提供するAirターミナル6には、OSコマンドインジェクションの脆弱性が存在します。 Airターミナル6 v1.01.80およびそれ以前 ソフトバンク株式会社が提供するAirターミナル6には、次の脆弱性が存在します。 OSコマンドインジェクション（ CWE-78 ） CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N 基本値 8.7 CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 基本値 8.8 CVE-2026-101107 当該機器に有線またはWi-Fi接続可能なユーザによって、 root 権限で任意のコマンドが実行される可能性があります。 アップデートする 開発者によると、修正済みのファームウェアが展開済みであり、またインターネット未接続の機器もインターネット接続時に自動的に修正済みのファームウェアが適用されるため、ユーザーの対応は不要とのことです。 ベンダ ステータス ステータス 最終更新日 ベンダの告知ページ ソフトバンク株式会社 2026/11/12 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：大平 剛 氏、socho 氏、京都工芸繊維大学 栗山 樹 氏、豊中市立第十一中学校 小川 智也 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia 2026/11/20 ［詳細情報］、［想定される影響］を更新しました JVN"
+    },
+    {
+      "id": "s-f1f6cc65c1",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: CISA ICS Advisory / ICS Medical Advisory（2026年11月19日）",
+      "url": "https://jvn.jp/vu/JVNVU92814490/",
+      "publishedAt": "2026-11-20T00:30:00.000Z",
+      "summary": "JVNVU#92814490 CISA ICS Advisory / ICS Medical Advisory（2026年11月19日） 米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。 ICS Advisory / ICS Medical Advisoryを参照してください。 新規：3件 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-3aec0cd18a",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「VMware vCenter」に認証回避の脆弱性 - ゼロデイ攻撃も",
+      "url": "https://www.security-next.com/193141",
+      "publishedAt": "2026-11-20T00:08:23.000Z",
+      "summary": "「VMware vCenter」に認証回避の脆弱性 - ゼロデイ攻撃も Broadcomが提供する仮想化環境の管理ソフトウェア「VMware vCenter」に深刻な認証回避の脆弱性が明らかとなった。9月以降、攻撃に悪用されているという。 同社は現地時間2026年11月19日、セキュリティアドバイザリを公開。「VMware vCenter」「SDDC Manager」「VMware Tools」に関する5件の脆弱性に対処したことを明らかにした。アドバイザリの重要度を4段階中もっとも高い「クリティカル」としている。 「CVE-2026-123890」は、「VMware vCenter」のディレクトリサービスに存在する認証回避の脆弱性。第三者が認証を回避し、システムへアクセスすることが可能。共通脆弱性評価システム「CVSSv3.1」のベーススコアは「9.8」、重要度は「クリティカル」と評価されている。 同脆弱性を報告したGoogle Cloud傘下のMandiantは、Google Threat Intelligence Groupとともに、少なくとも2026年9月上旬には同脆弱性が攻撃キャンペーンに悪用されていたとする調査結果を同日公表している。 仮想化基盤の構成管理などを行う「SDDC Manager」では、SQLインジェクションの脆弱性「CVE-2026-123891」、コマンドインジェクションの脆弱性「CVE-2026-123892」、ローカル権限昇格の脆弱性「CVE-2026-123893」に対応した。CVSSv3.1のベーススコアはそれぞれ「8.1」「7.2」「6.7」とされている。 （Security NEXT - 2026/11/20 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-3fabd7a55c",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ドメイン名は“存命中”でも乗っ取られる ～ NTTドコモビジネスのサブドメインテイクオーバー対策",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56866.html",
+      "publishedAt": "2026-11-19T23:15:03.000Z",
+      "summary": "273 views 2026 年 8 月、本誌は「 ドメイン名“死後”の世界 ~ 使い終わったドメインの 1 年間の観測成果 」という記事を公開した。Internet Week 2025 での NTTドコモビジネス株式会社の講演をもとに、手放したドメインのその後を追ったものだ。 実はこの講演には姉妹編があった。前回はドメインの「“死後”の世界」だったが、今回はドメインが「“存命中”」の話である。 同じ Internet Week 2025 の「DNSDAY」で直前に行われた「サブドメインテイクオーバーの仕組みと実践的な対策について」に登壇したのは同じく NTTドコモビジネスのデジタル改革推進部の髙田美紀氏と、イノベーションセンターの竹﨑彬隼氏。 できれば両講演レポートはあわせて読むべきものだ。そう考えて、書こう書こうと思いつつ、時間が取れずに記事化できずにいるうちに 10 月 11 月と、本誌が捕捉する不正アクセス等のインシデント発生数が通常月の 5 倍から 8 倍の数に急増し、編集部は王蟲の大群に襲われるがごとく大混乱に陥った。なすすべもなくとうとう 昨日 11 月 19 日 (木) には Internet Week 2026 の開幕を迎えてしまった 。負けたと言わざるを得ない。 事態がここに至るともはや「駆け込み」記事配信ですらない。「ギリギリセーフ」ならぬ「ギリギリアウト」のこのタイミングとはなったが、本講演のレポート記事をここに掲載する。やはり「明確に打つ手がある」系の記事は媒体として載せたいと思うのです。 ● 本質は「片付け忘れ」 2024 年末から 2025 年初め … 対策がしにくいが、各所からリンクされた官公庁のサイトなら最初から流入が見込める。フィッシングやブランド侵害に使われるおそれもある。 攻撃者が scannet という名前を取り直せたのは、このレンタルサーバーが scannet の部分を利用者に自由に決めさせる仕組みだったからだ。髙田氏は、AWS の S3 のように、外部サービスのドメインの前に付く名前を利用者が決められるサービスへ CNAME を向ける構成には特に注意が必要だと指摘した。対策は、サービス終了時にコンテンツも DNS も元に戻す「原状回復」に尽きる。 ● 名前を押さえていても乗っ取られる GitHub Pages では scannet の部分を自分たちで押さえ続けていれば、つまりサービスを解約せず名前を手放さなければ安全かというと、そうとは限らない。髙田氏が例に挙げたのは、開発者がプログラムを保管・共有するサービス GitHub の Web 公開機能「GitHub Pages」だ。アカウントを手放していなくても、自社ドメインの持ち主であることを GitHub に証明（検証）していなければ、CNAME が残っているだけで第三者に乗っ取られうる。検証は任意で、初期設定では行われない。 同社は GitHub の課金ユーザーとして、組織として検証を強制できるようにしてほしいと改善を求めた。だが、エンタープライズでの利用は想定しておらず優先度は低い、という回答だった。ただし、同じ要望を寄せる利用者、特に有料ユーザーが増えれば優先度は上がるという。そこで髙田氏は会場に向けて、GitHub に要望を出してほしいと呼びかけた。 GitHub に限らず、同じことはさまざまな SaaS で起こりうる。とはいえ社内の SaaS 利用をすべて一つの部署で管理するのは現実的ではない。そこで髙田氏が勧めるのが社内啓発だ。仕組みの理解"
+    },
+    {
+      "id": "s-cff60bfcc7",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "エーアイセキュリティラボ、「見逃してくれない AI に、見逃さない脆弱性診断」解説オンラインセミナー 11 / 25 開催",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56865.html",
+      "publishedAt": "2026-11-19T23:10:03.000Z",
+      "summary": "60 views 株式会社エーアイセキュリティラボは11月11日、オンラインセミナー「相次ぐ情報漏洩、自社サイトを総点検するための『内製化』～見逃してくれないAIに、見逃さない広範囲・高頻度の脆弱性診断を～」を11月25日(水)に開催すると発表した。参加費は無料で事前登録制。 AIを悪用したと思われる不正アクセスの増加により継続的な診断が求められる一方、外部委託の費用や納期が障壁となり、内製化には品質・スキル・リソースへの懸念があることを背景に開催する。 同セミナーでは、外注診断と内製診断を組み合わせて継続的に脆弱性診断を回すための考え方を解説する。外部委託と内製診断の使い分け、内製化に向けた体制づくり、診断結果をもとに対応を進める優先順位づけについて取り上げるほか、クラウド型Webアプリケーション脆弱性診断ツール「AeyeScan」の紹介とデモも行う。 開催時間は12時から13時まで。対象は診断スケジュールや診断コストを見直したい担当者や、継続的・網羅的に診断を回したい担当者。 《ScanNetSecurity》 Sponsored by エーアイセキュリティラボ 一次情報または関連リンク PHP脆弱性やA2B攻撃など、激化するサイバー攻撃への予防策 ～AI活用でWeb・モバイル・APIを「総点検」する方法～ 関連記事 口コミ総得点で 1 位 ～ AeyeScan が BOXIL REVIEW AWARD Autumn 2026 脆弱性診断カテゴリで受賞 2026.11.12 Thu 8:00 AeyeScan が「2026年上半期 BOXIL資料請求数ランキング」の ASMツール 大企業部門 1 位・脆弱性診断 総合 1 位に選出 2026.7.9 Thu 8:00 AeyeScan、SaaS型Webアプリケーション脆弱性診断・管理市場でシェア1位を獲得 2026.6.25 Thu 8:00 AeyeScan、ITreview の脆弱性診断部門で「1年間で最も評価された製品」に選出 ～ 品質と再現性等が評価 2026.6.10 Wed 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-3c56c6304d",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「ONE cosme」に不正アクセス、最大1,154名の会員情報が取得された可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56864.html",
+      "publishedAt": "2026-11-19T23:05:41.000Z",
+      "summary": "249 views 株式会社イードは11月18日、同社が運営する「ONE cosme」への不正アクセスについて発表した。 これは11月10日に、第三者が海外のサーバを経由して「ONE cosme」に不正にアクセスし、会員データを機械的に取得した可能性が判明したというもの。 取得された可能性があるのは、最大1,154名の会員のメールアドレス、生年月日、性別、暗号化されたパスワード。このうち、生年月日が登録されていた会員は634名、性別が登録されていた会員は578名となっている。 同社では、取得された可能性のあるメールアドレス宛に、約1,150件のパスワード再設定メールが一斉送信されたことを確認している。 同社では、対象となる可能性のある会員への通知を順次検討・実施する。 同社では不正アクセス元への対応と原因箇所の修正および再発防止策の検討を進めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる個人情報漏洩に関するお詫びとお知らせ 関連記事 サイバーセキュリティクラウドの開発環境に不正アクセス、GitHubに保存されていた個人情報が漏えいした可能性 2026.11.19 Thu 8:05 SecureNaviが利用するクラウドサービス「Notion」のAI機能の委託先に不正アクセス、回答を含むやりとりの記録が漏えいした可能性 2026.11.19 Thu 8:05 Notion AIの処理を委託していたFireworks AI社に不正アクセス、LRMのワークスペースでのやり取りが流出した可能性 2026.11.19 Thu 8:05 スリーシェイクが利用するNotion AIの委託先に不正アクセス 2026.11.19 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-946ecd378c",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "楽天証券に不正アクセス、最大約1,125万口座の情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56863.html",
+      "publishedAt": "2026-11-19T23:05:37.000Z",
+      "summary": "576 views 楽天証券株式会社は11月17日、楽天証券への不正アクセスによる顧客情報の漏えいの可能性について発表した。 これは11月16日に、同社の一部システムに対する第三者からの不正アクセスの可能性を検知し、当該箇所へのアクセスの遮断と修正等を行うとともに調査した結果、11月11日に同社のテスト環境のシステム内で管理していた一部情報が外部に漏えいした可能性が判明したというもの。 外部に持ち出された可能性があるのは、楽天証券に登録のあった下記の顧客情報（退会者含む）。 1.楽天証券の部店・お客様コード、ログインID、氏名、カナ氏名、生年月日、住所、電話番号、メールアドレス、勤務先、出金先口座（金融機関・口座番号・名義人）、年収・金融資産（顧客からの申告情報）、商品別資産情報、最終ログイン日 件数：最大約447万口座 2.楽天証券の部店・お客様コード、ログインID 件数：最大約1,125万口座 同社では、本件の影響が確認された顧客の特定を完了しており、該当の顧客には個別に報告を行う。 同社では引き続き、関係各所の協力のもとで原因究明と影響範囲の調査を進め、再発防止に向けた対応を徹底し、セキュリティ対策を強化するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社お客様の情報漏えいの可能性に関するお詫びとお知らせ 関連記事 楽天証券、フィッシング詐欺等による不正アクセス被害の補償方針を発表 2025.7.31 Thu 8:00 「楽天トラベル」海外ホテル予約サイトの一部ページと多言語予約サイトに不正アクセス 2026.11.2 Mon 8:05 楽天モバイルで支払い証明書が第三者に閲覧される可能性、脆弱性診断テストで判明 2026.10.27 Tue 8:05 楽天ドライブに不正アクセス、管理アカウント乗っ取りでデータ閲覧 2026.10.8 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-ed0bc8741c",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "理研が運用するスーパーコンピュータ「富岳」の運用系システムに不正アクセス、利用者の認証システムに登録された情報が持ち出された可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56862.html",
+      "publishedAt": "2026-11-19T23:05:34.000Z",
+      "summary": "206 views 国立研究開発法人理化学研究所（理研）は11月16日、スーパーコンピュータ「富岳」および「理究」への不正アクセスについて発表した。 これは11月12日に、理研 計算科学研究センターが運用するスーパーコンピュータ「富岳」の運用系システムに外部の第三者から不正アクセスがあったというもの。 理研では、当該運用システムの保守管理を外部に委託しており、11月12日に不審な通信を検知した後、委託先と連携して調査を開始し、11月13日午後4時33分に不正アクセスの事実を確認している。 調査結果によると、11月10日から13日にかけて、外部の第三者がインターネット上に公開されていた「富岳」の稼働状況を表示するウェブページ（ダッシュボード）を足がかりとして、運用系の内部ネットワークに不正に侵入していたことが判明している。 侵入者は、内部の複数のサーバを不正に操作しており、利用者のホームディレクトリに保存されていたファイルの一部と、利用者の認証システムに登録された情報が外部に持ち出し、およびその可能性があることが判明している。また、侵入されたサーバの一部での不正なプログラムの設置など、システムの改ざんも確認している。 漏えい、または漏えいの可能性がある情報は下記の通り。 1.利用者の認証システムに登録された情報：最大4,597名 ・スーパーコンピュータ「富岳」の利用者：最大4,222名 項目：氏名、メールアドレス、ID ・スーパーコンピュータ「理究」の利用者：最大375名 項目：氏名、メールアドレス 2.利用者のホームディレクトリに保存されていたファイル ・利用者が保存していた、理研外のスーパーコンピュータやサービスに接続するための認証情報（SSH秘密鍵、アクセスキーなど） ・利用者が保存していたファイル（研究データ） 理研では、侵入者が取得した認証情報の一部を使用して、他のシステムへの接続を試みていたことを確認している。 理研では11月14日午前4時30分に、「富岳」の運用を停止し、不正アクセスの経路を遮断している。また、全利用者のログイン用の公開鍵を無効にし、事案の内容を案内している。 理研では、悪用されたソフトウェアの脆弱性への対処、侵入されたサーバの再構築、ネットワーク構成の見直しや、AIを活用した最先端のセキュリティ対策の実施など、再発防止策を講じたうえで、「富岳」の運用を再開するとのこと。 《ScanNetSecurity》 一次情報または関連リンク スーパーコンピュータ「富岳」および「理究（りきゅう）」への不正アクセスによる個人情報漏えいの可能性について 関連記事 東急不動産が管理するウェブサイトに不正アクセス 2026.11.13 Fri 8:05 「しまねのふるさと直送便」にAmazon Payプラグインの脆弱性を悪用した不正アクセス 2026.11.13 Fri 8:05 「ネットマイル」に不正アクセス、最大約549万人の会員情報等が漏えいした可能性 2026.11.13 Fri 8:05 「ノジマオンライン」に不正アクセス、約700万件の会員情報が漏えい 2026.11.13 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-c525c2e389",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "SMBC日興証券が持株会事務受託業務で使用しているシステムに不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56861.html",
+      "publishedAt": "2026-11-19T23:05:31.000Z",
+      "summary": "856 views SMBC日興証券株式会社は11月11日、同社の持株会事務受託業務で使用しているシステムへの不正アクセスについて発表した。文字のコピーができないPDFファイルで公開している。 これは11月9日に、持株会事務受託業務で使用しているシステムへの不正アクセスを確認したというもので、当該システムから持株会会員の個人情報が漏えいしたことが判明している。 同社では11月9日中に、被害拡大の防止のため当該システムへのアクセスを遮断し、サービスを一時停止している。その後、調査を行った過程で、情報漏えいが判明している。 漏えいまたはその可能性があるのは、最大56,487名の持株会名、投資銘柄情報、会員識別番号、氏名、住所、配当金および諸税、持分残高、振替先口座情報。 同社では対象の持株会に個別に連絡を行う。 同社では現在、関係各所と連携し、原因や影響範囲の詳細な調査を進めている。 同社では際は圧防止と情報管理態勢の一層の強化に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社持株会管理システムへの不正アクセスによる個人情報の漏えいについて 関連記事 SMBC日興証券 即時入金サービス当面停止 フィッシング詐欺等による不正アクセス被害拡大防止 2025.10.28 Tue 8:00 SMBCコンシューマーファイナンスの保証システムに不正アクセス、外部へのデータ送信を確認 2026.11.10 Tue 8:05 SMBC信託銀行のクラウド型口座開設システムへの不正アクセス、デビット用暗証番号が “復合化” された可能性 2021.4.5 Mon 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-46f42752c6",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ユミルリンクのメール配信サービスに不正アクセス、延べ4,786万4,147件の配信先情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56860.html",
+      "publishedAt": "2026-11-19T23:05:28.000Z",
+      "summary": "239 views ユミルリンク株式会社は11月11日、10月19日に公表した同社が運営するメール配信サービス「Cuenote FC」等への不正アクセスについて、第三報を発表した。 同社では10月16日未明に、同社担当者が一部システムへの不正アクセスを確認したため、当該システムのアクセス記録を確認したところ、「プログラムの脆弱性により同社サポート・品質管理担当者のサービスへの認証情報を取得していること」、「不正プログラムを設置しデータベースからデータを出力していること」、「同社サポート・品質管理担当者の認証情報を用い、他のシステムへの認証を試みていること」を確認しており、外部専門家の協力のもと詳細調査を進めていた。 同社内でのシステムに対するフォレンジック調査およびデータ突合の結果、不正アクセスを受けた対象システムおよび外部への持ち出しが確認された個人情報の件数は下記の通り。 サービス名：Cuenote FC サービス概要：メール配信サービス（一斉送信） 情報漏えいの内容：プログラム脆弱性等を突かれ、49システム（専用ASPの一部）で情報漏えいが発生 件数：延べ 47,864,147件の配信先情報（メールアドレス、氏名等の属性情報） サービス名：Cuenote BASE サービス概要：ユミルリンク顧客管理システム 情報漏えいの内容：プログラム脆弱性により、契約者情報が閲覧可能な状態 件数：190件（契約企業名、氏名、電話番号、メールアドレス） 同社では「Cuenote FC」における漏えい件数について、第二報では調査中であったシステムを含め、最大試算値 延べ約5,162万件と公表していたが、その後のログ突合およびデータベース解析で実際の出力対象レコードを厳密に特定・除外し、重複して計上していたレコードを除外するなどして、配信先情報が延べ約4,786万件（47,864,147件）であることを確認している。 同社によると、本事案で確認された攻撃手法は大きく分けて下記の2系統。 ・攻撃手法1：不正プログラムの設置と内部侵入（直接侵入・横展開型） プログラムの脆弱性をついて、サーバ内部に不正プログラムを使って、システムの中枢のデータベースへ直接侵入してデータを出力する手法で、さらに管理用の内部ネットワークを伝って別のサーバへも侵入を拡大させている。 ・攻撃手法2：ログイン情報の盗用となりすまし（正規機能の悪用型） プログラムの脆弱性をついて、当時ログイン中だった正規利用者の一時的なセッション情報を盗み取り、正規の利用者になりすまして管理画面へ入る手法で、その後、画面に元から備わっている通常のデータ出力機能（CSVダウンロード）をそのまま悪用してデータを持ち出している。 同社では本事案の判明後に、すべてのサービス基盤を対象として侵入経路の遮断、不正プログラムの排除、アクセス権限の見直し、システムログの詳細調査を実施しており、これらの調査・対策を踏まえ、今回確認された攻撃手法に対する必要な安全対策を実施し、サービスの稼働再開に必要な安全性の確認を完了している。 同社では、被害拡大防止策にとどまらず、アーキテクチャおよび組織運用の根本的見直しを行い、下記の再発防止策を実施するとのこと。 1.セキュアコーディングおよび脆弱性管理の抜本的強化 ファイルアクセス処理等における厳格な入力値検証の実装、および設計・レビュー規程の改訂を徹底するとともに、AIを活用したソースコードレビューや潜在的脆弱性の自動検知体制を導入し、さらに外部専門機関による定期的な第三者脆弱性診断"
+    },
+    {
+      "id": "s-558e6c5a71",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "インターネット調査システムに不正アクセス、個人情報の漏えいがないことを確認",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56859.html",
+      "publishedAt": "2026-11-19T23:05:25.000Z",
+      "summary": "482 views 株式会社インテージは11月6日、11月4日に公表したインターネット調査システムへの不正アクセスについて、第2報を発表した。 同社では、同社サービスで利用しているアンケートシステムに外部から不正アクセスがあり、被害の拡大防止と安全確保を最優先とし、該当システムを停止して緊急メンテナンスを実施していた。 同社およびシステム提供元にて、アクセスログとシステム内部の詳細な解析・調査を行っているが、現時点で不正アクセスによるモニター・アンケート回答者の個人情報漏えいの発生がないことを確認したという。 同社によると、不正アクセスを受けたシステムにて、一部のアンケート調査票のプレビュー画面（回答情報などは含まれない）が閲覧されたことを確認しているが、顧客情報・モニター情報データベースへのアクセスや参照は行われていないことを再確認している。また、下記の事象も確認されていない。 調査回答データベースへのアクセス、参照 外部へのデータ持ち出し 既存のデータやファイルの改ざん 権限の不正奪取 不正な設定変更 同社では不正アクセスの要因となったシステムの脆弱性を修正し、セキュリティレベルを上げるための改修を完了している。さらに、不正アクセスの防止に向けて、外部からの不正な通信を検知・遮断する防御策を強化している。 同社では安全対策がすべて完了したことを受け、停止していたアンケートシステムの稼働と関連サービスを11月6日から順次再開している。 同社ではシステムの再開後も、システム提供元と共に継続的な監視体制を敷き、安全な運用の維持に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク インターネット調査システムへの不正アクセスの影響範囲、およびインターネット調査サービス再開に関するご報告（第2報） インターネット調査システムへの不正アクセスに関するご報告とお知らせ 関連記事 GMOリサーチ&AI 運営のアンケートサイト「infoQ」に不正アクセス、89万4,082件の個人情報外部持ち出しを確認 2026.10.19 Mon 8:05 「ベネワン・プラットフォーム」のアンケート機能で他企業・団体の個人情報がダウンロード可能に、不具合を認知するも解消作業が適切に実施されず 2026.10.6 Tue 8:05 みずほリサーチ&テクノロジーズが経済産業省から受託したアンケート情報を混在して環境省に納品、ホームページで公開 2026.3.11 Wed 8:05 DMM グループのジーオーティーに不正アクセス、読者アンケート回答者の個人情報流出の可能性 2026.2.12 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-54fc16f639",
+      "source": "IPA 重要なセキュリティ情報",
+      "sourceType": "official",
+      "title": "PHPの脆弱性対策について（2026年11月）",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261120.html",
+      "publishedAt": "2026-11-19T15:00:00.000Z",
+      "summary": "PHPの脆弱性対策について（2026年11月） 公開日：2026年11月20日 注釈：追記すべき情報がある場合には、その都度このページを更新する予定です。 2026年10月21日にIPAから公表した「【事前準備のお願い】PHPのセキュリティリリース公開予定について（11月）」（ 脚注1 ）の続報です。 The PHP Groupから、複数の脆弱性を修正するセキュリティリリースが公開されました。PHPを利用しているウェブサイトの運営者、ウェブアプリケーションの開発者およびシステム管理者の皆様は、利用環境への影響を確認し、修正プログラムの適用などの対策を実施してください。 概要 The PHP Groupが提供するPHPについて、セッション処理、リクエスト処理、メモリ管理などに関連する複数の脆弱性が公表されています。2026年11月19日、これらの脆弱性を修正したPHP 8.2.36、8.3.37、8.4.28および8.5.13が公開されました。 公表された脆弱性には、特定の条件下で任意のコード実行につながるものや、リクエストスマグリング、署名検証の回避などにつながるものが含まれています。影響の有無は、利用しているPHPのバージョンだけでなく、設定、使用する機能およびシステム構成によって異なります。 今回のセキュリティリリースの事前予告では、最高の深刻度である「Critical」の脆弱性について、既定とは異なる設定や一般的ではない構成が影響条件になると説明されています。ただし、この説明だけをもって、今回修正されたすべての脆弱性について、既定の設定であれば影響を受けないと判断しないで … 対策 1.脆弱性の解消 - 修正プログラムの適用 開発者が提供する情報をもとに、利用している系統の最新版へアップデートしてください。開発者は、本脆弱性を修正した次のバージョンをリリースしています。 PHP 8.2.36 PHP 8.3.37 PHP 8.4.28 PHP 8.5.13 詳しくは以下のページをご確認ください。 The PHP Group News Archive 2.推奨対応 個別のアドバイザリを確認し、影響条件となる設定や構成が、自組織の環境に該当するかを調査してください。 修正対応が難しい場合について 1.利用中のPHPおよび製品のサポート状況を確認する 利用しているPHP、OS、関連製品およびサービスについて、セキュリティ更新が提供されるかを確認してください。 修正プログラムの提供を受けられない場合は、サポート対象のPHPや、保守を受けられる製品・サービスへの更新・移行を検討してください。 2.更新・移行までの暫定対策を検討する 個別のアドバイザリで案内される回避策・緩和策を確認し、利用環境に適用できるかを検討してください。 併せて、必要に応じて外部からのアクセス制限や、影響を受ける機能の利用制限を検討してください。十分な暫定対策を実施できない場合は、被害が発生した際の影響を踏まえ、外部公開の停止やサービスの一時停止が必要かを判断してください。 3.システムの状況と更新・移行の難易度を把握する PHPを利用したウェブサイト等のシステムが現在も果たしている役割や利用状況、他のシステム・サービスで代替できる可能性を確認し、運用を継続する必要性や提供方法を見直してください。 PHPなどを長期間更新していないシステムでは、更新に伴うアプリケーションの改修や動作確認が必要となるほか、開発時の資料・ノウハウの不足、担当者の不在、保守契約の終了などにより、対策が"
+    }
+  ]
+}
