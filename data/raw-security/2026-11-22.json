@@ -1,0 +1,232 @@
+{
+  "date": "2026-11-22",
+  "collectedAt": "2026-11-21T22:01:38.087Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-e975666d95",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+      "publishedAt": "2026-11-21T18:01:58.000Z",
+      "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]"
+    },
+    {
+      "id": "s-d449443073",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+      "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+      "publishedAt": "2026-11-21T15:17:27.000Z",
+      "summary": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]"
+    },
+    {
+      "id": "s-f4c78575a7",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+      "publishedAt": "2026-11-21T14:26:04.000Z",
+      "summary": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]"
+    },
+    {
+      "id": "s-0ad755f268",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+      "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+      "publishedAt": "2026-11-21T11:53:07.000Z",
+      "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected accounts. The work was a laboratory demonstration, not an attack on real users, and it stayed inside the individual user's"
+    },
+    {
+      "id": "s-761885e6c0",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+      "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+      "publishedAt": "2026-11-21T11:05:53.000Z",
+      "summary": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions. The bug, tracked as CVE-2026-129975, affects all software that uses GPGME before version 2.3.0,"
+    },
+    {
+      "id": "s-16765aea3b",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+      "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "publishedAt": "2026-11-21T11:03:17.000Z",
+      "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account to write files outside the server's storage folder, and it affects MONAI Label 0.8.5 and earlier in the default setup,"
+    },
+    {
+      "id": "s-9da47b8efc",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+      "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+      "publishedAt": "2026-11-21T08:49:20.000Z",
+      "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions where the encrypted messaging platform can detect an AI assistant attempting to read the Signal"
+    },
+    {
+      "id": "s-a3eac34b29",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+      "publishedAt": "2026-11-21T08:49:13.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-129448 (CVSS score: 9.8) - A deserialization of untrusted data vulnerability in"
+    },
+    {
+      "id": "s-fa700a4eb8",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+      "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+      "publishedAt": "2026-11-20T05:30:01.000Z",
+      "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher who uses the handles MSNightmare and Nightmare Eclipse, and the endpoint-security firm ThreatLocker"
+    },
+    {
+      "id": "s-9b755754b5",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "VMware patches vCenter zero-day exploited in attacks since September",
+      "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+      "publishedAt": "2026-11-20T00:26:25.000Z",
+      "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]"
+    },
+    {
+      "id": "s-c218eb7a12",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Siemens製品に対するアップデート（2026年11月）",
+      "url": "https://jvn.jp/vu/JVNVU98354779/",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "summary": "JVNVU#98354779 Siemens製品に対するアップデート（2026年11月） Siemensから各製品向けのアドバイザリが公表されました。 Siemensのアドバイザリを参照してください。 新規：11件 更新：17件 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia 2026/11/06 ［詳細情報］を更新しました 2026/11/09 2026/11/11 2026/11/19 2026/11/20 JVN"
+    },
+    {
+      "id": "s-48b430b93a",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「PHP」に複数の「クリティカル」脆弱性 - アップデートを公開",
+      "url": "https://www.security-next.com/193143",
+      "publishedAt": "2026-11-19T23:49:59.000Z",
+      "summary": "「PHP」に複数の「クリティカル」脆弱性 - アップデートを公開 「PHP」の開発チームは、複数の脆弱性を修正するセキュリティアップデートをリリースした。「クリティカル」とされる脆弱性も複数あり、一定の条件下でリモートより任意のコードを実行されるおそれがある。 現地時間2026年11月19日、セキュリティアップデートとなる「PHP 8.5.13」「同8.4.28」「同8.3.37」「同8.2.36」を公開した。前日に重要度「クリティカル」の脆弱性に対処する予定であることを予告しており、今回あらためて詳細を明らかにした。 修正対象となった脆弱性は18件にのぼり、脆弱性によって影響を受ける機能や対象条件は異なる。12件は今回アップデートが公開された4ブランチにおいて、共通の脆弱性となっている。 また共通して修正された脆弱性のうち、共通脆弱性評価システム「CVSSv4.0」において、ベーススコアが「9.2」と評価された脆弱性は4件。 具体的には、セッション処理に関する脆弱性が2件。シリアライズ形式における不整合に起因する「CVE-2026-115560」は、異なるセッションのシリアライズ形式が混在する構成において、意図しないオブジェクトが注入されるおそれがある。またセッションファイルの書き込みが中断された場合に不完全な上書きが行われ、不正なオブジェクトが復元される可能性がある「CVE-2026-126714」に対応した。 （Security NEXT - 2026/11/20 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-0fb89b83d0",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "資生堂グループの肌測定システム「Facial Condition Analyzer」に不正アクセス、合計2,515件の個人情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56858.html",
+      "publishedAt": "2026-11-19T23:05:21.000Z",
+      "summary": "155 views 株式会社資生堂は11月6日、資生堂グループが提供している肌測定サービスで使用しているオンライン肌測定システム「Facial Condition Analyzer」への不正アクセスについて発表した。 これは10月27日に、同社グループが使用しているオンライン肌測定システム「Facial Condition Analyzer」で、外部の第三者による不正アクセスを確認し、その後の調査でシステム内の一部情報が改ざんされ、データが外部に持ち出されたことが判明したというもの。 同社では被害の拡大を防ぐため、10月27日から当該システムを使用する一部の肌測定サービスを停止し、システム開発元と連携して緊急対応を実施している。 今回、個人情報の漏えいが確認され、現在停止しているサービスは下記の通り。 ・資生堂オンラインストア： オンライン肌測定サービス「Beauty Alive Circulation Check」 ・SHISEIDO： 店頭・オンライン肌測定サービス「Beauty Alive Circulation Check」 漏えいを確認したのは、顧客の氏名、メールアドレス、年齢、性別、会員IDなどの識別情報に加え、問診データ、肌測定結果（日時を含む）などを含む合計2,515件の個人情報。 同社では対象者に個別に連絡し、事案の概要や必要な案内を説明している。 なお、下記の肌測定サービスについては、現時点で個人情報の漏えいは確認されていないが、同じ「Facial Condition Analyzer」を使用していることから、被害の拡大を防ぐため、一時停止している。 ・資生堂オンラインストア： オンライン肌測定サービス「肌パシャ」「Men&#039;s Skin Checker」 ・エリクシール： オンライン肌測定サービス「AIスキンアナライザー」 ・イプサ： オンライン肌測定サービス「AIレシピストmico」「CO-HADA Scan」 同社では現在、不正アクセスの原因究明と必要なセキュリティ対策を進めており、システムの安全性が確認でき次第、サービスを再開する予定。 同社では今後、調査結果を踏まえ、必要な再発防止策を講じるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社肌測定システムへの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ 関連記事 資生堂美容室の業務委託先に不正アクセス、顧客情報が閲覧された可能性は否定できず 2026.5.21 Thu 8:05 資生堂 超迅速対応、1/29 なりすまし不正ログイン注意喚起 → 2/2 多要素認証を「 2/5 から導入」と発表 2026.2.5 Thu 8:05 クレ・ド・ポー ボーテ公式Instagramアカウントに不正アクセス、解決まで一時閉鎖（資生堂ジャパン） 2020.8.12 Wed 8:00 資生堂子会社のネットショップに不正アクセス、カード情報など漏えい（イプサ） 2016.12.5 Mon 11:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-21bbfce54a",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "チームスピリットのソフトウェア開発用サーバに不正アクセス、28,824件の個人情報が漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56857.html",
+      "publishedAt": "2026-11-19T23:05:18.000Z",
+      "summary": "173 views 株式会社チームスピリットは11月6日、同社が利用するソフトウェア開発用サーバへの不正アクセスについて発表した。 これは10月27日に、第三者が同社のソフトウェア開発用サーバに不正ログインし、当該サーバに保管されていた認証情報を用いて、同社が利用するクラウド環境からデータを取得したことを確認したというもの。 同社は10月27日中に当該サーバを停止し、外部からの接続経路を遮断し、外部のセキュリティ専門機関の支援を受けながら、弁護士とも連携して調査を進めている。 同社によると、本件は未知の脆弱性によるものではなく、同社が開発用に運用していたサーバにおける設定と情報管理の不備が重なったことが原因という。 流出した情報は、現時点で同社が確認できた範囲で下記の通り。なお、流出した個人情報の件数は、現時点で確認できた範囲で28,824件（重複除く）で、要配慮個人情報35件が含まれている。 1.「TeamSpirit」を契約している、または過去に契約していた顧客の一部 ・担当者・利用ユーザーの情報（氏名、メールアドレス、ログインID、チームスピリットが管理する識別番号・アカウント情報） ・問い合わせ・依頼の記録の一部 ・サービスの提供・維持のためにチームスピリットが保有していた、顧客企業の従業員の勤怠記録の一部 ・企業に関する情報（契約や利用環境に関する情報の一部を含む） 2.資料請求、問い合わせ、セミナーに申し込み等をした人の一部 ・チームスピリットが管理する識別番号 ・企業に関する情報（会社名等） 3.チームスピリットの従業員および退職者 ・氏名、社員番号、業務用メールアドレス、入社日・退職日、誕生日（月・日） ・社内システムのユーザー名・ID・アカウント情報 ・業務管理システムの記録 同社では対象者に、流出した情報の項目を個別に連絡する。 同社では現在、セキュリティ管理体制の強化、開発環境の再構築、監視体制の強化を中心に再発防止策の検討を進めているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる情報漏えいに関するお詫びとお知らせ 関連記事 消防庁「安否情報システム」に不正アクセス、影響範囲調査のためにサービスを停止 2026.11.9 Mon 8:05 ソニー銀行のデジタル証券に関連する外部委託先Securitize Japanに不正アクセス 2026.11.9 Mon 8:05 ソニー生命「お客さま WEB サービス」に不正アクセス、メディケア生命保険 契約者等 約38.5万件が漏えい 2026.11.9 Mon 8:05 デニーズアプリへ不正アクセス 2026.11.9 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-3cd900bceb",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ソニー少額短期保険が社内利用する契約管理システムの開発・テスト環境に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56856.html",
+      "publishedAt": "2026-11-19T23:05:14.000Z",
+      "summary": "278 views ソニー少額短期保険株式会社は11月6日、同社が社内で利用する契約管理システムの開発・テスト環境への不正アクセスについて発表した。 これは10月20日から21日にかけて、同社が利用するシステムの開発・テスト環境に外部から不正なアクセスがあり、同環境に登録されていた情報の一部が外部に取得されたというもの。なお、本番環境への攻撃は成立しておらず、同社顧客の個人情報は取得されていない。 取得されたのは同環境にテストデータとして保持していた情報で、当該テストデータには、当時のテスト入力者が入力した氏名、連絡先等の情報が含まれていた。対象となるのは同社の従業員、業務委託先および再委託先の従業員（退職者含む）108件の氏名、性別、生年月日、メールアドレス、郵便番号、住所、電話番号を含む個人情報。 同社では対象者に順次、通知を行っている。 本件について、同社では同社のWebシステムに存在した脆弱性が悪用されたことにより発生したものと判断しており、攻撃者は当該脆弱性を悪用してシステムへ侵入した後、システム内の情報を探索し、データベースに保持されていた情報を取得していたことを確認している。 同社では今回判明した原因を踏まえた再発防止策を講じるとともに、情報セキュリティ体制の強化に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社テスト環境への不正アクセスに伴う従業員等の個人情報の漏えいについて 関連記事 ライフネット生命の一部システムに不正アクセス、KDDIが保有する顧客情報が漏えいした可能性 2026.11.5 Thu 8:05 東京海上ダイレクト損害保険の契約者向け「マイページ」等に不正アクセス 2026.11.10 Tue 8:05 ソニー生命「お客さま WEB サービス」に不正アクセス、メディケア生命保険 契約者等 約38.5万件が漏えい 2026.11.9 Mon 8:05 アフラック生命保険への不正アクセス、契約者専用サイトのサービス再開 2026.10.20 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-0fe723adbb",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "JNSA「情報セキュリティ理解度チェックサービス」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56855.html",
+      "publishedAt": "2026-11-19T23:05:11.000Z",
+      "summary": "167 views 特定非営利活動法人日本ネットワークセキュリティ協会（JNSA）は11月6日、同協会が選営する「情報セキュリティ理解度チェックサービス」への不正アクセスについて発表した。文字のコピーができないPDFファイルで公開している。 これは11月4日に、「情報セキュリティ理解度チェックサービス」への第三者からの不正アクセスを確認したというもので、利用者の個人情報が漏えいした可能性がある。 漏えいした可能性があるのは、これまで管理者登録のあった最大15,128件の管理者および利用ユーザの下記の情報。 ・管理者氏名 ・管理者企業名 ・管理者メールアドレス ・組織所在地、従業員数、業種 ・利用ユーザ数 ・利用者のID/PW（バスワードはハッシュ化） 同協会では現在も講査を継続しており、対象者の特定が完了次第、個別に連絡を行う。 同協会では本件の発覚後に、被害拡大防止のため対象サービスを停止するとともに、外部専門事業者の協力のもと、原因究明と影響範囲の特定を進めている。 現時点の調査によると、不正アクセスは10月30日夜頃から行われた可能性があることが判明しており、詳細な侵入経路と影響範囲について、引き続き調査を進めるとのこと。 同協会では「本来、日本のセキュリティレベルを向上させるべき協会でありながら、このような不正アクセスを受け、ご利用の皆様をはじめ、関係者の皆様に多大なるご心配とご迷惑をおかけしておりますことを深くお詫び申し上げます。」と謝罪している。 《ScanNetSecurity》 一次情報または関連リンク 【第一報】不正アクセスによる「情報セキュリティ理解度チェックサービス」からの利用者個人情報漏えいの恐れに関するお知らせ 関連記事 Google フォーム設定ミスで SECCON CTF for Girls 運営イベントの参加申込者の個人情報が閲覧可能に 2024.7.5 Fri 8:10 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-6c99dc459f",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ノーコードWebサイトプラットフォーム「Studio」に不正アクセス、GMO Flatt Security Webサイトのフォームから送信された情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56854.html",
+      "publishedAt": "2026-11-19T23:05:09.000Z",
+      "summary": "2059 views GMO Flatt Security株式会社は11月5日、同社がWebサイトの運営に利用しているStudio株式会社が提供するノーコードWebサイトプラットフォーム「Studio」への不正アクセスについて発表した。 これは9月30日から10月1日に、Studioのクラウド環境に対し一部機能の脆弱性を悪用した不正アクセスが発生し、Studioが10月14日に対処するまでの間、データを外部から取得できる状態となっていたというもの。10月16日にGMO Flatt Securityに報告があった。 流出した可能性があるのは、2026年10月1日までにGMO Flatt Security Webサイトの下記フォームから送信された情報。 ・flatt.techにおけるオープンソース開発者応援プログラムフォーム 対象：OSSレポジトリのリンク、メールアドレス 最大149件 ・shisho.devにおけるShisho Cloudの資料ダウンロード、事前登録、資料請求フォーム 対象：会社名、職種・ロール・チーム名、氏名、メールアドレス 最大319件 同社では対象者に個別に連絡を行っている。 また同社では、該当フォーム・サイトの切り替えと外部サービス連携など漏えいの可能性がある認証情報の無効化を行っているとのこと。 《ScanNetSecurity》 一次情報または関連リンク ノーコードWebサイトプラットフォーム「Studio」への不正アクセスに伴う、情報流出の可能性に関するお詫びとお知らせ 関連記事 デジタル庁ホームページの問い合せフォームの情報が漏えい、Studio のクラウド環境への不正アクセス 2026.10.28 Wed 8:05 Studio が利用するクラウド環境に不正アクセス、復号に必要な鍵も読み出される 2026.10.28 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-f11e99a0e8",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "アンドエスティHDの業務サーバに不正アクセス、約274万件の顧客情報が流出した可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56853.html",
+      "publishedAt": "2026-11-19T23:05:07.000Z",
+      "summary": "306 views 株式会社アンドエスティHDは11月4日、10月23日に公表した同社業務サーバへの不正アクセスについて、調査結果を発表した。 同社では10月22日午前7時30分頃に、外部から不正アクセスがあり、同社の複数サーバに対して順次ログイン試行、侵入、データ抽出が行われており、顧客情報、取引先情報、従業員情報の一部が外部流出した可能性が判明していた。 同社では10月22日午前10時頃に不正な操作を検知し、当該サーバを隔離、同日午後5時までに不正アクセス経路の遮断を実施し、社内業務システムの停止などの対応を行っていた。 同社で調査した結果、流出の可能性があるのは約274万件の顧客情報（氏名、生年月日、性別、住所、電話番号、メールアドレス、会員ID）と、2013年6月から2022年11月の期間に同社グループ社会保険に加入していた約24,000件の従業員情報（氏名、住所、電話番号、生年月日等の基本情報のほか、社会保険算出情報）。 同社では11月4日から、対象の顧客に順次メールにて個別に連絡を開始している。 同社ではサーバの隔離、不正アクセス経路の遮断等の必要な対策を完了しており、同社グループ店舗およびWEBストアは通常通りの運営をしているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社業務サーバーへの不正アクセスに関する調査結果およびお客さま情報に関する専用窓口設置のお知らせ 当社業務サーバーへの不正アクセスの発生および個人情報等流出の可能性に関するお詫びとお知らせ 関連記事 入居申込サービス「GoWeb」にSQLインジェクション攻撃 2026.11.17 Tue 8:05 アンケートサイト「Qzoo」にSQLインジェクション攻撃 2026.11.17 Tue 8:05 アクティブ運営の通販サイトにSQLインジェクション攻撃、最大5万4,916件の顧客情報が流出した可能性 2026.11.17 Tue 8:05 エディオンECサイトに不正アクセス、不正なプログラムが組み込まれる改ざんが新たに判明 2026.11.17 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-096a6ceecc",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ソースネクスト、IR問い合わせフォーム設定不備で137件の個人情報が閲覧可能に ～ 10 / 15 の不正アクセスとは別事案",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56852.html",
+      "publishedAt": "2026-11-19T23:05:02.000Z",
+      "summary": "180 views ソースネクスト株式会社は11月10日、同社Webサイトの「株主・投資家の皆様からのお問い合わせフォーム」に設定不備があり、問い合わせた顧客の個人情報が第三者から閲覧可能な状態になっていたと発表した。 同フォームでは、送信後の画面に、他の顧客が入力した情報を閲覧できるリンクが表示される設定になっていた。2026年6月7日(日)から11月9日(月)までこの状態が続いており、11月9日(月)に外部からの指摘で判明した。原因は外部からの不正アクセスによるものではなく、同社によるフォームの設定と公開時の確認が不十分だったこととしている。 閲覧可能になっていたのはメールアドレス、名前、問い合わせ内容（本文）で、対象は137件（うち企業・団体の担当者からの連絡が53件）。クレジットカード情報やパスワードは含まれていない。第三者が実際に閲覧したかどうかは、利用している外部サービスの仕様上確認できておらず、現時点で不正利用や二次被害の報告は受けていない。 同社はフォームの設定を修正し、対象の顧客には登録メールアドレス宛てに個別に連絡する。今後は、問い合わせフォームを含む各種システムの設定と公開前の確認体制を見直すとしている。 なお本件は、同社が10月15日(木)に公表したWebサイトへの不正アクセスによる顧客情報流出とは、原因と経路が異なる別の事案だという。 《ScanNetSecurity》 一次情報または関連リンク 「株主・投資家の皆様からのお問い合わせフォーム」における、 お客様情報の閲覧可能状態に関するお詫びとお知らせ 関連記事 ソースネクストに不正アクセス、2,251万9,960件の会員情報が流出した可能性 2026.10.20 Tue 8:05 ソースネクスト・サイトへ不正アクセス、11万2,132名のカード情報漏えい 2023.2.15 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-3afc6dcd19",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "エレコム製無線LANルータにOSコマンドインジェクションの脆弱性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56851.html",
+      "publishedAt": "2026-11-19T23:00:14.000Z",
+      "summary": "103 views 独立行政法人情報処理推進機構（IPA）および一般社団法人JPCERT コーディネーションセンター（JPCERT/CC）は11月17日、エレコム製無線LANルータにおけるOSコマンドインジェクションの脆弱性について「Japan Vulnerability Notes（JVN）」で発表した。TeamT5のCharlie Chang氏が報告を行っている。影響を受けるシステムは以下の通り。 WRC-BE36QS-B v2.1.3およびそれ以前のバージョン WRC-BE36QSD-B v2.1.3およびそれ以前のバージョン WRC-W701-B v2.1.3およびそれ以前のバージョン エレコム株式会社が提供する無線LANルータには、OSコマンドインジェクションの脆弱性（CVE-2026-101113）が存在し、管理画面へアクセス可能な攻撃者によって、任意のOSコマンドを実行される可能性がある。 JVNでは、開発者が提供する情報をもとにファームウェアを最新版へアップデートするよう呼びかけている。 《ScanNetSecurity》 一次情報または関連リンク JVN 関連記事 エレコム製無線LANルータおよび無線アクセスポイントに複数の脆弱性 2026.8.3 Mon 8:00 エレコム製無線 LAN ルータおよび無線アクセスポイントに複数の脆弱性 2026.5.15 Fri 8:00 エレコムの一部ネットワーク製品に新たな脆弱性、使用を中止し代替製品への切り替えを検討するよう呼びかけ 2026.2.6 Fri 8:00 エレコム製クローン for Windows に引用符で囲まれていないファイルパスの脆弱性 2025.12.12 Fri 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-d25803af81",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+      "publishedAt": "2026-11-19T22:25:42.000Z",
+      "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]"
+    },
+    {
+      "id": "s-3d3c584590",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+      "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+      "publishedAt": "2026-11-19T08:14:00.000Z",
+      "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL. The exploits, published yesterday, are the researcher's proofs of concept against PostgreSQL, MySQL and ClickHouse, plus a separate Oracle chain that needs no"
+    },
+    {
+      "id": "s-7b2c191d75",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+      "publishedAt": "2026-11-19T08:00:00.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below -"
+    },
+    {
+      "id": "s-254cfa91cb",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "米当局、脆弱性の悪用リストに4件を追加",
+      "url": "https://www.security-next.com/193071",
+      "publishedAt": "2026-11-19T00:17:31.000Z",
+      "summary": "米当局、脆弱性の悪用リストに4件を追加 米当局は、「Apache Axis」「REDCap」「Synology DSM」「LiteLLM」に関する脆弱性が実際の攻撃で悪用されているとして注意を呼びかけた。 米サイバーセキュリティ・インフラセキュリティ庁（CISA）は現地時間2026年11月18日、「悪用が確認された脆弱性カタログ（KEV）」に4件の脆弱性を追加し、米行政機関へ対応を促した。脆弱性は広く悪用されるおそれがあり注意が必要。 「CVE-2026-90436」は、ウェブサービス間の通信に利用される「Apache Axis」に確認された脆弱性。細工した「SOAPフォルトメッセージ」を送信することで、認証なしに任意のクラスを読み込ませることができ、特定の条件下ではリモートからコードを実行されるおそれがある。 一方、「CVE-2026-90817」は、研究データなどの収集、管理に利用される「Research Electronic Data Capture（REDCap）」の脆弱性。公開アンケートに関する処理とデータインポート機能に確認された。 攻撃にはあらかじめ公開アンケートの有効なハッシュ値を把握する必要があるが、細工したHTTPリクエストを送りつけることにより、認証を必要とすることなく、サーバ上で任意のコードを実行できるという。 （Security NEXT - 2026/11/19 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-8f0283d525",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Firefox 160.0.1」公開 - 動画再生関連など脆弱性2件を修正",
+      "url": "https://www.security-next.com/192996",
+      "publishedAt": "2026-11-17T23:54:50.000Z",
+      "summary": "「Firefox 160.0.1」公開 - 動画再生関連など脆弱性2件を修正 Mozilla Foundationは、ウェブブラウザ「Firefox」で2件の脆弱性が判明したとして、セキュリティアップデート「Firefox 160.0.1」を公開した。 現地時間2026年11月17日にセキュリティアドバイザリを公開し、2件の脆弱性に対処したことを明らかにした。いずれの脆弱性も、重要度を4段階中2番目に高い「高（High）」とレーティングしている。 「CVE-2026-130021」は、音声や動画の再生処理を担うコンポーネント「Audio/Video:Playback」に確認された解放後のメモリを使用する「Use After Free」の脆弱性。 一方「CVE-2026-130020」は、Androidにおけるグラフィックス関連コンポーネント「Graphics:CanvasWebGL」に明らかとなった脆弱性。境界条件の扱いに不備があり、権限昇格につながるおそれがあるという。 （Security NEXT - 2026/11/18 ） ツイート 関連リンク PR 関連記事"
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "date": "2026-11-22",
+  "collectedAt": "2026-11-21T22:00:36.344Z",
+  "sourceSuccessCount": 23,
+  "items": [
+    {
+      "id": "s-5528942c99",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "WecoAI/aideml: AIDE: an LLM agent for machine learning engineering - the research Weco grew out of. Referenced in OpenAI MLE-bench.",
+      "url": "https://github.com/WecoAI/aideml",
+      "publishedAt": "2026-11-21T21:59:39.000Z",
+      "summary": "★1628 AIDE: an LLM agent for machine learning engineering - the research Weco grew out of. Referenced in OpenAI MLE-bench."
+    },
+    {
+      "id": "s-97c28dfefe",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ccch1mneyyy/dsh-Go: dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "publishedAt": "2026-11-21T21:59:26.000Z",
+      "summary": "★29580 dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。"
+    },
+    {
+      "id": "s-df43f2fe1a",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "macro-inc/macro: Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+      "url": "https://github.com/macro-inc/macro",
+      "publishedAt": "2026-11-21T21:58:03.000Z",
+      "summary": "★6424 Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory."
+    },
+    {
+      "id": "s-991cb8c748",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "Significant-Gravitas/AutoGPT: AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "publishedAt": "2026-11-21T21:57:02.000Z",
+      "summary": "★188127 AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters."
+    },
+    {
+      "id": "s-804843c774",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "WecoAI/awesome-autoresearch: Curated list of AutoResearch use cases with optimization traces and open source implementations",
+      "url": "https://github.com/WecoAI/awesome-autoresearch",
+      "publishedAt": "2026-11-21T21:55:34.000Z",
+      "summary": "★1078 Curated list of AutoResearch use cases with optimization traces and open source implementations"
+    },
+    {
+      "id": "s-05adf874bb",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "db-lyon/ue-mcp: Complete Unreal Engine development toolkit exposed as MCP tools.",
+      "url": "https://github.com/db-lyon/ue-mcp",
+      "publishedAt": "2026-11-21T21:53:53.000Z",
+      "summary": "★513 Complete Unreal Engine development toolkit exposed as MCP tools."
+    },
+    {
+      "id": "s-85fdd652f9",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "emoss08/Trenova: An AI-driven asset based Transportation Management System",
+      "url": "https://github.com/emoss08/Trenova",
+      "publishedAt": "2026-11-21T21:53:47.000Z",
+      "summary": "★199 An AI-driven asset based Transportation Management System"
+    },
+    {
+      "id": "s-de4bd89c48",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "kitfunso/hippo-memory: One memory for every agent you'll ever use. Hippo writes what you teach a coding agent into a store in your repo, and your other agents read that same store.",
+      "url": "https://github.com/kitfunso/hippo-memory",
+      "publishedAt": "2026-11-21T21:52:05.000Z",
+      "summary": "★794 One memory for every agent you'll ever use. Hippo writes what you teach a coding agent into a store in your repo, and your other agents read that same store."
+    },
+    {
+      "id": "s-f72111f2a5",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "wangzan101/Mika: An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "url": "https://github.com/wangzan101/Mika",
+      "publishedAt": "2026-11-21T21:50:48.000Z",
+      "summary": "★9444 An on-device AI agent for Android that operates apps and the web to get things done for you."
+    },
+    {
+      "id": "s-4d58a71c28",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "agentes-chat/agentes-chat: Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+      "url": "https://github.com/agentes-chat/agentes-chat",
+      "publishedAt": "2026-11-21T21:50:11.000Z",
+      "summary": "★1906 Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0."
+    },
+    {
+      "id": "s-6a65f47769",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI に作業を任せる時、合格条件を AI に変えさせない ── 守るファイルを決めて、変わったら止める",
+      "url": "https://qiita.com/chooser/items/c41eb07eb91be21f1022",
+      "publishedAt": "2026-11-21T21:46:20.000Z",
+      "summary": "上原正吉（EarthLink Network Co., Ltd.）。AI会社・AI社員による業務自動化と、人の逐次介入なしに24時間自動開発を回す仕組みを自社で実践しています。開発ノウハウと具体的な設定方法、運用して分かった改善点を公開しています。 AI に作業を任せる..."
+    },
+    {
+      "id": "s-f3487ac988",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "publishedAt": "2026-11-21T21:37:10.000Z",
+      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps."
+    },
+    {
+      "id": "s-ec16b4d0d4",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Altman, Torvalds, Yen. One has got his head screwed on",
+      "url": "https://www.theregister.com/ai-and-ml/2026/11/09/ai-echo-chambers-and-sanity-in-tech-leadership-three-case-studies/5308046",
+      "publishedAt": "2026-11-21T21:29:05.000Z",
+      "summary": "points=5 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-a1abc1ba27",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "A tale of two Nvidias",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "publishedAt": "2026-11-21T21:07:42.000Z",
+      "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return."
+    },
+    {
+      "id": "s-07966e87f8",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "慶應義塾大学などの血液AI解析のがん検査、卵巣がんの「99.5%」は、がんでない人を見分けた割合",
+      "url": "https://qiita.com/quotidia/items/943ba3a0bb4bce13506d",
+      "publishedAt": "2026-11-21T21:01:02.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 慶應義塾大学医学部・東海大学・湘南医療大学・NEC (日本電気) の研究チームが、血液中の「糖ペプチド」約1,700種類と腫瘍マーカー (がんがあると血液の中で増えることがある物質)、年齢など..."
+    },
+    {
+      "id": "s-c46d4c5bf9",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AIに必要なのは知識か、企業独自の判断基準か？　管理職調査で見えたAI活用の盲点",
+      "url": "https://kn.itmedia.co.jp/kn/article/2611/22/2000003384/",
+      "publishedAt": "2026-11-21T21:00:00.000Z",
+      "summary": "管理職を対象とした勤務先でのAI活用に関する調査では、半数以上が利用されなくなったAIツールや用途があると回答した。背景には、企業独自の判断基準に関わる課題があるようだ。"
+    },
+    {
+      "id": "s-fe6ad78cb5",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Webサイトの墓守〜迷走するバズの果てに〜",
+      "url": "https://qiita.com/lemonIN/items/eec2795ef1dae29c1845",
+      "publishedAt": "2026-11-21T20:36:46.000Z",
+      "summary": "Webサイトの墓守〜迷走するバズの果てに〜 企画概要 プレイヤーは、かつて人気を博したものの、今は跡形もなく荒廃した**「放置Webサイト」の管理人**に就任します。あなたの使命は、このデジタルな墓場に再び命を吹き込み、唯一無二のサイトへと育成すること。しかし、その道は..."
+    },
+    {
+      "id": "s-234da3fc18",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "The UN fails to agree on rules regulating ‘killer robots’",
+      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "publishedAt": "2026-11-21T20:03:37.000Z",
+      "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of negotiations. According to NPR: Before the negotiations got underway, the […]"
+    },
+    {
+      "id": "s-cd5b2565e4",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "手元で磨いた GASクイックを GitHub に出しました ── 棚 133 本と、コピペで置けるライブラリ版の話",
+      "url": "https://qiita.com/shu15511551/items/31720f7154e39924f552",
+      "publishedAt": "2026-11-21T19:59:01.000Z",
+      "summary": "はじめに ―― 前回の記事の続き、そして GitHub 公開のお知らせ 前回の記事で、Google スプレッドシートの操作窓から AI を使わずに棚（決まった手）と自作マクロを一覧から一瞬で撃つ道具「GASクイック」を紹介しました。 あの時点では「まだ手元で磨いてい..."
+    },
+    {
+      "id": "s-6d859339b1",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Upload2Shell · CVE-2026-125396",
+      "url": "https://pwn.ai/upload2shell",
+      "publishedAt": "2026-11-21T18:29:29.000Z",
+      "summary": "points=49 comments=12 (Hacker News)"
+    },
+    {
+      "id": "s-6328d58bb2",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "David Friedberg: Restricting Open Source AI Is a Path to Tyranny",
+      "url": "https://twitter.com/theallinpod/status/2123994998156722681",
+      "publishedAt": "2026-11-21T17:45:41.000Z",
+      "summary": "points=7 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-6ccebafcdf",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "publishedAt": "2026-11-21T17:00:00.000Z",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work."
+    },
+    {
+      "id": "s-dffab27fe8",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+      "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "publishedAt": "2026-11-21T16:00:00.000Z",
+      "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too."
+    },
+    {
+      "id": "s-a9f34b76fc",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Can Anthropic afford to put safety first?",
+      "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+      "publishedAt": "2026-11-21T15:00:00.000Z",
+      "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to […]"
+    },
+    {
+      "id": "s-e74727ec8a",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+      "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+      "publishedAt": "2026-11-21T14:00:00.000Z",
+      "summary": "Chess.com is ready to go a lot bigger than chess. After launching Gambit, a gambling-free poker site, earlier this year, the company is now adding 10 more games: backgammon, checkers, go, hearts, mahjong, shogi, sudoku, solitaire, xiangqi, and a Scrabble alternative called word. They're all part of Chess's new Classic Games platform, which is launching […]"
+    },
+    {
+      "id": "s-659c7ba28c",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "\"リーマン予想の証明\"の検証は現在どこまで進んでいるか｜加藤文元",
+      "url": "https://note.com/katobungen/n/n9c2bb939b9c7",
+      "publishedAt": "2026-11-21T13:55:02.000Z",
+      "summary": "（2026年11月21日夜現在。時刻は特に断らない限り日本時間。Andrew Sutherland氏の公開検証記録の最終更新、11月21日21時55分＝同日12時55分 UTCに基づく。） 2026年11月20日、Anthropicの数学者Levent Alpöge氏が、Claudeとともにリーマン予想を証明したと発表した。公表されたのは、わずか4ページの声明と、Leanという..."
+    },
+    {
+      "id": "s-a8a624c8c0",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "新宿駅で財布を忘れて家に帰れない女の子から「PayPay1000円分を現金で交換して貰えませんか？」とお願いされ、「返さなくていいよ」と1000円あげたら喜ばれず戸惑っていた",
+      "url": "https://togetter.com/li/2773268",
+      "publishedAt": "2026-11-21T12:31:59.000Z",
+      "summary": "はも @hamo_0203 前に新宿駅で20代前半の女の子に「財布を忘れて家に帰れて無くて困ってて…。PayPay1000円分を現金で交換して貰えませんか？」って話しかけられて、あらぁ…可哀想に…😭って田舎モンだからめちゃくちゃ信じたのね。 それが、PayPayから情報を抜き取る犯罪って知らなくて。 でも、私、その時→ 2026-11-21 0..."
+    },
+    {
+      "id": "s-544eeb9c90",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "コードに無い「決めた理由」をどう残すか。LLM Wikiに書かせるものを2つに絞った",
+      "url": "https://zenn.dev/mizo_ko/articles/article-008-zenn",
+      "publishedAt": "2026-11-21T11:10:08.000Z",
+      "summary": "決めたこととその理由に、元の議論への参照を必ず付けて残す「意思決定ログ」を、LLMにWikiへ書かせた 書かせたのは2つだけ。コードを読んでも分からない「決めたこととその理由」と、mobileとbackendをまたぐ処理の流れ 手で作った2ページに、出典つきの決めたことが41件残った。人にもAIにも、調べやすく、たどりやすい形になった 前提。元のWikiは理由を書く場所だったのに、理由が残らなくなった 私はPMとして、美容サロン向けのモバイルアプリを作っている。対象の機能は肌診断。 元のWikiは、技術選定の理由を書く場所だった。ところが更新が追いつかなくなって、理由が残らなくな..."
+    },
+    {
+      "id": "s-66339e6941",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "GitHub - mitaku/andon: A one-person software factory: AI coding agents take tasks from a ledger through review to merge, and call the human only for decisions only they can make.",
+      "url": "https://github.com/mitaku/andon",
+      "publishedAt": "2026-11-21T10:52:10.000Z",
+      "summary": "Andon — a one-person software factory. AI coding agents take issues from a ledger through implementation, review and merge, and the human is called only for the decisions that only they can make. 一人で使うソフトウェア工場。エージェントが kanban の課題を実装・レビュー・マージまで流し、オーナーは..."
+    },
+    {
+      "id": "s-5bb9dbea1d",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "判定AIは現場で使えるか — 設備点検記録48件で Jev と d1 を測った全記録",
+      "url": "https://zenn.dev/jodycraft/books/judgement-ai-48",
+      "publishedAt": "2026-11-21T10:40:16.000Z",
+      "summary": "設備点検記録48件という同じ題材で、判定専用モデル Jev と d1 を7回測った記録。精度→データ→速度→壊れ方→組み込み→選定の順に、現場で使える場面と使えない場面を切り分ける。レコード別の生データ、質問文、実際に動くC#コード付き。"
+    },
+    {
+      "id": "s-6892a487df",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "手順書は「お願い」、フックは「決まり」——CLAUDE.md・AGENTS.md・SKILL.md と、機械で断る関所を自分の記録で比べる",
+      "url": "https://zenn.dev/zeuslab/articles/df65e8457149ea",
+      "publishedAt": "2026-11-21T10:26:49.000Z",
+      "summary": "手順書に「必ずこうする」と書いても、AIのエージェントがいつも守るとは限りません。当方の作業でも、「返事は日本語で」という常設の決まりが、長い会話が要約された後に抜け落ちたことがありました。文章で書いた決まりは、あくまで「お願い」です。 この記事では、エージェントが読む3つのファイルと、実際に呼び出しを断る「フック」を並べ、それぞれが何に向いているかを、当方の記録の数字と一緒に整理します。 数字は、当方のイベントの記録（2026-11-12 10:35〜2026-11-14 02:50 UTC・1,924件、そのうち道具の呼び出し1,431件）から数えたものです。当方の環境の値で、ほかの..."
+    },
+    {
+      "id": "s-e02e549075",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIで動いたものが、正しいとは限りません。個人開発と、人から受けた開発は分けて考える",
+      "url": "https://zenn.dev/ahagate/articles/b5fb94f80b318f",
+      "publishedAt": "2026-11-21T10:08:31.000Z",
+      "summary": "今、AIでプログラミングを書いたり、何かを作ったりする人が増えています。 AIは誰でも使えますし、未経験の人でも、やろうと思えば開発できちゃうんですね。 作ろうと思えば、1日でだいたいのものはできてしまいます。 ただ、プログラミングにおいては、まだ人間側の判断が必要というのが僕の見解です。 今日は、その理由と、AIに全部任せていい場面・任せないほうがいい場面を書いていきます。 「動いた」と「正しい」は別 AIの指示通りに進めて、ちゃんと動いた。 でも、それが自分の思っていたことと一致しているのか。 ここを判断できない場合が、多々あるんですね。 例えば、作ったものをサーバーにアップロー..."
+    },
+    {
+      "id": "s-f647e5e99f",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Shopify の Tobi Lütke が語った、AI が選択肢ではない会社（#46 要点解説）",
+      "url": "https://zenn.dev/talks_tldr_jp/articles/tldr46-lutke-summary",
+      "publishedAt": "2026-11-21T10:02:23.000Z",
+      "summary": "! この記事は、Sources（Alex Heath、2026-10-28 公開）で Shopify 共同創業者・CEO の Tobi Lütke が語った内容を、紹介と論評を目的に要点抽出したものです。翻訳の全文ではなく、筆者の見解を含みます。網羅的な要約ではなく、元動画の代わりにはなりません。元動画: https://www.youtube.com/watch?v=r9SHzCW9zxo 前置き 動画（1 時間 24 分）ではエージェントによる買い物や広告など EC の話も扱っています。この記事では、ショート動画にした 10 本の範囲、つまり AI と働き方・組織・本人の AI..."
+    },
+    {
+      "id": "s-c416762d74",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「AIが私を追い越した」　リーマン予想「証明」の数学者自身も驚き：朝日新聞",
+      "url": "https://www.asahi.com/articles/ASVCP2WB0VCPDIFI008M.html",
+      "publishedAt": "2026-11-21T10:01:36.000Z",
+      "summary": "人工知能（AI）の力を借りて、167年来の難問「リーマン予想」を証明した――。米国の数学者が20日明らかにした発表で、数学界に衝撃が走っている。リーマン予想とはそもそもどんな難問なのか。証明を発表し…"
+    },
+    {
+      "id": "s-2802a7e34a",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "リーマン予想の次に崩れるのは「学問の縦割り」かもしれない ― AI時代の研究はアジャイルになる",
+      "url": "https://zenn.dev/koukoui/articles/efca70ea1dcec7",
+      "publishedAt": "2026-11-21T09:56:05.000Z",
+      "summary": "! この記事の要点 AIとLeanによって、何年もかかっていた数学の証明が「時間」単位で回り始めている 証明が研究のボトルネックでなくなると、ボトルネックは「意味の確認」「実証」「目的の設定」へ移動する AIが分野をつなぐ「横串」になり、目的から始めて数学から社会までを回す「アジャイル型の学問」が可能になる そのとき人間に残る最も重要な仕事は、「何のために問いを立て、解くのか」を決めること はじめに 2026年、AIが数学の難問を解いたという報告が続いています。どちらも「証明が主張された」段階で、専門家による検証はまだ終わっていません。 ナビエ–ストークス方程式（2026年..."
+    },
+    {
+      "id": "s-fe07c6fa96",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Claude Code の完了報告が嘘だった4つの型と、受け取ったときに聞く3つのこと",
+      "url": "https://zenn.dev/maura/articles/db8579579b1b81",
+      "publishedAt": "2026-11-21T09:54:22.000Z",
+      "summary": "AI に作業を任せていると、「作成しました」「検証しました」という完了報告を受け取ります。私は Claude Code に毎日の作業を任せていて、この報告が事実と違ったことが何度かあります。私の環境では、いくつもの AI の会話が、役割を分けて同時に動いています。そのぶん、報告の食い違いも起きやすい環境です。 ここで言う「嘘」は、わざとかどうかを問いません。完了報告や、作業中の断定のうち、事実と違っていた物をまとめて指します。振り返ると、そこには型がありました。 やっていないのに「検証した」と書く 測ったのは本当だが、古い数字を「今」として書く 時刻を知らないまま「明日」「もう終わった..."
+    },
+    {
+      "id": "s-26dbbe3c55",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AI に鍵を渡す前に ― 個人・小さなチームのための AI 時代のセキュリティ運用ルール",
+      "url": "https://zenn.dev/neuralalpha/books/ai-security-ops-rules",
+      "publishedAt": "2026-11-21T09:26:42.000Z",
+      "summary": "AI エージェントに調べもの・投稿・販売・公開を任せると、AI は「目」（読めるもの）、「手」（できる操作）、「鍵」（ログインやキー）を持ちます。IPA「情報セキュリティ10大脅威 2026」で初選出・3位の「AIの利用をめぐるサイバーリスク」と OWASP の AI エージェント向け10大リスクを、1人〜数人の運用に置き換え、いくつもの事業を AI で回している筆者が実際に使っている決まり（秘密情報の置き場所、権限の段階、外の文章に従わない、入れる前に読む、人が承認する操作、起きたときの手順）を、実際の出来事と点検方法つきで解説します。攻撃の手順は書きません。1〜2章は無料。"
+    },
+    {
+      "id": "s-1a98175d99",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "GitHub - fkubota/understand-mode: Claude Code の出力・PR・コードを、付箋のホワイトボードで寄り道しながら理解する /understand スキル",
+      "url": "https://github.com/fkubota/understand-mode",
+      "publishedAt": "2026-11-21T09:00:34.000Z",
+      "summary": "You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or window. Reload to refresh your session. Dismiss alert"
+    },
+    {
+      "id": "s-d16c2c0945",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "形式検証を活用した脆弱性診断LLMのプロトタイプをEthereum Foundationに納品｜Nyx Foundation",
+      "url": "https://note.com/nyxfoundation/n/n782d4fb32344",
+      "publishedAt": "2026-11-21T07:28:49.000Z",
+      "summary": "Nyx Foundationは、Ethereum FoundationのSecurity Grantのもとで、LLMを使った脆弱性診断ツールSPECAを開発し、プロトタイプを納品しました。仕様書から診断の確認項目を作り、その条件を実装が満たすかを調べる仕組みです。形式検証で記述・証明した性質を、診断の確認項目へつなぐ機能も整備しています。 ソフトウェ..."
+    },
+    {
+      "id": "s-e5c86ec9a7",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "令和8年に「INFOBAR」が復活するも、通話とSMSしかできない「ダムフォン」に",
+      "url": "https://www.itmedia.co.jp/mobile/articles/2611/21/news011.html",
+      "publishedAt": "2026-11-21T06:49:45.000Z",
+      "summary": "アクセス数の1位と2位は、KDDIの「au Design project」発のSIMロックフリー携帯電話「INFOBAR ZERO」に関する話題でした。 INFOBARといえば、2001年に「info.bar」としてコンセプトモデルが登場し、2003年に当時の鳥取三洋電機（現在のLIMNO）が開発と製造を手掛けた「INFOBAR」として製品化されました。 これまでのINFO..."
+    },
+    {
+      "id": "s-338e93f9f4",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "スシロー、アメリカ・ニューヨーク1号店が大行列の人気「チップ不要なシステムも好評の理由」→アメリカ人も面倒くさいと思ってるのかよ…",
+      "url": "https://togetter.com/li/2773198",
+      "publishedAt": "2026-11-21T06:18:40.000Z",
+      "summary": "ライブドアニュース @livedoornews 【開店】スシロー、アメリカ・ニューヨーク1号店に行列「チップ不要」に称賛の声 news.livedoor.com/article/detail… チップ不要のシステムも好評で、来店客から「スタッフが受け取るべき報酬を最初から料金に含めるという考え方が気に入っています。いい仕組みだと思います」という声..."
+    },
+    {
+      "id": "s-8b19c05b60",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "企業はAIをどう選ぶようになった？　ChatGPT、Copilot、Geminiの勢力図",
+      "url": "https://kn.itmedia.co.jp/kn/article/2611/21/2000003385/",
+      "publishedAt": "2026-11-21T05:22:15.000Z",
+      "summary": "企業が業務で利用するAIサービスの顔ぶれが変わりつつある。従来のように個別のAIサービスを選ぶだけでなく、既存の業務環境に組み込まれたAIを利用する動きも広がっているようだ。"
+    },
+    {
+      "id": "s-2b32d4b379",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "[AINews] Riemann Hypothesis proved...twice independently",
+      "url": "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/",
+      "publishedAt": "2026-11-21T05:02:13.000Z",
+      "summary": "November 20 2026 —"
+    },
+    {
+      "id": "s-3628ce26a7",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "New in AWS Quick: More capable flows, an updated web experience, and agents that work together",
+      "url": "https://aws.amazon.com/blogs/machine-learning/new-in-aws-quick-more-capable-flows-an-updated-web-experience-and-agents-that-work-together/",
+      "publishedAt": "2026-11-21T01:06:42.000Z",
+      "summary": "AWS Quick is the AI workspace built only for work. Today we're releasing updates that help your team get more done: build and run business-process flows in chat, triage your day in the updated web app, get more complete answers from multiple agents at once, and connect new data sources like Meta ads and Amplitude."
+    },
+    {
+      "id": "s-e1b0c4ede4",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "Cut self-hosted LLM cost and latency with the distributed KV caching agent skill",
+      "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill/",
+      "publishedAt": "2026-11-21T00:14:26.000Z",
+      "summary": "Self-hosting LLMs on GPUs means paying to recompute the same context on every turn. Distributed KV caching with Amazon ElastiCache can cut inference cost by up to 40% and time to first token by up to 80%. This post walks through the distributed KV caching skill in the Agent Toolkit for AWS, which evaluates and sets up the cache from your coding agent."
+    },
+    {
+      "id": "s-80c508e366",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AIで成果を出す企業ほど「人を増やす」？　“通説”を否定する調査結果をIDCが発表",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2611/21/news003.html",
+      "publishedAt": "2026-11-21T00:00:00.000Z",
+      "summary": "「AIが普及すれば企業の人員は減る」という通説と食い違う調査結果を、IDCが発表した。AI投資で高いROIを得ている組織ほど、今後の増員を見込む割合が高い。AIで成果を出す企業が人員を増やすのはなぜか。"
+    },
+    {
+      "id": "s-668baa7101",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "Introducing managed cluster extensions for observability and user management in Amazon SageMaker HyperPod Slurm",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+      "publishedAt": "2026-11-20T23:07:03.000Z",
+      "summary": "Amazon SageMaker HyperPod now offers managed cluster extensions for observability and user management, bringing declarative, API- and console-driven configuration to the software running on Slurm cluster nodes. This post explains how the extensions work and follows a platform team through a quarter of running a shared Slurm cluster with them."
+    },
+    {
+      "id": "s-5259c7996b",
+      "source": "AWS Machine Learning Blog",
+      "sourceType": "vendor",
+      "title": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+      "publishedAt": "2026-11-20T22:35:24.000Z",
+      "summary": "Amazon SageMaker HyperPod introduces the Global Inference Gateway, one managed endpoint that routes inference requests across your HyperPod clusters in one Region or across Regions. It picks the best cluster, fails over automatically, and authenticates every request with SigV4 and IAM over AWS PrivateLink."
+    },
+    {
+      "id": "s-7ce40af713",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.330",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "publishedAt": "2026-11-20T22:32:56.000Z",
+      "summary": "What's changed Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login , Claude Code applies the organization's settings and uses its cloud provider or gateway Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /"
+    },
+    {
+      "id": "s-6b472cab2b",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "How to simplify cloud access with Unified Access Policies, now in preview",
+      "url": "https://cloud.google.com/blog/products/identity-security/how-to-simplify-cloud-access-with-unified-access-policies/",
+      "publishedAt": "2026-11-20T17:00:00.000Z",
+      "summary": "As organizations scale their cloud footprint to thousands of autonomous agents and microservices, you can accidentally create an operational bottleneck with strict Identity and Access Management (IAM). Meanwhile, administrators still need to enforce least privilege across thousands of resources without slowing down engineering velocity. Enter Unified Access Policies (UAPs), Google Cloud's next-gen"
+    },
+    {
+      "id": "s-480c7f59bb",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "llm-gemini 0.38.1",
+      "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/",
+      "publishedAt": "2026-11-20T03:01:57.000Z",
+      "summary": "Release: llm-gemini 0.38.1 Gemini 4 Carbon only supports low , medium and high reasoning levels - but Gemini 4 Hydrogen and Gemini 4 Neon both have an extra xhigh level. I missed that when I added those models to the llm-gemini plugin, which is now fixed in this dot release. The xhigh setting for Hydrogen makes a significant difference. I updated my Gemini 4 comparison grid - note how Hydrogen at "
+    },
+    {
+      "id": "s-c8ec3e0aa2",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "ヒューマノイドからAIビジョンまで、三菱電機「Serendie Automation」の具体像",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2611/20/news045.html",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "summary": "三菱電機は、FA向けの新たな統合ソリューションブランドとして「Serendie Automation」を展開することを発表した。後編では「Serendie Automation」を体現する技術展示の内容を紹介する。"
+    },
+    {
+      "id": "s-c75f90be26",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "Mac版「Gemini」にユーザーの代わりにアプリを操作する「computer use」機能追加　まず米国で",
+      "url": "https://www.itmedia.co.jp/news/article/2611/20/2000003356/",
+      "publishedAt": "2026-11-19T23:41:04.000Z",
+      "summary": "Googleは、Mac版「Gemini」アプリにAIが画面を認識してアプリを自動操作する「computer use」機能を追加した。隔離されたバックグラウンドウィンドウで動作するため、ユーザーの作業を妨げずにファイルやWebをまたいだ複数手順の業務を代行できる。まずは米国の有料プラン加入者向けに英語版から提供を始める。"
+    },
+    {
+      "id": "s-0d1f901b2b",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "The Blueprint: How Kult built a gaming companion that actually knows your game",
+      "url": "https://cloud.google.com/blog/products/gaming/kult-built-a-gaming-companion-with-gemini-that-actually-knows-your-game/",
+      "publishedAt": "2026-11-19T23:00:00.000Z",
+      "summary": "Welcome to The Blueprint , our ongoing series where we highlight how Google Cloud customers are tackling unique and common challenges across industries using the latest AI and cloud technologies. We hope to inspire others looking to innovate in their work. Kult is a London-based startup building a companion experience for games. It sits alongside your session, understands the game you are playing "
+    },
+    {
+      "id": "s-08a81b7f6a",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「名ばかりFDE」を見抜けるか？　依頼検討時に確認したい10項目",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2611/20/news028.html",
+      "publishedAt": "2026-11-19T23:00:00.000Z",
+      "summary": "FDEを名乗るAI導入支援サービスは、名称通りエンジニアが現場で開発するのか。AI導入支援を手掛けるゴムマリは、契約の指針などを基に依頼前に確かめたい10項目を整理し、国内40社の公式サイトでの記載状況を調べた。IT部門は見積もり時に何を確認すべきかを検討するヒントになりそうだ。"
+    },
+    {
+      "id": "s-4dcfc7e85a",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「おもてなし以外」はAIで――多忙化する美容部員、資生堂はGeminiでどう変えたか",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2611/20/2000003336/",
+      "publishedAt": "2026-11-19T23:00:00.000Z",
+      "summary": "資生堂ジャパンの担当者がグーグル・クラウド・ジャパン開催のイベントに登壇。AIで美容部員（PBP）を支える取り組みと今後の構想を語った。"
+    },
+    {
+      "id": "s-f45d6fee2d",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "なぜ中国はヒューマノイドを量産するのか　突き動かす「焦り」と足踏みの正体",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2611/20/news014.html",
+      "publishedAt": "2026-11-19T22:00:00.000Z",
+      "summary": "中国ではヒューマノイド（ヒト型ロボット）の量産が進んでいる。出荷の拡大がそのまま実用化を意味するわけではないが、日本にまだ勝ち筋はあるのか。SUGENAが開催したセミナーから、中国がロボットに注力する背景や量産の実態、実用化に向けた課題を探り、日本企業が取るべき戦略を考える。"
+    },
+    {
+      "id": "s-b15996e740",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "ProtoDiffusion: Token-per-Layer Generative Modeling of Multi-Layer Images",
+      "url": "https://arxiv.org/abs/2611.26586v1",
+      "publishedAt": "2026-11-19T18:45:31.000Z",
+      "summary": "Graphic designs are ordered compositions of RGBA layers whose separation enables selection, movement, and reuse. Existing layered models represent each layer with a full-canvas or region-sized spatial latent grid, so representation size grows with the cumulative spatial extent of the layers. We present ProtoDiffusion, a latent-diffusion framework built on ProtoVAE, a multi-layer variational autoen"
+    },
+    {
+      "id": "s-94590bef9d",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "GEOHunter: Mapping a Generative Engine Optimization Network in the Wild",
+      "url": "https://arxiv.org/abs/2611.26564v1",
+      "publishedAt": "2026-11-19T18:33:42.000Z",
+      "summary": "Generative engines synthesize retrieved web pages into answers, recommendations, and rankings. Generative engine optimization (GEO) services sell visibility in these answers by publishing promotional articles on user-generated-content (UGC) platforms for paying clients. Such promotion raises concerns in medical and financial domains, where misleading advice can cause harm. To study the severity of"
+    },
+    {
+      "id": "s-ab8adbb217",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "HiSA: Sparsifying the Hidden Dimension of RoPE Attention in LLMs",
+      "url": "https://arxiv.org/abs/2611.26363v1",
+      "publishedAt": "2026-11-19T16:31:46.000Z",
+      "summary": "Attention in large language models (LLMs) scores every query against every key with a full dot product. We investigate whether this dot product must be computed completely for attention to be effective. We propose Hidden Sparse Attention (HiSA), which keeps the query and key projections intact but only computes a partial dot product, following a static, parameter-free rule set by the token positio"
+    },
+    {
+      "id": "s-9fcb95c57d",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Beam Model Technical Report",
+      "url": "https://arxiv.org/abs/2611.26358v1",
+      "publishedAt": "2026-11-19T16:28:23.000Z",
+      "summary": "Beam is a sparse Mixture-of-Experts (MoE) model with 501.3B total parameters and 23.4B active parameters, specifically built and optimized for coding, reasoning, and agentic workloads. Beam delivers frontier level reasoning, while requiring 3-4x less inference compute than many models of its class. Pretrained on 23.8T diverse, curated, high-quality tokens, Beam features a 1M-token context window a"
+    }
+  ]
+}

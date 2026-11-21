@@ -1,0 +1,171 @@
+{
+  "date": "2026-11-22",
+  "collectedAt": "2026-11-21T22:01:27.472Z",
+  "researchSummary": "**調査メモ：介護現場におけるGemini Notebook（旧NotebookLM）を活用した「厚労省の膨大な制度・Q&A・マニュアル資料の横断検索と実務への即時適用」**\n\n### 1. 概要・背景\n* **課題:** 介護現場（訪問介護、通所介護、特養・老健、居宅介護支援など）では、厚生労働省や自治体から出される膨大な量の制度改正資料、運営基準、報酬改定Q&A、各種ガイドライン（感染症対策、BCP、虐待防止等）に目を通し、日々の実務や行政の「実地指導対策」に備える必要があるが、分量が多すぎて管理や検索に膨大な時間がかかっている。\n* **活用ツール:** **Gemini Notebook**（旧NotebookLM）\n* **特徴・相性:** インターネット上の不特定な情報ではなく、ユーザーがアップロードした特定のドキュメント（厚労省のPDF等）を情報源（ソース）に限定して読み込ませることができるため、ハルシネーション（誤情報）のリスクを抑えつつ、現場特化型の専用データベースを構築できる。\n\n---\n\n### 2. 今日から検討できる具体的な実践手順\n1. **資料の収集:** 厚生労働省のホームページ等から、自事業所に関連する「介護報酬改定に関するQ&A（Vol.1〜各弾）」や「運営基準の解釈通知」「業務継続計画（BCP）策定ガイドライン」などの公式PDFをダウンロードする。\n2. **Notebookの作成:** GoogleアカウントでGemini Notebookにログインし、新規ノートブックを作成して、上記で集めた公式PDFファイルをアップロードする（最大50個までソース追加可能）。\n3. **現場からの問い合わせ・実務活用:**\n   * スタッフや管理者が、日常の業務で疑問に思ったこと（例：「訪問介護における同行訪問の算定要件の細則は？」「通所介護の送迎減算の適用条件を要約して」など）をチャット形式で質問する。\n   * AIが該当する厚労省の公式資料の箇所をピンポイントで探し出し、根拠となるページや文面を添えて正確に回答を生成する。\n4. **研修資料・マニュアルの自動要約・構成案化:** アップロードした厚労省の長大な指針をもとに、「当事業所の新人職員向けに、感染対策の要点を3つにまとめたスライド構成案を作って」と指示し、研修準備の負担を劇的に軽減する。\n\n---\n\n### 3. 裏付けとなる公的情報・信頼性\n* 厚生労働省やデジタル庁が推進する生成AIの利用ガイドライン、および各種実務者向けDX解説において、個人情報の入力リスクを回避しつつ、**「公開されている公的文書やマニュアルの読み込み・要約・検索」**を目的とした汎用AIの活用は、セキュリティ上の安全性が高く、現場の事務負担を減らす有効なアプローチとして推奨されている。",
+  "webSearchQueries": [
+    "厚生労働省 介護現場 生成AI ガイドライン 活用事例",
+    "ケアマネジャー 生成AI 活用 事例 厚生労働省",
+    "NotebookLM 介護 活用 厚生労働省",
+    "サイト:go.jp 介護現場 生成AI ガイドライン 厚生労働省",
+    "サイト:go.jp デジタル庁 生成AI 利用ガイドライン 公務業務"
+  ],
+  "searchEntryPointHtml": "<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUsZVQuzBMPayLNT3hvBMIbZcv9Vg5eZEVB_xZ84TebUJJedg8yJWMBMgxmZaLPeobpNrv5Gbx1Jgenm4UvykME3bXo1kx2lQkOdG9JyCjvSuhRyt16A3yZiHvQhm3x7RbXZgMWXZnWs1yqHSjQGVnlj6TS4SpijZ0Xn9r7yLb0sum0sGh0mk79Ym12S6XNhaVWB4n83uMLCKVD-bJLkAaFad7yEOKqbhRKVghYeC0QSUaIMgOk6Ec32Kzk5DM4vzNjRrcWd4hh7CWKsxZMmxkbchoThDjii_xompUCiKGXdA=\">NotebookLM 介護 活用 厚生労働省</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLDmUZshL1RjPySIUdN3jVcBlkb4-BgyyqLxI_BEXNibdoV1wcbiWuWOWfs1XXeQas9BY1gCJu-jPhF12N7eW3TkkzATnI56UPGx8wg9jY1Q0kaOHfD8Hrg19ont3J879CQ_N3fyJZJZy_VMtHCRpA3KijYMDh6nBxXE_eani-7nhjHByEXdwcfJnVVlM_r_s6GVPEgtEEGlm3WtU29GXM35MlqCGU_YmndniwxOjmotAUei6kDY-6VIfvDBtizgfeD6jSyv1hWIRQEg2ZalAYDubf_aYIwczOBSUCWfdNGuQ7N71mOWDuF-q_M7o030SCh7IfPaW6VFbgH-a1II19nHC-fIn56wmfFatAEBWz-g-xkDIPO3aNV8OteZS-EMU6EIYlhHLYspSKHo0nple4rUpJHDL3QpPrRxY29rgzj9qfXp-_kQ==\">厚生労働省 介護現場 生成AI ガイドライン 活用事例</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6c4QiwZk3Z_8aGYxYmV2kT66Uq7rtj-S9U3hAuXmwIYZRVzoe8ar3xGDdiM-EI9DTG9S6ng_ssy8zmKud85Xx0fOcNae50w-uy8pzIL9FgfRvmfIBZbfsuhEKWoJyp7rvotgfJhXyKRsB5jJl-V0X-FCwYfkq46YHBcii7pu28_o1zIDsdefBsQPlwuiNIhx6RBB6b9F3FNSer-xgkJTCnjMtIkA-zgEz0ajKMMfEzgXgb44d00bpPx4YTXqr3hO4c1lKY17fOUCf4ZVte1kvhMY_OnWIPKAFmXdh1gWfVp6-xC71ssm0RtlkG_vL32D4KlIpsOf72B_Zvt4VPZkrWhF221WDCbC0RO0FeVx2t9dnyONMtdr6WFiGw1pKSfa9XD0TxvcCW0aboQ==\">ケアマネジャー 生成AI 活用 事例 厚生労働省</a>\n  </div>\n</div>\n\n<style>\n.container {\n  align-items: center;\n  border-radius: 8px;\n  display: flex;\n  font-family: Google Sans, Roboto, sans-serif;\n  font-size: 14px;\n  line-height: 20px;\n  padding: 8px 12px;\n}\n.chip {\n  display: inline-block;\n  border: solid 1px;\n  border-radius: 16px;\n  min-width: 14px;\n  padding: 5px 16px;\n  text-align: center;\n  user-select: none;\n  margin: 0 8px;\n  -webkit-tap-highlight-color: transparent;\n}\n.carousel {\n  overflow: auto;\n  scrollbar-width: none;\n  white-space: nowrap;\n  margin-right: -12px;\n}\n.headline {\n  display: flex;\n  margin-right: 4px;\n}\n.gradient-container {\n  position: relative;\n}\n.gradient {\n  position: absolute;\n  transform: translate(3px, -9px);\n  height: 36px;\n  width: 9px;\n}\n@media (prefers-color-scheme: light) {\n  .container {\n    background-color: #fafafa;\n    box-shadow: 0 0 0 1px #0000000f;\n  }\n  .headline-label {\n    color: #1f1f1f;\n  }\n  .chip {\n    background-color: #ffffff;\n    border-color: #d2d2d2;\n    color: #5e5e5e;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #f2f2f2;\n  }\n  .chip:focus {\n    background-color: #f2f2f2;\n  }\n  .chip:active {\n    background-color: #d8d8d8;\n    border-color: #b6b6b6;\n  }\n  .logo-dark {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #fafafa 15%, #fafafa00 100%);\n  }\n}\n@media (prefers-color-scheme: dark) {\n  .container {\n    background-color: #1f1f1f;\n    box-shadow: 0 0 0 1px #ffffff26;\n  }\n  .headline-label {\n    color: #fff;\n  }\n  .chip {\n    background-color: #2c2c2c;\n    border-color: #3c4043;\n    color: #fff;\n    text-decoration: none;\n  }\n  .chip:hover {\n    background-color: #353536;\n  }\n  .chip:focus {\n    background-color: #353536;\n  }\n  .chip:active {\n    background-color: #464849;\n    border-color: #53575b;\n  }\n  .logo-light {\n    display: none;\n  }\n  .gradient {\n    background: linear-gradient(90deg, #1f1f1f 15%, #1f1f1f00 100%);\n  }\n}\n</style>\n<div class=\"container\">\n  <div class=\"headline\">\n    <svg class=\"logo-light\" width=\"18\" height=\"18\" viewBox=\"9 9 35 35\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M42.8622 27.0064C42.8622 25.7839 42.7525 24.6084 42.5487 23.4799H26.3109V30.1568H35.5897C35.1821 32.3041 33.9596 34.1222 32.1258 35.3448V39.6864H37.7213C40.9814 36.677 42.8622 32.2571 42.8622 27.0064V27.0064Z\" fill=\"#4285F4\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 43.8555C30.9659 43.8555 34.8687 42.3195 37.7213 39.6863L32.1258 35.3447C30.5898 36.3792 28.6306 37.0061 26.3109 37.0061C21.8282 37.0061 18.0195 33.9811 16.6559 29.906H10.9194V34.3573C13.7563 39.9841 19.5712 43.8555 26.3109 43.8555V43.8555Z\" fill=\"#34A853\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.6559 29.8904C16.3111 28.8559 16.1074 27.7588 16.1074 26.6146C16.1074 25.4704 16.3111 24.3733 16.6559 23.3388V18.8875H10.9194C9.74388 21.2072 9.06992 23.8247 9.06992 26.6146C9.06992 29.4045 9.74388 32.022 10.9194 34.3417L15.3864 30.8621L16.6559 29.8904V29.8904Z\" fill=\"#FBBC05\"/>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M26.3109 16.2386C28.85 16.2386 31.107 17.1164 32.9095 18.8091L37.8466 13.8719C34.853 11.082 30.9659 9.3736 26.3109 9.3736C19.5712 9.3736 13.7563 13.245 10.9194 18.8875L16.6559 23.3388C18.0195 19.2636 21.8282 16.2386 26.3109 16.2386V16.2386Z\" fill=\"#EA4335\"/>\n    </svg>\n    <svg class=\"logo-dark\" width=\"18\" height=\"18\" viewBox=\"0 0 48 48\" xmlns=\"http://www.w3.org/2000/svg\">\n      <circle cx=\"24\" cy=\"23\" fill=\"#FFF\" r=\"22\"/>\n      <path d=\"M33.76 34.26c2.75-2.56 4.49-6.37 4.49-11.26 0-.89-.08-1.84-.29-3H24.01v5.99h8.03c-.4 2.02-1.5 3.56-3.07 4.56v.75l3.91 2.97h.88z\" fill=\"#4285F4\"/>\n      <path d=\"M15.58 25.77A8.845 8.845 0 0 0 24 31.86c1.92 0 3.62-.46 4.97-1.31l4.79 3.71C31.14 36.7 27.65 38 24 38c-5.93 0-11.01-3.4-13.45-8.36l.17-1.01 4.06-2.85h.8z\" fill=\"#34A853\"/>\n      <path d=\"M15.59 20.21a8.864 8.864 0 0 0 0 5.58l-5.03 3.86c-.98-2-1.53-4.25-1.53-6.64 0-2.39.55-4.64 1.53-6.64l1-.22 3.81 2.98.22 1.08z\" fill=\"#FBBC05\"/>\n      <path d=\"M24 14.14c2.11 0 4.02.75 5.52 1.98l4.36-4.36C31.22 9.43 27.81 8 24 8c-5.93 0-11.01 3.4-13.45 8.36l5.03 3.85A8.86 8.86 0 0 1 24 14.14z\" fill=\"#EA4335\"/>\n    </svg>\n    <div class=\"gradient-container\"><div class=\"gradient\"></div></div>\n  </div>\n  <div class=\"carousel\">\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJcgFYTHs_XrNe8mzI6H3LsfX7LrM5_VP63fBBCtHuw71QTtKefkUFZg3jt-Lh9st8EZnzyoyO6HuQbdaGs6QGnpgKajPi7ExgwxI3HTN1oCfBOIyNuUly23lnjz0q8D3gEZdPLdRW4N6SGRu80dkx3_kmn6I8a2wKiiWRvK2-oxUmBV4OoZk1C-Kx4soRQf43L7kJV2AuLFRgTs6QaXURr4986zJTHgyCaHs38yv7_fu3WGm3YMtxlVIC4rN_yrwO2F0dgAWyAiTRPTGjhytI5vr1dkQHc-dFWkxWgpL6OTeIkOkIGJd-3NX2t1EgbvzrUKf6XIOq7cxKaxRwa-y1jpEFykGx6i1JhziLiTubc4MUEVL_eKGEjqZhtbIQrB_EBwflpwQlAA4D8Yj2gNFsHk60_rFKHH0RJFOLzaerxHkLp7FvFHHR3korJGZ2xiS9TcvsF14=\">サイト:go.jp デジタル庁 生成AI 利用ガイドライン 公務業務</a>\n    <a class=\"chip\" href=\"https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEO4md2MmsV4Echl2SWEehhnIlWWzWIVnldn1xifCbHRuim7fxeTebsI7nmfPp7Jh1f3cV1WIqHTINXL0tGmUIvV03L4zyywlPX0pP3_84IY6p2rQxGzn4qREajpMmecUPYaTf-YvQy_iay1R_f6_EMt85hzxqYbnPULG21exyecYeGBqbSCwuTMgaxpJN1Kx_9mUnCNVDUeOv-bwbKY0e0FGObJ82isus0cUHj27Il3xcvDTcLnr1RG70rmTl2aNV1VRnlPAkD_zrICnz00AcCjNm7PGLCKcjEBSPJtULBDoWNiL6jSYE-yVAIts5QUYJ4uqmtVfZKYKPUq8pVV0fqqrezFY7Z8DzlSDm18v30iu6CWVNEhvpYnsYN-jT4vjO89PVETvU1zoRQj79Oz552XBASxTdsioges9sAIy1hfAdkHKw=\">サイト:go.jp 介護現場 生成AI ガイドライン 厚生労働省</a>\n  </div>\n</div>\n",
+  "items": [
+    {
+      "id": "s-4a7efaa9e2",
+      "source": "note.com",
+      "sourceType": "web",
+      "title": "NotebookLMで変革する小規模多機能型居宅介護の業務効率化：AI活用で現場の負担を軽減する15の実践アイデア｜AI×介護エンジニア | SHU（ケアリンカー）",
+      "url": "https://note.com/shu333444/n/n438bce6c8167",
+      "publishedAt": "2026-11-21T22:00:52.580Z",
+      "summary": "AI×介護エンジニア | SHU（ケアリンカー） 2025年7月25日 17:33 小規模多機能型居宅介護の現場では、限られたスタッフで多様なサービスを提供する必要があり、 NotebookLMを活用した業務効率化 が注目されています。GoogleのAI搭載ツールであるNotebookLMは、介護現場の様々な課題を解決する強力な味方となります。 この記事では、小規模多機能型居宅介護事業所がNotebookLMを活用して業務効率化を実現する具体的な方法を、6つのカテゴリーに分けて15のアイデアとして紹介します。介護記録の作成から職員教育、利用者情報管理まで、現場で即座に活用できる実践的な内容をお届けします。 NotebookLMを使って、利用者の基本情報や医療情報、家族構成などを一元管理し、新任スタッフでも理解しやすい要約を自動生成できます。 具体的な手順： → 利用者の基本情報、病歴、薬剤",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:00:52.580Z"
+    },
+    {
+      "id": "s-dcbbb1eb02",
+      "source": "www.welconnect.net",
+      "sourceType": "web",
+      "title": "介護研修動画で準備を効率化！NotebookLM活用でオリジナル教材も簡単に作成 | 介護福祉ウェブ制作ウェルコネクト",
+      "url": "https://www.welconnect.net/archives/notebooklm_movieov",
+      "publishedAt": "2026-11-21T22:00:53.789Z",
+      "summary": "この記事のコンテンツ 介護保険事業所において職員研修は、事業の信頼性やサービス品質を担保するために欠かせない取り組みです。特に、 業務継続計画（BCP）、ハラスメント防止、虐待防止 、 認知症ケア といった分野は、介護保険法や関連法規によって実施が義務付けられており、どの事業所も必ず対応しなければなりません。 しかし、その研修を実施するにあたっては「担当者の準備負担が大きすぎる」という共通の悩みがあります。 例えば、厚生労働省が発行している研修用マニュアルや手引きは数十～数百ページに及ぶものがほとんどです。これを担当者が読み込み、要点を整理し、スライド資料にまとめ、さらに発表原稿を用意して当日の進行まで担うとなると、数時間〜数日単位の時間が必要になります。介護現場は慢性的な人員不足の中で日々のケア業務に追われており、こうした負担を軽くこなせる余裕はほとんどありません。 さらに、担当者の力量",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:00:53.789Z"
+    },
+    {
+      "id": "s-68c20111ef",
+      "source": "zest.jp",
+      "sourceType": "web",
+      "title": "NotebookLM活用術：AIアシスタントの作り方｜ZEST",
+      "url": "https://zest.jp/aitechlab/NotebookLM-AIassistant",
+      "publishedAt": "2026-11-21T22:00:54.856Z",
+      "summary": "/ / 【現場のAI活用術】2-1：膨大な資料も瞬時に理解！NotebookLMであなただけのAIアシスタントを爆誕させる方法 公開日時： 2025.9.2 こんにちは。株式会社ゼストでCTOをしております、豊島です。 最近「AI」という言葉をニュースなどで耳にする機会が急激に増えました。「なんだかすごそうだけど、私たちの仕事にどう関係あるの？」と感じている方も多いのではないでしょうか。 そこで、この記事では「現場ですぐに使えて、本当に役立つAI活用術」を、ご紹介したいと思います。今回ご紹介するのは、Googleが提供する「NotebookLM」で、無料版もあるため取り組みやすいものとなっています。 「NotebookLM」を一言で説明するなら、 「あなたが与えた資料の内容に基づいて、質問に答えてくれるAIアシスタント」 です。 一般的なAIチャット（ChatGPTやGeminiなど）と大",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:00:54.857Z"
+    },
+    {
+      "id": "s-b2cac11c58",
+      "source": "kaigokeiei.com",
+      "sourceType": "web",
+      "title": "AIを活用した情報整理ツール「NotebookLM」でより質の高いケアの実現を。介護現場に役立つITツールbyタダカヨ⑤ | 介護・福祉業界のニュース・最新情報なら介護経営ドットコム ニュース | 介護・福祉業界のニュース・最新情報なら介護経営ドットコム",
+      "url": "https://kaigokeiei.com/news/8rad7pu-o/",
+      "publishedAt": "2026-11-21T22:00:55.585Z",
+      "summary": "ホーム ニュース 専門家コラム AIを活用した情報整理ツール「NotebookLM」でより質の高いケアの実現を。介護現場に役立つITツールbyタダカヨ⑤ #サービス品質向上 #居宅介護支援 #業務効率化 こんにちは、吉崎ちほと申します。大阪府枚方市の社会福祉法人が運営する居宅介護支援事業所で主任介護支援専門員として従事しています。その傍ら、大阪府の法定研修でのファシリテーターや一般社団法人枚方市介護支援専門員連絡協議会の事務局長に就き、地域の介護支援専門員の資質向上を支援し、地域福祉の充実を目指しています。 今回は、「お金のかからないIT」を普及させる活動に取り組む NPO法人タダカヨ の一員として、AIを活用した情報整理ツール「NotebookLM」をご紹介させていただきます。 介護業界に溢れる膨大なマニュアルや行政資料から必要な情報を簡単に取り出すことができ、大幅な業務効率化と専門性の",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:00:55.585Z"
+    },
+    {
+      "id": "s-58083ba1aa",
+      "source": "www.fc-soft.jp",
+      "sourceType": "web",
+      "title": "【ケアマネジャー必見】AIケアマネジメントで書類地獄を脱出する方法 | お役立ちコラム",
+      "url": "https://www.fc-soft.jp/media/useful_info/a88",
+      "publishedAt": "2026-11-21T22:00:56.359Z",
+      "summary": "お役立ちコラム 記事公開日 2025/12/26 「今月もまた、支援経過記録が終わらない&hellip;&hellip;」と、事務所でため息をついていませんか？ 書類作成の負担を減らすには、単なる作成ツールではなく「AIケアマネジメント」を導入することにあります。 実は「AIケアプラン」などの作成支援だけでは、業務全体は楽になりません。 アセスメントからモニタリングまで、ケアマネジメントのプロセス全体をAIで支える視点こそが、自分の時間を生み出すからです。 この記事では、AIケアマネジメントがどのように業務の効率化に貢献するのか、その全貌と具体的な使い方を解説します。 書類地獄から抜け出し、利用者と向き合う時間を取り戻したい方は、ぜひ最後までご覧ください。 &nbsp; 「AIケアマネジメント」と「AIケアプラン」。 似た言葉ですが、この2つの違いを正しく理解していないと、「高いソフトを導",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:00:56.359Z"
+    },
+    {
+      "id": "s-d81d440ff0",
+      "source": "kurashi-nayami-note.hatenablog.com",
+      "sourceType": "web",
+      "title": "デジタル庁が生成AI利用の政府新指針を公表！私たちの仕事や行政サービスはどう変わる？ - くらしの悩み整理ノート",
+      "url": "https://kurashi-nayami-note.hatenablog.com/entry/2026/06/12/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E5%BA%81%E3%81%8C%E7%94%9F%E6%88%90AI%E5%88%A9%E7%94%A8%E3%81%AE%E6%94%BF%E5%BA%9C%E6%96%B0%E6%8C%87%E9%87%9D%E3%82%92%E5%85%AC%E8%A1%A8%EF%BC%81",
+      "publishedAt": "2026-11-21T22:01:02.453Z",
+      "summary": "デジタル庁が生成AI利用の政府新指針を公表！私たちの仕事や行政サービスはどう変わる？ デジタル庁がFri, 12 Jun 2026 07:52:54 +0900に公表・更新した情報によると、政府機関や官公庁における生成AI（人工知能）の導入や具体的な活用方法、そして安全に使うための運用ルールを定めた新たな指針「行政の進化と革新のための生成AIの調達・利活用に係るガイドライン（第2.0版）」が策定されました。 この情報は、国の行政機関や地方自治体だけでなく、国から業務を請け負うIT事業者や民間企業、さらには今後、生成AIを活用したより便利な行政サービスを受けたり、仕事でAIを活用したりする可能性のある一般の会社員、個人事業主、家庭の皆様にも深く関係する重要な方針転換を示しています。 技術の進化によって、日々の暮らしやビジネスシーンに急速に浸透している生成AIですが、国がどのような基準でこれら",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:01:02.453Z"
+    },
+    {
+      "id": "s-de8f164cfa",
+      "source": "www.pwc.com",
+      "sourceType": "web",
+      "title": "「行政の進化と革新のための生成AIの調達・利活用に係るガイドライン」の解説と企業への影響 | PwC Japanグループ",
+      "url": "https://www.pwc.com/jp/ja/knowledge/column/ai-governance/procurement-and-utilization.html",
+      "publishedAt": "2026-11-21T22:01:08.649Z",
+      "summary": "Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Featured 世界CEO意識調査 Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Menu Loading Results No Ma",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:01:08.649Z"
+    },
+    {
+      "id": "s-c457c5364d",
+      "source": "genba-pt-ai-lab.com",
+      "sourceType": "web",
+      "title": "医療・介護で生成AIを使うルール5つ｜公的ガイドラインに基づく患者情報の線引きと掲示できる10か条",
+      "url": "https://genba-pt-ai-lab.com/blog/medical-care-ai-rules/",
+      "publishedAt": "2026-11-21T22:01:08.854Z",
+      "summary": "現場でAIを使うルールを、公的ガイドラインから自分で引いてきた室長てつです。 患者さんや利用者さんの情報は、AIにどこまで入れてよいのか。ここが決まらないまま、職員それぞれの判断で使われている——それがいまの多くの現場です。 公的なガイドラインを読み込むと、答えは次の3つに集約されます。 読み終えたとき、次の4つが手元に残ります。 先に漫画でざっと流れを見たい方は、 まんが『患者さんの情報、入れていいの？』 をどうぞ。 根拠にした公的ガイドラインは6つ。出典URLはすべて本文に置いています。私は通所リハビリの現場で管理職をしながら、議事録や手順書づくりにAIを使っています。その実体験と、ガイドラインの記載を突き合わせて整理しました。 この記事は法的助言ではありません。ガイドラインの解釈と運用は施設の状況で変わります。最終的な判断は、一次資料を確認したうえで各施設・各自で行ってください。 医",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:01:08.854Z"
+    },
+    {
+      "id": "s-a2fd483899",
+      "source": "www.mhlw.go.jp",
+      "sourceType": "web",
+      "title": "医療デジタルデータの AI 研究開発等への利活用に係るガイドライン",
+      "url": "https://www.mhlw.go.jp/content/001310044.pdf",
+      "publishedAt": "2026-11-21T22:01:15.293Z",
+      "summary": "本書は、病院に蓄積された膨大な医療データをAI研究開発やイノベーションに有効活用するための実践的な指針を提示するガイドラインである。医療情報は要配慮個人情報に該当するため、原則として本人の同意や厳格な規律が求められるが、本人からの同意取得が困難な場合でも、適切な法的根拠や仮名加工情報を活用することで利活用が可能となる仕組みを整理している。特に、診断用医療AIソフトウェアを想定した医療機器の研究開発サイクル（探索、開発、性能評価、承認申請等）の各段階に応じた適切な医療情報の取扱い方法や、個人情報保護法および生命科学・医学系指針との関係性を詳説している。さらに、識別子や準識別子に対する具体的な加工基準、安全管理措置、共同利用の活用パターンなどを体系的に示し、患者の権利利益の保護と医療分野のイノベーション促進の両立を図ることを目的としている。",
+      "tier": "official",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:01:15.293Z"
+    },
+    {
+      "id": "s-67689b28f5",
+      "source": "bridge3-inc.com",
+      "sourceType": "web",
+      "title": "介護現場のAI活用7選｜個人情報を守る安全な始め方 | Bridge3",
+      "url": "https://bridge3-inc.com/news-care-ai.html",
+      "publishedAt": "2026-11-21T22:01:16.305Z",
+      "summary": "この記事で分かること 01 介護の仕事では、職員が利用者の表情、声、動作、生活歴、家族の意向、支援経過などを総合して判断します。文章だけでは表し切れない背景があり、同じ言葉でも場面によって意味が変わります。生成AIは、その場を見ておらず、入力された情報の範囲で文章を組み立てます。そのため、支援方針、医療上の判断、緊急性の判定、事故対応の最終判断をAIへ委ねる使い方は避ける必要があります。 一方で、人が判断する前後には、文章を整える、論点を分類する、抜けを見つける、複数案を作るといった作業があります。この部分はAIと相性があります。AIへ任せる範囲を次のように分けると、導入目的が明確になります。 見出し案、文章の言い換え、論点の分類、確認項目の洗い出し、たたき台の作成。 議事録、案内文、研修資料、マニュアル、記録の下書き。事実と表現を担当者が確定します。 医療・介護の最終判断、緊急性の判定、",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:01:16.305Z"
+    },
+    {
+      "id": "s-f915eb7565",
+      "source": "jaic.pro",
+      "sourceType": "web",
+      "title": "介護事業所向け生成AI利用ガイドラインの作り方｜禁止事項・入力ルール・実践雛形 | 日本AIイノベーションセンター",
+      "url": "https://jaic.pro/2026/07/29/care-generative-ai-guideline-template/",
+      "publishedAt": "2026-11-21T22:01:18.203Z",
+      "summary": "介護現場では、記録作成、申し送り、家族向け文書、研修資料、ケアプラン作成支援など、生成AIを活用できる場面が広がっています。一方で、介護事業所が扱う情報は、利用者の心身状態、病歴、家族関係、生活状況など、極めて慎重に扱うべき情報です。 生成AIは、使い方を間違えれば個人情報漏えい、虚偽情報の利用、著作権侵害、誤ったケア判断につながる可能性があります。そのため、介護事業所では「便利だから使う」のではなく、「何に使ってよいか」「何を入力してはいけないか」「誰が確認するか」を明文化した利用ガイドラインが必要です。 本稿では、介護事業所向け生成AI利用ガイドラインの策定と実践的雛形を整理した調査報告をもとに、現場で導入しやすい形に再構成します。 介護現場で生成AIが注目される背景には、慢性的な人材不足と記録業務の負担があります。介護職員は、利用者対応だけでなく、日々の記録、計画書、報告書、家族連絡",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:01:18.203Z"
+    },
+    {
+      "id": "s-1175079604",
+      "source": "www.mhlw.go.jp",
+      "sourceType": "web",
+      "title": "2040年に向けた、医療・介護・障害福祉の現場における取組み ―テクノロジー（ICT、AI、ロボット等）の活用による生産性向上―",
+      "url": "https://www.mhlw.go.jp/wp/hakusyo/kousei/26/dl/1-02.pdf",
+      "publishedAt": "2026-11-21T22:01:27.049Z",
+      "summary": "人口構造の変化に伴い、医療・介護・福祉サービスの需要増加や複雑化・多様化が進む一方で、生産年齢人口の減少により担い手をめぐる状況は2040年頃に向けて一層厳しくなることが見込まれています。このような状況の下で、サービスの質や安全性を確保しつつ持続的なサービス提供体制を維持するためには、業務の進め方や役割分担を見直すとともに、ICTやAI、ロボット等のテクノロジーを適切に活用して業務効率化や負担軽減を図る「生産性向上」の取組みが重要となります。本書では、医療、介護、障害福祉の各分野におけるテクノロジーの導入状況や普及率、具体的な導入効果、現場に残る課題、および政府による支援策や今後の展望について整理しています。医療分野においては電子カルテやオーダリングシステム、医療AIなどの導入が進められ、看護業務や医師事務作業の負担軽減、時間外労働の削減、医療安全の向上が確認されています。介護分野では施設",
+      "tier": "official",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:01:27.049Z"
+    },
+    {
+      "id": "s-42bceea5a2",
+      "source": "gov.eggai.co.jp",
+      "sourceType": "web",
+      "title": "生成AIの利用ルール｜自治体が参考にできる国のガイドライン",
+      "url": "https://gov.eggai.co.jp/column/generative-ai-guideline-for-municipalities/",
+      "publishedAt": "2026-11-21T22:01:27.472Z",
+      "summary": "トップ ／ コラム 2026-10-18（2026-11-16 更新） 生成AIを業務で使うとき、職員に何を守ってもらうかを決める必要があります。国の府省庁向けには、デジタル庁のガイドラインがあります。自治体は対象ではありませんが、ガイドライン自身が「必要に応じ、参考とされることを期待する」と書いています。ここでは、自治体が自分のルールを作るときに使える所をまとめます。 正式な名前は「行政の進化と革新のための生成AIの調達・利活用に係るガイドライン」で、デジタル社会推進標準ガイドラインの DS-920 です。2025年5月27日に初版が決まり、2026年6月12日に第2.0版へ改定されました。どちらもデジタル社会推進会議幹事会の決定です。参考にするときは、最新版がどれかを先に確かめます。 対象は、原則として、入力がテキストと音声、出力がテキスト・画像・音声の生成AIです。画像や動画を入力す",
+      "tier": "web",
+      "httpStatus": 200,
+      "checkedAt": "2026-11-21T22:01:27.472Z"
+    }
+  ]
+}
