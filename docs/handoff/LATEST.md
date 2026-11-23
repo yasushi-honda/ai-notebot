@@ -1,7 +1,7 @@
 # ハンドオフ（最新）
 
-- セッション: 2026-11-23（11-23 日次の収集失敗を復旧し、再発防止 PR #101・#102 をマージ。retry 用 Scheduler ジョブを GCP に反映）
-- 更新日: 2026-11-23
+- セッション: 2026-11-23〜24（11-23 日次の収集失敗を復旧し、再発防止 PR #101・#102、Reddit 削除 #104、CI 回帰の修正 #105 をマージ。retry 用 Scheduler ジョブを GCP に反映）
+- 更新日: 2026-11-24
 
 ## セッション概要
 
@@ -13,6 +13,8 @@
 - **PR #101**: `collect-core.mjs` に `shortfallRetries`（既定 0、AI 版のみ 1 回・180 秒待機）を追加。`setup.sh` に `daily-digest-dispatch-retry`（毎日 08:00 JST、`skip_if_exists=true`）を追加し、`setup.sh deploy` で GCP に反映済み（3 ジョブ ENABLED を確認）。**訂正**: 180 秒待つ再収集は、新着不足（時間経過で解消するタイプ）にはほぼ効かない。効くのは 08:00 の再起動のほう
 - **PR #102**: AI 版にも `weekendMaxAgeDays: 5`（土日月 JST）を設定。security 版が 2026-11-09 に同じ理由で導入済みの値。閾値は下げていない。トレードオフ: 日曜・月曜の記事に最大 5 日前の話題が入りうる
 - **codex review（PR #101、medium、1 回）**: P2 が 1 件。「08:00 の再起動は生成済みの日でも再デプロイが走る（`deploy` ジョブが無条件）」。事実だが、既存の保険 cron も同じ挙動のため見送り（PR に記録）。PR #102 は 1 行のため手動チェックリストのみ
+- **PR #104（Reddit を収集対象から外す）**: decision-maker が「外す」を選択（先の「様子見」を再判断）。`collect.mjs`・`collectors.mjs`・`feeds.mjs`・golden・about ページ・`AGENTS.md`（`CLAUDE.md` の実体）から削除。過去記事の Reddit 引用と過去 ADR は履歴として残す。codex review（medium）と pr-review-toolkit（sonnet、read-only）はいずれも findings 0 件
+- **PR #105（#101 が作った回帰の修正）**: #101 の 180 秒待機が、全フィード 404 の特性テスト（子プロセスで `collect.mjs` を実行）で実時間として効き、テストが 180 秒、CI `test` が約 40 秒から約 3 分 40 秒に延びていた。`COLLECT_SHORTFALL_RETRY_DELAY_MS` で上書き可能にし、テストで 0 を渡す（本番は未設定で 180 秒）。修正後は CI `test` 48 秒、全単体テスト約 14 秒。サブエージェントがこの遅さを「ハング」と報告したのがきっかけで、実測で原因を特定した
 - **効果は未実測**: 週末窓の効果は次の日曜・月曜、retry ジョブは 11-24 08:00 の起動で確認する
 
 ### 前回セッション（2026-11-20）: 11-20 記事の誤字「露正」の修正（PR #98）
@@ -67,8 +69,8 @@
 
 | 項目 | 状態 |
 |------|------|
-| codex review | PR #101: 1 回（medium、P2 が 1 件。検証のうえ見送り、PR に記録）。PR #102: 1 行のため手動チェックリストのみ。PR #95: 1 回（medium、findings 0 件。「Gemini Notebook を Notebook と Gemini の両方に数えない判定は正しい」、curate-care 126 件 pass）。PR #93: 1 回（medium、findings 0 件。「プロンプトとツール判定の拡張に一貫性があり、実害のある回帰なし」、curate-care 125 件 pass） |
-| テスト | ✅ `node --test scripts/test/*.test.mjs` 435 件 pass（PR #101、再収集の 3 ケースを追加）。PR #102 の CI（`test`）も success |
+| codex review | PR #104: 1 回（medium、findings 0 件）＋ pr-review-toolkit（sonnet、read-only）findings 0 件。PR #105: 5 行のため手動チェックリストのみ。PR #101: 1 回（medium、P2 が 1 件。検証のうえ見送り、PR に記録）。PR #102: 1 行のため手動チェックリストのみ。PR #95: 1 回（medium、findings 0 件。「Gemini Notebook を Notebook と Gemini の両方に数えない判定は正しい」、curate-care 126 件 pass）。PR #93: 1 回（medium、findings 0 件。「プロンプトとツール判定の拡張に一貫性があり、実害のある回帰なし」、curate-care 125 件 pass） |
+| テスト | ✅ `node --test scripts/test/*.test.mjs` 435 件 pass（main 上、約 14 秒）。CI `test` は #105 以降 約 48 秒 |
 | 実データ確認 | ✅ 11-23 の再実行で 3 版が公開。再収集・週末窓・retry ジョブの本番での効果は未実測（条件待ち 15・16）。✅ 11-14 の再生成後、公開ページに旧名の表記なし（出典リンクを除く）。新名が実際の記事に出るかは未確認（出る日に確認） |
 
 ## 同根再発スキャン（§4.6）と対症療法判定（§4.7）
@@ -78,6 +80,7 @@
   - 次に出るとしたら: 介護版（`collect-care`、Google 検索グラウンディング）が、同じ「週末の新着不足」で閾値に当たる経路。未確認
 - **§4.7 対症療法判定**: 基準 1（#101 は retry）と基準 3（同症状の修正 PR が 30 日以内にある）に該当。**WebSearch を実施**: Reddit の RSS は 11-13 終了と報じられ（TechCrunch 2026-09-30）、外部要因として説明がつく。基準 4（単体テストのみ）にも該当し、本番での効果は未確認
   - 判定: 週末窓（#102）は構造対策だが未実測。retry（#101 の再収集部分）は新着不足には効かないと自己訂正済みで、実効があるのは 08:00 の再起動。よって「対症療法は残る、根は外部要因（Reddit 終了）と週末の新着不足」として扱う
+- **#105 は #101 の回帰**: 同じセッション内の連鎖。対策の副作用（待機が実時間でテストに効く）を #101 の時点で見落とした。テストの実行時間は PR 前に計測する（今回は CI の所要時間の変化で確認）
 - 前回までの「official 0 件で収集が落ちる」候補（#50・#56・#92）は今回のセッションでは触れていないため据え置き
 
 ## 次のアクション（3分割・SKILL.md §2.5）
@@ -97,7 +100,7 @@
 | 6 | AI 版 `curate.mjs` の本文に生 HTML・リンクの拒否を入れる | decision-maker からの修正指示 | セキュリティ版の `findUnsafeMarkup` を AI 版の Stage B の `evaluate` にも適用する（介護版には既にある）。本文は外部フィードに影響されるため同じ経路で露出している。修正（write）なので起点は decision-maker | `grep -n findUnsafeMarkup scripts/curate.mjs`（現状ヒットなし） |
 | 7 | Stage B のテーマ除外の実環境確認（前回から継続） | daily の run ログに「除外したテーマ」が頻発した時 | 10/24 の run で 1 件（脚注欠落 3 試行連続 NG）を確認済み。頻発するなら脚注指示の見直し | `gh run view <id> --log \| grep '除外したテーマ'`（リポジトリ内で実行） |
 | 8 | NVIDIA Developer Blog の追加（前回から継続） | `developer.nvidia.com` の名前解決が安定して通ること | `fetchFeed` 経由で取得・直近 3 日の新着を確認し、問題なければ `feeds.mjs` に 1 行追加 | `node -e` で `fetchFeed` を呼ぶ（`scripts/lib/rss.mjs`） |
-| 9 | **Reddit の扱いの決定**（旧: 429 の再発。11-18 から 0 件、RSS 終了の報道あり）。decision-maker は当面「残して様子見」を選択したが、外部要因が分かったため再確認が望ましい | decision-maker が判断、または 12-07 ごろまで 0 件が続いた時 | 外す（`collect.mjs` から Reddit を削除する PR）か、残す。OAuth 登録は新規 API 受付の状況が未確認で、代替になるか不明。read-only で Reddit の一次投稿（r/modnews 等）を確認してから提示 | `for d in <日付>; do grep -c 'Reddit r/' data/raw/$d.json; done`、`gh run view <id> --log \| grep Reddit` |
+| 9 | ~~Reddit の扱いの決定~~ → **解決済み（2026-11-24、PR #104 で収集対象から削除）**。復活させる場合は Reddit の公式 API（OAuth）の新規受付状況が未確認のため、一次情報を確認してから decision-maker が判断 | — | — | — |
 | 10 | アラートメールの受信確認（前回から継続） | decision-maker が `hy.unimail.11@gmail.com` の受信箱を確認（AI 代行不可） | 届いていなければ通知チャネルを調査 | decision-maker 本人が確認 |
 | 11 | GA4 データ反映の再確認（前回から継続） | decision-maker 本人の Google ログインでの確認（AI 代行不可） | analytics.google.com で DebugView / リアルタイムレポートを確認 | decision-maker 本人が確認 |
 | 12 | 「福祉用具」targetServices が生成記事で選ばれるか（前回から継続） | 次回以降の daily.yml / care-rebuild.yml の自然な実行（確率的） | `site/src/content/care/` の新規記事に出現するか確認。長期間出現しなければ `collect-care.mjs` のテーマ指示を見直す | `grep -l '福祉用具' site/src/content/care/*.md` |
@@ -164,6 +167,6 @@
 
 ✅ **セッション終了可** — 11-23 の収集失敗は復旧済みで、再発防止の PR #101・#102 はマージ・GCP 反映まで完了。executor 領分の作業はゼロ。
 
-- OPEN PR: 本ハンドオフ PR のみ / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 16
-- **decision-maker への申し送り（終了の妨げではない）**: Reddit は RSS 終了の報道があり、復旧の見込みは低い。「2 週間様子見」は decision-maker が当時の情報で選んだ判断で、外す・残すの再判断は条件待ち 9（コードは未変更）
+- OPEN PR: 本ハンドオフ PR のみ / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 15（9 は解決済み）
+- Reddit は decision-maker の判断で削除済み（#104）。残る確認は条件待ち 15（11-24 08:00 の retry ジョブ）と 16（次の日曜・月曜の週末窓の効果）のみ
 - §4.6 同根再発スキャン: 候補 1 件（security 版 11-09 の週末窓）。§4.7 対症療法判定: 基準 1・3・4 に該当、WebSearch 実施済み。週末窓と retry の効果は未実測（条件待ち 15・16）
