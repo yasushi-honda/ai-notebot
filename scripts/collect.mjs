@@ -52,6 +52,8 @@ const PROFILE = {
   maxPerSource: 8, // 1ソースが候補を占拠しないための上限
   minSuccessSources: 8, // これを下回ったら公開しない（AC-1 の前提）
   minTotalItems: 50,
+  shortfallRetries: 1, // 429 等の一時失敗で不足した場合に1回だけ再収集（閾値は下げない）
+  shortfallRetryDelayMs: 180_000,
 };
 
 runCollection(PROFILE, process.argv[2])
