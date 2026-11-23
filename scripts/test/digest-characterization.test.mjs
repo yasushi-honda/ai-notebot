@@ -65,7 +65,7 @@ test('collect.mjs: 固定 RSS から data/raw のアーカイブを組み立て�
 test('collect.mjs: 成功ソース数が閾値未満なら exit 1 で data/raw を書かない', async () => {
   const rawPath = join(ROOT, 'data', 'raw', `${COLLECT_DATE}.json`);
   try {
-    const r = await run('collect.mjs', [COLLECT_DATE], {}); // STUB_RSS_DATE なし → 全フィード 404
+    const r = await run('collect.mjs', [COLLECT_DATE], { COLLECT_SHORTFALL_RETRY_DELAY_MS: '0' }); // STUB_RSS_DATE なし → 全フィード 404（再収集の待機は 0 にして実時間で待たない）
     assert.equal(r.code, 1);
     await assert.rejects(readFile(rawPath, 'utf8'));
   } finally {

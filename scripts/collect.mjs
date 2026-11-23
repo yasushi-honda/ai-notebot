@@ -54,7 +54,8 @@ const PROFILE = {
   minSuccessSources: 8, // これを下回ったら公開しない（AC-1 の前提）
   minTotalItems: 50,
   shortfallRetries: 1, // 429 等の一時失敗で不足した場合に1回だけ再収集（閾値は下げない）
-  shortfallRetryDelayMs: 180_000,
+  // テストが実時間で待たないよう環境変数で上書きできる（本番は未設定で 180 秒）
+  shortfallRetryDelayMs: Number(process.env.COLLECT_SHORTFALL_RETRY_DELAY_MS ?? 180_000),
 };
 
 runCollection(PROFILE, process.argv[2])
