@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * ① 全ソース収集スクリプト。
- * RSS/Atom（ベンダー公式・技術メディア・日本語）＋ HN/Reddit/arXiv/GitHub の API ソースを束ね、
+ * RSS/Atom（ベンダー公式・技術メディア・日本語）＋ HN/arXiv/GitHub の API ソースを束ね、
  * 正規化・重複排除・鮮度フィルタをかけて data/raw/YYYY-MM-DD.json に書き出す。
  *
  * 使い方: node scripts/collect.mjs [YYYY-MM-DD]（省略時は今日の日付・JST基準）
@@ -14,17 +14,16 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 import { RSS_FEEDS } from './lib/feeds.mjs';
-import { fetchHackerNews, fetchReddit, fetchArxiv, fetchGitHubTrending } from './lib/collectors.mjs';
+import { fetchHackerNews, fetchArxiv, fetchGitHubTrending } from './lib/collectors.mjs';
 import { runCollection } from './lib/collect-core.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW_DIR = join(ROOT, 'data', 'raw');
 
-/** AI 版固有の API ソース（HN / Reddit / arXiv / GitHub）。RSS 以外はここで束ねる。 */
+/** AI 版固有の API ソース（HN / arXiv / GitHub）。RSS 以外はここで束ねる。 */
 async function collectApiSources() {
   const apiResults = await Promise.allSettled([
     fetchHackerNews().then((items) => ({ name: 'Hacker News', items, type: 'hn' })),
-    fetchReddit().then((items) => ({ name: 'Reddit', items, type: 'reddit' })),
     fetchArxiv().then((items) => ({ name: 'arXiv', items, type: 'arxiv' })),
     fetchGitHubTrending().then((items) => ({ name: 'GitHub Trending', items, type: 'github' })),
   ]);

@@ -1,12 +1,12 @@
 /**
- * RSS/Atom 以外の API ソース用アダプタ（HN / Reddit / arXiv / GitHub）。
+ * RSS/Atom 以外の API ソース用アダプタ（HN / arXiv / GitHub）。
  * いずれも { title, url, date, description, source } の共通形に正規化して返す。
  * 個別の失敗は呼び出し元で Promise.allSettled により許容される想定のため、ここでは
  * 例外を握りつぶさず素直に throw する（部分障害の許容は呼び出し元の責務）。
  */
 
 import { parseFeed, stripTags } from './rss.mjs';
-import { HN_QUERY, REDDIT_SUBS, ARXIV_CATEGORIES, GITHUB_TOPICS } from './feeds.mjs';
+import { HN_QUERY, ARXIV_CATEGORIES, GITHUB_TOPICS } from './feeds.mjs';
 
 const UA = 'ai-notebot/0.1 (+https://github.com/yasushi-honda/ai-notebot)';
 const TIMEOUT_MS = 20000;
@@ -34,32 +34,6 @@ export async function fetchHackerNews() {
       description: `points=${h.points} comments=${h.num_comments} (Hacker News)`,
       source: 'Hacker News',
     }));
-}
-
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-/**
- * Reddit。.json は 403 を返すため .rss（Atom 形式）を使う。
- * サブレディットごとに独立して失敗を許容する。IP レート制限（429）を避けるため
- * 並列にせず 1.5 秒間隔で順に取得する。
- */
-export async function fetchReddit() {
-  const out = [];
-  for (const sub of REDDIT_SUBS) {
-    try {
-      const res = await fetch(`https://www.reddit.com/r/${sub}/top/.rss?t=day`, {
-        headers: { 'user-agent': UA },
-        signal: AbortSignal.timeout(TIMEOUT_MS),
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const xml = await res.text();
-      out.push(...parseFeed(xml).map((i) => ({ ...i, source: `Reddit r/${sub}` })));
-    } catch (err) {
-      console.warn(`✗ Reddit r/${sub}: ${err.message}`);
-    }
-    await sleep(1500);
-  }
-  return out;
 }
 
 /** arXiv。API のレスポンスは Atom 形式のため rss.mjs の parseFeed をそのまま再利用できる。 */
