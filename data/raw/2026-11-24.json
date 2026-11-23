@@ -1,0 +1,529 @@
+{
+  "date": "2026-11-24",
+  "collectedAt": "2026-11-23T22:00:28.898Z",
+  "sourceSuccessCount": 22,
+  "items": [
+    {
+      "id": "s-f6eeed971f",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "pgrundev/pgbot: Postgres intelligence for ai agents",
+      "url": "https://github.com/pgrundev/pgbot",
+      "publishedAt": "2026-11-23T21:59:13.000Z",
+      "summary": "★1518 Postgres intelligence for ai agents"
+    },
+    {
+      "id": "s-fd90ea8c58",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "XinaTian/MROffice: MR Office — the open-source editors of the AI office suite closest to Microsoft Office: documents, spreadsheets, presentations, PDF and code in the browser. Copilot in every editor edits real Word, Excel and PowerPoint files with you; an MCP server lets Claude, ChatGPT, Cursor and Codex create and edit them; embed it in your app with one line.",
+      "url": "https://github.com/XinaTian/MROffice",
+      "publishedAt": "2026-11-23T21:58:48.000Z",
+      "summary": "★2742 MR Office — the open-source editors of the AI office suite closest to Microsoft Office: documents, spreadsheets, presentations, PDF and code in the browser. Copilot in every editor edits real Word, Excel and PowerPoint files with you; an MCP server lets Claude, ChatGPT, Cursor and Codex create and edit them; embed it in your app with one line."
+    },
+    {
+      "id": "s-315b1944e6",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "BaaRai/ARTEX: ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
+      "url": "https://github.com/BaaRai/ARTEX",
+      "publishedAt": "2026-11-23T21:58:42.000Z",
+      "summary": "★17607 ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)"
+    },
+    {
+      "id": "s-81f33d0f3f",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "homeassistant-ai/ha-mcp: Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+      "url": "https://github.com/homeassistant-ai/ha-mcp",
+      "publishedAt": "2026-11-23T21:58:32.000Z",
+      "summary": "★8087 Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants."
+    },
+    {
+      "id": "s-660b9c5583",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "sidequery/sqlctx: The universal metrics layer. Compatible with 15+ formats: Cube, MetricFlow, LookML, Omni, BSL, LDM, Cortex, Malloy, OSI, SML, TML, Hex, Rill, Superset",
+      "url": "https://github.com/sidequery/sqlctx",
+      "publishedAt": "2026-11-23T21:55:13.000Z",
+      "summary": "★143 The universal metrics layer. Compatible with 15+ formats: Cube, MetricFlow, LookML, Omni, BSL, LDM, Cortex, Malloy, OSI, SML, TML, Hex, Rill, Superset"
+    },
+    {
+      "id": "s-66456efc0c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "NVIDIA/aicr: Tooling for optimized, validated, and reproducible GPU-accelerated AI runtime in Kubernetes",
+      "url": "https://github.com/NVIDIA/aicr",
+      "publishedAt": "2026-11-23T21:52:51.000Z",
+      "summary": "★485 Tooling for optimized, validated, and reproducible GPU-accelerated AI runtime in Kubernetes"
+    },
+    {
+      "id": "s-b5fd68028c",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "elie222/rakazo: Open-source Grok Bot alternative. Choose your own model and sandbox.",
+      "url": "https://github.com/elie222/rakazo",
+      "publishedAt": "2026-11-23T21:52:25.000Z",
+      "summary": "★9600 Open-source Grok Bot alternative. Choose your own model and sandbox."
+    },
+    {
+      "id": "s-141beb3cb7",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "felladrin/MiniSearch: Minimalist web-searching platform with an AI assistant that runs directly from your browser. Demo: https://felladrin-minisearch.hf.space",
+      "url": "https://github.com/felladrin/MiniSearch",
+      "publishedAt": "2026-11-23T21:52:20.000Z",
+      "summary": "★611 Minimalist web-searching platform with an AI assistant that runs directly from your browser. Demo: https://felladrin-minisearch.hf.space"
+    },
+    {
+      "id": "s-64ec14b163",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "myylogic/cevahir-ai: Cevahir Zihin: a mind that learns by living, not a Transformer. It keeps knowledge as evidence on ties, attends with a Seven-Place Focus and learns from every conversation. Also: a Turkish BPE tokenizer, a Transformer language-model core and cognitive systems.",
+      "url": "https://github.com/myylogic/cevahir-ai",
+      "publishedAt": "2026-11-23T21:51:55.000Z",
+      "summary": "★314 Cevahir Zihin: a mind that learns by living, not a Transformer. It keeps knowledge as evidence on ties, attends with a Seven-Place Focus and learns from every conversation. Also: a Turkish BPE tokenizer, a Transformer language-model core and cognitive systems."
+    },
+    {
+      "id": "s-da7c582ec8",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "can1357/oh-my-pi: ⌥ Coding agent with the IDE wired in. Built by Stencil Labs.",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "publishedAt": "2026-11-23T21:50:11.000Z",
+      "summary": "★39739 ⌥ Coding agent with the IDE wired in. Built by Stencil Labs."
+    },
+    {
+      "id": "s-6060aca47b",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "CherryHQ/cherry-studio: Your AI workspace for models, agents, and productivity.",
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "publishedAt": "2026-11-23T21:50:04.000Z",
+      "summary": "★53788 Your AI workspace for models, agents, and productivity."
+    },
+    {
+      "id": "s-b7175444dd",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal",
+      "url": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal/",
+      "publishedAt": "2026-11-23T21:47:41.000Z",
+      "summary": "\"The mistake has been corrected,\" Elon Musk chimed in."
+    },
+    {
+      "id": "s-b7fc35d5cc",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "Ladybird's first alpha release",
+      "url": "https://simonwillison.net/2026/Nov/23/ladybird/",
+      "publishedAt": "2026-11-23T21:46:35.000Z",
+      "summary": "Ladybird is an astonishingly ambitious project: a new browser, in 2026, with its own implementation of most of the key components - HTML parsing, CSS engine, layout, JavaScript, even WebAssembly. It still uses a few external components - things like HarfBuzz for text shaping, Skia for 2D graphics, ffmpeg for video, and SQLite for the things you do with SQLite. Everything else is part of Ladybird, "
+    },
+    {
+      "id": "s-800aeca2d3",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.331",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+      "publishedAt": "2026-11-23T21:34:41.000Z",
+      "summary": "What's changed Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS Added oidc.groups_jsonpath to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535) Added an API connectivity section to claude doctor that reports whether the API can b"
+    },
+    {
+      "id": "s-7bdc825571",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Megaspeed, the company at the center of the Jensen Huang scandal, appears headed for a US blacklist",
+      "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/",
+      "publishedAt": "2026-11-23T21:25:42.000Z",
+      "summary": "Megaspeed, which was previously led by Alice Huang, would be barred from doing business with U.S. companies unless those companies attained a special license from the federal government."
+    },
+    {
+      "id": "s-0cd17937bd",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "AI data centers throw another wrench into chaotic UN climate talks",
+      "url": "https://www.theverge.com/science/1040497/ai-data-centers-electricity-un-climate-summit",
+      "publishedAt": "2026-11-23T21:09:37.000Z",
+      "summary": "The clean energy revolution hinges on electrifying the entire global economy just as power-hungry data centers are surging. It's a challenge delegates from all over the world had to grapple with during the United Nations climate conference, called COP31, that came to a chaotic and unsatisfying close in Antalya, Turkey, on Sunday. Each year, attendees […]"
+    },
+    {
+      "id": "s-3fc8c0f103",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "プログラミング雑記 2026年11月24日",
+      "url": "https://qiita.com/ishisaka/items/6ac2ae84857ce1e79310",
+      "publishedAt": "2026-11-23T21:08:11.000Z",
+      "summary": "今日もネットで見つけた技術ニュースや記事の中から、個人的に気になったものを厳選して紹介します。ご意見や補足があればコメントで教えていただけると嬉しいです。 プログラミング C++ C++26 is done (again)! — Trip report: Novemb..."
+    },
+    {
+      "id": "s-0485d4d485",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Claude Ship とは？公式発表を3分で速報解説",
+      "url": "https://qiita.com/kinamocchi_tech/items/cde5399e1a83f8aedff5",
+      "publishedAt": "2026-11-23T21:06:21.000Z",
+      "summary": ":::message 🐹🦜 この記事に登場する2匹 🐹 もっちー （ハムスター）… AI はまだ勉強中。「それどういうこと？」と素朴に質問する生徒役 🦜 きなこ （セキセイインコ）… AI で調べものをこなす解説役。やさしく深掘りして教える先生役 この記事は2匹の掛け..."
+    },
+    {
+      "id": "s-5b6e693be3",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "【第070回】Googleクローラーがスレッドを読めない！？SPAの宿命を打破するヘッドレスSSRとインデックス改善",
+      "url": "https://qiita.com/Waipe/items/e1dc6ef9491db1341575",
+      "publishedAt": "2026-11-23T21:04:10.000Z",
+      "summary": "こんにちは！2ちゃんねる互換掲示板システム「 つゔぁいちゃんねる（2ch.biz） 」の開発録、第70回です。 第4部までに、3,000人規模の自律型AI住民コミュニティを完成させ、掲示板には日夜数千件のリアルで知性的な議論が書き込まれるようになりました。 「これだけ面白い..."
+    },
+    {
+      "id": "s-44b854f595",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "OpenAIのチーフサイエンティスト、AIが次の言葉を当てる力で測る業界共通の「越えない上限」を提案",
+      "url": "https://qiita.com/quotidia/items/5ffc4c10f77a170b6a7d",
+      "publishedAt": "2026-11-23T21:01:01.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 OpenAIのチーフサイエンティスト、ヤクブ・パチョキ (Jakub Pachocki) 氏が2026年11月22日(日) (米国の日付) に、同社の公式サイトで論考「Perplexity a..."
+    },
+    {
+      "id": "s-1457613dc9",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Nvidia employees greet Jensen Huang like a hero as he returns to company’s HQ",
+      "url": "https://techcrunch.com/2026/11/23/nvidia-employees-greet-jensen-huang-like-a-hero-as-he-returns-to-companys-hq/",
+      "publishedAt": "2026-11-23T20:38:53.000Z",
+      "summary": "\"I'm going to be a better CEO the second time around,\" Huang told employees."
+    },
+    {
+      "id": "s-dc2a14655c",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Jensen Huang's Apology May Be the Only Correct Use of AI",
+      "url": "https://www.theatlantic.com/newsletters/2026/11/jensen-huang-ai-apology-nvidia/689366/",
+      "publishedAt": "2026-11-23T20:33:07.000Z",
+      "summary": "points=12 comments=0 (Hacker News)"
+    },
+    {
+      "id": "s-49ef9cf508",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Claude AI can review pull requests and ship fixes on its own now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests",
+      "publishedAt": "2026-11-23T20:00:00.000Z",
+      "summary": "Anthropic is launching some new Claude AI features to help software engineers ship code. As part of a new Claude Ship product being announced today, Claude now can review, fix, and approve pull requests. Engineers have already been able to take advantage of Claude's code review capabilities thanks to the Code Review feature, which was […]"
+    },
+    {
+      "id": "s-47b1648bdb",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "How Jensen Huang ended up as Nvidia CEO again",
+      "url": "https://www.theverge.com/tech/1040428/nvidia-jensen-huang-ceo-return",
+      "publishedAt": "2026-11-23T19:57:18.000Z",
+      "summary": "The Jensen Huang era of Nvidia nearly came to an end this month. Huang, who three decades ago cofounded what's come to be considered one of the most important companies in AI, resigned from his role on November 12th over mounting scrutiny around his alleged affairs. Huang admitted he had been \"unfaithful\" to his wife […]"
+    },
+    {
+      "id": "s-02d57080d1",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Kaeso: Rust 製のオープンソース・セルフホスト型 AI ゲートウェイ",
+      "url": "https://zenn.dev/dvnold/articles/b86b4cc65d64ac",
+      "publishedAt": "2026-11-23T19:56:09.000Z",
+      "summary": "Kaeso とは Kaeso は、Rust で書かれた MIT ライセンスのセルフホスト型 AI ゲートウェイです。アプリケーションは OpenAI 互換・Anthropic 互換の 1 つの API を呼び出すだけで、Kaeso がリクエストを各プロバイダーへルーティングします。 ソースコード: github.com/logicplanes/kaeso 公式サイト: kaeso.app 主な機能 1 つの API: OpenAI 互換 / Anthropic 互換のエンドポイント ルーティング先: 50 のクラウドプロバイダーに加え、Ollama、vLLM、LM ..."
+    },
+    {
+      "id": "s-588f7b0a1e",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Google Search’s AI Mode can now tap into Drive and Wallet for more personalized responses",
+      "url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+      "publishedAt": "2026-11-23T19:14:46.000Z",
+      "summary": "By bringing Personal Intelligence in AI Mode to Drive, Wallet, and the Gemini app, Google is leveraging the wealth of user data that's already within its ecosystem"
+    },
+    {
+      "id": "s-44fe677fd4",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Nothing’s upcoming Ear Note is a pair of earbuds with AI transcription",
+      "url": "https://www.theverge.com/gadgets/1040357/nothing-ear-note-earbuds-ai-recording",
+      "publishedAt": "2026-11-23T19:04:52.000Z",
+      "summary": "Nothing's new AI device is the Ear Note, a set of earbuds and their microphone-equipped charging case that can record and transcribe conversations, with a connected app to manage the recordings, transcriptions and AI-generated summaries, similar to Apple's new Watch feature and devices like Amazon's Bee wearable. Nothing CEO Carl Pei demonstrated the new device […]"
+    },
+    {
+      "id": "s-786a4f3202",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Oregon and Virginia sue SpaceX over Grok’s porn deepfakes",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040255/x-grok-ai-deepfakes-oregon-virginia-lawsuit",
+      "publishedAt": "2026-11-23T18:26:47.000Z",
+      "summary": "In separate but similar lawsuits filed on Monday, Oregon Attorney General Dan Rayfield and Virginia Attorney General Jay Jones accused SpaceX of violating state consumer protection laws by ignoring industry-standard safeguards and falsely promoting the safety of its X social media platform and Grok AI features. The complaint filed in Virginia accuses Musk of willfully […]"
+    },
+    {
+      "id": "s-e63c50b367",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO",
+      "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+      "publishedAt": "2026-11-23T18:12:22.000Z",
+      "summary": "The public hearing follows bipartisan calls for Huang to testify about the affair with the suspected Chinese spy."
+    },
+    {
+      "id": "s-1251fd528b",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "リーマン予想のLean 4統合で、修正ラッシュが止まらない――ガチ勢の仕事から学んだこと",
+      "url": "https://zenn.dev/dantarg/articles/rh-lean4-replay-community-repair-rush",
+      "publishedAt": "2026-11-23T18:01:30.000Z",
+      "summary": "昨日、自分のPull Requestがマージされた。 そこで一段落……と思って独立検証プロジェクトのGitHubを見に行ったら、とんでもない速度で修正が続いていた。Pull Requestが増え、取り込まれ、別のエラーが見つかり、また修正される。 「ちょっと速すぎないか？」と思って眺め始めたのだが、しばらくすると見るべきものが変わってきた。 速いのは、単にコードを書く速度ではない。間違いを再現し、仮説を訂正し、他人の仕事と重ならないよう調整し、証拠を残して先へ進む速度なのである。 この記事は、リーマン予想に関係するLean 4の巨大な証明資産を統合・修復している人々の動きを、2026年1..."
+    },
+    {
+      "id": "s-53b97270c1",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "A legendary philosopher isn’t buying Anthropic’s consciousness argument",
+      "url": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+      "publishedAt": "2026-11-23T17:36:08.000Z",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we approach model sentience and moral…"
+    },
+    {
+      "id": "s-ca38829e73",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "RoboTrack: Point tracking for real-world robotic manipulation",
+      "url": "https://huggingface.co/blog/allenai/robotrack",
+      "publishedAt": "2026-11-23T17:20:37.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-f955d48ede",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Amazon snaps up Decart’s AI optimization tech for $7.5B as it prepares to sell Trainium chips",
+      "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/",
+      "publishedAt": "2026-11-23T17:14:23.000Z",
+      "summary": "Amazon is acquiring Decart’s AI optimization technology and research team in a reported $7.5 billion deal."
+    },
+    {
+      "id": "s-11a2ff06f9",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "まとめは自分のためのものだった",
+      "url": "https://zenn.dev/hidekimori/articles/d662d264181de4",
+      "publishedAt": "2026-11-23T17:05:31.000Z",
+      "summary": "ある夕方、私が頼っている外部のサービスが、70分ほど応答を返さなくなりました。依頼は出ていくのに、何も返ってこない。エラーも、ステータス行すらもです。私の側は5分待ってあきらめ、もう一度だけ送り、また5分待ちました。 翌朝、私は AI と一緒に、1時間足らずでログを報告書にまとめました。件数。時系列の表。溜まっていた応答がようやく、まとめて届いた正確な時刻。そして、その夕方にそちらで何か変更はありませんでしたか、という丁寧な問い。 実際に送ったのは、CSV と一行だけでした。「もう不要かと思いますが、こちらの観測を時系列にしたものです。」 よくできた報告書だった 報告書の名誉のた..."
+    },
+    {
+      "id": "s-39c2da17ce",
+      "source": "Google AI",
+      "sourceType": "vendor",
+      "title": "A more tailored Google Search that’s uniquely yours",
+      "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "summary": "Get more helpful Search responses by securely opting in to connect Google Wallet, Drive, and the Gemini app to Personal Intelligence in AI Mode."
+    },
+    {
+      "id": "s-0703d1f701",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "Data + AI Anywhere: AlloyDB Omni integration with local models",
+      "url": "https://cloud.google.com/blog/products/databases/alloydb-omni-integration-with-local-models/",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "summary": "Open models like Gemma 4 from Google DeepMind are a great option to keep your data local. But how can a local AI model integrate with on-premises data? AlloyDB Omni , Google’s 100% PostgreSQL-compatible database that runs anywhere, now integrates with locally hosted large language models (LLMs). With AlloyDB Omni, you can build agentic experiences on your own infrastructure and on your own terms. "
+    },
+    {
+      "id": "s-d1d3915e53",
+      "source": "Google Cloud Blog",
+      "sourceType": "vendor",
+      "title": "How Sinch modernized its enterprise data warehouse from Snowflake to BigQuery to power AI",
+      "url": "https://cloud.google.com/blog/products/data-analytics/how-sinch-migrated-from-snowflake-to-bigquery-to-power-ai/",
+      "publishedAt": "2026-11-23T17:00:00.000Z",
+      "summary": "As the scale of global communications grows larger and larger, enterprise platforms must process billions of interactions with customers across a complex network of touchpoints without breaking them. A prime example is Sinch , one of the world’s leading cloud communications and customer engagement (CPaaS) companies, which processes billions of customer interactions, SMS routing events, voice calls"
+    },
+    {
+      "id": "s-4fee0c0f21",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Jensen Huang isn’t out of the woods yet",
+      "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/",
+      "publishedAt": "2026-11-23T16:57:40.000Z",
+      "summary": "Tech leaders should be clear-eyed about all the problems likely to come with Huang's reinstatement."
+    },
+    {
+      "id": "s-5dc55a0444",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang’s return",
+      "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
+      "publishedAt": "2026-11-23T16:39:10.000Z",
+      "summary": "\"I spoke to them, let me put it that way … And I convinced them,\" the president told CNBC."
+    },
+    {
+      "id": "s-1cb7841789",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "White House brags that Trump was ‘totally involved’ in getting Jensen reinstated",
+      "url": "https://www.theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated",
+      "publishedAt": "2026-11-23T16:30:11.000Z",
+      "summary": "It sure looked like President Donald Trump played a role in Jensen Huang's reinstatement as Nvidia CEO - and now the White House is making sure everyone knows he was. \"President Trump was totally involved and this is a great decision by the NVIDIA board,\" White House communications director Steven Cheung said in a statement, […]"
+    },
+    {
+      "id": "s-de36b121ee",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Tech leaders are celebrating Jensen Huang’s return",
+      "url": "https://www.theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
+      "publishedAt": "2026-11-23T16:14:04.000Z",
+      "summary": "Let's say you're Jensen Huang. You (allegedly) cheated on your wife with an alleged Chinese spy, allegedly had an affair with not one, but two subordinates, and (allegedly!) \"terrorized\" your employees, a series of indiscretions that led to your ouster from what was once the world's most valuable company. (The stock price has recently taken […]"
+    },
+    {
+      "id": "s-06b846db60",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIと協働して、調味料の開封日管理ツールを個人開発・公開した記録",
+      "url": "https://zenn.dev/hidaka_sj/articles/fb56d548f3a53a",
+      "publishedAt": "2026-11-23T16:12:46.000Z",
+      "summary": "はじめに 調味料の開封日を記録して、使い切りの目安日が分かる小さなWebツール「choimy」を作り、公開しました。 https://choimy.pages.dev/ 登録不要で、データはブラウザのlocalStorageにだけ保存されます。サーバーには何も送信しません。この記事は、その開発をAIと協働して進めた記録です。技術的な自慢話ではなく、「AIに任せる部分」と「自分が判断する部分」をどう分けたか、どこでつまずいたかを正直に書きます。 この記事について この記事の文章の多くは、AIアシスタント「Muse」で生成したものを下書きとして使っています。投稿にあたっては、内容の確..."
+    },
+    {
+      "id": "s-3a0d187b85",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Museを賢くする方法",
+      "url": "https://zenn.dev/kill_criteria/articles/how-to-make-claude-smarter",
+      "publishedAt": "2026-11-23T15:31:41.000Z",
+      "summary": "プロンプトではなく、検証の回し方を変えた記録 公開日: 2026年11月（初出）。本記事で「AI」とは、2026年時点のLLMベースのAIアシスタント（セッション型・記憶機能付きエージェント）を指す。将来の汎用人工知能（AGI）一般にそのまま当てはまる主張ではない。 実例はすべて、私的な内容を構造だけに抽象化したものである。個人が特定される情報・固有名詞・会話の引用は含まない。 AIの回答が賢くならないのは、プロンプトのせいじゃない AIアシスタントを使い始めて数ヶ月、同じことを何度も思った。「こいつ、頭はいいのに読みが浅い」。定義を確認せずに評価へ同調する。事実を一段飛ばして推..."
+    },
+    {
+      "id": "s-04fe9f09fd",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "MuseのAIパートナーに声と表情をつけた話",
+      "url": "https://zenn.dev/confiln/articles/a11cb168fa75a5",
+      "publishedAt": "2026-11-23T15:23:05.000Z",
+      "summary": "はじめに Museで作ったAIパートナーに、かわいい声でしゃべってもらい、返事に合わせて表情も変えてもらう仕組みを作りました！ 同じことを試したい人向けに、何を使い、何をAIに頼めばいいかをまとめます。 作成したもの ▲ 文章・音声・感情を反映した立ち絵が一緒に返ってくる ▲ 用意した表情は9種類（通常、笑顔、困り、照れ、呆れ、驚き、眠い、いたずら、怒り） ▲ スペースの設定画面でいつでもON/OFFの切り替えが可能 仕組み Museのサイドチャット ├─ 設定スペースで「雑談モード・声・写真」のON/OFFを確認 ├─ 声がON → 自宅PCのIrodori-TTSで..."
+    },
+    {
+      "id": "s-8bd40fd7e0",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ジェンスン・フアン氏、11日間の不在の後、NVIDIAのCEOに返り咲き | テクノエッジ TechnoEdge",
+      "url": "https://www.techno-edge.net/article/2026/11/23/5793.html",
+      "publishedAt": "2026-11-23T15:05:16.000Z",
+      "summary": "NVIDIAの創業者であるジェンスン・フアン氏が、社長兼CEO（代表取締役）として復帰しました。 NVIDIAが2026年11月23日（米国時間）、取締役会が全会一致で決定したとして発表。取締役会はフアン氏との協議・面談を経て、同氏の誠実さとNVIDIAを率いる能力に納得したとして復帰を承認。米国の国家安全保障上のリスクをも..."
+    },
+    {
+      "id": "s-b649726eae",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "Figma レイヤー構造の考え方：情報のまとまり・順序・所属をツリーで表す",
+      "url": "https://zenn.dev/imkohenauser/articles/figma-layer-structure-principles",
+      "publishedAt": "2026-11-23T14:45:05.000Z",
+      "summary": "AI を利用して得られる効果は、AI に渡すコンテキストの質に大きく左右されます。適切に整理された Figma データであれば、修正の必要がないほど質の高いコードを AI に実装させることもできます。 色や文字サイズ、おおよその配置といった見た目の情報は、オートレイアウトやバリアブルが設定されていなくても、画面上からある程度読み取れます。一方で、構造については、どの要素がひとまとまりなのか、どのパーツがどこに属しているのか、どれが現在の実装対象なのかを、見た目だけでは確定できません。 オートレイアウトやコンポーネント、バリアブルといった機能面の設定も大切ですが、その前提として、情報のまと..."
+    },
+    {
+      "id": "s-58dc594274",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "同じ重みを2回通すSenseNova-Loop-9B、ループを1回にすると掛け算の正解が20問中19問から1問に落ちた",
+      "url": "https://zenn.dev/matsushima_a/articles/day-055-sensenova-loop-count-compare",
+      "publishedAt": "2026-11-23T14:37:59.000Z",
+      "summary": "これは何を試した記事か SenseTimeが公開したSenseNova-Loop-9B(Apache-2.0)を手元のGPUで動かし、「同じ重みを何回通すか」を変えて出力を比べた記事である。 このモデルは32層のデコーダのうち、層4〜27の24層を同じ重みのまま2回続けて実行する。 保存している層は32層分だけだが、1トークンあたりの層計算は56回になり、READMEでは「約14.6B相当の推論計算」と説明されている。 チェックポイントの設定ファイルには、このループ回数が eval_count: 2 として書かれている。 そこで、読み込んだ重みはそのままに、推論時のループ回数だけを1..."
+    },
+    {
+      "id": "s-be9c8fb91e",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director | NVIDIA Newsroom",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "publishedAt": "2026-11-23T14:09:29.000Z",
+      "summary": "NVIDIA (NASDAQ: NVDA) today announced that effective immediately, Jensen Huang has been reinstated as President and Chief Executive Officer and as a member of the Board. The Board of Directors voted unanimously to reinstate Mr. Huang following a series of discussions and meetings with Mr. Huang, ..."
+    },
+    {
+      "id": "s-09afcc8478",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Jensen Huang is back as Nvidia’s CEO",
+      "url": "https://www.theverge.com/tech/1039937/nvidia-ceo-jensen-huang-reinstated",
+      "publishedAt": "2026-11-23T14:04:24.000Z",
+      "summary": "Nvidia has reinstated Jensen Huang as its CEO. The company announced on Monday morning that the board \"voted unanimously to reinstate Mr. Huang following a series of discussions and meetings with Mr. Huang, after which the Board was satisfied with respect to Mr. Huang's candor and ability to lead NVIDIA.\" In its statement, the board […]"
+    },
+    {
+      "id": "s-35cfea2e7f",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "GitHub - AFK-surf/xnulinux: XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+      "url": "https://github.com/AFK-surf/xnulinux",
+      "publishedAt": "2026-11-23T12:27:31.000Z",
+      "summary": "Run macOS userspace on Linux by loading the macOS kernel into it. xnulinux builds XNU, the open-source kernel of macOS, from Apple's published sources and runs it as a loadable kernel module (xnu.ko) inside an unmodified arm64 Linux kernel. The hosted XNU drives the CPU and MMU directly, so macOS..."
+    },
+    {
+      "id": "s-9e062018a9",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "GitHub - MaryCache/tsuzuri: Claude Code skill and viewer app for writing and reviewing Japanese prose sentence by sentence with explicit writing intent",
+      "url": "https://github.com/MaryCache/tsuzuri",
+      "publishedAt": "2026-11-23T11:53:43.000Z",
+      "summary": "English: README.en.md tsuzuri は Claude Code に日本語の文章を執筆させる際に、AI が生成した文章の品質を向上させるためのスキルと閲覧アプリです。 ユーザーは閲覧アプリで文ごとに AI の執筆意図（その文で読み手に何をするか）と文機能（文の役割や前の文との接続）を確認し、違和感を覚えた文にコメントを残して..."
+    },
+    {
+      "id": "s-e5ee52d4ce",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Windows Server 2016 からの Active Directory 移行、アップグレードにあたっての考慮事項",
+      "url": "https://jpwinsup.github.io/blog/2026/08/05/ActiveDirectory/PromotionAndDemotion/windows-server-2016-ad-migration-considerations/?utm_source=chatgpt.com",
+      "publishedAt": "2026-11-23T11:49:03.000Z",
+      "summary": "本記事はマイクロソフト社員によって公開されております。 (作成にあたり Copilot の力を借りています) こんにちは。Windows Commercial Support Directory Services チームです。 Windows Server 2016 は 2027 年 1 月 12 日にサポート終了を迎えます。本記事は、Windows Server 2016 で稼働するドメイン コントローラ..."
+    },
+    {
+      "id": "s-807c59c424",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "お客様が来店し「〇〇はセール対象ですよね？」と聞かれたのでセール対象外と説明、するとChatGPTの画面を見せて「対象店舗と書いてある」と主張…確認したらやはり対象外",
+      "url": "https://togetter.com/li/2774063",
+      "publishedAt": "2026-11-23T10:36:41.000Z",
+      "summary": "まけいぬびくとりー🌟DTM🔰 @ugokuchiwawa 開店した途端、お客様が来店し、「〇〇はセール対象ですよね？」と聞かれました。しかし、私の店舗はセール対象外だったため、そのことを説明しました。 すると、お客様がChatGPTの画面を見せてきて、対象店舗と書いてあると主張されました。確認してきますと伝えたところ、後..."
+    },
+    {
+      "id": "s-e859557e5e",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "ホワイトハッカー、ダサぃ。 — El Kentaro",
+      "url": "https://buymeacoffee.com/elkentaro/leyebimeji",
+      "publishedAt": "2026-11-23T10:35:22.000Z",
+      "summary": "大漏洩祭りが進行する中、あいも変わらず「ホワイトハッカー」がメディアでも政府筋でも話題になっている。 はっきり言おう。「ホワイトハッカー」はダサい。「セキュリティトップガン」はもっとダサいが、その少し下あたりに「ホワイトハッカー」は存在する。 なぜダサいのか。それはそもそも「ハッカー」というのは、..."
+    },
+    {
+      "id": "s-c19d554af7",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "著名なRust製OSSをLean 4で形式検証してみたら、めちゃめちゃバグが見つかった話",
+      "url": "https://zenn.dev/koukyosyumei/articles/31c8fcf4da45b7",
+      "publishedAt": "2026-11-23T10:14:56.000Z",
+      "summary": "こんにちは。コロンビア大学の博士課程でシステムセキュリティ・形式検証の研究をしている Koukyosyumei です。 今回は、ざっくり言うと、Rust製の有名なOSSをLean 4で形式検証するベンチマークを作っていたら、思いがけず実際のセキュリティ脆弱性をいくつも発見してしまった、という話です。 現在私がやっているプロジ..."
+    },
+    {
+      "id": "s-f8a4e02f42",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Connected intelligence for in-house legal",
+      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel."
+    },
+    {
+      "id": "s-680b35173b",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "publishedAt": "2026-11-23T08:00:00.000Z",
+      "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations."
+    },
+    {
+      "id": "s-6fd4c32fe3",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "How to build and maintain an agentic evaluation",
+      "url": "https://huggingface.co/blog/agentic-evals",
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "summary": ""
+    }
+  ]
+}

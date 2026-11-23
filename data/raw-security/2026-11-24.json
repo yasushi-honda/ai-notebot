@@ -1,0 +1,160 @@
+{
+  "date": "2026-11-24",
+  "collectedAt": "2026-11-23T22:01:26.990Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-539662308b",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+      "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/",
+      "publishedAt": "2026-11-23T20:54:51.000Z",
+      "summary": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...]"
+    },
+    {
+      "id": "s-5fd9301f69",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "OpenRouter drops AI providers over leaked prompts and secrets",
+      "url": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+      "publishedAt": "2026-11-23T20:00:20.000Z",
+      "summary": "OpenRouter removed three AI providers from its platform after discovering that they had violated their stated data-handling policies and exposed sensitive data. [...]"
+    },
+    {
+      "id": "s-f359e02609",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+      "publishedAt": "2026-11-23T19:42:20.000Z",
+      "summary": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...]"
+    },
+    {
+      "id": "s-4ec5c1ff80",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+      "url": "https://www.bleepingcomputer.com/news/security/spanish-laliga-confirms-hackers-stole-soccer-fans-personal-data/",
+      "publishedAt": "2026-11-23T18:38:40.000Z",
+      "summary": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...]"
+    },
+    {
+      "id": "s-1ab128c432",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
+      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
+      "publishedAt": "2026-11-23T17:45:15.000Z",
+      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks. The modified variant \"implements various tricks to hide itself from security tools,\""
+    },
+    {
+      "id": "s-0222d2dac1",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
+      "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
+      "publishedAt": "2026-11-23T16:50:01.000Z",
+      "summary": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]"
+    },
+    {
+      "id": "s-ca0d1bdeb3",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+      "publishedAt": "2026-11-23T15:10:48.000Z",
+      "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely"
+    },
+    {
+      "id": "s-376b263259",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "AI Agents Are Creating a Shared Responsibility Gap",
+      "url": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
+      "publishedAt": "2026-11-23T15:00:10.000Z",
+      "summary": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability. [...]"
+    },
+    {
+      "id": "s-6dad11c209",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-fix-for-windows-11-bluetooth-audio-quality-drops/",
+      "publishedAt": "2026-11-23T13:28:45.000Z",
+      "summary": "Microsoft testing fix for Windows 11 Bluetooth audio quality drops By Sergiu Gatlan November 23, 2026 08:28 AM 0 Microsoft is working to fix a long-standing Windows issue that has been causing significant audio quality drops for Bluetooth headphone users. This is triggered when Windows automatically switches from the headphone (A2DP stereo) profile to the headset (hands-free, phone-call-like) profile when an app or game activates and uses the headset's microphone, because bandwidth is limited in two-way mode. After installing the preview builds released for the Beta and Experimental channels on Friday, Windows 11 Insiders with newer Bluetooth headsets can keep playing high-quality audio even after the OS switches between profiles. \"Bluetooth LE Audio devices can now play at full-range stereo fidelity while also using the device's microphone, ensuring you continue to hear great audio quality when in game chat, in a voice call, using voice typing, or using voice chat in Copilot Chat,\" said Windows Insider communications lead Stephen Lines. \"When using an LE Audio device with a PC that supports Super Wideband Stereo, choose the new 2 channels, 16 bit, 48000Hz option from Settings > System > Sound > Output > {Bluetooth device} > Output settings > Format when microphone is active.\" This new feature is available for all Bluetooth LE Audio devices that support 48kHz playback, such as headphones, earbuds, and speakers. Bluetooth LE Audio format settings (Microsoft) &#8203;Earlier thi"
+    },
+    {
+      "id": "s-cb673b121b",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+      "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+      "publishedAt": "2026-11-23T13:22:20.000Z",
+      "summary": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1. \"Binary-parser before 2.3.1 contains a code injection vulnerability that allows"
+    },
+    {
+      "id": "s-33d65726f5",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+      "publishedAt": "2026-11-23T12:41:04.000Z",
+      "summary": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on a connecting technician's host. \"On November 12, 2026, we observed one managed service"
+    },
+    {
+      "id": "s-759d50b400",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+      "publishedAt": "2026-11-23T12:28:09.000Z",
+      "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user with high-level API access to open connections to internal systems of the user's choosing on the"
+    },
+    {
+      "id": "s-09da74a670",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Call center operator gets 8 years for helping scam 30,000 Americans",
+      "url": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+      "publishedAt": "2026-11-23T12:02:23.000Z",
+      "summary": "A Peruvian call center operator was sentenced to eight years in prison for helping steal millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]"
+    },
+    {
+      "id": "s-12b4ad14dd",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-23T12:00:00.000Z",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability &nbsp; CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors a"
+    },
+    {
+      "id": "s-31afdc96e8",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+      "publishedAt": "2026-11-23T09:11:56.000Z",
+      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an"
+    },
+    {
+      "id": "s-791422e9c3",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+      "publishedAt": "2026-11-23T09:04:08.000Z",
+      "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route."
+    },
+    {
+      "id": "s-80927b607c",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+      "publishedAt": "2026-11-23T08:24:15.000Z",
+      "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers"
+    }
+  ]
+}
