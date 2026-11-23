@@ -50,9 +50,6 @@ export const RSS_FEEDS = [
   { source: 'はてなブックマーク (IT)', category: 'japanese', urls: ['https://b.hatena.ne.jp/hotentry/it.rss'] },
 ];
 
-/** Reddit は .json エンドポイントが 403 を返すため .rss を使う。個別に 429 になっても他ソースは生かす。 */
-export const REDDIT_SUBS = ['LocalLLaMA', 'MachineLearning', 'artificial'];
-
 /** arXiv の対象カテゴリ */
 export const ARXIV_CATEGORIES = ['cs.AI', 'cs.CL', 'cs.LG'];
 

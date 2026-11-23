@@ -5,7 +5,7 @@
 ## アーキテクチャ
 
 ```
-collect.mjs (RSS/HN/Reddit/arXiv/GitHub) → data/raw/YYYY-MM-DD.json
+collect.mjs (RSS/HN/arXiv/GitHub) → data/raw/YYYY-MM-DD.json
     ↓
 curate.mjs (Vertex AI gemini-3.5-flash-lite) → site/src/content/posts/YYYY-MM-DD.md
     ↓
