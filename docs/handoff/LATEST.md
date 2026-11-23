@@ -1,11 +1,21 @@
 # ハンドオフ（最新）
 
-- セッション: 2026-11-20（11-20 記事の誤字「露正」を修正。PR #98 マージ・本番反映。介護版 11-15〜11-20 を read-only 確認）
-- 更新日: 2026-11-20
+- セッション: 2026-11-23（11-23 日次の収集失敗を復旧し、再発防止 PR #101・#102 をマージ。retry 用 Scheduler ジョブを GCP に反映）
+- 更新日: 2026-11-23
 
 ## セッション概要
 
-### 11-20 記事の誤字「露正」の修正（PR #98、2026-11-20）
+### 11-23 日次の収集失敗と再発防止（PR #101・#102、2026-11-23）
+- **事象**: 11-23 07:00 JST の Scheduler 起動（run 45075192012）が、候補 42 件（閾値 50）で `exit 1`。`data/raw` は更新されず、保険の GitHub cron も 09:45 時点で履歴になかった。失敗通知の Issue は起票されない
+- **復旧**: `gh workflow run daily.yml -f skip_if_exists=true` を 1 回（run 45090768946、約 2.5 時間後）。候補は 50 件ちょうどで通過し、AI 版・介護版・セキュリティ版の 11-23 が公開された
+- **原因の整理（実測）**: ①日曜夜〜月曜朝は新着が少ない（候補数: 11-16 月=52、11-22=61、11-23 失敗時=42、再実行=50。平日は 100 件前後） ②**Reddit が 11-18 から 0 件**（11-17 までは毎日 8 件。CI でも手元でも `LocalLLaMA`=404・他 2 つ=429）。11-16（月）は Reddit の 8 件を含めて 52 件で、無ければ閾値割れだった
+- **Reddit の外部要因**: TechCrunch（2026-09-30）によれば Reddit は **RSS を 11-13 に終了**し、コミュニティ外のフィードに代替はないと述べた（記事中の引用: RSS は "common surface for large-scale scraping and automated abuse"）。壊れた時期と整合するが、Reddit の一次投稿（r/modnews 等）は未読。復旧の見込みは低いとみられる
+- **PR #101**: `collect-core.mjs` に `shortfallRetries`（既定 0、AI 版のみ 1 回・180 秒待機）を追加。`setup.sh` に `daily-digest-dispatch-retry`（毎日 08:00 JST、`skip_if_exists=true`）を追加し、`setup.sh deploy` で GCP に反映済み（3 ジョブ ENABLED を確認）。**訂正**: 180 秒待つ再収集は、新着不足（時間経過で解消するタイプ）にはほぼ効かない。効くのは 08:00 の再起動のほう
+- **PR #102**: AI 版にも `weekendMaxAgeDays: 5`（土日月 JST）を設定。security 版が 2026-11-09 に同じ理由で導入済みの値。閾値は下げていない。トレードオフ: 日曜・月曜の記事に最大 5 日前の話題が入りうる
+- **codex review（PR #101、medium、1 回）**: P2 が 1 件。「08:00 の再起動は生成済みの日でも再デプロイが走る（`deploy` ジョブが無条件）」。事実だが、既存の保険 cron も同じ挙動のため見送り（PR に記録）。PR #102 は 1 行のため手動チェックリストのみ
+- **効果は未実測**: 週末窓の効果は次の日曜・月曜、retry ジョブは 11-24 08:00 の起動で確認する
+
+### 前回セッション（2026-11-20）: 11-20 記事の誤字「露正」の修正（PR #98）
 - **報告**: decision-maker が `/posts/2026-11-20/` に「露正」という変な語があると指摘
 - **原因**: 出典（TechCrunch、`exposing private data`）の要約に該当語はなく、記事生成 LLM の誤変換（正しくは「露出」）。`style-guard.mjs` の `CHINESE_ONLY_TERMS` は中国語の熟語だけを検出するため、この種の誤字は検査対象外
 - **対応**: `site/src/content/posts/2026-11-20.md:48` の 1 語を修正。`validate-citations.mjs 2026-11-20` は unresolved 0。`care-rebuild.yml -f regenerate=false`（run 44661464616）が success。公開 URL で「露正」0 件・「データの露出」1 件を確認
@@ -51,22 +61,24 @@
 | 項目 | 状態 |
 |------|------|
 | 未コミット変更 | なし（本ハンドオフ PR を除く） |
-| CI/CD | ✅ care-rebuild（11-13 復旧）success。PR #93 の CI（`test`）も success |
+| CI/CD | ✅ PR #101・#102 の CI success。11-23 の再実行 run 45090768946 success |
 
 ## 品質ゲート
 
 | 項目 | 状態 |
 |------|------|
-| codex review | PR #95: 1 回（medium、findings 0 件。「Gemini Notebook を Notebook と Gemini の両方に数えない判定は正しい」、curate-care 126 件 pass）。PR #93: 1 回（medium、findings 0 件。「プロンプトとツール判定の拡張に一貫性があり、実害のある回帰なし」、curate-care 125 件 pass） |
-| テスト | ✅ `node --test $(find scripts -name '*.test.mjs')` 430 件 pass（マージ前）。追加後の `curate-care.test.mjs` は 125 件 pass |
-| 実データ確認 | ✅ 11-14 の再生成後、公開ページに旧名の表記なし（出典リンクを除く）。新名が実際の記事に出るかは未確認（出る日に確認） |
+| codex review | PR #101: 1 回（medium、P2 が 1 件。検証のうえ見送り、PR に記録）。PR #102: 1 行のため手動チェックリストのみ。PR #95: 1 回（medium、findings 0 件。「Gemini Notebook を Notebook と Gemini の両方に数えない判定は正しい」、curate-care 126 件 pass）。PR #93: 1 回（medium、findings 0 件。「プロンプトとツール判定の拡張に一貫性があり、実害のある回帰なし」、curate-care 125 件 pass） |
+| テスト | ✅ `node --test scripts/test/*.test.mjs` 435 件 pass（PR #101、再収集の 3 ケースを追加）。PR #102 の CI（`test`）も success |
+| 実データ確認 | ✅ 11-23 の再実行で 3 版が公開。再収集・週末窓・retry ジョブの本番での効果は未実測（条件待ち 15・16）。✅ 11-14 の再生成後、公開ページに旧名の表記なし（出典リンクを除く）。新名が実際の記事に出るかは未確認（出る日に確認） |
 
 ## 同根再発スキャン（§4.6）と対症療法判定（§4.7）
 
-- 修正 PR（`fix:`）は無いが、復旧対象の「official 0 件で収集が落ちる」は **同根候補 3 件**（#50 9-28、#56 9-29、#92 11-13）
-  - 仮説: ①Google 検索グラウンディングが go.jp/lg.jp を返さない回がある（実行ごとに結果が変わる） ②公的機関に絞る追加検索のプロンプトが効いていない ③official の判定が `.go.jp`/`.lg.jp`/`.gov` と許可リストに限られ、ベンダー公式ドメインが web 扱いになる
-  - 次に出るとしたら: 1 件だけで通っていた日（約 4 割）が 0 件側に振れる経路
-- 対症療法判定: 修正 PR が無く発動条件外。復旧は再実行のみで、official が取れない原因そのものは未調査（頻度が約 2 か月で 3 回と低く、再実行で復旧するため様子見を選択）
+- **§4.6（今回の修正 PR #101・#102）**: 同根候補 **1 件**。2026-11-09 の security 版「月曜に候補が閾値未満」（ADR `adr-2026-10-29-security-digest.md:103`、`weekendMaxAgeDays` 導入）と同じ構造で、AI 版には 14 日遅れて適用された
+  - 仮説: ①版ごとにプロファイルを持つため、片方で直した鮮度窓が他方へ伝わらない ②閾値 50 に対する余裕が週末に常に小さい（42〜61 件） ③単一ソース（Reddit）の脱落が週末の余裕を食う
+  - 次に出るとしたら: 介護版（`collect-care`、Google 検索グラウンディング）が、同じ「週末の新着不足」で閾値に当たる経路。未確認
+- **§4.7 対症療法判定**: 基準 1（#101 は retry）と基準 3（同症状の修正 PR が 30 日以内にある）に該当。**WebSearch を実施**: Reddit の RSS は 11-13 終了と報じられ（TechCrunch 2026-09-30）、外部要因として説明がつく。基準 4（単体テストのみ）にも該当し、本番での効果は未確認
+  - 判定: 週末窓（#102）は構造対策だが未実測。retry（#101 の再収集部分）は新着不足には効かないと自己訂正済みで、実効があるのは 08:00 の再起動。よって「対症療法は残る、根は外部要因（Reddit 終了）と週末の新着不足」として扱う
+- 前回までの「official 0 件で収集が落ちる」候補（#50・#56・#92）は今回のセッションでは触れていないため据え置き
 
 ## 次のアクション（3分割・SKILL.md §2.5）
 
@@ -81,18 +93,20 @@
 | 2 | **新ガード（中国語の熟語検出）の本番動作確認**（前回の 1 を継続） | 2026-11-12 以降の daily の後（11-12・11-13 は実行済み） | read-only で run ログに `本文に中国語` の再生成の記録があるか、新しい記事に未翻訳の中国語が残っていないかを確認。誤検出で再生成が空回りしていれば `CHINESE_ONLY_TERMS` を見直す提案（write は指示後） | `gh run view <id> --log \| grep '本文に中国語'`、`grep -rn '開箱' site/src/content` |
 | 3 | **対策の空率の測定と、公式補助取得の要否判断** | セキュリティ版の記事が 5 日分以上そろっている（満たした）。決裁者の指示または次の点検機会 | read-only で記事ごとの対策件数・`::warning::`・要約補強の成功率・除外テーマ数を集計し、別モデルで出典忠実性を再監査。空率が高ければ plan mode で設計提案 | `site/src/content/security/*.md` の `### すぐできる対策` を集計 |
 | 4 | **用語辞書の定義文の人による確認** | decision-maker が辞書（46語）を確認、または確認を依頼 | 誤りがあれば `security-glossary.mjs` を修正（write は指示後） | `scripts/lib/security-glossary.mjs` の `SECURITY_TERMS` |
-| 5 | **次の祝日（11-23 勤労感謝の日・月）の収集確認** | 2026-11-23 の daily 実行の後 | 月曜は 5 日窓になったので枯渇は緩和されるはずだが、公的機関の項目数と件数を read-only で確認 | `data/raw-security/2026-11-23.json` をソース別に集計 |
+| 5 | **セキュリティ版の祝日・週末の収集確認**（11-23 分は実施済み: 公的機関の項目が 0 件で、一次情報を含まない記事になった。`collect-security` の警告） | 次に週末・祝日明けの daily が出た後 | read-only で公的機関の項目数を集計し、0 件が続くなら decision-maker に窓の拡大か重複排除窓の見直し（却下候補 13）を提示 | `data/raw-security/<date>.json` をソース別に集計 |
 | 6 | AI 版 `curate.mjs` の本文に生 HTML・リンクの拒否を入れる | decision-maker からの修正指示 | セキュリティ版の `findUnsafeMarkup` を AI 版の Stage B の `evaluate` にも適用する（介護版には既にある）。本文は外部フィードに影響されるため同じ経路で露出している。修正（write）なので起点は decision-maker | `grep -n findUnsafeMarkup scripts/curate.mjs`（現状ヒットなし） |
 | 7 | Stage B のテーマ除外の実環境確認（前回から継続） | daily の run ログに「除外したテーマ」が頻発した時 | 10/24 の run で 1 件（脚注欠落 3 試行連続 NG）を確認済み。頻発するなら脚注指示の見直し | `gh run view <id> --log \| grep '除外したテーマ'`（リポジトリ内で実行） |
 | 8 | NVIDIA Developer Blog の追加（前回から継続） | `developer.nvidia.com` の名前解決が安定して通ること | `fetchFeed` 経由で取得・直近 3 日の新着を確認し、問題なければ `feeds.mjs` に 1 行追加 | `node -e` で `fetchFeed` を呼ぶ（`scripts/lib/rss.mjs`） |
-| 9 | Reddit 429 の再発（前回から継続） | 収集失敗が収集成功しきい値に影響した時 | 10/24・10/25 の run でも `Reddit r/MachineLearning`・`r/artificial` が HTTP 429（他ソースは生きており記事は生成された）。`collect.mjs` の Reddit 取得のリトライ・バックオフを read-only で調査 | `gh run list --workflow=daily.yml` の失敗 run のログ |
+| 9 | **Reddit の扱いの決定**（旧: 429 の再発。11-18 から 0 件、RSS 終了の報道あり）。decision-maker は当面「残して様子見」を選択したが、外部要因が分かったため再確認が望ましい | decision-maker が判断、または 12-07 ごろまで 0 件が続いた時 | 外す（`collect.mjs` から Reddit を削除する PR）か、残す。OAuth 登録は新規 API 受付の状況が未確認で、代替になるか不明。read-only で Reddit の一次投稿（r/modnews 等）を確認してから提示 | `for d in <日付>; do grep -c 'Reddit r/' data/raw/$d.json; done`、`gh run view <id> --log \| grep Reddit` |
 | 10 | アラートメールの受信確認（前回から継続） | decision-maker が `hy.unimail.11@gmail.com` の受信箱を確認（AI 代行不可） | 届いていなければ通知チャネルを調査 | decision-maker 本人が確認 |
 | 11 | GA4 データ反映の再確認（前回から継続） | decision-maker 本人の Google ログインでの確認（AI 代行不可） | analytics.google.com で DebugView / リアルタイムレポートを確認 | decision-maker 本人が確認 |
 | 12 | 「福祉用具」targetServices が生成記事で選ばれるか（前回から継続） | 次回以降の daily.yml / care-rebuild.yml の自然な実行（確率的） | `site/src/content/care/` の新規記事に出現するか確認。長期間出現しなければ `collect-care.mjs` のテーマ指示を見直す | `grep -l '福祉用具' site/src/content/care/*.md` |
 | 13 | `content.config.ts` の themes フィールド影響分析（前回から継続） | decision-maker からの実行指示 | `/impact-analysis` 実行（read-only） | 明示指示の有無 |
 | 14 | care-rebuild.yml の FETCH_HEAD 方式への統一（前回から継続） | 次に care-rebuild.yml の YAML 自体を編集する用事、または明示指示 | Sync ステップを `git fetch origin main && git reset --hard FETCH_HEAD` に統一 | `grep -n "git reset" .github/workflows/care-rebuild.yml` |
+| 15 | **11-24 08:00 の retry ジョブの起動確認** | 2026-11-24 08:00 JST の後 | read-only で `daily-digest-dispatch-retry` の起動と、`daily.yml` の run（`skip_if_exists` で生成を飛ばし、デプロイは走る想定）が success かを確認。失敗なら Workflows のログを調査 | `gcloud scheduler jobs describe daily-digest-dispatch-retry --location asia-northeast1 --project ai-notebot-yh --account hy.unimail.11@gmail.com`、`gh run list --workflow=daily.yml` |
+| 16 | **週末窓（#102）の効果確認** | 次の日曜・月曜の daily（11-29・11-30）の後 | read-only で「重複排除・鮮度フィルタ後の件数」が以前の 42〜61 件より増えたか、`generate` が候補不足で失敗していないかを確認。増えなければ窓の日数か閾値を decision-maker に相談 | `gh run view <id> --log \| grep 'フィルタ後の件数'` |
 
-> 上表の 3〜14 は前回までの 2〜13 を番号だけ繰り下げた継続項目（内容は変更なし）。新 1 は今回追加、新 2 は前回の 1 の継続。
+> 上表の 3〜14 は前回までの 2〜13 を番号だけ繰り下げた継続項目（5・9 は 11-23 に更新）。15・16 は今回追加。1 は前回の継続、2 は前回の 1 の継続。
 
 ### 却下候補（記録のみ）
 
@@ -124,6 +138,9 @@
 
 ## 申し送り
 
+- このシェルの gcloud 既定アカウントは別案件のもの（direnv が Bash サブシェルに効かない）。手動の gcloud は必ず `--project ai-notebot-yh --account hy.unimail.11@gmail.com` を付ける（`setup.sh` は明示済み）
+- `setup.sh deploy` の完了メッセージ「Schedulerジョブ2本」は実際は 3 本（表示のみの不整合、次に触るときに直す）
+- `gh pr merge` は CI（`test`）が実行中だと `pr-merge-gate` が拒否した（ダイアログで自由記述の回答になった）。`gh pr checks <番号> --watch` で完了を待ってから単独で実行する
 - `gh pr merge` は単独コマンドでないと `pr-merge-gate` が拒否する（パイプ `| tail` も不可）。マージ前に最新コミットの CI（`gh pr checks`）を確認する
 - 手動の `daily.yml`（入力なし）は AI 版・介護版・セキュリティ版をすべて作り直す。1 つの版だけ作り直したいときは、ローカルで `GEMINI_ACCESS_TOKEN=$(gcloud auth print-access-token --account=hy.unimail.11@gmail.com)` を渡して `node scripts/curate-security.mjs <date>`（収集済みの JSON を使う）→ `validate-citations.mjs <date> --type=security` → PR、が最小の範囲。反映は `care-rebuild.yml -f regenerate=false`
 - BSD `sed -i` は日本語を含む置換で `unescaped newline` エラーになることがある。Edit ツールか Python で置換する（`&&` 連結だと後続が実行されずに気付きにくい）
@@ -145,8 +162,8 @@
 
 ## 最終結論
 
-✅ **セッション終了可** — 11-20 記事の誤字「露正」を修正（PR #98）して本番反映を確認した。介護版 11-15〜11-20 の read-only 確認も完了。
+✅ **セッション終了可** — 11-23 の収集失敗は復旧済みで、再発防止の PR #101・#102 はマージ・GCP 反映まで完了。executor 領分の作業はゼロ。
 
-- OPEN PR: 本ハンドオフ PR のみ（PR #98 はマージ済み） / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 14
-- §4.6 同根再発スキャン: 誤字は同種の過去事例なし（候補 0 件）。別件として official 0 件の候補 3 件（#50・#56・#92 の official 0 件）。原因の根治は未実施で、様子見を decision-maker が選択
-- §4.7 対症療法判定: 誤字修正は 1 語の直接修正で、再発防止の検査は未実施（decision-maker 選択、同種再発時に検討）。official 0 件側は発動条件外（修正 PR なし）。復旧は再実行のみで、official が取れない原因は未調査
+- OPEN PR: 本ハンドオフ PR のみ / open Issue: 0 件 / Git clean / 即着手 = 0、条件待ち = 16
+- **decision-maker への申し送り（終了の妨げではない）**: Reddit は RSS 終了の報道があり、復旧の見込みは低い。「2 週間様子見」は decision-maker が当時の情報で選んだ判断で、外す・残すの再判断は条件待ち 9（コードは未変更）
+- §4.6 同根再発スキャン: 候補 1 件（security 版 11-09 の週末窓）。§4.7 対症療法判定: 基準 1・3・4 に該当、WebSearch 実施済み。週末窓と retry の効果は未実測（条件待ち 15・16）
