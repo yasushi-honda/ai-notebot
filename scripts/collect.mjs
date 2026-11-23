@@ -48,6 +48,7 @@ const PROFILE = {
   feeds: RSS_FEEDS,
   collectExtra: collectApiSources,
   maxAgeDays: 3, // 新着とみなす日数（日次収集なので短め）
+  weekendMaxAgeDays: 5, // 土日月(JST)だけ広げる。週末明けは新着が少なく候補が閾値ぎりぎりになる（2026-11-23 に 42件で失敗。security 版と同値）
   dedupLookbackDays: 7, // 直近7日に既出のURLは新着から除外
   maxPerSource: 8, // 1ソースが候補を占拠しないための上限
   minSuccessSources: 8, // これを下回ったら公開しない（AC-1 の前提）
