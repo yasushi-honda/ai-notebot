@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-23",
+  "collectedAt": "2026-11-23T00:47:55.563Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-32066f88a6",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "publishedAt": "2026-11-22T18:45:37.000Z",
+      "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]"
+    },
+    {
+      "id": "s-9165f07cca",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+      "publishedAt": "2026-11-22T15:43:04.000Z",
+      "summary": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]"
+    },
+    {
+      "id": "s-9c4bbd9572",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+      "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+      "publishedAt": "2026-11-22T15:15:25.000Z",
+      "summary": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices. [...]"
+    },
+    {
+      "id": "s-78074d39df",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "publishedAt": "2026-11-22T05:06:55.000Z",
+      "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored. OpenRouter, a gateway that routes customers' AI requests to a pool of"
+    },
+    {
+      "id": "s-0be8ff22df",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+      "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+      "publishedAt": "2026-11-22T05:03:41.000Z",
+      "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly. Security firm pwn.ai showed this week that ordinary upload,"
+    },
+    {
+      "id": "s-99b9591708",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+      "publishedAt": "2026-11-21T22:59:58.000Z",
+      "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]"
+    },
+    {
+      "id": "s-43d16f82bd",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Android アプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」に複数の脆弱性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56850.html",
+      "publishedAt": "2026-11-19T23:00:11.000Z",
+      "summary": "75 views 独立行政法人情報処理推進機構（IPA）および一般社団法人JPCERT コーディネーションセンター（JPCERT/CC）は11月18日、Androidアプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」における複数の脆弱性について「Japan Vulnerability Notes（JVN）」で発表した。GMO Flatt Security株式会社のRyotaK氏が報告を行っている。影響を受けるシステムは以下の通り。 Androidアプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」2.7より前のバージョン 宮内庁が提供するAndroidアプリ「宮内庁参観音声ガイド- 宮内庁公式アプリ」には、下記の影響を受ける可能性がある複数の脆弱性が存在する。 ・重要な情報の平文送信（CVE-2026-117657） →中間者攻撃が可能な第三者により、当該アプリケーション上の表示内容が改ざんされる ・OSコマンドインジェクション（CVE-2026-118900） →当該アプリケーションの権限で、任意のOSコマンドが実行される JVNでは、開発者が提供する情報をもとに最新版へアップデートするよう呼びかけている。 《ScanNetSecurity》 一次情報または関連リンク JVN 関連記事 Android アプリ「チケット流通センター」に複数の脆弱性 2026.10.8 Thu 8:00 Android アプリ「【保護者専用】まなびポケット」にアクセス制限不備の脆弱性 2026.9.18 Fri 8:00 登山アプリ「YAMAP」Android 版にアクセス制限不備の脆弱性 2026.9.18 Fri 8:00 Android アプリ「マイナポイント」にアクセス制限不備の脆弱性 2026.8.28 Fri 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-c191c2e328",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Oracle Java に関するセキュリティ更新プログラム公表、ネットワーク経由で攻撃を受ける可能性のある脆弱性も",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56849.html",
+      "publishedAt": "2026-11-19T23:00:08.000Z",
+      "summary": "195 views 独立行政法人情報処理推進機構（IPA）は11月18日、Oracle Javaの脆弱性対策について発表した。対象となるのは、サポートされている以下の Oracle 製品。 Oracle Java SE 27.0.1.0.3 Oracle Java SE 25.0.5.0.3 Oracle Java SE 21.0.13.0.3 Oracle Java SE 17.0.21.0.3 Oracle Java SE 11.0.33.0.3 Oracle Java SE 8 Update 511b33 Oracle Java SE 8 Update 511b33-perf Oracle社では日本時間11月18日に、Oracle Javaに関するセキュリティ更新プログラムを公表しているが、これらの脆弱性を悪用された場合、アプリケーションプログラムが異常終了する、攻撃者によってパソコンを制御される、といった様々な被害が発生する可能性がある。 また、Oracle Java SEのソフトウェアについて、ネットワーク経由で攻撃を受ける可能性のある脆弱性（CVE-2026-114938）が報告されている。 攻撃が行われた場合の影響が大きいため、IPAでは早急にセキュリティ更新プログラムを適用するよう呼びかけている。 《ScanNetSecurity》 一次情報または関連リンク 情報処理推進機構（IPA） 関連記事 Oracle Java に脆弱性 2026.10.27 Tue 8:00 Oracle Java に脆弱性 2026.7.24 Fri 8:00 Oracle Java に脆弱性、セキュリティ更新プログラム適用を呼びかけ 2026.4.24 Fri 8:00 Oracle Java に脆弱性、セキュリティ更新プログラムの適用を呼びかけ 2026.1.26 Mon 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-cadb90f96c",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "サイバーセキュリティ総研、悪用確認済みの脆弱性を日本語で届ける無料「脆弱性速報メール」配信",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56848.html",
+      "publishedAt": "2026-11-19T23:00:03.000Z",
+      "summary": "769 views 株式会社サイバーセキュリティ総研は11月12日(木)、無料の「脆弱性速報メール」を11月6日(金)から提供開始したと発表した。 同サービスは、悪用が確認された脆弱性や、国内外の公的機関が注意を呼びかけている緊急性の高い脆弱性を日本語のメールで配信するもの。米国CISAのKEV、IPA、JPCERT/CC、Cloudflare Radar Zero Wireなどの一次情報を根拠とし、件名と本文冒頭に重大度（CVSS）と対応期限の目安を示す。本文には影響を受ける製品と推奨される対応をまとめ、一次情報の該当ページへのリンクを添える。同じ脆弱性を複数の機関が取り上げた場合も、重複しては送らない。 速報はAIが一次情報から作成し、別のAIとプログラムで照合する。照合を通過したものだけを配信する。夜間に公表されたものは翌朝にまとめて配信する。 また11月16日(月)からは、前週にKEVへ追加された脆弱性、国内の注意喚起、配信した速報をまとめた週次レポートを毎週月曜に配信する。週次レポートは同社担当者が内容を確認してから配信する。 配信は不定期で、ベストエフォートでの提供のため、すべての脆弱性を網羅するものではない。対応期限の目安は、米国CISAがKEVで米国連邦機関向けに定めている期限である。 《ScanNetSecurity》 一次情報または関連リンク サイバーセキュリティ総研 関連記事 注目の「SCS評価制度」最新動向をキャッチ、IPA がメルマガ登録受付中 2026.7.16 Thu 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-d1202d3392",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+      "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+      "publishedAt": "2026-11-19T04:33:46.000Z",
+      "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC. \"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said."
+    },
+    {
+      "id": "s-3baa0d9765",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "スリーシェイクが利用するNotion AIの委託先に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56839.html",
+      "publishedAt": "2026-11-18T23:05:23.000Z",
+      "summary": "231 views 株式会社スリーシェイクは11月13日、同社が業務で利用しているクラウドサービス「Notion」のAI機能（Notion AI）を提供するNotion Labs, Inc.（Notion社）の委託先であるFireworks AI, Inc.（Fireworks社）への不正アクセスについて発表した。 これはFireworks社に第三者から不正アクセスがあり、スリーシェイクによるNotion AIへの入力（質問）とNotion AIからの出力（回答）の履歴が外部に漏えいした可能性がある旨の報告が、11月10日にNotion社からあったというもの。 Notion社では11月3日までにFireworks社との接続を解除し、Fireworks社のシステム内にあるデータを削除している。 《ScanNetSecurity》 一次情報または関連リンク 「Notion AI」のチャット履歴の漏えいのおそれに関するお詫びとお知らせ（第一報） 関連記事 アクサ損害保険「MyAXA」に不正アクセス、約59万7千件の顧客情報が漏えいした可能性 2026.11.16 Mon 8:05 三井住友海上火災保険の中堅・中小企業向け情報提供サイト「MSコンパス」に不正アクセス 2026.11.16 Mon 8:05 三井住友海上火災保険「ご契約者さま専用ページ」に不正アクセス、約3万7,000件の顧客情報が漏えい 2026.11.16 Mon 8:05 「靖國神社オンライン授与品・頒布品サイト」に不正アクセス、約1万4,500件の利用者の個人情報が漏えい 2026.11.16 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-aa58606dec",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "GMOリサーチ&AI 運営のアンケートサイト「infoQ」に不正アクセス、計643件・計295万5,000円のポイント不正交換確認",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56838.html",
+      "publishedAt": "2026-11-18T23:05:20.000Z",
+      "summary": "266 views GMOリサーチ&AI株式会社は11月11日、10月5日に公表した同社が運営するアンケートサイト「infoQ」への不正アクセスについて、最終報を発表した。 同社では10月2日以降に、「infoQ」のサーバに第三者から不正アクセスがあり、会員の個人情報が外部に持ち出されたこと、一部会員のポイントが本人の意思によらずAmazonギフトコードに交換されたことを確認していた。10月3日午前に会員からの問い合わせを受けて調査した結果、不正アクセスが発覚した。 セキュリティ専門会社の調査結果によると、ポイントの不正な交換が行われたのは計643件・計2,955,000円（対象会員453名）で、交換先ごとに下記の通り確定している。 《ScanNetSecurity》 一次情報または関連リンク 当社が運営するアンケートサイト「infoQ」への不正アクセスによる個人情報漏えいに関するお詫びとお知らせ（最終報） 関連記事 GMOリサーチ&AI 運営のアンケートサイト「infoQ」に不正アクセス、89万4,082件の個人情報外部持ち出しを確認 2026.10.19 Mon 8:05 GMOペイメントゲートウェイ、ライフカード向けサービスで顧客情報一部流出の可能性 2026.11.5 Thu 8:05 「お名前.com デスクトップクラウド」に不正アクセス、取引口座のログイン情報等が取得され不正利用された可能性 2026.10.26 Mon 8:05 GMOインターネットグループ代表 熊谷正寿氏、「能動的サイバー防御」具申理由を公開 攻撃者から約80億円の金銭要求も 2026.10.28 Wed 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-2badb1c552",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "商工会議所ネット試験管理システムに不正アクセス、最大約98万人分の受験者情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56837.html",
+      "publishedAt": "2026-11-18T23:05:17.000Z",
+      "summary": "210 views 日本商工会議所は11月10日、同所がネット試験で利用している外部サーバ（試験管理システム）への不正アクセスについて発表した。 これは商工会議所ネット試験管理システムに対する不正アクセスを、システム管理会社からの報告で11月4日に確認したというもの。調査を進めた結果、受験者情報が漏えいした可能性が11月9日に判明している。 また同所では、11月1日に不正なプログラム（不正ファイル）が設置されていたため、同ファイルの即時削除および、11月4日深夜に脆弱性対策（パッチ適用）を実施している。 《ScanNetSecurity》 一次情報または関連リンク 商工会議所ネット試験管理システムへの不正アクセスによる受験者情報（個人情報）漏えいの可能性について 関連記事 個人情報部分を非表示処理にとどめた状態を削除済みと誤認 ～ 川越商工会議所で会員データを外部に送信 2026.6.26 Fri 8:05 イセトーへのランサムウェア攻撃で京都商工会議所の企業情報 延べ 41,819 件が漏えい 2024.7.9 Tue 8:05 名古屋商工会議所にサイバー攻撃、サーバの一部へのウイルス感染を確認 2022.7.11 Mon 8:05 人為的ミスでセミナー参加者名簿が第三者に流出（大阪商工会議所） 2018.6.26 Tue 8:15 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-b6a1326d85",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "イオングループの一部Webサイトに不正アクセス、414件の顧客情報が流出",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56836.html",
+      "publishedAt": "2026-11-18T23:05:12.000Z",
+      "summary": "519 views イオンスマートテクノロジー株式会社は11月10日、イオングループの一部Webサイトへの不正アクセスについて発表した。 イオン株式会社では10月20日に、一部Webサイトで第三者からの不正アクセスを検知しており、被害の拡大および不正アクセスの再発を防止するため、システムメンテナンスを行う旨を10月21日に公表していた。 調査結果によると、不正アクセスを受けたシステム内に保存されていたファイルのうち、一部顧客の個人情報を含むファイルが流出したことが判明している。 《ScanNetSecurity》 一次情報または関連リンク 第三者による不正アクセスに伴う個人情報の流出に関するお詫びとお知らせ イオングループの一部Ｗｅｂサイトへの不正アクセスによるシステムメンテナンスについて イオングループ各社の一部のＷｅｂサイトへの第三者による不正アクセスに伴う個人情報の流出に関するお詫びとお知らせ 関連記事 いえらぶCLOUDへの不正アクセス、イオンモールにも影響 2026.5.11 Mon 8:05 コンサル契約にもとづき提供した秘密情報が漏えい 2022.6.22 Wed 8:05 良知経営に不正アクセス、企業情報及び個人情報が流出した可能性 2025.9.12 Fri 8:05 社内共有するための設定変更が原因 ～ ねころっけアカデミー申込者情報が外部から閲覧可能に 2025.7.2 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-bfbaae7550",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Joshinのネットワークに不正アクセス、免許証画像やマイナンバーカード情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56835.html",
+      "publishedAt": "2026-11-18T23:05:08.000Z",
+      "summary": "655 views 株式会社Joshinは10月26日、10月17日に公表した同社ネットワークへの不正アクセスについて、第2報を発表した。 同社では10月16日に、同社ネットワークで異常を検知したため調査をしたところ、ネットワークの一部で不正アクセスを受けた形跡を確認したため、不正アクセスの形跡が見られるサーバをネットワークから遮断するなどの措置を講じた結果、同社の一部サービスを利用できない状態となっている。 同社では顧客情報の保護とシステムの安全性確保を最優先に、外部専門機関と連携し不正アクセスの詳細の究明と影響範囲の調査を進めている。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによるシステム障害発生のお詫びとお知らせ（第 2 報） 不正アクセスによるシステム障害発生のお詫びとお知らせ 関連記事 エディオンECサイトに不正アクセス、不正なプログラムが組み込まれる改ざんが新たに判明 2026.11.17 Tue 8:05 エディオングループ会社に不正アクセス、エアコン等の配送設置情報が削除される 2022.4.13 Wed 8:05 ヤマダデンキ提供の「ヤマダビデオ」「スマホゴールド会員」に不正アクセス、一時サービス停止 2026.10.28 Wed 8:05 最大37,832名のカード情報流出、新規カード登録停止は不正アクセス疑義判明から10日後（ヤマダ電機） 2019.5.30 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    }
+  ]
+}
