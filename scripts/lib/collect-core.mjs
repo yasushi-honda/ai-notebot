@@ -131,6 +131,9 @@ export function selectCandidates({ all, targetDate, recentUrls, maxAgeDays, maxP
  * @param {number} profile.maxPerSource 1ソースが候補を占拠しないための上限
  * @param {number} profile.minSuccessSources 成功ソース数の下限
  * @param {number} profile.minTotalItems 候補件数の下限
+ * @param {number} [profile.shortfallRetries] 成功ソース数/候補件数が不足したときの再収集回数（既定 0）
+ * @param {number} [profile.shortfallRetryDelayMs] 再収集までの待機ms（既定 180000）
+ * @param {(ms: number) => Promise<void>} [profile.sleep] 待機関数（テスト用）
  * @param {(candidates: Array) => Promise<Array>} [profile.enrich] しきい値を満たした候補に対する補強（要約の取得等）。
  *   書き出し直前に1回だけ呼ぶ。失敗しても候補を返す責任は enrich 側が持つ
  * @param {string} [dateArg] YYYY-MM-DD（省略時は今日・JST）
@@ -140,34 +143,52 @@ export async function runCollection(profile, dateArg) {
   const dateStr = targetDate.toISOString().slice(0, 10);
 
   console.log(`収集対象日: ${dateStr}`);
-  const rss = await collectRssFeeds(profile.feeds);
-  const extra = profile.collectExtra ? await profile.collectExtra() : { items: [], successCount: 0 };
-  const all = [...rss.items, ...extra.items];
-  const successCount = rss.successCount + extra.successCount;
-  console.log(`ソース成功数: ${successCount} / 生データ件数: ${all.length}`);
+  const retries = profile.shortfallRetries ?? 0;
+  const delayMs = profile.shortfallRetryDelayMs ?? 180_000;
+  const sleep = profile.sleep ?? ((ms) => new Promise((r) => setTimeout(r, ms)));
 
-  if (successCount < profile.minSuccessSources) {
-    console.error(`成功ソース数が閾値(${profile.minSuccessSources})未満です。${profile.rawLabel} は更新しません。`);
-    return { ok: false };
-  }
+  let attempt = 0;
+  let successCount;
+  let candidates;
+  for (;;) {
+    const rss = await collectRssFeeds(profile.feeds);
+    const extra = profile.collectExtra ? await profile.collectExtra() : { items: [], successCount: 0 };
+    const all = [...rss.items, ...extra.items];
+    successCount = rss.successCount + extra.successCount;
+    console.log(`ソース成功数: ${successCount} / 生データ件数: ${all.length}`);
 
-  const recentUrls = await loadRecentUrls({
-    rawDir: profile.rawDir,
-    targetDate,
-    lookbackDays: profile.dedupLookbackDays,
-  });
-  let candidates = selectCandidates({
-    all,
-    targetDate,
-    recentUrls,
-    maxAgeDays: effectiveMaxAgeDays(profile, targetDate),
-    maxPerSource: profile.maxPerSource,
-  });
+    let shortfall = null;
+    candidates = [];
+    if (successCount < profile.minSuccessSources) {
+      shortfall = `成功ソース数が閾値(${profile.minSuccessSources})未満です。`;
+    } else {
+      const recentUrls = await loadRecentUrls({
+        rawDir: profile.rawDir,
+        targetDate,
+        lookbackDays: profile.dedupLookbackDays,
+      });
+      candidates = selectCandidates({
+        all,
+        targetDate,
+        recentUrls,
+        maxAgeDays: effectiveMaxAgeDays(profile, targetDate),
+        maxPerSource: profile.maxPerSource,
+      });
+      console.log(`重複排除・鮮度フィルタ後の件数: ${candidates.length}`);
+      if (candidates.length < profile.minTotalItems) {
+        shortfall = `候補件数が閾値(${profile.minTotalItems})未満です（${candidates.length}件）。`;
+      }
+    }
 
-  console.log(`重複排除・鮮度フィルタ後の件数: ${candidates.length}`);
-
-  if (candidates.length < profile.minTotalItems) {
-    console.error(`候補件数が閾値(${profile.minTotalItems})未満です（${candidates.length}件）。${profile.rawLabel} は更新しません。`);
+    if (!shortfall) break;
+    // 429 等の一時的な取得失敗で不足することがあるため、待ってから再収集する（閾値は下げない）
+    if (attempt < retries) {
+      attempt += 1;
+      console.warn(`${shortfall}${Math.round(delayMs / 1000)}秒後に再収集します（${attempt}/${retries}）。`);
+      await sleep(delayMs);
+      continue;
+    }
+    console.error(`${shortfall}${profile.rawLabel} は更新しません。`);
     return { ok: false };
   }
 

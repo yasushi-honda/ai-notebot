@@ -168,3 +168,58 @@ test('runCollection: 週末は weekendMaxAgeDays まで遡って候補に入れ�
     await rm(rawDir, { recursive: true, force: true });
   }
 });
+
+test('runCollection: 候補不足でも shortfallRetries があれば待機後に再収集し、回復すればアーカイブを書く', async () => {
+  const rawDir = await tmpRaw();
+  try {
+    let calls = 0;
+    const sleeps = [];
+    const profile = profileWith(rawDir, [], {
+      collectExtra: async () => ({ items: ++calls === 1 ? [item(1)] : [item(1), item(2), item(3)], successCount: 1 }),
+      shortfallRetries: 1,
+      shortfallRetryDelayMs: 1234,
+      sleep: async (ms) => void sleeps.push(ms),
+    });
+    const r = await runCollection(profile, '2099-03-10');
+    assert.equal(r.ok, true);
+    assert.equal(r.count, 3);
+    assert.equal(calls, 2);
+    assert.deepEqual(sleeps, [1234]);
+    assert.equal(await exists(join(rawDir, '2099-03-10.json')), true);
+  } finally {
+    await rm(rawDir, { recursive: true, force: true });
+  }
+});
+
+test('runCollection: 再収集しても不足なら回数上限で ok:false（閾値は下げずアーカイブも書かない）', async () => {
+  const rawDir = await tmpRaw();
+  try {
+    let calls = 0;
+    const profile = profileWith(rawDir, [], {
+      collectExtra: async () => ({ items: (calls++, [item(1)]), successCount: 1 }),
+      shortfallRetries: 2,
+      sleep: async () => {},
+    });
+    const r = await runCollection(profile, '2099-03-10');
+    assert.equal(r.ok, false);
+    assert.equal(calls, 3); // 初回 + 再収集2回
+    assert.equal(await exists(join(rawDir, '2099-03-10.json')), false);
+  } finally {
+    await rm(rawDir, { recursive: true, force: true });
+  }
+});
+
+test('runCollection: shortfallRetries 未指定なら再収集せず待機もしない（既定 0）', async () => {
+  const rawDir = await tmpRaw();
+  try {
+    let calls = 0;
+    const profile = profileWith(rawDir, [], {
+      collectExtra: async () => ({ items: (calls++, [item(1)]), successCount: 1 }),
+      sleep: async () => assert.fail('待機してはいけない'),
+    });
+    assert.equal((await runCollection(profile, '2099-03-10')).ok, false);
+    assert.equal(calls, 1);
+  } finally {
+    await rm(rawDir, { recursive: true, force: true });
+  }
+});
