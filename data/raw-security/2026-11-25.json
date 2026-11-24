@@ -1,0 +1,349 @@
+{
+  "date": "2026-11-25",
+  "collectedAt": "2026-11-24T22:01:37.042Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-1a2f60d55e",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Rackspace shuts down Spot cloud platform after security breach",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+      "publishedAt": "2026-11-24T21:37:30.000Z",
+      "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]"
+    },
+    {
+      "id": "s-8673f1f511",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "New Inception extortion gang launches large-scale vishing campaign",
+      "url": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
+      "publishedAt": "2026-11-24T20:21:20.000Z",
+      "summary": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]"
+    },
+    {
+      "id": "s-99ccfc2d07",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+      "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+      "publishedAt": "2026-11-24T18:59:52.000Z",
+      "summary": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]"
+    },
+    {
+      "id": "s-e9c4adecdd",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Radware discloses breach exposing customer cloud access keys",
+      "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+      "publishedAt": "2026-11-24T17:49:05.000Z",
+      "summary": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]"
+    },
+    {
+      "id": "s-6b48789d11",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "publishedAt": "2026-11-24T16:54:07.000Z",
+      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of"
+    },
+    {
+      "id": "s-85f0bff41e",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+      "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
+      "publishedAt": "2026-11-24T16:30:19.000Z",
+      "summary": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]"
+    },
+    {
+      "id": "s-5fe5c7ae44",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "European Commission confirms data theft in EU Academy breach",
+      "url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
+      "publishedAt": "2026-11-24T16:22:44.000Z",
+      "summary": "The European Commission, the European Union's main executive body, has confirmed that attackers breached its EU Academy online learning hub and stole the personal data of an undisclosed number of users. [...]"
+    },
+    {
+      "id": "s-bd11eb8dd0",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers compromise Check Point Servers in 22 organizations",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+      "publishedAt": "2026-11-24T16:15:23.000Z",
+      "summary": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]"
+    },
+    {
+      "id": "s-1af614eaf9",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Police disrupt 57 illegal streaming services with 7.3 million visits",
+      "url": "https://www.bleepingcomputer.com/news/security/police-disrupt-57-illegal-streaming-services-with-73-million-visits/",
+      "publishedAt": "2026-11-24T15:10:10.000Z",
+      "summary": "Law enforcement authorities from 11 countries have disrupted 57 illegal streaming services that operated hundreds of websites and drew over 7.3 million visits each year. [...]"
+    },
+    {
+      "id": "s-a0225bf189",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ネットオーダーで侵害、サービスを停止 - ミスド",
+      "url": "https://www.security-next.com/193086",
+      "publishedAt": "2026-11-24T14:23:49.000Z",
+      "summary": "ネットオーダーで侵害、サービスを停止 - ミスド ダスキンが運営するミスタードーナツのオンライン注文サービス「ミスドネットオーダー」が侵害されたことがわかった。状況を詳しく調べている。 同社によれば、2026年11月15日に同サービスに対する侵害があり、システムを停止し、アクセスを遮断。緊急メインテナンスを実施するとともに、調査を進めている。 同社は、安全を確保するために同サービスを停止。会員からすでに受け付けた注文については、店頭やカスタマーセンターで変更やキャンセルなどの対応を行っている。 （Security NEXT - 2026/11/24 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-db22ce6bdf",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "publishedAt": "2026-11-24T13:28:26.000Z",
+      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication. The critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\"). \"A malicious actor with"
+    },
+    {
+      "id": "s-0c4445d4cc",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+      "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+      "publishedAt": "2026-11-24T13:28:21.000Z",
+      "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving"
+    },
+    {
+      "id": "s-aca479c57f",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "AIペネトレーションテスト基盤「Cairn」が大学への攻撃で見つけたゼロデイについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/24/214547",
+      "publishedAt": "2026-11-24T12:45:47.000Z",
+      "summary": "2026年11月20日、Amazon Threat IntelligenceはオープンソースのAIペネトレーションテスト基盤Cairnを使った大学への攻撃で、AIエージェントがアプリケーションのゼロデイを見つけてサーバーの制御を得たと公表しました。ここでは関連する情報をまとめます。 公開状態で見つかったCairnの運用履歴 2026年9月10日、Amazon Threat Intelligenceは攻撃者側のオペレーターが認証なしの公開状態で放置していたCairnのインスタンスを持つサーバーを特定。運用履歴としてプロジェクト設定、アクターのプロンプト、AIの出力が誰にでも閲覧できる状態だった。プロンプトは簡体字中国語で書かれ、実行されたスクリプトのタイムスタンプは中国標準時だった(出典: 1)。 これまでも公開状態の管理画面からCairnを使った攻撃活動が見つかった例を既報にまとめている。"
+    },
+    {
+      "id": "s-bb2efaa9d0",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+      "publishedAt": "2026-11-24T12:02:00.000Z",
+      "summary": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday. The same loading behavior bypassed Oracle VirtualBox's process hardening on Windows hosts, tracked as CVE-2026-87268, and Windows code integrity, tracked"
+    },
+    {
+      "id": "s-bb2aa84be5",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+      "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+      "publishedAt": "2026-11-24T12:01:54.000Z",
+      "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual investigations, repeated checks, and unnecessary escalations continue to drain resources. As"
+    },
+    {
+      "id": "s-e1d950e00d",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+      "publishedAt": "2026-11-24T12:00:00.000Z",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corrupt"
+    },
+    {
+      "id": "s-153407077d",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "Danfoss AK-SM 8xxA Series",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+      "publishedAt": "2026-11-24T12:00:00.000Z",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA &lt;=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Faciliti"
+    },
+    {
+      "id": "s-0e0d7bdcc4",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "AutomationDirect C-More EA9 Programming Software",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+      "publishedAt": "2026-11-24T12:00:00.000Z",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file. The following versions of AutomationDirect C-More EA9 Programming Software are affected: C-More EA9 Programming Software &lt;=V6.80 (CVE-2026-127280) CV"
+    },
+    {
+      "id": "s-35506a8330",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "仮想化管理ツール「Xen Orchestra」に脆弱性 - 順次修正対応",
+      "url": "https://www.security-next.com/193248",
+      "publishedAt": "2026-11-24T11:40:19.000Z",
+      "summary": "仮想化管理ツール「Xen Orchestra」に脆弱性 - 順次修正対応 仮想化環境の管理ツール「Xen Orchestra（XO）」に深刻な脆弱性が明らかとなった。認証を回避されるおそれがあり、すでにサイバー攻撃に悪用されている。アップデートが提供されている。 同製品は、仮想化基盤である「XenServer」や「XCP-ng」の管理、バックアップなどの機能を提供するソフトウェア。 開発元のVatesは現地時間2026年11月10日、同製品に関するセキュリティアドバイザリを公開し、脆弱性に対処したことを明らかにしていたが、11月23日にCVE番号「CVE-2026-133469」が公開となった。 認証トークンの入力検証に不備が存在し、細工したリクエストによって、既存の有効な認証トークンを所有するユーザーになりすますことが可能だという。 管理者権限を取得された場合、管理下にある仮想化基盤で任意のコードを実行されたり、「XCP-ng」のホストを「root」権限で乗っ取られるおそれがある。 （Security NEXT - 2026/11/24 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-c7a8028c18",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ファンクラブ会員の個人情報が流出 - 読売巨人",
+      "url": "https://www.security-next.com/192864",
+      "publishedAt": "2026-11-24T11:15:33.000Z",
+      "summary": "ファンクラブ会員の個人情報が流出 - 読売巨人 プロ野球球団の読売巨人軍は、ファンクラブの会員情報を管理するシステムが外部よりサイバー攻撃を受けたことを明らかにした。会員の個人情報が流出したという。 同社によれば、公式ファンクラブ「CLUB GIANTS」の会員情報を管理するシステムが外部から繰り返し攻撃を受け、情報流出が発生したもの。 2026年11月12日、同システムのサーバの容量がひっ迫し、アクセスできなくなったことから調査を行ったところ、翌13日にファンクラブ会員のメールアドレス80万7030件が流出したことが明らかとなった。 同社では原因を特定し、攻撃を遮断。11月13日に個人情報保護委員会へ報告。その後も調査を進めたところ、会員の氏名1万6998件や住所1万2831件、電話番号1万5434件、性別1664件、生年月日1665件、ハッシュ化されたパスワード274件が流出していたことがわかった。 流出した情報の不正利用などの報告は寄せられていないという。対象となる会員には、メールなどで経緯を報告し、謝罪を行っている。同社や関係者を装った連絡に注意するとともに、パスワードを使いまわしている場合は変更するよう呼びかけている。 （Security NEXT - 2026/11/24 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-9436fc5b47",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+      "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+      "publishedAt": "2026-11-24T10:44:49.000Z",
+      "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how"
+    },
+    {
+      "id": "s-06ddd1a688",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+      "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+      "publishedAt": "2026-11-24T08:34:20.000Z",
+      "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed the SQL injection yesterday along with two other flaws that need a logged-in client, and released"
+    },
+    {
+      "id": "s-a0a25e5ec0",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+      "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+      "publishedAt": "2026-11-24T06:02:57.000Z",
+      "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches,\" OpenAI said in a post on X. The AI upstart called the initiative a"
+    },
+    {
+      "id": "s-e836bc498f",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "Synology製NASに深刻な脆弱性 - 修正版を順次提供",
+      "url": "https://www.security-next.com/193243",
+      "publishedAt": "2026-11-24T05:37:37.000Z",
+      "summary": "Synology製NASに深刻な脆弱性 - 修正版を順次提供 Synology製NAS向けOS「DiskStation Manager（DSM）」などに深刻な脆弱性が明らかとなった。修正版を順次提供している。 同社は現地時間2026年11月19日、セキュリティアドバイザリを公開し、「DSM」および「BeeStation OS」に影響する脆弱性「CVE-2026-120382」について明らかにした。 「OAuth API」においてコマンドの引数の処理に不備が存在。リモートより認証なしに任意のファイルを読み書きしたり、サービス拒否（DoS）を引き起こすことが可能となる。 同社は、脆弱性の重要度を「クリティカル（Critical）」とレーティング。共通脆弱性評価システム「CVSSv3.1」のベーススコアを「9.8」と評価した。 同社は同月20日に脆弱性を修正した「DSM 7.4.1-90080 Update 2」「同7.3.2-86009 Update 6」を公開。これらアップデートでは、「nginx」に起因する脆弱性「CVE-2026-123007」についても対処したとしている。 （Security NEXT - 2026/11/24 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-6c47ebbac2",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "米当局、悪用が確認された脆弱性6件に注意喚起",
+      "url": "https://www.security-next.com/193221",
+      "publishedAt": "2026-11-24T04:42:27.000Z",
+      "summary": "米当局、悪用が確認された脆弱性6件に注意喚起 米当局は、「VMware vCenter」や「Cisco Expresswayシリーズ」をはじめ、複数製品に関する脆弱性がサイバー攻撃に悪用されているとして、注意を呼びかけている。 米サイバーセキュリティインフラストラクチャセキュリティ庁（CISA）は現地時間2026年11月20日および23日、「悪用が確認された脆弱性カタログ（KEV）」を更新し、あわせて6件の脆弱性を追加した。 11月20日には4件を追加。Cisco Systemsのコミュニケーションツール「Cisco Expresswayシリーズ」については、認証情報のハードコードに起因する脆弱性「CVE-2026-76466」を登録した。一定の条件を満たした場合に認証を必要とすることなく「root」権限でコマンドを実行できるという。 Javaベースのブログソフトウェア「Apache Roller」に関しては、信頼できないデータをデシリアライズする脆弱性「CVE-2026-129448」を登録した。 認証を必要とすることなく、リモートから任意のコードを実行されるおそれがある。以前公表された「CVE-2026-82384」は「同6.1.5」のみが対象バージョンとされたが、それ以前の一部バージョンにも脆弱性が存在し、「CVE-2026-129448」が割り当てられた。いずれも修正版は「同6.1.6」となる。 （Security NEXT - 2026/11/24 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-934ff5b80b",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "高校の修学旅行引率中に生徒の個人情報を紛失 - 広島県",
+      "url": "https://www.security-next.com/192872",
+      "publishedAt": "2026-11-24T03:51:43.000Z",
+      "summary": "高校の修学旅行引率中に生徒の個人情報を紛失 - 広島県 広島県は、県内高校の修学旅行中に生徒の個人情報を紛失したことを明らかにした。 同県によれば、2026年10月9日、生徒226人分の氏名、性別、保護者の連絡先が記載された書類や、生徒108人分の氏名、治療中の病気や受診履歴、服薬状況、アレルギーの内容などが記載された健康調査表をリュックサックに入れたまま紛失したもの。 またリュックサックには、修学旅行で撮影した生徒約100人分の写真データが保存されたiPadのほか、教職員69人分の氏名と携帯電話番号を含む教職員緊急連絡網、教員の個人手帳も入っていたという。 新幹線のホームで待機していた際、教員がリュックサックがないことに気づいた。教員は新幹線に乗車し、教頭に紛失を報告。翌日以降、地元の警察署や鉄道会社などに問い合わせたが、発見されていない。 同校では生徒に謝罪し、保護者に対しては説明会を実施して経緯や再発防止策を説明している。 （Security NEXT - 2026/11/24 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-00aacb2004",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Zoraxyにおける複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN84156789/",
+      "publishedAt": "2026-11-24T03:00:00.000Z",
+      "summary": "JVN#84156789 Zoraxyにおける複数の脆弱性 Zoraxy Projectが提供するZoraxyには、複数の脆弱性が存在します。 Zoraxy v3.3.5-rc1およびそれ以前のバージョン Zoraxy Projectが提供するZoraxyには、次の複数の脆弱性が存在します。 管理画面のログビューア機能における格納型クロスサイトスクリプティング（ CWE-79 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N 基本値 5.1 CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N 基本値 6.1 CVE-2026-105303 セッションCookieにHttpOnly属性を設定していない（ CWE-1004 ） ​ CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N 基本値 5.9 CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N 基本値 5.3 CVE-2026-129544 ACMEチャレンジ用のルーティング処理におけるサーバサイドリクエストフォージェリ（ CWE-918 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N 基本値 7.7 CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N 基本値 8.6 CVE-2026-105304 想定される影響は各脆弱性により異なりますが、次のような影響を受ける可能性があります。 管理者のブラウザ上で任意のスクリプトを実行される（CVE-2026-105303） CVE-2026-105303により、実行されたスクリプトによってセッションCookieを取得される（CVE-2026-129544） 当該製品を経由して内部ネットワーク上のサービスへ任意のリクエストを送信される（CVE-2026-105304） アップデートする 本脆弱性は、v3.3.5-rc2で修正されています。 開発者が提供する情報をもとに、最新版へアップデートしてください。 Docker版ユーザも最新版へアップデートしてください。 ベンダ ステータス ステータス 最終更新日 ベンダの告知ページ Zoraxyプロジェクト 2026/11/24 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：株式会社ラック 池田 大樹 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-058a6f0672",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "タワレコ通販サイト、顧客情報が流出",
+      "url": "https://www.security-next.com/193228",
+      "publishedAt": "2026-11-24T01:43:05.000Z",
+      "summary": "タワレコ通販サイト、顧客情報が流出 タワーレコードは、同社が運営する通信販売サイト「タワーレコードオンライン」において、顧客の個人情報が流出したことを明らかにした。 同社によれば、2026年11月19日に同サイトで外部からの侵害を確認。サービスを停止して緊急メンテナンスを実施するとともに調査を行ったところ、顧客の個人情報が流出したことが判明した。 流出対象となった個人情報の件数は約1100万件。対象項目を見ると、メールアドレス、会員ID、パスワードのハッシュ値などのログイン情報が1021万4652件。 このうち278万4514件は、これら情報にくわえて氏名、ニックネーム、郵便番号、生年月日、性別が含まれる。一方77万6953件については、配送先の氏名や住所、電話番号が含まれる。 11月21日の時点で二次被害は確認されていないとしているが、同社は対象となる顧客とメールで連絡を取って事情を説明し、同社や関係者を装った連絡に注意を呼びかけている。 引き続き調査を進めるとともに安全の確認を進めていく。調査結果やサービスの再開時期については今後ウェブサイトでアナウンスする予定。 （Security NEXT - 2026/11/24 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-68ccb2f4c4",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Chrome」がアップデート - 「クリティカル」脆弱性1件を修正",
+      "url": "https://www.security-next.com/193218",
+      "publishedAt": "2026-11-24T00:43:31.000Z",
+      "summary": "「Chrome」がアップデート - 「クリティカル」脆弱性1件を修正 Googleは、同社ブラウザ「Chrome」のセキュリティアップデートをリリースした。重要度が「クリティカル」とされる脆弱性に対処している。 同社は現地時間2026年11月23日、WindowsおよびmacOS向けに「Chrome 158.0.8127.89」「同158.0.8127.88」、Linux向けに「同158.0.8127.88」を公開した。 今回のアップデートでは、コンポーネント「Variations」における入力検証の不備「CVE-2026-134401」を修正。重要度をもっとも高い「クリティカル（Critical）」と評価している。 同脆弱性は8月28日にGoogleによって報告されたという。同社は今後数日から数週間をかけてアップデートを順次展開する予定。 （Security NEXT - 2026/11/24 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-ca473daa20",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "生成AI利用ルールの策定や見直しを支援、JSSECが2027年1月にワークショップ開催",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56883.html",
+      "publishedAt": "2026-11-23T23:15:03.000Z",
+      "summary": "124 views 一般社団法人日本スマートフォンセキュリティ協会（JSSEC）は11月16日、「第2回 実践 生成AI利用ルール策定ワークショップ」を2027年1月13日(水)に開催すると発表した。 同協会は2026年4月に「生成AI利用ルールテンプレート」を公開している。専門知識がない組織でも自社の実情に合った利用ルールを作れるようにしたもので、Excel形式で、CC0（クリエイティブ・コモンズ・ゼロ：パブリックドメイン＝著作権放棄）として無償で提供している。ルールは18あり、「AIを利用する前に」「AIに入力する」「AIの出力を利用する」「スマートデバイスの利用」の4つの利用シーンに分けている。ルールごとに採用条件を示し、推奨度（必須・推奨・任意）と、求める行動の厳密さ（最低限・中程度・厳密）をそれぞれ3段階で示している。 6月に開いた第1回のワークショップには多くの参加があった。その後のフォローも通じて、社内のAI利用ルールに悩む人がまだ多いことが分かり、第2回の開催を決めたという。今回も参加者がテンプレートを実際に使いながら、自社のAI利用ルールをその場で検討・策定する。 前半はルール策定のポイントと各項目の意図を専門家が解説する講演、後半はグループに分かれてテンプレートから自社に必要なルールを選び、カスタマイズするグループワークを行う。 参加を呼びかけているのは、自社の生成AI利用ルールを新たに作る、または見直す担当者や、他社のルール作りの基準を知りたい人などである。運用には現場の意見が欠かせないとして、IT初心者や現場のユーザーにも参加を呼びかけている。 会場は東京都品川区の株式会社データコントロールで、オンラインでも同時配信する。グループワークに参加できるのは会場参加者のみで、リモート参加者は講演の視聴のみとなる。 参加費は無料で、事前登録が必要。定員は会場30名、リモート50名で、申込締切は2027年1月8日(金)。 《ScanNetSecurity》 一次情報または関連リンク 第2回 実践 生成AI利用ルール策定 ～「生成AI利用ルールテンプレート」による安全なAI活用推進～ 「生成AI利用ルールテンプレート」第1版公開 関連記事 頼りになる職場の新しい同僚「AI」のトリセツ作成方法 ～ JSSEC「生成 AI 利用ルールテンプレート」 2026.5.26 Tue 8:15 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-05eac4837d",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "SCS評価制度でランサムウェア対策を点検 ～ セコムトラストシステムズ ウェビナー 12 / 9・10 開催",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56882.html",
+      "publishedAt": "2026-11-23T23:10:03.000Z",
+      "summary": "128 views セコムトラストシステムズ株式会社は12月9日(水)と12月10日(木)、オンラインセミナー「 ランサムウェア対策『5つの見落とし』とは？ ～SCS評価制度によるセルフチェック10項目と改善ポイント～ 」を開催する。参加費は無料。 同セミナーは、ランサムウェア対策を進めていても十分か不安を抱える企業に向けて、対策に潜む「5つの見落とし」を取り上げるもの。SCS評価制度を基準とした10項目のセルフチェックで自社の対策状況を整理し、可視化やギャップ分析を通じて課題と改善の優先順位を明確にしたうえで、次に取り組むべき対策や改善ロードマップの考え方を解説する。 開催時間は両日とも14時から14時30分まで。Zoomを用いたオンライン形式で、定員は各回100名。法人向けのセミナーで、個人での参加はできない。 《ScanNetSecurity》 Sponsored by セコムトラストシステムズ 一次情報または関連リンク セコムトラストシステムズ 関連記事 サプライチェーン対策評価制度「SCS」令和8年度末に運用開始へ ～ 経産省、★3・★4 取得を後押しする新サービス整備 2026.8.21 Fri 8:15 52.6%が「取引先に★4以上求める予定」SCS評価制度準備状況調査結果 2026.5.25 Mon 8:00 注目の「SCS評価制度」最新動向をキャッチ、IPA がメルマガ登録受付中 2026.7.16 Thu 8:00 中小企業のSCS評価制度 ★3 ★4 取得を無償で支援 ～ サイバーセキュリティお助け隊サービス（新類型）実証事業 2026.9.17 Thu 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-108d9f237e",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "マネックス証券の口座開設システムに不正アクセス、本人確認書類画像データが漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56881.html",
+      "publishedAt": "2026-11-23T23:05:33.000Z",
+      "summary": "8729 views マネックス証券株式会社は11月13日、同社の外部委託先が運営・管理する一部の口座開設システムへの不正アクセスについて発表した。 これは10月18日に、同社の口座開設システムに対する第三者からの不正アクセスの試みを外部委託先が確認したというもの。 同社では外部委託先からの連絡を受け、10月19日に当該システムへの外部からのアクセスを遮断し、現在は一部の口座開設を停止している。 また同社では、外部の専門機関によるフォレンジック調査を進めているが、当該システムで管理していた一部の個人情報が、外部に漏えいした可能性が判明している。 漏えいした可能性がある情報は下記の通り。 1.メールアドレス：最大113万件 2019年10月16日以降にマネックス証券のオンライン口座開設申込の最初の手続きとして登録したメールアドレス。 2.本人確認書類画像データ：1,592件 「撮影が必要な方式」でオンライン口座開設申込を行い、本人確認書類として提出した画像データ（マイナンバーカードの表面、運転免許証の表面・裏面、セルフィー画像が含まれる）。 同社では対象者に順次、個別に案内を行う。 同社では現在、サービスの再開に向けて必要なセキュリティ対策を進めており、安全性を確認したうえで、サービスを再開するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 外部委託先が運営・管理する一部の口座開設システムへの不正アクセスによる個人情報漏えいに関するお詫びとお知らせ 関連記事 新生銀行がデータ移行ミス、吸収分割による承継対象以外の口座情報1,469件をマネックス証券へ送付 2022.1.6 Thu 8:05 スカラコミュニケーションズへの不正アクセス、大和証券の約11万名の顧客に係る個人情報も漏えいした可能性 2026.10.27 Tue 8:05 フィッシング詐欺等によるものとみられる不正アクセス・不正取引を確認 ～ 静銀ティーエム証券 2026.9.18 Fri 8:05 パスキー設定を要請 ～ 浜銀TT証券でフィッシングによる不正アクセス・取引被害発生 2026.9.8 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-b2e9a33a94",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "スカイライナー座席予約システムに不正アクセス、最大約337万件の顧客情報が取得された可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56880.html",
+      "publishedAt": "2026-11-23T23:05:30.000Z",
+      "summary": "1251 views 京成電鉄株式会社は11月13日、スカイライナー座席予約システムへの不正アクセスについて発表した。 これは11月11日深夜に、スカイライナー座席予約システムに不正アクセスがあり、スカイライナーチケットレスサービス及び e-ticket サービスの顧客情報が取得された可能性が判明したというもの。 漏えいした可能性があるのは、最大約337万件のユーザーID、パスワード（ハッシュ化）、カナ氏名、電話番号、メールアドレス、生年月日、性別、国籍を含む顧客情報。 同社では対象の顧客に、メールにて個別に連絡を行う。 同社では現在、セキュリティ強化のため、スカイライナー座席予約システム全般の利用を停止しているとのこと。 《ScanNetSecurity》 一次情報または関連リンク 【お詫び】スカイライナー座席予約システムへの不正アクセスについて 関連記事 あいの風とやま鉄道 観光列車の座席管理システムに不正アクセス 2026.10.5 Mon 8:05 「西武 旅するレストラン 『52 席の至福』」予約サイトで予約関連情報の一部が漏えい 2026.9.24 Thu 8:05 JAL 委託先 Amadeus社に不正アクセス、予約情報の一部が外部から参照された形跡 2026.11.11 Wed 8:05 日本交通が不正アクセスでシステムを緊急遮断、タクシー配車やハイヤー予約等に一部影響 2026.7.15 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-0f0c393e83",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "アットホーム提供の不動産会社向け業務管理サービス「賃貸管理システム」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56879.html",
+      "publishedAt": "2026-11-23T23:05:27.000Z",
+      "summary": "247 views アットホーム株式会社は11月13日、同社が提供する不動産会社向け業務管理サービス「賃貸管理システム」への不正アクセスについて発表した。 これは11月9日に、「賃貸管理システム」の管理サイトに第三者から不正アクセス・ログインがあり、同システムを利用中の一部の加盟不動産会社が登録した入居者・オーナー・取引先等の個人情報が外部へ漏えいした可能性が判明したというもの。 漏えいの可能性があるのは、「賃貸管理システム」を利用中の加盟不動産会社が登録した、一般消費者（入居者等）、オーナー、取引先の6,901件の個人情報（氏名、生年月日、電話番号、携帯電話番号、住所および所在地、契約情報（建物名、部屋番号、契約状況）ほか）。 同社では事象判明後に調査チームを設置し、下記対応を実施している。 ・不正アクセス元からの遮断 ・原因の調査 ・対象システムのアクセスログの確認 ・影響がおよぶ可能性のある加盟不動産会社および関係者の特定と個別連絡 ・個人情報保護委員会および関係当局への報告 同社では今後、原因究明を徹底するとともに、システムの点検・監視の強化、アクセス制御の見直し等、必要なセキュリティ対策を講じるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 「賃貸管理システム」の管理サイトへの不正アクセスによる個人情報漏えいの可能性に関するお詫びとご報告 関連記事 東急不動産が管理するウェブサイトに不正アクセス 2026.11.13 Fri 8:05 三井不動産への不正アクセス、攻撃者による資格情報の不正利用を確認 2026.10.16 Fri 8:05 日鉄興和不動産が利用するクラウドサービスに不正アクセス、マンション販売業務等に関する顧客情報を保存 2026.9.16 Wed 8:05 資格情報の不正利用でシステム閲覧被害 ～ 三井不動産、最大5.5万件の情報漏えいの可能性 2026.9.7 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a0e37b17f2",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "電通デジタル「TONARIWA」に不正アクセス、導入企業 2 社で個人情報漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56878.html",
+      "publishedAt": "2026-11-23T23:05:23.000Z",
+      "summary": "1187 views 株式会社電通デジタルは11月12日、11月11日に公表した同社が提供するマーケティングプラットフォーム「TONARIWA」への不正アクセスについて、第二報を発表した。 同社では11月10日に、「TONARIWA」のシステム基盤で利用している管理アカウントに対し、認証情報の漏えいに起因する第三者からの不正アクセスおよび権限昇格（操作範囲の拡大）が行われていた事実を確認しており、二次被害および影響拡大を防止するために「TONARIWA」のサービスを一時停止していた。 同社で調査した結果、システム基盤内の一部データに対して外部への持ち出しを示すログを確認しており、現時点で2社の導入企業での個人情報漏えいが判明している。 漏えいしたのは、一部の導入企業で取り扱うエンドユーザーの個人情報（氏名、生年月日、連絡先等の属性情報）と「TONARIWA」管理用アカウント情報（LINE公式アカウント連携用のアクセストークン等）で、対象件数については現在、特定作業を進めている。 同社では漏えいを確認した導入企業に対し、個別に連絡と状況説明を実施する。 同社では現在、「TONARIWA」サービスの復旧方針と再開の見通しについて検証を行っているが、事象の全容解明に向けた詳細な調査、原因究明、再発防止策の策定には、客観的な安全検証を含め、相応の期間を要する可能性があるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 【第二報】当社が提供する「TONARIWA」における不正アクセスに伴う個人情報漏えいに関するお詫びとご報告 当社が提供する「TONARIWA」における不正アクセスに伴う個人情報漏えいの可能性に関するお詫びとご報告 関連記事 電通総研「FACERE」に設定不備、第三者からの不正アクセス確認 2026.11.11 Wed 8:05 迅速に措置を講じ日本への影響なし ～ 電通グループ海外事業ネットワークの一部に異常な作動を検知 2025.11.7 Fri 8:05 東京都教育委員会の委託先 電通プロモーションプラスでメール誤送信 2023.8.3 Thu 8:05 第三者調査結果公表、電通国際情報サービスへの不正アクセス 2023.7.11 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-b098ef39b9",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "電通デジタル「TONARIWA」に不正アクセス、パーソルキャリアが保持していた情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html",
+      "publishedAt": "2026-11-23T23:05:19.000Z",
+      "summary": "572 views パーソルキャリア株式会社は11月12日、同社の外部委託先である株式会社電通デジタルへの不正アクセスについて発表した。 これは同社が転職サービス「doda」のLINE公式アカウント運用に利用している電通デジタル提供のコミュニケーションサービス「TONARIWA」に対し、第三者からの不正アクセスが判明したというもので、パーソルキャリアが「TONARIWA」上で保持していた情報が外部に漏えいした可能性がある。 電通デジタルでは不正アクセスを受け、「TONARIWA」のサービスを停止し、不正アクセス経路の遮断、システムの隔離、パーソルキャリアLINE公式アカウントとの連携リセットなどの緊急対応を実施している。 なお、パーソルキャリアでは現在、「doda」のLINE公式アカウントの運用を停止している。 《ScanNetSecurity》 一次情報または関連リンク 外部委託先への不正アクセスによるお客様情報漏えいの可能性について 関連記事 「doda」販売代理店向けシステムに不備、549,195 名の個人情報が閲覧された可能性 2024.10.1 Tue 8:05 dodaスカウトサービスでブロック機能が作動しない不具合、直近の勤務先企業から閲覧可能な状態に 2023.12.1 Fri 8:05 LINE連携基盤「COMSBI エンタープライズ基盤」に不正アクセス 2026.11.5 Thu 8:05 「コープやまぐちLINEミニアプリ」に不正アクセス、データベースに保存されていた内容を精査し漏えいの可能性がある情報を確定 2026.9.24 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-34393c6baf",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ロート製薬のシステムに不正アクセス、クレジットカード番号含む通話音声データが漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56876.html",
+      "publishedAt": "2026-11-23T23:05:16.000Z",
+      "summary": "999 views ロート製薬株式会社は11月6日、9月11日に公表した同社システムへの不正アクセスについて、続報を発表した。 同社では9月10日に、同社が通信販売で利用する電話システムのサービス事業者から、不審なアクセスがある旨の報告を受け、関係するアカウントの利用停止やパスワード変更等の影響拡大防止措置を実施するとともに、外部の専門機関等による調査を開始していた。 調査結果によると、通信販売の顧客対応に利用する電話システムおよび顧客管理システムに第三者から不正アクセスがあり、同社が保有・管理する一部の情報が不正に取得されたことを確認している。 同社では、電話システムのアカウント情報が第三者に不正に利用され、同システムに不正アクセスが行われたことを確認しており、顧客管理システムに保存されていた情報については、電話システムを経由して不正に取得されたことを確認している。 不正取得された顧客に関する個人データの情報は下記の通り。 1.顧客管理システムの情報：2,797,545人 項目：氏名、住所、電話番号 2.電話システムの情報（2025年9月10日から2026年9月5日までの期間に通信販売で電話のあった顧客） 内容：通話音声データ（商品に関する問い合わせ、注文内容その他、通信販売に関する通話内容） ※一部の通話音声データにはクレジットカード番号および有効期限の情報が含まれる（対象顧客は9,715人）。 同社では対象となる顧客に順次、郵送またはメール等で個別に案内を行う。また同社では、クレジットカード情報が漏えい対象の顧客に対し、2026年9月以降のカード利用明細書に身に覚えのない請求項目がないか、確認をするよう呼びかけている。 同社では、電話口でのクレジットカード番号の聴取を停止し、書面による支払い手続へ運用の見直しを行っている。 同社では今後、外部専門機関や外部弁護士等と相談しながら再発防止に向けた取り組みを継続するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによるお客様の個人データ漏えいに関するお詫びとお知らせ 関連記事 今日もどこかで情報漏えい 第3回「クレジットカード情報漏えい顛末記」 2022.8.3 Wed 8:10 ロート製薬のシステムに不正アクセス 2026.9.24 Thu 8:05 不正サイトへの転送を確認 ～ ロート製薬が使用していた「旧DRXブランドサイト」ドメインを第三者が取得 2026.4.1 Wed 8:00 「ロート製薬オンラインショップ」への不正ログインと不正注文が発生 2024.2.15 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a45caf1261",
+      "source": "IPA 重要なセキュリティ情報",
+      "sourceType": "official",
+      "title": "VMware製品の脆弱性対策について(CVE-2026-123890)",
+      "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261124.html",
+      "publishedAt": "2026-11-23T15:00:00.000Z",
+      "summary": "VMware製品の脆弱性対策について(CVE-2026-123890) 公開日：2026年11月24日 注釈：追記すべき情報がある場合には、その都度このページを更新する予定です。 概要 Broadcomが提供するVMware vCenter Serverは、仮想化環境の管理運用ツールです。 このVMware vCenter Serverにおいて、VMware Directory Serviceにおける認証回避の脆弱性（CVE-2026-123890）が確認されています。 本脆弱性を悪用された場合、vCenter Serverへのネットワークアクセスが可能な攻撃者によって、認証を回避され、システムへの不正なアクセスが実施される可能性があります。 今後被害が拡大するおそれがあるため、製品開発者が公表している手順に従い、修正プログラムを適用してください。 なお、Google Threat Intelligence Groupは、CVE-2026-123890について、脅威アクターによる悪用がみられると明らかにしています。 また、CVE-2026-123890については、2026年11月20日（現地時間）、CISA（ 脚注1 ）のKEVカタログ（Known Exploited Vulnerabilities Catalog、 脚注2 ）に、悪用された脆弱性として掲載されました。 影響を受けるシステム VMware vCenter Server 9.1.1.0200より前の9.1.x系 VMware vCenter Server 9.0.2.0200より前の9.0.x系 VMware v … 対策 脆弱性の解消 - 修正プログラムの適用 製品開発者が提供する情報をもとに、更新プログラムを適用してください。vCenter Serverについて、製品開発者は、本脆弱性を修正した次の修正プログラムをリリースしています。 VMware vCenter Server 9.1.1.0200 VMware vCenter Server 9.0.2.0200 VMware vCenter Server 8.0 U3m VMware vCenter Server 5.2.5 その他、Telco Cloud PlatformおよびVMware Telco Cloud InfrastructureのvCenterコンポーネントにも影響があると公表されています。 詳細については、製品開発者が提供する情報を確認してください。 脚注 脚注1 米国サイバーセキュリティ・インフラストラクチャセキュリティ庁（CISA: Cybersecurity and Infrastructure Security Agency） 脚注2 Known Exploited Vulnerabilities Catalog お問い合わせ先 IPA セキュリティセンター E-mail 注釈：個別のシステムおよび環境に関するご質問を頂いても回答ができない場合があります。詳しくは製品ベンダなどにお問合せください。 関連リンク VMSA-2026-0009: VMware vCenter, Tools, and SDDC Manager updates address multiple vulnerabilities (CVE-2026-123890, CVE-2026-123891, CVE-2026-123892, CVE-2026-123893, CVE-2026-123894) VMSA-2026-0009:"
+    }
+  ]
+}
