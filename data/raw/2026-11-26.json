@@ -1,0 +1,808 @@
+{
+  "date": "2026-11-26",
+  "collectedAt": "2026-11-25T22:00:31.690Z",
+  "sourceSuccessCount": 22,
+  "items": [
+    {
+      "id": "s-9b2ec5107c",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "stacklok/toolhive: ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers.",
+      "url": "https://github.com/stacklok/toolhive",
+      "publishedAt": "2026-11-25T22:00:22.000Z",
+      "summary": "★2356 ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) servers."
+    },
+    {
+      "id": "s-612b629abe",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "ghorbelhamdi/buddy-android: Android AI assistant in a floating bubble: Claude Code, Codex, OpenCode, Gemini (Antigravity CLI) or Grok use your phone for you — read the screen, tap, type. Runs on your own plan, open source, no root, no adb, no PC.",
+      "url": "https://github.com/ghorbelhamdi/buddy-android",
+      "publishedAt": "2026-11-25T22:00:22.000Z",
+      "summary": "★333 Android AI assistant in a floating bubble: Claude Code, Codex, OpenCode, Gemini (Antigravity CLI) or Grok use your phone for you — read the screen, tap, type. Runs on your own plan, open source, no root, no adb, no PC."
+    },
+    {
+      "id": "s-8a4d078308",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "smg-project/smg: Engine-agnostic LLM gateway in Rust. Full OpenAI & Anthropic API compatibility across vLLM, TRT-LLM, TokenSpeed, SGLang, OpenAI, Gemini & more. Industry-first gRPC pipeline, KV cache-aware routing, chat history, tokenization caching, Responses API, embeddings, WASM plugins, MCP, and multi-tenant auth.",
+      "url": "https://github.com/smg-project/smg",
+      "publishedAt": "2026-11-25T21:58:48.000Z",
+      "summary": "★744 Engine-agnostic LLM gateway in Rust. Full OpenAI & Anthropic API compatibility across vLLM, TRT-LLM, TokenSpeed, SGLang, OpenAI, Gemini & more. Industry-first gRPC pipeline, KV cache-aware routing, chat history, tokenization caching, Responses API, embeddings, WASM plugins, MCP, and multi-tenant auth."
+    },
+    {
+      "id": "s-d57f5c9bdb",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "tangosdev/sm64ds-decomp: From-scratch, byte-matching decompilation of Super Mario 64 DS into C/C++, with a live progress atlas and matching tools.",
+      "url": "https://github.com/tangosdev/sm64ds-decomp",
+      "publishedAt": "2026-11-25T21:58:46.000Z",
+      "summary": "★269 From-scratch, byte-matching decompilation of Super Mario 64 DS into C/C++, with a live progress atlas and matching tools."
+    },
+    {
+      "id": "s-f791d596ac",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "publishedAt": "2026-11-25T21:58:46.000Z",
+      "summary": "★212128 Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
+    },
+    {
+      "id": "s-a4c670db59",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "GoogleCloudPlatform/generative-ai: Sample code and notebooks for Generative AI on Google Cloud, with Gemini platform",
+      "url": "https://github.com/GoogleCloudPlatform/generative-ai",
+      "publishedAt": "2026-11-25T21:56:49.000Z",
+      "summary": "★17996 Sample code and notebooks for Generative AI on Google Cloud, with Gemini platform"
+    },
+    {
+      "id": "s-1588f2212d",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "whitecircle/halo: Halo is an open-source framework built by White Circle for training large language and multimodal models",
+      "url": "https://github.com/whitecircle/halo",
+      "publishedAt": "2026-11-25T21:56:07.000Z",
+      "summary": "★1149 Halo is an open-source framework built by White Circle for training large language and multimodal models"
+    },
+    {
+      "id": "s-30babcb5ca",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "billy-enrizky/openbrowser-ai: OpenBrowser is a framework for intelligent browser automation. It combines direct CDP communication with a CodeAgent architecture, where the LLM writes Python code executed in a persistent namespace, to navigate, interact with, and extract information from web pages autonomously.",
+      "url": "https://github.com/billy-enrizky/openbrowser-ai",
+      "publishedAt": "2026-11-25T21:55:51.000Z",
+      "summary": "★279 OpenBrowser is a framework for intelligent browser automation. It combines direct CDP communication with a CodeAgent architecture, where the LLM writes Python code executed in a persistent namespace, to navigate, interact with, and extract information from web pages autonomously."
+    },
+    {
+      "id": "s-0365ec89c7",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "yetone/magpie: Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+      "url": "https://github.com/yetone/magpie",
+      "publishedAt": "2026-11-25T21:55:43.000Z",
+      "summary": "★41459 Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar."
+    },
+    {
+      "id": "s-e99ee07740",
+      "source": "GitHub Trending (ai)",
+      "sourceType": "github",
+      "title": "kortix-ai/CompanyOS: Kortix CompanyOS – the open-source operating system for the AI-native company. Connect every data source, orchestrate agents, and keep their skills, memory and connectors in one git repo you own. Any model, in our cloud or yours.",
+      "url": "https://github.com/kortix-ai/CompanyOS",
+      "publishedAt": "2026-11-25T21:54:45.000Z",
+      "summary": "★20798 Kortix CompanyOS – the open-source operating system for the AI-native company. Connect every data source, orchestrate agents, and keep their skills, memory and connectors in one git repo you own. Any model, in our cloud or yours."
+    },
+    {
+      "id": "s-4a5a9b50a2",
+      "source": "GitHub Trending (llm)",
+      "sourceType": "github",
+      "title": "pierridotite/mobile-agent-testers: 20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
+      "url": "https://github.com/pierridotite/mobile-agent-testers",
+      "publishedAt": "2026-11-25T21:53:59.000Z",
+      "summary": "★2286 20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs"
+    },
+    {
+      "id": "s-10e1c25574",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "データ拡張とは？基礎から応用までわかりやすく解説",
+      "url": "https://qiita.com/mrmrmr/items/26fd1eee010632ffe7f8",
+      "publishedAt": "2026-11-25T21:52:25.000Z",
+      "summary": "データ拡張とは 既存データを変形・変換して、訓練データを増やす技法。機械学習やディープラーニングを学ぶ際に、非常に重要な概念です。 基本的な定義 データ拡張（Data Augmentation）は、既存データに変形・変換を加えて訓練サンプルを増やす手法です。画像の回転、..."
+    },
+    {
+      "id": "s-ceecf9e348",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "publishedAt": "2026-11-25T21:51:26.000Z",
+      "summary": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users. The patent has been rejected, but unfortunately, Google might appeal or resubmit an amended version, and we could see this monstrosity come […]"
+    },
+    {
+      "id": "s-e24e3ec721",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "The New York Times tells photographers not to use the latest Photoshop",
+      "url": "https://www.dpreview.com/news/new-york-times-adobe-photoshop-2027-restriction-ai/",
+      "publishedAt": "2026-11-25T21:18:02.000Z",
+      "summary": "points=5 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-1f0ace6c4f",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "AI がいない環境で文章を書くと、考え方は変わる？",
+      "url": "https://qiita.com/e99h2121/items/b76e165349ab46b8d631",
+      "publishedAt": "2026-11-25T21:11:49.000Z",
+      "summary": "2026 年が終わる前に何かやるか ... とアドベントカレンダーまでの 100 日間を IT エンジニアのお仕事と、AI を雑多に考える質問を元に何等か話を膨らませて書いていこうと思い立ち始めたポエム。AIがいない環境で文章を書くと、考え方は変わるか。 100 日間にわた..."
+    },
+    {
+      "id": "s-ca7aa6a31b",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "音楽配信のTidal、AIだけで作られた曲の受け付けをやめ、約2,700万曲を削除へ",
+      "url": "https://qiita.com/quotidia/items/9ede1aeece4418220723",
+      "publishedAt": "2026-11-25T21:01:12.000Z",
+      "summary": "本記事は筆者が運営する AI Quotidia の海外ニュース解説記事です。 音楽配信のTidal (米国の決済企業Blockの傘下) は2026年11月24日(火) (米国の日付)、AIだけで作られたと判定した曲を2026年12月9日(水)から受け付けず、すでに配信し..."
+    },
+    {
+      "id": "s-4d9a2f3c54",
+      "source": "Qiita (AI タグ)",
+      "sourceType": "japanese",
+      "title": "Lazarus 5.0でAI APIやConPTY＋xterm.jsターミナルを扱う自作コンポーネント（`TCaiClient` / `TCcmd`）の紹介",
+      "url": "https://qiita.com/aotan083/items/6da702c4a89e773ce950",
+      "publishedAt": "2026-11-25T20:52:22.000Z",
+      "summary": "Lazarus 5.0でAI APIやConPTY＋xterm.jsターミナルを扱う自作コンポーネント（TCaiClient / TCcmd）の紹介 1. はじめに Lazarus（Free Pascal）でWindows向けデスクトップアプリを開発する際、最新のAI ..."
+    },
+    {
+      "id": "s-22e725e702",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Deliberately run your time, energy and resources below 80% capacity",
+      "url": "https://twitter.com/Voxyz_ai/status/2125591320341229890/photo/1",
+      "publishedAt": "2026-11-25T20:13:28.000Z",
+      "summary": "points=7 comments=4 (Hacker News)"
+    },
+    {
+      "id": "s-4c44ce3014",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "publishedAt": "2026-11-25T20:03:27.000Z",
+      "summary": "OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences."
+    },
+    {
+      "id": "s-a958e935c2",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "Spending 35B Opus 5.5 Tokens to Write a Symphony",
+      "url": "https://danprice.ai/blog/opus-symphony",
+      "publishedAt": "2026-11-25T19:57:08.000Z",
+      "summary": "points=44 comments=50 (Hacker News)"
+    },
+    {
+      "id": "s-e7d7a2ca3b",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+      "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+      "publishedAt": "2026-11-25T19:54:57.000Z",
+      "summary": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences."
+    },
+    {
+      "id": "s-372ac89133",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+      "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+      "publishedAt": "2026-11-25T19:44:24.000Z",
+      "summary": "Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model development."
+    },
+    {
+      "id": "s-37b5c9ba93",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "Where scientists draw the line on AI agents",
+      "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+      "publishedAt": "2026-11-25T18:52:55.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-2da10ebf72",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "Update on a security incident involving 1Password’s backend systems. | 1Password",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "publishedAt": "2026-11-25T18:52:09.000Z",
+      "summary": "What happenedOn November 19, 2026, 1Password began investigating indications that an attacker gained access to an employee’s corporate GitHub account. The actor used the account to access source code and push malicious code to backend services, which downloaded administrative data pertaining to o..."
+    },
+    {
+      "id": "s-45e1e19ee7",
+      "source": "Ars Technica",
+      "sourceType": "media",
+      "title": "Backblaze explains why it's sharing customer information with advertisers",
+      "url": "https://arstechnica.com/information-technology/2026/11/backblaze-explains-why-its-sharing-customer-information-with-advertisers/",
+      "publishedAt": "2026-11-25T18:38:29.000Z",
+      "summary": "Backblaze tells Ars it won't share users' backup, storage files with advertisers."
+    },
+    {
+      "id": "s-c2211ba4f6",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+      "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+      "publishedAt": "2026-11-25T18:11:46.000Z",
+      "summary": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development."
+    },
+    {
+      "id": "s-6359c2ce09",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "publishedAt": "2026-11-25T17:44:51.000Z",
+      "summary": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative. With several others also pursuing the idea of putting AI data centers in space, including Google and Blue Origin, this is the first approval the agency […]"
+    },
+    {
+      "id": "s-9241987731",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Character.AI’s plan to auction off users’ private chats challenged by state AGs",
+      "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+      "publishedAt": "2026-11-25T17:35:58.000Z",
+      "summary": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said."
+    },
+    {
+      "id": "s-16e4a7d7fb",
+      "source": "Hacker News",
+      "sourceType": "hn",
+      "title": "New York bans AI toys, including those using internet to talk to children",
+      "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
+      "publishedAt": "2026-11-25T17:27:05.000Z",
+      "summary": "points=36 comments=2 (Hacker News)"
+    },
+    {
+      "id": "s-e226021109",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "組織レベルごとの品質定義（リライト）｜snsk",
+      "url": "https://note.com/_snsk/n/n9473a6e95b1c",
+      "publishedAt": "2026-11-25T16:01:22.000Z",
+      "summary": "組織レベルごとの品質定義大昔に書いたものですが、またさまざまな組織に向けて紹介したい、引用したい機会が増えてきましたので、改めてリライトします。 製品を社会に提供する組織（多くの企業が当てはまります）において、組織レベルごとにさまざまな抽象度での品質定義が明示的、暗黙的に存在し、持続的イノベーショ..."
+    },
+    {
+      "id": "s-6b1c4ab3d0",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Nothing offers a full look at its AI earbuds and charging case",
+      "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+      "publishedAt": "2026-11-25T16:00:59.000Z",
+      "summary": "Nothing is showing off a much more detailed look at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcribe, and summarize your conversations. Like the Ear 3, the Ear Note's microphone-equipped case comes with a \"Talk\" button that you […]"
+    },
+    {
+      "id": "s-f6730ac844",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
+      "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+      "publishedAt": "2026-11-25T15:41:43.000Z",
+      "summary": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power, and a finished building matter more than a pitch deck. ⁠Anita Verma-Lallian⁠ has been selling exactly that. […]"
+    },
+    {
+      "id": "s-e212dfc2d6",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "PayPayでシステム障害 カード連携サービスで決済できず | NHKニュース",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261125de81532",
+      "publishedAt": "2026-11-25T14:26:59.000Z",
+      "summary": "スマホ決済大手のPayPayは、システム障害によって25日午後8時過ぎから、クレジットカードと連携したサービスで決済ができなくなっているということです。 会社では原因を調べていますが、復旧のめどは立…"
+    },
+    {
+      "id": "s-380a7253da",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "防衛省、自衛官の定数削減へ　「AI指揮統制」で人手補強 - 日本経済新聞",
+      "url": "https://www.nikkei.com/article/DGXZQOUA20BWZ0Q6A121C2000000/",
+      "publishedAt": "2026-11-25T14:15:12.000Z",
+      "summary": "防衛省は年内に予定する安全保障関連3文書の改定に合わせ、自衛官の定数を削減する検討に入った。部隊編成の基本となる定数を実際の自衛官の数に近づけることで運用の効率を高める。司令機能は人工知能（AI）を導入し必要な人手を減らす。自衛官の定数は防衛省設置法で24万7154人と定める。実際は21万8000人弱にとどまる..."
+    },
+    {
+      "id": "s-e1845ee0b5",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Amazon is reportedly in talks to end Muse AI shopping block",
+      "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+      "publishedAt": "2026-11-25T14:12:33.000Z",
+      "summary": "Amazon has held talks about letting Meta's Muse AI agent shop on its online marketplace, according to a report from Fortune. The discussions, which could end Amazon's block on Muse, reportedly center on the kinds of products the AI agent recommends and the potential impact on the ecommerce giant's advertising revenue. As reported by Fortune, […]"
+    },
+    {
+      "id": "s-28175a595e",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+      "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "publishedAt": "2026-11-25T14:10:18.000Z",
+      "summary": "Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse."
+    },
+    {
+      "id": "s-9edbb62c9b",
+      "source": "TechCrunch AI",
+      "sourceType": "media",
+      "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
+      "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
+      "publishedAt": "2026-11-25T13:00:00.000Z",
+      "summary": "The central question for investigators is what Nvidia knew about where those chips ended up and whether Huang's affair with a Megaspeed executive gave the company reason to doubt Megaspeed's assurances."
+    },
+    {
+      "id": "s-929f2b2360",
+      "source": "The Verge AI",
+      "sourceType": "media",
+      "title": "Has vibe coding made open source the new normal for synths?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+      "publishedAt": "2026-11-25T13:00:00.000Z",
+      "summary": "The emergence of powerful vibe-coding agents and tools like Reverse Engineer Anything has caused chaos in the music gear world, leaving companies scrambling to figure out how to respond. While some, like Roland, have remained silent for now, others have embraced the modding community. In the last several weeks, as it's become clear that no […]"
+    },
+    {
+      "id": "s-e89fca6efa",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "最近のMySQL事情について",
+      "url": "https://speakerdeck.com/yoku0825/mysql-in-2026",
+      "publishedAt": "2026-11-25T12:41:19.000Z",
+      "summary": "2026/11/25 DBRE Summit 2026 https://mercari.connpass.com/event/409917/"
+    },
+    {
+      "id": "s-4384eb5f86",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "「小学生くらいの頃に見たロボットに乗って戦うアニメを探してるのですが見つかりません」情報を元に推理して2択に絞られるが、解決したと思ったら謎が残った",
+      "url": "https://togetter.com/li/2774878",
+      "publishedAt": "2026-11-25T11:47:41.000Z",
+      "summary": "リップグリップ岩永 @lipiwanaga 僕が小学生ぐらいの頃なんで2003年前後だと思うんですけど、木曜か金曜(たぶん金曜日)の夜にやってた、ロボット(コードギアスみたいな細身で長身のロボット)がスノボみたいなのに乗って戦うアニメの名前ってわかる人いますか？ 習い事の関係で飛び飛びで見てたので内容も全くわかんない..."
+    },
+    {
+      "id": "s-59a6419f5b",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "AnthropicとOpenAIの従業員らが「未公開モデルが強力になりすぎて一般公開するのは危険」と懸念",
+      "url": "https://gigazine.net/news/20261125-anthropic-openai-employees-fear-unreleased-ai-models/",
+      "publishedAt": "2026-11-25T11:43:19.000Z",
+      "summary": "大手AI企業のAnthropicやOpenAIで、複数の従業員が未公開の最先端AIモデルの能力が高くなりすぎたことを懸念していることがわかりました。この情報を伝えたニュースサイト・Axiosによると、すでにAIモデルを制御するための技術的解決策を凌駕し始めているそうです。 Anthropic, OpenAI employees fear models are too un..."
+    },
+    {
+      "id": "s-3abe4e3bab",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "【第21回】PCの前に行くな。スマホからHermes Agentに頼めば、自宅のClaude Codeが答える。",
+      "url": "https://zenn.dev/sora_biz/articles/hermes-vps-21-home-claude-code",
+      "publishedAt": "2026-11-25T11:29:48.000Z",
+      "summary": "! この記事をAIに読ませる この記事はGitHubの公開リポジトリで管理していて、本文のMarkdownをそのまま取得できる。Claude CodeやCodexなどのAIエージェントに手順を任せたいときは、次のURLを渡すだけでいい。 https://raw.githubusercontent.com/Sora-bluesky/zenn-articles/main/articles/hermes-vps-21-home-claude-code.md 頼み方の例:「この記事を読んで、私の環境で手順を順番に実行して」に上のURLを添える。 ! この連載は月1,800円ほどのVPSで、自分..."
+    },
+    {
+      "id": "s-b55a31fc65",
+      "source": "はてなブックマーク (IT)",
+      "sourceType": "japanese",
+      "title": "観測者から当事者へ、AI 時代にドメインへ深入りする知識と技術 / From Observer to Practitioner: Going Deep into Domains in the Age of AI",
+      "url": "https://speakerdeck.com/nrslib/from-observer-to-practitioner-going-deep-into-domains-in-the-age-of-ai",
+      "publishedAt": "2026-11-25T11:26:01.000Z",
+      "summary": "Modeling Forum 2026 におけるトークスライドです モデリングの前と後、そして実際のモデリングをコモディティ化しています イベント概要：https://umtp-japan.org/event-seminar/mf2026/78668 CQRS+ES実践ガイド：https://…"
+    },
+    {
+      "id": "s-94a64008f5",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIが書いた「うちの運用」の説明は、うちの記録と食い違っていた",
+      "url": "https://zenn.dev/ai_shihan/articles/c876d87ca0561f",
+      "publishedAt": "2026-11-25T10:38:35.000Z",
+      "summary": "X の投稿は、AI の席（広報部）に任せています。ネタの下書きを書くのは、別の AI（X 担当）です。広報部は、下書きの事実を元の文面と突き合わせてから出す決まりで動いています。 外の発表の事実は、元の投稿を読めば確かめられます。確かめにくいのは、下書きの中に混ざる「うちはこう運用している」という説明でした。11月24日と25日の下書きで、3つ見つかりました。 1. 時刻と見る物が、記録に無かった 11月24日、Bot の見張りの決まりを3つ書いた下書きが届きました。見る物は「AI の公式の発表と X の話題」、時刻は「8:00 と 18:00」。 自席の過去の投稿を探すと、朝夕2回..."
+    },
+    {
+      "id": "s-d0a3a7f662",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "An Indic Voice Agent with CUGA",
+      "url": "https://huggingface.co/blog/ibm-research/an-indic-voice-agent-with-cuga",
+      "publishedAt": "2026-11-25T10:22:09.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-a43010e0c0",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "見積もり前に決める3つの数字——AIで作ったアプリの「業務ルール」をコードに埋め込まない理由",
+      "url": "https://zenn.dev/cpcai/articles/d98ae3be009fd7",
+      "publishedAt": "2026-11-25T10:19:38.000Z",
+      "summary": "固定価格・3〜5日でWebアプリを納品している1人スタジオの作業メモです。 公開から3週間で、依頼主は手数料率を3回変えました。2回目は「15%を12%にできますか」という1行のチャット。3回目は「無料プランは1教室5人まで、有料はそれ以上」という新しいルールでした。 最初のバージョンでは、そのどれもが同じ作業を意味しました。定数を書き換えて、デプロイして、決済のテストをもう一度流して、アプリ版はストア審査を待つ。値付けを探している最中の3週間で3回は、まったく普通のことです。問題はコードの変更そのものではありません。ビジネスの判断が、デプロイの中に凍結されていたことでした。 い..."
+    },
+    {
+      "id": "s-2d10dabb49",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "worktreeで並行作業中のエージェントを止めずに、親リポジトリで動作確認する",
+      "url": "https://zenn.dev/ncdc/articles/7199d618ad4c87",
+      "publishedAt": "2026-11-25T10:10:26.000Z",
+      "summary": "はじめに LT会で「worktreeで並行作業しているエージェントの成果を、どうやってローカルで確認するか」という話をしました。スライドだけだと、あとから見返したときに細かい経緯を忘れていそうなので、話した内容を備忘録としてまとめておきます。 話の中で紹介したClaude Codeのスキルと運用規約は、GitHubで公開しています。 https://github.com/jepapt2/claude-worktree-peek 動作確認した環境 macOS Claude Code（2026年11月時点） Git 2.50.1 困っていたこと：確認したいブランチをwor..."
+    },
+    {
+      "id": "s-fecbd92b43",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AIに頼んだクリスマスの雪が嘘っぽかったので、大学の数学を掘り起こした話",
+      "url": "https://zenn.dev/telomelonia/articles/d883d0d0a64a38",
+      "publishedAt": "2026-11-25T10:03:58.000Z",
+      "summary": "時間がない人は、最後の作例とスキルファイルまで飛ばしてください。 モバイルアプリのワールドマップに雪を降らせることになりました。AI エージェントに頼んだら、1分で雪が降り始めました。でも、嘘っぽい。雪がかたまって、空全体がそろって揺れて、消えた雪が同じ場所にまたポンと現れます。 多くのサイトで見るのと同じ雪です。x と y をランダムに決めて、落として、上に戻す。みんながこう書くので、AI もこう書きます。大学の数学の授業で習ったことで直せる気がして、問題を1つずつ直していきました。デモはすべてドラッグできます。 かたまり 最初に気になったのは、かたまりです。これは Math.ra..."
+    },
+    {
+      "id": "s-3741c39393",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "メモリーの予約が詰まった場面を並べたら、ほとんどは台帳と実際のずれだった",
+      "url": "https://zenn.dev/maruhana/articles/heavy-lease-contention",
+      "publishedAt": "2026-11-25T10:00:07.000Z",
+      "summary": "! ひとことで言うと：パソコン 1 台で重い作業を順番に回すために、始める前に「これだけ使います」と席を取る決まりにしている。ところが、席を取ったまま別の用事を待っていたり、取った人とは別の名前で作業が動いていたりして、帳簿と実際がずれると、空いているのに誰も始められなくなった。帳簿が数えている量のほかに、帳簿に載せていない量も見ないといけないこともあった。ずれ方を見つけるたびに帳簿の数え方や決まりを直し、大きい作業は一つずつ通す形に落ち着いた。 先に、この記事の要約（専門用語なし） 重い処理を始める前にメモリーを予約する仕組みを入れて 11 日。予約は 68 件、順番待ちに並んだの..."
+    },
+    {
+      "id": "s-570b39bfa8",
+      "source": "MIT Technology Review AI",
+      "sourceType": "media",
+      "title": "AI is straining America’s open records systems",
+      "url": "https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/",
+      "publishedAt": "2026-11-25T10:00:00.000Z",
+      "summary": "In Panton, Vermont, population 660, town clerk Kyle Rowe did it all. He crafted budgets, paid vendors, handled property tax disputes, and served as the town’s zoning supervisor and presiding elections officer. During morning office hours at the town hall—a wood-frame structure built as a church in 1858—he also fielded public records requests. Recently, he…"
+    },
+    {
+      "id": "s-72fb2e7fd2",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "API のない AI エージェント Muse を、Claude・Antigravity と同じ開発チームに入れるまで",
+      "url": "https://zenn.dev/moneystock/articles/muse-multi-agent-shared-folder",
+      "publishedAt": "2026-11-25T09:42:36.000Z",
+      "summary": "この記事で書くこと スマホのブラウザで遊べる10秒ゲームのサイト「まいにち10秒ゲーム」を、複数の AI で作っています。 成果物: https://game.money-stock.com/ 担当は大きく3つです。 Muse(Meta のデスクトップ AI エージェント): 進行と運用 Claude: 設計・文案・審査 Antigravity: 調査と画像の制作 実装の一部は、別の開発環境の AI が支援しています。分担そのものと、依頼ファイルの書き方は、前の記事に書きました。 「報告は証拠ではない」――役割の違うAIたちでゲームサイトを回す仕組み: http..."
+    },
+    {
+      "id": "s-4929732ba3",
+      "source": "Zenn (AI トピック)",
+      "sourceType": "japanese",
+      "title": "AWS セキュリティ成熟度モデル v3 と PCI DSS 版・AI 版の変更点と評価ツールを確認する",
+      "url": "https://zenn.dev/cscloud_blog/articles/new-aws-security-maturity-model",
+      "publishedAt": "2026-11-25T09:41:57.000Z",
+      "summary": "こんにちは、CSC の CloudFastener というプロダクトで TAM のポジションで働いている平木です！ 皆さんは AWS のセキュリティ運用にセキュリティ成熟度モデルを使用していますか？ AWS 環境のセキュリティ運用で「次に何をやるか」を決めるとき、AWS セキュリティ成熟度モデル（AWS Security Maturity Model）を指針として使うケースが多くありました。これまでは v2 が主流で、v2 への更新はクラスメソッドさんの記事で紹介されています。 https://dev.classmethod.jp/articles/released-aws-securi..."
+    },
+    {
+      "id": "s-190619a69a",
+      "source": "Latent Space",
+      "sourceType": "media",
+      "title": "[AINews] Gemini 4 Neon marks GDM&apos;s full return as a Frontier Lab",
+      "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/",
+      "publishedAt": "2026-11-25T04:29:07.000Z",
+      "summary": "November 24, 2026 — Neon beats Astra and Fable on LiveBench and cuts Theo’s TS Rust benchmark runtime by 48.6%."
+    },
+    {
+      "id": "s-03e2279915",
+      "source": "Lobsters (ai tag)",
+      "sourceType": "media",
+      "title": "Matrix Multiplication is Θ(n^2.25)",
+      "url": "https://raw.githubusercontent.com/openai/math/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+      "publishedAt": "2026-11-25T03:15:59.000Z",
+      "summary": "Comments"
+    },
+    {
+      "id": "s-b69c56ea39",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "音楽サービスのTIDAL、AI生成楽曲を削除・受付停止へ　直近90日の配信楽曲の43％がAI生成",
+      "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003433/",
+      "publishedAt": "2026-11-25T01:57:02.000Z",
+      "summary": "音楽ストリーミングサービスのTIDALは、完全AI生成楽曲の受付を停止し、配信済みの楽曲も削除すると発表した。直近90日間に配信された楽曲の43％が完全AI生成と判定されており、現在カタログの6.3％に当たる約2700万曲が該当する。AIを補助的に使った楽曲は引き続き配信可能だ。"
+    },
+    {
+      "id": "s-15aa96a954",
+      "source": "Claude Code (Anthropic)",
+      "sourceType": "vendor",
+      "title": "v2.1.332",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "publishedAt": "2026-11-25T01:32:14.000Z",
+      "summary": "What's changed Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start Added \"Always deliver\" to the prompt for held messages from other sessions Added a footer li"
+    },
+    {
+      "id": "s-cc9c2afffe",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "「Claude」で作ったアプリをMac／Windowsにインストール可能に　全プランでβ提供",
+      "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003431/",
+      "publishedAt": "2026-11-25T01:07:59.000Z",
+      "summary": "Anthropicは、AIアシスタント「Claude」で作成したアーティファクトをMac／Windows向けのデスクトップアプリとして導入できる「Install as app」を全プラン向けにβ提供すると発表した。専用ウィンドウで動作し、通知やメニューバー表示、許可に応じたファイル操作にも対応する。"
+    },
+    {
+      "id": "s-d8d6777ecf",
+      "source": "Hugging Face Blog",
+      "sourceType": "vendor",
+      "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+      "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+      "publishedAt": "2026-11-25T00:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "id": "s-e7edc4d7f5",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "設計者がAIに求めるのはCAD操作だけじゃない――SOLIDWORKS AIが目指す課題解決",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2611/25/news005.html",
+      "publishedAt": "2026-11-25T00:00:00.000Z",
+      "summary": "ダッソー・システムズは、年次ユーザーイベント「3DEXPERIENCE WORLD JAPAN 2026」を開催した。基調講演では、産業AIを支える技術基盤や3つのバーチャルコンパニオンの活用について紹介。AIがCADの操作支援からエンジニアリング業務の遂行へと進化する中で、設計者に求められる役割の変化や検証の重要性も示された。"
+    },
+    {
+      "id": "s-6ff348e652",
+      "source": "Simon Willison",
+      "sourceType": "media",
+      "title": "Three LLM inflection points in twelve months",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+      "publishedAt": "2026-11-24T23:02:07.000Z",
+      "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, Novemb"
+    },
+    {
+      "id": "s-2a93f7c123",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "AIエージェントは隙あらばサンドボックスの外に出るのか　Anthropicが評価手法「Siren」を発表",
+      "url": "https://www.itmedia.co.jp/news/article/2611/25/2000003430/",
+      "publishedAt": "2026-11-24T22:41:42.000Z",
+      "summary": "Anthropicは、AIエージェントが脆弱なサンドボックスから抜け出すかどうかを測る評価手法「Siren」を発表した。1700以上のシナリオで6モデルを検証し、最新モデル群が外に置かれた認証情報などを不正に使った割合は0.6?1.6％にとどまった。システムプロンプトでのルール明示や報告ツールなどの対策を組み合わせると、問題行動をほぼゼロに抑えられるという。"
+    },
+    {
+      "id": "s-0333fec797",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "現役組み込みエンジニアが考える「GitHub Copilot」の使いどころと検証の実際",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2611/25/news009.html",
+      "publishedAt": "2026-11-24T22:00:00.000Z",
+      "summary": "現役組み込みエンジニアである筆者が、AIを業務で使って見えた期待と限界の全体像を論じた前回記事に続き、今回はその続編としてもう一歩踏み込み、代表的なAIコーディングエージェントとして知られている「GitHub Copilot」の活用法を取り上げる。"
+    },
+    {
+      "id": "s-d161307067",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "経理が「2人→1人」に減る現場　弥生の開発陣が警鐘を鳴らす「なんとなく経営」の限界",
+      "url": "https://www.itmedia.co.jp/business/articles/2611/25/news020.html",
+      "publishedAt": "2026-11-24T22:00:00.000Z",
+      "summary": "資材や人件費の高騰、法改正による事務負担増で中小企業の経営難易度が上がっている。弥生の担当者は、顧客と接する中での実感として、従業員20人前後の企業では約7割の企業が、数値化した売り上げ・利益目標を持たず、経営状況を経験や勘で「なんとなく」で把握していると話す。さらに経営者の間で広がる「AI格差」をどう乗り越えるべきか。会計領域でAIを使う際の落とし穴（誤認投資のリスク）と、経営者がAIを使いこなす3段階を、長年現場を見つめてきた開発陣に聞いた。"
+    },
+    {
+      "id": "s-985442c354",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "OmniAct: One Policy, One Million Embodiments",
+      "url": "https://arxiv.org/abs/2611.33158v1",
+      "publishedAt": "2026-11-24T18:59:58.000Z",
+      "summary": "A single policy that controls diverse robots must not only transfer task knowledge across embodiments, but also adapt its behavior to each robot's capabilities. Existing approaches facilitate transfer through shared action representations, but these representations do not necessarily capture how differences in robot morphology should shape manipulation strategies. We introduce OmniAct, a cross-emb"
+    },
+    {
+      "id": "s-44e8557e14",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "DiaCap: Jointly Learning Who Speaks When for Audiovisual Dialogue Captioning",
+      "url": "https://arxiv.org/abs/2611.33153v1",
+      "publishedAt": "2026-11-24T18:59:08.000Z",
+      "summary": "We present DiaCap, an audiovisual LLM for comprehensive dialogue captioning, which produces the transcript, timestamps, and a visual description of the speaker for every utterance in a video. Considering that utterance timing and audiovisual diarization are tightly coupled, DiaCap unifies the tasks in a single model, trained in two complementary stages. First, we train DiaCap on 225K curated clips"
+    },
+    {
+      "id": "s-15f54fdd94",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "BioLoom: Scaling Biomedical Vision-Language Models by Learning from the Structure of Scientific Articles",
+      "url": "https://arxiv.org/abs/2611.33151v1",
+      "publishedAt": "2026-11-24T18:59:04.000Z",
+      "summary": "The development of biomedical vision-language models (VLMs) with contrastive image-text pretraining has been driven by scaling to increasingly large and diverse image-text datasets. Beyond scaling, further progress can come from learning richer representations from existing data. We hypothesize that the structure of scientific literature itself provides an additional source of supervision: figures"
+    },
+    {
+      "id": "s-2450d5ccd5",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "CoT-Proxy: Cross-Format Transfer for Distilling Long-Horizon Policies",
+      "url": "https://arxiv.org/abs/2611.33148v1",
+      "publishedAt": "2026-11-24T18:58:53.000Z",
+      "summary": "Reasoning models become long-horizon agents through reinforcement learning or, more cheaply, through fine-tuning on a stronger teacher's trajectories, which contain the teacher's chain-of-thought as well as its actions. The standard fine-tuning approach imitates both, yet the strongest teachers are closed models whose chain-of-thought is hidden behind an API. We show that the chain-of-thought can "
+    },
+    {
+      "id": "s-9d172341d1",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction",
+      "url": "https://arxiv.org/abs/2611.33141v1",
+      "publishedAt": "2026-11-24T18:56:04.000Z",
+      "summary": "World-action models (WAMs) build policies on pretrained video-generation models, on the premise that predicting how a scene evolves helps determine how to act. However, generating future scenes is expensive for real-time control. This motivates efficient proxies for future imagination, but how to train such proxies without sacrificing action-prediction quality remains unclear. An effective proxy n"
+    },
+    {
+      "id": "s-ce5dd58f80",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "BriConstrain: Geometrically Constrained Decoding for Autoregressive Brick Assembly Generation",
+      "url": "https://arxiv.org/abs/2611.33135v1",
+      "publishedAt": "2026-11-24T18:54:38.000Z",
+      "summary": "Language models can generate LEGO$^\\circledR$ assemblies from text, but their builds often contain parts that collide or attach to nothing. The usual approach of rejecting and resampling invalid placements discards decoded tokens without guaranteeing a valid build. We present BriConstrain, a constrained decoding method that restricts a pretrained language model's next-token probabilities before sa"
+    },
+    {
+      "id": "s-fcbadb5e4e",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "A Bias in Disguise: Tiny Gradient Edits Stop a Small Language Model's Thinking Loops and Complement a Frontier Model's Weight Edit",
+      "url": "https://arxiv.org/abs/2611.33133v1",
+      "publishedAt": "2026-11-24T18:53:22.000Z",
+      "summary": "Qwen3.5-0.8B rarely finishes reasoning in thinking mode: at a 4,096-token budget only 1 or 2 of 500 MATH-500 answers close their think block (two seeds), and accuracy is 15.4%. A recent demonstration had GPT-6 Astra edit 131,072 of the model's weights without gradients and reported MATH-500 rising from 7.9% to 48.1% at a 32,768-token budget. We provide the missing gradient baseline, then combine t"
+    },
+    {
+      "id": "s-abd8d409fc",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Exploratory Midtraining for Robot Policies",
+      "url": "https://arxiv.org/abs/2611.33130v1",
+      "publishedAt": "2026-11-24T18:52:34.000Z",
+      "summary": "Robot policies predominantly learn from human-collected data emphasizing competent behavior, limiting coverage of the low-level behaviors needed to support autonomous improvement. We study how a form of midtraining can be used to build coverage over diverse low-level behaviors that connect challenging states of the robot and its environment to states from which further progress is possible (\"conne"
+    },
+    {
+      "id": "s-b309787f15",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "SAG-Mem-1.0 Technical Report",
+      "url": "https://arxiv.org/abs/2611.33124v1",
+      "publishedAt": "2026-11-24T18:51:29.000Z",
+      "summary": "Long-term conversational memory requires retrieving complementary facts scattered across dialogue sessions, including intermediate evidence with limited similarity to the original question. Existing approaches often rely on derived memory representations or persistent relational structures, introducing construction costs and potentially losing source details. We present SAG-Mem, a conversational m"
+    },
+    {
+      "id": "s-8d66817643",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing",
+      "url": "https://arxiv.org/abs/2611.33119v1",
+      "publishedAt": "2026-11-24T18:49:19.000Z",
+      "summary": "Large language models (LLMs) can generate parallel programs, but their correctness and performance depend strongly on the instructions that guide generation. We present \\textsc{MetaFORGE}, an execution-grounded meta-learning framework that iteratively optimizes persistent natural-language skill specifications for MPI C code generation. \\textsc{MetaFORGE} combines correctness testing, compiler diag"
+    },
+    {
+      "id": "s-a60a791375",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Draft Calibration for Speculative Decoding: Accelerating LLM Serving by Matching Draft and Target Distributions",
+      "url": "https://arxiv.org/abs/2611.33111v1",
+      "publishedAt": "2026-11-24T18:41:59.000Z",
+      "summary": "Speculative decoding accelerates large language model (LLM) inference by employing a lightweight draft model to propose draft tokens and allowing the target model to verify the new tokens in parallel to improve inference-time compute utilization. The speedup relies on the acceptance probability of draft tokens in target verification, which is directly related to the gap $\\|p-q\\|_1$ between the tar"
+    },
+    {
+      "id": "s-0e44fa96a5",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Temporal Conditioning for Human Behavioral Cloning in Chess",
+      "url": "https://arxiv.org/abs/2611.33106v1",
+      "publishedAt": "2026-11-24T18:40:51.000Z",
+      "summary": "Behavioral cloning models in chess typically predict human moves from board states while ignoring temporal inputs such as the remaining clock. However, time pressure is a major determinant of human decision-making quality, and temporal state is a missing dimension of human behavioral modeling. This paper introduces a time-aware transformer that extends a Chessformer-style architecture with learned"
+    },
+    {
+      "id": "s-4fb01f17e8",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
+      "url": "https://arxiv.org/abs/2611.33102v1",
+      "publishedAt": "2026-11-24T18:38:06.000Z",
+      "summary": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge is retained in the rollouts themselves. A natural first attempt is to replay the o"
+    },
+    {
+      "id": "s-15b7382dfb",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "GREMLIN: Generating Random Environments for Meta-Learning with Interacting Networks",
+      "url": "https://arxiv.org/abs/2611.33101v1",
+      "publishedAt": "2026-11-24T18:37:37.000Z",
+      "summary": "Can randomly parameterized neural environments supply useful experience for learning a reinforcement learning algorithm? We investigate this question using DiscoRL's rule-discovery framework, replacing human-designed training games with sixteen selected neural environments. Each game combines bounded vector dynamics with a random strategy-based reward and an independent outcome reward. After 224.8"
+    },
+    {
+      "id": "s-28f9393549",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance",
+      "url": "https://arxiv.org/abs/2611.33098v1",
+      "publishedAt": "2026-11-24T18:34:40.000Z",
+      "summary": "Agents built on frontier language models are expensive. At every step, the frontier model re-reads its entire context and executes every subtask regardless of its difficulty. This paper explores the simple thesis that much of this cost can be removed by delegating easy subtasks to a small language model, or SLM, that runs on hardware one already owns. To test it, we build Delegent, a simple and ef"
+    },
+    {
+      "id": "s-636acdf41d",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "EventDiffusion: Learning Native Event Stream Distribution from Videos",
+      "url": "https://arxiv.org/abs/2611.33096v1",
+      "publishedAt": "2026-11-24T18:32:39.000Z",
+      "summary": "Event cameras capture asynchronous brightness changes at high temporal resolution, but scarce recordings constrain data-driven research. Sparse RGB observations cannot uniquely determine intervening events since identical frames may correspond to streams with different activity, polarities, and timing. Existing simulators largely rely on prescribed sensor dynamics and estimated brightness trajecto"
+    },
+    {
+      "id": "s-676bccdabb",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "AIChipBench: Benchmarking LLM Agents for Automated AI Accelerator Design",
+      "url": "https://arxiv.org/abs/2611.33093v1",
+      "publishedAt": "2026-11-24T18:28:41.000Z",
+      "summary": "A language-model decoder carries state between decoding steps, and in hardware a wrong state update can leave the current token correct and corrupt the output several tokens later, so a design can pass output tests and still be wrong. AIChipBench asks what LLM coding agents need to build such hardware correctly. Agents implement quantized Qwen3.5, Gemma 3, Gemma 4, and Llama 3.2 decoders in synthe"
+    },
+    {
+      "id": "s-bb2e091133",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "The Radar-based Activities of Daily Living (R-ADL) Dataset",
+      "url": "https://arxiv.org/abs/2611.33088v1",
+      "publishedAt": "2026-11-24T18:25:00.000Z",
+      "summary": "Monitoring Activities of Daily Living (ADLs) supports safety and well-being for people living at home, especially older adults, and radar sensing is gaining increasing attention in the field of activity recognition for its ability to ensure privacy in the home while also surpassing technical limitations of other sensing modalities. However, radar-based activity recognition remains constrained by t"
+    },
+    {
+      "id": "s-896fe7436b",
+      "source": "arXiv cs.AI",
+      "sourceType": "arxiv",
+      "title": "Uncertainty-Aware Candidate Generation for Entity Linking in Cyber Threat Intelligence",
+      "url": "https://arxiv.org/abs/2611.33086v1",
+      "publishedAt": "2026-11-24T18:23:14.000Z",
+      "summary": "Entity Resolution (ER) pipelines often collapse ambiguity into early hard decisions: upstream Named Entity Recognition (NER) selects a single span and type, and downstream Entity Linking (EL) treats that choice as ground truth. This discards valuable information about the ambiguity of the underlying data (e.g., span boundary disagreement and type confusion), leading to brittle systems that fail un"
+    },
+    {
+      "id": "s-ce423dc885",
+      "source": "arXiv cs.LG",
+      "sourceType": "arxiv",
+      "title": "Shifter Quantization: Compact Representations for Native Integer Computation",
+      "url": "https://arxiv.org/abs/2611.33080v1",
+      "publishedAt": "2026-11-24T18:14:52.000Z",
+      "summary": "Groupwise quantization is used in LLM quantization to improve accuracy at low bit widths, but grouping weights keeps standard integer MMA from spanning the full dot product for efficient GPU inference. We develop a new quantization method, Shifter Quantization (SQ), that reconstructs native-width integer operands by appending and shifting shared bits. To further extend the efficiency, we develop a"
+    },
+    {
+      "id": "s-69bf891303",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "FOL-Proof: Verifying LLM Text-to-Logic Translations via Deterministic Semantics",
+      "url": "https://arxiv.org/abs/2611.33078v1",
+      "publishedAt": "2026-11-24T18:13:28.000Z",
+      "summary": "Large Language Models (LLMs) are increasingly used to translate natural-language statements into first-order logic (FOL) to improve reasoning. However, LLMs are prone to errors, and so a semantically unfaithful FOL formula could corrupt downstream reasoning. We present FOL-Proof, a semantic firewall pipeline that validates LLM-generated FOL translations against independently derived linguistic int"
+    },
+    {
+      "id": "s-1e4d987cfa",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Worth the Wait? How Response Time and Streaming Shape Judgments of Generative AI Answers and Chatbot Engagement",
+      "url": "https://arxiv.org/abs/2611.33050v1",
+      "publishedAt": "2026-11-24T17:57:00.000Z",
+      "summary": "Answers from generative AI chatbots built on large language models (LLMs) now arrive at very different speeds: reasoning models deliberate before replying, while response caches can return a stored answer at once. Blind preference votes, which rank these models, are read as judgments of their text, and if delivery matters, faster answers are expected to gain. Research on the labor illusion and on "
+    },
+    {
+      "id": "s-1bc3837825",
+      "source": "arXiv cs.CL",
+      "sourceType": "arxiv",
+      "title": "Latent Merger: Latent-Space Composition of Hypernetwork-Generated LoRAs",
+      "url": "https://arxiv.org/abs/2611.33048v1",
+      "publishedAt": "2026-11-24T17:54:58.000Z",
+      "summary": "Recent work proposes hypernetworks that convert a document into a low-rank parameter update (LoRA) in a single forward pass, enabling fast injection of new knowledge into a frozen LLM. However, storing separate LoRA adapters for each document can be unsustainable in streaming settings. In this paper, we study the problem of composing hypernetwork-generated LoRAs using two representative systems, D"
+    },
+    {
+      "id": "s-2dd66da6b1",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "DeNA、「AI社員」を外販　使い過ぎを“残業時間”で管理",
+      "url": "https://www.itmedia.co.jp/aiplus/article/2611/24/2000003406/",
+      "publishedAt": "2026-11-24T03:26:08.000Z",
+      "summary": "DeNAは、AIエージェントを企業の一員として配属・育成できるとうたうサービス「AI社員 by DeNA」の提供を決定したと発表した。"
+    },
+    {
+      "id": "s-99b93f3e10",
+      "source": "OpenAI",
+      "sourceType": "vendor",
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "summary": "ChatGPT and Codex integrations help Clay’s users research deals and turn data into go-to-market plays, with GPT-6 models handling the reasoning."
+    },
+    {
+      "id": "s-5c9b1d976c",
+      "source": "ITmedia AI+",
+      "sourceType": "japanese",
+      "title": "パナソニックHDが描くフィジカルAIの未来、研究開発と現場実装を両輪に",
+      "url": "https://monoist.itmedia.co.jp/mn/articles/2611/24/news040.html",
+      "publishedAt": "2026-11-24T00:00:00.000Z",
+      "summary": "パナソニックHDは、技術未来ビジョンの進捗状況や、フィジカルAI（人工知能）への取り組み方針を説明した。"
+    }
+  ]
+}

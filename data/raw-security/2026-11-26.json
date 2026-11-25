@@ -1,0 +1,358 @@
+{
+  "date": "2026-11-26",
+  "collectedAt": "2026-11-25T22:01:38.740Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-754401092b",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "1Password customer data stolen after employee GitHub account breach",
+      "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+      "publishedAt": "2026-11-25T21:33:33.000Z",
+      "summary": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data. [...]"
+    },
+    {
+      "id": "s-812fc34982",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+      "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+      "publishedAt": "2026-11-25T19:39:31.000Z",
+      "summary": "Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents targeting organizations in the critical infrastructure sector. [...]"
+    },
+    {
+      "id": "s-82de10c3a7",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "CISA warns of critical unpatched flaw in Danfoss refrigeration controllers",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/",
+      "publishedAt": "2026-11-25T16:13:40.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning about a critical vulnerability in Danfoss AK-SM 8xxA Series controllers used by food retailers to manage commercial refrigeration, HVAC, and lighting systems. [...]"
+    },
+    {
+      "id": "s-c27bc29bbb",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "More Pentests Without More Pentesters: Where AI Safely Helps",
+      "url": "https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/",
+      "publishedAt": "2026-11-25T15:00:10.000Z",
+      "summary": "Penetration testers spend a significant portion of their engagements on documentation, reporting, and other tasks outside of testing. PentestPad explains how AI can reduce this workload, help teams handle more engagements, and keep sensitive client data within their own infrastructure. [...]"
+    },
+    {
+      "id": "s-cc22ea94d1",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "InfraTrust warns of exploited supply chain flaws in network appliances",
+      "url": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
+      "publishedAt": "2026-11-25T15:00:00.000Z",
+      "summary": "Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves. [...]"
+    },
+    {
+      "id": "s-b9363eb41c",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ランサム攻撃で個人情報流出、パスポート写しも - 京王電鉄",
+      "url": "https://www.security-next.com/193305",
+      "publishedAt": "2026-11-25T14:12:41.000Z",
+      "summary": "ランサム攻撃で個人情報流出、パスポート写しも - 京王電鉄 京王電鉄は、同社グループのネットワークがランサムウェアによるサイバー攻撃を受けた問題で、個人情報が流出したことを明らかにした。 同社によれば、2026年9月26日、同社グループのネットワークがランサムウェアによるサイバー攻撃を受けたことを検知。被害拡大を防ぐためにネットワークを遮断。その後外部協力のもと、影響などについて調査を進めていた。 今回の攻撃により、賃貸物件の契約者や採用応募者などの個人情報が流出したことが判明。11月24日に個人情報保護委員会へ確報を提出した。 対象となるのは、同社が所有する賃貸物件の契約者など約150人の氏名、住所や、同社グループの採用に応募した約160人の氏名、住所、電話番号、応募書類など。さらに従業員、退職者およびその扶養家族約1万2000人の氏名、人事情報なども流出したという。 また同社グループの顧客や取引先約1063万人については、個人情報流出のおそれがある。氏名、住所、電話番号、メールアドレスにくわえて、一部にはマイナンバーやパスポートの写し、パスポート番号、クレジットカード番号、本人確認書類も含まれる。 （Security NEXT - 2026/11/25 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-63a0c96ad9",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "アプリの顧客情報DBに不正アクセス - マクドナルド",
+      "url": "https://www.security-next.com/193232",
+      "publishedAt": "2026-11-25T13:13:26.000Z",
+      "summary": "アプリの顧客情報DBに不正アクセス - マクドナルド 日本マクドナルドは、公式アプリのデータベースが不正アクセスを受けたことを明らかにした。 同社によれば、データベース内の一部顧客情報に対して第三者が不正アクセスを行ったもの。 具体的には、システムで利用する顧客管理用IDやIPアドレス、サービス利用時における携帯端末の位置情報、商品の購入履歴がアクセスされたという。 アプリに登録されている氏名や住所、クレジットカード情報については対象に含まれないとしている。 今回の問題を受けて、同社では不正アクセスに使用された認証情報を無効化。個人情報保護委員会へ報告、関連システムの調査など、対応を進めている。 （Security NEXT - 2026/11/25 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-92db407f26",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+      "publishedAt": "2026-11-25T12:48:54.000Z",
+      "summary": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below - CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch"
+    },
+    {
+      "id": "s-ad995fc023",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "通販サイトに不正アクセス、会員情報改ざんや不正注文も - DHC",
+      "url": "https://www.security-next.com/193316",
+      "publishedAt": "2026-11-25T12:39:40.000Z",
+      "summary": "通販サイトに不正アクセス、会員情報改ざんや不正注文も - DHC 化粧品や健康食品の製造、販売を手がけるディーエイチシーは、オンラインショップが不正アクセスを受け、会員情報の改ざんや不正注文が発生したことを明らかにした。 同社によれば、2026年10月28日、オンラインショップにおいて不正アクセスを確認したもの。調査を行ったところ、一部アカウントで会員情報を改ざんされたほか、不正な注文、不正な新規会員登録が行われていたことが判明した。 同社では不正アクセス元からの通信を遮断。悪用された脆弱性の修正、不正に登録されたアカウントの無効化、書き換えられた会員情報の復元など対応を行った。 10月30日の時点で、会員情報が書き換えられたアカウントが5096件。不審な注文27件、不正な新規会員登録71件が確認されている。 書き換えられたアカウントに登録された会員番号や届け先の氏名、住所、電話番号、購入履歴、クレジットカード番号の下4桁が第三者に閲覧された可能性がある。 同社では、個人情報保護委員会への報告を行うとともに、対象となる顧客と連絡を取っている。 （Security NEXT - 2026/11/25 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-851806c24f",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
+      "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
+      "publishedAt": "2026-11-25T12:30:08.000Z",
+      "summary": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some systems offline. The bureau collects suspicious activity reports and other Bank Secrecy Act (BSA) filings from banks and other financial"
+    },
+    {
+      "id": "s-b368c84bce",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-25T12:00:00.000Z",
+      "summary": "CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability CVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability&nbsp; CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability&nbsp; CVE-2026-103406 Hewlett"
+    },
+    {
+      "id": "s-36acae9cb4",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "旧市立病院の廃棄書類が飛散、収集車の積載不備で - 西宮市",
+      "url": "https://www.security-next.com/193025",
+      "publishedAt": "2026-11-25T11:53:36.000Z",
+      "summary": "旧市立病院の廃棄書類が飛散、収集車の積載不備で - 西宮市 旧西宮市立中央病院の廃棄書類が、運搬中に飛散し、市外で発見、回収された。 兵庫県西宮市によれば、2026年10月22日に複数の尼崎市民から市立中央病院と記載のある書類が飛散しているのを発見したと連絡があり、問題が発覚した。 収集運搬業者において、収集車が満載となったところ、本来、廃棄物を載せることを想定していない後部ハッチの隙間に「裸の紙」を積載。車両の整備不良で完全に施錠できず、後部ハッチの一部が開いて車両から書類が飛散したものと見られている。 10月30日までに回収した書類は、救急受付表や処方箋控え、職員健康診断問診票など387件。そのうち290件に個人情報の記載があり、患者472人や職員122人の個人情報が含まれていた。 問題の発覚を受け、同市職員や事業者が運搬ルート付近などを捜索。水路などから発見されたものもあったという。 飛散した書類の特定は困難で、10月24日に1点回収したものの、その後の発見はなかったことから、集中的な捜索は10月30日に終了した。住所などが特定できた関係者には書面で謝罪を行うとしている。 （Security NEXT - 2026/11/25 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-6a8ceb0f7d",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+      "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+      "publishedAt": "2026-11-25T11:51:48.000Z",
+      "summary": "TL;DR More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break. Validity-only triage misses 46% of critical secrets: Prioritize by impact instead, weighing what a credential can access and whether it leaked publicly, and update the"
+    },
+    {
+      "id": "s-d52cc031d7",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+      "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+      "publishedAt": "2026-11-25T11:23:26.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026. The vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core. \"Drupal Core"
+    },
+    {
+      "id": "s-74b608e4c0",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
+      "publishedAt": "2026-11-25T11:16:32.000Z",
+      "summary": "Microsoft fixes Microsoft 365 bug blocking access to Office apps By Sergiu Gatlan November 25, 2026 06:16 AM 0 Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications. This follows widespread reports on social media and Microsoft's support website about what affected users described as a persistent white screen or square that can't be dismissed, displayed over Office apps' user interfaces or Microsoft 365 sign-in windows. \"We've installed 3 separate versions of 365 on this device, but no matter how we try to get into a 365 app we get stuck on this white screen. I've launched applications in safe mode as well without any luck,\" one user said. The company confirmed in a support document updated Monday that a blank dialog box prevented customers from opening Microsoft 365 Outlook, Word, Excel, PowerPoint, OneNote, and Access apps. \"When you open an Office application, a blank dialog window might appear. The dialog box doesn't show any text or buttons,\" Microsoft said . \"If you can't dismiss it, you might be unable to continue using the application.\" Microsoft says the issue is now fixed in Microsoft 365 Apps Version 2611 (Build 16.0.20625.20142), released last week . Microsoft 365 Office empty dialog window ( Psychological_Tap_25 ) &#8203;However, Microsoft says that customers who can't update because of this bug can also upgrade to the latest version from the command line by going through the follow"
+    },
+    {
+      "id": "s-3885183f32",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
+      "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
+      "publishedAt": "2026-11-25T10:43:07.000Z",
+      "summary": "A former OpenAI employee accused of concealing a covert recording device at the company's San Francisco offices will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday. Abdulrahman Alfozan, a 35-year-old Saudi national, was arrested on October 9, 2026, for allegedly bugging the artificial intelligence (AI) company's offices with the aim"
+    },
+    {
+      "id": "s-1a1e12592b",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
+      "publishedAt": "2026-11-25T10:10:20.000Z",
+      "summary": "The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]"
+    },
+    {
+      "id": "s-916629091c",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+      "publishedAt": "2026-11-25T09:06:59.000Z",
+      "summary": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from. The flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had every server on a patched build within about 15 minutes of the first malicious request. Checks"
+    },
+    {
+      "id": "s-5cda110a76",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Microsoft confirms authentication issues after November updates",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
+      "publishedAt": "2026-11-25T09:02:57.000Z",
+      "summary": "Microsoft has confirmed that customers may experience authentication issues after installing November security updates that address a high-severity remote code execution vulnerability. [...]"
+    },
+    {
+      "id": "s-be8229fa86",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
+      "url": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
+      "publishedAt": "2026-11-25T06:50:19.000Z",
+      "summary": "An unknown threat actor has been using artificial intelligence (AI)-driven offensive tooling in a campaign targeting Check Point Security Management servers, impacting 22 distinct organizations across the world. The intrusion activity, tracked by GreyNoise under the moniker GreyNoise Threat 13 (GT13), is assessed to have targeted organizations in the financial services, energy, government,"
+    },
+    {
+      "id": "s-89c45feb39",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「AEM」に多数の脆弱性 - 3件がクリティカル",
+      "url": "https://www.security-next.com/193325",
+      "publishedAt": "2026-11-25T06:38:04.000Z",
+      "summary": "「AEM」に多数の脆弱性 - 3件がクリティカル Adobeは、コンテンツ管理システム「Adobe Experience Manager（AEM）」のセキュリティアップデートを公開した。任意のコードを実行されたり、権限を昇格されたりするおそれがある脆弱性などに対応した。 同社は現地時間2026年11月24日にセキュリティアドバイザリを公開。100件の脆弱性に対処したことを明らかにした。重要度が4段階中もっとも高い「クリティカル（Critical）」とされる脆弱性は3件。 「クリティカル」とされる脆弱性を見ると、「CVE-2026-123266」「CVE-2026-132877」は「コードインジェクション」の脆弱性。任意のコードを実行されるおそれがある。共通脆弱性評価システム「CVSSv3.1」のベーススコアはいずれも「9.9」と評価されている。 また権限を昇格されるおそれがあるXML外部実体参照（XXE）の脆弱性も明らかとなった。CVSS基本値は「9.6」と評価されている。 「高（High）」とされる4件や「中（Medium）」92件、「低（Low）」1件にも対処。このうち94件はいずれもクロスサイトスクリプティング（XSS）の脆弱性だという。このほか、テンプレートエンジンにおける処理や認可の不備により、セキュリティ機能をバイパスされるおそれがある脆弱性も修正した。 （Security NEXT - 2026/11/25 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-7a5ea8907d",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+      "url": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
+      "publishedAt": "2026-11-25T06:37:06.000Z",
+      "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts. The attacks have targeted financial services, healthcare, and legal services located in the U.S., the U.K., and Australia. Other targets include construction,"
+    },
+    {
+      "id": "s-aa19160d86",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Apache Tomcatにおける複数の脆弱性（2026年11月19日）",
+      "url": "https://jvn.jp/vu/JVNVU92527429/",
+      "publishedAt": "2026-11-25T06:00:00.000Z",
+      "summary": "JVNVU#92527429 Apache Tomcatにおける複数の脆弱性（2026年11月19日） The Apache Software Foundationから、Apache Tomcatの11件の脆弱性に対してアドバイザリが公開されました。 Apache Tomcatのアドバイザリを参照してください。 ベンダ リンク The Apache Software Foundation JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-c6ca12bffd",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "米CIAとODNIの非機密システムへの不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/25/120114",
+      "publishedAt": "2026-11-25T03:01:14.000Z",
+      "summary": "2026年11月24日、米中央情報局(CIA)と国家情報長官室(ODNI)が非機密情報の一部が露出したサイバーセキュリティ侵害を最近発見したと、複数の報道が関係者の話として伝えました。ここでは関連する情報をまとめます。 公開情報の分析システムに侵入 最近発見されたとされる侵入の対象はCIAとODNIが使うOSINT(公開情報)分析システム(出典: 3, 4)。公開された非機密の資料から情報分析上の示唆を探すシステムで(出典: 1, 4)、OSINTには商用データセット、SNSの投稿、衛星画像のほか、データ販売業者が売る情報も含まれうる(出典: 1)。 *1 関係者は具体的にどの情報が侵害されたかは分かっていないとしつつ、機密情報は危険にさらされていないと話している(出典: 1)。非機密ネットワークに支障が出たが機密システムには影響しなかったとの話(出典: 7)、露出は限定的だったとの話もあ"
+    },
+    {
+      "id": "s-934805084d",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: 源内Webにおけるサーバサイドリクエストフォージェリの脆弱性",
+      "url": "https://jvn.jp/jp/JVN78929433/",
+      "publishedAt": "2026-11-25T03:00:00.000Z",
+      "summary": "JVN#78929433 源内Webにおけるサーバサイドリクエストフォージェリの脆弱性 デジタル庁が提供する源内Webには、サーバサイドリクエストフォージェリの脆弱性が存在します。 源内Web v1.3.4より前のバージョン デジタル庁が提供する源内Webには、次の脆弱性が存在します。 サーバサイドリクエストフォージェリ（ CWE-918 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:N/VA:N/SC:L/SI:N/SA:N 基本値 5.1 CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:N/A:N 基本値 4.1 CVE-2026-131916 当該製品と同じネットワーク上の機器のポート開放状態が取得される可能性があります。 アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 ベンダ リンク デジタル庁 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：株式会社ラック 辻井 貴大 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-b6a676e51c",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Drupal」脆弱性、サイト乗っ取りのおそれ - すでに悪用も",
+      "url": "https://www.security-next.com/193298",
+      "publishedAt": "2026-11-25T02:27:13.000Z",
+      "summary": "「Drupal」脆弱性、サイト乗っ取りのおそれ - すでに悪用も コンテンツ管理システム「Drupal」に深刻な脆弱性が明らかとなった。認証を必要とすることなくウェブサイトを乗っ取ることができ、すでに悪用の報告もある。 「Drupal」のセキュリティチームは、現地時間2026年11月18日にセキュリティアップデートを公開。2件の脆弱性「CVE-2026-132165」「CVE-2026-132166」に対処したことを明らかにした。 「CVE-2026-132165」は、Anthropicのオープンソースソフトウェア向け脆弱性検出ツールによって発見された脆弱性。同チームでは、重要度を5段階中もっとも高い「Highly critical」とレーティングしている。翌19日には脆弱性が悪用されたとの報告を受けたとしている。 インストーラに問題があり、一定の条件下で第三者が再インストールを試みることが可能。脆弱性を悪用することで、リモートからコードを実行したり、サイトを乗っ取ることができるという。 ウェブサーバが設定ファイルに対する書き込みやアクセス権限の変更を行えない場合、一部の攻撃経路については影響を軽減できるが、すべての攻撃を防げるわけではないとしている。 （Security NEXT - 2026/11/25 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-7ac96e3330",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "米当局、「Drupal」など脆弱性3件の悪用に注意喚起",
+      "url": "https://www.security-next.com/193290",
+      "publishedAt": "2026-11-25T00:42:15.000Z",
+      "summary": "米当局、「Drupal」など脆弱性3件の悪用に注意喚起 米当局は、コンテンツ管理システム「Drupal」に関する脆弱性など3件について、悪用が確認されているとし、注意喚起を行った。 米サイバーセキュリティインフラストラクチャセキュリティ庁（CISA）は現地時間2026年11月24日、「悪用が確認された脆弱性カタログ（KEV）」を更新。3件の脆弱性を追加した。 「Drupal」については、インストーラに関する脆弱性「CVE-2026-132165」を登録した。一定の条件下で認証を必要とすることなく「Drupal」の再インストールを試行することが可能で、サイトの乗っ取りや、任意のコード実行につながるおそれがある。 クロスサイトリクエストフォージェリ（CSRF）対策として「ASP.NET」向けに提供されているライブラリ「Idunno.AntiCsrf」の脆弱性「CVE-2026-131914」も追加された。認証を必要とすることなくリモートから任意のコードを実行されるおそれがある。2008年のリリースを最後に開発が終了しており、利用の中止が呼びかけられている。 また、ウェブサイトの比較テストなどに用いられる「Optimizely Web Experimentation」に関しては、アカウントの登録処理に起因する脆弱性「CVE-2026-132224」が攻撃の対象となっている。Optimizelyによれば、11月16日に脆弱性が悪用され、既存ユーザーになりすました第三者によって悪意ある「JavaScript」が顧客のプロジェクトに挿入されたという。 CISAは米行政機関に対し、いずれの脆弱性についても登録から3日後の11月27日を期限とし、対策を講じるよう指示。侵害の有無についても調査を求めている。 （Security NEXT - 2026/11/25 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-1bd4dbb4b4",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: OpenSSLにおける脆弱性に対するアップデート（2026年11月24日）",
+      "url": "https://jvn.jp/vu/JVNVU95723901/",
+      "publishedAt": "2026-11-25T00:00:15.000Z",
+      "summary": "JVNVU#95723901 OpenSSLにおける脆弱性に対するアップデート（2026年11月24日） OpenSSL ProjectからOpenSSL Security Advisory [24th November 2026]が公開されました。 OpenSSLのアドバイザリを参照してください。 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-21ad924ddc",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: CISA ICS Advisory / ICS Medical Advisory（2026年11月24日）",
+      "url": "https://jvn.jp/vu/JVNVU93291989/",
+      "publishedAt": "2026-11-25T00:00:00.000Z",
+      "summary": "JVNVU#93291989 CISA ICS Advisory / ICS Medical Advisory（2026年11月24日） 米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。 ICS Advisory / ICS Medical Advisoryを参照してください。 新規：3件 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-871b5cdb90",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Firefox 161」がリリース - 110件の脆弱性に対応",
+      "url": "https://www.security-next.com/193284",
+      "publishedAt": "2026-11-24T23:50:06.000Z",
+      "summary": "「Firefox 161」がリリース - 110件の脆弱性に対応 Mozilla Foundationは、ウェブブラウザ「Firefox」のセキュリティアップデートを公開した。延長サポート版（ESR）の更新も行っている。 現地時間2026年11月24日、最新版となる「Firefox 161」をリリースし、CVEベースで110件の脆弱性に対応した。重要度が4段階中もっとも高い「クリティカル（Critical）」とされる脆弱性は含まれていないが、上から2番目にあたる「高（High）」とされる脆弱性が59件にのぼる。 「高（High）」とされた脆弱性を具体的に見ると、オーディオ処理やグラフィックス処理、HTTP通信などにおいて「サンドボックス」を回避されるおそれがある脆弱性13件に対処した。 また「WebGPU」における整数オーバーフローの脆弱性をはじめ、グラフィックス処理やメディアの再生処理、ネットワーク通信のキャッシュ処理などにおいて、権限の昇格が可能となる脆弱性5件を修正。 さらにJavaScriptエンジンなどにおける「Use After Free」の脆弱性や、不正なポインタを使用する脆弱性などを解消した。このほか、重要度が「中（Moderate）」とされる脆弱性30件、「低（Low）」とされる脆弱性21件にも対応している。 （Security NEXT - 2026/11/25 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-2fd82dafd0",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "Microsoft Defender のクラウド関連処理における不備により特権レジストリキーが操作可能となる脆弱性（Scan Tech Report）",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56897.html",
+      "publishedAt": "2026-11-24T23:10:02.000Z",
+      "summary": "1692 views ◆概要 2026 年 4 月に修正された Microsoft Defender の脆弱性を悪用するエクスプロイトコードが公開されています。脆弱性の悪用により、攻撃者は侵入に成功した Microsoft Windows OS の管理者権限を奪取できます。セキュリティ更新プログラムの適用により対策してください。 ◆分析者コメント 本記事が取り上げている脆弱性は、Nightmare Eclipse 氏により公開された一連の 0-day 脆弱性の 1 つであり、「MiniPlasma」という名称で知られており世界的に注目度が高いものです。Microsoft Windows OS への侵入に成功した攻撃者が悪用する可能性が高いため、セキュリティ更新プログラムの適用による早急な対策が推奨されます。 ◆深刻度(CVSS) [CVSS v3.1] 7.8 https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?cveId=CVE-2026-33825&vector=CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H&version=3.1&sourceName=Microsoft%20Corporation ◆影響を受けるソフトウェア Microsoft Defender Antimalware Platform バージョン 4.18.26030.3011 未満が当該脆弱性の影響を受けると報告されています。 ◆解説 Microsoft Defender Antimalware Platform に、Microsoft Windows OS の管理者権限の奪取につながる脆弱性が報告されています。 脆弱性は、2020 年 12 月に公開された CVE-2020-17103 のセキュリティ更新プログラムを回避するものであり、クラウド関連処理のファイル操作を担うカーネルドライバー Cldflt.sys の HsmOsBlockPlaceholderAccess ルーチンに存在するものです。脆弱性が存在する環境では、Anonymous ユーザーとして当該ルーチンを呼び出すと、HKEY_USERS:\\.DEFAULT 配下のレジストリキーが操作され、この際の検証に不備が存在します。攻撃者は、Anonymous 権限になりすますスレッド処理と、HKEY_USERS:\\.DEFAULT の操作を呼び出すスレッド処理を作成して競合状態を引き起こすことで、HKEY_USERS:\\.DEFAULT 配下に任意のレジストリ値を設定可能となります。 ◆対策 Microsoft 公式が 2026 年 4 月に公開したセキュリティ更新プログラムの適用により対策してください。 ◆関連情報 [1] Microsoft 公式 https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-33825 [2] Microsoft 公式 https://msrc.microsoft.com/update-guide/vulnerability/CVE-2020-17103 [3] National Vulnerability Database (NVD) https://nvd.nist.gov/vuln/detail/CVE-2026-33825 [4] CVE https://www.cve.org/CVERecord?id=C"
+    },
+    {
+      "id": "s-8ce499e68c",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "九州電力送配電に不正アクセス、使用電力量や発電電力量が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56896.html",
+      "publishedAt": "2026-11-24T23:05:24.000Z",
+      "summary": "430 views 九州電力送配電株式会社は11月13日、11月5日に公表した同社システムへの不正アクセスによる情報漏えいの可能性について、続報を発表した。 同社では10月30日に、同社システムで不自然なエラーを検知したため調査したところ、不正アクセスの可能性が発覚したため、緊急に当該システムを停止し、サーバのログを調査した結果、同社が保有する一部情報が社外に漏えいした可能性が判明していた。 漏えいの可能性があるのは、同者が保有する情報の一部4,139件で、その内容は下記の通り。なお、顧客名、住所、電話番号、メールアドレス、口座情報などの契約情報は含まれていない。 ・電気を使用している顧客 使用電力量（月間値、30分値） 供給地点特定番号 ・電気を発電している顧客 発電電力量（月間値、30分値） 受電地点特定番号 同社では対象となる顧客にへダイレクトメール（通知封書）による案内を送付している。 同社では引き続き詳細な調査を進めるとともに、原因究明と再発防止策の徹底に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社システムへの不正アクセスによる情報漏えいの可能性について（お詫びとご報告） 関連記事 九州電力送配電に不正アクセス、電力量情報が漏えいした可能性 2026.11.11 Wed 8:05 経済産業省から報告徴収 ～ 九州電力送配電が顧客情報を保存した外部記憶媒体が所在不明に 2026.6.19 Fri 8:05 九州電力送配電が小売電気事業者向けに提供しているシステムから顧客情報が閲覧可能に 2025.5.14 Wed 8:05 経済産業省、一般送配電事業者の情報漏えい事案に関し業務改善勧告を発出 2023.4.25 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-26c9bf8be0",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "大崎電気工業にランサムウェア攻撃、インターネット上のサイトへの技術情報の掲載を認知",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56895.html",
+      "publishedAt": "2026-11-24T23:05:22.000Z",
+      "summary": "483 views 大崎電気工業株式会社は11月20日、11月18日に公表した同社システムへのランサムウェアによるサイバー攻撃について、第二報を発表した。 同社では11月17日に、同社システムがランサムウェアによるサイバー攻撃を受けたことを確認しており、被害の拡大を防ぐため埼玉事業所ならびに関連生産拠点（岩手大崎電気株式会社、大崎プラテック株式会社）の生産関連システムを停止したため、スマートメーター等の生産・出荷ができない状態となっていた。 同社で調査した結果、11月15日午前1時30分頃に不正アクセスが行われたものと推定しており、社外から社内ネットワークに接続するために設置しているVPN機器の認証が突破され、そこから社内ネットワークに侵入されたことが判明している。 同社によると、多要素認証が未適用のアカウントが一部残存しており、パスワードを試行されて認証を突破された可能性が高いと推察している。 同社では、攻撃者の侵入後に一部の仮想サーバが暗号化されたことを確認しており、当該侵入経路を含めて、ネットワークは全て遮断済みとなっている。 同社では11月19日に、インターネット上のサイトに同社のシステムに保存されている情報と思われる技術情報が掲載されていることを認知しており、掲載された情報の内容と範囲、他の情報の漏えいの有無について調査を行っている。 同社によると、復旧状況と業務の再開については下記の通り。 1.復旧状況：バックアップデータが無事であることをすでに確認し、システム復旧を進めている。 2.業務再開の方針：調査結果も踏まえて、安全が確認できた範囲から、段階的に業務を再開する。 3.事業への影響：生産・出荷の再開時期は引き続き未定。 4.業績への影響：影響額（見込み額を含む）は復旧時期にもよるため、現時点では未定。 同社では今後、調査の進捗や復旧の見通し、情報漏えいの有無等が判明した場合には、同社ホームページ等で公表するとのこと。 《ScanNetSecurity》 一次情報または関連リンク ランサムウェアによるサイバー攻撃に伴う生産停止に関するお知らせ（第二報） ランサムウェアによるサイバー攻撃に伴う生産停止に関するお知らせ（第一報） 関連記事 「銀のさら・釜寅・すし上等」公式サイト・公式アプリにランサムウェア攻撃 2026.11.18 Wed 8:05 「ウチコミ！」にランサムウェア攻撃、14万2,591アカウントに影響 2026.11.16 Mon 8:05 ドン・キホーテ委託先にランサムウェア攻撃、時計修理依頼者の個人情報が漏えいした可能性 2026.11.5 Thu 8:05 黒金化成にランサムウェア攻撃 調査結果公表1年後 2026.11.10 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-05af660710",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "山善コーポレートサイトに不正アクセス、「お問い合わせフォーム」への登録データ延べ1万508件の個人情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56894.html",
+      "publishedAt": "2026-11-24T23:05:18.000Z",
+      "summary": "286 views 株式会社山善は11月13日、11月11日に公表した同社コーポレートサイトへの不正アクセスについて第2報を発表した。 同社では11月11日に、同社コーポレートサイトおよび関連サイトが利用する外部サーバにて、サイトの保守運用を委託しているシステムベンダーが不審なファイルを発見したため、ファイルの除去作業と調査を進めるとともに、顧客の安全確保のため同社コーポレートや関連サイト（山善 BASE CAMP、BCP.ERS、グリーンボールプロジェクト）を一時停止していた。 同社のその後の調査で、同社コーポレートサイトおよび関連サイトで利用しているソフトウェアの脆弱性を悪用した第三者からの不正アクセスに起因するものと判断しており、また、不正アクセスにより顧客の個人情報が外部に漏えいした可能性が判明している。 漏えいの可能性があるのは同社コーポレートサイト「お問い合わせフォーム」への登録データ延べ10,508件の個人情報（氏名、住所、電話番号、メールアドレス、所属企業・団体/部署、FAX番号、問い合わせ内容）。 同社では、原因となったソフトウェアの更新プログラムによる修正作業と安全性の確認を実施し、同社コーポレートサイトおよび関連サイトの復旧対応を行っている。 なお同社では、本件に関する問い合わせ先については、現在、メール環境が不安定なため、後日、改めて案内する。 同社では調査結果に基づき、情報セキュリティ管理体制のさらなる強化と徹底を図り、再発防止に取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク （第2報） 当社コーポレートサイトにおける不正アクセスに伴う、個人情報漏えいの可能性に関するお詫びとご報告 （第1報）コーポレートサイト及び関連サイトの一時停止のお知らせ 関連記事 オンライン麻雀に不正アクセス 会員情報流出 ～ 寄せられた激励メッセージに謝意 メールはスタッフ全員が目を通し必ず返信 2026.11.13 Fri 8:10 消防庁「安否情報システム」に不正アクセス、影響範囲調査のためにサービスを停止 2026.11.9 Mon 8:05 ブックオフグループホールディングス子会社の会員管理システムに不正アクセス、638万3,279人の会員情報が漏えい 2026.11.13 Fri 8:05 無印良品のオーダーカーテンに関する業務委託先に不正アクセス 2026.11.13 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-2501fa3df0",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ヤマダデンキのリフォーム管理システムに不正アクセス、最大350万件の顧客情報が影響を受けた可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56893.html",
+      "publishedAt": "2026-11-24T23:05:16.000Z",
+      "summary": "334 views 株式会社ヤマダデンキは11月13日、同社リフォーム管理システムへの不正アクセスについて発表した。 これは11月12日に、同社リフォーム管理システムへの不正アクセスを確認したというもので、同社では外部からのアクセス遮断を実施し、詳細調査を開始している。 同社によると、不正アクセスにより影響を受けた可能性のある個人情報は、当該システムに登録のある最大350万件の顧客情報で、氏名、住所、電話番号、その他リフォーム実施履歴及び見積データ等の営業記録が含まれている。 同社では引き続き、影響範囲および原因調査・分析を進める。 同社では今後、セキュリティ対策の更なる強化を推進するとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社リフォーム管理システムへの不正アクセス発覚に関するお詫びとお知らせ 関連記事 ヤマダデンキ提供の「ヤマダビデオ」「スマホゴールド会員」に不正アクセス、一時サービス停止 2026.10.28 Wed 8:05 最大37,832名のカード情報流出、新規カード登録停止は不正アクセス疑義判明から10日後（ヤマダ電機） 2019.5.30 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-e6fc709b75",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "旅行会社向け予約手配システム「Rikisha Easy REZ!」に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56892.html",
+      "publishedAt": "2026-11-24T23:05:12.000Z",
+      "summary": "128 views 株式会社アップルワールドは11月13日、同社が運営する旅行会社向け予約手配システム「Rikisha Easy REZ!」への不正アクセスについて発表した。 これは「Rikisha Easy REZ!」のサーバに第三者から不正アクセスがあり、同サービスを通じて手配された一部顧客（旅行者）の個人情報及び同サービスを利用している旅行会社の情報が外部流出した可能性が判明したというもの。11月6日午後9時13分頃に検知している。 同社では、当該サーバ上に不正なプログラムが設置され、システム内の一部ファイルおよびメールテンプレートの改ざん、データベース上での不正なデータ操作が行われていたほか、当該サーバ内に保存されていた個人情報が外部から不正に閲覧・取得され得る状態となっていたことを確認している。 流出した可能性がある情報は下記の通り。 ・予約者（旅行者）の予約情報：最大582,024件 項目：氏名、予約内容、備考欄に記入のあった内容 ・旅行会社の情報：最大3,542社、13,834名 項目：会社名、担当者の名前、メールアドレス、電話番号、請求に関する情報 ・送迎予約のクレジットカード情報（ログ）：流出の有無を調査中 項目：調査中 ・侵入期間中に決済画面で入力されたクレジットカード情報：最大39件 項目：決済画面で入力された情報 ・宿泊予約のクレジットカード決済情報（ログ）：流出の有無を調査中 項目：調査中 ・宿泊予約の情報：流出の有無を調査中 項目：調査中 ・決済時の付随情報：流出の有無を調査中 項目：メールアドレス、電話番号 同社では、旅行会社と協議のうえで対応方法が決まり次第、対象者に連絡を行う。 同社では、本番環境を編集できる権限を持つ認証鍵が不正に使用されたことを確認しており、あわせて、システム開発委託先が管理するソースコードの保管場所が外部から閲覧可能な状態となっており、当該ソースコード内に認証情報が記載されていたことが判明している。 同社では、システム開発委託先におけるセキュリティ管理・確認の不備と同社によるシステム開発委託先への監督および納品時の検証体制が不十分であったことが原因であると認識しており、厳粛に受け止めているとのこと。 同社では、同サービスおよびAPI経由での予約受付をすべて停止しており、安全性の確認と抜本的なセキュリティ改修が完了するまで停止を継続する。 同社では今後、全社を挙げて再発防止と情報管理体制の抜本的な強化に取り組み、信頼の回復に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社が運営する旅行会社様向け予約手配システム「Rikisha Easy REZ!」への不正アクセスによる個人情報流出のおそれに関するお詫びとお知らせ 関連記事 懇切丁寧 まれに見る情報開示 ～ 地域オンライン旅行代理店システムで個人情報誤表示 2025.6.9 Mon 8:05 正常に部屋を用意できない予約が発生 ～ PIECE 運営施設が利用する Booking.com 管理アカウントに不正アクセス 2026.10.28 Wed 8:05 Booking.comへの不正アクセス、売上金受領口座情報が改ざん 約 900 万円の損失が発生 2026.6.2 Tue 8:05 Booking.com経由でホテルグランバッハ京都セレクトを予約した顧客にフィッシングサイト誘導メッセージ、注意を呼びかけ 2026.6.2 Tue 8:05 ScanNetSecurityをフォローしよう！ @scannet"
+    },
+    {
+      "id": "s-8c36706c12",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "ドッペルゲンガードメイン到達の可能性 ～ 情報セキュリティポリシーに反し個人情報データを私用メールアドレスに送信",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56891.html",
+      "publishedAt": "2026-11-24T23:05:09.000Z",
+      "summary": "1527 views 愛知県豊川市は11月13日、市役所職員の懲戒処分について発表した。 同市によると、豊川市役所市民部の職員（主事、50代、男性）は、豊川市情報セキュリティポリシーにより庁外への持ち出しが原則禁止されている情報であることを認識しながら、自宅で作業を行うため、所管する職員の評価情報などを含む個人情報データにパスワードを設定しない状態で私用メールアドレス宛に送信したが、メールアドレスを誤ったため、ドッペルゲンガードメインに到達している可能性があることから、職員の個人情報漏えいが疑われる事態を引き起こし、公務の運営に支障を生じさせたというもの。 同市では、地方公務員法第33条「信用失墜行為の禁止」に違反し、同法第29条第1項第2号「職務上の義務に違反した場合」に該当するとして、11月13日付で戒告の処分を行っている。 また、管理監督責任として市民部長と市民部次長に訓告の処分を行っている。 同市市長は「今回の事案を受け、メール送受信におけるシステム上のセキュリティ対策は既に強化しましたが、今後このようなことが二度と起きないよう、全職員に対し、個人情報保護及び情報セキュリティポリシー遵守の重要性についても、再度周知徹底を図りました。」とコメントしている。 《ScanNetSecurity》 一次情報または関連リンク 令和8年11月13日付 市役所職員の懲戒処分について 令和８年１１月１３日付 市役所職員の懲戒処分について 関連記事 同姓 同名 生年月日同じ「デジタルドッペルゲンガー」に補償金 1 万ドル支払い 2025.2.12 Wed 8:10 メール誤送信事故多発で悪名高いドッペルゲンガードメイン「ｇｍａｉ.ｃｏｍ」はどこの誰が保有しているのか？ 2023.7.26 Wed 8:15 会津大学でドッペルゲンガードメイン「gmai.com」に誤送信、他機関の事例を受け調査 2023.3.27 Mon 8:05 鹿児島大学でドッペルゲンガードメインに転送、MLへのメールアドレス誤登録が原因 2023.2.16 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-fc2e4d6223",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "出光興産「idemitsu カーメンテ予約」（旧 PIT in plus）に不正アクセス",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56890.html",
+      "publishedAt": "2026-11-24T23:05:07.000Z",
+      "summary": "159 views 出光興産株式会社は11月10日、同社が提供する「idemitsu カーメンテ予約」（旧称：PIT in plus）への不正アクセスについて発表した。 これは11月7日に、「idemitsu カーメンテ予約」で通常とは異なるアクセスを検知したため調査したところ、第三者からの不正アクセスがあり顧客情報が外部から取得できる状態にあったことを11月9日に確認したというもの。 同社では、被害の拡大を防ぐため、11月10日から同サービスを一時停止しており、現在は個人情報漏えいの有無、対象となる顧客および影響範囲について、詳細な調査を進めている。 同社では対象となる顧客に対し、確認が取れ次第、個別に連絡を行うとのこと。 《ScanNetSecurity》 一次情報または関連リンク 「idemitsu カーメンテ予約」への不正アクセスによる個人情報漏洩の可能性およびサービス停止について（第一報） 関連記事 ショーケース社への不正アクセス、出光クレジットの会員情報漏えいの可能性 2022.10.31 Mon 8:05 不正改ざんで出光クレジット会員サイト「ウェブステーション」の入力情報が漏えい 2022.8.19 Fri 8:05 アクサ損害保険「MyAXA」に不正アクセス、約59万7千件の顧客情報が漏えいした可能性 2026.11.16 Mon 8:05 三井住友海上火災保険の中堅・中小企業向け情報提供サイト「MSコンパス」に不正アクセス 2026.11.16 Mon 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a0ae3cb09c",
+      "source": "CISA Advisories",
+      "sourceType": "official",
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "publishedAt": "2026-11-24T12:00:00.000Z",
+      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog , based on evidence of active exploitation. CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability&nbsp; CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability&nbsp; CVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability&nbsp;"
+    }
+  ]
+}
