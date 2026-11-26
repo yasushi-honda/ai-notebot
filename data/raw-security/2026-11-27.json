@@ -1,0 +1,340 @@
+{
+  "date": "2026-11-27",
+  "collectedAt": "2026-11-26T23:01:15.375Z",
+  "sourceSuccessCount": 9,
+  "items": [
+    {
+      "id": "s-daae5f75cb",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "OpenAI warns GPT-6.2 Astra will hit usage limits 40% faster because it fixed a bug",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+      "publishedAt": "2026-11-26T21:06:22.000Z",
+      "summary": "OpenAI confirmed that it fixed a 'bug' that incorrectly discounted GPT-6.2 usage, which means you'll now hit GPT usage limits 40% faster than before. [...]"
+    },
+    {
+      "id": "s-2cde4a64c5",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+      "publishedAt": "2026-11-26T19:39:57.000Z",
+      "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much. Then there’s the question of who gets to use what. Stolen logins are opening"
+    },
+    {
+      "id": "s-66ca3d0517",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "NordVPN Black Friday Deal: Get 78% off VPN plans in 2026",
+      "url": "https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026/",
+      "publishedAt": "2026-11-26T17:58:42.000Z",
+      "summary": "NordVPN's 2026 Black Friday and Cyber Monday deal is now live, offering savings of up to 78% on VPN subscriptions, plus three extra months of protection. [...]"
+    },
+    {
+      "id": "s-06ce8cc992",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Fake paid expert interviews impersonate brands to steal Google logins",
+      "url": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+      "publishedAt": "2026-11-26T17:15:27.000Z",
+      "summary": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars. [...]"
+    },
+    {
+      "id": "s-4c032e39d5",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "東京都「赤ちゃんファースト」で交換したQUOカードPayが使えなくなった件についてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/27/004031",
+      "publishedAt": "2026-11-26T15:40:31.000Z",
+      "summary": "2026年11月25日、東京都は「東京都出産・子育て応援事業～赤ちゃんファースト～」でポイント交換したQUOカードPayが使用できない事象が生じていると公表しました。ここでは関連する情報をまとめます。 リンベル公式オンラインストアで不正アクセス リンベルは「リンベル公式オンラインストア」に11月11日に不正アクセスが発生したと11月12日に確認。サイトを一時停止してサーバーをネットワークから隔離した(出典: 4)。 11月20日にはオンラインストアの会員データ(退会済みの会員情報を含む)約72万人と、非会員データ(購入者、お届け先)約177万人の個人情報が漏えいした可能性があると公表。リンベルはクレジットカード情報を保持しておらず、二次被害は11月20日時点で確認されていない(出典: 4)。 ポイント交換サイトの停止 東京都は11月17日21時、ポイント交換サイトの委託事業者であるリンベル"
+    },
+    {
+      "id": "s-539794fdda",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
+      "url": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
+      "publishedAt": "2026-11-26T15:23:28.000Z",
+      "summary": "The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service. [...]"
+    },
+    {
+      "id": "s-f5eee8a53f",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+      "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+      "publishedAt": "2026-11-26T15:13:41.000Z",
+      "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published this week. \"When Python imports the file, the loader reads the newest transaction that an"
+    },
+    {
+      "id": "s-68fc37efa8",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "AI向けストレージ基盤「NVIDIA AIStore」に複数の脆弱性",
+      "url": "https://www.security-next.com/193302",
+      "publishedAt": "2026-11-26T13:09:09.000Z",
+      "summary": "AI向けストレージ基盤「NVIDIA AIStore」に複数の脆弱性 NVIDIAは、AI向けのストレージ基盤「NVIDIA AIStore」に関するセキュリティアドバイザリを公開した。 同製品は、AIの学習などで利用する大量のデータを扱う分散型ストレージソフトウェア。同社は現地時間2026年11月24日にアドバイザリを公開し、3件の脆弱性について明らかにした。 もっとも重要度が高いのが、ストレージノードの制御機能における認証、認可処理の不備に起因する「CVE-2026-65175」。公開されているインタフェースを通じて、認証を必要とすることなく管理機能にアクセスでき、データの改ざんや漏洩、サービス拒否などにつながるおそれがある。 また本来の保存領域以外にファイルを追加できる脆弱性「CVE-2026-100986」が判明。オブジェクトのコピー先に対する検証の不備に起因する「パストラバーサル」の脆弱性「CVE-2026-100985」が確認された。 これら2件はいずれもリモートより認証を必要とすることなく悪用することが可能で、コードの実行や権限の昇格、情報漏洩、データの改ざん、サービス拒否などにつながるおそれがある。 （Security NEXT - 2026/11/26 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-2fb689cf9d",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "個人情報含むデータが外部に流出 - 富士ユナイトHD",
+      "url": "https://www.security-next.com/193313",
+      "publishedAt": "2026-11-26T13:04:57.000Z",
+      "summary": "個人情報含むデータが外部に流出 - 富士ユナイトHD エネルギー事業やリサイクル事業を展開する富士ユナイトホールディングスは、個人情報が含まれるデータが外部に流出したことを明らかにした。 同社によれば、同社および子会社の富士興産が運用するサーバにおいて異常を検知したため、調査を行ったところ、第三者によってアクセスされていたことが2026年11月5日に判明した。 その後の調査により、同サーバで保管していた個人情報を含むデータの一部が流出していることが明らかとなった。同じサーバ内に保存されていたほかの個人情報についても流出した可能性がある。 同サーバとネットワークへの侵入経路を遮断し、ログ監視体制を強化。外部協力のもと、調査を継続している。 流出した可能性がある個人情報についても特定を進め、対象となる関係者に個別に通知するとしている。 （Security NEXT - 2026/11/26 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-efb9a53eeb",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "「Jenkins」の11プラグインに脆弱性 - 修正版を提供",
+      "url": "https://www.security-next.com/193385",
+      "publishedAt": "2026-11-26T12:40:03.000Z",
+      "summary": "「Jenkins」の11プラグインに脆弱性 - 修正版を提供 ソフトウェア開発の自動化ツール「Jenkins」の複数プラグインに脆弱性が明らかとなった。「クリティカル」とされる脆弱性も含まれる。 開発チームは2026年11月25日にセキュリティアドバイザリを公開。11種類のプラグインにおいて、CVEベースで21件の脆弱性に対処したことを明らかにした。 開発チームは、7件の重要度を4段階中、上から2番目にあたる「高（High）」と評価。のこる14件を「中（Medium）」としている。 「Script Securityプラグイン」においては、安全にスクリプトを実行するための「サンドボックス」を回避されるおそれがある脆弱性「CVE-2026-136835」が明らかとなった。過去の脆弱性に対する修正が不十分だったという。 開発チームは、攻撃条件が複雑で影響範囲が同一のセキュリティ管理範囲内にとどまるとして共通脆弱性評価システム「CVSSv3.1」のベーススコアを「7.5」と評価。一方、米サイバーセキュリティインフラストラクチャセキュリティ庁（CISA）は評価が異なり、ベーススコアを「9.9」、重要度を「クリティカル（Critical）」としている。 （Security NEXT - 2026/11/26 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-7b8c78b4f9",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "SYS010 malware abuses browser management to spy on Gmail, Outlook",
+      "url": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
+      "publishedAt": "2026-11-26T11:50:17.000Z",
+      "summary": "A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails. [...]"
+    },
+    {
+      "id": "s-27c41b73fa",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+      "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+      "publishedAt": "2026-11-26T10:57:55.000Z",
+      "summary": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about. At Push Security, we measure this as breakthrough rate: The share of attacks that get past email security, web gateways, and safe browsing to reach the user. How an"
+    },
+    {
+      "id": "s-420627cd7e",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+      "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+      "publishedAt": "2026-11-26T10:57:25.000Z",
+      "summary": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. \"While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a"
+    },
+    {
+      "id": "s-457c08cf27",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+      "publishedAt": "2026-11-26T07:02:34.000Z",
+      "summary": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-2026-132165 aka Fail2Install in that it addresses remaining vulnerable installation states"
+    },
+    {
+      "id": "s-1d57aa7ac0",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+      "publishedAt": "2026-11-26T06:44:46.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week. The Mitel MiCollab vulnerabilities are listed below - CVE-2026-133275 (CVSS score: 5.3) - An arbitrary file upload vulnerability in the Audio, Web and"
+    },
+    {
+      "id": "s-75de4b69f9",
+      "source": "piyolog",
+      "sourceType": "japanese",
+      "title": "1Passwordへの不正アクセスについてまとめてみた",
+      "url": "https://piyolog.hatenadiary.jp/entry/2026/11/26/153937",
+      "publishedAt": "2026-11-26T06:39:37.000Z",
+      "summary": "2026年11月25日、1Passwordは従業員のGitHubアカウントへの不正アクセスにより、バックエンドのシステムから一部の顧客のアカウント情報が取得されたと公表しました。ここでは関連する情報をまとめます。 公表後も顧客への通知を継続 1Passwordは11月19日、従業員の業務用GitHubアカウントに攻撃者がアクセスした兆候を受け、調査を開始。6日後の11月25日(現地時間)、ブログと公式Xで公表(出典: 1, 2)。運営会社は利用者を数百万人、約20万社としている(出典: 9)。 公式Xは利用者への返信で、顧客へのメール通知を継続中と説明し、他から先に知った利用者に謝罪した(出典: 3)。さらに影響を受けた顧客に通知中で、一部にはすでに送信済みと説明した(出典: 7)。 *1 影響の全容は独立したサイバーセキュリティ専門家の支援を受けて調査中で、確認でき次第続報するとしている"
+    },
+    {
+      "id": "s-1e574cce1f",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "お知らせ：JPCERT/CC Eyes「TSUBAMEレポート Overflow（2026年7～9月）」",
+      "url": "https://blogs.jpcert.or.jp/ja/2026/11/tsubame-overflow20260709.html",
+      "publishedAt": "2026-11-26T04:53:00.000Z",
+      "summary": "鹿野 恵祐 (Keisuke Shikano) 2026/11/26 TSUBAMEレポート Overflow（2026年7～9月） TSUBAME メール はじめに このブログ「TSUBAMEレポート Overflow」では、四半期ごとに公表している『 JPCERT/CC 四半期レポート 』の公開にあわせて、レポートには記述していない海外に設置しているセンサーの観測動向の比較や、その他の活動などをまとめて取り上げていきます。 今回は、TSUBAME（インターネット定点観測システム）における2026年7～9月の観測結果についてご紹介します。 ウクライナに割り当てられた送信元パケットの増加 TSUBAMEでは、2026年7月6日ごろから、ウクライナに分類されるIPアドレス（※RIRのIPアドレスの割り当て情報に基づく分類）を送信元とするパケットの増加を観測しました。 図1に示すように、パケット数は7月6日ごろから21日ごろにかけて増加し始め、30,000から40,000パケット程度で推移しています。 図1：日本国内のセンサーで観測したウクライナに割り当てられた送信元パケット数の推移 期間中の送信元IPアドレスのうち、パケット数の多い上位32件は、すべて94.154.43.0/24のIPアドレス帯に含まれていました。RDAPでRIPE Databaseの登録情報を確認したところ、これらはいずれも「ISP5HAT-MNT」が登録情報の管理者として記載されたIPアドレスの範囲に含まれていました。また、同管理者が登録されたアドレス範囲からのパケットは、期間中に観測したウクライナを送信元とするパケットの約92%を占めていました。特に、94.154.43.0/24からのパケットは約80%を占めていました。 これらの送信元IPアドレスからのパケットは、6月1日から30日までに観測したデータには含まれていませんでした。このため、少なくとも6月中には観測されていなかった活動が、7月6日ごろから新たに観測されたと考えられます。 パケットの宛先ポート番号を確認したところ、一般的に利用されるWell-knownポートだけでなく、番号の大きい宛先ポートに対しても送信されていました（図2）。宛先ポートは一様に観測されておらず、例えばSSHに利用される22/TCPからの変更を想像させるような10022/TCPや22100/TCPなどのポート番号に偏りがありました。 図2：宛先ポートごとのパケットの分布 今回のパケットは、広範囲のポートを探索する目的で送られた可能性が考えられます。一方、観測されたパケットはいずれもTCPのSYNパケットでした。そのため、送信元IPアドレスを詐称したSYNパケットを多数の機器に送信し、それらの機器から返されるSYN/ACKパケットを特定のIPアドレスに集中させる、リフレクション型DoS攻撃に利用された可能性も否定できません。いずれにしても、今回送信されたパケットの実際の送信主体やその目的は不明です。 インターネットに接続された機器やサービスに対して、探索や調査を目的としたスキャンが行なわれることは珍しくありません。インターネットにサーバーやPC、機器等を接続する際には、こうしたスキャンの対象になり、さまざまな意図のパケットを受診する可能性があることを意識する必要があります。 今回の観測では、標準的なポート番号だけでなく、広い範囲のポート番号に対してパケットが送信されていました。このことから、サービスの待ち受けポートを標準ポートから変更するだけでは、"
+    },
+    {
+      "id": "s-98bf0c4322",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+      "url": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+      "publishedAt": "2026-11-26T03:48:52.000Z",
+      "summary": "Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment. \"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls,\" Socket security researcher Kush Pandya said in a technical write-up. \"In the versions we analyzed, building or running a"
+    },
+    {
+      "id": "s-2063bc3022",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: Androidアプリ「東京消防庁公式アプリ」におけるパストラバーサルの脆弱性",
+      "url": "https://jvn.jp/jp/JVN16383801/",
+      "publishedAt": "2026-11-26T03:00:15.000Z",
+      "summary": "JVN#16383801 Androidアプリ「東京消防庁公式アプリ」におけるパストラバーサルの脆弱性 東京消防庁が提供するAndroidアプリ「東京消防庁公式アプリ」には、パストラバーサルの脆弱性が存在します。 Androidアプリ「東京消防庁公式アプリ」 バージョン1.3.12およびそれ以前 東京消防庁が提供する東京消防庁公式アプリには、次の脆弱性が存在します。 パストラバーサル（ CWE-22 ） CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N 基本値 1.8 CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N 基本値 3.3 CVE-2026-133530 ユーザのAndroid端末にインストールされた悪意あるアプリにより、当該アプリ内の機微な情報が窃取される可能性があります。 アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 開発者は2026年11月6日に本脆弱性を修正した次のバージョンを公開しています。 Androidアプリ「東京消防庁公式アプリ」 バージョン1.3.13 ベンダ リンク 東京消防庁 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：キヤノンITソリューションズ株式会社 長谷川智久 氏 JPCERT 緊急報告 JPCERT REPORT CERT Advisory CPNI Advisory TRnotes CVE JVN iPedia JVN"
+    },
+    {
+      "id": "s-79c6d7678b",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "JVN: baserCMSにおける複数の脆弱性",
+      "url": "https://jvn.jp/jp/JVN25972114/",
+      "publishedAt": "2026-11-26T03:00:00.000Z",
+      "summary": "JVN#25972114 baserCMSにおける複数の脆弱性 baserCMSユーザー会が提供するbaserCMSには、複数の脆弱性が存在します。 CVE-2026-116089、CVE-2026-120268 CVE-2026-120962、CVE-2026-134903 baserCMS 5.4.0から5.4.1までのバージョン baserCMS 5.4.1およびそれ以前のバージョン baserCMSユーザー会が提供するbaserCMSには、次の複数の脆弱性が存在します。 サーバサイドリクエストフォージェリ（ CWE-918 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:L/SI:N/SA:N 基本値 5.3 CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N 基本値 5.0 CVE-2026-116089 信頼できない入力値に依存したセキュリティ判断（ CWE-807 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N 基本値 5.3 CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N 基本値 4.3 CVE-2026-120268 サイト内検索結果におけるクロスサイトスクリプティング（ CWE-79 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N 基本値 5.1 CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N 基本値 5.4 CVE-2026-120962 メールフォームの送信後リダイレクトURLにおけるクロスサイトスクリプティング（ CWE-79 ） CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N 基本値 4.8 CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N 基本値 4.8 CVE-2026-134903 想定される影響は各脆弱性により異なりますが、次のような影響を受ける可能性があります。 当該製品が稼働するサーバから到達可能な内部ネットワーク上のシステムに関する情報が漏えいする（CVE-2026-116089） 認証済みの攻撃者により、操作ログに記録される操作者IDが任意の利用者IDに偽装される（CVE-2026-120268） 当該製品を使用しているサイトにアクセスしたユーザのWebブラウザ上で任意のスクリプトが実行される（CVE-2026-120962、CVE-2026-134903） アップデートする 開発者が提供する情報をもとに、最新版へアップデートしてください。 ベンダ ステータス ステータス 最終更新日 ベンダの告知ページ baserCMSユーザー会 2026/11/26 CVE-2026-116089、CVE-2026-120268 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いました。 報告者：臼井翔大 氏 CVE-2026-120962 この脆弱性情報は、情報セキュリティ早期警戒パートナーシップに基づき下記の方がIPAに報告し、JPCERT/CCが開発者との調整を行いまし"
+    },
+    {
+      "id": "s-5507838390",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "歯科医療人材マッチングサービスで設定ミス - 個人情報が閲覧可能に",
+      "url": "https://www.security-next.com/192812",
+      "publishedAt": "2026-11-26T02:30:37.000Z",
+      "summary": "歯科医療人材マッチングサービスで設定ミス - 個人情報が閲覧可能に 歯科医療従事者と歯科医院のマッチングサービス「ハノワ」において、登録者の個人情報が第三者から閲覧可能な状態だったことがわかった。 同サービスを運営するHANOWAによれば、利用するクラウドにおいて閲覧を制限する設定に問題があり、保存されている個人情報や提出書類の画像が閲覧できる状態だったもの。社内点検を通じて2026年10月14日に判明した。 2019年6月から2020年6月17日までは、同サービスにログインした他利用者から閲覧可能だった。 さらに2020年6月18日から2026年10月16日までは、ログインしていない場合も一定の操作により閲覧できる状態だったという。 対象となるのは、最大4万7683人分の氏名やニックネーム、メールアドレス、医院名と、最大1万311人分の本人確認書類や免許証、口座確認書類の画像。 （Security NEXT - 2026/11/26 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-2f4cb544cf",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "DellのネットワークOSに深刻な脆弱性 - 800件弱の脆弱性に対応",
+      "url": "https://www.security-next.com/193319",
+      "publishedAt": "2026-11-26T02:03:13.000Z",
+      "summary": "DellのネットワークOSに深刻な脆弱性 - 800件弱の脆弱性に対応 Dellは、ネットワークOS「Dell Enterprise SONiC Distribution」のセキュリティアップデートを公開した。依存するサードパーティ製ソフトウェアを含めると800件近い脆弱性が修正されている。 同社は現地時間2026年11月19日にセキュリティアドバイザリを公開したもの。重要度をもっとも高い「クリティカル（Critical）」とレーティングした。製品固有の脆弱性13件にくわえて、サードパーティ製コンポーネントに関する778件の脆弱性に対処したという。 製品固有の脆弱性において、共通脆弱性評価システム「CVSSv3.1」のベーススコアを見ると、「CVE-2026-103782」が「9.9」でもっとも高い。 コマンドにわたす引数の処理に不備がある「引数インジェクション」の脆弱性で、低権限は必要となるが、リモートから任意のコマンドを実行したり、ファイルシステムのリソースにアクセスできる。 OSコマンドインジェクションの脆弱性「CVE-2026-103788」も確認された。隣接するネットワークから認証を必要とすることなく任意のコマンドを実行することが可能で、CVSS基本値は「9.6」と評価されている。 （Security NEXT - 2026/11/26 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-99cc2cfb4b",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "ENEOS公式アプリで侵害、サービス停止 - 影響など調査",
+      "url": "https://www.security-next.com/193377",
+      "publishedAt": "2026-11-26T01:59:26.000Z",
+      "summary": "ENEOS公式アプリで侵害、サービス停止 - 影響など調査 ENEOSは、公式アプリのシステムにおいて侵害を検知したとし、サービスを停止したことを明らかにした。 同社によれば、公式アプリのシステムにおいて第三者によるアクセスを検知。被害の拡大を防ぐとともに事実関係の調査や情報流出の有無などの影響について確認するため、2026年11月25日16時からアプリのサービスを停止している。 同社は「なりすまし」による連絡などに注意するよう利用者に呼びかけた。ガソリンスタンドは、平常どおり営業しており、燃料油の供給や販売については影響ないという。 ただし、アプリの停止にともない「モバイルEneKey」による決済や配信クーポンは利用できない。現金、クレジットカード、「タグ型EneKey」などで対応している。 （Security NEXT - 2026/11/26 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-2c08c89248",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "不正アプリ導入を促すメール急増 - 「第一生命」などブランド悪用",
+      "url": "https://www.security-next.com/193365",
+      "publishedAt": "2026-11-26T01:54:57.000Z",
+      "summary": "不正アプリ導入を促すメール急増 - 「第一生命」などブランド悪用 「第一生命」になりすまし、スマートフォンに不正なアプリをインストールさせようとするフィッシング攻撃が確認された。「第一生命」に限らず、幅広いブランドが悪用されているとしてフィッシング対策協議会では注意を呼びかけている。 第三者が生命保険会社のブランドを悪用し、保険契約の継続手続きや満期保険金の受け取り、年末調整に用いる控除証明書の案内など、もっともらしい口実でフィッシングメールを送信しているとして、同協議会が注意を呼びかけたもの。 誘導先の偽サイトでは、保険契約の内容や給付金の請求状況などを確認できるかのように説明。無関係の不正なAndroidアプリをインストールさせようとしていた。 誘導先のURLは10件以上にのぼり、なかにはアマゾンウェブサービス（AWS）のドメインをそのまま利用しているものもある。 2026年11月25日にもメールの配信が確認されている。同協議会は「第一生命」に限らず、さまざまなブランドを悪用して、不正なアプリのインストールを促すメールが急増していると指摘。今後も類似した攻撃が展開されるおそれがあり、メールやSMSに記載されたリンクなどからアプリをインストールしないよう呼びかけた。 アプリを導入する場合は、正規のアプリストアを利用し、迷惑メールフィルタなども活用するよう求めている。 （Security NEXT - 2026/11/26 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-49dbf9d515",
+      "source": "Security NEXT",
+      "sourceType": "japanese",
+      "title": "悪用確認済みの脆弱性10件を「KEV」に追加 - 米当局",
+      "url": "https://www.security-next.com/193360",
+      "publishedAt": "2026-11-26T00:32:25.000Z",
+      "summary": "悪用確認済みの脆弱性10件を「KEV」に追加 - 米当局 MitelのコミュニケーションツールやJuniper Networksのネットワーク製品の脆弱性がサイバー攻撃に悪用されている。米当局が注意喚起を行った。 米サイバーセキュリティインフラストラクチャセキュリティ庁（CISA）は、現地時間2026年11月25日、「悪用が確認された脆弱性カタログ（KEV）」に10件の脆弱性を追加した。 Mitelの「MiCollab」に関しては、音声やビデオ会議機能における5件の脆弱性を追加。OSコマンドインジェクションの脆弱性「CVE-2026-133323」や、XMLインジェクションの脆弱性「CVE-2026-133303」を悪用することで、認証を必要とすることなく任意のコマンドを実行できる。 また任意のファイルを認証なしにアップロードできる「CVE-2026-133275」、認証を回避して不正な操作を行える「CVE-2026-133324」、一定の条件下で機密情報を取得できる「CVE-2026-133311」なども悪用されているという。 Juniper Networksの「Session Smart Conductor」「Session Smart Router」において、リモートよりroot権限で任意のコマンドを実行されるおそれがある「CVE-2026-103406」を追加。さらに仮想化環境の管理ツール「Xen Orchestra」において認証を回避し、管理者権限で操作を行える「CVE-2026-133469」も登録している。 （Security NEXT - 2026/11/26 ） ツイート 関連リンク PR 関連記事"
+    },
+    {
+      "id": "s-88a0df1a47",
+      "source": "JPCERT/CC",
+      "sourceType": "official",
+      "title": "Weekly Report: 複数のPalo Alto Networks製品に脆弱性",
+      "url": "https://www.jpcert.or.jp/wr/2026/wr261126.html#1",
+      "publishedAt": "2026-11-26T00:24:00.000Z",
+      "summary": "JPCERT-WR-2026-1126 JPCERT/CC 2026-11-26 <<< JPCERT/CC WEEKLY REPORT 2026-11-26 >>> ■11/15(日)〜11/21(土) のセキュリティ関連情報 目 次 【1】複数のPalo Alto Networks製品に脆弱性 【2】Synology DiskStation Managerに複数の脆弱性 【3】Microsoft Edgeに複数の脆弱性 【4】IBM Guardium Data Protectionに複数の脆弱性 【5】UniFi Access Applicationに複数の脆弱性 【6】Rubyに複数の脆弱性 【7】Drupal coreに複数の脆弱性 【8】複数のSplunk製品に脆弱性 【9】複数のASUS製品に脆弱性 【10】複数のF5製品に脆弱性 【11】ILIASに複数の脆弱性 【12】Firefoxに複数の脆弱性 【13】プリザンターに複数の脆弱性 【14】AutoSys Workload Automationに複数の脆弱性 【15】Google Chromeに複数の脆弱性 【16】複数のOracle製品に脆弱性 【17】複数のAtlassian製品に脆弱性 【18】GitLabに複数の脆弱性 【19】ONLYOFFICE Docsに複数の脆弱性 【20】Apache Shiroに複数の脆弱性 【21】nginxにおける複数の脆弱性（CVE-2026-123007など）について 【22】認証を有効にしていないNode-REDに悪意ある制御フローが登録される問題（CVE-2026-58115）について ※紹介するセキュリティ関連情報の選定基準は以下のページをご覧ください。 https://www.jpcert.or.jp/wr/ 【1】複数のPalo Alto Networks製品に脆弱性 情報源 https://security.paloaltonetworks.com/CVE-2026-114938 概要 複数のPalo Alto Networks製品には、脆弱性があります。この問題は、当該製品を修正済みのバージョンに更新することで解決します。詳細は、開発者が提供する情報を参照してください。 関連文書 https://security.paloaltonetworks.com/CVE-2026-123633 【2】Synology DiskStation Managerに複数の脆弱性 情報源 https://www.synology.com/en-global/security/advisory/Synology_SA_26_21 概要 Synology DiskStation Managerには、複数の脆弱性があります。この問題は、当該製品を修正済みのバージョンに更新することで解決します。詳細は、開発者が提供する情報を参照してください。 関連文書 https://www.synology.com/en-global/security/advisory/Synology_SA_26_20 【3】Microsoft Edgeに複数の脆弱性 情報源 https://learn.microsoft.com/ja-jp/deployedge/microsoft-edge-relnotes-security#november-19-2026 概要 Microsoft Edgeには、複数の脆弱性があります。この問題は、当該製品を修正済みのバージョンに更新す"
+    },
+    {
+      "id": "s-95f0874e2f",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "オープンソースのAIコーディングエージェント + ブラウザ + Mac = 金融企業のアクセスキーを6分足らずで発見",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/26/56910.html",
+      "publishedAt": "2026-11-25T23:20:03.000Z",
+      "summary": "355 views ルーマニアのハッカーが、オープンソースのコーディングエージェントと Chrome ブラウザー、Mac だけを武器に、金融サービス企業への侵入を複数の方法で試み、最終的にアクセスキーを見つけ出し（幸い、それは囮だった）、一連の攻撃をほぼ最後まで、6 分足らずで実行した。 犯罪者が重要なネットワークに侵入するのに、高度なマルウェア（ Binance の 9,500 億円強奪事件で用いられたようなウイルス対策ソフトに検知されない独自マルウェア）や、ARTEX のような AI ペネトレーションテストツールは必要ない。この一件は、そのことを改めて突きつけている。オープンソースのコーディングエージェント、とりわけ今回の OpenCode （無料で使えるオープンソースのコーディングエージェント。ターミナル上で AI に指示を出し、プログラムの作成や実行を任せられる）でも、十分に事足りる。 「最も驚いたのは、必要なものの少なさと、その道具立てだ。無料のコーディングエージェントと、どの Mac にも入っている curl、ごく普通の Chrome。攻撃はすべて、これらのツールが入った 1 台の Mac から行われていた」と、セキュリティ企業 Jesta の共同創業者で CTO のリオール・フィンケルシュテイン（ Lior Finkelshtein ）は本誌 The Register に語った。「これまでは、OpenCode のようなツールが攻撃に使われるようになるまでには、まだ時間があると思っていた。この一件は、すでに実際の現場で使われていることを示している（ it&#039;s already in use in the field ）。今後は、こうした例がさらに増えるだろう」 《The Register誌特約記事》 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a7d2312be5",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "開発用ビルドなど公開前IPAファイルでA2B攻撃耐性を検証、エーアイセキュリティラボ「iOS A2B診断」",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/26/56909.html",
+      "publishedAt": "2026-11-25T23:10:02.000Z",
+      "summary": "96 views 株式会社エーアイセキュリティラボは11月24日、iOS アプリを起点とした A2B 攻撃（App-to-Backend Attack）への耐性を、公開前のビルド（IPA）を用いて検証する「iOS A2B診断」の提供を開始した。 A2B 攻撃は、モバイルアプリの解析結果を悪用し、連携するバックエンドサーバの API などを直接標的にする攻撃である。同社によれば、A2B 攻撃は Android アプリに限られた課題ではなく、iOS アプリでも、攻撃者が専用ツールを用いて解析を行い、内部の API や認証処理を読み取るリスクが存在する。アプリ自体に問題がなくても、バックエンド側の認証・認可不備や設定ミスを突かれることで、深刻なセキュリティ被害につながる可能性がある。 「iOS A2B診断」では、開発者が Xcode から書き出した公開前の IPA ファイル（In-House、Ad Hoc、開発用ビルドなど）を使用し、攻撃者と同じ視点からバックエンド API の弱点を確かめる。Swift や Objective-C で構築された iOS 専用のバイナリを解析して、API エンドポイントや暗号化されたパスを復元し、AI がログイン試行や実際の通信を通じて認証・認可不備や入力値検証の不備などを特定する。実機やシミュレータ、診断シナリオの作成は不要で、A2B 診断管理画面から IPA ファイルをアップロードするだけで実行でき、結果は統一された PDF レポートで確認できる。 価格は A2B 攻撃に特化したセキュリティ診断を単独利用で、1アプリあたり100,000円（期間限定特別価格、初回のみ、税別）で提供する。対象は iOS アプリおよびバックエンド API を開発・運用する企業である。予告なく受付を終了したり、価格を改定したりする場合がある。 同社は10月26日に、Android アプリ向けの「A2B攻撃 特化型セキュリティ診断ツール」の提供を開始しており、こちらも同時に提供可能としている。 《ScanNetSecurity》 一次情報または関連リンク エーアイセキュリティラボ 関連記事 エーアイセキュリティラボ、「A2B攻撃」に特化した診断ツールを近日中に提供 2026.10.26 Mon 8:00 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-ce0fb828b0",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "窃取した認証情報を用いたアカウント乗っ取りも ～「KARTE」不正アクセス調査結果",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/26/56908.html",
+      "publishedAt": "2026-11-25T23:05:18.000Z",
+      "summary": "1376 views 株式会社プレイドは11月20日、11月13日に公表した同社が提供する「KARTE」への不正アクセスについて、調査結果を発表した。 同社では11月13日未明に、第三者が同社サーバの脆弱性を悪用してシステムやデータベースの接続用認証情報を窃取し、データベース等からデータを外部に読み出されており、窃取した認証情報を用いて同社アカウントを乗っ取り、管理画面への不正アクセスも発生している。 同社によると、第三者は11月13日未明に複数経路に対し断続的に攻撃を試み、最終的にデータを取得するための公開経路における一部の内部処理の脆弱性を悪用したという。 同社では11月13日午前8時59分に不正アクセスを検知し、被害の拡大を防止するために窃取された認証情報の無効化等を実施し、同日午後2時27分頃からサーバを停止し、あわせて「KARTE」の全サービスをメンテナンスモードに切り替え、順次停止している。また、不正アクセスに利用された認証情報の無効化、攻撃元からの通信の遮断などの封じ込め対応を実施し、同日午後3時23分頃までにこれらの対応を完了している。 同社で調査した結果、漏えいまたはその可能性がある情報は下記の通り。なお、企業から預かった情報には、本来は該当の契約や利用が終了後に利用規約に則り適切に削除されるべき情報が、人的オペレーションおよび管理の不備により保管されていたため、現在はKARTEの契約の全てもしくは一部が既に終了している企業も含まれている。 1.企業から預かった情報 ・KARTEに連携したデータの一部：570社 内容：企業が自社で保有するデータを、KARTEで活用するために連携していたデータで、企業によっては個人情報も含まれる。 ・エンドユーザーの解析データの一部：487社 内容：企業のウェブサイトやアプリにおけるエンドユーザーの行動（サイト閲覧、ボタンクリックなど）の記録と、エンドユーザーの行動に起因して作成されたデータ（会員のランクなど）で、企業によっては個人情報も含まれる。 ・エンドユーザーのキャッシュデータの一部：最大409社 内容：KARTEがデータをリアルタイム処理・活用する過程で一時的にKARTEによって生成・保持するデータで、エンドユーザーの識別子を含む一時的なデータ。企業によっては個人情報を含む可能性がある。 ・外部サービスとの連携に使用する認証情報の一部：754社 内容：KARTEと他サービス（メール配信サービスなど）を接続するために用いる鍵やパスワードにあたる情報。 2.プレイドが自社のために保有していた情報 ・KARTEを利用するために提供されたメールアドレス：79,249件 ・プレイドの営業活動とサービス利用をサポートするための活動で、連絡先のあった人の情報（氏名、メールアドレスなど）：45,816件 同社では、対象となる企業や顧客に順次、個別に連絡を行う。 同社では、今回の不正アクセスおよび調査で明らかになった課題などをもとに、「KARTE」および関連のシステム構造を含む見直しや改善を実施したうえで、サービス再開を目指すとのこと。 《ScanNetSecurity》 一次情報または関連リンク 「KARTE」への不正アクセスに関する当社調査結果と、サービス再開の見通し等のお知らせ 当社サービスへの不正アクセスについて、状況および対応等の進捗の随時報告 不正アクセスによる個人情報を含む可能性のある情報等の漏えいに関するお詫びとお知らせ 当社サービスへの不正アクセスに関するご報告 関連記事 ソースネクスト、"
+    },
+    {
+      "id": "s-b6a7f4f193",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「KARTE」への不正アクセス、ZOZOの顧客情報も漏えい",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/26/56907.html",
+      "publishedAt": "2026-11-25T23:05:16.000Z",
+      "summary": "702 views 株式会社ZOZOは11月20日、同社がサイト・アプリ上での情報発信やキャンペーンの実施等の各種コミュニケーションに利用している株式会社プレイド提供の「KARTE」への不正アクセスについて発表した。 これは11月13日に、「KARTE」への第三者からの不正アクセスが発生したため、全サービスを停止した旨の連絡がプレイドからあったというもの。その後、プレイドで調査した結果、ZOZOが同サービス上で管理していた顧客情報等の一部が外部に漏えいしたことが11月15日に判明している。 漏えいした情報および人数は下記の通り。 1.ZOZOTOWN 顧客様情報（退会者含む） ・会員ID、年齢、性別、郵便番号が対象の顧客：約1,518万人 ・上記に加え、ログイン名、メールアドレス、電話番号が対象の顧客：約4.7万人 2.WEAR by ZOZO 顧客情報 ・会員ID、年齢、性別が対象の顧客：約1,393万人 3.ZOZOTOWN 出店ブランド担当者情報（過去の担当者含む） ・会員ID、企業名、氏名が対象の担当者：約2.4万人 ZOZOでは、対象となる顧客及び出店ブランド担当者に順次、個別に連絡する。 ZOZOでは、プレイドによる原因の調査結果を踏まえ必要な対策を実施し、再発防止に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 当社利用の外部サービス「KARTE」への不正アクセスについて 関連記事 Slackを契約する米国企業1社に日本企業の個人情報等を一時的に開示 2022.9.1 Thu 8:00 九州電力送配電に不正アクセス、使用電力量や発電電力量が漏えいした可能性 2026.11.25 Wed 8:05 山善コーポレートサイトに不正アクセス、「お問い合わせフォーム」への登録データ延べ1万508件の個人情報が漏えいした可能性 2026.11.25 Wed 8:05 ヤマダデンキのリフォーム管理システムに不正アクセス、最大350万件の顧客情報が影響を受けた可能性 2026.11.25 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-8c387372aa",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「KARTE」への不正アクセス、「コミックシーモア」・「MangaPlaza」の顧客情報が流出",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/26/56906.html",
+      "publishedAt": "2026-11-25T23:05:14.000Z",
+      "summary": "479 views NTTソルマーレ株式会社は11月18日、同社が運営する電子書籍ストア「コミックシーモア」および海外向け電子書籍ストア「MangaPlaza」で利用している株式会社プレイド提供のマーケティング支援ツール「KARTE」への不正アクセスについて発表した。 これは11月13日に、プレイド提供の「KARTE」に外部から不正アクセスがあり、NTTソルマーレが同サービスに連携していたデータの一部が流出した可能性がある旨の報告がプレイドからあったというもの。 NTTソルマーレでは「KARTE」と連携しているデータベースへのアクセス遮断を行っている。 プレイドで詳細な調査・分析を行った結果、NTTソルマーレが連携していた情報の一部が第三者へ流出していたことが11月17日に確定している。 現時点で流出が判明している情報は下記の通り。 1.電子書籍ストア「コミックシーモア」を利用する顧客の情報：最大約13万件 項目：ハッシュ化された会員番号、メールアドレス、ニックネーム、性別、生年月日、年齢層 2.海外向け電子書籍ストア「MangaPlaza」を利用する顧客の情報：最大約117万件 項目：ハッシュ化された会員番号、性別、Zipコード（米国のみ）、国名、生年月日、年齢 NTTソルマーレでは対象の顧客にメールにて個別に連絡を行う。 NTTソルマーレでは引き続きプレイドと連携し、原因の究明と影響範囲の精査を進めるとともに、再発防止に向けて取り組むとのこと。 《ScanNetSecurity》 一次情報または関連リンク 業務委託先への不正アクセスによるお客様情報の流出に関するお詫びとお知らせ 関連記事 NTTソルマーレの電子書籍ストア「コミックシーモア」に不正アクセス、会員情報が流出 2026.10.20 Tue 8:05 電子書籍販売サイト「Renta！」への不正アクセスの可能性 2026.10.21 Wed 8:05 電子書籍サイト「BOOK☆WALKER」にパスワードリスト型攻撃 2022.6.15 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-305311e950",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「KARTE」への不正アクセス、「JINSオンラインショップ」等で会員登録を行った最大 約1,829万件の個人情報が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/26/56905.html",
+      "publishedAt": "2026-11-25T23:05:11.000Z",
+      "summary": "1709 views 株式会社ジンズホールディングスは11月17日、同社委託先の株式会社プレイドが提供するサービス「KARTE」への不正アクセスについて発表した。 これは11月13日に、プレイドが提供する「KARTE」への第三者からの不正アクセスを検知したため、緊急メンテナンスとして「KARTE」全体のサービスを停止したというもの。 プレイドでは11月13日中にジンズホールディングスに報告を行い、ジンズホールディングスでも、同社システムと「KARTE」とのアクセスを遮断する等、被害拡大防止に必要な措置を実施している。 プレイドでその後、調査を実施した結果、ジンズホールディングスの顧客の個人情報の漏えいを11月15日に確認している。 漏えいを確認したのは、「JINSオンラインショップ」、「JINSアプリ」またはLINE公式アカウントを通じて会員登録を行った最大 約1,829万件の顧客の個人情報（会員ID、メールアドレス、氏名（姓のみ）、生年月日、年齢、性別、郵便番号、住所（都道府県のみ））。 ジンズホールディングスでは対象者に順次、メールで連絡を行う。 ジンズホールディングスでは委託先及び関係会社と連携し、情報管理体制とセキュリティ対策の一層の強化に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 外部委託先への不正アクセスによるお客さまの個人情報漏えいに関するお詫びとお知らせ 関連記事 ソースネクスト、IR問い合わせフォーム設定不備で137件の個人情報が閲覧可能に ～ 10 / 15 の不正アクセスとは別事案 2026.11.20 Fri 8:05 「ONE cosme」に不正アクセス、最大1,154名の会員情報が取得された可能性 2026.11.20 Fri 8:05 楽天証券に不正アクセス、最大約1,125万口座の情報が漏えいした可能性 2026.11.20 Fri 8:05 理研が運用するスーパーコンピュータ「富岳」の運用系システムに不正アクセス、利用者の認証システムに登録された情報が持ち出された可能性 2026.11.20 Fri 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-a287da7a3b",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "「KARTE」への不正アクセス、ZAP ID登録者 最大約432万件のメールアドレスが漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/26/56904.html",
+      "publishedAt": "2026-11-25T23:05:09.000Z",
+      "summary": "250 views RIZAPグループ株式会社は11月17日、同社子会社のRIZAP株式会社が一部のWebサービスで利用しているマーケティングプラットフォーム「KARTE」への不正アクセスについて発表した。 これは株式会社プレイドが提供する「KARTE」に第三者から不正アクセスがあり、顧客の個人情報を含む可能性のある一部情報が漏えいしたと報告があったというもの。 漏えいした可能性のある情報は下記の通り。 ・対象：ZAP ID登録者（chocoZAP、chocoZAPオンラインストア、RIZAP、RIZAPの通販サイトなどRIZAPが提供するオンラインサービスの利用者） ・メールアドレス：最大約432万件（うち氏名を含むものは最大約6万件） ・その他：会員ID、性別、年代、住所（都道府県のみ）、LINE公式アカウントとの連携に使う識別番号 RIZAPでは11月13日から、RIZAP・chocoZAPの一部のWebサービスを一時停止している。 RIZAPグループおよびRIZAPでは引き続きプレイドと連携し、原因および情報漏えいの影響範囲について確認を進めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 【お詫び】外部サービス「KARTE」への不正アクセスによる個人情報漏えいの可能性および一部サービスの一時停止について 関連記事 REXTにランサムウェア攻撃、RIZAP「APORITO」事業でシステム障害 2026.8.20 Thu 8:05 RIZAP「APORITOオンラインストア」に不正アクセス、カード情報が外部流出した可能性 2026.8.18 Tue 8:05 RIZAP の顧客情報含む一部ファイルが第三者に閲覧可能な状態に 2024.12.11 Wed 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-e7a6e8b3a3",
+      "source": "ScanNetSecurity",
+      "sourceType": "japanese",
+      "title": "LiPLUSホールディングスが利用する架電システム「Telforce」に不正アクセス、約28万件の電話番号等が漏えいした可能性",
+      "url": "https://scan.netsecurity.ne.jp/article/2026/11/26/56903.html",
+      "publishedAt": "2026-11-25T23:05:07.000Z",
+      "summary": "125 views 株式会社LiPLUSホールディングスは11月16日、同社グループの株式会社アシストと共同で運営するマッチング事業で利用する株式会社Widsley提供のクラウド架電システム「Telforce」への不正アクセスについて発表した。 これは架電システム「Telforce」に海外から不正アクセスが行われたと、Widsley社から10月21日に報告を受けたというもの。 Widsley社では10月21日中に海外からの接続を遮断し、第三者の調査機関による調査を実施した結果、アクセスの記録が残らない経路から情報が取得された可能性があることが判明したという。 Widsley社では現時点で、下記が原因と考えられる旨の報告をLiPLUSホールディングスに行っている。 1.架電システムの設定ファイルの一部が外部から閲覧可能な状態となっており、データベースへの接続情報等が第三者に知られた可能性があること 2.架電システムのスマートフォンアプリ向け接続口が認証なしでアクセスできる状態となっていたこと 漏えいの可能性があるのは、約28万件の電話番号、名前（登録がある場合）、住所（郵便番号のみの場合を含む）、会社名、問い合わせ内容等の記録、通話日時を含む個人情報。 LiPLUSホールディングスでは対象者に、SMSまたはメールによる通知を行っている。 LiPLUSホールディングスおよびWidsley社では、下記の対応を実施している。 ・海外からの接続の遮断 ・スマートフォンアプリ向け接続口の閉鎖 ・データベースのパスワード変更および認証キーの再発行 ・第三者調査機関による調査 LiPLUSホールディングスでは今後、Widsley社とともに認証設定の全面的な見直しを進め、再発防止に努めるとのこと。 《ScanNetSecurity》 一次情報または関連リンク 不正アクセスによる個人情報漏えいのおそれに関するお知らせとお詫び（Widsley社提供 架電システム「Telforce」） 関連記事 サイバーセキュリティクラウドの開発環境に不正アクセス、GitHubに保存されていた個人情報が漏えいした可能性 2026.11.19 Thu 8:05 SecureNaviが利用するクラウドサービス「Notion」のAI機能の委託先に不正アクセス、回答を含むやりとりの記録が漏えいした可能性 2026.11.19 Thu 8:05 Notion AIの処理を委託していたFireworks AI社に不正アクセス、LRMのワークスペースでのやり取りが流出した可能性 2026.11.19 Thu 8:05 スリーシェイクが利用するNotion AIの委託先に不正アクセス 2026.11.19 Thu 8:05 ScanNetSecurityをフォローしよう！ @scannetsecurityをフォロー facebook シェア ポスト hatebu ブックマーク Pocket 後で読む"
+    },
+    {
+      "id": "s-1246f61fc7",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+      "publishedAt": "2026-11-25T22:05:09.000Z",
+      "summary": "Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto Networks devices with management interfaces exposed to the internet. [...]"
+    },
+    {
+      "id": "s-94afaa1092",
+      "source": "BleepingComputer",
+      "sourceType": "media",
+      "title": "Hackers reportedly breached CIA intelligence analysis system",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
+      "publishedAt": "2026-11-25T07:45:03.000Z",
+      "summary": "Hackers reportedly breached CIA intelligence analysis system By Sergiu Gatlan November 25, 2026 02:45 AM 1 &#8203;Unknown attackers have reportedly breached an open-source intelligence (OSINT) analysis system at the US Central Intelligence Agency (CIA), according to a source familiar with the matter. The source told The New York Times , which first reported the incident, that the cyberattack was carried out using the ARTEX AI-powered penetration testing framework and also affected the Office of the Director of National Intelligence (ODNI) and the National Geospatial-Intelligence Agency. While the CIA and the ODNI have not yet replied to a request for more details regarding this incident, no classified data or systems were exposed in the breach. \"The hack did not involve our classified networks or classified information, and no other systems are currently at risk,\" the source said. Hours after the CIA security breach was reported, the Financial Crimes Enforcement Network (FinCEN) also disclosed that it's investigating a cybersecurity incident involving unauthorized access to a limited subset of its systems. After detecting the attack, the agency took some systems offline as a precaution and told banks to use the Financial Institutions Hotline to file reports, since some services may be unavailable. \"Treasury is working with the Federal Bureau of Investigation, the Cybersecurity and Infrastructure Security Agency, and third-party forensic examiners to determine the scope and im"
+    },
+    {
+      "id": "s-d52512d72b",
+      "source": "The Hacker News",
+      "sourceType": "media",
+      "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
+      "url": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
+      "publishedAt": "2026-11-25T06:21:12.000Z",
+      "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account. The WordPress plugins team has proactively detected and blocked the threat before it could be officially released. Visiting each plugin listing now"
+    }
+  ]
+}
